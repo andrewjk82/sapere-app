@@ -4395,6 +4395,440 @@
             "grade": "7",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "t3-2022-y7-pa-q1a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate ( -4 - 2 + 5 ).",
+          "options": [
+            "\\( -1 \\)",
+            "\\( 1 \\)",
+            "\\( -11 \\)",
+            "\\( 3 \\)"
+          ],
+          "answer": 0,
+          "hint": "Work from left to right because addition and subtraction have the same priority.",
+          "steps": [
+            {
+              "explain": "First subtract 2 from negative 4.",
+              "work": "\\( -4 - 2 = -6 \\)"
+            },
+            {
+              "explain": "Then add 5 to negative 6.",
+              "work": "\\( -6 + 5 = -1 \\)"
+            },
+            {
+              "explain": "Therefore the value is negative 1.",
+              "work": "\\( -4 - 2 + 5 = -1 \\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3-Year 7 2022, Part A",
+            "school": "Great Lakes Senior College"
+          }
+        },
+        {
+          "id": "t3-2022-y7-pa-q1b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate ( 2 - (-6) + 13 ).",
+          "options": [
+            "\\( 21 \\)",
+            "\\( 9 \\)",
+            "\\( -17 \\)",
+            "\\( 5 \\)"
+          ],
+          "answer": 0,
+          "hint": "Subtracting a negative number is the same as adding the positive number.",
+          "steps": [
+            {
+              "explain": "Change subtraction of negative 6 into addition of 6.",
+              "work": "\\( 2 - (-6) + 13 = 2 + 6 + 13 \\)"
+            },
+            {
+              "explain": "Add from left to right.",
+              "work": "\\( 2 + 6 = 8 \\)"
+            },
+            {
+              "explain": "Add the remaining 13.",
+              "work": "\\( 8 + 13 = 21 \\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3-Year 7 2022, Part A",
+            "school": "Great Lakes Senior College"
+          }
+        },
+        {
+          "id": "t3-2022-y7-pa-q1c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate ( 16 + (-3) \\times 12 ).",
+          "options": [
+            "\\( -20 \\)",
+            "\\( 156 \\)",
+            "\\( 20 \\)",
+            "\\( -84 \\)"
+          ],
+          "answer": 0,
+          "hint": "Do multiplication before addition.",
+          "steps": [
+            {
+              "explain": "Multiplication is done before addition.",
+              "work": "\\( (-3) \\times 12 = -36 \\)"
+            },
+            {
+              "explain": "Replace the product in the original expression.",
+              "work": "\\( 16 + (-36) \\)"
+            },
+            {
+              "explain": "Adding a negative is subtraction.",
+              "work": "\\( 16 - 36 = -20 \\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3-Year 7 2022, Part A",
+            "school": "Great Lakes Senior College"
+          }
+        },
+        {
+          "id": "t3-2022-y7-pa-q1d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate ( \\frac{1-16}{3} ).",
+          "options": [
+            "\\( -5 \\)",
+            "\\( 5 \\)",
+            "\\( -\\frac{13}{3} \\)",
+            "\\( 17 \\)"
+          ],
+          "answer": 0,
+          "hint": "Calculate the numerator before dividing by the denominator.",
+          "steps": [
+            {
+              "explain": "Evaluate the numerator first.",
+              "work": "\\( 1 - 16 = -15 \\)"
+            },
+            {
+              "explain": "Now divide the numerator by 3.",
+              "work": "\\( \\frac{-15}{3} = -5 \\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3-Year 7 2022, Part A",
+            "school": "Great Lakes Senior College"
+          }
+        },
+        {
+          "id": "t3-2022-y7-pa-q1e",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate ( -6 + 30 \\div (-2) ).",
+          "options": [
+            "\\( -21 \\)",
+            "\\( 9 \\)",
+            "\\( 12 \\)",
+            "\\( -12 \\)"
+          ],
+          "answer": 0,
+          "hint": "Do the division before the addition.",
+          "steps": [
+            {
+              "explain": "Divide 30 by negative 2 first.",
+              "work": "\\( 30 \\div (-2) = -15 \\)"
+            },
+            {
+              "explain": "Substitute this result into the expression.",
+              "work": "\\( -6 + (-15) \\)"
+            },
+            {
+              "explain": "The sum of two negative integers is negative.",
+              "work": "\\( -6 - 15 = -21 \\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3-Year 7 2022, Part A",
+            "school": "Great Lakes Senior College"
+          }
+        },
+        {
+          "id": "t3-2022-y7-pa-q2a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write down three different integers that have a sum of ( -7 \\).",
+          "options": [
+            "\\( -1, -2, -4 \\)",
+            "\\( -1, -2, -3 \\)",
+            "\\( -1, -1, -5 \\)",
+            "\\( 1, -2, -4 \\)"
+          ],
+          "answer": 0,
+          "hint": "Check that the three integers are different and add them to verify the total.",
+          "steps": [
+            {
+              "explain": "Try three different negative integers.",
+              "work": "\\( -1, -2, -4 \\)"
+            },
+            {
+              "explain": "Check their sum.",
+              "work": "\\( -1 + (-2) + (-4) = -3 - 4 = -7 \\)"
+            },
+            {
+              "explain": "They are all different, so this set satisfies both conditions.",
+              "work": "\\( -1, -2, -4 \\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3-Year 7 2022, Part A",
+            "school": "Great Lakes Senior College"
+          }
+        },
+        {
+          "id": "t3-2022-y7-pa-q2b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The minimum temperature in Goulbourn was ( -5^\\circ\\text{C} \\). During the day, it rose to ( 11^\\circ\\text{C} \\). By how much did the temperature rise?",
+          "options": [
+            "\\( 16^\\circ\\text{C} \\)",
+            "\\( 6^\\circ\\text{C} \\)",
+            "\\( -16^\\circ\\text{C} \\)",
+            "\\( 5^\\circ\\text{C} \\)"
+          ],
+          "answer": 0,
+          "hint": "Find the change by subtracting the starting temperature from the final temperature.",
+          "steps": [
+            {
+              "explain": "A rise is final temperature minus starting temperature.",
+              "work": "\\( 11 - (-5) \\)"
+            },
+            {
+              "explain": "Subtracting a negative becomes addition.",
+              "work": "\\( 11 + 5 = 16 \\)"
+            },
+            {
+              "explain": "The temperature rose by 16 degrees Celsius.",
+              "work": "\\( 16^\\circ\\text{C} \\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3-Year 7 2022, Part A",
+            "school": "Great Lakes Senior College"
+          }
+        },
+        {
+          "id": "t3-2022-y7-pa-q2c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The maximum temperature in Toronto on three days in November was: ( -8^\\circ\\text{C}, 0^\\circ\\text{C} \\) and ( 5^\\circ\\text{C} \\). Find the average (mean) temperature for these three days.",
+          "options": [
+            "\\( -1^\\circ\\text{C} \\)",
+            "\\( 1^\\circ\\text{C} \\)",
+            "\\( -3^\\circ\\text{C} \\)",
+            "\\( 13^\\circ\\text{C} \\)"
+          ],
+          "answer": 0,
+          "hint": "Add all three temperatures, then divide by the number of days.",
+          "steps": [
+            {
+              "explain": "Add the three temperatures.",
+              "work": "\\( -8 + 0 + 5 = -3 \\)"
+            },
+            {
+              "explain": "There are three days, so divide the total by 3.",
+              "work": "\\( \\frac{-3}{3} = -1 \\)"
+            },
+            {
+              "explain": "The mean temperature is negative 1 degree Celsius.",
+              "work": "\\( -1^\\circ\\text{C} \\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3-Year 7 2022, Part A",
+            "school": "Great Lakes Senior College"
+          }
+        },
+        {
+          "id": "t3-2022-y7-pa-q2d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write down two integers that have a sum of ( -8 \\) and a product of ( 12 \\).",
+          "options": [
+            "\\( -6 \\text{ and } -2 \\)",
+            "\\( 6 \\text{ and } 2 \\)",
+            "\\( -12 \\text{ and } 4 \\)",
+            "\\( -3 \\text{ and } -4 \\)"
+          ],
+          "answer": 0,
+          "hint": "List factor pairs of 12, then choose the pair whose sum is negative 8.",
+          "steps": [
+            {
+              "explain": "Factor pairs of 12 include 1 and 12, 2 and 6, and 3 and 4.",
+              "work": "\\( 2 \\times 6 = 12 \\)"
+            },
+            {
+              "explain": "A positive product with a negative sum needs two negative integers.",
+              "work": "\\( (-2) \\times (-6) = 12 \\)"
+            },
+            {
+              "explain": "Check their sum.",
+              "work": "\\( -2 + (-6) = -8 \\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3-Year 7 2022, Part A",
+            "school": "Great Lakes Senior College"
+          }
+        },
+        {
+          "id": "khs23-y7-t1-q3",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What integer goes in the blank box on the number line?",
+          "options": [
+            "\\(-3\\)",
+            "\\(-2\\)",
+            "\\(-1\\)",
+            "\\(1\\)"
+          ],
+          "answer": 2,
+          "hint": "Count the equal intervals between \\(0\\) and \\(4\\) to find the scale (each tick is \\(1\\) unit), then move \\(1\\) tick to the left of \\(0\\)!",
+          "keyPoints": [
+            {
+              "text": "blank box",
+              "note": "Each tick is 1 unit; 1 unit left of 0 is −1."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Count the intervals between \\(0\\) and \\(4\\): there are \\(4\\) equal intervals, so each tick mark represents \\(1\\) unit.",
+              "work": "\\(\\text{Scale} = \\dfrac{4 - 0}{4} = 1\\text{ unit per tick}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 122\" width=\"65%\" height=\"auto\" style=\"max-width:442px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"340\" height=\"122\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><line x1=\"22\" y1=\"46\" x2=\"318\" y2=\"46\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><polyline points=\"30,41 22,46 30,51\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><polyline points=\"310,41 318,46 310,51\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"42\" y1=\"39\" x2=\"42\" y2=\"53\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"74\" y1=\"41\" x2=\"74\" y2=\"51\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"106\" y1=\"41\" x2=\"106\" y2=\"51\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"138\" y1=\"41\" x2=\"138\" y2=\"51\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"170\" y1=\"39\" x2=\"170\" y2=\"53\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"202\" y1=\"41\" x2=\"202\" y2=\"51\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"234\" y1=\"41\" x2=\"234\" y2=\"51\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"266\" y1=\"41\" x2=\"266\" y2=\"51\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"298\" y1=\"39\" x2=\"298\" y2=\"53\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"42\" y=\"68\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"13\" fill=\"#0f172a\">−4</text><text x=\"170\" y=\"68\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"13\" fill=\"#0f172a\">0</text><text x=\"298\" y=\"68\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"13\" fill=\"#0f172a\">4</text><text x=\"74\" y=\"68\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11.5\" fill=\"#64748b\">−3</text><text x=\"106\" y=\"68\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11.5\" fill=\"#64748b\">−2</text><text x=\"202\" y=\"68\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11.5\" fill=\"#64748b\">1</text><text x=\"234\" y=\"68\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11.5\" fill=\"#64748b\">2</text><text x=\"266\" y=\"68\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11.5\" fill=\"#64748b\">3</text><path d=\"M 170 38 Q 154 18 138 38\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2\"/><polyline points=\"143,34 138,38 143,42\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"1.8\"/><text x=\"154\" y=\"24\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"700\" fill=\"#dc2626\">−1</text><rect x=\"125\" y=\"55\" width=\"26\" height=\"24\" rx=\"3\" fill=\"#fee2e2\" stroke=\"#dc2626\" stroke-width=\"1.8\"/><text x=\"138\" y=\"71\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"13\" font-weight=\"700\" fill=\"#b91c1c\">−1</text><text x=\"170\" y=\"114\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">Each tick = 1 unit; 1 unit left of 0 is −1</text></svg>"
+              }
+            },
+            {
+              "explain": "The blank box sits \\(1\\) tick mark directly to the left of \\(0\\). Moving left means subtracting \\(1\\).",
+              "work": "\\(0 - 1 = -1\\)"
+            },
+            {
+              "explain": "Verify by counting right from \\(-4\\): \\(-4, -3, -2, -1, 0\\). The box aligns with \\(-1\\).",
+              "work": "\\(-4 < -3 < -2 < -1 < 0\\)"
+            },
+            {
+              "explain": "Therefore, the integer in the blank box is \\(-1\\).",
+              "work": "\\(\\text{Answer: } -1\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 96\" width=\"65%\" height=\"auto\" style=\"max-width:442px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"340\" height=\"96\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><line x1=\"22\" y1=\"46\" x2=\"318\" y2=\"46\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><polyline points=\"30,41 22,46 30,51\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><polyline points=\"310,41 318,46 310,51\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"42\" y1=\"39\" x2=\"42\" y2=\"53\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"74\" y1=\"41\" x2=\"74\" y2=\"51\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"106\" y1=\"41\" x2=\"106\" y2=\"51\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"138\" y1=\"41\" x2=\"138\" y2=\"51\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"170\" y1=\"39\" x2=\"170\" y2=\"53\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"202\" y1=\"41\" x2=\"202\" y2=\"51\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"234\" y1=\"41\" x2=\"234\" y2=\"51\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"266\" y1=\"41\" x2=\"266\" y2=\"51\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"298\" y1=\"39\" x2=\"298\" y2=\"53\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"42\" y=\"68\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"13\" fill=\"#0f172a\">−4</text><text x=\"170\" y=\"68\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"13\" fill=\"#0f172a\">0</text><text x=\"298\" y=\"68\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"13\" fill=\"#0f172a\">4</text><rect x=\"125\" y=\"55\" width=\"26\" height=\"24\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.6\"/></svg>"
+          }
+        },
+        {
+          "id": "khs23-y7-t1-q7",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Put the correct symbol (\\(<\\) or \\(>\\)) between the following integers: \\(-3 \\; \\underline{\\phantom{xx}} \\; 2\\).",
+          "options": [
+            "\\(<\\)",
+            "\\(>\\)",
+            "\\(=\\)",
+            "\\(\\ge\\)"
+          ],
+          "answer": 0,
+          "hint": "Any negative integer lies to the left of every positive integer on the number line, so \\(-3\\) is less than \\(2\\)!",
+          "keyPoints": [
+            {
+              "text": "-3",
+              "note": "Negative numbers are always less than positive numbers."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Locate \\(-3\\) and \\(2\\) on a number line: \\(-3\\) is \\(3\\) units to the left of \\(0\\), while \\(2\\) is \\(2\\) units to the right of \\(0\\).",
+              "work": "\\(-3 < 0 < 2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 104\" width=\"65%\" height=\"auto\" style=\"max-width:403px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"310\" height=\"104\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><line x1=\"20\" y1=\"48\" x2=\"290\" y2=\"48\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"27\" y1=\"43\" x2=\"27\" y2=\"53\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><text x=\"27\" y=\"68\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11\" fill=\"#475569\">−4</text><line x1=\"59\" y1=\"43\" x2=\"59\" y2=\"53\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><text x=\"59\" y=\"68\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11\" fill=\"#475569\">−3</text><line x1=\"91\" y1=\"43\" x2=\"91\" y2=\"53\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><text x=\"91\" y=\"68\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11\" fill=\"#475569\">−2</text><line x1=\"123\" y1=\"43\" x2=\"123\" y2=\"53\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><text x=\"123\" y=\"68\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11\" fill=\"#475569\">−1</text><line x1=\"155\" y1=\"43\" x2=\"155\" y2=\"53\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><text x=\"155\" y=\"68\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11\" fill=\"#475569\">0</text><line x1=\"187\" y1=\"43\" x2=\"187\" y2=\"53\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><text x=\"187\" y=\"68\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11\" fill=\"#475569\">1</text><line x1=\"219\" y1=\"43\" x2=\"219\" y2=\"53\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><text x=\"219\" y=\"68\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11\" fill=\"#475569\">2</text><line x1=\"251\" y1=\"43\" x2=\"251\" y2=\"53\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><text x=\"251\" y=\"68\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11\" fill=\"#475569\">3</text><line x1=\"283\" y1=\"43\" x2=\"283\" y2=\"53\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><text x=\"283\" y=\"68\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11\" fill=\"#475569\">4</text><circle cx=\"59\" cy=\"48\" r=\"5.5\" fill=\"#2563eb\"/><circle cx=\"219\" cy=\"48\" r=\"5.5\" fill=\"#dc2626\"/><text x=\"59\" y=\"35\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#2563eb\">−3 (left)</text><text x=\"219\" y=\"35\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#dc2626\">2 (right)</text><text x=\"155\" y=\"96\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">−3 lies to the left of 2, so −3 &lt; 2</text></svg>"
+              }
+            },
+            {
+              "explain": "Numbers further to the left on a number line are smaller (less than).",
+              "work": "\\(-3 \\text{ is less than } 2\\)"
+            },
+            {
+              "explain": "The symbol for \"is less than\" is \\(<\\) (the point points toward the smaller number \\(-3\\)).",
+              "work": "\\(-3 < 2\\)"
+            },
+            {
+              "explain": "Therefore, the correct symbol is \\(<\\).",
+              "work": "\\(\\text{Answer: } <\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs23-y7-t1-q17",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write the following integers in ascending order: \\(7, \\; 4, \\; -3, \\; 12, \\; 0, \\; -8, \\; -1\\).",
+          "options": [
+            "\\(-8, \\; -3, \\; -1, \\; 0, \\; 4, \\; 7, \\; 12\\)",
+            "\\(-1, \\; -3, \\; -8, \\; 0, \\; 4, \\; 7, \\; 12\\)",
+            "\\(12, \\; 7, \\; 4, \\; 0, \\; -1, \\; -3, \\; -8\\)",
+            "\\(-8, \\; -1, \\; -3, \\; 0, \\; 4, \\; 7, \\; 12\\)"
+          ],
+          "answer": 0,
+          "hint": "Ascending means smallest to largest (left to right on a number line). Remember \\(-8\\) is further left than \\(-3\\) and \\(-1\\)!",
+          "keyPoints": [
+            {
+              "text": "ascending order",
+              "note": "Smallest (most negative) to largest: −8, −3, −1, 0, 4, 7, 12."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Separate the integers into negatives (\\(-8, -3, -1\\)), zero (\\(0\\)), and positives (\\(4, 7, 12\\)).",
+              "work": "\\(\\text{Negatives: } -8, -3, -1; \\quad 0; \\quad \\text{Positives: } 4, 7, 12\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 112\" width=\"65%\" height=\"auto\" style=\"max-width:468px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"360\" height=\"112\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><line x1=\"18\" y1=\"52\" x2=\"342\" y2=\"52\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><circle cx=\"43.6\" cy=\"52\" r=\"4.5\" fill=\"#2563eb\"/><text x=\"43.6\" y=\"39\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#2563eb\">−8</text><circle cx=\"111.8\" cy=\"52\" r=\"4.5\" fill=\"#2563eb\"/><text x=\"111.8\" y=\"73\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#2563eb\">−3</text><circle cx=\"139.1\" cy=\"52\" r=\"4.5\" fill=\"#2563eb\"/><text x=\"139.1\" y=\"39\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#2563eb\">−1</text><circle cx=\"152.7\" cy=\"52\" r=\"4.5\" fill=\"#0f172a\"/><text x=\"152.7\" y=\"73\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">0</text><circle cx=\"207.3\" cy=\"52\" r=\"4.5\" fill=\"#dc2626\"/><text x=\"207.3\" y=\"39\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#dc2626\">4</text><circle cx=\"248.2\" cy=\"52\" r=\"4.5\" fill=\"#dc2626\"/><text x=\"248.2\" y=\"73\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#dc2626\">7</text><circle cx=\"316.4\" cy=\"52\" r=\"4.5\" fill=\"#dc2626\"/><text x=\"316.4\" y=\"39\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#dc2626\">12</text><text x=\"180\" y=\"104\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">Left to right: −8, −3, −1, 0, 4, 7, 12</text></svg>"
+              }
+            },
+            {
+              "explain": "Order the negative integers from furthest left to closest to zero: \\(-8 < -3 < -1\\).",
+              "work": "\\(-8 < -3 < -1\\)"
+            },
+            {
+              "explain": "Place \\(0\\) in the middle, then order the positive integers from smallest to largest: \\(4 < 7 < 12\\).",
+              "work": "\\(0 < 4 < 7 < 12\\)"
+            },
+            {
+              "explain": "Combine the full list in ascending order: \\(-8, -3, -1, 0, 4, 7, 12\\).",
+              "work": "\\(-8, \\; -3, \\; -1, \\; 0, \\; 4, \\; 7, \\; 12\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -4873,6 +5307,252 @@
             "\\(3^2\\)"
           ],
           "answer": 3
+        },
+        {
+          "id": "khs23-y7-t1-q19g",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write the answer to \\((-60) \\div 2 \\times (-5)\\).",
+          "options": [
+            "\\(6\\)",
+            "\\(-150\\)",
+            "\\(150\\)",
+            "\\(-6\\)"
+          ],
+          "answer": 2,
+          "hint": "Division and multiplication have equal priority — ALWAYS work from LEFT to RIGHT: compute \\((-60) \\div 2 = -30\\) first, then multiply by \\(-5\\)!",
+          "keyPoints": [
+            {
+              "text": "(-60) \\div 2 \\times (-5)",
+              "note": "Work left to right: (−60 ÷ 2) × (−5) = (−30) × (−5) = 150."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Division and multiplication have equal priority in BODMAS, so evaluate from left to right.",
+              "work": "\\(((-60) \\div 2) \\times (-5)\\)"
+            },
+            {
+              "explain": "First divide \\((-60) \\div 2 = -30\\) (negative divided by positive is negative).",
+              "work": "\\((-60) \\div 2 = -30\\)"
+            },
+            {
+              "explain": "Next multiply \\((-30) \\times (-5) = 150\\) (negative times negative is positive). (Avoid the trap of doing \\(2 \\times (-5)\\) first!)",
+              "work": "\\((-30) \\times (-5) = 150\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(150\\).",
+              "work": "\\(\\text{Answer: } 150\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs23-y7-t1-q23a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Use the order of operations to find the value of \\(5 - 9 \\times (-8) + (-3) \\times 2\\).",
+          "options": [
+            "\\(-73\\)",
+            "\\(61\\)",
+            "\\(71\\)",
+            "\\(83\\)"
+          ],
+          "answer": 2,
+          "hint": "Evaluate BOTH multiplications first: \\(9 \\times (-8) = -72\\) and \\((-3) \\times 2 = -6\\), then remember \\(5 - (-72) = 5 + 72\\)!",
+          "keyPoints": [
+            {
+              "text": "5 - 9 \\times (-8) + (-3) \\times 2",
+              "note": "Multiply first: 5 − (−72) + (−6) = 5 + 72 − 6 = 71."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Perform both multiplications first (BODMAS): \\(9 \\times (-8) = -72\\) and \\((-3) \\times 2 = -6\\).",
+              "work": "\\(5 - (-72) + (-6)\\)"
+            },
+            {
+              "explain": "Simplify the double signs: subtracting \\(-72\\) becomes \\(+ 72\\), and adding \\(-6\\) becomes \\(- 6\\).",
+              "work": "\\(5 + 72 - 6\\)"
+            },
+            {
+              "explain": "Work from left to right: \\(5 + 72 = 77\\), then \\(77 - 6 = 71\\).",
+              "work": "\\(77 - 6 = 71\\)"
+            },
+            {
+              "explain": "Therefore, the value is \\(71\\).",
+              "work": "\\(\\text{Answer: } 71\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs23-y7-t1-q23b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Use the order of operations to find the value of \\(\\dfrac{16 - 2^2}{1 - 4}\\).",
+          "options": [
+            "\\(-4\\)",
+            "\\(4\\)",
+            "\\(-3\\)",
+            "\\(-6\\)"
+          ],
+          "answer": 0,
+          "hint": "Treat the fraction bar as brackets: evaluate the power \\(2^2 = 4\\) in the numerator (\\(16 - 4 = 12\\)) and the denominator (\\(1 - 4 = -3\\)), then divide!",
+          "keyPoints": [
+            {
+              "text": "\\dfrac{16 - 2^2}{1 - 4}",
+              "note": "Numerator = 16 − 4 = 12; Denominator = 1 − 4 = −3; 12 ÷ (−3) = −4."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Evaluate the index (power) in the numerator first: \\(2^2 = 2 \\times 2 = 4\\).",
+              "work": "\\(\\dfrac{16 - 4}{1 - 4}\\)"
+            },
+            {
+              "explain": "Simplify the numerator and denominator separately: \\(16 - 4 = 12\\) and \\(1 - 4 = -3\\).",
+              "work": "\\(\\dfrac{12}{-3}\\)"
+            },
+            {
+              "explain": "Divide \\(12\\) by \\(-3\\): positive divided by negative gives a negative quotient, \\(-4\\).",
+              "work": "\\(12 \\div (-3) = -4\\)"
+            },
+            {
+              "explain": "Therefore, the value is \\(-4\\).",
+              "work": "\\(\\text{Answer: } -4\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs23-y7-t1-q25a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Insert an integer into the space to make the statement true: \\(4 - 3 \\times \\underline{\\phantom{xx}} = -32\\).",
+          "options": [
+            "\\(-12\\)",
+            "\\(12\\)",
+            "\\(9\\)",
+            "\\(-9\\)"
+          ],
+          "answer": 1,
+          "hint": "To go from \\(4\\) down to \\(-32\\), you must subtract \\(36\\) (since \\(4 - 36 = -32\\)). What integer multiplied by \\(3\\) equals \\(36\\)?",
+          "keyPoints": [
+            {
+              "text": "4 - 3 \\times",
+              "note": "4 − 36 = −32, so 3 × □ = 36 → □ = 12."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Let the missing integer be \\(\\square\\). Since multiplication happens before subtraction, \\(4 - (3 \\times \\square) = -32\\).",
+              "work": "\\(4 - (3 \\times \\square) = -32\\)"
+            },
+            {
+              "explain": "Find what must be subtracted from \\(4\\) to get \\(-32\\): \\(4 - (-32) = 4 + 32 = 36\\).",
+              "work": "\\(3 \\times \\square = 36\\)"
+            },
+            {
+              "explain": "Divide both sides by \\(3\\): \\(\\square = 36 \\div 3 = 12\\).",
+              "work": "\\(\\square = 36 \\div 3 = 12\\)"
+            },
+            {
+              "explain": "Check: \\(4 - 3 \\times 12 = 4 - 36 = -32\\). Exact!",
+              "work": "\\(\\text{Answer: } 12\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs23-y7-t1-q25b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Insert an integer into the space to make the statement true: \\(10 - (15 - \\underline{\\phantom{xx}} \\times 4) = -17\\).",
+          "options": [
+            "\\(-3\\)",
+            "\\(3\\)",
+            "\\(-2\\)",
+            "\\(2\\)"
+          ],
+          "answer": 0,
+          "hint": "Work from the outside in: \\(10 - 27 = -17\\), so the bracket \\((15 - \\square \\times 4)\\) must equal \\(27\\). That means \\(-\\square \\times 4 = +12\\)!",
+          "keyPoints": [
+            {
+              "text": "10 - (15 -",
+              "note": "Bracket must equal 27 → 15 − 4k = 27 → −4k = 12 → k = −3."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "For \\(10 - (\\text{bracket}) = -17\\), the expression inside the brackets must equal \\(10 - (-17) = 27\\).",
+              "work": "\\(15 - \\square \\times 4 = 27\\)"
+            },
+            {
+              "explain": "Subtract \\(15\\) from both sides: \\(-(\\square \\times 4) = 27 - 15 = 12\\).",
+              "work": "\\(-(\\square \\times 4) = 12\\)"
+            },
+            {
+              "explain": "Therefore, \\(\\square \\times 4 = -12\\), so divide by \\(4\\): \\(\\square = -12 \\div 4 = -3\\).",
+              "work": "\\(\\square = -12 \\div 4 = -3\\)"
+            },
+            {
+              "explain": "Verify: \\(10 - (15 - (-3) \\times 4) = 10 - (15 - (-12)) = 10 - 27 = -17\\). Exact!",
+              "work": "\\(\\text{Answer: } -3\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs23-y7-t1-q31",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Place the integers \\(1, 2, 3, 4, 5, 6, 7, 8\\) and \\(9\\) in the grid below so that each row and column give the answer shown at the right and bottom. The order of operations still apply, each number can only be used once, and negative integers cannot be placed in the boxes. What is the completed top row (left to right)?",
+          "options": [
+            "\\(3, \\; 1, \\; 9\\)",
+            "\\(6, \\; 2, \\; 9\\)",
+            "\\(4, \\; 2, \\; 8\\)",
+            "\\(2, \\; 1, \\; 8\\)"
+          ],
+          "answer": 0,
+          "hint": "In Row 1 (\\(a \\div b - c = -6\\)), \\(c\\) must be large (\\(7, 8,\\) or \\(9\\)) and in Column 3 (\\(c - f \\div i = 6\\)), \\(c\\) must be at least \\(7\\)! Try \\(c = 9\\), which forces \\(a \\div b = 3\\) and \\(f \\div i = 3\\)!",
+          "keyPoints": [
+            {
+              "text": "order of operations still apply",
+              "note": "Unique solution: Row 1 = (3,1,9), Row 2 = (8,5,6), Row 3 = (4,7,2)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Look at Row 1 (\\(a \\div b - c = -6\\)) and Column 3 (\\(c - f \\div i = 6\\)): \\(c\\) must be at least \\(7\\). Trying \\(c = 9\\) gives \\(a \\div b = 3\\) and \\(f \\div i = 3\\).",
+              "work": "\\(c = 9 \\implies a \\div b = 3 \\text{ and } f \\div i = 3\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 286\" width=\"65%\" height=\"auto\" style=\"max-width:403px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"310\" height=\"286\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><rect x=\"26\" y=\"18\" width=\"36\" height=\"36\" rx=\"3\" fill=\"#dbeafe\" stroke=\"#2563eb\" stroke-width=\"1.4\"/><text x=\"44\" y=\"41.5\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"14.5\" font-weight=\"700\" fill=\"#1d4ed8\">3</text><rect x=\"96\" y=\"18\" width=\"36\" height=\"36\" rx=\"3\" fill=\"#dbeafe\" stroke=\"#2563eb\" stroke-width=\"1.4\"/><text x=\"114\" y=\"41.5\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"14.5\" font-weight=\"700\" fill=\"#1d4ed8\">1</text><rect x=\"166\" y=\"18\" width=\"36\" height=\"36\" rx=\"3\" fill=\"#dbeafe\" stroke=\"#2563eb\" stroke-width=\"1.4\"/><text x=\"184\" y=\"41.5\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"14.5\" font-weight=\"700\" fill=\"#1d4ed8\">9</text><rect x=\"26\" y=\"84\" width=\"36\" height=\"36\" rx=\"3\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"44\" y=\"107.5\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"14.5\" font-weight=\"700\" fill=\"#0f172a\">8</text><rect x=\"96\" y=\"84\" width=\"36\" height=\"36\" rx=\"3\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"114\" y=\"107.5\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"14.5\" font-weight=\"700\" fill=\"#0f172a\">5</text><rect x=\"166\" y=\"84\" width=\"36\" height=\"36\" rx=\"3\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"184\" y=\"107.5\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"14.5\" font-weight=\"700\" fill=\"#0f172a\">6</text><rect x=\"26\" y=\"150\" width=\"36\" height=\"36\" rx=\"3\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"44\" y=\"173.5\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"14.5\" font-weight=\"700\" fill=\"#0f172a\">4</text><rect x=\"96\" y=\"150\" width=\"36\" height=\"36\" rx=\"3\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"114\" y=\"173.5\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"14.5\" font-weight=\"700\" fill=\"#0f172a\">7</text><rect x=\"166\" y=\"150\" width=\"36\" height=\"36\" rx=\"3\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"184\" y=\"173.5\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"14.5\" font-weight=\"700\" fill=\"#0f172a\">2</text><text x=\"219\" y=\"41\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"15\" fill=\"#0f172a\">=</text><rect x=\"236\" y=\"18\" width=\"36\" height=\"36\" rx=\"3\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"254\" y=\"41.5\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"14.5\" font-weight=\"700\" fill=\"#0f172a\">−6</text><text x=\"219\" y=\"107\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"15\" fill=\"#0f172a\">=</text><rect x=\"236\" y=\"84\" width=\"36\" height=\"36\" rx=\"3\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"254\" y=\"107.5\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"14.5\" font-weight=\"700\" fill=\"#0f172a\">−22</text><text x=\"219\" y=\"173\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"15\" fill=\"#0f172a\">=</text><rect x=\"236\" y=\"150\" width=\"36\" height=\"36\" rx=\"3\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"254\" y=\"173.5\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"14.5\" font-weight=\"700\" fill=\"#0f172a\">30</text><text x=\"44\" y=\"205\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"15\" fill=\"#0f172a\">=</text><rect x=\"26\" y=\"214\" width=\"36\" height=\"36\" rx=\"3\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"44\" y=\"237.5\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"14.5\" font-weight=\"700\" fill=\"#0f172a\">5</text><text x=\"114\" y=\"205\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"15\" fill=\"#0f172a\">=</text><rect x=\"96\" y=\"214\" width=\"36\" height=\"36\" rx=\"3\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"114\" y=\"237.5\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"14.5\" font-weight=\"700\" fill=\"#0f172a\">12</text><text x=\"184\" y=\"205\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"15\" fill=\"#0f172a\">=</text><rect x=\"166\" y=\"214\" width=\"36\" height=\"36\" rx=\"3\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"184\" y=\"237.5\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"14.5\" font-weight=\"700\" fill=\"#0f172a\">6</text><text x=\"79\" y=\"41\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"15\" fill=\"#0f172a\">÷</text><text x=\"149\" y=\"41\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"15\" fill=\"#0f172a\">−</text><text x=\"79\" y=\"107\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"15\" fill=\"#0f172a\">−</text><text x=\"149\" y=\"107\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"15\" fill=\"#0f172a\">×</text><text x=\"79\" y=\"173\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"15\" fill=\"#0f172a\">×</text><text x=\"149\" y=\"173\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"15\" fill=\"#0f172a\">+</text><text x=\"44\" y=\"74\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"15\" fill=\"#0f172a\">+</text><text x=\"114\" y=\"74\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"15\" fill=\"#0f172a\">×</text><text x=\"184\" y=\"74\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"15\" fill=\"#0f172a\">−</text><text x=\"44\" y=\"140\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"15\" fill=\"#0f172a\">÷</text><text x=\"114\" y=\"140\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"15\" fill=\"#0f172a\">+</text><text x=\"184\" y=\"140\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"15\" fill=\"#0f172a\">÷</text><text x=\"155\" y=\"278\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">Unique grid: Row 1 = (3, 1, 9), Row 2 = (8, 5, 6), Row 3 = (4, 7, 2)</text></svg>"
+              }
+            },
+            {
+              "explain": "Look at Row 2 (\\(d - e \\times f = -22\\)): \\(e \\times f\\) must be between \\(23\\) and \\(31\\). Using \\(f = 6, i = 2\\) (so \\(f \\div i = 3\\)) and \\(e = 5\\) gives \\(e \\times f = 30\\) and \\(d = 30 - 22 = 8\\)!",
+              "work": "\\(8 - 5 \\times 6 = 8 - 30 = -22\\)"
+            },
+            {
+              "explain": "Use Column 1 (\\(a + 8 \\div g = 5\\)) and \\(a \\div b = 3\\): set \\(a = 3, b = 1\\) and \\(g = 4\\) so \\(3 + 8 \\div 4 = 3 + 2 = 5\\). The only remaining digit is \\(h = 7\\).",
+              "work": "\\(\\text{Row 1: } 3 \\div 1 - 9 = -6; \\quad \\text{Col 1: } 3 + 8 \\div 4 = 5\\)"
+            },
+            {
+              "explain": "Check the remaining equations: Col 2 \\(1 \\times 5 + 7 = 12\\), Row 3 \\(4 \\times 7 + 2 = 30\\), Col 3 \\(9 - 6 \\div 2 = 6\\). All six match! The top row is \\(3, 1, 9\\).",
+              "work": "\\(\\text{Top row: } 3, \\; 1, \\; 9\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 260\" width=\"65%\" height=\"auto\" style=\"max-width:403px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"310\" height=\"260\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><rect x=\"26\" y=\"18\" width=\"36\" height=\"36\" rx=\"3\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"96\" y=\"18\" width=\"36\" height=\"36\" rx=\"3\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"166\" y=\"18\" width=\"36\" height=\"36\" rx=\"3\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"26\" y=\"84\" width=\"36\" height=\"36\" rx=\"3\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"96\" y=\"84\" width=\"36\" height=\"36\" rx=\"3\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"166\" y=\"84\" width=\"36\" height=\"36\" rx=\"3\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"26\" y=\"150\" width=\"36\" height=\"36\" rx=\"3\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"96\" y=\"150\" width=\"36\" height=\"36\" rx=\"3\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"166\" y=\"150\" width=\"36\" height=\"36\" rx=\"3\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"219\" y=\"41\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"15\" fill=\"#0f172a\">=</text><rect x=\"236\" y=\"18\" width=\"36\" height=\"36\" rx=\"3\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"254\" y=\"41.5\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"14.5\" font-weight=\"700\" fill=\"#0f172a\">−6</text><text x=\"219\" y=\"107\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"15\" fill=\"#0f172a\">=</text><rect x=\"236\" y=\"84\" width=\"36\" height=\"36\" rx=\"3\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"254\" y=\"107.5\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"14.5\" font-weight=\"700\" fill=\"#0f172a\">−22</text><text x=\"219\" y=\"173\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"15\" fill=\"#0f172a\">=</text><rect x=\"236\" y=\"150\" width=\"36\" height=\"36\" rx=\"3\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"254\" y=\"173.5\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"14.5\" font-weight=\"700\" fill=\"#0f172a\">30</text><text x=\"44\" y=\"205\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"15\" fill=\"#0f172a\">=</text><rect x=\"26\" y=\"214\" width=\"36\" height=\"36\" rx=\"3\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"44\" y=\"237.5\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"14.5\" font-weight=\"700\" fill=\"#0f172a\">5</text><text x=\"114\" y=\"205\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"15\" fill=\"#0f172a\">=</text><rect x=\"96\" y=\"214\" width=\"36\" height=\"36\" rx=\"3\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"114\" y=\"237.5\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"14.5\" font-weight=\"700\" fill=\"#0f172a\">12</text><text x=\"184\" y=\"205\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"15\" fill=\"#0f172a\">=</text><rect x=\"166\" y=\"214\" width=\"36\" height=\"36\" rx=\"3\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"184\" y=\"237.5\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"14.5\" font-weight=\"700\" fill=\"#0f172a\">6</text><text x=\"79\" y=\"41\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"15\" fill=\"#0f172a\">÷</text><text x=\"149\" y=\"41\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"15\" fill=\"#0f172a\">−</text><text x=\"79\" y=\"107\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"15\" fill=\"#0f172a\">−</text><text x=\"149\" y=\"107\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"15\" fill=\"#0f172a\">×</text><text x=\"79\" y=\"173\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"15\" fill=\"#0f172a\">×</text><text x=\"149\" y=\"173\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"15\" fill=\"#0f172a\">+</text><text x=\"44\" y=\"74\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"15\" fill=\"#0f172a\">+</text><text x=\"114\" y=\"74\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"15\" fill=\"#0f172a\">×</text><text x=\"184\" y=\"74\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"15\" fill=\"#0f172a\">−</text><text x=\"44\" y=\"140\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"15\" fill=\"#0f172a\">÷</text><text x=\"114\" y=\"140\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"15\" fill=\"#0f172a\">+</text><text x=\"184\" y=\"140\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"15\" fill=\"#0f172a\">÷</text></svg>"
+          }
         }
       ]
     },
@@ -5104,6 +5784,215 @@
             "sourcePaper": "Sydney Grammar School Form I Mathematics Annual Examination 2017",
             "sourceQuestion": "Q4(a)"
           }
+        },
+        {
+          "id": "khs23-y7-t1-q19a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write the answer to \\(9 - 11\\).",
+          "options": [
+            "\\(2\\)",
+            "\\(-2\\)",
+            "\\(-20\\)",
+            "\\(20\\)"
+          ],
+          "answer": 1,
+          "hint": "Start at \\(9\\) on the number line and move \\(11\\) units left: \\(9\\) units reach \\(0\\), and \\(2\\) more units reach \\(-2\\)!",
+          "keyPoints": [
+            {
+              "text": "9 - 11",
+              "note": "Subtracting a larger number gives a negative result: −(11 − 9) = −2."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Since \\(11 > 9\\), subtracting \\(11\\) from \\(9\\) goes past \\(0\\) into the negative numbers.",
+              "work": "\\(9 - 11\\)"
+            },
+            {
+              "explain": "Move \\(9\\) units left from \\(9\\) to reach \\(0\\), leaving \\(11 - 9 = 2\\) more units to move left.",
+              "work": "\\(9 - 9 - 2 = 0 - 2\\)"
+            },
+            {
+              "explain": "Moving \\(2\\) units left from \\(0\\) lands on \\(-2\\).",
+              "work": "\\(0 - 2 = -2\\)"
+            },
+            {
+              "explain": "Therefore, \\(9 - 11 = -2\\).",
+              "work": "\\(\\text{Answer: } -2\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs23-y7-t1-q19b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write the answer to \\(3 + (-7)\\).",
+          "options": [
+            "\\(10\\)",
+            "\\(4\\)",
+            "\\(-4\\)",
+            "\\(-10\\)"
+          ],
+          "answer": 2,
+          "hint": "Adding a negative number is the same as subtracting: \\(3 + (-7) = 3 - 7\\)!",
+          "keyPoints": [
+            {
+              "text": "3 + (-7)",
+              "note": "Adding (−7) means subtracting 7: 3 − 7 = −4."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Adding a negative integer is equivalent to subtracting its positive value.",
+              "work": "\\(3 + (-7) = 3 - 7\\)"
+            },
+            {
+              "explain": "Move \\(3\\) units left from \\(3\\) to reach \\(0\\), with \\(7 - 3 = 4\\) units still to move left.",
+              "work": "\\(3 - 3 - 4 = 0 - 4\\)"
+            },
+            {
+              "explain": "Moving \\(4\\) units left of \\(0\\) lands at \\(-4\\).",
+              "work": "\\(0 - 4 = -4\\)"
+            },
+            {
+              "explain": "Therefore, \\(3 + (-7) = -4\\).",
+              "work": "\\(\\text{Answer: } -4\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs23-y7-t1-q19e",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write the answer to \\(-5 - (-13)\\).",
+          "options": [
+            "\\(-18\\)",
+            "\\(-8\\)",
+            "\\(8\\)",
+            "\\(18\\)"
+          ],
+          "answer": 2,
+          "hint": "Subtracting a negative is the same as adding a positive: \\(-5 - (-13) = -5 + 13\\)!",
+          "keyPoints": [
+            {
+              "text": "-5 - (-13)",
+              "note": "Two minus signs become plus: −5 + 13 = 8."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Rewrite subtracting a negative number as adding a positive number.",
+              "work": "\\(-5 - (-13) = -5 + 13\\)"
+            },
+            {
+              "explain": "Use the commutative property of addition: \\(-5 + 13 = 13 - 5\\).",
+              "work": "\\(-5 + 13 = 13 - 5\\)"
+            },
+            {
+              "explain": "Subtract: \\(13 - 5 = 8\\).",
+              "work": "\\(13 - 5 = 8\\)"
+            },
+            {
+              "explain": "Therefore, \\(-5 - (-13) = 8\\).",
+              "work": "\\(\\text{Answer: } 8\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs23-y7-t1-q22",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The temperature in the city of Ontario for a particular week is shown in the table. What is the difference between the highest and lowest temperature this week?",
+          "options": [
+            "\\(1^\\circ\\text{C}\\)",
+            "\\(6^\\circ\\text{C}\\)",
+            "\\(11^\\circ\\text{C}\\)",
+            "\\(12^\\circ\\text{C}\\)"
+          ],
+          "answer": 2,
+          "hint": "Find the highest temperature (\\(6^\\circ\\text{C}\\) on Tue) and the lowest temperature (\\(-5^\\circ\\text{C}\\) on Sat), then calculate \\(\\text{highest} - \\text{lowest} = 6 - (-5)\\)!",
+          "keyPoints": [
+            {
+              "text": "highest and lowest",
+              "note": "Highest = 6°C (Tue), lowest = −5°C (Sat); 6 − (−5) = 11°C."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Scan the table to identify the highest temperature: \\(6^\\circ\\text{C}\\) (Tuesday, highlighted red) and the lowest temperature: \\(-5^\\circ\\text{C}\\) (Saturday, highlighted blue).",
+              "work": "\\(\\text{Highest} = 6^\\circ\\text{C}, \\quad \\text{Lowest} = -5^\\circ\\text{C}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 124\" width=\"65%\" height=\"auto\" style=\"max-width:494px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"380\" height=\"124\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><rect x=\"162\" y=\"16\" width=\"34\" height=\"64\" fill=\"#fee2e2\"/><rect x=\"298\" y=\"16\" width=\"34\" height=\"64\" fill=\"#dbeafe\"/><rect x=\"14\" y=\"16\" width=\"352\" height=\"64\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"14\" y1=\"48\" x2=\"366\" y2=\"48\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><line x1=\"128\" y1=\"16\" x2=\"128\" y2=\"80\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><text x=\"71\" y=\"36\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">Day</text><text x=\"71\" y=\"68\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">Temperature (°C)</text><text x=\"145\" y=\"36\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11.5\" font-weight=\"400\" fill=\"#0f172a\">Mon</text><text x=\"145\" y=\"68\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"12.5\" font-weight=\"400\" fill=\"#0f172a\">4</text><line x1=\"162\" y1=\"16\" x2=\"162\" y2=\"80\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"179\" y=\"36\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#b91c1c\">Tue</text><text x=\"179\" y=\"68\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#b91c1c\">6</text><line x1=\"196\" y1=\"16\" x2=\"196\" y2=\"80\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"213\" y=\"36\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11.5\" font-weight=\"400\" fill=\"#0f172a\">Wed</text><text x=\"213\" y=\"68\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"12.5\" font-weight=\"400\" fill=\"#0f172a\">−1</text><line x1=\"230\" y1=\"16\" x2=\"230\" y2=\"80\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"247\" y=\"36\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11.5\" font-weight=\"400\" fill=\"#0f172a\">Thu</text><text x=\"247\" y=\"68\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"12.5\" font-weight=\"400\" fill=\"#0f172a\">1</text><line x1=\"264\" y1=\"16\" x2=\"264\" y2=\"80\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"281\" y=\"36\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11.5\" font-weight=\"400\" fill=\"#0f172a\">Fri</text><text x=\"281\" y=\"68\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"12.5\" font-weight=\"400\" fill=\"#0f172a\">−2</text><line x1=\"298\" y1=\"16\" x2=\"298\" y2=\"80\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"315\" y=\"36\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1d4ed8\">Sat</text><text x=\"315\" y=\"68\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1d4ed8\">−5</text><line x1=\"332\" y1=\"16\" x2=\"332\" y2=\"80\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"349\" y=\"36\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11.5\" font-weight=\"400\" fill=\"#0f172a\">Sun</text><text x=\"349\" y=\"68\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"12.5\" font-weight=\"400\" fill=\"#0f172a\">0</text><text x=\"190\" y=\"116\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">Highest: 6°C (Tue, red) · Lowest: −5°C (Sat, blue)</text></svg>"
+              }
+            },
+            {
+              "explain": "Set up the difference as highest minus lowest: \\(6 - (-5)\\).",
+              "work": "\\(\\text{Difference} = 6 - (-5)\\)"
+            },
+            {
+              "explain": "Subtracting a negative is the same as adding: \\(6 + 5 = 11\\).",
+              "work": "\\(6 + 5 = 11^\\circ\\text{C}\\)"
+            },
+            {
+              "explain": "Therefore, the difference between the highest and lowest temperature is \\(11^\\circ\\text{C}\\).",
+              "work": "\\(\\text{Answer: } 11^\\circ\\text{C}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 96\" width=\"65%\" height=\"auto\" style=\"max-width:494px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"380\" height=\"96\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><rect x=\"14\" y=\"16\" width=\"352\" height=\"64\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"14\" y1=\"48\" x2=\"366\" y2=\"48\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><line x1=\"128\" y1=\"16\" x2=\"128\" y2=\"80\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><text x=\"71\" y=\"36\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">Day</text><text x=\"71\" y=\"68\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">Temperature (°C)</text><text x=\"145\" y=\"36\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11.5\" font-weight=\"400\" fill=\"#0f172a\">Mon</text><text x=\"145\" y=\"68\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"12.5\" font-weight=\"400\" fill=\"#0f172a\">4</text><line x1=\"162\" y1=\"16\" x2=\"162\" y2=\"80\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"179\" y=\"36\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11.5\" font-weight=\"400\" fill=\"#0f172a\">Tue</text><text x=\"179\" y=\"68\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"12.5\" font-weight=\"400\" fill=\"#0f172a\">6</text><line x1=\"196\" y1=\"16\" x2=\"196\" y2=\"80\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"213\" y=\"36\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11.5\" font-weight=\"400\" fill=\"#0f172a\">Wed</text><text x=\"213\" y=\"68\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"12.5\" font-weight=\"400\" fill=\"#0f172a\">−1</text><line x1=\"230\" y1=\"16\" x2=\"230\" y2=\"80\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"247\" y=\"36\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11.5\" font-weight=\"400\" fill=\"#0f172a\">Thu</text><text x=\"247\" y=\"68\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"12.5\" font-weight=\"400\" fill=\"#0f172a\">1</text><line x1=\"264\" y1=\"16\" x2=\"264\" y2=\"80\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"281\" y=\"36\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11.5\" font-weight=\"400\" fill=\"#0f172a\">Fri</text><text x=\"281\" y=\"68\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"12.5\" font-weight=\"400\" fill=\"#0f172a\">−2</text><line x1=\"298\" y1=\"16\" x2=\"298\" y2=\"80\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"315\" y=\"36\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11.5\" font-weight=\"400\" fill=\"#0f172a\">Sat</text><text x=\"315\" y=\"68\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"12.5\" font-weight=\"400\" fill=\"#0f172a\">−5</text><line x1=\"332\" y1=\"16\" x2=\"332\" y2=\"80\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"349\" y=\"36\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11.5\" font-weight=\"400\" fill=\"#0f172a\">Sun</text><text x=\"349\" y=\"68\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"12.5\" font-weight=\"400\" fill=\"#0f172a\">0</text></svg>"
+          }
+        },
+        {
+          "id": "khs23-y7-t1-q24",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A submarine is situated \\(240\\text{ metres}\\) below sea level. If it rises \\(75\\text{ metres}\\), what is its new position?",
+          "options": [
+            "\\(165\\text{ m below sea level } (-165\\text{ m})\\)",
+            "\\(315\\text{ m below sea level } (-315\\text{ m})\\)",
+            "\\(175\\text{ m below sea level } (-175\\text{ m})\\)",
+            "\\(165\\text{ m above sea level } (+165\\text{ m})\\)"
+          ],
+          "answer": 0,
+          "hint": "Represent \\(240\\text{ m}\\) below sea level as \\(-240\\) and rising \\(75\\text{ m}\\) as \\(+75\\), then compute \\(-240 + 75\\)!",
+          "keyPoints": [
+            {
+              "text": "240\\text{ metres}\\) below sea level",
+              "note": "Start at −240 m and add +75 m → −165 m (165 m below sea level)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Represent sea level as \\(0\\text{ m}\\), so \\(240\\text{ m}\\) below sea level is \\(-240\\text{ m}\\).",
+              "work": "\\(\\text{Starting position} = -240\\text{ m}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 178\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"178\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><rect x=\"14\" y=\"34\" width=\"232\" height=\"122\" rx=\"4\" fill=\"#eff6ff\"/><line x1=\"14\" y1=\"34\" x2=\"246\" y2=\"34\" stroke=\"#0284c7\" stroke-width=\"2\"/><text x=\"24\" y=\"26\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0369a1\">Sea level (0 m)</text><line x1=\"95\" y1=\"34\" x2=\"95\" y2=\"148\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><circle cx=\"95\" cy=\"138\" r=\"5\" fill=\"#dc2626\"/><text x=\"85\" y=\"142\" text-anchor=\"end\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#dc2626\">−240 m</text><circle cx=\"95\" cy=\"105\" r=\"5\" fill=\"#16a34a\"/><text x=\"85\" y=\"109\" text-anchor=\"end\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#15803d\">−165 m</text><line x1=\"126\" y1=\"138\" x2=\"126\" y2=\"108\" stroke=\"#16a34a\" stroke-width=\"2.4\"/><polyline points=\"121,114 126,106 131,114\" fill=\"none\" stroke=\"#16a34a\" stroke-width=\"2.2\"/><text x=\"138\" y=\"126\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"12\" font-weight=\"700\" fill=\"#15803d\">Rises +75 m</text><text x=\"130\" y=\"171\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">−240 + 75 = −165 m (165 m below sea level)</text></svg>"
+              }
+            },
+            {
+              "explain": "Rising \\(75\\text{ m}\\) means adding \\(+75\\text{ m}\\) (moving upward toward \\(0\\text{ m}\\)).",
+              "work": "\\(\\text{New position} = -240 + 75\\)"
+            },
+            {
+              "explain": "Calculate \\(-240 + 75 = -(240 - 75) = -165\\text{ m}\\).",
+              "work": "\\(-240 + 75 = -165\\text{ m}\\)"
+            },
+            {
+              "explain": "Interpret the negative sign: the submarine is now \\(165\\text{ m below sea level}\\).",
+              "work": "\\(\\text{Answer: } 165\\text{ m below sea level } (-165\\text{ m})\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -5185,6 +6074,166 @@
             {
               "text": "which statement must be true?",
               "note": "Use the positive condition when multiplying the inequality."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs23-y7-t1-q19c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write the answer to \\((-9) \\times 9\\).",
+          "options": [
+            "\\(-81\\)",
+            "\\(81\\)",
+            "\\(-18\\)",
+            "\\(0\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply the magnitudes (\\(9 \\times 9 = 81\\)), then apply the sign rule: negative \\(\\times\\) positive \\(=\\) negative!",
+          "keyPoints": [
+            {
+              "text": "(-9) \\times 9",
+              "note": "Different signs multiply to a negative product: −(9 × 9) = −81."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Determine the sign of the product: a negative number multiplied by a positive number gives a negative result.",
+              "work": "\\((-) \\times (+) = (-)\\)"
+            },
+            {
+              "explain": "Multiply the numerical values: \\(9 \\times 9 = 81\\).",
+              "work": "\\(9 \\times 9 = 81\\)"
+            },
+            {
+              "explain": "Attach the negative sign to get \\(-81\\).",
+              "work": "\\((-9) \\times 9 = -81\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(-81\\).",
+              "work": "\\(\\text{Answer: } -81\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs23-y7-t1-q19d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write the answer to \\(50 \\div (-2)\\).",
+          "options": [
+            "\\(25\\)",
+            "\\(-25\\)",
+            "\\(-100\\)",
+            "\\(-48\\)"
+          ],
+          "answer": 1,
+          "hint": "Divide \\(50 \\div 2 = 25\\), and apply the sign rule: positive \\(\\div\\) negative \\(=\\) negative!",
+          "keyPoints": [
+            {
+              "text": "50 \\div (-2)",
+              "note": "Positive ÷ negative = negative; 50 ÷ 2 = 25."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Determine the sign: dividing a positive integer by a negative integer gives a negative result.",
+              "work": "\\((+) \\div (-) = (-)\\)"
+            },
+            {
+              "explain": "Divide the magnitudes: \\(50 \\div 2 = 25\\).",
+              "work": "\\(50 \\div 2 = 25\\)"
+            },
+            {
+              "explain": "Combine the sign and value: \\(-25\\). Check: \\((-25) \\times (-2) = 50\\).",
+              "work": "\\(50 \\div (-2) = -25\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(-25\\).",
+              "work": "\\(\\text{Answer: } -25\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs23-y7-t1-q19f",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write the answer to \\((-4) \\times (-10)\\).",
+          "options": [
+            "\\(-40\\)",
+            "\\(-14\\)",
+            "\\(14\\)",
+            "\\(40\\)"
+          ],
+          "answer": 3,
+          "hint": "Two negative signs multiplied together make a POSITIVE product: \\((-4) \\times (-10) = +(4 \\times 10)\\)!",
+          "keyPoints": [
+            {
+              "text": "(-4) \\times (-10)",
+              "note": "Negative × negative = positive: 4 × 10 = 40."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Apply the sign rule: multiplying two negative integers always produces a positive result.",
+              "work": "\\((-) \\times (-) = (+)\\)"
+            },
+            {
+              "explain": "Multiply the numerical magnitudes: \\(4 \\times 10 = 40\\).",
+              "work": "\\(4 \\times 10 = 40\\)"
+            },
+            {
+              "explain": "Attach the positive sign to get \\(40\\).",
+              "work": "\\((-4) \\times (-10) = 40\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(40\\).",
+              "work": "\\(\\text{Answer: } 40\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs23-y7-t1-q30",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Two integers have a sum of \\(-6\\) and a product of \\(-135\\). What are the two integers?",
+          "options": [
+            "\\(-15\\text{ and } 9\\)",
+            "\\(15\\text{ and } -9\\)",
+            "\\(-27\\text{ and } 5\\)",
+            "\\(-9\\text{ and } 3\\)"
+          ],
+          "answer": 0,
+          "hint": "Since the product is negative (\\(-135\\)), one integer is negative and one is positive! List factor pairs of \\(135\\) that differ by \\(6\\), and make the larger magnitude negative so the sum is \\(-6\\).",
+          "keyPoints": [
+            {
+              "text": "sum of \\(-6\\) and a product of \\(-135\\)",
+              "note": "Factor pair of 135 differing by 6 is 15 and 9 → −15 and +9."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Because the product is negative (\\(-135\\)), one integer must be negative and the other positive.",
+              "work": "\\(a \\times b = -135 \\implies \\text{opposite signs}\\)"
+            },
+            {
+              "explain": "List factor pairs of \\(135\\): \\((1, 135), (3, 45), (5, 27), (9, 15)\\).",
+              "work": "\\(135 = 9 \\times 15, \\quad 15 - 9 = 6\\)"
+            },
+            {
+              "explain": "Since the sum is \\(-6\\) (negative), assign the negative sign to the larger magnitude: \\(-15\\) and \\(+9\\).",
+              "work": "\\(-15 + 9 = -6, \\quad (-15) \\times 9 = -135\\)"
+            },
+            {
+              "explain": "Therefore, the two integers are \\(-15\\) and \\(9\\).",
+              "work": "\\(\\text{Answer: } -15 \\text{ and } 9\\)"
             }
           ],
           "timeLimit": 60,
