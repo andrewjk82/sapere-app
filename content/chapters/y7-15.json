@@ -1768,6 +1768,126 @@
           ],
           "timeLimit": 60,
           "xp": 1
+        },
+        {
+          "id": "khs22-y7-t4a-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve the following equation: \\(x - 13 = 22\\).",
+          "options": [
+            "\\(x = 9\\)",
+            "\\(x = 35\\)",
+            "\\(x = 25\\)",
+            "\\(x = -9\\)"
+          ],
+          "answer": 1,
+          "hint": "Undo subtracting \\(13\\) by ADDING \\(13\\) to both sides of the equation!",
+          "keyPoints": [
+            {
+              "text": "x - 13 = 22",
+              "note": "Add 13 to both sides: x = 22 + 13 = 35."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the operation on \\(x\\): \\(13\\) is subtracted from \\(x\\).",
+              "work": "\\(x - 13 = 22\\)"
+            },
+            {
+              "explain": "Add \\(13\\) to both sides to isolate \\(x\\).",
+              "work": "\\(x - 13 + 13 = 22 + 13\\)"
+            },
+            {
+              "explain": "Add: \\(22 + 13 = 35\\). Check: \\(35 - 13 = 22\\).",
+              "work": "\\(x = 35\\)"
+            },
+            {
+              "explain": "Therefore, \\(x = 35\\).",
+              "work": "\\(\\text{Answer: } x = 35\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs22-y7-t4a-q5",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the value of \\(a\\): \\(\\dfrac{a}{12} = 4\\).",
+          "options": [
+            "\\(a = 3\\)",
+            "\\(a = 16\\)",
+            "\\(a = 36\\)",
+            "\\(a = 48\\)"
+          ],
+          "answer": 3,
+          "hint": "Undo dividing by \\(12\\): multiply BOTH sides of \\(\\dfrac{a}{12} = 4\\) by \\(12\\)!",
+          "keyPoints": [
+            {
+              "text": "\\dfrac{a}{12} = 4",
+              "note": "Multiply both sides by 12: a = 4 × 12 = 48."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the operation on \\(a\\): \\(a\\) is divided by \\(12\\).",
+              "work": "\\(\\dfrac{a}{12} = 4\\)"
+            },
+            {
+              "explain": "Multiply both sides by \\(12\\) to isolate \\(a\\).",
+              "work": "\\(a = 4 \\times 12\\)"
+            },
+            {
+              "explain": "Calculate \\(4 \\times 12 = 48\\). Check: \\(\\dfrac{48}{12} = 4\\).",
+              "work": "\\(a = 48\\)"
+            },
+            {
+              "explain": "Therefore, \\(a = 48\\).",
+              "work": "\\(\\text{Answer: } a = 48\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs22-y7-t4a-q13a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve the equation systematically: \\(x - 5 = 22\\).",
+          "options": [
+            "\\(x = 17\\)",
+            "\\(x = 27\\)",
+            "\\(x = -17\\)",
+            "\\(x = 110\\)"
+          ],
+          "answer": 1,
+          "hint": "Add \\(5\\) to both sides to undo subtracting \\(5\\)!",
+          "keyPoints": [
+            {
+              "text": "x - 5 = 22",
+              "note": "Add 5 to both sides: x = 22 + 5 = 27."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Add \\(5\\) to both sides to isolate \\(x\\).",
+              "work": "\\(x - 5 + 5 = 22 + 5\\)"
+            },
+            {
+              "explain": "Simplify both sides: \\(x = 27\\).",
+              "work": "\\(x = 27\\)"
+            },
+            {
+              "explain": "Check by substituting \\(x = 27\\): \\(27 - 5 = 22\\). Exact!",
+              "work": "\\(27 - 5 = 22\\)"
+            },
+            {
+              "explain": "Therefore, \\(x = 27\\).",
+              "work": "\\(\\text{Answer: } x = 27\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -3511,6 +3631,86 @@
           ],
           "timeLimit": 60,
           "xp": 1
+        },
+        {
+          "id": "khs22-y7-t4a-q13b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve the equation systematically: \\(2x + 7 = 25\\).",
+          "options": [
+            "\\(x = 9\\)",
+            "\\(x = 16\\)",
+            "\\(x = 18\\)",
+            "\\(x = 11\\)"
+          ],
+          "answer": 0,
+          "hint": "Undo \\(+ 7\\) first (subtract \\(7\\) from both sides to get \\(2x = 18\\)), then divide both sides by \\(2\\)!",
+          "keyPoints": [
+            {
+              "text": "2x + 7 = 25",
+              "note": "Subtract 7 (2x = 18), then divide by 2 (x = 9)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Subtract \\(7\\) from both sides to isolate the \\(2x\\) term.",
+              "work": "\\(2x + 7 - 7 = 25 - 7 \\implies 2x = 18\\)"
+            },
+            {
+              "explain": "Divide both sides by \\(2\\) to solve for \\(x\\).",
+              "work": "\\(x = \\dfrac{18}{2} = 9\\)"
+            },
+            {
+              "explain": "Check: \\(2(9) + 7 = 18 + 7 = 25\\). Exact!",
+              "work": "\\(2(9) + 7 = 25\\)"
+            },
+            {
+              "explain": "Therefore, \\(x = 9\\).",
+              "work": "\\(\\text{Answer: } x = 9\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs22-y7-t4a-q20a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve systematically: \\(3 = \\dfrac{5x}{4} - 7\\).",
+          "options": [
+            "\\(x = 8\\)",
+            "\\(x = 4\\)",
+            "\\(x = -3.2\\)",
+            "\\(x = 12\\)"
+          ],
+          "answer": 0,
+          "hint": "Add \\(7\\) to both sides first (getting \\(10 = \\dfrac{5x}{4}\\)), then multiply by \\(4\\) and divide by \\(5\\)!",
+          "keyPoints": [
+            {
+              "text": "3 = \\dfrac{5x}{4} - 7",
+              "note": "Add 7 → 10 = 5x/4 → 40 = 5x → x = 8."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Add \\(7\\) to both sides to isolate the fraction term.",
+              "work": "\\(3 + 7 = \\dfrac{5x}{4} \\implies 10 = \\dfrac{5x}{4}\\)"
+            },
+            {
+              "explain": "Multiply both sides by \\(4\\) to clear the denominator.",
+              "work": "\\(10 \\times 4 = 5x \\implies 40 = 5x\\)"
+            },
+            {
+              "explain": "Divide both sides by \\(5\\): \\(x = \\dfrac{40}{5} = 8\\).",
+              "work": "\\(x = 8\\)"
+            },
+            {
+              "explain": "Check: \\(\\dfrac{5(8)}{4} - 7 = 10 - 7 = 3\\). Exact!",
+              "work": "\\(\\text{Answer: } x = 8\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -3914,6 +4114,46 @@
           ],
           "timeLimit": 60,
           "xp": 1
+        },
+        {
+          "id": "khs22-y7-t4a-q13c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve the equation systematically: \\(7 - 2x = 15\\).",
+          "options": [
+            "\\(x = -4\\)",
+            "\\(x = 4\\)",
+            "\\(x = -11\\)",
+            "\\(x = 11\\)"
+          ],
+          "answer": 0,
+          "hint": "Subtract \\(7\\) from both sides (leaving \\(-2x = 8\\) — keep the minus sign on \\(2x\\)!), then divide by \\(-2\\)!",
+          "keyPoints": [
+            {
+              "text": "7 - 2x = 15",
+              "note": "−2x = 8 → x = 8 ÷ (−2) = −4."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Subtract \\(7\\) from both sides, keeping the negative sign attached to \\(2x\\).",
+              "work": "\\(7 - 2x - 7 = 15 - 7 \\implies -2x = 8\\)"
+            },
+            {
+              "explain": "Divide both sides by \\(-2\\): positive divided by negative gives a negative.",
+              "work": "\\(x = \\dfrac{8}{-2} = -4\\)"
+            },
+            {
+              "explain": "Check: \\(7 - 2(-4) = 7 - (-8) = 7 + 8 = 15\\). Exact!",
+              "work": "\\(7 - 2(-4) = 15\\)"
+            },
+            {
+              "explain": "Therefore, \\(x = -4\\).",
+              "work": "\\(\\text{Answer: } x = -4\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -4032,6 +4272,46 @@
             {
               "explain": "Check: \\(3(2(-1) - 6) = 3(-8) = -24\\). Correct!",
               "work": "\\(\\text{Answer: } p = -1\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs22-y7-t4a-q20b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve systematically: \\(3(x + 4) = 18\\).",
+          "options": [
+            "\\(x = 2\\)",
+            "\\(x = 6\\)",
+            "\\(x = 10\\)",
+            "\\(x = 4.67\\)"
+          ],
+          "answer": 0,
+          "hint": "Either divide both sides by \\(3\\) first (\\(x + 4 = 6\\)), or expand \\(3x + 12 = 18\\) and subtract \\(12\\)!",
+          "keyPoints": [
+            {
+              "text": "3(x + 4) = 18",
+              "note": "Divide by 3 → x + 4 = 6 → x = 2."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Divide both sides by \\(3\\) to remove the outside factor (since \\(18\\) is divisible by \\(3\\)).",
+              "work": "\\(x + 4 = \\dfrac{18}{3} = 6\\)"
+            },
+            {
+              "explain": "Subtract \\(4\\) from both sides to isolate \\(x\\).",
+              "work": "\\(x = 6 - 4 = 2\\)"
+            },
+            {
+              "explain": "Check by substituting \\(x = 2\\): \\(3(2 + 4) = 3(6) = 18\\). Exact!",
+              "work": "\\(3(2 + 4) = 18\\)"
+            },
+            {
+              "explain": "Therefore, \\(x = 2\\).",
+              "work": "\\(\\text{Answer: } x = 2\\)"
             }
           ],
           "timeLimit": 60,
@@ -5085,6 +5365,178 @@
             {
               "explain": "Find Connor's age: \\(4 \\times 6 = 24\\). Check: in 12 years, \\(18\\) and \\(36\\) (\\(36 = 2 \\times 18\\)).",
               "work": "\\(\\text{Raphael} = 6, \\; \\text{Connor} = 24\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs22-y7-t4a-q14",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The perimeter of the rectangle shown is \\(30\\text{ cm}\\). Find the value of the pronumeral \\(x\\).",
+          "options": [
+            "\\(x = 7\\)",
+            "\\(x = 11\\)",
+            "\\(x = 14\\)",
+            "\\(x = 22\\)"
+          ],
+          "answer": 0,
+          "hint": "A rectangle has TWO sides of \\(8\\text{ cm}\\) and TWO sides of \\(x\\text{ cm}\\): solve \\(2x + 16 = 30\\)!",
+          "keyPoints": [
+            {
+              "text": "perimeter of the rectangle",
+              "note": "2(8) + 2x = 30 → 2x = 14 → x = 7."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Label all four sides of the rectangle: two opposite sides of \\(8\\text{ cm}\\) (blue) and two opposite sides of \\(x\\text{ cm}\\) (red).",
+              "work": "\\(8 + x + 8 + x = 30\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 250 150\" width=\"65%\" height=\"auto\" style=\"max-width:325px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"250\" height=\"150\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><rect x=\"52\" y=\"34\" width=\"136\" height=\"64\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"2.2\"/><text x=\"120\" y=\"25\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"13\" font-weight=\"700\" fill=\"#2563eb\">8 cm</text><text x=\"196\" y=\"70\" text-anchor=\"start\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"13\" font-weight=\"700\" fill=\"#dc2626\"><tspan font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\">x</tspan> cm</text><text x=\"120\" y=\"114\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"12\" font-weight=\"700\" fill=\"#2563eb\">8 cm</text><text x=\"44\" y=\"70\" text-anchor=\"end\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"12\" font-weight=\"700\" fill=\"#dc2626\"><tspan font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\">x</tspan> cm</text><text x=\"125\" y=\"142\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">2x + 16 = 30 → 2x = 14 → x = 7</text></svg>"
+              }
+            },
+            {
+              "explain": "Collect like terms: \\(2x + 16 = 30\\).",
+              "work": "\\(2x + 16 = 30\\)"
+            },
+            {
+              "explain": "Subtract \\(16\\) from both sides (\\(2x = 14\\)) and divide by \\(2\\): \\(x = 7\\).",
+              "work": "\\(2x = 14 \\implies x = 7\\)"
+            },
+            {
+              "explain": "Check: \\(8 + 7 + 8 + 7 = 30\\text{ cm}\\). Therefore, \\(x = 7\\).",
+              "work": "\\(\\text{Answer: } x = 7\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 250 124\" width=\"65%\" height=\"auto\" style=\"max-width:325px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"250\" height=\"124\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><rect x=\"52\" y=\"34\" width=\"136\" height=\"64\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.7\"/><text x=\"120\" y=\"25\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">8 cm</text><text x=\"196\" y=\"70\" text-anchor=\"start\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\"><tspan font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\">x</tspan> cm</text></svg>"
+          }
+        },
+        {
+          "id": "khs22-y7-t4a-q21",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write an equation to represent the following scenario, and find the value of \\(v\\): \"A number \\(v\\) has \\(7\\) subtracted from it, and the difference is multiplied by \\(6\\). The result is \\(48\\).\"",
+          "options": [
+            "\\(6(v - 7) = 48, \\; v = 15\\)",
+            "\\(6v - 7 = 48, \\; v = 9\\)",
+            "\\(6(7 - v) = 48, \\; v = -1\\)",
+            "\\(6(v + 7) = 48, \\; v = 1\\)"
+          ],
+          "answer": 0,
+          "hint": "Use brackets around \\((v - 7)\\) because the ENTIRE difference is multiplied by \\(6\\): \\(6(v - 7) = 48\\)!",
+          "keyPoints": [
+            {
+              "text": "difference is multiplied by \\(6\\)",
+              "note": "6(v − 7) = 48 → v − 7 = 8 → v = 15."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Subtract \\(7\\) from \\(v\\) to get the difference \\((v - 7)\\), then multiply that entire difference by \\(6\\) and set equal to \\(48\\).",
+              "work": "\\(6(v - 7) = 48\\)"
+            },
+            {
+              "explain": "Divide both sides by \\(6\\): \\(48 \\div 6 = 8\\).",
+              "work": "\\(v - 7 = 8\\)"
+            },
+            {
+              "explain": "Add \\(7\\) to both sides: \\(v = 8 + 7 = 15\\).",
+              "work": "\\(v = 15\\)"
+            },
+            {
+              "explain": "Check: \\(6(15 - 7) = 6(8) = 48\\). Exact!",
+              "work": "\\(\\text{Answer: } 6(v - 7) = 48, \\; v = 15\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs22-y7-t4a-q26",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The perimeter of the isosceles triangle shown is \\(41\\text{ cm}\\). Find the value of \\(x\\).",
+          "options": [
+            "\\(x = 7\\)",
+            "\\(x = 10.5\\)",
+            "\\(x = 15.5\\)",
+            "\\(x = 17\\)"
+          ],
+          "answer": 0,
+          "hint": "The tick marks show BOTH slanted sides equal \\(x + 10\\)! Add all three sides: \\((x + 10) + (x + 10) + x = 41\\)!",
+          "keyPoints": [
+            {
+              "text": "isosceles triangle",
+              "note": "2(x + 10) + x = 41 → 3x + 20 = 41 → x = 7."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Because the triangle is isosceles (equal tick marks), both slanted sides are \\(x + 10\\) and the base is \\(x\\).",
+              "work": "\\((x + 10) + (x + 10) + x = 41\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 250 168\" width=\"65%\" height=\"auto\" style=\"max-width:325px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"250\" height=\"168\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"125,22 72,114 178,114\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><line x1=\"93\" y1=\"65\" x2=\"104\" y2=\"71\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"157\" y1=\"65\" x2=\"146\" y2=\"71\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"86\" y=\"72\" text-anchor=\"end\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"13\" font-weight=\"700\" fill=\"#2563eb\"><tspan font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\">x</tspan> + 10</text><text x=\"164\" y=\"72\" text-anchor=\"start\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"13\" font-weight=\"700\" fill=\"#2563eb\"><tspan font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\">x</tspan> + 10</text><text x=\"125\" y=\"132\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13.5\" font-weight=\"700\" fill=\"#dc2626\">x</text><text x=\"125\" y=\"160\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">(x + 10) + (x + 10) + x = 41 → 3x + 20 = 41 → x = 7</text></svg>"
+              }
+            },
+            {
+              "explain": "Collect like terms: \\(3x + 20 = 41\\).",
+              "work": "\\(3x + 20 = 41\\)"
+            },
+            {
+              "explain": "Subtract \\(20\\) from both sides (\\(3x = 21\\)), then divide by \\(3\\): \\(x = 7\\).",
+              "work": "\\(3x = 21 \\implies x = 7\\)"
+            },
+            {
+              "explain": "Check: sides are \\(17, 17, 7\\) and \\(17 + 17 + 7 = 41\\text{ cm}\\). Exact!",
+              "work": "\\(\\text{Answer: } x = 7\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 250 142\" width=\"65%\" height=\"auto\" style=\"max-width:325px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"250\" height=\"142\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"125,22 72,114 178,114\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.7\" stroke-linejoin=\"round\"/><line x1=\"93\" y1=\"65\" x2=\"104\" y2=\"71\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"157\" y1=\"65\" x2=\"146\" y2=\"71\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"86\" y=\"72\" text-anchor=\"end\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\"><tspan font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\">x</tspan> + 10</text><text x=\"125\" y=\"132\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13.5\" font-weight=\"700\" fill=\"#0f172a\">x</text></svg>"
+          }
+        },
+        {
+          "id": "khs22-y7-t4a-q33",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "We define \\(a \\oplus b = ab + a + b\\). If \\(3 \\oplus 5 = 2 \\oplus x\\), what is the value of \\(x\\)?",
+          "options": [
+            "\\(x = 6\\)",
+            "\\(x = 7\\)",
+            "\\(x = 8\\)",
+            "\\(x = 11\\)"
+          ],
+          "answer": 1,
+          "hint": "Evaluate the left side first using the rule (\\(3 \\oplus 5 = 3 \\times 5 + 3 + 5 = 23\\)), write the right side as \\(2x + 2 + x = 3x + 2\\), and solve \\(3x + 2 = 23\\)!",
+          "keyPoints": [
+            {
+              "text": "3 \\oplus 5 = 2 \\oplus x",
+              "note": "LHS = 15 + 3 + 5 = 23; RHS = 3x + 2 → 3x = 21 → x = 7."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Evaluate the left-hand side \\(3 \\oplus 5\\) using \\(a \\oplus b = ab + a + b\\) with \\(a = 3, b = 5\\).",
+              "work": "\\(3 \\oplus 5 = 3(5) + 3 + 5 = 15 + 8 = 23\\)"
+            },
+            {
+              "explain": "Write the right-hand side \\(2 \\oplus x\\) with \\(a = 2, b = x\\) and simplify.",
+              "work": "\\(2 \\oplus x = 2(x) + 2 + x = 3x + 2\\)"
+            },
+            {
+              "explain": "Set both sides equal and solve for \\(x\\): \\(3x + 2 = 23 \\implies 3x = 21 \\implies x = 7\\).",
+              "work": "\\(3x + 2 = 23 \\implies 3x = 21 \\implies x = 7\\)"
+            },
+            {
+              "explain": "Check: \\(2 \\oplus 7 = 2(7) + 2 + 7 = 14 + 9 = 23\\). Exact!",
+              "work": "\\(\\text{Answer: } x = 7\\)"
             }
           ],
           "timeLimit": 60,
