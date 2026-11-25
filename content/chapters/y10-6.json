@@ -4608,6 +4608,115 @@
               "note": "Subtract the small pyramid’s volume from the large pyramid’s volume."
             }
           ]
+        },
+        {
+          "id": "abbots2023y10-a19",
+          "type": "mc",
+          "stem": "The volume of a cone with a radius of 6 cm is \\(320.4\\ \\text{cm}^{3}\\). What is the height of the cone correct to 1 decimal place?",
+          "difficulty": "medium",
+          "options": [
+            "\\(2.8\\) cm",
+            "\\(8.5\\) cm",
+            "\\(17.0\\) cm",
+            "\\(25.5\\) cm"
+          ],
+          "answer": 1,
+          "hint": "Use the cone formula \\(V=\\dfrac{1}{3}\\pi r^{2}h\\). Substitute \\(V\\) and \\(r\\), then rearrange for \\(h\\): multiply by 3 and divide by \\(\\pi r^{2}\\).",
+          "steps": [
+            {
+              "explain": "Write the formula and substitute \\(V=320.4\\), \\(r=6\\).",
+              "work": "\\(320.4=\\dfrac{1}{3}\\pi(6)^{2}h\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 250\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><ellipse cx=\"150\" cy=\"60\" rx=\"90\" ry=\"24\" fill=\"#e0e7ff\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><line x1=\"60\" y1=\"60\" x2=\"150\" y2=\"210\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><line x1=\"240\" y1=\"60\" x2=\"150\" y2=\"210\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><line x1=\"150.0\" y1=\"60.0\" x2=\"240.0\" y2=\"60.0\" stroke=\"#047857\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><text x=\"196.0\" y=\"84.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">r = 6 cm</text><line x1=\"150.0\" y1=\"60.0\" x2=\"150.0\" y2=\"210.0\" stroke=\"#d97706\" stroke-width=\"3.4\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><text x=\"158.0\" y=\"140.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">h = ?</text><text x=\"150.0\" y=\"236.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#7c3aed\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">V = 320.4 cm³</text></svg>"
+              }
+            },
+            {
+              "explain": "Simplify \\(\\dfrac{1}{3}\\pi(36)=12\\pi\\).",
+              "work": "\\(320.4=12\\pi h\\)"
+            },
+            {
+              "explain": "Divide both sides by \\(12\\pi\\) (\\(12\\pi=37.699\\)).",
+              "work": "\\(h=\\dfrac{320.4}{12\\pi}=\\dfrac{320.4}{37.699}\\)"
+            },
+            {
+              "explain": "Calculate and round to 1 decimal place.",
+              "work": "\\(h=8.499\\ldots\\approx8.5\\ \\text{cm}\\)"
+            },
+            {
+              "explain": "Why not the others: \\(2.8\\) forgets the \\(\\dfrac{1}{3}\\) (uses \\(V=\\pi r^{2}h\\)); \\(17.0\\) doubles; \\(25.5=3\\times8.5\\) multiplies by 3 instead of dividing correctly.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">B</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "What is the height of the cone correct to 1 decimal place?",
+              "note": "\\(V=\\dfrac{1}{3}\\pi r^{2}h\\); rearrange for \\(h\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2023 Year 10 Mathematics Stage 5.3 Ext Assessment Task 4",
+            "school": "Abbotsleigh",
+            "grade": "10",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "abbots2023y10-d3b",
+          "type": "mc",
+          "stem": "The cross-section through the centre of a diamond cut at The Klimes Perfect Diamond Company is of the shape shown in the diagram. Region \\(A\\) is a semi-circle and region \\(B\\) is an isosceles triangle. The semi-circle has radius \\(r\\) mm and the isosceles triangle has height \\(h\\) mm, slant height \\(s\\) mm and slant angle \\(\\theta\\), as shown. Find a formula for the area of region \\(A\\) in terms of \\(r\\) and \\(\\pi\\).",
+          "difficulty": "easy",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 250\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><path d=\"M 70 120 A 95 95 0 0 0 260 120 Z\" fill=\"#f8fafc\" fill-opacity=\".8\" stroke=\"#3b4ea8\" stroke-width=\"1.8\"/><polygon points=\"70,120 260,120 165,35\" fill=\"none\" fill-opacity=\".8\" stroke=\"#3b4ea8\" stroke-width=\"1.8\"/><line x1=\"165.0\" y1=\"35.0\" x2=\"165.0\" y2=\"120.0\" stroke=\"#3b4ea8\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"173.0\" y=\"80.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">h mm</text><line x1=\"165.0\" y1=\"134.0\" x2=\"260.0\" y2=\"134.0\" stroke=\"#334155\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><line x1=\"260.0\" y1=\"134.0\" x2=\"253.9\" y2=\"130.5\" stroke=\"#334155\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><line x1=\"260.0\" y1=\"134.0\" x2=\"253.9\" y2=\"137.5\" stroke=\"#334155\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><line x1=\"165.0\" y1=\"134.0\" x2=\"171.1\" y2=\"137.5\" stroke=\"#334155\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><line x1=\"165.0\" y1=\"134.0\" x2=\"171.1\" y2=\"130.5\" stroke=\"#334155\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><text x=\"212.5\" y=\"150.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">r mm</text><circle cx=\"165.0\" cy=\"120.0\" r=\"4.4\" fill=\"#dc2626\"/><path d=\"M 100 120 A 30 30 0 0 0 92.4 100.0\" fill=\"none\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"112.0\" y=\"110.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">θ</text><text x=\"103.5\" y=\"69.5\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">s mm</text><text x=\"162.0\" y=\"182.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">A</text><text x=\"139.0\" y=\"94.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">B</text><text x=\"285.0\" y=\"70.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">NOT TO</text><text x=\"285.0\" y=\"84.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">SCALE</text></svg>"
+          },
+          "options": [
+            "\\(A=\\dfrac{\\pi r^{2}}{2}\\)",
+            "\\(A=\\pi r^{2}\\)",
+            "\\(A=\\dfrac{\\pi r}{2}\\)",
+            "\\(A=2\\pi r\\)"
+          ],
+          "answer": 0,
+          "hint": "Region \\(A\\) is a SEMI-circle: half of a circle of radius \\(r\\). Area of a circle \\(=\\pi r^{2}\\).",
+          "steps": [
+            {
+              "explain": "Area of a full circle of radius \\(r\\).",
+              "work": "\\(A_{\\text{circle}}=\\pi r^{2}\\)"
+            },
+            {
+              "explain": "A semicircle is half of it (the shaded region A).",
+              "work": "\\(A=\\dfrac{1}{2}\\pi r^{2}=\\dfrac{\\pi r^{2}}{2}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 250\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><path d=\"M 70 120 A 95 95 0 0 0 260 120 Z\" fill=\"#dbeafe\" fill-opacity=\".8\" stroke=\"#3b4ea8\" stroke-width=\"1.8\"/><polygon points=\"70,120 260,120 165,35\" fill=\"#fef3c7\" fill-opacity=\".8\" stroke=\"#3b4ea8\" stroke-width=\"1.8\"/><line x1=\"165.0\" y1=\"35.0\" x2=\"165.0\" y2=\"120.0\" stroke=\"#3b4ea8\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"173.0\" y=\"80.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">h mm</text><line x1=\"165.0\" y1=\"134.0\" x2=\"260.0\" y2=\"134.0\" stroke=\"#334155\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><line x1=\"260.0\" y1=\"134.0\" x2=\"253.9\" y2=\"130.5\" stroke=\"#334155\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><line x1=\"260.0\" y1=\"134.0\" x2=\"253.9\" y2=\"137.5\" stroke=\"#334155\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><line x1=\"165.0\" y1=\"134.0\" x2=\"171.1\" y2=\"137.5\" stroke=\"#334155\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><line x1=\"165.0\" y1=\"134.0\" x2=\"171.1\" y2=\"130.5\" stroke=\"#334155\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><text x=\"212.5\" y=\"150.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">r mm</text><circle cx=\"165.0\" cy=\"120.0\" r=\"4.4\" fill=\"#dc2626\"/><path d=\"M 100 120 A 30 30 0 0 0 92.4 100.0\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2\"/><text x=\"112.0\" y=\"110.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">θ</text><text x=\"103.5\" y=\"69.5\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">s mm</text><text x=\"162.0\" y=\"182.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">A</text><text x=\"139.0\" y=\"94.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">B</text><text x=\"14.0\" y=\"24.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">A = ½πr²</text><text x=\"14.0\" y=\"42.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">B = ½ · 2r · h</text></svg>"
+              }
+            },
+            {
+              "explain": "Why not the others: \\(\\pi r^{2}\\) is the full circle; \\(\\dfrac{\\pi r}{2}\\) has the wrong power of \\(r\\) (area needs \\(r^{2}\\)); \\(2\\pi r\\) is the circumference formula.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find a formula for the area of region \\(A\\)",
+              "note": "Semicircle \\(=\\dfrac{1}{2}\\pi r^{2}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2023 Year 10 Mathematics Stage 5.3 Ext Assessment Task 4",
+            "school": "Abbotsleigh",
+            "grade": "10",
+            "origin": "teacher"
+          }
         }
       ]
     }

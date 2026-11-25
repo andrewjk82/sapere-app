@@ -3320,6 +3320,171 @@
             "grade": "10",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "abbots2023y10-b5",
+          "type": "mc",
+          "stem": "Find the \\(x\\)-coordinates of the points on this parabola whose \\(y\\)-coordinate is 57. \\(y=2x^{2}+7\\)",
+          "difficulty": "easy",
+          "options": [
+            "\\(x=5\\) only",
+            "\\(x=\\pm5\\)",
+            "\\(x=\\pm25\\)",
+            "\\(x=\\pm\\sqrt{28}\\)"
+          ],
+          "answer": 1,
+          "hint": "Put \\(y=57\\) into the equation and solve for \\(x\\). A quadratic \\(x^{2}=\\text{number}\\) has TWO solutions, positive and negative.",
+          "steps": [
+            {
+              "explain": "Substitute \\(y=57\\).",
+              "work": "\\(57=2x^{2}+7\\)"
+            },
+            {
+              "explain": "Subtract 7 from both sides, then divide by 2.",
+              "work": "\\(2x^{2}=50\\ \\Rightarrow\\ x^{2}=25\\)"
+            },
+            {
+              "explain": "Take the square root of both sides: BOTH \\(+5\\) and \\(-5\\) work (the parabola is symmetric).",
+              "work": "\\(x=\\pm5\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 250\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><line x1=\"6.0\" y1=\"209.2\" x2=\"324.0\" y2=\"209.2\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"165.0\" y1=\"244.0\" x2=\"165.0\" y2=\"6.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"324.0\" y1=\"209.2\" x2=\"317.1\" y2=\"205.2\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"324.0\" y1=\"209.2\" x2=\"317.1\" y2=\"213.2\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"165.0\" y1=\"6.0\" x2=\"161.0\" y2=\"12.9\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"165.0\" y1=\"6.0\" x2=\"169.0\" y2=\"12.9\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><text x=\"326.0\" y=\"224.2\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><text x=\"174.0\" y=\"16.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">y</text><polyline points=\"65.8,26.2 66.2,27.6 66.7,29.0 67.1,30.4 67.5,31.8 67.9,33.2 68.4,34.6 68.8,35.9 69.2,37.3 69.6,38.7 70.1,40.0 70.5,41.4 70.9,42.7 71.3,44.1 71.8,45.4 72.2,46.7 72.6,48.0 73.0,49.3 73.5,50.7 73.9,52.0 74.3,53.2 74.8,54.5 75.2,55.8 75.6,57.1 76.0,58.4 76.5,59.6 76.9,60.9 77.3,62.1 77.7,63.4 78.2,64.6 78.6,65.9 79.0,67.1 79.4,68.3 79.9,69.5 80.3,70.7 80.7,71.9 81.1,73.1 81.6,74.3 82.0,75.5 82.4,76.7 82.8,77.9 83.3,79.0 83.7,80.2 84.1,81.3 84.5,82.5 85.0,83.6 85.4,84.8 85.8,85.9 86.2,87.0 86.7,88.2 87.1,89.3 87.5,90.4 87.9,91.5 88.4,92.6 88.8,93.7 89.2,94.7 89.7,95.8 90.1,96.9 90.5,97.9 90.9,99.0 91.4,100.1 91.8,101.1 92.2,102.1 92.6,103.2 93.1,104.2 93.5,105.2 93.9,106.2 94.3,107.3 94.8,108.3 95.2,109.3 95.6,110.2 96.0,111.2 96.5,112.2 96.9,113.2 97.3,114.1 97.7,115.1 98.2,116.1 98.6,117.0 99.0,118.0 99.4,118.9 99.9,119.8 100.3,120.7 100.7,121.7 101.1,122.6 101.6,123.5 102.0,124.4 102.4,125.3 102.8,126.2 103.3,127.1 103.7,127.9 104.1,128.8 104.6,129.7 105.0,130.5 105.4,131.4 105.8,132.2 106.3,133.1 106.7,133.9 107.1,134.7 107.5,135.5 108.0,136.4 108.4,137.2 108.8,138.0 109.2,138.8 109.7,139.6 110.1,140.3 110.5,141.1 110.9,141.9 111.4,142.7 111.8,143.4 112.2,144.2 112.6,144.9 113.1,145.7 113.5,146.4 113.9,147.1 114.3,147.9 114.8,148.6 115.2,149.3 115.6,150.0 116.0,150.7 116.5,151.4 116.9,152.1 117.3,152.8 117.7,153.4 118.2,154.1 118.6,154.8 119.0,155.4 119.5,156.1 119.9,156.7 120.3,157.4 120.7,158.0 121.2,158.6 121.6,159.2 122.0,159.9 122.4,160.5 122.9,161.1 123.3,161.7 123.7,162.3 124.1,162.9 124.6,163.4 125.0,164.0 125.4,164.6 125.8,165.1 126.3,165.7 126.7,166.2 127.1,166.8 127.5,167.3 128.0,167.8 128.4,168.4 128.8,168.9 129.2,169.4 129.7,169.9 130.1,170.4 130.5,170.9 130.9,171.4 131.4,171.9 131.8,172.3 132.2,172.8 132.6,173.3 133.1,173.7 133.5,174.2 133.9,174.6 134.3,175.1 134.8,175.5 135.2,175.9 135.6,176.4 136.1,176.8 136.5,177.2 136.9,177.6 137.3,178.0 137.8,178.4 138.2,178.8 138.6,179.1 139.0,179.5 139.5,179.9 139.9,180.2 140.3,180.6 140.7,180.9 141.2,181.3 141.6,181.6 142.0,181.9 142.4,182.3 142.9,182.6 143.3,182.9 143.7,183.2 144.1,183.5 144.6,183.8 145.0,184.1 145.4,184.4 145.8,184.7 146.3,184.9 146.7,185.2 147.1,185.4 147.5,185.7 148.0,185.9 148.4,186.2 148.8,186.4 149.2,186.6 149.7,186.9 150.1,187.1 150.5,187.3 151.0,187.5 151.4,187.7 151.8,187.9 152.2,188.1 152.7,188.2 153.1,188.4 153.5,188.6 153.9,188.7 154.4,188.9 154.8,189.0 155.2,189.2 155.6,189.3 156.1,189.5 156.5,189.6 156.9,189.7 157.3,189.8 157.8,189.9 158.2,190.0 158.6,190.1 159.0,190.2 159.5,190.3 159.9,190.4 160.3,190.4 160.7,190.5 161.2,190.5 161.6,190.6 162.0,190.6 162.4,190.7 162.9,190.7 163.3,190.7 163.7,190.8 164.1,190.8 164.6,190.8 165.0,190.8 165.4,190.8 165.9,190.8 166.3,190.8 166.7,190.7 167.1,190.7 167.6,190.7 168.0,190.6 168.4,190.6 168.8,190.5 169.3,190.5 169.7,190.4 170.1,190.4 170.5,190.3 171.0,190.2 171.4,190.1 171.8,190.0 172.2,189.9 172.7,189.8 173.1,189.7 173.5,189.6 173.9,189.5 174.4,189.3 174.8,189.2 175.2,189.0 175.6,188.9 176.1,188.7 176.5,188.6 176.9,188.4 177.3,188.2 177.8,188.1 178.2,187.9 178.6,187.7 179.0,187.5 179.5,187.3 179.9,187.1 180.3,186.9 180.8,186.6 181.2,186.4 181.6,186.2 182.0,185.9 182.5,185.7 182.9,185.4 183.3,185.2 183.7,184.9 184.2,184.7 184.6,184.4 185.0,184.1 185.4,183.8 185.9,183.5 186.3,183.2 186.7,182.9 187.1,182.6 187.6,182.3 188.0,181.9 188.4,181.6 188.8,181.3 189.3,180.9 189.7,180.6 190.1,180.2 190.5,179.9 191.0,179.5 191.4,179.1 191.8,178.8 192.2,178.4 192.7,178.0 193.1,177.6 193.5,177.2 193.9,176.8 194.4,176.4 194.8,175.9 195.2,175.5 195.7,175.1 196.1,174.6 196.5,174.2 196.9,173.7 197.4,173.3 197.8,172.8 198.2,172.3 198.6,171.9 199.1,171.4 199.5,170.9 199.9,170.4 200.3,169.9 200.8,169.4 201.2,168.9 201.6,168.4 202.0,167.8 202.5,167.3 202.9,166.8 203.3,166.2 203.7,165.7 204.2,165.1 204.6,164.6 205.0,164.0 205.4,163.4 205.9,162.9 206.3,162.3 206.7,161.7 207.1,161.1 207.6,160.5 208.0,159.9 208.4,159.2 208.8,158.6 209.3,158.0 209.7,157.4 210.1,156.7 210.5,156.1 211.0,155.4 211.4,154.8 211.8,154.1 212.3,153.4 212.7,152.8 213.1,152.1 213.5,151.4 214.0,150.7 214.4,150.0 214.8,149.3 215.2,148.6 215.7,147.9 216.1,147.1 216.5,146.4 216.9,145.7 217.4,144.9 217.8,144.2 218.2,143.4 218.6,142.7 219.1,141.9 219.5,141.1 219.9,140.3 220.3,139.6 220.8,138.8 221.2,138.0 221.6,137.2 222.0,136.4 222.5,135.5 222.9,134.7 223.3,133.9 223.7,133.1 224.2,132.2 224.6,131.4 225.0,130.5 225.4,129.7 225.9,128.8 226.3,127.9 226.7,127.1 227.2,126.2 227.6,125.3 228.0,124.4 228.4,123.5 228.9,122.6 229.3,121.7 229.7,120.7 230.1,119.8 230.6,118.9 231.0,118.0 231.4,117.0 231.8,116.1 232.3,115.1 232.7,114.1 233.1,113.2 233.5,112.2 234.0,111.2 234.4,110.2 234.8,109.3 235.2,108.3 235.7,107.3 236.1,106.2 236.5,105.2 236.9,104.2 237.4,103.2 237.8,102.1 238.2,101.1 238.6,100.1 239.1,99.0 239.5,97.9 239.9,96.9 240.3,95.8 240.8,94.7 241.2,93.7 241.6,92.6 242.1,91.5 242.5,90.4 242.9,89.3 243.3,88.2 243.8,87.0 244.2,85.9 244.6,84.8 245.0,83.6 245.5,82.5 245.9,81.3 246.3,80.2 246.7,79.0 247.2,77.9 247.6,76.7 248.0,75.5 248.4,74.3 248.9,73.1 249.3,71.9 249.7,70.7 250.1,69.5 250.6,68.3 251.0,67.1 251.4,65.9 251.8,64.6 252.3,63.4 252.7,62.1 253.1,60.9 253.5,59.6 254.0,58.4 254.4,57.1 254.8,55.8 255.2,54.5 255.7,53.2 256.1,52.0 256.5,50.7 257.0,49.3 257.4,48.0 257.8,46.7 258.2,45.4 258.7,44.1 259.1,42.7 259.5,41.4 259.9,40.0 260.4,38.7 260.8,37.3 261.2,35.9 261.6,34.6 262.1,33.2 262.5,31.8 262.9,30.4 263.3,29.0 263.8,27.6 264.2,26.2\" fill=\"none\" stroke=\"#3b4ea8\" stroke-width=\"3.6\" stroke-linejoin=\"round\"/><circle cx=\"253.7\" cy=\"59.2\" r=\"4.6\" fill=\"#dc2626\"/><circle cx=\"76.3\" cy=\"59.2\" r=\"4.6\" fill=\"#dc2626\"/><line x1=\"76.3\" y1=\"206.2\" x2=\"76.3\" y2=\"212.2\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"76.3\" y=\"223.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">−5</text><line x1=\"253.7\" y1=\"206.2\" x2=\"253.7\" y2=\"212.2\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"253.7\" y=\"223.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">5</text><line x1=\"162.0\" y1=\"190.8\" x2=\"168.0\" y2=\"190.8\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"158.0\" y=\"194.8\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">7</text><line x1=\"162.0\" y1=\"59.2\" x2=\"168.0\" y2=\"59.2\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"158.0\" y=\"63.2\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">57</text><line x1=\"33.7\" y1=\"59.2\" x2=\"296.3\" y2=\"59.2\" stroke=\"#d97706\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><line x1=\"253.7\" y1=\"59.2\" x2=\"253.7\" y2=\"209.2\" stroke=\"#dc2626\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><line x1=\"76.3\" y1=\"59.2\" x2=\"76.3\" y2=\"209.2\" stroke=\"#dc2626\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><text x=\"165.0\" y=\"50.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">y = 57</text><text x=\"261.7\" y=\"130.3\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">x = 5</text><text x=\"68.3\" y=\"130.3\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">x = −5</text></svg>"
+              }
+            },
+            {
+              "explain": "Check: \\(2(25)+7=57\\) ✓ for \\(x=5\\) and for \\(x=-5\\).",
+              "work": "\\(2(\\pm5)^{2}+7=57\\)"
+            },
+            {
+              "explain": "Why not the others: A forgets the negative root; \\(\\pm25\\) forgets the square root; \\(\\pm\\sqrt{28}\\) comes from \\(x^{2}=\\dfrac{57-1}{2}\\) (a subtraction slip).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">B</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "whose \\(y\\)-coordinate is 57",
+              "note": "Put \\(y=57\\); \\(x^{2}=25\\); both roots."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2023 Year 10 Mathematics Stage 5.3 Ext Assessment Task 4",
+            "school": "Abbotsleigh",
+            "grade": "10",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "abbots2023y10-b9b",
+          "type": "mc",
+          "stem": "Using part (a) find the \\(x\\) intercepts of \\(y=x^{2}+4x-5\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(x=1\\) and \\(x=-5\\)",
+            "\\(x=-1\\) and \\(x=5\\)",
+            "\\(x=1\\) and \\(x=5\\)",
+            "\\(x=-1\\) and \\(x=-5\\)"
+          ],
+          "answer": 0,
+          "hint": "The \\(x\\)-intercepts are where \\(y=0\\). Put \\(y=0\\) into the FACTORISED form \\((x-1)(x+5)\\) and use the null factor law: if a product is 0, one factor is 0.",
+          "steps": [
+            {
+              "explain": "On the \\(x\\)-axis \\(y=0\\). Use the factorised form from part (a).",
+              "work": "\\(0=(x-1)(x+5)\\)"
+            },
+            {
+              "explain": "Null factor law: either bracket can be zero.",
+              "work": "\\(x-1=0\\ \\ \\text{or}\\ \\ x+5=0\\)"
+            },
+            {
+              "explain": "Solve each (the intercept has the opposite sign to the number in the bracket).",
+              "work": "\\(x=1\\ \\ \\text{or}\\ \\ x=-5\\)"
+            },
+            {
+              "explain": "Check: \\(1+4-5=0\\) ✓ and \\(25-20-5=0\\) ✓. Why not the others: the signs are reversed in B and D; C has \\(+5\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Using part (a) find the \\(x\\) intercepts",
+              "note": "\\(y=0\\); null factor law."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2023 Year 10 Mathematics Stage 5.3 Ext Assessment Task 4",
+            "school": "Abbotsleigh",
+            "grade": "10",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "abbots2023y10-c7",
+          "type": "mc",
+          "stem": "The lengths of the sides of a right-angled triangle are \\((3x+1)\\) cm, \\((5x-2)\\) cm with a hypotenuse of \\(5x\\) cm. Find the area(s) of the triangle.",
+          "difficulty": "hard",
+          "options": [
+            "\\(6\\ \\text{cm}^{2}\\) or \\(\\dfrac{28}{27}\\ \\text{cm}^{2}\\)",
+            "\\(6\\ \\text{cm}^{2}\\) only",
+            "\\(\\dfrac{28}{27}\\ \\text{cm}^{2}\\) only",
+            "\\(12\\ \\text{cm}^{2}\\) or \\(\\dfrac{56}{27}\\ \\text{cm}^{2}\\)"
+          ],
+          "answer": 0,
+          "hint": "Use PYTHAGORAS: \\(a^{2}+b^{2}=c^{2}\\) with the hypotenuse \\(5x\\) to form a quadratic in \\(x\\). Solve it (two values of \\(x\\)), find the two legs for EACH, and use area \\(=\\dfrac{1}{2}\\times\\) leg \\(\\times\\) leg.",
+          "steps": [
+            {
+              "explain": "Pythagoras: the two legs squared add to the hypotenuse squared.",
+              "work": "\\((3x+1)^{2}+(5x-2)^{2}=(5x)^{2}\\)"
+            },
+            {
+              "explain": "Expand: \\(9x^{2}+6x+1+25x^{2}-20x+4=25x^{2}\\).",
+              "work": "\\(34x^{2}-14x+5=25x^{2}\\ \\Rightarrow\\ 9x^{2}-14x+5=0\\)"
+            },
+            {
+              "explain": "Factorise (or use the quadratic formula): \\((9x-5)(x-1)=0\\).",
+              "work": "\\(x=1\\quad\\text{or}\\quad x=\\dfrac{5}{9}\\)"
+            },
+            {
+              "explain": "For \\(x=1\\): legs \\(3(1)+1=4\\) and \\(5(1)-2=3\\) (a 3-4-5 triangle). Area \\(=\\dfrac{1}{2}\\times4\\times3=6\\).",
+              "work": "\\(A=6\\ \\text{cm}^{2}\\)"
+            },
+            {
+              "explain": "For \\(x=\\dfrac{5}{9}\\): legs \\(3\\left(\\dfrac{5}{9}\\right)+1=\\dfrac{8}{3}\\) and \\(5\\left(\\dfrac{5}{9}\\right)-2=\\dfrac{7}{9}\\) (both positive, hypotenuse \\(\\dfrac{25}{9}\\)). Area \\(=\\dfrac{1}{2}\\times\\dfrac{8}{3}\\times\\dfrac{7}{9}=\\dfrac{28}{27}\\).",
+              "work": "\\(A=\\dfrac{28}{27}\\ \\text{cm}^{2}\\)"
+            },
+            {
+              "explain": "Both values of \\(x\\) give a valid triangle, so there are two possible areas. Why not the others: B and C keep only one solution; D doubles the areas (forgot \\(\\dfrac{1}{2}\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the area(s) of the triangle.",
+              "note": "Pythagoras gives \\(9x^{2}-14x+5=0\\): two values of \\(x\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2023 Year 10 Mathematics Stage 5.3 Ext Assessment Task 4",
+            "school": "Abbotsleigh",
+            "grade": "10",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -3899,6 +4064,114 @@
             "grade": "10",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "abbots2023y10-a5",
+          "type": "mc",
+          "stem": "The constant term that needs to be added to \\(x^{2}-4x\\) to create a perfect square is",
+          "difficulty": "easy",
+          "options": [
+            "2",
+            "4",
+            "8",
+            "16"
+          ],
+          "answer": 1,
+          "hint": "To complete the square on \\(x^{2}+bx\\) add \\(\\left(\\dfrac{b}{2}\\right)^{2}\\): halve the coefficient of \\(x\\), then square it.",
+          "steps": [
+            {
+              "explain": "The coefficient of \\(x\\) is \\(b=-4\\).",
+              "work": "\\(b=-4\\)"
+            },
+            {
+              "explain": "Halve it: \\(\\dfrac{-4}{2}=-2\\).",
+              "work": "\\(\\dfrac{b}{2}=-2\\)"
+            },
+            {
+              "explain": "Square it: \\((-2)^{2}=4\\) (positive).",
+              "work": "\\(\\left(\\dfrac{b}{2}\\right)^{2}=(-2)^{2}=4\\)"
+            },
+            {
+              "explain": "Check: \\(x^{2}-4x+4=(x-2)^{2}\\) is a perfect square ✓.",
+              "work": "\\(x^{2}-4x+4=(x-2)^{2}\\)"
+            },
+            {
+              "explain": "Why not the others: \\(2\\) is only half of \\(b\\) (not squared); \\(8\\) is \\(2\\times4\\); \\(16=(-4)^{2}\\) squares \\(b\\) instead of half of \\(b\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">B</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "constant term that needs to be added",
+              "note": "Add \\(\\left(\\dfrac{b}{2}\\right)^{2}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2023 Year 10 Mathematics Stage 5.3 Ext Assessment Task 4",
+            "school": "Abbotsleigh",
+            "grade": "10",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "abbots2023y10-a9",
+          "type": "mc",
+          "stem": "If \\((x-\\square)^{2}=x^{2}-\\triangleleft x+16\\) then:",
+          "difficulty": "easy",
+          "options": [
+            "\\(\\square=4,\\ \\triangleleft=8\\)",
+            "\\(\\square=16,\\ \\triangleleft=8\\)",
+            "\\(\\square=8,\\ \\triangleleft=4\\)",
+            "\\(\\square=8,\\ \\triangleleft=16\\)"
+          ],
+          "answer": 0,
+          "hint": "Expand \\((x-\\square)^{2}=x^{2}-2\\square x+\\square^{2}\\) and compare it with \\(x^{2}-\\triangleleft x+16\\): the constant terms must match, and the \\(x\\)-coefficients must match.",
+          "steps": [
+            {
+              "explain": "Expand the perfect square: \\((x-a)^{2}=x^{2}-2ax+a^{2}\\) (here \\(a=\\square\\)).",
+              "work": "\\((x-\\square)^{2}=x^{2}-2\\square x+\\square^{2}\\)"
+            },
+            {
+              "explain": "Match the constant terms: \\(\\square^{2}=16\\), so \\(\\square=4\\) (the bracket \\(x-\\square\\) has a minus, and the middle term is negative, so \\(\\square>0\\)).",
+              "work": "\\(\\square^{2}=16\\ \\Rightarrow\\ \\square=4\\)"
+            },
+            {
+              "explain": "Match the \\(x\\)-terms: \\(\\triangleleft=2\\times\\square=2\\times4=8\\).",
+              "work": "\\(\\triangleleft=2\\square=8\\)"
+            },
+            {
+              "explain": "Check: \\((x-4)^{2}=x^{2}-8x+16\\) ✓.",
+              "work": "\\((x-4)^{2}=x^{2}-8x+16\\)"
+            },
+            {
+              "explain": "Why not the others: B uses \\(\\square=16\\) (the constant term, not its root); C and D have the pair mixed up (\\(\\square\\) must be \\(\\sqrt{16}\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "If \\((x-\\square)^{2}=x^{2}-\\triangleleft x+16\\) then:",
+              "note": "\\(\\square^{2}=16\\); \\(\\triangleleft=2\\square\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2023 Year 10 Mathematics Stage 5.3 Ext Assessment Task 4",
+            "school": "Abbotsleigh",
+            "grade": "10",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -4329,6 +4602,63 @@
           "meta": {
             "source": "Fort St High School Year 10 Common Task 2 2023",
             "school": "Fort St Yearly",
+            "grade": "10",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "abbots2023y10-d1b",
+          "type": "mc",
+          "stem": "A golden rectangle is a rectangle such as \\(ACDF\\) below, with sides of length \\(1\\) and \\(x\\), and with the property that if a \\(1\\times1\\) square (\\(BCDE\\)) is removed, the resulting rectangle (\\(ABEF\\)) is similar to the original one. (That is, \\(ACDF\\) is an enlargement of \\(ABEF\\).) By rearranging the equation in (a), show that \\(x=\\dfrac{1+\\sqrt{5}}{2}\\). This is known as the golden ratio.",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 210\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><rect x=\"40\" y=\"30\" width=\"194\" height=\"120\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><rect x=\"114\" y=\"30\" width=\"120\" height=\"120\" fill=\"none\" fill-opacity=\".7\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-dasharray=\"0\"/><text x=\"32.0\" y=\"24.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A</text><text x=\"114.0\" y=\"22.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text><text x=\"242.0\" y=\"24.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">C</text><text x=\"32.0\" y=\"166.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">F</text><text x=\"114.0\" y=\"166.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">E</text><text x=\"242.0\" y=\"166.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">D</text><text x=\"26.0\" y=\"90.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><line x1=\"40.0\" y1=\"168.0\" x2=\"234.0\" y2=\"168.0\" stroke=\"#334155\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><line x1=\"234.0\" y1=\"168.0\" x2=\"227.9\" y2=\"164.5\" stroke=\"#334155\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><line x1=\"234.0\" y1=\"168.0\" x2=\"227.9\" y2=\"171.5\" stroke=\"#334155\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><line x1=\"40.0\" y1=\"168.0\" x2=\"46.1\" y2=\"171.5\" stroke=\"#334155\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><line x1=\"40.0\" y1=\"168.0\" x2=\"46.1\" y2=\"164.5\" stroke=\"#334155\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><text x=\"137.0\" y=\"185.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><text x=\"285.0\" y=\"90.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">NOT TO</text><text x=\"285.0\" y=\"104.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">SCALE</text></svg>"
+          },
+          "options": [
+            "\\(\\begin{aligned}&x(x-1)=1\\Rightarrow x^{2}-x-1=0\\\\ &x=\\dfrac{1\\pm\\sqrt{5}}{2};\\ x>0\\Rightarrow x=\\dfrac{1+\\sqrt{5}}{2}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&x(x-1)=1\\Rightarrow x^{2}-x+1=0\\\\ &\\Delta=1-4=-3<0\\ \\text{(no real solution)}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&x(x-1)=1\\Rightarrow x^{2}-x-1=0\\\\ &x=\\dfrac{1\\pm\\sqrt{3}}{2}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&x(x-1)=1\\Rightarrow x^{2}-x-1=0\\\\ &x=\\dfrac{-1\\pm\\sqrt{5}}{2}\\end{aligned}\\)"
+          ],
+          "answer": 0,
+          "hint": "Cross-multiply \\(\\dfrac{x-1}{1}=\\dfrac{1}{x}\\) to get a quadratic in standard form, then use the QUADRATIC FORMULA. Since \\(x\\) is a length, reject the negative solution.",
+          "steps": [
+            {
+              "explain": "Cross-multiply: multiply both sides by \\(x\\).",
+              "work": "\\(x(x-1)=1\\)"
+            },
+            {
+              "explain": "Expand and move everything to one side (standard form \\(ax^{2}+bx+c=0\\)).",
+              "work": "\\(x^{2}-x-1=0,\\quad a=1,\\ b=-1,\\ c=-1\\)"
+            },
+            {
+              "explain": "Quadratic formula: \\(x=\\dfrac{-b\\pm\\sqrt{b^{2}-4ac}}{2a}\\). The discriminant is \\((-1)^{2}-4(1)(-1)=1+4=5\\).",
+              "work": "\\(x=\\dfrac{1\\pm\\sqrt{5}}{2}\\)"
+            },
+            {
+              "explain": "\\(\\dfrac{1-\\sqrt{5}}{2}\\approx-0.618<0\\) cannot be a length, so take the plus sign.",
+              "work": "\\(x=\\dfrac{1+\\sqrt{5}}{2}\\approx1.618\\ \\ \\blacksquare\\)"
+            },
+            {
+              "explain": "Why not the others: B has a sign error (\\(x^{2}-x+1\\)); C computes \\(1+4\\) wrongly as 3; D uses \\(-b=-1\\) instead of \\(+1\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "By rearranging the equation in (a), show that",
+              "note": "\\(x(x-1)=1\\); quadratic formula; reject the negative root."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2023 Year 10 Mathematics Stage 5.3 Ext Assessment Task 4",
+            "school": "Abbotsleigh",
             "grade": "10",
             "origin": "teacher"
           }

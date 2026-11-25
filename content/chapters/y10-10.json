@@ -80,6 +80,60 @@
             }
           ],
           "timeLimit": 60
+        },
+        {
+          "id": "abbots2023y10-b3",
+          "type": "mc",
+          "stem": "The length and width of a square were measured as 4 cm to the nearest cm. Calculate the upper limits of the true perimeter.",
+          "difficulty": "medium",
+          "options": [
+            "\\(16\\) cm",
+            "\\(14\\) cm",
+            "\\(18\\) cm",
+            "\\(4.5\\) cm"
+          ],
+          "answer": 2,
+          "hint": "A measurement 'to the nearest cm' can be up to HALF a unit (\\(0.5\\) cm) bigger or smaller than the stated value. The UPPER limit of one side is the measurement \\(+0.5\\). Then find the perimeter of the square using the upper limit of the side.",
+          "steps": [
+            {
+              "explain": "Nearest cm means the error is at most half of 1 cm \\(=0.5\\) cm.",
+              "work": "\\(\\text{error}=\\dfrac{1}{2}\\times1=0.5\\ \\text{cm}\\)"
+            },
+            {
+              "explain": "Upper limit of a side: measured value plus 0.5.",
+              "work": "\\(4+0.5=4.5\\ \\text{cm}\\)"
+            },
+            {
+              "explain": "A square has four equal sides, so the largest possible perimeter uses \\(4.5\\) for each side.",
+              "work": "\\(P=4\\times4.5\\)"
+            },
+            {
+              "explain": "Calculate.",
+              "work": "\\(P_{\\text{upper}}=18\\ \\text{cm}\\)"
+            },
+            {
+              "explain": "Why not the others: \\(16\\) is the measured perimeter (\\(4\\times4\\)); \\(14=4\\times3.5\\) is the LOWER limit; \\(4.5\\) is the upper limit of ONE side, not of the perimeter.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">C</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Calculate the upper limits of the true perimeter.",
+              "note": "Upper limit \\(=\\) measurement \\(+0.5\\); then \\(\\times4\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2023 Year 10 Mathematics Stage 5.3 Ext Assessment Task 4",
+            "school": "Abbotsleigh",
+            "grade": "10",
+            "origin": "teacher"
+          }
         }
       ]
     },

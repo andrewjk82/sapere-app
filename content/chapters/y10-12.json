@@ -11328,6 +11328,133 @@
             "grade": "10",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "abbots2023y10-b7",
+          "type": "mc",
+          "stem": "Find the angle \\(\\theta\\) in triangle \\(\\Delta FGH\\), correct to the nearest degree.",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 200\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><line x1=\"40.0\" y1=\"160.0\" x2=\"260.0\" y2=\"160.0\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"40.0\" y1=\"160.0\" x2=\"180.0\" y2=\"20.0\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"180.0\" y1=\"20.0\" x2=\"260.0\" y2=\"160.0\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M 74 160 A 34 34 0 0 0 64.0 136.0\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"92.0\" y=\"152.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">θ</text><path d=\"M 224 160 A 36 36 0 0 1 242.1 128.7\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"208.0\" y=\"148.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">75°</text><text x=\"92.0\" y=\"86.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">12 cm</text><text x=\"234.0\" y=\"88.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">8 cm</text><text x=\"182.0\" y=\"12.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">G</text><text x=\"32.0\" y=\"174.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">F</text><text x=\"268.0\" y=\"174.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">H</text><text x=\"285.0\" y=\"60.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">NOT TO</text><text x=\"285.0\" y=\"76.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">SCALE</text></svg>"
+          },
+          "options": [
+            "\\(40^{\\circ}\\)",
+            "\\(50^{\\circ}\\)",
+            "\\(56^{\\circ}\\)",
+            "\\(42^{\\circ}\\)"
+          ],
+          "answer": 0,
+          "hint": "You know two sides and an angle OPPOSITE one of them: use the SINE RULE. Match each side with the angle across from it: \\(12\\) is opposite \\(75^{\\circ}\\); \\(8\\) is opposite \\(\\theta\\). Put the unknown angle's sine on top.",
+          "steps": [
+            {
+              "explain": "Side \\(GH=8\\) is opposite angle \\(F=\\theta\\). Side \\(FG=12\\) is opposite angle \\(H=75^{\\circ}\\).",
+              "work": "\\(\\dfrac{\\sin\\theta}{8}=\\dfrac{\\sin75^{\\circ}}{12}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 200\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><line x1=\"40.0\" y1=\"160.0\" x2=\"260.0\" y2=\"160.0\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"40.0\" y1=\"160.0\" x2=\"180.0\" y2=\"20.0\" stroke=\"#d97706\" stroke-width=\"3.6\" stroke-linecap=\"round\"/><line x1=\"180.0\" y1=\"20.0\" x2=\"260.0\" y2=\"160.0\" stroke=\"#047857\" stroke-width=\"3.6\" stroke-linecap=\"round\"/><path d=\"M 74 160 A 34 34 0 0 0 64.0 136.0\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2\"/><text x=\"92.0\" y=\"152.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">θ</text><path d=\"M 224 160 A 36 36 0 0 1 242.1 128.7\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"2\"/><text x=\"208.0\" y=\"148.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#7c3aed\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">75°</text><text x=\"92.0\" y=\"86.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">12 cm</text><text x=\"234.0\" y=\"88.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">8 cm</text><text x=\"182.0\" y=\"12.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">G</text><text x=\"32.0\" y=\"174.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">F</text><text x=\"268.0\" y=\"174.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">H</text><text x=\"26.0\" y=\"34.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">12 is opposite 75°</text><text x=\"26.0\" y=\"52.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">8 is opposite θ</text></svg>"
+              }
+            },
+            {
+              "explain": "Multiply both sides by 8.",
+              "work": "\\(\\sin\\theta=\\dfrac{8\\sin75^{\\circ}}{12}\\)"
+            },
+            {
+              "explain": "Calculate: \\(\\sin75^{\\circ}=0.9659\\).",
+              "work": "\\(\\sin\\theta=\\dfrac{8\\times0.9659}{12}=0.6440\\)"
+            },
+            {
+              "explain": "Inverse sine (the triangle has a \\(75^{\\circ}\\) angle, so \\(\\theta\\) must be acute).",
+              "work": "\\(\\theta=\\sin^{-1}(0.6440)=40.09^{\\circ}\\approx40^{\\circ}\\)"
+            },
+            {
+              "explain": "Why not the others: \\(50^{\\circ}\\) is \\(90-40\\); \\(56^{\\circ}\\) and \\(42^{\\circ}\\) come from swapping the sides in the sine rule.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the angle \\(\\theta\\) in triangle \\(\\Delta FGH\\)",
+              "note": "Sine rule: \\(\\dfrac{\\sin\\theta}{8}=\\dfrac{\\sin75^{\\circ}}{12}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2023 Year 10 Mathematics Stage 5.3 Ext Assessment Task 4",
+            "school": "Abbotsleigh",
+            "grade": "10",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "abbots2023y10-c2",
+          "type": "mc",
+          "stem": "Find the length of \\(OC\\), correct to one decimal place.",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 215\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><line x1=\"32.0\" y1=\"180.0\" x2=\"252.0\" y2=\"37.0\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"32.0\" y1=\"180.0\" x2=\"200.0\" y2=\"180.0\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"200.0\" y1=\"180.0\" x2=\"252.0\" y2=\"180.0\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"200.0\" y1=\"180.0\" x2=\"252.0\" y2=\"37.0\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"252.0\" y1=\"37.0\" x2=\"252.0\" y2=\"180.0\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><polyline points=\"239,180 239,167 252,167\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><path d=\"M 72 180 A 40 40 0 0 0 65.5 158.2\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"94.0\" y=\"171.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">33°</text><path d=\"M 230 180 A 30 30 0 0 0 210.3 151.8\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"233.0\" y=\"157.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">70°</text><text x=\"116.0\" y=\"206.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">12 m</text><line x1=\"32.0\" y1=\"190.0\" x2=\"200.0\" y2=\"190.0\" stroke=\"#334155\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><line x1=\"200.0\" y1=\"190.0\" x2=\"193.9\" y2=\"186.5\" stroke=\"#334155\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><line x1=\"200.0\" y1=\"190.0\" x2=\"193.9\" y2=\"193.5\" stroke=\"#334155\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><line x1=\"32.0\" y1=\"190.0\" x2=\"38.1\" y2=\"193.5\" stroke=\"#334155\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><line x1=\"32.0\" y1=\"190.0\" x2=\"38.1\" y2=\"186.5\" stroke=\"#334155\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><text x=\"210.0\" y=\"110.5\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">x m</text><text x=\"260.0\" y=\"112.5\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">h m</text><text x=\"252.0\" y=\"29.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">C</text><text x=\"24.0\" y=\"185.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A</text><text x=\"196.0\" y=\"196.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text><text x=\"260.0\" y=\"194.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">O</text><text x=\"110.0\" y=\"60.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">NOT TO</text><text x=\"110.0\" y=\"76.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">SCALE</text></svg>"
+          },
+          "options": [
+            "\\(9.7\\) m",
+            "\\(10.2\\) m",
+            "\\(10.9\\) m",
+            "\\(3.7\\) m"
+          ],
+          "answer": 1,
+          "hint": "Two steps. (1) In the big triangle \\(ABC\\), find \\(x=BC\\) with the SINE RULE (you will need the angles \\(\\angle ABC=180^{\\circ}-70^{\\circ}\\) and \\(\\angle ACB\\)). (2) In the right-angled triangle \\(BCO\\), find \\(h=OC\\) with SINE, since \\(h\\) is opposite the \\(70^{\\circ}\\) angle and \\(x\\) is the hypotenuse.",
+          "steps": [
+            {
+              "explain": "Angle \\(ABC\\) is on a straight line with \\(70^{\\circ}\\): \\(180^{\\circ}-70^{\\circ}=110^{\\circ}\\).",
+              "work": "\\(\\angle ABC=180^{\\circ}-70^{\\circ}=110^{\\circ}\\)"
+            },
+            {
+              "explain": "Angles in triangle \\(ABC\\) add to \\(180^{\\circ}\\): \\(\\angle ACB=180^{\\circ}-33^{\\circ}-110^{\\circ}\\).",
+              "work": "\\(\\angle ACB=37^{\\circ}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 215\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><line x1=\"32.0\" y1=\"180.0\" x2=\"252.0\" y2=\"37.0\" stroke=\"#d97706\" stroke-width=\"3.6\" stroke-linecap=\"round\"/><line x1=\"32.0\" y1=\"180.0\" x2=\"200.0\" y2=\"180.0\" stroke=\"#047857\" stroke-width=\"3.6\" stroke-linecap=\"round\"/><line x1=\"200.0\" y1=\"180.0\" x2=\"252.0\" y2=\"180.0\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"200.0\" y1=\"180.0\" x2=\"252.0\" y2=\"37.0\" stroke=\"#7c3aed\" stroke-width=\"3.6\" stroke-linecap=\"round\"/><line x1=\"252.0\" y1=\"37.0\" x2=\"252.0\" y2=\"180.0\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><polyline points=\"239,180 239,167 252,167\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><path d=\"M 72 180 A 40 40 0 0 0 65.5 158.2\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2\"/><text x=\"94.0\" y=\"171.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">33°</text><path d=\"M 230 180 A 30 30 0 0 0 210.3 151.8\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2\"/><text x=\"233.0\" y=\"157.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">70°</text><text x=\"116.0\" y=\"206.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">12 m</text><line x1=\"32.0\" y1=\"190.0\" x2=\"200.0\" y2=\"190.0\" stroke=\"#334155\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><line x1=\"200.0\" y1=\"190.0\" x2=\"193.9\" y2=\"186.5\" stroke=\"#334155\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><line x1=\"200.0\" y1=\"190.0\" x2=\"193.9\" y2=\"193.5\" stroke=\"#334155\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><line x1=\"32.0\" y1=\"190.0\" x2=\"38.1\" y2=\"193.5\" stroke=\"#334155\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><line x1=\"32.0\" y1=\"190.0\" x2=\"38.1\" y2=\"186.5\" stroke=\"#334155\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><text x=\"210.0\" y=\"110.5\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#7c3aed\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">x m</text><text x=\"260.0\" y=\"112.5\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">h m</text><text x=\"252.0\" y=\"29.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">C</text><text x=\"24.0\" y=\"185.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A</text><text x=\"196.0\" y=\"196.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text><text x=\"260.0\" y=\"194.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">O</text><path d=\"M 176 180 A 24 24 0 0 1 191.8 157.4\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"2.4\"/><text x=\"170.0\" y=\"150.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">110°</text><text x=\"222.0\" y=\"87.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">37°</text><text x=\"30.0\" y=\"40.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#7c3aed\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">x is opposite 33°</text><text x=\"30.0\" y=\"58.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">12 is opposite 37°</text></svg>"
+              }
+            },
+            {
+              "explain": "Sine rule: \\(x=BC\\) is opposite \\(33^{\\circ}\\); \\(12\\) m is opposite \\(37^{\\circ}\\).",
+              "work": "\\(\\dfrac{x}{\\sin33^{\\circ}}=\\dfrac{12}{\\sin37^{\\circ}}\\ \\Rightarrow\\ x=\\dfrac{12\\sin33^{\\circ}}{\\sin37^{\\circ}}=10.86\\ \\text{m}\\)"
+            },
+            {
+              "explain": "Triangle \\(BCO\\) (right angle at \\(O\\)): \\(h\\) is opposite the \\(70^{\\circ}\\) angle and \\(x\\) is the hypotenuse, so \\(\\sin70^{\\circ}=\\dfrac{h}{x}\\).",
+              "work": "\\(h=x\\sin70^{\\circ}=10.86\\times0.9397\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 215\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><line x1=\"32.0\" y1=\"180.0\" x2=\"252.0\" y2=\"37.0\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"32.0\" y1=\"180.0\" x2=\"200.0\" y2=\"180.0\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"200.0\" y1=\"180.0\" x2=\"252.0\" y2=\"180.0\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"200.0\" y1=\"180.0\" x2=\"252.0\" y2=\"37.0\" stroke=\"#d97706\" stroke-width=\"3.6\" stroke-linecap=\"round\"/><line x1=\"252.0\" y1=\"37.0\" x2=\"252.0\" y2=\"180.0\" stroke=\"#047857\" stroke-width=\"3.6\" stroke-linecap=\"round\"/><polyline points=\"239,180 239,167 252,167\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><path d=\"M 72 180 A 40 40 0 0 0 65.5 158.2\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2\"/><text x=\"94.0\" y=\"171.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">33°</text><path d=\"M 230 180 A 30 30 0 0 0 210.3 151.8\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2\"/><text x=\"233.0\" y=\"157.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">70°</text><text x=\"116.0\" y=\"206.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">12 m</text><line x1=\"32.0\" y1=\"190.0\" x2=\"200.0\" y2=\"190.0\" stroke=\"#334155\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><line x1=\"200.0\" y1=\"190.0\" x2=\"193.9\" y2=\"186.5\" stroke=\"#334155\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><line x1=\"200.0\" y1=\"190.0\" x2=\"193.9\" y2=\"193.5\" stroke=\"#334155\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><line x1=\"32.0\" y1=\"190.0\" x2=\"38.1\" y2=\"193.5\" stroke=\"#334155\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><line x1=\"32.0\" y1=\"190.0\" x2=\"38.1\" y2=\"186.5\" stroke=\"#334155\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><text x=\"210.0\" y=\"110.5\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">x m</text><text x=\"260.0\" y=\"112.5\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">h m</text><text x=\"252.0\" y=\"29.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">C</text><text x=\"24.0\" y=\"185.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A</text><text x=\"196.0\" y=\"196.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text><text x=\"260.0\" y=\"194.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">O</text><text x=\"30.0\" y=\"40.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">h is opposite 70°</text><text x=\"30.0\" y=\"58.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">x is the hypotenuse</text></svg>"
+              }
+            },
+            {
+              "explain": "Calculate and round to 1 decimal place.",
+              "work": "\\(h=10.2\\ \\text{m}\\)"
+            },
+            {
+              "explain": "Why not the others: \\(9.7\\) comes from using \\(32^{\\circ}\\) and \\(38^{\\circ}\\) in the sine rule (the printed solution used those values, but the diagram gives \\(33^{\\circ}\\)); \\(10.9\\) is \\(x\\) not \\(h\\); \\(3.7=x\\cos70^{\\circ}\\) (the wrong ratio).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">B</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the length of \\(OC\\), correct to one decimal place.",
+              "note": "Sine rule in \\(ABC\\) for \\(x\\); then \\(h=x\\sin70^{\\circ}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2023 Year 10 Mathematics Stage 5.3 Ext Assessment Task 4",
+            "school": "Abbotsleigh",
+            "grade": "10",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -12722,6 +12849,63 @@
           "meta": {
             "source": "Killara High School 2023 Year 10 Mathematics Task 4A",
             "school": "Killara High School",
+            "grade": "10",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "abbots2023y10-a8",
+          "type": "mc",
+          "stem": "\\(\\cos130^{\\circ}=\\)",
+          "difficulty": "easy",
+          "options": [
+            "\\(\\sin130^{\\circ}\\)",
+            "\\(\\cos50^{\\circ}\\)",
+            "\\(-\\sin50^{\\circ}\\)",
+            "\\(-\\cos50^{\\circ}\\)"
+          ],
+          "answer": 3,
+          "hint": "\\(130^{\\circ}\\) is an OBTUSE angle (second quadrant). Use the supplementary-angle rule: \\(\\cos(180^{\\circ}-\\theta)=-\\cos\\theta\\). Cosine is the \\(x\\)-coordinate, which is negative in the second quadrant.",
+          "steps": [
+            {
+              "explain": "Write \\(130^{\\circ}\\) as \\(180^{\\circ}\\) minus an acute angle: \\(180^{\\circ}-130^{\\circ}=50^{\\circ}\\).",
+              "work": "\\(130^{\\circ}=180^{\\circ}-50^{\\circ}\\)"
+            },
+            {
+              "explain": "Second quadrant: the point \\(P\\) is to the LEFT of the \\(y\\)-axis, so the \\(x\\)-coordinate (cosine) is NEGATIVE.",
+              "work": "\\(\\cos(180^{\\circ}-\\theta)=-\\cos\\theta\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 260\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><line x1=\"26.0\" y1=\"130.0\" x2=\"274.0\" y2=\"130.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"252.0\" x2=\"150.0\" y2=\"8.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"274.0\" y1=\"130.0\" x2=\"267.1\" y2=\"126.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"274.0\" y1=\"130.0\" x2=\"267.1\" y2=\"134.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"8.0\" x2=\"146.0\" y2=\"14.9\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"8.0\" x2=\"154.0\" y2=\"14.9\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><circle cx=\"150\" cy=\"130\" r=\"100\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\"/><line x1=\"150.0\" y1=\"130.0\" x2=\"85.7\" y2=\"53.4\" stroke=\"#d97706\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><line x1=\"85.7\" y1=\"53.4\" x2=\"85.7\" y2=\"130.0\" stroke=\"#7c3aed\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-dasharray=\"5 3\"/><line x1=\"85.7\" y1=\"130.0\" x2=\"150.0\" y2=\"130.0\" stroke=\"#047857\" stroke-width=\"4.2\" stroke-linecap=\"round\"/><circle cx=\"85.7\" cy=\"53.4\" r=\"5\" fill=\"#dc2626\"/><path d=\"M 126.9 102.4 A 36 36 0 0 0 114 130\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.4\"/><text x=\"80.0\" y=\"106.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">50°</text><text x=\"154.0\" y=\"117.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">130°</text><text x=\"79.7\" y=\"45.4\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">P</text><text x=\"150.0\" y=\"244.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">cos 130° = −cos 50°</text></svg>"
+              }
+            },
+            {
+              "explain": "Apply the rule with \\(\\theta=50^{\\circ}\\).",
+              "work": "\\(\\cos130^{\\circ}=-\\cos50^{\\circ}\\)"
+            },
+            {
+              "explain": "Check: \\(\\cos130^{\\circ}=-0.643\\) and \\(-\\cos50^{\\circ}=-0.643\\) ✓.",
+              "work": "\\(-0.643=-0.643\\)"
+            },
+            {
+              "explain": "Why not the others: B drops the negative sign; A and C use sine (the \\(y\\)-coordinate), which is positive and not the same as cosine.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">D</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "\\(\\cos130^{\\circ}=\\)",
+              "note": "\\(\\cos(180^{\\circ}-\\theta)=-\\cos\\theta\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2023 Year 10 Mathematics Stage 5.3 Ext Assessment Task 4",
+            "school": "Abbotsleigh",
             "grade": "10",
             "origin": "teacher"
           }
@@ -14629,6 +14813,70 @@
           "meta": {
             "source": "Baulkham Hills High School Year 10 Yearly Mathematics Examination (October 2010)",
             "school": "Baulkham Hills High School",
+            "grade": "10",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "abbots2023y10-c5",
+          "type": "mc",
+          "stem": "A farmer has a field in the shape as shown in the diagram below. They wish to enclose the western portion of the field (\\(DOC\\)). Calculate how much fencing is required to fully enclose the western portion of the field.",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 300\" width=\"100%\" height=\"auto\" style=\"max-width:340px;display:block;margin:0 auto\"><polygon points=\"139.9,45.4 267.8,68.2 234.5,256.9 61.3,197.9\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><line x1=\"139.9\" y1=\"45.4\" x2=\"234.5\" y2=\"256.9\" stroke=\"#0e7490\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"267.8\" y1=\"68.2\" x2=\"61.3\" y2=\"197.9\" stroke=\"#0e7490\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"180.0\" y1=\"150.0\" x2=\"180.0\" y2=\"104.0\" stroke=\"#7c3aed\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-dasharray=\"5 3\"/><text x=\"184.0\" y=\"102.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#7c3aed\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">N</text><text x=\"140.0\" y=\"120.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">14 m</text><text x=\"134.0\" y=\"180.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">16 m</text><text x=\"222.0\" y=\"126.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">15 m</text><text x=\"224.0\" y=\"184.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">15 m</text><text x=\"300.0\" y=\"170.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">NOT TO</text><text x=\"300.0\" y=\"184.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">SCALE</text><circle cx=\"180.0\" cy=\"150.0\" r=\"3.4\" fill=\"#1e293b\"/><text x=\"187.0\" y=\"162.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">O</text><text x=\"135.9\" y=\"37.4\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">339°T D</text><text x=\"271.8\" y=\"60.2\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">A 047°T</text><text x=\"57.3\" y=\"213.9\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">248°T C</text><text x=\"238.5\" y=\"272.9\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">B 153°T</text></svg>"
+          },
+          "options": [
+            "\\(51.4\\) m",
+            "\\(21.4\\) m",
+            "\\(30.0\\) m",
+            "\\(59.0\\) m"
+          ],
+          "answer": 0,
+          "hint": "The fence goes around the triangle \\(DOC\\): the two sides \\(OD=14\\) and \\(OC=16\\) AND the third side \\(DC\\). Find \\(\\angle DOC\\) from the bearings, then use the COSINE RULE for \\(DC\\).",
+          "steps": [
+            {
+              "explain": "Angle \\(DOC\\): the bearing of \\(D\\) is \\(339^{\\circ}\\) and of \\(C\\) is \\(248^{\\circ}\\), both measured clockwise from north at \\(O\\). The angle between them is the difference.",
+              "work": "\\(\\angle DOC=339^{\\circ}-248^{\\circ}=91^{\\circ}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 300\" width=\"100%\" height=\"auto\" style=\"max-width:340px;display:block;margin:0 auto\"><polygon points=\"139.9,45.4 267.8,68.2 234.5,256.9 61.3,197.9\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><line x1=\"139.9\" y1=\"45.4\" x2=\"234.5\" y2=\"256.9\" stroke=\"#0e7490\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"267.8\" y1=\"68.2\" x2=\"61.3\" y2=\"197.9\" stroke=\"#0e7490\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><polygon points=\"139.9,45.4 180,150 61.3,197.9\" fill=\"#fef3c7\" fill-opacity=\".7\" stroke=\"none\"/><line x1=\"139.9\" y1=\"45.4\" x2=\"180.0\" y2=\"150.0\" stroke=\"#047857\" stroke-width=\"3.6\" stroke-linecap=\"round\"/><line x1=\"180.0\" y1=\"150.0\" x2=\"61.3\" y2=\"197.9\" stroke=\"#d97706\" stroke-width=\"3.6\" stroke-linecap=\"round\"/><line x1=\"139.9\" y1=\"45.4\" x2=\"61.3\" y2=\"197.9\" stroke=\"#7c3aed\" stroke-width=\"3.6\" stroke-linecap=\"round\"/><line x1=\"180.0\" y1=\"150.0\" x2=\"180.0\" y2=\"90.0\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"5 3\"/><text x=\"190.0\" y=\"98.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#475569\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">N</text><path d=\"M 171.4 127.6 A 24 24 0 0 0 157.7 159.0\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.4\"/><text x=\"134.0\" y=\"146.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">91°</text><text x=\"110.0\" y=\"106.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">14</text><text x=\"108.0\" y=\"196.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">16</text><text x=\"70.0\" y=\"154.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#7c3aed\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">DC = ?</text><circle cx=\"180.0\" cy=\"150.0\" r=\"3.4\" fill=\"#1e293b\"/><text x=\"187.0\" y=\"162.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">O</text><text x=\"135.9\" y=\"37.4\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">339°T D</text><text x=\"271.8\" y=\"60.2\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">A 047°T</text><text x=\"57.3\" y=\"213.9\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">248°T C</text><text x=\"238.5\" y=\"272.9\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">B 153°T</text></svg>"
+              }
+            },
+            {
+              "explain": "Two sides and the included angle are known: cosine rule \\(DC^{2}=OD^{2}+OC^{2}-2(OD)(OC)\\cos\\angle DOC\\).",
+              "work": "\\(DC^{2}=14^{2}+16^{2}-2(14)(16)\\cos91^{\\circ}\\)"
+            },
+            {
+              "explain": "Calculate: \\(196+256=452\\), \\(2\\times14\\times16=448\\), \\(\\cos91^{\\circ}=-0.01745\\) (negative for an obtuse angle), so \\(-448\\times(-0.01745)=+7.82\\).",
+              "work": "\\(DC^{2}=452+7.82=459.82\\)"
+            },
+            {
+              "explain": "Square root.",
+              "work": "\\(DC=\\sqrt{459.82}=21.44\\ \\text{m}\\)"
+            },
+            {
+              "explain": "Fencing \\(=\\) all three sides of the triangle.",
+              "work": "\\(21.44+14+16=51.44\\approx51.4\\ \\text{m}\\)"
+            },
+            {
+              "explain": "Why not the others: \\(21.4\\) forgets the two straight sides; \\(30\\) is \\(14+16\\) only; \\(59.0\\) adds the wrong sides (e.g. \\(15+15+\\ldots\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "how much fencing is required",
+              "note": "Perimeter of \\(DOC\\): cosine rule for \\(DC\\), then add \\(14+16\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2023 Year 10 Mathematics Stage 5.3 Ext Assessment Task 4",
+            "school": "Abbotsleigh",
             "grade": "10",
             "origin": "teacher"
           }
@@ -19311,6 +19559,63 @@
           "meta": {
             "source": "Killara High School 2023 Year 10 Mathematics Task 4A",
             "school": "Killara High School",
+            "grade": "10",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "abbots2023y10-b11",
+          "type": "mc",
+          "stem": "An obtuse-angled triangle of area \\(60\\ \\text{cm}^{2}\\) has side lengths of 16 cm and 20 cm. What is the value of the included angle, correct to the nearest degree?",
+          "difficulty": "medium",
+          "options": [
+            "\\(22^{\\circ}\\)",
+            "\\(158^{\\circ}\\)",
+            "\\(68^{\\circ}\\)",
+            "\\(112^{\\circ}\\)"
+          ],
+          "answer": 1,
+          "hint": "Use the area formula with two sides and the INCLUDED angle: \\(A=\\dfrac{1}{2}ab\\sin C\\). Solve for \\(\\sin C\\), find the acute angle, and then remember the triangle is OBTUSE (the angle is \\(180^{\\circ}-\\) the calculator angle).",
+          "steps": [
+            {
+              "explain": "Substitute the area and the two sides.",
+              "work": "\\(60=\\dfrac{1}{2}\\times16\\times20\\times\\sin C\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 190\" width=\"100%\" height=\"auto\" style=\"max-width:340px;display:block;margin:0 auto\"><polygon points=\"22,150 150,150 298.3,90.1\" fill=\"#fef3c7\" fill-opacity=\".6\" stroke=\"none\"/><line x1=\"22.0\" y1=\"150.0\" x2=\"150.0\" y2=\"150.0\" stroke=\"#047857\" stroke-width=\"3.6\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"150.0\" x2=\"298.3\" y2=\"90.1\" stroke=\"#d97706\" stroke-width=\"3.6\" stroke-linecap=\"round\"/><line x1=\"22.0\" y1=\"150.0\" x2=\"298.3\" y2=\"90.1\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M 120 150 A 30 30 0 0 1 177.8 138.8\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.6\"/><text x=\"152.0\" y=\"112.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">158°</text><text x=\"86.0\" y=\"168.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">16 cm</text><text x=\"234.2\" y=\"138.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">20 cm</text><text x=\"190.0\" y=\"40.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Area = 60 cm²</text></svg>"
+              }
+            },
+            {
+              "explain": "Simplify \\(\\dfrac{1}{2}\\times16\\times20=160\\).",
+              "work": "\\(60=160\\sin C\\)"
+            },
+            {
+              "explain": "Solve for \\(\\sin C\\).",
+              "work": "\\(\\sin C=\\dfrac{60}{160}=\\dfrac{3}{8}=0.375\\)"
+            },
+            {
+              "explain": "Calculator: \\(\\sin^{-1}(0.375)=22.02^{\\circ}\\) — this is the ACUTE angle. The triangle is obtuse, so the included angle is the other angle with the same sine.",
+              "work": "\\(C=180^{\\circ}-22.02^{\\circ}=157.98^{\\circ}\\approx158^{\\circ}\\)"
+            },
+            {
+              "explain": "Why not the others: \\(22^{\\circ}\\) is the calculator's acute angle (the triangle would not be obtuse); \\(68^{\\circ}\\) and \\(112^{\\circ}\\) are \\(90-22\\) and \\(90+22\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">B</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "What is the value of the included angle, correct to the nearest degree?",
+              "note": "\\(A=\\dfrac{1}{2}ab\\sin C\\); obtuse \\(\\Rightarrow180^{\\circ}-\\sin^{-1}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2023 Year 10 Mathematics Stage 5.3 Ext Assessment Task 4",
+            "school": "Abbotsleigh",
             "grade": "10",
             "origin": "teacher"
           }

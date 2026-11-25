@@ -2572,6 +2572,60 @@
             "grade": "10",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "abbots2023y10-a17",
+          "type": "mc",
+          "stem": "Does the point \\((4,-3)\\) lie on the line \\(y=3x-15\\)? Justify your answer with appropriate calculations",
+          "difficulty": "easy",
+          "options": [
+            "\\(\\begin{aligned}&\\text{Yes. When }x=4:\\ y=3(4)-15=-3\\\\ &\\text{which equals the }y\\text{-value, so it is on the line}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\text{No. When }x=4:\\ y=3(4)-15=-3\\\\ &-3\\ne4\\text{, so it is not on the line}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\text{No. When }x=4:\\ y=3(4)+15=27\\\\ &27\\ne-3\\text{, so it is not on the line}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\text{Yes. When }x=-3:\\ y=3(-3)-15=-24\\\\ &\\text{so the point is on the line}\\end{aligned}\\)"
+          ],
+          "answer": 0,
+          "hint": "A point lies on a line when its coordinates SATISFY the equation. Substitute the \\(x\\)-value (\\(4\\)) and see whether you get the \\(y\\)-value (\\(-3\\)). Use the BRACKET for the multiplication and work out \\(3\\times4\\) before subtracting \\(15\\).",
+          "steps": [
+            {
+              "explain": "The point is \\((4,-3)\\): \\(x=4\\) and \\(y=-3\\). Substitute \\(x=4\\) into the right-hand side of \\(y=3x-15\\).",
+              "work": "\\(y=3(4)-15\\)"
+            },
+            {
+              "explain": "Multiply first: \\(3\\times4=12\\).",
+              "work": "\\(y=12-15\\)"
+            },
+            {
+              "explain": "Subtract: \\(12-15=-3\\).",
+              "work": "\\(y=-3\\)"
+            },
+            {
+              "explain": "The calculated \\(y\\) equals the \\(y\\)-coordinate of the point (\\(-3=-3\\) ✓), so the point lies on the line.",
+              "work": "\\(-3=-3\\ \\checkmark\\)"
+            },
+            {
+              "explain": "Why not the others: B calculates correctly but compares the answer with the \\(x\\)-value 4 instead of the \\(y\\)-value \\(-3\\); C changes \\(-15\\) into \\(+15\\); D substitutes the \\(y\\)-value into \\(x\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Does the point \\((4,-3)\\) lie on the line \\(y=3x-15\\)?",
+              "note": "Substitute \\(x=4\\); compare with \\(y=-3\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2023 Year 10 Mathematics Stage 5.3 Ext Assessment Task 4",
+            "school": "Abbotsleigh",
+            "grade": "10",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -4007,6 +4061,64 @@
               "work": "\\(\\boxed{(-2,4)\\text{ and }(5,18)}\\)"
             }
           ]
+        },
+        {
+          "id": "abbots2023y10-c6",
+          "type": "mc",
+          "stem": "The width of a room is two-thirds its length. If the width was 3 m more and the length was 3 m less, the room would form a square. Find the length and width of the room. (Hint: Start by forming two linear equations).",
+          "difficulty": "medium",
+          "options": [
+            "Length \\(18\\) m, width \\(12\\) m",
+            "Length \\(12\\) m, width \\(18\\) m",
+            "Length \\(15\\) m, width \\(10\\) m",
+            "Length \\(21\\) m, width \\(14\\) m"
+          ],
+          "answer": 0,
+          "hint": "Let \\(l\\) be the length and \\(w\\) the width. Write TWO equations from the sentences: \\(w=\\dfrac{2}{3}l\\), and 'it would be a square' means the new width equals the new length: \\(w+3=l-3\\). Then substitute.",
+          "steps": [
+            {
+              "explain": "Sentence 1: 'the width is two-thirds its length'.",
+              "work": "\\(w=\\dfrac{2}{3}l\\)"
+            },
+            {
+              "explain": "Sentence 2: with width \\(+3\\) and length \\(-3\\) the sides are equal (a square).",
+              "work": "\\(w+3=l-3\\)"
+            },
+            {
+              "explain": "Substitute \\(w=\\dfrac{2}{3}l\\) into the second equation and multiply every term by 3 to clear the fraction.",
+              "work": "\\(\\dfrac{2}{3}l+3=l-3\\ \\Rightarrow\\ 2l+9=3l-9\\)"
+            },
+            {
+              "explain": "Solve: collect \\(l\\) terms.",
+              "work": "\\(18=l\\ \\Rightarrow\\ l=18\\)"
+            },
+            {
+              "explain": "Width: \\(w=\\dfrac{2}{3}\\times18=12\\).",
+              "work": "\\(w=12\\)"
+            },
+            {
+              "explain": "Check: new width \\(12+3=15\\) and new length \\(18-3=15\\) ✓ (a square). Why not the others: B swaps length and width; C and D do not satisfy both conditions (e.g. \\(15,10\\): \\(w+3=13\\neq12\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the length and width of the room.",
+              "note": "\\(w=\\dfrac{2}{3}l\\) and \\(w+3=l-3\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2023 Year 10 Mathematics Stage 5.3 Ext Assessment Task 4",
+            "school": "Abbotsleigh",
+            "grade": "10",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -4507,6 +4619,216 @@
           "meta": {
             "source": "Willoughby Girls High School Year 10 5.3 Yearly Examination 2015",
             "school": "Willoughby Girls High School",
+            "grade": "10",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "abbots2023y10-d2a",
+          "type": "mc",
+          "stem": "The distance between two towns is \\(120\\) km by road and \\(150\\) km by rail. A train takes \\(10\\) minutes longer than a car, whose average speed is \\(10\\) km/h less than the train's average speed. The purpose of this problem is to find the average speed of the car, given \\(d=x\\times t\\), where \\(d\\) is the distance, \\(x\\) is the speed in km/h and \\(t\\) is the time in hours. Let the average speed of the car be \\(x\\) km/h and let the time taken by the car be \\(t\\) hours. Then \\(xt=120\\ \\ldots(1)\\) and \\((x+10)\\left(t+\\dfrac{1}{6}\\right)=150\\ \\ldots(2)\\). Give an explanation of how equation 2 is created for the train.",
+          "difficulty": "medium",
+          "options": [
+            "The train's speed is \\(x+10\\) (the car is \\(10\\) km/h slower) and its time is \\(t+\\dfrac{1}{6}\\) hours (10 minutes \\(=\\dfrac{1}{6}\\) hour); speed \\(\\times\\) time \\(=150\\)",
+            "The train's speed is \\(x-10\\) and its time is \\(t-\\dfrac{1}{6}\\) hours; speed \\(\\times\\) time \\(=150\\)",
+            "The train's speed is \\(x+10\\) and its time is \\(t+10\\) hours; speed \\(\\times\\) time \\(=150\\)",
+            "The train's speed is \\(x+10\\) and its time is \\(t+\\dfrac{1}{6}\\) hours; speed \\(\\times\\) time \\(=120\\)"
+          ],
+          "answer": 0,
+          "hint": "Use \\(d=x\\times t\\) for the TRAIN: distance \\(150\\), speed = car speed + 10, time = car time + 10 minutes. The time must be in HOURS (the speed is in km/h), so convert \\(10\\) minutes to hours: \\(\\dfrac{10}{60}=\\dfrac{1}{6}\\).",
+          "steps": [
+            {
+              "explain": "Speed: the car is 10 km/h SLOWER than the train, so the train is 10 km/h FASTER.",
+              "work": "\\(\\text{train speed}=x+10\\)"
+            },
+            {
+              "explain": "Time: the train takes 10 minutes LONGER than the car. Convert minutes to hours: \\(10\\div60=\\dfrac{1}{6}\\).",
+              "work": "\\(\\text{train time}=t+\\dfrac{1}{6}\\)"
+            },
+            {
+              "explain": "Distance by rail is \\(150\\) km, and distance \\(=\\) speed \\(\\times\\) time.",
+              "work": "\\((x+10)\\left(t+\\dfrac{1}{6}\\right)=150\\)"
+            },
+            {
+              "explain": "Why not the others: B reverses the signs; C uses \\(10\\) hours instead of 10 minutes; D uses the road distance 120.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Give an explanation of how equation 2 is created for the train.",
+              "note": "Train: speed \\(x+10\\), time \\(t+\\dfrac{1}{6}\\), distance 150."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2023 Year 10 Mathematics Stage 5.3 Ext Assessment Task 4",
+            "school": "Abbotsleigh",
+            "grade": "10",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "abbots2023y10-d2b",
+          "type": "mc",
+          "stem": "The distance between two towns is \\(120\\) km by road and \\(150\\) km by rail. A train takes \\(10\\) minutes longer than a car, whose average speed is \\(10\\) km/h less than the train's average speed. The purpose of this problem is to find the average speed of the car, given \\(d=x\\times t\\), where \\(d\\) is the distance, \\(x\\) is the speed in km/h and \\(t\\) is the time in hours. Let the average speed of the car be \\(x\\) km/h and let the time taken by the car be \\(t\\) hours. Then \\(xt=120\\ \\ldots(1)\\) and \\((x+10)\\left(t+\\dfrac{1}{6}\\right)=150\\ \\ldots(2)\\). By first expanding equation (2) to create equation (3), subtract equation (1) from equation (3) to show the resultant linear equation is \\(x+60t=170\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\begin{aligned}&xt+\\dfrac{x}{6}+10t+\\dfrac{10}{6}=150\\ (3);\\ \\text{subtract }xt=120:\\\\ &\\dfrac{x}{6}+10t+\\dfrac{10}{6}=30\\Rightarrow x+60t+10=180\\Rightarrow x+60t=170\\end{aligned}\\)",
+            "\\(\\begin{aligned}&xt+\\dfrac{x}{6}+10t+\\dfrac{10}{6}=150\\ (3);\\ \\text{subtract }xt=120:\\\\ &\\dfrac{x}{6}+10t=30\\Rightarrow x+60t=180\\end{aligned}\\)",
+            "\\(\\begin{aligned}&xt+\\dfrac{x}{6}+10t+\\dfrac{10}{6}=150\\ (3);\\ \\text{subtract }xt=120:\\\\ &\\dfrac{x}{6}+10t+\\dfrac{10}{6}=30\\Rightarrow x+10t+10=180\\end{aligned}\\)",
+            "\\(\\begin{aligned}&xt+\\dfrac{x}{6}+10t+\\dfrac{10}{6}=150\\ (3);\\ \\text{add }xt=120:\\\\ &2xt+\\dfrac{x}{6}+10t+\\dfrac{10}{6}=270\\end{aligned}\\)"
+          ],
+          "answer": 0,
+          "hint": "Expand \\((x+10)\\left(t+\\dfrac{1}{6}\\right)\\) term by term (FOIL), subtract equation (1) \\(xt=120\\) so the \\(xt\\) terms cancel, then multiply by 6 to clear the fractions. Do not forget the term \\(\\dfrac{10}{6}\\).",
+          "steps": [
+            {
+              "explain": "Expand (2): \\(x\\cdot t+x\\cdot\\dfrac{1}{6}+10\\cdot t+10\\cdot\\dfrac{1}{6}\\).",
+              "work": "\\(xt+\\dfrac{x}{6}+10t+\\dfrac{10}{6}=150\\ \\ (3)\\)"
+            },
+            {
+              "explain": "Subtract (1) \\(xt=120\\) from (3): the \\(xt\\) terms cancel and \\(150-120=30\\).",
+              "work": "\\(\\dfrac{x}{6}+10t+\\dfrac{10}{6}=30\\)"
+            },
+            {
+              "explain": "Multiply every term by 6 (including \\(\\dfrac{10}{6}\\)).",
+              "work": "\\(x+60t+10=180\\)"
+            },
+            {
+              "explain": "Subtract 10.",
+              "work": "\\(x+60t=170\\ \\ \\blacksquare\\)"
+            },
+            {
+              "explain": "Why not the others: B leaves out the \\(\\dfrac{10}{6}\\) term; C multiplies \\(10t\\) by 6 incorrectly; D adds the equations instead of subtracting.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "show the resultant linear equation is \\(x+60t=170\\)",
+              "note": "Expand, subtract (1), multiply by 6."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2023 Year 10 Mathematics Stage 5.3 Ext Assessment Task 4",
+            "school": "Abbotsleigh",
+            "grade": "10",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "abbots2023y10-d2d",
+          "type": "mc",
+          "stem": "The distance between two towns is \\(120\\) km by road and \\(150\\) km by rail. A train takes \\(10\\) minutes longer than a car, whose average speed is \\(10\\) km/h less than the train's average speed. The purpose of this problem is to find the average speed of the car, given \\(d=x\\times t\\), where \\(d\\) is the distance, \\(x\\) is the speed in km/h and \\(t\\) is the time in hours. Let the average speed of the car be \\(x\\) km/h and let the time taken by the car be \\(t\\) hours. Then \\(xt=120\\ \\ldots(1)\\) and \\((x+10)\\left(t+\\dfrac{1}{6}\\right)=150\\ \\ldots(2)\\). Calculate the corresponding values of \\(t\\) in hours and minutes (for \\(x=80\\) and \\(x=90\\)).",
+          "difficulty": "easy",
+          "options": [
+            "\\(1\\) h \\(30\\) min and \\(1\\) h \\(20\\) min",
+            "\\(1\\) h \\(50\\) min and \\(1\\) h \\(40\\) min",
+            "\\(1.5\\) min and \\(1.3\\) min",
+            "\\(2\\) h and \\(1\\) h \\(30\\) min"
+          ],
+          "answer": 0,
+          "hint": "Use \\(t=\\dfrac{120}{x}\\) for each speed, then convert the decimal part of the hour to minutes: \\(0.5\\) h \\(=30\\) min; \\(\\dfrac{1}{3}\\) h \\(=20\\) min.",
+          "steps": [
+            {
+              "explain": "For \\(x=80\\): \\(t=\\dfrac{120}{80}=1.5\\) hours. \\(0.5\\) hours \\(=0.5\\times60=30\\) minutes.",
+              "work": "\\(t=1.5\\ \\text{h}=1\\ \\text{h}\\ 30\\ \\text{min}\\)"
+            },
+            {
+              "explain": "For \\(x=90\\): \\(t=\\dfrac{120}{90}=\\dfrac{4}{3}\\) hours \\(=1\\dfrac{1}{3}\\) hours. \\(\\dfrac{1}{3}\\times60=20\\) minutes.",
+              "work": "\\(t=\\dfrac{4}{3}\\ \\text{h}=1\\ \\text{h}\\ 20\\ \\text{min}\\)"
+            },
+            {
+              "explain": "Why not the others: B treats \\(0.5\\) h as 50 min (hours are not decimals of 100); C writes hours as minutes; D uses wrong divisions.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Calculate the corresponding values of \\(t\\) in hours and minutes",
+              "note": "\\(t=\\dfrac{120}{x}\\); \\(0.5\\ \\text{h}=30\\ \\text{min}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2023 Year 10 Mathematics Stage 5.3 Ext Assessment Task 4",
+            "school": "Abbotsleigh",
+            "grade": "10",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "abbots2023y10-d4a",
+          "type": "mc",
+          "stem": "A builder has been contracted to construct a deck for a family on the corner of their house, as shown. The contract requirements are that \\(BF=DE\\) and \\(BC=CD\\), the total length of railing is \\(BF+BC+CD+DE=30\\) metres, and that the deck has the maximum possible area. If \\(BF=x\\) m and \\(A\\ \\text{m}^{2}\\) = area of the deck: Construct a formula relating \\(A\\) and \\(x\\), with \\(A\\) as the subject.",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 200\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><polygon points=\"70,24 150,24 150,64 110,64 110,114 70,114\" fill=\"#bfdbfe\" fill-opacity=\".8\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><rect x=\"110\" y=\"64\" width=\"150\" height=\"80\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"185.0\" y=\"110.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">House</text><text x=\"106.0\" y=\"52.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Deck</text><polyline points=\"80,24 80,34 70,34\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.3\"/><polyline points=\"140,24 140,34 150,34\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.3\"/><polyline points=\"80,114 80,104 70,104\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.3\"/><polyline points=\"100,114 100,104 110,104\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.3\"/><text x=\"62.0\" y=\"18.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">C</text><text x=\"158.0\" y=\"18.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">D</text><text x=\"158.0\" y=\"68.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">E</text><text x=\"62.0\" y=\"128.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text><text x=\"116.0\" y=\"130.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">F</text><text x=\"290.0\" y=\"50.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">NOT TO</text><text x=\"290.0\" y=\"64.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">SCALE</text></svg>"
+          },
+          "options": [
+            "\\(A=30x-3x^{2}\\)",
+            "\\(A=30x-2x^{2}\\)",
+            "\\(A=(15-x)^{2}\\)",
+            "\\(A=15x-x^{2}\\)"
+          ],
+          "answer": 0,
+          "hint": "First use the railing: \\(BF=DE=x\\), \\(BC=CD\\), total \\(30\\), so find \\(BC\\). Then find the AREA by adding two rectangles that each measure \\((15-x)\\) by \\(x\\) and SUBTRACTING the small \\(x\\times x\\) square that is counted twice (the overlap).",
+          "steps": [
+            {
+              "explain": "Railing: \\(x+BC+BC+x=30\\Rightarrow2x+2BC=30\\).",
+              "work": "\\(BC=CD=15-x\\)"
+            },
+            {
+              "explain": "Split the deck into two overlapping rectangles: one \\((15-x)\\) long and \\(x\\) wide, and another \\((15-x)\\) long and \\(x\\) wide. Their overlap is the square \\(x\\times x\\), counted twice.",
+              "work": "\\(A=(15-x)x+(15-x)x-x^{2}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 200\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><polygon points=\"70,24 150,24 150,64 110,64 110,114 70,114\" fill=\"#bfdbfe\" fill-opacity=\".8\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><rect x=\"110\" y=\"64\" width=\"150\" height=\"80\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"185.0\" y=\"110.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">House</text><text x=\"106.0\" y=\"52.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Deck</text><polyline points=\"80,24 80,34 70,34\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.3\"/><polyline points=\"140,24 140,34 150,34\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.3\"/><polyline points=\"80,114 80,104 70,104\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.3\"/><polyline points=\"100,114 100,104 110,104\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.3\"/><text x=\"62.0\" y=\"18.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">C</text><text x=\"158.0\" y=\"18.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">D</text><text x=\"158.0\" y=\"68.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">E</text><text x=\"62.0\" y=\"128.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text><text x=\"116.0\" y=\"130.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">F</text><text x=\"90.0\" y=\"148.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">BF = x</text><text x=\"160.0\" y=\"48.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">DE = x</text><text x=\"60.0\" y=\"70.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#7c3aed\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">BC = 15 − x</text><text x=\"110.0\" y=\"14.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#7c3aed\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">CD = 15 − x</text></svg>"
+              }
+            },
+            {
+              "explain": "Expand: \\((15-x)x=15x-x^{2}\\).",
+              "work": "\\(A=15x-x^{2}+15x-x^{2}-x^{2}\\)"
+            },
+            {
+              "explain": "Collect like terms.",
+              "work": "\\(A=30x-3x^{2}\\)"
+            },
+            {
+              "explain": "Why not the others: B forgets to subtract the overlap \\(x^{2}\\); C treats the deck as a square of side \\(15-x\\); D is only one rectangle.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Construct a formula relating \\(A\\) and \\(x\\), with \\(A\\) as the subject.",
+              "note": "\\(BC=15-x\\); two rectangles minus the overlap \\(x^{2}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2023 Year 10 Mathematics Stage 5.3 Ext Assessment Task 4",
+            "school": "Abbotsleigh",
             "grade": "10",
             "origin": "teacher"
           }

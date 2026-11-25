@@ -12751,6 +12751,60 @@
             "grade": "10",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "abbots2023y10-a1",
+          "type": "mc",
+          "stem": "\\(\\sqrt{72}\\) in its simplest form is",
+          "difficulty": "easy",
+          "options": [
+            "\\(2\\sqrt{6}\\)",
+            "\\(3\\sqrt{8}\\)",
+            "\\(8\\sqrt{3}\\)",
+            "\\(6\\sqrt{2}\\)"
+          ],
+          "answer": 3,
+          "hint": "Find the biggest PERFECT SQUARE that divides 72, take its square root outside the surd, and leave the remaining factor inside. 'Simplest form' means nothing inside the root can be square-rooted any more.",
+          "steps": [
+            {
+              "explain": "List perfect squares: 4, 9, 16, 25, 36… The biggest one that divides 72 is \\(36\\) (\\(72=36\\times2\\)).",
+              "work": "\\(72=36\\times2\\)"
+            },
+            {
+              "explain": "Split the root of a product: \\(\\sqrt{ab}=\\sqrt{a}\\times\\sqrt{b}\\).",
+              "work": "\\(\\sqrt{72}=\\sqrt{36}\\times\\sqrt{2}\\)"
+            },
+            {
+              "explain": "Take the square root of 36.",
+              "work": "\\(=6\\sqrt{2}\\)"
+            },
+            {
+              "explain": "\\(\\sqrt{2}\\) cannot be simplified further, so this is the simplest form. Check: \\(6\\sqrt{2}\\approx8.485\\) and \\(\\sqrt{72}\\approx8.485\\) ✓.",
+              "work": "\\(6\\sqrt{2}=\\sqrt{72}\\)"
+            },
+            {
+              "explain": "Why not the others: \\(3\\sqrt{8}\\) is equal to \\(\\sqrt{72}\\) but \\(8=4\\times2\\) can still be simplified (so it is not simplest); \\(2\\sqrt{6}=\\sqrt{24}\\) and \\(8\\sqrt{3}=\\sqrt{192}\\) are different numbers.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">D</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "\\(\\sqrt{72}\\) in its simplest form is",
+              "note": "Use the largest perfect square factor: \\(72=36\\times2\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2023 Year 10 Mathematics Stage 5.3 Ext Assessment Task 4",
+            "school": "Abbotsleigh",
+            "grade": "10",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -18715,6 +18769,60 @@
           "meta": {
             "source": "Baulkham Hills High School Year 10 Yearly Mathematics Examination (October 2010)",
             "school": "Baulkham Hills High School",
+            "grade": "10",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "abbots2023y10-b10",
+          "type": "mc",
+          "stem": "Rationalise the following expression. \\(\\dfrac{\\sqrt{7}}{3\\sqrt{5}}\\)",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{\\sqrt{35}}{15}\\)",
+            "\\(\\dfrac{\\sqrt{35}}{5}\\)",
+            "\\(\\dfrac{\\sqrt{7}}{15}\\)",
+            "\\(\\dfrac{\\sqrt{35}}{3}\\)"
+          ],
+          "answer": 0,
+          "hint": "To remove the surd from the denominator multiply the top and bottom by that surd, \\(\\sqrt{5}\\) (the \\(3\\) is already rational). Remember \\(\\sqrt{5}\\times\\sqrt{5}=5\\) and \\(3\\times5=15\\).",
+          "steps": [
+            {
+              "explain": "The denominator is \\(3\\sqrt{5}\\). Multiply top and bottom by \\(\\sqrt{5}\\) (this is multiplying by 1).",
+              "work": "\\(\\dfrac{\\sqrt{7}}{3\\sqrt{5}}\\times\\dfrac{\\sqrt{5}}{\\sqrt{5}}\\)"
+            },
+            {
+              "explain": "Numerator: \\(\\sqrt{7}\\times\\sqrt{5}=\\sqrt{35}\\).",
+              "work": "\\(\\text{top}=\\sqrt{35}\\)"
+            },
+            {
+              "explain": "Denominator: \\(3\\times\\sqrt{5}\\times\\sqrt{5}=3\\times5=15\\).",
+              "work": "\\(\\text{bottom}=3\\times5=15\\)"
+            },
+            {
+              "explain": "Put together.",
+              "work": "\\(\\dfrac{\\sqrt{35}}{15}\\)"
+            },
+            {
+              "explain": "Check: \\(\\dfrac{\\sqrt{7}}{3\\sqrt{5}}=\\dfrac{2.6458}{6.708}=0.3944\\) and \\(\\dfrac{\\sqrt{35}}{15}=\\dfrac{5.916}{15}=0.3944\\) ✓. Why not the others: B forgets the 3; C forgets to multiply the top; D forgets the \\(\\sqrt{5}\\) in the bottom.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Rationalise the following expression.",
+              "note": "Multiply top and bottom by \\(\\sqrt{5}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2023 Year 10 Mathematics Stage 5.3 Ext Assessment Task 4",
+            "school": "Abbotsleigh",
             "grade": "10",
             "origin": "teacher"
           }

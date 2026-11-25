@@ -2496,6 +2496,66 @@
               "work": "\\(\\boxed{8}\\)"
             }
           ]
+        },
+        {
+          "id": "abbots2023y10-d1a",
+          "type": "mc",
+          "stem": "A golden rectangle is a rectangle such as \\(ACDF\\) below, with sides of length \\(1\\) and \\(x\\), and with the property that if a \\(1\\times1\\) square (\\(BCDE\\)) is removed, the resulting rectangle (\\(ABEF\\)) is similar to the original one. (That is, \\(ACDF\\) is an enlargement of \\(ABEF\\).) Using the similar shapes above, show that \\(\\dfrac{x-1}{1}=\\dfrac{1}{x}\\).",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 210\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><rect x=\"40\" y=\"30\" width=\"194\" height=\"120\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><rect x=\"114\" y=\"30\" width=\"120\" height=\"120\" fill=\"none\" fill-opacity=\".7\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-dasharray=\"0\"/><text x=\"32.0\" y=\"24.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A</text><text x=\"114.0\" y=\"22.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text><text x=\"242.0\" y=\"24.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">C</text><text x=\"32.0\" y=\"166.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">F</text><text x=\"114.0\" y=\"166.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">E</text><text x=\"242.0\" y=\"166.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">D</text><text x=\"26.0\" y=\"90.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><line x1=\"40.0\" y1=\"168.0\" x2=\"234.0\" y2=\"168.0\" stroke=\"#334155\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><line x1=\"234.0\" y1=\"168.0\" x2=\"227.9\" y2=\"164.5\" stroke=\"#334155\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><line x1=\"234.0\" y1=\"168.0\" x2=\"227.9\" y2=\"171.5\" stroke=\"#334155\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><line x1=\"40.0\" y1=\"168.0\" x2=\"46.1\" y2=\"171.5\" stroke=\"#334155\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><line x1=\"40.0\" y1=\"168.0\" x2=\"46.1\" y2=\"164.5\" stroke=\"#334155\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><text x=\"137.0\" y=\"185.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><text x=\"285.0\" y=\"90.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">NOT TO</text><text x=\"285.0\" y=\"104.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">SCALE</text></svg>"
+          },
+          "options": [
+            "\\(\\begin{aligned}&\\dfrac{FE}{AF}=\\dfrac{AF}{FD}\\ \\text{(similar rectangles)}\\\\ &FE=x-1,\\ AF=1,\\ FD=x\\Rightarrow\\dfrac{x-1}{1}=\\dfrac{1}{x}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\dfrac{FE}{AF}=\\dfrac{FD}{AF}\\ \\text{(similar rectangles)}\\\\ &\\Rightarrow\\dfrac{x-1}{1}=\\dfrac{x}{1}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\dfrac{FE}{AF}=\\dfrac{AF}{FE}\\\\ &\\Rightarrow\\dfrac{x-1}{1}=\\dfrac{1}{x-1}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\dfrac{FE}{FD}=\\dfrac{AF}{AF}\\\\ &\\Rightarrow\\dfrac{x-1}{x}=1\\end{aligned}\\)"
+          ],
+          "answer": 0,
+          "hint": "In SIMILAR shapes, corresponding sides are in the same ratio. Match the SHORT side to the LONG side of each rectangle: small rectangle \\(ABEF\\) (sides \\(FE\\) and \\(AF\\)) and big rectangle \\(ACDF\\) (sides \\(AF\\) and \\(FD\\)).",
+          "steps": [
+            {
+              "explain": "Lengths: \\(AF=1\\) and \\(FD=x\\) (given). The square \\(BCDE\\) has side 1, so \\(FE=FD-ED=x-1\\).",
+              "work": "\\(AF=1,\\quad FD=x,\\quad FE=x-1\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 210\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><rect x=\"40\" y=\"30\" width=\"194\" height=\"120\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><rect x=\"114\" y=\"30\" width=\"120\" height=\"120\" fill=\"#fef3c7\" fill-opacity=\".7\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-dasharray=\"\"/><rect x=\"40\" y=\"30\" width=\"74\" height=\"120\" fill=\"#dbeafe\" fill-opacity=\".7\" stroke=\"#047857\" stroke-width=\"3\"/><text x=\"77.0\" y=\"95.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">ABEF</text><text x=\"174.0\" y=\"95.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">BCDE (1×1)</text><text x=\"32.0\" y=\"24.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A</text><text x=\"114.0\" y=\"22.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text><text x=\"242.0\" y=\"24.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">C</text><text x=\"32.0\" y=\"166.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">F</text><text x=\"114.0\" y=\"166.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">E</text><text x=\"242.0\" y=\"166.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">D</text><text x=\"26.0\" y=\"90.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><line x1=\"40.0\" y1=\"168.0\" x2=\"234.0\" y2=\"168.0\" stroke=\"#334155\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><line x1=\"234.0\" y1=\"168.0\" x2=\"227.9\" y2=\"164.5\" stroke=\"#334155\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><line x1=\"234.0\" y1=\"168.0\" x2=\"227.9\" y2=\"171.5\" stroke=\"#334155\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><line x1=\"40.0\" y1=\"168.0\" x2=\"46.1\" y2=\"171.5\" stroke=\"#334155\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><line x1=\"40.0\" y1=\"168.0\" x2=\"46.1\" y2=\"164.5\" stroke=\"#334155\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><text x=\"137.0\" y=\"185.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><text x=\"77.0\" y=\"50.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">x − 1</text></svg>"
+              }
+            },
+            {
+              "explain": "In the SMALL rectangle \\(ABEF\\): short side \\(FE=x-1\\), long side \\(AF=1\\). In the BIG rectangle \\(ACDF\\): short side \\(AF=1\\), long side \\(FD=x\\).",
+              "work": "\\(\\text{small: }\\dfrac{\\text{short}}{\\text{long}}=\\dfrac{FE}{AF};\\qquad\\text{big: }\\dfrac{AF}{FD}\\)"
+            },
+            {
+              "explain": "Similar rectangles have equal ratios of short side to long side.",
+              "work": "\\(\\dfrac{FE}{AF}=\\dfrac{AF}{FD}\\)"
+            },
+            {
+              "explain": "Substitute the lengths.",
+              "work": "\\(\\dfrac{x-1}{1}=\\dfrac{1}{x}\\ \\ \\blacksquare\\)"
+            },
+            {
+              "explain": "Why not the others: B compares different pairs and gives \\(x-1=x\\) (impossible); C compares the small rectangle with itself; D mixes short and long sides.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Using the similar shapes above, show that",
+              "note": "Short/long of the small = short/long of the big."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2023 Year 10 Mathematics Stage 5.3 Ext Assessment Task 4",
+            "school": "Abbotsleigh",
+            "grade": "10",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -2791,6 +2851,70 @@
               "note": "The parallel lines create a pair of similar triangles; match corresponding sides before forming a proportion."
             }
           ]
+        },
+        {
+          "id": "abbots2023y10-c8",
+          "type": "mc",
+          "stem": "The diagram shows a square inscribed in an isosceles triangle. The side lengths are \\(10,\\ 10\\) and \\(12\\). Find \\(a\\).",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 235\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><polygon points=\"40,200 280,200 160,40\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><rect x=\"112\" y=\"104\" width=\"96\" height=\"96\" fill=\"#fef3c7\" fill-opacity=\".7\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><polyline points=\"112,188 124,188 124,200\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.4\"/><polyline points=\"196,200 196,188 208,188\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.4\"/><text x=\"86.0\" y=\"120.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">10</text><text x=\"234.0\" y=\"120.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">10</text><text x=\"160.0\" y=\"222.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">12</text><text x=\"160.0\" y=\"158.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">a</text><text x=\"100.0\" y=\"152.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">a</text><text x=\"220.0\" y=\"152.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">a</text><text x=\"160.0\" y=\"32.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A</text><text x=\"32.0\" y=\"205.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text><text x=\"288.0\" y=\"205.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">C</text><text x=\"104.0\" y=\"100.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">F</text><text x=\"216.0\" y=\"100.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">G</text><text x=\"290.0\" y=\"70.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">NOT TO</text><text x=\"290.0\" y=\"84.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">SCALE</text></svg>"
+          },
+          "options": [
+            "\\(a=4.8\\)",
+            "\\(a=6\\)",
+            "\\(a=3.6\\)",
+            "\\(a=4\\)"
+          ],
+          "answer": 0,
+          "hint": "Draw the ALTITUDE \\(AD\\) of the isosceles triangle (it bisects the base). The small triangle \\(AFG\\) above the square is SIMILAR to the big triangle \\(ABC\\), so the ratio of their bases equals the ratio of their heights.",
+          "steps": [
+            {
+              "explain": "The altitude \\(AD\\) bisects the base: \\(BD=6\\). Pythagoras in \\(\\triangle ABD\\) gives \\(AD=\\sqrt{10^{2}-6^{2}}=8\\).",
+              "work": "\\(AD=\\sqrt{100-36}=8\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 235\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><polygon points=\"40,200 280,200 160,40\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><rect x=\"112\" y=\"104\" width=\"96\" height=\"96\" fill=\"#dbeafe\" fill-opacity=\".7\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><polyline points=\"112,188 124,188 124,200\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.4\"/><polyline points=\"196,200 196,188 208,188\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.4\"/><text x=\"86.0\" y=\"120.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">10</text><text x=\"234.0\" y=\"120.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">10</text><text x=\"160.0\" y=\"222.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">12</text><text x=\"160.0\" y=\"158.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">a</text><text x=\"100.0\" y=\"152.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">a</text><text x=\"220.0\" y=\"152.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">a</text><text x=\"160.0\" y=\"32.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A</text><text x=\"32.0\" y=\"205.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text><text x=\"288.0\" y=\"205.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">C</text><text x=\"104.0\" y=\"100.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">F</text><text x=\"216.0\" y=\"100.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">G</text><line x1=\"160.0\" y1=\"40.0\" x2=\"160.0\" y2=\"200.0\" stroke=\"#7c3aed\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><text x=\"168.0\" y=\"132.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#7c3aed\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">AD = 8</text><line x1=\"112.0\" y1=\"104.0\" x2=\"208.0\" y2=\"104.0\" stroke=\"#047857\" stroke-width=\"3.6\" stroke-linecap=\"round\"/><line x1=\"160.0\" y1=\"40.0\" x2=\"112.0\" y2=\"104.0\" stroke=\"#047857\" stroke-width=\"3.6\" stroke-linecap=\"round\"/><line x1=\"160.0\" y1=\"40.0\" x2=\"208.0\" y2=\"104.0\" stroke=\"#047857\" stroke-width=\"3.6\" stroke-linecap=\"round\"/><text x=\"200.0\" y=\"60.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">top triangle AFG</text><text x=\"200.0\" y=\"74.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">is similar to ABC</text></svg>"
+              }
+            },
+            {
+              "explain": "The square has side \\(a\\), so the small triangle \\(AFG\\) has base \\(FG=a\\) and height \\(8-a\\) (the altitude minus the square).",
+              "work": "\\(\\text{height of }AFG=8-a\\)"
+            },
+            {
+              "explain": "Similar triangles \\(AFG\\sim ABC\\): base \\(\\div\\) height is the same for both.",
+              "work": "\\(\\dfrac{a}{12}=\\dfrac{8-a}{8}\\)"
+            },
+            {
+              "explain": "Cross-multiply: \\(8a=12(8-a)=96-12a\\).",
+              "work": "\\(8a=96-12a\\)"
+            },
+            {
+              "explain": "Collect: \\(20a=96\\), so \\(a=\\dfrac{96}{20}=4.8\\).",
+              "work": "\\(a=4.8\\)"
+            },
+            {
+              "explain": "Check: height of top triangle \\(8-4.8=3.2\\); \\(\\dfrac{4.8}{12}=0.4=\\dfrac{3.2}{8}\\) ✓. Why not the others: \\(6\\) is half the base; \\(3.6\\) and \\(4\\) do not satisfy the similarity equation.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find \\(a\\).",
+              "note": "Altitude 8; \\(\\dfrac{a}{12}=\\dfrac{8-a}{8}\\) (similar triangles)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2023 Year 10 Mathematics Stage 5.3 Ext Assessment Task 4",
+            "school": "Abbotsleigh",
+            "grade": "10",
+            "origin": "teacher"
+          }
         }
       ]
     },

@@ -13707,6 +13707,60 @@
             "grade": "10",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "abbots2023y10-b2",
+          "type": "mc",
+          "stem": "By using appropriate factorisation methods, evaluate the following. \\(102^{2}-98^{2}\\)",
+          "difficulty": "easy",
+          "options": [
+            "800",
+            "400",
+            "16",
+            "200"
+          ],
+          "answer": 0,
+          "hint": "This is a DIFFERENCE OF TWO SQUARES: \\(a^{2}-b^{2}=(a+b)(a-b)\\). Use it with \\(a=102,\\ b=98\\) so the arithmetic is easy.",
+          "steps": [
+            {
+              "explain": "Recognise the pattern \\(a^{2}-b^{2}\\) with \\(a=102\\) and \\(b=98\\).",
+              "work": "\\(102^{2}-98^{2}=(102+98)(102-98)\\)"
+            },
+            {
+              "explain": "Add and subtract inside the brackets.",
+              "work": "\\(=200\\times4\\)"
+            },
+            {
+              "explain": "Multiply.",
+              "work": "\\(=800\\)"
+            },
+            {
+              "explain": "Check by calculator: \\(10404-9604=800\\) ✓.",
+              "work": "\\(10404-9604=800\\)"
+            },
+            {
+              "explain": "Why not the others: \\(16=(102-98)^{2}\\); \\(400\\) and \\(200\\) forget one of the two brackets or a factor.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "By using appropriate factorisation methods, evaluate the following.",
+              "note": "\\(a^{2}-b^{2}=(a+b)(a-b)\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2023 Year 10 Mathematics Stage 5.3 Ext Assessment Task 4",
+            "school": "Abbotsleigh",
+            "grade": "10",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -16499,6 +16553,60 @@
             "grade": "10",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "abbots2023y10-b9a",
+          "type": "mc",
+          "stem": "Factorise \\(x^{2}+4x-5\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\((x-1)(x+5)\\)",
+            "\\((x+1)(x-5)\\)",
+            "\\((x-1)(x-5)\\)",
+            "\\((x+1)(x+5)\\)"
+          ],
+          "answer": 0,
+          "hint": "For a monic quadratic \\(x^{2}+bx+c\\) find two numbers that MULTIPLY to \\(c=-5\\) and ADD to \\(b=4\\). Since the product is negative, one number is positive and one is negative.",
+          "steps": [
+            {
+              "explain": "Factor pairs of \\(-5\\): \\((1,-5)\\) and \\((-1,5)\\).",
+              "work": "\\(1\\times(-5)=-5,\\quad(-1)\\times5=-5\\)"
+            },
+            {
+              "explain": "Which pair adds to \\(+4\\)? \\(-1+5=4\\) ✓ (the other pair adds to \\(-4\\)).",
+              "work": "\\(-1+5=4\\)"
+            },
+            {
+              "explain": "Write the factors.",
+              "work": "\\(x^{2}+4x-5=(x-1)(x+5)\\)"
+            },
+            {
+              "explain": "Check by expanding: \\(x^{2}+5x-x-5=x^{2}+4x-5\\) ✓.",
+              "work": "\\((x-1)(x+5)=x^{2}+4x-5\\)"
+            },
+            {
+              "explain": "Why not the others: B has the pair \\(1,-5\\) (adds to \\(-4\\)); C has product \\(+5\\); D has product \\(+5\\) and sum \\(+6\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Factorise \\(x^{2}+4x-5\\).",
+              "note": "Product \\(-5\\), sum \\(+4\\): \\(-1\\) and \\(5\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2023 Year 10 Mathematics Stage 5.3 Ext Assessment Task 4",
+            "school": "Abbotsleigh",
+            "grade": "10",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -17153,6 +17261,60 @@
           "meta": {
             "source": "Willoughby Girls High School Year 10 5.3 Yearly Examination 2015",
             "school": "Willoughby Girls High School",
+            "grade": "10",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "abbots2023y10-b1",
+          "type": "mc",
+          "stem": "When simplified, the quotient of the division is? \\(\\dfrac{x^{2}+5x-14}{x+7}\\)",
+          "difficulty": "easy",
+          "options": [
+            "\\(x-2\\)",
+            "\\(x+2\\)",
+            "\\(x-7\\)",
+            "\\(x^{2}-2\\)"
+          ],
+          "answer": 0,
+          "hint": "Factorise the numerator first (a monic quadratic: two numbers with product \\(-14\\) and sum \\(+5\\)). Then CANCEL the common factor \\((x+7)\\) from the top and bottom.",
+          "steps": [
+            {
+              "explain": "Find two numbers that multiply to \\(-14\\) and add to \\(+5\\): \\(+7\\) and \\(-2\\).",
+              "work": "\\(7\\times(-2)=-14,\\qquad7+(-2)=5\\)"
+            },
+            {
+              "explain": "Factorise the numerator.",
+              "work": "\\(x^{2}+5x-14=(x+7)(x-2)\\)"
+            },
+            {
+              "explain": "Write the fraction with the factorised top.",
+              "work": "\\(\\dfrac{x^{2}+5x-14}{x+7}=\\dfrac{(x+7)(x-2)}{x+7}\\)"
+            },
+            {
+              "explain": "Cancel the common factor \\((x+7)\\) (top and bottom, valid for \\(x\\neq-7\\)).",
+              "work": "\\(=x-2\\)"
+            },
+            {
+              "explain": "Check with \\(x=3\\): \\(\\dfrac{9+15-14}{10}=1\\) and \\(x-2=1\\) ✓. Why not the others: \\(x+2\\) uses the wrong sign for \\(-2\\); \\(x-7\\) cancels the wrong factor; \\(x^{2}-2\\) wrongly cancels only the \\(x\\) terms.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "When simplified, the quotient of the division is?",
+              "note": "Factorise the top; cancel \\((x+7)\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2023 Year 10 Mathematics Stage 5.3 Ext Assessment Task 4",
+            "school": "Abbotsleigh",
             "grade": "10",
             "origin": "teacher"
           }

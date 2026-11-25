@@ -3355,6 +3355,118 @@
               "note": "Convert each logarithmic equation to an equivalent exponential equation."
             }
           ]
+        },
+        {
+          "id": "abbots2023y10-e1",
+          "type": "mc",
+          "stem": "Solve \\(\\log_{a}(x+1)+\\log_{a}3=\\log_{a}(x+18)\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(x=\\dfrac{15}{2}\\)",
+            "\\(x=\\dfrac{17}{2}\\)",
+            "\\(x=5\\)",
+            "\\(x=15\\)"
+          ],
+          "answer": 0,
+          "hint": "Combine the left side with the log law \\(\\log_{a}M+\\log_{a}N=\\log_{a}(MN)\\). When two logs with the same base are equal, their ARGUMENTS are equal. Then solve the linear equation, and check the arguments stay positive.",
+          "steps": [
+            {
+              "explain": "Add of logs \\(=\\) log of the PRODUCT.",
+              "work": "\\(\\log_{a}\\big(3(x+1)\\big)=\\log_{a}(x+18)\\)"
+            },
+            {
+              "explain": "Same base on both sides, so the arguments are equal.",
+              "work": "\\(3x+3=x+18\\)"
+            },
+            {
+              "explain": "Subtract \\(x\\) and \\(3\\).",
+              "work": "\\(2x=15\\)"
+            },
+            {
+              "explain": "Divide by 2.",
+              "work": "\\(x=\\dfrac{15}{2}\\)"
+            },
+            {
+              "explain": "Check: \\(x+1=\\dfrac{17}{2}>0\\) and \\(x+18>0\\) ✓ so the solution is valid. Why not the others: \\(\\dfrac{17}{2}\\) is \\(x+1\\); \\(5\\) and \\(15\\) are arithmetic slips (\\(3x=x+15\\) then forgetting to halve).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Solve \\(\\log_{a}(x+1)+\\log_{a}3=\\log_{a}(x+18)\\).",
+              "note": "\\(\\log M+\\log N=\\log(MN)\\); equate arguments."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2023 Year 10 Mathematics Stage 5.3 Ext Assessment Task 4",
+            "school": "Abbotsleigh",
+            "grade": "10",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "abbots2023y10-e5",
+          "type": "mc",
+          "stem": "Solve for \\(b\\). Give answer in simplest form. \\(2+\\log_{10}\\sqrt{1+b}+3\\log_{10}\\sqrt{1-b}=\\log_{10}\\sqrt{1-b^{2}}\\)",
+          "difficulty": "hard",
+          "options": [
+            "\\(b=\\dfrac{99}{100}\\)",
+            "\\(b=\\dfrac{1}{100}\\)",
+            "\\(b=-\\dfrac{99}{100}\\)",
+            "\\(b=\\dfrac{101}{100}\\)"
+          ],
+          "answer": 0,
+          "hint": "Write \\(\\sqrt{1-b^{2}}=\\sqrt{(1-b)(1+b)}=\\sqrt{1-b}\\,\\sqrt{1+b}\\), so the RIGHT side splits into two logs. Then the \\(\\log_{10}\\sqrt{1+b}\\) terms cancel and only \\(\\log_{10}\\sqrt{1-b}\\) remains.",
+          "steps": [
+            {
+              "explain": "Difference of squares: \\(1-b^{2}=(1-b)(1+b)\\). The root of a product is the product of the roots, and log of a product is a sum.",
+              "work": "\\(\\log_{10}\\sqrt{1-b^{2}}=\\log_{10}\\sqrt{1-b}+\\log_{10}\\sqrt{1+b}\\)"
+            },
+            {
+              "explain": "Substitute and subtract \\(\\log_{10}\\sqrt{1+b}\\) from both sides.",
+              "work": "\\(2+3\\log_{10}\\sqrt{1-b}=\\log_{10}\\sqrt{1-b}\\)"
+            },
+            {
+              "explain": "Collect: \\(2+2\\log_{10}\\sqrt{1-b}=0\\).",
+              "work": "\\(\\log_{10}\\sqrt{1-b}=-1\\)"
+            },
+            {
+              "explain": "Index form: \\(\\log_{10}N=-1\\iff N=10^{-1}=\\dfrac{1}{10}\\).",
+              "work": "\\(\\sqrt{1-b}=\\dfrac{1}{10}\\)"
+            },
+            {
+              "explain": "Square both sides: \\(1-b=\\dfrac{1}{100}\\).",
+              "work": "\\(b=1-\\dfrac{1}{100}=\\dfrac{99}{100}\\)"
+            },
+            {
+              "explain": "Check: \\(1-b=0.01>0\\) and \\(1+b>0\\), so the logs are defined ✓. Why not the others: \\(\\dfrac{1}{100}\\) is \\(1-b\\); \\(-\\dfrac{99}{100}\\) a sign slip; \\(\\dfrac{101}{100}\\) makes \\(1-b<0\\) (log undefined).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Solve for \\(b\\). Give answer in simplest form.",
+              "note": "\\(1-b^{2}=(1-b)(1+b)\\); logs of a product add."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2023 Year 10 Mathematics Stage 5.3 Ext Assessment Task 4",
+            "school": "Abbotsleigh",
+            "grade": "10",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -6281,6 +6393,64 @@
           "hint": "Read each part carefully.",
           "solution": "Completed in parts.",
           "timeLimit": 90
+        },
+        {
+          "id": "abbots2023y10-e6",
+          "type": "mc",
+          "stem": "Miss Humphries would like her \\(50\\,000\\) savings account to increase to a million dollars so that she can buy her dream house. If the current compounding interest rate is \\(6\\%\\) p.a, and the bank offers bi-annual compounding, how long will it take for this to occur?",
+          "difficulty": "hard",
+          "options": [
+            "\\(50.7\\) years",
+            "\\(101.3\\) years",
+            "\\(51.4\\) years",
+            "\\(25.3\\) years"
+          ],
+          "answer": 0,
+          "hint": "Compound interest \\(A=P(1+r)^{n}\\). Bi-annual compounding means TWICE a year: the rate per period is \\(\\dfrac{6\\%}{2}=3\\%\\) and the number of periods is \\(2\\times\\) years. Isolate \\((1.03)^{n}\\) and use LOGS to find \\(n\\), then DIVIDE by 2 to get years.",
+          "steps": [
+            {
+              "explain": "Rate per period \\(=0.06\\div2=0.03\\). Let \\(n\\) be the number of 6-month periods.",
+              "work": "\\(1\\,000\\,000=50\\,000(1.03)^{n}\\)"
+            },
+            {
+              "explain": "Divide both sides by \\(50\\,000\\).",
+              "work": "\\((1.03)^{n}=20\\)"
+            },
+            {
+              "explain": "Take logs of both sides and use \\(\\log a^{n}=n\\log a\\).",
+              "work": "\\(n\\log1.03=\\log20\\)"
+            },
+            {
+              "explain": "Divide by \\(\\log1.03\\).",
+              "work": "\\(n=\\dfrac{\\log20}{\\log1.03}=\\dfrac{1.3010}{0.012837}=101.34\\)"
+            },
+            {
+              "explain": "\\(n\\) counts 6-month periods, so divide by 2 to get years.",
+              "work": "\\(\\dfrac{101.34}{2}=50.67\\approx50.7\\ \\text{years}\\)"
+            },
+            {
+              "explain": "Why not the others: \\(101.3\\) forgets to divide by 2; \\(51.4\\) uses annual compounding \\(\\dfrac{\\log20}{\\log1.06}\\); \\(25.3\\) divides by 4.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "how long will it take for this to occur?",
+              "note": "3% per half-year; \\(n=\\dfrac{\\log20}{\\log1.03}\\); divide by 2."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2023 Year 10 Mathematics Stage 5.3 Ext Assessment Task 4",
+            "school": "Abbotsleigh",
+            "grade": "10",
+            "origin": "teacher"
+          }
         }
       ]
     },

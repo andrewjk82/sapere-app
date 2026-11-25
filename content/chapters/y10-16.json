@@ -1614,6 +1614,56 @@
             "school": "Abbotsleigh",
             "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Y9/MG_Task4_yr10Maths_Band1.pdf"
           }
+        },
+        {
+          "id": "abbots2023y10-a15",
+          "type": "mc",
+          "stem": "The perimeter (\\(P\\)) of a square is given by \\(P=4s\\) where \\(s\\) is the side length. What is the value of the constant of proportionality?",
+          "difficulty": "easy",
+          "options": [
+            "4",
+            "\\(s\\)",
+            "\\(\\dfrac{1}{4}\\)",
+            "16"
+          ],
+          "answer": 0,
+          "hint": "In a direct variation \\(y=kx\\) the constant of proportionality \\(k\\) is the number that multiplies the variable. Compare \\(P=4s\\) with \\(P=ks\\).",
+          "steps": [
+            {
+              "explain": "A direct proportion has the form \\(y=kx\\); here the variables are \\(P\\) and \\(s\\).",
+              "work": "\\(P=ks\\)"
+            },
+            {
+              "explain": "Compare with \\(P=4s\\): the multiplier of \\(s\\) is \\(4\\).",
+              "work": "\\(P=4s\\ \\Rightarrow\\ k=4\\)"
+            },
+            {
+              "explain": "Check: doubling the side doubles the perimeter, and \\(\\dfrac{P}{s}=4\\) for every square ✓.",
+              "work": "\\(\\dfrac{P}{s}=4\\)"
+            },
+            {
+              "explain": "Why not the others: \\(s\\) is a variable (not a constant); \\(\\dfrac{1}{4}\\) is the constant for \\(s=\\dfrac{1}{4}P\\) (the reverse relationship); \\(16\\) is the area of a square of side 4.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "What is the value of the constant of proportionality?",
+              "note": "\\(P=ks\\): \\(k\\) is the number multiplying \\(s\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2023 Year 10 Mathematics Stage 5.3 Ext Assessment Task 4",
+            "school": "Abbotsleigh",
+            "grade": "10",
+            "origin": "teacher"
+          }
         }
       ]
     },
