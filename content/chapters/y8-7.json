@@ -3849,6 +3849,86 @@
           ],
           "timeLimit": 60,
           "xp": 1
+        },
+        {
+          "id": "khs22-y8-t4b-q12",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find \\(8\\%\\) of \\(1800\\text{ g}\\).",
+          "options": [
+            "\\(14.4\\text{ g}\\)",
+            "\\(144\\text{ g}\\)",
+            "\\(1440\\text{ g}\\)",
+            "\\(164\\text{ g}\\)"
+          ],
+          "answer": 1,
+          "hint": "Find \\(1\\%\\) of \\(1800\\text{ g}\\) first (\\(1800 \\div 100 = 18\\text{ g}\\)), then multiply by \\(8\\)!",
+          "keyPoints": [
+            {
+              "text": "8\\%\\) of \\(1800\\text{ g}",
+              "note": "(8/100) × 1800 = 8 × 18 = 144 g."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write \\(8\\%\\) as \\(\\dfrac{8}{100}\\) and multiply by \\(1800\\text{ g}\\).",
+              "work": "\\(\\dfrac{8}{100} \\times 1800\\)"
+            },
+            {
+              "explain": "Cancel the factor of \\(100\\): \\(1800 \\div 100 = 18\\).",
+              "work": "\\(8 \\times 18\\)"
+            },
+            {
+              "explain": "Multiply: \\(8 \\times 10 + 8 \\times 8 = 80 + 64 = 144\\).",
+              "work": "\\(8 \\times 18 = 144\\text{ g}\\)"
+            },
+            {
+              "explain": "Therefore, \\(8\\%\\) of \\(1800\\text{ g}\\) is \\(144\\text{ g}\\).",
+              "work": "\\(\\text{Answer: } 144\\text{ g}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs22-y8-t4b-q20",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the GST that would be paid on an item worth \\(\\$540\\). (Assume GST is \\(10\\%\\).)",
+          "options": [
+            "\\(\\$5.40\\)",
+            "\\(\\$54\\)",
+            "\\(\\$594\\)",
+            "\\(\\$486\\)"
+          ],
+          "answer": 1,
+          "hint": "To find \\(10\\%\\) of any amount, simply divide by \\(10\\): \\(\\$540 \\div 10\\)!",
+          "keyPoints": [
+            {
+              "text": "GST",
+              "note": "10% of $540 = 0.1 × 540 = $54."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "GST is \\(10\\%\\) of the pre-GST price (\\(\\$540\\)).",
+              "work": "\\(\\text{GST} = 10\\% \\text{ of } \\$540\\)"
+            },
+            {
+              "explain": "Write \\(10\\%\\) as \\(0.1\\) (or \\(\\dfrac{1}{10}\\)).",
+              "work": "\\(\\text{GST} = 0.1 \\times 540\\)"
+            },
+            {
+              "explain": "Calculate \\(540 \\div 10 = 54\\). (Note: the question asks for the GST itself, not the GST-inclusive total \\(\\$594\\).)",
+              "work": "\\(\\text{GST} = \\$54\\)"
+            },
+            {
+              "explain": "Therefore, the GST paid is \\(\\$54\\).",
+              "work": "\\(\\text{Answer: } \\$54\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -4189,6 +4269,86 @@
             {
               "explain": "Therefore, the missing entries are \\(0.25\\), \\(35\\%\\), \\(1.4\\), and \\(\\dfrac{7}{5}\\).",
               "work": "\\(0.25, \\; 35\\%, \\; 1.4, \\; \\dfrac{7}{5}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs22-y8-t4b-q5",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express \\(40\\%\\) as a decimal.",
+          "options": [
+            "\\(0.04\\)",
+            "\\(0.4\\)",
+            "\\(4.0\\)",
+            "\\(0.44\\)"
+          ],
+          "answer": 1,
+          "hint": "Percent means \"out of \\(100\\)\": divide \\(40\\) by \\(100\\) by moving the decimal point two places to the left!",
+          "keyPoints": [
+            {
+              "text": "40\\%",
+              "note": "40% = 40 ÷ 100 = 0.4."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write \\(40\\%\\) as a fraction out of \\(100\\).",
+              "work": "\\(40\\% = \\dfrac{40}{100}\\)"
+            },
+            {
+              "explain": "Divide \\(40\\) by \\(100\\) by shifting the decimal point two places left: \\(40.0 \\to 0.40\\).",
+              "work": "\\(\\dfrac{40}{100} = 0.40 = 0.4\\)"
+            },
+            {
+              "explain": "Check by converting back: \\(0.4 \\times 100\\% = 40\\%\\).",
+              "work": "\\(0.4 \\times 100\\% = 40\\%\\)"
+            },
+            {
+              "explain": "Therefore, \\(40\\%\\) as a decimal is \\(0.4\\).",
+              "work": "\\(\\text{Answer: } 0.4\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs22-y8-t4b-q11",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express \\(7.5\\%\\) as a decimal.",
+          "options": [
+            "\\(0.75\\)",
+            "\\(0.075\\)",
+            "\\(0.0075\\)",
+            "\\(7.5\\)"
+          ],
+          "answer": 1,
+          "hint": "Divide \\(7.5\\) by \\(100\\) by moving the decimal point TWO places to the left (fill the empty place with a zero)!",
+          "keyPoints": [
+            {
+              "text": "7.5\\%",
+              "note": "7.5 ÷ 100 = 0.075."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Convert percentage to division by \\(100\\).",
+              "work": "\\(7.5\\% = \\dfrac{7.5}{100}\\)"
+            },
+            {
+              "explain": "Shift the decimal point two places to the left: \\(7.5 \\to 0.75 \\to 0.075\\).",
+              "work": "\\(7.5 \\div 100 = 0.075\\)"
+            },
+            {
+              "explain": "Check by multiplying back by \\(100\\%\\): \\(0.075 \\times 100\\% = 7.5\\%\\).",
+              "work": "\\(0.075 \\times 100\\% = 7.5\\%\\)"
+            },
+            {
+              "explain": "Therefore, \\(7.5\\% = 0.075\\).",
+              "work": "\\(\\text{Answer: } 0.075\\)"
             }
           ],
           "timeLimit": 60,
@@ -5817,6 +5977,46 @@
           ],
           "timeLimit": 60,
           "xp": 1
+        },
+        {
+          "id": "khs22-y8-t4b-q27",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A painting was purchased for \\(\\$2100\\) and sold \\(5\\) years later for \\(\\$2730\\). By what percentage has the value increased?",
+          "options": [
+            "\\(23\\%\\)",
+            "\\(30\\%\\)",
+            "\\(33\\%\\)",
+            "\\(63\\%\\)"
+          ],
+          "answer": 1,
+          "hint": "Find the dollar increase (\\(\\$2730 - \\$2100 = \\$630\\)), divide by the ORIGINAL price (\\(\\$2100\\)), and multiply by \\(100\\%\\)!",
+          "keyPoints": [
+            {
+              "text": "percentage has the value increased",
+              "note": "(630 / 2100) × 100% = 30%."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Find the dollar increase in value: \\(\\$2730 - \\$2100 = \\$630\\).",
+              "work": "\\(\\text{Increase} = 2730 - 2100 = \\$630\\)"
+            },
+            {
+              "explain": "Divide the increase by the original purchase price (\\(\\$2100\\)) and multiply by \\(100\\%\\).",
+              "work": "\\(\\%\\text{ increase} = \\dfrac{630}{2100} \\times 100\\%\\)"
+            },
+            {
+              "explain": "Simplify the fraction: \\(\\dfrac{630}{2100} = \\dfrac{63}{210} = \\dfrac{3}{10} = 0.3\\), and \\(0.3 \\times 100\\% = 30\\%\\).",
+              "work": "\\(\\dfrac{630}{2100} \\times 100\\% = 30\\%\\)"
+            },
+            {
+              "explain": "Therefore, the value increased by \\(30\\%\\).",
+              "work": "\\(\\text{Answer: } 30\\%\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -6125,6 +6325,46 @@
             {
               "explain": "Check: pre-GST price is \\(\\$1800\\), plus \\(10\\%\\) (\\(\\$180\\)) gives \\(\\$1980\\). Correct!",
               "work": "\\(\\text{Answer: } \\$180\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs22-y8-t4b-q29",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Sven sold a rare book for \\(\\$180\\) which is \\(150\\%\\) of the price at which he initially paid. Find the price Sven initially paid for the book.",
+          "options": [
+            "\\(\\$90\\)",
+            "\\(\\$120\\)",
+            "\\(\\$135\\)",
+            "\\(\\$270\\)"
+          ],
+          "answer": 1,
+          "hint": "Let \\(x\\) be the initial price: \\(150\\%\\) of \\(x\\) is \\(\\$180\\), so \\(1.5x = 180\\) — divide \\(180\\) by \\(1.5\\) (do NOT multiply)!",
+          "keyPoints": [
+            {
+              "text": "150\\%\\) of the price",
+              "note": "150% = $180 → 1% = $1.20 → 100% = $120."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Let \\(x\\) be the initial price Sven paid. Then \\(150\\%\\) of \\(x\\) equals \\(\\$180\\).",
+              "work": "\\(\\dfrac{150}{100} \\times x = 180 \\implies 1.5x = 180\\)"
+            },
+            {
+              "explain": "Divide both sides by \\(1.5\\) (or divide by \\(150\\) to find \\(1\\% = \\$1.20\\) and multiply by \\(100\\)).",
+              "work": "\\(x = \\dfrac{180}{1.5} = \\dfrac{1800}{15} = 120\\)"
+            },
+            {
+              "explain": "Check: \\(150\\%\\) of \\(\\$120 = \\$120 + \\$60 = \\$180\\). Exact!",
+              "work": "\\(1.5 \\times \\$120 = \\$180\\)"
+            },
+            {
+              "explain": "Therefore, Sven initially paid \\(\\$120\\) for the book.",
+              "work": "\\(\\text{Answer: } \\$120\\)"
             }
           ],
           "timeLimit": 60,

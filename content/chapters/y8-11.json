@@ -2973,6 +2973,86 @@
           ],
           "timeLimit": 60,
           "xp": 1
+        },
+        {
+          "id": "khs22-y8-t4b-q19a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Expand \\(3(2x - 8)\\).",
+          "options": [
+            "\\(6x - 8\\)",
+            "\\(6x - 24\\)",
+            "\\(5x - 11\\)",
+            "\\(6x + 24\\)"
+          ],
+          "answer": 1,
+          "hint": "Multiply the outside \\(3\\) by BOTH terms inside the brackets: \\(3 \\times 2x\\) and \\(3 \\times (-8)\\)!",
+          "keyPoints": [
+            {
+              "text": "3(2x - 8)",
+              "note": "3 × 2x − 3 × 8 = 6x − 24."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Apply the distributive law \\(a(b - c) = ab - ac\\) to multiply \\(3\\) by each term inside.",
+              "work": "\\(3(2x - 8) = 3 \\times 2x - 3 \\times 8\\)"
+            },
+            {
+              "explain": "Multiply the first term: \\(3 \\times 2x = 6x\\).",
+              "work": "\\(3 \\times 2x = 6x\\)"
+            },
+            {
+              "explain": "Multiply the second term: \\(3 \\times (-8) = -24\\).",
+              "work": "\\(3 \\times (-8) = -24\\)"
+            },
+            {
+              "explain": "Combine the terms: \\(6x - 24\\).",
+              "work": "\\(\\text{Answer: } 6x - 24\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs22-y8-t4b-q19b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Expand \\(-6x(x - 7)\\).",
+          "options": [
+            "\\(-6x^2 - 42x\\)",
+            "\\(-6x^2 + 42x\\)",
+            "\\(-6x^2 + 42\\)",
+            "\\(6x^2 - 42x\\)"
+          ],
+          "answer": 1,
+          "hint": "Watch the double negative! Multiply \\((-6x) \\times x = -6x^2\\) and \\((-6x) \\times (-7) = +42x\\)!",
+          "keyPoints": [
+            {
+              "text": "-6x(x - 7)",
+              "note": "(−6x)(x) + (−6x)(−7) = −6x² + 42x."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Distribute \\(-6x\\) to both \\(x\\) and \\(-7\\) inside the brackets.",
+              "work": "\\(-6x(x - 7) = (-6x)(x) + (-6x)(-7)\\)"
+            },
+            {
+              "explain": "First product: \\((-6x)(x) = -6x^2\\).",
+              "work": "\\((-6x)(x) = -6x^2\\)"
+            },
+            {
+              "explain": "Second product: negative times negative is positive, so \\((-6x)(-7) = +42x\\).",
+              "work": "\\((-6x)(-7) = +42x\\)"
+            },
+            {
+              "explain": "Combine the two terms: \\(-6x^2 + 42x\\).",
+              "work": "\\(\\text{Answer: } -6x^2 + 42x\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -4343,6 +4423,86 @@
             }
           ],
           "xp": 2
+        },
+        {
+          "id": "khs22-y8-t4b-q21a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Factorise \\(2y + 6\\).",
+          "options": [
+            "\\(2(y + 3)\\)",
+            "\\(2(y + 6)\\)",
+            "\\(3(y + 2)\\)",
+            "\\(2y(1 + 3)\\)"
+          ],
+          "answer": 0,
+          "hint": "Find the highest common factor of \\(2y\\) and \\(6\\) (which is \\(2\\)) and divide each term by \\(2\\) inside the brackets!",
+          "keyPoints": [
+            {
+              "text": "2y + 6",
+              "note": "HCF = 2 → 2(y + 3)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Find the highest common factor (HCF) of \\(2y\\) and \\(6\\): \\(\\text{HCF} = 2\\).",
+              "work": "\\(\\text{HCF}(2y, 6) = 2\\)"
+            },
+            {
+              "explain": "Divide each term by \\(2\\): \\(2y \\div 2 = y\\) and \\(6 \\div 2 = 3\\).",
+              "work": "\\(2y + 6 = 2(y + 3)\\)"
+            },
+            {
+              "explain": "Check by expanding back: \\(2(y + 3) = 2y + 6\\). Exact!",
+              "work": "\\(2(y + 3) = 2y + 6\\)"
+            },
+            {
+              "explain": "Therefore, the factorised form is \\(2(y + 3)\\).",
+              "work": "\\(\\text{Answer: } 2(y + 3)\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs22-y8-t4b-q21b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Factorise \\(-6ax + 3bx\\).",
+          "options": [
+            "\\(-3x(2a - b)\\)",
+            "\\(-3x(2a + b)\\)",
+            "\\(3x(2a - b)\\)",
+            "\\(-3(2ax - bx)\\)"
+          ],
+          "answer": 0,
+          "hint": "Take out the full HCF \\(-3x\\): remember factoring out a negative flips the sign of \\(+3bx\\) to \\(-b\\) inside the brackets!",
+          "keyPoints": [
+            {
+              "text": "-6ax + 3bx",
+              "note": "Factor out −3x: −6ax ÷ (−3x) = 2a and +3bx ÷ (−3x) = −b."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Find the highest common factor of \\(-6ax\\) and \\(3bx\\): both share \\(3\\) and \\(x\\). Factor out \\(-3x\\) so the leading term inside is positive.",
+              "work": "\\(\\text{Common factor} = -3x\\)"
+            },
+            {
+              "explain": "Divide each term by \\(-3x\\): \\(\\dfrac{-6ax}{-3x} = 2a\\) and \\(\\dfrac{+3bx}{-3x} = -b\\).",
+              "work": "\\(-6ax + 3bx = -3x(2a - b)\\)"
+            },
+            {
+              "explain": "Check by expanding back: \\(-3x(2a) - 3x(-b) = -6ax + 3bx\\). Exact!",
+              "work": "\\(-3x(2a - b) = -6ax + 3bx\\)"
+            },
+            {
+              "explain": "Therefore, the fully factorised form is \\(-3x(2a - b)\\).",
+              "work": "\\(\\text{Answer: } -3x(2a - b)\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     }

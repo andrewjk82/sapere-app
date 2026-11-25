@@ -4941,6 +4941,46 @@
           ],
           "timeLimit": 60,
           "xp": 1
+        },
+        {
+          "id": "khs22-y8-t4b-q8",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate \\(\\dfrac{7}{10} \\times 100\\).",
+          "options": [
+            "\\(7\\)",
+            "\\(70\\)",
+            "\\(700\\)",
+            "\\(17\\)"
+          ],
+          "answer": 1,
+          "hint": "Cancel a factor of \\(10\\) between \\(10\\) and \\(100\\) (\\(100 \\div 10 = 10\\)), then multiply \\(7 \\times 10\\)!",
+          "keyPoints": [
+            {
+              "text": "\\dfrac{7}{10} \\times 100",
+              "note": "7 × (100 ÷ 10) = 7 × 10 = 70."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write \\(100\\) as \\(\\dfrac{100}{1}\\) and simplify by dividing \\(100\\) and \\(10\\) by \\(10\\).",
+              "work": "\\(\\dfrac{7}{10} \\times \\dfrac{100}{1} = 7 \\times \\dfrac{100}{10}\\)"
+            },
+            {
+              "explain": "Calculate \\(\\dfrac{100}{10} = 10\\).",
+              "work": "\\(7 \\times 10\\)"
+            },
+            {
+              "explain": "Multiply: \\(7 \\times 10 = 70\\).",
+              "work": "\\(7 \\times 10 = 70\\)"
+            },
+            {
+              "explain": "Therefore, \\(\\dfrac{7}{10} \\times 100 = 70\\).",
+              "work": "\\(\\text{Answer: } 70\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -5314,6 +5354,86 @@
             "sourceMarks": 1,
             "page": 14
           }
+        },
+        {
+          "id": "khs22-y8-t4b-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express \\(\\dfrac{3}{4}\\) as a decimal.",
+          "options": [
+            "\\(0.34\\)",
+            "\\(0.75\\)",
+            "\\(0.8\\)",
+            "\\(0.25\\)"
+          ],
+          "answer": 1,
+          "hint": "Convert the denominator to \\(100\\) by multiplying top and bottom by \\(25\\): \\(\\dfrac{3 \\times 25}{4 \\times 25} = \\dfrac{75}{100}\\)!",
+          "keyPoints": [
+            {
+              "text": "\\dfrac{3}{4}",
+              "note": "3 ÷ 4 = 75/100 = 0.75."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Rewrite \\(\\dfrac{3}{4}\\) with a denominator of \\(100\\) by multiplying numerator and denominator by \\(25\\).",
+              "work": "\\(\\dfrac{3}{4} = \\dfrac{3 \\times 25}{4 \\times 25} = \\dfrac{75}{100}\\)"
+            },
+            {
+              "explain": "Divide \\(75\\) by \\(100\\) by moving the decimal point two places to the left.",
+              "work": "\\(\\dfrac{75}{100} = 0.75\\)"
+            },
+            {
+              "explain": "Check: \\(0.75 \\times 4 = 3\\). Exact!",
+              "work": "\\(0.75 \\times 4 = 3\\)"
+            },
+            {
+              "explain": "Therefore, \\(\\dfrac{3}{4} = 0.75\\).",
+              "work": "\\(\\text{Answer: } 0.75\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs22-y8-t4b-q6",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Round \\(3.85\\) correct to the nearest whole number.",
+          "options": [
+            "\\(3\\)",
+            "\\(3.9\\)",
+            "\\(4\\)",
+            "\\(3.8\\)"
+          ],
+          "answer": 2,
+          "hint": "Look at the tenths digit (\\(8\\)): since \\(8 \\ge 5\\), round the whole number \\(3\\) UP to \\(4\\)!",
+          "keyPoints": [
+            {
+              "text": "nearest whole number",
+              "note": "Tenths digit is 8 ≥ 5, so 3.85 rounds up to 4."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the whole-number (ones) digit \\(3\\) and the first decimal (tenths) digit \\(8\\).",
+              "work": "\\(3.\\mathbf{8}5\\)"
+            },
+            {
+              "explain": "Apply the rounding rule: since the tenths digit \\(8\\) is \\(5\\) or greater, round up.",
+              "work": "\\(8 \\ge 5 \\implies \\text{round up}\\)"
+            },
+            {
+              "explain": "Increase the ones digit from \\(3\\) to \\(4\\) and drop the decimal part.",
+              "work": "\\(3.85 \\approx 4\\)"
+            },
+            {
+              "explain": "Therefore, \\(3.85\\) rounded to the nearest whole number is \\(4\\).",
+              "work": "\\(\\text{Answer: } 4\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
