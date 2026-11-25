@@ -221,6 +221,10 @@ that were not between the two segments; `wghs2015-y10`/`abbotsleigh2024` figures
   anchor, pick the first whose bbox is >3px clear of ALL drawn geometry and earlier labels; if none fits, move/shrink the label or enlarge the figure — never
   accept an overlap. `tools/content/svgplot.py` `plot()` does this for function graphs (`pts`, `tags`); mimic it for geometry. Always include the
   extra lines you draw (tangents, AB, highlights) as obstacles. Then render and look at every figure before committing.
+- **Vector/arrow labels sit on their own arrow (2026-11-25, `fortst2020-e1-q13dii` incident: `a` floated far from its arrow).**
+  Place each arrow's label at the arrow's midpoint, offset ~10-14px perpendicular to the shaft (on the side away from other
+  lines), never near the head/vertex or another arrow. Check by code: label centre within ~16px of its own shaft and farther
+  from every other shaft; then render and look. Same for side-length/angle/point labels: each label must be visibly attached to the one thing it names.
 - `width="100%"` + `style="max-width:Npx"`, text with a white halo, no label overlapping a line or another label.
 
 ## Test papers (시험지) — standard Secret Study format (2026-11-22)
