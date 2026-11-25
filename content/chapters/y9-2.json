@@ -5056,6 +5056,86 @@
             "grade": "9",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "brig22-y9-a2-n3",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What is the decimal value for \\(0.2\\dot{7}\\)?",
+          "options": [
+            "\\(0.2777\\ldots\\)",
+            "\\(0.272727\\ldots\\)",
+            "\\(0.2772772\\ldots\\)",
+            "\\(0.278\\)"
+          ],
+          "answer": 0,
+          "hint": "The dot sits ONLY above the \\(7\\), which means ONLY the digit \\(7\\) repeats infinitely — the \\(2\\) appears just once!",
+          "keyPoints": [
+            {
+              "text": "0.2\\dot{7}",
+              "note": "Dot over 7 only → 0.27777..."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "In recurring decimal notation, a single dot above a digit indicates that ONLY that digit repeats forever.",
+              "work": "\\(0.2\\dot{7} \\text{ has a dot over } 7 \\text{ only}\\)"
+            },
+            {
+              "explain": "Keep the non-repeating tenths digit \\(2\\), then repeat the hundredths digit \\(7\\) endlessly.",
+              "work": "\\(0.2\\dot{7} = 0.2777\\ldots\\)"
+            },
+            {
+              "explain": "Note that \\(0.272727\\ldots\\) would be written \\(0.\\dot{2}\\dot{7}\\) with dots over BOTH digits.",
+              "work": "\\(0.\\dot{2}\\dot{7} = 0.272727\\ldots \\neq 0.2\\dot{7}\\)"
+            },
+            {
+              "explain": "Therefore, \\(0.2\\dot{7} = 0.2777\\ldots\\).",
+              "work": "\\(\\text{Answer: } 0.2777\\ldots\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "brig22-y9-a2-n10",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write \\(\\dfrac{5}{9}\\) as a decimal.",
+          "options": [
+            "\\(0.\\dot{5}\\)",
+            "\\(0.5\\)",
+            "\\(0.59\\)",
+            "\\(0.0\\dot{5}\\)"
+          ],
+          "answer": 0,
+          "hint": "Divide \\(5 \\div 9\\) (remember every \\(\\dfrac{d}{9}\\) for a single digit \\(d\\) is the recurring decimal \\(0.\\dot{d}\\))!",
+          "keyPoints": [
+            {
+              "text": "\\dfrac{5}{9}",
+              "note": "5 ÷ 9 = 0.5555... = 0.5̇."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Convert the fraction to a decimal by dividing numerator by denominator: \\(5 \\div 9\\).",
+              "work": "\\(5 \\div 9 = 5.000\\ldots \\div 9\\)"
+            },
+            {
+              "explain": "\\(50 \\div 9 = 5\\) remainder \\(5\\), and bringing down another \\(0\\) repeats \\(50 \\div 9 = 5\\) remainder \\(5\\) forever.",
+              "work": "\\(5 \\div 9 = 0.5555\\ldots\\)"
+            },
+            {
+              "explain": "Write the repeating digit \\(5\\) using dot notation: \\(0.\\dot{5}\\).",
+              "work": "\\(0.5555\\ldots = 0.\\dot{5}\\)"
+            },
+            {
+              "explain": "Therefore, \\(\\dfrac{5}{9} = 0.\\dot{5}\\).",
+              "work": "\\(\\text{Answer: } 0.\\dot{5}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     }

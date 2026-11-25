@@ -3386,6 +3386,286 @@
             "grade": "9",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "brig22-y9-a2-n4",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The decimal \\(1.04\\) can be written as:",
+          "options": [
+            "\\(\\dfrac{14}{1000}\\)",
+            "\\(1\\dfrac{4}{1000}\\)",
+            "\\(1\\dfrac{4}{100}\\)",
+            "\\(\\dfrac{104}{1000}\\)"
+          ],
+          "answer": 2,
+          "hint": "The digit \\(4\\) is in the HUNDREDTHS place (\\(2\\text{nd}\\) decimal place), so \\(0.04 = \\dfrac{4}{100}\\)!",
+          "keyPoints": [
+            {
+              "text": "1.04",
+              "note": "1 whole and 4 hundredths = 1 4/100."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Separate the whole number and decimal parts of \\(1.04\\): \\(1 + 0.04\\).",
+              "work": "\\(1.04 = 1 + 0.04\\)"
+            },
+            {
+              "explain": "Identify the place value of \\(4\\): tenths is \\(0\\), hundredths is \\(4\\), so \\(0.04 = \\dfrac{4}{100}\\).",
+              "work": "\\(0.04 = \\dfrac{4}{100}\\)"
+            },
+            {
+              "explain": "Combine the whole number and fraction into a mixed numeral: \\(1\\dfrac{4}{100}\\).",
+              "work": "\\(1.04 = 1\\dfrac{4}{100}\\)"
+            },
+            {
+              "explain": "Therefore, \\(1.04\\) can be written as \\(1\\dfrac{4}{100}\\).",
+              "work": "\\(\\text{Answer: } 1\\dfrac{4}{100}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "brig22-y9-a2-n6",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What is \\(0.165\\) as a percentage?",
+          "options": [
+            "\\(1.65\\%\\)",
+            "\\(16.5\\%\\)",
+            "\\(17\\%\\)",
+            "\\(165\\%\\)"
+          ],
+          "answer": 1,
+          "hint": "To convert a decimal to a percentage, multiply by \\(100\\%\\) (move the decimal point TWO places to the right)!",
+          "keyPoints": [
+            {
+              "text": "0.165",
+              "note": "0.165 × 100% = 16.5%."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Multiply the decimal by \\(100\\%\\) to express it as a percentage.",
+              "work": "\\(0.165 \\times 100\\%\\)"
+            },
+            {
+              "explain": "Move the decimal point two places to the right: \\(0.165 \\to 1.65 \\to 16.5\\).",
+              "work": "\\(0.165 \\times 100\\% = 16.5\\%\\)"
+            },
+            {
+              "explain": "Do not round unless asked — keep the exact value \\(16.5\\%\\).",
+              "work": "\\(\\text{Exact value: } 16.5\\%\\)"
+            },
+            {
+              "explain": "Therefore, \\(0.165 = 16.5\\%\\).",
+              "work": "\\(\\text{Answer: } 16.5\\%\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "brig22-y9-a2-n11",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Complete the equivalent fraction: \\(\\dfrac{3}{\\square} = \\dfrac{18}{90}\\). What number replaces \\(\\square\\)?",
+          "options": [
+            "\\(5\\)",
+            "\\(15\\)",
+            "\\(18\\)",
+            "\\(30\\)"
+          ],
+          "answer": 1,
+          "hint": "Compare the numerators: \\(3 \\times 6 = 18\\), so divide the denominator \\(90\\) by \\(6\\)!",
+          "keyPoints": [
+            {
+              "text": "\\dfrac{18}{90}",
+              "note": "18 ÷ 6 = 3, so 90 ÷ 6 = 15."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Find the scale factor between the numerators: \\(18 \\div 3 = 6\\).",
+              "work": "\\(18 \\div 6 = 3\\)"
+            },
+            {
+              "explain": "Divide the denominator \\(90\\) by the same factor \\(6\\) to keep the fractions equivalent.",
+              "work": "\\(\\square = 90 \\div 6 = 15\\)"
+            },
+            {
+              "explain": "Check: \\(\\dfrac{3}{15} = \\dfrac{1}{5}\\) and \\(\\dfrac{18}{90} = \\dfrac{1}{5}\\). Exact!",
+              "work": "\\(\\dfrac{3}{15} = \\dfrac{18}{90}\\)"
+            },
+            {
+              "explain": "Therefore, \\(15\\) replaces \\(\\square\\).",
+              "work": "\\(\\text{Answer: } 15\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "brig22-y9-a2-n12a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write the reciprocal of \\(\\dfrac{4}{9}\\).",
+          "options": [
+            "\\(\\dfrac{9}{4}\\)",
+            "\\(-\\dfrac{4}{9}\\)",
+            "\\(-\\dfrac{9}{4}\\)",
+            "\\(\\dfrac{4}{9}\\)"
+          ],
+          "answer": 0,
+          "hint": "The reciprocal of a fraction \\(\\dfrac{a}{b}\\) is obtained by flipping numerator and denominator to \\(\\dfrac{b}{a}\\) (keep the same sign)!",
+          "keyPoints": [
+            {
+              "text": "reciprocal",
+              "note": "Flip 4/9 to 9/4 so (4/9) × (9/4) = 1."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Two numbers are reciprocals if their product is \\(1\\). For a fraction \\(\\dfrac{a}{b}\\), flip it to \\(\\dfrac{b}{a}\\).",
+              "work": "\\(\\text{Reciprocal of } \\dfrac{4}{9} = \\dfrac{9}{4}\\)"
+            },
+            {
+              "explain": "Keep the sign positive (do not confuse reciprocal with negative).",
+              "work": "\\(\\dfrac{9}{4} = 2\\dfrac{1}{4}\\)"
+            },
+            {
+              "explain": "Check: \\(\\dfrac{4}{9} \\times \\dfrac{9}{4} = \\dfrac{36}{36} = 1\\). Exact!",
+              "work": "\\(\\dfrac{4}{9} \\times \\dfrac{9}{4} = 1\\)"
+            },
+            {
+              "explain": "Therefore, the reciprocal of \\(\\dfrac{4}{9}\\) is \\(\\dfrac{9}{4}\\).",
+              "work": "\\(\\text{Answer: } \\dfrac{9}{4}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "brig22-y9-a2-n12b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write the reciprocal of \\(7\\).",
+          "options": [
+            "\\(-7\\)",
+            "\\(\\dfrac{1}{7}\\)",
+            "\\(-\\dfrac{1}{7}\\)",
+            "\\(7\\)"
+          ],
+          "answer": 1,
+          "hint": "Write the whole number \\(7\\) as the fraction \\(\\dfrac{7}{1}\\), then flip it upside down!",
+          "keyPoints": [
+            {
+              "text": "reciprocal of \\(7\\)",
+              "note": "7 = 7/1 → reciprocal is 1/7."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Express the whole number \\(7\\) as a fraction over \\(1\\): \\(7 = \\dfrac{7}{1}\\).",
+              "work": "\\(7 = \\dfrac{7}{1}\\)"
+            },
+            {
+              "explain": "Flip the numerator and denominator to find the reciprocal.",
+              "work": "\\(\\text{Reciprocal} = \\dfrac{1}{7}\\)"
+            },
+            {
+              "explain": "Verify: \\(7 \\times \\dfrac{1}{7} = 1\\). Exact!",
+              "work": "\\(7 \\times \\dfrac{1}{7} = 1\\)"
+            },
+            {
+              "explain": "Therefore, the reciprocal of \\(7\\) is \\(\\dfrac{1}{7}\\).",
+              "work": "\\(\\text{Answer: } \\dfrac{1}{7}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "brig22-y9-a2-n13",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find \\(\\dfrac{2}{7}\\) of \\(\\$250\\) (correct to the nearest cent).",
+          "options": [
+            "\\(\\$71.43\\)",
+            "\\(\\$71.42\\)",
+            "\\(\\$35.71\\)",
+            "\\(\\$87.50\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply \\(2 \\times 250 = 500\\), then divide \\(500 \\div 7 = 71.4285\\ldots\\) and round to \\(2\\) decimal places!",
+          "keyPoints": [
+            {
+              "text": "\\dfrac{2}{7}\\) of \\(\\$250",
+              "note": "500 ÷ 7 = 71.4285... ≈ $71.43."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Replace \"of\" with multiplication: \\(\\dfrac{2}{7} \\times 250\\).",
+              "work": "\\(\\dfrac{2}{7} \\times 250 = \\dfrac{500}{7}\\)"
+            },
+            {
+              "explain": "Divide \\(500\\) by \\(7\\): \\(500 \\div 7 = 71.42857\\ldots\\).",
+              "work": "\\(\\dfrac{500}{7} = 71.42857\\ldots\\)"
+            },
+            {
+              "explain": "Round to the nearest cent (\\(2\\) decimal places): the third decimal digit is \\(8 \\ge 5\\), so round up to \\(\\$71.43\\).",
+              "work": "\\(71.42857\\ldots \\approx \\$71.43\\)"
+            },
+            {
+              "explain": "Therefore, \\(\\dfrac{2}{7}\\) of \\(\\$250\\) is \\(\\$71.43\\).",
+              "work": "\\(\\text{Answer: } \\$71.43\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "brig22-y9-a2-n15",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find \\(8\\dfrac{3}{4}\\%\\) of \\(\\$560\\).",
+          "options": [
+            "\\(\\$44.80\\)",
+            "\\(\\$49\\)",
+            "\\(\\$50.40\\)",
+            "\\(\\$490\\)"
+          ],
+          "answer": 1,
+          "hint": "Convert \\(8\\dfrac{3}{4}\\%\\) to the decimal \\(8.75\\% = 0.0875\\), then multiply by \\(560\\)!",
+          "keyPoints": [
+            {
+              "text": "8\\dfrac{3}{4}\\%",
+              "note": "8.75% of $560 = 0.0875 × 560 = $49."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Convert the mixed-number percentage to a decimal percentage: \\(\\dfrac{3}{4} = 0.75\\), so \\(8\\dfrac{3}{4}\\% = 8.75\\%\\).",
+              "work": "\\(8\\dfrac{3}{4}\\% = 8.75\\% = \\dfrac{8.75}{100} = 0.0875\\)"
+            },
+            {
+              "explain": "Multiply \\(0.0875\\) by \\(\\$560\\) (or note \\(8.75\\% = \\dfrac{35}{400} = \\dfrac{7}{80}\\)).",
+              "work": "\\(\\dfrac{7}{80} \\times 560\\)"
+            },
+            {
+              "explain": "Cancel \\(560 \\div 80 = 7\\), then multiply \\(7 \\times 7 = 49\\).",
+              "work": "\\(7 \\times 7 = \\$49\\)"
+            },
+            {
+              "explain": "Therefore, \\(8\\dfrac{3}{4}\\%\\) of \\(\\$560\\) is \\(\\$49\\).",
+              "work": "\\(\\text{Answer: } \\$49\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -6181,6 +6461,246 @@
             "grade": "9",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "brig22-y9-a2-n8",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "In Australia, a \\(10\\%\\) tax on the price of goods and services, called GST, is included in the marked price. What \\(\\%\\) of the original price does the marked price represent?",
+          "options": [
+            "\\(10\\%\\)",
+            "\\(90\\%\\)",
+            "\\(100\\%\\)",
+            "\\(110\\%\\)"
+          ],
+          "answer": 3,
+          "hint": "The original price is \\(100\\%\\), and GST ADDS \\(10\\%\\) on top of it: \\(100\\% + 10\\%\\)!",
+          "keyPoints": [
+            {
+              "text": "marked price represent",
+              "note": "Original (100%) + GST (10%) = 110%."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "The original pre-GST price represents \\(100\\%\\).",
+              "work": "\\(\\text{Original price} = 100\\%\\)"
+            },
+            {
+              "explain": "GST adds \\(10\\%\\) of the original price onto the price.",
+              "work": "\\(\\text{GST} = +10\\%\\)"
+            },
+            {
+              "explain": "Add the two percentages to get the marked (GST-inclusive) price: \\(100\\% + 10\\% = 110\\%\\).",
+              "work": "\\(100\\% + 10\\% = 110\\%\\)"
+            },
+            {
+              "explain": "Therefore, the marked price represents \\(110\\%\\) of the original price.",
+              "work": "\\(\\text{Answer: } 110\\%\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "brig22-y9-a2-n9",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A TV is discounted by \\(15\\%\\). Which percentage would be used to calculate the new price?",
+          "options": [
+            "\\(15\\%\\)",
+            "\\(85\\%\\)",
+            "\\(100\\%\\)",
+            "\\(115\\%\\)"
+          ],
+          "answer": 1,
+          "hint": "A discount of \\(15\\%\\) subtracts \\(15\\%\\) from the full \\(100\\%\\) price: \\(100\\% - 15\\%\\)!",
+          "keyPoints": [
+            {
+              "text": "discounted by \\(15\\%\\)",
+              "note": "100% − 15% = 85% of the original price."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "The original price of the TV is \\(100\\%\\).",
+              "work": "\\(\\text{Original price} = 100\\%\\)"
+            },
+            {
+              "explain": "Subtract the \\(15\\%\\) discount to find the remaining percentage you pay.",
+              "work": "\\(100\\% - 15\\% = 85\\%\\)"
+            },
+            {
+              "explain": "Multiplying the original price by \\(85\\%\\) (\\(0.85\\)) directly gives the new sale price.",
+              "work": "\\(\\text{New price} = 85\\% \\times \\text{Original}\\)"
+            },
+            {
+              "explain": "Therefore, \\(85\\%\\) is used to calculate the new price.",
+              "work": "\\(\\text{Answer: } 85\\%\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "brig22-y9-a2-n14a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A dress advertised at \\(\\$345\\) is bought for \\(\\$290\\). Calculate the amount of discount.",
+          "options": [
+            "\\(\\$45\\)",
+            "\\(\\$55\\)",
+            "\\(\\$65\\)",
+            "\\(\\$155\\)"
+          ],
+          "answer": 1,
+          "hint": "Subtract the sale price (\\(\\$290\\)) from the advertised price (\\(\\$345\\))!",
+          "keyPoints": [
+            {
+              "text": "amount of discount",
+              "note": "$345 − $290 = $55."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Use the discount formula: \\(\\text{Discount} = \\text{Advertised price} - \\text{Sale price}\\).",
+              "work": "\\(\\text{Discount} = \\$345 - \\$290\\)"
+            },
+            {
+              "explain": "Subtract \\(290\\) from \\(345\\): \\(345 - 290 = 55\\).",
+              "work": "\\(345 - 290 = 55\\)"
+            },
+            {
+              "explain": "Check: \\(\\$290 + \\$55 = \\$345\\). Exact!",
+              "work": "\\(\\$290 + \\$55 = \\$345\\)"
+            },
+            {
+              "explain": "Therefore, the amount of discount is \\(\\$55\\).",
+              "work": "\\(\\text{Answer: } \\$55\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "brig22-y9-a2-n14b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A dress advertised at \\(\\$345\\) is bought for \\(\\$290\\). Calculate the percentage discount to one decimal place.",
+          "options": [
+            "\\(15.9\\%\\)",
+            "\\(16.0\\%\\)",
+            "\\(19.0\\%\\)",
+            "\\(84.1\\%\\)"
+          ],
+          "answer": 0,
+          "hint": "Divide the discount (\\(\\$55\\)) by the ORIGINAL advertised price (\\(\\$345\\), NOT \\(\\$290\\)!), then multiply by \\(100\\%\\)!",
+          "keyPoints": [
+            {
+              "text": "percentage discount",
+              "note": "(55 / 345) × 100% = 15.942...% ≈ 15.9%."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Find the dollar discount first: \\(\\$345 - \\$290 = \\$55\\).",
+              "work": "\\(\\text{Discount} = 345 - 290 = \\$55\\)"
+            },
+            {
+              "explain": "Express the discount as a percentage of the ORIGINAL advertised price (\\(\\$345\\)).",
+              "work": "\\(\\%\\text{ discount} = \\dfrac{55}{345} \\times 100\\%\\)"
+            },
+            {
+              "explain": "Compute \\(\\dfrac{55}{345} \\times 100\\% = 15.9420\\ldots\\%\\).",
+              "work": "\\(15.9420\\ldots\\%\\)"
+            },
+            {
+              "explain": "Round to one decimal place (second decimal digit is \\(4 < 5\\)): \\(15.9\\%\\).",
+              "work": "\\(\\text{Answer: } 15.9\\%\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "brig22-y9-a2-n16",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Sienna achieves a mark of \\(19\\) for her History essay which is equal to a percentage mark of \\(76\\%\\). How many total marks was the essay worth?",
+          "options": [
+            "\\(20\\text{ marks}\\)",
+            "\\(24\\text{ marks}\\)",
+            "\\(25\\text{ marks}\\)",
+            "\\(30\\text{ marks}\\)"
+          ],
+          "answer": 2,
+          "hint": "If \\(76\\%\\) of the total is \\(19\\) marks, divide \\(19 \\div 76 = 0.25\\) marks for \\(1\\%\\), then multiply by \\(100\\)!",
+          "keyPoints": [
+            {
+              "text": "percentage mark of \\(76\\%\\)",
+              "note": "19 ÷ 0.76 = 25 total marks."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Let \\(T\\) be the total marks the essay is worth. Then \\(76\\%\\) of \\(T\\) equals \\(19\\).",
+              "work": "\\(0.76 \\times T = 19\\)"
+            },
+            {
+              "explain": "Divide both sides by \\(0.76\\) (equivalently, \\(\\dfrac{19}{76} \\times 100\\)).",
+              "work": "\\(T = \\dfrac{19}{76} \\times 100\\)"
+            },
+            {
+              "explain": "Notice \\(76 = 4 \\times 19\\), so \\(\\dfrac{19}{76} = \\dfrac{1}{4}\\), and \\(\\dfrac{1}{4} \\times 100 = 25\\).",
+              "work": "\\(T = \\dfrac{1}{4} \\times 100 = 25\\)"
+            },
+            {
+              "explain": "Check: \\(\\dfrac{19}{25} \\times 100\\% = 76\\%\\). Therefore, the essay was worth \\(25\\text{ marks}\\).",
+              "work": "\\(\\text{Answer: } 25\\text{ marks}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "brig22-y9-a2-n17",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Increase \\(275\\) by \\(12\\%\\).",
+          "options": [
+            "\\(287\\)",
+            "\\(308\\)",
+            "\\(303\\)",
+            "\\(242\\)"
+          ],
+          "answer": 1,
+          "hint": "Increasing by \\(12\\%\\) means multiplying by \\(112\\% = 1.12\\) (or find \\(12\\%\\) of \\(275 = 33\\) and add it to \\(275\\))!",
+          "keyPoints": [
+            {
+              "text": "Increase \\(275\\) by \\(12\\%\\)",
+              "note": "275 × 1.12 = 275 + 33 = 308."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Find \\(12\\%\\) of \\(275\\): \\(0.12 \\times 275\\).",
+              "work": "\\(12\\% \\text{ of } 275 = 0.12 \\times 275 = 33\\)"
+            },
+            {
+              "explain": "Add this increase to the original number \\(275\\).",
+              "work": "\\(275 + 33 = 308\\)"
+            },
+            {
+              "explain": "Equivalently, multiply directly by \\(112\\% = 1.12\\): \\(275 \\times 1.12 = 308\\).",
+              "work": "\\(275 \\times 1.12 = 308\\)"
+            },
+            {
+              "explain": "Therefore, increasing \\(275\\) by \\(12\\%\\) gives \\(308\\).",
+              "work": "\\(\\text{Answer: } 308\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },

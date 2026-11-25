@@ -7065,6 +7065,406 @@
             "grade": "9",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "brig22-y9-a2-i1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which of the following simplifies \\(10^3 \\times 10^5\\)?",
+          "options": [
+            "\\(10^{15}\\)",
+            "\\(100^8\\)",
+            "\\(10^8\\)",
+            "\\(100^{15}\\)"
+          ],
+          "answer": 2,
+          "hint": "When multiplying powers with the SAME base \\(10\\), KEEP the base \\(10\\) and ADD the indices (\\(3 + 5\\))!",
+          "keyPoints": [
+            {
+              "text": "10^3 \\times 10^5",
+              "note": "Keep base 10, add indices: 10^(3+5) = 10⁸."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Apply the index multiplication law \\(a^m \\times a^n = a^{m + n}\\).",
+              "work": "\\(10^3 \\times 10^5 = 10^{3 + 5}\\)"
+            },
+            {
+              "explain": "Keep the base \\(10\\) unchanged (do NOT multiply \\(10 \\times 10 = 100\\)) and add the indices: \\(3 + 5 = 8\\).",
+              "work": "\\(10^{3 + 5} = 10^8\\)"
+            },
+            {
+              "explain": "Verify: \\(1000 \\times 100{,}000 = 100{,}000{,}000 = 10^8\\).",
+              "work": "\\(10^8\\)"
+            },
+            {
+              "explain": "Therefore, \\(10^3 \\times 10^5 = 10^8\\).",
+              "work": "\\(\\text{Answer: } 10^8\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "brig22-y9-a2-i2",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which of the following simplifies \\(2^7 \\div 2\\)?",
+          "options": [
+            "\\(1^6\\)",
+            "\\(1^8\\)",
+            "\\(2^6\\)",
+            "\\(2^8\\)"
+          ],
+          "answer": 2,
+          "hint": "Remember \\(2 = 2^1\\)! When dividing powers with the same base \\(2\\), KEEP the base \\(2\\) and SUBTRACT the indices (\\(7 - 1\\))!",
+          "keyPoints": [
+            {
+              "text": "2^7 \\div 2",
+              "note": "2⁷ ÷ 2¹ = 2^(7−1) = 2⁶."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write the standalone \\(2\\) with its implicit index \\(1\\): \\(2^7 \\div 2^1\\).",
+              "work": "\\(2^7 \\div 2^1\\)"
+            },
+            {
+              "explain": "Apply the division index law \\(a^m \\div a^n = a^{m - n}\\): keep base \\(2\\) and subtract indices.",
+              "work": "\\(2^{7 - 1} = 2^6\\)"
+            },
+            {
+              "explain": "Verify: \\(128 \\div 2 = 64 = 2^6\\).",
+              "work": "\\(2^6 = 64\\)"
+            },
+            {
+              "explain": "Therefore, \\(2^7 \\div 2 = 2^6\\).",
+              "work": "\\(\\text{Answer: } 2^6\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "brig22-y9-a2-i3",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which of the following is the same as \\((a^2)^3\\)?",
+          "options": [
+            "\\(a^5\\)",
+            "\\(a \\times a \\times a\\)",
+            "\\((a + a)^3\\)",
+            "\\(a^2 \\times a^2 \\times a^2\\)"
+          ],
+          "answer": 3,
+          "hint": "Cubing \\(a^2\\) means multiplying \\(a^2\\) by itself THREE times: \\(a^2 \\times a^2 \\times a^2\\) (which equals \\(a^6\\), NOT \\(a^5\\))!",
+          "keyPoints": [
+            {
+              "text": "(a^2)^3",
+              "note": "Cubing a² means 3 factors of a²: a² × a² × a² (= a⁶)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "The outside index \\(3\\) means multiply the entire base \\(a^2\\) by itself \\(3\\) times.",
+              "work": "\\((a^2)^3 = a^2 \\times a^2 \\times a^2\\)"
+            },
+            {
+              "explain": "Check by the power-of-a-power law: \\((a^2)^3 = a^{2 \\times 3} = a^6\\), and \\(a^2 \\times a^2 \\times a^2 = a^{2+2+2} = a^6\\).",
+              "work": "\\(a^{2 + 2 + 2} = a^6\\)"
+            },
+            {
+              "explain": "Eliminate \\(a^5\\) (wrongly adding \\(2 + 3\\)) and the other non-equivalent expressions.",
+              "work": "\\(a^2 \\times a^2 \\times a^2 = a^6\\)"
+            },
+            {
+              "explain": "Therefore, \\((a^2)^3\\) is the same as \\(a^2 \\times a^2 \\times a^2\\).",
+              "work": "\\(\\text{Answer: } a^2 \\times a^2 \\times a^2\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "brig22-y9-a2-i4",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The fraction \\(\\dfrac{12a^4 b}{32a^3 b^2}\\) can be fully simplified to:",
+          "options": [
+            "\\(\\dfrac{6a}{16}\\)",
+            "\\(\\dfrac{3a}{8b}\\)",
+            "\\(\\dfrac{a}{4b}\\)",
+            "\\(\\dfrac{12a}{32b}\\)"
+          ],
+          "answer": 1,
+          "hint": "Divide \\(12\\) and \\(32\\) by their HCF (\\(4\\) → \\(\\dfrac{3}{8}\\)), cancel \\(a^3\\) leaving \\(a\\) on top, and cancel \\(b\\) leaving \\(b\\) on the bottom!",
+          "keyPoints": [
+            {
+              "text": "fully simplified",
+              "note": "12/32 = 3/8, a⁴/a³ = a, b/b² = 1/b → 3a/(8b)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Simplify the numerical fraction by dividing top and bottom by \\(\\text{HCF}(12, 32) = 4\\).",
+              "work": "\\(\\dfrac{12}{32} = \\dfrac{3}{8}\\)"
+            },
+            {
+              "explain": "Simplify the \\(a\\) powers: \\(\\dfrac{a^4}{a^3} = a^{4 - 3} = a\\) (in the numerator).",
+              "work": "\\(\\dfrac{a^4}{a^3} = a\\)"
+            },
+            {
+              "explain": "Simplify the \\(b\\) powers: \\(\\dfrac{b^1}{b^2} = \\dfrac{1}{b}\\) (one \\(b\\) remains in the denominator).",
+              "work": "\\(\\dfrac{b}{b^2} = \\dfrac{1}{b}\\)"
+            },
+            {
+              "explain": "Combine all simplified parts: \\(\\dfrac{3a}{8b}\\).",
+              "work": "\\(\\text{Answer: } \\dfrac{3a}{8b}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "brig22-y9-a2-i5",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What is the value of \\(x^0\\) (for \\(x \\neq 0\\))?",
+          "options": [
+            "\\(1\\)",
+            "\\(0\\)",
+            "\\(\\sqrt{x}\\)",
+            "\\(x\\)"
+          ],
+          "answer": 0,
+          "hint": "By the zero index law, ANY non-zero base raised to the power \\(0\\) equals \\(1\\)!",
+          "keyPoints": [
+            {
+              "text": "x^0",
+              "note": "Zero index law: x⁰ = 1 (for x ≠ 0)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Recall the zero index law: for any non-zero number \\(x\\), \\(x^0 = 1\\).",
+              "work": "\\(x^0 = 1 \\quad (x \\neq 0)\\)"
+            },
+            {
+              "explain": "Why? By the division index law, \\(\\dfrac{x^n}{x^n} = x^{n - n} = x^0\\), and any non-zero quantity divided by itself is \\(1\\).",
+              "work": "\\(x^0 = \\dfrac{x^n}{x^n} = 1\\)"
+            },
+            {
+              "explain": "Avoid the common mistake of answering \\(0\\).",
+              "work": "\\(x^0 = 1 \\neq 0\\)"
+            },
+            {
+              "explain": "Therefore, the value of \\(x^0\\) is \\(1\\).",
+              "work": "\\(\\text{Answer: } 1\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "brig22-y9-a2-i10a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify \\(b^2 \\times b^3\\).",
+          "options": [
+            "\\(b^5\\)",
+            "\\(b^6\\)",
+            "\\(2b^5\\)",
+            "\\(b^1\\)"
+          ],
+          "answer": 0,
+          "hint": "Same base \\(b\\) being multiplied → ADD the indices (\\(2 + 3\\))!",
+          "keyPoints": [
+            {
+              "text": "b^2 \\times b^3",
+              "note": "b^(2+3) = b⁵."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Apply the multiplication index law \\(a^m \\times a^n = a^{m + n}\\).",
+              "work": "\\(b^2 \\times b^3 = b^{2 + 3}\\)"
+            },
+            {
+              "explain": "Add the indices: \\(2 + 3 = 5\\).",
+              "work": "\\(b^5\\)"
+            },
+            {
+              "explain": "Check by expanding: \\((b \\times b) \\times (b \\times b \\times b) = b^5\\).",
+              "work": "\\(b^5\\)"
+            },
+            {
+              "explain": "Therefore, \\(b^2 \\times b^3 = b^5\\).",
+              "work": "\\(\\text{Answer: } b^5\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "brig22-y9-a2-i10b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify \\(2m^5 \\times 10m^2\\).",
+          "options": [
+            "\\(12m^7\\)",
+            "\\(20m^7\\)",
+            "\\(20m^{10}\\)",
+            "\\(12m^{10}\\)"
+          ],
+          "answer": 1,
+          "hint": "MULTIPLY the coefficients (\\(2 \\times 10 = 20\\)) and ADD the indices of \\(m\\) (\\(5 + 2 = 7\\))!",
+          "keyPoints": [
+            {
+              "text": "2m^5 \\times 10m^2",
+              "note": "(2 × 10) × m^(5+2) = 20m⁷."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Group the numerical coefficients and the powers of \\(m\\) separately.",
+              "work": "\\((2 \\times 10) \\times (m^5 \\times m^2)\\)"
+            },
+            {
+              "explain": "Multiply the coefficients: \\(2 \\times 10 = 20\\).",
+              "work": "\\(2 \\times 10 = 20\\)"
+            },
+            {
+              "explain": "Add the indices on \\(m\\): \\(m^{5 + 2} = m^7\\).",
+              "work": "\\(m^{5 + 2} = m^7\\)"
+            },
+            {
+              "explain": "Combine both parts: \\(20m^7\\).",
+              "work": "\\(\\text{Answer: } 20m^7\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "brig22-y9-a2-i10c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify \\(c^{10} \\div c^4\\).",
+          "options": [
+            "\\(c^6\\)",
+            "\\(c^{14}\\)",
+            "\\(c^{2.5}\\)",
+            "\\(c^{40}\\)"
+          ],
+          "answer": 0,
+          "hint": "When dividing powers with the same base \\(c\\), SUBTRACT the indices (\\(10 - 4\\))!",
+          "keyPoints": [
+            {
+              "text": "c^{10} \\div c^4",
+              "note": "c^(10−4) = c⁶."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Apply the division index law \\(a^m \\div a^n = a^{m - n}\\).",
+              "work": "\\(c^{10} \\div c^4 = c^{10 - 4}\\)"
+            },
+            {
+              "explain": "Subtract the indices: \\(10 - 4 = 6\\).",
+              "work": "\\(c^6\\)"
+            },
+            {
+              "explain": "Verify: \\(c^6 \\times c^4 = c^{10}\\). Exact!",
+              "work": "\\(c^6 \\times c^4 = c^{10}\\)"
+            },
+            {
+              "explain": "Therefore, \\(c^{10} \\div c^4 = c^6\\).",
+              "work": "\\(\\text{Answer: } c^6\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "brig22-y9-a2-i10d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify \\(12p^3 \\div (-15p^2)\\).",
+          "options": [
+            "\\(-\\dfrac{4p}{5}\\)",
+            "\\(\\dfrac{4p}{5}\\)",
+            "\\(-\\dfrac{5p}{4}\\)",
+            "\\(-3p\\)"
+          ],
+          "answer": 0,
+          "hint": "Write as a fraction \\(\\dfrac{12p^3}{-15p^2}\\): simplify \\(\\dfrac{12}{-15} = -\\dfrac{4}{5}\\) and subtract powers of \\(p\\) (\\(p^{3 - 2} = p\\))!",
+          "keyPoints": [
+            {
+              "text": "12p^3 \\div (-15p^2)",
+              "note": "(12 / −15) × p^(3−2) = −4p/5."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Rewrite the division as a fraction: \\(\\dfrac{12p^3}{-15p^2}\\).",
+              "work": "\\(\\dfrac{12p^3}{-15p^2}\\)"
+            },
+            {
+              "explain": "Simplify the numerical ratio by dividing by \\(3\\) and placing the negative sign in front: \\(-\\dfrac{4}{5}\\).",
+              "work": "\\(\\dfrac{12}{-15} = -\\dfrac{4}{5}\\)"
+            },
+            {
+              "explain": "Apply the index division law to \\(p\\): \\(p^{3 - 2} = p^1 = p\\).",
+              "work": "\\(p^{3 - 2} = p\\)"
+            },
+            {
+              "explain": "Combine the coefficient and variable: \\(-\\dfrac{4p}{5}\\).",
+              "work": "\\(\\text{Answer: } -\\dfrac{4p}{5}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "brig22-y9-a2-i10e",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify \\(2a^0\\) (for \\(a \\neq 0\\)).",
+          "options": [
+            "\\(1\\)",
+            "\\(2\\)",
+            "\\(0\\)",
+            "\\(2a\\)"
+          ],
+          "answer": 1,
+          "hint": "The power \\(0\\) applies ONLY to \\(a\\) (not to \\(2\\)): so \\(2a^0 = 2 \\times 1\\)!",
+          "keyPoints": [
+            {
+              "text": "2a^0",
+              "note": "2 × a⁰ = 2 × 1 = 2 (no brackets around 2a)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Recognise that the index \\(0\\) applies only to \\(a\\), because there are no brackets around \\(2a\\).",
+              "work": "\\(2a^0 = 2 \\times a^0\\)"
+            },
+            {
+              "explain": "Apply the zero index law: \\(a^0 = 1\\) (for \\(a \\neq 0\\)).",
+              "work": "\\(2 \\times 1\\)"
+            },
+            {
+              "explain": "Multiply: \\(2 \\times 1 = 2\\). (Contrast with \\((2a)^0 = 1\\).)",
+              "work": "\\(2 \\times 1 = 2\\)"
+            },
+            {
+              "explain": "Therefore, \\(2a^0 = 2\\).",
+              "work": "\\(\\text{Answer: } 2\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -7465,6 +7865,246 @@
             "grade": "9",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "brig22-y9-a2-i7",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What is the value of \\(2x^{-1}\\)?",
+          "options": [
+            "\\(\\dfrac{x}{2}\\)",
+            "\\(\\dfrac{2}{x}\\)",
+            "\\(\\dfrac{1}{2x}\\)",
+            "\\(2x\\)"
+          ],
+          "answer": 1,
+          "hint": "The negative index \\(-1\\) applies ONLY to \\(x\\), NOT to the coefficient \\(2\\) (since there are no brackets around \\(2x\\))!",
+          "keyPoints": [
+            {
+              "text": "2x^{-1}",
+              "note": "2 × x⁻¹ = 2 × (1/x) = 2/x."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Recognise that the index \\(-1\\) acts only on \\(x\\), while \\(2\\) stays in the numerator.",
+              "work": "\\(2x^{-1} = 2 \\times x^{-1}\\)"
+            },
+            {
+              "explain": "Apply the negative index law \\(x^{-1} = \\dfrac{1}{x}\\).",
+              "work": "\\(2 \\times \\dfrac{1}{x} = \\dfrac{2}{x}\\)"
+            },
+            {
+              "explain": "Contrast with \\((2x)^{-1} = \\dfrac{1}{2x}\\), which has brackets around \\(2x\\).",
+              "work": "\\(2x^{-1} = \\dfrac{2}{x}\\)"
+            },
+            {
+              "explain": "Therefore, \\(2x^{-1} = \\dfrac{2}{x}\\).",
+              "work": "\\(\\text{Answer: } \\dfrac{2}{x}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "brig22-y9-a2-i11a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate \\(9^{-2}\\), giving your answer as a fraction.",
+          "options": [
+            "\\(\\dfrac{1}{81}\\)",
+            "\\(-\\dfrac{1}{81}\\)",
+            "\\(\\dfrac{1}{18}\\)",
+            "\\(-81\\)"
+          ],
+          "answer": 0,
+          "hint": "A negative index creates a RECIPROCAL (NOT a negative number!): \\(9^{-2} = \\dfrac{1}{9^2}\\)!",
+          "keyPoints": [
+            {
+              "text": "9^{-2}",
+              "note": "9⁻² = 1 / 9² = 1/81 (positive!)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Apply the negative index law \\(a^{-n} = \\dfrac{1}{a^n}\\).",
+              "work": "\\(9^{-2} = \\dfrac{1}{9^2}\\)"
+            },
+            {
+              "explain": "Evaluate the square in the denominator: \\(9^2 = 9 \\times 9 = 81\\).",
+              "work": "\\(\\dfrac{1}{9^2} = \\dfrac{1}{81}\\)"
+            },
+            {
+              "explain": "Remember a negative exponent never makes a positive base negative.",
+              "work": "\\(\\dfrac{1}{81} > 0\\)"
+            },
+            {
+              "explain": "Therefore, \\(9^{-2} = \\dfrac{1}{81}\\).",
+              "work": "\\(\\text{Answer: } \\dfrac{1}{81}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "brig22-y9-a2-i11b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate \\(\\left(\\dfrac{4}{5}\\right)^{-1}\\), giving your answer as a fraction.",
+          "options": [
+            "\\(\\dfrac{5}{4}\\)",
+            "\\(-\\dfrac{4}{5}\\)",
+            "\\(-\\dfrac{5}{4}\\)",
+            "\\(\\dfrac{4}{5}\\)"
+          ],
+          "answer": 0,
+          "hint": "Raising any fraction to the power \\(-1\\) simply FLIPS it to its reciprocal: \\(\\left(\\dfrac{a}{b}\\right)^{-1} = \\dfrac{b}{a}\\)!",
+          "keyPoints": [
+            {
+              "text": "\\left(\\dfrac{4}{5}\\right)^{-1}",
+              "note": "Power −1 flips the fraction: 5/4."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Apply the reciprocal rule for a negative power of a fraction: \\(\\left(\\dfrac{a}{b}\\right)^{-1} = \\dfrac{b}{a}\\).",
+              "work": "\\(\\left(\\dfrac{4}{5}\\right)^{-1} = \\dfrac{1}{\\frac{4}{5}} = \\dfrac{5}{4}\\)"
+            },
+            {
+              "explain": "Check: \\(\\dfrac{4}{5} \\times \\dfrac{5}{4} = 1\\).",
+              "work": "\\(\\dfrac{4}{5} \\times \\dfrac{5}{4} = 1\\)"
+            },
+            {
+              "explain": "Keep the sign positive.",
+              "work": "\\(\\dfrac{5}{4}\\)"
+            },
+            {
+              "explain": "Therefore, \\(\\left(\\dfrac{4}{5}\\right)^{-1} = \\dfrac{5}{4}\\).",
+              "work": "\\(\\text{Answer: } \\dfrac{5}{4}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "brig22-y9-a2-i12b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify \\(y^2 \\times y^{-4}\\), leaving your answer with positive indices.",
+          "options": [
+            "\\(\\dfrac{1}{y^2}\\)",
+            "\\(y^{-2}\\)",
+            "\\(y^2\\)",
+            "\\(\\dfrac{1}{y^8}\\)"
+          ],
+          "answer": 0,
+          "hint": "Add the indices first (\\(2 + (-4) = -2\\) → \\(y^{-2}\\)), then rewrite with a POSITIVE index using \\(y^{-n} = \\dfrac{1}{y^n}\\)!",
+          "keyPoints": [
+            {
+              "text": "positive indices",
+              "note": "y^(2−4) = y⁻² = 1/y²."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Use the multiplication index law to add the indices: \\(2 + (-4) = -2\\).",
+              "work": "\\(y^2 \\times y^{-4} = y^{2 + (-4)} = y^{-2}\\)"
+            },
+            {
+              "explain": "Convert the negative index to a positive index using \\(a^{-n} = \\dfrac{1}{a^n}\\).",
+              "work": "\\(y^{-2} = \\dfrac{1}{y^2}\\)"
+            },
+            {
+              "explain": "Check by writing \\(y^{-4} = \\dfrac{1}{y^4}\\): \\(\\dfrac{y^2}{y^4} = \\dfrac{1}{y^2}\\). Exact!",
+              "work": "\\(\\dfrac{y^2}{y^4} = \\dfrac{1}{y^2}\\)"
+            },
+            {
+              "explain": "Therefore, the simplified expression with positive indices is \\(\\dfrac{1}{y^2}\\).",
+              "work": "\\(\\text{Answer: } \\dfrac{1}{y^2}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "brig22-y9-a2-i12c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify \\(a^4 \\div a^5\\), leaving your answer with positive indices.",
+          "options": [
+            "\\(\\dfrac{1}{a}\\)",
+            "\\(a^{-1}\\)",
+            "\\(a\\)",
+            "\\(-a\\)"
+          ],
+          "answer": 0,
+          "hint": "Subtract indices (\\(4 - 5 = -1\\) → \\(a^{-1}\\)), then rewrite with a POSITIVE index as \\(\\dfrac{1}{a}\\)!",
+          "keyPoints": [
+            {
+              "text": "a^4 \\div a^5",
+              "note": "a^(4−5) = a⁻¹ = 1/a."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Apply the division index law: subtract the second index from the first.",
+              "work": "\\(a^4 \\div a^5 = a^{4 - 5} = a^{-1}\\)"
+            },
+            {
+              "explain": "Rewrite using a positive index: \\(a^{-1} = \\dfrac{1}{a}\\).",
+              "work": "\\(a^{-1} = \\dfrac{1}{a}\\)"
+            },
+            {
+              "explain": "Check by cancelling \\(a^4\\) from \\(\\dfrac{a^4}{a^5}\\): one \\(a\\) remains in the denominator.",
+              "work": "\\(\\dfrac{a^4}{a^5} = \\dfrac{1}{a}\\)"
+            },
+            {
+              "explain": "Therefore, the answer with positive indices is \\(\\dfrac{1}{a}\\).",
+              "work": "\\(\\text{Answer: } \\dfrac{1}{a}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "brig22-y9-a2-i14",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Simplify \\(\\dfrac{(x^2)^{-3} \\times (y^3)^2}{x^{-1} \\times y^4}\\), leaving the answer with positive indices.",
+          "options": [
+            "\\(\\dfrac{y^2}{x^5}\\)",
+            "\\(\\dfrac{y^2}{x^7}\\)",
+            "\\(x^5 y^2\\)",
+            "\\(\\dfrac{y}{x^5}\\)"
+          ],
+          "answer": 0,
+          "hint": "Expand the powers in the numerator first (\\(x^{-6} y^6\\)), then subtract bottom indices from top indices: \\(x^{-6 - (-1)} = x^{-5}\\) and \\(y^{6 - 4} = y^2\\)!",
+          "keyPoints": [
+            {
+              "text": "positive indices",
+              "note": "(x⁻⁶ y⁶) / (x⁻¹ y⁴) = x⁻⁵ y² = y² / x⁵."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Apply the power-of-a-power law in the numerator: \\((x^2)^{-3} = x^{-6}\\) and \\((y^3)^2 = y^6\\).",
+              "work": "\\(\\dfrac{x^{-6} y^6}{x^{-1} y^4}\\)"
+            },
+            {
+              "explain": "Apply the division index law to \\(x\\): \\(x^{-6 - (-1)} = x^{-6 + 1} = x^{-5}\\).",
+              "work": "\\(x^{-6 - (-1)} = x^{-5}\\)"
+            },
+            {
+              "explain": "Apply the division index law to \\(y\\): \\(y^{6 - 4} = y^2\\).",
+              "work": "\\(y^{6 - 4} = y^2\\)"
+            },
+            {
+              "explain": "Move \\(x^{-5}\\) to the denominator so all indices are positive: \\(\\dfrac{y^2}{x^5}\\).",
+              "work": "\\(x^{-5} y^2 = \\dfrac{y^2}{x^5}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -8051,6 +8691,166 @@
             "grade": "9",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "brig22-y9-a2-i6",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "\\(m^{\\frac{5}{2}}\\) is equal to which of the following?",
+          "options": [
+            "\\((\\sqrt[5]{m})^2\\)",
+            "\\(\\sqrt{m^5}\\)",
+            "\\(\\dfrac{5}{2}m\\)",
+            "\\(\\dfrac{5}{2m}\\)"
+          ],
+          "answer": 1,
+          "hint": "In a fractional index \\(m^{p/q}\\), the DENOMINATOR \\(q = 2\\) is the root (square root \\(\\sqrt{\\phantom{x}}\\)) and the NUMERATOR \\(p = 5\\) is the power!",
+          "keyPoints": [
+            {
+              "text": "m^{\\frac{5}{2}}",
+              "note": "Denominator 2 = square root, numerator 5 = power → √(m⁵)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Use the fractional index law \\(a^{\\frac{p}{q}} = \\sqrt[q]{a^p}\\).",
+              "work": "\\(m^{\\frac{5}{2}} = \\sqrt[2]{m^5}\\)"
+            },
+            {
+              "explain": "A \\(2\\text{nd}\\) root is simply the square root \\(\\sqrt{\\phantom{x}}\\), so \\(\\sqrt[2]{m^5} = \\sqrt{m^5}\\).",
+              "work": "\\(\\sqrt{m^5}\\)"
+            },
+            {
+              "explain": "Note that \\((\\sqrt[5]{m})^2 = m^{2/5}\\), which swaps numerator and denominator.",
+              "work": "\\(m^{\\frac{5}{2}} = \\sqrt{m^5}\\)"
+            },
+            {
+              "explain": "Therefore, \\(m^{\\frac{5}{2}}\\) equals \\(\\sqrt{m^5}\\).",
+              "work": "\\(\\text{Answer: } \\sqrt{m^5}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "brig22-y9-a2-i12a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify \\((x^6)^{\\frac{1}{2}}\\), leaving your answer with positive indices.",
+          "options": [
+            "\\(x^3\\)",
+            "\\(x^{12}\\)",
+            "\\(x^4\\)",
+            "\\(\\dfrac{1}{x^3}\\)"
+          ],
+          "answer": 0,
+          "hint": "Use the power-of-a-power law \\((a^m)^n = a^{m \\times n}\\): multiply \\(6 \\times \\dfrac{1}{2}\\)!",
+          "keyPoints": [
+            {
+              "text": "(x^6)^{\\frac{1}{2}}",
+              "note": "x^(6 × 1/2) = x³."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Apply the power-of-a-power index law: multiply the two indices.",
+              "work": "\\((x^6)^{\\frac{1}{2}} = x^{6 \\times \\frac{1}{2}}\\)"
+            },
+            {
+              "explain": "Calculate \\(6 \\times \\dfrac{1}{2} = 3\\).",
+              "work": "\\(x^3\\)"
+            },
+            {
+              "explain": "Check: the square root of \\(x^6\\) is \\(x^3\\) because \\((x^3)^2 = x^6\\).",
+              "work": "\\((x^3)^2 = x^6\\)"
+            },
+            {
+              "explain": "Therefore, the simplified answer is \\(x^3\\).",
+              "work": "\\(\\text{Answer: } x^3\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "brig22-y9-a2-i13a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify and evaluate \\(9 \\times 9^{\\frac{1}{2}}\\).",
+          "options": [
+            "\\(27\\)",
+            "\\(18\\)",
+            "\\(81\\)",
+            "\\(40.5\\)"
+          ],
+          "answer": 0,
+          "hint": "Remember \\(9^{\\frac{1}{2}} = \\sqrt{9} = 3\\), so simply multiply \\(9 \\times 3\\)!",
+          "keyPoints": [
+            {
+              "text": "9 \\times 9^{\\frac{1}{2}}",
+              "note": "9^(1/2) = √9 = 3 → 9 × 3 = 27."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Evaluate the fractional index: a power of \\(\\dfrac{1}{2}\\) is the square root.",
+              "work": "\\(9^{\\frac{1}{2}} = \\sqrt{9} = 3\\)"
+            },
+            {
+              "explain": "Multiply \\(9\\) by \\(3\\): \\(9 \\times 3 = 27\\).",
+              "work": "\\(9 \\times 3 = 27\\)"
+            },
+            {
+              "explain": "Alternative check via index laws: \\(9^1 \\times 9^{\\frac{1}{2}} = 9^{\\frac{3}{2}} = (\\sqrt{9})^3 = 3^3 = 27\\).",
+              "work": "\\(3^3 = 27\\)"
+            },
+            {
+              "explain": "Therefore, \\(9 \\times 9^{\\frac{1}{2}} = 27\\).",
+              "work": "\\(\\text{Answer: } 27\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "brig22-y9-a2-i13b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Simplify and evaluate \\((1000^{-2})^{\\frac{1}{3}}\\).",
+          "options": [
+            "\\(\\dfrac{1}{100}\\)",
+            "\\(\\dfrac{1}{10}\\)",
+            "\\(-100\\)",
+            "\\(100\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply the indices (\\(-2 \\times \\dfrac{1}{3} = -\\dfrac{2}{3}\\)), take the cube root of \\(1000\\) first (\\(\\sqrt[3]{1000} = 10\\)), then apply power \\(-2\\)!",
+          "keyPoints": [
+            {
+              "text": "(1000^{-2})^{\\frac{1}{3}}",
+              "note": "1000^(−2/3) = (∛1000)⁻² = 10⁻² = 1/100."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Multiply the indices using \\((a^m)^n = a^{mn}\\): \\(1000^{-2 \\times \\frac{1}{3}} = 1000^{-\\frac{2}{3}}\\).",
+              "work": "\\((1000^{-2})^{\\frac{1}{3}} = 1000^{-\\frac{2}{3}}\\)"
+            },
+            {
+              "explain": "Write with a positive index: \\(\\dfrac{1}{1000^{\\frac{2}{3}}} = \\dfrac{1}{(\\sqrt[3]{1000})^2}\\).",
+              "work": "\\(\\dfrac{1}{(\\sqrt[3]{1000})^2}\\)"
+            },
+            {
+              "explain": "Take the cube root first (\\(\\sqrt[3]{1000} = 10\\)), then square it: \\(10^2 = 100\\).",
+              "work": "\\(\\dfrac{1}{10^2} = \\dfrac{1}{100}\\)"
+            },
+            {
+              "explain": "Therefore, \\((1000^{-2})^{\\frac{1}{3}} = \\dfrac{1}{100}\\).",
+              "work": "\\(\\text{Answer: } \\dfrac{1}{100}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -9026,6 +9826,246 @@
             "grade": "9",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "brig22-y9-a2-n1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "\\(9483\\) rounded to two significant figures is:",
+          "options": [
+            "\\(94\\)",
+            "\\(95\\)",
+            "\\(9400\\)",
+            "\\(9500\\)"
+          ],
+          "answer": 3,
+          "hint": "Keep the first two digits (\\(9\\) and \\(4\\)), look at the third digit (\\(8 \\ge 5\\)) to round up to \\(95\\), and replace the remaining digits with placeholder zeros so the place value stays in the thousands!",
+          "keyPoints": [
+            {
+              "text": "two significant figures",
+              "note": "3rd digit is 8 ≥ 5 → round 94 up to 95, keep place value → 9500."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the first two significant figures of \\(9483\\): they are \\(9\\) (thousands) and \\(4\\) (hundreds).",
+              "work": "\\(\\mathbf{94}83\\)"
+            },
+            {
+              "explain": "Inspect the next (third) digit \\(8\\): since \\(8 \\ge 5\\), round the second significant figure up from \\(4\\) to \\(5\\).",
+              "work": "\\(8 \\ge 5 \\implies 94 \\to 95\\)"
+            },
+            {
+              "explain": "Replace the tens and ones digits with zeros to preserve the magnitude in the thousands.",
+              "work": "\\(9483 \\approx 9500\\)"
+            },
+            {
+              "explain": "Therefore, \\(9483\\) rounded to two significant figures is \\(9500\\).",
+              "work": "\\(\\text{Answer: } 9500\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "brig22-y9-a2-n2",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which of the following numbers is \\(9.02 \\times 10^{-2}\\)?",
+          "options": [
+            "\\(0.092\\)",
+            "\\(0.902\\)",
+            "\\(0.0902\\)",
+            "\\(902\\)"
+          ],
+          "answer": 2,
+          "hint": "A negative power \\(10^{-2}\\) means move the decimal point \\(2\\) places to the LEFT (keep the \\(0\\) between \\(9\\) and \\(2\\))!",
+          "keyPoints": [
+            {
+              "text": "9.02 \\times 10^{-2}",
+              "note": "Shift decimal point 2 places left: 9.02 → 0.902 → 0.0902."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Recall that \\(10^{-2} = \\dfrac{1}{100}\\), so multiplying by \\(10^{-2}\\) moves the decimal point \\(2\\) places left.",
+              "work": "\\(9.02 \\times 10^{-2} = 9.02 \\div 100\\)"
+            },
+            {
+              "explain": "Move \\(1\\) place left: \\(0.902\\). Move a \\(2\\text{nd}\\) place left by inserting a leading zero: \\(0.0902\\).",
+              "work": "\\(9.02 \\to 0.902 \\to 0.0902\\)"
+            },
+            {
+              "explain": "Do not drop the internal zero between \\(9\\) and \\(2\\): \\(0.092\\) is a common trap.",
+              "work": "\\(0.0902 \\neq 0.092\\)"
+            },
+            {
+              "explain": "Therefore, \\(9.02 \\times 10^{-2} = 0.0902\\).",
+              "work": "\\(\\text{Answer: } 0.0902\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "brig22-y9-a2-i8a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express \\(9732\\) in Scientific Notation.",
+          "options": [
+            "\\(9.732 \\times 10^3\\)",
+            "\\(9.732 \\times 10^{-3}\\)",
+            "\\(97.32 \\times 10^2\\)",
+            "\\(9.732 \\times 10^4\\)"
+          ],
+          "answer": 0,
+          "hint": "Place the decimal point after the first non-zero digit (\\(9.732\\)) and count how many places it moved left (\\(3\\) places → \\(10^3\\))!",
+          "keyPoints": [
+            {
+              "text": "9732",
+              "note": "9732 = 9.732 × 10³."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "In scientific notation \\(a \\times 10^n\\), the leading number \\(a\\) must satisfy \\(1 \\le a < 10\\).",
+              "work": "\\(a = 9.732\\)"
+            },
+            {
+              "explain": "Count how many places the decimal point moved left from \\(9732.\\) to \\(9.732\\): \\(3\\) places.",
+              "work": "\\(9732 = 9.732 \\times 1000 = 9.732 \\times 10^3\\)"
+            },
+            {
+              "explain": "Because \\(9732 > 1\\), the power of \\(10\\) is positive (\\(+3\\)).",
+              "work": "\\(9.732 \\times 10^3\\)"
+            },
+            {
+              "explain": "Therefore, \\(9732 = 9.732 \\times 10^3\\).",
+              "work": "\\(\\text{Answer: } 9.732 \\times 10^3\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "brig22-y9-a2-i8b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express \\(0.053\\) in Scientific Notation.",
+          "options": [
+            "\\(5.3 \\times 10^{-2}\\)",
+            "\\(5.3 \\times 10^2\\)",
+            "\\(5.3 \\times 10^{-3}\\)",
+            "\\(0.53 \\times 10^{-1}\\)"
+          ],
+          "answer": 0,
+          "hint": "Move the decimal point right until it sits after the first non-zero digit (\\(5.3\\)): \\(2\\) places right means a NEGATIVE power \\(10^{-2}\\)!",
+          "keyPoints": [
+            {
+              "text": "0.053",
+              "note": "0.053 = 5.3 × 10⁻²."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Place the decimal point after the first non-zero digit \\(5\\) to get \\(5.3\\) (between \\(1\\) and \\(10\\)).",
+              "work": "\\(a = 5.3\\)"
+            },
+            {
+              "explain": "Count how many places the decimal point shifted right from \\(0.053\\) to \\(5.3\\): \\(2\\) places.",
+              "work": "\\(0.053 \\to 0.53 \\to 5.3 \\; (2\\text{ places right})\\)"
+            },
+            {
+              "explain": "Because \\(0.053 < 1\\), the exponent of \\(10\\) is negative: \\(-2\\).",
+              "work": "\\(0.053 = 5.3 \\times 10^{-2}\\)"
+            },
+            {
+              "explain": "Therefore, \\(0.053 = 5.3 \\times 10^{-2}\\).",
+              "work": "\\(\\text{Answer: } 5.3 \\times 10^{-2}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "brig22-y9-a2-i9a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate \\(\\dfrac{6.8}{0.05^4}\\), giving your answer in Scientific Notation to \\(3\\) significant figures.",
+          "options": [
+            "\\(1.09 \\times 10^6\\)",
+            "\\(1.08 \\times 10^6\\)",
+            "\\(1.09 \\times 10^5\\)",
+            "\\(1.36 \\times 10^2\\)"
+          ],
+          "answer": 0,
+          "hint": "Compute \\(0.05^4 = 0.00000625\\), divide \\(6.8 \\div 0.00000625 = 1{,}088{,}000\\), write as \\(1.088 \\times 10^6\\), then round to \\(3\\) significant figures!",
+          "keyPoints": [
+            {
+              "text": "3\\) significant figures",
+              "note": "6.8 / 0.05⁴ = 1,088,000 = 1.088 × 10⁶ ≈ 1.09 × 10⁶."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Evaluate the denominator: \\(0.05^4 = (5 \\times 10^{-2})^4 = 625 \\times 10^{-8} = 0.00000625\\).",
+              "work": "\\(0.05^4 = 0.00000625\\)"
+            },
+            {
+              "explain": "Divide \\(6.8\\) by \\(0.00000625\\): \\(1{,}088{,}000\\).",
+              "work": "\\(\\dfrac{6.8}{0.05^4} = 1{,}088{,}000\\)"
+            },
+            {
+              "explain": "Convert to scientific notation: \\(1.088 \\times 10^6\\).",
+              "work": "\\(1{,}088{,}000 = 1.088 \\times 10^6\\)"
+            },
+            {
+              "explain": "Round to \\(3\\) significant figures (4th digit is \\(8 \\ge 5\\)): \\(1.09 \\times 10^6\\).",
+              "work": "\\(\\text{Answer: } 1.09 \\times 10^6\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "brig22-y9-a2-i9b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Calculate \\(\\sqrt[3]{9.1 \\times 10^{-8}}\\), giving your answer in Scientific Notation to \\(3\\) significant figures.",
+          "options": [
+            "\\(4.50 \\times 10^{-3}\\)",
+            "\\(4.49 \\times 10^{-3}\\)",
+            "\\(4.50 \\times 10^{-2}\\)",
+            "\\(3.02 \\times 10^{-4}\\)"
+          ],
+          "answer": 0,
+          "hint": "Evaluate \\(\\sqrt[3]{9.1 \\times 10^{-8}} \\approx 0.00449794\\ldots = 4.49794\\ldots \\times 10^{-3}\\), then round carefully to \\(3\\) significant figures (keep the trailing zero in \\(4.50\\))!",
+          "keyPoints": [
+            {
+              "text": "\\sqrt[3]{9.1 \\times 10^{-8}}",
+              "note": "∛(9.1×10⁻⁸) = 4.4979... × 10⁻³ ≈ 4.50 × 10⁻³."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Rewrite the power of \\(10\\) as a multiple of \\(3\\): \\(9.1 \\times 10^{-8} = 91 \\times 10^{-9}\\).",
+              "work": "\\(\\sqrt[3]{91 \\times 10^{-9}} = \\sqrt[3]{91} \\times 10^{-3}\\)"
+            },
+            {
+              "explain": "Compute the cube root of \\(91\\): \\(\\sqrt[3]{91} \\approx 4.4979414\\ldots\\).",
+              "work": "\\(4.4979414\\ldots \\times 10^{-3}\\)"
+            },
+            {
+              "explain": "Round \\(4.4979\\ldots\\) to \\(3\\) significant figures: the 4th digit is \\(7 \\ge 5\\), so \\(4.49\\) rounds up to \\(4.50\\) (keep the \\(0\\) to show \\(3\\) sig figs!).",
+              "work": "\\(4.4979\\ldots \\approx 4.50\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(4.50 \\times 10^{-3}\\).",
+              "work": "\\(\\text{Answer: } 4.50 \\times 10^{-3}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     }
