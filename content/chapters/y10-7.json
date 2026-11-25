@@ -4244,6 +4244,334 @@
           }
         },
         {
+          "id": "abb-y10-2025-t4-a-q17",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "If the quadratic function ax² + bx + c > 0 for all x, which of the following correctly defines the values of a, b and c?",
+          "options": [
+            "a < 0, b² − 4ac > 0",
+            "a < 0, b² − 4ac < 0",
+            "a > 0, b² − 4ac > 0",
+            "a > 0, b² − 4ac < 0"
+          ],
+          "answer": 3,
+          "hint": "The parabola must open upward and never meet the x-axis. Translate these two graph facts into conditions on a and the discriminant.",
+          "steps": [
+            {
+              "explain": "For the graph to remain above zero at both ends, it must open upward.",
+              "work": "a > 0"
+            },
+            {
+              "explain": "For it to stay strictly above the x-axis, it has no real roots. Thus the discriminant is negative.",
+              "work": "Δ = b² − 4ac < 0"
+            },
+            {
+              "explain": "Combine both necessary conditions.",
+              "work": "a > 0 and b² − 4ac < 0"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "> 0 for all x",
+              "note": "Relate the opening direction and x-intercepts to a and the discriminant."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 Year 10 Mathematics Core and Pathways, Band 1 and Band 2 Assessment Task 4",
+            "school": "Abbotsleigh",
+            "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Y9/MG_Task4_yr10Maths_Band1.pdf"
+          }
+        },
+        {
+          "id": "abb-y10-2025-t4-a-q20",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Which of the following could represent the graph of y = −x² + bx + 1, where b > 0?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"245\" viewBox=\"0 0 360 245\"><rect width=\"360\" height=\"245\" fill=\"#ffffff\"/><path d=\"M31 80H159 M95 28V134\" stroke=\"#94a3b8\" stroke-width=\"1.1\" fill=\"none\"/><path d=\"M201 80H329 M265 28V134\" stroke=\"#94a3b8\" stroke-width=\"1.1\" fill=\"none\"/><path d=\"M31 180H159 M95 128V234\" stroke=\"#94a3b8\" stroke-width=\"1.1\" fill=\"none\"/><path d=\"M201 180H329 M265 128V234\" stroke=\"#94a3b8\" stroke-width=\"1.1\" fill=\"none\"/><path d=\"M41.80,63.37 L42.99,63.91 L44.18,64.42 L45.37,64.90 L46.56,65.36 L47.75,65.80 L48.94,66.20 L50.13,66.59 L51.32,66.94 L52.51,67.27 L53.70,67.58 L54.89,67.85 L56.08,68.10 L57.27,68.33 L58.46,68.53 L59.65,68.70 L60.84,68.85 L62.03,68.97 L63.22,69.07 L64.41,69.14 L65.60,69.18 L66.79,69.20 L67.98,69.19 L69.17,69.16 L70.36,69.10 L71.55,69.01 L72.74,68.90 L73.93,68.76 L75.12,68.59 L76.31,68.40 L77.50,68.19 L78.69,67.94 L79.88,67.68 L81.07,67.38 L82.26,67.06 L83.45,66.71 L84.64,66.34 L85.83,65.94 L87.02,65.52 L88.21,65.07 L89.40,64.59 L90.59,64.09 L91.78,63.56 L92.97,63.01 L94.16,62.43 L95.35,61.82 L96.54,61.19 L97.73,60.53 L98.92,59.84 L100.11,59.13 L101.30,58.40 L102.49,57.63 L103.68,56.84 L104.87,56.03 L106.06,55.19 L107.25,54.32 L108.44,53.43 L109.63,52.51 L110.82,51.57 L112.01,50.59 L113.20,49.60 L114.39,48.58 L115.58,47.53 L116.77,46.45 L117.96,45.35 L119.15,44.22 L120.34,43.07 L121.53,41.89 L122.72,40.69 L123.91,39.46 L125.10,38.20 L126.29,36.92 L127.48,35.61 L128.67,34.27 L129.86,32.91 L131.05,31.52 L132.24,30.11 L133.43,28.67 L134.62,27.21 L135.81,25.72 L137.00,24.20\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\" opacity=\"1\"/><circle cx=\"95\" cy=\"62\" r=\"2.4\" fill=\"#64748b\" opacity=\"1\"/><text x=\"100\" y=\"60\" font-size=\"8\" font-family=\"Arial,sans-serif\" fill=\"#475569\" opacity=\"1\">1</text><text x=\"33\" y=\"26\" font-size=\"10\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#334155\" opacity=\"1\">A</text><path d=\"M223.00,24.20 L224.19,25.72 L225.38,27.21 L226.57,28.67 L227.76,30.11 L228.95,31.52 L230.14,32.91 L231.33,34.27 L232.52,35.61 L233.71,36.92 L234.90,38.20 L236.09,39.46 L237.28,40.69 L238.47,41.89 L239.66,43.07 L240.85,44.22 L242.04,45.35 L243.23,46.45 L244.42,47.53 L245.61,48.58 L246.80,49.60 L247.99,50.59 L249.18,51.57 L250.37,52.51 L251.56,53.43 L252.75,54.32 L253.94,55.19 L255.13,56.03 L256.32,56.84 L257.51,57.63 L258.70,58.40 L259.89,59.13 L261.08,59.84 L262.27,60.53 L263.46,61.19 L264.65,61.82 L265.84,62.43 L267.03,63.01 L268.22,63.56 L269.41,64.09 L270.60,64.59 L271.79,65.07 L272.98,65.52 L274.17,65.94 L275.36,66.34 L276.55,66.71 L277.74,67.06 L278.93,67.38 L280.12,67.68 L281.31,67.94 L282.50,68.19 L283.69,68.40 L284.88,68.59 L286.07,68.76 L287.26,68.90 L288.45,69.01 L289.64,69.10 L290.83,69.16 L292.02,69.19 L293.21,69.20 L294.40,69.18 L295.59,69.14 L296.78,69.07 L297.97,68.97 L299.16,68.85 L300.35,68.70 L301.54,68.53 L302.73,68.33 L303.92,68.10 L305.11,67.85 L306.30,67.58 L307.49,67.27 L308.68,66.94 L309.87,66.59 L311.06,66.20 L312.25,65.80 L313.44,65.36 L314.63,64.90 L315.82,64.42 L317.01,63.91 L318.20,63.37\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\" opacity=\"1\"/><circle cx=\"265\" cy=\"62\" r=\"2.4\" fill=\"#64748b\" opacity=\"1\"/><text x=\"270\" y=\"60\" font-size=\"8\" font-family=\"Arial,sans-serif\" fill=\"#475569\" opacity=\"1\">1</text><text x=\"203\" y=\"26\" font-size=\"10\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#334155\" opacity=\"1\">B</text><path d=\"M55.80,227.52 L56.92,224.67 L58.04,221.88 L59.16,219.14 L60.28,216.46 L61.40,213.84 L62.52,211.28 L63.64,208.77 L64.76,206.32 L65.88,203.93 L67.00,201.60 L68.12,199.32 L69.24,197.11 L70.36,194.95 L71.48,192.84 L72.60,190.80 L73.72,188.81 L74.84,186.88 L75.96,185.01 L77.08,183.20 L78.20,181.44 L79.32,179.74 L80.44,178.10 L81.56,176.52 L82.68,174.99 L83.80,173.52 L84.92,172.11 L86.04,170.76 L87.16,169.46 L88.28,168.22 L89.40,167.04 L90.52,165.92 L91.64,164.85 L92.76,163.84 L93.88,162.89 L95.00,162.00 L96.12,161.16 L97.24,160.39 L98.36,159.67 L99.48,159.00 L100.60,158.40 L101.72,157.85 L102.84,157.36 L103.96,156.93 L105.08,156.56 L106.20,156.24 L107.32,155.98 L108.44,155.78 L109.56,155.64 L110.68,155.55 L111.80,155.52 L112.92,155.55 L114.04,155.64 L115.16,155.78 L116.28,155.98 L117.40,156.24 L118.52,156.56 L119.64,156.93 L120.76,157.36 L121.88,157.85 L123.00,158.40 L124.12,159.00 L125.24,159.67 L126.36,160.39 L127.48,161.16 L128.60,162.00 L129.72,162.89 L130.84,163.84 L131.96,164.85 L133.08,165.92 L134.20,167.04 L135.32,168.22 L136.44,169.46 L137.56,170.76 L138.68,172.11 L139.80,173.52 L140.92,174.99 L142.04,176.52 L143.16,178.10 L144.28,179.74 L145.40,181.44\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\" opacity=\"1\"/><circle cx=\"95\" cy=\"162\" r=\"2.4\" fill=\"#64748b\" opacity=\"1\"/><text x=\"100\" y=\"160\" font-size=\"8\" font-family=\"Arial,sans-serif\" fill=\"#475569\" opacity=\"1\">1</text><text x=\"33\" y=\"126\" font-size=\"10\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#334155\" opacity=\"1\">C</text><path d=\"M214.60,181.44 L215.72,179.74 L216.84,178.10 L217.96,176.52 L219.08,174.99 L220.20,173.52 L221.32,172.11 L222.44,170.76 L223.56,169.46 L224.68,168.22 L225.80,167.04 L226.92,165.92 L228.04,164.85 L229.16,163.84 L230.28,162.89 L231.40,162.00 L232.52,161.16 L233.64,160.39 L234.76,159.67 L235.88,159.00 L237.00,158.40 L238.12,157.85 L239.24,157.36 L240.36,156.93 L241.48,156.56 L242.60,156.24 L243.72,155.98 L244.84,155.78 L245.96,155.64 L247.08,155.55 L248.20,155.52 L249.32,155.55 L250.44,155.64 L251.56,155.78 L252.68,155.98 L253.80,156.24 L254.92,156.56 L256.04,156.93 L257.16,157.36 L258.28,157.85 L259.40,158.40 L260.52,159.00 L261.64,159.67 L262.76,160.39 L263.88,161.16 L265.00,162.00 L266.12,162.89 L267.24,163.84 L268.36,164.85 L269.48,165.92 L270.60,167.04 L271.72,168.22 L272.84,169.46 L273.96,170.76 L275.08,172.11 L276.20,173.52 L277.32,174.99 L278.44,176.52 L279.56,178.10 L280.68,179.74 L281.80,181.44 L282.92,183.20 L284.04,185.01 L285.16,186.88 L286.28,188.81 L287.40,190.80 L288.52,192.84 L289.64,194.95 L290.76,197.11 L291.88,199.32 L293.00,201.60 L294.12,203.93 L295.24,206.32 L296.36,208.77 L297.48,211.28 L298.60,213.84 L299.72,216.46 L300.84,219.14 L301.96,221.88 L303.08,224.67 L304.20,227.52\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\" opacity=\"1\"/><circle cx=\"265\" cy=\"162\" r=\"2.4\" fill=\"#64748b\" opacity=\"1\"/><text x=\"270\" y=\"160\" font-size=\"8\" font-family=\"Arial,sans-serif\" fill=\"#475569\" opacity=\"1\">1</text><text x=\"203\" y=\"126\" font-size=\"10\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#334155\" opacity=\"1\">D</text></svg>"
+          },
+          "options": [
+            "Diagram A",
+            "Diagram B",
+            "Diagram C",
+            "Diagram D"
+          ],
+          "answer": 2,
+          "hint": "The negative coefficient of x² tells you the parabola opens down. Then find the vertex x-coordinate using x=−b/(2a), and use b>0 to decide which side of the y-axis the vertex lies on.",
+          "steps": [
+            {
+              "explain": "The coefficient of x² controls the opening direction. The constant term is the value of y when x=0, so it fixes the y-intercept.",
+              "work": "\\(a=-1<0\\Rightarrow\\text{opens downward}\\)\n\\(y(0)=-0^2+b(0)+1=1\\Rightarrow\\text{y-intercept }(0,1)\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"245\" viewBox=\"0 0 360 245\"><rect width=\"360\" height=\"245\" fill=\"#ffffff\"/><path d=\"M31 80H159 M95 28V134\" stroke=\"#94a3b8\" stroke-width=\"1.1\" fill=\"none\"/><path d=\"M201 80H329 M265 28V134\" stroke=\"#94a3b8\" stroke-width=\"1.1\" fill=\"none\"/><path d=\"M31 180H159 M95 128V234\" stroke=\"#94a3b8\" stroke-width=\"1.1\" fill=\"none\"/><path d=\"M201 180H329 M265 128V234\" stroke=\"#94a3b8\" stroke-width=\"1.1\" fill=\"none\"/><path d=\"M41.80,63.37 L42.99,63.91 L44.18,64.42 L45.37,64.90 L46.56,65.36 L47.75,65.80 L48.94,66.20 L50.13,66.59 L51.32,66.94 L52.51,67.27 L53.70,67.58 L54.89,67.85 L56.08,68.10 L57.27,68.33 L58.46,68.53 L59.65,68.70 L60.84,68.85 L62.03,68.97 L63.22,69.07 L64.41,69.14 L65.60,69.18 L66.79,69.20 L67.98,69.19 L69.17,69.16 L70.36,69.10 L71.55,69.01 L72.74,68.90 L73.93,68.76 L75.12,68.59 L76.31,68.40 L77.50,68.19 L78.69,67.94 L79.88,67.68 L81.07,67.38 L82.26,67.06 L83.45,66.71 L84.64,66.34 L85.83,65.94 L87.02,65.52 L88.21,65.07 L89.40,64.59 L90.59,64.09 L91.78,63.56 L92.97,63.01 L94.16,62.43 L95.35,61.82 L96.54,61.19 L97.73,60.53 L98.92,59.84 L100.11,59.13 L101.30,58.40 L102.49,57.63 L103.68,56.84 L104.87,56.03 L106.06,55.19 L107.25,54.32 L108.44,53.43 L109.63,52.51 L110.82,51.57 L112.01,50.59 L113.20,49.60 L114.39,48.58 L115.58,47.53 L116.77,46.45 L117.96,45.35 L119.15,44.22 L120.34,43.07 L121.53,41.89 L122.72,40.69 L123.91,39.46 L125.10,38.20 L126.29,36.92 L127.48,35.61 L128.67,34.27 L129.86,32.91 L131.05,31.52 L132.24,30.11 L133.43,28.67 L134.62,27.21 L135.81,25.72 L137.00,24.20\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"2.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\" opacity=\"0.35\"/><circle cx=\"95\" cy=\"62\" r=\"2.4\" fill=\"#64748b\" opacity=\"0.35\"/><text x=\"100\" y=\"60\" font-size=\"8\" font-family=\"Arial,sans-serif\" fill=\"#475569\" opacity=\"0.35\">1</text><text x=\"33\" y=\"26\" font-size=\"10\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#334155\" opacity=\"0.35\">A</text><path d=\"M223.00,24.20 L224.19,25.72 L225.38,27.21 L226.57,28.67 L227.76,30.11 L228.95,31.52 L230.14,32.91 L231.33,34.27 L232.52,35.61 L233.71,36.92 L234.90,38.20 L236.09,39.46 L237.28,40.69 L238.47,41.89 L239.66,43.07 L240.85,44.22 L242.04,45.35 L243.23,46.45 L244.42,47.53 L245.61,48.58 L246.80,49.60 L247.99,50.59 L249.18,51.57 L250.37,52.51 L251.56,53.43 L252.75,54.32 L253.94,55.19 L255.13,56.03 L256.32,56.84 L257.51,57.63 L258.70,58.40 L259.89,59.13 L261.08,59.84 L262.27,60.53 L263.46,61.19 L264.65,61.82 L265.84,62.43 L267.03,63.01 L268.22,63.56 L269.41,64.09 L270.60,64.59 L271.79,65.07 L272.98,65.52 L274.17,65.94 L275.36,66.34 L276.55,66.71 L277.74,67.06 L278.93,67.38 L280.12,67.68 L281.31,67.94 L282.50,68.19 L283.69,68.40 L284.88,68.59 L286.07,68.76 L287.26,68.90 L288.45,69.01 L289.64,69.10 L290.83,69.16 L292.02,69.19 L293.21,69.20 L294.40,69.18 L295.59,69.14 L296.78,69.07 L297.97,68.97 L299.16,68.85 L300.35,68.70 L301.54,68.53 L302.73,68.33 L303.92,68.10 L305.11,67.85 L306.30,67.58 L307.49,67.27 L308.68,66.94 L309.87,66.59 L311.06,66.20 L312.25,65.80 L313.44,65.36 L314.63,64.90 L315.82,64.42 L317.01,63.91 L318.20,63.37\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"2.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\" opacity=\"0.35\"/><circle cx=\"265\" cy=\"62\" r=\"2.4\" fill=\"#64748b\" opacity=\"0.35\"/><text x=\"270\" y=\"60\" font-size=\"8\" font-family=\"Arial,sans-serif\" fill=\"#475569\" opacity=\"0.35\">1</text><text x=\"203\" y=\"26\" font-size=\"10\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#334155\" opacity=\"0.35\">B</text><path d=\"M55.80,227.52 L56.92,224.67 L58.04,221.88 L59.16,219.14 L60.28,216.46 L61.40,213.84 L62.52,211.28 L63.64,208.77 L64.76,206.32 L65.88,203.93 L67.00,201.60 L68.12,199.32 L69.24,197.11 L70.36,194.95 L71.48,192.84 L72.60,190.80 L73.72,188.81 L74.84,186.88 L75.96,185.01 L77.08,183.20 L78.20,181.44 L79.32,179.74 L80.44,178.10 L81.56,176.52 L82.68,174.99 L83.80,173.52 L84.92,172.11 L86.04,170.76 L87.16,169.46 L88.28,168.22 L89.40,167.04 L90.52,165.92 L91.64,164.85 L92.76,163.84 L93.88,162.89 L95.00,162.00 L96.12,161.16 L97.24,160.39 L98.36,159.67 L99.48,159.00 L100.60,158.40 L101.72,157.85 L102.84,157.36 L103.96,156.93 L105.08,156.56 L106.20,156.24 L107.32,155.98 L108.44,155.78 L109.56,155.64 L110.68,155.55 L111.80,155.52 L112.92,155.55 L114.04,155.64 L115.16,155.78 L116.28,155.98 L117.40,156.24 L118.52,156.56 L119.64,156.93 L120.76,157.36 L121.88,157.85 L123.00,158.40 L124.12,159.00 L125.24,159.67 L126.36,160.39 L127.48,161.16 L128.60,162.00 L129.72,162.89 L130.84,163.84 L131.96,164.85 L133.08,165.92 L134.20,167.04 L135.32,168.22 L136.44,169.46 L137.56,170.76 L138.68,172.11 L139.80,173.52 L140.92,174.99 L142.04,176.52 L143.16,178.10 L144.28,179.74 L145.40,181.44\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\" opacity=\"1\"/><circle cx=\"95\" cy=\"162\" r=\"2.4\" fill=\"#f97316\" opacity=\"1\"/><text x=\"100\" y=\"160\" font-size=\"8\" font-family=\"Arial,sans-serif\" fill=\"#475569\" opacity=\"1\">1</text><text x=\"33\" y=\"126\" font-size=\"10\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#334155\" opacity=\"1\">C</text><path d=\"M214.60,181.44 L215.72,179.74 L216.84,178.10 L217.96,176.52 L219.08,174.99 L220.20,173.52 L221.32,172.11 L222.44,170.76 L223.56,169.46 L224.68,168.22 L225.80,167.04 L226.92,165.92 L228.04,164.85 L229.16,163.84 L230.28,162.89 L231.40,162.00 L232.52,161.16 L233.64,160.39 L234.76,159.67 L235.88,159.00 L237.00,158.40 L238.12,157.85 L239.24,157.36 L240.36,156.93 L241.48,156.56 L242.60,156.24 L243.72,155.98 L244.84,155.78 L245.96,155.64 L247.08,155.55 L248.20,155.52 L249.32,155.55 L250.44,155.64 L251.56,155.78 L252.68,155.98 L253.80,156.24 L254.92,156.56 L256.04,156.93 L257.16,157.36 L258.28,157.85 L259.40,158.40 L260.52,159.00 L261.64,159.67 L262.76,160.39 L263.88,161.16 L265.00,162.00 L266.12,162.89 L267.24,163.84 L268.36,164.85 L269.48,165.92 L270.60,167.04 L271.72,168.22 L272.84,169.46 L273.96,170.76 L275.08,172.11 L276.20,173.52 L277.32,174.99 L278.44,176.52 L279.56,178.10 L280.68,179.74 L281.80,181.44 L282.92,183.20 L284.04,185.01 L285.16,186.88 L286.28,188.81 L287.40,190.80 L288.52,192.84 L289.64,194.95 L290.76,197.11 L291.88,199.32 L293.00,201.60 L294.12,203.93 L295.24,206.32 L296.36,208.77 L297.48,211.28 L298.60,213.84 L299.72,216.46 L300.84,219.14 L301.96,221.88 L303.08,224.67 L304.20,227.52\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\" opacity=\"1\"/><circle cx=\"265\" cy=\"162\" r=\"2.4\" fill=\"#f97316\" opacity=\"1\"/><text x=\"270\" y=\"160\" font-size=\"8\" font-family=\"Arial,sans-serif\" fill=\"#475569\" opacity=\"1\">1</text><text x=\"203\" y=\"126\" font-size=\"10\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#334155\" opacity=\"1\">D</text></svg>"
+              }
+            },
+            {
+              "explain": "For y=ax²+bx+c, the vertex lies on the axis of symmetry x=−b/(2a). Substitute a=−1 and use the given b>0.",
+              "work": "\\(x_{\\text{vertex}}=-\\frac{b}{2(-1)}=\\frac b2\\)\n\\(b>0\\Rightarrow x_{\\text{vertex}}>0\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"245\" viewBox=\"0 0 360 245\"><rect width=\"360\" height=\"245\" fill=\"#ffffff\"/><path d=\"M31 80H159 M95 28V134\" stroke=\"#94a3b8\" stroke-width=\"1.1\" fill=\"none\"/><path d=\"M201 80H329 M265 28V134\" stroke=\"#94a3b8\" stroke-width=\"1.1\" fill=\"none\"/><path d=\"M31 180H159 M95 128V234\" stroke=\"#94a3b8\" stroke-width=\"1.1\" fill=\"none\"/><path d=\"M201 180H329 M265 128V234\" stroke=\"#94a3b8\" stroke-width=\"1.1\" fill=\"none\"/><path d=\"M41.80,63.37 L42.99,63.91 L44.18,64.42 L45.37,64.90 L46.56,65.36 L47.75,65.80 L48.94,66.20 L50.13,66.59 L51.32,66.94 L52.51,67.27 L53.70,67.58 L54.89,67.85 L56.08,68.10 L57.27,68.33 L58.46,68.53 L59.65,68.70 L60.84,68.85 L62.03,68.97 L63.22,69.07 L64.41,69.14 L65.60,69.18 L66.79,69.20 L67.98,69.19 L69.17,69.16 L70.36,69.10 L71.55,69.01 L72.74,68.90 L73.93,68.76 L75.12,68.59 L76.31,68.40 L77.50,68.19 L78.69,67.94 L79.88,67.68 L81.07,67.38 L82.26,67.06 L83.45,66.71 L84.64,66.34 L85.83,65.94 L87.02,65.52 L88.21,65.07 L89.40,64.59 L90.59,64.09 L91.78,63.56 L92.97,63.01 L94.16,62.43 L95.35,61.82 L96.54,61.19 L97.73,60.53 L98.92,59.84 L100.11,59.13 L101.30,58.40 L102.49,57.63 L103.68,56.84 L104.87,56.03 L106.06,55.19 L107.25,54.32 L108.44,53.43 L109.63,52.51 L110.82,51.57 L112.01,50.59 L113.20,49.60 L114.39,48.58 L115.58,47.53 L116.77,46.45 L117.96,45.35 L119.15,44.22 L120.34,43.07 L121.53,41.89 L122.72,40.69 L123.91,39.46 L125.10,38.20 L126.29,36.92 L127.48,35.61 L128.67,34.27 L129.86,32.91 L131.05,31.52 L132.24,30.11 L133.43,28.67 L134.62,27.21 L135.81,25.72 L137.00,24.20\" fill=\"none\" stroke=\"#cbd5e1\" stroke-width=\"2.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\" opacity=\"0.28\"/><circle cx=\"95\" cy=\"62\" r=\"2.4\" fill=\"#64748b\" opacity=\"0.35\"/><text x=\"100\" y=\"60\" font-size=\"8\" font-family=\"Arial,sans-serif\" fill=\"#475569\" opacity=\"0.35\">1</text><text x=\"33\" y=\"26\" font-size=\"10\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#334155\" opacity=\"0.28\">A</text><path d=\"M223.00,24.20 L224.19,25.72 L225.38,27.21 L226.57,28.67 L227.76,30.11 L228.95,31.52 L230.14,32.91 L231.33,34.27 L232.52,35.61 L233.71,36.92 L234.90,38.20 L236.09,39.46 L237.28,40.69 L238.47,41.89 L239.66,43.07 L240.85,44.22 L242.04,45.35 L243.23,46.45 L244.42,47.53 L245.61,48.58 L246.80,49.60 L247.99,50.59 L249.18,51.57 L250.37,52.51 L251.56,53.43 L252.75,54.32 L253.94,55.19 L255.13,56.03 L256.32,56.84 L257.51,57.63 L258.70,58.40 L259.89,59.13 L261.08,59.84 L262.27,60.53 L263.46,61.19 L264.65,61.82 L265.84,62.43 L267.03,63.01 L268.22,63.56 L269.41,64.09 L270.60,64.59 L271.79,65.07 L272.98,65.52 L274.17,65.94 L275.36,66.34 L276.55,66.71 L277.74,67.06 L278.93,67.38 L280.12,67.68 L281.31,67.94 L282.50,68.19 L283.69,68.40 L284.88,68.59 L286.07,68.76 L287.26,68.90 L288.45,69.01 L289.64,69.10 L290.83,69.16 L292.02,69.19 L293.21,69.20 L294.40,69.18 L295.59,69.14 L296.78,69.07 L297.97,68.97 L299.16,68.85 L300.35,68.70 L301.54,68.53 L302.73,68.33 L303.92,68.10 L305.11,67.85 L306.30,67.58 L307.49,67.27 L308.68,66.94 L309.87,66.59 L311.06,66.20 L312.25,65.80 L313.44,65.36 L314.63,64.90 L315.82,64.42 L317.01,63.91 L318.20,63.37\" fill=\"none\" stroke=\"#cbd5e1\" stroke-width=\"2.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\" opacity=\"0.28\"/><circle cx=\"265\" cy=\"62\" r=\"2.4\" fill=\"#64748b\" opacity=\"0.35\"/><text x=\"270\" y=\"60\" font-size=\"8\" font-family=\"Arial,sans-serif\" fill=\"#475569\" opacity=\"0.35\">1</text><text x=\"203\" y=\"26\" font-size=\"10\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#334155\" opacity=\"0.28\">B</text><path d=\"M55.80,227.52 L56.92,224.67 L58.04,221.88 L59.16,219.14 L60.28,216.46 L61.40,213.84 L62.52,211.28 L63.64,208.77 L64.76,206.32 L65.88,203.93 L67.00,201.60 L68.12,199.32 L69.24,197.11 L70.36,194.95 L71.48,192.84 L72.60,190.80 L73.72,188.81 L74.84,186.88 L75.96,185.01 L77.08,183.20 L78.20,181.44 L79.32,179.74 L80.44,178.10 L81.56,176.52 L82.68,174.99 L83.80,173.52 L84.92,172.11 L86.04,170.76 L87.16,169.46 L88.28,168.22 L89.40,167.04 L90.52,165.92 L91.64,164.85 L92.76,163.84 L93.88,162.89 L95.00,162.00 L96.12,161.16 L97.24,160.39 L98.36,159.67 L99.48,159.00 L100.60,158.40 L101.72,157.85 L102.84,157.36 L103.96,156.93 L105.08,156.56 L106.20,156.24 L107.32,155.98 L108.44,155.78 L109.56,155.64 L110.68,155.55 L111.80,155.52 L112.92,155.55 L114.04,155.64 L115.16,155.78 L116.28,155.98 L117.40,156.24 L118.52,156.56 L119.64,156.93 L120.76,157.36 L121.88,157.85 L123.00,158.40 L124.12,159.00 L125.24,159.67 L126.36,160.39 L127.48,161.16 L128.60,162.00 L129.72,162.89 L130.84,163.84 L131.96,164.85 L133.08,165.92 L134.20,167.04 L135.32,168.22 L136.44,169.46 L137.56,170.76 L138.68,172.11 L139.80,173.52 L140.92,174.99 L142.04,176.52 L143.16,178.10 L144.28,179.74 L145.40,181.44\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\" opacity=\"1\"/><circle cx=\"95\" cy=\"162\" r=\"2.4\" fill=\"#64748b\" opacity=\"0.35\"/><text x=\"100\" y=\"160\" font-size=\"8\" font-family=\"Arial,sans-serif\" fill=\"#475569\" opacity=\"0.35\">1</text><path d=\"M111.80 180V155.52\" stroke=\"#f97316\" stroke-width=\"1.3\" stroke-dasharray=\"3 2\"/><circle cx=\"111.80\" cy=\"155.52\" r=\"3.2\" fill=\"#f97316\"/><text x=\"115.80\" y=\"176\" font-size=\"7\" font-family=\"Arial,sans-serif\" fill=\"#c2410c\">xᵥ &gt; 0</text><text x=\"33\" y=\"126\" font-size=\"10\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#334155\" opacity=\"1\">C</text><path d=\"M214.60,181.44 L215.72,179.74 L216.84,178.10 L217.96,176.52 L219.08,174.99 L220.20,173.52 L221.32,172.11 L222.44,170.76 L223.56,169.46 L224.68,168.22 L225.80,167.04 L226.92,165.92 L228.04,164.85 L229.16,163.84 L230.28,162.89 L231.40,162.00 L232.52,161.16 L233.64,160.39 L234.76,159.67 L235.88,159.00 L237.00,158.40 L238.12,157.85 L239.24,157.36 L240.36,156.93 L241.48,156.56 L242.60,156.24 L243.72,155.98 L244.84,155.78 L245.96,155.64 L247.08,155.55 L248.20,155.52 L249.32,155.55 L250.44,155.64 L251.56,155.78 L252.68,155.98 L253.80,156.24 L254.92,156.56 L256.04,156.93 L257.16,157.36 L258.28,157.85 L259.40,158.40 L260.52,159.00 L261.64,159.67 L262.76,160.39 L263.88,161.16 L265.00,162.00 L266.12,162.89 L267.24,163.84 L268.36,164.85 L269.48,165.92 L270.60,167.04 L271.72,168.22 L272.84,169.46 L273.96,170.76 L275.08,172.11 L276.20,173.52 L277.32,174.99 L278.44,176.52 L279.56,178.10 L280.68,179.74 L281.80,181.44 L282.92,183.20 L284.04,185.01 L285.16,186.88 L286.28,188.81 L287.40,190.80 L288.52,192.84 L289.64,194.95 L290.76,197.11 L291.88,199.32 L293.00,201.60 L294.12,203.93 L295.24,206.32 L296.36,208.77 L297.48,211.28 L298.60,213.84 L299.72,216.46 L300.84,219.14 L301.96,221.88 L303.08,224.67 L304.20,227.52\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\" opacity=\"1\"/><circle cx=\"265\" cy=\"162\" r=\"2.4\" fill=\"#64748b\" opacity=\"0.35\"/><text x=\"270\" y=\"160\" font-size=\"8\" font-family=\"Arial,sans-serif\" fill=\"#475569\" opacity=\"0.35\">1</text><path d=\"M248.20 180V155.52\" stroke=\"#f97316\" stroke-width=\"1.3\" stroke-dasharray=\"3 2\"/><circle cx=\"248.20\" cy=\"155.52\" r=\"3.2\" fill=\"#f97316\"/><text x=\"252.20\" y=\"176\" font-size=\"7\" font-family=\"Arial,sans-serif\" fill=\"#c2410c\">xᵥ &lt; 0</text><text x=\"203\" y=\"126\" font-size=\"10\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#334155\" opacity=\"1\">D</text></svg>"
+              }
+            },
+            {
+              "explain": "The required graph must open down, cross the y-axis at 1, and have its vertex to the right of the y-axis. Diagram C is the only one with all three features.",
+              "work": "opens downward ✓\ny-intercept (0,1) ✓\nvertex x-coordinate b/2 > 0 ✓\n\\(\\boxed{\\text{Diagram C}}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"245\" viewBox=\"0 0 360 245\"><rect width=\"360\" height=\"245\" fill=\"#ffffff\"/><path d=\"M31 80H159 M95 28V134\" stroke=\"#94a3b8\" stroke-width=\"1.1\" fill=\"none\"/><path d=\"M201 80H329 M265 28V134\" stroke=\"#94a3b8\" stroke-width=\"1.1\" fill=\"none\"/><path d=\"M31 180H159 M95 128V234\" stroke=\"#94a3b8\" stroke-width=\"1.1\" fill=\"none\"/><path d=\"M201 180H329 M265 128V234\" stroke=\"#94a3b8\" stroke-width=\"1.1\" fill=\"none\"/><path d=\"M41.80,63.37 L42.99,63.91 L44.18,64.42 L45.37,64.90 L46.56,65.36 L47.75,65.80 L48.94,66.20 L50.13,66.59 L51.32,66.94 L52.51,67.27 L53.70,67.58 L54.89,67.85 L56.08,68.10 L57.27,68.33 L58.46,68.53 L59.65,68.70 L60.84,68.85 L62.03,68.97 L63.22,69.07 L64.41,69.14 L65.60,69.18 L66.79,69.20 L67.98,69.19 L69.17,69.16 L70.36,69.10 L71.55,69.01 L72.74,68.90 L73.93,68.76 L75.12,68.59 L76.31,68.40 L77.50,68.19 L78.69,67.94 L79.88,67.68 L81.07,67.38 L82.26,67.06 L83.45,66.71 L84.64,66.34 L85.83,65.94 L87.02,65.52 L88.21,65.07 L89.40,64.59 L90.59,64.09 L91.78,63.56 L92.97,63.01 L94.16,62.43 L95.35,61.82 L96.54,61.19 L97.73,60.53 L98.92,59.84 L100.11,59.13 L101.30,58.40 L102.49,57.63 L103.68,56.84 L104.87,56.03 L106.06,55.19 L107.25,54.32 L108.44,53.43 L109.63,52.51 L110.82,51.57 L112.01,50.59 L113.20,49.60 L114.39,48.58 L115.58,47.53 L116.77,46.45 L117.96,45.35 L119.15,44.22 L120.34,43.07 L121.53,41.89 L122.72,40.69 L123.91,39.46 L125.10,38.20 L126.29,36.92 L127.48,35.61 L128.67,34.27 L129.86,32.91 L131.05,31.52 L132.24,30.11 L133.43,28.67 L134.62,27.21 L135.81,25.72 L137.00,24.20\" fill=\"none\" stroke=\"#cbd5e1\" stroke-width=\"2.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\" opacity=\"0.25\"/><circle cx=\"95\" cy=\"62\" r=\"2.4\" fill=\"#64748b\" opacity=\"0.35\"/><text x=\"100\" y=\"60\" font-size=\"8\" font-family=\"Arial,sans-serif\" fill=\"#475569\" opacity=\"0.35\">1</text><text x=\"33\" y=\"26\" font-size=\"10\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#334155\" opacity=\"0.25\">A</text><path d=\"M223.00,24.20 L224.19,25.72 L225.38,27.21 L226.57,28.67 L227.76,30.11 L228.95,31.52 L230.14,32.91 L231.33,34.27 L232.52,35.61 L233.71,36.92 L234.90,38.20 L236.09,39.46 L237.28,40.69 L238.47,41.89 L239.66,43.07 L240.85,44.22 L242.04,45.35 L243.23,46.45 L244.42,47.53 L245.61,48.58 L246.80,49.60 L247.99,50.59 L249.18,51.57 L250.37,52.51 L251.56,53.43 L252.75,54.32 L253.94,55.19 L255.13,56.03 L256.32,56.84 L257.51,57.63 L258.70,58.40 L259.89,59.13 L261.08,59.84 L262.27,60.53 L263.46,61.19 L264.65,61.82 L265.84,62.43 L267.03,63.01 L268.22,63.56 L269.41,64.09 L270.60,64.59 L271.79,65.07 L272.98,65.52 L274.17,65.94 L275.36,66.34 L276.55,66.71 L277.74,67.06 L278.93,67.38 L280.12,67.68 L281.31,67.94 L282.50,68.19 L283.69,68.40 L284.88,68.59 L286.07,68.76 L287.26,68.90 L288.45,69.01 L289.64,69.10 L290.83,69.16 L292.02,69.19 L293.21,69.20 L294.40,69.18 L295.59,69.14 L296.78,69.07 L297.97,68.97 L299.16,68.85 L300.35,68.70 L301.54,68.53 L302.73,68.33 L303.92,68.10 L305.11,67.85 L306.30,67.58 L307.49,67.27 L308.68,66.94 L309.87,66.59 L311.06,66.20 L312.25,65.80 L313.44,65.36 L314.63,64.90 L315.82,64.42 L317.01,63.91 L318.20,63.37\" fill=\"none\" stroke=\"#cbd5e1\" stroke-width=\"2.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\" opacity=\"0.25\"/><circle cx=\"265\" cy=\"62\" r=\"2.4\" fill=\"#64748b\" opacity=\"0.35\"/><text x=\"270\" y=\"60\" font-size=\"8\" font-family=\"Arial,sans-serif\" fill=\"#475569\" opacity=\"0.35\">1</text><text x=\"203\" y=\"26\" font-size=\"10\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#334155\" opacity=\"0.25\">B</text><path d=\"M55.80,227.52 L56.92,224.67 L58.04,221.88 L59.16,219.14 L60.28,216.46 L61.40,213.84 L62.52,211.28 L63.64,208.77 L64.76,206.32 L65.88,203.93 L67.00,201.60 L68.12,199.32 L69.24,197.11 L70.36,194.95 L71.48,192.84 L72.60,190.80 L73.72,188.81 L74.84,186.88 L75.96,185.01 L77.08,183.20 L78.20,181.44 L79.32,179.74 L80.44,178.10 L81.56,176.52 L82.68,174.99 L83.80,173.52 L84.92,172.11 L86.04,170.76 L87.16,169.46 L88.28,168.22 L89.40,167.04 L90.52,165.92 L91.64,164.85 L92.76,163.84 L93.88,162.89 L95.00,162.00 L96.12,161.16 L97.24,160.39 L98.36,159.67 L99.48,159.00 L100.60,158.40 L101.72,157.85 L102.84,157.36 L103.96,156.93 L105.08,156.56 L106.20,156.24 L107.32,155.98 L108.44,155.78 L109.56,155.64 L110.68,155.55 L111.80,155.52 L112.92,155.55 L114.04,155.64 L115.16,155.78 L116.28,155.98 L117.40,156.24 L118.52,156.56 L119.64,156.93 L120.76,157.36 L121.88,157.85 L123.00,158.40 L124.12,159.00 L125.24,159.67 L126.36,160.39 L127.48,161.16 L128.60,162.00 L129.72,162.89 L130.84,163.84 L131.96,164.85 L133.08,165.92 L134.20,167.04 L135.32,168.22 L136.44,169.46 L137.56,170.76 L138.68,172.11 L139.80,173.52 L140.92,174.99 L142.04,176.52 L143.16,178.10 L144.28,179.74 L145.40,181.44\" fill=\"none\" stroke=\"#059669\" stroke-width=\"2.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\" opacity=\"1\"/><circle cx=\"95\" cy=\"162\" r=\"2.4\" fill=\"#059669\" opacity=\"1\"/><text x=\"100\" y=\"160\" font-size=\"8\" font-family=\"Arial,sans-serif\" fill=\"#475569\" opacity=\"1\">1</text><path d=\"M111.80 180V155.52\" stroke=\"#059669\" stroke-width=\"1.3\" stroke-dasharray=\"3 2\"/><circle cx=\"111.80\" cy=\"155.52\" r=\"3.4\" fill=\"#d1fae5\" stroke=\"#059669\" stroke-width=\"1.2\"/><text x=\"33\" y=\"126\" font-size=\"10\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#047857\" opacity=\"1\">C</text><path d=\"M214.60,181.44 L215.72,179.74 L216.84,178.10 L217.96,176.52 L219.08,174.99 L220.20,173.52 L221.32,172.11 L222.44,170.76 L223.56,169.46 L224.68,168.22 L225.80,167.04 L226.92,165.92 L228.04,164.85 L229.16,163.84 L230.28,162.89 L231.40,162.00 L232.52,161.16 L233.64,160.39 L234.76,159.67 L235.88,159.00 L237.00,158.40 L238.12,157.85 L239.24,157.36 L240.36,156.93 L241.48,156.56 L242.60,156.24 L243.72,155.98 L244.84,155.78 L245.96,155.64 L247.08,155.55 L248.20,155.52 L249.32,155.55 L250.44,155.64 L251.56,155.78 L252.68,155.98 L253.80,156.24 L254.92,156.56 L256.04,156.93 L257.16,157.36 L258.28,157.85 L259.40,158.40 L260.52,159.00 L261.64,159.67 L262.76,160.39 L263.88,161.16 L265.00,162.00 L266.12,162.89 L267.24,163.84 L268.36,164.85 L269.48,165.92 L270.60,167.04 L271.72,168.22 L272.84,169.46 L273.96,170.76 L275.08,172.11 L276.20,173.52 L277.32,174.99 L278.44,176.52 L279.56,178.10 L280.68,179.74 L281.80,181.44 L282.92,183.20 L284.04,185.01 L285.16,186.88 L286.28,188.81 L287.40,190.80 L288.52,192.84 L289.64,194.95 L290.76,197.11 L291.88,199.32 L293.00,201.60 L294.12,203.93 L295.24,206.32 L296.36,208.77 L297.48,211.28 L298.60,213.84 L299.72,216.46 L300.84,219.14 L301.96,221.88 L303.08,224.67 L304.20,227.52\" fill=\"none\" stroke=\"#cbd5e1\" stroke-width=\"2.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\" opacity=\"0.25\"/><circle cx=\"265\" cy=\"162\" r=\"2.4\" fill=\"#64748b\" opacity=\"0.35\"/><text x=\"270\" y=\"160\" font-size=\"8\" font-family=\"Arial,sans-serif\" fill=\"#475569\" opacity=\"0.35\">1</text><text x=\"203\" y=\"126\" font-size=\"10\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#334155\" opacity=\"0.25\">D</text></svg>"
+              }
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "a=−1, y-intercept=1, x_{vertex}=b/2>0",
+              "note": "Check the opening direction, the y-intercept, and which side of the y-axis contains the vertex."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 Year 10 Mathematics Core and Pathways, Band 1 and Band 2 Assessment Task 4",
+            "school": "Abbotsleigh",
+            "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Y9/MG_Task4_yr10Maths_Band1.pdf"
+          }
+        },
+        {
+          "id": "abb-y10-2025-t4-e1-q4a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The height of a toy plane is described by the equation \\(h=7+12t-4t^2\\), where \\(h\\) is the height in metres above the ground and \\(t\\) is the time in minutes. Determine the coordinates of the vertex of this equation.",
+          "options": [
+            "\\((\\frac{3}{2},16)\\)",
+            "\\((-\\frac{3}{2},16)\\)",
+            "\\((\\frac{3}{2},7)\\)",
+            "\\((-12,16)\\)"
+          ],
+          "answer": 0,
+          "hint": "For \\(h=at^2+bt+c\\), the vertex time is \\(t=-\\frac{b}{2a}\\). Substitute this value back into \\(h\\).",
+          "steps": [
+            {
+              "explain": "Identify \\(a=-4\\) and \\(b=12\\); calculate the vertex time.",
+              "work": "\\(t=-\\frac{b}{2a}=-\\frac{12}{2(-4)}=\\frac{3}{2}\\)"
+            },
+            {
+              "explain": "Substitute \\(t=\\frac{3}{2}\\) into the height equation.",
+              "work": "\\(h=7+12\\left(\\frac{3}{2}\\right)-4\\left(\\frac{3}{2}\\right)^2\\)\n\\(=7+18-9=16\\)"
+            },
+            {
+              "explain": "Write the vertex as (time, height).",
+              "work": "\\(\\text{Vertex}=\\left(\\frac{3}{2},16\\right)\\)"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "coordinates of the vertex",
+              "note": "Find \\(t=-\\frac{b}{2a}\\), then substitute that time to find the corresponding height."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 Year 10 Mathematics Core and Pathways, Band 1 and Band 2 Assessment Task 4",
+            "school": "Abbotsleigh",
+            "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Y9/MG_Task4_yr10Maths_Band1.pdf"
+          }
+        },
+        {
+          "id": "abb-y10-2025-t4-e1-q4b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The height of a toy plane is described by the equation h = 7 + 12t − 4t². When does the plane hit the ground?",
+          "options": [
+            "3.5 minutes",
+            "2.0 minutes",
+            "4.0 minutes",
+            "−0.5 minutes"
+          ],
+          "answer": 0,
+          "hint": "Set h=0, solve the quadratic, and reject negative time.",
+          "steps": [
+            {
+              "explain": "Set the height to zero.",
+              "work": "7+12t−4t²=0"
+            },
+            {
+              "explain": "Rearrange and factor.",
+              "work": "4t²−12t−7=0\n(2t+1)(2t−7)=0"
+            },
+            {
+              "explain": "Choose the physically possible time.",
+              "work": "t=−1/2 or 7/2; so t=3.5 minutes"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "hit the ground",
+              "note": "The ground corresponds to height h=0."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 Year 10 Mathematics Core and Pathways, Band 1 and Band 2 Assessment Task 4",
+            "school": "Abbotsleigh",
+            "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Y9/MG_Task4_yr10Maths_Band1.pdf"
+          }
+        },
+        {
+          "id": "abb-y10-2025-t4-e2-q4",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "The height of a drone above the ground is given by the formula \\(h=8t-2t^2\\).",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"520\" height=\"330\" viewBox=\"0 0 520 330\" style=\"font-family:Arial,sans-serif\"><rect width=\"520\" height=\"330\" fill=\"white\"/><g stroke=\"#e2e8f0\" stroke-width=\"1\"><path d=\"M70 270V46\"/><path d=\"M115 270V46\"/><path d=\"M160 270V46\"/><path d=\"M205 270V46\"/><path d=\"M250 270V46\"/><path d=\"M295 270V46\"/><path d=\"M340 270V46\"/><path d=\"M385 270V46\"/><path d=\"M430 270V46\"/><path d=\"M70 270H430\"/><path d=\"M70 242H430\"/><path d=\"M70 214H430\"/><path d=\"M70 186H430\"/><path d=\"M70 158H430\"/><path d=\"M70 130H430\"/><path d=\"M70 102H430\"/><path d=\"M70 74H430\"/><path d=\"M70 46H430\"/></g><g stroke=\"#475569\" stroke-width=\"1.7\"><path d=\"M70 270H438\"/><path d=\"M70 54V272\"/></g><g fill=\"#475569\" font-size=\"10\" text-anchor=\"middle\"><text x=\"70\" y=\"286\">0</text><text x=\"160\" y=\"286\">1</text><text x=\"250\" y=\"286\">2</text><text x=\"340\" y=\"286\">3</text><text x=\"430\" y=\"286\">4</text></g><g fill=\"#475569\" font-size=\"10\" text-anchor=\"end\"><text x=\"62\" y=\"273\">0</text><text x=\"62\" y=\"245\">1</text><text x=\"62\" y=\"217\">2</text><text x=\"62\" y=\"189\">3</text><text x=\"62\" y=\"161\">4</text><text x=\"62\" y=\"133\">5</text><text x=\"62\" y=\"105\">6</text><text x=\"62\" y=\"77\">7</text><text x=\"62\" y=\"49\">8</text></g><text x=\"447\" y=\"274\" font-size=\"12\" fill=\"#334155\">t (minutes)</text><text x=\"62\" y=\"18\" font-size=\"12\" text-anchor=\"end\" fill=\"#334155\">h (m)</text></svg>"
+          },
+          "parts": [
+            {
+              "id": "abb-y10-2025-t4-e2-q4a",
+              "type": "review",
+              "difficulty": "medium",
+              "stem": "Sketch the parabola that shows the flight path of the drone.",
+              "manual": true,
+              "hint": "Set the height to zero to find when the drone is on the ground. The two ground times are symmetric about the vertex; use that midpoint to find the maximum height.",
+              "steps": [
+                {
+                  "explain": "The drone is on the ground when its height is zero. Factor the height formula, then set each factor equal to zero to find the two time-axis intercepts.",
+                  "work": "\\(h=8t-2t^2=-2t(t-4)\\)\\n\\(h=0\\Rightarrow -2t(t-4)=0\\)\\n\\(t=0\\text{ or }t=4\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"520\" height=\"330\" viewBox=\"0 0 520 330\" style=\"font-family:Arial,sans-serif\"><rect width=\"520\" height=\"330\" fill=\"white\"/><g stroke=\"#e2e8f0\" stroke-width=\"1\"><path d=\"M70 270V46\"/><path d=\"M115 270V46\"/><path d=\"M160 270V46\"/><path d=\"M205 270V46\"/><path d=\"M250 270V46\"/><path d=\"M295 270V46\"/><path d=\"M340 270V46\"/><path d=\"M385 270V46\"/><path d=\"M430 270V46\"/><path d=\"M70 270H430\"/><path d=\"M70 242H430\"/><path d=\"M70 214H430\"/><path d=\"M70 186H430\"/><path d=\"M70 158H430\"/><path d=\"M70 130H430\"/><path d=\"M70 102H430\"/><path d=\"M70 74H430\"/><path d=\"M70 46H430\"/></g><g stroke=\"#475569\" stroke-width=\"1.7\"><path d=\"M70 270H438\"/><path d=\"M70 54V272\"/></g><g fill=\"#475569\" font-size=\"10\" text-anchor=\"middle\"><text x=\"70\" y=\"286\">0</text><text x=\"160\" y=\"286\">1</text><text x=\"250\" y=\"286\">2</text><text x=\"340\" y=\"286\">3</text><text x=\"430\" y=\"286\">4</text></g><g fill=\"#475569\" font-size=\"10\" text-anchor=\"end\"><text x=\"62\" y=\"273\">0</text><text x=\"62\" y=\"245\">1</text><text x=\"62\" y=\"217\">2</text><text x=\"62\" y=\"189\">3</text><text x=\"62\" y=\"161\">4</text><text x=\"62\" y=\"133\">5</text><text x=\"62\" y=\"105\">6</text><text x=\"62\" y=\"77\">7</text><text x=\"62\" y=\"49\">8</text></g><text x=\"447\" y=\"274\" font-size=\"12\" fill=\"#334155\">t (minutes)</text><text x=\"62\" y=\"18\" font-size=\"12\" text-anchor=\"end\" fill=\"#334155\">h (m)</text><circle cx=\"70\" cy=\"270\" r=\"5\" fill=\"#f97316\" stroke=\"white\" stroke-width=\"1.5\"/><circle cx=\"430\" cy=\"270\" r=\"5\" fill=\"#f97316\" stroke=\"white\" stroke-width=\"1.5\"/><text x=\"78\" y=\"262\" font-size=\"11\" fill=\"#c2410c\">(0,0)</text><text x=\"423\" y=\"262\" text-anchor=\"end\" font-size=\"11\" fill=\"#c2410c\">(4,0)</text></svg>"
+                  }
+                },
+                {
+                  "explain": "A parabola is symmetric. The vertex lies halfway between the two intercept times. Substitute that time into the given height formula to find the vertex height.",
+                  "work": "\\(t_{\\mathrm{vertex}}=\\frac{0+4}{2}=2\\)\\n\\(h(2)=8(2)-2(2)^2=16-8=8\\)\\n\\(\\text{vertex}=(2,8)\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"520\" height=\"330\" viewBox=\"0 0 520 330\" style=\"font-family:Arial,sans-serif\"><rect width=\"520\" height=\"330\" fill=\"white\"/><g stroke=\"#e2e8f0\" stroke-width=\"1\"><path d=\"M70 270V46\"/><path d=\"M115 270V46\"/><path d=\"M160 270V46\"/><path d=\"M205 270V46\"/><path d=\"M250 270V46\"/><path d=\"M295 270V46\"/><path d=\"M340 270V46\"/><path d=\"M385 270V46\"/><path d=\"M430 270V46\"/><path d=\"M70 270H430\"/><path d=\"M70 242H430\"/><path d=\"M70 214H430\"/><path d=\"M70 186H430\"/><path d=\"M70 158H430\"/><path d=\"M70 130H430\"/><path d=\"M70 102H430\"/><path d=\"M70 74H430\"/><path d=\"M70 46H430\"/></g><g stroke=\"#475569\" stroke-width=\"1.7\"><path d=\"M70 270H438\"/><path d=\"M70 54V272\"/></g><g fill=\"#475569\" font-size=\"10\" text-anchor=\"middle\"><text x=\"70\" y=\"286\">0</text><text x=\"160\" y=\"286\">1</text><text x=\"250\" y=\"286\">2</text><text x=\"340\" y=\"286\">3</text><text x=\"430\" y=\"286\">4</text></g><g fill=\"#475569\" font-size=\"10\" text-anchor=\"end\"><text x=\"62\" y=\"273\">0</text><text x=\"62\" y=\"245\">1</text><text x=\"62\" y=\"217\">2</text><text x=\"62\" y=\"189\">3</text><text x=\"62\" y=\"161\">4</text><text x=\"62\" y=\"133\">5</text><text x=\"62\" y=\"105\">6</text><text x=\"62\" y=\"77\">7</text><text x=\"62\" y=\"49\">8</text></g><text x=\"447\" y=\"274\" font-size=\"12\" fill=\"#334155\">t (minutes)</text><text x=\"62\" y=\"18\" font-size=\"12\" text-anchor=\"end\" fill=\"#334155\">h (m)</text><path d=\"M70 270 C130 120.20000000000002 190 46 250 46 C310 46 370 120.20000000000002 430 270\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><path d=\"M250 270V46\" stroke=\"#8b5cf6\" stroke-width=\"1.8\" stroke-dasharray=\"5 4\"/><text x=\"257\" y=\"262\" font-size=\"11\" fill=\"#6d28d9\">axis: t = 2</text><circle cx=\"70\" cy=\"270\" r=\"5\" fill=\"#f97316\" stroke=\"white\" stroke-width=\"1.5\"/><circle cx=\"430\" cy=\"270\" r=\"5\" fill=\"#f97316\" stroke=\"white\" stroke-width=\"1.5\"/><text x=\"78\" y=\"262\" font-size=\"11\" fill=\"#c2410c\">(0,0)</text><text x=\"423\" y=\"262\" text-anchor=\"end\" font-size=\"11\" fill=\"#c2410c\">(4,0)</text><circle cx=\"250\" cy=\"46\" r=\"5.5\" fill=\"#f97316\" stroke=\"white\" stroke-width=\"1.5\"/><text x=\"259\" y=\"38\" font-size=\"11\" font-weight=\"700\" fill=\"#c2410c\">maximum (2,8)</text></svg>"
+                  }
+                },
+                {
+                  "explain": "The coefficient of \\(t^2\\) is negative, so the parabola opens downward. Draw a smooth curve through both ground intercepts and the maximum point, symmetric about \\(t=2\\).",
+                  "work": "\\(\\text{ground intercepts: }(0,0),(4,0)\\)\\n\\(\\text{maximum point: }(2,8)\\)\\n\\(\\text{axis of symmetry: }t=2\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"520\" height=\"330\" viewBox=\"0 0 520 330\" style=\"font-family:Arial,sans-serif\"><rect width=\"520\" height=\"330\" fill=\"white\"/><g stroke=\"#e2e8f0\" stroke-width=\"1\"><path d=\"M70 270V46\"/><path d=\"M115 270V46\"/><path d=\"M160 270V46\"/><path d=\"M205 270V46\"/><path d=\"M250 270V46\"/><path d=\"M295 270V46\"/><path d=\"M340 270V46\"/><path d=\"M385 270V46\"/><path d=\"M430 270V46\"/><path d=\"M70 270H430\"/><path d=\"M70 242H430\"/><path d=\"M70 214H430\"/><path d=\"M70 186H430\"/><path d=\"M70 158H430\"/><path d=\"M70 130H430\"/><path d=\"M70 102H430\"/><path d=\"M70 74H430\"/><path d=\"M70 46H430\"/></g><g stroke=\"#475569\" stroke-width=\"1.7\"><path d=\"M70 270H438\"/><path d=\"M70 54V272\"/></g><g fill=\"#475569\" font-size=\"10\" text-anchor=\"middle\"><text x=\"70\" y=\"286\">0</text><text x=\"160\" y=\"286\">1</text><text x=\"250\" y=\"286\">2</text><text x=\"340\" y=\"286\">3</text><text x=\"430\" y=\"286\">4</text></g><g fill=\"#475569\" font-size=\"10\" text-anchor=\"end\"><text x=\"62\" y=\"273\">0</text><text x=\"62\" y=\"245\">1</text><text x=\"62\" y=\"217\">2</text><text x=\"62\" y=\"189\">3</text><text x=\"62\" y=\"161\">4</text><text x=\"62\" y=\"133\">5</text><text x=\"62\" y=\"105\">6</text><text x=\"62\" y=\"77\">7</text><text x=\"62\" y=\"49\">8</text></g><text x=\"447\" y=\"274\" font-size=\"12\" fill=\"#334155\">t (minutes)</text><text x=\"62\" y=\"18\" font-size=\"12\" text-anchor=\"end\" fill=\"#334155\">h (m)</text><path d=\"M70 270 C130 120.20000000000002 190 46 250 46 C310 46 370 120.20000000000002 430 270\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><path d=\"M250 270V46\" stroke=\"#8b5cf6\" stroke-width=\"1.8\" stroke-dasharray=\"5 4\"/><text x=\"257\" y=\"262\" font-size=\"11\" fill=\"#6d28d9\">axis: t = 2</text><circle cx=\"70\" cy=\"270\" r=\"5\" fill=\"#f97316\" stroke=\"white\" stroke-width=\"1.5\"/><circle cx=\"430\" cy=\"270\" r=\"5\" fill=\"#f97316\" stroke=\"white\" stroke-width=\"1.5\"/><text x=\"78\" y=\"262\" font-size=\"11\" fill=\"#c2410c\">(0,0)</text><text x=\"423\" y=\"262\" text-anchor=\"end\" font-size=\"11\" fill=\"#c2410c\">(4,0)</text><circle cx=\"250\" cy=\"46\" r=\"5.5\" fill=\"#f97316\" stroke=\"white\" stroke-width=\"1.5\"/><text x=\"259\" y=\"38\" font-size=\"11\" font-weight=\"700\" fill=\"#c2410c\">maximum (2,8)</text></svg>"
+                  }
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "Sketch the parabola that shows the flight path of the drone.",
+                  "note": "Mark the ground intercepts and the vertex, then draw a smooth downward-opening parabola symmetric about the vertex time."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "answer": "Sample answer is shown in the final solution step."
+            },
+            {
+              "id": "abb-y10-2025-t4-e2-q4b",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "What is the maximum height of the drone?",
+              "options": [
+                "\\(8\\text{ m}\\)",
+                "\\(4\\text{ m}\\)",
+                "\\(16\\text{ m}\\)",
+                "\\(2\\text{ m}\\)"
+              ],
+              "answer": 0,
+              "hint": "The quadratic opens downward, so its vertex gives the maximum. Find the vertex time, then substitute it into the height formula.",
+              "steps": [
+                {
+                  "explain": "Write the formula in standard quadratic form \\(h=at^2+bt+c\\). Here \\(a=-2\\) and \\(b=8\\); because \\(a<0\\), the vertex is the maximum.",
+                  "work": "\\(h=-2t^2+8t\\)\\n\\(a=-2,\\quad b=8\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"520\" height=\"330\" viewBox=\"0 0 520 330\" style=\"font-family:Arial,sans-serif\"><rect width=\"520\" height=\"330\" fill=\"white\"/><g stroke=\"#e2e8f0\" stroke-width=\"1\"><path d=\"M70 270V46\"/><path d=\"M115 270V46\"/><path d=\"M160 270V46\"/><path d=\"M205 270V46\"/><path d=\"M250 270V46\"/><path d=\"M295 270V46\"/><path d=\"M340 270V46\"/><path d=\"M385 270V46\"/><path d=\"M430 270V46\"/><path d=\"M70 270H430\"/><path d=\"M70 242H430\"/><path d=\"M70 214H430\"/><path d=\"M70 186H430\"/><path d=\"M70 158H430\"/><path d=\"M70 130H430\"/><path d=\"M70 102H430\"/><path d=\"M70 74H430\"/><path d=\"M70 46H430\"/></g><g stroke=\"#475569\" stroke-width=\"1.7\"><path d=\"M70 270H438\"/><path d=\"M70 54V272\"/></g><g fill=\"#475569\" font-size=\"10\" text-anchor=\"middle\"><text x=\"70\" y=\"286\">0</text><text x=\"160\" y=\"286\">1</text><text x=\"250\" y=\"286\">2</text><text x=\"340\" y=\"286\">3</text><text x=\"430\" y=\"286\">4</text></g><g fill=\"#475569\" font-size=\"10\" text-anchor=\"end\"><text x=\"62\" y=\"273\">0</text><text x=\"62\" y=\"245\">1</text><text x=\"62\" y=\"217\">2</text><text x=\"62\" y=\"189\">3</text><text x=\"62\" y=\"161\">4</text><text x=\"62\" y=\"133\">5</text><text x=\"62\" y=\"105\">6</text><text x=\"62\" y=\"77\">7</text><text x=\"62\" y=\"49\">8</text></g><text x=\"447\" y=\"274\" font-size=\"12\" fill=\"#334155\">t (minutes)</text><text x=\"62\" y=\"18\" font-size=\"12\" text-anchor=\"end\" fill=\"#334155\">h (m)</text><path d=\"M70 270 C130 120.20000000000002 190 46 250 46 C310 46 370 120.20000000000002 430 270\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"2.8\" stroke-linecap=\"round\"/></svg>"
+                  }
+                },
+                {
+                  "explain": "Use the vertex formula to find the time coordinate of the maximum. The highlighted vertical line marks this symmetry time on the graph.",
+                  "work": "\\(t_{\\mathrm{vertex}}=-\\frac{b}{2a}\\)\\n\\(=-\\frac{8}{2(-2)}=2\\text{ minutes}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"520\" height=\"330\" viewBox=\"0 0 520 330\" style=\"font-family:Arial,sans-serif\"><rect width=\"520\" height=\"330\" fill=\"white\"/><g stroke=\"#e2e8f0\" stroke-width=\"1\"><path d=\"M70 270V46\"/><path d=\"M115 270V46\"/><path d=\"M160 270V46\"/><path d=\"M205 270V46\"/><path d=\"M250 270V46\"/><path d=\"M295 270V46\"/><path d=\"M340 270V46\"/><path d=\"M385 270V46\"/><path d=\"M430 270V46\"/><path d=\"M70 270H430\"/><path d=\"M70 242H430\"/><path d=\"M70 214H430\"/><path d=\"M70 186H430\"/><path d=\"M70 158H430\"/><path d=\"M70 130H430\"/><path d=\"M70 102H430\"/><path d=\"M70 74H430\"/><path d=\"M70 46H430\"/></g><g stroke=\"#475569\" stroke-width=\"1.7\"><path d=\"M70 270H438\"/><path d=\"M70 54V272\"/></g><g fill=\"#475569\" font-size=\"10\" text-anchor=\"middle\"><text x=\"70\" y=\"286\">0</text><text x=\"160\" y=\"286\">1</text><text x=\"250\" y=\"286\">2</text><text x=\"340\" y=\"286\">3</text><text x=\"430\" y=\"286\">4</text></g><g fill=\"#475569\" font-size=\"10\" text-anchor=\"end\"><text x=\"62\" y=\"273\">0</text><text x=\"62\" y=\"245\">1</text><text x=\"62\" y=\"217\">2</text><text x=\"62\" y=\"189\">3</text><text x=\"62\" y=\"161\">4</text><text x=\"62\" y=\"133\">5</text><text x=\"62\" y=\"105\">6</text><text x=\"62\" y=\"77\">7</text><text x=\"62\" y=\"49\">8</text></g><text x=\"447\" y=\"274\" font-size=\"12\" fill=\"#334155\">t (minutes)</text><text x=\"62\" y=\"18\" font-size=\"12\" text-anchor=\"end\" fill=\"#334155\">h (m)</text><path d=\"M70 270 C130 120.20000000000002 190 46 250 46 C310 46 370 120.20000000000002 430 270\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><path d=\"M250 270V46\" stroke=\"#8b5cf6\" stroke-width=\"1.8\" stroke-dasharray=\"5 4\"/><text x=\"257\" y=\"262\" font-size=\"11\" fill=\"#6d28d9\">axis: t = 2</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Substitute \\(t=2\\) into the height formula. The highlighted vertex gives the maximum height, with units in metres.",
+                  "work": "\\(h(2)=8(2)-2(2)^2\\)\\n\\(=16-8=8\\)\\n\\(\\boxed{h_{\\max}=8\\text{ m}}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"520\" height=\"330\" viewBox=\"0 0 520 330\" style=\"font-family:Arial,sans-serif\"><rect width=\"520\" height=\"330\" fill=\"white\"/><g stroke=\"#e2e8f0\" stroke-width=\"1\"><path d=\"M70 270V46\"/><path d=\"M115 270V46\"/><path d=\"M160 270V46\"/><path d=\"M205 270V46\"/><path d=\"M250 270V46\"/><path d=\"M295 270V46\"/><path d=\"M340 270V46\"/><path d=\"M385 270V46\"/><path d=\"M430 270V46\"/><path d=\"M70 270H430\"/><path d=\"M70 242H430\"/><path d=\"M70 214H430\"/><path d=\"M70 186H430\"/><path d=\"M70 158H430\"/><path d=\"M70 130H430\"/><path d=\"M70 102H430\"/><path d=\"M70 74H430\"/><path d=\"M70 46H430\"/></g><g stroke=\"#475569\" stroke-width=\"1.7\"><path d=\"M70 270H438\"/><path d=\"M70 54V272\"/></g><g fill=\"#475569\" font-size=\"10\" text-anchor=\"middle\"><text x=\"70\" y=\"286\">0</text><text x=\"160\" y=\"286\">1</text><text x=\"250\" y=\"286\">2</text><text x=\"340\" y=\"286\">3</text><text x=\"430\" y=\"286\">4</text></g><g fill=\"#475569\" font-size=\"10\" text-anchor=\"end\"><text x=\"62\" y=\"273\">0</text><text x=\"62\" y=\"245\">1</text><text x=\"62\" y=\"217\">2</text><text x=\"62\" y=\"189\">3</text><text x=\"62\" y=\"161\">4</text><text x=\"62\" y=\"133\">5</text><text x=\"62\" y=\"105\">6</text><text x=\"62\" y=\"77\">7</text><text x=\"62\" y=\"49\">8</text></g><text x=\"447\" y=\"274\" font-size=\"12\" fill=\"#334155\">t (minutes)</text><text x=\"62\" y=\"18\" font-size=\"12\" text-anchor=\"end\" fill=\"#334155\">h (m)</text><path d=\"M70 270 C130 120.20000000000002 190 46 250 46 C310 46 370 120.20000000000002 430 270\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><path d=\"M250 270V46\" stroke=\"#8b5cf6\" stroke-width=\"1.8\" stroke-dasharray=\"5 4\"/><text x=\"257\" y=\"262\" font-size=\"11\" fill=\"#6d28d9\">axis: t = 2</text><circle cx=\"70\" cy=\"270\" r=\"5\" fill=\"#f97316\" stroke=\"white\" stroke-width=\"1.5\"/><circle cx=\"430\" cy=\"270\" r=\"5\" fill=\"#f97316\" stroke=\"white\" stroke-width=\"1.5\"/><text x=\"78\" y=\"262\" font-size=\"11\" fill=\"#c2410c\">(0,0)</text><text x=\"423\" y=\"262\" text-anchor=\"end\" font-size=\"11\" fill=\"#c2410c\">(4,0)</text><circle cx=\"250\" cy=\"46\" r=\"5.5\" fill=\"#f97316\" stroke=\"white\" stroke-width=\"1.5\"/><text x=\"259\" y=\"38\" font-size=\"11\" font-weight=\"700\" fill=\"#c2410c\">maximum (2,8)</text></svg>"
+                  }
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "maximum height of the drone",
+                  "note": "For a downward-opening quadratic, calculate the height at the vertex."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1
+            },
+            {
+              "id": "abb-y10-2025-t4-e2-q4c",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "At what time(s) is the drone at a height of \\(6\\text{ m}\\)?",
+              "options": [
+                "\\(1\\text{ minute and }3\\text{ minutes}\\)",
+                "\\(1\\text{ minute only}\\)",
+                "\\(3\\text{ minutes only}\\)",
+                "\\(2\\text{ minutes and }4\\text{ minutes}\\)"
+              ],
+              "answer": 0,
+              "hint": "Set \\(h=6\\), rearrange to a quadratic equal to zero, and factor. The two times appear where the horizontal line \\(h=6\\) meets the parabola.",
+              "steps": [
+                {
+                  "explain": "A height of \\(6\\text{ m}\\) means set \\(h=6\\). The dashed horizontal line shows this height; its intersections with the flight path are the required times.",
+                  "work": "\\(6=8t-2t^2\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"520\" height=\"330\" viewBox=\"0 0 520 330\" style=\"font-family:Arial,sans-serif\"><rect width=\"520\" height=\"330\" fill=\"white\"/><g stroke=\"#e2e8f0\" stroke-width=\"1\"><path d=\"M70 270V46\"/><path d=\"M115 270V46\"/><path d=\"M160 270V46\"/><path d=\"M205 270V46\"/><path d=\"M250 270V46\"/><path d=\"M295 270V46\"/><path d=\"M340 270V46\"/><path d=\"M385 270V46\"/><path d=\"M430 270V46\"/><path d=\"M70 270H430\"/><path d=\"M70 242H430\"/><path d=\"M70 214H430\"/><path d=\"M70 186H430\"/><path d=\"M70 158H430\"/><path d=\"M70 130H430\"/><path d=\"M70 102H430\"/><path d=\"M70 74H430\"/><path d=\"M70 46H430\"/></g><g stroke=\"#475569\" stroke-width=\"1.7\"><path d=\"M70 270H438\"/><path d=\"M70 54V272\"/></g><g fill=\"#475569\" font-size=\"10\" text-anchor=\"middle\"><text x=\"70\" y=\"286\">0</text><text x=\"160\" y=\"286\">1</text><text x=\"250\" y=\"286\">2</text><text x=\"340\" y=\"286\">3</text><text x=\"430\" y=\"286\">4</text></g><g fill=\"#475569\" font-size=\"10\" text-anchor=\"end\"><text x=\"62\" y=\"273\">0</text><text x=\"62\" y=\"245\">1</text><text x=\"62\" y=\"217\">2</text><text x=\"62\" y=\"189\">3</text><text x=\"62\" y=\"161\">4</text><text x=\"62\" y=\"133\">5</text><text x=\"62\" y=\"105\">6</text><text x=\"62\" y=\"77\">7</text><text x=\"62\" y=\"49\">8</text></g><text x=\"447\" y=\"274\" font-size=\"12\" fill=\"#334155\">t (minutes)</text><text x=\"62\" y=\"18\" font-size=\"12\" text-anchor=\"end\" fill=\"#334155\">h (m)</text><path d=\"M70 102H430\" stroke=\"#f97316\" stroke-width=\"2.5\" stroke-dasharray=\"7 4\"/><text x=\"78\" y=\"95\" font-size=\"11\" font-weight=\"700\" fill=\"#c2410c\">h = 6 m</text><path d=\"M70 270 C130 120.20000000000002 190 46 250 46 C310 46 370 120.20000000000002 430 270\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"2.8\" stroke-linecap=\"round\"/></svg>"
+                  }
+                },
+                {
+                  "explain": "Move every term to one side, then divide by \\(2\\) to make the quadratic easier to factor.",
+                  "work": "\\(2t^2-8t+6=0\\)\\n\\(t^2-4t+3=0\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"520\" height=\"330\" viewBox=\"0 0 520 330\" style=\"font-family:Arial,sans-serif\"><rect width=\"520\" height=\"330\" fill=\"white\"/><g stroke=\"#e2e8f0\" stroke-width=\"1\"><path d=\"M70 270V46\"/><path d=\"M115 270V46\"/><path d=\"M160 270V46\"/><path d=\"M205 270V46\"/><path d=\"M250 270V46\"/><path d=\"M295 270V46\"/><path d=\"M340 270V46\"/><path d=\"M385 270V46\"/><path d=\"M430 270V46\"/><path d=\"M70 270H430\"/><path d=\"M70 242H430\"/><path d=\"M70 214H430\"/><path d=\"M70 186H430\"/><path d=\"M70 158H430\"/><path d=\"M70 130H430\"/><path d=\"M70 102H430\"/><path d=\"M70 74H430\"/><path d=\"M70 46H430\"/></g><g stroke=\"#475569\" stroke-width=\"1.7\"><path d=\"M70 270H438\"/><path d=\"M70 54V272\"/></g><g fill=\"#475569\" font-size=\"10\" text-anchor=\"middle\"><text x=\"70\" y=\"286\">0</text><text x=\"160\" y=\"286\">1</text><text x=\"250\" y=\"286\">2</text><text x=\"340\" y=\"286\">3</text><text x=\"430\" y=\"286\">4</text></g><g fill=\"#475569\" font-size=\"10\" text-anchor=\"end\"><text x=\"62\" y=\"273\">0</text><text x=\"62\" y=\"245\">1</text><text x=\"62\" y=\"217\">2</text><text x=\"62\" y=\"189\">3</text><text x=\"62\" y=\"161\">4</text><text x=\"62\" y=\"133\">5</text><text x=\"62\" y=\"105\">6</text><text x=\"62\" y=\"77\">7</text><text x=\"62\" y=\"49\">8</text></g><text x=\"447\" y=\"274\" font-size=\"12\" fill=\"#334155\">t (minutes)</text><text x=\"62\" y=\"18\" font-size=\"12\" text-anchor=\"end\" fill=\"#334155\">h (m)</text><path d=\"M70 102H430\" stroke=\"#f97316\" stroke-width=\"2.5\" stroke-dasharray=\"7 4\"/><text x=\"78\" y=\"95\" font-size=\"11\" font-weight=\"700\" fill=\"#c2410c\">h = 6 m</text><path d=\"M70 270 C130 120.20000000000002 190 46 250 46 C310 46 370 120.20000000000002 430 270\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><path d=\"M250 270V46\" stroke=\"#8b5cf6\" stroke-width=\"1.8\" stroke-dasharray=\"5 4\"/><text x=\"257\" y=\"262\" font-size=\"11\" fill=\"#6d28d9\">axis: t = 2</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Factor the quadratic and use the zero-product rule. These roots match the two highlighted intersections at height \\(6\\text{ m}\\).",
+                  "work": "\\((t-1)(t-3)=0\\)\\n\\(t-1=0\\quad\\text{or}\\quad t-3=0\\)\\n\\(t=1\\quad\\text{or}\\quad t=3\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"520\" height=\"330\" viewBox=\"0 0 520 330\" style=\"font-family:Arial,sans-serif\"><rect width=\"520\" height=\"330\" fill=\"white\"/><g stroke=\"#e2e8f0\" stroke-width=\"1\"><path d=\"M70 270V46\"/><path d=\"M115 270V46\"/><path d=\"M160 270V46\"/><path d=\"M205 270V46\"/><path d=\"M250 270V46\"/><path d=\"M295 270V46\"/><path d=\"M340 270V46\"/><path d=\"M385 270V46\"/><path d=\"M430 270V46\"/><path d=\"M70 270H430\"/><path d=\"M70 242H430\"/><path d=\"M70 214H430\"/><path d=\"M70 186H430\"/><path d=\"M70 158H430\"/><path d=\"M70 130H430\"/><path d=\"M70 102H430\"/><path d=\"M70 74H430\"/><path d=\"M70 46H430\"/></g><g stroke=\"#475569\" stroke-width=\"1.7\"><path d=\"M70 270H438\"/><path d=\"M70 54V272\"/></g><g fill=\"#475569\" font-size=\"10\" text-anchor=\"middle\"><text x=\"70\" y=\"286\">0</text><text x=\"160\" y=\"286\">1</text><text x=\"250\" y=\"286\">2</text><text x=\"340\" y=\"286\">3</text><text x=\"430\" y=\"286\">4</text></g><g fill=\"#475569\" font-size=\"10\" text-anchor=\"end\"><text x=\"62\" y=\"273\">0</text><text x=\"62\" y=\"245\">1</text><text x=\"62\" y=\"217\">2</text><text x=\"62\" y=\"189\">3</text><text x=\"62\" y=\"161\">4</text><text x=\"62\" y=\"133\">5</text><text x=\"62\" y=\"105\">6</text><text x=\"62\" y=\"77\">7</text><text x=\"62\" y=\"49\">8</text></g><text x=\"447\" y=\"274\" font-size=\"12\" fill=\"#334155\">t (minutes)</text><text x=\"62\" y=\"18\" font-size=\"12\" text-anchor=\"end\" fill=\"#334155\">h (m)</text><path d=\"M70 102H430\" stroke=\"#f97316\" stroke-width=\"2.5\" stroke-dasharray=\"7 4\"/><text x=\"78\" y=\"95\" font-size=\"11\" font-weight=\"700\" fill=\"#c2410c\">h = 6 m</text><path d=\"M70 270 C130 120.20000000000002 190 46 250 46 C310 46 370 120.20000000000002 430 270\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><path d=\"M250 270V46\" stroke=\"#8b5cf6\" stroke-width=\"1.8\" stroke-dasharray=\"5 4\"/><text x=\"257\" y=\"262\" font-size=\"11\" fill=\"#6d28d9\">axis: t = 2</text><circle cx=\"160\" cy=\"102\" r=\"5\" fill=\"#c2410c\" stroke=\"white\" stroke-width=\"1.5\"/><circle cx=\"340\" cy=\"102\" r=\"5\" fill=\"#c2410c\" stroke=\"white\" stroke-width=\"1.5\"/><text x=\"156\" y=\"92\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#c2410c\">(1,6)</text><text x=\"345\" y=\"92\" font-size=\"11\" font-weight=\"700\" fill=\"#c2410c\">(3,6)</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Both times are positive and occur during the drone’s flight, so keep both solutions.",
+                  "work": "\\(\\boxed{t=1\\text{ minute and }t=3\\text{ minutes}}\\)"
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "time(s) at a height of 6 m",
+                  "note": "Solve \\(8t-2t^2=6\\); the two roots are both valid flight times."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 Year 10 Mathematics Core and Pathways, Band 1 and Band 2 Assessment Task 4",
+            "school": "Abbotsleigh",
+            "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Y9/MG_Task4_yr10Maths_Band1.pdf"
+          }
+        },
+        {
           "id": "sghs2011-q1-9",
           "stem": "Find the equation of the parabola below. Express the equation in the form \\(y=ax^2+bx+c\\).",
           "timeLimit": 60,
