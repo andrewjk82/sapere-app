@@ -646,6 +646,24 @@ the defects in the student UI.
 - Review all step figures as well as the question figure; copied SVGs can
   preserve a defect across every step. Make each changed diagram visually
   distinct only where it communicates the next reasoning step.
+- **SVG math typography (2026-11-25, `khs23-y8-t4a-q16c` incident):** Because
+  `MathView.jsx` does not run KaTeX inside `figure.svg`, NEVER write raw slash
+  fractions (`y = 1/2`) or hyphen minus (`y = -x - 1`) in plain Arial SVG text.
+  Always use `KaTeX_Math, 'Times New Roman', serif` (italic) for variables,
+  `KaTeX_Main, 'Times New Roman', serif` with Unicode minus (`−`) for operators
+  and numbers, and draw **stacked vertical fractions** (numerator + horizontal
+  vinculum `<line>` + denominator) with a subtle white pill backdrop (`fill="#ffffff"
+  fill-opacity="0.92"`) placed clear of all lines and axes. Also wrap math in `hint`
+  with `\(...\)`.
+- **Exact angle sectors & multi-step geometry visuals (2026-11-25, `khs23-y8-t4a-q25`
+  & `wghs20-y7-yr-p1-s1-q1` incidents):** NEVER mark angles with floating `<circle>`
+  dots. Always compute exact unit vectors along both rays from the exact vertex and
+  draw an exact SVG `<path>` sector + arc between the two rays. Center angle value
+  labels along the interior angle bisector so they never touch a side or hypotenuse.
+  For multi-step geometry proofs (construction lines, parallel Z/F/U angles,
+  overlapping shapes), include a dedicated progressive SVG on EVERY reasoning step
+  highlighting the exact construction line, Z/F/U path, and matching angle pairs used
+  in that step.
 
 ### Final batch gate
 - Search every newly added ID and scan all of its math-bearing fields for
