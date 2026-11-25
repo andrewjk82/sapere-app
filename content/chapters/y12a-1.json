@@ -30925,6 +30925,56 @@
           }
         },
         {
+          "id": "loreto2024-q7",
+          "type": "mc",
+          "stem": "A supermarket assistant sets up a display of lemonade cans. The display forms a triangle, where each row has one fewer can than the row below. There are 15 cans at the base of the display and one can at the top of the display. What is the total number of cans used in the display?",
+          "difficulty": "easy",
+          "options": [
+            "30",
+            "120",
+            "160",
+            "180"
+          ],
+          "answer": 1,
+          "hint": "Row sizes \\(15,14,13,\\dots,1\\) form an arithmetic sequence (\\(d=-1\\)) with 15 terms. Sum them with \\(S_n=\\dfrac{n}{2}(a+l)\\).",
+          "steps": [
+            {
+              "explain": "Rows: base 15 cans, then 14, 13, …, up to 1 can at the top. That is one row for each number from 15 down to 1.",
+              "work": "\\(15,\\ 14,\\ 13,\\ \\dots,\\ 1\\ \\Rightarrow\\ n=15,\\ a=15,\\ l=1\\)"
+            },
+            {
+              "explain": "Sum of an arithmetic series: \\(S_n=\\dfrac{n}{2}(a+l)\\).",
+              "work": "\\(S_{15}=\\dfrac{15}{2}(15+1)=\\dfrac{15}{2}\\times16\\)"
+            },
+            {
+              "explain": "Calculate.",
+              "work": "\\(=15\\times8=120\\)"
+            },
+            {
+              "explain": "Why not the others: 30 ignores the middle rows; 160 and 180 do not equal \\(15+14+\\dots+1\\) (forgetting the \\(\\dfrac{1}{2}\\) would give 240).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">B</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "each row has one fewer can than the row below",
+              "note": "Rows 15…1: S = n/2 (first + last)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Loreto Kirribilli 2024 Year 12 Trial Examination Mathematics Advanced",
+            "school": "Loreto Kirribilli",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
           "id": "manly2020-q16b",
           "type": "mc",
           "stem": "A shop assistant is building a display of soup cans. The top row will contain 3 cans, and each subsequent row below will have 2 more cans than the previous row above. The shop assistant has 400 cans. How many rows is the tallest display that he can build using this pattern?",
@@ -30973,56 +31023,6 @@
           "meta": {
             "source": "Northern Beaches Secondary College Manly Campus 2020 Year 12 Trial Examination Mathematics Advanced",
             "school": "Northern Beaches Secondary College, Manly Campus",
-            "grade": "12",
-            "origin": "teacher"
-          }
-        },
-        {
-          "id": "loreto2024-q7",
-          "type": "mc",
-          "stem": "A supermarket assistant sets up a display of lemonade cans. The display forms a triangle, where each row has one fewer can than the row below. There are 15 cans at the base of the display and one can at the top of the display. What is the total number of cans used in the display?",
-          "difficulty": "easy",
-          "options": [
-            "30",
-            "120",
-            "160",
-            "180"
-          ],
-          "answer": 1,
-          "hint": "Row sizes \\(15,14,13,\\dots,1\\) form an arithmetic sequence (\\(d=-1\\)) with 15 terms. Sum them with \\(S_n=\\dfrac{n}{2}(a+l)\\).",
-          "steps": [
-            {
-              "explain": "Rows: base 15 cans, then 14, 13, …, up to 1 can at the top. That is one row for each number from 15 down to 1.",
-              "work": "\\(15,\\ 14,\\ 13,\\ \\dots,\\ 1\\ \\Rightarrow\\ n=15,\\ a=15,\\ l=1\\)"
-            },
-            {
-              "explain": "Sum of an arithmetic series: \\(S_n=\\dfrac{n}{2}(a+l)\\).",
-              "work": "\\(S_{15}=\\dfrac{15}{2}(15+1)=\\dfrac{15}{2}\\times16\\)"
-            },
-            {
-              "explain": "Calculate.",
-              "work": "\\(=15\\times8=120\\)"
-            },
-            {
-              "explain": "Why not the others: 30 ignores the middle rows; 160 and 180 do not equal \\(15+14+\\dots+1\\) (forgetting the \\(\\dfrac{1}{2}\\) would give 240).",
-              "work": ""
-            },
-            {
-              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">B</span>.",
-              "work": ""
-            }
-          ],
-          "keyPoints": [
-            {
-              "text": "each row has one fewer can than the row below",
-              "note": "Rows 15…1: S = n/2 (first + last)."
-            }
-          ],
-          "timeLimit": 60,
-          "xp": 1,
-          "meta": {
-            "source": "Loreto Kirribilli 2024 Year 12 Trial Examination Mathematics Advanced",
-            "school": "Loreto Kirribilli",
             "grade": "12",
             "origin": "teacher"
           }
@@ -45469,6 +45469,59 @@
           }
         },
         {
+          "id": "loreto2024-q31c",
+          "type": "mc",
+          "stem": "Consider the series \\(\\log_e x-3\\left(\\log_e x\\right)^{2}+9\\left(\\log_e x\\right)^{3}-27\\left(\\log_e x\\right)^{4}+\\dots\\) Hence, or otherwise, find the values of \\(x\\) for which the series has a limiting sum.",
+          "difficulty": "hard",
+          "options": [
+            "\\(e^{-\\frac{1}{3}}<x<e^{\\frac{1}{3}}\\)",
+            "\\(-\\dfrac{1}{3}<x<\\dfrac{1}{3}\\)",
+            "\\(x<e^{\\frac{1}{3}}\\)",
+            "\\(1<x<e^{3}\\)"
+          ],
+          "answer": 0,
+          "hint": "A limiting sum exists when \\(|r|<1\\). Here \\(r=-3\\log_ex\\), so \\(\\left|{-3}\\ln x\\right|<1\\Rightarrow-\\dfrac{1}{3}<\\ln x<\\dfrac{1}{3}\\). On the graph: where \\(y=\\ln x\\) lies BETWEEN the lines \\(y=\\pm\\dfrac{1}{3}\\).",
+          "steps": [
+            {
+              "explain": "Condition for a limiting sum (from part a: \\(r=-3\\ln x\\)).",
+              "work": "\\(|r|<1\\ \\Rightarrow\\ \\left|-3\\ln x\\right|<1\\ \\Rightarrow\\ |\\ln x|<\\dfrac{1}{3}\\)"
+            },
+            {
+              "explain": "So \\(-\\dfrac{1}{3}<\\ln x<\\dfrac{1}{3}\\): the curve \\(y=\\ln x\\) lies between the two horizontal lines (green section of the graph in part b), from the left intersection to the right one.",
+              "work": "\\(-\\dfrac{1}{3}<\\ln x<\\dfrac{1}{3}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 230\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><line x1=\"8.0\" y1=\"126.5\" x2=\"352.0\" y2=\"126.5\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"224.0\" x2=\"70.0\" y2=\"12.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"352.0\" y1=\"126.5\" x2=\"345.1\" y2=\"122.5\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"352.0\" y1=\"126.5\" x2=\"345.1\" y2=\"130.5\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"12.0\" x2=\"66.0\" y2=\"18.9\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"12.0\" x2=\"74.0\" y2=\"18.9\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><text x=\"354.0\" y=\"141.5\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><text x=\"79.0\" y=\"22.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">y</text><polyline points=\"79.1,237.0 79.5,233.9 79.9,230.9 80.3,228.1 80.7,225.4 81.1,222.8 81.5,220.2 81.9,217.8 82.3,215.4 82.8,213.2 83.2,211.0 83.6,208.8 84.0,206.7 84.4,204.7 84.8,202.8 85.2,200.9 85.6,199.0 86.0,197.2 86.4,195.4 86.8,193.7 87.3,192.0 87.7,190.4 88.1,188.8 88.5,187.2 88.9,185.7 89.3,184.2 89.7,182.7 90.1,181.3 90.5,179.9 90.9,178.5 91.3,177.2 91.7,175.8 92.2,174.5 92.6,173.3 93.0,172.0 93.4,170.8 93.8,169.6 94.2,168.4 94.6,167.2 95.0,166.0 95.4,164.9 95.8,163.8 96.2,162.7 96.6,161.6 97.1,160.5 97.5,159.5 97.9,158.5 98.3,157.4 98.7,156.4 99.1,155.5 99.5,154.5 99.9,153.5 100.3,152.6 100.7,151.6 101.1,150.7 101.5,149.8 102.0,148.9 102.4,148.0 102.8,147.1 103.2,146.3 103.6,145.4 104.0,144.6 104.4,143.7 104.8,142.9 105.2,142.1 105.6,141.3 106.0,140.5 106.4,139.7 106.9,138.9 107.3,138.1 107.7,137.4 108.1,136.6 108.5,135.9 108.9,135.1 109.3,134.4 109.7,133.7 110.1,133.0 110.5,132.2 110.9,131.5 111.3,130.8 111.8,130.2 112.2,129.5 112.6,128.8 113.0,128.1 113.4,127.5 113.8,126.8 114.2,126.2 114.6,125.5 115.0,124.9 115.4,124.3 115.8,123.6 116.3,123.0 116.7,122.4 117.1,121.8 117.5,121.2 117.9,120.6 118.3,120.0 118.7,119.4 119.1,118.8 119.5,118.2 119.9,117.7 120.3,117.1 120.7,116.5 121.2,116.0 121.6,115.4 122.0,114.8 122.4,114.3 122.8,113.8 123.2,113.2 123.6,112.7 124.0,112.1 124.4,111.6 124.8,111.1 125.2,110.6 125.6,110.1 126.1,109.6 126.5,109.0 126.9,108.5 127.3,108.0 127.7,107.5 128.1,107.0 128.5,106.6 128.9,106.1 129.3,105.6 129.7,105.1 130.1,104.6 130.5,104.2 131.0,103.7 131.4,103.2 131.8,102.8 132.2,102.3 132.6,101.8 133.0,101.4 133.4,100.9 133.8,100.5 134.2,100.0 134.6,99.6 135.0,99.1 135.4,98.7 135.9,98.3 136.3,97.8 136.7,97.4 137.1,97.0 137.5,96.6 137.9,96.1 138.3,95.7 138.7,95.3 139.1,94.9 139.5,94.5 139.9,94.1 140.4,93.6 140.8,93.2 141.2,92.8 141.6,92.4 142.0,92.0 142.4,91.6 142.8,91.3 143.2,90.9 143.6,90.5 144.0,90.1 144.4,89.7 144.8,89.3 145.3,88.9 145.7,88.6 146.1,88.2 146.5,87.8 146.9,87.4 147.3,87.1 147.7,86.7 148.1,86.3 148.5,86.0 148.9,85.6 149.3,85.2 149.7,84.9 150.2,84.5 150.6,84.2 151.0,83.8 151.4,83.5 151.8,83.1 152.2,82.8 152.6,82.4 153.0,82.1 153.4,81.7 153.8,81.4 154.2,81.0 154.6,80.7 155.1,80.4 155.5,80.0 155.9,79.7 156.3,79.4 156.7,79.0 157.1,78.7 157.5,78.4 157.9,78.0 158.3,77.7 158.7,77.4 159.1,77.1 159.5,76.8 160.0,76.4 160.4,76.1 160.8,75.8 161.2,75.5 161.6,75.2 162.0,74.9 162.4,74.6 162.8,74.2 163.2,73.9 163.6,73.6 164.0,73.3 164.5,73.0 164.9,72.7 165.3,72.4 165.7,72.1 166.1,71.8 166.5,71.5 166.9,71.2 167.3,70.9 167.7,70.6 168.1,70.4 168.5,70.1 168.9,69.8 169.4,69.5 169.8,69.2 170.2,68.9 170.6,68.6 171.0,68.3 171.4,68.1 171.8,67.8 172.2,67.5 172.6,67.2 173.0,66.9 173.4,66.7 173.8,66.4 174.3,66.1 174.7,65.8 175.1,65.6 175.5,65.3 175.9,65.0 176.3,64.8 176.7,64.5 177.1,64.2 177.5,64.0 177.9,63.7 178.3,63.4 178.7,63.2 179.2,62.9 179.6,62.6 180.0,62.4 180.4,62.1 180.8,61.9 181.2,61.6 181.6,61.3 182.0,61.1 182.4,60.8 182.8,60.6 183.2,60.3 183.6,60.1 184.1,59.8 184.5,59.6 184.9,59.3 185.3,59.1 185.7,58.8 186.1,58.6 186.5,58.3 186.9,58.1 187.3,57.8 187.7,57.6 188.1,57.4 188.5,57.1 189.0,56.9 189.4,56.6 189.8,56.4 190.2,56.2 190.6,55.9 191.0,55.7 191.4,55.5 191.8,55.2 192.2,55.0 192.6,54.7 193.0,54.5 193.5,54.3 193.9,54.1 194.3,53.8 194.7,53.6 195.1,53.4 195.5,53.1 195.9,52.9 196.3,52.7 196.7,52.5 197.1,52.2 197.5,52.0 197.9,51.8 198.4,51.6 198.8,51.3 199.2,51.1 199.6,50.9 200.0,50.7 200.4,50.5 200.8,50.2 201.2,50.0 201.6,49.8 202.0,49.6 202.4,49.4 202.8,49.1 203.3,48.9 203.7,48.7 204.1,48.5 204.5,48.3 204.9,48.1 205.3,47.9 205.7,47.7 206.1,47.4 206.5,47.2 206.9,47.0 207.3,46.8 207.7,46.6 208.2,46.4 208.6,46.2 209.0,46.0 209.4,45.8 209.8,45.6 210.2,45.4 210.6,45.2 211.0,45.0 211.4,44.8 211.8,44.6 212.2,44.4 212.6,44.2 213.1,44.0 213.5,43.8 213.9,43.6 214.3,43.4 214.7,43.2 215.1,43.0 215.5,42.8 215.9,42.6 216.3,42.4 216.7,42.2 217.1,42.0 217.6,41.8 218.0,41.6 218.4,41.4 218.8,41.2 219.2,41.0 219.6,40.8 220.0,40.6 220.4,40.5 220.8,40.3 221.2,40.1 221.6,39.9 222.0,39.7 222.5,39.5 222.9,39.3 223.3,39.1 223.7,39.0 224.1,38.8 224.5,38.6 224.9,38.4 225.3,38.2 225.7,38.0 226.1,37.8 226.5,37.7 226.9,37.5 227.4,37.3 227.8,37.1 228.2,36.9 228.6,36.8 229.0,36.6 229.4,36.4 229.8,36.2 230.2,36.0 230.6,35.9 231.0,35.7 231.4,35.5 231.8,35.3 232.3,35.2 232.7,35.0 233.1,34.8 233.5,34.6 233.9,34.4 234.3,34.3 234.7,34.1 235.1,33.9 235.5,33.8 235.9,33.6 236.3,33.4 236.7,33.2 237.2,33.1 237.6,32.9 238.0,32.7 238.4,32.6 238.8,32.4 239.2,32.2 239.6,32.0 240.0,31.9 240.4,31.7 240.8,31.5 241.2,31.4 241.7,31.2 242.1,31.0 242.5,30.9 242.9,30.7 243.3,30.5 243.7,30.4 244.1,30.2 244.5,30.1 244.9,29.9 245.3,29.7 245.7,29.6 246.1,29.4 246.6,29.2 247.0,29.1 247.4,28.9 247.8,28.8 248.2,28.6 248.6,28.4 249.0,28.3 249.4,28.1 249.8,28.0 250.2,27.8 250.6,27.6 251.0,27.5 251.5,27.3 251.9,27.2 252.3,27.0 252.7,26.9 253.1,26.7 253.5,26.5 253.9,26.4 254.3,26.2 254.7,26.1 255.1,25.9 255.5,25.8 255.9,25.6 256.4,25.5 256.8,25.3 257.2,25.2\" fill=\"none\" stroke=\"#3b4ea8\" stroke-width=\"3.4\" stroke-linejoin=\"round\"/><line x1=\"14.0\" y1=\"103.2\" x2=\"348.0\" y2=\"103.2\" stroke=\"#dc2626\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><line x1=\"14.0\" y1=\"149.8\" x2=\"348.0\" y2=\"149.8\" stroke=\"#dc2626\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><line x1=\"101.5\" y1=\"149.8\" x2=\"101.5\" y2=\"126.5\" stroke=\"#047857\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"3 3\"/><line x1=\"131.4\" y1=\"103.2\" x2=\"131.4\" y2=\"126.5\" stroke=\"#047857\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"3 3\"/><circle cx=\"101.5\" cy=\"149.8\" r=\"5.4\" fill=\"#047857\"/><circle cx=\"131.4\" cy=\"103.2\" r=\"5.4\" fill=\"#047857\"/><circle cx=\"114.0\" cy=\"126.5\" r=\"5\" fill=\"#d97706\"/><text x=\"97.5\" y=\"118.5\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0.72</text><text x=\"137.4\" y=\"118.5\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1.40</text><text x=\"114.0\" y=\"143.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><line x1=\"101.5\" y1=\"176.5\" x2=\"131.4\" y2=\"176.5\" stroke=\"#047857\" stroke-width=\"5\" stroke-linecap=\"round\"/><text x=\"114.0\" y=\"194.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">between the two lines</text><line x1=\"101.5\" y1=\"166.5\" x2=\"101.5\" y2=\"182.5\" stroke=\"#047857\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"3 3\"/><line x1=\"131.4\" y1=\"166.5\" x2=\"131.4\" y2=\"182.5\" stroke=\"#047857\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"3 3\"/></svg>"
+              }
+            },
+            {
+              "explain": "Use the \\(x\\)-values of the intersections (\\(\\ln x\\) is increasing): \\(e^{-\\frac{1}{3}}\\approx0.72\\) and \\(e^{\\frac{1}{3}}\\approx1.40\\).",
+              "work": "\\(e^{-\\frac{1}{3}}<x<e^{\\frac{1}{3}}\\)"
+            },
+            {
+              "explain": "Why not the others: B gives the interval for \\(\\ln x\\), not \\(x\\); C ignores the lower limit; D uses \\(\\ln x\\) between 0 and 3.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "find the values of \\(x\\) for which the series has a limiting sum.",
+              "note": "\\(|r|<1\\iff|\\ln x|<\\dfrac{1}{3}\\), then exponentiate."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Loreto Kirribilli 2024 Year 12 Trial Examination Mathematics Advanced",
+            "school": "Loreto Kirribilli",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
           "id": "manly2020-q23a",
           "type": "mc",
           "stem": "Given the series \\(\\tan^{2}x-\\tan^{4}x+\\tan^{6}x-\\tan^{8}x+\\dots\\) for \\(-\\dfrac{\\pi}{2}<x<\\dfrac{\\pi}{2}\\). Determine the values of \\(x\\) such that the series has a limiting sum.",
@@ -45568,59 +45621,6 @@
           "meta": {
             "source": "Northern Beaches Secondary College Manly Campus 2020 Year 12 Trial Examination Mathematics Advanced",
             "school": "Northern Beaches Secondary College, Manly Campus",
-            "grade": "12",
-            "origin": "teacher"
-          }
-        },
-        {
-          "id": "loreto2024-q31c",
-          "type": "mc",
-          "stem": "Consider the series \\(\\log_e x-3\\left(\\log_e x\\right)^{2}+9\\left(\\log_e x\\right)^{3}-27\\left(\\log_e x\\right)^{4}+\\dots\\) Hence, or otherwise, find the values of \\(x\\) for which the series has a limiting sum.",
-          "difficulty": "hard",
-          "options": [
-            "\\(e^{-\\frac{1}{3}}<x<e^{\\frac{1}{3}}\\)",
-            "\\(-\\dfrac{1}{3}<x<\\dfrac{1}{3}\\)",
-            "\\(x<e^{\\frac{1}{3}}\\)",
-            "\\(1<x<e^{3}\\)"
-          ],
-          "answer": 0,
-          "hint": "A limiting sum exists when \\(|r|<1\\). Here \\(r=-3\\log_ex\\), so \\(\\left|{-3}\\ln x\\right|<1\\Rightarrow-\\dfrac{1}{3}<\\ln x<\\dfrac{1}{3}\\). On the graph: where \\(y=\\ln x\\) lies BETWEEN the lines \\(y=\\pm\\dfrac{1}{3}\\).",
-          "steps": [
-            {
-              "explain": "Condition for a limiting sum (from part a: \\(r=-3\\ln x\\)).",
-              "work": "\\(|r|<1\\ \\Rightarrow\\ \\left|-3\\ln x\\right|<1\\ \\Rightarrow\\ |\\ln x|<\\dfrac{1}{3}\\)"
-            },
-            {
-              "explain": "So \\(-\\dfrac{1}{3}<\\ln x<\\dfrac{1}{3}\\): the curve \\(y=\\ln x\\) lies between the two horizontal lines (green section of the graph in part b), from the left intersection to the right one.",
-              "work": "\\(-\\dfrac{1}{3}<\\ln x<\\dfrac{1}{3}\\)",
-              "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 230\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><line x1=\"8.0\" y1=\"126.5\" x2=\"352.0\" y2=\"126.5\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"224.0\" x2=\"70.0\" y2=\"12.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"352.0\" y1=\"126.5\" x2=\"345.1\" y2=\"122.5\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"352.0\" y1=\"126.5\" x2=\"345.1\" y2=\"130.5\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"12.0\" x2=\"66.0\" y2=\"18.9\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"12.0\" x2=\"74.0\" y2=\"18.9\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><text x=\"354.0\" y=\"141.5\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><text x=\"79.0\" y=\"22.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">y</text><polyline points=\"79.1,237.0 79.5,233.9 79.9,230.9 80.3,228.1 80.7,225.4 81.1,222.8 81.5,220.2 81.9,217.8 82.3,215.4 82.8,213.2 83.2,211.0 83.6,208.8 84.0,206.7 84.4,204.7 84.8,202.8 85.2,200.9 85.6,199.0 86.0,197.2 86.4,195.4 86.8,193.7 87.3,192.0 87.7,190.4 88.1,188.8 88.5,187.2 88.9,185.7 89.3,184.2 89.7,182.7 90.1,181.3 90.5,179.9 90.9,178.5 91.3,177.2 91.7,175.8 92.2,174.5 92.6,173.3 93.0,172.0 93.4,170.8 93.8,169.6 94.2,168.4 94.6,167.2 95.0,166.0 95.4,164.9 95.8,163.8 96.2,162.7 96.6,161.6 97.1,160.5 97.5,159.5 97.9,158.5 98.3,157.4 98.7,156.4 99.1,155.5 99.5,154.5 99.9,153.5 100.3,152.6 100.7,151.6 101.1,150.7 101.5,149.8 102.0,148.9 102.4,148.0 102.8,147.1 103.2,146.3 103.6,145.4 104.0,144.6 104.4,143.7 104.8,142.9 105.2,142.1 105.6,141.3 106.0,140.5 106.4,139.7 106.9,138.9 107.3,138.1 107.7,137.4 108.1,136.6 108.5,135.9 108.9,135.1 109.3,134.4 109.7,133.7 110.1,133.0 110.5,132.2 110.9,131.5 111.3,130.8 111.8,130.2 112.2,129.5 112.6,128.8 113.0,128.1 113.4,127.5 113.8,126.8 114.2,126.2 114.6,125.5 115.0,124.9 115.4,124.3 115.8,123.6 116.3,123.0 116.7,122.4 117.1,121.8 117.5,121.2 117.9,120.6 118.3,120.0 118.7,119.4 119.1,118.8 119.5,118.2 119.9,117.7 120.3,117.1 120.7,116.5 121.2,116.0 121.6,115.4 122.0,114.8 122.4,114.3 122.8,113.8 123.2,113.2 123.6,112.7 124.0,112.1 124.4,111.6 124.8,111.1 125.2,110.6 125.6,110.1 126.1,109.6 126.5,109.0 126.9,108.5 127.3,108.0 127.7,107.5 128.1,107.0 128.5,106.6 128.9,106.1 129.3,105.6 129.7,105.1 130.1,104.6 130.5,104.2 131.0,103.7 131.4,103.2 131.8,102.8 132.2,102.3 132.6,101.8 133.0,101.4 133.4,100.9 133.8,100.5 134.2,100.0 134.6,99.6 135.0,99.1 135.4,98.7 135.9,98.3 136.3,97.8 136.7,97.4 137.1,97.0 137.5,96.6 137.9,96.1 138.3,95.7 138.7,95.3 139.1,94.9 139.5,94.5 139.9,94.1 140.4,93.6 140.8,93.2 141.2,92.8 141.6,92.4 142.0,92.0 142.4,91.6 142.8,91.3 143.2,90.9 143.6,90.5 144.0,90.1 144.4,89.7 144.8,89.3 145.3,88.9 145.7,88.6 146.1,88.2 146.5,87.8 146.9,87.4 147.3,87.1 147.7,86.7 148.1,86.3 148.5,86.0 148.9,85.6 149.3,85.2 149.7,84.9 150.2,84.5 150.6,84.2 151.0,83.8 151.4,83.5 151.8,83.1 152.2,82.8 152.6,82.4 153.0,82.1 153.4,81.7 153.8,81.4 154.2,81.0 154.6,80.7 155.1,80.4 155.5,80.0 155.9,79.7 156.3,79.4 156.7,79.0 157.1,78.7 157.5,78.4 157.9,78.0 158.3,77.7 158.7,77.4 159.1,77.1 159.5,76.8 160.0,76.4 160.4,76.1 160.8,75.8 161.2,75.5 161.6,75.2 162.0,74.9 162.4,74.6 162.8,74.2 163.2,73.9 163.6,73.6 164.0,73.3 164.5,73.0 164.9,72.7 165.3,72.4 165.7,72.1 166.1,71.8 166.5,71.5 166.9,71.2 167.3,70.9 167.7,70.6 168.1,70.4 168.5,70.1 168.9,69.8 169.4,69.5 169.8,69.2 170.2,68.9 170.6,68.6 171.0,68.3 171.4,68.1 171.8,67.8 172.2,67.5 172.6,67.2 173.0,66.9 173.4,66.7 173.8,66.4 174.3,66.1 174.7,65.8 175.1,65.6 175.5,65.3 175.9,65.0 176.3,64.8 176.7,64.5 177.1,64.2 177.5,64.0 177.9,63.7 178.3,63.4 178.7,63.2 179.2,62.9 179.6,62.6 180.0,62.4 180.4,62.1 180.8,61.9 181.2,61.6 181.6,61.3 182.0,61.1 182.4,60.8 182.8,60.6 183.2,60.3 183.6,60.1 184.1,59.8 184.5,59.6 184.9,59.3 185.3,59.1 185.7,58.8 186.1,58.6 186.5,58.3 186.9,58.1 187.3,57.8 187.7,57.6 188.1,57.4 188.5,57.1 189.0,56.9 189.4,56.6 189.8,56.4 190.2,56.2 190.6,55.9 191.0,55.7 191.4,55.5 191.8,55.2 192.2,55.0 192.6,54.7 193.0,54.5 193.5,54.3 193.9,54.1 194.3,53.8 194.7,53.6 195.1,53.4 195.5,53.1 195.9,52.9 196.3,52.7 196.7,52.5 197.1,52.2 197.5,52.0 197.9,51.8 198.4,51.6 198.8,51.3 199.2,51.1 199.6,50.9 200.0,50.7 200.4,50.5 200.8,50.2 201.2,50.0 201.6,49.8 202.0,49.6 202.4,49.4 202.8,49.1 203.3,48.9 203.7,48.7 204.1,48.5 204.5,48.3 204.9,48.1 205.3,47.9 205.7,47.7 206.1,47.4 206.5,47.2 206.9,47.0 207.3,46.8 207.7,46.6 208.2,46.4 208.6,46.2 209.0,46.0 209.4,45.8 209.8,45.6 210.2,45.4 210.6,45.2 211.0,45.0 211.4,44.8 211.8,44.6 212.2,44.4 212.6,44.2 213.1,44.0 213.5,43.8 213.9,43.6 214.3,43.4 214.7,43.2 215.1,43.0 215.5,42.8 215.9,42.6 216.3,42.4 216.7,42.2 217.1,42.0 217.6,41.8 218.0,41.6 218.4,41.4 218.8,41.2 219.2,41.0 219.6,40.8 220.0,40.6 220.4,40.5 220.8,40.3 221.2,40.1 221.6,39.9 222.0,39.7 222.5,39.5 222.9,39.3 223.3,39.1 223.7,39.0 224.1,38.8 224.5,38.6 224.9,38.4 225.3,38.2 225.7,38.0 226.1,37.8 226.5,37.7 226.9,37.5 227.4,37.3 227.8,37.1 228.2,36.9 228.6,36.8 229.0,36.6 229.4,36.4 229.8,36.2 230.2,36.0 230.6,35.9 231.0,35.7 231.4,35.5 231.8,35.3 232.3,35.2 232.7,35.0 233.1,34.8 233.5,34.6 233.9,34.4 234.3,34.3 234.7,34.1 235.1,33.9 235.5,33.8 235.9,33.6 236.3,33.4 236.7,33.2 237.2,33.1 237.6,32.9 238.0,32.7 238.4,32.6 238.8,32.4 239.2,32.2 239.6,32.0 240.0,31.9 240.4,31.7 240.8,31.5 241.2,31.4 241.7,31.2 242.1,31.0 242.5,30.9 242.9,30.7 243.3,30.5 243.7,30.4 244.1,30.2 244.5,30.1 244.9,29.9 245.3,29.7 245.7,29.6 246.1,29.4 246.6,29.2 247.0,29.1 247.4,28.9 247.8,28.8 248.2,28.6 248.6,28.4 249.0,28.3 249.4,28.1 249.8,28.0 250.2,27.8 250.6,27.6 251.0,27.5 251.5,27.3 251.9,27.2 252.3,27.0 252.7,26.9 253.1,26.7 253.5,26.5 253.9,26.4 254.3,26.2 254.7,26.1 255.1,25.9 255.5,25.8 255.9,25.6 256.4,25.5 256.8,25.3 257.2,25.2\" fill=\"none\" stroke=\"#3b4ea8\" stroke-width=\"3.4\" stroke-linejoin=\"round\"/><line x1=\"14.0\" y1=\"103.2\" x2=\"348.0\" y2=\"103.2\" stroke=\"#dc2626\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><line x1=\"14.0\" y1=\"149.8\" x2=\"348.0\" y2=\"149.8\" stroke=\"#dc2626\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><line x1=\"101.5\" y1=\"149.8\" x2=\"101.5\" y2=\"126.5\" stroke=\"#047857\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"3 3\"/><line x1=\"131.4\" y1=\"103.2\" x2=\"131.4\" y2=\"126.5\" stroke=\"#047857\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"3 3\"/><circle cx=\"101.5\" cy=\"149.8\" r=\"5.4\" fill=\"#047857\"/><circle cx=\"131.4\" cy=\"103.2\" r=\"5.4\" fill=\"#047857\"/><circle cx=\"114.0\" cy=\"126.5\" r=\"5\" fill=\"#d97706\"/><text x=\"97.5\" y=\"118.5\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0.72</text><text x=\"137.4\" y=\"118.5\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1.40</text><text x=\"114.0\" y=\"143.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><line x1=\"101.5\" y1=\"176.5\" x2=\"131.4\" y2=\"176.5\" stroke=\"#047857\" stroke-width=\"5\" stroke-linecap=\"round\"/><text x=\"114.0\" y=\"194.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">between the two lines</text><line x1=\"101.5\" y1=\"166.5\" x2=\"101.5\" y2=\"182.5\" stroke=\"#047857\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"3 3\"/><line x1=\"131.4\" y1=\"166.5\" x2=\"131.4\" y2=\"182.5\" stroke=\"#047857\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"3 3\"/></svg>"
-              }
-            },
-            {
-              "explain": "Use the \\(x\\)-values of the intersections (\\(\\ln x\\) is increasing): \\(e^{-\\frac{1}{3}}\\approx0.72\\) and \\(e^{\\frac{1}{3}}\\approx1.40\\).",
-              "work": "\\(e^{-\\frac{1}{3}}<x<e^{\\frac{1}{3}}\\)"
-            },
-            {
-              "explain": "Why not the others: B gives the interval for \\(\\ln x\\), not \\(x\\); C ignores the lower limit; D uses \\(\\ln x\\) between 0 and 3.",
-              "work": ""
-            },
-            {
-              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
-              "work": ""
-            }
-          ],
-          "keyPoints": [
-            {
-              "text": "find the values of \\(x\\) for which the series has a limiting sum.",
-              "note": "\\(|r|<1\\iff|\\ln x|<\\dfrac{1}{3}\\), then exponentiate."
-            }
-          ],
-          "timeLimit": 60,
-          "xp": 1,
-          "meta": {
-            "source": "Loreto Kirribilli 2024 Year 12 Trial Examination Mathematics Advanced",
-            "school": "Loreto Kirribilli",
             "grade": "12",
             "origin": "teacher"
           }

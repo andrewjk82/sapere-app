@@ -8669,52 +8669,6 @@
           }
         },
         {
-          "id": "manly2020-q14",
-          "type": "mc",
-          "stem": "Differentiate \\(e^{x\\sin x}\\).",
-          "difficulty": "medium",
-          "options": [
-            "\\((\\sin x+x\\cos x)\\,e^{x\\sin x}\\)",
-            "\\(e^{x\\sin x}\\)",
-            "\\(\\sin x\\; e^{x\\sin x}\\)",
-            "\\(x\\sin x\\;e^{x\\sin x-1}\\)"
-          ],
-          "answer": 0,
-          "hint": "Chain rule for \\(e^{f(x)}\\): \\(\\dfrac{d}{dx}e^{f(x)}=f'(x)\\,e^{f(x)}\\). The index \\(f(x)=x\\sin x\\) is a PRODUCT, so its derivative needs the product rule.",
-          "steps": [
-            {
-              "explain": "Let \\(f(x)=x\\sin x\\) be the index. Differentiate it with the product rule \\((uv)'=u'v+uv'\\) with \\(u=x,\\ v=\\sin x\\).",
-              "work": "\\(f'(x)=1\\cdot\\sin x+x\\cos x=\\sin x+x\\cos x\\)"
-            },
-            {
-              "explain": "Chain rule for the exponential: multiply \\(e^{f(x)}\\) by \\(f'(x)\\).",
-              "work": "\\(\\dfrac{d}{dx}e^{x\\sin x}=f'(x)\\,e^{f(x)}=(\\sin x+x\\cos x)\\,e^{x\\sin x}\\)"
-            },
-            {
-              "explain": "Why not the others: B forgets the derivative of the index; C only differentiates \\(x\\) (forgets \\(x\\cos x\\)); D wrongly uses the power rule on \\(e^{u}\\).",
-              "work": ""
-            },
-            {
-              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
-              "work": ""
-            }
-          ],
-          "keyPoints": [
-            {
-              "text": "Differentiate \\(e^{x\\sin x}\\)",
-              "note": "\\(e^{u}\\to u'e^{u}\\), with \\(u'\\) by the product rule."
-            }
-          ],
-          "timeLimit": 60,
-          "xp": 1,
-          "meta": {
-            "source": "Northern Beaches Secondary College Manly Campus 2020 Year 12 Trial Examination Mathematics Advanced",
-            "school": "Northern Beaches Secondary College, Manly Campus",
-            "grade": "12",
-            "origin": "teacher"
-          }
-        },
-        {
           "id": "loreto2024-q11",
           "type": "mc",
           "stem": "Find the derivative of the function \\(y=xe^{7x}\\). Give your answer in factorised form.",
@@ -8814,6 +8768,52 @@
           "meta": {
             "source": "Loreto Kirribilli 2024 Year 12 Trial Examination Mathematics Advanced",
             "school": "Loreto Kirribilli",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "manly2020-q14",
+          "type": "mc",
+          "stem": "Differentiate \\(e^{x\\sin x}\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\((\\sin x+x\\cos x)\\,e^{x\\sin x}\\)",
+            "\\(e^{x\\sin x}\\)",
+            "\\(\\sin x\\; e^{x\\sin x}\\)",
+            "\\(x\\sin x\\;e^{x\\sin x-1}\\)"
+          ],
+          "answer": 0,
+          "hint": "Chain rule for \\(e^{f(x)}\\): \\(\\dfrac{d}{dx}e^{f(x)}=f'(x)\\,e^{f(x)}\\). The index \\(f(x)=x\\sin x\\) is a PRODUCT, so its derivative needs the product rule.",
+          "steps": [
+            {
+              "explain": "Let \\(f(x)=x\\sin x\\) be the index. Differentiate it with the product rule \\((uv)'=u'v+uv'\\) with \\(u=x,\\ v=\\sin x\\).",
+              "work": "\\(f'(x)=1\\cdot\\sin x+x\\cos x=\\sin x+x\\cos x\\)"
+            },
+            {
+              "explain": "Chain rule for the exponential: multiply \\(e^{f(x)}\\) by \\(f'(x)\\).",
+              "work": "\\(\\dfrac{d}{dx}e^{x\\sin x}=f'(x)\\,e^{f(x)}=(\\sin x+x\\cos x)\\,e^{x\\sin x}\\)"
+            },
+            {
+              "explain": "Why not the others: B forgets the derivative of the index; C only differentiates \\(x\\) (forgets \\(x\\cos x\\)); D wrongly uses the power rule on \\(e^{u}\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Differentiate \\(e^{x\\sin x}\\)",
+              "note": "\\(e^{u}\\to u'e^{u}\\), with \\(u'\\) by the product rule."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Northern Beaches Secondary College Manly Campus 2020 Year 12 Trial Examination Mathematics Advanced",
+            "school": "Northern Beaches Secondary College, Manly Campus",
             "grade": "12",
             "origin": "teacher"
           }

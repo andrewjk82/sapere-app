@@ -14495,56 +14495,6 @@
           }
         },
         {
-          "id": "manly2020-q21b",
-          "type": "mc",
-          "stem": "Find \\(\\displaystyle\\int\\dfrac{2x+2}{4x^{2}+8x+1}\\,dx\\).",
-          "difficulty": "medium",
-          "options": [
-            "\\(\\dfrac{1}{4}\\ln\\left|4x^{2}+8x+1\\right|+C\\)",
-            "\\(\\dfrac{1}{2}\\ln\\left|4x^{2}+8x+1\\right|+C\\)",
-            "\\(4\\ln\\left|4x^{2}+8x+1\\right|+C\\)",
-            "\\(\\ln\\left|4x^{2}+8x+1\\right|+C\\)"
-          ],
-          "answer": 0,
-          "hint": "Check whether the numerator is a multiple of the derivative of the denominator. If so, \\(\\int\\dfrac{f'(x)}{f(x)}dx=\\ln|f(x)|+C\\), after fixing the constant multiple.",
-          "steps": [
-            {
-              "explain": "Differentiate the denominator.",
-              "work": "\\(\\dfrac{d}{dx}\\left(4x^{2}+8x+1\\right)=8x+8=4(2x+2)\\)"
-            },
-            {
-              "explain": "The numerator \\(2x+2\\) is \\(\\dfrac{1}{4}\\) of that derivative. Insert 4 on top and multiply the integral by \\(\\dfrac{1}{4}\\) to balance.",
-              "work": "\\(\\dfrac{1}{4}\\int\\dfrac{4(2x+2)}{4x^{2}+8x+1}\\,dx=\\dfrac{1}{4}\\int\\dfrac{8x+8}{4x^{2}+8x+1}\\,dx\\)"
-            },
-            {
-              "explain": "Now it is \\(\\int\\dfrac{f'}{f}\\).",
-              "work": "\\(=\\dfrac{1}{4}\\ln\\left|4x^{2}+8x+1\\right|+C\\)"
-            },
-            {
-              "explain": "Why not the others: 4 multiplies instead of dividing by 4; \\(\\dfrac{1}{2}\\) uses the wrong factor; \\(\\ln|\\ldots|\\) ignores the constant (the numerator is only a quarter of the derivative).",
-              "work": ""
-            },
-            {
-              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
-              "work": ""
-            }
-          ],
-          "keyPoints": [
-            {
-              "text": "\\int\\dfrac{2x+2}{4x^{2}+8x+1}\\,dx",
-              "note": "Numerator ∝ derivative of denominator → ln."
-            }
-          ],
-          "timeLimit": 60,
-          "xp": 1,
-          "meta": {
-            "source": "Northern Beaches Secondary College Manly Campus 2020 Year 12 Trial Examination Mathematics Advanced",
-            "school": "Northern Beaches Secondary College, Manly Campus",
-            "grade": "12",
-            "origin": "teacher"
-          }
-        },
-        {
           "id": "loreto2024-q24b",
           "type": "mc",
           "stem": "Hence, or otherwise, find \\(\\displaystyle\\int\\left(\\dfrac{1}{\\sec\\theta-\\tan\\theta}-\\dfrac{1}{\\sec\\theta+\\tan\\theta}\\right)d\\theta\\).",
@@ -14590,6 +14540,56 @@
           "meta": {
             "source": "Loreto Kirribilli 2024 Year 12 Trial Examination Mathematics Advanced",
             "school": "Loreto Kirribilli",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "manly2020-q21b",
+          "type": "mc",
+          "stem": "Find \\(\\displaystyle\\int\\dfrac{2x+2}{4x^{2}+8x+1}\\,dx\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{1}{4}\\ln\\left|4x^{2}+8x+1\\right|+C\\)",
+            "\\(\\dfrac{1}{2}\\ln\\left|4x^{2}+8x+1\\right|+C\\)",
+            "\\(4\\ln\\left|4x^{2}+8x+1\\right|+C\\)",
+            "\\(\\ln\\left|4x^{2}+8x+1\\right|+C\\)"
+          ],
+          "answer": 0,
+          "hint": "Check whether the numerator is a multiple of the derivative of the denominator. If so, \\(\\int\\dfrac{f'(x)}{f(x)}dx=\\ln|f(x)|+C\\), after fixing the constant multiple.",
+          "steps": [
+            {
+              "explain": "Differentiate the denominator.",
+              "work": "\\(\\dfrac{d}{dx}\\left(4x^{2}+8x+1\\right)=8x+8=4(2x+2)\\)"
+            },
+            {
+              "explain": "The numerator \\(2x+2\\) is \\(\\dfrac{1}{4}\\) of that derivative. Insert 4 on top and multiply the integral by \\(\\dfrac{1}{4}\\) to balance.",
+              "work": "\\(\\dfrac{1}{4}\\int\\dfrac{4(2x+2)}{4x^{2}+8x+1}\\,dx=\\dfrac{1}{4}\\int\\dfrac{8x+8}{4x^{2}+8x+1}\\,dx\\)"
+            },
+            {
+              "explain": "Now it is \\(\\int\\dfrac{f'}{f}\\).",
+              "work": "\\(=\\dfrac{1}{4}\\ln\\left|4x^{2}+8x+1\\right|+C\\)"
+            },
+            {
+              "explain": "Why not the others: 4 multiplies instead of dividing by 4; \\(\\dfrac{1}{2}\\) uses the wrong factor; \\(\\ln|\\ldots|\\) ignores the constant (the numerator is only a quarter of the derivative).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "\\int\\dfrac{2x+2}{4x^{2}+8x+1}\\,dx",
+              "note": "Numerator ∝ derivative of denominator → ln."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Northern Beaches Secondary College Manly Campus 2020 Year 12 Trial Examination Mathematics Advanced",
+            "school": "Northern Beaches Secondary College, Manly Campus",
             "grade": "12",
             "origin": "teacher"
           }

@@ -20712,6 +20712,56 @@
           }
         },
         {
+          "id": "loreto2024-q24a",
+          "type": "mc",
+          "stem": "Show that \\(\\dfrac{1}{\\sec\\theta-\\tan\\theta}-\\dfrac{1}{\\sec\\theta+\\tan\\theta}=2\\tan\\theta\\). Which working is correct?",
+          "difficulty": "hard",
+          "options": [
+            "LHS \\(=\\dfrac{(\\sec\\theta+\\tan\\theta)-(\\sec\\theta-\\tan\\theta)}{(\\sec\\theta-\\tan\\theta)(\\sec\\theta+\\tan\\theta)}=\\dfrac{2\\tan\\theta}{\\sec^{2}\\theta-\\tan^{2}\\theta}=\\dfrac{2\\tan\\theta}{1}=2\\tan\\theta\\)",
+            "LHS \\(=\\dfrac{1-1}{(\\sec\\theta-\\tan\\theta)-(\\sec\\theta+\\tan\\theta)}=\\dfrac{0}{-2\\tan\\theta}=0\\neq2\\tan\\theta\\)",
+            "LHS \\(=\\dfrac{(\\sec\\theta+\\tan\\theta)-(\\sec\\theta-\\tan\\theta)}{\\sec^{2}\\theta-\\tan^{2}\\theta}=\\dfrac{2\\tan\\theta}{\\sec^{2}\\theta+\\tan^{2}\\theta}\\)",
+            "LHS \\(=\\dfrac{(\\sec\\theta-\\tan\\theta)-(\\sec\\theta+\\tan\\theta)}{\\sec^{2}\\theta-\\tan^{2}\\theta}=\\dfrac{-2\\tan\\theta}{1}=-2\\tan\\theta\\)"
+          ],
+          "answer": 0,
+          "hint": "Subtract the fractions over a COMMON denominator (the product is a difference of squares), then use the identity \\(\\sec^{2}\\theta-\\tan^{2}\\theta=1\\) (from \\(1+\\tan^{2}\\theta=\\sec^{2}\\theta\\)).",
+          "steps": [
+            {
+              "explain": "Common denominator: the numerators swap brackets. Be careful with the minus sign: \\(-(\\sec\\theta-\\tan\\theta)\\).",
+              "work": "\\(\\dfrac{(\\sec\\theta+\\tan\\theta)-(\\sec\\theta-\\tan\\theta)}{(\\sec\\theta-\\tan\\theta)(\\sec\\theta+\\tan\\theta)}\\)"
+            },
+            {
+              "explain": "Numerator: \\(\\sec\\theta+\\tan\\theta-\\sec\\theta+\\tan\\theta=2\\tan\\theta\\). Denominator: difference of squares.",
+              "work": "\\(=\\dfrac{2\\tan\\theta}{\\sec^{2}\\theta-\\tan^{2}\\theta}\\)"
+            },
+            {
+              "explain": "Identity \\(1+\\tan^{2}\\theta=\\sec^{2}\\theta\\) gives \\(\\sec^{2}\\theta-\\tan^{2}\\theta=1\\).",
+              "work": "\\(=\\dfrac{2\\tan\\theta}{1}=2\\tan\\theta=\\text{RHS}\\ \\checkmark\\)"
+            },
+            {
+              "explain": "Why not the others: B subtracts the denominators; C changes the denominator to a sum; D subtracts the numerators in the wrong order (sign error).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that",
+              "note": "Common denominator, then sec² − tan² = 1."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Loreto Kirribilli 2024 Year 12 Trial Examination Mathematics Advanced",
+            "school": "Loreto Kirribilli",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
           "id": "manly2020-q33a",
           "type": "mc",
           "stem": "Prove that \\(\\dfrac{1}{1-\\sin x}+\\dfrac{1}{1+\\sin x}\\equiv2\\sec^{2}x\\) where \\(\\sin x\\neq\\pm1\\). Which working is correct?",
@@ -20761,56 +20811,6 @@
           "meta": {
             "source": "Northern Beaches Secondary College Manly Campus 2020 Year 12 Trial Examination Mathematics Advanced",
             "school": "Northern Beaches Secondary College, Manly Campus",
-            "grade": "11",
-            "origin": "teacher"
-          }
-        },
-        {
-          "id": "loreto2024-q24a",
-          "type": "mc",
-          "stem": "Show that \\(\\dfrac{1}{\\sec\\theta-\\tan\\theta}-\\dfrac{1}{\\sec\\theta+\\tan\\theta}=2\\tan\\theta\\). Which working is correct?",
-          "difficulty": "hard",
-          "options": [
-            "LHS \\(=\\dfrac{(\\sec\\theta+\\tan\\theta)-(\\sec\\theta-\\tan\\theta)}{(\\sec\\theta-\\tan\\theta)(\\sec\\theta+\\tan\\theta)}=\\dfrac{2\\tan\\theta}{\\sec^{2}\\theta-\\tan^{2}\\theta}=\\dfrac{2\\tan\\theta}{1}=2\\tan\\theta\\)",
-            "LHS \\(=\\dfrac{1-1}{(\\sec\\theta-\\tan\\theta)-(\\sec\\theta+\\tan\\theta)}=\\dfrac{0}{-2\\tan\\theta}=0\\neq2\\tan\\theta\\)",
-            "LHS \\(=\\dfrac{(\\sec\\theta+\\tan\\theta)-(\\sec\\theta-\\tan\\theta)}{\\sec^{2}\\theta-\\tan^{2}\\theta}=\\dfrac{2\\tan\\theta}{\\sec^{2}\\theta+\\tan^{2}\\theta}\\)",
-            "LHS \\(=\\dfrac{(\\sec\\theta-\\tan\\theta)-(\\sec\\theta+\\tan\\theta)}{\\sec^{2}\\theta-\\tan^{2}\\theta}=\\dfrac{-2\\tan\\theta}{1}=-2\\tan\\theta\\)"
-          ],
-          "answer": 0,
-          "hint": "Subtract the fractions over a COMMON denominator (the product is a difference of squares), then use the identity \\(\\sec^{2}\\theta-\\tan^{2}\\theta=1\\) (from \\(1+\\tan^{2}\\theta=\\sec^{2}\\theta\\)).",
-          "steps": [
-            {
-              "explain": "Common denominator: the numerators swap brackets. Be careful with the minus sign: \\(-(\\sec\\theta-\\tan\\theta)\\).",
-              "work": "\\(\\dfrac{(\\sec\\theta+\\tan\\theta)-(\\sec\\theta-\\tan\\theta)}{(\\sec\\theta-\\tan\\theta)(\\sec\\theta+\\tan\\theta)}\\)"
-            },
-            {
-              "explain": "Numerator: \\(\\sec\\theta+\\tan\\theta-\\sec\\theta+\\tan\\theta=2\\tan\\theta\\). Denominator: difference of squares.",
-              "work": "\\(=\\dfrac{2\\tan\\theta}{\\sec^{2}\\theta-\\tan^{2}\\theta}\\)"
-            },
-            {
-              "explain": "Identity \\(1+\\tan^{2}\\theta=\\sec^{2}\\theta\\) gives \\(\\sec^{2}\\theta-\\tan^{2}\\theta=1\\).",
-              "work": "\\(=\\dfrac{2\\tan\\theta}{1}=2\\tan\\theta=\\text{RHS}\\ \\checkmark\\)"
-            },
-            {
-              "explain": "Why not the others: B subtracts the denominators; C changes the denominator to a sum; D subtracts the numerators in the wrong order (sign error).",
-              "work": ""
-            },
-            {
-              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
-              "work": ""
-            }
-          ],
-          "keyPoints": [
-            {
-              "text": "Show that",
-              "note": "Common denominator, then sec² − tan² = 1."
-            }
-          ],
-          "timeLimit": 60,
-          "xp": 1,
-          "meta": {
-            "source": "Loreto Kirribilli 2024 Year 12 Trial Examination Mathematics Advanced",
-            "school": "Loreto Kirribilli",
             "grade": "11",
             "origin": "teacher"
           }

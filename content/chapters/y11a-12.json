@@ -6725,60 +6725,6 @@
           }
         },
         {
-          "id": "manly2020-q3",
-          "type": "mc",
-          "stem": "The sample space when a fair die is rolled is \\(\\{1, 2, 3, 4, 5, 6\\}\\). Each outcome is equally likely. For which pair of events, A and B, are A and B independent?",
-          "difficulty": "medium",
-          "options": [
-            "\\(A=\\{2,3\\}\\) and \\(B=\\{2,3,5,6\\}\\)",
-            "\\(A=\\{1,3,5\\}\\) and \\(B=\\{2,4,6\\}\\)",
-            "\\(A=\\{1,2,3\\}\\) and \\(B=\\{3,4,5\\}\\)",
-            "\\(A=\\{1,3,5\\}\\) and \\(B=\\{3,6\\}\\)"
-          ],
-          "answer": 3,
-          "hint": "Events are independent when \\(P(A\\cap B)=P(A)\\times P(B)\\). Find \\(A\\cap B\\) for each option and compare. (Do not confuse independent with mutually exclusive.)",
-          "steps": [
-            {
-              "explain": "Test: independent \\(\\iff P(A\\cap B)=P(A)\\,P(B)\\). Each outcome has probability \\(\\dfrac{1}{6}\\).",
-              "work": "\\(P(A\\cap B)\\overset{?}{=}P(A)\\times P(B)\\)"
-            },
-            {
-              "explain": "Option A: \\(A\\cap B=\\{2,3\\}\\).",
-              "work": "\\(\\dfrac{2}{6}\\neq\\dfrac{2}{6}\\times\\dfrac{4}{6}=\\dfrac{8}{36}\\)"
-            },
-            {
-              "explain": "Option B: \\(A\\cap B=\\{\\}\\) (mutually exclusive, so \\(P=0\\)).",
-              "work": "\\(0\\neq\\dfrac{3}{6}\\times\\dfrac{3}{6}=\\dfrac{1}{4}\\)"
-            },
-            {
-              "explain": "Option C: \\(A\\cap B=\\{3\\}\\).",
-              "work": "\\(\\dfrac{1}{6}\\neq\\dfrac{3}{6}\\times\\dfrac{3}{6}=\\dfrac{1}{4}\\)"
-            },
-            {
-              "explain": "Option D: \\(A\\cap B=\\{3\\}\\) (3 is the only number in both sets).",
-              "work": "\\(P(A\\cap B)=\\dfrac{1}{6},\\qquad P(A)P(B)=\\dfrac{3}{6}\\times\\dfrac{2}{6}=\\dfrac{6}{36}=\\dfrac{1}{6}\\ \\checkmark\\)"
-            },
-            {
-              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">D</span>.",
-              "work": ""
-            }
-          ],
-          "keyPoints": [
-            {
-              "text": "For which pair of events, A and B, are A and B independent?",
-              "note": "Independent: P(A∩B) = P(A)P(B)."
-            }
-          ],
-          "timeLimit": 60,
-          "xp": 1,
-          "meta": {
-            "source": "Northern Beaches Secondary College Manly Campus 2020 Year 12 Trial Examination Mathematics Advanced",
-            "school": "Northern Beaches Secondary College, Manly Campus",
-            "grade": "11",
-            "origin": "teacher"
-          }
-        },
-        {
           "id": "loreto2024-q8",
           "type": "mc",
           "stem": "Alycia and Spyro are participating in a fitness program. The probability that Alycia will complete the program is 0.8, and the probability that Spyro will complete the program is 0.7. What is the probability that only one of them will successfully complete the program?",
@@ -6880,6 +6826,60 @@
           "meta": {
             "source": "Loreto Kirribilli 2024 Year 12 Trial Examination Mathematics Advanced",
             "school": "Loreto Kirribilli",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "manly2020-q3",
+          "type": "mc",
+          "stem": "The sample space when a fair die is rolled is \\(\\{1, 2, 3, 4, 5, 6\\}\\). Each outcome is equally likely. For which pair of events, A and B, are A and B independent?",
+          "difficulty": "medium",
+          "options": [
+            "\\(A=\\{2,3\\}\\) and \\(B=\\{2,3,5,6\\}\\)",
+            "\\(A=\\{1,3,5\\}\\) and \\(B=\\{2,4,6\\}\\)",
+            "\\(A=\\{1,2,3\\}\\) and \\(B=\\{3,4,5\\}\\)",
+            "\\(A=\\{1,3,5\\}\\) and \\(B=\\{3,6\\}\\)"
+          ],
+          "answer": 3,
+          "hint": "Events are independent when \\(P(A\\cap B)=P(A)\\times P(B)\\). Find \\(A\\cap B\\) for each option and compare. (Do not confuse independent with mutually exclusive.)",
+          "steps": [
+            {
+              "explain": "Test: independent \\(\\iff P(A\\cap B)=P(A)\\,P(B)\\). Each outcome has probability \\(\\dfrac{1}{6}\\).",
+              "work": "\\(P(A\\cap B)\\overset{?}{=}P(A)\\times P(B)\\)"
+            },
+            {
+              "explain": "Option A: \\(A\\cap B=\\{2,3\\}\\).",
+              "work": "\\(\\dfrac{2}{6}\\neq\\dfrac{2}{6}\\times\\dfrac{4}{6}=\\dfrac{8}{36}\\)"
+            },
+            {
+              "explain": "Option B: \\(A\\cap B=\\{\\}\\) (mutually exclusive, so \\(P=0\\)).",
+              "work": "\\(0\\neq\\dfrac{3}{6}\\times\\dfrac{3}{6}=\\dfrac{1}{4}\\)"
+            },
+            {
+              "explain": "Option C: \\(A\\cap B=\\{3\\}\\).",
+              "work": "\\(\\dfrac{1}{6}\\neq\\dfrac{3}{6}\\times\\dfrac{3}{6}=\\dfrac{1}{4}\\)"
+            },
+            {
+              "explain": "Option D: \\(A\\cap B=\\{3\\}\\) (3 is the only number in both sets).",
+              "work": "\\(P(A\\cap B)=\\dfrac{1}{6},\\qquad P(A)P(B)=\\dfrac{3}{6}\\times\\dfrac{2}{6}=\\dfrac{6}{36}=\\dfrac{1}{6}\\ \\checkmark\\)"
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">D</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "For which pair of events, A and B, are A and B independent?",
+              "note": "Independent: P(A∩B) = P(A)P(B)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Northern Beaches Secondary College Manly Campus 2020 Year 12 Trial Examination Mathematics Advanced",
+            "school": "Northern Beaches Secondary College, Manly Campus",
             "grade": "11",
             "origin": "teacher"
           }
