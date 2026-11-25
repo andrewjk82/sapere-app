@@ -313,7 +313,7 @@ const StudentList = ({ students, onAddStudent, onRefreshStudents, onSelectStuden
             const weekCount = Math.min(7, weeklyActivity[student.id] || 0);
             const xpLabel = (student.totalXP || 0).toLocaleString();
 
-            const tileStyle = { flex: 1, minWidth: 0, background: '#f8fafc', borderRadius: '13px', padding: '10px 12px' };
+            const tileStyle = { flex: '1 1 0', minWidth: 0, background: '#f8fafc', borderRadius: '13px', padding: '10px 11px' };
             const tileLabelStyle = { fontSize: '0.58rem', fontWeight: 800, letterSpacing: '0.09em', textTransform: 'uppercase', color: '#94a3b8' };
 
             return (
@@ -424,7 +424,7 @@ const StudentList = ({ students, onAddStudent, onRefreshStudents, onSelectStuden
 
                 {/* Info tiles — today / this week / XP */}
                 <div style={{ display: 'flex', gap: '8px' }}>
-                  <div style={tileStyle}>
+                  <div style={{ ...tileStyle, flexGrow: 1.25 }}>
                     <div style={tileLabelStyle}>Today</div>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginTop: '6px' }}>
                       <span style={{ width: '7px', height: '7px', borderRadius: '50%', background: today.color, flexShrink: 0 }} />
@@ -434,19 +434,19 @@ const StudentList = ({ students, onAddStudent, onRefreshStudents, onSelectStuden
                     </div>
                   </div>
 
-                  <div style={tileStyle}>
+                  <div style={{ ...tileStyle, flexGrow: 1.3 }}>
                     <div style={tileLabelStyle}>This week</div>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginTop: '6px' }}>
-                      <div style={{ display: 'flex', gap: '3px' }}>
+                      <div style={{ display: 'flex', gap: '2px', flex: '1 1 auto', minWidth: 0 }}>
                         {[0, 1, 2, 3, 4, 5, 6].map((i) => (
-                          <span key={i} style={{ width: '6px', height: '6px', borderRadius: '50%', background: i < weekCount ? '#6366f1' : '#e2e8f0' }} />
+                          <span key={i} style={{ flex: '1 1 0', maxWidth: '6px', aspectRatio: '1', borderRadius: '50%', background: i < weekCount ? '#6366f1' : '#e2e8f0' }} />
                         ))}
                       </div>
-                      <span style={{ fontSize: '0.78rem', fontWeight: 800, color: '#1e1b4b' }}>{weekCount}/7</span>
+                      <span style={{ fontSize: '0.78rem', fontWeight: 800, color: '#1e1b4b', flexShrink: 0 }}>{weekCount}/7</span>
                     </div>
                   </div>
 
-                  <div style={tileStyle}>
+                  <div style={{ ...tileStyle, flexGrow: 0.95 }}>
                     <div style={tileLabelStyle}>XP</div>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '5px', marginTop: '6px' }}>
                       <Trophy size={13} style={{ color: '#f59e0b', flexShrink: 0 }} />
