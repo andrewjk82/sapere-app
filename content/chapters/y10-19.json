@@ -140,6 +140,112 @@
             "grade": "10",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "killara2023-y10-t4a-q17c2",
+          "type": "mc",
+          "stem": "For the following question, you must show full working. Find the exact value of \\(\\tan210^{\\circ}\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{1}{\\sqrt{3}}\\)",
+            "\\(-\\dfrac{1}{\\sqrt{3}}\\)",
+            "\\(\\sqrt{3}\\)",
+            "\\(-\\sqrt{3}\\)"
+          ],
+          "answer": 0,
+          "hint": "\\(210^{\\circ}\\) is in the 3rd quadrant (between \\(180^{\\circ}\\) and \\(270^{\\circ}\\)). In the 3rd quadrant only TANGENT is positive. Reference angle: \\(210^{\\circ}-180^{\\circ}\\).",
+          "steps": [
+            {
+              "explain": "\\(210^{\\circ}\\) is in the 3rd quadrant: \\(\\sin<0\\), \\(\\cos<0\\), so \\(\\tan=\\dfrac{\\sin}{\\cos}>0\\) (negative ÷ negative).",
+              "work": "\\(\\tan210^{\\circ}>0\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 235\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><line x1=\"48.0\" y1=\"115.0\" x2=\"252.0\" y2=\"115.0\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"13.0\" x2=\"150.0\" y2=\"217.0\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><circle cx=\"150\" cy=\"115\" r=\"88\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><line x1=\"150.0\" y1=\"115.0\" x2=\"73.8\" y2=\"159.0\" stroke=\"#dc2626\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><circle cx=\"73.8\" cy=\"159.0\" r=\"4.6\" fill=\"#dc2626\"/><line x1=\"73.8\" y1=\"159.0\" x2=\"73.8\" y2=\"115.0\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"115.0\" x2=\"73.8\" y2=\"115.0\" stroke=\"#047857\" stroke-width=\"3\" stroke-linecap=\"round\"/><path d=\"M 118.0 115.0 A 32 32 0 0 1 122.3 131.0\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"3\"/><text x=\"100.0\" y=\"137.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">30°</text><text x=\"150.0\" y=\"225.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">tan > 0 (3rd quadrant)</text></svg>"
+              }
+            },
+            {
+              "explain": "Reference angle: \\(210^{\\circ}-180^{\\circ}=30^{\\circ}\\).",
+              "work": "\\(\\tan210^{\\circ}=+\\tan30^{\\circ}\\)"
+            },
+            {
+              "explain": "Exact value of \\(\\tan30^{\\circ}\\).",
+              "work": "\\(\\tan30^{\\circ}=\\dfrac{1}{\\sqrt{3}}=\\dfrac{\\sqrt{3}}{3}\\)"
+            },
+            {
+              "explain": "Why not the others: \\(-\\dfrac{1}{\\sqrt{3}}\\) has the wrong sign (tan is positive in the 3rd quadrant); \\(\\pm\\sqrt{3}=\\pm\\tan60^{\\circ}\\) uses the wrong reference angle.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the exact value of \\(\\tan210^{\\circ}\\)",
+              "note": "3rd quadrant: tan positive. Reference angle 30°."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School 2023 Year 10 Mathematics Task 4A",
+            "school": "Killara High School",
+            "grade": "10",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2023-y10-t4a-q17e",
+          "type": "mc",
+          "stem": "If \\(\\tan\\theta=\\dfrac{\\sqrt{7}}{4}\\) and \\(0^{\\circ}\\le\\theta\\le180^{\\circ}\\), find the exact value(s) of \\(\\cos\\theta\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\dfrac{4}{\\sqrt{23}}\\)",
+            "\\(\\pm\\dfrac{4}{\\sqrt{23}}\\)",
+            "\\(\\dfrac{\\sqrt{7}}{\\sqrt{23}}\\)",
+            "\\(\\dfrac{4}{3}\\)"
+          ],
+          "answer": 0,
+          "hint": "Since \\(\\tan\\theta>0\\), decide the quadrant first. Then draw a right-angled triangle with opposite \\(\\sqrt{7}\\) and adjacent \\(4\\) and find the hypotenuse by Pythagoras.",
+          "steps": [
+            {
+              "explain": "Quadrant: \\(\\tan\\theta=\\dfrac{\\sqrt{7}}{4}>0\\) and \\(\\theta\\) is between \\(0^{\\circ}\\) and \\(180^{\\circ}\\), so \\(\\theta\\) is acute (1st quadrant; tangent is negative in the 2nd). Only ONE value of \\(\\cos\\theta\\), and it is positive.",
+              "work": "\\(\\tan\\theta>0\\Rightarrow\\theta\\ \\text{acute}\\Rightarrow\\cos\\theta>0\\)"
+            },
+            {
+              "explain": "Draw the triangle: \\(\\tan\\theta=\\dfrac{\\text{opp}}{\\text{adj}}\\), so opp \\(=\\sqrt{7}\\) (red) and adj \\(=4\\) (green). Hypotenuse by Pythagoras.",
+              "work": "\\(\\text{hyp}^{2}=(\\sqrt{7})^{2}+4^{2}=7+16=23\\ \\Rightarrow\\ \\text{hyp}=\\sqrt{23}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 205\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><line x1=\"30.0\" y1=\"170.0\" x2=\"190.0\" y2=\"170.0\" stroke=\"#047857\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"190.0\" y1=\"170.0\" x2=\"190.0\" y2=\"64.2\" stroke=\"#dc2626\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"30.0\" y1=\"170.0\" x2=\"190.0\" y2=\"64.2\" stroke=\"#7c3aed\" stroke-width=\"4\" stroke-linecap=\"round\"/><polyline points=\"179.0,170.0 179.0,159.0 190.0,159.0\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><path d=\"M 30.0 170.0 L 64.0 170.0 A 34 34 0 0 0 58.4 151.2 Z\" fill=\"#d97706\" fill-opacity=\"0.18\" stroke=\"none\"/><path d=\"M 64.0 170.0 A 34 34 0 0 0 58.4 151.2\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"2.4\"/><text x=\"79.8\" y=\"160.3\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">θ</text><text x=\"110.0\" y=\"190.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4</text><text x=\"206.0\" y=\"122.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">√7</text><text x=\"100.1\" y=\"107.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#7c3aed\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">√23</text></svg>"
+              }
+            },
+            {
+              "explain": "Cosine \\(=\\dfrac{\\text{adj}}{\\text{hyp}}\\).",
+              "work": "\\(\\cos\\theta=\\dfrac{4}{\\sqrt{23}}=\\dfrac{4\\sqrt{23}}{23}\\)"
+            },
+            {
+              "explain": "Why not the others: \\(\\pm\\) is wrong because \\(\\theta\\) must be acute; \\(\\dfrac{\\sqrt{7}}{\\sqrt{23}}\\) is \\(\\sin\\theta\\); \\(\\dfrac{4}{3}\\) uses hyp \\(=\\sqrt{16-7}\\) (subtracted by mistake) and is greater than 1.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "find the exact value(s) of \\(\\cos\\theta\\)",
+              "note": "Positive tan and 0–180°: acute, one answer."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School 2023 Year 10 Mathematics Task 4A",
+            "school": "Killara High School",
+            "grade": "10",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -213,6 +319,116 @@
             "grade": "10"
           },
           "xp": 2
+        },
+        {
+          "id": "killara2023-y10-t4a-q17d",
+          "type": "mc",
+          "stem": "State whether each of the following statements is true or false, giving reasons: (i) \\(\\cos x=\\cos(180-x)\\); (ii) \\(\\sin x=\\cos(90-x)\\).",
+          "difficulty": "hard",
+          "options": [
+            "(i) False: \\(\\cos(180^{\\circ}-x)=-\\cos x\\). (ii) True: \\(\\sin x=\\cos(90^{\\circ}-x)\\) (complementary angles)",
+            "(i) True: supplementary angles have equal cosines. (ii) True: \\(\\sin x=\\cos(90^{\\circ}-x)\\)",
+            "(i) True: \\(\\cos(180^{\\circ}-x)=\\cos x\\). (ii) False: \\(\\sin x=-\\cos(90^{\\circ}-x)\\)",
+            "(i) False: \\(\\cos(180^{\\circ}-x)=-\\cos x\\). (ii) False: \\(\\cos(90^{\\circ}-x)=-\\sin x\\)"
+          ],
+          "answer": 0,
+          "hint": "(i) In the 2nd quadrant, cosine is negative, so \\(\\cos(180^{\\circ}-x)\\) and \\(\\cos x\\) have OPPOSITE signs. (ii) In a right-angled triangle the two acute angles add to \\(90^{\\circ}\\): compare their sine and cosine.",
+          "steps": [
+            {
+              "explain": "(i) Take \\(x=30^{\\circ}\\): \\(\\cos30^{\\circ}=\\dfrac{\\sqrt{3}}{2}\\), but \\(\\cos150^{\\circ}=-\\dfrac{\\sqrt{3}}{2}\\). They are opposite, so \\(\\cos(180^{\\circ}-x)=-\\cos x\\). Statement (i) is FALSE.",
+              "work": "\\(\\cos(180^{\\circ}-x)=-\\cos x\\ne\\cos x\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 235\" width=\"100%\" height=\"auto\" style=\"max-width:340px;display:block;margin:0 auto\"><line x1=\"52.0\" y1=\"115.0\" x2=\"248.0\" y2=\"115.0\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"17.0\" x2=\"150.0\" y2=\"213.0\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><circle cx=\"150\" cy=\"115\" r=\"84\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><line x1=\"150.0\" y1=\"115.0\" x2=\"222.7\" y2=\"73.0\" stroke=\"#3b4ea8\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"115.0\" x2=\"77.3\" y2=\"73.0\" stroke=\"#dc2626\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><circle cx=\"222.7\" cy=\"73.0\" r=\"4.6\" fill=\"#3b4ea8\"/><circle cx=\"77.3\" cy=\"73.0\" r=\"4.6\" fill=\"#dc2626\"/><line x1=\"222.7\" y1=\"73.0\" x2=\"222.7\" y2=\"115.0\" stroke=\"#3b4ea8\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><line x1=\"77.3\" y1=\"73.0\" x2=\"77.3\" y2=\"115.0\" stroke=\"#dc2626\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><text x=\"194.0\" y=\"133.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">cos x >0</text><text x=\"106.0\" y=\"133.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">cos(180° − x) <0</text><text x=\"244.7\" y=\"67.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">x</text><text x=\"47.3\" y=\"67.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">180° − x</text></svg>"
+              }
+            },
+            {
+              "explain": "(ii) In a right-angled triangle with acute angles \\(x\\) and \\(90^{\\circ}-x\\), the side opposite \\(x\\) is \\(a\\); \\(\\sin x=\\dfrac{a}{c}\\). The same side \\(a\\) is ADJACENT to \\(90^{\\circ}-x\\), so \\(\\cos(90^{\\circ}-x)=\\dfrac{a}{c}\\).",
+              "work": "\\(\\sin x=\\dfrac{a}{c}=\\cos(90^{\\circ}-x)\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 205\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><line x1=\"40.0\" y1=\"150.0\" x2=\"220.0\" y2=\"150.0\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"40.0\" y1=\"40.0\" x2=\"40.0\" y2=\"150.0\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"40.0\" y1=\"40.0\" x2=\"220.0\" y2=\"150.0\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><polyline points=\"40.0,139.0 51.0,139.0 51.0,150.0\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><path d=\"M 220.0 150.0 L 186.0 150.0 A 34 34 0 0 1 191.0 132.3 Z\" fill=\"#d97706\" fill-opacity=\"0.18\" stroke=\"none\"/><path d=\"M 186.0 150.0 A 34 34 0 0 1 191.0 132.3\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"2.4\"/><text x=\"168.0\" y=\"140.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">x</text><path d=\"M 40.0 40.0 L 69.0 57.7 A 34 34 0 0 1 40.0 74.0 Z\" fill=\"#3b4ea8\" fill-opacity=\"0.18\" stroke=\"none\"/><path d=\"M 69.0 57.7 A 34 34 0 0 1 40.0 74.0\" fill=\"none\" stroke=\"#3b4ea8\" stroke-width=\"2.4\"/><text x=\"69.3\" y=\"96.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">90° − x</text><text x=\"26.0\" y=\"99.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">a</text><text x=\"137.3\" y=\"88.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">c</text><text x=\"130.0\" y=\"168.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">b</text><text x=\"150.0\" y=\"185.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">sin x = a/c   and   cos(90° − x) = a/c</text></svg>"
+              }
+            },
+            {
+              "explain": "So statement (ii) is TRUE (the sine of an angle equals the cosine of its complement).",
+              "work": "\\(\\text{(i) false, (ii) true}\\)"
+            },
+            {
+              "explain": "Why not the others: B and C wrongly say (i) is true; D wrongly says (ii) is false.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "State whether each of the following statements is true or false",
+              "note": "cos(180−x) = −cos x; sin x = cos(90−x)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School 2023 Year 10 Mathematics Task 4A",
+            "school": "Killara High School",
+            "grade": "10",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2023-y10-t4a-q17g2",
+          "type": "mc",
+          "stem": "If \\(x^{\\circ}+y^{\\circ}=180^{\\circ}\\), then simplify the expression \\(\\dfrac{\\sin\\dfrac{x}{2}}{\\cos\\dfrac{y}{2}}\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(1\\)",
+            "\\(\\tan\\dfrac{x}{2}\\)",
+            "\\(-1\\)",
+            "\\(0\\)"
+          ],
+          "answer": 0,
+          "hint": "Use \\(x+y=180\\) to write \\(\\dfrac{y}{2}\\) in terms of \\(\\dfrac{x}{2}\\). Then use \\(\\cos(90^{\\circ}-A)=\\sin A\\).",
+          "steps": [
+            {
+              "explain": "Halve both sides of \\(x+y=180\\).",
+              "work": "\\(\\dfrac{x}{2}+\\dfrac{y}{2}=90^{\\circ}\\ \\Rightarrow\\ \\dfrac{y}{2}=90^{\\circ}-\\dfrac{x}{2}\\)"
+            },
+            {
+              "explain": "Substitute into the denominator.",
+              "work": "\\(\\cos\\dfrac{y}{2}=\\cos\\left(90^{\\circ}-\\dfrac{x}{2}\\right)\\)"
+            },
+            {
+              "explain": "Complementary angles: \\(\\cos(90^{\\circ}-A)=\\sin A\\) with \\(A=\\dfrac{x}{2}\\).",
+              "work": "\\(\\cos\\dfrac{y}{2}=\\sin\\dfrac{x}{2}\\)"
+            },
+            {
+              "explain": "Divide.",
+              "work": "\\(\\dfrac{\\sin\\frac{x}{2}}{\\cos\\frac{y}{2}}=\\dfrac{\\sin\\frac{x}{2}}{\\sin\\frac{x}{2}}=1\\)"
+            },
+            {
+              "explain": "Why not the others: \\(\\tan\\dfrac{x}{2}\\) would need \\(\\cos\\dfrac{x}{2}\\) in the denominator; \\(-1\\) and 0 have no basis: the values cancel exactly.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "simplify the expression",
+              "note": "x/2 + y/2 = 90°: complementary angles."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School 2023 Year 10 Mathematics Task 4A",
+            "school": "Killara High School",
+            "grade": "10",
+            "origin": "teacher"
+          }
         }
       ]
     },
