@@ -875,6 +875,183 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "fortst2020p-q1",
+          "type": "mc",
+          "stem": "Simplify \\(\\sin(A+B)\\cos A-\\cos(A+B)\\sin A\\)",
+          "difficulty": "easy",
+          "options": [
+            "\\(\\sin B\\)",
+            "\\(\\cos B\\)",
+            "\\(\\sin(2A+B)\\)",
+            "\\(\\cos(2A+B)\\)"
+          ],
+          "answer": 0,
+          "hint": "The expression has the shape \\(\\sin X\\cos Y-\\cos X\\sin Y\\), which is the expansion of \\(\\sin(X-Y)\\). Identify \\(X\\) and \\(Y\\) first.",
+          "steps": [
+            {
+              "explain": "Recall the compound-angle formula for sine of a DIFFERENCE.",
+              "work": "\\(\\sin(X-Y)=\\sin X\\cos Y-\\cos X\\sin Y\\)"
+            },
+            {
+              "explain": "Match the pattern: in \\(\\sin(A+B)\\cos A\\) the 'first angle' is \\(X=A+B\\) and the 'second angle' is \\(Y=A\\). Check the second part has the same angles: \\(\\cos(A+B)\\sin A=\\cos X\\sin Y\\) ✓.",
+              "work": "\\(X=A+B,\\qquad Y=A\\)"
+            },
+            {
+              "explain": "Rewrite the whole expression as one sine.",
+              "work": "\\(\\sin(A+B)\\cos A-\\cos(A+B)\\sin A=\\sin\\left[(A+B)-A\\right]\\)"
+            },
+            {
+              "explain": "Simplify the angle inside the bracket: the \\(A\\)'s cancel.",
+              "work": "\\((A+B)-A=B\\ \\Rightarrow\\ \\sin B\\)"
+            },
+            {
+              "explain": "Numerical check with \\(A=30^{\\circ},\\ B=60^{\\circ}\\): \\(\\sin90^{\\circ}\\cos30^{\\circ}-\\cos90^{\\circ}\\sin30^{\\circ}=1\\times0.866-0=0.866=\\sin60^{\\circ}\\) ✓.",
+              "work": "\\(0.866=\\sin60^{\\circ}\\)"
+            },
+            {
+              "explain": "Why not the others: \\(\\cos B\\) would need \\(\\cos X\\cos Y+\\sin X\\sin Y\\); \\(\\sin(2A+B)\\) would come from a PLUS sign (\\(\\sin X\\cos Y+\\cos X\\sin Y\\) with \\(Y=A\\)); \\(\\cos(2A+B)\\) has the wrong function altogether.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Simplify \\(\\sin(A+B)\\cos A-\\cos(A+B)\\sin A\\)",
+              "note": "Spot sin X cos Y − cos X sin Y = sin(X − Y)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Fort Street High School 2020 Preliminary HSC Assessment Task 3 Mathematics Extension 1",
+            "school": "Fort Street High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "fortst2020p-q7",
+          "type": "mc",
+          "stem": "What is the exact value of \\(\\left(\\tan\\dfrac{\\pi}{180}\\right)\\times\\left(\\tan\\dfrac{2\\pi}{180}\\right)\\times\\left(\\tan\\dfrac{3\\pi}{180}\\right)\\times\\dots\\times\\left(\\tan\\dfrac{88\\pi}{180}\\right)\\times\\left(\\tan\\dfrac{89\\pi}{180}\\right)\\)?",
+          "difficulty": "hard",
+          "options": [
+            "1",
+            "0",
+            "-1",
+            "Not defined"
+          ],
+          "answer": 0,
+          "hint": "\\(\\dfrac{k\\pi}{180}\\) is just \\(k^{\\circ}\\). The angles \\(1^{\\circ},2^{\\circ},\\dots,89^{\\circ}\\) pair up into COMPLEMENTS (adding to \\(90^{\\circ}\\)), and \\(\\tan(90^{\\circ}-\\theta)=\\cot\\theta=\\dfrac{1}{\\tan\\theta}\\).",
+          "steps": [
+            {
+              "explain": "Convert to degrees: the product is \\(\\tan1^{\\circ}\\times\\tan2^{\\circ}\\times\\dots\\times\\tan89^{\\circ}\\) (89 factors; \\(\\dfrac{\\pi}{180}\\) rad \\(=1^{\\circ}\\)).",
+              "work": "\\(\\dfrac{k\\pi}{180}=k^{\\circ}\\)"
+            },
+            {
+              "explain": "Pair the first with the last, the second with the second-last, and so on. Each pair of angles adds to \\(90^{\\circ}\\): \\(1+89=2+88=\\dots=44+46=90\\).",
+              "work": "\\(1^{\\circ}+89^{\\circ}=2^{\\circ}+88^{\\circ}=\\dots=44^{\\circ}+46^{\\circ}=90^{\\circ}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 150\" width=\"100%\" height=\"auto\" style=\"max-width:400px;display:block;margin:0 auto\"><rect x=\"8\" y=\"26\" width=\"28\" height=\"26\" rx=\"5\" fill=\"#3b4ea8\" fill-opacity=\".22\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"22.0\" y=\"44.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"9.5\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1°</text><rect x=\"34\" y=\"26\" width=\"28\" height=\"26\" rx=\"5\" fill=\"#d97706\" fill-opacity=\".22\" stroke=\"#d97706\" stroke-width=\"2\"/><text x=\"48.0\" y=\"44.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"9.5\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2°</text><text x=\"74.0\" y=\"44.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"9.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3°</text><text x=\"100.0\" y=\"44.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">…</text><text x=\"126.0\" y=\"44.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"9.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">43°</text><rect x=\"138\" y=\"26\" width=\"28\" height=\"26\" rx=\"5\" fill=\"#047857\" fill-opacity=\".22\" stroke=\"#047857\" stroke-width=\"2\"/><text x=\"152.0\" y=\"44.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"9.5\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">44°</text><rect x=\"164\" y=\"26\" width=\"28\" height=\"26\" rx=\"5\" fill=\"#dc2626\" fill-opacity=\".22\" stroke=\"#dc2626\" stroke-width=\"2\"/><text x=\"178.0\" y=\"44.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"9.5\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">45°</text><rect x=\"190\" y=\"26\" width=\"28\" height=\"26\" rx=\"5\" fill=\"#047857\" fill-opacity=\".22\" stroke=\"#047857\" stroke-width=\"2\"/><text x=\"204.0\" y=\"44.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"9.5\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">46°</text><text x=\"230.0\" y=\"44.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"9.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">47°</text><text x=\"256.0\" y=\"44.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">…</text><text x=\"282.0\" y=\"44.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"9.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">87°</text><rect x=\"294\" y=\"26\" width=\"28\" height=\"26\" rx=\"5\" fill=\"#d97706\" fill-opacity=\".22\" stroke=\"#d97706\" stroke-width=\"2\"/><text x=\"308.0\" y=\"44.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"9.5\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">88°</text><rect x=\"320\" y=\"26\" width=\"28\" height=\"26\" rx=\"5\" fill=\"#3b4ea8\" fill-opacity=\".22\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"334.0\" y=\"44.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"9.5\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">89°</text><path d=\"M 22 56 L 22 74 L 334 74 L 334 56\" fill=\"none\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"178.0\" y=\"92.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">tan 1°·tan 89° = 1</text><path d=\"M 48 56 L 48 74 L 308 74 L 308 56\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"2\"/><text x=\"178.0\" y=\"104.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">tan 2°·tan 88° = 1</text><text x=\"100.0\" y=\"134.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">… 44 pairs, then tan 45° = 1 left over</text></svg>"
+              }
+            },
+            {
+              "explain": "Complementary-angle identity: \\(\\tan(90^{\\circ}-\\theta)=\\cot\\theta\\). So \\(\\tan89^{\\circ}=\\cot1^{\\circ}\\), \\(\\tan88^{\\circ}=\\cot2^{\\circ}\\), etc.",
+              "work": "\\(\\tan89^{\\circ}=\\tan(90^{\\circ}-1^{\\circ})=\\cot1^{\\circ}=\\dfrac{1}{\\tan1^{\\circ}}\\)"
+            },
+            {
+              "explain": "Each pair multiplies to 1: \\(\\tan\\theta\\cdot\\cot\\theta=\\tan\\theta\\cdot\\dfrac{1}{\\tan\\theta}=1\\).",
+              "work": "\\(\\tan1^{\\circ}\\tan89^{\\circ}=1,\\quad\\tan2^{\\circ}\\tan88^{\\circ}=1,\\ \\dots,\\ \\tan44^{\\circ}\\tan46^{\\circ}=1\\)"
+            },
+            {
+              "explain": "There are 89 factors: 44 pairs use 88 of them. The factor left in the middle is \\(\\tan45^{\\circ}=1\\).",
+              "work": "\\(\\text{product}=\\underbrace{1\\times1\\times\\dots\\times1}_{44\\text{ pairs}}\\times\\tan45^{\\circ}=1\\times1=1\\)"
+            },
+            {
+              "explain": "All the tangents are defined (none of the angles is \\(90^{\\circ}\\)) and none is 0, so the answer is not 0 or 'not defined'.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "What is the exact value of",
+              "note": "Pair \\(\\theta\\) with \\(90^{\\circ}-\\theta\\): \\(\\tan\\theta\\cdot\\cot\\theta=1\\); middle \\(\\tan45^{\\circ}=1\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Fort Street High School 2020 Preliminary HSC Assessment Task 3 Mathematics Extension 1",
+            "school": "Fort Street High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "fortst2020p-q10b",
+          "type": "mc",
+          "stem": "If \\(\\alpha\\) and \\(\\beta\\) are acute angles such that \\(\\tan\\alpha=\\dfrac{m}{m+1}\\) and \\(\\tan\\beta=\\dfrac{1}{2m+1}\\). Prove that \\(\\alpha+\\beta=\\dfrac{\\pi}{4}\\). Which working is correct?",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\begin{aligned}&\\tan(\\alpha+\\beta)=\\dfrac{\\tan\\alpha+\\tan\\beta}{1-\\tan\\alpha\\tan\\beta}=\\dfrac{\\dfrac{m}{m+1}+\\dfrac{1}{2m+1}}{1-\\dfrac{m}{m+1}\\times\\dfrac{1}{2m+1}}\\\\ &\\text{multiply top and bottom by }(m+1)(2m+1):\\ \\dfrac{m(2m+1)+(m+1)}{(m+1)(2m+1)-m}=\\dfrac{2m^{2}+2m+1}{2m^{2}+2m+1}=1\\\\ &\\tan(\\alpha+\\beta)=1\\ \\text{and }0<\\alpha+\\beta<\\pi\\ \\Rightarrow\\ \\alpha+\\beta=\\dfrac{\\pi}{4}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\tan(\\alpha+\\beta)=\\tan\\alpha+\\tan\\beta=\\dfrac{m}{m+1}+\\dfrac{1}{2m+1}\\\\ &=\\dfrac{m(2m+1)+(m+1)}{(m+1)(2m+1)}=\\dfrac{2m^{2}+2m+1}{2m^{2}+3m+1}\\neq1\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\tan(\\alpha+\\beta)=\\dfrac{\\tan\\alpha+\\tan\\beta}{1+\\tan\\alpha\\tan\\beta}=\\dfrac{2m^{2}+2m+1}{2m^{2}+4m+1}\\\\ &\\neq1\\ \\text{(wrong sign in the denominator)}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\tan(\\alpha-\\beta)=\\dfrac{\\tan\\alpha-\\tan\\beta}{1+\\tan\\alpha\\tan\\beta}=\\dfrac{2m^{2}-1}{2m^{2}+4m+1}\\\\ &\\neq1\\end{aligned}\\)"
+          ],
+          "answer": 0,
+          "hint": "Use the compound-angle formula \\(\\tan(\\alpha+\\beta)=\\dfrac{\\tan\\alpha+\\tan\\beta}{1-\\tan\\alpha\\tan\\beta}\\). Simplify the big fraction by multiplying top and bottom by the common denominator \\((m+1)(2m+1)\\). If \\(\\tan(\\alpha+\\beta)=1\\) then the angle is \\(\\dfrac{\\pi}{4}\\).",
+          "steps": [
+            {
+              "explain": "Write the formula for the tangent of a SUM (note the MINUS in the denominator).",
+              "work": "\\(\\tan(\\alpha+\\beta)=\\dfrac{\\tan\\alpha+\\tan\\beta}{1-\\tan\\alpha\\tan\\beta}\\)"
+            },
+            {
+              "explain": "Substitute the given values.",
+              "work": "\\(=\\dfrac{\\dfrac{m}{m+1}+\\dfrac{1}{2m+1}}{1-\\dfrac{m}{m+1}\\times\\dfrac{1}{2m+1}}\\)"
+            },
+            {
+              "explain": "Multiply the top and the bottom of the whole fraction by \\((m+1)(2m+1)\\) (this clears all the small denominators).",
+              "work": "\\(\\text{top: }m(2m+1)+1\\cdot(m+1),\\qquad\\text{bottom: }(m+1)(2m+1)-m\\)"
+            },
+            {
+              "explain": "Expand the top: \\(2m^{2}+m+m+1=2m^{2}+2m+1\\). Expand the bottom: \\(2m^{2}+m+2m+1-m=2m^{2}+2m+1\\).",
+              "work": "\\(\\tan(\\alpha+\\beta)=\\dfrac{2m^{2}+2m+1}{2m^{2}+2m+1}=1\\)"
+            },
+            {
+              "explain": "\\(\\alpha\\) and \\(\\beta\\) are ACUTE, so \\(0<\\alpha+\\beta<\\pi\\). The only angle in this range with tangent 1 is \\(\\dfrac{\\pi}{4}\\).",
+              "work": "\\(\\tan(\\alpha+\\beta)=1=\\tan\\dfrac{\\pi}{4}\\ \\Rightarrow\\ \\alpha+\\beta=\\dfrac{\\pi}{4}\\)"
+            },
+            {
+              "explain": "Why not the others: B forgets the denominator \\(1-\\tan\\alpha\\tan\\beta\\); C uses \\(+\\) instead of \\(-\\) in the denominator; D uses the formula for \\(\\tan(\\alpha-\\beta)\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Prove that \\(\\alpha+\\beta=\\dfrac{\\pi}{4}\\).",
+              "note": "tan(α+β) = (tanα+tanβ)/(1−tanα tanβ); get exactly 1."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Fort Street High School 2020 Preliminary HSC Assessment Task 3 Mathematics Extension 1",
+            "school": "Fort Street High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -2399,6 +2576,137 @@
           "meta": {
             "source": "Frensham School 2021 Year 12 Trial HSC Examination Mathematics Extension 1",
             "school": "Frensham School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "fortst2020p-q9d",
+          "type": "mc",
+          "stem": "Using the \\(t\\) formula, solve \\(\\sin x=3\\cos x+2\\), for \\(0^{\\circ}\\leq x\\leq360^{\\circ}\\) to the nearest degree.",
+          "difficulty": "hard",
+          "options": [
+            "\\(x\\approx111^{\\circ},\\ 212^{\\circ}\\)",
+            "\\(x\\approx111^{\\circ}\\) only",
+            "\\(x\\approx111^{\\circ},\\ 248^{\\circ}\\)",
+            "\\(x\\approx55^{\\circ},\\ 212^{\\circ}\\)"
+          ],
+          "answer": 0,
+          "hint": "The \\(t\\)-formulas with \\(t=\\tan\\dfrac{x}{2}\\): \\(\\sin x=\\dfrac{2t}{1+t^{2}}\\), \\(\\cos x=\\dfrac{1-t^{2}}{1+t^{2}}\\). Substitute, clear the fractions to get a quadratic in \\(t\\), solve it, then \\(x=2\\tan^{-1}t\\) (and keep \\(0\\leq\\dfrac{x}{2}\\leq180^{\\circ}\\)).",
+          "steps": [
+            {
+              "explain": "Replace \\(\\sin x\\) and \\(\\cos x\\) by the \\(t\\)-formulas.",
+              "work": "\\(\\dfrac{2t}{1+t^{2}}=3\\cdot\\dfrac{1-t^{2}}{1+t^{2}}+2\\)"
+            },
+            {
+              "explain": "Multiply every term by \\(1+t^{2}\\) (it is never 0).",
+              "work": "\\(2t=3(1-t^{2})+2(1+t^{2})\\)"
+            },
+            {
+              "explain": "Expand and collect to one side.",
+              "work": "\\(2t=3-3t^{2}+2+2t^{2}=5-t^{2}\\ \\Rightarrow\\ t^{2}+2t-5=0\\)"
+            },
+            {
+              "explain": "Quadratic formula with \\(a=1,\\ b=2,\\ c=-5\\). Keep the EXACT value (do not round yet).",
+              "work": "\\(t=\\dfrac{-2\\pm\\sqrt{4+20}}{2}=\\dfrac{-2\\pm\\sqrt{24}}{2}=-1\\pm\\sqrt{6}\\)"
+            },
+            {
+              "explain": "Case 1: \\(t=-1+\\sqrt{6}\\approx1.449\\) (positive). \\(\\dfrac{x}{2}=\\tan^{-1}(1.449)\\approx55.4^{\\circ}\\), so \\(x\\approx110.8^{\\circ}\\approx111^{\\circ}\\).",
+              "work": "\\(x=2\\tan^{-1}\\left(-1+\\sqrt{6}\\right)\\approx111^{\\circ}\\)"
+            },
+            {
+              "explain": "Case 2: \\(t=-1-\\sqrt{6}\\approx-3.449\\) (negative). \\(\\tan^{-1}(3.449)=73.8^{\\circ}\\), but \\(\\dfrac{x}{2}\\) must be between \\(0^{\\circ}\\) and \\(180^{\\circ}\\) and tangent is negative in quadrant 2: \\(\\dfrac{x}{2}=180^{\\circ}-73.8^{\\circ}=106.2^{\\circ}\\), so \\(x\\approx212.4^{\\circ}\\approx212^{\\circ}\\).",
+              "work": "\\(x=2\\left(180^{\\circ}-\\tan^{-1}\\left(1+\\sqrt{6}\\right)\\right)\\approx212^{\\circ}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 240\" width=\"100%\" height=\"auto\" style=\"max-width:380px;display:block;margin:0 auto\"><line x1=\"26.0\" y1=\"130.0\" x2=\"372.0\" y2=\"130.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"36.0\" y1=\"190.0\" x2=\"36.0\" y2=\"14.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"372.0\" y1=\"130.0\" x2=\"365.1\" y2=\"126.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"372.0\" y1=\"130.0\" x2=\"365.1\" y2=\"134.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"36.0\" y1=\"14.0\" x2=\"32.0\" y2=\"20.9\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"36.0\" y1=\"14.0\" x2=\"40.0\" y2=\"20.9\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><text x=\"374.0\" y=\"145.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x°</text><text x=\"45.0\" y=\"24.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">y</text><polyline points=\"36.0,130.0 36.8,129.7 37.6,129.4 38.5,129.2 39.3,128.9 40.1,128.6 40.9,128.3 41.7,128.0 42.6,127.7 43.4,127.5 44.2,127.2 45.0,126.9 45.8,126.6 46.7,126.3 47.5,126.1 48.3,125.8 49.1,125.5 49.9,125.3 50.8,125.0 51.6,124.7 52.4,124.4 53.2,124.2 54.0,123.9 54.9,123.6 55.7,123.4 56.5,123.1 57.3,122.9 58.1,122.6 59.0,122.3 59.8,122.1 60.6,121.8 61.4,121.6 62.2,121.3 63.1,121.1 63.9,120.8 64.7,120.6 65.5,120.4 66.3,120.1 67.2,119.9 68.0,119.6 68.8,119.4 69.6,119.2 70.4,119.0 71.3,118.7 72.1,118.5 72.9,118.3 73.7,118.1 74.5,117.9 75.4,117.7 76.2,117.5 77.0,117.3 77.8,117.1 78.6,116.9 79.5,116.7 80.3,116.5 81.1,116.3 81.9,116.1 82.7,116.0 83.6,115.8 84.4,115.6 85.2,115.4 86.0,115.3 86.8,115.1 87.7,115.0 88.5,114.8 89.3,114.7 90.1,114.5 90.9,114.4 91.8,114.2 92.6,114.1 93.4,114.0 94.2,113.8 95.0,113.7 95.9,113.6 96.7,113.5 97.5,113.4 98.3,113.3 99.1,113.2 100.0,113.1 100.8,113.0 101.6,112.9 102.4,112.8 103.2,112.7 104.1,112.6 104.9,112.6 105.7,112.5 106.5,112.4 107.3,112.4 108.2,112.3 109.0,112.3 109.8,112.2 110.6,112.2 111.4,112.1 112.3,112.1 113.1,112.1 113.9,112.1 114.7,112.0 115.5,112.0 116.4,112.0 117.2,112.0 118.0,112.0 118.8,112.0 119.6,112.0 120.5,112.0 121.3,112.0 122.1,112.1 122.9,112.1 123.7,112.1 124.6,112.1 125.4,112.2 126.2,112.2 127.0,112.3 127.8,112.3 128.7,112.4 129.5,112.4 130.3,112.5 131.1,112.6 131.9,112.6 132.8,112.7 133.6,112.8 134.4,112.9 135.2,113.0 136.0,113.1 136.9,113.2 137.7,113.3 138.5,113.4 139.3,113.5 140.1,113.6 141.0,113.7 141.8,113.8 142.6,114.0 143.4,114.1 144.2,114.2 145.1,114.4 145.9,114.5 146.7,114.7 147.5,114.8 148.3,115.0 149.2,115.1 150.0,115.3 150.8,115.4 151.6,115.6 152.4,115.8 153.3,116.0 154.1,116.1 154.9,116.3 155.7,116.5 156.5,116.7 157.4,116.9 158.2,117.1 159.0,117.3 159.8,117.5 160.6,117.7 161.5,117.9 162.3,118.1 163.1,118.3 163.9,118.5 164.7,118.7 165.6,119.0 166.4,119.2 167.2,119.4 168.0,119.6 168.8,119.9 169.7,120.1 170.5,120.4 171.3,120.6 172.1,120.8 172.9,121.1 173.8,121.3 174.6,121.6 175.4,121.8 176.2,122.1 177.0,122.3 177.9,122.6 178.7,122.9 179.5,123.1 180.3,123.4 181.1,123.6 182.0,123.9 182.8,124.2 183.6,124.4 184.4,124.7 185.2,125.0 186.1,125.3 186.9,125.5 187.7,125.8 188.5,126.1 189.3,126.3 190.2,126.6 191.0,126.9 191.8,127.2 192.6,127.5 193.4,127.7 194.3,128.0 195.1,128.3 195.9,128.6 196.7,128.9 197.5,129.2 198.4,129.4 199.2,129.7 200.0,130.0 200.8,130.3 201.6,130.6 202.5,130.8 203.3,131.1 204.1,131.4 204.9,131.7 205.7,132.0 206.6,132.3 207.4,132.5 208.2,132.8 209.0,133.1 209.8,133.4 210.7,133.7 211.5,133.9 212.3,134.2 213.1,134.5 213.9,134.7 214.8,135.0 215.6,135.3 216.4,135.6 217.2,135.8 218.0,136.1 218.9,136.4 219.7,136.6 220.5,136.9 221.3,137.1 222.1,137.4 223.0,137.7 223.8,137.9 224.6,138.2 225.4,138.4 226.2,138.7 227.1,138.9 227.9,139.2 228.7,139.4 229.5,139.6 230.3,139.9 231.2,140.1 232.0,140.4 232.8,140.6 233.6,140.8 234.4,141.0 235.3,141.3 236.1,141.5 236.9,141.7 237.7,141.9 238.5,142.1 239.4,142.3 240.2,142.5 241.0,142.7 241.8,142.9 242.6,143.1 243.5,143.3 244.3,143.5 245.1,143.7 245.9,143.9 246.7,144.0 247.6,144.2 248.4,144.4 249.2,144.6 250.0,144.7 250.8,144.9 251.7,145.0 252.5,145.2 253.3,145.3 254.1,145.5 254.9,145.6 255.8,145.8 256.6,145.9 257.4,146.0 258.2,146.2 259.0,146.3 259.9,146.4 260.7,146.5 261.5,146.6 262.3,146.7 263.1,146.8 264.0,146.9 264.8,147.0 265.6,147.1 266.4,147.2 267.2,147.3 268.1,147.4 268.9,147.4 269.7,147.5 270.5,147.6 271.3,147.6 272.2,147.7 273.0,147.7 273.8,147.8 274.6,147.8 275.4,147.9 276.3,147.9 277.1,147.9 277.9,147.9 278.7,148.0 279.5,148.0 280.4,148.0 281.2,148.0 282.0,148.0 282.8,148.0 283.6,148.0 284.5,148.0 285.3,148.0 286.1,147.9 286.9,147.9 287.7,147.9 288.6,147.9 289.4,147.8 290.2,147.8 291.0,147.7 291.8,147.7 292.7,147.6 293.5,147.6 294.3,147.5 295.1,147.4 295.9,147.4 296.8,147.3 297.6,147.2 298.4,147.1 299.2,147.0 300.0,146.9 300.9,146.8 301.7,146.7 302.5,146.6 303.3,146.5 304.1,146.4 305.0,146.3 305.8,146.2 306.6,146.0 307.4,145.9 308.2,145.8 309.1,145.6 309.9,145.5 310.7,145.3 311.5,145.2 312.3,145.0 313.2,144.9 314.0,144.7 314.8,144.6 315.6,144.4 316.4,144.2 317.3,144.0 318.1,143.9 318.9,143.7 319.7,143.5 320.5,143.3 321.4,143.1 322.2,142.9 323.0,142.7 323.8,142.5 324.6,142.3 325.5,142.1 326.3,141.9 327.1,141.7 327.9,141.5 328.7,141.3 329.6,141.0 330.4,140.8 331.2,140.6 332.0,140.4 332.8,140.1 333.7,139.9 334.5,139.6 335.3,139.4 336.1,139.2 336.9,138.9 337.8,138.7 338.6,138.4 339.4,138.2 340.2,137.9 341.0,137.7 341.9,137.4 342.7,137.1 343.5,136.9 344.3,136.6 345.1,136.4 346.0,136.1 346.8,135.8 347.6,135.6 348.4,135.3 349.2,135.0 350.1,134.7 350.9,134.5 351.7,134.2 352.5,133.9 353.3,133.7 354.2,133.4 355.0,133.1 355.8,132.8 356.6,132.5 357.4,132.3 358.3,132.0 359.1,131.7 359.9,131.4 360.7,131.1 361.5,130.8 362.4,130.6 363.2,130.3 364.0,130.0\" fill=\"none\" stroke=\"#3b4ea8\" stroke-width=\"3.4\" stroke-linejoin=\"round\"/><polyline points=\"36.0,40.0 36.8,40.0 37.6,40.0 38.5,40.1 39.3,40.1 40.1,40.2 40.9,40.2 41.7,40.3 42.6,40.4 43.4,40.5 44.2,40.7 45.0,40.8 45.8,41.0 46.7,41.1 47.5,41.3 48.3,41.5 49.1,41.7 49.9,41.9 50.8,42.1 51.6,42.4 52.4,42.6 53.2,42.9 54.0,43.2 54.9,43.5 55.7,43.8 56.5,44.1 57.3,44.4 58.1,44.8 59.0,45.1 59.8,45.5 60.6,45.9 61.4,46.3 62.2,46.7 63.1,47.1 63.9,47.5 64.7,48.0 65.5,48.4 66.3,48.9 67.2,49.3 68.0,49.8 68.8,50.3 69.6,50.8 70.4,51.3 71.3,51.9 72.1,52.4 72.9,52.9 73.7,53.5 74.5,54.1 75.4,54.6 76.2,55.2 77.0,55.8 77.8,56.4 78.6,57.0 79.5,57.7 80.3,58.3 81.1,58.9 81.9,59.6 82.7,60.2 83.6,60.9 84.4,61.6 85.2,62.3 86.0,62.9 86.8,63.6 87.7,64.4 88.5,65.1 89.3,65.8 90.1,66.5 90.9,67.2 91.8,68.0 92.6,68.7 93.4,69.5 94.2,70.2 95.0,71.0 95.9,71.8 96.7,72.6 97.5,73.3 98.3,74.1 99.1,74.9 100.0,75.7 100.8,76.5 101.6,77.3 102.4,78.1 103.2,78.9 104.1,79.8 104.9,80.6 105.7,81.4 106.5,82.2 107.3,83.0 108.2,83.9 109.0,84.7 109.8,85.6 110.6,86.4 111.4,87.2 112.3,88.1 113.1,88.9 113.9,89.8 114.7,90.6 115.5,91.5 116.4,92.3 117.2,93.2 118.0,94.0 118.8,94.8 119.6,95.7 120.5,96.5 121.3,97.4 122.1,98.2 122.9,99.1 123.7,99.9 124.6,100.8 125.4,101.6 126.2,102.4 127.0,103.3 127.8,104.1 128.7,105.0 129.5,105.8 130.3,106.6 131.1,107.4 131.9,108.2 132.8,109.1 133.6,109.9 134.4,110.7 135.2,111.5 136.0,112.3 136.9,113.1 137.7,113.9 138.5,114.7 139.3,115.4 140.1,116.2 141.0,117.0 141.8,117.8 142.6,118.5 143.4,119.3 144.2,120.0 145.1,120.8 145.9,121.5 146.7,122.2 147.5,122.9 148.3,123.6 149.2,124.4 150.0,125.1 150.8,125.7 151.6,126.4 152.4,127.1 153.3,127.8 154.1,128.4 154.9,129.1 155.7,129.7 156.5,130.3 157.4,131.0 158.2,131.6 159.0,132.2 159.8,132.8 160.6,133.4 161.5,133.9 162.3,134.5 163.1,135.1 163.9,135.6 164.7,136.1 165.6,136.7 166.4,137.2 167.2,137.7 168.0,138.2 168.8,138.7 169.7,139.1 170.5,139.6 171.3,140.0 172.1,140.5 172.9,140.9 173.8,141.3 174.6,141.7 175.4,142.1 176.2,142.5 177.0,142.9 177.9,143.2 178.7,143.6 179.5,143.9 180.3,144.2 181.1,144.5 182.0,144.8 182.8,145.1 183.6,145.4 184.4,145.6 185.2,145.9 186.1,146.1 186.9,146.3 187.7,146.5 188.5,146.7 189.3,146.9 190.2,147.0 191.0,147.2 191.8,147.3 192.6,147.5 193.4,147.6 194.3,147.7 195.1,147.8 195.9,147.8 196.7,147.9 197.5,147.9 198.4,148.0 199.2,148.0 200.0,148.0 200.8,148.0 201.6,148.0 202.5,147.9 203.3,147.9 204.1,147.8 204.9,147.8 205.7,147.7 206.6,147.6 207.4,147.5 208.2,147.3 209.0,147.2 209.8,147.0 210.7,146.9 211.5,146.7 212.3,146.5 213.1,146.3 213.9,146.1 214.8,145.9 215.6,145.6 216.4,145.4 217.2,145.1 218.0,144.8 218.9,144.5 219.7,144.2 220.5,143.9 221.3,143.6 222.1,143.2 223.0,142.9 223.8,142.5 224.6,142.1 225.4,141.7 226.2,141.3 227.1,140.9 227.9,140.5 228.7,140.0 229.5,139.6 230.3,139.1 231.2,138.7 232.0,138.2 232.8,137.7 233.6,137.2 234.4,136.7 235.3,136.1 236.1,135.6 236.9,135.1 237.7,134.5 238.5,133.9 239.4,133.4 240.2,132.8 241.0,132.2 241.8,131.6 242.6,131.0 243.5,130.3 244.3,129.7 245.1,129.1 245.9,128.4 246.7,127.8 247.6,127.1 248.4,126.4 249.2,125.7 250.0,125.1 250.8,124.4 251.7,123.6 252.5,122.9 253.3,122.2 254.1,121.5 254.9,120.8 255.8,120.0 256.6,119.3 257.4,118.5 258.2,117.8 259.0,117.0 259.9,116.2 260.7,115.4 261.5,114.7 262.3,113.9 263.1,113.1 264.0,112.3 264.8,111.5 265.6,110.7 266.4,109.9 267.2,109.1 268.1,108.2 268.9,107.4 269.7,106.6 270.5,105.8 271.3,105.0 272.2,104.1 273.0,103.3 273.8,102.4 274.6,101.6 275.4,100.8 276.3,99.9 277.1,99.1 277.9,98.2 278.7,97.4 279.5,96.5 280.4,95.7 281.2,94.8 282.0,94.0 282.8,93.2 283.6,92.3 284.5,91.5 285.3,90.6 286.1,89.8 286.9,88.9 287.7,88.1 288.6,87.2 289.4,86.4 290.2,85.6 291.0,84.7 291.8,83.9 292.7,83.0 293.5,82.2 294.3,81.4 295.1,80.6 295.9,79.8 296.8,78.9 297.6,78.1 298.4,77.3 299.2,76.5 300.0,75.7 300.9,74.9 301.7,74.1 302.5,73.3 303.3,72.6 304.1,71.8 305.0,71.0 305.8,70.2 306.6,69.5 307.4,68.7 308.2,68.0 309.1,67.2 309.9,66.5 310.7,65.8 311.5,65.1 312.3,64.4 313.2,63.6 314.0,62.9 314.8,62.3 315.6,61.6 316.4,60.9 317.3,60.2 318.1,59.6 318.9,58.9 319.7,58.3 320.5,57.7 321.4,57.0 322.2,56.4 323.0,55.8 323.8,55.2 324.6,54.6 325.5,54.1 326.3,53.5 327.1,52.9 327.9,52.4 328.7,51.9 329.6,51.3 330.4,50.8 331.2,50.3 332.0,49.8 332.8,49.3 333.7,48.9 334.5,48.4 335.3,48.0 336.1,47.5 336.9,47.1 337.8,46.7 338.6,46.3 339.4,45.9 340.2,45.5 341.0,45.1 341.9,44.8 342.7,44.4 343.5,44.1 344.3,43.8 345.1,43.5 346.0,43.2 346.8,42.9 347.6,42.6 348.4,42.4 349.2,42.1 350.1,41.9 350.9,41.7 351.7,41.5 352.5,41.3 353.3,41.1 354.2,41.0 355.0,40.8 355.8,40.7 356.6,40.5 357.4,40.4 358.3,40.3 359.1,40.2 359.9,40.2 360.7,40.1 361.5,40.1 362.4,40.0 363.2,40.0 364.0,40.0\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"3.4\" stroke-linejoin=\"round\"/><circle cx=\"137.0\" cy=\"113.2\" r=\"5.8\" fill=\"#dc2626\"/><line x1=\"137.0\" y1=\"113.2\" x2=\"137.0\" y2=\"130.0\" stroke=\"#dc2626\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"3 3\"/><circle cx=\"229.5\" cy=\"139.6\" r=\"5.8\" fill=\"#dc2626\"/><line x1=\"229.5\" y1=\"139.6\" x2=\"229.5\" y2=\"130.0\" stroke=\"#dc2626\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"3 3\"/><text x=\"147.0\" y=\"102.4\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">x ≈ 111°</text><text x=\"233.5\" y=\"165.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">x ≈ 212°</text><text x=\"54.2\" y=\"104.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">y = sin x</text><text x=\"190.9\" y=\"50.8\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">y = 3 cos x + 2</text><line x1=\"118.0\" y1=\"127.0\" x2=\"118.0\" y2=\"133.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"118.0\" y=\"145.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">90</text><line x1=\"200.0\" y1=\"127.0\" x2=\"200.0\" y2=\"133.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"200.0\" y=\"145.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">180</text><line x1=\"282.0\" y1=\"127.0\" x2=\"282.0\" y2=\"133.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"282.0\" y=\"145.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">270</text><line x1=\"364.0\" y1=\"127.0\" x2=\"364.0\" y2=\"133.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"364.0\" y=\"145.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">360</text></svg>"
+              }
+            },
+            {
+              "explain": "Both lie in \\(0^{\\circ}\\leq x\\leq360^{\\circ}\\). The graph shows the two intersection points of \\(y=\\sin x\\) and \\(y=3\\cos x+2\\). Check \\(x=212.4^{\\circ}\\): \\(\\sin=-0.536\\); \\(3\\cos+2=3(-0.844)+2=-0.536\\) ✓.",
+              "work": "\\(x\\approx111^{\\circ}\\ \\text{and}\\ 212^{\\circ}\\)"
+            },
+            {
+              "explain": "Why not the others: B drops the negative-\\(t\\) solution; C and D come from rounding \\(t\\) early or a sign slip in \\(t=\\tan^{-1}\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Using the \\(t\\) formula, solve \\(\\sin x=3\\cos x+2\\)",
+              "note": "t = tan(x/2): quadratic t² + 2t − 5 = 0, two t values."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Fort Street High School 2020 Preliminary HSC Assessment Task 3 Mathematics Extension 1",
+            "school": "Fort Street High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "fortst2020p-q10d",
+          "type": "mc",
+          "stem": "Given \\(\\sec x+\\tan x=k\\), find the value of \\(\\cos x\\) in terms of \\(k\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\dfrac{2k}{k^{2}+1}\\)",
+            "\\(\\dfrac{k^{2}+1}{2k}\\)",
+            "\\(\\dfrac{2}{k^{2}+1}\\)",
+            "\\(\\dfrac{k}{k^{2}+1}\\)"
+          ],
+          "answer": 0,
+          "hint": "Use \\(\\sec^{2}x-\\tan^{2}x=1\\) (difference of two squares) to find \\(\\sec x-\\tan x\\) in terms of \\(k\\). Then ADD the two equations: the \\(\\tan x\\) terms cancel and \\(\\sec x\\) is found. Finally \\(\\cos x=\\dfrac{1}{\\sec x}\\).",
+          "steps": [
+            {
+              "explain": "The given equation (call it (1)).",
+              "work": "\\(\\sec x+\\tan x=k\\qquad(1)\\)"
+            },
+            {
+              "explain": "Pythagorean identity \\(1+\\tan^{2}x=\\sec^{2}x\\) gives \\(\\sec^{2}x-\\tan^{2}x=1\\). Factorise the left side (difference of squares).",
+              "work": "\\((\\sec x+\\tan x)(\\sec x-\\tan x)=1\\)"
+            },
+            {
+              "explain": "Substitute \\(\\sec x+\\tan x=k\\) and solve for the other bracket (call it (2)).",
+              "work": "\\(k(\\sec x-\\tan x)=1\\ \\Rightarrow\\ \\sec x-\\tan x=\\dfrac{1}{k}\\qquad(2)\\)"
+            },
+            {
+              "explain": "Add (1) and (2): the \\(\\tan x\\) terms cancel.",
+              "work": "\\(2\\sec x=k+\\dfrac{1}{k}=\\dfrac{k^{2}+1}{k}\\)"
+            },
+            {
+              "explain": "Divide by 2 to get \\(\\sec x\\).",
+              "work": "\\(\\sec x=\\dfrac{k^{2}+1}{2k}\\)"
+            },
+            {
+              "explain": "\\(\\cos x\\) is the reciprocal of \\(\\sec x\\).",
+              "work": "\\(\\cos x=\\dfrac{2k}{k^{2}+1}\\)"
+            },
+            {
+              "explain": "Check with \\(x=0\\): \\(\\sec0+\\tan0=1=k\\), \\(\\cos0=1\\), and \\(\\dfrac{2(1)}{1+1}=1\\) ✓. Why not the others: B is \\(\\sec x\\) (not \\(\\cos x\\)); C and D lose a factor (\\(2\\) or \\(k\\)) when adding.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Given \\(\\sec x+\\tan x=k\\), find the value of \\(\\cos x\\) in terms of \\(k\\).",
+              "note": "\\(\\sec^{2}x-\\tan^{2}x=1\\) gives \\(\\sec x-\\tan x=\\dfrac{1}{k}\\); add the two."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Fort Street High School 2020 Preliminary HSC Assessment Task 3 Mathematics Extension 1",
+            "school": "Fort Street High School",
             "grade": "11",
             "origin": "teacher"
           }

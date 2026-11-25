@@ -816,6 +816,128 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "fortst2020p-q5",
+          "type": "mc",
+          "stem": "The diameter of a circle is increasing at the rate of \\(1\\ \\text{cm per sec}\\). At what rate is the area increasing when its radius is \\(\\pi\\ \\text{cm}\\)?",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\pi\\ \\text{cm}^{2}\\text{ per sec}\\)",
+            "\\(2\\pi\\ \\text{cm}^{2}\\text{ per sec}\\)",
+            "\\(\\pi^{2}\\ \\text{cm}^{2}\\text{ per sec}\\)",
+            "\\(2\\pi^{2}\\ \\text{cm}^{2}\\text{ per sec}\\)"
+          ],
+          "answer": 2,
+          "hint": "Related rates: write \\(A\\) in terms of \\(r\\), then \\(\\dfrac{dA}{dt}=\\dfrac{dA}{dr}\\times\\dfrac{dr}{dt}\\). You are given the rate of the DIAMETER, so first convert it to the rate of the RADIUS (\\(d=2r\\)).",
+          "steps": [
+            {
+              "explain": "The diameter is twice the radius, so their rates are linked too.",
+              "work": "\\(d=2r\\ \\Rightarrow\\ \\dfrac{dd}{dt}=2\\dfrac{dr}{dt}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 200\" width=\"100%\" height=\"auto\" style=\"max-width:340px;display:block;margin:0 auto\"><circle cx=\"170\" cy=\"100\" r=\"62\" fill=\"#dbeafe\" fill-opacity=\".5\" stroke=\"#1e293b\" stroke-width=\"2.4\"/><circle cx=\"170\" cy=\"100\" r=\"74\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><line x1=\"170.0\" y1=\"100.0\" x2=\"232.0\" y2=\"100.0\" stroke=\"#dc2626\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><text x=\"201.0\" y=\"92.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">r = π</text><line x1=\"108.0\" y1=\"184.0\" x2=\"232.0\" y2=\"184.0\" stroke=\"#047857\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"232.0\" y1=\"184.0\" x2=\"224.2\" y2=\"179.5\" stroke=\"#047857\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"232.0\" y1=\"184.0\" x2=\"224.2\" y2=\"188.5\" stroke=\"#047857\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"108.0\" y1=\"184.0\" x2=\"115.8\" y2=\"188.5\" stroke=\"#047857\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"108.0\" y1=\"184.0\" x2=\"115.8\" y2=\"179.5\" stroke=\"#047857\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"170.0\" y=\"202.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">diameter d = 2r</text><text x=\"170.0\" y=\"18.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">diameter grows at 1 cm per s: the circle grows</text><circle cx=\"170.0\" cy=\"100.0\" r=\"3.8\" fill=\"#1e293b\"/></svg>"
+              }
+            },
+            {
+              "explain": "Use the given rate of the diameter (1 cm/s).",
+              "work": "\\(2\\dfrac{dr}{dt}=1\\ \\Rightarrow\\ \\dfrac{dr}{dt}=\\dfrac{1}{2}\\ \\text{cm per s}\\)"
+            },
+            {
+              "explain": "Area formula and its derivative with respect to \\(r\\).",
+              "work": "\\(A=\\pi r^{2}\\ \\Rightarrow\\ \\dfrac{dA}{dr}=2\\pi r\\)"
+            },
+            {
+              "explain": "Chain rule: multiply the two rates.",
+              "work": "\\(\\dfrac{dA}{dt}=\\dfrac{dA}{dr}\\times\\dfrac{dr}{dt}=2\\pi r\\times\\dfrac{1}{2}=\\pi r\\)"
+            },
+            {
+              "explain": "Substitute \\(r=\\pi\\) (the radius is \\(\\pi\\) cm at that instant).",
+              "work": "\\(\\dfrac{dA}{dt}=\\pi\\times\\pi=\\pi^{2}\\ \\text{cm}^{2}\\text{ per sec}\\)"
+            },
+            {
+              "explain": "Why not the others: A forgets one factor of \\(\\pi\\) (\\(r=1\\)); B and D use \\(\\dfrac{dr}{dt}=1\\) (the DIAMETER rate) instead of \\(\\dfrac{1}{2}\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">C</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "The diameter of a circle is increasing at the rate of",
+              "note": "Convert \\(d'=1\\) to \\(r'=\\dfrac{1}{2}\\), then \\(\\dfrac{dA}{dt}=2\\pi r\\cdot r'\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Fort Street High School 2020 Preliminary HSC Assessment Task 3 Mathematics Extension 1",
+            "school": "Fort Street High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "fortst2020p-q9b",
+          "type": "mc",
+          "stem": "The length of a rectangle remains twice as its width at all times when the rectangle is expanding. The area of the rectangle is increasing at a rate of \\(16\\ \\text{cm}^{2}\\text{ per sec}\\). Find the rate at which the perimeter of the rectangle is increasing at the instant when its width is \\(200\\ \\text{cm}\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\dfrac{3}{25}\\ \\text{cm per sec}\\)",
+            "\\(\\dfrac{1}{50}\\ \\text{cm per sec}\\)",
+            "\\(\\dfrac{6}{25}\\ \\text{cm per sec}\\)",
+            "\\(\\dfrac{4}{25}\\ \\text{cm per sec}\\)"
+          ],
+          "answer": 0,
+          "hint": "Let the width be \\(x\\) (so the length is \\(2x\\)). Write \\(A\\) and \\(P\\) in terms of \\(x\\) only. From \\(\\dfrac{dA}{dt}=16\\) find \\(\\dfrac{dx}{dt}\\) at \\(x=200\\); then \\(\\dfrac{dP}{dt}=\\dfrac{dP}{dx}\\times\\dfrac{dx}{dt}\\).",
+          "steps": [
+            {
+              "explain": "Name the sides: width \\(x\\) (orange), length \\(2x\\) (blue). Everything is in terms of the single variable \\(x\\) (which changes with time \\(t\\)).",
+              "work": "\\(w=x,\\qquad l=2x\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 190\" width=\"100%\" height=\"auto\" style=\"max-width:340px;display:block;margin:0 auto\"><rect x=\"70\" y=\"70\" width=\"140\" height=\"70\" fill=\"#dbeafe\" fill-opacity=\".55\" stroke=\"#1e293b\" stroke-width=\"2.4\"/><line x1=\"70.0\" y1=\"70.0\" x2=\"210.0\" y2=\"70.0\" stroke=\"#3b4ea8\" stroke-width=\"4.2\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"140.0\" x2=\"210.0\" y2=\"140.0\" stroke=\"#3b4ea8\" stroke-width=\"4.2\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"70.0\" x2=\"70.0\" y2=\"140.0\" stroke=\"#d97706\" stroke-width=\"4.2\" stroke-linecap=\"round\"/><line x1=\"210.0\" y1=\"70.0\" x2=\"210.0\" y2=\"140.0\" stroke=\"#d97706\" stroke-width=\"4.2\" stroke-linecap=\"round\"/><text x=\"140.0\" y=\"62.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2x</text><text x=\"140.0\" y=\"156.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2x</text><text x=\"62.0\" y=\"109.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">x</text><text x=\"218.0\" y=\"109.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">x</text><text x=\"170.0\" y=\"184.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">perimeter = 2x + 2x + x + x = 6x</text><text x=\"140.0\" y=\"110.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">A = 2x · x = 2x²</text></svg>"
+              }
+            },
+            {
+              "explain": "Area (length \\(\\times\\) width) and its rate: differentiate with the chain rule.",
+              "work": "\\(A=2x\\cdot x=2x^{2}\\ \\Rightarrow\\ \\dfrac{dA}{dt}=4x\\dfrac{dx}{dt}\\)"
+            },
+            {
+              "explain": "Use \\(\\dfrac{dA}{dt}=16\\) when \\(x=200\\).",
+              "work": "\\(16=4(200)\\dfrac{dx}{dt}\\ \\Rightarrow\\ \\dfrac{dx}{dt}=\\dfrac{16}{800}=\\dfrac{1}{50}\\ \\text{cm per s}\\)"
+            },
+            {
+              "explain": "Perimeter \\(=2(\\text{length}+\\text{width})=2(2x+x)\\) (the four sides in the diagram add to \\(6x\\)).",
+              "work": "\\(P=6x\\ \\Rightarrow\\ \\dfrac{dP}{dt}=6\\dfrac{dx}{dt}\\)"
+            },
+            {
+              "explain": "Substitute \\(\\dfrac{dx}{dt}=\\dfrac{1}{50}\\).",
+              "work": "\\(\\dfrac{dP}{dt}=6\\times\\dfrac{1}{50}=\\dfrac{6}{50}=\\dfrac{3}{25}\\ \\text{cm per sec}\\)"
+            },
+            {
+              "explain": "Why not the others: \\(\\dfrac{1}{50}\\) is only \\(\\dfrac{dx}{dt}\\) (the width's rate); \\(\\dfrac{6}{25}\\) and \\(\\dfrac{4}{25}\\) come from using \\(P=12x\\) or \\(P=8x\\) (forgetting a side) or a wrong \\(\\dfrac{dx}{dt}\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the rate at which the perimeter of the rectangle is increasing",
+              "note": "\\(A=2x^{2}\\), \\(P=6x\\); find \\(\\dfrac{dx}{dt}\\) first."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Fort Street High School 2020 Preliminary HSC Assessment Task 3 Mathematics Extension 1",
+            "school": "Fort Street High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },

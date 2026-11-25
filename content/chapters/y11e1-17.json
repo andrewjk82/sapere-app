@@ -1391,6 +1391,781 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "girraween2020y11-q2",
+          "type": "mc",
+          "stem": "Simplify: \\(\\dfrac{(n+1)!}{(n-1)!}\\)",
+          "difficulty": "easy",
+          "options": [
+            "\\(\\dfrac{n+1}{n-1}\\)",
+            "\\(n^{2}+1\\)",
+            "\\(n^{2}-1\\)",
+            "\\(n^{2}+n\\)"
+          ],
+          "answer": 3,
+          "hint": "Expand the larger factorial only as far as the smaller one: \\((n+1)!=(n+1)\\times n\\times(n-1)!\\). Then cancel \\((n-1)!\\). (Never cancel factorials by subtracting the numbers inside: \\((n+1)!\\neq(n+1)\\cdot(n-1)!\\).)",
+          "steps": [
+            {
+              "explain": "Write the factorial in the numerator as a product that ENDS in \\((n-1)!\\): \\((n+1)!=(n+1)\\cdot n\\cdot(n-1)\\cdot(n-2)\\cdots1\\).",
+              "work": "\\((n+1)!=(n+1)\\times n\\times(n-1)!\\)"
+            },
+            {
+              "explain": "Substitute into the fraction.",
+              "work": "\\(\\dfrac{(n+1)!}{(n-1)!}=\\dfrac{(n+1)\\times n\\times(n-1)!}{(n-1)!}\\)"
+            },
+            {
+              "explain": "Cancel the common factor \\((n-1)!\\) from the top and bottom.",
+              "work": "\\(=(n+1)\\times n\\)"
+            },
+            {
+              "explain": "Expand.",
+              "work": "\\(=n^{2}+n\\)"
+            },
+            {
+              "explain": "Numerical check: \\(n=4\\): \\(\\dfrac{5!}{3!}=\\dfrac{120}{6}=20\\) and \\(4^{2}+4=20\\) ✓.",
+              "work": "\\(20=20\\ \\checkmark\\)"
+            },
+            {
+              "explain": "Why not the others: A cancels incorrectly (\\(\\dfrac{n+1}{n-1}\\) would be \\(\\dfrac{(n+1)}{(n-1)}\\) without the extra factors); B and C do not match \\(n=4\\) (17 and 15).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">D</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Simplify:",
+              "note": "\\((n+1)!=(n+1)\\cdot n\\cdot(n-1)!\\), then cancel."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Girraween High School 2020 Year 11 Yearly Examination Mathematics Extension 1",
+            "school": "Girraween High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "girraween2020y11-q9a",
+          "type": "mc",
+          "stem": "Write as a single fraction: \\(\\dfrac{8}{(n+2)!}-\\dfrac{1}{n!}\\)",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\dfrac{6-n^{2}-3n}{(n+2)!}\\)",
+            "\\(\\dfrac{7}{(n+2)!-n!}\\)",
+            "\\(\\dfrac{6+n^{2}+3n}{(n+2)!}\\)",
+            "\\(\\dfrac{8-n}{(n+2)!}\\)"
+          ],
+          "answer": 0,
+          "hint": "Use the larger factorial as the common denominator: \\((n+2)!=(n+2)(n+1)\\,n!\\). So \\(\\dfrac{1}{n!}=\\dfrac{(n+2)(n+1)}{(n+2)!}\\) (multiply top and bottom by \\((n+2)(n+1)\\)). Then subtract the numerators.",
+          "steps": [
+            {
+              "explain": "Relate the two factorials: \\((n+2)!=(n+2)\\times(n+1)\\times n!\\).",
+              "work": "\\((n+2)!=(n+2)(n+1)\\,n!\\)"
+            },
+            {
+              "explain": "Rewrite the second fraction with denominator \\((n+2)!\\): multiply top and bottom by \\((n+2)(n+1)\\).",
+              "work": "\\(\\dfrac{1}{n!}=\\dfrac{(n+2)(n+1)}{(n+2)(n+1)\\,n!}=\\dfrac{(n+1)(n+2)}{(n+2)!}\\)"
+            },
+            {
+              "explain": "Subtract the numerators over the common denominator.",
+              "work": "\\(\\dfrac{8}{(n+2)!}-\\dfrac{(n+1)(n+2)}{(n+2)!}=\\dfrac{8-(n+1)(n+2)}{(n+2)!}\\)"
+            },
+            {
+              "explain": "Expand \\((n+1)(n+2)=n^{2}+3n+2\\); the minus sign changes every sign inside.",
+              "work": "\\(8-\\left(n^{2}+3n+2\\right)=8-n^{2}-3n-2=6-n^{2}-3n\\)"
+            },
+            {
+              "explain": "Result.",
+              "work": "\\(\\dfrac{6-n^{2}-3n}{(n+2)!}\\)"
+            },
+            {
+              "explain": "Check with \\(n=1\\): \\(\\dfrac{8}{3!}-\\dfrac{1}{1!}=\\dfrac{4}{3}-1=\\dfrac{1}{3}\\) and \\(\\dfrac{6-1-3}{6}=\\dfrac{2}{6}=\\dfrac{1}{3}\\) ✓. Why not the others: B subtracts denominators; C loses the sign when expanding; D is not equal for \\(n=1\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Write as a single fraction:",
+              "note": "(n+2)! = (n+2)(n+1)·n!: common denominator (n+2)!."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Girraween High School 2020 Year 11 Yearly Examination Mathematics Extension 1",
+            "school": "Girraween High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "girraween2020y11-q9b1",
+          "type": "mc",
+          "stem": "A car number plate in Australia usually has three letters followed by three digits. How many different number plates are possible if there are no restrictions",
+          "difficulty": "easy",
+          "options": [
+            "17 576 000",
+            "11 232 000",
+            "3 276 000",
+            "1 000 000"
+          ],
+          "answer": 0,
+          "hint": "Multiplication principle: multiply the number of choices for each of the 6 positions (3 letters, 3 digits). With repetition allowed, every position has the FULL number of choices (26 letters, 10 digits).",
+          "steps": [
+            {
+              "explain": "Count the choices for each position (letters blue, digits orange).",
+              "work": "",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 98\" width=\"100%\" height=\"auto\" style=\"max-width:400px;display:block;margin:0 auto\"><text x=\"200.0\" y=\"16.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">26 × 26 × 26 × 10 × 10 × 10</text><rect x=\"10.0\" y=\"28\" width=\"57.333333333333336\" height=\"40\" rx=\"6\" fill=\"#3b4ea8\" fill-opacity=\".18\" stroke=\"#3b4ea8\" stroke-width=\"2.4\"/><text x=\"38.7\" y=\"54.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">26</text><text x=\"38.7\" y=\"84.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">letter</text><rect x=\"73.33333333333334\" y=\"28\" width=\"57.333333333333336\" height=\"40\" rx=\"6\" fill=\"#3b4ea8\" fill-opacity=\".18\" stroke=\"#3b4ea8\" stroke-width=\"2.4\"/><text x=\"102.0\" y=\"54.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">26</text><text x=\"102.0\" y=\"84.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">letter</text><rect x=\"136.66666666666669\" y=\"28\" width=\"57.333333333333336\" height=\"40\" rx=\"6\" fill=\"#3b4ea8\" fill-opacity=\".18\" stroke=\"#3b4ea8\" stroke-width=\"2.4\"/><text x=\"165.3\" y=\"54.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">26</text><text x=\"165.3\" y=\"84.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">letter</text><rect x=\"200.0\" y=\"28\" width=\"57.333333333333336\" height=\"40\" rx=\"6\" fill=\"#d97706\" fill-opacity=\".18\" stroke=\"#d97706\" stroke-width=\"2.4\"/><text x=\"228.7\" y=\"54.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">10</text><text x=\"228.7\" y=\"84.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">digit</text><rect x=\"263.33333333333337\" y=\"28\" width=\"57.333333333333336\" height=\"40\" rx=\"6\" fill=\"#d97706\" fill-opacity=\".18\" stroke=\"#d97706\" stroke-width=\"2.4\"/><text x=\"292.0\" y=\"54.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">10</text><text x=\"292.0\" y=\"84.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">digit</text><rect x=\"326.6666666666667\" y=\"28\" width=\"57.333333333333336\" height=\"40\" rx=\"6\" fill=\"#d97706\" fill-opacity=\".18\" stroke=\"#d97706\" stroke-width=\"2.4\"/><text x=\"355.3\" y=\"54.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">10</text><text x=\"355.3\" y=\"84.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">digit</text></svg>"
+              }
+            },
+            {
+              "explain": "Multiply the letter choices and the digit choices.",
+              "work": "\\(26\\times26\\times26=26^{3}=17\\,576,\\qquad10\\times10\\times10=1000\\)"
+            },
+            {
+              "explain": "Multiply the two results.",
+              "work": "\\(17\\,576\\times1000=17\\,576\\,000\\)"
+            },
+            {
+              "explain": "Why not the others: \\(11\\,232\\,000\\) is the answer to part (ii) (no repetition); \\(3\\,276\\,000\\) and \\(10^{6}\\) forget the letters or use \\(26\\cdot3\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "if there are no restrictions",
+              "note": "Multiply the choices: 26³ × 10³."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Girraween High School 2020 Year 11 Yearly Examination Mathematics Extension 1",
+            "school": "Girraween High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "girraween2020y11-q9b2",
+          "type": "mc",
+          "stem": "A car number plate in Australia usually has three letters followed by three digits. How many different number plates are possible if there is no repetition",
+          "difficulty": "easy",
+          "options": [
+            "11 232 000",
+            "17 576 000",
+            "15 600 000",
+            "1 663 200"
+          ],
+          "answer": 0,
+          "hint": "'No repetition' means each choice uses up one option: the number of choices DECREASES by 1 for each later letter, and the same for the digits.",
+          "steps": [
+            {
+              "explain": "Letters: \\(26\\), then \\(25\\), then \\(24\\) (a used letter cannot be reused). Digits: \\(10,\\ 9,\\ 8\\).",
+              "work": "",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 98\" width=\"100%\" height=\"auto\" style=\"max-width:400px;display:block;margin:0 auto\"><text x=\"200.0\" y=\"16.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">26 × 25 × 24 × 10 × 9 × 8</text><rect x=\"10.0\" y=\"28\" width=\"57.333333333333336\" height=\"40\" rx=\"6\" fill=\"#3b4ea8\" fill-opacity=\".18\" stroke=\"#3b4ea8\" stroke-width=\"2.4\"/><text x=\"38.7\" y=\"54.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">26</text><text x=\"38.7\" y=\"84.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">letter</text><rect x=\"73.33333333333334\" y=\"28\" width=\"57.333333333333336\" height=\"40\" rx=\"6\" fill=\"#3b4ea8\" fill-opacity=\".18\" stroke=\"#3b4ea8\" stroke-width=\"2.4\"/><text x=\"102.0\" y=\"54.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">25</text><text x=\"102.0\" y=\"84.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">letter</text><rect x=\"136.66666666666669\" y=\"28\" width=\"57.333333333333336\" height=\"40\" rx=\"6\" fill=\"#3b4ea8\" fill-opacity=\".18\" stroke=\"#3b4ea8\" stroke-width=\"2.4\"/><text x=\"165.3\" y=\"54.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">24</text><text x=\"165.3\" y=\"84.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">letter</text><rect x=\"200.0\" y=\"28\" width=\"57.333333333333336\" height=\"40\" rx=\"6\" fill=\"#d97706\" fill-opacity=\".18\" stroke=\"#d97706\" stroke-width=\"2.4\"/><text x=\"228.7\" y=\"54.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">10</text><text x=\"228.7\" y=\"84.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">digit</text><rect x=\"263.33333333333337\" y=\"28\" width=\"57.333333333333336\" height=\"40\" rx=\"6\" fill=\"#d97706\" fill-opacity=\".18\" stroke=\"#d97706\" stroke-width=\"2.4\"/><text x=\"292.0\" y=\"54.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">9</text><text x=\"292.0\" y=\"84.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">digit</text><rect x=\"326.6666666666667\" y=\"28\" width=\"57.333333333333336\" height=\"40\" rx=\"6\" fill=\"#d97706\" fill-opacity=\".18\" stroke=\"#d97706\" stroke-width=\"2.4\"/><text x=\"355.3\" y=\"54.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">8</text><text x=\"355.3\" y=\"84.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">digit</text></svg>"
+              }
+            },
+            {
+              "explain": "Multiply the letters: \\(26\\times25\\times24=15\\,600\\).",
+              "work": "\\(26\\times25\\times24=15\\,600\\)"
+            },
+            {
+              "explain": "Multiply the digits: \\(10\\times9\\times8=720\\).",
+              "work": "\\(10\\times9\\times8=720\\)"
+            },
+            {
+              "explain": "Multiply: \\(15\\,600\\times720=11\\,232\\,000\\).",
+              "work": "\\(15\\,600\\times720=11\\,232\\,000\\)"
+            },
+            {
+              "explain": "Why not the others: \\(17\\,576\\,000\\) allows repetition; \\(15\\,600\\,000\\) repeats digits; \\(1\\,663\\,200\\) is unrelated.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "if there is no repetition",
+              "note": "Choices drop by 1 each time: 26·25·24 × 10·9·8."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Girraween High School 2020 Year 11 Yearly Examination Mathematics Extension 1",
+            "school": "Girraween High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "girraween2020y11-q9b3",
+          "type": "mc",
+          "stem": "A car number plate in Australia usually has three letters followed by three digits. How many different number plates are possible starting with R and ending with 2 (repetition allowed)",
+          "difficulty": "medium",
+          "options": [
+            "67 600",
+            "17 576",
+            "676 000",
+            "6 760"
+          ],
+          "answer": 0,
+          "hint": "Fix the first letter as R (1 choice) and the last digit as 2 (1 choice). Fill the other four positions freely (repetition allowed).",
+          "steps": [
+            {
+              "explain": "Fixed positions have 1 choice (R and 2). The other letters and digits have the full choices.",
+              "work": "",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 98\" width=\"100%\" height=\"auto\" style=\"max-width:400px;display:block;margin:0 auto\"><text x=\"200.0\" y=\"16.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1 × 26 × 26 × 10 × 10 × 1</text><rect x=\"10.0\" y=\"28\" width=\"57.333333333333336\" height=\"40\" rx=\"6\" fill=\"#dc2626\" fill-opacity=\".18\" stroke=\"#dc2626\" stroke-width=\"2.4\"/><text x=\"38.7\" y=\"54.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><text x=\"38.7\" y=\"84.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">R</text><rect x=\"73.33333333333334\" y=\"28\" width=\"57.333333333333336\" height=\"40\" rx=\"6\" fill=\"#3b4ea8\" fill-opacity=\".18\" stroke=\"#3b4ea8\" stroke-width=\"2.4\"/><text x=\"102.0\" y=\"54.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">26</text><text x=\"102.0\" y=\"84.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">letter</text><rect x=\"136.66666666666669\" y=\"28\" width=\"57.333333333333336\" height=\"40\" rx=\"6\" fill=\"#3b4ea8\" fill-opacity=\".18\" stroke=\"#3b4ea8\" stroke-width=\"2.4\"/><text x=\"165.3\" y=\"54.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">26</text><text x=\"165.3\" y=\"84.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">letter</text><rect x=\"200.0\" y=\"28\" width=\"57.333333333333336\" height=\"40\" rx=\"6\" fill=\"#d97706\" fill-opacity=\".18\" stroke=\"#d97706\" stroke-width=\"2.4\"/><text x=\"228.7\" y=\"54.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">10</text><text x=\"228.7\" y=\"84.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">digit</text><rect x=\"263.33333333333337\" y=\"28\" width=\"57.333333333333336\" height=\"40\" rx=\"6\" fill=\"#d97706\" fill-opacity=\".18\" stroke=\"#d97706\" stroke-width=\"2.4\"/><text x=\"292.0\" y=\"54.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">10</text><text x=\"292.0\" y=\"84.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">digit</text><rect x=\"326.6666666666667\" y=\"28\" width=\"57.333333333333336\" height=\"40\" rx=\"6\" fill=\"#dc2626\" fill-opacity=\".18\" stroke=\"#dc2626\" stroke-width=\"2.4\"/><text x=\"355.3\" y=\"54.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><text x=\"355.3\" y=\"84.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text></svg>"
+              }
+            },
+            {
+              "explain": "Multiply.",
+              "work": "\\(1\\times26\\times26\\times10\\times10\\times1=26^{2}\\times10^{2}=676\\times100\\)"
+            },
+            {
+              "explain": "Calculate.",
+              "work": "\\(67\\,600\\)"
+            },
+            {
+              "explain": "Why not the others: 17 576 and 6 760 forget some positions; 676 000 uses \\(10^{3}\\) for the digits.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "starting with R and ending with 2 (repetition allowed)",
+              "note": "Fixed positions count as 1 choice."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Girraween High School 2020 Year 11 Yearly Examination Mathematics Extension 1",
+            "school": "Girraween High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "girraween2020y11-q9b4",
+          "type": "mc",
+          "stem": "A car number plate in Australia usually has three letters followed by three digits. How many different number plates are possible starting with R and ending with 2 (repetition not allowed)",
+          "difficulty": "medium",
+          "options": [
+            "43 200",
+            "67 600",
+            "13 800",
+            "11 232 000"
+          ],
+          "answer": 0,
+          "hint": "R is used (1 choice), and the digit 2 is the last digit. Now the middle letters cannot be R: \\(25\\) then \\(24\\) choices. The middle digits cannot be 2: \\(9\\) then \\(8\\) choices.",
+          "steps": [
+            {
+              "explain": "Letters: R, then \\(25\\) remaining, then \\(24\\). Digits: two middle digits from the 9 digits other than 2: \\(9\\) then \\(8\\), then the last digit is 2.",
+              "work": "",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 98\" width=\"100%\" height=\"auto\" style=\"max-width:400px;display:block;margin:0 auto\"><text x=\"200.0\" y=\"16.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1 × 25 × 24 × 9 × 8 × 1</text><rect x=\"10.0\" y=\"28\" width=\"57.333333333333336\" height=\"40\" rx=\"6\" fill=\"#dc2626\" fill-opacity=\".18\" stroke=\"#dc2626\" stroke-width=\"2.4\"/><text x=\"38.7\" y=\"54.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><text x=\"38.7\" y=\"84.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">R</text><rect x=\"73.33333333333334\" y=\"28\" width=\"57.333333333333336\" height=\"40\" rx=\"6\" fill=\"#3b4ea8\" fill-opacity=\".18\" stroke=\"#3b4ea8\" stroke-width=\"2.4\"/><text x=\"102.0\" y=\"54.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">25</text><text x=\"102.0\" y=\"84.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">letter</text><rect x=\"136.66666666666669\" y=\"28\" width=\"57.333333333333336\" height=\"40\" rx=\"6\" fill=\"#3b4ea8\" fill-opacity=\".18\" stroke=\"#3b4ea8\" stroke-width=\"2.4\"/><text x=\"165.3\" y=\"54.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">24</text><text x=\"165.3\" y=\"84.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">letter</text><rect x=\"200.0\" y=\"28\" width=\"57.333333333333336\" height=\"40\" rx=\"6\" fill=\"#d97706\" fill-opacity=\".18\" stroke=\"#d97706\" stroke-width=\"2.4\"/><text x=\"228.7\" y=\"54.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">9</text><text x=\"228.7\" y=\"84.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">digit</text><rect x=\"263.33333333333337\" y=\"28\" width=\"57.333333333333336\" height=\"40\" rx=\"6\" fill=\"#d97706\" fill-opacity=\".18\" stroke=\"#d97706\" stroke-width=\"2.4\"/><text x=\"292.0\" y=\"54.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">8</text><text x=\"292.0\" y=\"84.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">digit</text><rect x=\"326.6666666666667\" y=\"28\" width=\"57.333333333333336\" height=\"40\" rx=\"6\" fill=\"#dc2626\" fill-opacity=\".18\" stroke=\"#dc2626\" stroke-width=\"2.4\"/><text x=\"355.3\" y=\"54.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><text x=\"355.3\" y=\"84.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text></svg>"
+              }
+            },
+            {
+              "explain": "Multiply the letter choices and the digit choices.",
+              "work": "\\(25\\times24=600,\\qquad9\\times8=72\\)"
+            },
+            {
+              "explain": "Multiply.",
+              "work": "\\(600\\times72=43\\,200\\)"
+            },
+            {
+              "explain": "Why not the others: \\(67\\,600\\) allows repetition (part iii); \\(13\\,800\\) mixes the counts.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "starting with R and ending with 2 (repetition not allowed)",
+              "note": "After R and 2 are used: 25·24 and 9·8."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Girraween High School 2020 Year 11 Yearly Examination Mathematics Extension 1",
+            "school": "Girraween High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "girraween2020y11-q9b5",
+          "type": "mc",
+          "stem": "A car number plate in Australia usually has three letters followed by three digits. How many different number plates are possible if the letters are consonants and digits are 3,6,7,9 (repetition allowed)",
+          "difficulty": "medium",
+          "options": [
+            "592 704",
+            "74 088",
+            "10 000",
+            "4 096"
+          ],
+          "answer": 0,
+          "hint": "Letters from the 21 consonants (26 letters minus the 5 vowels A, E, I, O, U). Digits from \\(\\{3,6,7,9\\}\\): 4 choices each. Repetition allowed: each position has the full list.",
+          "steps": [
+            {
+              "explain": "Consonants: \\(26-5=21\\). Digits: 4 allowed values.",
+              "work": "",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 98\" width=\"100%\" height=\"auto\" style=\"max-width:400px;display:block;margin:0 auto\"><text x=\"200.0\" y=\"16.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">21 × 21 × 21 × 4 × 4 × 4</text><rect x=\"10.0\" y=\"28\" width=\"57.333333333333336\" height=\"40\" rx=\"6\" fill=\"#3b4ea8\" fill-opacity=\".18\" stroke=\"#3b4ea8\" stroke-width=\"2.4\"/><text x=\"38.7\" y=\"54.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">21</text><text x=\"38.7\" y=\"84.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">consonant</text><rect x=\"73.33333333333334\" y=\"28\" width=\"57.333333333333336\" height=\"40\" rx=\"6\" fill=\"#3b4ea8\" fill-opacity=\".18\" stroke=\"#3b4ea8\" stroke-width=\"2.4\"/><text x=\"102.0\" y=\"54.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">21</text><text x=\"102.0\" y=\"84.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">consonant</text><rect x=\"136.66666666666669\" y=\"28\" width=\"57.333333333333336\" height=\"40\" rx=\"6\" fill=\"#3b4ea8\" fill-opacity=\".18\" stroke=\"#3b4ea8\" stroke-width=\"2.4\"/><text x=\"165.3\" y=\"54.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">21</text><text x=\"165.3\" y=\"84.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">consonant</text><rect x=\"200.0\" y=\"28\" width=\"57.333333333333336\" height=\"40\" rx=\"6\" fill=\"#d97706\" fill-opacity=\".18\" stroke=\"#d97706\" stroke-width=\"2.4\"/><text x=\"228.7\" y=\"54.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4</text><text x=\"228.7\" y=\"84.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">digit</text><rect x=\"263.33333333333337\" y=\"28\" width=\"57.333333333333336\" height=\"40\" rx=\"6\" fill=\"#d97706\" fill-opacity=\".18\" stroke=\"#d97706\" stroke-width=\"2.4\"/><text x=\"292.0\" y=\"54.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4</text><text x=\"292.0\" y=\"84.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">digit</text><rect x=\"326.6666666666667\" y=\"28\" width=\"57.333333333333336\" height=\"40\" rx=\"6\" fill=\"#d97706\" fill-opacity=\".18\" stroke=\"#d97706\" stroke-width=\"2.4\"/><text x=\"355.3\" y=\"54.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4</text><text x=\"355.3\" y=\"84.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">digit</text></svg>"
+              }
+            },
+            {
+              "explain": "Powers: \\(21^{3}=9261\\) and \\(4^{3}=64\\).",
+              "work": "\\(21^{3}\\times4^{3}=9261\\times64\\)"
+            },
+            {
+              "explain": "Multiply.",
+              "work": "\\(592\\,704\\)"
+            },
+            {
+              "explain": "Why not the others: 74 088 uses \\(21^{3}\\times8\\); 10 000 and 4096 use the wrong number of consonants or digits.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "consonants and digits are 3,6,7,9 (repetition allowed)",
+              "note": "26 − 5 = 21 consonants; 4 digits; powers."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Girraween High School 2020 Year 11 Yearly Examination Mathematics Extension 1",
+            "school": "Girraween High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "girraween2020y11-q9b6",
+          "type": "mc",
+          "stem": "A car number plate in Australia usually has three letters followed by three digits. How many different number plates are possible if letters are consonants and digits are 3,6,7,9 (repetition not allowed)",
+          "difficulty": "medium",
+          "options": [
+            "191 520",
+            "592 704",
+            "43 200",
+            "24"
+          ],
+          "answer": 0,
+          "hint": "Same lists as before but NO repetition: consonants \\(21,20,19\\); digits \\(4,3,2\\).",
+          "steps": [
+            {
+              "explain": "Consonants: 21, then 20, then 19. Digits: 4, then 3, then 2.",
+              "work": "",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 98\" width=\"100%\" height=\"auto\" style=\"max-width:400px;display:block;margin:0 auto\"><text x=\"200.0\" y=\"16.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">21 × 20 × 19 × 4 × 3 × 2</text><rect x=\"10.0\" y=\"28\" width=\"57.333333333333336\" height=\"40\" rx=\"6\" fill=\"#3b4ea8\" fill-opacity=\".18\" stroke=\"#3b4ea8\" stroke-width=\"2.4\"/><text x=\"38.7\" y=\"54.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">21</text><text x=\"38.7\" y=\"84.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">consonant</text><rect x=\"73.33333333333334\" y=\"28\" width=\"57.333333333333336\" height=\"40\" rx=\"6\" fill=\"#3b4ea8\" fill-opacity=\".18\" stroke=\"#3b4ea8\" stroke-width=\"2.4\"/><text x=\"102.0\" y=\"54.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">20</text><text x=\"102.0\" y=\"84.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">consonant</text><rect x=\"136.66666666666669\" y=\"28\" width=\"57.333333333333336\" height=\"40\" rx=\"6\" fill=\"#3b4ea8\" fill-opacity=\".18\" stroke=\"#3b4ea8\" stroke-width=\"2.4\"/><text x=\"165.3\" y=\"54.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">19</text><text x=\"165.3\" y=\"84.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">consonant</text><rect x=\"200.0\" y=\"28\" width=\"57.333333333333336\" height=\"40\" rx=\"6\" fill=\"#d97706\" fill-opacity=\".18\" stroke=\"#d97706\" stroke-width=\"2.4\"/><text x=\"228.7\" y=\"54.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4</text><text x=\"228.7\" y=\"84.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">digit</text><rect x=\"263.33333333333337\" y=\"28\" width=\"57.333333333333336\" height=\"40\" rx=\"6\" fill=\"#d97706\" fill-opacity=\".18\" stroke=\"#d97706\" stroke-width=\"2.4\"/><text x=\"292.0\" y=\"54.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3</text><text x=\"292.0\" y=\"84.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">digit</text><rect x=\"326.6666666666667\" y=\"28\" width=\"57.333333333333336\" height=\"40\" rx=\"6\" fill=\"#d97706\" fill-opacity=\".18\" stroke=\"#d97706\" stroke-width=\"2.4\"/><text x=\"355.3\" y=\"54.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><text x=\"355.3\" y=\"84.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">digit</text></svg>"
+              }
+            },
+            {
+              "explain": "Compute each group: \\(21\\times20\\times19=7980\\); \\(4\\times3\\times2=24\\).",
+              "work": "\\(7980\\times24\\)"
+            },
+            {
+              "explain": "Multiply.",
+              "work": "\\(191\\,520\\)"
+            },
+            {
+              "explain": "Why not the others: 592 704 allows repetition; 43 200 is part (iv); 24 is only the digit count.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "consonants and digits are 3,6,7,9 (repetition not allowed)",
+              "note": "21·20·19 × 4·3·2."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Girraween High School 2020 Year 11 Yearly Examination Mathematics Extension 1",
+            "school": "Girraween High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "girraween2020y11-q9c",
+          "type": "mc",
+          "stem": "A tea party is arranged for 16 students along two sides of a long table with 8 chairs on each side. Four students wish to sit on one particular side and two on the other side. In how many ways can they be seated?",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 190\" width=\"100%\" height=\"auto\" style=\"max-width:420px;display:block;margin:0 auto\"><rect x=\"60\" y=\"84\" width=\"300\" height=\"22\" rx=\"4\" fill=\"#e5e7eb\" stroke=\"#334155\" stroke-width=\"2\"/><rect x=\"70\" y=\"52\" width=\"26\" height=\"26\" rx=\"5\" fill=\"#fff\" fill-opacity=\"1\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><rect x=\"70\" y=\"112\" width=\"26\" height=\"26\" rx=\"5\" fill=\"#fff\" fill-opacity=\"1\" stroke=\"#d97706\" stroke-width=\"2\"/><rect x=\"106\" y=\"52\" width=\"26\" height=\"26\" rx=\"5\" fill=\"#fff\" fill-opacity=\"1\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><rect x=\"106\" y=\"112\" width=\"26\" height=\"26\" rx=\"5\" fill=\"#fff\" fill-opacity=\"1\" stroke=\"#d97706\" stroke-width=\"2\"/><rect x=\"142\" y=\"52\" width=\"26\" height=\"26\" rx=\"5\" fill=\"#fff\" fill-opacity=\"1\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><rect x=\"142\" y=\"112\" width=\"26\" height=\"26\" rx=\"5\" fill=\"#fff\" fill-opacity=\"1\" stroke=\"#d97706\" stroke-width=\"2\"/><rect x=\"178\" y=\"52\" width=\"26\" height=\"26\" rx=\"5\" fill=\"#fff\" fill-opacity=\"1\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><rect x=\"178\" y=\"112\" width=\"26\" height=\"26\" rx=\"5\" fill=\"#fff\" fill-opacity=\"1\" stroke=\"#d97706\" stroke-width=\"2\"/><rect x=\"214\" y=\"52\" width=\"26\" height=\"26\" rx=\"5\" fill=\"#fff\" fill-opacity=\"1\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><rect x=\"214\" y=\"112\" width=\"26\" height=\"26\" rx=\"5\" fill=\"#fff\" fill-opacity=\"1\" stroke=\"#d97706\" stroke-width=\"2\"/><rect x=\"250\" y=\"52\" width=\"26\" height=\"26\" rx=\"5\" fill=\"#fff\" fill-opacity=\"1\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><rect x=\"250\" y=\"112\" width=\"26\" height=\"26\" rx=\"5\" fill=\"#fff\" fill-opacity=\"1\" stroke=\"#d97706\" stroke-width=\"2\"/><rect x=\"286\" y=\"52\" width=\"26\" height=\"26\" rx=\"5\" fill=\"#fff\" fill-opacity=\"1\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><rect x=\"286\" y=\"112\" width=\"26\" height=\"26\" rx=\"5\" fill=\"#fff\" fill-opacity=\"1\" stroke=\"#d97706\" stroke-width=\"2\"/><rect x=\"322\" y=\"52\" width=\"26\" height=\"26\" rx=\"5\" fill=\"#fff\" fill-opacity=\"1\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><rect x=\"322\" y=\"112\" width=\"26\" height=\"26\" rx=\"5\" fill=\"#fff\" fill-opacity=\"1\" stroke=\"#d97706\" stroke-width=\"2\"/><text x=\"210.0\" y=\"36.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">side A: 8 chairs</text><text x=\"210.0\" y=\"160.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">side B: 8 chairs</text></svg>"
+          },
+          "options": [
+            "\\(8\\times7\\times6\\times5\\times8\\times7\\times10!\\approx3.4\\times10^{11}\\)",
+            "\\(16!\\approx2.1\\times10^{13}\\)",
+            "\\(8!\\times8!\\approx1.6\\times10^{9}\\)",
+            "\\(4!\\times2!\\times10!\\approx1.7\\times10^{8}\\)"
+          ],
+          "answer": 0,
+          "hint": "Seat the SPECIAL students first (they have restricted chairs), then the others. The 4 students go in 4 of the 8 chairs of their side (ORDER matters): \\(8\\times7\\times6\\times5\\). The 2 students go in the other side: \\(8\\times7\\). The remaining \\(16-6=10\\) students fill the remaining 10 chairs in any order: \\(10!\\).",
+          "steps": [
+            {
+              "explain": "Four students want side A (blue). The first has 8 chairs to choose from, the second 7, the third 6, the fourth 5.",
+              "work": "\\(8\\times7\\times6\\times5=1680\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 200\" width=\"100%\" height=\"auto\" style=\"max-width:420px;display:block;margin:0 auto\"><rect x=\"60\" y=\"84\" width=\"300\" height=\"22\" rx=\"4\" fill=\"#e5e7eb\" stroke=\"#334155\" stroke-width=\"2\"/><rect x=\"70\" y=\"52\" width=\"26\" height=\"26\" rx=\"5\" fill=\"#3b4ea8\" fill-opacity=\"0.35\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><rect x=\"70\" y=\"112\" width=\"26\" height=\"26\" rx=\"5\" fill=\"#d97706\" fill-opacity=\"0.35\" stroke=\"#d97706\" stroke-width=\"2\"/><rect x=\"106\" y=\"52\" width=\"26\" height=\"26\" rx=\"5\" fill=\"#3b4ea8\" fill-opacity=\"0.35\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><rect x=\"106\" y=\"112\" width=\"26\" height=\"26\" rx=\"5\" fill=\"#d97706\" fill-opacity=\"0.35\" stroke=\"#d97706\" stroke-width=\"2\"/><rect x=\"142\" y=\"52\" width=\"26\" height=\"26\" rx=\"5\" fill=\"#3b4ea8\" fill-opacity=\"0.35\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><rect x=\"142\" y=\"112\" width=\"26\" height=\"26\" rx=\"5\" fill=\"#fff\" fill-opacity=\"1\" stroke=\"#d97706\" stroke-width=\"2\"/><rect x=\"178\" y=\"52\" width=\"26\" height=\"26\" rx=\"5\" fill=\"#3b4ea8\" fill-opacity=\"0.35\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><rect x=\"178\" y=\"112\" width=\"26\" height=\"26\" rx=\"5\" fill=\"#fff\" fill-opacity=\"1\" stroke=\"#d97706\" stroke-width=\"2\"/><rect x=\"214\" y=\"52\" width=\"26\" height=\"26\" rx=\"5\" fill=\"#fff\" fill-opacity=\"1\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><rect x=\"214\" y=\"112\" width=\"26\" height=\"26\" rx=\"5\" fill=\"#fff\" fill-opacity=\"1\" stroke=\"#d97706\" stroke-width=\"2\"/><rect x=\"250\" y=\"52\" width=\"26\" height=\"26\" rx=\"5\" fill=\"#fff\" fill-opacity=\"1\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><rect x=\"250\" y=\"112\" width=\"26\" height=\"26\" rx=\"5\" fill=\"#fff\" fill-opacity=\"1\" stroke=\"#d97706\" stroke-width=\"2\"/><rect x=\"286\" y=\"52\" width=\"26\" height=\"26\" rx=\"5\" fill=\"#fff\" fill-opacity=\"1\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><rect x=\"286\" y=\"112\" width=\"26\" height=\"26\" rx=\"5\" fill=\"#fff\" fill-opacity=\"1\" stroke=\"#d97706\" stroke-width=\"2\"/><rect x=\"322\" y=\"52\" width=\"26\" height=\"26\" rx=\"5\" fill=\"#fff\" fill-opacity=\"1\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><rect x=\"322\" y=\"112\" width=\"26\" height=\"26\" rx=\"5\" fill=\"#fff\" fill-opacity=\"1\" stroke=\"#d97706\" stroke-width=\"2\"/><text x=\"210.0\" y=\"36.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">side A: 8 chairs</text><text x=\"210.0\" y=\"160.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">side B: 8 chairs</text><text x=\"210.0\" y=\"180.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4 on side A: 8·7·6·5     2 on side B: 8·7     the other 10: 10!</text></svg>"
+              }
+            },
+            {
+              "explain": "Two students want side B (orange): 8 chairs for the first, 7 for the second.",
+              "work": "\\(8\\times7=56\\)"
+            },
+            {
+              "explain": "The other \\(16-4-2=10\\) students can sit anywhere in the 10 chairs that are left (4 on side A, 6 on side B): \\(10!\\) arrangements.",
+              "work": "\\(10!=3\\,628\\,800\\)"
+            },
+            {
+              "explain": "Multiply (all three choices happen together).",
+              "work": "\\(1680\\times56\\times3\\,628\\,800=341\\,397\\,504\\,000\\)"
+            },
+            {
+              "explain": "In scientific notation.",
+              "work": "\\(\\approx3.4\\times10^{11}\\)"
+            },
+            {
+              "explain": "Why not the others: \\(16!\\) ignores the seating wishes; \\(8!\\times8!\\) seats only 16 'in two rows'; \\(4!\\times2!\\times10!\\) forgets that the students choose among 8 chairs.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Four students wish to sit on one particular side and two on the other side.",
+              "note": "Seat the restricted students first, then the rest."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Girraween High School 2020 Year 11 Yearly Examination Mathematics Extension 1",
+            "school": "Girraween High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "girraween2020y11-q10b1",
+          "type": "mc",
+          "stem": "In how many ways can 7 boys and 7 girls be arranged in a circle if there are no restrictions.",
+          "difficulty": "easy",
+          "options": [
+            "6 227 020 800",
+            "3 628 800",
+            "479 001 600",
+            "87 178 291 200"
+          ],
+          "answer": 0,
+          "hint": "Arrangements in a CIRCLE: fix one person's position (only relative positions matter). For \\(n\\) people the number is \\((n-1)!\\). Here \\(n=14\\).",
+          "steps": [
+            {
+              "explain": "Total people: \\(7+7=14\\).",
+              "work": "\\(n=14\\)"
+            },
+            {
+              "explain": "In a circle, rotations of the same arrangement are the same: fix one person to remove the rotations, then arrange the other \\(14-1=13\\) people.",
+              "work": "\\((14-1)!=13!\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 230\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><circle cx=\"150\" cy=\"115\" r=\"74\" fill=\"#f1f5f9\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><circle cx=\"150.0\" cy=\"37.0\" r=\"13\" fill=\"#3b4ea8\" fill-opacity=\".3\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"150.0\" y=\"41.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">B</text><circle cx=\"183.8\" cy=\"44.7\" r=\"13\" fill=\"#d97706\" fill-opacity=\".3\" stroke=\"#d97706\" stroke-width=\"2\"/><text x=\"183.8\" y=\"48.7\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">G</text><circle cx=\"211.0\" cy=\"66.4\" r=\"13\" fill=\"#3b4ea8\" fill-opacity=\".3\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"211.0\" y=\"70.4\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">B</text><circle cx=\"226.0\" cy=\"97.6\" r=\"13\" fill=\"#3b4ea8\" fill-opacity=\".3\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"226.0\" y=\"101.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">B</text><circle cx=\"226.0\" cy=\"132.4\" r=\"13\" fill=\"#d97706\" fill-opacity=\".3\" stroke=\"#d97706\" stroke-width=\"2\"/><text x=\"226.0\" y=\"136.4\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">G</text><circle cx=\"211.0\" cy=\"163.6\" r=\"13\" fill=\"#d97706\" fill-opacity=\".3\" stroke=\"#d97706\" stroke-width=\"2\"/><text x=\"211.0\" y=\"167.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">G</text><circle cx=\"183.8\" cy=\"185.3\" r=\"13\" fill=\"#3b4ea8\" fill-opacity=\".3\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"183.8\" y=\"189.3\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">B</text><circle cx=\"150.0\" cy=\"193.0\" r=\"13\" fill=\"#d97706\" fill-opacity=\".3\" stroke=\"#d97706\" stroke-width=\"2\"/><text x=\"150.0\" y=\"197.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">G</text><circle cx=\"116.2\" cy=\"185.3\" r=\"13\" fill=\"#d97706\" fill-opacity=\".3\" stroke=\"#d97706\" stroke-width=\"2\"/><text x=\"116.2\" y=\"189.3\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">G</text><circle cx=\"89.0\" cy=\"163.6\" r=\"13\" fill=\"#3b4ea8\" fill-opacity=\".3\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"89.0\" y=\"167.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">B</text><circle cx=\"74.0\" cy=\"132.4\" r=\"13\" fill=\"#3b4ea8\" fill-opacity=\".3\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"74.0\" y=\"136.4\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">B</text><circle cx=\"74.0\" cy=\"97.6\" r=\"13\" fill=\"#d97706\" fill-opacity=\".3\" stroke=\"#d97706\" stroke-width=\"2\"/><text x=\"74.0\" y=\"101.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">G</text><circle cx=\"89.0\" cy=\"66.4\" r=\"13\" fill=\"#3b4ea8\" fill-opacity=\".3\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"89.0\" y=\"70.4\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">B</text><circle cx=\"116.2\" cy=\"44.7\" r=\"13\" fill=\"#d97706\" fill-opacity=\".3\" stroke=\"#d97706\" stroke-width=\"2\"/><text x=\"116.2\" y=\"48.7\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">G</text><text x=\"150.0\" y=\"119.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">any order</text></svg>"
+              }
+            },
+            {
+              "explain": "Calculate.",
+              "work": "\\(13!=6\\,227\\,020\\,800\\)"
+            },
+            {
+              "explain": "Why not the others: \\(14!=87\\,178\\,291\\,200\\) counts rotations as different; \\(12!\\) and \\(6!\\,7!\\) belong to the other parts.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "there are no restrictions.",
+              "note": "Circle: (n − 1)!; here 13!."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Girraween High School 2020 Year 11 Yearly Examination Mathematics Extension 1",
+            "school": "Girraween High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "girraween2020y11-q10b2",
+          "type": "mc",
+          "stem": "In how many ways can 7 boys and 7 girls be arranged in a circle if boys and girls alternate.",
+          "difficulty": "medium",
+          "options": [
+            "3 628 800",
+            "6 227 020 800",
+            "479 001 600",
+            "35 481 600"
+          ],
+          "answer": 0,
+          "hint": "Fix one boy (this removes the rotations). The seats then alternate B G B G …: the other 6 boys go in the 6 remaining 'boy seats' (\\(6!\\)) and the 7 girls in the 7 'girl seats' (\\(7!\\)).",
+          "steps": [
+            {
+              "explain": "Fix one boy in a seat. The pattern B G B G … is now determined (circle with alternating colours).",
+              "work": "",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 230\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><circle cx=\"150\" cy=\"115\" r=\"74\" fill=\"#f1f5f9\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><circle cx=\"150.0\" cy=\"37.0\" r=\"13\" fill=\"#3b4ea8\" fill-opacity=\".3\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"150.0\" y=\"41.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">B</text><circle cx=\"183.8\" cy=\"44.7\" r=\"13\" fill=\"#d97706\" fill-opacity=\".3\" stroke=\"#d97706\" stroke-width=\"2\"/><text x=\"183.8\" y=\"48.7\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">G</text><circle cx=\"211.0\" cy=\"66.4\" r=\"13\" fill=\"#3b4ea8\" fill-opacity=\".3\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"211.0\" y=\"70.4\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">B</text><circle cx=\"226.0\" cy=\"97.6\" r=\"13\" fill=\"#d97706\" fill-opacity=\".3\" stroke=\"#d97706\" stroke-width=\"2\"/><text x=\"226.0\" y=\"101.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">G</text><circle cx=\"226.0\" cy=\"132.4\" r=\"13\" fill=\"#3b4ea8\" fill-opacity=\".3\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"226.0\" y=\"136.4\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">B</text><circle cx=\"211.0\" cy=\"163.6\" r=\"13\" fill=\"#d97706\" fill-opacity=\".3\" stroke=\"#d97706\" stroke-width=\"2\"/><text x=\"211.0\" y=\"167.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">G</text><circle cx=\"183.8\" cy=\"185.3\" r=\"13\" fill=\"#3b4ea8\" fill-opacity=\".3\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"183.8\" y=\"189.3\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">B</text><circle cx=\"150.0\" cy=\"193.0\" r=\"13\" fill=\"#d97706\" fill-opacity=\".3\" stroke=\"#d97706\" stroke-width=\"2\"/><text x=\"150.0\" y=\"197.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">G</text><circle cx=\"116.2\" cy=\"185.3\" r=\"13\" fill=\"#3b4ea8\" fill-opacity=\".3\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"116.2\" y=\"189.3\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">B</text><circle cx=\"89.0\" cy=\"163.6\" r=\"13\" fill=\"#d97706\" fill-opacity=\".3\" stroke=\"#d97706\" stroke-width=\"2\"/><text x=\"89.0\" y=\"167.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">G</text><circle cx=\"74.0\" cy=\"132.4\" r=\"13\" fill=\"#3b4ea8\" fill-opacity=\".3\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"74.0\" y=\"136.4\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">B</text><circle cx=\"74.0\" cy=\"97.6\" r=\"13\" fill=\"#d97706\" fill-opacity=\".3\" stroke=\"#d97706\" stroke-width=\"2\"/><text x=\"74.0\" y=\"101.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">G</text><circle cx=\"89.0\" cy=\"66.4\" r=\"13\" fill=\"#3b4ea8\" fill-opacity=\".3\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"89.0\" y=\"70.4\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">B</text><circle cx=\"116.2\" cy=\"44.7\" r=\"13\" fill=\"#d97706\" fill-opacity=\".3\" stroke=\"#d97706\" stroke-width=\"2\"/><text x=\"116.2\" y=\"48.7\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">G</text><text x=\"150.0\" y=\"119.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">alternate: B G B G …</text></svg>"
+              }
+            },
+            {
+              "explain": "The 6 remaining boys fill the 6 other boy seats.",
+              "work": "\\(6!=720\\)"
+            },
+            {
+              "explain": "The 7 girls fill the 7 girl seats (between the boys).",
+              "work": "\\(7!=5040\\)"
+            },
+            {
+              "explain": "Multiply (boys AND girls).",
+              "work": "\\(6!\\times7!=720\\times5040=3\\,628\\,800\\)"
+            },
+            {
+              "explain": "Why not the others: \\(13!\\) ignores the alternating condition; \\(12!\\) is another part; \\(7!\\times7!\\) would not remove the rotations.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "boys and girls alternate.",
+              "note": "Fix one boy: 6! × 7!."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Girraween High School 2020 Year 11 Yearly Examination Mathematics Extension 1",
+            "school": "Girraween High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "girraween2020y11-q10b3",
+          "type": "mc",
+          "stem": "In how many ways can 7 boys and 7 girls be arranged in a circle if two particular boys want to be together.",
+          "difficulty": "medium",
+          "options": [
+            "958 003 200",
+            "479 001 600",
+            "6 227 020 800",
+            "39 916 800"
+          ],
+          "answer": 0,
+          "hint": "Glue the two boys into ONE block. Then there are \\(14-2+1=13\\) objects in a circle: \\((13-1)!=12!\\) arrangements. The two boys can swap inside the block: \\(\\times2\\).",
+          "steps": [
+            {
+              "explain": "Treat the two boys as one block (red).",
+              "work": "",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 230\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><circle cx=\"150\" cy=\"115\" r=\"74\" fill=\"#f1f5f9\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><circle cx=\"150.0\" cy=\"37.0\" r=\"13\" fill=\"#3b4ea8\" fill-opacity=\".3\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"150.0\" y=\"41.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">B</text><circle cx=\"183.8\" cy=\"44.7\" r=\"13\" fill=\"#d97706\" fill-opacity=\".3\" stroke=\"#d97706\" stroke-width=\"2\"/><text x=\"183.8\" y=\"48.7\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">G</text><circle cx=\"211.0\" cy=\"66.4\" r=\"13\" fill=\"#3b4ea8\" fill-opacity=\".3\" stroke=\"#dc2626\" stroke-width=\"3.2\"/><text x=\"211.0\" y=\"70.4\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">B</text><circle cx=\"226.0\" cy=\"97.6\" r=\"13\" fill=\"#3b4ea8\" fill-opacity=\".3\" stroke=\"#dc2626\" stroke-width=\"3.2\"/><text x=\"226.0\" y=\"101.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">B</text><circle cx=\"226.0\" cy=\"132.4\" r=\"13\" fill=\"#d97706\" fill-opacity=\".3\" stroke=\"#d97706\" stroke-width=\"2\"/><text x=\"226.0\" y=\"136.4\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">G</text><circle cx=\"211.0\" cy=\"163.6\" r=\"13\" fill=\"#d97706\" fill-opacity=\".3\" stroke=\"#d97706\" stroke-width=\"2\"/><text x=\"211.0\" y=\"167.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">G</text><circle cx=\"183.8\" cy=\"185.3\" r=\"13\" fill=\"#3b4ea8\" fill-opacity=\".3\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"183.8\" y=\"189.3\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">B</text><circle cx=\"150.0\" cy=\"193.0\" r=\"13\" fill=\"#d97706\" fill-opacity=\".3\" stroke=\"#d97706\" stroke-width=\"2\"/><text x=\"150.0\" y=\"197.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">G</text><circle cx=\"116.2\" cy=\"185.3\" r=\"13\" fill=\"#d97706\" fill-opacity=\".3\" stroke=\"#d97706\" stroke-width=\"2\"/><text x=\"116.2\" y=\"189.3\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">G</text><circle cx=\"89.0\" cy=\"163.6\" r=\"13\" fill=\"#3b4ea8\" fill-opacity=\".3\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"89.0\" y=\"167.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">B</text><circle cx=\"74.0\" cy=\"132.4\" r=\"13\" fill=\"#d97706\" fill-opacity=\".3\" stroke=\"#d97706\" stroke-width=\"2\"/><text x=\"74.0\" y=\"136.4\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">G</text><circle cx=\"74.0\" cy=\"97.6\" r=\"13\" fill=\"#3b4ea8\" fill-opacity=\".3\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"74.0\" y=\"101.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">B</text><circle cx=\"89.0\" cy=\"66.4\" r=\"13\" fill=\"#d97706\" fill-opacity=\".3\" stroke=\"#d97706\" stroke-width=\"2\"/><text x=\"89.0\" y=\"70.4\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">G</text><circle cx=\"116.2\" cy=\"44.7\" r=\"13\" fill=\"#d97706\" fill-opacity=\".3\" stroke=\"#d97706\" stroke-width=\"2\"/><text x=\"116.2\" y=\"48.7\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">G</text><text x=\"150.0\" y=\"119.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">two boys together</text></svg>"
+              }
+            },
+            {
+              "explain": "13 objects in a circle: \\((13-1)!=12!\\) arrangements.",
+              "work": "\\(12!=479\\,001\\,600\\)"
+            },
+            {
+              "explain": "Inside the block the two boys can be in 2 orders.",
+              "work": "\\(\\times2!=2\\)"
+            },
+            {
+              "explain": "Multiply.",
+              "work": "\\(12!\\times2=958\\,003\\,200\\)"
+            },
+            {
+              "explain": "Why not the others: \\(12!\\) forgets the swap; \\(13!\\) is part (i); \\(11!\\) loses a factor.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "two particular boys want to be together.",
+              "note": "Glue them: 12! × 2."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Girraween High School 2020 Year 11 Yearly Examination Mathematics Extension 1",
+            "school": "Girraween High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "girraween2020y11-q10b4",
+          "type": "mc",
+          "stem": "In how many ways can 7 boys and 7 girls be arranged in a circle if a particular boy wants to be opposite to a particular girl.",
+          "difficulty": "medium",
+          "options": [
+            "479 001 600",
+            "958 003 200",
+            "6 227 020 800",
+            "39 916 800"
+          ],
+          "answer": 0,
+          "hint": "Fix the particular boy in a seat. The seat opposite him (7 seats round a table of 14) is then fixed for the particular girl. The other 12 people go in the remaining 12 seats in any order.",
+          "steps": [
+            {
+              "explain": "Fix the boy (removes rotations); the girl MUST be in the seat directly opposite (1 way).",
+              "work": "",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 230\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><circle cx=\"150\" cy=\"115\" r=\"74\" fill=\"#f1f5f9\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><circle cx=\"150.0\" cy=\"37.0\" r=\"13\" fill=\"#3b4ea8\" fill-opacity=\".3\" stroke=\"#dc2626\" stroke-width=\"3.2\"/><text x=\"150.0\" y=\"41.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">B</text><circle cx=\"183.8\" cy=\"44.7\" r=\"13\" fill=\"#d97706\" fill-opacity=\".3\" stroke=\"#d97706\" stroke-width=\"2\"/><text x=\"183.8\" y=\"48.7\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">G</text><circle cx=\"211.0\" cy=\"66.4\" r=\"13\" fill=\"#3b4ea8\" fill-opacity=\".3\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"211.0\" y=\"70.4\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">B</text><circle cx=\"226.0\" cy=\"97.6\" r=\"13\" fill=\"#d97706\" fill-opacity=\".3\" stroke=\"#d97706\" stroke-width=\"2\"/><text x=\"226.0\" y=\"101.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">G</text><circle cx=\"226.0\" cy=\"132.4\" r=\"13\" fill=\"#d97706\" fill-opacity=\".3\" stroke=\"#d97706\" stroke-width=\"2\"/><text x=\"226.0\" y=\"136.4\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">G</text><circle cx=\"211.0\" cy=\"163.6\" r=\"13\" fill=\"#3b4ea8\" fill-opacity=\".3\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"211.0\" y=\"167.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">B</text><circle cx=\"183.8\" cy=\"185.3\" r=\"13\" fill=\"#d97706\" fill-opacity=\".3\" stroke=\"#d97706\" stroke-width=\"2\"/><text x=\"183.8\" y=\"189.3\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">G</text><circle cx=\"150.0\" cy=\"193.0\" r=\"13\" fill=\"#3b4ea8\" fill-opacity=\".3\" stroke=\"#dc2626\" stroke-width=\"3.2\"/><text x=\"150.0\" y=\"197.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">B</text><circle cx=\"116.2\" cy=\"185.3\" r=\"13\" fill=\"#d97706\" fill-opacity=\".3\" stroke=\"#d97706\" stroke-width=\"2\"/><text x=\"116.2\" y=\"189.3\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">G</text><circle cx=\"89.0\" cy=\"163.6\" r=\"13\" fill=\"#d97706\" fill-opacity=\".3\" stroke=\"#d97706\" stroke-width=\"2\"/><text x=\"89.0\" y=\"167.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">G</text><circle cx=\"74.0\" cy=\"132.4\" r=\"13\" fill=\"#3b4ea8\" fill-opacity=\".3\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"74.0\" y=\"136.4\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">B</text><circle cx=\"74.0\" cy=\"97.6\" r=\"13\" fill=\"#3b4ea8\" fill-opacity=\".3\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"74.0\" y=\"101.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">B</text><circle cx=\"89.0\" cy=\"66.4\" r=\"13\" fill=\"#d97706\" fill-opacity=\".3\" stroke=\"#d97706\" stroke-width=\"2\"/><text x=\"89.0\" y=\"70.4\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">G</text><circle cx=\"116.2\" cy=\"44.7\" r=\"13\" fill=\"#d97706\" fill-opacity=\".3\" stroke=\"#d97706\" stroke-width=\"2\"/><text x=\"116.2\" y=\"48.7\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">G</text><line x1=\"150.0\" y1=\"37.0\" x2=\"150.0\" y2=\"193.0\" stroke=\"#dc2626\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-dasharray=\"5 3\"/><text x=\"150.0\" y=\"141.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">opposite</text></svg>"
+              }
+            },
+            {
+              "explain": "The other \\(14-2=12\\) people fill the other 12 seats.",
+              "work": "\\(12!=479\\,001\\,600\\)"
+            },
+            {
+              "explain": "Why not the others: \\(2\\times12!\\) swaps the pair (they have fixed seats); \\(13!\\) ignores the condition.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "a particular boy wants to be opposite to a particular girl.",
+              "note": "Fix the boy; the girl’s seat is forced; 12!."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Girraween High School 2020 Year 11 Yearly Examination Mathematics Extension 1",
+            "school": "Girraween High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "girraween2020y11-q10b5",
+          "type": "mc",
+          "stem": "In how many ways can 7 boys and 7 girls be arranged in a circle if two particular girls do not want to sit next to each other.",
+          "difficulty": "hard",
+          "options": [
+            "5 269 017 600",
+            "958 003 200",
+            "6 227 020 800",
+            "4 310 000 000"
+          ],
+          "answer": 0,
+          "hint": "Use the COMPLEMENT: (all arrangements) \\(-\\) (arrangements where the two girls ARE together). Together = glue them into a block (as in part iii).",
+          "steps": [
+            {
+              "explain": "All arrangements in a circle (part i).",
+              "work": "\\(13!=6\\,227\\,020\\,800\\)"
+            },
+            {
+              "explain": "Arrangements where the two girls ARE together (red adjacent seats): glue them as a block, \\(12!\\) and 2 orders.",
+              "work": "",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 230\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><circle cx=\"150\" cy=\"115\" r=\"74\" fill=\"#f1f5f9\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><circle cx=\"150.0\" cy=\"37.0\" r=\"13\" fill=\"#3b4ea8\" fill-opacity=\".3\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"150.0\" y=\"41.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">B</text><circle cx=\"183.8\" cy=\"44.7\" r=\"13\" fill=\"#d97706\" fill-opacity=\".3\" stroke=\"#d97706\" stroke-width=\"2\"/><text x=\"183.8\" y=\"48.7\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">G</text><circle cx=\"211.0\" cy=\"66.4\" r=\"13\" fill=\"#3b4ea8\" fill-opacity=\".3\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"211.0\" y=\"70.4\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">B</text><circle cx=\"226.0\" cy=\"97.6\" r=\"13\" fill=\"#d97706\" fill-opacity=\".3\" stroke=\"#dc2626\" stroke-width=\"3.2\"/><text x=\"226.0\" y=\"101.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">G</text><circle cx=\"226.0\" cy=\"132.4\" r=\"13\" fill=\"#d97706\" fill-opacity=\".3\" stroke=\"#dc2626\" stroke-width=\"3.2\"/><text x=\"226.0\" y=\"136.4\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">G</text><circle cx=\"211.0\" cy=\"163.6\" r=\"13\" fill=\"#3b4ea8\" fill-opacity=\".3\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"211.0\" y=\"167.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">B</text><circle cx=\"183.8\" cy=\"185.3\" r=\"13\" fill=\"#d97706\" fill-opacity=\".3\" stroke=\"#d97706\" stroke-width=\"2\"/><text x=\"183.8\" y=\"189.3\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">G</text><circle cx=\"150.0\" cy=\"193.0\" r=\"13\" fill=\"#3b4ea8\" fill-opacity=\".3\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"150.0\" y=\"197.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">B</text><circle cx=\"116.2\" cy=\"185.3\" r=\"13\" fill=\"#3b4ea8\" fill-opacity=\".3\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"116.2\" y=\"189.3\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">B</text><circle cx=\"89.0\" cy=\"163.6\" r=\"13\" fill=\"#d97706\" fill-opacity=\".3\" stroke=\"#d97706\" stroke-width=\"2\"/><text x=\"89.0\" y=\"167.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">G</text><circle cx=\"74.0\" cy=\"132.4\" r=\"13\" fill=\"#d97706\" fill-opacity=\".3\" stroke=\"#d97706\" stroke-width=\"2\"/><text x=\"74.0\" y=\"136.4\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">G</text><circle cx=\"74.0\" cy=\"97.6\" r=\"13\" fill=\"#3b4ea8\" fill-opacity=\".3\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"74.0\" y=\"101.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">B</text><circle cx=\"89.0\" cy=\"66.4\" r=\"13\" fill=\"#d97706\" fill-opacity=\".3\" stroke=\"#d97706\" stroke-width=\"2\"/><text x=\"89.0\" y=\"70.4\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">G</text><circle cx=\"116.2\" cy=\"44.7\" r=\"13\" fill=\"#3b4ea8\" fill-opacity=\".3\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"116.2\" y=\"48.7\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">B</text><text x=\"150.0\" y=\"119.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">two girls together</text></svg>"
+              }
+            },
+            {
+              "explain": "Count them.",
+              "work": "\\(12!\\times2=958\\,003\\,200\\)"
+            },
+            {
+              "explain": "Subtract.",
+              "work": "\\(13!-2\\times12!=6\\,227\\,020\\,800-958\\,003\\,200=5\\,269\\,017\\,600\\)"
+            },
+            {
+              "explain": "Why not the others: \\(958\\,003\\,200\\) counts the girls TOGETHER (the opposite); \\(13!\\) ignores the restriction.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "two particular girls do not want to sit next to each other.",
+              "note": "Complement: total − (together)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Girraween High School 2020 Year 11 Yearly Examination Mathematics Extension 1",
+            "school": "Girraween High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -1878,6 +2653,165 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "girraween2020y11-q9e1",
+          "type": "mc",
+          "stem": "How many arrangements of the letters of the word COOLANGATTA are there with no restrictions.",
+          "difficulty": "medium",
+          "options": [
+            "1 663 200",
+            "39 916 800",
+            "6 652 800",
+            "277 200"
+          ],
+          "answer": 0,
+          "hint": "Arranging letters when some are IDENTICAL: \\(\\dfrac{n!}{p!\\,q!\\,r!}\\) (divide by the factorial of each repeated letter's count). Count the letters first.",
+          "steps": [
+            {
+              "explain": "COOLANGATTA has 11 letters. Repeated letters: O twice, A three times, T twice (C, L, N, G once each).",
+              "work": "\\(n=11;\\quad O\\times2,\\ A\\times3,\\ T\\times2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 110\" width=\"100%\" height=\"auto\" style=\"max-width:420px;display:block;margin:0 auto\"><rect x=\"20\" y=\"26\" width=\"30\" height=\"34\" rx=\"6\" fill=\"#fff\" fill-opacity=\".22\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><text x=\"35.0\" y=\"50.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">C</text><rect x=\"54\" y=\"26\" width=\"30\" height=\"34\" rx=\"6\" fill=\"#d97706\" fill-opacity=\".22\" stroke=\"#d97706\" stroke-width=\"2.2\"/><text x=\"69.0\" y=\"50.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">O</text><rect x=\"88\" y=\"26\" width=\"30\" height=\"34\" rx=\"6\" fill=\"#d97706\" fill-opacity=\".22\" stroke=\"#d97706\" stroke-width=\"2.2\"/><text x=\"103.0\" y=\"50.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">O</text><rect x=\"122\" y=\"26\" width=\"30\" height=\"34\" rx=\"6\" fill=\"#fff\" fill-opacity=\".22\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><text x=\"137.0\" y=\"50.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">L</text><rect x=\"156\" y=\"26\" width=\"30\" height=\"34\" rx=\"6\" fill=\"#3b4ea8\" fill-opacity=\".22\" stroke=\"#3b4ea8\" stroke-width=\"2.2\"/><text x=\"171.0\" y=\"50.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">A</text><rect x=\"190\" y=\"26\" width=\"30\" height=\"34\" rx=\"6\" fill=\"#fff\" fill-opacity=\".22\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><text x=\"205.0\" y=\"50.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">N</text><rect x=\"224\" y=\"26\" width=\"30\" height=\"34\" rx=\"6\" fill=\"#fff\" fill-opacity=\".22\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><text x=\"239.0\" y=\"50.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">G</text><rect x=\"258\" y=\"26\" width=\"30\" height=\"34\" rx=\"6\" fill=\"#3b4ea8\" fill-opacity=\".22\" stroke=\"#3b4ea8\" stroke-width=\"2.2\"/><text x=\"273.0\" y=\"50.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">A</text><rect x=\"292\" y=\"26\" width=\"30\" height=\"34\" rx=\"6\" fill=\"#047857\" fill-opacity=\".22\" stroke=\"#047857\" stroke-width=\"2.2\"/><text x=\"307.0\" y=\"50.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">T</text><rect x=\"326\" y=\"26\" width=\"30\" height=\"34\" rx=\"6\" fill=\"#047857\" fill-opacity=\".22\" stroke=\"#047857\" stroke-width=\"2.2\"/><text x=\"341.0\" y=\"50.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">T</text><rect x=\"360\" y=\"26\" width=\"30\" height=\"34\" rx=\"6\" fill=\"#3b4ea8\" fill-opacity=\".22\" stroke=\"#3b4ea8\" stroke-width=\"2.2\"/><text x=\"375.0\" y=\"50.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">A</text><text x=\"210.0\" y=\"16.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">11 letters:  O × 2,  A × 3,  T × 2</text></svg>"
+              }
+            },
+            {
+              "explain": "If all 11 were different there would be \\(11!\\) arrangements. Swapping identical letters gives the SAME word, so divide by the number of ways to rearrange each repeated group.",
+              "work": "\\(\\dfrac{11!}{2!\\times3!\\times2!}\\)"
+            },
+            {
+              "explain": "Compute: \\(11!=39\\,916\\,800\\) and \\(2!\\times3!\\times2!=2\\times6\\times2=24\\).",
+              "work": "\\(\\dfrac{39\\,916\\,800}{24}=1\\,663\\,200\\)"
+            },
+            {
+              "explain": "Why not the others: \\(11!\\) ignores the repeats; 6 652 800 and 277 200 divide by the wrong amount.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "How many arrangements of the letters of the word COOLANGATTA",
+              "note": "Identical letters: n! ÷ (p! q! r!)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Girraween High School 2020 Year 11 Yearly Examination Mathematics Extension 1",
+            "school": "Girraween High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "girraween2020y11-q9e2",
+          "type": "mc",
+          "stem": "How many arrangements of the letters of the word COOLANGATTA are there with all T's together.",
+          "difficulty": "medium",
+          "options": [
+            "302 400",
+            "1 663 200",
+            "3 628 800",
+            "151 200"
+          ],
+          "answer": 0,
+          "hint": "Glue the two T's into ONE block 'TT'. The block counts as a single letter, so you arrange \\(11-2+1=10\\) 'letters', with O twice and A three times.",
+          "steps": [
+            {
+              "explain": "Treat 'TT' as ONE object (red box). Objects: TT, C, O, O, L, A, N, G, A, A: 10 objects.",
+              "work": "\\(10\\ \\text{objects:}\\ O\\times2,\\ A\\times3\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 110\" width=\"100%\" height=\"auto\" style=\"max-width:420px;display:block;margin:0 auto\"><rect x=\"20\" y=\"26\" width=\"30\" height=\"34\" rx=\"6\" fill=\"#fff\" fill-opacity=\".22\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><text x=\"35.0\" y=\"50.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">C</text><rect x=\"54\" y=\"26\" width=\"30\" height=\"34\" rx=\"6\" fill=\"#d97706\" fill-opacity=\".22\" stroke=\"#d97706\" stroke-width=\"2.2\"/><text x=\"69.0\" y=\"50.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">O</text><rect x=\"88\" y=\"26\" width=\"30\" height=\"34\" rx=\"6\" fill=\"#d97706\" fill-opacity=\".22\" stroke=\"#d97706\" stroke-width=\"2.2\"/><text x=\"103.0\" y=\"50.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">O</text><rect x=\"122\" y=\"26\" width=\"30\" height=\"34\" rx=\"6\" fill=\"#fff\" fill-opacity=\".22\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><text x=\"137.0\" y=\"50.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">L</text><rect x=\"156\" y=\"26\" width=\"30\" height=\"34\" rx=\"6\" fill=\"#3b4ea8\" fill-opacity=\".22\" stroke=\"#3b4ea8\" stroke-width=\"2.2\"/><text x=\"171.0\" y=\"50.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">A</text><rect x=\"190\" y=\"26\" width=\"30\" height=\"34\" rx=\"6\" fill=\"#fff\" fill-opacity=\".22\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><text x=\"205.0\" y=\"50.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">N</text><rect x=\"224\" y=\"26\" width=\"30\" height=\"34\" rx=\"6\" fill=\"#fff\" fill-opacity=\".22\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><text x=\"239.0\" y=\"50.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">G</text><rect x=\"258\" y=\"26\" width=\"30\" height=\"34\" rx=\"6\" fill=\"#3b4ea8\" fill-opacity=\".22\" stroke=\"#3b4ea8\" stroke-width=\"2.2\"/><text x=\"273.0\" y=\"50.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">A</text><rect x=\"292\" y=\"26\" width=\"30\" height=\"34\" rx=\"6\" fill=\"#047857\" fill-opacity=\".22\" stroke=\"#047857\" stroke-width=\"2.2\"/><text x=\"307.0\" y=\"50.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">T</text><rect x=\"326\" y=\"26\" width=\"30\" height=\"34\" rx=\"6\" fill=\"#047857\" fill-opacity=\".22\" stroke=\"#047857\" stroke-width=\"2.2\"/><text x=\"341.0\" y=\"50.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">T</text><rect x=\"360\" y=\"26\" width=\"30\" height=\"34\" rx=\"6\" fill=\"#3b4ea8\" fill-opacity=\".22\" stroke=\"#3b4ea8\" stroke-width=\"2.2\"/><text x=\"375.0\" y=\"50.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">A</text><text x=\"210.0\" y=\"16.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">11 letters:  O × 2,  A × 3,  T × 2</text><rect x=\"289\" y=\"20\" width=\"70\" height=\"46\" rx=\"8\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"3\"/><text x=\"326.0\" y=\"84.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">TT glued together</text></svg>"
+              }
+            },
+            {
+              "explain": "Arrange them: \\(\\dfrac{10!}{2!\\times3!}\\) (divide by the repeats of O and A; the TT block is a single object so no repeat).",
+              "work": "\\(\\dfrac{10!}{2!\\times3!}=\\dfrac{3\\,628\\,800}{12}\\)"
+            },
+            {
+              "explain": "Calculate.",
+              "work": "\\(=302\\,400\\)"
+            },
+            {
+              "explain": "Why not the others: \\(1\\,663\\,200\\) is part (i); \\(3\\,628\\,800\\) forgets to divide; \\(151\\,200\\) divides by the T's twice.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "all T's together.",
+              "note": "Glue TT into one block; 10 objects."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Girraween High School 2020 Year 11 Yearly Examination Mathematics Extension 1",
+            "school": "Girraween High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "girraween2020y11-q9e3",
+          "type": "mc",
+          "stem": "How many arrangements of the letters of the word COOLANGATTA are there with no A's together.",
+          "difficulty": "hard",
+          "options": [
+            "846 720",
+            "1 663 200",
+            "10 080",
+            "302 400"
+          ],
+          "answer": 0,
+          "hint": "'No A's together' means the three A's are in SEPARATE gaps. Arrange the OTHER letters first, then choose 3 of the gaps for the A's (the A's are identical, so just choose the gaps).",
+          "steps": [
+            {
+              "explain": "Remove the three A's: 8 letters left: C, O, O, L, N, G, T, T. Arrange them (O twice, T twice).",
+              "work": "\\(\\dfrac{8!}{2!\\times2!}=\\dfrac{40\\,320}{4}=10\\,080\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 110\" width=\"100%\" height=\"auto\" style=\"max-width:420px;display:block;margin:0 auto\"><rect x=\"20\" y=\"26\" width=\"30\" height=\"34\" rx=\"6\" fill=\"#fff\" fill-opacity=\".22\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><text x=\"35.0\" y=\"50.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">C</text><rect x=\"54\" y=\"26\" width=\"30\" height=\"34\" rx=\"6\" fill=\"#d97706\" fill-opacity=\".22\" stroke=\"#d97706\" stroke-width=\"2.2\"/><text x=\"69.0\" y=\"50.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">O</text><rect x=\"88\" y=\"26\" width=\"30\" height=\"34\" rx=\"6\" fill=\"#d97706\" fill-opacity=\".22\" stroke=\"#d97706\" stroke-width=\"2.2\"/><text x=\"103.0\" y=\"50.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">O</text><rect x=\"122\" y=\"26\" width=\"30\" height=\"34\" rx=\"6\" fill=\"#fff\" fill-opacity=\".22\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><text x=\"137.0\" y=\"50.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">L</text><rect x=\"156\" y=\"26\" width=\"30\" height=\"34\" rx=\"6\" fill=\"#3b4ea8\" fill-opacity=\".22\" stroke=\"#3b4ea8\" stroke-width=\"2.2\"/><text x=\"171.0\" y=\"50.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">A</text><rect x=\"190\" y=\"26\" width=\"30\" height=\"34\" rx=\"6\" fill=\"#fff\" fill-opacity=\".22\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><text x=\"205.0\" y=\"50.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">N</text><rect x=\"224\" y=\"26\" width=\"30\" height=\"34\" rx=\"6\" fill=\"#fff\" fill-opacity=\".22\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><text x=\"239.0\" y=\"50.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">G</text><rect x=\"258\" y=\"26\" width=\"30\" height=\"34\" rx=\"6\" fill=\"#3b4ea8\" fill-opacity=\".22\" stroke=\"#3b4ea8\" stroke-width=\"2.2\"/><text x=\"273.0\" y=\"50.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">A</text><rect x=\"292\" y=\"26\" width=\"30\" height=\"34\" rx=\"6\" fill=\"#047857\" fill-opacity=\".22\" stroke=\"#047857\" stroke-width=\"2.2\"/><text x=\"307.0\" y=\"50.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">T</text><rect x=\"326\" y=\"26\" width=\"30\" height=\"34\" rx=\"6\" fill=\"#047857\" fill-opacity=\".22\" stroke=\"#047857\" stroke-width=\"2.2\"/><text x=\"341.0\" y=\"50.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">T</text><rect x=\"360\" y=\"26\" width=\"30\" height=\"34\" rx=\"6\" fill=\"#3b4ea8\" fill-opacity=\".22\" stroke=\"#3b4ea8\" stroke-width=\"2.2\"/><text x=\"375.0\" y=\"50.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">A</text><text x=\"210.0\" y=\"16.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">11 letters:  O × 2,  A × 3,  T × 2</text><text x=\"210.0\" y=\"92.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">arrange the 8 other letters first, then slot the three A’s into gaps</text></svg>"
+              }
+            },
+            {
+              "explain": "8 letters create \\(8+1=9\\) gaps (one before, one after, and 7 between). Choose 3 different gaps for the A's: they are identical so order does not matter.",
+              "work": "\\({}^{9}C_{3}=\\dfrac{9\\times8\\times7}{3\\times2\\times1}=84\\)"
+            },
+            {
+              "explain": "Multiply (arrangement of the 8 letters AND placement of the A's).",
+              "work": "\\(10\\,080\\times84=846\\,720\\)"
+            },
+            {
+              "explain": "Why not the others: \\(1\\,663\\,200\\) is all arrangements (part i); \\(10\\,080\\) stops after the first step; \\(302\\,400\\) is part (ii).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "no A's together.",
+              "note": "Arrange the others, then choose gaps for the A’s."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Girraween High School 2020 Year 11 Yearly Examination Mathematics Extension 1",
+            "school": "Girraween High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -2309,6 +3243,274 @@
           "meta": {
             "source": "Blacktown Boys High School 2020 Year 11 Mathematics Extension 1 Yearly Examination (Assessment Task 2)",
             "school": "Blacktown Boys High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "girraween2020y11-q9d1",
+          "type": "mc",
+          "stem": "In how many ways can a committee of 4 girls and 5 boys be appointed from a group consisting of 10 girls and 9 boys?",
+          "difficulty": "medium",
+          "options": [
+            "26 460",
+            "27 720",
+            "11 700",
+            "3 780"
+          ],
+          "answer": 0,
+          "hint": "A committee has NO order, so use combinations. Choose the girls and the boys SEPARATELY (\\(\\times\\)): \\(\\binom{10}{4}\\times\\binom{9}{5}\\).",
+          "steps": [
+            {
+              "explain": "Choose 4 girls from 10 (order does not matter).",
+              "work": "\\({}^{10}C_{4}=\\dfrac{10\\times9\\times8\\times7}{4\\times3\\times2\\times1}=210\\)"
+            },
+            {
+              "explain": "Choose 5 boys from 9.",
+              "work": "\\({}^{9}C_{5}=\\dfrac{9\\times8\\times7\\times6\\times5}{5\\times4\\times3\\times2\\times1}=126\\)"
+            },
+            {
+              "explain": "The committee needs BOTH: multiply.",
+              "work": "\\(210\\times126=26\\,460\\)"
+            },
+            {
+              "explain": "Why not the others: 27 720 and 11 700 add or mix up counts; 3780 uses \\({}^{10}C_{3}\\) etc.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "In how many ways can a committee of 4 girls and 5 boys be appointed",
+              "note": "Combinations: ¹⁰C₄ × ⁹C₅ (choose girls and boys separately)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Girraween High School 2020 Year 11 Yearly Examination Mathematics Extension 1",
+            "school": "Girraween High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "girraween2020y11-q9d2",
+          "type": "mc",
+          "stem": "What will be the number of ways if the girl Daisy refuses to serve in a committee in which the boy Noah is a member?",
+          "difficulty": "hard",
+          "options": [
+            "20 580",
+            "5 880",
+            "26 460",
+            "32 340"
+          ],
+          "answer": 0,
+          "hint": "Use the COMPLEMENT: (all committees) \\(-\\) (committees containing BOTH Daisy and Noah). If both are on the committee, choose the other 3 girls from 9 and the other 4 boys from 8.",
+          "steps": [
+            {
+              "explain": "Total committees (part i): \\(26\\,460\\).",
+              "work": "\\({}^{10}C_{4}\\times{}^{9}C_{5}=26\\,460\\)"
+            },
+            {
+              "explain": "'Daisy refuses to serve WITH Noah' means the forbidden committees contain BOTH. Count them: Daisy is in (1 way), so choose 3 more girls from the other 9; Noah is in, so choose 4 more boys from the other 8.",
+              "work": "\\({}^{9}C_{3}\\times{}^{8}C_{4}=84\\times70=5880\\)"
+            },
+            {
+              "explain": "Subtract the forbidden committees from the total.",
+              "work": "\\(26\\,460-5880=20\\,580\\)"
+            },
+            {
+              "explain": "Why not the others: 5880 counts ONLY the forbidden committees; \\(26\\,460\\) ignores the restriction; \\(32\\,340\\) ADDS instead of subtracting.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "if the girl Daisy refuses to serve in a committee in which the boy Noah is a member",
+              "note": "Total − (committees containing both)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Girraween High School 2020 Year 11 Yearly Examination Mathematics Extension 1",
+            "school": "Girraween High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "girraween2020y11-q10a1",
+          "type": "mc",
+          "stem": "A committee of 4 people is to be chosen from a group of 6 men and 5 women. At least one man and one woman must be on the committee. Find the number of ways of forming the committee.",
+          "difficulty": "medium",
+          "options": [
+            "310",
+            "330",
+            "300",
+            "150"
+          ],
+          "answer": 0,
+          "hint": "'At least one of each' means the committee is 1M+3W, 2M+2W or 3M+1W. Count each case with combinations (\\(\\times\\) for men and women) and ADD the cases.",
+          "steps": [
+            {
+              "explain": "List the possible make-ups of 4 people with at least one man and one woman (4 men or 4 women are not allowed).",
+              "work": "\\(1M+3W,\\qquad2M+2W,\\qquad3M+1W\\)"
+            },
+            {
+              "explain": "Case 1M+3W.",
+              "work": "\\({}^{6}C_{1}\\times{}^{5}C_{3}=6\\times10=60\\)"
+            },
+            {
+              "explain": "Case 2M+2W.",
+              "work": "\\({}^{6}C_{2}\\times{}^{5}C_{2}=15\\times10=150\\)"
+            },
+            {
+              "explain": "Case 3M+1W.",
+              "work": "\\({}^{6}C_{3}\\times{}^{5}C_{1}=20\\times5=100\\)"
+            },
+            {
+              "explain": "The cases cannot happen together: ADD.",
+              "work": "\\(60+150+100=310\\)"
+            },
+            {
+              "explain": "Check by complement: all committees \\({}^{11}C_{4}=330\\) minus all-men \\({}^{6}C_{4}=15\\) minus all-women \\({}^{5}C_{4}=5\\) gives \\(330-15-5=310\\) ✓. Why not the others: 330 forgets the restriction; 300 and 150 miss cases.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the number of ways of forming the committee.",
+              "note": "Add the cases 1M3W, 2M2W, 3M1W."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Girraween High School 2020 Year 11 Yearly Examination Mathematics Extension 1",
+            "school": "Girraween High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "girraween2020y11-q10d",
+          "type": "mc",
+          "stem": "A course has seven elective topics, and students must complete exactly three of them in order to pass the course. If 200 students passed the course, find the least number of students to be chosen so that they all completed the same set of electives.",
+          "difficulty": "hard",
+          "options": [
+            "6",
+            "5",
+            "35",
+            "29"
+          ],
+          "answer": 0,
+          "hint": "Pigeonhole principle: with \\(n\\) objects in \\(k\\) boxes, some box contains AT LEAST \\(\\left\\lceil\\dfrac{n}{k}\\right\\rceil\\) objects. The boxes are the possible SETS of 3 electives: \\({}^{7}C_{3}\\). The 'pigeons' are the 200 students.",
+          "steps": [
+            {
+              "explain": "Number of different sets of 3 electives from 7 (order does not matter): these are the 'boxes'.",
+              "work": "\\({}^{7}C_{3}=\\dfrac{7\\times6\\times5}{3\\times2\\times1}=35\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 150\" width=\"100%\" height=\"auto\" style=\"max-width:420px;display:block;margin:0 auto\"><text x=\"210.0\" y=\"18.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">7 electives, choose 3:   C(7,3) = 35 possible sets (the \"boxes\")</text><rect x=\"24\" y=\"34\" width=\"26\" height=\"20\" rx=\"4\" fill=\"#3b4ea8\" fill-opacity=\".2\" stroke=\"#3b4ea8\" stroke-width=\"1.4\"/><rect x=\"56\" y=\"34\" width=\"26\" height=\"20\" rx=\"4\" fill=\"#3b4ea8\" fill-opacity=\".2\" stroke=\"#3b4ea8\" stroke-width=\"1.4\"/><rect x=\"88\" y=\"34\" width=\"26\" height=\"20\" rx=\"4\" fill=\"#3b4ea8\" fill-opacity=\".2\" stroke=\"#3b4ea8\" stroke-width=\"1.4\"/><rect x=\"120\" y=\"34\" width=\"26\" height=\"20\" rx=\"4\" fill=\"#3b4ea8\" fill-opacity=\".2\" stroke=\"#3b4ea8\" stroke-width=\"1.4\"/><rect x=\"152\" y=\"34\" width=\"26\" height=\"20\" rx=\"4\" fill=\"#3b4ea8\" fill-opacity=\".2\" stroke=\"#3b4ea8\" stroke-width=\"1.4\"/><rect x=\"184\" y=\"34\" width=\"26\" height=\"20\" rx=\"4\" fill=\"#3b4ea8\" fill-opacity=\".2\" stroke=\"#3b4ea8\" stroke-width=\"1.4\"/><rect x=\"216\" y=\"34\" width=\"26\" height=\"20\" rx=\"4\" fill=\"#3b4ea8\" fill-opacity=\".2\" stroke=\"#3b4ea8\" stroke-width=\"1.4\"/><rect x=\"248\" y=\"34\" width=\"26\" height=\"20\" rx=\"4\" fill=\"#3b4ea8\" fill-opacity=\".2\" stroke=\"#3b4ea8\" stroke-width=\"1.4\"/><rect x=\"280\" y=\"34\" width=\"26\" height=\"20\" rx=\"4\" fill=\"#3b4ea8\" fill-opacity=\".2\" stroke=\"#3b4ea8\" stroke-width=\"1.4\"/><rect x=\"312\" y=\"34\" width=\"26\" height=\"20\" rx=\"4\" fill=\"#3b4ea8\" fill-opacity=\".2\" stroke=\"#3b4ea8\" stroke-width=\"1.4\"/><rect x=\"344\" y=\"34\" width=\"26\" height=\"20\" rx=\"4\" fill=\"#3b4ea8\" fill-opacity=\".2\" stroke=\"#3b4ea8\" stroke-width=\"1.4\"/><rect x=\"376\" y=\"34\" width=\"26\" height=\"20\" rx=\"4\" fill=\"#3b4ea8\" fill-opacity=\".2\" stroke=\"#3b4ea8\" stroke-width=\"1.4\"/><rect x=\"24\" y=\"60\" width=\"26\" height=\"20\" rx=\"4\" fill=\"#3b4ea8\" fill-opacity=\".2\" stroke=\"#3b4ea8\" stroke-width=\"1.4\"/><rect x=\"56\" y=\"60\" width=\"26\" height=\"20\" rx=\"4\" fill=\"#3b4ea8\" fill-opacity=\".2\" stroke=\"#3b4ea8\" stroke-width=\"1.4\"/><rect x=\"88\" y=\"60\" width=\"26\" height=\"20\" rx=\"4\" fill=\"#3b4ea8\" fill-opacity=\".2\" stroke=\"#3b4ea8\" stroke-width=\"1.4\"/><rect x=\"120\" y=\"60\" width=\"26\" height=\"20\" rx=\"4\" fill=\"#3b4ea8\" fill-opacity=\".2\" stroke=\"#3b4ea8\" stroke-width=\"1.4\"/><rect x=\"152\" y=\"60\" width=\"26\" height=\"20\" rx=\"4\" fill=\"#3b4ea8\" fill-opacity=\".2\" stroke=\"#3b4ea8\" stroke-width=\"1.4\"/><rect x=\"184\" y=\"60\" width=\"26\" height=\"20\" rx=\"4\" fill=\"#3b4ea8\" fill-opacity=\".2\" stroke=\"#3b4ea8\" stroke-width=\"1.4\"/><rect x=\"216\" y=\"60\" width=\"26\" height=\"20\" rx=\"4\" fill=\"#3b4ea8\" fill-opacity=\".2\" stroke=\"#3b4ea8\" stroke-width=\"1.4\"/><rect x=\"248\" y=\"60\" width=\"26\" height=\"20\" rx=\"4\" fill=\"#3b4ea8\" fill-opacity=\".2\" stroke=\"#3b4ea8\" stroke-width=\"1.4\"/><rect x=\"280\" y=\"60\" width=\"26\" height=\"20\" rx=\"4\" fill=\"#3b4ea8\" fill-opacity=\".2\" stroke=\"#3b4ea8\" stroke-width=\"1.4\"/><rect x=\"312\" y=\"60\" width=\"26\" height=\"20\" rx=\"4\" fill=\"#3b4ea8\" fill-opacity=\".2\" stroke=\"#3b4ea8\" stroke-width=\"1.4\"/><rect x=\"344\" y=\"60\" width=\"26\" height=\"20\" rx=\"4\" fill=\"#3b4ea8\" fill-opacity=\".2\" stroke=\"#3b4ea8\" stroke-width=\"1.4\"/><rect x=\"376\" y=\"60\" width=\"26\" height=\"20\" rx=\"4\" fill=\"#3b4ea8\" fill-opacity=\".2\" stroke=\"#3b4ea8\" stroke-width=\"1.4\"/><rect x=\"24\" y=\"86\" width=\"26\" height=\"20\" rx=\"4\" fill=\"#3b4ea8\" fill-opacity=\".2\" stroke=\"#3b4ea8\" stroke-width=\"1.4\"/><rect x=\"56\" y=\"86\" width=\"26\" height=\"20\" rx=\"4\" fill=\"#3b4ea8\" fill-opacity=\".2\" stroke=\"#3b4ea8\" stroke-width=\"1.4\"/><rect x=\"88\" y=\"86\" width=\"26\" height=\"20\" rx=\"4\" fill=\"#3b4ea8\" fill-opacity=\".2\" stroke=\"#3b4ea8\" stroke-width=\"1.4\"/><rect x=\"120\" y=\"86\" width=\"26\" height=\"20\" rx=\"4\" fill=\"#3b4ea8\" fill-opacity=\".2\" stroke=\"#3b4ea8\" stroke-width=\"1.4\"/><rect x=\"152\" y=\"86\" width=\"26\" height=\"20\" rx=\"4\" fill=\"#3b4ea8\" fill-opacity=\".2\" stroke=\"#3b4ea8\" stroke-width=\"1.4\"/><rect x=\"184\" y=\"86\" width=\"26\" height=\"20\" rx=\"4\" fill=\"#3b4ea8\" fill-opacity=\".2\" stroke=\"#3b4ea8\" stroke-width=\"1.4\"/><rect x=\"216\" y=\"86\" width=\"26\" height=\"20\" rx=\"4\" fill=\"#3b4ea8\" fill-opacity=\".2\" stroke=\"#3b4ea8\" stroke-width=\"1.4\"/><rect x=\"248\" y=\"86\" width=\"26\" height=\"20\" rx=\"4\" fill=\"#3b4ea8\" fill-opacity=\".2\" stroke=\"#3b4ea8\" stroke-width=\"1.4\"/><rect x=\"280\" y=\"86\" width=\"26\" height=\"20\" rx=\"4\" fill=\"#3b4ea8\" fill-opacity=\".2\" stroke=\"#3b4ea8\" stroke-width=\"1.4\"/><rect x=\"312\" y=\"86\" width=\"26\" height=\"20\" rx=\"4\" fill=\"#3b4ea8\" fill-opacity=\".2\" stroke=\"#3b4ea8\" stroke-width=\"1.4\"/><rect x=\"344\" y=\"86\" width=\"26\" height=\"20\" rx=\"4\" fill=\"#3b4ea8\" fill-opacity=\".2\" stroke=\"#3b4ea8\" stroke-width=\"1.4\"/><text x=\"210.0\" y=\"122.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">200 students (the \"pigeons\"):  200 = 35 × 5 + 25</text><text x=\"210.0\" y=\"142.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">→ some box holds at least 5 + 1 = 6</text></svg>"
+              }
+            },
+            {
+              "explain": "200 students are shared among 35 sets. Divide.",
+              "work": "\\(\\dfrac{200}{35}=5\\dfrac{5}{7}\\approx5.71\\)"
+            },
+            {
+              "explain": "If every set had at most 5 students there would be only \\(35\\times5=175<200\\) students. So some set has MORE than 5: at least 6 students.",
+              "work": "\\(35\\times5=175<200\\ \\Rightarrow\\ \\text{some set has }\\geq6\\)"
+            },
+            {
+              "explain": "At least 6 students must have completed the same set of electives.",
+              "work": "\\(6\\)"
+            },
+            {
+              "explain": "Why not the others: 5 is the average rounded DOWN (need to round up); 35 is the number of sets; 29 is \\(200-171\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "find the least number of students to be chosen so that they all completed the same set of electives.",
+              "note": "Pigeonhole: ⌈200 ÷ 35⌉ = 6."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Girraween High School 2020 Year 11 Yearly Examination Mathematics Extension 1",
+            "school": "Girraween High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "girraween2020y11-q10e",
+          "type": "mc",
+          "stem": "How many of the numbers must be chosen from the set \\(A=\\{1,2,3,4,5,6,7,8,9,10,11,12\\}\\) to guarantee that two of the chosen numbers add to 11?",
+          "difficulty": "hard",
+          "options": [
+            "8",
+            "6",
+            "7",
+            "12"
+          ],
+          "answer": 0,
+          "hint": "Pigeonhole: make 'boxes' so that two numbers from the SAME box add to 11, and count the WORST case. The pairs \\(\\{1,10\\},\\{2,9\\},\\{3,8\\},\\{4,7\\},\\{5,6\\}\\) add to 11. But 11 and 12 have NO partner in \\(A\\).",
+          "steps": [
+            {
+              "explain": "List the pairs adding to 11 (green). Check every number: \\(11\\) needs 0 and \\(12\\) needs \\(-1\\), which are not in \\(A\\), so 11 and 12 are 'singles' (red).",
+              "work": "\\(\\{1,10\\},\\{2,9\\},\\{3,8\\},\\{4,7\\},\\{5,6\\},\\{11\\},\\{12\\}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 150\" width=\"100%\" height=\"auto\" style=\"max-width:420px;display:block;margin:0 auto\"><text x=\"210.0\" y=\"16.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">pairs adding to 11 (each pair is a \"box\"):</text><rect x=\"30\" y=\"26\" width=\"64\" height=\"34\" rx=\"8\" fill=\"#047857\" fill-opacity=\".2\" stroke=\"#047857\" stroke-width=\"2.4\"/><text x=\"62.0\" y=\"48.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1  10</text><rect x=\"104\" y=\"26\" width=\"64\" height=\"34\" rx=\"8\" fill=\"#047857\" fill-opacity=\".2\" stroke=\"#047857\" stroke-width=\"2.4\"/><text x=\"136.0\" y=\"48.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2  9</text><rect x=\"178\" y=\"26\" width=\"64\" height=\"34\" rx=\"8\" fill=\"#047857\" fill-opacity=\".2\" stroke=\"#047857\" stroke-width=\"2.4\"/><text x=\"210.0\" y=\"48.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3  8</text><rect x=\"252\" y=\"26\" width=\"64\" height=\"34\" rx=\"8\" fill=\"#047857\" fill-opacity=\".2\" stroke=\"#047857\" stroke-width=\"2.4\"/><text x=\"284.0\" y=\"48.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4  7</text><rect x=\"326\" y=\"26\" width=\"64\" height=\"34\" rx=\"8\" fill=\"#047857\" fill-opacity=\".2\" stroke=\"#047857\" stroke-width=\"2.4\"/><text x=\"358.0\" y=\"48.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">5  6</text><rect x=\"30\" y=\"74\" width=\"48\" height=\"34\" rx=\"8\" fill=\"#dc2626\" fill-opacity=\".2\" stroke=\"#dc2626\" stroke-width=\"2.4\"/><text x=\"54.0\" y=\"96.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">11</text><rect x=\"90\" y=\"74\" width=\"48\" height=\"34\" rx=\"8\" fill=\"#dc2626\" fill-opacity=\".2\" stroke=\"#dc2626\" stroke-width=\"2.4\"/><text x=\"114.0\" y=\"96.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">12</text><text x=\"280.0\" y=\"90.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">11 and 12 pair with nothing</text><text x=\"210.0\" y=\"132.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">5 pairs + 2 singles = 7 boxes → 8 numbers force a pair</text></svg>"
+              }
+            },
+            {
+              "explain": "Worst case: choose NO complete pair. You can take at most ONE number from each pair, and both singles: \\(5+2=7\\) numbers with no two adding to 11 (for example \\(1,2,3,4,5,11,12\\)).",
+              "work": "\\(5+2=7\\ \\text{numbers can avoid a sum of 11}\\)"
+            },
+            {
+              "explain": "Choose one more number: it must belong to one of the 5 pairs, whose partner is already chosen. So \\(7+1=8\\) numbers GUARANTEE two with sum 11.",
+              "work": "\\(7+1=8\\)"
+            },
+            {
+              "explain": "Why not the others: 6 is NOT enough (e.g. \\(1,2,3,4,11,12\\)); 7 is not enough (e.g. \\(1,2,3,4,5,11,12\\)); 12 is more than needed.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "to guarantee that two of the chosen numbers add to 11?",
+              "note": "Count the worst case: 5 pairs + singles 11, 12."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Girraween High School 2020 Year 11 Yearly Examination Mathematics Extension 1",
+            "school": "Girraween High School",
             "grade": "11",
             "origin": "teacher"
           }
@@ -2925,6 +4127,120 @@
           "meta": {
             "source": "Caringbah High School 2020 Preliminary Task 3 Mathematics Extension 1",
             "school": "Caringbah High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "girraween2020y11-q10a2",
+          "type": "mc",
+          "stem": "A committee of 4 people is to be chosen from a group of 6 men and 5 women. At least one man and one woman must be on the committee. What is the probability that a committee chosen at random will consist of a majority of women?",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{6}{31}\\)",
+            "\\(\\dfrac{13}{66}\\)",
+            "\\(\\dfrac{15}{31}\\)",
+            "\\(\\dfrac{1}{2}\\)"
+          ],
+          "answer": 0,
+          "hint": "Probability \\(=\\dfrac{\\text{favourable committees}}{\\text{all possible committees}}\\). The possible committees are the 310 that meet the rule (part i). A MAJORITY of women in 4 people means 3 women (3W+1M); 2W+2M is a tie.",
+          "steps": [
+            {
+              "explain": "Sample space: the 310 valid committees (at least one man and one woman).",
+              "work": "\\(n(S)=310\\)"
+            },
+            {
+              "explain": "Majority of women: more women than men. With 4 people and at least one man, that is 3 women and 1 man.",
+              "work": "\\({}^{6}C_{1}\\times{}^{5}C_{3}=6\\times10=60\\)"
+            },
+            {
+              "explain": "Probability.",
+              "work": "\\(P=\\dfrac{60}{310}=\\dfrac{6}{31}\\)"
+            },
+            {
+              "explain": "Why not the others: \\(\\dfrac{13}{66}\\) uses all 330 committees (and includes 4 women); \\(\\dfrac{15}{31}\\) is the probability of 2W+2M (150 out of 310); \\(\\dfrac{1}{2}\\) is a guess.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "What is the probability that a committee chosen at random will consist of a majority of women?",
+              "note": "Majority of 4 = 3 women; divide by 310."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Girraween High School 2020 Year 11 Yearly Examination Mathematics Extension 1",
+            "school": "Girraween High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "girraween2020y11-q10c",
+          "type": "mc",
+          "stem": "The numbers 1,2,3,4,5,6,7,8 are arranged in a circle. What is the probability that at least three odd numbers are together?",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\dfrac{16}{35}\\)",
+            "\\(\\dfrac{8}{35}\\)",
+            "\\(\\dfrac{4}{35}\\)",
+            "\\(\\dfrac{3}{7}\\)"
+          ],
+          "answer": 0,
+          "hint": "Total arrangements in a circle: \\(7!\\). Count the favourable ones in two cases: exactly 3 odd numbers together (the 4th odd NOT adjacent), and all 4 odd numbers together.",
+          "steps": [
+            {
+              "explain": "Total circular arrangements of 8 numbers: \\((8-1)!=7!=5040\\). The 4 odd numbers (1,3,5,7, orange) and 4 even numbers (blue).",
+              "work": "\\(n(S)=7!=5040\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 230\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><circle cx=\"150\" cy=\"115\" r=\"74\" fill=\"#f1f5f9\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><circle cx=\"150.0\" cy=\"37.0\" r=\"14\" fill=\"#d97706\" fill-opacity=\".3\" stroke=\"#d97706\" stroke-width=\"2\"/><text x=\"150.0\" y=\"42.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><circle cx=\"205.2\" cy=\"59.8\" r=\"14\" fill=\"#3b4ea8\" fill-opacity=\".3\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"205.2\" y=\"64.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><circle cx=\"228.0\" cy=\"115.0\" r=\"14\" fill=\"#d97706\" fill-opacity=\".3\" stroke=\"#d97706\" stroke-width=\"2\"/><text x=\"228.0\" y=\"120.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3</text><circle cx=\"205.2\" cy=\"170.2\" r=\"14\" fill=\"#d97706\" fill-opacity=\".3\" stroke=\"#d97706\" stroke-width=\"2\"/><text x=\"205.2\" y=\"175.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">5</text><circle cx=\"150.0\" cy=\"193.0\" r=\"14\" fill=\"#3b4ea8\" fill-opacity=\".3\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"150.0\" y=\"198.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4</text><circle cx=\"94.8\" cy=\"170.2\" r=\"14\" fill=\"#3b4ea8\" fill-opacity=\".3\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"94.8\" y=\"175.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">6</text><circle cx=\"72.0\" cy=\"115.0\" r=\"14\" fill=\"#d97706\" fill-opacity=\".3\" stroke=\"#d97706\" stroke-width=\"2\"/><text x=\"72.0\" y=\"120.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">7</text><circle cx=\"94.8\" cy=\"59.8\" r=\"14\" fill=\"#3b4ea8\" fill-opacity=\".3\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"94.8\" y=\"64.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">8</text></svg>"
+              }
+            },
+            {
+              "explain": "Case A: ALL 4 odd numbers together (block of 4): block + 4 evens = 5 objects in a circle: \\(4!\\) ways; the odd numbers inside the block: \\(4!\\) ways.",
+              "work": "\\(4!\\times4!=24\\times24=576\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 230\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><circle cx=\"150\" cy=\"115\" r=\"74\" fill=\"#f1f5f9\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><circle cx=\"150.0\" cy=\"37.0\" r=\"14\" fill=\"#d97706\" fill-opacity=\".3\" stroke=\"#dc2626\" stroke-width=\"3.4\"/><text x=\"150.0\" y=\"42.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><circle cx=\"205.2\" cy=\"59.8\" r=\"14\" fill=\"#d97706\" fill-opacity=\".3\" stroke=\"#dc2626\" stroke-width=\"3.4\"/><text x=\"205.2\" y=\"64.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3</text><circle cx=\"228.0\" cy=\"115.0\" r=\"14\" fill=\"#d97706\" fill-opacity=\".3\" stroke=\"#dc2626\" stroke-width=\"3.4\"/><text x=\"228.0\" y=\"120.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">5</text><circle cx=\"205.2\" cy=\"170.2\" r=\"14\" fill=\"#d97706\" fill-opacity=\".3\" stroke=\"#dc2626\" stroke-width=\"3.4\"/><text x=\"205.2\" y=\"175.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">7</text><circle cx=\"150.0\" cy=\"193.0\" r=\"14\" fill=\"#3b4ea8\" fill-opacity=\".3\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"150.0\" y=\"198.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><circle cx=\"94.8\" cy=\"170.2\" r=\"14\" fill=\"#3b4ea8\" fill-opacity=\".3\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"94.8\" y=\"175.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4</text><circle cx=\"72.0\" cy=\"115.0\" r=\"14\" fill=\"#3b4ea8\" fill-opacity=\".3\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"72.0\" y=\"120.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">6</text><circle cx=\"94.8\" cy=\"59.8\" r=\"14\" fill=\"#3b4ea8\" fill-opacity=\".3\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"94.8\" y=\"64.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">8</text><text x=\"150.0\" y=\"119.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4 odd numbers together</text></svg>"
+              }
+            },
+            {
+              "explain": "Case B: EXACTLY 3 odd together and the 4th odd apart. Arrange the 4 evens in a circle: \\(3!=6\\). This makes 4 gaps. Choose which 3 odd numbers form the block: \\({}^{4}C_{3}=4\\); order inside the block \\(3!=6\\). Place the block in one gap and the single odd number in a DIFFERENT gap: \\({}^{4}P_{2}=12\\).",
+              "work": "\\(3!\\times{}^{4}C_{3}\\times3!\\times{}^{4}P_{2}=6\\times4\\times6\\times12=1728\\)"
+            },
+            {
+              "explain": "Total favourable (cases are separate): \\(576+1728=2304\\).",
+              "work": "\\(2304\\)"
+            },
+            {
+              "explain": "Probability.",
+              "work": "\\(P=\\dfrac{2304}{5040}=\\dfrac{16}{35}\\)"
+            },
+            {
+              "explain": "Why not the others: \\(\\dfrac{8}{35}\\) and \\(\\dfrac{4}{35}\\) count only one case; \\(\\dfrac{3}{7}\\) is close but not equal (\\(\\dfrac{3}{7}=\\dfrac{15}{35}\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "What is the probability that at least three odd numbers are together?",
+              "note": "Count \"exactly 3 together\" and \"all 4 together\" separately."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Girraween High School 2020 Year 11 Yearly Examination Mathematics Extension 1",
+            "school": "Girraween High School",
             "grade": "11",
             "origin": "teacher"
           }
