@@ -4167,6 +4167,52 @@
           ],
           "timeLimit": 60,
           "xp": 1
+        },
+        {
+          "id": "khs22-y7-t4a-q19",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write down the coordinates of the points labelled \\(D, F, G, A\\) in the Cartesian plane diagram shown.",
+          "options": [
+            "\\(D(-1, -1), \\; F(-2, 3), \\; G(0, 2), \\; A(3, 2)\\)",
+            "\\(D(-1, -1), \\; F(3, -2), \\; G(2, 0), \\; A(2, 3)\\)",
+            "\\(D(-1, 1), \\; F(-2, 3), \\; G(0, 2), \\; A(3, 2)\\)",
+            "\\(D(-1, -1), \\; F(-2, 3), \\; G(0, 2), \\; A(2, 3)\\)"
+          ],
+          "answer": 0,
+          "hint": "Always read the horizontal \\(x\\)-coordinate FIRST, then the vertical \\(y\\)-coordinate SECOND: \\((x, y)\\)! Notice \\(G\\) lies on the \\(y\\)-axis so its \\(x\\)-coordinate is \\(0\\)!",
+          "keyPoints": [
+            {
+              "text": "D, F, G, A",
+              "note": "Read (x, y): D(−1,−1), F(−2,3), G(0,2), A(3,2)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Read \\(D\\) (red): \\(1\\) unit left of the origin (\\(x = -1\\)) and \\(1\\) unit down (\\(y = -1\\)) → \\(D(-1, -1)\\).",
+              "work": "\\(D = (-1, -1)\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 280 286\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"280\" height=\"286\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><line x1=\"36\" y1=\"28\" x2=\"36\" y2=\"236\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"36\" y1=\"236\" x2=\"244\" y2=\"236\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"62\" y1=\"28\" x2=\"62\" y2=\"236\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"36\" y1=\"210\" x2=\"244\" y2=\"210\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"88\" y1=\"28\" x2=\"88\" y2=\"236\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"36\" y1=\"184\" x2=\"244\" y2=\"184\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"114\" y1=\"28\" x2=\"114\" y2=\"236\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"36\" y1=\"158\" x2=\"244\" y2=\"158\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"140\" y1=\"28\" x2=\"140\" y2=\"236\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"36\" y1=\"132\" x2=\"244\" y2=\"132\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"166\" y1=\"28\" x2=\"166\" y2=\"236\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"36\" y1=\"106\" x2=\"244\" y2=\"106\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"192\" y1=\"28\" x2=\"192\" y2=\"236\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"36\" y1=\"80\" x2=\"244\" y2=\"80\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"218\" y1=\"28\" x2=\"218\" y2=\"236\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"36\" y1=\"54\" x2=\"244\" y2=\"54\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"244\" y1=\"28\" x2=\"244\" y2=\"236\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"36\" y1=\"28\" x2=\"244\" y2=\"28\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"28.200000000000003\" y1=\"132\" x2=\"251.8\" y2=\"132\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"140\" y1=\"20.200000000000003\" x2=\"140\" y2=\"243.8\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"257\" y=\"136\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"12\">x</text><text x=\"147\" y=\"22.900000000000006\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"12\">y</text><text x=\"36\" y=\"145\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"9\" fill=\"#475569\">−4</text><text x=\"134\" y=\"239\" text-anchor=\"end\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"9\" fill=\"#475569\">−4</text><text x=\"62\" y=\"145\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"9\" fill=\"#475569\">−3</text><text x=\"134\" y=\"213\" text-anchor=\"end\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"9\" fill=\"#475569\">−3</text><text x=\"88\" y=\"145\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"9\" fill=\"#475569\">−2</text><text x=\"134\" y=\"187\" text-anchor=\"end\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"9\" fill=\"#475569\">−2</text><text x=\"114\" y=\"145\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"9\" fill=\"#475569\">−1</text><text x=\"134\" y=\"161\" text-anchor=\"end\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"9\" fill=\"#475569\">−1</text><text x=\"166\" y=\"145\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"9\" fill=\"#475569\">1</text><text x=\"134\" y=\"109\" text-anchor=\"end\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"9\" fill=\"#475569\">1</text><text x=\"192\" y=\"145\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"9\" fill=\"#475569\">2</text><text x=\"134\" y=\"83\" text-anchor=\"end\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"9\" fill=\"#475569\">2</text><text x=\"218\" y=\"145\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"9\" fill=\"#475569\">3</text><text x=\"134\" y=\"57\" text-anchor=\"end\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"9\" fill=\"#475569\">3</text><text x=\"244\" y=\"145\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"9\" fill=\"#475569\">4</text><text x=\"134\" y=\"31\" text-anchor=\"end\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"9\" fill=\"#475569\">4</text><polygon points=\"62,28 88,54 140,80 218,80 244,132 218,106 218,210 179,210 192,158 140,158 114,210 101,210 114,158 88,106 56.8,113.8 36,93 69.8,54 51.60000000000001,41\" fill=\"#f8fafc\" fill-opacity=\"0.7\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/><line x1=\"114\" y1=\"158\" x2=\"114\" y2=\"132\" stroke=\"#dc2626\" stroke-width=\"1.4\" stroke-dasharray=\"3,2\"/><line x1=\"114\" y1=\"158\" x2=\"140\" y2=\"158\" stroke=\"#dc2626\" stroke-width=\"1.4\" stroke-dasharray=\"3,2\"/><circle cx=\"114\" cy=\"158\" r=\"4\" fill=\"#dc2626\"/><text x=\"100\" y=\"170\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"12.5\" font-weight=\"700\" fill=\"#dc2626\">D</text><line x1=\"88\" y1=\"54\" x2=\"88\" y2=\"132\" stroke=\"#2563eb\" stroke-width=\"1.4\" stroke-dasharray=\"3,2\"/><line x1=\"88\" y1=\"54\" x2=\"140\" y2=\"54\" stroke=\"#2563eb\" stroke-width=\"1.4\" stroke-dasharray=\"3,2\"/><circle cx=\"88\" cy=\"54\" r=\"4\" fill=\"#2563eb\"/><text x=\"98\" y=\"46\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"12.5\" font-weight=\"700\" fill=\"#2563eb\">F</text><line x1=\"140\" y1=\"80\" x2=\"140\" y2=\"132\" stroke=\"#15803d\" stroke-width=\"1.4\" stroke-dasharray=\"3,2\"/><line x1=\"140\" y1=\"80\" x2=\"140\" y2=\"80\" stroke=\"#15803d\" stroke-width=\"1.4\" stroke-dasharray=\"3,2\"/><circle cx=\"140\" cy=\"80\" r=\"4\" fill=\"#15803d\"/><text x=\"150\" y=\"72\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"12.5\" font-weight=\"700\" fill=\"#15803d\">G</text><line x1=\"218\" y1=\"80\" x2=\"218\" y2=\"132\" stroke=\"#7c3aed\" stroke-width=\"1.4\" stroke-dasharray=\"3,2\"/><line x1=\"218\" y1=\"80\" x2=\"140\" y2=\"80\" stroke=\"#7c3aed\" stroke-width=\"1.4\" stroke-dasharray=\"3,2\"/><circle cx=\"218\" cy=\"80\" r=\"4\" fill=\"#7c3aed\"/><text x=\"228\" y=\"72\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"12.5\" font-weight=\"700\" fill=\"#7c3aed\">A</text><text x=\"140\" y=\"279\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#0369a1\">D(−1, −1), F(−2, 3), G(0, 2), A(3, 2)</text></svg>"
+              }
+            },
+            {
+              "explain": "Read \\(F\\) (blue): \\(2\\) units left (\\(x = -2\\)) and \\(3\\) units up (\\(y = 3\\)) → \\(F(-2, 3)\\).",
+              "work": "\\(F = (-2, 3)\\)"
+            },
+            {
+              "explain": "Read \\(G\\) (green) on the \\(y\\)-axis (\\(x = 0, y = 2\\)) → \\(G(0, 2)\\), and \\(A\\) (purple) at \\(x = 3, y = 2\\) → \\(A(3, 2)\\).",
+              "work": "\\(G = (0, 2), \\quad A = (3, 2)\\)"
+            },
+            {
+              "explain": "Therefore, the coordinates are \\(D(-1, -1), F(-2, 3), G(0, 2), A(3, 2)\\).",
+              "work": "\\(D(-1, -1), \\; F(-2, 3), \\; G(0, 2), \\; A(3, 2)\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 280 260\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"280\" height=\"260\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><line x1=\"36\" y1=\"28\" x2=\"36\" y2=\"236\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"36\" y1=\"236\" x2=\"244\" y2=\"236\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"62\" y1=\"28\" x2=\"62\" y2=\"236\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"36\" y1=\"210\" x2=\"244\" y2=\"210\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"88\" y1=\"28\" x2=\"88\" y2=\"236\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"36\" y1=\"184\" x2=\"244\" y2=\"184\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"114\" y1=\"28\" x2=\"114\" y2=\"236\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"36\" y1=\"158\" x2=\"244\" y2=\"158\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"140\" y1=\"28\" x2=\"140\" y2=\"236\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"36\" y1=\"132\" x2=\"244\" y2=\"132\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"166\" y1=\"28\" x2=\"166\" y2=\"236\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"36\" y1=\"106\" x2=\"244\" y2=\"106\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"192\" y1=\"28\" x2=\"192\" y2=\"236\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"36\" y1=\"80\" x2=\"244\" y2=\"80\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"218\" y1=\"28\" x2=\"218\" y2=\"236\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"36\" y1=\"54\" x2=\"244\" y2=\"54\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"244\" y1=\"28\" x2=\"244\" y2=\"236\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"36\" y1=\"28\" x2=\"244\" y2=\"28\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"28.200000000000003\" y1=\"132\" x2=\"251.8\" y2=\"132\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"140\" y1=\"20.200000000000003\" x2=\"140\" y2=\"243.8\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"257\" y=\"136\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"12\">x</text><text x=\"147\" y=\"22.900000000000006\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"12\">y</text><text x=\"36\" y=\"145\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"9\" fill=\"#475569\">−4</text><text x=\"134\" y=\"239\" text-anchor=\"end\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"9\" fill=\"#475569\">−4</text><text x=\"62\" y=\"145\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"9\" fill=\"#475569\">−3</text><text x=\"134\" y=\"213\" text-anchor=\"end\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"9\" fill=\"#475569\">−3</text><text x=\"88\" y=\"145\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"9\" fill=\"#475569\">−2</text><text x=\"134\" y=\"187\" text-anchor=\"end\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"9\" fill=\"#475569\">−2</text><text x=\"114\" y=\"145\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"9\" fill=\"#475569\">−1</text><text x=\"134\" y=\"161\" text-anchor=\"end\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"9\" fill=\"#475569\">−1</text><text x=\"166\" y=\"145\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"9\" fill=\"#475569\">1</text><text x=\"134\" y=\"109\" text-anchor=\"end\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"9\" fill=\"#475569\">1</text><text x=\"192\" y=\"145\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"9\" fill=\"#475569\">2</text><text x=\"134\" y=\"83\" text-anchor=\"end\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"9\" fill=\"#475569\">2</text><text x=\"218\" y=\"145\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"9\" fill=\"#475569\">3</text><text x=\"134\" y=\"57\" text-anchor=\"end\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"9\" fill=\"#475569\">3</text><text x=\"244\" y=\"145\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"9\" fill=\"#475569\">4</text><text x=\"134\" y=\"31\" text-anchor=\"end\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"9\" fill=\"#475569\">4</text><polygon points=\"62,28 88,54 140,80 218,80 244,132 218,106 218,210 179,210 192,158 140,158 114,210 101,210 114,158 88,106 56.8,113.8 36,93 69.8,54 51.60000000000001,41\" fill=\"#f8fafc\" fill-opacity=\"0.7\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/><circle cx=\"114\" cy=\"158\" r=\"4\" fill=\"#0f172a\"/><text x=\"100\" y=\"170\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"12.5\" font-weight=\"700\" fill=\"#0f172a\">D</text><circle cx=\"88\" cy=\"54\" r=\"4\" fill=\"#0f172a\"/><text x=\"98\" y=\"46\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"12.5\" font-weight=\"700\" fill=\"#0f172a\">F</text><circle cx=\"140\" cy=\"80\" r=\"4\" fill=\"#0f172a\"/><text x=\"150\" y=\"72\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"12.5\" font-weight=\"700\" fill=\"#0f172a\">G</text><circle cx=\"218\" cy=\"80\" r=\"4\" fill=\"#0f172a\"/><text x=\"228\" y=\"72\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"12.5\" font-weight=\"700\" fill=\"#0f172a\">A</text></svg>"
+          }
         }
       ]
     },
@@ -4241,6 +4287,89 @@
             {
               "explain": "Because the gradient is negative (\\(-3\\)), the line slopes downwards from left to right through \\((0, 2)\\).",
               "work": "\\(\\text{Answer: } y = -3x + 2\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs22-y7-t4a-q22a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Complete the table of values for \\(y = 2x - 3\\) at \\(x = -1, \\; 0, \\; 1, \\; 2\\). What are the corresponding \\(y\\) values?",
+          "options": [
+            "\\(-5, \\; -3, \\; -1, \\; 1\\)",
+            "\\(-1, \\; -3, \\; -1, \\; 1\\)",
+            "\\(-5, \\; -3, \\; 1, \\; 3\\)",
+            "\\(-5, \\; 3, \\; 1, \\; -1\\)"
+          ],
+          "answer": 0,
+          "hint": "Substitute each \\(x\\) into \\(y = 2x - 3\\) one by one, starting with \\(x = -1 \\implies y = 2(-1) - 3 = -5\\) (notice \\(y\\) increases by \\(+2\\) each step)!",
+          "keyPoints": [
+            {
+              "text": "y = 2x - 3",
+              "note": "x = −1,0,1,2 gives y = −5,−3,−1,1."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Substitute \\(x = -1\\): \\(y = 2(-1) - 3 = -2 - 3 = -5\\).",
+              "work": "\\(x = -1 \\implies y = -5\\)"
+            },
+            {
+              "explain": "Substitute \\(x = 0\\): \\(y = 2(0) - 3 = -3\\).",
+              "work": "\\(x = 0 \\implies y = -3\\)"
+            },
+            {
+              "explain": "Substitute \\(x = 1\\) and \\(x = 2\\): \\(2(1) - 3 = -1\\) and \\(2(2) - 3 = 1\\).",
+              "work": "\\(x = 1 \\implies y = -1; \\quad x = 2 \\implies y = 1\\)"
+            },
+            {
+              "explain": "Therefore, the completed \\(y\\) values are \\(-5, -3, -1, 1\\).",
+              "work": "\\(-5, \\; -3, \\; -1, \\; 1\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs22-y7-t4a-q22b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Using the four points \\((-1, -5), (0, -3), (1, -1), (2, 1)\\) for the linear relationship \\(y = 2x - 3\\), which statement correctly describes its graph?",
+          "options": [
+            "A straight line crossing the \\(y\\)-axis at \\((0, -3)\\) and rising \\(2\\) units for every \\(1\\) unit right.",
+            "A straight line crossing the \\(y\\)-axis at \\((0, 2)\\) and falling \\(3\\) units for every \\(1\\) unit right.",
+            "A straight line crossing the \\(y\\)-axis at \\((0, 3)\\) and rising \\(2\\) units for every \\(1\\) unit right.",
+            "A horizontal line passing through \\(y = -3\\)."
+          ],
+          "answer": 0,
+          "hint": "In \\(y = mx + b\\), \\(b = -3\\) is the \\(y\\)-intercept \\((0, -3)\\) and \\(m = +2\\) means the line rises \\(2\\) units for every \\(1\\) unit right!",
+          "keyPoints": [
+            {
+              "text": "y = 2x - 3",
+              "note": "Straight line with y-intercept (0, −3) and gradient +2."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Plot the four points \\((-1, -5), (0, -3), (1, -1), (2, 1)\\) and join them with a straight line.",
+              "work": "\\(y = 2x - 3\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 270 266\" width=\"65%\" height=\"auto\" style=\"max-width:351px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"270\" height=\"266\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><line x1=\"35\" y1=\"26\" x2=\"35\" y2=\"226\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"35\" y1=\"226\" x2=\"235\" y2=\"226\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"55\" y1=\"26\" x2=\"55\" y2=\"226\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"35\" y1=\"206\" x2=\"235\" y2=\"206\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"75\" y1=\"26\" x2=\"75\" y2=\"226\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"35\" y1=\"186\" x2=\"235\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"95\" y1=\"26\" x2=\"95\" y2=\"226\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"35\" y1=\"166\" x2=\"235\" y2=\"166\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"115\" y1=\"26\" x2=\"115\" y2=\"226\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"35\" y1=\"146\" x2=\"235\" y2=\"146\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"135\" y1=\"26\" x2=\"135\" y2=\"226\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"35\" y1=\"126\" x2=\"235\" y2=\"126\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"155\" y1=\"26\" x2=\"155\" y2=\"226\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"35\" y1=\"106\" x2=\"235\" y2=\"106\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"175\" y1=\"26\" x2=\"175\" y2=\"226\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"35\" y1=\"86\" x2=\"235\" y2=\"86\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"195\" y1=\"26\" x2=\"195\" y2=\"226\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"35\" y1=\"66\" x2=\"235\" y2=\"66\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"215\" y1=\"26\" x2=\"215\" y2=\"226\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"35\" y1=\"46\" x2=\"235\" y2=\"46\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"235\" y1=\"26\" x2=\"235\" y2=\"226\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"35\" y1=\"26\" x2=\"235\" y2=\"26\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"29\" y1=\"126\" x2=\"241\" y2=\"126\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"135\" y1=\"20\" x2=\"135\" y2=\"232\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"245\" y=\"130\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"11.5\">x</text><text x=\"142\" y=\"23\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"11.5\">y</text><text x=\"55\" y=\"139\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"9\" fill=\"#475569\">−4</text><text x=\"129\" y=\"209\" text-anchor=\"end\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"9\" fill=\"#475569\">−4</text><text x=\"95\" y=\"139\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"9\" fill=\"#475569\">−2</text><text x=\"129\" y=\"169\" text-anchor=\"end\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"9\" fill=\"#475569\">−2</text><text x=\"175\" y=\"139\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"9\" fill=\"#475569\">2</text><text x=\"129\" y=\"89\" text-anchor=\"end\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"9\" fill=\"#475569\">2</text><text x=\"215\" y=\"139\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"9\" fill=\"#475569\">4</text><text x=\"129\" y=\"49\" text-anchor=\"end\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"9\" fill=\"#475569\">4</text><line x1=\"115\" y1=\"226\" x2=\"215\" y2=\"26\" stroke=\"#2563eb\" stroke-width=\"2.4\"/><circle cx=\"115\" cy=\"226\" r=\"4\" fill=\"#dc2626\" stroke=\"#ffffff\" stroke-width=\"1.2\"/><circle cx=\"135\" cy=\"186\" r=\"4\" fill=\"#dc2626\" stroke=\"#ffffff\" stroke-width=\"1.2\"/><circle cx=\"155\" cy=\"146\" r=\"4\" fill=\"#dc2626\" stroke=\"#ffffff\" stroke-width=\"1.2\"/><circle cx=\"175\" cy=\"106\" r=\"4\" fill=\"#dc2626\" stroke=\"#ffffff\" stroke-width=\"1.2\"/><rect x=\"172\" y=\"54\" width=\"66\" height=\"19\" rx=\"4\" fill=\"#ffffff\" fill-opacity=\"0.92\"/><text x=\"205\" y=\"68\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"12\" fill=\"#1d4ed8\"><tspan font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\">y</tspan> = 2<tspan font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\">x</tspan> − 3</text><text x=\"135\" y=\"258\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">y-intercept (0, −3), gradient +2</text></svg>"
+              }
+            },
+            {
+              "explain": "Read the \\(y\\)-intercept where \\(x = 0\\): \\((0, -3)\\).",
+              "work": "\\(y\\text{-intercept} = (0, -3)\\)"
+            },
+            {
+              "explain": "Check the slope between consecutive points: every \\(+1\\) in \\(x\\) increases \\(y\\) by \\(+2\\) (gradient \\(m = 2\\)).",
+              "work": "\\(m = \\dfrac{-1 - (-3)}{1 - 0} = 2\\)"
+            },
+            {
+              "explain": "Therefore, the graph is a straight line crossing the \\(y\\)-axis at \\((0, -3)\\) and rising \\(2\\) units for every \\(1\\) unit right.",
+              "work": "\\(\\text{y-intercept } (0, -3), \\text{ gradient } 2\\)"
             }
           ],
           "timeLimit": 60,
@@ -4896,6 +5025,132 @@
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 460 170\" width=\"100%\" role=\"img\" aria-label=\"Table of x values 1, 2, 3, 4 and corresponding y values 4.5, 5, 5.5, 6\"><rect width=\"460\" height=\"170\" rx=\"12\" fill=\"#fff\"/><rect x=\"30\" y=\"25\" width=\"400\" height=\"120\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"2\"/><path d=\"M30 85 H430 M110 25 V145 M190 25 V145 M270 25 V145 M350 25 V145\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"70\" y=\"65\" text-anchor=\"middle\" font-size=\"18\" fill=\"#334155\">x</text><text x=\"150\" y=\"65\" text-anchor=\"middle\" font-size=\"18\" fill=\"#334155\">1</text><text x=\"230\" y=\"65\" text-anchor=\"middle\" font-size=\"18\" fill=\"#334155\">2</text><text x=\"310\" y=\"65\" text-anchor=\"middle\" font-size=\"18\" fill=\"#334155\">3</text><text x=\"390\" y=\"65\" text-anchor=\"middle\" font-size=\"18\" fill=\"#334155\">4</text><text x=\"70\" y=\"123\" text-anchor=\"middle\" font-size=\"18\" fill=\"#334155\">y</text><text x=\"150\" y=\"123\" text-anchor=\"middle\" font-size=\"18\" fill=\"#334155\">4.5</text><text x=\"230\" y=\"123\" text-anchor=\"middle\" font-size=\"18\" fill=\"#334155\">5</text><text x=\"310\" y=\"123\" text-anchor=\"middle\" font-size=\"18\" fill=\"#334155\">5.5</text><text x=\"390\" y=\"123\" text-anchor=\"middle\" font-size=\"18\" fill=\"#334155\">6</text></svg>"
           }
+        },
+        {
+          "id": "khs22-y7-t4a-q23a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "In a restaurant, chairs are placed around tables aligned end to end as shown. With \\(T\\) representing the number of tables and \\(C\\) representing the number of chairs, what are the values of \\(C\\) for \\(T = 1, 2, 3, 4\\)?",
+          "options": [
+            "\\(4, \\; 6, \\; 8, \\; 10\\)",
+            "\\(4, \\; 8, \\; 12, \\; 16\\)",
+            "\\(4, \\; 6, \\; 8, \\; 9\\)",
+            "\\(2, \\; 4, \\; 6, \\; 8\\)"
+          ],
+          "answer": 0,
+          "hint": "Count the chairs in the first three diagrams (\\(4, 6, 8\\)) — each extra table adds \\(2\\) more chairs (one on top and one on the bottom)!",
+          "keyPoints": [
+            {
+              "text": "T = 1, 2, 3, 4",
+              "note": "Each added table adds +2 chairs: 4, 6, 8, 10."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Count chairs for \\(1, 2, 3\\) tables directly from the diagram: \\(T = 1 \\to 4\\), \\(T = 2 \\to 6\\), \\(T = 3 \\to 8\\).",
+              "work": "\\(T = 1 \\to 4, \\; T = 2 \\to 6, \\; T = 3 \\to 8\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 350 124\" width=\"65%\" height=\"auto\" style=\"max-width:455px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"350\" height=\"124\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><rect x=\"28\" y=\"36\" width=\"28\" height=\"22\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><circle cx=\"42\" cy=\"28\" r=\"4.5\" fill=\"#dbeafe\" stroke=\"#2563eb\" stroke-width=\"1.4\"/><circle cx=\"42\" cy=\"66\" r=\"4.5\" fill=\"#dbeafe\" stroke=\"#2563eb\" stroke-width=\"1.4\"/><circle cx=\"20\" cy=\"47\" r=\"4.5\" fill=\"#fee2e2\" stroke=\"#dc2626\" stroke-width=\"1.4\"/><circle cx=\"64\" cy=\"47\" r=\"4.5\" fill=\"#fee2e2\" stroke=\"#dc2626\" stroke-width=\"1.4\"/><text x=\"42\" y=\"86\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#334155\">T=1 → C=4</text><rect x=\"106\" y=\"36\" width=\"28\" height=\"22\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><circle cx=\"120\" cy=\"28\" r=\"4.5\" fill=\"#dbeafe\" stroke=\"#2563eb\" stroke-width=\"1.4\"/><circle cx=\"120\" cy=\"66\" r=\"4.5\" fill=\"#dbeafe\" stroke=\"#2563eb\" stroke-width=\"1.4\"/><rect x=\"134\" y=\"36\" width=\"28\" height=\"22\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><circle cx=\"148\" cy=\"28\" r=\"4.5\" fill=\"#dbeafe\" stroke=\"#2563eb\" stroke-width=\"1.4\"/><circle cx=\"148\" cy=\"66\" r=\"4.5\" fill=\"#dbeafe\" stroke=\"#2563eb\" stroke-width=\"1.4\"/><circle cx=\"98\" cy=\"47\" r=\"4.5\" fill=\"#fee2e2\" stroke=\"#dc2626\" stroke-width=\"1.4\"/><circle cx=\"170\" cy=\"47\" r=\"4.5\" fill=\"#fee2e2\" stroke=\"#dc2626\" stroke-width=\"1.4\"/><text x=\"134\" y=\"86\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#334155\">T=2 → C=6</text><rect x=\"216\" y=\"36\" width=\"28\" height=\"22\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><circle cx=\"230\" cy=\"28\" r=\"4.5\" fill=\"#dbeafe\" stroke=\"#2563eb\" stroke-width=\"1.4\"/><circle cx=\"230\" cy=\"66\" r=\"4.5\" fill=\"#dbeafe\" stroke=\"#2563eb\" stroke-width=\"1.4\"/><rect x=\"244\" y=\"36\" width=\"28\" height=\"22\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><circle cx=\"258\" cy=\"28\" r=\"4.5\" fill=\"#dbeafe\" stroke=\"#2563eb\" stroke-width=\"1.4\"/><circle cx=\"258\" cy=\"66\" r=\"4.5\" fill=\"#dbeafe\" stroke=\"#2563eb\" stroke-width=\"1.4\"/><rect x=\"272\" y=\"36\" width=\"28\" height=\"22\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><circle cx=\"286\" cy=\"28\" r=\"4.5\" fill=\"#dbeafe\" stroke=\"#2563eb\" stroke-width=\"1.4\"/><circle cx=\"286\" cy=\"66\" r=\"4.5\" fill=\"#dbeafe\" stroke=\"#2563eb\" stroke-width=\"1.4\"/><circle cx=\"208\" cy=\"47\" r=\"4.5\" fill=\"#fee2e2\" stroke=\"#dc2626\" stroke-width=\"1.4\"/><circle cx=\"308\" cy=\"47\" r=\"4.5\" fill=\"#fee2e2\" stroke=\"#dc2626\" stroke-width=\"1.4\"/><text x=\"258\" y=\"86\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#334155\">T=3 → C=8</text><text x=\"175\" y=\"117\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">Blue: 2 chairs per table + Red: 2 end chairs → C = 2T + 2</text></svg>"
+              }
+            },
+            {
+              "explain": "Observe the constant difference: each extra table adds \\(2\\) chairs (blue, top and bottom), while the \\(2\\) end chairs (red) stay fixed.",
+              "work": "\\(\\text{Difference} = +2\\text{ per table}\\)"
+            },
+            {
+              "explain": "Add \\(2\\) to \\(8\\) for \\(T = 4\\): \\(8 + 2 = 10\\).",
+              "work": "\\(T = 4 \\implies C = 10\\)"
+            },
+            {
+              "explain": "Therefore, the values of \\(C\\) are \\(4, 6, 8, 10\\).",
+              "work": "\\(4, \\; 6, \\; 8, \\; 10\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 350 96\" width=\"65%\" height=\"auto\" style=\"max-width:455px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"350\" height=\"96\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><rect x=\"28\" y=\"36\" width=\"28\" height=\"22\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><circle cx=\"42\" cy=\"28\" r=\"4.5\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><circle cx=\"42\" cy=\"66\" r=\"4.5\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><circle cx=\"20\" cy=\"47\" r=\"4.5\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><circle cx=\"64\" cy=\"47\" r=\"4.5\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"42\" y=\"86\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#334155\">T=1 → C=4</text><rect x=\"106\" y=\"36\" width=\"28\" height=\"22\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><circle cx=\"120\" cy=\"28\" r=\"4.5\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><circle cx=\"120\" cy=\"66\" r=\"4.5\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"134\" y=\"36\" width=\"28\" height=\"22\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><circle cx=\"148\" cy=\"28\" r=\"4.5\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><circle cx=\"148\" cy=\"66\" r=\"4.5\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><circle cx=\"98\" cy=\"47\" r=\"4.5\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><circle cx=\"170\" cy=\"47\" r=\"4.5\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"134\" y=\"86\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#334155\">T=2 → C=6</text><rect x=\"216\" y=\"36\" width=\"28\" height=\"22\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><circle cx=\"230\" cy=\"28\" r=\"4.5\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><circle cx=\"230\" cy=\"66\" r=\"4.5\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"244\" y=\"36\" width=\"28\" height=\"22\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><circle cx=\"258\" cy=\"28\" r=\"4.5\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><circle cx=\"258\" cy=\"66\" r=\"4.5\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"272\" y=\"36\" width=\"28\" height=\"22\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><circle cx=\"286\" cy=\"28\" r=\"4.5\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><circle cx=\"286\" cy=\"66\" r=\"4.5\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><circle cx=\"208\" cy=\"47\" r=\"4.5\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><circle cx=\"308\" cy=\"47\" r=\"4.5\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"258\" y=\"86\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#334155\">T=3 → C=8</text></svg>"
+          }
+        },
+        {
+          "id": "khs22-y7-t4a-q23b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In a restaurant, chairs are placed around tables aligned end to end (\\(1\\) table seats \\(4\\), \\(2\\) tables seat \\(6\\), \\(3\\) tables seat \\(8\\)). Find the rule that relates the number of chairs \\(C\\) to the number of tables \\(T\\).",
+          "options": [
+            "\\(C = 2T + 2\\)",
+            "\\(C = 4T\\)",
+            "\\(C = 2T + 4\\)",
+            "\\(C = T + 3\\)"
+          ],
+          "answer": 0,
+          "hint": "Every table gives \\(2\\) side chairs (\\(2T\\)) PLUS \\(2\\) fixed end chairs (\\(+ 2\\))!",
+          "keyPoints": [
+            {
+              "text": "rule that relates",
+              "note": "Constant difference +2, value at T=1 is 4 → C = 2T + 2."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Since \\(C\\) increases by \\(2\\) for every \\(+1\\) table, the coefficient of \\(T\\) is \\(2\\): \\(C = 2T + b\\).",
+              "work": "\\(C = 2T + b\\)"
+            },
+            {
+              "explain": "Substitute \\(T = 1, C = 4\\) to find the constant \\(b\\): \\(4 = 2(1) + b \\implies b = 2\\).",
+              "work": "\\(4 = 2(1) + b \\implies b = 2\\)"
+            },
+            {
+              "explain": "Check with \\(T = 3\\): \\(C = 2(3) + 2 = 8\\). Exact!",
+              "work": "\\(C = 2(3) + 2 = 8\\)"
+            },
+            {
+              "explain": "Therefore, the rule is \\(C = 2T + 2\\).",
+              "work": "\\(\\text{Answer: } C = 2T + 2\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs22-y7-t4a-q23c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Using the restaurant chair rule \\(C = 2T + 2\\), a group of \\(18\\) people wants to book a row of tables aligned end to end. How many tables are needed?",
+          "options": [
+            "\\(7\\text{ tables}\\)",
+            "\\(8\\text{ tables}\\)",
+            "\\(9\\text{ tables}\\)",
+            "\\(10\\text{ tables}\\)"
+          ],
+          "answer": 1,
+          "hint": "Substitute \\(C = 18\\) into \\(C = 2T + 2\\) and solve \\(2T + 2 = 18\\) for \\(T\\)!",
+          "keyPoints": [
+            {
+              "text": "18\\) people",
+              "note": "2T + 2 = 18 → 2T = 16 → T = 8 tables."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Substitute \\(C = 18\\) into the rule \\(C = 2T + 2\\).",
+              "work": "\\(2T + 2 = 18\\)"
+            },
+            {
+              "explain": "Subtract \\(2\\) from both sides: \\(2T = 16\\).",
+              "work": "\\(2T = 18 - 2 = 16\\)"
+            },
+            {
+              "explain": "Divide both sides by \\(2\\): \\(T = 8\\). Check: \\(2(8) + 2 = 18\\) chairs.",
+              "work": "\\(T = \\dfrac{16}{2} = 8\\)"
+            },
+            {
+              "explain": "Therefore, \\(8\\text{ tables}\\) are needed.",
+              "work": "\\(\\text{Answer: } 8\\text{ tables}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     }

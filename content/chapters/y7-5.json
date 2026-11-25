@@ -1304,6 +1304,52 @@
               }
             }
           ]
+        },
+        {
+          "id": "khs22-y7-t4a-q6",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Name the angle marked with the double-arc symbol in the diagram.",
+          "options": [
+            "\\(\\angle ABD\\)",
+            "\\(\\angle DBC\\)",
+            "\\(\\angle ABC\\)",
+            "\\(\\angle BAD\\)"
+          ],
+          "answer": 0,
+          "hint": "Place the vertex \\(B\\) in the MIDDLE of the three-letter name, and use the two rays that border the double arc (\\(BA\\) and \\(BD\\))!",
+          "keyPoints": [
+            {
+              "text": "double-arc symbol",
+              "note": "Vertex B in middle, arms BA and BD → ∠ABD (or ∠DBA)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the vertex of the angle: all rays meet at point \\(B\\), so \\(B\\) MUST be the middle letter.",
+              "work": "\\(\\text{Vertex} = B\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 176\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"176\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><path d=\"M 56.0 126.0 L 88.4 110.2 A 36 36 0 0 0 76.1 96.2 Z\" fill=\"#3b82f6\" fill-opacity=\"0.28\"/><path d=\"M 88.4 110.2 A 36 36 0 0 0 76.1 96.2\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/><path d=\"M 77.6 115.5 A 24 24 0 0 0 69.4 106.1\" fill=\"none\" stroke=\"#1d4ed8\" stroke-width=\"1.6\"/><path d=\"M 82.1 113.3 A 29 29 0 0 0 72.2 102.0\" fill=\"none\" stroke=\"#1d4ed8\" stroke-width=\"1.6\"/><line x1=\"56\" y1=\"126\" x2=\"120.3\" y2=\"30.7\" stroke=\"#2563eb\" stroke-width=\"2.4\"/><line x1=\"56\" y1=\"126\" x2=\"168.3\" y2=\"71.2\" stroke=\"#2563eb\" stroke-width=\"2.4\"/><line x1=\"56\" y1=\"126\" x2=\"201.0\" y2=\"126.0\" stroke=\"#0f172a\" stroke-width=\"1.7\"/><text x=\"44\" y=\"136\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\" fill=\"#dc2626\">B</text><text x=\"110.3\" y=\"26.7\" text-anchor=\"end\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\" fill=\"#2563eb\">A</text><text x=\"164.3\" y=\"63.2\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\" fill=\"#2563eb\">D</text><text x=\"207.0\" y=\"131.0\" text-anchor=\"start\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">C</text><text x=\"130\" y=\"168\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">Double arc lies between rays BA and BD → ∠ABD</text></svg>"
+              }
+            },
+            {
+              "explain": "Identify the two arms forming the double-arc angle: rays \\(BA\\) and \\(BD\\) (highlighted in blue).",
+              "work": "\\(\\text{Arms: } BA \\text{ and } BD\\)"
+            },
+            {
+              "explain": "Combine arm-vertex-arm to name the angle: \\(\\angle ABD\\) (or \\(\\angle DBA\\)).",
+              "work": "\\(\\angle ABD\\)"
+            },
+            {
+              "explain": "Therefore, the marked angle is \\(\\angle ABD\\).",
+              "work": "\\(\\text{Answer: } \\angle ABD\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 150\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"150\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><path d=\"M 77.6 115.5 A 24 24 0 0 0 69.4 106.1\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M 82.1 113.3 A 29 29 0 0 0 72.2 102.0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"56\" y1=\"126\" x2=\"120.3\" y2=\"30.7\" stroke=\"#0f172a\" stroke-width=\"1.7\"/><line x1=\"56\" y1=\"126\" x2=\"168.3\" y2=\"71.2\" stroke=\"#0f172a\" stroke-width=\"1.7\"/><line x1=\"56\" y1=\"126\" x2=\"201.0\" y2=\"126.0\" stroke=\"#0f172a\" stroke-width=\"1.7\"/><text x=\"44\" y=\"136\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">B</text><text x=\"110.3\" y=\"26.7\" text-anchor=\"end\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">A</text><text x=\"164.3\" y=\"63.2\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">D</text><text x=\"207.0\" y=\"131.0\" text-anchor=\"start\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">C</text></svg>"
+          }
         }
       ]
     },
@@ -2254,6 +2300,406 @@
             "page": 9,
             "note": "Drawing task: kept as a teacher-review question."
           }
+        },
+        {
+          "id": "t3-2022-y7-pa-q3a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Consider the angle drawn below. Classify the angle according to its size.",
+          "options": [
+            "\\(\\text{obtuse angle}\\)",
+            "\\(\\text{acute angle}\\)",
+            "\\(\\text{right angle}\\)",
+            "\\(\\text{reflex angle}\\)"
+          ],
+          "answer": 0,
+          "hint": "Compare the marked angle with a right angle of \\(90^\\circ\\).",
+          "steps": [
+            {
+              "explain": "The marked opening is greater than a right angle.",
+              "work": "\\(\\text{marked angle} > 90^\\circ\\)"
+            },
+            {
+              "explain": "It is smaller than a straight angle.",
+              "work": "\\(\\text{marked angle} < 180^\\circ\\)"
+            },
+            {
+              "explain": "An angle between 90° and 180° is obtuse.",
+              "work": "\\(\\text{obtuse angle}\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 220\" width=\"50%\" role=\"img\" aria-label=\"angle diagram\"><style>text{font:italic 15px Georgia,serif;fill:#111} .s{stroke:#111;stroke-width:1.5;fill:none} .a{stroke:#111;stroke-width:1;fill:none}</style><line class=\"s\" x1=\"38\" y1=\"174\" x2=\"186\" y2=\"132\"/><line class=\"s\" x1=\"186\" y1=\"132\" x2=\"282\" y2=\"32\"/><path class=\"a\" d=\"M154 123 A36 36 0 0 1 174 102\"/><text x=\"31\" y=\"180\">P</text><text x=\"183\" y=\"149\">S</text><text x=\"278\" y=\"30\">R</text></svg>"
+          },
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3-Year 7 2022, Part A",
+            "school": "Great Lakes Senior College"
+          }
+        },
+        {
+          "id": "t3-2022-y7-pa-q3b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Consider the angle drawn below. Measure the angle using a protractor.",
+          "options": [
+            "\\(120^\\circ\\)",
+            "\\(60^\\circ\\)",
+            "\\(90^\\circ\\)",
+            "\\(150^\\circ\\)"
+          ],
+          "answer": 0,
+          "hint": "Put the protractor centre on S and line up its 0° edge with ray SP.",
+          "steps": [
+            {
+              "explain": "Place the protractor centre at vertex S and align its baseline with ray SP.",
+              "work": "\\(\\text{vertex}=S\\)"
+            },
+            {
+              "explain": "Read the scale where ray SR meets the protractor.",
+              "work": "\\(\\angle PSR=120^\\circ\\)"
+            },
+            {
+              "explain": "This agrees with the fact that the marked angle is obtuse.",
+              "work": "\\(120^\\circ>90^\\circ\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 220\" width=\"50%\" role=\"img\" aria-label=\"angle diagram\"><style>text{font:italic 15px Georgia,serif;fill:#111} .s{stroke:#111;stroke-width:1.5;fill:none} .a{stroke:#111;stroke-width:1;fill:none}</style><line class=\"s\" x1=\"38\" y1=\"174\" x2=\"186\" y2=\"132\"/><line class=\"s\" x1=\"186\" y1=\"132\" x2=\"282\" y2=\"32\"/><path class=\"a\" d=\"M154 123 A36 36 0 0 1 174 102\"/><text x=\"31\" y=\"180\">P</text><text x=\"183\" y=\"149\">S</text><text x=\"278\" y=\"30\">R</text></svg>"
+          },
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3-Year 7 2022, Part A",
+            "school": "Great Lakes Senior College"
+          }
+        },
+        {
+          "id": "t3-2022-y7-pa-q3c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Consider the angle drawn below. Name the marked angle.",
+          "options": [
+            "\\(\\angle PSR\\)",
+            "\\(\\angle PRS\\)",
+            "\\(\\angle RPS\\)",
+            "\\(\\angle SRP\\)"
+          ],
+          "answer": 0,
+          "hint": "The vertex letter must be the middle letter when naming an angle.",
+          "steps": [
+            {
+              "explain": "The two rays forming the marked angle are SP and SR.",
+              "work": "\\(\\overrightarrow{SP}\\text{ and }\\overrightarrow{SR}\\)"
+            },
+            {
+              "explain": "Their common endpoint is S, so S must be the middle letter.",
+              "work": "\\(\\angle P\\,S\\,R\\)"
+            },
+            {
+              "explain": "The marked angle is therefore angle PSR.",
+              "work": "\\(\\angle PSR\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 220\" width=\"50%\" role=\"img\" aria-label=\"angle diagram\"><style>text{font:italic 15px Georgia,serif;fill:#111} .s{stroke:#111;stroke-width:1.5;fill:none} .a{stroke:#111;stroke-width:1;fill:none}</style><line class=\"s\" x1=\"38\" y1=\"174\" x2=\"186\" y2=\"132\"/><line class=\"s\" x1=\"186\" y1=\"132\" x2=\"282\" y2=\"32\"/><path class=\"a\" d=\"M154 123 A36 36 0 0 1 174 102\"/><text x=\"31\" y=\"180\">P</text><text x=\"183\" y=\"149\">S</text><text x=\"278\" y=\"30\">R</text></svg>"
+          },
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3-Year 7 2022, Part A",
+            "school": "Great Lakes Senior College"
+          }
+        },
+        {
+          "id": "t3-2022-y7-pa-q4a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Two straight lines intersect at a point forming 4 angles as shown below, \\(\\angle BOC=25^\\circ\\). The diagram has not been drawn to scale. Find the size of \\(\\angle AOB\\).",
+          "options": [
+            "\\(155^\\circ\\)",
+            "\\(25^\\circ\\)",
+            "\\(180^\\circ\\)",
+            "\\(205^\\circ\\)"
+          ],
+          "answer": 0,
+          "hint": "A and C lie on one straight line, so the adjacent angles from OA to OC total 180°.",
+          "steps": [
+            {
+              "explain": "OA and OC are opposite rays, so angle AOC is a straight angle.",
+              "work": "\\(\\angle AOC=180^\\circ\\)"
+            },
+            {
+              "explain": "AOB and BOC are adjacent angles making that straight angle.",
+              "work": "\\(\\angle AOB+\\angle BOC=180^\\circ\\)"
+            },
+            {
+              "explain": "Substitute 25° and subtract.",
+              "work": "\\(\\angle AOB=180^\\circ-25^\\circ=155^\\circ\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 220\" width=\"50%\" role=\"img\" aria-label=\"angle diagram\"><style>text{font:italic 15px Georgia,serif;fill:#111} .s{stroke:#111;stroke-width:1.5;fill:none} .a{stroke:#111;stroke-width:1;fill:none}</style><line class=\"s\" x1=\"28\" y1=\"74\" x2=\"332\" y2=\"146\"/><line class=\"s\" x1=\"52\" y1=\"186\" x2=\"308\" y2=\"38\"/><path class=\"a\" d=\"M193 100 A30 30 0 0 1 215 122\"/><text x=\"55\" y=\"69\">A</text><text x=\"307\" y=\"36\">B</text><text x=\"331\" y=\"160\">C</text><text x=\"44\" y=\"202\">D</text><text x=\"178\" y=\"118\">O</text><text x=\"214\" y=\"108\">25°</text></svg>"
+          },
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3-Year 7 2022, Part A",
+            "school": "Great Lakes Senior College"
+          }
+        },
+        {
+          "id": "t3-2022-y7-pa-q4b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Two straight lines intersect at a point forming 4 angles as shown below, \\(\\angle BOC=25^\\circ\\). The diagram has not been drawn to scale. Find the size of \\(\\angle AOD\\).",
+          "options": [
+            "\\(25^\\circ\\)",
+            "\\(155^\\circ\\)",
+            "\\(180^\\circ\\)",
+            "\\(50^\\circ\\)"
+          ],
+          "answer": 0,
+          "hint": "Vertically opposite angles formed by intersecting straight lines are equal.",
+          "steps": [
+            {
+              "explain": "Angle BOC and angle AOD are vertically opposite.",
+              "work": "\\(\\angle BOC=\\angle AOD\\)"
+            },
+            {
+              "explain": "The given size of angle BOC is 25°.",
+              "work": "\\(\\angle BOC=25^\\circ\\)"
+            },
+            {
+              "explain": "Therefore angle AOD is also 25°.",
+              "work": "\\(\\angle AOD=25^\\circ\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 220\" width=\"50%\" role=\"img\" aria-label=\"angle diagram\"><style>text{font:italic 15px Georgia,serif;fill:#111} .s{stroke:#111;stroke-width:1.5;fill:none} .a{stroke:#111;stroke-width:1;fill:none}</style><line class=\"s\" x1=\"28\" y1=\"74\" x2=\"332\" y2=\"146\"/><line class=\"s\" x1=\"52\" y1=\"186\" x2=\"308\" y2=\"38\"/><path class=\"a\" d=\"M193 100 A30 30 0 0 1 215 122\"/><text x=\"55\" y=\"69\">A</text><text x=\"307\" y=\"36\">B</text><text x=\"331\" y=\"160\">C</text><text x=\"44\" y=\"202\">D</text><text x=\"178\" y=\"118\">O</text><text x=\"214\" y=\"108\">25°</text></svg>"
+          },
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3-Year 7 2022, Part A",
+            "school": "Great Lakes Senior College"
+          }
+        },
+        {
+          "id": "t3-2022-y7-pa-q5a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the value of the pronumeral using the angle relationships. Diagrams have not been drawn to scale.",
+          "options": [
+            "\\(m=143^\\circ\\)",
+            "\\(m=37^\\circ\\)",
+            "\\(m=180^\\circ\\)",
+            "\\(m=217^\\circ\\)"
+          ],
+          "answer": 0,
+          "hint": "The horizontal lines are parallel. Find the angle in the same relative position at the lower intersection.",
+          "steps": [
+            {
+              "explain": "The two horizontal lines are parallel and the sloping line is a transversal.",
+              "work": "\\(l_1\\parallel l_2\\)"
+            },
+            {
+              "explain": "The 143° angle and m are corresponding angles.",
+              "work": "\\(m=143^\\circ\\)"
+            },
+            {
+              "explain": "Corresponding angles between parallel lines are equal.",
+              "work": "\\(m=143^\\circ\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 220\" width=\"50%\" role=\"img\" aria-label=\"angle diagram\"><style>text{font:italic 15px Georgia,serif;fill:#111} .s{stroke:#111;stroke-width:1.5;fill:none} .a{stroke:#111;stroke-width:1;fill:none}</style><line class=\"s\" x1=\"40\" y1=\"55\" x2=\"320\" y2=\"55\"/><line class=\"s\" x1=\"40\" y1=\"165\" x2=\"320\" y2=\"165\"/><line class=\"s\" x1=\"85\" y1=\"205\" x2=\"245\" y2=\"15\"/><text x=\"135\" y=\"48\">143°</text><text x=\"82\" y=\"154\">m</text></svg>"
+          },
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3-Year 7 2022, Part A",
+            "school": "Great Lakes Senior College"
+          }
+        },
+        {
+          "id": "t3-2022-y7-pa-q5b-m",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the value of \\(m\\) using the angle relationships. Diagrams have not been drawn to scale.",
+          "options": [
+            "\\(65^\\circ\\)",
+            "\\(115^\\circ\\)",
+            "\\(85^\\circ\\)",
+            "\\(95^\\circ\\)"
+          ],
+          "answer": 0,
+          "hint": "At the lower right vertex, first find the interior angle that forms a straight line with 115°.",
+          "steps": [
+            {
+              "explain": "The interior angle at the lower right and 115° form a straight line.",
+              "work": "\\(\\text{interior angle}=180^\\circ-115^\\circ=65^\\circ\\)"
+            },
+            {
+              "explain": "The upper and lower lines are parallel.",
+              "work": "\\(l_1\\parallel l_2\\)"
+            },
+            {
+              "explain": "m is alternate interior to the 65° interior angle.",
+              "work": "\\(m=65^\\circ\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3-Year 7 2022, Part A",
+            "school": "Great Lakes Senior College"
+          }
+        },
+        {
+          "id": "t3-2022-y7-pa-q5b-h",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the value of \\(h\\) using the angle relationships. Diagrams have not been drawn to scale.",
+          "options": [
+            "\\(85^\\circ\\)",
+            "\\(95^\\circ\\)",
+            "\\(65^\\circ\\)",
+            "\\(115^\\circ\\)"
+          ],
+          "answer": 0,
+          "hint": "Use the 85° angle at the upper parallel line and identify its alternate interior angle.",
+          "steps": [
+            {
+              "explain": "The upper and lower lines are parallel.",
+              "work": "\\(l_1\\parallel l_2\\)"
+            },
+            {
+              "explain": "The 85° angle and h are alternate interior angles on the left transversal.",
+              "work": "\\(h=85^\\circ\\)"
+            },
+            {
+              "explain": "Alternate interior angles between parallel lines are equal.",
+              "work": "\\(h=85^\\circ\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3-Year 7 2022, Part A",
+            "school": "Great Lakes Senior College"
+          }
+        },
+        {
+          "id": "t3-2022-y7-pa-q5c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the value of \\(x\\) using the angle relationships. Diagrams have not been drawn to scale.",
+          "options": [
+            "\\(85^\\circ\\)",
+            "\\(110^\\circ\\)",
+            "\\(70^\\circ\\)",
+            "\\(95^\\circ\\)"
+          ],
+          "answer": 0,
+          "hint": "Angles around a point add to 360°.",
+          "steps": [
+            {
+              "explain": "There are two equal angles labelled x around the point.",
+              "work": "\\(x+x+55^\\circ+135^\\circ=360^\\circ\\)"
+            },
+            {
+              "explain": "Combine the known angles and like terms.",
+              "work": "\\(2x+190^\\circ=360^\\circ\\)"
+            },
+            {
+              "explain": "Subtract 190° and divide by 2.",
+              "work": "\\(2x=170^\\circ,\\quad x=85^\\circ\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3-Year 7 2022, Part A",
+            "school": "Great Lakes Senior College"
+          }
+        },
+        {
+          "id": "t3-2022-y7-pa-q6",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write down the supplement of \\(26^\\circ\\).",
+          "options": [
+            "\\(154^\\circ\\)",
+            "\\(64^\\circ\\)",
+            "\\(206^\\circ\\)",
+            "\\(26^\\circ\\)"
+          ],
+          "answer": 0,
+          "hint": "Supplementary angles add to 180°.",
+          "steps": [
+            {
+              "explain": "A supplement is the angle needed to make a straight angle.",
+              "work": "\\(26^\\circ+s=180^\\circ\\)"
+            },
+            {
+              "explain": "Subtract 26° from 180°.",
+              "work": "\\(s=180^\\circ-26^\\circ=154^\\circ\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3-Year 7 2022, Part A",
+            "school": "Great Lakes Senior College"
+          }
+        },
+        {
+          "id": "khs22-y7-t4a-q4",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Classify angle \\(\\angle AOD\\) as obtuse, acute or reflex.",
+          "options": [
+            "Acute",
+            "Obtuse",
+            "Reflex",
+            "Right"
+          ],
+          "answer": 0,
+          "hint": "Measure from ray \\(OA\\) (\\(0^\\circ\\) on the right) up to ray \\(OD\\) (\\(80^\\circ\\), just shy of \\(90^\\circ\\)) — is \\(80^\\circ\\) less than or greater than \\(90^\\circ\\)?",
+          "keyPoints": [
+            {
+              "text": "\\angle AOD",
+              "note": "∠AOD measures 80° < 90°, so it is an acute angle."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Locate rays \\(OA\\) (along the \\(0^\\circ\\) baseline on the right) and \\(OD\\) on the protractor.",
+              "work": "\\(OA \\text{ at } 0^\\circ, \\quad OD \\text{ at } 80^\\circ\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 190\" width=\"65%\" height=\"auto\" style=\"max-width:390px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"300\" height=\"190\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><path d=\"M 58 140 A 92 92 0 0 1 242 140 Z\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"1.4\"/><path d=\"M 74 140 A 76 76 0 0 1 226 140\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"0.9\"/><line x1=\"242.0\" y1=\"140.0\" x2=\"234.0\" y2=\"140.0\" stroke=\"#475569\" stroke-width=\"0.9\"/><text x=\"220.0\" y=\"143.0\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"8\" fill=\"#475569\">0</text><line x1=\"240.6\" y1=\"124.0\" x2=\"236.7\" y2=\"124.7\" stroke=\"#475569\" stroke-width=\"0.9\"/><line x1=\"236.5\" y1=\"108.5\" x2=\"232.7\" y2=\"109.9\" stroke=\"#475569\" stroke-width=\"0.9\"/><line x1=\"229.7\" y1=\"94.0\" x2=\"222.7\" y2=\"98.0\" stroke=\"#475569\" stroke-width=\"0.9\"/><text x=\"210.6\" y=\"108.0\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"8\" fill=\"#475569\">30</text><line x1=\"220.5\" y1=\"80.9\" x2=\"217.4\" y2=\"83.4\" stroke=\"#475569\" stroke-width=\"0.9\"/><line x1=\"209.1\" y1=\"69.5\" x2=\"206.6\" y2=\"72.6\" stroke=\"#475569\" stroke-width=\"0.9\"/><line x1=\"196.0\" y1=\"60.3\" x2=\"192.0\" y2=\"67.3\" stroke=\"#475569\" stroke-width=\"0.9\"/><text x=\"185.0\" y=\"82.4\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"8\" fill=\"#475569\">60</text><line x1=\"181.5\" y1=\"53.5\" x2=\"180.1\" y2=\"57.3\" stroke=\"#475569\" stroke-width=\"0.9\"/><line x1=\"166.0\" y1=\"49.4\" x2=\"165.3\" y2=\"53.3\" stroke=\"#475569\" stroke-width=\"0.9\"/><line x1=\"150.0\" y1=\"48.0\" x2=\"150.0\" y2=\"56.0\" stroke=\"#475569\" stroke-width=\"0.9\"/><text x=\"150.0\" y=\"73.0\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"8\" fill=\"#475569\">90</text><line x1=\"134.0\" y1=\"49.4\" x2=\"134.7\" y2=\"53.3\" stroke=\"#475569\" stroke-width=\"0.9\"/><line x1=\"118.5\" y1=\"53.5\" x2=\"119.9\" y2=\"57.3\" stroke=\"#475569\" stroke-width=\"0.9\"/><line x1=\"104.0\" y1=\"60.3\" x2=\"108.0\" y2=\"67.3\" stroke=\"#475569\" stroke-width=\"0.9\"/><text x=\"115.0\" y=\"82.4\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"8\" fill=\"#475569\">120</text><line x1=\"90.9\" y1=\"69.5\" x2=\"93.4\" y2=\"72.6\" stroke=\"#475569\" stroke-width=\"0.9\"/><line x1=\"79.5\" y1=\"80.9\" x2=\"82.6\" y2=\"83.4\" stroke=\"#475569\" stroke-width=\"0.9\"/><line x1=\"70.3\" y1=\"94.0\" x2=\"77.3\" y2=\"98.0\" stroke=\"#475569\" stroke-width=\"0.9\"/><text x=\"89.4\" y=\"108.0\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"8\" fill=\"#475569\">150</text><line x1=\"63.5\" y1=\"108.5\" x2=\"67.3\" y2=\"109.9\" stroke=\"#475569\" stroke-width=\"0.9\"/><line x1=\"59.4\" y1=\"124.0\" x2=\"63.3\" y2=\"124.7\" stroke=\"#475569\" stroke-width=\"0.9\"/><line x1=\"58.0\" y1=\"140.0\" x2=\"66.0\" y2=\"140.0\" stroke=\"#475569\" stroke-width=\"0.9\"/><text x=\"80.0\" y=\"143.0\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"8\" fill=\"#475569\">180</text><path d=\"M 150.0 140.0 L 196.0 140.0 A 46 46 0 0 0 158.0 94.7 Z\" fill=\"#3b82f6\" fill-opacity=\"0.28\"/><path d=\"M 196.0 140.0 A 46 46 0 0 0 158.0 94.7\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/><text x=\"182\" y=\"118\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1d4ed8\">80°</text><line x1=\"150\" y1=\"140\" x2=\"260.0\" y2=\"140.0\" stroke=\"#2563eb\" stroke-width=\"2.5\"/><text x=\"270.0\" y=\"144.0\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\" fill=\"#1d4ed8\">A</text><line x1=\"150\" y1=\"140\" x2=\"253.4\" y2=\"102.4\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"262.8\" y=\"103.0\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">B</text><line x1=\"150\" y1=\"140\" x2=\"227.8\" y2=\"62.2\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"234.9\" y=\"59.1\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">C</text><line x1=\"150\" y1=\"140\" x2=\"169.1\" y2=\"31.7\" stroke=\"#2563eb\" stroke-width=\"2.5\"/><text x=\"170.8\" y=\"25.8\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\" fill=\"#1d4ed8\">D</text><line x1=\"150\" y1=\"140\" x2=\"95.0\" y2=\"44.7\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"90.0\" y=\"40.1\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">E</text><line x1=\"150\" y1=\"140\" x2=\"50.3\" y2=\"93.5\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"41.2\" y=\"93.3\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">F</text><text x=\"150\" y=\"156\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">O</text><text x=\"150\" y=\"183\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">∠AOD = 80° < 90° → Acute angle</text></svg>"
+              }
+            },
+            {
+              "explain": "Read the inner scale from \\(0^\\circ\\) at \\(OA\\) counter-clockwise to \\(OD\\): \\(\\angle AOD = 80^\\circ\\).",
+              "work": "\\(\\angle AOD = 80^\\circ\\)"
+            },
+            {
+              "explain": "Since \\(0^\\circ < 80^\\circ < 90^\\circ\\), the angle is acute.",
+              "work": "\\(0^\\circ < 80^\\circ < 90^\\circ \\implies \\text{Acute}\\)"
+            },
+            {
+              "explain": "Therefore, \\(\\angle AOD\\) is an acute angle.",
+              "work": "\\(\\text{Answer: Acute}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 166\" width=\"65%\" height=\"auto\" style=\"max-width:390px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"300\" height=\"166\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><path d=\"M 58 140 A 92 92 0 0 1 242 140 Z\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"1.4\"/><path d=\"M 74 140 A 76 76 0 0 1 226 140\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"0.9\"/><line x1=\"242.0\" y1=\"140.0\" x2=\"234.0\" y2=\"140.0\" stroke=\"#475569\" stroke-width=\"0.9\"/><text x=\"220.0\" y=\"143.0\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"8\" fill=\"#475569\">0</text><line x1=\"240.6\" y1=\"124.0\" x2=\"236.7\" y2=\"124.7\" stroke=\"#475569\" stroke-width=\"0.9\"/><line x1=\"236.5\" y1=\"108.5\" x2=\"232.7\" y2=\"109.9\" stroke=\"#475569\" stroke-width=\"0.9\"/><line x1=\"229.7\" y1=\"94.0\" x2=\"222.7\" y2=\"98.0\" stroke=\"#475569\" stroke-width=\"0.9\"/><text x=\"210.6\" y=\"108.0\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"8\" fill=\"#475569\">30</text><line x1=\"220.5\" y1=\"80.9\" x2=\"217.4\" y2=\"83.4\" stroke=\"#475569\" stroke-width=\"0.9\"/><line x1=\"209.1\" y1=\"69.5\" x2=\"206.6\" y2=\"72.6\" stroke=\"#475569\" stroke-width=\"0.9\"/><line x1=\"196.0\" y1=\"60.3\" x2=\"192.0\" y2=\"67.3\" stroke=\"#475569\" stroke-width=\"0.9\"/><text x=\"185.0\" y=\"82.4\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"8\" fill=\"#475569\">60</text><line x1=\"181.5\" y1=\"53.5\" x2=\"180.1\" y2=\"57.3\" stroke=\"#475569\" stroke-width=\"0.9\"/><line x1=\"166.0\" y1=\"49.4\" x2=\"165.3\" y2=\"53.3\" stroke=\"#475569\" stroke-width=\"0.9\"/><line x1=\"150.0\" y1=\"48.0\" x2=\"150.0\" y2=\"56.0\" stroke=\"#475569\" stroke-width=\"0.9\"/><text x=\"150.0\" y=\"73.0\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"8\" fill=\"#475569\">90</text><line x1=\"134.0\" y1=\"49.4\" x2=\"134.7\" y2=\"53.3\" stroke=\"#475569\" stroke-width=\"0.9\"/><line x1=\"118.5\" y1=\"53.5\" x2=\"119.9\" y2=\"57.3\" stroke=\"#475569\" stroke-width=\"0.9\"/><line x1=\"104.0\" y1=\"60.3\" x2=\"108.0\" y2=\"67.3\" stroke=\"#475569\" stroke-width=\"0.9\"/><text x=\"115.0\" y=\"82.4\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"8\" fill=\"#475569\">120</text><line x1=\"90.9\" y1=\"69.5\" x2=\"93.4\" y2=\"72.6\" stroke=\"#475569\" stroke-width=\"0.9\"/><line x1=\"79.5\" y1=\"80.9\" x2=\"82.6\" y2=\"83.4\" stroke=\"#475569\" stroke-width=\"0.9\"/><line x1=\"70.3\" y1=\"94.0\" x2=\"77.3\" y2=\"98.0\" stroke=\"#475569\" stroke-width=\"0.9\"/><text x=\"89.4\" y=\"108.0\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"8\" fill=\"#475569\">150</text><line x1=\"63.5\" y1=\"108.5\" x2=\"67.3\" y2=\"109.9\" stroke=\"#475569\" stroke-width=\"0.9\"/><line x1=\"59.4\" y1=\"124.0\" x2=\"63.3\" y2=\"124.7\" stroke=\"#475569\" stroke-width=\"0.9\"/><line x1=\"58.0\" y1=\"140.0\" x2=\"66.0\" y2=\"140.0\" stroke=\"#475569\" stroke-width=\"0.9\"/><text x=\"80.0\" y=\"143.0\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"8\" fill=\"#475569\">180</text><line x1=\"150\" y1=\"140\" x2=\"260.0\" y2=\"140.0\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"270.0\" y=\"144.0\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">A</text><line x1=\"150\" y1=\"140\" x2=\"253.4\" y2=\"102.4\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"262.8\" y=\"103.0\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">B</text><line x1=\"150\" y1=\"140\" x2=\"227.8\" y2=\"62.2\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"234.9\" y=\"59.1\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">C</text><line x1=\"150\" y1=\"140\" x2=\"169.1\" y2=\"31.7\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"170.8\" y=\"25.8\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">D</text><line x1=\"150\" y1=\"140\" x2=\"95.0\" y2=\"44.7\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"90.0\" y=\"40.1\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">E</text><line x1=\"150\" y1=\"140\" x2=\"50.3\" y2=\"93.5\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"41.2\" y=\"93.3\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">F</text><text x=\"150\" y=\"156\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">O</text></svg>"
+          }
         }
       ]
     },
@@ -3141,6 +3587,184 @@
             "school": "Form II Half-Yearly",
             "grade": "7",
             "origin": "teacher"
+          }
+        },
+        {
+          "id": "khs22-y7-t4a-q8",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What is the size of the reflex angle \\(\\angle AOB\\) marked in the image?",
+          "options": [
+            "\\(120^\\circ\\)",
+            "\\(240^\\circ\\)",
+            "\\(300^\\circ\\)",
+            "\\(330^\\circ\\)"
+          ],
+          "answer": 2,
+          "hint": "Angles around a full point (revolution) add to \\(360^\\circ\\): subtract the acute \\(60^\\circ\\) from \\(360^\\circ\\)!",
+          "keyPoints": [
+            {
+              "text": "reflex angle \\(\\angle AOB\\)",
+              "note": "Full revolution is 360° → 360° − 60° = 300°."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "The reflex angle \\(\\angle AOB\\) and the acute \\(60^\\circ\\) angle together form a full revolution around point \\(O\\).",
+              "work": "\\(\\text{Reflex } \\angle AOB + 60^\\circ = 360^\\circ\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 170\" width=\"65%\" height=\"auto\" style=\"max-width:312px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"170\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><path d=\"M 98 82 L 114.1 64.2 A 24 24 0 1 0 121.5 87.0 Z\" fill=\"#fca5a5\" fill-opacity=\"0.35\"/><path d=\"M 114.1 64.2 A 24 24 0 1 0 121.5 87.0\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.4\"/><line x1=\"98\" y1=\"82\" x2=\"147.5\" y2=\"27.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"98\" y1=\"82\" x2=\"174.3\" y2=\"98.2\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"134.1\" y=\"74.3\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#2563eb\">60°</text><text x=\"88\" y=\"86\" text-anchor=\"end\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\">O</text><text x=\"153.5\" y=\"23.0\" text-anchor=\"start\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\">A</text><text x=\"182.3\" y=\"102.2\" text-anchor=\"start\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\">B</text><text x=\"64\" y=\"62\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"12\" font-weight=\"700\" fill=\"#dc2626\">300°</text><text x=\"120\" y=\"162\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">Angles at a point = 360° → 360° − 60° = 300°</text></svg>"
+              }
+            },
+            {
+              "explain": "Subtract \\(60^\\circ\\) from \\(360^\\circ\\).",
+              "work": "\\(\\text{Reflex } \\angle AOB = 360^\\circ - 60^\\circ\\)"
+            },
+            {
+              "explain": "Calculate: \\(360^\\circ - 60^\\circ = 300^\\circ\\).",
+              "work": "\\(300^\\circ\\)"
+            },
+            {
+              "explain": "Therefore, the reflex angle \\(\\angle AOB\\) is \\(300^\\circ\\).",
+              "work": "\\(\\text{Answer: } 300^\\circ\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 144\" width=\"65%\" height=\"auto\" style=\"max-width:312px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"144\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><path d=\"M 114.1 64.2 A 24 24 0 1 0 121.5 87.0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.7\"/><line x1=\"98\" y1=\"82\" x2=\"147.5\" y2=\"27.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"98\" y1=\"82\" x2=\"174.3\" y2=\"98.2\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"134.1\" y=\"74.3\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#2563eb\">60°</text><text x=\"88\" y=\"86\" text-anchor=\"end\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\">O</text><text x=\"153.5\" y=\"23.0\" text-anchor=\"start\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\">A</text><text x=\"182.3\" y=\"102.2\" text-anchor=\"start\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\">B</text></svg>"
+          }
+        },
+        {
+          "id": "khs22-y7-t4a-q9",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which of the following words is used to describe angles that sum to \\(180^\\circ\\)?",
+          "options": [
+            "Supplementary",
+            "Complementary",
+            "Revolution",
+            "Reflex"
+          ],
+          "answer": 0,
+          "hint": "Memory trick: Supplementary = Straight line (\\(180^\\circ\\)); Complementary = Corner (\\(90^\\circ\\))!",
+          "keyPoints": [
+            {
+              "text": "sum to \\(180^\\circ\\)",
+              "note": "Supplementary angles add to 180° (complementary add to 90°)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Recall angle pair definitions: complementary angles sum to \\(90^\\circ\\), while supplementary angles sum to \\(180^\\circ\\).",
+              "work": "\\(\\text{Supplementary: } a + b = 180^\\circ\\)"
+            },
+            {
+              "explain": "A revolution is \\(360^\\circ\\), and a reflex angle is between \\(180^\\circ\\) and \\(360^\\circ\\).",
+              "work": "\\(\\text{Complementary: } 90^\\circ, \\quad \\text{Revolution: } 360^\\circ\\)"
+            },
+            {
+              "explain": "Match \\(180^\\circ\\) to \"Supplementary\".",
+              "work": "\\(180^\\circ \\iff \\text{Supplementary}\\)"
+            },
+            {
+              "explain": "Therefore, the correct word is Supplementary.",
+              "work": "\\(\\text{Answer: Supplementary}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs22-y7-t4a-q15",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What is the size of \\(\\angle ABC\\) in the diagram shown?",
+          "options": [
+            "\\(30^\\circ\\)",
+            "\\(40^\\circ\\)",
+            "\\(50^\\circ\\)",
+            "\\(130^\\circ\\)"
+          ],
+          "answer": 1,
+          "hint": "The square corner at \\(B\\) means \\(\\angle DBA = 90^\\circ\\) (complementary angles): subtract \\(50^\\circ\\) from \\(90^\\circ\\)!",
+          "keyPoints": [
+            {
+              "text": "\\angle ABC",
+              "note": "Complementary angles sum to 90°: 90° − 50° = 40°."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "The right-angle box at \\(B\\) indicates \\(\\angle DBA = 90^\\circ\\), so \\(\\angle DBC\\) and \\(\\angle ABC\\) are complementary.",
+              "work": "\\(\\angle ABC + 50^\\circ = 90^\\circ\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 174\" width=\"65%\" height=\"auto\" style=\"max-width:312px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"174\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><path d=\"M 64.0 122.0 L 91.6 98.9 A 36 36 0 0 0 64.0 86.0 Z\" fill=\"#3b82f6\" fill-opacity=\"0.22\"/><path d=\"M 91.6 98.9 A 36 36 0 0 0 64.0 86.0\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/><path d=\"M 64.0 122.0 L 106.0 122.0 A 42 42 0 0 0 96.2 95.0 Z\" fill=\"#10b981\" fill-opacity=\"0.3\"/><path d=\"M 106.0 122.0 A 42 42 0 0 0 96.2 95.0\" fill=\"none\" stroke=\"#059669\" stroke-width=\"2\"/><rect x=\"64\" y=\"110\" width=\"12\" height=\"12\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"64\" y1=\"122\" x2=\"64\" y2=\"28\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"64\" y1=\"122\" x2=\"184\" y2=\"122\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"64\" y1=\"122\" x2=\"146.7\" y2=\"52.6\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"85.1\" y=\"80.7\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1d4ed8\">50°</text><text x=\"116.6\" y=\"106.8\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#047857\">40°</text><text x=\"56\" y=\"32\" text-anchor=\"end\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\">D</text><text x=\"56\" y=\"134\" text-anchor=\"end\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\">B</text><text x=\"190\" y=\"134\" text-anchor=\"start\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\">A</text><text x=\"152.7\" y=\"48.6\" text-anchor=\"start\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\">C</text><text x=\"120\" y=\"166\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">Complementary angles: ∠ABC = 90° − 50° = 40°</text></svg>"
+              }
+            },
+            {
+              "explain": "Subtract \\(50^\\circ\\) from \\(90^\\circ\\).",
+              "work": "\\(\\angle ABC = 90^\\circ - 50^\\circ\\)"
+            },
+            {
+              "explain": "Calculate: \\(90^\\circ - 50^\\circ = 40^\\circ\\).",
+              "work": "\\(\\angle ABC = 40^\\circ\\)"
+            },
+            {
+              "explain": "Therefore, \\(\\angle ABC = 40^\\circ\\).",
+              "work": "\\(\\text{Answer: } 40^\\circ\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 148\" width=\"65%\" height=\"auto\" style=\"max-width:312px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"148\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><path d=\"M 64.0 122.0 L 91.6 98.9 A 36 36 0 0 0 64.0 86.0 Z\" fill=\"#3b82f6\" fill-opacity=\"0.22\"/><path d=\"M 91.6 98.9 A 36 36 0 0 0 64.0 86.0\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/><rect x=\"64\" y=\"110\" width=\"12\" height=\"12\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"64\" y1=\"122\" x2=\"64\" y2=\"28\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"64\" y1=\"122\" x2=\"184\" y2=\"122\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"64\" y1=\"122\" x2=\"146.7\" y2=\"52.6\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"85.1\" y=\"80.7\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1d4ed8\">50°</text><text x=\"56\" y=\"32\" text-anchor=\"end\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\">D</text><text x=\"56\" y=\"134\" text-anchor=\"end\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\">B</text><text x=\"190\" y=\"134\" text-anchor=\"start\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\">A</text><text x=\"152.7\" y=\"48.6\" text-anchor=\"start\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\">C</text></svg>"
+          }
+        },
+        {
+          "id": "khs22-y7-t4a-q17",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the value of the pronumeral \\(a\\) in the intersecting-lines diagram shown.",
+          "options": [
+            "\\(a = 50\\)",
+            "\\(a = 80\\)",
+            "\\(a = 100\\)",
+            "\\(a = 130\\)"
+          ],
+          "answer": 0,
+          "hint": "Vertically opposite angles are EQUAL! So the bottom angle \\(a^\\circ + 80^\\circ\\) equals the top angle \\(130^\\circ\\)!",
+          "keyPoints": [
+            {
+              "text": "pronumeral \\(a\\)",
+              "note": "Vertically opposite angles are equal: a + 80 = 130 → a = 50."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "The top \\(130^\\circ\\) angle (blue) and the combined bottom angle \\(a^\\circ + 80^\\circ\\) (green) are vertically opposite angles.",
+              "work": "\\(a + 80 = 130 \\quad (\\text{vertically opposite angles})\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 168\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"168\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><path d=\"M 130.0 58.0 L 151.8 47.9 A 24 24 0 0 0 108.2 47.9 Z\" fill=\"#3b82f6\" fill-opacity=\"0.3\"/><path d=\"M 151.8 47.9 A 24 24 0 0 0 108.2 47.9\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/><path d=\"M 130.0 58.0 L 108.2 68.1 A 24 24 0 0 0 151.8 68.1 Z\" fill=\"#10b981\" fill-opacity=\"0.24\"/><path d=\"M 108.2 68.1 A 24 24 0 0 0 151.8 68.1\" fill=\"none\" stroke=\"#059669\" stroke-width=\"2\"/><line x1=\"42\" y1=\"17\" x2=\"218\" y2=\"99\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"42\" y1=\"99\" x2=\"218\" y2=\"17\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"130\" y1=\"58\" x2=\"114\" y2=\"128\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"130\" y=\"38\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1d4ed8\">130°</text><text x=\"104\" y=\"92\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\" fill=\"#dc2626\">a=50°</text><text x=\"150\" y=\"92\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#0f172a\">80°</text><text x=\"130\" y=\"160\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">Vertically opposite angles: a + 80° = 130° → a = 50</text></svg>"
+              }
+            },
+            {
+              "explain": "Subtract \\(80\\) from both sides to isolate \\(a\\).",
+              "work": "\\(a = 130 - 80 = 50\\)"
+            },
+            {
+              "explain": "Check: \\(50^\\circ + 80^\\circ = 130^\\circ\\). Exact!",
+              "work": "\\(50^\\circ + 80^\\circ = 130^\\circ\\)"
+            },
+            {
+              "explain": "Therefore, \\(a = 50\\).",
+              "work": "\\(\\text{Answer: } a = 50\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 142\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"142\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><path d=\"M 130.0 58.0 L 151.8 47.9 A 24 24 0 0 0 108.2 47.9 Z\" fill=\"#3b82f6\" fill-opacity=\"0.16\"/><path d=\"M 151.8 47.9 A 24 24 0 0 0 108.2 47.9\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/><line x1=\"42\" y1=\"17\" x2=\"218\" y2=\"99\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"42\" y1=\"99\" x2=\"218\" y2=\"17\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"130\" y1=\"58\" x2=\"114\" y2=\"128\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"130\" y=\"38\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1d4ed8\">130°</text><text x=\"104\" y=\"92\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\" fill=\"#dc2626\">a°</text><text x=\"150\" y=\"92\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#0f172a\">80°</text></svg>"
           }
         }
       ]
@@ -4216,6 +4840,190 @@
             "grade": "7",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "khs22-y7-t4a-q12",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Name the transversal in the diagram shown.",
+          "options": [
+            "\\(AF\\)",
+            "\\(CH\\)",
+            "\\(DG\\)",
+            "\\(CD\\)"
+          ],
+          "answer": 0,
+          "hint": "A transversal is the line that CUTS ACROSS two or more other lines — which line crosses both \\(CH\\) and \\(DG\\)?",
+          "keyPoints": [
+            {
+              "text": "transversal",
+              "note": "Line AF cuts across both lines CH and DG."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "A transversal is a straight line that intersects two or more other lines at distinct points.",
+              "work": "\\(\\text{Transversal crosses both } CH \\text{ and } DG\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 230 156\" width=\"65%\" height=\"auto\" style=\"max-width:299px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"230\" height=\"156\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><line x1=\"92\" y1=\"24\" x2=\"84\" y2=\"108\" stroke=\"#0f172a\" stroke-width=\"1.7\"/><line x1=\"142\" y1=\"24\" x2=\"134\" y2=\"108\" stroke=\"#0f172a\" stroke-width=\"1.7\"/><line x1=\"48\" y1=\"78\" x2=\"184\" y2=\"48\" stroke=\"#dc2626\" stroke-width=\"2.8\"/><text x=\"92\" y=\"18\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\">C</text><text x=\"142\" y=\"18\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\">D</text><text x=\"84\" y=\"122\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\">H</text><text x=\"134\" y=\"122\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\">G</text><text x=\"38\" y=\"82\" text-anchor=\"end\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\" fill=\"#dc2626\">A</text><text x=\"192\" y=\"52\" text-anchor=\"start\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\" fill=\"#dc2626\">F</text><text x=\"115\" y=\"148\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">Line AF (red) cuts across both CH and DG</text></svg>"
+              }
+            },
+            {
+              "explain": "In the diagram, line \\(AF\\) (highlighted red) cuts across both \\(CH\\) and \\(DG\\).",
+              "work": "\\(\\text{Transversal} = AF\\)"
+            },
+            {
+              "explain": "Lines \\(CH\\) and \\(DG\\) are the two lines being intersected.",
+              "work": "\\(AF \\text{ is the transversal}\\)"
+            },
+            {
+              "explain": "Therefore, the transversal is \\(AF\\).",
+              "work": "\\(\\text{Answer: } AF\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 230 130\" width=\"65%\" height=\"auto\" style=\"max-width:299px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"230\" height=\"130\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><line x1=\"92\" y1=\"24\" x2=\"84\" y2=\"108\" stroke=\"#0f172a\" stroke-width=\"1.7\"/><line x1=\"142\" y1=\"24\" x2=\"134\" y2=\"108\" stroke=\"#0f172a\" stroke-width=\"1.7\"/><line x1=\"48\" y1=\"78\" x2=\"184\" y2=\"48\" stroke=\"#0f172a\" stroke-width=\"1.7\"/><text x=\"92\" y=\"18\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\">C</text><text x=\"142\" y=\"18\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\">D</text><text x=\"84\" y=\"122\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\">H</text><text x=\"134\" y=\"122\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\">G</text><text x=\"38\" y=\"82\" text-anchor=\"end\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"400\" fill=\"#0f172a\">A</text><text x=\"192\" y=\"52\" text-anchor=\"start\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"400\" fill=\"#0f172a\">F</text></svg>"
+          }
+        },
+        {
+          "id": "khs22-y7-t4a-q16a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the value of the pronumeral \\(a\\) in the parallel-lines diagram shown.",
+          "options": [
+            "\\(a = 40\\)",
+            "\\(a = 50\\)",
+            "\\(a = 140\\)",
+            "\\(a = 220\\)"
+          ],
+          "answer": 0,
+          "hint": "\\(a^\\circ\\) and \\(140^\\circ\\) lie between the two parallel lines on the SAME side of the transversal (co-interior / U-angles), so they sum to \\(180^\\circ\\)!",
+          "keyPoints": [
+            {
+              "text": "pronumeral \\(a\\)",
+              "note": "Co-interior angles on parallel lines sum to 180°: a = 180 − 140 = 40."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Trace the blue U-shape between the two parallel lines: \\(a^\\circ\\) and \\(140^\\circ\\) are co-interior angles.",
+              "work": "\\(a + 140 = 180 \\quad (\\text{co-interior angles, } \\parallel\\text{ lines})\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 168\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"168\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><path d=\"M 94.0 44.0 L 113.7 57.7 A 24 24 0 0 0 118.0 44.0 Z\" fill=\"#3b82f6\" fill-opacity=\"0.34\"/><path d=\"M 113.7 57.7 A 24 24 0 0 0 118.0 44.0\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/><path d=\"M 192.0 112.0 L 214.0 112.0 A 22 22 0 0 0 173.9 99.5 Z\" fill=\"#dc2626\" fill-opacity=\"0.32\"/><path d=\"M 214.0 112.0 A 22 22 0 0 0 173.9 99.5\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2\"/><line x1=\"36\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"36\" y1=\"112\" x2=\"226\" y2=\"112\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><polyline points=\"56,40 62,44 56,48\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><polyline points=\"56,108 62,112 56,116\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"68\" y1=\"26\" x2=\"214\" y2=\"127\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><polyline points=\"222,44 94,44 192,112 222,112\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.6\" stroke-linejoin=\"round\"/><text x=\"132\" y=\"58\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\" fill=\"#1d4ed8\">a = 40°</text><text x=\"195\" y=\"96\" text-anchor=\"start\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#b91c1c\">140°</text><text x=\"130\" y=\"160\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">Co-interior (U) angles: a + 140° = 180° → a = 40</text></svg>"
+              }
+            },
+            {
+              "explain": "Subtract \\(140\\) from \\(180\\).",
+              "work": "\\(a = 180 - 140 = 40\\)"
+            },
+            {
+              "explain": "Check: \\(40^\\circ + 140^\\circ = 180^\\circ\\).",
+              "work": "\\(40^\\circ + 140^\\circ = 180^\\circ\\)"
+            },
+            {
+              "explain": "Therefore, \\(a = 40\\).",
+              "work": "\\(\\text{Answer: } a = 40\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 142\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"142\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><path d=\"M 94.0 44.0 L 113.7 57.7 A 24 24 0 0 0 118.0 44.0 Z\" fill=\"#3b82f6\" fill-opacity=\"0.2\"/><path d=\"M 113.7 57.7 A 24 24 0 0 0 118.0 44.0\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/><path d=\"M 192.0 112.0 L 214.0 112.0 A 22 22 0 0 0 173.9 99.5 Z\" fill=\"#dc2626\" fill-opacity=\"0.18\"/><path d=\"M 214.0 112.0 A 22 22 0 0 0 173.9 99.5\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2\"/><line x1=\"36\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"36\" y1=\"112\" x2=\"226\" y2=\"112\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><polyline points=\"56,40 62,44 56,48\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><polyline points=\"56,108 62,112 56,116\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"68\" y1=\"26\" x2=\"214\" y2=\"127\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"132\" y=\"58\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\" fill=\"#1d4ed8\">a°</text><text x=\"195\" y=\"96\" text-anchor=\"start\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#b91c1c\">140°</text></svg>"
+          }
+        },
+        {
+          "id": "khs22-y7-t4a-q16b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the value of the pronumeral \\(t\\) in the parallel-lines diagram shown.",
+          "options": [
+            "\\(t = 72^\\circ\\)",
+            "\\(t = 108^\\circ\\)",
+            "\\(t = 18^\\circ\\)",
+            "\\(t = 144^\\circ\\)"
+          ],
+          "answer": 0,
+          "hint": "\\(72^\\circ\\) and \\(t\\) sit in the EXACT same matching position at each parallel line intersection — they are corresponding (F) angles, so they are EQUAL!",
+          "keyPoints": [
+            {
+              "text": "pronumeral \\(t\\)",
+              "note": "Corresponding angles on parallel lines are equal: t = 72°."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Compare the positions of \\(72^\\circ\\) (blue) and \\(t\\) (green): both are above the transversal and to the right of their parallel line.",
+              "work": "\\(t = 72^\\circ \\quad (\\text{corresponding angles, } \\parallel\\text{ lines})\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 168\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"168\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><path d=\"M 102.0 74.0 L 125.3 79.8 A 24 24 0 0 0 113.3 52.8 Z\" fill=\"#3b82f6\" fill-opacity=\"0.34\"/><path d=\"M 125.3 79.8 A 24 24 0 0 0 113.3 52.8\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/><path d=\"M 162.0 89.0 L 185.3 94.8 A 24 24 0 0 0 173.3 67.8 Z\" fill=\"#10b981\" fill-opacity=\"0.34\"/><path d=\"M 185.3 94.8 A 24 24 0 0 0 173.3 67.8\" fill=\"none\" stroke=\"#059669\" stroke-width=\"2\"/><line x1=\"74\" y1=\"126\" x2=\"132\" y2=\"18\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"134\" y1=\"138\" x2=\"192\" y2=\"30\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"56\" y1=\"62\" x2=\"214\" y2=\"102\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><polyline points=\"114,44 121,39 121,47\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><polyline points=\"174,56 181,51 181,59\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"132\" y=\"69\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1d4ed8\">72°</text><text x=\"193\" y=\"84\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\" fill=\"#047857\">t = 72°</text><text x=\"130\" y=\"160\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">Corresponding (F) angles on parallel lines are equal: t = 72°</text></svg>"
+              }
+            },
+            {
+              "explain": "Corresponding angles formed by a transversal cutting parallel lines are equal.",
+              "work": "\\(t = 72^\\circ\\)"
+            },
+            {
+              "explain": "Verify visually: both angles are acute and identical in opening.",
+              "work": "\\(72^\\circ = 72^\\circ\\)"
+            },
+            {
+              "explain": "Therefore, \\(t = 72^\\circ\\).",
+              "work": "\\(\\text{Answer: } t = 72^\\circ\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 142\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"142\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><path d=\"M 102.0 74.0 L 125.3 79.8 A 24 24 0 0 0 113.3 52.8 Z\" fill=\"#3b82f6\" fill-opacity=\"0.22\"/><path d=\"M 125.3 79.8 A 24 24 0 0 0 113.3 52.8\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/><path d=\"M 162.0 89.0 L 185.3 94.8 A 24 24 0 0 0 173.3 67.8 Z\" fill=\"#10b981\" fill-opacity=\"0.22\"/><path d=\"M 185.3 94.8 A 24 24 0 0 0 173.3 67.8\" fill=\"none\" stroke=\"#059669\" stroke-width=\"2\"/><line x1=\"74\" y1=\"126\" x2=\"132\" y2=\"18\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"134\" y1=\"138\" x2=\"192\" y2=\"30\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"56\" y1=\"62\" x2=\"214\" y2=\"102\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><polyline points=\"114,44 121,39 121,47\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><polyline points=\"174,56 181,51 181,59\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"132\" y=\"69\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1d4ed8\">72°</text><text x=\"193\" y=\"84\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\" fill=\"#047857\">t</text></svg>"
+          }
+        },
+        {
+          "id": "khs22-y7-t4a-q16c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the value of the pronumeral \\(q\\) in the parallel-lines diagram shown.",
+          "options": [
+            "\\(q = 45^\\circ\\)",
+            "\\(q = 135^\\circ\\)",
+            "\\(q = 90^\\circ\\)",
+            "\\(q = 55^\\circ\\)"
+          ],
+          "answer": 0,
+          "hint": "Trace the Z-shape between the two horizontal parallel lines! \\(45^\\circ\\) and \\(q\\) are alternate angles, so they are EQUAL!",
+          "keyPoints": [
+            {
+              "text": "pronumeral \\(q\\)",
+              "note": "Alternate (Z) angles on parallel lines are equal: q = 45°."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Trace the blue Z-shape along the two parallel lines and the transversal: \\(45^\\circ\\) and \\(q\\) are alternate angles.",
+              "work": "\\(q = 45^\\circ \\quad (\\text{alternate angles, } \\parallel\\text{ lines})\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 168\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"168\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><path d=\"M 154.0 48.0 L 130.0 48.0 A 24 24 0 0 0 137.0 65.0 Z\" fill=\"#3b82f6\" fill-opacity=\"0.34\"/><path d=\"M 130.0 48.0 A 24 24 0 0 0 137.0 65.0\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/><path d=\"M 98.0 104.0 L 122.0 104.0 A 24 24 0 0 0 115.0 87.0 Z\" fill=\"#10b981\" fill-opacity=\"0.34\"/><path d=\"M 122.0 104.0 A 24 24 0 0 0 115.0 87.0\" fill=\"none\" stroke=\"#059669\" stroke-width=\"2\"/><line x1=\"42\" y1=\"48\" x2=\"218\" y2=\"48\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"42\" y1=\"104\" x2=\"218\" y2=\"104\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><polyline points=\"184,44 190,48 184,52\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><polyline points=\"184,100 190,104 184,108\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"68\" y1=\"134\" x2=\"184\" y2=\"18\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><polyline points=\"54,48 154,48 98,104 206,104\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.6\" stroke-linejoin=\"round\"/><text x=\"116\" y=\"64\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1d4ed8\">45°</text><text x=\"136\" y=\"96\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\" fill=\"#047857\">q = 45°</text><text x=\"130\" y=\"160\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">Alternate (Z) angles on parallel lines are equal: q = 45°</text></svg>"
+              }
+            },
+            {
+              "explain": "Alternate angles between parallel lines are always equal.",
+              "work": "\\(q = 45^\\circ\\)"
+            },
+            {
+              "explain": "Verify: both \\(45^\\circ\\) and \\(q\\) are acute interior angles on opposite sides of the transversal.",
+              "work": "\\(q = 45^\\circ\\)"
+            },
+            {
+              "explain": "Therefore, \\(q = 45^\\circ\\).",
+              "work": "\\(\\text{Answer: } q = 45^\\circ\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 142\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"142\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><path d=\"M 154.0 48.0 L 130.0 48.0 A 24 24 0 0 0 137.0 65.0 Z\" fill=\"#3b82f6\" fill-opacity=\"0.22\"/><path d=\"M 130.0 48.0 A 24 24 0 0 0 137.0 65.0\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/><path d=\"M 98.0 104.0 L 122.0 104.0 A 24 24 0 0 0 115.0 87.0 Z\" fill=\"#10b981\" fill-opacity=\"0.22\"/><path d=\"M 122.0 104.0 A 24 24 0 0 0 115.0 87.0\" fill=\"none\" stroke=\"#059669\" stroke-width=\"2\"/><line x1=\"42\" y1=\"48\" x2=\"218\" y2=\"48\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"42\" y1=\"104\" x2=\"218\" y2=\"104\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><polyline points=\"184,44 190,48 184,52\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><polyline points=\"184,100 190,104 184,108\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"68\" y1=\"134\" x2=\"184\" y2=\"18\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"116\" y=\"64\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1d4ed8\">45°</text><text x=\"136\" y=\"96\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\" fill=\"#047857\">q</text></svg>"
+          }
         }
       ]
     },
@@ -4577,6 +5385,55 @@
               }
             }
           ]
+        },
+        {
+          "id": "khs22-y7-t4a-q31",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the size of the angle marked \\(\\angle AVB\\) in the diagram shown (where \\(BV \\parallel RA \\parallel ST\\), \\(BR \\parallel TA\\), and \\(RS \\parallel VA\\)).",
+          "options": [
+            "\\(45^\\circ\\)",
+            "\\(90^\\circ\\)",
+            "\\(135^\\circ\\)",
+            "\\(150^\\circ\\)"
+          ],
+          "answer": 2,
+          "hint": "Use TWO parallel-line steps! First use \\(RS \\parallel VA\\) (Z-angles) to find \\(\\angle VAR = 45^\\circ\\), then use \\(BV \\parallel RA\\) (co-interior U-angles) to find \\(\\angle AVB = 180^\\circ - 45^\\circ\\)!",
+          "keyPoints": [
+            {
+              "text": "\\angle AVB",
+              "note": "Step 1: ∠VAR = 45° (alternate, RS∥VA). Step 2: ∠AVB = 180° − 45° = 135° (co-interior, BV∥RA)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Look at the blue Z-shape \\(S\\text{–}R\\text{–}A\\text{–}V\\) using parallel lines \\(RS \\parallel VA\\): by alternate angles, \\(\\angle VAR = \\angle SRA = 45^\\circ\\).",
+              "work": "\\(\\angle VAR = 45^\\circ \\quad (\\text{alternate angles, } RS \\parallel VA)\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 200\" width=\"65%\" height=\"auto\" style=\"max-width:377px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"290\" height=\"200\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><path d=\"M 56.0 88.0 L 73.0 105.0 A 24 24 0 0 0 80.0 88.0 Z\" fill=\"#3b82f6\" fill-opacity=\"0.34\"/><path d=\"M 73.0 105.0 A 24 24 0 0 0 80.0 88.0\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/><path d=\"M 186.0 40.0 L 162.0 40.0 A 24 24 0 0 0 203.0 57.0 Z\" fill=\"#10b981\" fill-opacity=\"0.22\"/><path d=\"M 162.0 40.0 A 24 24 0 0 0 203.0 57.0\" fill=\"none\" stroke=\"#059669\" stroke-width=\"2\"/><path d=\"M 234.0 88.0 L 217.0 71.0 A 24 24 0 0 0 210.0 88.0 Z\" fill=\"#3b82f6\" fill-opacity=\"0.34\"/><path d=\"M 217.0 71.0 A 24 24 0 0 0 210.0 88.0\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/><polygon points=\"56,88 104,40 186,40 234,88 186,136 104,136\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.7\" stroke-linejoin=\"round\"/><line x1=\"56\" y1=\"88\" x2=\"234\" y2=\"88\" stroke=\"#0f172a\" stroke-width=\"1.7\"/><polyline points=\"104,136 56,88 234,88 186,40\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.8\" stroke-linejoin=\"round\"/><polyline points=\"138,37 142,40 138,43\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><polyline points=\"142,37 146,40 142,43\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><polyline points=\"146,37 150,40 146,43\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><polyline points=\"138,85 142,88 138,91\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><polyline points=\"142,85 146,88 142,91\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><polyline points=\"146,85 150,88 146,91\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><polyline points=\"138,133 142,136 138,139\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><polyline points=\"142,133 146,136 142,139\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><polyline points=\"146,133 150,136 146,139\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"88\" y=\"103\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1d4ed8\">45°</text><text x=\"198\" y=\"81\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1d4ed8\">45°</text><text x=\"44\" y=\"92\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\">R</text><text x=\"100\" y=\"32\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\">B</text><text x=\"188\" y=\"32\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\">V</text><text x=\"246\" y=\"92\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\">A</text><text x=\"188\" y=\"150\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\">T</text><text x=\"100\" y=\"150\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\">S</text><text x=\"145\" y=\"192\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">Step 1: Blue Z-angles (RS ∥ VA) give ∠VAR = 45°</text></svg>"
+              }
+            },
+            {
+              "explain": "Now look at the green U-shape \\(B\\text{–}V\\text{–}A\\text{–}R\\) using parallel lines \\(BV \\parallel RA\\): \\(\\angle AVB\\) and \\(\\angle VAR\\) are co-interior angles and sum to \\(180^\\circ\\).",
+              "work": "\\(\\angle AVB + \\angle VAR = 180^\\circ \\quad (\\text{co-interior angles, } BV \\parallel RA)\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 200\" width=\"65%\" height=\"auto\" style=\"max-width:377px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"290\" height=\"200\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><path d=\"M 56.0 88.0 L 73.0 105.0 A 24 24 0 0 0 80.0 88.0 Z\" fill=\"#3b82f6\" fill-opacity=\"0.2\"/><path d=\"M 73.0 105.0 A 24 24 0 0 0 80.0 88.0\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/><path d=\"M 186.0 40.0 L 162.0 40.0 A 24 24 0 0 0 203.0 57.0 Z\" fill=\"#10b981\" fill-opacity=\"0.34\"/><path d=\"M 162.0 40.0 A 24 24 0 0 0 203.0 57.0\" fill=\"none\" stroke=\"#059669\" stroke-width=\"2\"/><path d=\"M 234.0 88.0 L 217.0 71.0 A 24 24 0 0 0 210.0 88.0 Z\" fill=\"#3b82f6\" fill-opacity=\"0.34\"/><path d=\"M 217.0 71.0 A 24 24 0 0 0 210.0 88.0\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/><polygon points=\"56,88 104,40 186,40 234,88 186,136 104,136\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.7\" stroke-linejoin=\"round\"/><line x1=\"56\" y1=\"88\" x2=\"234\" y2=\"88\" stroke=\"#0f172a\" stroke-width=\"1.7\"/><polyline points=\"104,40 186,40 234,88 56,88\" fill=\"none\" stroke=\"#059669\" stroke-width=\"2.8\" stroke-linejoin=\"round\"/><polyline points=\"138,37 142,40 138,43\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><polyline points=\"142,37 146,40 142,43\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><polyline points=\"146,37 150,40 146,43\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><polyline points=\"138,85 142,88 138,91\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><polyline points=\"142,85 146,88 142,91\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><polyline points=\"146,85 150,88 146,91\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><polyline points=\"138,133 142,136 138,139\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><polyline points=\"142,133 146,136 142,139\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><polyline points=\"146,133 150,136 146,139\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"88\" y=\"103\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1d4ed8\">45°</text><text x=\"198\" y=\"81\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1d4ed8\">45°</text><text x=\"174\" y=\"68\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#047857\">135°</text><text x=\"44\" y=\"92\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\">R</text><text x=\"100\" y=\"32\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\">B</text><text x=\"188\" y=\"32\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\">V</text><text x=\"246\" y=\"92\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\">A</text><text x=\"188\" y=\"150\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\">T</text><text x=\"100\" y=\"150\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\">S</text><text x=\"145\" y=\"192\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">Step 2: Green U-angles (BV ∥ RA) give ∠AVB = 180° − 45° = 135°</text></svg>"
+              }
+            },
+            {
+              "explain": "Substitute \\(\\angle VAR = 45^\\circ\\) and subtract from \\(180^\\circ\\).",
+              "work": "\\(\\angle AVB = 180^\\circ - 45^\\circ = 135^\\circ\\)"
+            },
+            {
+              "explain": "Therefore, \\(\\angle AVB = 135^\\circ\\).",
+              "work": "\\(\\text{Answer: } 135^\\circ\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 174\" width=\"65%\" height=\"auto\" style=\"max-width:377px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"290\" height=\"174\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><path d=\"M 56.0 88.0 L 73.0 105.0 A 24 24 0 0 0 80.0 88.0 Z\" fill=\"#3b82f6\" fill-opacity=\"0.2\"/><path d=\"M 73.0 105.0 A 24 24 0 0 0 80.0 88.0\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/><path d=\"M 186.0 40.0 L 162.0 40.0 A 24 24 0 0 0 203.0 57.0 Z\" fill=\"#10b981\" fill-opacity=\"0.22\"/><path d=\"M 162.0 40.0 A 24 24 0 0 0 203.0 57.0\" fill=\"none\" stroke=\"#059669\" stroke-width=\"2\"/><polygon points=\"56,88 104,40 186,40 234,88 186,136 104,136\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.7\" stroke-linejoin=\"round\"/><line x1=\"56\" y1=\"88\" x2=\"234\" y2=\"88\" stroke=\"#0f172a\" stroke-width=\"1.7\"/><polyline points=\"138,37 142,40 138,43\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><polyline points=\"142,37 146,40 142,43\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><polyline points=\"146,37 150,40 146,43\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><polyline points=\"138,85 142,88 138,91\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><polyline points=\"142,85 146,88 142,91\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><polyline points=\"146,85 150,88 146,91\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><polyline points=\"138,133 142,136 138,139\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><polyline points=\"142,133 146,136 142,139\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><polyline points=\"146,133 150,136 146,139\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"88\" y=\"103\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1d4ed8\">45°</text><text x=\"44\" y=\"92\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\">R</text><text x=\"100\" y=\"32\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\">B</text><text x=\"188\" y=\"32\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\">V</text><text x=\"246\" y=\"92\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\">A</text><text x=\"188\" y=\"150\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\">T</text><text x=\"100\" y=\"150\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\">S</text></svg>"
+          }
         }
       ]
     },
@@ -4746,6 +5603,52 @@
             "school": "Form II Half-Yearly",
             "grade": "7",
             "origin": "teacher"
+          }
+        },
+        {
+          "id": "khs22-y7-t4a-q18",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Is \\(AB\\) parallel to \\(CD\\) in the diagram shown? Give reasons.",
+          "options": [
+            "No, because the co-interior angles sum to \\(182^\\circ \\neq 180^\\circ\\).",
+            "Yes, because the co-interior angles sum to \\(180^\\circ\\).",
+            "Yes, because alternate angles are equal.",
+            "No, because the angles are not equal."
+          ],
+          "answer": 0,
+          "hint": "Add the two co-interior angles (\\(108^\\circ + 74^\\circ\\)): for \\(AB \\parallel CD\\) to be true, their sum MUST equal EXACTLY \\(180^\\circ\\)!",
+          "keyPoints": [
+            {
+              "text": "parallel to \\(CD\\)",
+              "note": "Co-interior sum = 108° + 74° = 182° ≠ 180°, so NOT parallel."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the relationship between \\(108^\\circ\\) (red) and \\(74^\\circ\\) (blue): they are co-interior angles between \\(AB\\) and \\(CD\\).",
+              "work": "\\(108^\\circ + 74^\\circ = 182^\\circ\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 168\" width=\"65%\" height=\"auto\" style=\"max-width:312px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"168\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><path d=\"M 78.0 84.0 L 78.0 106.0 A 22 22 0 0 0 98.9 77.2 Z\" fill=\"#dc2626\" fill-opacity=\"0.3\"/><path d=\"M 78.0 106.0 A 22 22 0 0 0 98.9 77.2\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2\"/><path d=\"M 166.0 56.0 L 145.1 62.8 A 22 22 0 0 0 166.0 78.0 Z\" fill=\"#2563eb\" fill-opacity=\"0.3\"/><path d=\"M 145.1 62.8 A 22 22 0 0 0 166.0 78.0\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/><line x1=\"78\" y1=\"24\" x2=\"78\" y2=\"116\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"166\" y1=\"22\" x2=\"166\" y2=\"114\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"56\" y1=\"91\" x2=\"192\" y2=\"48\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"78\" y=\"17\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\">A</text><text x=\"78\" y=\"130\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\">B</text><text x=\"166\" y=\"16\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\">C</text><text x=\"166\" y=\"128\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\">D</text><text x=\"106\" y=\"102\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"12\" font-weight=\"700\" fill=\"#b91c1c\">108°</text><text x=\"148\" y=\"86\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1d4ed8\">74°</text><text x=\"120\" y=\"160\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">Co-interior sum = 108° + 74° = 182° ≠ 180° → NOT parallel</text></svg>"
+              }
+            },
+            {
+              "explain": "For two lines to be parallel, co-interior angles must be supplementary (sum to exactly \\(180^\\circ\\)).",
+              "work": "\\(182^\\circ \\neq 180^\\circ\\)"
+            },
+            {
+              "explain": "Since \\(182^\\circ \\neq 180^\\circ\\), lines \\(AB\\) and \\(CD\\) are NOT parallel.",
+              "work": "\\(AB \\nparallel CD\\)"
+            },
+            {
+              "explain": "Therefore, No — because the co-interior angles sum to \\(182^\\circ \\neq 180^\\circ\\).",
+              "work": "\\(\\text{Answer: No } (108^\\circ + 74^\\circ = 182^\\circ \\neq 180^\\circ)\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 142\" width=\"65%\" height=\"auto\" style=\"max-width:312px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"142\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><path d=\"M 78.0 84.0 L 78.0 106.0 A 22 22 0 0 0 98.9 77.2 Z\" fill=\"#dc2626\" fill-opacity=\"0.18\"/><path d=\"M 78.0 106.0 A 22 22 0 0 0 98.9 77.2\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2\"/><path d=\"M 166.0 56.0 L 145.1 62.8 A 22 22 0 0 0 166.0 78.0 Z\" fill=\"#2563eb\" fill-opacity=\"0.18\"/><path d=\"M 145.1 62.8 A 22 22 0 0 0 166.0 78.0\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/><line x1=\"78\" y1=\"24\" x2=\"78\" y2=\"116\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"166\" y1=\"22\" x2=\"166\" y2=\"114\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"56\" y1=\"91\" x2=\"192\" y2=\"48\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"78\" y=\"17\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\">A</text><text x=\"78\" y=\"130\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\">B</text><text x=\"166\" y=\"16\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\">C</text><text x=\"166\" y=\"128\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\">D</text><text x=\"106\" y=\"102\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"12\" font-weight=\"700\" fill=\"#b91c1c\">108°</text><text x=\"148\" y=\"86\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1d4ed8\">74°</text></svg>"
           }
         }
       ]
