@@ -107,6 +107,272 @@
               ]
             }
           ]
+        },
+        {
+          "id": "glenwood2020-e1-q12a1",
+          "type": "mc",
+          "stem": "A game is played in which players throw netballs, aiming to get them through the hoop. The players are given two options in how they play the game. Option 1: Players take 2 attempts and win a prize if at least one of the balls goes through. Option 2: Players take 3 attempts and win a prize if at least two of the balls go through. Karen decides to play. The probability that she will get a ball through on any attempt is \\(p\\), where \\(p>0\\). Show that the probability that Karen wins if she takes Option 1 is \\(2p-p^{2}\\). Which working is correct?",
+          "difficulty": "medium",
+          "options": [
+            "\\(P(\\text{at least one})=1-P(\\text{none})=1-(1-p)^{2}=1-1+2p-p^{2}=2p-p^{2}\\)",
+            "\\(P(\\text{at least one})=p+p=2p\\)",
+            "\\(P(\\text{at least one})=p\\times p=p^{2}\\)",
+            "\\(P(\\text{at least one})=1-p^{2}\\)"
+          ],
+          "answer": 0,
+          "hint": "\\\"At least one\\\" is easiest with the COMPLEMENT: \\(1-P(\\text{none})\\). The probability of failing one attempt is \\(1-p\\); two independent failures multiply.",
+          "steps": [
+            {
+              "explain": "Complement: winning Option 1 is the opposite of missing BOTH attempts.",
+              "work": "\\(P(\\text{win})=1-P(\\text{both miss})\\)"
+            },
+            {
+              "explain": "Each attempt misses with probability \\(1-p\\); the two attempts are independent, so multiply.",
+              "work": "\\(P(\\text{both miss})=(1-p)(1-p)=(1-p)^{2}\\)"
+            },
+            {
+              "explain": "Subtract from 1 and expand.",
+              "work": "\\(1-(1-p)^{2}=1-\\left(1-2p+p^{2}\\right)=2p-p^{2}\\)"
+            },
+            {
+              "explain": "Alternative check: \\(P(1\\text{ ball})+P(2\\text{ balls})=2p(1-p)+p^{2}=2p-2p^{2}+p^{2}=2p-p^{2}\\) ✓. Why not the others: B adds the probabilities (ignores overlap); C is the chance BOTH go in; D confuses \\(1-p^{2}\\) with \\((1-p)^{2}\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that the probability that Karen wins if she takes Option 1 is",
+              "note": "At least one: 1 − P(none)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Glenwood High School 2020 Year 12 Mathematics Extension 1 Trial HSC Examination",
+            "school": "Glenwood High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "glenwood2020-e1-q12a2",
+          "type": "mc",
+          "stem": "A game is played in which players throw netballs, aiming to get them through the hoop. The players are given two options in how they play the game. Option 1: Players take 2 attempts and win a prize if at least one of the balls goes through. Option 2: Players take 3 attempts and win a prize if at least two of the balls go through. Karen decides to play. The probability that she will get a ball through on any attempt is \\(p\\), where \\(p>0\\). Show that the probability that Karen wins if she takes Option 2 is \\(3p^{2}-2p^{3}\\). Which working is correct?",
+          "difficulty": "medium",
+          "options": [
+            "\\(P(\\text{exactly 2})+P(\\text{3})=3p^{2}(1-p)+p^{3}=3p^{2}-3p^{3}+p^{3}=3p^{2}-2p^{3}\\)",
+            "\\(P(\\text{exactly 2})=3p^{2}(1-p)=3p^{2}-3p^{3}\\)",
+            "\\(P(\\text{at least 2})=p^{2}+p^{3}\\)",
+            "\\(P(\\text{at least 2})=1-(1-p)^{3}\\)"
+          ],
+          "answer": 0,
+          "hint": "At least 2 of 3 means EXACTLY 2 or EXACTLY 3. Use the binomial: \\(\\binom{3}{r}p^{r}(1-p)^{3-r}\\). Add the two cases.",
+          "steps": [
+            {
+              "explain": "Exactly 2 balls through (and one miss): choose which attempt misses: \\(\\binom{3}{2}=3\\) ways.",
+              "work": "\\(P(2)=\\binom{3}{2}p^{2}(1-p)=3p^{2}(1-p)\\)"
+            },
+            {
+              "explain": "All 3 balls through.",
+              "work": "\\(P(3)=\\binom{3}{3}p^{3}=p^{3}\\)"
+            },
+            {
+              "explain": "Add and expand.",
+              "work": "\\(3p^{2}(1-p)+p^{3}=3p^{2}-3p^{3}+p^{3}=3p^{2}-2p^{3}\\)"
+            },
+            {
+              "explain": "Why not the others: B leaves out the 'all 3' case; C forgets the 3 arrangements and the miss in the 'exactly 2' case; D is the probability of AT LEAST ONE ball (the Option-1 idea).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that the probability that Karen wins if she takes Option 2 is",
+              "note": "At least 2 of 3: exactly 2 plus exactly 3."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Glenwood High School 2020 Year 12 Mathematics Extension 1 Trial HSC Examination",
+            "school": "Glenwood High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "glenwood2020-e1-q12a3",
+          "type": "mc",
+          "stem": "A game is played in which players throw netballs, aiming to get them through the hoop. The players are given two options in how they play the game. Option 1: Players take 2 attempts and win a prize if at least one of the balls goes through. Option 2: Players take 3 attempts and win a prize if at least two of the balls go through. Karen decides to play. The probability that she will get a ball through on any attempt is \\(p\\), where \\(p>0\\). Karen has calculated that she is 3 times as likely to win by choosing Option 1 over Option 2. Find the value of \\(p\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(p=\\dfrac{5-\\sqrt{13}}{6}\\approx0.23\\)",
+            "\\(p=\\dfrac{5+\\sqrt{13}}{6}\\approx1.43\\)",
+            "\\(p=\\dfrac{1}{3}\\)",
+            "\\(p=\\dfrac{5-\\sqrt{13}}{3}\\approx0.46\\)"
+          ],
+          "answer": 0,
+          "hint": "Set up \\(P(\\text{Option 1})=3\\times P(\\text{Option 2})\\) with the two results, rearrange to a polynomial, factorise out \\(2p\\), then use the quadratic formula. A probability must satisfy \\(0<p<1\\).",
+          "steps": [
+            {
+              "explain": "Equation: Option 1 is 3 times as likely as Option 2.",
+              "work": "\\(2p-p^{2}=3\\left(3p^{2}-2p^{3}\\right)\\)"
+            },
+            {
+              "explain": "Expand and collect everything on one side.",
+              "work": "\\(2p-p^{2}=9p^{2}-6p^{3}\\ \\Rightarrow\\ 6p^{3}-10p^{2}+2p=0\\)"
+            },
+            {
+              "explain": "Factorise (common factor \\(2p\\)).",
+              "work": "\\(2p\\left(3p^{2}-5p+1\\right)=0\\)"
+            },
+            {
+              "explain": "\\(2p=0\\) gives \\(p=0\\), rejected (\\(p>0\\)). Quadratic formula for \\(3p^{2}-5p+1=0\\).",
+              "work": "\\(p=\\dfrac{5\\pm\\sqrt{25-12}}{6}=\\dfrac{5\\pm\\sqrt{13}}{6}\\)"
+            },
+            {
+              "explain": "A probability must be between 0 and 1: \\(\\dfrac{5+\\sqrt{13}}{6}\\approx1.43\\) is rejected.",
+              "work": "\\(p=\\dfrac{5-\\sqrt{13}}{6}\\approx0.23\\)"
+            },
+            {
+              "explain": "Why not the others: B is the rejected root (\\(>1\\)); C and D do not satisfy the equation.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the value of \\(p\\)",
+              "note": "Factor out 2p; reject p = 0 and p > 1."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Glenwood High School 2020 Year 12 Mathematics Extension 1 Trial HSC Examination",
+            "school": "Glenwood High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "glenwood2020-e1-q13a1",
+          "type": "mc",
+          "stem": "On a roulette wheel, there are 18 red numbers, 18 black numbers, and one green number. A ball is dropped onto the spinning wheel and lands on one of the numbers randomly. Each result is independent. A gambler bets that the ball will land on any of the 18 black numbers. Define the gambler's bet as a Bernoulli random variable \\(X\\) and give its mean and variance.",
+          "difficulty": "medium",
+          "options": [
+            "\\(X\\sim\\text{Bernoulli}\\left(\\dfrac{18}{37}\\right)\\): mean \\(\\dfrac{18}{37}\\), variance \\(\\dfrac{342}{1369}\\)",
+            "\\(X\\sim\\text{Bernoulli}\\left(\\dfrac{1}{2}\\right)\\): mean \\(\\dfrac{1}{2}\\), variance \\(\\dfrac{1}{4}\\)",
+            "\\(X\\sim\\text{Bernoulli}\\left(\\dfrac{18}{37}\\right)\\): mean \\(\\dfrac{18}{37}\\), variance \\(\\dfrac{18}{37}\\)",
+            "\\(X\\sim\\text{Bernoulli}\\left(\\dfrac{19}{37}\\right)\\): mean \\(\\dfrac{19}{37}\\), variance \\(\\dfrac{342}{1369}\\)"
+          ],
+          "answer": 0,
+          "hint": "A Bernoulli variable has only two outcomes: success \\(=1\\) with probability \\(p\\), failure \\(=0\\) with probability \\(1-p\\). Mean \\(=p\\); variance \\(=p(1-p)\\). Count the wheel: 37 numbers in total (18 + 18 + 1).",
+          "steps": [
+            {
+              "explain": "Total numbers: \\(18+18+1=37\\). The gambler wins if the ball lands on one of the 18 black numbers.",
+              "work": "\\(p=P(\\text{black})=\\dfrac{18}{37},\\qquad1-p=\\dfrac{19}{37}\\)"
+            },
+            {
+              "explain": "Define \\(X=1\\) if the ball lands on black (win), \\(X=0\\) otherwise (lose).",
+              "work": "\\(X\\sim\\text{Bernoulli}\\left(\\dfrac{18}{37}\\right)\\)"
+            },
+            {
+              "explain": "Mean of a Bernoulli variable is \\(p\\).",
+              "work": "\\(E(X)=p=\\dfrac{18}{37}\\)"
+            },
+            {
+              "explain": "Variance is \\(p(1-p)\\).",
+              "work": "\\(\\text{Var}(X)=\\dfrac{18}{37}\\times\\dfrac{19}{37}=\\dfrac{342}{1369}\\)"
+            },
+            {
+              "explain": "Why not the others: B ignores the green number (uses \\(\\dfrac{1}{2}\\)); C uses \\(\\text{Var}=p\\) (forgets the factor \\(1-p\\)); D uses the losing probability as the mean.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Define the gambler's bet as a Bernoulli random variable",
+              "note": "Bernoulli: mean p, variance p(1 − p)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Glenwood High School 2020 Year 12 Mathematics Extension 1 Trial HSC Examination",
+            "school": "Glenwood High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "glenwood2020-e1-q13a3",
+          "type": "mc",
+          "stem": "On a roulette wheel, there are 18 red numbers, 18 black numbers, and one green number. A ball is dropped onto the spinning wheel and lands on one of the numbers randomly. Each result is independent. A gambler bets that the ball will land on any of the 18 black numbers. If the gambler makes the same bet five times, what is the probability he will win more times than he loses? Give your answer correct to three decimal places.",
+          "difficulty": "hard",
+          "options": [
+            "\\(0.475\\)",
+            "\\(0.525\\)",
+            "\\(0.791\\)",
+            "\\(0.304\\)"
+          ],
+          "answer": 0,
+          "hint": "In 5 bets, \\\"win more times than he loses\\\" means at least 3 wins (3, 4 or 5 wins out of 5). Use \\(P(Y=r)=\\binom{5}{r}\\left(\\dfrac{18}{37}\\right)^{r}\\left(\\dfrac{19}{37}\\right)^{5-r}\\) and add the three cases.",
+          "steps": [
+            {
+              "explain": "With 5 bets he wins more than he loses when he wins 3, 4 or 5 times (3 wins and 2 losses is already more wins than losses).",
+              "work": "\\(P(Y\\ge3)=P(Y=3)+P(Y=4)+P(Y=5)\\)"
+            },
+            {
+              "explain": "\\(P(Y=3)\\): \\(\\binom{5}{3}=10\\) arrangements.",
+              "work": "\\(10\\left(\\dfrac{18}{37}\\right)^{3}\\left(\\dfrac{19}{37}\\right)^{2}=0.3036\\)"
+            },
+            {
+              "explain": "\\(P(Y=4)\\) and \\(P(Y=5)\\).",
+              "work": "\\(5\\left(\\dfrac{18}{37}\\right)^{4}\\left(\\dfrac{19}{37}\\right)=0.1438,\\qquad\\left(\\dfrac{18}{37}\\right)^{5}=0.0272\\)"
+            },
+            {
+              "explain": "Add the three probabilities.",
+              "work": "\\(0.3036+0.1438+0.0272=0.4747\\ldots\\approx0.475\\)"
+            },
+            {
+              "explain": "Why not the others: \\(0.525\\) is \\(1-0.475\\) (win 0, 1 or 2 times); \\(0.791\\) is \\(P(Y\\ge2)\\) (includes 2 wins, which is fewer wins than losses); \\(0.304\\) is only \\(P(Y=3)\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "what is the probability he will win more times than he loses",
+              "note": "At least 3 wins out of 5."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Glenwood High School 2020 Year 12 Mathematics Extension 1 Trial HSC Examination",
+            "school": "Glenwood High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -334,6 +600,160 @@
               "note": "Variance = σ² = 4 = np(1 − p)."
             }
           ]
+        },
+        {
+          "id": "glenwood2020-e1-q3",
+          "type": "mc",
+          "stem": "An examination consists of \\(30\\) multiple-choice questions, each question having five possible answers. A student guesses the answer to every question. Let \\(X\\) be the number of correct answers. What is \\(E(X)\\)?",
+          "difficulty": "easy",
+          "options": [
+            "\\(5\\)",
+            "\\(6\\)",
+            "\\(9\\)",
+            "\\(15\\)"
+          ],
+          "answer": 1,
+          "hint": "Guessing makes each question a Bernoulli trial: probability of success \\(p=\\dfrac{1}{5}\\). \\(X\\) counts successes in \\(n=30\\) independent trials: \\(X\\sim\\text{Bin}(30,\\dfrac{1}{5})\\). For a binomial the mean is \\(E(X)=np\\).",
+          "steps": [
+            {
+              "explain": "Each guess is correct with probability 1 out of 5 possible answers.",
+              "work": "\\(p=\\dfrac{1}{5}\\)"
+            },
+            {
+              "explain": "There are \\(n=30\\) independent questions.",
+              "work": "\\(X\\sim\\text{Bin}\\left(30,\\dfrac{1}{5}\\right)\\)"
+            },
+            {
+              "explain": "Mean (expected value) of a binomial: \\(E(X)=np\\).",
+              "work": "\\(E(X)=30\\times\\dfrac{1}{5}=6\\)"
+            },
+            {
+              "explain": "Why not the others: \\(5\\) uses the number of answers; \\(9\\) and \\(15\\) come from \\(np\\) with a wrong \\(p\\) (\\(0.3\\) and \\(0.5\\)). (The variance would be \\(np(1-p)=4.8\\).)",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">B</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "What is \\(E(X)\\)",
+              "note": "Binomial mean E(X) = np."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Glenwood High School 2020 Year 12 Mathematics Extension 1 Trial HSC Examination",
+            "school": "Glenwood High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "glenwood2020-e1-q11d",
+          "type": "mc",
+          "stem": "Weather records suggest that in the town of Mathsville, an average of \\(5\\) days out of \\(30\\) in the month of April will be wet. If \\(X\\) represents the number of wet days in April, such that \\(X\\sim\\text{Bin}\\left(30,\\dfrac{1}{6}\\right)\\), find \\(P(X\\ge2)\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(0.97\\)",
+            "\\(0.03\\)",
+            "\\(1.00\\)",
+            "\\(0.07\\)"
+          ],
+          "answer": 0,
+          "hint": "\\(P(X\\ge2)\\) means 2 or more wet days: use the COMPLEMENT \\(1-P(X<2)=1-\\left[P(X=0)+P(X=1)\\right]\\). Use \\(P(X=r)=\\binom{30}{r}\\left(\\dfrac{1}{6}\\right)^{r}\\left(\\dfrac{5}{6}\\right)^{30-r}\\).",
+          "steps": [
+            {
+              "explain": "Complement rule: \\(X\\ge2\\) is the opposite of \\(X=0\\) or \\(X=1\\).",
+              "work": "\\(P(X\\ge2)=1-\\left[P(X=0)+P(X=1)\\right]\\)"
+            },
+            {
+              "explain": "\\(P(X=0)\\): no wet days.",
+              "work": "\\(P(X=0)=\\binom{30}{0}\\left(\\dfrac{1}{6}\\right)^{0}\\left(\\dfrac{5}{6}\\right)^{30}=0.00421\\)"
+            },
+            {
+              "explain": "\\(P(X=1)\\): exactly one wet day.",
+              "work": "\\(P(X=1)=\\binom{30}{1}\\left(\\dfrac{1}{6}\\right)^{1}\\left(\\dfrac{5}{6}\\right)^{29}=30\\times\\dfrac{1}{6}\\times0.005056=0.02528\\)"
+            },
+            {
+              "explain": "Add and subtract from 1.",
+              "work": "\\(P(X\\ge2)=1-(0.00421+0.02528)=1-0.0295=0.97\\)"
+            },
+            {
+              "explain": "Why not the others: \\(0.03\\) is \\(P(X<2)\\); \\(1.00\\) is \\(1-P(X=0)\\) (that is \\(P(X\\ge1)\\)); \\(0.07\\) is \\(P(X=2)\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "find \\(P(X\\ge2)\\)",
+              "note": "Complement: 1 − P(X = 0) − P(X = 1)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Glenwood High School 2020 Year 12 Mathematics Extension 1 Trial HSC Examination",
+            "school": "Glenwood High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "glenwood2020-e1-q13a2",
+          "type": "mc",
+          "stem": "On a roulette wheel, there are 18 red numbers, 18 black numbers, and one green number. A ball is dropped onto the spinning wheel and lands on one of the numbers randomly. Each result is independent. A gambler bets that the ball will land on any of the 18 black numbers. If the gambler makes the same bet five times, let the random variable \\(Y\\) be the number of times the gambler wins. Describe the distribution of \\(Y\\), and give its mean and variance.",
+          "difficulty": "medium",
+          "options": [
+            "\\(Y\\sim\\text{Bin}\\left(5,\\dfrac{18}{37}\\right)\\): mean \\(\\dfrac{90}{37}\\), variance \\(\\dfrac{1710}{1369}\\)",
+            "\\(Y\\sim\\text{Bin}\\left(5,\\dfrac{1}{2}\\right)\\): mean \\(\\dfrac{5}{2}\\), variance \\(\\dfrac{5}{4}\\)",
+            "\\(Y\\sim\\text{Bin}\\left(5,\\dfrac{18}{37}\\right)\\): mean \\(\\dfrac{90}{37}\\), variance \\(\\dfrac{90}{37}\\)",
+            "\\(Y\\sim\\text{Bin}\\left(18,\\dfrac{5}{37}\\right)\\): mean \\(\\dfrac{90}{37}\\), variance \\(\\dfrac{1710}{1369}\\)"
+          ],
+          "answer": 0,
+          "hint": "A BINOMIAL distribution counts the number of successes in \\(n\\) independent Bernoulli trials, each with the same probability \\(p\\). Mean \\(=np\\); variance \\(=np(1-p)\\).",
+          "steps": [
+            {
+              "explain": "Five independent bets, each a Bernoulli trial with \\(p=\\dfrac{18}{37}\\) of winning: \\(n=5\\).",
+              "work": "\\(Y\\sim\\text{Bin}\\left(5,\\dfrac{18}{37}\\right)\\)"
+            },
+            {
+              "explain": "Mean \\(=np\\).",
+              "work": "\\(E(Y)=5\\times\\dfrac{18}{37}=\\dfrac{90}{37}\\)"
+            },
+            {
+              "explain": "Variance \\(=np(1-p)\\).",
+              "work": "\\(\\text{Var}(Y)=5\\times\\dfrac{18}{37}\\times\\dfrac{19}{37}=\\dfrac{1710}{1369}\\)"
+            },
+            {
+              "explain": "Why not the others: B uses \\(p=\\dfrac{1}{2}\\) (ignores the green number); C uses \\(\\text{Var}=np\\); D swaps \\(n\\) and the number of black numbers (parameters in the wrong order).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Describe the distribution of \\(Y\\), and give its mean and variance",
+              "note": "Y ~ Bin(n, p): mean np, variance np(1 − p)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Glenwood High School 2020 Year 12 Mathematics Extension 1 Trial HSC Examination",
+            "school": "Glenwood High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },

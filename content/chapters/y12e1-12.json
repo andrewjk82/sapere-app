@@ -859,6 +859,260 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "glenwood2020-e1-q1",
+          "type": "mc",
+          "stem": "What is the derivative of \\(\\cos^{-1}\\left(\\dfrac{x}{5}\\right)\\)?",
+          "difficulty": "medium",
+          "options": [
+            "\\(-\\dfrac{1}{\\sqrt{25-x^{2}}}\\)",
+            "\\(\\dfrac{1}{\\sqrt{25-x^{2}}}\\)",
+            "\\(-\\dfrac{1}{\\sqrt{5-x^{2}}}\\)",
+            "\\(\\dfrac{1}{\\sqrt{5-x^{2}}}\\)"
+          ],
+          "answer": 0,
+          "hint": "Use \\(\\dfrac{d}{dx}\\cos^{-1}u=-\\dfrac{u'}{\\sqrt{1-u^{2}}}\\) with \\(u=\\dfrac{x}{5}\\). Note the MINUS sign for \\(\\cos^{-1}\\). Then tidy the fraction (multiply top and bottom by 5).",
+          "steps": [
+            {
+              "explain": "Let \\(u=\\dfrac{x}{5}\\), so \\(u'=\\dfrac{1}{5}\\).",
+              "work": "\\(u=\\dfrac{x}{5},\\qquad u'=\\dfrac{1}{5}\\)"
+            },
+            {
+              "explain": "Derivative of inverse cosine (negative sign).",
+              "work": "\\(\\dfrac{d}{dx}\\cos^{-1}u=-\\dfrac{u'}{\\sqrt{1-u^{2}}}=-\\dfrac{\\frac{1}{5}}{\\sqrt{1-\\frac{x^{2}}{25}}}\\)"
+            },
+            {
+              "explain": "Write \\(\\sqrt{1-\\dfrac{x^{2}}{25}}=\\dfrac{\\sqrt{25-x^{2}}}{5}\\), then the 5s cancel.",
+              "work": "\\(-\\dfrac{\\frac{1}{5}}{\\frac{\\sqrt{25-x^{2}}}{5}}=-\\dfrac{1}{\\sqrt{25-x^{2}}}\\)"
+            },
+            {
+              "explain": "Why not the others: B has the wrong sign (that is \\(\\sin^{-1}\\)); C and D have \\(5-x^{2}\\) under the root (they forgot to square the 5).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "What is the derivative of",
+              "note": "cos⁻¹ derivative has a minus; tidy with 25 − x²."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Glenwood High School 2020 Year 12 Mathematics Extension 1 Trial HSC Examination",
+            "school": "Glenwood High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "glenwood2020-e1-q14c1",
+          "type": "mc",
+          "stem": "Consider the function \\(y=\\cos^{-1}(\\sin x)\\). Find \\(\\dfrac{dy}{dx}\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(-\\dfrac{\\cos x}{\\left|\\cos x\\right|}\\) (that is \\(-1\\) where \\(\\cos x>0\\) and \\(+1\\) where \\(\\cos x<0\\))",
+            "\\(-1\\) for all \\(x\\)",
+            "\\(-\\tan x\\)",
+            "\\(\\dfrac{1}{\\sqrt{1-\\sin^{2}x}}\\)"
+          ],
+          "answer": 0,
+          "hint": "Chain rule: \\(\\dfrac{d}{dx}\\cos^{-1}u=-\\dfrac{u'}{\\sqrt{1-u^{2}}}\\) with \\(u=\\sin x\\), \\(u'=\\cos x\\). Then \\(1-\\sin^{2}x=\\cos^{2}x\\) and \\(\\sqrt{\\cos^{2}x}=|\\cos x|\\) (an absolute value!).",
+          "steps": [
+            {
+              "explain": "Let \\(u=\\sin x\\), so \\(u'=\\cos x\\).",
+              "work": "\\(\\dfrac{dy}{dx}=-\\dfrac{\\cos x}{\\sqrt{1-\\sin^{2}x}}\\)"
+            },
+            {
+              "explain": "Pythagorean identity: \\(1-\\sin^{2}x=\\cos^{2}x\\).",
+              "work": "\\(=-\\dfrac{\\cos x}{\\sqrt{\\cos^{2}x}}\\)"
+            },
+            {
+              "explain": "\\(\\sqrt{\\cos^{2}x}=|\\cos x|\\) (a square root is never negative, so not just \\(\\cos x\\)).",
+              "work": "\\(\\dfrac{dy}{dx}=-\\dfrac{\\cos x}{|\\cos x|}\\)"
+            },
+            {
+              "explain": "Meaning: where \\(\\cos x>0\\), \\(\\dfrac{\\cos x}{|\\cos x|}=1\\) so the gradient is \\(-1\\); where \\(\\cos x<0\\), it is \\(-(-1)=+1\\).",
+              "work": "\\(\\dfrac{dy}{dx}=\\begin{cases}-1&\\cos x>0\\\\+1&\\cos x<0\\end{cases}\\)"
+            },
+            {
+              "explain": "Why not the others: B ignores the absolute value; C is the derivative of a different function; D is missing the numerator.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Consider the function \\(y=\\cos^{-1}(\\sin x)\\)",
+              "note": "√(cos²x) = |cos x|: the gradient is ±1."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Glenwood High School 2020 Year 12 Mathematics Extension 1 Trial HSC Examination",
+            "school": "Glenwood High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "glenwood2020-e1-q14c2",
+          "type": "mc",
+          "stem": "Consider the function \\(y=\\cos^{-1}(\\sin x)\\), whose derivative is \\(\\dfrac{dy}{dx}=-\\dfrac{\\cos x}{|\\cos x|}\\). What does the derivative tell you about stationary points for this function?",
+          "difficulty": "medium",
+          "options": [
+            "There are no stationary points: the gradient is always \\(+1\\) or \\(-1\\), never \\(0\\)",
+            "There is a stationary point at every \\(x=\\dfrac{\\pi}{2}+k\\pi\\)",
+            "Stationary points occur at \\(x=k\\pi\\), where \\(\\sin x=0\\)",
+            "There are infinitely many stationary points because the gradient is constant"
+          ],
+          "answer": 0,
+          "hint": "A STATIONARY point is where the gradient equals 0. Look at the possible values of the gradient: can \\(-\\dfrac{\\cos x}{|\\cos x|}\\) ever equal 0?",
+          "steps": [
+            {
+              "explain": "The gradient is \\(-\\dfrac{\\cos x}{|\\cos x|}\\), which equals \\(+1\\) or \\(-1\\) (never 0), wherever it is defined.",
+              "work": "\\(\\dfrac{dy}{dx}=\\pm1\\ne0\\)"
+            },
+            {
+              "explain": "At \\(x=\\dfrac{\\pi}{2}+k\\pi\\) we have \\(\\cos x=0\\): the derivative is UNDEFINED (a sharp corner), it is not zero. So these are not stationary points.",
+              "work": "\\(\\cos x=0\\Rightarrow\\text{derivative undefined (sharp corner)}\\)"
+            },
+            {
+              "explain": "So the function has no stationary points (it is made of straight line pieces of gradient \\(\\pm1\\) joined at sharp corners).",
+              "work": ""
+            },
+            {
+              "explain": "Why not the others: B confuses undefined with zero gradient; C is where \\(\\sin x=0\\) but the gradient there is \\(\\pm1\\); D says 'constant' means stationary (a constant NON-ZERO gradient is not stationary).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "What does the derivative tell you about stationary points for this function",
+              "note": "Stationary needs dy/dx = 0; here it is ±1."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Glenwood High School 2020 Year 12 Mathematics Extension 1 Trial HSC Examination",
+            "school": "Glenwood High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "girraween2020-e1-q3",
+          "type": "mc",
+          "stem": "Which of the following is the derivative of \\(\\tan^{-1}(3x)\\)?",
+          "difficulty": "easy",
+          "options": [
+            "\\(3\\tan^{-1}x\\)",
+            "\\(\\dfrac{3}{1+x^{2}}\\)",
+            "\\(\\dfrac{3}{1+9x^{2}}\\)",
+            "\\(3\\sec^{2}3x\\)"
+          ],
+          "answer": 2,
+          "hint": "Use the standard derivative \\(\\dfrac{d}{dx}\\tan^{-1}u=\\dfrac{1}{1+u^{2}}\\cdot\\dfrac{du}{dx}\\) (chain rule), with \\(u=3x\\).",
+          "steps": [
+            {
+              "explain": "Let \\(u=3x\\), so \\(\\dfrac{du}{dx}=3\\).",
+              "work": "\\(y=\\tan^{-1}u,\\qquad\\dfrac{du}{dx}=3\\)"
+            },
+            {
+              "explain": "Standard derivative of inverse tangent: \\(\\dfrac{d}{du}\\tan^{-1}u=\\dfrac{1}{1+u^{2}}\\).",
+              "work": "\\(\\dfrac{dy}{du}=\\dfrac{1}{1+u^{2}}\\)"
+            },
+            {
+              "explain": "Chain rule: multiply.",
+              "work": "\\(\\dfrac{dy}{dx}=\\dfrac{1}{1+(3x)^{2}}\\times3=\\dfrac{3}{1+9x^{2}}\\)"
+            },
+            {
+              "explain": "Why not the others: A treats \\(\\tan^{-1}\\) as a constant times \\(\\tan^{-1}x\\); B forgets to square the 3 in \\((3x)^{2}\\); D is the derivative of \\(\\tan3x\\), not \\(\\tan^{-1}3x\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">C</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Which of the following is the derivative of",
+              "note": "Chain rule: (1 ÷ (1 + u²)) × u′."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Girraween High School 2020 Mathematics Extension 1 Trial HSC Examination",
+            "school": "Girraween High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "girraween2020-e1-q11b",
+          "type": "mc",
+          "stem": "Differentiate \\(e^{x}\\tan^{-1}x\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(e^{x}\\tan^{-1}x+\\dfrac{e^{x}}{1+x^{2}}\\)",
+            "\\(\\dfrac{e^{x}}{1+x^{2}}\\)",
+            "\\(e^{x}\\tan^{-1}x-\\dfrac{e^{x}}{1+x^{2}}\\)",
+            "\\(e^{x}\\left(\\tan^{-1}x+1\\right)\\)"
+          ],
+          "answer": 0,
+          "hint": "It is a PRODUCT of two functions of \\(x\\): use the product rule \\(\\dfrac{d}{dx}(uv)=u'v+uv'\\) with \\(u=e^{x}\\) and \\(v=\\tan^{-1}x\\).",
+          "steps": [
+            {
+              "explain": "Choose \\(u=e^{x}\\) and \\(v=\\tan^{-1}x\\) and differentiate each.",
+              "work": "\\(u'=e^{x},\\qquad v'=\\dfrac{1}{1+x^{2}}\\)"
+            },
+            {
+              "explain": "Product rule.",
+              "work": "\\(\\dfrac{d}{dx}\\left(e^{x}\\tan^{-1}x\\right)=u'v+uv'=e^{x}\\tan^{-1}x+e^{x}\\cdot\\dfrac{1}{1+x^{2}}\\)"
+            },
+            {
+              "explain": "Simplify.",
+              "work": "\\(=e^{x}\\tan^{-1}x+\\dfrac{e^{x}}{1+x^{2}}\\)"
+            },
+            {
+              "explain": "Why not the others: B drops the first term of the product rule; C has a sign error; D uses \\(\\dfrac{d}{dx}\\tan^{-1}x=1\\) (it is \\(\\dfrac{1}{1+x^{2}}\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Differentiate \\(e^{x}\\tan^{-1}x\\)",
+              "note": "Product rule: u′v + uv′."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Girraween High School 2020 Mathematics Extension 1 Trial HSC Examination",
+            "school": "Girraween High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -1357,6 +1611,64 @@
           "meta": {
             "source": "Fort Street High School 2020 Trial HSC Examination Mathematics Extension 1",
             "school": "Fort Street High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "girraween2020-e1-q12a",
+          "type": "mc",
+          "stem": "Evaluate \\(\\displaystyle\\int_{0}^{15}\\dfrac{x}{\\sqrt{x+1}}\\,dx\\) using the substitution \\(u^{2}=x+1\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(36\\)",
+            "\\(72\\)",
+            "\\(18\\)",
+            "\\(30\\)"
+          ],
+          "answer": 0,
+          "hint": "With \\(u^{2}=x+1\\): express \\(x\\), \\(\\sqrt{x+1}\\) and \\(dx\\) in terms of \\(u\\) and CHANGE THE LIMITS. Then integrate a polynomial in \\(u\\).",
+          "steps": [
+            {
+              "explain": "From \\(u^{2}=x+1\\): \\(x=u^{2}-1\\) and \\(\\sqrt{x+1}=u\\) (take \\(u>0\\)). Differentiate \\(2u\\,du=dx\\).",
+              "work": "\\(x=u^{2}-1,\\qquad dx=2u\\,du,\\qquad\\sqrt{x+1}=u\\)"
+            },
+            {
+              "explain": "New limits: \\(x=0\\Rightarrow u^{2}=1\\Rightarrow u=1\\); \\(x=15\\Rightarrow u^{2}=16\\Rightarrow u=4\\).",
+              "work": "\\(x:\\ 0\\to15\\ \\Rightarrow\\ u:\\ 1\\to4\\)"
+            },
+            {
+              "explain": "Substitute and simplify (the \\(u\\) in the denominator cancels with the \\(u\\) in \\(2u\\,du\\)).",
+              "work": "\\(\\displaystyle\\int_{1}^{4}\\dfrac{u^{2}-1}{u}\\cdot2u\\,du=2\\displaystyle\\int_{1}^{4}\\left(u^{2}-1\\right)du\\)"
+            },
+            {
+              "explain": "Integrate: \\(\\displaystyle\\int(u^{2}-1)du=\\dfrac{u^{3}}{3}-u\\).",
+              "work": "\\(=2\\left[\\dfrac{u^{3}}{3}-u\\right]_{1}^{4}\\)"
+            },
+            {
+              "explain": "Substitute the limits.",
+              "work": "\\(=2\\left[\\left(\\dfrac{64}{3}-4\\right)-\\left(\\dfrac{1}{3}-1\\right)\\right]=2\\left[\\dfrac{52}{3}+\\dfrac{2}{3}\\right]=2\\times18=36\\)"
+            },
+            {
+              "explain": "Why not the others: 72 forgets the \\(\\dfrac{1}{3}\\) factors; 18 forgets the factor 2; 30 comes from not changing the limits.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Evaluate",
+              "note": "Change the limits: x = 0 → u = 1, x = 15 → u = 4."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Girraween High School 2020 Mathematics Extension 1 Trial HSC Examination",
+            "school": "Girraween High School",
             "grade": "12",
             "origin": "teacher"
           }
@@ -2847,6 +3159,172 @@
           "meta": {
             "source": "Caringbah High School 2020 Preliminary Task 3 Mathematics Extension 1",
             "school": "Caringbah High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "glenwood2020-e1-q11c2",
+          "type": "mc",
+          "stem": "Hence, find \\(\\displaystyle\\int_{0}^{\\frac{\\pi}{4}}\\sin5x\\sin x\\,dx\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\dfrac{1}{12}\\)",
+            "\\(\\dfrac{1}{6}\\)",
+            "\\(-\\dfrac{1}{12}\\)",
+            "\\(\\dfrac{1}{24}\\)"
+          ],
+          "answer": 0,
+          "hint": "Replace the product by the sum from part (i), then integrate each cosine: \\(\\displaystyle\\int\\cos kx\\,dx=\\dfrac{\\sin kx}{k}\\). Then substitute the limits \\(\\dfrac{\\pi}{4}\\) and \\(0\\).",
+          "steps": [
+            {
+              "explain": "Use part (i).",
+              "work": "\\(\\displaystyle\\int_{0}^{\\frac{\\pi}{4}}\\sin5x\\sin x\\,dx=\\dfrac{1}{2}\\displaystyle\\int_{0}^{\\frac{\\pi}{4}}(\\cos4x-\\cos6x)\\,dx\\)"
+            },
+            {
+              "explain": "Integrate (divide by the coefficient of \\(x\\)).",
+              "work": "\\(=\\dfrac{1}{2}\\left[\\dfrac{\\sin4x}{4}-\\dfrac{\\sin6x}{6}\\right]_{0}^{\\frac{\\pi}{4}}\\)"
+            },
+            {
+              "explain": "Upper limit \\(x=\\dfrac{\\pi}{4}\\): \\(\\sin\\pi=0\\) and \\(\\sin\\dfrac{3\\pi}{2}=-1\\).",
+              "work": "\\(\\dfrac{\\sin\\pi}{4}-\\dfrac{\\sin\\frac{3\\pi}{2}}{6}=0-\\dfrac{-1}{6}=\\dfrac{1}{6}\\)"
+            },
+            {
+              "explain": "Lower limit \\(x=0\\): \\(\\sin0=0\\), so it contributes 0. Multiply by \\(\\dfrac{1}{2}\\).",
+              "work": "\\(=\\dfrac{1}{2}\\left(\\dfrac{1}{6}-0\\right)=\\dfrac{1}{12}\\)"
+            },
+            {
+              "explain": "Why not the others: \\(\\dfrac{1}{6}\\) forgets the factor \\(\\dfrac{1}{2}\\); \\(-\\dfrac{1}{12}\\) treats \\(\\sin\\dfrac{3\\pi}{2}\\) as \\(+1\\); \\(\\dfrac{1}{24}\\) halves twice.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Hence, find",
+              "note": "Product → sum, then integrate each cosine."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Glenwood High School 2020 Year 12 Mathematics Extension 1 Trial HSC Examination",
+            "school": "Glenwood High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "glenwood2020-e1-q12c1",
+          "type": "mc",
+          "stem": "Use the substitution \\(t=\\tan\\dfrac{x}{2}\\) to show that \\(\\operatorname{cosec}x+\\cot x=\\cot\\dfrac{x}{2}\\). Which working is correct?",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\operatorname{cosec}x+\\cot x=\\dfrac{1+t^{2}}{2t}+\\dfrac{1-t^{2}}{2t}=\\dfrac{2}{2t}=\\dfrac{1}{t}=\\cot\\dfrac{x}{2}\\)",
+            "\\(\\operatorname{cosec}x+\\cot x=\\dfrac{1+t^{2}}{2t}+\\dfrac{2t}{1-t^{2}}=\\dfrac{1}{t}\\)",
+            "\\(\\operatorname{cosec}x+\\cot x=\\dfrac{2t}{1+t^{2}}+\\dfrac{1-t^{2}}{1+t^{2}}=\\dfrac{2t+1-t^{2}}{1+t^{2}}=\\cot\\dfrac{x}{2}\\)",
+            "\\(\\operatorname{cosec}x+\\cot x=\\dfrac{1+t^{2}}{2t}-\\dfrac{1-t^{2}}{2t}=t=\\cot\\dfrac{x}{2}\\)"
+          ],
+          "answer": 0,
+          "hint": "With \\(t=\\tan\\dfrac{x}{2}\\): \\(\\sin x=\\dfrac{2t}{1+t^{2}}\\), \\(\\cos x=\\dfrac{1-t^{2}}{1+t^{2}}\\), \\(\\tan x=\\dfrac{2t}{1-t^{2}}\\). Write \\(\\operatorname{cosec}x=\\dfrac{1}{\\sin x}\\) and \\(\\cot x=\\dfrac{1}{\\tan x}\\) (flip the fractions), add, simplify.",
+          "steps": [
+            {
+              "explain": "t-formulae.",
+              "work": "\\(\\sin x=\\dfrac{2t}{1+t^{2}},\\qquad\\cos x=\\dfrac{1-t^{2}}{1+t^{2}},\\qquad\\tan x=\\dfrac{2t}{1-t^{2}}\\)"
+            },
+            {
+              "explain": "Reciprocals: \\(\\operatorname{cosec}x=\\dfrac{1}{\\sin x}\\) and \\(\\cot x=\\dfrac{1}{\\tan x}\\).",
+              "work": "\\(\\operatorname{cosec}x=\\dfrac{1+t^{2}}{2t},\\qquad\\cot x=\\dfrac{1-t^{2}}{2t}\\)"
+            },
+            {
+              "explain": "Add: same denominator \\(2t\\).",
+              "work": "\\(\\operatorname{cosec}x+\\cot x=\\dfrac{1+t^{2}+1-t^{2}}{2t}=\\dfrac{2}{2t}=\\dfrac{1}{t}\\)"
+            },
+            {
+              "explain": "\\(\\dfrac{1}{t}=\\dfrac{1}{\\tan\\frac{x}{2}}=\\cot\\dfrac{x}{2}\\).",
+              "work": "\\(\\operatorname{cosec}x+\\cot x=\\cot\\dfrac{x}{2}\\ \\ \\blacksquare\\)"
+            },
+            {
+              "explain": "Why not the others: B uses \\(\\cot x=\\dfrac{2t}{1-t^{2}}\\) (that is \\(\\tan x\\)); C mixes \\(\\sin x\\) with \\(\\cos x\\) (not cosec and cot); D subtracts and gets \\(t\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Use the substitution \\(t=\\tan\\dfrac{x}{2}\\) to show that",
+              "note": "Use cosec = 1 ÷ sin and cot = 1 ÷ tan."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Glenwood High School 2020 Year 12 Mathematics Extension 1 Trial HSC Examination",
+            "school": "Glenwood High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "glenwood2020-e1-q12c2",
+          "type": "mc",
+          "stem": "Hence evaluate \\(\\displaystyle\\int_{\\frac{\\pi}{3}}^{\\frac{\\pi}{2}}\\left(\\operatorname{cosec}x+\\cot x\\right)dx\\). Answer in simplest exact form.",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\ln2\\)",
+            "\\(\\ln\\sqrt{2}\\)",
+            "\\(2\\ln2\\)",
+            "\\(\\dfrac{1}{2}\\ln3\\)"
+          ],
+          "answer": 0,
+          "hint": "Use part (i): the integrand equals \\(\\cot\\dfrac{x}{2}=\\dfrac{\\cos\\frac{x}{2}}{\\sin\\frac{x}{2}}\\). This is of the form \\(\\dfrac{f'}{f}\\): \\(\\displaystyle\\int\\cot\\dfrac{x}{2}\\,dx=2\\ln\\left|\\sin\\dfrac{x}{2}\\right|\\) (the 2 comes from the chain rule).",
+          "steps": [
+            {
+              "explain": "Replace the integrand using part (i).",
+              "work": "\\(\\displaystyle\\int_{\\frac{\\pi}{3}}^{\\frac{\\pi}{2}}\\cot\\dfrac{x}{2}\\,dx=\\displaystyle\\int_{\\frac{\\pi}{3}}^{\\frac{\\pi}{2}}\\dfrac{\\cos\\frac{x}{2}}{\\sin\\frac{x}{2}}\\,dx\\)"
+            },
+            {
+              "explain": "The derivative of \\(\\sin\\dfrac{x}{2}\\) is \\(\\dfrac{1}{2}\\cos\\dfrac{x}{2}\\), so to get \\(\\dfrac{f'}{f}\\) we write the integrand as \\(2\\times\\dfrac{\\frac{1}{2}\\cos\\frac{x}{2}}{\\sin\\frac{x}{2}}\\).",
+              "work": "\\(=2\\left[\\ln\\sin\\dfrac{x}{2}\\right]_{\\frac{\\pi}{3}}^{\\frac{\\pi}{2}}\\)"
+            },
+            {
+              "explain": "Substitute the limits: \\(\\sin\\dfrac{\\pi}{4}=\\dfrac{1}{\\sqrt{2}}\\) and \\(\\sin\\dfrac{\\pi}{6}=\\dfrac{1}{2}\\).",
+              "work": "\\(=2\\left[\\ln\\dfrac{1}{\\sqrt{2}}-\\ln\\dfrac{1}{2}\\right]\\)"
+            },
+            {
+              "explain": "Write with powers of 2: \\(\\ln\\dfrac{1}{\\sqrt{2}}=-\\dfrac{1}{2}\\ln2\\) and \\(\\ln\\dfrac{1}{2}=-\\ln2\\).",
+              "work": "\\(=2\\left[-\\dfrac{1}{2}\\ln2+\\ln2\\right]=2\\left[\\dfrac{1}{2}\\ln2\\right]\\)"
+            },
+            {
+              "explain": "Simplify.",
+              "work": "\\(=\\ln2\\)"
+            },
+            {
+              "explain": "Why not the others: \\(\\ln\\sqrt{2}\\) forgets the factor 2 from the chain rule; \\(2\\ln2\\) misses the \\(\\dfrac{1}{2}\\); \\(\\dfrac{1}{2}\\ln3\\) is not obtained from these limits.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Hence evaluate",
+              "note": "∫cot(x/2) dx = 2 ln|sin(x/2)|."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Glenwood High School 2020 Year 12 Mathematics Extension 1 Trial HSC Examination",
+            "school": "Glenwood High School",
             "grade": "12",
             "origin": "teacher"
           }

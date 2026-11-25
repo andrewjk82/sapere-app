@@ -718,6 +718,66 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "glenwood2020-e1-q10",
+          "type": "mc",
+          "stem": "Forces of magnitude \\(8\\ \\text{N}\\) and \\(5\\ \\text{N}\\) act on a particle \\(P\\). The angle between the directions of the two forces is \\(60^{\\circ}\\) as shown in the diagram. Which of the following is the correct magnitude and direction of the resultant force acting on \\(P\\)?",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 215\" width=\"100%\" height=\"auto\" style=\"max-width:350px;display:block;margin:0 auto\"><line x1=\"40.0\" y1=\"160.0\" x2=\"176.0\" y2=\"160.0\" stroke=\"#1e293b\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><line x1=\"176.0\" y1=\"160.0\" x2=\"166.5\" y2=\"154.5\" stroke=\"#1e293b\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><line x1=\"176.0\" y1=\"160.0\" x2=\"166.5\" y2=\"165.5\" stroke=\"#1e293b\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><line x1=\"40.0\" y1=\"160.0\" x2=\"82.5\" y2=\"86.4\" stroke=\"#1e293b\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><line x1=\"82.5\" y1=\"86.4\" x2=\"73.0\" y2=\"91.9\" stroke=\"#1e293b\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><line x1=\"82.5\" y1=\"86.4\" x2=\"82.5\" y2=\"97.4\" stroke=\"#1e293b\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><circle cx=\"40.0\" cy=\"160.0\" r=\"4.5\" fill=\"#1e293b\"/><text x=\"30.0\" y=\"178.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">P</text><text x=\"168.0\" y=\"150.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">8 N</text><text x=\"92.5\" y=\"82.4\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">5 N</text><path d=\"M 70 160 A 30 30 0 0 0 55.0 134.0\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"2.4\"/><text x=\"84.0\" y=\"148.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">60°</text></svg>"
+          },
+          "options": [
+            "\\(11.36\\ \\text{N},\\ 22^{\\circ}25'\\) to the horizontal",
+            "\\(11.36\\ \\text{N},\\ 67^{\\circ}35'\\) to the horizontal",
+            "\\(12.58\\ \\text{N},\\ 22^{\\circ}25'\\) to the horizontal",
+            "\\(12.58\\ \\text{N},\\ 67^{\\circ}35'\\) to the horizontal"
+          ],
+          "answer": 0,
+          "hint": "Resolve each force into horizontal and vertical COMPONENTS, add them, then find the magnitude (Pythagoras) and the angle with the horizontal (tan). The 8 N force is horizontal; the 5 N force is at \\(60^{\\circ}\\).",
+          "steps": [
+            {
+              "explain": "Horizontal components: the 8 N force is all horizontal; the 5 N force has horizontal part \\(5\\cos60^{\\circ}\\).",
+              "work": "\\(R_{x}=8+5\\cos60^{\\circ}=8+2.5=10.5\\)"
+            },
+            {
+              "explain": "Vertical components: only the 5 N force has a vertical part \\(5\\sin60^{\\circ}\\).",
+              "work": "\\(R_{y}=5\\sin60^{\\circ}=4.330\\ldots\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 215\" width=\"100%\" height=\"auto\" style=\"max-width:350px;display:block;margin:0 auto\"><line x1=\"40.0\" y1=\"160.0\" x2=\"176.0\" y2=\"160.0\" stroke=\"#1e293b\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><line x1=\"176.0\" y1=\"160.0\" x2=\"166.5\" y2=\"154.5\" stroke=\"#1e293b\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><line x1=\"176.0\" y1=\"160.0\" x2=\"166.5\" y2=\"165.5\" stroke=\"#1e293b\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><line x1=\"40.0\" y1=\"160.0\" x2=\"82.5\" y2=\"86.4\" stroke=\"#1e293b\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><line x1=\"82.5\" y1=\"86.4\" x2=\"73.0\" y2=\"91.9\" stroke=\"#1e293b\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><line x1=\"82.5\" y1=\"86.4\" x2=\"82.5\" y2=\"97.4\" stroke=\"#1e293b\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><circle cx=\"40.0\" cy=\"160.0\" r=\"4.5\" fill=\"#1e293b\"/><text x=\"30.0\" y=\"178.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">P</text><text x=\"168.0\" y=\"150.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">8 N</text><text x=\"92.5\" y=\"82.4\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">5 N</text><path d=\"M 70 160 A 30 30 0 0 0 55.0 134.0\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"2.4\"/><text x=\"84.0\" y=\"148.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">60°</text><line x1=\"82.5\" y1=\"86.4\" x2=\"218.5\" y2=\"86.4\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><line x1=\"176.0\" y1=\"160.0\" x2=\"218.5\" y2=\"86.4\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><line x1=\"40.0\" y1=\"160.0\" x2=\"218.5\" y2=\"86.4\" stroke=\"#dc2626\" stroke-width=\"3.6\" stroke-linecap=\"round\"/><line x1=\"218.5\" y1=\"86.4\" x2=\"207.6\" y2=\"84.9\" stroke=\"#dc2626\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"218.5\" y1=\"86.4\" x2=\"211.8\" y2=\"95.1\" stroke=\"#dc2626\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"226.5\" y=\"82.4\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">R</text><line x1=\"40.0\" y1=\"194.0\" x2=\"218.5\" y2=\"194.0\" stroke=\"#047857\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><text x=\"129.2\" y=\"212.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">10.5</text><line x1=\"236.5\" y1=\"160.0\" x2=\"236.5\" y2=\"86.4\" stroke=\"#3b4ea8\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><text x=\"242.5\" y=\"127.2\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4.33</text></svg>"
+              }
+            },
+            {
+              "explain": "Magnitude of the resultant (Pythagoras).",
+              "work": "\\(|R|=\\sqrt{10.5^{2}+4.330^{2}}=\\sqrt{129}=11.36\\ \\text{N}\\)"
+            },
+            {
+              "explain": "Direction: angle with the horizontal (tan = opposite/adjacent \\(=\\dfrac{R_{y}}{R_{x}}\\)).",
+              "work": "\\(\\tan\\phi=\\dfrac{4.330}{10.5}\\ \\Rightarrow\\ \\phi=22.41^{\\circ}=22^{\\circ}25'\\)"
+            },
+            {
+              "explain": "Why not the others: \\(67^{\\circ}35'=90^{\\circ}-22^{\\circ}25'\\) (the angle with the vertical); \\(12.58\\) N is not \\(\\sqrt{129}\\) (it comes from adding the forces wrongly).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Which of the following is the correct magnitude and direction of the resultant force",
+              "note": "Resolve components, then Pythagoras and tan."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Glenwood High School 2020 Year 12 Mathematics Extension 1 Trial HSC Examination",
+            "school": "Glenwood High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -1662,6 +1722,184 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "glenwood2020-e1-q14b1",
+          "type": "mc",
+          "stem": "A golf ball is hit at a velocity of 110 m/s at an angle \\(\\theta\\) to the horizontal. The position vector \\(s(t)\\), from the starting point, of the ball after \\(t\\) seconds is given by \\(s=110t\\cos\\theta\\ \\underset{\\sim}{\\mathbf{i}}+\\left(110t\\sin\\theta-4.9t^{2}\\right)\\underset{\\sim}{\\mathbf{j}}\\). Using gravity of \\(9.8\\ \\text{m\\,s}^{-2}\\) show that the maximum horizontal range of the ball is \\(\\dfrac{12100\\sin2\\theta}{9.8}\\) metres. Which working is correct?",
+          "difficulty": "hard",
+          "options": [
+            "Range: \\(y=0\\): \\(t\\left(110\\sin\\theta-4.9t\\right)=0\\Rightarrow t=\\dfrac{110\\sin\\theta}{4.9}\\). Then \\(x=110\\cos\\theta\\times\\dfrac{110\\sin\\theta}{4.9}=\\dfrac{12100\\sin\\theta\\cos\\theta}{4.9}=\\dfrac{6050\\sin2\\theta}{4.9}=\\dfrac{12100\\sin2\\theta}{9.8}\\)",
+            "Range: set \\(x=0\\): \\(110t\\cos\\theta=0\\Rightarrow t=0\\), so the range is 0",
+            "Range: \\(y=0\\): \\(t=\\dfrac{110\\sin\\theta}{4.9}\\). Then \\(x=110\\sin\\theta\\times\\dfrac{110\\cos\\theta}{4.9}\\), which equals \\(\\dfrac{12100\\sin2\\theta}{4.9}\\)",
+            "Range: \\(y=0\\): \\(t=\\dfrac{110\\sin\\theta}{9.8}\\). Then \\(x=\\dfrac{12100\\sin\\theta\\cos\\theta}{9.8}=\\dfrac{6050\\sin2\\theta}{9.8}\\)"
+          ],
+          "answer": 0,
+          "hint": "The ball lands when its height \\(y=0\\) (and \\(t>0\\)). Find that time from the \\(\\mathbf{j}\\)-component, then substitute into the \\(\\mathbf{i}\\)-component (the horizontal distance). Finish with the double angle \\(\\sin2\\theta=2\\sin\\theta\\cos\\theta\\).",
+          "steps": [
+            {
+              "explain": "The ball is at ground level when \\(y=0\\). Factorise out \\(t\\).",
+              "work": "\\(110t\\sin\\theta-4.9t^{2}=0\\ \\Rightarrow\\ t\\left(110\\sin\\theta-4.9t\\right)=0\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 215\" width=\"100%\" height=\"auto\" style=\"max-width:350px;display:block;margin:0 auto\"><line x1=\"30.0\" y1=\"165.0\" x2=\"330.0\" y2=\"165.0\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"330.0\" y1=\"165.0\" x2=\"323.1\" y2=\"161.0\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"330.0\" y1=\"165.0\" x2=\"323.1\" y2=\"169.0\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"40.0\" y1=\"177.0\" x2=\"40.0\" y2=\"15.0\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"40.0\" y1=\"15.0\" x2=\"36.0\" y2=\"21.9\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"40.0\" y1=\"15.0\" x2=\"44.0\" y2=\"21.9\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><polyline points=\"40.0,165.0 41.5,163.3 43.0,161.5 44.5,159.8 46.0,158.2 47.5,156.5 49.0,154.9 50.5,153.3 52.0,151.7 53.5,150.1 55.0,148.6 56.5,147.1 58.0,145.6 59.5,144.1 61.0,142.6 62.5,141.2 64.0,139.8 65.5,138.4 67.0,137.0 68.5,135.7 70.0,134.4 71.5,133.1 73.0,131.8 74.5,130.5 76.0,129.3 77.5,128.1 79.0,126.9 80.5,125.7 82.0,124.6 83.5,123.4 85.0,122.3 86.5,121.3 88.0,120.2 89.5,119.2 91.0,118.1 92.5,117.1 94.0,116.2 95.5,115.2 97.0,114.3 98.5,113.4 100.0,112.5 101.5,111.6 103.0,110.8 104.5,110.0 106.0,109.2 107.5,108.4 109.0,107.6 110.5,106.9 112.0,106.2 113.5,105.5 115.0,104.8 116.5,104.2 118.0,103.6 119.5,103.0 121.0,102.4 122.5,101.8 124.0,101.3 125.5,100.8 127.0,100.3 128.5,99.8 130.0,99.4 131.5,98.9 133.0,98.5 134.5,98.2 136.0,97.8 137.5,97.5 139.0,97.1 140.5,96.8 142.0,96.6 143.5,96.3 145.0,96.1 146.5,95.9 148.0,95.7 149.5,95.5 151.0,95.4 152.5,95.3 154.0,95.2 155.5,95.1 157.0,95.0 158.5,95.0 160.0,95.0 161.5,95.0 163.0,95.0 164.5,95.1 166.0,95.2 167.5,95.3 169.0,95.4 170.5,95.5 172.0,95.7 173.5,95.9 175.0,96.1 176.5,96.3 178.0,96.6 179.5,96.8 181.0,97.1 182.5,97.5 184.0,97.8 185.5,98.2 187.0,98.5 188.5,98.9 190.0,99.4 191.5,99.8 193.0,100.3 194.5,100.8 196.0,101.3 197.5,101.8 199.0,102.4 200.5,103.0 202.0,103.6 203.5,104.2 205.0,104.8 206.5,105.5 208.0,106.2 209.5,106.9 211.0,107.6 212.5,108.4 214.0,109.2 215.5,110.0 217.0,110.8 218.5,111.6 220.0,112.5 221.5,113.4 223.0,114.3 224.5,115.2 226.0,116.2 227.5,117.1 229.0,118.1 230.5,119.2 232.0,120.2 233.5,121.3 235.0,122.3 236.5,123.4 238.0,124.6 239.5,125.7 241.0,126.9 242.5,128.1 244.0,129.3 245.5,130.5 247.0,131.8 248.5,133.1 250.0,134.4 251.5,135.7 253.0,137.0 254.5,138.4 256.0,139.8 257.5,141.2 259.0,142.6 260.5,144.1 262.0,145.6 263.5,147.1 265.0,148.6 266.5,150.1 268.0,151.7 269.5,153.3 271.0,154.9 272.5,156.5 274.0,158.2 275.5,159.8 277.0,161.5 278.5,163.3 280.0,165.0\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2.6\" stroke-linejoin=\"round\"/><circle cx=\"40.0\" cy=\"165.0\" r=\"4\" fill=\"#1e293b\"/><circle cx=\"280.0\" cy=\"165.0\" r=\"4\" fill=\"#1e293b\"/><text x=\"280.0\" y=\"182.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">range R</text><text x=\"50.0\" y=\"182.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">start</text><line x1=\"40.0\" y1=\"195.0\" x2=\"280.0\" y2=\"195.0\" stroke=\"#047857\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"280.0\" y1=\"195.0\" x2=\"273.1\" y2=\"191.0\" stroke=\"#047857\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"280.0\" y1=\"195.0\" x2=\"273.1\" y2=\"199.0\" stroke=\"#047857\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"40.0\" y1=\"195.0\" x2=\"46.9\" y2=\"199.0\" stroke=\"#047857\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"40.0\" y1=\"195.0\" x2=\"46.9\" y2=\"191.0\" stroke=\"#047857\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><text x=\"160.0\" y=\"211.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">R = x when y = 0</text></svg>"
+              }
+            },
+            {
+              "explain": "\\(t=0\\) is the start; the landing time is the other solution.",
+              "work": "\\(t=\\dfrac{110\\sin\\theta}{4.9}\\)"
+            },
+            {
+              "explain": "Horizontal distance at that time (the \\(\\mathbf{i}\\)-component).",
+              "work": "\\(x=110\\cos\\theta\\times\\dfrac{110\\sin\\theta}{4.9}=\\dfrac{12100\\sin\\theta\\cos\\theta}{4.9}\\)"
+            },
+            {
+              "explain": "Use \\(\\sin\\theta\\cos\\theta=\\dfrac{1}{2}\\sin2\\theta\\): the numerator becomes \\(6050\\sin2\\theta\\). Multiply top and bottom by 2.",
+              "work": "\\(=\\dfrac{6050\\sin2\\theta}{4.9}=\\dfrac{12100\\sin2\\theta}{9.8}\\ \\ \\blacksquare\\)"
+            },
+            {
+              "explain": "Why not the others: B finds the start (\\(t=0\\)), not the landing; C swaps \\(\\sin\\theta\\) and \\(\\cos\\theta\\) in a way that does not give the right product; D uses \\(t=\\dfrac{110\\sin\\theta}{9.8}\\) (the time of MAX HEIGHT, not landing).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "show that the maximum horizontal range of the ball is",
+              "note": "Range: set y = 0, find t, substitute into x."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Glenwood High School 2020 Year 12 Mathematics Extension 1 Trial HSC Examination",
+            "school": "Glenwood High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "glenwood2020-e1-q14b2",
+          "type": "mc",
+          "stem": "A golf ball is hit at a velocity of 110 m/s at an angle \\(\\theta\\) to the horizontal. The position vector \\(s(t)\\), from the starting point, of the ball after \\(t\\) seconds is given by \\(s=110t\\cos\\theta\\ \\underset{\\sim}{\\mathbf{i}}+\\left(110t\\sin\\theta-4.9t^{2}\\right)\\underset{\\sim}{\\mathbf{j}}\\). To ensure that the ball lands on the green, it must travel between 400 and 450 metres. What values of \\(\\theta\\), correct to the nearest minute, would allow this to happen?",
+          "difficulty": "hard",
+          "options": [
+            "\\(9^{\\circ}27'<\\theta<10^{\\circ}41'\\) or \\(79^{\\circ}19'<\\theta<80^{\\circ}33'\\)",
+            "\\(9^{\\circ}27'<\\theta<10^{\\circ}41'\\) only",
+            "\\(79^{\\circ}19'<\\theta<80^{\\circ}33'\\) only",
+            "\\(18^{\\circ}54'<\\theta<21^{\\circ}22'\\)"
+          ],
+          "answer": 0,
+          "hint": "Write \\(400<R<450\\) with \\(R=\\dfrac{12100\\sin2\\theta}{9.8}\\), solve the double inequality for \\(\\sin2\\theta\\), then find \\(2\\theta\\) (TWO angles in \\(0^{\\circ}<2\\theta<180^{\\circ}\\)) and halve. The angle \\(\\theta\\) is between \\(0^{\\circ}\\) and \\(90^{\\circ}\\).",
+          "steps": [
+            {
+              "explain": "Range inequality.",
+              "work": "\\(400<\\dfrac{12100\\sin2\\theta}{9.8}<450\\)"
+            },
+            {
+              "explain": "Multiply by \\(9.8\\) and divide by \\(12100\\).",
+              "work": "\\(0.3240<\\sin2\\theta<0.3645\\)"
+            },
+            {
+              "explain": "Inverse sine gives the acute values of \\(2\\theta\\): \\(\\sin^{-1}(0.3240)=18^{\\circ}54'\\) and \\(\\sin^{-1}(0.3645)=21^{\\circ}22'\\). So one range of \\(2\\theta\\) is \\(18^{\\circ}54'<2\\theta<21^{\\circ}22'\\).",
+              "work": "\\(18^{\\circ}54'<2\\theta<21^{\\circ}22'\\)"
+            },
+            {
+              "explain": "Sine is also positive in the 2nd quadrant: \\(2\\theta\\) can also be \\(180^{\\circ}-21^{\\circ}22'=158^{\\circ}38'\\) up to \\(180^{\\circ}-18^{\\circ}54'=161^{\\circ}6'\\).",
+              "work": "\\(158^{\\circ}38'<2\\theta<161^{\\circ}6'\\)"
+            },
+            {
+              "explain": "Halve all the angles (\\(0^{\\circ}<\\theta<90^{\\circ}\\)).",
+              "work": "\\(9^{\\circ}27'<\\theta<10^{\\circ}41'\\ \\text{or}\\ 79^{\\circ}19'<\\theta<80^{\\circ}33'\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 215\" width=\"100%\" height=\"auto\" style=\"max-width:350px;display:block;margin:0 auto\"><line x1=\"30.0\" y1=\"165.0\" x2=\"330.0\" y2=\"165.0\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"330.0\" y1=\"165.0\" x2=\"323.1\" y2=\"161.0\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"330.0\" y1=\"165.0\" x2=\"323.1\" y2=\"169.0\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"40.0\" y1=\"177.0\" x2=\"40.0\" y2=\"15.0\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"40.0\" y1=\"15.0\" x2=\"36.0\" y2=\"21.9\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"40.0\" y1=\"15.0\" x2=\"44.0\" y2=\"21.9\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><polyline points=\"40.0,165.0 41.5,163.3 43.0,161.5 44.5,159.8 46.0,158.2 47.5,156.5 49.0,154.9 50.5,153.3 52.0,151.7 53.5,150.1 55.0,148.6 56.5,147.1 58.0,145.6 59.5,144.1 61.0,142.6 62.5,141.2 64.0,139.8 65.5,138.4 67.0,137.0 68.5,135.7 70.0,134.4 71.5,133.1 73.0,131.8 74.5,130.5 76.0,129.3 77.5,128.1 79.0,126.9 80.5,125.7 82.0,124.6 83.5,123.4 85.0,122.3 86.5,121.3 88.0,120.2 89.5,119.2 91.0,118.1 92.5,117.1 94.0,116.2 95.5,115.2 97.0,114.3 98.5,113.4 100.0,112.5 101.5,111.6 103.0,110.8 104.5,110.0 106.0,109.2 107.5,108.4 109.0,107.6 110.5,106.9 112.0,106.2 113.5,105.5 115.0,104.8 116.5,104.2 118.0,103.6 119.5,103.0 121.0,102.4 122.5,101.8 124.0,101.3 125.5,100.8 127.0,100.3 128.5,99.8 130.0,99.4 131.5,98.9 133.0,98.5 134.5,98.2 136.0,97.8 137.5,97.5 139.0,97.1 140.5,96.8 142.0,96.6 143.5,96.3 145.0,96.1 146.5,95.9 148.0,95.7 149.5,95.5 151.0,95.4 152.5,95.3 154.0,95.2 155.5,95.1 157.0,95.0 158.5,95.0 160.0,95.0 161.5,95.0 163.0,95.0 164.5,95.1 166.0,95.2 167.5,95.3 169.0,95.4 170.5,95.5 172.0,95.7 173.5,95.9 175.0,96.1 176.5,96.3 178.0,96.6 179.5,96.8 181.0,97.1 182.5,97.5 184.0,97.8 185.5,98.2 187.0,98.5 188.5,98.9 190.0,99.4 191.5,99.8 193.0,100.3 194.5,100.8 196.0,101.3 197.5,101.8 199.0,102.4 200.5,103.0 202.0,103.6 203.5,104.2 205.0,104.8 206.5,105.5 208.0,106.2 209.5,106.9 211.0,107.6 212.5,108.4 214.0,109.2 215.5,110.0 217.0,110.8 218.5,111.6 220.0,112.5 221.5,113.4 223.0,114.3 224.5,115.2 226.0,116.2 227.5,117.1 229.0,118.1 230.5,119.2 232.0,120.2 233.5,121.3 235.0,122.3 236.5,123.4 238.0,124.6 239.5,125.7 241.0,126.9 242.5,128.1 244.0,129.3 245.5,130.5 247.0,131.8 248.5,133.1 250.0,134.4 251.5,135.7 253.0,137.0 254.5,138.4 256.0,139.8 257.5,141.2 259.0,142.6 260.5,144.1 262.0,145.6 263.5,147.1 265.0,148.6 266.5,150.1 268.0,151.7 269.5,153.3 271.0,154.9 272.5,156.5 274.0,158.2 275.5,159.8 277.0,161.5 278.5,163.3 280.0,165.0\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2.6\" stroke-linejoin=\"round\"/><circle cx=\"40.0\" cy=\"165.0\" r=\"4\" fill=\"#1e293b\"/><circle cx=\"280.0\" cy=\"165.0\" r=\"4\" fill=\"#1e293b\"/><text x=\"280.0\" y=\"182.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">range R</text><text x=\"50.0\" y=\"182.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">start</text><line x1=\"50.0\" y1=\"162.0\" x2=\"140.8\" y2=\"162.0\" stroke=\"#cbd5e1\" stroke-width=\"0\" stroke-linecap=\"round\"/><rect x=\"164.8\" y=\"153\" width=\"67.2\" height=\"12\" fill=\"#047857\" fill-opacity=\"0.35\"/><text x=\"198.4\" y=\"147.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">green: 400–450 m</text></svg>"
+              }
+            },
+            {
+              "explain": "Why not the others: B and C each give only one of the two ranges (a low shot and a high lob both land on the green); D forgets to HALVE the angles.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "What values of \\(\\theta\\), correct to the nearest minute, would allow this to happen",
+              "note": "Solve for sin 2θ; two angles for 2θ; halve."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Glenwood High School 2020 Year 12 Mathematics Extension 1 Trial HSC Examination",
+            "school": "Glenwood High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "girraween2020-e1-q13b1",
+          "type": "mc",
+          "stem": "A rock is projected with a speed of \\(V\\ \\text{m\\,s}^{-1}\\) from a point \\(4\\) metres above a flat ground. The angle of projection to the horizontal is \\(\\theta\\) as shown. Taking the ground as the origin and the acceleration due to gravity as \\(10\\ \\text{m\\,s}^{-2}\\), show that \\(x=Vt\\cos\\theta\\) and \\(y=Vt\\sin\\theta-5t^{2}+4\\). Which derivation is correct?",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 255\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><line x1=\"60.0\" y1=\"224.0\" x2=\"60.0\" y2=\"24.0\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"24.0\" x2=\"56.0\" y2=\"30.9\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"24.0\" x2=\"64.0\" y2=\"30.9\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"200.0\" x2=\"275.0\" y2=\"200.0\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"275.0\" y1=\"200.0\" x2=\"268.1\" y2=\"196.0\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"275.0\" y1=\"200.0\" x2=\"268.1\" y2=\"204.0\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"54.0\" y=\"32.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">y</text><text x=\"275.0\" y=\"216.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><polyline points=\"60.0,176.0 60.9,174.7 61.7,173.3 62.5,172.0 63.4,170.7 64.2,169.4 65.1,168.2 66.0,166.9 66.8,165.7 67.7,164.4 68.5,163.2 69.3,162.0 70.2,160.8 71.0,159.7 71.9,158.5 72.8,157.4 73.6,156.3 74.5,155.2 75.3,154.1 76.2,153.0 77.0,151.9 77.8,150.9 78.7,149.8 79.5,148.8 80.4,147.8 81.2,146.8 82.1,145.8 83.0,144.9 83.8,143.9 84.7,143.0 85.5,142.1 86.3,141.2 87.2,140.3 88.0,139.4 88.9,138.6 89.8,137.7 90.6,136.9 91.5,136.1 92.3,135.3 93.2,134.5 94.0,133.7 94.8,133.0 95.7,132.2 96.5,131.5 97.4,130.8 98.2,130.1 99.1,129.4 100.0,128.8 100.8,128.1 101.7,127.5 102.5,126.8 103.3,126.2 104.2,125.6 105.0,125.1 105.9,124.5 106.8,124.0 107.6,123.4 108.5,122.9 109.3,122.4 110.2,121.9 111.0,121.4 111.8,121.0 112.7,120.5 113.5,120.1 114.4,119.7 115.2,119.3 116.1,118.9 117.0,118.5 117.8,118.2 118.7,117.8 119.5,117.5 120.3,117.2 121.2,116.9 122.0,116.6 122.9,116.3 123.8,116.1 124.6,115.8 125.5,115.6 126.3,115.4 127.2,115.2 128.0,115.0 128.8,114.9 129.7,114.7 130.6,114.6 131.4,114.4 132.2,114.3 133.1,114.2 133.9,114.2 134.8,114.1 135.7,114.1 136.5,114.0 137.3,114.0 138.2,114.0 139.1,114.0 139.9,114.0 140.8,114.1 141.6,114.1 142.4,114.2 143.3,114.3 144.2,114.4 145.0,114.5 145.8,114.6 146.7,114.8 147.6,114.9 148.4,115.1 149.2,115.3 150.1,115.5 150.9,115.7 151.8,115.9 152.7,116.2 153.5,116.4 154.3,116.7 155.2,117.0 156.1,117.3 156.9,117.6 157.8,118.0 158.6,118.3 159.4,118.7 160.3,119.1 161.2,119.5 162.0,119.9 162.8,120.3 163.7,120.7 164.6,121.2 165.4,121.7 166.2,122.1 167.1,122.6 167.9,123.1 168.8,123.7 169.7,124.2 170.5,124.8 171.3,125.3 172.2,125.9 173.1,126.5 173.9,127.1 174.8,127.8 175.6,128.4 176.4,129.1 177.3,129.7 178.2,130.4 179.0,131.1 179.8,131.8 180.7,132.6 181.6,133.3 182.4,134.1 183.2,134.9 184.1,135.7 184.9,136.5 185.8,137.3 186.7,138.1 187.5,139.0 188.3,139.8 189.2,140.7 190.1,141.6 190.9,142.5 191.8,143.4 192.6,144.4 193.4,145.3 194.3,146.3 195.2,147.3 196.0,148.3 196.8,149.3 197.7,150.3 198.6,151.4 199.4,152.4 200.2,153.5 201.1,154.6 201.9,155.7 202.8,156.8 203.7,157.9 204.5,159.1 205.3,160.2 206.2,161.4 207.1,162.6 207.9,163.8 208.8,165.0 209.6,166.2 210.4,167.5 211.3,168.8 212.2,170.0 213.0,171.3 213.8,172.6 214.7,174.0 215.6,175.3 216.4,176.6 217.2,178.0 218.1,179.4 218.9,180.8 219.8,182.2 220.7,183.6 221.5,185.1 222.3,186.5 223.2,188.0 224.1,189.5 224.9,191.0 225.8,192.5 226.6,194.0 227.4,195.5 228.3,197.1 229.2,198.7 230.0,200.3\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/><line x1=\"60.0\" y1=\"176.0\" x2=\"120.0\" y2=\"176.0\" stroke=\"#94a3b8\" stroke-width=\"1.3\" stroke-linecap=\"round\" stroke-dasharray=\"3 3\"/><line x1=\"60.0\" y1=\"176.0\" x2=\"93.0\" y2=\"123.5\" stroke=\"#3b4ea8\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"93.0\" y1=\"123.5\" x2=\"85.1\" y2=\"127.7\" stroke=\"#3b4ea8\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"93.0\" y1=\"123.5\" x2=\"92.7\" y2=\"132.5\" stroke=\"#3b4ea8\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><text x=\"83.0\" y=\"119.5\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">V</text><path d=\"M 88.0 176.0 A 28 28 0 0 0 74.9 152.3\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"2.4\"/><text x=\"98.0\" y=\"164.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">θ</text><line x1=\"36.0\" y1=\"176.0\" x2=\"36.0\" y2=\"200.0\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"36.0\" y1=\"176.0\" x2=\"32.5\" y2=\"182.1\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"36.0\" y1=\"176.0\" x2=\"39.5\" y2=\"182.1\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"36.0\" y1=\"200.0\" x2=\"39.5\" y2=\"193.9\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"36.0\" y1=\"200.0\" x2=\"32.5\" y2=\"193.9\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"30.0\" y=\"192.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4 m</text><line x1=\"60.0\" y1=\"224.0\" x2=\"230.0\" y2=\"224.0\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"224.0\" x2=\"66.1\" y2=\"227.5\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"224.0\" x2=\"66.1\" y2=\"220.5\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"230.0\" y1=\"224.0\" x2=\"223.9\" y2=\"220.5\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"230.0\" y1=\"224.0\" x2=\"223.9\" y2=\"227.5\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"145.0\" y=\"240.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">30 m</text><circle cx=\"230.0\" cy=\"200.0\" r=\"4\" fill=\"#1e293b\"/></svg>"
+          },
+          "options": [
+            "\\(\\ddot{x}=0,\\ \\dot{x}=V\\cos\\theta,\\ x=Vt\\cos\\theta\\); \\(\\ddot{y}=-10,\\ \\dot{y}=-10t+V\\sin\\theta,\\ y=-5t^{2}+Vt\\sin\\theta+4\\)",
+            "\\(\\ddot{x}=0,\\ x=Vt\\cos\\theta\\); \\(\\ddot{y}=-10,\\ \\dot{y}=-10t+V\\sin\\theta,\\ y=-5t^{2}+Vt\\sin\\theta\\) (starting on the ground)",
+            "\\(\\ddot{x}=0,\\ x=Vt\\cos\\theta\\); \\(\\ddot{y}=-9.8,\\ \\dot{y}=-9.8t+V\\sin\\theta,\\ y=-4.9t^{2}+Vt\\sin\\theta+4\\)",
+            "\\(\\ddot{x}=0,\\ x=Vt\\cos\\theta\\); \\(\\ddot{y}=10,\\ \\dot{y}=10t+V\\sin\\theta,\\ y=5t^{2}+Vt\\sin\\theta+4\\)"
+          ],
+          "answer": 0,
+          "hint": "Integrate the acceleration twice, using the initial conditions at \\(t=0\\): velocity components \\(V\\cos\\theta\\) (horizontal) and \\(V\\sin\\theta\\) (vertical), position \\((0,4)\\).",
+          "steps": [
+            {
+              "explain": "Initial velocity components (green and red in the figure).",
+              "work": "\\(\\dot{x}(0)=V\\cos\\theta,\\qquad\\dot{y}(0)=V\\sin\\theta\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 255\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><line x1=\"60.0\" y1=\"224.0\" x2=\"60.0\" y2=\"24.0\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"24.0\" x2=\"56.0\" y2=\"30.9\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"24.0\" x2=\"64.0\" y2=\"30.9\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"200.0\" x2=\"275.0\" y2=\"200.0\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"275.0\" y1=\"200.0\" x2=\"268.1\" y2=\"196.0\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"275.0\" y1=\"200.0\" x2=\"268.1\" y2=\"204.0\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"54.0\" y=\"32.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">y</text><text x=\"275.0\" y=\"216.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><polyline points=\"60.0,176.0 60.9,174.7 61.7,173.3 62.5,172.0 63.4,170.7 64.2,169.4 65.1,168.2 66.0,166.9 66.8,165.7 67.7,164.4 68.5,163.2 69.3,162.0 70.2,160.8 71.0,159.7 71.9,158.5 72.8,157.4 73.6,156.3 74.5,155.2 75.3,154.1 76.2,153.0 77.0,151.9 77.8,150.9 78.7,149.8 79.5,148.8 80.4,147.8 81.2,146.8 82.1,145.8 83.0,144.9 83.8,143.9 84.7,143.0 85.5,142.1 86.3,141.2 87.2,140.3 88.0,139.4 88.9,138.6 89.8,137.7 90.6,136.9 91.5,136.1 92.3,135.3 93.2,134.5 94.0,133.7 94.8,133.0 95.7,132.2 96.5,131.5 97.4,130.8 98.2,130.1 99.1,129.4 100.0,128.8 100.8,128.1 101.7,127.5 102.5,126.8 103.3,126.2 104.2,125.6 105.0,125.1 105.9,124.5 106.8,124.0 107.6,123.4 108.5,122.9 109.3,122.4 110.2,121.9 111.0,121.4 111.8,121.0 112.7,120.5 113.5,120.1 114.4,119.7 115.2,119.3 116.1,118.9 117.0,118.5 117.8,118.2 118.7,117.8 119.5,117.5 120.3,117.2 121.2,116.9 122.0,116.6 122.9,116.3 123.8,116.1 124.6,115.8 125.5,115.6 126.3,115.4 127.2,115.2 128.0,115.0 128.8,114.9 129.7,114.7 130.6,114.6 131.4,114.4 132.2,114.3 133.1,114.2 133.9,114.2 134.8,114.1 135.7,114.1 136.5,114.0 137.3,114.0 138.2,114.0 139.1,114.0 139.9,114.0 140.8,114.1 141.6,114.1 142.4,114.2 143.3,114.3 144.2,114.4 145.0,114.5 145.8,114.6 146.7,114.8 147.6,114.9 148.4,115.1 149.2,115.3 150.1,115.5 150.9,115.7 151.8,115.9 152.7,116.2 153.5,116.4 154.3,116.7 155.2,117.0 156.1,117.3 156.9,117.6 157.8,118.0 158.6,118.3 159.4,118.7 160.3,119.1 161.2,119.5 162.0,119.9 162.8,120.3 163.7,120.7 164.6,121.2 165.4,121.7 166.2,122.1 167.1,122.6 167.9,123.1 168.8,123.7 169.7,124.2 170.5,124.8 171.3,125.3 172.2,125.9 173.1,126.5 173.9,127.1 174.8,127.8 175.6,128.4 176.4,129.1 177.3,129.7 178.2,130.4 179.0,131.1 179.8,131.8 180.7,132.6 181.6,133.3 182.4,134.1 183.2,134.9 184.1,135.7 184.9,136.5 185.8,137.3 186.7,138.1 187.5,139.0 188.3,139.8 189.2,140.7 190.1,141.6 190.9,142.5 191.8,143.4 192.6,144.4 193.4,145.3 194.3,146.3 195.2,147.3 196.0,148.3 196.8,149.3 197.7,150.3 198.6,151.4 199.4,152.4 200.2,153.5 201.1,154.6 201.9,155.7 202.8,156.8 203.7,157.9 204.5,159.1 205.3,160.2 206.2,161.4 207.1,162.6 207.9,163.8 208.8,165.0 209.6,166.2 210.4,167.5 211.3,168.8 212.2,170.0 213.0,171.3 213.8,172.6 214.7,174.0 215.6,175.3 216.4,176.6 217.2,178.0 218.1,179.4 218.9,180.8 219.8,182.2 220.7,183.6 221.5,185.1 222.3,186.5 223.2,188.0 224.1,189.5 224.9,191.0 225.8,192.5 226.6,194.0 227.4,195.5 228.3,197.1 229.2,198.7 230.0,200.3\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/><line x1=\"60.0\" y1=\"176.0\" x2=\"120.0\" y2=\"176.0\" stroke=\"#94a3b8\" stroke-width=\"1.3\" stroke-linecap=\"round\" stroke-dasharray=\"3 3\"/><line x1=\"60.0\" y1=\"176.0\" x2=\"93.0\" y2=\"123.5\" stroke=\"#3b4ea8\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"93.0\" y1=\"123.5\" x2=\"85.1\" y2=\"127.7\" stroke=\"#3b4ea8\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"93.0\" y1=\"123.5\" x2=\"92.7\" y2=\"132.5\" stroke=\"#3b4ea8\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><text x=\"83.0\" y=\"119.5\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">V</text><path d=\"M 88.0 176.0 A 28 28 0 0 0 74.9 152.3\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"2.4\"/><text x=\"98.0\" y=\"164.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">θ</text><line x1=\"36.0\" y1=\"176.0\" x2=\"36.0\" y2=\"200.0\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"36.0\" y1=\"176.0\" x2=\"32.5\" y2=\"182.1\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"36.0\" y1=\"176.0\" x2=\"39.5\" y2=\"182.1\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"36.0\" y1=\"200.0\" x2=\"39.5\" y2=\"193.9\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"36.0\" y1=\"200.0\" x2=\"32.5\" y2=\"193.9\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"30.0\" y=\"192.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4 m</text><line x1=\"60.0\" y1=\"224.0\" x2=\"230.0\" y2=\"224.0\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"224.0\" x2=\"66.1\" y2=\"227.5\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"224.0\" x2=\"66.1\" y2=\"220.5\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"230.0\" y1=\"224.0\" x2=\"223.9\" y2=\"220.5\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"230.0\" y1=\"224.0\" x2=\"223.9\" y2=\"227.5\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"145.0\" y=\"240.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">30 m</text><circle cx=\"230.0\" cy=\"200.0\" r=\"4\" fill=\"#1e293b\"/><line x1=\"60.0\" y1=\"176.0\" x2=\"93.0\" y2=\"176.0\" stroke=\"#047857\" stroke-width=\"3.6\" stroke-linecap=\"round\"/><line x1=\"93.0\" y1=\"176.0\" x2=\"93.0\" y2=\"123.5\" stroke=\"#dc2626\" stroke-width=\"3.6\" stroke-linecap=\"round\"/><text x=\"76.5\" y=\"191.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">V cosθ</text><text x=\"99.0\" y=\"153.8\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">V sinθ</text></svg>"
+              }
+            },
+            {
+              "explain": "Horizontal: no horizontal force, so \\(\\ddot{x}=0\\). Integrate: \\(\\dot{x}=C_{1}\\); at \\(t=0\\), \\(\\dot{x}=V\\cos\\theta\\), so \\(C_{1}=V\\cos\\theta\\). Integrate again: \\(x=Vt\\cos\\theta+C_{2}\\); \\(x(0)=0\\Rightarrow C_{2}=0\\).",
+              "work": "\\(\\ddot{x}=0\\ \\Rightarrow\\ \\dot{x}=V\\cos\\theta\\ \\Rightarrow\\ x=Vt\\cos\\theta\\)"
+            },
+            {
+              "explain": "Vertical: gravity acts DOWNWARDS: \\(\\ddot{y}=-10\\). Integrate: \\(\\dot{y}=-10t+C_{1}\\); \\(\\dot{y}(0)=V\\sin\\theta\\Rightarrow C_{1}=V\\sin\\theta\\).",
+              "work": "\\(\\dot{y}=-10t+V\\sin\\theta\\)"
+            },
+            {
+              "explain": "Integrate again: \\(y=-5t^{2}+Vt\\sin\\theta+C_{2}\\). The rock starts 4 m above the ground (origin on the ground): \\(y(0)=4\\Rightarrow C_{2}=4\\).",
+              "work": "\\(y=Vt\\sin\\theta-5t^{2}+4\\)"
+            },
+            {
+              "explain": "Why not the others: B starts from \\(y=0\\) (ignores the 4 m); C uses \\(9.8\\) (the question says \\(10\\)); D has gravity pointing up (positive acceleration).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "show that \\(x=Vt\\cos\\theta\\) and \\(y=Vt\\sin\\theta-5t^{2}+4\\)",
+              "note": "Integrate twice; y(0) = 4 gives the constant."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Girraween High School 2020 Mathematics Extension 1 Trial HSC Examination",
+            "school": "Girraween High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -2315,6 +2553,184 @@
           "meta": {
             "source": "Frensham School 2021 Year 12 Trial HSC Examination Mathematics Extension 1",
             "school": "Frensham School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "glenwood2020-e1-q14b3",
+          "type": "mc",
+          "stem": "A golf ball is hit at a velocity of 110 m/s at an angle \\(\\theta\\) to the horizontal. The position vector \\(s(t)\\), from the starting point, of the ball after \\(t\\) seconds is given by \\(s=110t\\cos\\theta\\ \\underset{\\sim}{\\mathbf{i}}+\\left(110t\\sin\\theta-4.9t^{2}\\right)\\underset{\\sim}{\\mathbf{j}}\\). The golfer hits the ball directly towards the green with a velocity of 110 m/s. After 3.4 seconds of flight, at a point 8 metres above the ground, the ball hits a low flying TV drone. If it had not hit the drone or any other obstacles, would the ball have landed on the green? (The green is 400 to 450 metres away.)",
+          "difficulty": "hard",
+          "options": [
+            "Yes: \\(\\sin\\theta=0.1728\\), \\(\\theta=9^{\\circ}57'\\) which is inside \\(9^{\\circ}27'\\) to \\(10^{\\circ}41'\\) (range about 420 m)",
+            "No: \\(\\theta=9^{\\circ}57'\\) gives a range of about 380 m (too short)",
+            "No: \\(\\theta=9^{\\circ}57'\\) gives a range of about 460 m (too long)",
+            "We cannot tell without knowing the wind"
+          ],
+          "answer": 0,
+          "hint": "At \\(t=3.4\\) the height is \\(y=8\\). Substitute into the \\(\\mathbf{j}\\)-component to find \\(\\theta\\), then compare \\(\\theta\\) (or the range \\(R=\\dfrac{12100\\sin2\\theta}{9.8}\\)) with the green's interval.",
+          "steps": [
+            {
+              "explain": "Use the \\(\\mathbf{j}\\)-component with \\(t=3.4\\) and \\(y=8\\).",
+              "work": "\\(8=110(3.4)\\sin\\theta-4.9(3.4)^{2}=374\\sin\\theta-56.644\\)"
+            },
+            {
+              "explain": "Solve for \\(\\sin\\theta\\).",
+              "work": "\\(\\sin\\theta=\\dfrac{8+56.644}{374}=0.1728\\)"
+            },
+            {
+              "explain": "Find \\(\\theta\\) (inverse sine, then convert to minutes: \\(0.953^{\\circ}\\times60=57'\\)).",
+              "work": "\\(\\theta=9.953^{\\circ}=9^{\\circ}57'\\)"
+            },
+            {
+              "explain": "Compare with part (ii): \\(9^{\\circ}27'<9^{\\circ}57'<10^{\\circ}41'\\) ✓. Check the range directly.",
+              "work": "\\(R=\\dfrac{12100\\sin(19.906^{\\circ})}{9.8}=\\dfrac{12100\\times0.3406}{9.8}\\approx420\\ \\text{m}\\)"
+            },
+            {
+              "explain": "\\(420\\) m lies between 400 and 450 m, so the ball would have landed on the green. Why not the others: B and C give ranges outside the interval (they are not what the calculation gives); D is not needed (no wind in the model).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "would the ball have landed on the green",
+              "note": "Find θ from y = 8 at t = 3.4; compare with part (ii)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Glenwood High School 2020 Year 12 Mathematics Extension 1 Trial HSC Examination",
+            "school": "Glenwood High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "girraween2020-e1-q13b2",
+          "type": "mc",
+          "stem": "A rock is projected with a speed of \\(V\\ \\text{m\\,s}^{-1}\\) from a point \\(4\\) metres above a flat ground. The angle of projection to the horizontal is \\(\\theta\\) as shown. If the rock hits the ground \\(30\\) metres away, find the value of \\(V\\) if \\(\\theta=\\tan^{-1}\\left(\\dfrac{5}{12}\\right)\\).",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 255\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><line x1=\"60.0\" y1=\"224.0\" x2=\"60.0\" y2=\"24.0\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"24.0\" x2=\"56.0\" y2=\"30.9\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"24.0\" x2=\"64.0\" y2=\"30.9\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"200.0\" x2=\"275.0\" y2=\"200.0\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"275.0\" y1=\"200.0\" x2=\"268.1\" y2=\"196.0\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"275.0\" y1=\"200.0\" x2=\"268.1\" y2=\"204.0\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"54.0\" y=\"32.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">y</text><text x=\"275.0\" y=\"216.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><polyline points=\"60.0,176.0 60.9,174.7 61.7,173.3 62.5,172.0 63.4,170.7 64.2,169.4 65.1,168.2 66.0,166.9 66.8,165.7 67.7,164.4 68.5,163.2 69.3,162.0 70.2,160.8 71.0,159.7 71.9,158.5 72.8,157.4 73.6,156.3 74.5,155.2 75.3,154.1 76.2,153.0 77.0,151.9 77.8,150.9 78.7,149.8 79.5,148.8 80.4,147.8 81.2,146.8 82.1,145.8 83.0,144.9 83.8,143.9 84.7,143.0 85.5,142.1 86.3,141.2 87.2,140.3 88.0,139.4 88.9,138.6 89.8,137.7 90.6,136.9 91.5,136.1 92.3,135.3 93.2,134.5 94.0,133.7 94.8,133.0 95.7,132.2 96.5,131.5 97.4,130.8 98.2,130.1 99.1,129.4 100.0,128.8 100.8,128.1 101.7,127.5 102.5,126.8 103.3,126.2 104.2,125.6 105.0,125.1 105.9,124.5 106.8,124.0 107.6,123.4 108.5,122.9 109.3,122.4 110.2,121.9 111.0,121.4 111.8,121.0 112.7,120.5 113.5,120.1 114.4,119.7 115.2,119.3 116.1,118.9 117.0,118.5 117.8,118.2 118.7,117.8 119.5,117.5 120.3,117.2 121.2,116.9 122.0,116.6 122.9,116.3 123.8,116.1 124.6,115.8 125.5,115.6 126.3,115.4 127.2,115.2 128.0,115.0 128.8,114.9 129.7,114.7 130.6,114.6 131.4,114.4 132.2,114.3 133.1,114.2 133.9,114.2 134.8,114.1 135.7,114.1 136.5,114.0 137.3,114.0 138.2,114.0 139.1,114.0 139.9,114.0 140.8,114.1 141.6,114.1 142.4,114.2 143.3,114.3 144.2,114.4 145.0,114.5 145.8,114.6 146.7,114.8 147.6,114.9 148.4,115.1 149.2,115.3 150.1,115.5 150.9,115.7 151.8,115.9 152.7,116.2 153.5,116.4 154.3,116.7 155.2,117.0 156.1,117.3 156.9,117.6 157.8,118.0 158.6,118.3 159.4,118.7 160.3,119.1 161.2,119.5 162.0,119.9 162.8,120.3 163.7,120.7 164.6,121.2 165.4,121.7 166.2,122.1 167.1,122.6 167.9,123.1 168.8,123.7 169.7,124.2 170.5,124.8 171.3,125.3 172.2,125.9 173.1,126.5 173.9,127.1 174.8,127.8 175.6,128.4 176.4,129.1 177.3,129.7 178.2,130.4 179.0,131.1 179.8,131.8 180.7,132.6 181.6,133.3 182.4,134.1 183.2,134.9 184.1,135.7 184.9,136.5 185.8,137.3 186.7,138.1 187.5,139.0 188.3,139.8 189.2,140.7 190.1,141.6 190.9,142.5 191.8,143.4 192.6,144.4 193.4,145.3 194.3,146.3 195.2,147.3 196.0,148.3 196.8,149.3 197.7,150.3 198.6,151.4 199.4,152.4 200.2,153.5 201.1,154.6 201.9,155.7 202.8,156.8 203.7,157.9 204.5,159.1 205.3,160.2 206.2,161.4 207.1,162.6 207.9,163.8 208.8,165.0 209.6,166.2 210.4,167.5 211.3,168.8 212.2,170.0 213.0,171.3 213.8,172.6 214.7,174.0 215.6,175.3 216.4,176.6 217.2,178.0 218.1,179.4 218.9,180.8 219.8,182.2 220.7,183.6 221.5,185.1 222.3,186.5 223.2,188.0 224.1,189.5 224.9,191.0 225.8,192.5 226.6,194.0 227.4,195.5 228.3,197.1 229.2,198.7 230.0,200.3\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/><line x1=\"60.0\" y1=\"176.0\" x2=\"120.0\" y2=\"176.0\" stroke=\"#94a3b8\" stroke-width=\"1.3\" stroke-linecap=\"round\" stroke-dasharray=\"3 3\"/><line x1=\"60.0\" y1=\"176.0\" x2=\"93.0\" y2=\"123.5\" stroke=\"#3b4ea8\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"93.0\" y1=\"123.5\" x2=\"85.1\" y2=\"127.7\" stroke=\"#3b4ea8\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"93.0\" y1=\"123.5\" x2=\"92.7\" y2=\"132.5\" stroke=\"#3b4ea8\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><text x=\"83.0\" y=\"119.5\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">V</text><path d=\"M 88.0 176.0 A 28 28 0 0 0 74.9 152.3\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"2.4\"/><text x=\"98.0\" y=\"164.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">θ</text><line x1=\"36.0\" y1=\"176.0\" x2=\"36.0\" y2=\"200.0\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"36.0\" y1=\"176.0\" x2=\"32.5\" y2=\"182.1\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"36.0\" y1=\"176.0\" x2=\"39.5\" y2=\"182.1\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"36.0\" y1=\"200.0\" x2=\"39.5\" y2=\"193.9\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"36.0\" y1=\"200.0\" x2=\"32.5\" y2=\"193.9\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"30.0\" y=\"192.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4 m</text><line x1=\"60.0\" y1=\"224.0\" x2=\"230.0\" y2=\"224.0\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"224.0\" x2=\"66.1\" y2=\"227.5\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"224.0\" x2=\"66.1\" y2=\"220.5\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"230.0\" y1=\"224.0\" x2=\"223.9\" y2=\"220.5\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"230.0\" y1=\"224.0\" x2=\"223.9\" y2=\"227.5\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"145.0\" y=\"240.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">30 m</text><circle cx=\"230.0\" cy=\"200.0\" r=\"4\" fill=\"#1e293b\"/></svg>"
+          },
+          "options": [
+            "\\(V=17.89\\ \\text{m\\,s}^{-1}\\)",
+            "\\(V=20.55\\ \\text{m\\,s}^{-1}\\)",
+            "\\(V=320.08\\ \\text{m\\,s}^{-1}\\)",
+            "\\(V=17.71\\ \\text{m\\,s}^{-1}\\)"
+          ],
+          "answer": 0,
+          "hint": "Eliminate \\(t\\): from \\(x=Vt\\cos\\theta\\) get \\(t=\\dfrac{x}{V\\cos\\theta}\\), substitute into \\(y\\). Use \\(\\tan\\theta=\\dfrac{5}{12}\\) and \\(\\sec^{2}\\theta=1+\\tan^{2}\\theta\\). The rock lands at \\(x=30\\), \\(y=0\\).",
+          "steps": [
+            {
+              "explain": "From \\(x=Vt\\cos\\theta\\): \\(t=\\dfrac{x}{V\\cos\\theta}\\). Substitute into \\(y=Vt\\sin\\theta-5t^{2}+4\\).",
+              "work": "\\(y=x\\tan\\theta-\\dfrac{5x^{2}}{V^{2}}\\sec^{2}\\theta+4\\)"
+            },
+            {
+              "explain": "Use \\(\\sec^{2}\\theta=1+\\tan^{2}\\theta=1+\\dfrac{25}{144}=\\dfrac{169}{144}\\) and \\(\\tan\\theta=\\dfrac{5}{12}\\).",
+              "work": "\\(y=\\dfrac{5}{12}x-\\dfrac{5x^{2}}{V^{2}}\\cdot\\dfrac{169}{144}+4\\)"
+            },
+            {
+              "explain": "Landing point: \\(x=30\\), \\(y=0\\).",
+              "work": "\\(0=\\dfrac{5}{12}(30)-\\dfrac{5(900)}{V^{2}}\\cdot\\dfrac{169}{144}+4\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 255\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><line x1=\"60.0\" y1=\"224.0\" x2=\"60.0\" y2=\"24.0\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"24.0\" x2=\"56.0\" y2=\"30.9\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"24.0\" x2=\"64.0\" y2=\"30.9\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"200.0\" x2=\"275.0\" y2=\"200.0\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"275.0\" y1=\"200.0\" x2=\"268.1\" y2=\"196.0\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"275.0\" y1=\"200.0\" x2=\"268.1\" y2=\"204.0\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"54.0\" y=\"32.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">y</text><text x=\"275.0\" y=\"216.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><polyline points=\"60.0,176.0 60.9,174.7 61.7,173.3 62.5,172.0 63.4,170.7 64.2,169.4 65.1,168.2 66.0,166.9 66.8,165.7 67.7,164.4 68.5,163.2 69.3,162.0 70.2,160.8 71.0,159.7 71.9,158.5 72.8,157.4 73.6,156.3 74.5,155.2 75.3,154.1 76.2,153.0 77.0,151.9 77.8,150.9 78.7,149.8 79.5,148.8 80.4,147.8 81.2,146.8 82.1,145.8 83.0,144.9 83.8,143.9 84.7,143.0 85.5,142.1 86.3,141.2 87.2,140.3 88.0,139.4 88.9,138.6 89.8,137.7 90.6,136.9 91.5,136.1 92.3,135.3 93.2,134.5 94.0,133.7 94.8,133.0 95.7,132.2 96.5,131.5 97.4,130.8 98.2,130.1 99.1,129.4 100.0,128.8 100.8,128.1 101.7,127.5 102.5,126.8 103.3,126.2 104.2,125.6 105.0,125.1 105.9,124.5 106.8,124.0 107.6,123.4 108.5,122.9 109.3,122.4 110.2,121.9 111.0,121.4 111.8,121.0 112.7,120.5 113.5,120.1 114.4,119.7 115.2,119.3 116.1,118.9 117.0,118.5 117.8,118.2 118.7,117.8 119.5,117.5 120.3,117.2 121.2,116.9 122.0,116.6 122.9,116.3 123.8,116.1 124.6,115.8 125.5,115.6 126.3,115.4 127.2,115.2 128.0,115.0 128.8,114.9 129.7,114.7 130.6,114.6 131.4,114.4 132.2,114.3 133.1,114.2 133.9,114.2 134.8,114.1 135.7,114.1 136.5,114.0 137.3,114.0 138.2,114.0 139.1,114.0 139.9,114.0 140.8,114.1 141.6,114.1 142.4,114.2 143.3,114.3 144.2,114.4 145.0,114.5 145.8,114.6 146.7,114.8 147.6,114.9 148.4,115.1 149.2,115.3 150.1,115.5 150.9,115.7 151.8,115.9 152.7,116.2 153.5,116.4 154.3,116.7 155.2,117.0 156.1,117.3 156.9,117.6 157.8,118.0 158.6,118.3 159.4,118.7 160.3,119.1 161.2,119.5 162.0,119.9 162.8,120.3 163.7,120.7 164.6,121.2 165.4,121.7 166.2,122.1 167.1,122.6 167.9,123.1 168.8,123.7 169.7,124.2 170.5,124.8 171.3,125.3 172.2,125.9 173.1,126.5 173.9,127.1 174.8,127.8 175.6,128.4 176.4,129.1 177.3,129.7 178.2,130.4 179.0,131.1 179.8,131.8 180.7,132.6 181.6,133.3 182.4,134.1 183.2,134.9 184.1,135.7 184.9,136.5 185.8,137.3 186.7,138.1 187.5,139.0 188.3,139.8 189.2,140.7 190.1,141.6 190.9,142.5 191.8,143.4 192.6,144.4 193.4,145.3 194.3,146.3 195.2,147.3 196.0,148.3 196.8,149.3 197.7,150.3 198.6,151.4 199.4,152.4 200.2,153.5 201.1,154.6 201.9,155.7 202.8,156.8 203.7,157.9 204.5,159.1 205.3,160.2 206.2,161.4 207.1,162.6 207.9,163.8 208.8,165.0 209.6,166.2 210.4,167.5 211.3,168.8 212.2,170.0 213.0,171.3 213.8,172.6 214.7,174.0 215.6,175.3 216.4,176.6 217.2,178.0 218.1,179.4 218.9,180.8 219.8,182.2 220.7,183.6 221.5,185.1 222.3,186.5 223.2,188.0 224.1,189.5 224.9,191.0 225.8,192.5 226.6,194.0 227.4,195.5 228.3,197.1 229.2,198.7 230.0,200.3\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/><line x1=\"60.0\" y1=\"176.0\" x2=\"120.0\" y2=\"176.0\" stroke=\"#94a3b8\" stroke-width=\"1.3\" stroke-linecap=\"round\" stroke-dasharray=\"3 3\"/><line x1=\"60.0\" y1=\"176.0\" x2=\"93.0\" y2=\"123.5\" stroke=\"#3b4ea8\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"93.0\" y1=\"123.5\" x2=\"85.1\" y2=\"127.7\" stroke=\"#3b4ea8\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"93.0\" y1=\"123.5\" x2=\"92.7\" y2=\"132.5\" stroke=\"#3b4ea8\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><text x=\"83.0\" y=\"119.5\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">V</text><path d=\"M 88.0 176.0 A 28 28 0 0 0 74.9 152.3\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"2.4\"/><text x=\"98.0\" y=\"164.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">θ</text><line x1=\"36.0\" y1=\"176.0\" x2=\"36.0\" y2=\"200.0\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"36.0\" y1=\"176.0\" x2=\"32.5\" y2=\"182.1\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"36.0\" y1=\"176.0\" x2=\"39.5\" y2=\"182.1\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"36.0\" y1=\"200.0\" x2=\"39.5\" y2=\"193.9\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"36.0\" y1=\"200.0\" x2=\"32.5\" y2=\"193.9\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"30.0\" y=\"192.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4 m</text><line x1=\"60.0\" y1=\"224.0\" x2=\"230.0\" y2=\"224.0\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"224.0\" x2=\"66.1\" y2=\"227.5\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"224.0\" x2=\"66.1\" y2=\"220.5\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"230.0\" y1=\"224.0\" x2=\"223.9\" y2=\"220.5\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"230.0\" y1=\"224.0\" x2=\"223.9\" y2=\"227.5\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"145.0\" y=\"240.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">30 m</text><circle cx=\"230.0\" cy=\"200.0\" r=\"4\" fill=\"#1e293b\"/><line x1=\"60.0\" y1=\"199.0\" x2=\"230.0\" y2=\"199.0\" stroke=\"#047857\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"160.0\" y=\"192.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">y = 0 when x = 30</text></svg>"
+              }
+            },
+            {
+              "explain": "Simplify: \\(\\dfrac{5}{12}(30)=12.5\\), so \\(16.5=\\dfrac{4500\\times169}{144V^{2}}=\\dfrac{5281.25}{V^{2}}\\).",
+              "work": "\\(V^{2}=\\dfrac{5281.25}{16.5}=320.08\\ldots\\)"
+            },
+            {
+              "explain": "Square root (\\(V>0\\)).",
+              "work": "\\(V=\\sqrt{320.08}=17.89\\ \\text{m\\,s}^{-1}\\)"
+            },
+            {
+              "explain": "Why not the others: \\(20.55\\) forgets the \\(+4\\) (uses \\(12.5\\) instead of \\(16.5\\)); \\(320.08\\) is \\(V^{2}\\); \\(17.71\\) uses \\(g=9.8\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "find the value of \\(V\\)",
+              "note": "Eliminate t; use x = 30, y = 0 and sec²θ = 1 + tan²θ."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Girraween High School 2020 Mathematics Extension 1 Trial HSC Examination",
+            "school": "Girraween High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "girraween2020-e1-q13b3",
+          "type": "mc",
+          "stem": "A rock is projected with a speed of \\(V\\ \\text{m\\,s}^{-1}\\) from a point \\(4\\) metres above a flat ground. The angle of projection to the horizontal is \\(\\theta\\) as shown. With \\(\\theta=\\tan^{-1}\\left(\\dfrac{5}{12}\\right)\\) and \\(V=17.89\\ \\text{m\\,s}^{-1}\\), find the maximum height reached.",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 255\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><line x1=\"60.0\" y1=\"224.0\" x2=\"60.0\" y2=\"24.0\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"24.0\" x2=\"56.0\" y2=\"30.9\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"24.0\" x2=\"64.0\" y2=\"30.9\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"200.0\" x2=\"275.0\" y2=\"200.0\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"275.0\" y1=\"200.0\" x2=\"268.1\" y2=\"196.0\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"275.0\" y1=\"200.0\" x2=\"268.1\" y2=\"204.0\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"54.0\" y=\"32.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">y</text><text x=\"275.0\" y=\"216.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><polyline points=\"60.0,176.0 60.9,174.7 61.7,173.3 62.5,172.0 63.4,170.7 64.2,169.4 65.1,168.2 66.0,166.9 66.8,165.7 67.7,164.4 68.5,163.2 69.3,162.0 70.2,160.8 71.0,159.7 71.9,158.5 72.8,157.4 73.6,156.3 74.5,155.2 75.3,154.1 76.2,153.0 77.0,151.9 77.8,150.9 78.7,149.8 79.5,148.8 80.4,147.8 81.2,146.8 82.1,145.8 83.0,144.9 83.8,143.9 84.7,143.0 85.5,142.1 86.3,141.2 87.2,140.3 88.0,139.4 88.9,138.6 89.8,137.7 90.6,136.9 91.5,136.1 92.3,135.3 93.2,134.5 94.0,133.7 94.8,133.0 95.7,132.2 96.5,131.5 97.4,130.8 98.2,130.1 99.1,129.4 100.0,128.8 100.8,128.1 101.7,127.5 102.5,126.8 103.3,126.2 104.2,125.6 105.0,125.1 105.9,124.5 106.8,124.0 107.6,123.4 108.5,122.9 109.3,122.4 110.2,121.9 111.0,121.4 111.8,121.0 112.7,120.5 113.5,120.1 114.4,119.7 115.2,119.3 116.1,118.9 117.0,118.5 117.8,118.2 118.7,117.8 119.5,117.5 120.3,117.2 121.2,116.9 122.0,116.6 122.9,116.3 123.8,116.1 124.6,115.8 125.5,115.6 126.3,115.4 127.2,115.2 128.0,115.0 128.8,114.9 129.7,114.7 130.6,114.6 131.4,114.4 132.2,114.3 133.1,114.2 133.9,114.2 134.8,114.1 135.7,114.1 136.5,114.0 137.3,114.0 138.2,114.0 139.1,114.0 139.9,114.0 140.8,114.1 141.6,114.1 142.4,114.2 143.3,114.3 144.2,114.4 145.0,114.5 145.8,114.6 146.7,114.8 147.6,114.9 148.4,115.1 149.2,115.3 150.1,115.5 150.9,115.7 151.8,115.9 152.7,116.2 153.5,116.4 154.3,116.7 155.2,117.0 156.1,117.3 156.9,117.6 157.8,118.0 158.6,118.3 159.4,118.7 160.3,119.1 161.2,119.5 162.0,119.9 162.8,120.3 163.7,120.7 164.6,121.2 165.4,121.7 166.2,122.1 167.1,122.6 167.9,123.1 168.8,123.7 169.7,124.2 170.5,124.8 171.3,125.3 172.2,125.9 173.1,126.5 173.9,127.1 174.8,127.8 175.6,128.4 176.4,129.1 177.3,129.7 178.2,130.4 179.0,131.1 179.8,131.8 180.7,132.6 181.6,133.3 182.4,134.1 183.2,134.9 184.1,135.7 184.9,136.5 185.8,137.3 186.7,138.1 187.5,139.0 188.3,139.8 189.2,140.7 190.1,141.6 190.9,142.5 191.8,143.4 192.6,144.4 193.4,145.3 194.3,146.3 195.2,147.3 196.0,148.3 196.8,149.3 197.7,150.3 198.6,151.4 199.4,152.4 200.2,153.5 201.1,154.6 201.9,155.7 202.8,156.8 203.7,157.9 204.5,159.1 205.3,160.2 206.2,161.4 207.1,162.6 207.9,163.8 208.8,165.0 209.6,166.2 210.4,167.5 211.3,168.8 212.2,170.0 213.0,171.3 213.8,172.6 214.7,174.0 215.6,175.3 216.4,176.6 217.2,178.0 218.1,179.4 218.9,180.8 219.8,182.2 220.7,183.6 221.5,185.1 222.3,186.5 223.2,188.0 224.1,189.5 224.9,191.0 225.8,192.5 226.6,194.0 227.4,195.5 228.3,197.1 229.2,198.7 230.0,200.3\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/><line x1=\"60.0\" y1=\"176.0\" x2=\"120.0\" y2=\"176.0\" stroke=\"#94a3b8\" stroke-width=\"1.3\" stroke-linecap=\"round\" stroke-dasharray=\"3 3\"/><line x1=\"60.0\" y1=\"176.0\" x2=\"93.0\" y2=\"123.5\" stroke=\"#3b4ea8\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"93.0\" y1=\"123.5\" x2=\"85.1\" y2=\"127.7\" stroke=\"#3b4ea8\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"93.0\" y1=\"123.5\" x2=\"92.7\" y2=\"132.5\" stroke=\"#3b4ea8\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><text x=\"83.0\" y=\"119.5\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">V</text><path d=\"M 88.0 176.0 A 28 28 0 0 0 74.9 152.3\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"2.4\"/><text x=\"98.0\" y=\"164.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">θ</text><line x1=\"36.0\" y1=\"176.0\" x2=\"36.0\" y2=\"200.0\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"36.0\" y1=\"176.0\" x2=\"32.5\" y2=\"182.1\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"36.0\" y1=\"176.0\" x2=\"39.5\" y2=\"182.1\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"36.0\" y1=\"200.0\" x2=\"39.5\" y2=\"193.9\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"36.0\" y1=\"200.0\" x2=\"32.5\" y2=\"193.9\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"30.0\" y=\"192.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4 m</text><line x1=\"60.0\" y1=\"224.0\" x2=\"230.0\" y2=\"224.0\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"224.0\" x2=\"66.1\" y2=\"227.5\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"224.0\" x2=\"66.1\" y2=\"220.5\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"230.0\" y1=\"224.0\" x2=\"223.9\" y2=\"220.5\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"230.0\" y1=\"224.0\" x2=\"223.9\" y2=\"227.5\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"145.0\" y=\"240.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">30 m</text><circle cx=\"230.0\" cy=\"200.0\" r=\"4\" fill=\"#1e293b\"/></svg>"
+          },
+          "options": [
+            "\\(6.37\\ \\text{m}\\)",
+            "\\(2.37\\ \\text{m}\\)",
+            "\\(6.88\\ \\text{m}\\)",
+            "\\(12.4\\ \\text{m}\\)"
+          ],
+          "answer": 0,
+          "hint": "Maximum height occurs when the VERTICAL velocity is 0: \\(\\dot{y}=0\\). Find that time, then substitute it into \\(y\\). With \\(\\tan\\theta=\\dfrac{5}{12}\\) the triangle is 5, 12, 13, so \\(\\sin\\theta=\\dfrac{5}{13}\\).",
+          "steps": [
+            {
+              "explain": "Triangle with \\(\\tan\\theta=\\dfrac{5}{12}\\): opposite 5, adjacent 12, hypotenuse \\(\\sqrt{25+144}=13\\).",
+              "work": "\\(\\sin\\theta=\\dfrac{5}{13}\\)"
+            },
+            {
+              "explain": "At the top the rock is moving horizontally: \\(\\dot{y}=0\\).",
+              "work": "\\(-10t+V\\sin\\theta=0\\ \\Rightarrow\\ t=\\dfrac{V\\sin\\theta}{10}=\\dfrac{17.89\\times\\frac{5}{13}}{10}=0.688\\ \\text{s}\\)"
+            },
+            {
+              "explain": "Substitute this time into \\(y=Vt\\sin\\theta-5t^{2}+4\\). First \\(V\\sin\\theta=17.89\\times\\dfrac{5}{13}=6.881\\).",
+              "work": "\\(y=6.881(0.688)-5(0.688)^{2}+4=4.734-2.367+4\\)"
+            },
+            {
+              "explain": "Add.",
+              "work": "\\(y_{\\max}=6.37\\ \\text{m}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 255\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><line x1=\"60.0\" y1=\"224.0\" x2=\"60.0\" y2=\"24.0\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"24.0\" x2=\"56.0\" y2=\"30.9\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"24.0\" x2=\"64.0\" y2=\"30.9\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"200.0\" x2=\"275.0\" y2=\"200.0\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"275.0\" y1=\"200.0\" x2=\"268.1\" y2=\"196.0\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"275.0\" y1=\"200.0\" x2=\"268.1\" y2=\"204.0\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"54.0\" y=\"32.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">y</text><text x=\"275.0\" y=\"216.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><polyline points=\"60.0,176.0 60.9,174.7 61.7,173.3 62.5,172.0 63.4,170.7 64.2,169.4 65.1,168.2 66.0,166.9 66.8,165.7 67.7,164.4 68.5,163.2 69.3,162.0 70.2,160.8 71.0,159.7 71.9,158.5 72.8,157.4 73.6,156.3 74.5,155.2 75.3,154.1 76.2,153.0 77.0,151.9 77.8,150.9 78.7,149.8 79.5,148.8 80.4,147.8 81.2,146.8 82.1,145.8 83.0,144.9 83.8,143.9 84.7,143.0 85.5,142.1 86.3,141.2 87.2,140.3 88.0,139.4 88.9,138.6 89.8,137.7 90.6,136.9 91.5,136.1 92.3,135.3 93.2,134.5 94.0,133.7 94.8,133.0 95.7,132.2 96.5,131.5 97.4,130.8 98.2,130.1 99.1,129.4 100.0,128.8 100.8,128.1 101.7,127.5 102.5,126.8 103.3,126.2 104.2,125.6 105.0,125.1 105.9,124.5 106.8,124.0 107.6,123.4 108.5,122.9 109.3,122.4 110.2,121.9 111.0,121.4 111.8,121.0 112.7,120.5 113.5,120.1 114.4,119.7 115.2,119.3 116.1,118.9 117.0,118.5 117.8,118.2 118.7,117.8 119.5,117.5 120.3,117.2 121.2,116.9 122.0,116.6 122.9,116.3 123.8,116.1 124.6,115.8 125.5,115.6 126.3,115.4 127.2,115.2 128.0,115.0 128.8,114.9 129.7,114.7 130.6,114.6 131.4,114.4 132.2,114.3 133.1,114.2 133.9,114.2 134.8,114.1 135.7,114.1 136.5,114.0 137.3,114.0 138.2,114.0 139.1,114.0 139.9,114.0 140.8,114.1 141.6,114.1 142.4,114.2 143.3,114.3 144.2,114.4 145.0,114.5 145.8,114.6 146.7,114.8 147.6,114.9 148.4,115.1 149.2,115.3 150.1,115.5 150.9,115.7 151.8,115.9 152.7,116.2 153.5,116.4 154.3,116.7 155.2,117.0 156.1,117.3 156.9,117.6 157.8,118.0 158.6,118.3 159.4,118.7 160.3,119.1 161.2,119.5 162.0,119.9 162.8,120.3 163.7,120.7 164.6,121.2 165.4,121.7 166.2,122.1 167.1,122.6 167.9,123.1 168.8,123.7 169.7,124.2 170.5,124.8 171.3,125.3 172.2,125.9 173.1,126.5 173.9,127.1 174.8,127.8 175.6,128.4 176.4,129.1 177.3,129.7 178.2,130.4 179.0,131.1 179.8,131.8 180.7,132.6 181.6,133.3 182.4,134.1 183.2,134.9 184.1,135.7 184.9,136.5 185.8,137.3 186.7,138.1 187.5,139.0 188.3,139.8 189.2,140.7 190.1,141.6 190.9,142.5 191.8,143.4 192.6,144.4 193.4,145.3 194.3,146.3 195.2,147.3 196.0,148.3 196.8,149.3 197.7,150.3 198.6,151.4 199.4,152.4 200.2,153.5 201.1,154.6 201.9,155.7 202.8,156.8 203.7,157.9 204.5,159.1 205.3,160.2 206.2,161.4 207.1,162.6 207.9,163.8 208.8,165.0 209.6,166.2 210.4,167.5 211.3,168.8 212.2,170.0 213.0,171.3 213.8,172.6 214.7,174.0 215.6,175.3 216.4,176.6 217.2,178.0 218.1,179.4 218.9,180.8 219.8,182.2 220.7,183.6 221.5,185.1 222.3,186.5 223.2,188.0 224.1,189.5 224.9,191.0 225.8,192.5 226.6,194.0 227.4,195.5 228.3,197.1 229.2,198.7 230.0,200.3\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/><line x1=\"60.0\" y1=\"176.0\" x2=\"120.0\" y2=\"176.0\" stroke=\"#94a3b8\" stroke-width=\"1.3\" stroke-linecap=\"round\" stroke-dasharray=\"3 3\"/><line x1=\"60.0\" y1=\"176.0\" x2=\"93.0\" y2=\"123.5\" stroke=\"#3b4ea8\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"93.0\" y1=\"123.5\" x2=\"85.1\" y2=\"127.7\" stroke=\"#3b4ea8\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"93.0\" y1=\"123.5\" x2=\"92.7\" y2=\"132.5\" stroke=\"#3b4ea8\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><text x=\"83.0\" y=\"119.5\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">V</text><path d=\"M 88.0 176.0 A 28 28 0 0 0 74.9 152.3\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"2.4\"/><text x=\"98.0\" y=\"164.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">θ</text><line x1=\"36.0\" y1=\"176.0\" x2=\"36.0\" y2=\"200.0\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"36.0\" y1=\"176.0\" x2=\"32.5\" y2=\"182.1\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"36.0\" y1=\"176.0\" x2=\"39.5\" y2=\"182.1\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"36.0\" y1=\"200.0\" x2=\"39.5\" y2=\"193.9\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"36.0\" y1=\"200.0\" x2=\"32.5\" y2=\"193.9\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"30.0\" y=\"192.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4 m</text><line x1=\"60.0\" y1=\"224.0\" x2=\"230.0\" y2=\"224.0\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"224.0\" x2=\"66.1\" y2=\"227.5\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"224.0\" x2=\"66.1\" y2=\"220.5\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"230.0\" y1=\"224.0\" x2=\"223.9\" y2=\"220.5\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"230.0\" y1=\"224.0\" x2=\"223.9\" y2=\"227.5\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"145.0\" y=\"240.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">30 m</text><circle cx=\"230.0\" cy=\"200.0\" r=\"4\" fill=\"#1e293b\"/><circle cx=\"138.0\" cy=\"114.0\" r=\"5.5\" fill=\"#dc2626\"/><line x1=\"138.0\" y1=\"114.0\" x2=\"138.0\" y2=\"200.0\" stroke=\"#dc2626\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><text x=\"146.0\" y=\"108.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">max height</text></svg>"
+              }
+            },
+            {
+              "explain": "Check by formula: \\(y_{\\max}=4+\\dfrac{(V\\sin\\theta)^{2}}{20}=4+\\dfrac{47.35}{20}=6.37\\) ✓. Why not the others: \\(2.37\\) forgets the starting height 4 m; \\(6.88\\) is \\(V\\sin\\theta\\) (a velocity); \\(12.4\\) is an arithmetic slip.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "find the maximum height reached",
+              "note": "Max height: set the vertical velocity to zero."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Girraween High School 2020 Mathematics Extension 1 Trial HSC Examination",
+            "school": "Girraween High School",
             "grade": "12",
             "origin": "teacher"
           }

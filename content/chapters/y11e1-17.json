@@ -1288,6 +1288,109 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "girraween2020-e1-q6",
+          "type": "mc",
+          "stem": "Four females and four male students are to be seated around a circular table. In how many ways can this be done if the males and females must alternate?",
+          "difficulty": "medium",
+          "options": [
+            "\\(4!\\times4!\\)",
+            "\\(3!\\times4!\\)",
+            "\\(3!\\times3!\\)",
+            "\\(2\\times3!\\times3!\\)"
+          ],
+          "answer": 1,
+          "hint": "On a CIRCLE arrangements that are rotations of each other are the same, so first seat one group (e.g. the females) in \\((n-1)!\\) ways. The males then go in the gaps between them.",
+          "steps": [
+            {
+              "explain": "Seat the 4 females around the table. Rotations count as the same arrangement, so fix one female and arrange the other 3.",
+              "work": "\\(\\text{females: }(4-1)!=3!\\)"
+            },
+            {
+              "explain": "The females create 4 gaps (one between each pair of neighbours). The males must alternate, so one male goes in EACH gap: arrange the 4 males in the 4 gaps.",
+              "work": "\\(\\text{males: }4!\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 232\" width=\"100%\" height=\"auto\" style=\"max-width:340px;display:block;margin:0 auto\"><circle cx=\"165\" cy=\"104\" r=\"64\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"2\"/><circle cx=\"165.0\" cy=\"22.0\" r=\"15\" fill=\"#fecaca\" stroke=\"#dc2626\" stroke-width=\"2.4\"/><text x=\"165.0\" y=\"27.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">F</text><circle cx=\"223.0\" cy=\"46.0\" r=\"15\" fill=\"#bfdbfe\" stroke=\"#3b4ea8\" stroke-width=\"2.4\"/><text x=\"223.0\" y=\"51.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">M</text><circle cx=\"247.0\" cy=\"104.0\" r=\"15\" fill=\"#fecaca\" stroke=\"#dc2626\" stroke-width=\"2.4\"/><text x=\"247.0\" y=\"109.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">F</text><circle cx=\"223.0\" cy=\"162.0\" r=\"15\" fill=\"#bfdbfe\" stroke=\"#3b4ea8\" stroke-width=\"2.4\"/><text x=\"223.0\" y=\"167.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">M</text><circle cx=\"165.0\" cy=\"186.0\" r=\"15\" fill=\"#fecaca\" stroke=\"#dc2626\" stroke-width=\"2.4\"/><text x=\"165.0\" y=\"191.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">F</text><circle cx=\"107.0\" cy=\"162.0\" r=\"15\" fill=\"#bfdbfe\" stroke=\"#3b4ea8\" stroke-width=\"2.4\"/><text x=\"107.0\" y=\"167.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">M</text><circle cx=\"83.0\" cy=\"104.0\" r=\"15\" fill=\"#fecaca\" stroke=\"#dc2626\" stroke-width=\"2.4\"/><text x=\"83.0\" y=\"109.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">F</text><circle cx=\"107.0\" cy=\"46.0\" r=\"15\" fill=\"#bfdbfe\" stroke=\"#3b4ea8\" stroke-width=\"2.4\"/><text x=\"107.0\" y=\"51.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">M</text><text x=\"165.0\" y=\"109.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#64748b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">table</text><text x=\"165.0\" y=\"214.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">F and M alternate: 4 F in the 4 gaps</text></svg>"
+              }
+            },
+            {
+              "explain": "Multiply (independent choices).",
+              "work": "\\(3!\\times4!=6\\times24=144\\)"
+            },
+            {
+              "explain": "Why not the others: \\(4!\\times4!\\) forgets that rotations are identical; \\(3!\\times3!\\) arranges only 3 males; \\(2\\times3!\\times3!\\) wrongly multiplies by 2.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">B</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "In how many ways can this be done if the males and females must alternate",
+              "note": "Circle: fix one, arrange the rest (n − 1)!."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Girraween High School 2020 Mathematics Extension 1 Trial HSC Examination",
+            "school": "Girraween High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "girraween2020-e1-q14c",
+          "type": "mc",
+          "stem": "How many numbers greater than \\(6000\\) can be formed with the digits \\(1,4,5,7,8\\) if no digit is repeated?",
+          "difficulty": "medium",
+          "options": [
+            "\\(168\\)",
+            "\\(120\\)",
+            "\\(48\\)",
+            "\\(72\\)"
+          ],
+          "answer": 0,
+          "hint": "Numbers greater than 6000 have 4 or 5 digits. A 4-digit number must START with 7 or 8 (a digit \\(>6\\)). Count 4-digit numbers and 5-digit numbers SEPARATELY, then add.",
+          "steps": [
+            {
+              "explain": "4-digit numbers: the first digit must be 7 or 8 (so the number exceeds 6000): 2 choices. Then fill the other 3 places from the remaining 4 digits without repeating: \\(4\\times3\\times2\\).",
+              "work": "\\(2\\times4\\times3\\times2=48\\)"
+            },
+            {
+              "explain": "5-digit numbers: every 5-digit number made from these digits is greater than 6000. Arrange all 5 digits: \\(5!\\).",
+              "work": "\\(5!=120\\)"
+            },
+            {
+              "explain": "Add the two cases.",
+              "work": "\\(48+120=168\\)"
+            },
+            {
+              "explain": "Why not the others: 120 counts only the 5-digit numbers; 48 only the 4-digit numbers; 72 is not a valid count.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "How many numbers greater than \\(6000\\) can be formed",
+              "note": "Split: 4-digit starting with 7 or 8, plus all 5-digit."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Girraween High School 2020 Mathematics Extension 1 Trial HSC Examination",
+            "school": "Girraween High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },

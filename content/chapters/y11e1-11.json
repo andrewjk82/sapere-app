@@ -600,6 +600,71 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "girraween2020-e1-q10",
+          "type": "mc",
+          "stem": "When the polynomial \\(P(x)\\) is divided by \\((x-2)\\) and \\((x+1)\\) the respective remainders are \\(5\\) and \\(8\\). What is the remainder when \\(P(x)\\) is divided by \\((x-2)(x+1)\\)?",
+          "difficulty": "medium",
+          "options": [
+            "\\(7-x\\)",
+            "\\(x-7\\)",
+            "\\(x+7\\)",
+            "\\(-7-x\\)"
+          ],
+          "answer": 0,
+          "hint": "Dividing by a QUADRATIC \\((x-2)(x+1)\\) leaves a remainder of degree at most 1: \\(R(x)=Ax+B\\). Use the remainder theorem: \\(P(2)=5\\) and \\(P(-1)=8\\).",
+          "steps": [
+            {
+              "explain": "Write the division statement. The remainder has degree less than 2.",
+              "work": "\\(P(x)=(x-2)(x+1)Q(x)+Ax+B\\)"
+            },
+            {
+              "explain": "Remainder theorem: \\(P(2)=5\\). At \\(x=2\\) the product \\((x-2)(x+1)Q(x)\\) is zero.",
+              "work": "\\(P(2)=2A+B=5\\qquad(1)\\)"
+            },
+            {
+              "explain": "Remainder theorem: \\(P(-1)=8\\). At \\(x=-1\\) the product is zero again.",
+              "work": "\\(P(-1)=-A+B=8\\qquad(2)\\)"
+            },
+            {
+              "explain": "Subtract (2) from (1) to eliminate \\(B\\).",
+              "work": "\\(3A=-3\\ \\Rightarrow\\ A=-1\\)"
+            },
+            {
+              "explain": "Substitute \\(A=-1\\) into (1) to find \\(B\\).",
+              "work": "\\(-2+B=5\\ \\Rightarrow\\ B=7\\)"
+            },
+            {
+              "explain": "The remainder is \\(R(x)=-x+7=7-x\\). Picture: the line \\(R(x)=7-x\\) passes through both known points \\((2,5)\\) and \\((-1,8)\\).",
+              "work": "\\(R(x)=7-x\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 170\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><line x1=\"40.0\" y1=\"100.0\" x2=\"260.0\" y2=\"100.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"130.0\" y1=\"145.0\" x2=\"130.0\" y2=\"-10.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"260.0\" y1=\"100.0\" x2=\"253.1\" y2=\"96.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"260.0\" y1=\"100.0\" x2=\"253.1\" y2=\"104.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"130.0\" y1=\"-10.0\" x2=\"126.0\" y2=\"-3.1\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"130.0\" y1=\"-10.0\" x2=\"134.0\" y2=\"-3.1\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><text x=\"262.0\" y=\"115.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><text x=\"139.0\" y=\"0.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">y</text><line x1=\"62.4\" y1=\"4.0\" x2=\"239.2\" y2=\"72.0\" stroke=\"#3b4ea8\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><circle cx=\"182.0\" cy=\"50.0\" r=\"5\" fill=\"#dc2626\"/><circle cx=\"104.0\" cy=\"20.0\" r=\"5\" fill=\"#dc2626\"/><text x=\"174.0\" y=\"68.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">(2, 5)</text><text x=\"112.0\" y=\"10.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">(−1, 8)</text><text x=\"171.6\" y=\"6.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">R(x) = 7 − x</text></svg>"
+              }
+            },
+            {
+              "explain": "Check: \\(R(2)=5\\) ✓ and \\(R(-1)=8\\) ✓. Why not the others: B, C, D give wrong values at \\(x=2\\) or \\(x=-1\\) (e.g. \\(x+7\\) gives 9 at \\(x=2\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "What is the remainder when \\(P(x)\\) is divided by \\((x-2)(x+1)\\)",
+              "note": "Remainder is Ax + B; use P(2) and P(−1)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Girraween High School 2020 Mathematics Extension 1 Trial HSC Examination",
+            "school": "Girraween High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -1510,6 +1575,60 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "girraween2020-e1-q13c",
+          "type": "mc",
+          "stem": "Let \\(P(x)=x^{3}+ax^{2}+bx+5\\) where \\(a\\) and \\(b\\) are real numbers. Find the values of \\(a\\) and \\(b\\) given that \\((x-1)^{2}\\) is a factor of \\(P(x)\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(a=3,\\ b=-9\\)",
+            "\\(a=-3,\\ b=9\\)",
+            "\\(a=-9,\\ b=3\\)",
+            "\\(a=3,\\ b=-6\\)"
+          ],
+          "answer": 0,
+          "hint": "A DOUBLE factor \\((x-1)^{2}\\) means \\(x=1\\) is a double root: both \\(P(1)=0\\) AND \\(P'(1)=0\\). Use the two equations to find \\(a\\) and \\(b\\).",
+          "steps": [
+            {
+              "explain": "\\(x=1\\) is a root: \\(P(1)=0\\).",
+              "work": "\\(1+a+b+5=0\\ \\Rightarrow\\ a+b=-6\\qquad(1)\\)"
+            },
+            {
+              "explain": "A repeated root is also a root of the DERIVATIVE: \\(P'(x)=3x^{2}+2ax+b\\) and \\(P'(1)=0\\).",
+              "work": "\\(3+2a+b=0\\ \\Rightarrow\\ 2a+b=-3\\qquad(2)\\)"
+            },
+            {
+              "explain": "Subtract (1) from (2) to eliminate \\(b\\).",
+              "work": "\\(a=3\\)"
+            },
+            {
+              "explain": "Substitute \\(a=3\\) into (1).",
+              "work": "\\(3+b=-6\\ \\Rightarrow\\ b=-9\\)"
+            },
+            {
+              "explain": "Check: \\(P(x)=x^{3}+3x^{2}-9x+5=(x-1)^{2}(x+5)\\) ✓ (expand: \\((x^{2}-2x+1)(x+5)=x^{3}+3x^{2}-9x+5\\)). Why not the others: they fail \\(P(1)=0\\) or \\(P'(1)=0\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the values of \\(a\\) and \\(b\\)",
+              "note": "Double root: P(1) = 0 and P′(1) = 0."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Girraween High School 2020 Mathematics Extension 1 Trial HSC Examination",
+            "school": "Girraween High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -2316,6 +2435,56 @@
           "meta": {
             "source": "Caringbah High School 2020 Preliminary Task 3 Mathematics Extension 1",
             "school": "Caringbah High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "glenwood2020-e1-q11b",
+          "type": "mc",
+          "stem": "The polynomial equation \\(x^{3}-5x^{2}+x+3=0\\) has roots \\(\\alpha,\\beta\\) and \\(\\gamma\\). Find \\(\\alpha^{2}+\\beta^{2}+\\gamma^{2}\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(23\\)",
+            "\\(27\\)",
+            "\\(24\\)",
+            "\\(11\\)"
+          ],
+          "answer": 0,
+          "hint": "You cannot find the roots easily, so use the SUM and SUM OF PAIRS of roots from the coefficients, and the identity \\(\\alpha^{2}+\\beta^{2}+\\gamma^{2}=(\\alpha+\\beta+\\gamma)^{2}-2(\\alpha\\beta+\\alpha\\gamma+\\beta\\gamma)\\).",
+          "steps": [
+            {
+              "explain": "For \\(x^{3}+bx^{2}+cx+d=0\\): \\(\\alpha+\\beta+\\gamma=-b\\), \\(\\alpha\\beta+\\alpha\\gamma+\\beta\\gamma=c\\), \\(\\alpha\\beta\\gamma=-d\\). Here \\(b=-5,\\ c=1,\\ d=3\\).",
+              "work": "\\(\\alpha+\\beta+\\gamma=5,\\qquad\\alpha\\beta+\\alpha\\gamma+\\beta\\gamma=1,\\qquad\\alpha\\beta\\gamma=-3\\)"
+            },
+            {
+              "explain": "Expand \\((\\alpha+\\beta+\\gamma)^{2}=\\alpha^{2}+\\beta^{2}+\\gamma^{2}+2(\\alpha\\beta+\\alpha\\gamma+\\beta\\gamma)\\) and rearrange.",
+              "work": "\\(\\alpha^{2}+\\beta^{2}+\\gamma^{2}=(\\alpha+\\beta+\\gamma)^{2}-2(\\alpha\\beta+\\alpha\\gamma+\\beta\\gamma)\\)"
+            },
+            {
+              "explain": "Substitute.",
+              "work": "\\(=5^{2}-2(1)=25-2=23\\)"
+            },
+            {
+              "explain": "Why not the others: 27 adds \\(2\\) instead of subtracting; 24 uses \\(5^{2}-1\\) (forgets the factor 2); 11 is not a valid combination.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find \\(\\alpha^{2}+\\beta^{2}+\\gamma^{2}\\)",
+              "note": "Sum² − 2 × (sum of pairs)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Glenwood High School 2020 Year 12 Mathematics Extension 1 Trial HSC Examination",
+            "school": "Glenwood High School",
             "grade": "11",
             "origin": "teacher"
           }

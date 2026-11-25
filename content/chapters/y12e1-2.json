@@ -400,6 +400,110 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "glenwood2020-e1-q12b1",
+          "type": "mc",
+          "stem": "Consider the statement \\(P(n)\\): \\(2^{0}+2^{1}+2^{2}+\\cdots+2^{n-1}=2^{n}-1\\), and the following attempted proof by induction. Proof: Assume the statement is true for \\(n=k\\), that is \\(2^{0}+2^{1}+\\cdots+2^{k-1}=2^{k}-1\\) (1). Next, we show it is true for \\(n=k+1\\) by noting that if \\(2^{0}+2^{1}+\\cdots+2^{k-1}+2^{k}=2^{k+1}-1\\) is true, then \\(2^{0}+\\cdots+2^{k-1}+2^{k}=2\\times2^{k}-1\\), that is \\(2^{0}+\\cdots+2^{k-1}+2^{k}=2^{k}+2^{k}-1\\). Now subtracting \\(2^{k}\\) from both sides, we have \\(2^{0}+\\cdots+2^{k-1}=2^{k}-1\\), which is true by statement (1). Therefore, by the principle of induction, the statement \\(P(n)\\) is true. Give two reasons why the given proof is incorrect and does not prove \\(P(n)\\).",
+          "difficulty": "hard",
+          "options": [
+            "There is no base case (\\(n=1\\) is never verified); and the proof starts from the statement for \\(n=k+1\\) (what is to be proved) and works on both sides",
+            "The assumption for \\(n=k\\) is wrong; and the final answer should be \\(2^{n+1}-1\\)",
+            "The proof is correct, but it needs the sum formula for a geometric series",
+            "The step must be proved for \\(n=k-1\\) first; and \\(2^{0}\\) should be \\(2^{1}\\)"
+          ],
+          "answer": 0,
+          "hint": "A proof by induction needs: (1) a BASE CASE, (2) an ASSUMPTION for \\(n=k\\), (3) a STEP that starts from the assumed case and derives \\(n=k+1\\) (never start from the thing you want to prove), (4) a CONCLUSION. Check which of these the attempt does or does not have.",
+          "steps": [
+            {
+              "explain": "Check (1): is the base case \\(n=1\\) proved? The attempt never checks \\(n=1\\) (\\(2^{0}=2^{1}-1\\)). Missing step.",
+              "work": "\\(\\text{no base case}\\)"
+            },
+            {
+              "explain": "Check (3): the attempt STARTS from the claim for \\(n=k+1\\) (\\(\\ldots=2^{k+1}-1\\)) and manipulates BOTH sides until it reaches statement (1). This assumes what is to be proved (circular): it should start from the left side of \\(P(k+1)\\) and use (1) to reach the right side.",
+              "work": "\\(\\text{starts from }P(k+1)\\text{ (assumes it)}\\)"
+            },
+            {
+              "explain": "The assumption (2) is fine and the formula itself is correct, so reasons A are the two real faults.",
+              "work": ""
+            },
+            {
+              "explain": "Why not the others: B/D invent faults that are not there; C is false: the structure is flawed, so the proof is NOT correct.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Give two reasons why the given proof is incorrect",
+              "note": "Missing base case; starts from what it must prove."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Glenwood High School 2020 Year 12 Mathematics Extension 1 Trial HSC Examination",
+            "school": "Glenwood High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "glenwood2020-e1-q12b2",
+          "type": "mc",
+          "stem": "Consider the statement \\(P(n)\\): \\(2^{0}+2^{1}+2^{2}+\\cdots+2^{n-1}=2^{n}-1\\). Provide a correct complete proof by induction of the statement \\(P(n)\\). Which proof is correct?",
+          "difficulty": "hard",
+          "options": [
+            "\\(n=1\\): LHS \\(=2^{0}=1\\), RHS \\(=2^{1}-1=1\\) ✓. Assume \\(2^{0}+\\cdots+2^{k-1}=2^{k}-1\\). Then \\(2^{0}+\\cdots+2^{k-1}+2^{k}=2^{k}-1+2^{k}=2\\times2^{k}-1=2^{k+1}-1\\). True for \\(n=k+1\\); by induction true for all \\(n\\ge1\\).",
+            "Assume \\(2^{0}+\\cdots+2^{k-1}=2^{k}-1\\). Then \\(2^{0}+\\cdots+2^{k}=2^{k}-1+2^{k}=2^{k+1}-1\\). By induction true for all \\(n\\).",
+            "\\(n=1\\): \\(2^{0}=2^{1}-1\\) ✓. Assume \\(2^{0}+\\cdots+2^{k-1}=2^{k}-1\\). Then adding \\(2^{k}\\): \\(2^{k}-1+2^{k}=2^{k+2}-1\\). True for all \\(n\\).",
+            "\\(n=1\\): \\(1=1\\) ✓. Assume true for \\(n=k+1\\); then \\(2^{0}+\\cdots+2^{k}=2^{k+1}-1\\) is true for \\(n=k\\). By induction true for all \\(n\\)."
+          ],
+          "answer": 0,
+          "hint": "Four parts: BASE CASE \\(n=1\\); ASSUME \\(n=k\\); STEP: start from the left side of \\(P(k+1)\\), split off the last term \\(2^{k}\\), use the assumption, simplify to \\(2^{k+1}-1\\); CONCLUDE.",
+          "steps": [
+            {
+              "explain": "Base case \\(n=1\\): LHS is just \\(2^{0}\\); RHS \\(=2^{1}-1\\).",
+              "work": "\\(\\text{LHS}=2^{0}=1,\\quad\\text{RHS}=2^{1}-1=1\\ \\checkmark\\)"
+            },
+            {
+              "explain": "Assumption: for \\(n=k\\) (an integer \\(k\\ge1\\)), \\(2^{0}+2^{1}+\\cdots+2^{k-1}=2^{k}-1\\).",
+              "work": "\\(S_{k}=2^{k}-1\\)"
+            },
+            {
+              "explain": "Step: start from the left side for \\(n=k+1\\) (the same sum, with one more term \\(2^{k}\\)) and use the assumption on the first \\(k\\) terms.",
+              "work": "\\(2^{0}+\\cdots+2^{k-1}+2^{k}=\\left(2^{k}-1\\right)+2^{k}\\)"
+            },
+            {
+              "explain": "Simplify: \\(2^{k}+2^{k}=2\\times2^{k}=2^{k+1}\\).",
+              "work": "\\(=2\\times2^{k}-1=2^{k+1}-1=\\text{RHS for }n=k+1\\)"
+            },
+            {
+              "explain": "True for \\(n=1\\) and \\(n=k\\Rightarrow n=k+1\\), so true for all \\(n\\ge1\\). Why not the others: B has no base case; C has an algebra slip (\\(2^{k}+2^{k}\\ne2^{k+2}\\)); D assumes the WRONG direction.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Provide a correct complete proof by induction",
+              "note": "Base case, assume, add 2^k, simplify to 2^(k+1) − 1."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Glenwood High School 2020 Year 12 Mathematics Extension 1 Trial HSC Examination",
+            "school": "Glenwood High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -825,6 +929,64 @@
           "meta": {
             "source": "Frensham School 2021 Year 12 Trial HSC Examination Mathematics Extension 1",
             "school": "Frensham School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "girraween2020-e1-q13a",
+          "type": "mc",
+          "stem": "Use mathematical induction to prove that \\(3^{2n+1}+2^{n+2}\\) is divisible by \\(7\\) for integers \\(n\\ge1\\). Which proof is correct?",
+          "difficulty": "hard",
+          "options": [
+            "\\(n=1\\): \\(3^{3}+2^{3}=35=7\\times5\\). Assume \\(3^{2k+1}+2^{k+2}=7p\\), so \\(3^{2k+1}=7p-2^{k+2}\\). Then \\(3^{2k+3}+2^{k+3}=9(7p-2^{k+2})+2\\cdot2^{k+2}=63p-7\\cdot2^{k+2}=7\\left(9p-2^{k+2}\\right)\\). True for \\(n=k+1\\); by induction true for all \\(n\\ge1\\).",
+            "Assume \\(3^{2k+1}+2^{k+2}=7p\\). Then \\(3^{2k+3}+2^{k+3}=9(7p-2^{k+2})+2\\cdot2^{k+2}=7\\left(9p-2^{k+2}\\right)\\). By induction true for all \\(n\\).",
+            "\\(n=1\\): \\(3^{3}+2^{3}=35\\). Assume true for \\(n=k+1\\); show it is true for \\(n=k\\). Hence true for all \\(n\\).",
+            "\\(n=1\\): \\(35=7\\times5\\). Assume \\(3^{2k+1}+2^{k+2}=7p\\). Then \\(3^{2k+3}+2^{k+3}=3\\left(7p-2^{k+2}\\right)+2\\cdot2^{k+2}=7\\left(3p-2^{k+1}\\right)\\). By induction true for all \\(n\\ge1\\)."
+          ],
+          "answer": 0,
+          "hint": "Induction has 3 parts: (1) BASE CASE \\(n=1\\); (2) ASSUME \\(n=k\\): \\(3^{2k+1}+2^{k+2}=7p\\); (3) STEP: prove \\(n=k+1\\) by rewriting \\(3^{2(k+1)+1}=3^{2k+3}=3^{2}\\times3^{2k+1}\\) and substituting the assumption.",
+          "steps": [
+            {
+              "explain": "Base case \\(n=1\\): evaluate \\(3^{2(1)+1}+2^{1+2}=3^{3}+2^{3}=27+8\\).",
+              "work": "\\(27+8=35=7\\times5\\ \\checkmark\\)"
+            },
+            {
+              "explain": "Assumption: for \\(n=k\\), \\(3^{2k+1}+2^{k+2}=7p\\) for some integer \\(p\\). Rearrange: \\(3^{2k+1}=7p-2^{k+2}\\).",
+              "work": "\\(3^{2k+1}+2^{k+2}=7p\\ \\Rightarrow\\ 3^{2k+1}=7p-2^{k+2}\\)"
+            },
+            {
+              "explain": "Step: show \\(3^{2k+3}+2^{k+3}\\) is divisible by 7. Write \\(3^{2k+3}=3^{2}\\times3^{2k+1}=9\\times3^{2k+1}\\) and \\(2^{k+3}=2\\times2^{k+2}\\).",
+              "work": "\\(3^{2k+3}+2^{k+3}=9\\times3^{2k+1}+2\\times2^{k+2}\\)"
+            },
+            {
+              "explain": "Substitute \\(3^{2k+1}=7p-2^{k+2}\\), expand and collect the \\(2^{k+2}\\) terms.",
+              "work": "\\(=9\\left(7p-2^{k+2}\\right)+2\\times2^{k+2}=63p-9\\times2^{k+2}+2\\times2^{k+2}=63p-7\\times2^{k+2}\\)"
+            },
+            {
+              "explain": "Factor out 7: an integer \\(q=9p-2^{k+2}\\).",
+              "work": "\\(=7\\left(9p-2^{k+2}\\right)=7q\\)"
+            },
+            {
+              "explain": "Conclusion: true for \\(n=1\\); true for \\(n=k\\Rightarrow\\) true for \\(n=k+1\\); by induction true for all \\(n\\ge1\\). Why not the others: B has no base case; C assumes the wrong direction; D uses \\(3^{2k+3}=3\\times3^{2k+1}\\) (it is \\(9\\times\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Use mathematical induction to prove that",
+              "note": "Write 3^(2k+3) = 9 × 3^(2k+1) and substitute."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Girraween High School 2020 Mathematics Extension 1 Trial HSC Examination",
+            "school": "Girraween High School",
             "grade": "12",
             "origin": "teacher"
           }
