@@ -19,6 +19,8 @@ import {
   ClipboardList,
   CheckCircle2,
   Circle,
+  LayoutGrid,
+  Settings as SettingsIcon,
 } from "lucide-react";
 import { db, auth } from "../firebase/config";
 import {
@@ -184,7 +186,7 @@ const StudentDetail = ({ studentId, onBack }) => {
   const fileInputRef = useRef(null);
   const [isEditModalOpen, setIsEditModalOpen] = useState(false);
   const [isScheduleModalOpen, setIsScheduleModalOpen] = useState(false);
-  const [activeTab, setActiveTab] = useState("curriculum");
+  const [activeTab, setActiveTab] = useState("overview");
   const [assignedChapters, setAssignedChapters] = useState([]);
   const [completedChapters, setCompletedChapters] = useState([]);
   const [homeworkSessions, setHomeworkSessions] = useState([]);
@@ -1927,6 +1929,43 @@ const StudentDetail = ({ studentId, onBack }) => {
 
   const renderTabContent = () => {
     switch (activeTab) {
+      case "overview":
+        return (
+          <div style={{ display: "grid", gap: "24px" }}>
+            {/* PERFORMANCE HERO — snapshot of accuracy, insight and key counters */}
+            {studentAnalytics && (
+              <ChallengePerformanceHero
+                studentAnalytics={studentAnalytics}
+                dailyStats={dailyStats}
+                dailyPracticeStats={dailyPracticeStats}
+                calculationStats={calculationStats}
+                dailyPracticeConfig={dailyPracticeConfig}
+              />
+            )}
+
+            {/* 2. Dashboard & Progress */}
+      <StudentDashboardCard
+        styles={styles}
+        student={student}
+        uploading={uploading}
+        fileInputRef={fileInputRef}
+        onImageUpload={handleImageUpload}
+        chapters={chapters}
+        completedChapters={completedChapters}
+        topicProgress={topicProgress}
+        editingTerm={editingTerm}
+        setEditingTerm={setEditingTerm}
+        showToast={showToast}
+        onUpdateCurriculumSetting={handleUpdateCurriculumSetting}
+      />
+      {/* 3-4. Weekly progress trackers */}
+      <WeeklyProgressTrackers
+        dailyStats={dailyStats}
+        calculationEnabled={student?.calculationEnabled}
+      />
+
+          </div>
+        );
       case "curriculum":
         return (
           <CurriculumTab
@@ -1943,17 +1982,6 @@ const StudentDetail = ({ studentId, onBack }) => {
         return (
           <div style={{ display: "grid", gap: "24px" }}>
 
-            {/* PERFORMANCE HERO — snapshot of accuracy, insight and key counters */}
-            {studentAnalytics && (
-              <ChallengePerformanceHero
-                studentAnalytics={studentAnalytics}
-                dailyStats={dailyStats}
-                dailyPracticeStats={dailyPracticeStats}
-                calculationStats={calculationStats}
-                dailyPracticeConfig={dailyPracticeConfig}
-              />
-            )}
-
             {/* ANALYTICS PANEL */}
             {studentAnalytics && (
               <ChallengeAnalyticsPanel
@@ -1965,129 +1993,11 @@ const StudentDetail = ({ studentId, onBack }) => {
             {/* SECRET NOTEBOOK PANEL */}
             <SecretNotebookPanel student={student} />
 
-            {/* DAILY PRACTICE SETTINGS - Accordion Design */}
-            <CollapsibleSection
-              title="Daily practice settings"
-              summary={`${student.dailyQuestionCount || 10} questions per day`}
-              badge="Active"
-              badgeTone="green"
-            >
-              <DailyPracticeSettings
-                styles={{ ...styles, card: {} }}
-                student={student}
-                dailyPracticeConfig={dailyPracticeConfig}
-                onUpdateCurriculumSetting={handleUpdateCurriculumSetting}
-                onUpdateDailyConfig={handleUpdateDailyConfig}
-                onToggleDailyYear={handleToggleDailyYear}
-                onToggleDailyChapter={handleToggleDailyChapter}
-              />
-            </CollapsibleSection>
-
             <CollapsibleSection
               title="Challenge history"
               summary={`${dailyPracticeStats.length} daily · ${calculationStats.length} calc sessions`}
               badge={String(dailyPracticeStats.length + calculationStats.length)}
             >
-              <div
-                style={{
-                  display: "flex",
-                  justifyContent: "space-between",
-                  alignItems: "center",
-                  marginBottom: "24px",
-                }}
-              >
-                <div
-                  className="section-title"
-                  style={{
-                    fontSize: "0.75rem",
-                    fontWeight: 800,
-                    color: "#94a3b8",
-                    margin: 0,
-                  }}
-                >
-                  CHALLENGE HISTORY
-                </div>
-                <button
-                  onClick={handleRecalculateXP}
-                  style={{
-                    padding: "6px 12px",
-                    borderRadius: "8px",
-                    background: "#f5f3ff",
-                    color: "#6366f1",
-                    border: "1px solid #e0e7ff",
-                    fontSize: "0.7rem",
-                    fontWeight: 800,
-                    cursor: "pointer",
-                  }}
-                >
-                  Recalculate XP
-                </button>
-                <button
-                  onClick={handleAdjustXP}
-                  style={{
-                    padding: "6px 12px",
-                    borderRadius: "8px",
-                    background: "#fefce8",
-                    color: "#ca8a04",
-                    border: "1px solid #fef08a",
-                    fontSize: "0.7rem",
-                    fontWeight: 800,
-                    cursor: "pointer",
-                  }}
-                >
-                  ± Adjust XP
-                </button>
-                <button
-                  onClick={async () => {
-                    const todayStr = new Date().toLocaleDateString("en-CA", { timeZone: "Australia/Sydney" });
-                    const syncUid = challengeResultsUid || activeStudentId;
-                    await handleResetChallenge({
-                      id: todayStr,
-                      studentId: syncUid,
-                      challengeType: "daily",
-                      statCollection: "daily_stats",
-                    });
-                  }}
-                  style={{
-                    padding: "6px 12px",
-                    borderRadius: "8px",
-                    background: "#fff1f2",
-                    color: "#e11d48",
-                    border: "1px solid #ffe4e6",
-                    fontSize: "0.7rem",
-                    fontWeight: 800,
-                    cursor: "pointer",
-                    marginLeft: "8px",
-                  }}
-                >
-                  Force Reset Daily
-                </button>
-                <button
-                  onClick={async () => {
-                    const todayStr = new Date().toLocaleDateString("en-CA", { timeZone: "Australia/Sydney" });
-                    const syncUid = challengeResultsUid || activeStudentId;
-                    await handleResetChallenge({
-                      id: todayStr,
-                      studentId: syncUid,
-                      challengeType: "calc",
-                      statCollection: "calc_stats",
-                    });
-                  }}
-                  style={{
-                    padding: "6px 12px",
-                    borderRadius: "8px",
-                    background: "#fff1f2",
-                    color: "#e11d48",
-                    border: "1px solid #ffe4e6",
-                    fontSize: "0.7rem",
-                    fontWeight: 800,
-                    cursor: "pointer",
-                    marginLeft: "8px",
-                  }}
-                >
-                  Force Reset Calc
-                </button>
-              </div>
               <div style={{ display: "grid", gap: "12px" }}>
                 <div
                   style={{
@@ -2202,6 +2112,28 @@ const StudentDetail = ({ studentId, onBack }) => {
                 )}
               </div>
             </CollapsibleSection>
+          </div>
+        );
+      case "settings":
+        return (
+          <div style={{ display: "grid", gap: "24px" }}>
+            {/* DAILY PRACTICE SETTINGS - Accordion Design */}
+            <CollapsibleSection
+              title="Daily practice settings"
+              summary={`${student.dailyQuestionCount || 10} questions per day`}
+              badge="Active"
+              badgeTone="green"
+            >
+              <DailyPracticeSettings
+                styles={{ ...styles, card: {} }}
+                student={student}
+                dailyPracticeConfig={dailyPracticeConfig}
+                onUpdateCurriculumSetting={handleUpdateCurriculumSetting}
+                onUpdateDailyConfig={handleUpdateDailyConfig}
+                onToggleDailyYear={handleToggleDailyYear}
+                onToggleDailyChapter={handleToggleDailyChapter}
+              />
+            </CollapsibleSection>
 
             <CollapsibleSection
               title="Daily Calculation"
@@ -2279,6 +2211,94 @@ const StudentDetail = ({ studentId, onBack }) => {
                 student={student}
                 onUpdateSetting={handleUpdateCurriculumSetting}
               />
+            </CollapsibleSection>
+
+            <CollapsibleSection title="XP" summary={`${Number(student.totalXP) || 0} XP`} defaultOpen>
+              <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
+                <button
+                  onClick={handleRecalculateXP}
+                  style={{
+                    padding: "6px 12px",
+                    borderRadius: "8px",
+                    background: "#f5f3ff",
+                    color: "#6366f1",
+                    border: "1px solid #e0e7ff",
+                    fontSize: "0.7rem",
+                    fontWeight: 800,
+                    cursor: "pointer",
+                  }}
+                >
+                  Recalculate XP
+                </button>
+                <button
+                  onClick={handleAdjustXP}
+                  style={{
+                    padding: "6px 12px",
+                    borderRadius: "8px",
+                    background: "#fefce8",
+                    color: "#ca8a04",
+                    border: "1px solid #fef08a",
+                    fontSize: "0.7rem",
+                    fontWeight: 800,
+                    cursor: "pointer",
+                  }}
+                >
+                  ± Adjust XP
+                </button>
+                <button
+                  onClick={async () => {
+                    const todayStr = new Date().toLocaleDateString("en-CA", { timeZone: "Australia/Sydney" });
+                    const syncUid = challengeResultsUid || activeStudentId;
+                    await handleResetChallenge({
+                      id: todayStr,
+                      studentId: syncUid,
+                      challengeType: "daily",
+                      statCollection: "daily_stats",
+                    });
+                  }}
+                  style={{
+                    padding: "6px 12px",
+                    borderRadius: "8px",
+                    background: "#fff1f2",
+                    color: "#e11d48",
+                    border: "1px solid #ffe4e6",
+                    fontSize: "0.7rem",
+                    fontWeight: 800,
+                    cursor: "pointer",
+                    marginLeft: "8px",
+                  }}
+                >
+                  Force Reset Daily
+                </button>
+                <button
+                  onClick={async () => {
+                    const todayStr = new Date().toLocaleDateString("en-CA", { timeZone: "Australia/Sydney" });
+                    const syncUid = challengeResultsUid || activeStudentId;
+                    await handleResetChallenge({
+                      id: todayStr,
+                      studentId: syncUid,
+                      challengeType: "calc",
+                      statCollection: "calc_stats",
+                    });
+                  }}
+                  style={{
+                    padding: "6px 12px",
+                    borderRadius: "8px",
+                    background: "#fff1f2",
+                    color: "#e11d48",
+                    border: "1px solid #ffe4e6",
+                    fontSize: "0.7rem",
+                    fontWeight: 800,
+                    cursor: "pointer",
+                    marginLeft: "8px",
+                  }}
+                >
+                  Force Reset Calc
+                </button>
+              </div>
+              <p style={{ margin: "12px 0 0", fontSize: "0.8rem", color: "#94a3b8", fontWeight: 600 }}>
+                Force Reset clears today’s Daily Challenge / Daily Calculation so the student can do it again. It can’t be undone.
+              </p>
             </CollapsibleSection>
           </div>
         );
@@ -2461,27 +2481,6 @@ const StudentDetail = ({ studentId, onBack }) => {
         )}
       />
 
-      {/* 2. Dashboard & Progress */}
-      <StudentDashboardCard
-        styles={styles}
-        student={student}
-        uploading={uploading}
-        fileInputRef={fileInputRef}
-        onImageUpload={handleImageUpload}
-        chapters={chapters}
-        completedChapters={completedChapters}
-        topicProgress={topicProgress}
-        editingTerm={editingTerm}
-        setEditingTerm={setEditingTerm}
-        showToast={showToast}
-        onUpdateCurriculumSetting={handleUpdateCurriculumSetting}
-      />
-      {/* 3-4. Weekly progress trackers */}
-      <WeeklyProgressTrackers
-        dailyStats={dailyStats}
-        calculationEnabled={student?.calculationEnabled}
-      />
-
       {/* 5. Navigation */}
       <div
         className="nav-tabs-mobile"
@@ -2493,13 +2492,22 @@ const StudentDetail = ({ studentId, onBack }) => {
         }}
       >
         <button
+          onClick={() => setActiveTab("overview")}
+          style={{
+            ...styles.navBtn,
+            ...(activeTab === "overview" ? styles.navBtnActive : {}),
+          }}
+        >
+          <LayoutGrid size={18} /> Overview
+        </button>
+        <button
           onClick={() => setActiveTab("curriculum")}
           style={{
             ...styles.navBtn,
             ...(activeTab === "curriculum" ? styles.navBtnActive : {}),
           }}
         >
-          <BookOpen size={18} /> Curriculum
+          <BookOpen size={18} /> Progress
         </button>
         <button
           onClick={() => setActiveTab("challenge")}
@@ -2508,7 +2516,7 @@ const StudentDetail = ({ studentId, onBack }) => {
             ...(activeTab === "challenge" ? styles.navBtnActive : {}),
           }}
         >
-          <Trophy size={18} /> Challenge
+          <Trophy size={18} /> Practice
         </button>
         <button
           onClick={() => setActiveTab("homework")}
@@ -2526,7 +2534,7 @@ const StudentDetail = ({ studentId, onBack }) => {
             ...(activeTab === "hsc" ? styles.navBtnActive : {}),
           }}
         >
-          <FileText size={18} /> HSC
+          <FileText size={18} /> Results
         </button>
         {/* Only for students doing OC / Selective / Scholarship (or with results already stored). */}
         {(student?.scholarshipEnabled === true || Object.keys(student?.specialWeekly || {}).length > 0) && (
@@ -2544,7 +2552,16 @@ const StudentDetail = ({ studentId, onBack }) => {
           onClick={() => setIsScheduleModalOpen(true)}
           style={styles.navBtn}
         >
-          <Calendar size={18} /> Add Schedule
+          <Calendar size={18} /> Add lesson
+        </button>
+        <button
+          onClick={() => setActiveTab("settings")}
+          style={{
+            ...styles.navBtn,
+            ...(activeTab === "settings" ? styles.navBtnActive : {}),
+          }}
+        >
+          <SettingsIcon size={18} /> Settings
         </button>
       </div>
 
