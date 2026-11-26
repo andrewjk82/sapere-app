@@ -18471,6 +18471,56 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "merewether2025-q22a",
+          "type": "mc",
+          "stem": "A company offers a special deal for a machine lease: a business can lease the machine for an initial payment of \\(\\text{\\textdollar}1200\\). Each year after that, the payment is reduced by 15% of the previous year’s payment. The lease continues indefinitely. Find the cost of the lease in the 6th year.",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\text{\\textdollar}532.45\\)",
+            "\\(\\text{\\textdollar}626.50\\)",
+            "\\(\\text{\\textdollar}452.58\\)",
+            "\\(\\text{\\textdollar}900.00\\)"
+          ],
+          "answer": 0,
+          "hint": "Reducing by 15% each year means each payment is 85% of the one before: a GEOMETRIC sequence with \\(r=0.85\\). The 1st payment is \\(a=1200\\). The 6th term is \\(T_{6}=ar^{5}\\).",
+          "steps": [
+            {
+              "explain": "Each year the payment is \\(100\\%-15\\%=85\\%\\) of the previous: common ratio \\(r=0.85\\), first term \\(a=1200\\).",
+              "work": "\\(a=1200,\\quad r=0.85\\)"
+            },
+            {
+              "explain": "\\(n\\)th term of a GP: \\(T_{n}=ar^{n-1}\\). For the 6th year, \\(n=6\\) so the power is 5.",
+              "work": "\\(T_{6}=1200\\times0.85^{5}\\)"
+            },
+            {
+              "explain": "Calculate: \\(0.85^{5}=0.4437\\), so \\(T_{6}=1200\\times0.4437=532.45\\).",
+              "work": "\\(T_{6}=\\text{\\textdollar}532.45\\)"
+            },
+            {
+              "explain": "Why not the others: B is the 5th year (\\(0.85^{4}\\)); C is \\(0.85^{6}\\) (7th year); D is just 3 years’ worth of a different pattern.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the cost of the lease in the 6th year.",
+              "note": "GP: \\(r=0.85\\); \\(T_6=ar^5\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Merewether High School 2025 Year 12 Trial HSC Mathematics Advanced",
+            "school": "Merewether High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -31123,6 +31173,60 @@
           "meta": {
             "source": "Moriah College 2021 HSC Trial Examination Mathematics Advanced",
             "school": "Moriah College",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "merewether2025-q17",
+          "type": "mc",
+          "stem": "The sum of the first 10 terms of an arithmetic sequence is 160. The sum of the first 20 terms is 520. What is the first term \\(a\\) of the sequence?",
+          "difficulty": "medium",
+          "options": [
+            "\\(7\\)",
+            "\\(2\\)",
+            "\\(5\\)",
+            "\\(9\\)"
+          ],
+          "answer": 0,
+          "hint": "Use \\(S_{n}=\\dfrac{n}{2}\\left[2a+(n-1)d\\right]\\) twice to get two equations in \\(a\\) and \\(d\\), then solve them simultaneously (subtract).",
+          "steps": [
+            {
+              "explain": "\\(S_{10}=160\\): \\(\\dfrac{10}{2}\\left[2a+9d\\right]=160\\), so \\(2a+9d=32\\).",
+              "work": "\\(2a+9d=32\\qquad(1)\\)"
+            },
+            {
+              "explain": "\\(S_{20}=520\\): \\(\\dfrac{20}{2}\\left[2a+19d\\right]=520\\), so \\(2a+19d=52\\).",
+              "work": "\\(2a+19d=52\\qquad(2)\\)"
+            },
+            {
+              "explain": "Subtract (1) from (2) to eliminate \\(2a\\).",
+              "work": "\\(10d=20\\ \\Rightarrow\\ d=2\\)"
+            },
+            {
+              "explain": "Substitute \\(d=2\\) into (1): \\(2a+18=32\\).",
+              "work": "\\(2a=14\\ \\Rightarrow\\ a=7\\)"
+            },
+            {
+              "explain": "Check: \\(S_{10}=5(14+18)=160\\) ✓; \\(S_{20}=10(14+38)=520\\) ✓. Why not the others: B, C, D don't satisfy both sums.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "What is the first term \\(a\\) of the sequence?",
+              "note": "\\(S_n=\\dfrac{n}{2}[2a+(n-1)d]\\); two equations."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Merewether High School 2025 Year 12 Trial HSC Mathematics Advanced",
+            "school": "Merewether High School",
             "grade": "12",
             "origin": "teacher"
           }
@@ -45721,6 +45825,56 @@
           "meta": {
             "source": "Northern Beaches Secondary College Manly Campus 2020 Year 12 Trial Examination Mathematics Advanced",
             "school": "Northern Beaches Secondary College, Manly Campus",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "merewether2025-q22b",
+          "type": "mc",
+          "stem": "A company offers a special deal for a machine lease: a business can lease the machine for an initial payment of \\(\\text{\\textdollar}1200\\). Each year after that, the payment is reduced by 15% of the previous year’s payment. The lease continues indefinitely. Find the total amount the company will receive from one lease.",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\text{\\textdollar}8000\\)",
+            "\\(\\text{\\textdollar}1411.76\\)",
+            "\\(\\text{\\textdollar}6800\\)",
+            "No limit (the sum diverges)"
+          ],
+          "answer": 0,
+          "hint": "“Continues indefinitely” means an INFINITE geometric series. It has a limiting sum only if \\(|r|<1\\): \\(S_{\\infty}=\\dfrac{a}{1-r}\\).",
+          "steps": [
+            {
+              "explain": "Check \\(|r|=0.85<1\\), so the series converges and \\(S_{\\infty}\\) exists.",
+              "work": "\\(|r|=0.85<1\\)"
+            },
+            {
+              "explain": "Limiting sum.",
+              "work": "\\(S_{\\infty}=\\dfrac{a}{1-r}=\\dfrac{1200}{1-0.85}=\\dfrac{1200}{0.15}\\)"
+            },
+            {
+              "explain": "Calculate.",
+              "work": "\\(S_{\\infty}=\\text{\\textdollar}8000\\)"
+            },
+            {
+              "explain": "Why not the others: B is \\(\\dfrac{1200}{0.85}\\); C is \\(1200\\div0.15\\) with an arithmetic slip; D ignores \\(|r|<1\\) (the sum does converge).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the total amount the company will receive from one lease.",
+              "note": "\\(S_\\infty=\\dfrac{a}{1-r}\\), \\(|r|<1\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Merewether High School 2025 Year 12 Trial HSC Mathematics Advanced",
+            "school": "Merewether High School",
             "grade": "12",
             "origin": "teacher"
           }

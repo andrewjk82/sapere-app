@@ -2337,6 +2337,56 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "merewether2025-q20",
+          "type": "mc",
+          "stem": "Show that \\(\\log_{e}(\\sec\\theta+\\tan\\theta)+\\log_{e}(\\sec\\theta-\\tan\\theta)=\\log_{e}(1)\\) for \\(0<\\theta<\\dfrac\\pi2\\). Which working proves it?",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\log_{e}\\left[(\\sec\\theta+\\tan\\theta)(\\sec\\theta-\\tan\\theta)\\right]=\\log_{e}\\left(\\sec^{2}\\theta-\\tan^{2}\\theta\\right)=\\log_{e}1\\)",
+            "\\(\\log_{e}\\left[\\dfrac{\\sec\\theta+\\tan\\theta}{\\sec\\theta-\\tan\\theta}\\right]=\\log_{e}1\\)",
+            "\\(\\log_{e}\\left(\\sec^{2}\\theta+\\tan^{2}\\theta\\right)=\\log_{e}1\\)",
+            "\\(\\log_{e}(2\\sec\\theta)=\\log_{e}1\\)"
+          ],
+          "answer": 0,
+          "hint": "Log law: \\(\\log A+\\log B=\\log(AB)\\). Then the difference of two squares \\((a+b)(a-b)=a^{2}-b^{2}\\), and the Pythagorean identity \\(1+\\tan^{2}\\theta=\\sec^{2}\\theta\\).",
+          "steps": [
+            {
+              "explain": "Combine the logs by multiplying the arguments.",
+              "work": "\\(\\log_{e}\\left[(\\sec\\theta+\\tan\\theta)(\\sec\\theta-\\tan\\theta)\\right]\\)"
+            },
+            {
+              "explain": "Expand: difference of two squares.",
+              "work": "\\(=\\log_{e}\\left(\\sec^{2}\\theta-\\tan^{2}\\theta\\right)\\)"
+            },
+            {
+              "explain": "Pythagorean identity: \\(1+\\tan^{2}\\theta=\\sec^{2}\\theta\\), so \\(\\sec^{2}\\theta-\\tan^{2}\\theta=1\\).",
+              "work": "\\(=\\log_{e}(1)\\ \\checkmark\\)"
+            },
+            {
+              "explain": "Why not the others: B divides (that is the log SUBTRACTION law); C adds the squares; D is not equal to \\(\\log 1\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that",
+              "note": "\\(\\log A+\\log B=\\log AB\\); \\(\\sec^2-\\tan^2=1\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Merewether High School 2025 Year 12 Trial HSC Mathematics Advanced",
+            "school": "Merewether High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -7099,6 +7149,56 @@
           "meta": {
             "source": "Northern Beaches Secondary College Manly Campus 2020 Year 12 Trial Examination Mathematics Advanced",
             "school": "Northern Beaches Secondary College, Manly Campus",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "merewether2025-q11b",
+          "type": "mc",
+          "stem": "Let \\(f(x)=\\log_{e}\\left(x^{3}-3x+2\\right)\\). Find \\(f'(3)\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{6}{5}\\)",
+            "\\(\\dfrac{5}{6}\\)",
+            "\\(\\dfrac{24}{5}\\)",
+            "\\(\\dfrac{3}{10}\\)"
+          ],
+          "answer": 0,
+          "hint": "\\(\\dfrac{d}{dx}\\ln u=\\dfrac{u'}{u}\\): the derivative of the inside divided by the inside. Differentiate first, THEN substitute \\(x=3\\).",
+          "steps": [
+            {
+              "explain": "Inside \\(u=x^{3}-3x+2\\), so \\(u'=3x^{2}-3\\).",
+              "work": "\\(f'(x)=\\dfrac{3x^{2}-3}{x^{3}-3x+2}\\)"
+            },
+            {
+              "explain": "Substitute \\(x=3\\): top \\(=27-3=24\\); bottom \\(=27-9+2=20\\).",
+              "work": "\\(f'(3)=\\dfrac{24}{20}\\)"
+            },
+            {
+              "explain": "Simplify by 4.",
+              "work": "\\(f'(3)=\\dfrac{6}{5}\\)"
+            },
+            {
+              "explain": "Why not the others: B is the reciprocal; C forgets the denominator’s 20 (uses 5 wrongly); D is a calculation slip.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find \\(f'(3)\\).",
+              "note": "\\(\\dfrac{d}{dx}\\ln u=\\dfrac{u\\,'}{u}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Merewether High School 2025 Year 12 Trial HSC Mathematics Advanced",
+            "school": "Merewether High School",
             "grade": "12",
             "origin": "teacher"
           }
@@ -14704,6 +14804,56 @@
           "meta": {
             "source": "Northern Beaches Secondary College Manly Campus 2020 Year 12 Trial Examination Mathematics Advanced",
             "school": "Northern Beaches Secondary College, Manly Campus",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "merewether2025-q11c",
+          "type": "mc",
+          "stem": "Find \\(\\displaystyle\\int\\dfrac{3x}{4+2x^{2}}dx\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{3}{4}\\ln\\left(4+2x^{2}\\right)+C\\)",
+            "\\(\\dfrac{3}{2}\\ln\\left(4+2x^{2}\\right)+C\\)",
+            "\\(3\\ln\\left(4+2x^{2}\\right)+C\\)",
+            "\\(\\dfrac{1}{4+2x^{2}}+C\\)"
+          ],
+          "answer": 0,
+          "hint": "Use \\(\\displaystyle\\int\\dfrac{f'(x)}{f(x)}dx=\\ln|f(x)|+C\\). The bottom is \\(f(x)=4+2x^{2}\\), so \\(f'(x)=4x\\). Adjust the top by a constant multiple to make it \\(4x\\).",
+          "steps": [
+            {
+              "explain": "Derivative of the bottom: \\(\\dfrac{d}{dx}(4+2x^{2})=4x\\).",
+              "work": "\\(f(x)=4+2x^{2},\\quad f'(x)=4x\\)"
+            },
+            {
+              "explain": "Write the top as a multiple of \\(4x\\): \\(3x=\\dfrac{3}{4}\\times4x\\). Take \\(\\dfrac{3}{4}\\) outside the integral.",
+              "work": "\\(\\int\\dfrac{3x}{4+2x^{2}}dx=\\dfrac{3}{4}\\int\\dfrac{4x}{4+2x^{2}}dx\\)"
+            },
+            {
+              "explain": "Now it is \\(\\displaystyle\\int\\dfrac{f'}{f}\\). (No absolute value needed: \\(4+2x^{2}>0\\).)",
+              "work": "\\(=\\dfrac{3}{4}\\ln\\left(4+2x^{2}\\right)+C\\)"
+            },
+            {
+              "explain": "Why not the others: B (\\(\\dfrac{3}{2}\\)) and C (3) use the wrong constant; D is not a \\(\\ln\\) result.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find \\(\\displaystyle\\int\\dfrac{3x}{4+2x^{2}}dx\\).",
+              "note": "\\(\\int\\dfrac{f\\,'}{f}=\\ln f\\); \\(3x=\\dfrac{3}{4}(4x)\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Merewether High School 2025 Year 12 Trial HSC Mathematics Advanced",
+            "school": "Merewether High School",
             "grade": "12",
             "origin": "teacher"
           }

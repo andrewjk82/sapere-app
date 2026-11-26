@@ -10790,6 +10790,56 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "merewether2025-q15a",
+          "type": "mc",
+          "stem": "Consider the function \\(f(x)=\\dfrac{x}{x^{2}+1}\\). Show that \\(f(x)\\) is odd. Which working proves it?",
+          "difficulty": "easy",
+          "options": [
+            "\\(f(-x)=\\dfrac{-x}{(-x)^{2}+1}=-\\dfrac{x}{x^{2}+1}=-f(x)\\)",
+            "\\(f(-x)=\\dfrac{-x}{(-x)^{2}+1}=\\dfrac{x}{x^{2}+1}=f(x)\\)",
+            "\\(f(-x)=\\dfrac{x}{-x^{2}+1}=-f(x)\\)",
+            "\\(f(0)=0\\), so \\(f(x)\\) is odd"
+          ],
+          "answer": 0,
+          "hint": "A function is ODD if \\(f(-x)=-f(x)\\) for all \\(x\\) in the domain. Replace every \\(x\\) by \\(-x\\) and compare with \\(-f(x)\\). Remember \\((-x)^{2}=x^{2}\\).",
+          "steps": [
+            {
+              "explain": "Replace \\(x\\) with \\(-x\\) everywhere.",
+              "work": "\\(f(-x)=\\dfrac{(-x)}{(-x)^{2}+1}\\)"
+            },
+            {
+              "explain": "\\((-x)^{2}=x^{2}\\), so the bottom is unchanged; the top becomes \\(-x\\).",
+              "work": "\\(f(-x)=\\dfrac{-x}{x^{2}+1}\\)"
+            },
+            {
+              "explain": "Factor out the minus sign: this is \\(-f(x)\\).",
+              "work": "\\(f(-x)=-\\dfrac{x}{x^{2}+1}=-f(x)\\ \\Rightarrow\\ f\\ \\text{is odd}\\)"
+            },
+            {
+              "explain": "Why not the others: B wrongly ends with \\(+f(x)\\) (that would be even); C mis-squares \\((-x)^{2}\\); D: \\(f(0)=0\\) alone does not prove oddness.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that \\(f(x)\\) is odd.",
+              "note": "Odd: \\(f(-x)=-f(x)\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Merewether High School 2025 Year 12 Trial HSC Mathematics Advanced",
+            "school": "Merewether High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -19650,6 +19700,56 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "merewether2025-q12a",
+          "type": "mc",
+          "stem": "Solve the following equation, express in simplest form: \\(|2x-1|=3\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(x=2\\) or \\(x=-1\\)",
+            "\\(x=2\\) only",
+            "\\(x=-1\\) only",
+            "\\(x=1\\) or \\(x=-2\\)"
+          ],
+          "answer": 0,
+          "hint": "\\(|A|=3\\) means \\(A=3\\) OR \\(A=-3\\). Solve both equations (and check).",
+          "steps": [
+            {
+              "explain": "Two cases for the inside: \\(2x-1=3\\) or \\(2x-1=-3\\).",
+              "work": "\\(2x-1=3\\quad\\text{or}\\quad2x-1=-3\\)"
+            },
+            {
+              "explain": "Case 1: add 1, divide by 2. Case 2: add 1, divide by 2.",
+              "work": "\\(2x=4\\Rightarrow x=2\\qquad 2x=-2\\Rightarrow x=-1\\)"
+            },
+            {
+              "explain": "Check: \\(x=2\\): \\(|4-1|=3\\) ✓. \\(x=-1\\): \\(|-2-1|=3\\) ✓.",
+              "work": "\\(x=2\\ \\text{or}\\ x=-1\\)"
+            },
+            {
+              "explain": "Why not the others: B and C lose a case; D swaps the signs.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Solve the following equation",
+              "note": "\\(|A|=3\\Rightarrow A=\\pm3\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Merewether High School 2025 Year 12 Trial HSC Mathematics Advanced",
+            "school": "Merewether High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -24701,6 +24801,52 @@
           "meta": {
             "source": "Moriah College 2021 HSC Trial Examination Mathematics Advanced",
             "school": "Moriah College",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "merewether2025-q6",
+          "type": "mc",
+          "stem": "The graph \\(y=\\dfrac{3}{x+1}\\) is translated 4 units right and dilated vertically by a factor of \\(\\dfrac{1}{2}\\). Which of the following gives the equation of the new function?",
+          "difficulty": "medium",
+          "options": [
+            "\\(2y=\\dfrac{3}{x-3}\\)",
+            "\\(\\dfrac{y}{2}=\\dfrac{3}{x-3}\\)",
+            "\\(2y=\\dfrac{3}{x-4}\\)",
+            "\\(\\dfrac{y}{2}=\\dfrac{3}{x-4}\\)"
+          ],
+          "answer": 0,
+          "hint": "Translate RIGHT 4: replace \\(x\\) by \\((x-4)\\). Vertical dilation by factor \\(k\\): replace \\(y\\) by \\(\\dfrac{y}{k}\\) (so \\(k=\\dfrac{1}{2}\\) gives \\(2y\\)).",
+          "steps": [
+            {
+              "explain": "Translate 4 units right: replace \\(x\\) with \\(x-4\\). Careful: \\(x-4+1=x-3\\).",
+              "work": "\\(y=\\dfrac{3}{(x-4)+1}=\\dfrac{3}{x-3}\\)"
+            },
+            {
+              "explain": "Dilate vertically by \\(\\dfrac{1}{2}\\): replace \\(y\\) with \\(\\dfrac{y}{\\dfrac{1}{2}}=2y\\) (every height is halved, so \\(y=\\dfrac{1}{2}\\times\\dfrac{3}{x-3}\\)).",
+              "work": "\\(2y=\\dfrac{3}{x-3}\\)"
+            },
+            {
+              "explain": "Why not the others: B puts \\(\\dfrac{y}{2}\\) (that would DOUBLE the heights); C and D forget the \\(+1\\) (\\(x-4\\) instead of \\(x-3\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Which of the following gives the equation of the new function?",
+              "note": "Right 4: \\(x\\to x-4\\); vertical \\(\\times\\dfrac{1}{2}\\): \\(y\\to2y\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Merewether High School 2025 Year 12 Trial HSC Mathematics Advanced",
+            "school": "Merewether High School",
             "grade": "11",
             "origin": "teacher"
           }

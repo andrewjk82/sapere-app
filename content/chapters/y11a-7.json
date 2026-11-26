@@ -4027,6 +4027,52 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "merewether2025-q33b",
+          "type": "mc",
+          "stem": "A circle centred at \\(A(0,1)\\) with radius 1 unit intersects the parabola \\(y=2x^{2}\\) at the origin \\(O\\) and at the point \\(B\\left(\\dfrac{\\sqrt3}{2},\\dfrac{3}{2}\\right)\\). The line \\(l\\) passes through \\(O\\) and \\(B\\). Find the angle \\(OB\\) makes with the positive \\(x\\) axis.",
+          "difficulty": "medium",
+          "options": [
+            "\\(60^{\\circ}\\)",
+            "\\(30^{\\circ}\\)",
+            "\\(45^{\\circ}\\)",
+            "\\(120^{\\circ}\\)"
+          ],
+          "answer": 0,
+          "hint": "The angle a line makes with the positive \\(x\\)-axis: \\(\\tan\\theta=\\) gradient \\(=\\dfrac{\\text{rise}}{\\text{run}}=\\dfrac{y_B-0}{x_B-0}\\). Then use the exact value of \\(\\tan\\).",
+          "steps": [
+            {
+              "explain": "Gradient of \\(OB\\) from \\(O(0,0)\\) to \\(B\\left(\\dfrac{\\sqrt3}{2},\\dfrac{3}{2}\\right)\\).",
+              "work": "\\(m=\\dfrac{\\dfrac{3}{2}}{\\dfrac{\\sqrt3}{2}}=\\dfrac{3}{2}\\times\\dfrac{2}{\\sqrt3}=\\dfrac{3}{\\sqrt3}=\\sqrt3\\)"
+            },
+            {
+              "explain": "\\(\\tan\\theta=\\sqrt3\\). Exact value: \\(\\tan60^{\\circ}=\\sqrt3\\) (30-60-90 triangle).",
+              "work": "\\(\\theta=60^{\\circ}\\left(=\\dfrac\\pi3\\right)\\)"
+            },
+            {
+              "explain": "Why not the others: B (30°) has \\(\\tan=\\dfrac{1}{\\sqrt3}\\); C (45°) has \\(\\tan=1\\); D (120°) is not between the line and the POSITIVE \\(x\\)-axis (that angle is acute).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the angle \\(OB\\) makes with the positive \\(x\\) axis.",
+              "note": "\\(\\tan\\theta=m=\\dfrac{y}{x}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Merewether High School 2025 Year 12 Trial HSC Mathematics Advanced",
+            "school": "Merewether High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },

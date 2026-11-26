@@ -6587,6 +6587,52 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "merewether2025-q4",
+          "type": "mc",
+          "stem": "What is the value of \\((\\log a)^{2}\\div\\log(a^{2})\\)?",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{\\log a}{2}\\)",
+            "\\(1\\)",
+            "\\(\\log a\\)",
+            "\\(2\\log a\\)"
+          ],
+          "answer": 0,
+          "hint": "Be careful: \\((\\log a)^{2}\\) is the log SQUARED, but \\(\\log(a^{2})\\) uses the log law \\(\\log a^{n}=n\\log a\\) (the power comes OUT FRONT). Then cancel one \\(\\log a\\).",
+          "steps": [
+            {
+              "explain": "Log law on the denominator: \\(\\log(a^{2})=2\\log a\\).",
+              "work": "\\((\\log a)^{2}\\div\\log(a^{2})=\\dfrac{(\\log a)^{2}}{2\\log a}\\)"
+            },
+            {
+              "explain": "Cancel one factor of \\(\\log a\\) from top and bottom.",
+              "work": "\\(=\\dfrac{\\log a}{2}\\)"
+            },
+            {
+              "explain": "Why not the others: B (1) wrongly treats \\((\\log a)^2\\) as \\(\\log(a^2)\\); C forgets the 2; D multiplies instead of dividing.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "What is the value of",
+              "note": "\\(\\log a^{2}=2\\log a\\), but \\((\\log a)^{2}\\) stays squared."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Merewether High School 2025 Year 12 Trial HSC Mathematics Advanced",
+            "school": "Merewether High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -7710,6 +7756,60 @@
           "meta": {
             "source": "Moriah College 2021 HSC Trial Examination Mathematics Advanced",
             "school": "Moriah College",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "merewether2025-q12b",
+          "type": "mc",
+          "stem": "Solve the following equation, express in simplest form: \\(x^{\\ln2}=8\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(x=e^{3}\\)",
+            "\\(x=3\\)",
+            "\\(x=\\ln3\\)",
+            "\\(x=e^{8}\\)"
+          ],
+          "answer": 0,
+          "hint": "The unknown is in the BASE with a power \\(\\ln2\\). Take \\(\\ln\\) of both sides, bring the power down (\\(\\ln a^{n}=n\\ln a\\)), and use \\(8=2^{3}\\) so \\(\\ln8=3\\ln2\\).",
+          "steps": [
+            {
+              "explain": "Take natural logs of both sides and bring the power down.",
+              "work": "\\(\\ln\\left(x^{\\ln2}\\right)=\\ln8\\ \\Rightarrow\\ \\ln2\\cdot\\ln x=\\ln8\\)"
+            },
+            {
+              "explain": "Rewrite \\(\\ln8=\\ln2^{3}=3\\ln2\\).",
+              "work": "\\(\\ln2\\cdot\\ln x=3\\ln2\\)"
+            },
+            {
+              "explain": "Divide both sides by \\(\\ln2\\) (which is not 0).",
+              "work": "\\(\\ln x=3\\)"
+            },
+            {
+              "explain": "Convert to exponential form: \\(\\ln x=3\\Rightarrow x=e^{3}\\).",
+              "work": "\\(x=e^{3}\\)"
+            },
+            {
+              "explain": "Check: \\(\\ln x\\,\\ln 2\\): \\(e^{3\\ln2}=2^{3}=8\\) ✓. Why not the others: B (3) is \\(\\ln x\\), not \\(x\\); C takes \\(\\ln\\) of the wrong side; D uses 8 as the exponent (\\(e^{8}\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Solve the following equation",
+              "note": "Take \\(\\ln\\): \\(\\ln2\\cdot\\ln x=\\ln8=3\\ln2\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Merewether High School 2025 Year 12 Trial HSC Mathematics Advanced",
+            "school": "Merewether High School",
             "grade": "11",
             "origin": "teacher"
           }

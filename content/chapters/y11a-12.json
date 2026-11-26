@@ -2490,6 +2490,63 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "merewether2025-q19a",
+          "type": "mc",
+          "stem": "A survey of all the Zoology students at a local university showed that \\(\\dfrac{3}{4}\\) of them had a pet cat, \\(\\dfrac{3}{8}\\) of them had a pet dog and \\(\\dfrac{1}{4}\\) had both a pet cat and a pet dog. 25 students had either a pet cat or a pet dog but not both types of pet. Show that a total of 40 Zoology students were surveyed. Which working is correct?",
+          "difficulty": "medium",
+          "options": [
+            "Cat only \\(=\\dfrac{3}{4}-\\dfrac{1}{4}=\\dfrac{1}{2}\\), dog only \\(=\\dfrac{3}{8}-\\dfrac{1}{4}=\\dfrac{1}{8}\\); \\(\\dfrac12N+\\dfrac18N=25\\Rightarrow\\dfrac58N=25\\Rightarrow N=40\\)",
+            "\\(\\dfrac34N+\\dfrac38N=25\\Rightarrow\\dfrac98N=25\\Rightarrow N=22.2\\)",
+            "\\(\\dfrac34N+\\dfrac38N-\\dfrac14N=25\\Rightarrow\\dfrac78N=25\\Rightarrow N=28.6\\)",
+            "\\(\\dfrac12N-\\dfrac18N=25\\Rightarrow\\dfrac38N=25\\Rightarrow N=66.7\\)"
+          ],
+          "answer": 0,
+          "hint": "Let \\(N\\) be the total. “Either but NOT BOTH” means (cat only) + (dog only) — the two outer parts of the Venn diagram. Cat only \\(=\\) cat \\(-\\) both; dog only \\(=\\) dog \\(-\\) both.",
+          "steps": [
+            {
+              "explain": "Cat only \\(=P(\\text{cat})-P(\\text{both})\\). Dog only \\(=P(\\text{dog})-P(\\text{both})\\).",
+              "work": "\\(\\text{cat only}=\\dfrac{3}{4}-\\dfrac{1}{4}=\\dfrac{1}{2},\\qquad\\text{dog only}=\\dfrac{3}{8}-\\dfrac{1}{4}=\\dfrac{1}{8}\\)"
+            },
+            {
+              "explain": "These two groups together are the 25 students (exactly one type of pet).",
+              "work": "\\(\\dfrac12N+\\dfrac18N=25\\ \\Rightarrow\\ \\dfrac58N=25\\)"
+            },
+            {
+              "explain": "Multiply by \\(\\dfrac{8}{5}\\).",
+              "work": "\\(N=25\\times\\dfrac{8}{5}=40\\)"
+            },
+            {
+              "explain": "Check with a Venn diagram: cat only 20, both 10, dog only 5 (total with pets 35) and 5 with neither; \\(20+5=25\\) ✓.",
+              "work": "\\(N=40\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 230\" width=\"100%\" height=\"auto\" style=\"max-width:380px;display:block;margin:0 auto\"><rect x=\"10\" y=\"10\" width=\"360\" height=\"190\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2\"/><circle cx=\"150\" cy=\"105\" r=\"70\" fill=\"#3b4ea8\" fill-opacity=\"0.2\" stroke=\"#3b4ea8\" stroke-width=\"2.4\"/><circle cx=\"230\" cy=\"105\" r=\"70\" fill=\"#d97706\" fill-opacity=\"0.2\" stroke=\"#d97706\" stroke-width=\"2.4\"/><text x=\"110.0\" y=\"105.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">20</text><text x=\"190.0\" y=\"105.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">10</text><text x=\"270.0\" y=\"105.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">5</text><text x=\"340.0\" y=\"180.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">5</text><text x=\"105.0\" y=\"48.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Cat</text><text x=\"275.0\" y=\"48.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Dog</text><text x=\"22.0\" y=\"190.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#475569\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">neither</text></svg>"
+              }
+            },
+            {
+              "explain": "Why not the others: B counts the “both” group twice; C includes the “both” group in the 25; D subtracts instead of adding.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that a total of 40 Zoology students were surveyed.",
+              "note": "Exactly one pet \\(=\\) cat only \\(+\\) dog only."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Merewether High School 2025 Year 12 Trial HSC Mathematics Advanced",
+            "school": "Merewether High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -3104,6 +3161,59 @@
           "meta": {
             "source": "Hurlstone Agricultural High School 2020 Year 11 Task 3 Yearly Examination Mathematics Advanced",
             "school": "Hurlstone Agricultural High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "merewether2025-q19b",
+          "type": "mc",
+          "stem": "A survey of all the Zoology students at a local university showed that \\(\\dfrac{3}{4}\\) of them had a pet cat, \\(\\dfrac{3}{8}\\) of them had a pet dog and \\(\\dfrac{1}{4}\\) had both a pet cat and a pet dog. A total of 40 students were surveyed. If two of the zoology students are chosen at random, find in simplest fraction form the probability that neither of these students has a pet dog.",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\dfrac{5}{13}\\)",
+            "\\(\\dfrac{25}{64}\\)",
+            "\\(\\dfrac{5}{8}\\)",
+            "\\(\\dfrac{8}{13}\\)"
+          ],
+          "answer": 0,
+          "hint": "Choose WITHOUT replacement: after the first student is chosen there is one fewer student, so the second probability has a smaller denominator. First find how many students do NOT have a dog.",
+          "steps": [
+            {
+              "explain": "Students WITH a dog: dog only 5 + both 10 \\(=15\\). So students with NO dog: \\(40-15=25\\) (from the Venn diagram: 20 cat only + 5 neither).",
+              "work": "\\(\\text{no dog}=40-15=25\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 230\" width=\"100%\" height=\"auto\" style=\"max-width:380px;display:block;margin:0 auto\"><rect x=\"10\" y=\"10\" width=\"360\" height=\"190\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2\"/><circle cx=\"150\" cy=\"105\" r=\"70\" fill=\"#3b4ea8\" fill-opacity=\"0.2\" stroke=\"#3b4ea8\" stroke-width=\"2.4\"/><circle cx=\"230\" cy=\"105\" r=\"70\" fill=\"#d97706\" fill-opacity=\"0.2\" stroke=\"#d97706\" stroke-width=\"2.4\"/><text x=\"110.0\" y=\"105.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">20</text><text x=\"190.0\" y=\"105.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">10</text><text x=\"270.0\" y=\"105.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">5</text><text x=\"340.0\" y=\"180.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">5</text><text x=\"105.0\" y=\"48.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Cat</text><text x=\"275.0\" y=\"48.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Dog</text><text x=\"22.0\" y=\"190.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#475569\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">neither</text></svg>"
+              }
+            },
+            {
+              "explain": "First student has no dog: \\(\\dfrac{25}{40}=\\dfrac{5}{8}\\). Second (no replacement): 24 no-dog students left out of 39.",
+              "work": "\\(P=\\dfrac{25}{40}\\times\\dfrac{24}{39}\\)"
+            },
+            {
+              "explain": "Simplify: \\(\\dfrac{5}{8}\\times\\dfrac{24}{39}=\\dfrac{5\\times3}{39}=\\dfrac{15}{39}\\).",
+              "work": "\\(P=\\dfrac{15}{39}=\\dfrac{5}{13}\\)"
+            },
+            {
+              "explain": "Why not the others: B (\\(\\dfrac{25}{64}\\)) multiplies \\(\\dfrac{5}{8}\\times\\dfrac{5}{8}\\) (with replacement); C is only the first probability; D is a slip.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "find in simplest fraction form the probability that neither of these students has a pet dog",
+              "note": "Without replacement: \\(\\dfrac{25}{40}\\times\\dfrac{24}{39}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Merewether High School 2025 Year 12 Trial HSC Mathematics Advanced",
+            "school": "Merewether High School",
             "grade": "11",
             "origin": "teacher"
           }
@@ -7001,6 +7111,56 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "merewether2025-q10",
+          "type": "mc",
+          "stem": "Let \\(A\\) and \\(B\\) be two independent events from a sample space. If \\(P(A)=p\\), \\(P(B)=p^{2}\\) and \\(P(A)+P(B)=1\\), then \\(P(A'\\cup B)\\) is equal to",
+          "difficulty": "hard",
+          "options": [
+            "\\(1-p+p^{3}\\)",
+            "\\(1-p-p^{2}\\)",
+            "\\(p+p^{3}\\)",
+            "\\(1-p-p^{2}+p^{3}\\)"
+          ],
+          "answer": 0,
+          "hint": "Use the complement: \\(A'\\cup B\\) is everything EXCEPT \\(A\\cap B'\\) (A happens but B doesn't). So \\(P(A'\\cup B)=1-P(A\\cap B')\\). Independent: \\(P(A\\cap B')=P(A)\\,P(B')\\).",
+          "steps": [
+            {
+              "explain": "De Morgan: the opposite of \\(A'\\cup B\\) is \\(A\\cap B'\\).",
+              "work": "\\(P(A'\\cup B)=1-P(A\\cap B')\\)"
+            },
+            {
+              "explain": "Independent events: multiply. \\(P(B')=1-p^{2}\\).",
+              "work": "\\(P(A\\cap B')=p(1-p^{2})=p-p^{3}\\)"
+            },
+            {
+              "explain": "Subtract from 1.",
+              "work": "\\(P(A'\\cup B)=1-(p-p^{3})=1-p+p^{3}\\)"
+            },
+            {
+              "explain": "(The condition \\(p+p^{2}=1\\) is not needed here.) Why not the others: B and D come from wrongly using \\(P(A\\cap B')=p+p^{2}\\) or \\(P(A)P(B)\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "is equal to",
+              "note": "\\(P(A\\,'\\cup B)=1-P(A\\cap B\\,')\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Merewether High School 2025 Year 12 Trial HSC Mathematics Advanced",
+            "school": "Merewether High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -8819,6 +8979,115 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "merewether2025-q26a",
+          "type": "mc",
+          "stem": "Two numbers are chosen without replacement from the numbers 1, 2, 3, 4, 5, 6, 7, 8, 9. Complete the probability tree diagram below. Which set of probabilities is correct? (First branches: Odd, Even. Second branches in order: after Odd — Odd, Even; after Even — Odd, Even.)",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 270\" width=\"100%\" height=\"auto\" style=\"max-width:400px;display:block;margin:0 auto\"><line x1=\"20.0\" y1=\"135.0\" x2=\"124.0\" y2=\"70.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"152.0\" y1=\"70.0\" x2=\"284.0\" y2=\"30.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"152.0\" y1=\"70.0\" x2=\"284.0\" y2=\"110.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"20.0\" y1=\"135.0\" x2=\"124.0\" y2=\"200.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"152.0\" y1=\"200.0\" x2=\"284.0\" y2=\"160.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"152.0\" y1=\"200.0\" x2=\"284.0\" y2=\"240.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"112.0\" y=\"92.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">Odd</text><text x=\"112.0\" y=\"186.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">Even</text><text x=\"290.0\" y=\"35.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">Odd</text><text x=\"290.0\" y=\"115.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">Even</text><text x=\"290.0\" y=\"165.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">Odd</text><text x=\"290.0\" y=\"245.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">Even</text><text x=\"30.0\" y=\"22.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#475569\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">First number</text><text x=\"340.0\" y=\"22.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#475569\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">Second number</text></svg>"
+          },
+          "options": [
+            "\\(\\dfrac{5}{9},\\ \\dfrac{4}{9};\\quad\\dfrac{4}{8},\\ \\dfrac{4}{8};\\quad\\dfrac{5}{8},\\ \\dfrac{3}{8}\\)",
+            "\\(\\dfrac{5}{9},\\ \\dfrac{4}{9};\\quad\\dfrac{5}{9},\\ \\dfrac{4}{9};\\quad\\dfrac{5}{9},\\ \\dfrac{4}{9}\\)",
+            "\\(\\dfrac{5}{9},\\ \\dfrac{4}{9};\\quad\\dfrac{5}{8},\\ \\dfrac{3}{8};\\quad\\dfrac{4}{8},\\ \\dfrac{4}{8}\\)",
+            "\\(\\dfrac{1}{2},\\ \\dfrac{1}{2};\\quad\\dfrac{4}{8},\\ \\dfrac{4}{8};\\quad\\dfrac{5}{8},\\ \\dfrac{3}{8}\\)"
+          ],
+          "answer": 0,
+          "hint": "Among 1 to 9: ODD numbers are 1, 3, 5, 7, 9 (5 of them); EVEN are 2, 4, 6, 8 (4 of them). WITHOUT REPLACEMENT: after the first pick, there are only 8 numbers left, and the counts change.",
+          "steps": [
+            {
+              "explain": "First pick from 9 numbers: 5 odd, 4 even.",
+              "work": "\\(P(\\text{Odd})=\\dfrac{5}{9},\\quad P(\\text{Even})=\\dfrac{4}{9}\\)"
+            },
+            {
+              "explain": "If the first was ODD: 8 numbers left: 4 odd, 4 even.",
+              "work": "\\(P(\\text{Odd})=\\dfrac{4}{8},\\quad P(\\text{Even})=\\dfrac{4}{8}\\)"
+            },
+            {
+              "explain": "If the first was EVEN: 8 numbers left: 5 odd, 3 even.",
+              "work": "\\(P(\\text{Odd})=\\dfrac{5}{8},\\quad P(\\text{Even})=\\dfrac{3}{8}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 270\" width=\"100%\" height=\"auto\" style=\"max-width:400px;display:block;margin:0 auto\"><line x1=\"20.0\" y1=\"135.0\" x2=\"124.0\" y2=\"70.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"152.0\" y1=\"70.0\" x2=\"284.0\" y2=\"30.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"152.0\" y1=\"70.0\" x2=\"284.0\" y2=\"110.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"20.0\" y1=\"135.0\" x2=\"124.0\" y2=\"200.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"152.0\" y1=\"200.0\" x2=\"284.0\" y2=\"160.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"152.0\" y1=\"200.0\" x2=\"284.0\" y2=\"240.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"112.0\" y=\"92.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">Odd</text><text x=\"112.0\" y=\"186.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">Even</text><text x=\"290.0\" y=\"35.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">Odd</text><text x=\"290.0\" y=\"115.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">Even</text><text x=\"290.0\" y=\"165.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">Odd</text><text x=\"290.0\" y=\"245.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">Even</text><text x=\"30.0\" y=\"22.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#475569\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">First number</text><text x=\"340.0\" y=\"22.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#475569\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">Second number</text><text x=\"65.0\" y=\"95.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">5/9</text><text x=\"65.0\" y=\"185.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4/9</text><text x=\"220.0\" y=\"45.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4/8</text><text x=\"220.0\" y=\"90.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4/8</text><text x=\"220.0\" y=\"170.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">5/8</text><text x=\"220.0\" y=\"225.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3/8</text></svg>"
+              }
+            },
+            {
+              "explain": "Why not the others: B ignores that the first number is removed (with replacement); C swaps the second-stage branches; D uses \\(\\dfrac{1}{2}\\) for the first pick (5 odd and 4 even are NOT equally likely).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Complete the probability tree diagram below.",
+              "note": "Odd: 5, even: 4; one number removed."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Merewether High School 2025 Year 12 Trial HSC Mathematics Advanced",
+            "school": "Merewether High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "merewether2025-q26b",
+          "type": "mc",
+          "stem": "Two numbers are chosen without replacement from the numbers 1, 2, 3, 4, 5, 6, 7, 8, 9. Find, in simplest form, the probability that the product of the two numbers chosen is even.",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 270\" width=\"100%\" height=\"auto\" style=\"max-width:400px;display:block;margin:0 auto\"><line x1=\"20.0\" y1=\"135.0\" x2=\"124.0\" y2=\"70.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"152.0\" y1=\"70.0\" x2=\"284.0\" y2=\"30.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"152.0\" y1=\"70.0\" x2=\"284.0\" y2=\"110.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"20.0\" y1=\"135.0\" x2=\"124.0\" y2=\"200.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"152.0\" y1=\"200.0\" x2=\"284.0\" y2=\"160.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"152.0\" y1=\"200.0\" x2=\"284.0\" y2=\"240.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"112.0\" y=\"92.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">Odd</text><text x=\"112.0\" y=\"186.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">Even</text><text x=\"290.0\" y=\"35.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">Odd</text><text x=\"290.0\" y=\"115.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">Even</text><text x=\"290.0\" y=\"165.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">Odd</text><text x=\"290.0\" y=\"245.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">Even</text><text x=\"30.0\" y=\"22.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#475569\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">First number</text><text x=\"340.0\" y=\"22.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#475569\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">Second number</text></svg>"
+          },
+          "options": [
+            "\\(\\dfrac{13}{18}\\)",
+            "\\(\\dfrac{5}{18}\\)",
+            "\\(\\dfrac{4}{9}\\)",
+            "\\(\\dfrac{1}{2}\\)"
+          ],
+          "answer": 0,
+          "hint": "A product is EVEN unless BOTH numbers are odd. Use the complement: \\(P(\\text{even product})=1-P(\\text{both odd})\\). Follow the ‘Odd then Odd’ path of the tree.",
+          "steps": [
+            {
+              "explain": "Product is odd only if BOTH are odd.",
+              "work": "\\(P(\\text{both odd})=\\dfrac{5}{9}\\times\\dfrac{4}{8}=\\dfrac{20}{72}=\\dfrac{5}{18}\\)"
+            },
+            {
+              "explain": "Complement.",
+              "work": "\\(P(\\text{even product})=1-\\dfrac{5}{18}=\\dfrac{13}{18}\\)"
+            },
+            {
+              "explain": "Check by adding the three paths with at least one even number: Odd–Even \\(=\\dfrac{5}{9}\\times\\dfrac{4}{8}=\\dfrac{20}{72}\\); Even–Odd \\(=\\dfrac{4}{9}\\times\\dfrac{5}{8}=\\dfrac{20}{72}\\); Even–Even \\(=\\dfrac{4}{9}\\times\\dfrac{3}{8}=\\dfrac{12}{72}\\). Total \\(=\\dfrac{52}{72}=\\dfrac{13}{18}\\) ✓.",
+              "work": "\\(\\dfrac{20}{72}+\\dfrac{20}{72}+\\dfrac{12}{72}=\\dfrac{52}{72}=\\dfrac{13}{18}\\)"
+            },
+            {
+              "explain": "Why not the others: B (\\(\\dfrac5{18}\\)) is the probability the product is ODD; C and D are guesses.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find, in simplest form, the probability that the product of the two numbers chosen is even.",
+              "note": "\\(P(\\text{even})=1-P(\\text{both odd})\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Merewether High School 2025 Year 12 Trial HSC Mathematics Advanced",
+            "school": "Merewether High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -10329,6 +10598,59 @@
           "meta": {
             "source": "Moriah College 2021 HSC Trial Examination Mathematics Advanced",
             "school": "Moriah College",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "merewether2025-q26c",
+          "type": "mc",
+          "stem": "Two numbers are chosen without replacement from the numbers 1, 2, 3, 4, 5, 6, 7, 8, 9. Given that the product of the two numbers chosen is even, find the probability that their sum is even, expressing your answer in simplest fraction form.",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 270\" width=\"100%\" height=\"auto\" style=\"max-width:400px;display:block;margin:0 auto\"><line x1=\"20.0\" y1=\"135.0\" x2=\"124.0\" y2=\"70.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"152.0\" y1=\"70.0\" x2=\"284.0\" y2=\"30.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"152.0\" y1=\"70.0\" x2=\"284.0\" y2=\"110.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"20.0\" y1=\"135.0\" x2=\"124.0\" y2=\"200.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"152.0\" y1=\"200.0\" x2=\"284.0\" y2=\"160.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"152.0\" y1=\"200.0\" x2=\"284.0\" y2=\"240.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"112.0\" y=\"92.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">Odd</text><text x=\"112.0\" y=\"186.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">Even</text><text x=\"290.0\" y=\"35.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">Odd</text><text x=\"290.0\" y=\"115.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">Even</text><text x=\"290.0\" y=\"165.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">Odd</text><text x=\"290.0\" y=\"245.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">Even</text><text x=\"30.0\" y=\"22.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#475569\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">First number</text><text x=\"340.0\" y=\"22.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#475569\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">Second number</text></svg>"
+          },
+          "options": [
+            "\\(\\dfrac{3}{13}\\)",
+            "\\(\\dfrac{1}{6}\\)",
+            "\\(\\dfrac{13}{18}\\)",
+            "\\(\\dfrac{1}{2}\\)"
+          ],
+          "answer": 0,
+          "hint": "Conditional probability: \\(P(A\\mid B)=\\dfrac{P(A\\cap B)}{P(B)}\\). Product even AND sum even can only happen if BOTH numbers are EVEN (even+even=even; odd+even=odd; odd+odd would give an odd product).",
+          "steps": [
+            {
+              "explain": "Sum even with an even product: both even. \\(P(A\\cap B)=P(\\text{Even, Even})\\).",
+              "work": "\\(P(A\\cap B)=\\dfrac{4}{9}\\times\\dfrac{3}{8}=\\dfrac{12}{72}=\\dfrac{1}{6}\\)"
+            },
+            {
+              "explain": "\\(P(B)=P(\\text{product even})=\\dfrac{13}{18}\\) (part b).",
+              "work": "\\(P(B)=\\dfrac{13}{18}\\)"
+            },
+            {
+              "explain": "Divide.",
+              "work": "\\(P(A\\mid B)=\\dfrac{\\dfrac{1}{6}}{\\dfrac{13}{18}}=\\dfrac{1}{6}\\times\\dfrac{18}{13}=\\dfrac{3}{13}\\)"
+            },
+            {
+              "explain": "Why not the others: B (\\(\\dfrac{1}{6}\\)) forgets to divide by \\(P(B)\\); C is \\(P(B)\\); D is a guess.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Given that the product of the two numbers chosen is even, find the probability that their sum is even",
+              "note": "\\(P(A|B)=\\dfrac{P(A\\cap B)}{P(B)}\\); both even."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Merewether High School 2025 Year 12 Trial HSC Mathematics Advanced",
+            "school": "Merewether High School",
             "grade": "11",
             "origin": "teacher"
           }

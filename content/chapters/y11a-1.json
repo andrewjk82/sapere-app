@@ -17459,6 +17459,56 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "merewether2025-q9",
+          "type": "mc",
+          "stem": "Which of the following is equal to \\(\\dfrac{4^{n}-1}{2^{n}+1}\\)?",
+          "difficulty": "medium",
+          "options": [
+            "\\(2^{n}-1\\)",
+            "\\(2^{n}+1\\)",
+            "\\(2^{2}\\)",
+            "\\(2\\)"
+          ],
+          "answer": 0,
+          "hint": "Write \\(4^{n}=(2^{2})^{n}=(2^{n})^{2}\\). Then the top is a DIFFERENCE OF SQUARES: \\(a^{2}-1=(a-1)(a+1)\\) with \\(a=2^{n}\\).",
+          "steps": [
+            {
+              "explain": "Rewrite \\(4^{n}\\) as a power of 2.",
+              "work": "\\(4^{n}=(2^{2})^{n}=(2^{n})^{2}\\)"
+            },
+            {
+              "explain": "Difference of two squares with \\(a=2^{n}\\) and \\(1=1^{2}\\).",
+              "work": "\\(\\dfrac{(2^{n})^{2}-1^{2}}{2^{n}+1}=\\dfrac{(2^{n}-1)(2^{n}+1)}{2^{n}+1}\\)"
+            },
+            {
+              "explain": "Cancel the common factor \\(2^{n}+1\\).",
+              "work": "\\(=2^{n}-1\\)"
+            },
+            {
+              "explain": "Why not the others: B is the denominator; C and D come from cancelling wrongly. Check \\(n=2\\): \\(\\dfrac{16-1}{4+1}=3=2^{2}-1\\) ✓.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Which of the following is equal to",
+              "note": "\\(4^{n}=(2^{n})^{2}\\); difference of squares."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Merewether High School 2025 Year 12 Trial HSC Mathematics Advanced",
+            "school": "Merewether High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },

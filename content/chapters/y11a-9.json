@@ -4269,6 +4269,56 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "merewether2025-q3",
+          "type": "mc",
+          "stem": "What is the gradient of the normal to the curve \\(f(x)=(3x-5)(x+1)\\) at the \\(y\\)-intercept?",
+          "difficulty": "easy",
+          "options": [
+            "\\(\\dfrac{1}{2}\\)",
+            "\\(-\\dfrac{1}{2}\\)",
+            "\\(2\\)",
+            "\\(-2\\)"
+          ],
+          "answer": 0,
+          "hint": "The \\(y\\)-intercept is where \\(x=0\\). Tangent gradient \\(=f'(0)\\). The NORMAL is perpendicular, so \\(m_{N}=-\\dfrac{1}{m_{T}}\\).",
+          "steps": [
+            {
+              "explain": "Expand first: \\((3x-5)(x+1)=3x^{2}-2x-5\\).",
+              "work": "\\(f(x)=3x^{2}-2x-5\\)"
+            },
+            {
+              "explain": "Differentiate: \\(f'(x)=6x-2\\). At the \\(y\\)-intercept \\(x=0\\):",
+              "work": "\\(m_{T}=f'(0)=-2\\)"
+            },
+            {
+              "explain": "Normal gradient: negative reciprocal of \\(-2\\).",
+              "work": "\\(m_{N}=-\\dfrac{1}{-2}=\\dfrac{1}{2}\\)"
+            },
+            {
+              "explain": "Why not the others: B has the wrong sign; C and D are the tangent gradient (\\(-2\\)) or its negative, not the normal gradient.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "What is the gradient of the normal",
+              "note": "\\(m_N=-\\dfrac1{m_T}\\); \\(m_T=f\\,'(0)\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Merewether High School 2025 Year 12 Trial HSC Mathematics Advanced",
+            "school": "Merewether High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },

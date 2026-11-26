@@ -3245,6 +3245,113 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "merewether2025-q25a",
+          "type": "mc",
+          "stem": "8 students in an Advanced Mathematics class sat term tests in Functions and Calculus. The table below shows their marks out of 100 in each test. Unfortunately, the Functions mark for student H has been lost. However, it is known that the correlation coefficient between Functions mark and Calculus marks is \\(r=0.9\\) and the equation of the least squares regression line of Calculus marks on Functions marks is \\(y=0.72x+18\\). Use the mean \\(\\bar y=72\\) of the Calculus marks and the least squares regression line to find the mean \\(\\bar x\\) of the Functions marks, and hence the missing Functions mark for student H.",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 104\" width=\"100%\" height=\"auto\" style=\"max-width:420px;display:block;margin:0 auto\"><g transform=\"translate(4,4)\"><rect x=\"0\" y=\"0\" width=\"92\" height=\"32\" fill=\"#e0e7ff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"46.0\" y=\"21.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Student</text><rect x=\"92\" y=\"0\" width=\"40\" height=\"32\" fill=\"#e0e7ff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"112.0\" y=\"21.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">A</text><rect x=\"132\" y=\"0\" width=\"40\" height=\"32\" fill=\"#e0e7ff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"152.0\" y=\"21.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">B</text><rect x=\"172\" y=\"0\" width=\"40\" height=\"32\" fill=\"#e0e7ff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"192.0\" y=\"21.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">C</text><rect x=\"212\" y=\"0\" width=\"40\" height=\"32\" fill=\"#e0e7ff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"232.0\" y=\"21.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">D</text><rect x=\"252\" y=\"0\" width=\"40\" height=\"32\" fill=\"#e0e7ff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"272.0\" y=\"21.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">E</text><rect x=\"292\" y=\"0\" width=\"40\" height=\"32\" fill=\"#e0e7ff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"312.0\" y=\"21.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">F</text><rect x=\"332\" y=\"0\" width=\"40\" height=\"32\" fill=\"#e0e7ff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"352.0\" y=\"21.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">G</text><rect x=\"372\" y=\"0\" width=\"40\" height=\"32\" fill=\"#e0e7ff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"392.0\" y=\"21.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">H</text><rect x=\"0\" y=\"32\" width=\"92\" height=\"32\" fill=\"#e0e7ff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"46.0\" y=\"53.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Functions (x)</text><rect x=\"92\" y=\"32\" width=\"40\" height=\"32\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"112.0\" y=\"53.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">63</text><rect x=\"132\" y=\"32\" width=\"40\" height=\"32\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"152.0\" y=\"53.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">59</text><rect x=\"172\" y=\"32\" width=\"40\" height=\"32\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"192.0\" y=\"53.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">69</text><rect x=\"212\" y=\"32\" width=\"40\" height=\"32\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"232.0\" y=\"53.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">83</text><rect x=\"252\" y=\"32\" width=\"40\" height=\"32\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"272.0\" y=\"53.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">77</text><rect x=\"292\" y=\"32\" width=\"40\" height=\"32\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"312.0\" y=\"53.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">75</text><rect x=\"332\" y=\"32\" width=\"40\" height=\"32\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"352.0\" y=\"53.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">85</text><rect x=\"372\" y=\"32\" width=\"40\" height=\"32\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"392.0\" y=\"53.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\"></text><rect x=\"0\" y=\"64\" width=\"92\" height=\"32\" fill=\"#e0e7ff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"46.0\" y=\"85.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Calculus (y)</text><rect x=\"92\" y=\"64\" width=\"40\" height=\"32\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"112.0\" y=\"85.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">58</text><rect x=\"132\" y=\"64\" width=\"40\" height=\"32\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"152.0\" y=\"85.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">62</text><rect x=\"172\" y=\"64\" width=\"40\" height=\"32\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"192.0\" y=\"85.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">70</text><rect x=\"212\" y=\"64\" width=\"40\" height=\"32\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"232.0\" y=\"85.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">72</text><rect x=\"252\" y=\"64\" width=\"40\" height=\"32\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"272.0\" y=\"85.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">76</text><rect x=\"292\" y=\"64\" width=\"40\" height=\"32\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"312.0\" y=\"85.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">76</text><rect x=\"332\" y=\"64\" width=\"40\" height=\"32\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"352.0\" y=\"85.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">78</text><rect x=\"372\" y=\"64\" width=\"40\" height=\"32\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"392.0\" y=\"85.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">84</text></g></svg>"
+          },
+          "options": [
+            "\\(\\bar x=75\\); missing mark \\(=89\\)",
+            "\\(\\bar x=72\\); missing mark \\(=65\\)",
+            "\\(\\bar x=75\\); missing mark \\(=75\\)",
+            "\\(\\bar x=78\\); missing mark \\(=113\\)"
+          ],
+          "answer": 0,
+          "hint": "The least squares regression line ALWAYS passes through the point of means \\((\\bar x,\\bar y)\\). Substitute \\(\\bar y=72\\) to find \\(\\bar x\\). Then \\(\\bar x=\\dfrac{\\text{sum of all 8 marks}}{8}\\), so the missing mark \\(=8\\bar x-\\) (sum of the 7 known marks).",
+          "steps": [
+            {
+              "explain": "The regression line passes through \\((\\bar x,\\bar y)\\). Check \\(\\bar y\\): \\(58+62+70+72+76+76+78+84=576\\), and \\(\\dfrac{576}{8}=72\\) ✓.",
+              "work": "\\(72=0.72\\bar x+18\\)"
+            },
+            {
+              "explain": "Solve: subtract 18, divide by 0.72.",
+              "work": "\\(0.72\\bar x=54\\ \\Rightarrow\\ \\bar x=\\dfrac{54}{0.72}=75\\)"
+            },
+            {
+              "explain": "Sum of the 7 known Functions marks: \\(63+59+69+83+77+75+85=511\\).",
+              "work": "\\(\\text{sum of 7 marks}=511\\)"
+            },
+            {
+              "explain": "Total of all 8 marks \\(=8\\times75=600\\). Missing mark \\(=600-511\\).",
+              "work": "\\(H=600-511=89\\)"
+            },
+            {
+              "explain": "Why not the others: B uses \\(\\bar y\\) as \\(\\bar x\\); C forgets to subtract the 7 marks (it is just \\(\\bar x\\)); D substitutes the wrong way (solves \\(0.72x+18=\\ldots\\) incorrectly).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "find the mean \\(\\bar x\\) of the Functions marks, and hence the missing Functions mark for student H",
+              "note": "Line passes through \\((\\bar x,\\bar y)\\); \\(8\\bar x-\\sum\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Merewether High School 2025 Year 12 Trial HSC Mathematics Advanced",
+            "school": "Merewether High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "merewether2025-q25b",
+          "type": "mc",
+          "stem": "Another student in the same class sat the Functions test and achieved a mark of 93 but missed the Calculus test. Explain whether or not you would be justified statistically in using their Functions mark and the given least squares regression line to estimate their Calculus mark.",
+          "difficulty": "medium",
+          "options": [
+            "Not justified: 93 is outside the range of the Functions marks (59 to 89), so this is extrapolation",
+            "Justified: \\(r=0.9\\) is strong, so the line works for any mark",
+            "Justified: 93 is close to the mean of 75",
+            "Not justified: the correlation is negative"
+          ],
+          "answer": 0,
+          "hint": "Using the line to predict INSIDE the range of the data is INTERPOLATION (reliable). Predicting OUTSIDE the range is EXTRAPOLATION (unreliable: the relationship may not continue). Compare 93 with the data range.",
+          "steps": [
+            {
+              "explain": "Find the range of the Functions marks: the lowest is 59 and the highest is 89 (student H’s mark, found in part (a), is 89; the other marks are at most 85).",
+              "work": "\\(59\\le x\\le89\\)"
+            },
+            {
+              "explain": "93 is larger than the highest mark 89, so it lies OUTSIDE the data range: this would be EXTRAPOLATION.",
+              "work": "\\(93>89\\)"
+            },
+            {
+              "explain": "A strong correlation (\\(r=0.9\\)) only supports predictions inside the range of the data, so we would NOT be justified.",
+              "work": "\\(\\text{extrapolation}\\ \\Rightarrow\\ \\text{not reliable}\\)"
+            },
+            {
+              "explain": "Why not the others: B and C ignore the range issue; D is false (\\(r=0.9\\) is positive).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Explain whether or not you would be justified statistically",
+              "note": "Outside the data range = extrapolation = unreliable."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Merewether High School 2025 Year 12 Trial HSC Mathematics Advanced",
+            "school": "Merewether High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },

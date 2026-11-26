@@ -3682,6 +3682,118 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "merewether2025-q32a",
+          "type": "mc",
+          "stem": "A particle is moving along the \\(x\\)-axis such that at a time \\(t\\) seconds its displacement from the origin is \\(x\\) metres. The acceleration of the particle is given by \\(a=\\dfrac{8}{e^{2t}}+\\dfrac{3}{e^{t}}\\). Initially its velocity is \\(-6\\) m/s and its displacement is 5 m. Find the equation for the displacement (\\(x\\)) of the particle in terms of \\(t\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(x=2e^{-2t}+3e^{-t}+t\\)",
+            "\\(x=-2e^{-2t}-3e^{-t}+t+10\\)",
+            "\\(x=2e^{-2t}+3e^{-t}-6t+5\\)",
+            "\\(x=-4e^{-2t}-3e^{-t}+t+12\\)"
+          ],
+          "answer": 0,
+          "hint": "Rewrite \\(\\dfrac{8}{e^{2t}}=8e^{-2t}\\) and \\(\\dfrac{3}{e^{t}}=3e^{-t}\\). Integrate acceleration to get velocity (use \\(v(0)=-6\\) to find \\(+C\\)), then integrate velocity to get displacement (use \\(x(0)=5\\) to find \\(+D\\)). \\(\\displaystyle\\int e^{kt}dt=\\dfrac{1}{k}e^{kt}\\).",
+          "steps": [
+            {
+              "explain": "Rewrite with negative powers.",
+              "work": "\\(a=8e^{-2t}+3e^{-t}\\)"
+            },
+            {
+              "explain": "Integrate for velocity: \\(\\int8e^{-2t}dt=-4e^{-2t}\\) and \\(\\int3e^{-t}dt=-3e^{-t}\\).",
+              "work": "\\(v=-4e^{-2t}-3e^{-t}+C\\)"
+            },
+            {
+              "explain": "Use \\(v(0)=-6\\).",
+              "work": "\\(-6=-4-3+C\\ \\Rightarrow\\ C=1\\ \\Rightarrow\\ v=-4e^{-2t}-3e^{-t}+1\\)"
+            },
+            {
+              "explain": "Integrate for displacement: \\(\\int-4e^{-2t}dt=2e^{-2t}\\); \\(\\int-3e^{-t}dt=3e^{-t}\\); \\(\\int1\\,dt=t\\).",
+              "work": "\\(x=2e^{-2t}+3e^{-t}+t+D\\)"
+            },
+            {
+              "explain": "Use \\(x(0)=5\\): \\(5=2+3+0+D\\).",
+              "work": "\\(D=0\\ \\Rightarrow\\ x=2e^{-2t}+3e^{-t}+t\\)"
+            },
+            {
+              "explain": "Why not the others: B and D integrate with wrong signs/constants; C treats the velocity as a constant \\(-6\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the equation for the displacement (\\(x\\)) of the particle in terms of \\(t\\).",
+              "note": "\\(a\\to v\\to x\\): add \\(C\\) each time; use \\(v(0),x(0)\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Merewether High School 2025 Year 12 Trial HSC Mathematics Advanced",
+            "school": "Merewether High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "merewether2025-q32b",
+          "type": "mc",
+          "stem": "A particle is moving along the \\(x\\)-axis with velocity \\(v=-4e^{-2t}-3e^{-t}+1\\) and displacement \\(x=2e^{-2t}+3e^{-t}+t\\) metres, \\(t\\) in seconds. At what time and where does the particle come to rest?",
+          "difficulty": "hard",
+          "options": [
+            "\\(t=\\ln4\\) s, at \\(x=\\dfrac{7}{8}+\\ln4\\approx2.26\\) m",
+            "\\(t=\\dfrac{1}{4}\\) s, at \\(x=\\dfrac{7}{8}+\\dfrac{1}{4}\\approx1.13\\) m",
+            "\\(t=\\ln4\\) s, at \\(x=5\\) m",
+            "\\(t=0\\) s, at \\(x=5\\) m"
+          ],
+          "answer": 0,
+          "hint": "“At rest” means velocity \\(=0\\). Let \\(u=e^{-t}\\), so \\(e^{-2t}=u^{2}\\): the equation becomes a QUADRATIC in \\(u\\). Then use the displacement equation for the position.",
+          "steps": [
+            {
+              "explain": "Set \\(v=0\\) with \\(u=e^{-t}\\) (so \\(e^{-2t}=u^{2}\\)).",
+              "work": "\\(-4u^{2}-3u+1=0\\ \\Rightarrow\\ 4u^{2}+3u-1=0\\)"
+            },
+            {
+              "explain": "Factorise: \\((4u-1)(u+1)=0\\).",
+              "work": "\\(u=\\dfrac{1}{4}\\quad\\text{or}\\quad u=-1\\)"
+            },
+            {
+              "explain": "\\(u=e^{-t}\\) is always positive, so reject \\(u=-1\\). \\(e^{-t}=\\dfrac{1}{4}\\Rightarrow-t=\\ln\\dfrac{1}{4}\\Rightarrow t=\\ln4\\) (about 1.386 s).",
+              "work": "\\(t=\\ln4\\)"
+            },
+            {
+              "explain": "Displacement at \\(t=\\ln4\\): \\(e^{-t}=\\dfrac{1}{4}\\) and \\(e^{-2t}=\\dfrac1{16}\\).",
+              "work": "\\(x=2\\left(\\dfrac1{16}\\right)+3\\left(\\dfrac{1}{4}\\right)+\\ln4=\\dfrac{1}{8}+\\dfrac{3}{4}+\\ln4=\\dfrac{7}{8}+\\ln4\\approx2.26\\ \\text{m}\\)"
+            },
+            {
+              "explain": "Why not the others: B solves \\(u=\\dfrac{1}{4}\\) for \\(t\\) wrongly; C and D give the starting position, not the rest position.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "At what time and where does the particle come to rest?",
+              "note": "\\(v=0\\); let \\(u=e^{-t}\\): \\(4u^2+3u-1=0\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Merewether High School 2025 Year 12 Trial HSC Mathematics Advanced",
+            "school": "Merewether High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -4434,6 +4546,156 @@
           "meta": {
             "source": "Moriah College 2021 HSC Trial Examination Mathematics Advanced",
             "school": "Moriah College",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "merewether2025-q27a",
+          "type": "mc",
+          "stem": "Zenthralium is a rare radioactive substance that decays with a highly toxic residue. The rate of change is given by \\(\\dfrac{dM}{dt}=-kM\\), where \\(k\\) is a positive constant and \\(M\\) is the mass present. Show that \\(M=M_{0}e^{-kt}\\) satisfies \\(\\dfrac{dM}{dt}=-kM\\). Which working is correct?",
+          "difficulty": "easy",
+          "options": [
+            "\\(\\dfrac{dM}{dt}=M_{0}\\times(-k)e^{-kt}=-k\\left(M_{0}e^{-kt}\\right)=-kM\\)",
+            "\\(\\dfrac{dM}{dt}=M_{0}e^{-kt}=M\\)",
+            "\\(\\dfrac{dM}{dt}=-kM_{0}t\\,e^{-kt}\\)",
+            "\\(\\dfrac{dM}{dt}=kM_{0}e^{-kt}=kM\\)"
+          ],
+          "answer": 0,
+          "hint": "Differentiate \\(M=M_{0}e^{-kt}\\) with respect to \\(t\\): \\(\\dfrac{d}{dt}e^{at}=ae^{at}\\). Here \\(a=-k\\). \\(M_{0}\\) is a constant. Then recognise \\(M_{0}e^{-kt}\\) as \\(M\\).",
+          "steps": [
+            {
+              "explain": "\\(M_{0}\\) is a constant (the starting mass). \\(\\dfrac{d}{dt}e^{-kt}=-ke^{-kt}\\).",
+              "work": "\\(\\dfrac{dM}{dt}=M_{0}\\times(-k)e^{-kt}\\)"
+            },
+            {
+              "explain": "Regroup: \\(M_{0}e^{-kt}\\) is just \\(M\\).",
+              "work": "\\(=-k\\left(M_{0}e^{-kt}\\right)=-kM\\ \\checkmark\\)"
+            },
+            {
+              "explain": "Why not the others: B forgets the chain-rule factor \\(-k\\); C wrongly uses the product rule with \\(t\\); D has the wrong sign (that would be growth).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that \\(M=M_{0}e^{-kt}\\) satisfies \\(\\dfrac{dM}{dt}=-kM\\).",
+              "note": "\\(\\dfrac{d}{dt}e^{-kt}=-ke^{-kt}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Merewether High School 2025 Year 12 Trial HSC Mathematics Advanced",
+            "school": "Merewether High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "merewether2025-q27b",
+          "type": "mc",
+          "stem": "Zenthralium is a rare radioactive substance that decays with a highly toxic residue. The rate of change is given by \\(\\dfrac{dM}{dt}=-kM\\), where \\(k\\) is a positive constant and \\(M\\) is the mass present, and \\(M=M_{0}e^{-kt}\\). The half-life of Zenthralium is 29 years. This means it takes 29 years for 100 g to decay to 50 g. Find the value of \\(k\\) correct to 3 significant figures.",
+          "difficulty": "medium",
+          "options": [
+            "\\(0.0239\\)",
+            "\\(0.0345\\)",
+            "\\(0.693\\)",
+            "\\(0.0172\\)"
+          ],
+          "answer": 0,
+          "hint": "Substitute \\(M_{0}=100\\), \\(M=50\\), \\(t=29\\) into \\(M=M_{0}e^{-kt}\\). Divide, take \\(\\ln\\) of both sides. Remember \\(\\ln\\dfrac{1}{2}=-\\ln2\\).",
+          "steps": [
+            {
+              "explain": "Substitute the half-life information.",
+              "work": "\\(50=100e^{-29k}\\)"
+            },
+            {
+              "explain": "Divide by 100.",
+              "work": "\\(e^{-29k}=\\dfrac{1}{2}\\)"
+            },
+            {
+              "explain": "Take \\(\\ln\\) of both sides: \\(-29k=\\ln\\dfrac{1}{2}=-\\ln2\\).",
+              "work": "\\(k=\\dfrac{\\ln2}{29}\\)"
+            },
+            {
+              "explain": "Calculate: \\(\\dfrac{0.693147}{29}=0.023901\\ldots\\). Three significant figures: \\(0.0239\\).",
+              "work": "\\(k\\approx0.0239\\)"
+            },
+            {
+              "explain": "Why not the others: B is \\(\\dfrac{1}{29}\\); C is \\(\\ln2\\) (forgot to divide by 29); D is \\(\\dfrac{\\ln2}{40}\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the value of \\(k\\) correct to 3 significant figures.",
+              "note": "\\(50=100e^{-29k}\\Rightarrow k=\\dfrac{\\ln2}{29}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Merewether High School 2025 Year 12 Trial HSC Mathematics Advanced",
+            "school": "Merewether High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "merewether2025-q27c",
+          "type": "mc",
+          "stem": "Zenthralium is a rare radioactive substance with \\(M=M_{0}e^{-kt}\\) and half-life 29 years (so \\(k=\\dfrac{\\ln2}{29}\\)). A decaying bag of Zenthralium is found illegally dumped at a landfill site. It is weighed and its mass is 12 kg. Calculate the original mass if it was dumped 10 years ago. Give your answer correct to 2 decimal places.",
+          "difficulty": "medium",
+          "options": [
+            "\\(15.24\\) kg",
+            "\\(9.45\\) kg",
+            "\\(12.00\\) kg",
+            "\\(8.52\\) kg"
+          ],
+          "answer": 0,
+          "hint": "The mass NOW (after \\(t=10\\) years) is 12 kg, so \\(M=12\\) and \\(t=10\\). Solve for the ORIGINAL mass \\(M_{0}\\). The original must be MORE than 12 kg because it has been decaying.",
+          "steps": [
+            {
+              "explain": "Substitute \\(M=12\\), \\(t=10\\), \\(k=\\dfrac{\\ln2}{29}\\).",
+              "work": "\\(12=M_{0}e^{-\\frac{\\ln2}{29}\\times10}\\)"
+            },
+            {
+              "explain": "Rearrange: \\(M_{0}=12\\,e^{\\frac{10\\ln2}{29}}\\). The exponent is \\(\\dfrac{10\\times0.693147}{29}=0.23902\\).",
+              "work": "\\(M_{0}=12e^{0.23902}\\)"
+            },
+            {
+              "explain": "Calculate: \\(e^{0.23902}=1.2701\\), so \\(M_{0}=12\\times1.2701=15.24\\).",
+              "work": "\\(M_{0}\\approx15.24\\ \\text{kg}\\)"
+            },
+            {
+              "explain": "Check: \\(15.24\\) is bigger than 12 ✓ (10 years is about \\(\\dfrac{1}{3}\\) of a half-life, so about 79% remains: \\(15.24\\times0.787=12.0\\)). Why not the others: B (9.45) multiplies by \\(e^{-kt}\\) instead of dividing; C ignores decay; D is a guess.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Calculate the original mass if it was dumped 10 years ago.",
+              "note": "\\(12=M_0e^{-10k}\\Rightarrow M_0=12e^{10k}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Merewether High School 2025 Year 12 Trial HSC Mathematics Advanced",
+            "school": "Merewether High School",
             "grade": "12",
             "origin": "teacher"
           }

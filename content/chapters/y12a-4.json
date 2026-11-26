@@ -9046,6 +9046,60 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "merewether2025-q24",
+          "type": "mc",
+          "stem": "Find in gradient intercept form the equation of the tangent to the curve \\(y=\\sqrt{6x+4}+e^{\\frac12x}\\) at the point on the curve where \\(x=0\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(y=2x+3\\)",
+            "\\(y=2x+2\\)",
+            "\\(y=x+3\\)",
+            "\\(y=3x+2\\)"
+          ],
+          "answer": 0,
+          "hint": "Tangent: \\(y-y_1=m(x-x_1)\\), with the point from \\(y(0)\\) and the gradient \\(m=\\dfrac{dy}{dx}\\) at \\(x=0\\). Differentiate \\(\\sqrt{6x+4}=(6x+4)^{\\frac12}\\) with the chain rule and \\(e^{\\frac12x}\\) gives \\(\\dfrac12e^{\\frac12x}\\).",
+          "steps": [
+            {
+              "explain": "Point: \\(x=0\\): \\(y=\\sqrt4+e^{0}=2+1=3\\).",
+              "work": "\\((0,3)\\)"
+            },
+            {
+              "explain": "Differentiate: \\(\\dfrac{d}{dx}(6x+4)^{\\frac12}=\\dfrac{1}{2}(6x+4)^{-\\frac12}\\times6=\\dfrac{3}{\\sqrt{6x+4}}\\), and \\(\\dfrac{d}{dx}e^{\\frac12x}=\\dfrac12e^{\\frac12x}\\).",
+              "work": "\\(\\dfrac{dy}{dx}=\\dfrac{3}{\\sqrt{6x+4}}+\\dfrac12e^{\\frac12x}\\)"
+            },
+            {
+              "explain": "Gradient at \\(x=0\\).",
+              "work": "\\(m=\\dfrac{3}{2}+\\dfrac{1}{2}=2\\)"
+            },
+            {
+              "explain": "Tangent through \\((0,3)\\) with gradient 2: the \\(y\\)-intercept is already 3.",
+              "work": "\\(y-3=2(x-0)\\ \\Rightarrow\\ y=2x+3\\)"
+            },
+            {
+              "explain": "Why not the others: B has the wrong intercept (2); C has the wrong gradient (1); D has both wrong.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find in gradient intercept form the equation of the tangent",
+              "note": "Point \\((0,3)\\); \\(m=\\dfrac{3}{2}+\\dfrac{1}{2}=2\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Merewether High School 2025 Year 12 Trial HSC Mathematics Advanced",
+            "school": "Merewether High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },

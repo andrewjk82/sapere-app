@@ -2116,6 +2116,63 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "merewether2025-q14a",
+          "type": "mc",
+          "stem": "The table below shows the probability distribution of a discrete random variable \\(X\\). Show that \\(k=0.2\\). Which working is correct?",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 368 76\" width=\"100%\" height=\"auto\" style=\"max-width:368px;display:block;margin:0 auto\"><g transform=\"translate(4,4)\"><rect x=\"0\" y=\"0\" width=\"84\" height=\"34\" fill=\"#e0e7ff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"42.0\" y=\"22.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">x</text><rect x=\"84\" y=\"0\" width=\"46\" height=\"34\" fill=\"#e0e7ff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"107.0\" y=\"22.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0</text><rect x=\"130\" y=\"0\" width=\"46\" height=\"34\" fill=\"#e0e7ff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"153.0\" y=\"22.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><rect x=\"176\" y=\"0\" width=\"46\" height=\"34\" fill=\"#e0e7ff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"199.0\" y=\"22.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4</text><rect x=\"222\" y=\"0\" width=\"46\" height=\"34\" fill=\"#e0e7ff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"245.0\" y=\"22.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">5</text><rect x=\"268\" y=\"0\" width=\"46\" height=\"34\" fill=\"#e0e7ff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"291.0\" y=\"22.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">8</text><rect x=\"314\" y=\"0\" width=\"46\" height=\"34\" fill=\"#e0e7ff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"337.0\" y=\"22.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">9</text><rect x=\"0\" y=\"34\" width=\"84\" height=\"34\" fill=\"#e0e7ff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"42.0\" y=\"56.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">P(X = x)</text><rect x=\"84\" y=\"34\" width=\"46\" height=\"34\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"107.0\" y=\"56.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">k²</text><rect x=\"130\" y=\"34\" width=\"46\" height=\"34\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"153.0\" y=\"56.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0.16</text><rect x=\"176\" y=\"34\" width=\"46\" height=\"34\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"199.0\" y=\"56.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0.18</text><rect x=\"222\" y=\"34\" width=\"46\" height=\"34\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"245.0\" y=\"56.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0.3</text><rect x=\"268\" y=\"34\" width=\"46\" height=\"34\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"291.0\" y=\"56.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">k</text><rect x=\"314\" y=\"34\" width=\"46\" height=\"34\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"337.0\" y=\"56.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0.12</text></g></svg>"
+          },
+          "options": [
+            "\\(k^{2}+k+0.76=1\\Rightarrow k^{2}+k-0.24=0\\Rightarrow(k-0.2)(k+1.2)=0\\Rightarrow k=0.2\\)",
+            "\\(k^{2}+k+0.76=0\\Rightarrow k=-0.2\\)",
+            "\\(k^{2}+k=1\\Rightarrow k=0.62\\)",
+            "\\(2k+0.76=1\\Rightarrow k=0.12\\)"
+          ],
+          "answer": 0,
+          "hint": "All probabilities add up to 1. Add the known ones (0.16+0.18+0.3+0.12=0.76), set the total to 1, then solve the quadratic. A probability can't be negative, so reject the negative root.",
+          "steps": [
+            {
+              "explain": "Known probabilities: \\(0.16+0.18+0.3+0.12=0.76\\). Sum of all \\(=1\\).",
+              "work": "\\(k^{2}+k+0.76=1\\)"
+            },
+            {
+              "explain": "Rearrange to \\(=0\\).",
+              "work": "\\(k^{2}+k-0.24=0\\)"
+            },
+            {
+              "explain": "Factorise: two numbers multiplying to \\(-0.24\\) and adding to 1 are \\(1.2\\) and \\(-0.2\\).",
+              "work": "\\((k-0.2)(k+1.2)=0\\)"
+            },
+            {
+              "explain": "\\(k=0.2\\) or \\(k=-1.2\\). Reject \\(-1.2\\) (a probability cannot be negative).",
+              "work": "\\(k=0.2\\ \\checkmark\\)"
+            },
+            {
+              "explain": "Why not the others: B sets the sum to 0; C forgets the 0.76; D treats \\(k^{2}\\) as \\(k\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that \\(k=0.2\\)",
+              "note": "\\(\\sum P=1\\); reject the negative root."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Merewether High School 2025 Year 12 Trial HSC Mathematics Advanced",
+            "school": "Merewether High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -3779,6 +3836,55 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "merewether2025-q14b",
+          "type": "mc",
+          "stem": "The table gives the probability distribution of \\(X\\) (with \\(k=0.2\\), so \\(k^{2}=0.04\\)). Calculate \\(E(X)\\).",
+          "difficulty": "easy",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 368 76\" width=\"100%\" height=\"auto\" style=\"max-width:368px;display:block;margin:0 auto\"><g transform=\"translate(4,4)\"><rect x=\"0\" y=\"0\" width=\"84\" height=\"34\" fill=\"#e0e7ff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"42.0\" y=\"22.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">x</text><rect x=\"84\" y=\"0\" width=\"46\" height=\"34\" fill=\"#e0e7ff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"107.0\" y=\"22.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0</text><rect x=\"130\" y=\"0\" width=\"46\" height=\"34\" fill=\"#e0e7ff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"153.0\" y=\"22.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><rect x=\"176\" y=\"0\" width=\"46\" height=\"34\" fill=\"#e0e7ff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"199.0\" y=\"22.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4</text><rect x=\"222\" y=\"0\" width=\"46\" height=\"34\" fill=\"#e0e7ff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"245.0\" y=\"22.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">5</text><rect x=\"268\" y=\"0\" width=\"46\" height=\"34\" fill=\"#e0e7ff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"291.0\" y=\"22.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">8</text><rect x=\"314\" y=\"0\" width=\"46\" height=\"34\" fill=\"#e0e7ff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"337.0\" y=\"22.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">9</text><rect x=\"0\" y=\"34\" width=\"84\" height=\"34\" fill=\"#e0e7ff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"42.0\" y=\"56.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">P(X = x)</text><rect x=\"84\" y=\"34\" width=\"46\" height=\"34\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"107.0\" y=\"56.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">k²</text><rect x=\"130\" y=\"34\" width=\"46\" height=\"34\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"153.0\" y=\"56.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0.16</text><rect x=\"176\" y=\"34\" width=\"46\" height=\"34\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"199.0\" y=\"56.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0.18</text><rect x=\"222\" y=\"34\" width=\"46\" height=\"34\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"245.0\" y=\"56.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0.3</text><rect x=\"268\" y=\"34\" width=\"46\" height=\"34\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"291.0\" y=\"56.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">k</text><rect x=\"314\" y=\"34\" width=\"46\" height=\"34\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"337.0\" y=\"56.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0.12</text></g></svg>"
+          },
+          "options": [
+            "\\(5.22\\)",
+            "\\(4.5\\)",
+            "\\(5.0\\)",
+            "\\(33.54\\)"
+          ],
+          "answer": 0,
+          "hint": "\\(E(X)=\\sum x\\cdot P(X=x)\\): multiply each value by its probability, then add.",
+          "steps": [
+            {
+              "explain": "Products: \\(0\\times0.04=0\\); \\(2\\times0.16=0.32\\); \\(4\\times0.18=0.72\\); \\(5\\times0.3=1.5\\); \\(8\\times0.2=1.6\\); \\(9\\times0.12=1.08\\).",
+              "work": "\\(E(X)=0+0.32+0.72+1.5+1.6+1.08\\)"
+            },
+            {
+              "explain": "Add: \\(0.32+0.72=1.04\\); \\(+1.5=2.54\\); \\(+1.6=4.14\\); \\(+1.08=5.22\\).",
+              "work": "\\(E(X)=5.22\\)"
+            },
+            {
+              "explain": "Why not the others: B and C are guesses; D (33.54) is \\(E(X^{2})\\), not \\(E(X)\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Calculate \\(E(X)\\)",
+              "note": "\\(E(X)=\\sum xP(x)\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Merewether High School 2025 Year 12 Trial HSC Mathematics Advanced",
+            "school": "Merewether High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -5344,6 +5450,59 @@
           "meta": {
             "source": "Northern Beaches Secondary College Manly Campus 2020 Year 12 Trial Examination Mathematics Advanced",
             "school": "Northern Beaches Secondary College, Manly Campus",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "merewether2025-q14c",
+          "type": "mc",
+          "stem": "The table gives the probability distribution of \\(X\\) (with \\(k=0.2\\); \\(E(X)=5.22\\)). Calculate \\(\\text{Var}(X)\\).",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 368 76\" width=\"100%\" height=\"auto\" style=\"max-width:368px;display:block;margin:0 auto\"><g transform=\"translate(4,4)\"><rect x=\"0\" y=\"0\" width=\"84\" height=\"34\" fill=\"#e0e7ff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"42.0\" y=\"22.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">x</text><rect x=\"84\" y=\"0\" width=\"46\" height=\"34\" fill=\"#e0e7ff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"107.0\" y=\"22.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0</text><rect x=\"130\" y=\"0\" width=\"46\" height=\"34\" fill=\"#e0e7ff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"153.0\" y=\"22.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><rect x=\"176\" y=\"0\" width=\"46\" height=\"34\" fill=\"#e0e7ff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"199.0\" y=\"22.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4</text><rect x=\"222\" y=\"0\" width=\"46\" height=\"34\" fill=\"#e0e7ff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"245.0\" y=\"22.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">5</text><rect x=\"268\" y=\"0\" width=\"46\" height=\"34\" fill=\"#e0e7ff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"291.0\" y=\"22.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">8</text><rect x=\"314\" y=\"0\" width=\"46\" height=\"34\" fill=\"#e0e7ff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"337.0\" y=\"22.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">9</text><rect x=\"0\" y=\"34\" width=\"84\" height=\"34\" fill=\"#e0e7ff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"42.0\" y=\"56.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">P(X = x)</text><rect x=\"84\" y=\"34\" width=\"46\" height=\"34\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"107.0\" y=\"56.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">k²</text><rect x=\"130\" y=\"34\" width=\"46\" height=\"34\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"153.0\" y=\"56.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0.16</text><rect x=\"176\" y=\"34\" width=\"46\" height=\"34\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"199.0\" y=\"56.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0.18</text><rect x=\"222\" y=\"34\" width=\"46\" height=\"34\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"245.0\" y=\"56.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0.3</text><rect x=\"268\" y=\"34\" width=\"46\" height=\"34\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"291.0\" y=\"56.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">k</text><rect x=\"314\" y=\"34\" width=\"46\" height=\"34\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"337.0\" y=\"56.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0.12</text></g></svg>"
+          },
+          "options": [
+            "\\(6.2916\\)",
+            "\\(33.54\\)",
+            "\\(27.2484\\)",
+            "\\(2.5\\)"
+          ],
+          "answer": 0,
+          "hint": "\\(\\text{Var}(X)=E(X^{2})-[E(X)]^{2}\\). First find \\(E(X^{2})=\\sum x^{2}P(x)\\) (square the value, then multiply by the probability).",
+          "steps": [
+            {
+              "explain": "\\(E(X^{2})\\): \\(0\\times0.04+4\\times0.16+16\\times0.18+25\\times0.3+64\\times0.2+81\\times0.12\\).",
+              "work": "\\(E(X^{2})=0+0.64+2.88+7.5+12.8+9.72=33.54\\)"
+            },
+            {
+              "explain": "Square the mean: \\(5.22^{2}=27.2484\\).",
+              "work": "\\([E(X)]^{2}=27.2484\\)"
+            },
+            {
+              "explain": "Subtract.",
+              "work": "\\(\\text{Var}(X)=33.54-27.2484=6.2916\\)"
+            },
+            {
+              "explain": "Why not the others: B is \\(E(X^{2})\\) only; C is \\([E(X)]^{2}\\) only; D is a guess.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Calculate \\(\\text{Var}(X)\\)",
+              "note": "\\(\\text{Var}=E(X^2)-[E(X)]^2\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Merewether High School 2025 Year 12 Trial HSC Mathematics Advanced",
+            "school": "Merewether High School",
             "grade": "12",
             "origin": "teacher"
           }
