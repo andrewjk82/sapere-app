@@ -2036,6 +2036,12 @@ const StudentDetail = ({ studentId, onBack }) => {
               />
             </CollapsibleSection>
 
+            {[student.calculationEnabled === false && "Daily Calculation", student.examPrepEnabled !== true && "Exam prep", student.scholarshipEnabled !== true && "Special tests", student.hscPastPaperEnabled !== true && "HSC past paper questions"].filter(Boolean).length > 0 && (
+              <p className="sd-muted" style={{ margin: 0, fontSize: "0.85rem" }}>
+                Off: {[student.calculationEnabled === false && "Daily Calculation", student.examPrepEnabled !== true && "Exam prep", student.scholarshipEnabled !== true && "Special tests", student.hscPastPaperEnabled !== true && "HSC past paper questions"].filter(Boolean).join(", ")}. Turn one on in Features above to see its options.
+              </p>
+            )}
+            {student.calculationEnabled !== false && (
             <CollapsibleSection
               title="Daily Calculation"
               summary={student.calculationEnabled === false ? 'Disabled' : 'Timed calculation rounds'}
@@ -2068,10 +2074,12 @@ const StudentDetail = ({ studentId, onBack }) => {
                   }}
                 />
             </CollapsibleSection>
+            )}
 
             {/* EXAM PREP — same accordion shape as Basic calculation. The
                 ENABLE/DISABLE toggle inside the panel controls the per-student
                 flag, replacing the toggle that used to live in Edit Student. */}
+            {student.examPrepEnabled === true && (
             <CollapsibleSection
               title="Exam prep"
               summary={student.examPrepEnabled === true ? '15-question random rounds · no daily limit' : 'Disabled'}
@@ -2087,7 +2095,9 @@ const StudentDetail = ({ studentId, onBack }) => {
               />
 
             </CollapsibleSection>
+            )}
 
+            {student.scholarshipEnabled === true && (
             <CollapsibleSection
               title="Special tests"
               summary={student.scholarshipEnabled === true ? 'OC · Selective · Scholarship pages' : 'Disabled'}
@@ -2100,7 +2110,9 @@ const StudentDetail = ({ studentId, onBack }) => {
                 onUpdateSetting={handleUpdateCurriculumSetting}
               />
             </CollapsibleSection>
+            )}
 
+            {student.hscPastPaperEnabled === true && (
             <CollapsibleSection
               title="HSC past paper questions"
               summary={student.hscPastPaperEnabled === true ? `+${student.hscPastPaperCount || 3} questions per Daily Challenge` : 'Disabled'}
@@ -2113,94 +2125,40 @@ const StudentDetail = ({ studentId, onBack }) => {
                 onUpdateSetting={handleUpdateCurriculumSetting}
               />
             </CollapsibleSection>
+            )}
 
-            <CollapsibleSection title="XP" summary={`${Number(student.totalXP) || 0} XP`} defaultOpen>
-              <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
-                <button
-                  onClick={handleRecalculateXP}
-                  style={{
-                    padding: "6px 12px",
-                    borderRadius: "8px",
-                    background: "#f5f3ff",
-                    color: "#6366f1",
-                    border: "1px solid #e0e7ff",
-                    fontSize: "0.7rem",
-                    fontWeight: 800,
-                    cursor: "pointer",
-                  }}
-                >
-                  Recalculate XP
-                </button>
-                <button
-                  onClick={handleAdjustXP}
-                  style={{
-                    padding: "6px 12px",
-                    borderRadius: "8px",
-                    background: "#fefce8",
-                    color: "#ca8a04",
-                    border: "1px solid #fef08a",
-                    fontSize: "0.7rem",
-                    fontWeight: 800,
-                    cursor: "pointer",
-                  }}
-                >
-                  ± Adjust XP
-                </button>
-                <button
-                  onClick={async () => {
-                    const todayStr = new Date().toLocaleDateString("en-CA", { timeZone: "Australia/Sydney" });
-                    const syncUid = challengeResultsUid || activeStudentId;
-                    await handleResetChallenge({
-                      id: todayStr,
-                      studentId: syncUid,
-                      challengeType: "daily",
-                      statCollection: "daily_stats",
-                    });
-                  }}
-                  style={{
-                    padding: "6px 12px",
-                    borderRadius: "8px",
-                    background: "#fff1f2",
-                    color: "#e11d48",
-                    border: "1px solid #ffe4e6",
-                    fontSize: "0.7rem",
-                    fontWeight: 800,
-                    cursor: "pointer",
-                    marginLeft: "8px",
-                  }}
-                >
-                  Force Reset Daily
-                </button>
-                <button
-                  onClick={async () => {
-                    const todayStr = new Date().toLocaleDateString("en-CA", { timeZone: "Australia/Sydney" });
-                    const syncUid = challengeResultsUid || activeStudentId;
-                    await handleResetChallenge({
-                      id: todayStr,
-                      studentId: syncUid,
-                      challengeType: "calc",
-                      statCollection: "calc_stats",
-                    });
-                  }}
-                  style={{
-                    padding: "6px 12px",
-                    borderRadius: "8px",
-                    background: "#fff1f2",
-                    color: "#e11d48",
-                    border: "1px solid #ffe4e6",
-                    fontSize: "0.7rem",
-                    fontWeight: 800,
-                    cursor: "pointer",
-                    marginLeft: "8px",
-                  }}
-                >
-                  Force Reset Calc
-                </button>
+            <section className="sd-tile">
+              <h3 className="sd-h">XP <small>{`${Number(student.totalXP) || 0} XP`}</small></h3>
+              <div className="sd-setting-row">
+                <span>Recalculate XP<small>adds up XP again from every saved result</small></span>
+                <button type="button" className="sd-btn sd-btn--soft" onClick={handleRecalculateXP}>Recalculate</button>
               </div>
-              <p style={{ margin: "12px 0 0", fontSize: "0.8rem", color: "#94a3b8", fontWeight: 600 }}>
-                Force Reset clears today’s Daily Challenge / Daily Calculation so the student can do it again. It can’t be undone.
-              </p>
-            </CollapsibleSection>
+              <div className="sd-setting-row">
+                <span>Adjust XP<small>add or take away XP by hand</small></span>
+                <button type="button" className="sd-btn sd-btn--soft" onClick={handleAdjustXP}>± Adjust</button>
+              </div>
+            </section>
+
+            <section className="sd-tile sd-danger">
+              <h3 className="sd-h">Reset <small>can’t be undone · asks to confirm</small></h3>
+              <div className="sd-setting-row">
+                <span>Force reset today’s Daily Challenge<small>clears today’s result so the student can do it again</small></span>
+                <button type="button" className="sd-btn sd-btn--warn" onClick={async () => {
+                  const todayStr = new Date().toLocaleDateString("en-CA", { timeZone: "Australia/Sydney" });
+                  const syncUid = challengeResultsUid || activeStudentId;
+                  await handleResetChallenge({ id: todayStr, studentId: syncUid, challengeType: "daily", statCollection: "daily_stats" });
+                }}>Reset</button>
+              </div>
+              <div className="sd-setting-row">
+                <span>Force reset today’s Daily Calculation<small>clears today’s result so the student can do it again</small></span>
+                <button type="button" className="sd-btn sd-btn--warn" onClick={async () => {
+                  const todayStr = new Date().toLocaleDateString("en-CA", { timeZone: "Australia/Sydney" });
+                  const syncUid = challengeResultsUid || activeStudentId;
+                  await handleResetChallenge({ id: todayStr, studentId: syncUid, challengeType: "calc", statCollection: "calc_stats" });
+                }}>Reset</button>
+              </div>
+              <p className="sd-muted" style={{ margin: "10px 0 0", fontSize: "0.82rem" }}>Secret Notebook reset is in Practice → Secret Notebook.</p>
+            </section>
           </div>
         );
       case "special":

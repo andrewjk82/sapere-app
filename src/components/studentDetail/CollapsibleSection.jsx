@@ -11,32 +11,24 @@ const CollapsibleSection = ({ title, summary, badge, badgeTone = 'default', defa
   const [open, setOpen] = useState(defaultOpen);
 
   const badgeColors = {
-    default: { bg: '#eef2ff', fg: '#4338ca' },
-    green:   { bg: '#ecfdf5', fg: '#059669' },
-    amber:   { bg: '#fffbeb', fg: '#b45309' },
-  }[badgeTone] || { bg: '#eef2ff', fg: '#4338ca' };
+    default: { bg: '#ece5fb', fg: '#3b2a78' },
+    green:   { bg: '#d8f1de', fg: '#1f6b43' },
+    amber:   { bg: '#ffe9a6', fg: '#7a5300' },
+  }[badgeTone] || { bg: '#ece5fb', fg: '#3b2a78' };
 
   return (
-    <div style={{
-      background: '#fff',
-      borderRadius: '20px',
-      border: '1px solid rgba(15,23,42,0.07)',
-      boxShadow: open ? '0 12px 30px rgba(15,23,42,0.06)' : '0 4px 14px rgba(15,23,42,0.03)',
-      overflow: 'hidden',
-    }}>
+    <div className="sd-acc">
       {/* Header */}
       <button
         type="button"
         onClick={() => setOpen((o) => !o)}
-        style={{
-          width: '100%', display: 'flex', alignItems: 'center', gap: '14px',
-          padding: '18px 20px', background: 'none', border: 'none', cursor: 'pointer', textAlign: 'left',
-        }}
+        className="sd-acc-head"
+        aria-expanded={open}
       >
         <div style={{ flex: 1, minWidth: 0 }}>
-          <div style={{ fontSize: '0.95rem', fontWeight: 800, color: '#1e1b4b' }}>{title}</div>
+          <div className="sd-acc-title">{title}</div>
           {summary && (
-            <div style={{ fontSize: '0.8rem', fontWeight: 600, color: '#94a3b8', marginTop: '3px', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+            <div className="sd-acc-sum">
               {summary}
             </div>
           )}
@@ -49,7 +41,7 @@ const CollapsibleSection = ({ title, summary, badge, badgeTone = 'default', defa
             {badge}
           </span>
         )}
-        <motion.div animate={{ rotate: open ? 180 : 0 }} transition={{ duration: 0.2 }} style={{ flexShrink: 0, color: '#94a3b8', display: 'grid', placeItems: 'center' }}>
+        <motion.div animate={{ rotate: open ? 180 : 0 }} transition={{ duration: 0.2 }} style={{ flexShrink: 0, color: '#7a6a64', display: 'grid', placeItems: 'center' }}>
           <ChevronDown size={20} />
         </motion.div>
       </button>
@@ -64,7 +56,7 @@ const CollapsibleSection = ({ title, summary, badge, badgeTone = 'default', defa
             transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}
             style={{ overflow: 'hidden' }}
           >
-            <div style={{ padding: '0 20px 20px', borderTop: '1px solid #f1f5f9' }}>
+            <div className="sd-acc-body">
               <div style={{ paddingTop: '18px' }}>{children}</div>
             </div>
           </motion.div>

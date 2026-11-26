@@ -282,3 +282,16 @@ button.sd-t { cursor: pointer; min-height: 32px; }
 .sd-topic-menu button:disabled { color: #c8bbb3; cursor: default; }
 .sd-ch-title:focus-visible, .sd-ch-pill:focus-visible, button.sd-t:focus-visible, .sd-topic-menu button:focus-visible { outline: 3px solid #b9a6f0; outline-offset: 2px; }
 @media (max-width: 600px) { .sd-ch-title { grid-template-columns: 16px minmax(0, 1fr) 40px; gap: 8px; font-size: 0.9rem; } .sd-ch-bar { display: none; } .sd-topics { padding-left: 4px; } .sd-ch-pill { padding: 0 10px; } }
+
+.sd-acc { background: #fffaf2; border-radius: 24px; overflow: hidden; font-family: 'Nunito', var(--font-sans); box-shadow: inset 0 3px 5px rgba(255,255,255,.75), inset 0 -6px 9px rgba(90,60,40,.08), 0 12px 22px rgba(140,100,170,.14); }
+.sd-acc-head { width: 100%; display: flex; align-items: center; gap: 14px; padding: 16px 20px; background: none; border: 0; cursor: pointer; text-align: left; font-family: inherit; }
+.sd-acc-head:focus-visible { outline: 3px solid #b9a6f0; outline-offset: -3px; border-radius: 24px; }
+.sd-acc-title { font-size: 1rem; font-weight: 900; color: #4a2f2a; }
+.sd-acc-sum { font-size: 0.82rem; font-weight: 600; color: #7a6a64; margin-top: 2px; overflow: hidden; text-overflow: ellipsis; }
+.sd-acc-body { padding: 0 20px 20px; border-top: 1px solid #f0e2cc; }
+.sd-setting-row { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 12px 0; border-top: 1px solid #f0e2cc; font-weight: 800; color: #4a2f2a; }
+.sd-setting-row:nth-of-type(1) { border-top: 0; }
+.sd-setting-row small { display: block; color: #7a6a64; font-weight: 600; font-size: 0.8rem; }
+.sd-setting-row .sd-btn { flex: none; }
+.sd-danger { box-shadow: inset 0 0 0 2px #fde2dc, 0 12px 22px rgba(140,100,170,.14); }
+.sd-btn--warn { background: #fde2dc; color: #c2412f; }
