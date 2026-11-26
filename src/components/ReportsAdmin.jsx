@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { collection, query, orderBy, getDocs, doc, updateDoc, deleteDoc, getDoc, limit, setDoc, arrayUnion, increment, runTransaction, serverTimestamp } from 'firebase/firestore';
+import { collection, query, orderBy, doc, updateDoc, deleteDoc, getDoc, limit, setDoc, arrayUnion, increment, runTransaction, serverTimestamp } from 'firebase/firestore';
 import { db } from '../firebase/config';
 import { useAdminFeed } from '../context/AdminFeedContext';
 import { gradeSubmission } from '../services/gradingService';
@@ -17,7 +17,8 @@ import { answersMatch } from '../utils/answerMatching';
 import { resolveCorrectOptionIndex, resolveCorrectOptionText } from '../utils/mcOptionShuffle';
 import { adminGetQuestion } from '../services/contentLoader';
 import { contentPatch } from '../services/contentApi';
-import { retryOnTimeout, withTimeout } from '../utils/withTimeout';
+import { withTimeout } from '../utils/withTimeout';
+import { listenOnce } from '../utils/reconnect';
 
 // ── Report provenance ────────────────────────────────────────────────────────
 // Students file reports from several places. Only some of them correspond to a
@@ -360,10 +361,12 @@ const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode, onOpenI
   const fetchReports = useCallback(async () => {
     try {
       const qReports = query(collection(db, 'reports'), orderBy('createdAt', 'desc'), limit(ADMIN_REPORT_LIMIT));
-      // A read that gets no answer (stalled connection / damaged on-device cache) never fails by itself: ask again
-      // once, then show an error with a Retry button instead of "Loading items..." forever.
-      const snapshot = await retryOnTimeout(() => getDocs(qReports), { ms: 10000, tries: 2 });
-      const rawReports = snapshot.docs.map(d => ({ id: d.id, ...d.data() }));
+      // The saved copy shows at once. No server answer: reconnect and ask again, then an error with a Retry button.
+      const toList = (snap) => snap.docs.map(d => ({ id: d.id, ...d.data() }));
+      const snapshot = await listenOnce(qReports, {
+        onCached: (snap) => { setReports(toList(snap)); setReportsLoading(false); },
+      });
+      const rawReports = toList(snapshot);
       // Show the list right away; the live-question enrichment below fills in multi-part details afterwards, so a slow
       // or stuck content download can no longer keep the whole screen on "Loading items...".
       setReports(rawReports);
