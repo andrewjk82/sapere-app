@@ -7,6 +7,7 @@ import { useLessonNote, useNoteFlush, saveNoteLocal, deleteNoteLocal, flushNotes
 import { localCache } from '../services/localCacheService';
 import ClassMonthCalendar from './ClassMonthCalendar';
 import MakeupClasses from './MakeupClasses';
+import ExamMistakesButton from './class/ExamMistakes';
 import { subscribeScheduleSessions, subscribeSessionHistory, resetSessionHistory } from '../services/teacherSessions';
 import WaitingList from './WaitingList';
 import LessonWorkspace from './LessonWorkspace';
@@ -476,6 +477,10 @@ export default function ClassPage({ students = [], onSelectStudent, onOpenReport
 
       {padOpen && <NotePad key={`pad:${unit.key}`} unit={unit} onClose={() => setPadOpen(false)} />}
 
+      {unit.isGroup && (
+        <ExamMistakesButton students={unit.sessions.map((x) => ({ id: findStudent(sessionStudentId(x))?.id, name: firstName(x.studentName) }))} />
+      )}
+
       {unit.isGroup ? <GroupView key={`view:${unit.key}`} {...shared} /> : <SoloView key={`view:${unit.key}`} {...shared} />}
 
       {hwOpen && (
@@ -646,6 +651,7 @@ function SoloView({ openReports, pendingGrading, onOpenReports, lessonNav, openL
             <h3>Daily Practice<small>{week.filter((d) => d.state === 'done').length}/{week.filter((d) => !d.future).length} this week</small></h3>
             <WeekDots week={week} />
             <p className="cls-muted">Today: {todayDaily === 'done' ? 'done' : todayDaily === 'part' ? 'started' : 'not yet'}{offline ? ' · offline' : ''}</p>
+            <ExamMistakesButton students={[{ id: student?.id, name: firstName(lesson.studentName) }]} />
           </article>
         </aside>
     </>

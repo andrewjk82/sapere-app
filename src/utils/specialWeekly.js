@@ -15,7 +15,7 @@ import { getSprintWeekId } from './sprintWeek.js';
 
 export const SCHTEST_PREFIX = 'sapere:schtest:';
 export const KEEP_WEEKS = 12;
-export const MAX_WRONG_IDS = 30;
+export const MAX_WRONG_IDS = 60;
 
 /** 'sapere:schtest:<uid>:<[mock:|daily:]examId>:<topicId>' → { kind, examId, topicId } (null for any other key). */
 export const parseTestKey = (uid, key) => {

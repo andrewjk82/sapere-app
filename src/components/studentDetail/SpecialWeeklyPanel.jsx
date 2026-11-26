@@ -76,7 +76,7 @@ export default function SpecialWeeklyPanel({ student, limit = 8 }) {
                         )}
                         {e.wrong.length > 0 && (
                           <details style={{ marginTop: 6 }}>
-                            <summary style={{ cursor: 'pointer', fontSize: '0.8rem', fontWeight: 700, color: C.red }}>Missed {e.wrong.length >= 30 ? '30+' : e.wrong.length} question{e.wrong.length === 1 ? '' : 's'}</summary>
+                            <summary style={{ cursor: 'pointer', fontSize: '0.8rem', fontWeight: 700, color: C.red }}>Missed {e.wrong.length >= 60 ? '60+' : e.wrong.length} question{e.wrong.length === 1 ? '' : 's'}</summary>
                             <div style={{ marginTop: 4, fontSize: '0.74rem', color: C.faint, lineHeight: 1.6, wordBreak: 'break-all' }}>{e.wrong.join(', ')}</div>
                           </details>
                         )}

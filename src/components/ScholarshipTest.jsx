@@ -1,3 +1,4 @@
+import { syncSpecialNow } from '../services/specialWeeklyService';
 import { lazy, Suspense, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { ArrowLeft, CheckCircle2, ChevronLeft, ChevronRight, Clock, Lightbulb, Play, XCircle } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
@@ -150,7 +151,7 @@ const Leaf = ({ q, picked, onPick, review, label }) => {
 };
 
 /** A question (single MC or a passage with MC parts), answerable or in review. */
-const QuestionBody = ({ q, answer, onAnswer, review }) => {
+export const QuestionBody = ({ q, answer, onAnswer, review }) => {
   if (!q.subQuestions?.length) return <Leaf q={q} picked={answer} onPick={onAnswer} review={review} />;
   return (
     <div>
@@ -233,11 +234,13 @@ const ScholarshipTest = ({ topic, chapter, profile, onBack, size: sizeProp = TES
       ...attemptDetails(qs, s.current.answers),
     };
     save(applyFinishedTest({ ...s, current: null, attempts: [...s.attempts, attempt] }, attempt));
+    // This week's missed questions reach the teacher straight away (one write per finished test).
+    if (uid !== 'anon') syncSpecialNow({ uid }).catch(() => {});
     setConfirming(false);
     setReviewId(attempt.id);
     setReviewIdx(null);
     setView('result');
-  }, [st, byId, save, limit]);
+  }, [st, byId, save, limit, uid]);
 
   // Clock tick; time up → submit (also catches a test whose time ran out while away).
   useEffect(() => {

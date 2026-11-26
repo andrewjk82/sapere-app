@@ -2,6 +2,7 @@ import { doc, updateDoc, deleteField } from 'firebase/firestore';
 import { db } from '../firebase/config';
 import { getDeviceId } from './studySessionSyncService';
 import { collectAttempts, buildWeeks, pendingWeeks, buildUploadPatch } from '../utils/specialWeekly';
+import { getSprintWeekId } from '../utils/sprintWeek';
 
 const sentKey = (uid) => `sapere:schweekly:sent:${uid}`;
 const readSent = (uid) => { try { return JSON.parse(localStorage.getItem(sentKey(uid))) || {}; } catch { return {}; } };
@@ -24,4 +25,16 @@ export const syncSpecialWeekly = async ({ uid, existingKeys = [], now = new Date
   pending.forEach((w) => { next[w] = now.toISOString(); });
   try { localStorage.setItem(sentKey(uid), JSON.stringify(next)); } catch { /* the week would be sent again next time */ }
   return { sent: pending.length };
+};
+
+/**
+ * Send the running week's summary right after a test, so the teacher can review its misses in this week's lesson.
+ * One write; the same field path is overwritten each time, and the finished week is still sent as before.
+ */
+export const syncSpecialNow = async ({ uid, now = new Date() }) => {
+  if (!uid) return;
+  const weeks = buildWeeks(collectAttempts(uid));
+  const current = getSprintWeekId(now);
+  if (!weeks[current]) return;
+  await updateDoc(doc(db, 'users', uid), buildUploadPatch({ weeks, pending: [current], deviceId: getDeviceId(), now, drop: deleteField() }));
 };
