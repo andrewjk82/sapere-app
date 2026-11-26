@@ -88,5 +88,6 @@
 @media (min-width: 1100px) {
   .dash-split { column-gap: 48px !important; }
   /* 22px = panel padding + border, so the side cards still line up with the board's rows. */
-  .dash-split__side { margin-top: 92px; margin-bottom: 22px; }
+  /* contain: size — the side column never makes the row taller than the board; it only fills the height it is given. */
+  .dash-split__side { margin-top: 92px; margin-bottom: 22px; contain: size; }
 }

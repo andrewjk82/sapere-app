@@ -1,3 +1,4 @@
+import { packReport } from '../utils/packReport';
 import React, { useState, useEffect, useRef, useMemo, useCallback } from 'react';
 import { playAnswerResult } from '../utils/answerSound';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -1099,7 +1100,7 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
         try { sketchDataUrl = await canvasRef.current?.exportImage?.({ force: false }) || null; } catch { /* ignore */ }
       }
 
-      await addDoc(collection(db, 'reports'), {
+      await addDoc(collection(db, 'reports'), await packReport({
         studentId: user.uid,
         studentName: user.displayName || user.email || 'Student',
         questionId: currentQ?.id || '',
@@ -1131,7 +1132,7 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
         message: reportMessage,
         status: 'open',
         createdAt: serverTimestamp()
-      });
+      }));
       markSessionReportSubmitted();
       setIsReporting(false);
       setReportedQuestion(null);
