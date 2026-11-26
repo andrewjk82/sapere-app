@@ -62,7 +62,6 @@ import { CURRICULUM_DATA } from "../constants/curriculumData";
 import MathView, { toDisplayText } from "./MathView";
 import HscScoreChart from "./HscScoreChart";
 import HscTab from "./studentDetail/HscTab";
-import CurriculumTab from "./studentDetail/CurriculumTab";
 import WeeklyProgressTrackers from "./studentDetail/WeeklyProgressTrackers";
 import ChallengeDetailModal from "./studentDetail/ChallengeDetailModal";
 import ExtraRoundsPanel from "./challenge/ExtraRoundsPanel";
@@ -76,6 +75,7 @@ import TermResultsCard from "./studentDetail/TermResultsCard";
 import QuickSwitches from "./studentDetail/QuickSwitches";
 import HomeworkTab from "./studentDetail/HomeworkTab";
 import PracticeHistory from "./studentDetail/PracticeHistory";
+import ProgressTab from "./studentDetail/ProgressTab";
 import SecretNotebookPanel from "./studentDetail/SecretNotebookPanel";
 import ExamPrepPanel from "./studentDetail/ExamPrepPanel";
 import HscPastPaperPanel from "./studentDetail/HscPastPaperPanel";
@@ -1978,13 +1978,15 @@ const StudentDetail = ({ studentId, onBack }) => {
         );
       case "curriculum":
         return (
-          <CurriculumTab
-            styles={styles}
-            assignedYears={assignedYears}
+          <ProgressTab
+            student={student}
+            collectionName={activeStudentCollection}
+            studentDocId={activeStudentId}
             chapters={chapters}
+            assignedYears={assignedYears}
             assignedChapters={assignedChapters}
             completedChapters={completedChapters}
-            topicProgress={topicProgress}
+            sessions={progressSessions}
             onToggleChapter={handleToggleChapter}
           />
         );
