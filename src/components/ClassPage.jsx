@@ -558,7 +558,7 @@ function SoloView({ openReports, pendingGrading, onOpenReports, lessonNav, openL
   const allOpenHomework = useMemo(() => (sessions || []).filter(homeworkOpen).sort((a, b) => (b.date || '').localeCompare(a.date || '')), [sessions]);
 
   const progress = (() => {
-    const { year, topics } = courseTopics(student || {});
+    const { year, topics } = courseTopics(student || {}, sessions || []);
     if (!topics.length || !sessions) return { year, topics, index: -1 };
     const at = new Map(topics.map((t, i) => [t.id, i]));
     let index = -1;

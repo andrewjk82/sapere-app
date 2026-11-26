@@ -1129,10 +1129,12 @@ const StudentDetail = ({ studentId, onBack }) => {
   // mistakes reviewed = done; the teacher's own Done / Not done always wins).
   const progressSessions = useStudentSessions(activeStudentId);
   const topicProgress = useMemo(() => {
-    const { topics } = courseTopics(student || {});
     const derived = progressSessions ? deriveTopicStates(progressSessions, new Date().toLocaleDateString('en-CA')) : new Map();
-    const statuses = topicStatuses(topics, derived, { completed: completedChapters, overrides: student?.progressOverrides || {} });
-    return { loaded: Boolean(progressSessions), sum: summarize(statuses), chapters: byChapter(statuses) };
+    const statusesFor = (topics) => topicStatuses(topics, derived, { completed: completedChapters, overrides: student?.progressOverrides || {} });
+    // The total follows the course being taught; chapter bars also keep the assigned year's chapters.
+    const current = statusesFor(courseTopics(student || {}, progressSessions || []).topics);
+    const assigned = statusesFor(courseTopics(student || {}).topics);
+    return { loaded: Boolean(progressSessions), sum: summarize(current), chapters: { ...byChapter(assigned), ...byChapter(current) } };
   }, [student, progressSessions, completedChapters]);
 
   // Toggle a homework session's completed flag (teacher checks off HW as done).
