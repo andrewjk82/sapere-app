@@ -1,11 +1,10 @@
-import React, { useState, useRef } from "react";
-import { FileText, Plus, Trash2 } from "lucide-react";
+import { useState, useRef } from "react";
+import { Plus, Trash2 } from "lucide-react";
 import HscScoreChart from "../HscScoreChart";
 import { NSW_SCHOOL_RANKINGS } from "../../constants/nswSchoolRankings";
 
 const HscTab = ({
   hscRecords,
-  styles,
   hscForm,
   setHscForm,
   hscSaving,
@@ -23,6 +22,8 @@ const HscTab = ({
     internalTotal: student?.internalTotal || "",
   });
   const [modSaving, setModSaving] = useState(false);
+  const [showForm, setShowForm] = useState(false);
+  const [showTools, setShowTools] = useState(false);
   const [schoolSearch, setSchoolSearch] = useState(student?.school || "");
   const [showDropdown, setShowDropdown] = useState(false);
   const dropdownRef = useRef(null);
@@ -57,115 +58,121 @@ const HscTab = ({
     ? Object.entries(hscTypeStats).filter(([, s]) => s?.total > 0).sort(([, a], [, b]) => (b.total || 0) - (a.total || 0))
     : null;
 
+  // HSC tools matter from Year 11; younger students keep them one tap away.
+  const years = [student?.year, student?.level, ...(Array.isArray(student?.assignedYear) ? student.assignedYear : [student?.assignedYear])].map(String);
+  const isSenior = years.some((y) => /Year 1[12]/.test(y)) || hscRecords.length > 0;
+  const fmtDate = (k) => (k ? new Date(`${k}T12:00:00`).toLocaleDateString("en-AU", { day: "numeric", month: "short", year: "numeric" }) : "—");
+
+  if (!isSenior && !showTools) {
+    return (
+      <section className="sd-tile">
+        <h3 className="sd-h">HSC <small>Years 11–12</small></h3>
+        <p className="sd-muted" style={{ margin: "0 0 12px" }}>Trial paper marks, HSC band projection and Practice by Type are for senior students.</p>
+        <button type="button" className="sd-btn sd-btn--soft" onClick={() => setShowTools(true)}>Show HSC tools</button>
+      </section>
+    );
+  }
+
   return (
-    <div style={{ display: "grid", gap: "24px" }}>
+    <div className="sd-hsc">
+      {/* ── HSC exam log ── */}
+      <section className="sd-tile">
+        <h3 className="sd-h">
+          <span>HSC trial papers <span className="sd-count">{hscRecords.length}</span></span>
+          <button type="button" className="sd-btn sd-btn--soft" aria-expanded={showForm} onClick={() => setShowForm((v) => !v)}>
+            {showForm ? "Close" : <><Plus size={16} /> Add paper</>}
+          </button>
+        </h3>
+
+        {showForm && (
+          <form onSubmit={onSaveRecord} className="sd-form sd-hsc-form">
+            <label>Date<input type="date" value={hscForm.examDate} onChange={(e) => setHscForm({ ...hscForm, examDate: e.target.value })} /></label>
+            <label className="sd-wide">Paper<input value={hscForm.paper} onChange={(e) => setHscForm({ ...hscForm, paper: e.target.value })} placeholder="e.g. 2023 HSC Paper 1" /></label>
+            <label>Score<input type="number" min="0" value={hscForm.score} onChange={(e) => setHscForm({ ...hscForm, score: e.target.value })} /></label>
+            <label>Out of<input type="number" min="1" value={hscForm.total} onChange={(e) => setHscForm({ ...hscForm, total: e.target.value })} /></label>
+            <fieldset className="sd-full">
+              <legend>Topic breakdown <small>optional · % per strand</small></legend>
+              <div className="sd-form-row">
+                {["Algebra", "Calculus", "Statistics", "Trigonometry"].map((topic) => (
+                  <label key={topic}>{topic}
+                    <input type="number" min="0" max="100" placeholder="%" value={hscForm.topics?.[topic] ?? ""}
+                      onChange={(e) => setHscForm({ ...hscForm, topics: { ...(hscForm.topics || {}), [topic]: e.target.value } })} />
+                  </label>
+                ))}
+              </div>
+            </fieldset>
+            <label className="sd-full">Notes
+              <textarea rows={3} value={hscForm.notes} onChange={(e) => setHscForm({ ...hscForm, notes: e.target.value })} placeholder="Topics to review, exam conditions, paper section notes..." />
+            </label>
+            <div className="sd-full sd-form-acts">
+              <button type="submit" className="sd-btn sd-btn--primary" disabled={hscSaving}><Plus size={16} /> {hscSaving ? "Saving…" : "Add paper"}</button>
+            </div>
+          </form>
+        )}
+
+        {hscRecords.length > 0 ? (
+          <ul className="sd-rows">
+            {hscRecords.map((record) => {
+              const percentage = Number(record.percentage ?? ((Number(record.score) / Number(record.total)) * 100));
+              return (
+                <li key={record.id} className="sd-row sd-hsc-row">
+                  <span className="sd-row-date">{fmtDate(record.examDate)}</span>
+                  <span className="sd-hsc-paper"><b>{record.paper}</b>{record.notes && <small>{record.notes}</small>}</span>
+                  <span className="sd-hsc-mark"><b>{Number(record.score)}/{Number(record.total)}</b><small>{Number.isFinite(percentage) ? percentage.toFixed(1) : "0.0"}%</small></span>
+                  <button type="button" className="sd-row-reset" onClick={() => onDeleteRecord(record)} aria-label={`Delete ${record.paper}`}><Trash2 size={16} /></button>
+                </li>
+              );
+            })}
+          </ul>
+        ) : <p className="sd-muted" style={{ margin: 0 }}>No HSC papers recorded yet.</p>}
+      </section>
+
       <HscScoreChart hscRecords={hscRecords} student={student} />
 
-      {/* ── Practice by Type Progress ── */}
-      <div style={{ ...styles.card, padding: "20px 24px" }} className="profile-card-mobile">
-        <div style={{ fontSize: "0.75rem", fontWeight: 900, color: "#7c3aed", letterSpacing: "0.12em", textTransform: "uppercase", marginBottom: "4px" }}>
-          Practice by Type
-        </div>
-        <div style={{ fontSize: "0.8rem", color: "#6d6a85", fontWeight: 600, marginBottom: "16px" }}>
-          Accuracy per question type from HSC past paper practice sessions.
-        </div>
+      {/* ── Practice by Type ── */}
+      <section className="sd-tile">
+        <h3 className="sd-h">Practice by Type <small>accuracy per question type in HSC past paper practice</small></h3>
         {typeEntries === null ? (
-          <div style={{ color: "#94a3b8", fontSize: "0.82rem", fontWeight: 700, textAlign: "center", padding: "12px" }}>Loading…</div>
+          <p className="sd-muted" style={{ margin: 0 }}>Loading…</p>
         ) : typeEntries.length === 0 ? (
-          <div style={{ padding: "16px", background: "#f8fafc", borderRadius: "12px", border: "1px dashed #e2e8f0", color: "#94a3b8", fontWeight: 700, fontSize: "0.82rem", textAlign: "center" }}>
-            No Practice by Type attempts yet.
-          </div>
+          <p className="sd-muted" style={{ margin: 0 }}>No Practice by Type attempts yet.</p>
         ) : (
-          <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-            {typeEntries.map(([slug, s]) => {
-              const pct = Math.round(((s.mastered ?? s.correct ?? 0) / s.total) * 100);
-              const barColor = pct >= 90 ? "#22c55e" : pct >= 70 ? "#4ade80" : pct >= 40 ? "#86efac" : "#fbbf24";
+          <div className="sd-types">
+            {typeEntries.map(([slug, st]) => {
+              const pct = Math.round(((st.mastered ?? st.correct ?? 0) / st.total) * 100);
               return (
-                <div key={slug}>
-                  <div style={{ display: "flex", justifyContent: "space-between", marginBottom: "4px" }}>
-                    <span style={{ fontSize: "0.78rem", fontWeight: 700, color: "#475569" }}>
-                      {slug.replace(/-/g, " ").replace(/\b\w/g, c => c.toUpperCase())}
-                    </span>
-                    <span style={{ fontSize: "0.75rem", fontWeight: 900, color: pct >= 70 ? "#16a34a" : "#94a3b8" }}>
-                      {pct}% <span style={{ fontWeight: 600, color: "#94a3b8" }}>({s.mastered ?? s.correct ?? 0}/{s.total})</span>
-                    </span>
-                  </div>
-                  <div style={{ height: "6px", background: "#f1f5f9", borderRadius: "99px", overflow: "hidden" }}>
-                    <div style={{ width: `${pct}%`, height: "100%", background: barColor, borderRadius: "99px", transition: "width 0.4s ease" }} />
-                  </div>
+                <div key={slug} className="sd-type">
+                  <span>{slug.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase())}</span>
+                  <span className="sd-ch-bar"><i style={{ width: `${pct}%`, background: pct >= 70 ? "#3fae6c" : pct >= 40 ? "#9fd8ae" : "#f2b632" }} /></span>
+                  <span className={`sd-type-num${pct >= 70 ? " sd-up" : ""}`}>{pct}% <small>({st.mastered ?? st.correct ?? 0}/{st.total})</small></span>
                 </div>
               );
             })}
           </div>
         )}
-      </div>
+      </section>
 
-      {/* ── HSC Moderation Inputs ── */}
-      <div style={{ ...styles.card, padding: "20px 24px" }} className="profile-card-mobile">
-        <div style={{ fontSize: "0.75rem", fontWeight: 900, color: "#7c3aed", letterSpacing: "0.12em", textTransform: "uppercase", marginBottom: "4px" }}>
-          HSC Moderation Inputs
-        </div>
-        <div style={{ fontSize: "0.8rem", color: "#6d6a85", fontWeight: 600, marginBottom: "16px" }}>
-          Used to calculate the student's projected HSC band via NSW moderation logic.
-        </div>
-
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "12px", marginBottom: "12px" }}>
-          {/* School autocomplete */}
-          <div style={{ position: "relative" }} ref={dropdownRef}>
-            <label style={{ display: "block", marginBottom: "6px", fontWeight: 800, fontSize: "0.72rem", color: "#64748b", textTransform: "uppercase" }}>
-              School
-            </label>
+      {/* ── HSC moderation inputs ── */}
+      <section className="sd-tile">
+        <h3 className="sd-h">HSC band projection <small>school rank and internal rank, for the NSW moderation estimate</small></h3>
+        <div className="sd-form">
+          <label className="sd-school" ref={dropdownRef}>School
             <input
-              type="text"
-              value={schoolSearch}
-              onChange={(e) => {
-                setSchoolSearch(e.target.value);
-                setModForm((f) => ({ ...f, school: e.target.value, schoolSubjectRank: "" }));
-                setShowDropdown(true);
-              }}
+              type="text" value={schoolSearch} placeholder="Search school…"
+              onChange={(e) => { setSchoolSearch(e.target.value); setModForm((f) => ({ ...f, school: e.target.value, schoolSubjectRank: "" })); setShowDropdown(true); }}
               onFocus={() => setShowDropdown(true)}
               onBlur={() => setTimeout(() => setShowDropdown(false), 150)}
-              placeholder="Search school…"
-              style={{ width: "100%", padding: "11px 14px", borderRadius: "12px", border: "1.5px solid #e2e8f0", fontWeight: 700, fontSize: "0.88rem", boxSizing: "border-box", outline: "none" }}
             />
             {showDropdown && filteredSchools.length > 0 && (
-              <div style={{
-                position: "absolute", top: "100%", left: 0, right: 0, zIndex: 50,
-                background: "#fff", borderRadius: "12px", boxShadow: "0 8px 24px rgba(0,0,0,0.12)",
-                border: "1.5px solid #e2e8f0", overflow: "hidden", marginTop: "4px",
-              }}>
-                {filteredSchools.map((s) => (
-                  <div
-                    key={s.rank}
-                    onMouseDown={() => handleSelectSchool(s)}
-                    style={{
-                      padding: "10px 14px", cursor: "pointer", display: "flex", alignItems: "center", gap: "10px",
-                      fontSize: "0.85rem", fontWeight: 700, color: "#1e1b4b",
-                      borderBottom: "1px solid #f1f5f9",
-                    }}
-                    onMouseEnter={(e) => e.currentTarget.style.background = "#f5f3ff"}
-                    onMouseLeave={(e) => e.currentTarget.style.background = "transparent"}
-                  >
-                    <span style={{ minWidth: "28px", fontWeight: 900, color: "#7c3aed", fontSize: "0.78rem" }}>#{s.rank}</span>
-                    {s.school}
-                  </div>
+              <span className="sd-dropdown">
+                {filteredSchools.map((sc) => (
+                  <button type="button" key={sc.rank} onMouseDown={() => handleSelectSchool(sc)}><b>#{sc.rank}</b> {sc.school}</button>
                 ))}
-              </div>
+              </span>
             )}
-          </div>
-          <div>
-            <label style={{ display: "block", marginBottom: "6px", fontWeight: 800, fontSize: "0.72rem", color: "#64748b", textTransform: "uppercase" }}>
-              HSC Subject
-            </label>
-            <select
-              value={modForm.assignedCourse}
-              onChange={(e) => setModForm((f) => ({ ...f, assignedCourse: e.target.value }))}
-              style={{
-                width: "100%", padding: "11px 14px", borderRadius: "12px",
-                border: "1.5px solid #e2e8f0", fontWeight: 700, fontSize: "0.88rem",
-                background: "white", color: "#1e1b4b", cursor: "pointer", boxSizing: "border-box",
-              }}
-            >
+          </label>
+          <label>HSC subject
+            <select value={modForm.assignedCourse} onChange={(e) => setModForm((f) => ({ ...f, assignedCourse: e.target.value }))}>
               <option value="">Select subject…</option>
               <option value="Advanced">Mathematics Advanced</option>
               <option value="Standard 2">Mathematics Standard 2</option>
@@ -173,215 +180,15 @@ const HscTab = ({
               <option value="Extension 1">Mathematics Extension 1</option>
               <option value="Extension 2">Mathematics Extension 2</option>
             </select>
+          </label>
+          <label>School rank (NSW 2025)<span className="sd-readonly">{modForm.schoolSubjectRank ? `#${modForm.schoolSubjectRank}` : "Auto from school"}</span></label>
+          <label>Internal rank<input type="number" min="1" placeholder="e.g. 3" value={modForm.internalRank} onChange={(e) => setModForm((f) => ({ ...f, internalRank: e.target.value }))} /></label>
+          <label>Total in cohort<input type="number" min="1" placeholder="e.g. 25" value={modForm.internalTotal} onChange={(e) => setModForm((f) => ({ ...f, internalTotal: e.target.value }))} /></label>
+          <div className="sd-full sd-form-acts">
+            <button type="button" className="sd-btn sd-btn--primary" onClick={handleModSave} disabled={modSaving || !onUpdateModeration}>{modSaving ? "Saving…" : "Save"}</button>
           </div>
         </div>
-
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: "12px", marginBottom: "16px" }}>
-          <div>
-            <label style={{ display: "block", marginBottom: "6px", fontWeight: 800, fontSize: "0.72rem", color: "#64748b", textTransform: "uppercase" }}>
-              School Rank (NSW 2025)
-            </label>
-            <div style={{
-              padding: "11px 14px", borderRadius: "12px", border: "1.5px solid #e2e8f0",
-              background: modForm.schoolSubjectRank ? "#f5f3ff" : "#f8fafc",
-              fontWeight: 800, fontSize: "0.88rem",
-              color: modForm.schoolSubjectRank ? "#4c1d95" : "#94a3b8",
-            }}>
-              {modForm.schoolSubjectRank ? `#${modForm.schoolSubjectRank}` : "Auto from school"}
-            </div>
-          </div>
-          <div>
-            <label style={{ display: "block", marginBottom: "6px", fontWeight: 800, fontSize: "0.72rem", color: "#64748b", textTransform: "uppercase" }}>
-              Internal Rank
-            </label>
-            <input
-              type="number" min="1" placeholder="e.g. 3"
-              value={modForm.internalRank}
-              onChange={(e) => setModForm((f) => ({ ...f, internalRank: e.target.value }))}
-              style={{ width: "100%", padding: "11px 14px", borderRadius: "12px", border: "1.5px solid #e2e8f0", fontWeight: 700, fontSize: "0.88rem", boxSizing: "border-box", outline: "none" }}
-            />
-          </div>
-          <div>
-            <label style={{ display: "block", marginBottom: "6px", fontWeight: 800, fontSize: "0.72rem", color: "#64748b", textTransform: "uppercase" }}>
-              Total in Cohort
-            </label>
-            <input
-              type="number" min="1" placeholder="e.g. 25"
-              value={modForm.internalTotal}
-              onChange={(e) => setModForm((f) => ({ ...f, internalTotal: e.target.value }))}
-              style={{ width: "100%", padding: "11px 14px", borderRadius: "12px", border: "1.5px solid #e2e8f0", fontWeight: 700, fontSize: "0.88rem", boxSizing: "border-box", outline: "none" }}
-            />
-          </div>
-        </div>
-
-        <button
-          onClick={handleModSave}
-          disabled={modSaving || !onUpdateModeration}
-          style={{
-            padding: "11px 24px", borderRadius: "12px", border: "none",
-            background: "linear-gradient(135deg, #7c3aed, #4f46e5)",
-            color: "#fff", fontWeight: 900, fontSize: "0.88rem",
-            cursor: modSaving ? "wait" : "pointer", opacity: modSaving ? 0.7 : 1,
-          }}
-        >
-          {modSaving ? "Saving…" : "Save"}
-        </button>
-      </div>
-
-      {/* ── Trial papers card ── */}
-      <div style={styles.card} className="profile-card-mobile">
-        <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: "16px", marginBottom: "24px", flexWrap: "wrap" }}>
-          <div>
-            <div style={{ fontSize: "0.75rem", fontWeight: 900, color: "#7c3aed", letterSpacing: "0.12em", textTransform: "uppercase" }}>
-              HSC Exam Log
-            </div>
-            <h3 style={{ margin: "6px 0 0", fontSize: "1.5rem", color: "#1e1b4b" }}>
-              Trial papers and marks
-            </h3>
-          </div>
-          <div style={{ display: "flex", alignItems: "center", gap: "10px", padding: "10px 14px", borderRadius: "999px", background: "#f5f3ff", color: "#6d28d9", fontWeight: 900 }}>
-            <FileText size={18} />
-            {hscRecords.length} record{hscRecords.length === 1 ? "" : "s"}
-          </div>
-        </div>
-
-        <form
-          onSubmit={onSaveRecord}
-          style={{
-            display: "grid",
-            gridTemplateColumns: "minmax(130px, 0.8fr) minmax(180px, 1.4fr) minmax(90px, 0.6fr) minmax(90px, 0.6fr) auto",
-            gap: "12px",
-            alignItems: "end",
-            padding: "16px",
-            borderRadius: "22px",
-            background: "#f8fafc",
-            border: "1px solid #eef2ff",
-            marginBottom: "24px",
-          }}
-        >
-          <label style={{ display: "grid", gap: "6px", fontSize: "0.72rem", fontWeight: 900, color: "#64748b", textTransform: "uppercase" }}>
-            Date
-            <input
-              type="date"
-              value={hscForm.examDate}
-              onChange={(e) => setHscForm({ ...hscForm, examDate: e.target.value })}
-              style={{ padding: "12px", borderRadius: "14px", border: "1.5px solid #e2e8f0", fontWeight: 800, color: "#1e1b4b", outline: "none" }}
-            />
-          </label>
-          <label style={{ display: "grid", gap: "6px", fontSize: "0.72rem", fontWeight: 900, color: "#64748b", textTransform: "uppercase" }}>
-            Paper
-            <input
-              value={hscForm.paper}
-              onChange={(e) => setHscForm({ ...hscForm, paper: e.target.value })}
-              placeholder="e.g. 2023 HSC Paper 1"
-              style={{ padding: "12px", borderRadius: "14px", border: "1.5px solid #e2e8f0", fontWeight: 800, color: "#1e1b4b", outline: "none" }}
-            />
-          </label>
-          <label style={{ display: "grid", gap: "6px", fontSize: "0.72rem", fontWeight: 900, color: "#64748b", textTransform: "uppercase" }}>
-            Score
-            <input
-              type="number" min="0"
-              value={hscForm.score}
-              onChange={(e) => setHscForm({ ...hscForm, score: e.target.value })}
-              style={{ padding: "12px", borderRadius: "14px", border: "1.5px solid #e2e8f0", fontWeight: 900, color: "#1e1b4b", outline: "none" }}
-            />
-          </label>
-          <label style={{ display: "grid", gap: "6px", fontSize: "0.72rem", fontWeight: 900, color: "#64748b", textTransform: "uppercase" }}>
-            Out of
-            <input
-              type="number" min="1"
-              value={hscForm.total}
-              onChange={(e) => setHscForm({ ...hscForm, total: e.target.value })}
-              style={{ padding: "12px", borderRadius: "14px", border: "1.5px solid #e2e8f0", fontWeight: 900, color: "#1e1b4b", outline: "none" }}
-            />
-          </label>
-          <button
-            type="submit"
-            disabled={hscSaving}
-            style={{
-              height: "45px", padding: "0 18px", borderRadius: "14px", border: "none",
-              background: "linear-gradient(135deg, #7c3aed, #4f46e5)",
-              color: "white", fontWeight: 900,
-              cursor: hscSaving ? "wait" : "pointer",
-              display: "flex", alignItems: "center", gap: "8px",
-              justifyContent: "center", whiteSpace: "nowrap",
-            }}
-          >
-            <Plus size={17} />
-            {hscSaving ? "Saving" : "Add"}
-          </button>
-          <div style={{ gridColumn: "1 / -1" }}>
-            <div style={{ fontSize: "0.72rem", fontWeight: 900, color: "#64748b", textTransform: "uppercase", marginBottom: "8px" }}>
-              Topic breakdown <span style={{ color: "#94a3b8", fontWeight: 700 }}>(optional · % per strand)</span>
-            </div>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(120px, 1fr))", gap: "10px" }}>
-              {["Algebra", "Calculus", "Statistics", "Trigonometry"].map((topic) => (
-                <label key={topic} style={{ display: "grid", gap: "5px", fontSize: "0.68rem", fontWeight: 800, color: "#94a3b8" }}>
-                  {topic}
-                  <input
-                    type="number" min="0" max="100"
-                    value={hscForm.topics?.[topic] ?? ""}
-                    onChange={(e) => setHscForm({ ...hscForm, topics: { ...(hscForm.topics || {}), [topic]: e.target.value } })}
-                    placeholder="%"
-                    style={{ padding: "10px 12px", borderRadius: "12px", border: "1.5px solid #e2e8f0", fontWeight: 900, color: "#1e1b4b", outline: "none" }}
-                  />
-                </label>
-              ))}
-            </div>
-          </div>
-          <label style={{ display: "grid", gap: "6px", fontSize: "0.72rem", fontWeight: 900, color: "#64748b", textTransform: "uppercase", gridColumn: "1 / -1" }}>
-            Notes
-            <textarea
-              rows={3}
-              value={hscForm.notes}
-              onChange={(e) => setHscForm({ ...hscForm, notes: e.target.value })}
-              placeholder="Topics to review, exam conditions, paper section notes..."
-              style={{ padding: "12px", borderRadius: "14px", border: "1.5px solid #e2e8f0", fontWeight: 700, color: "#1e1b4b", outline: "none", resize: "vertical" }}
-            />
-          </label>
-        </form>
-
-        <div style={{ display: "grid", gap: "12px" }}>
-          {hscRecords.length > 0 ? hscRecords.map((record) => {
-            const percentage = Number(record.percentage ?? ((Number(record.score) / Number(record.total)) * 100));
-            return (
-              <div
-                key={record.id}
-                style={{
-                  display: "grid",
-                  gridTemplateColumns: "110px minmax(0, 1fr) 90px auto",
-                  gap: "16px", alignItems: "center",
-                  padding: "16px", borderRadius: "18px",
-                  background: "white", border: "1px solid #eef2ff",
-                  boxShadow: "0 10px 24px rgba(79,70,229,0.05)",
-                }}
-              >
-                <div style={{ fontSize: "0.8rem", fontWeight: 900, color: "#64748b" }}>{record.examDate}</div>
-                <div style={{ minWidth: 0 }}>
-                  <div style={{ fontWeight: 900, color: "#1e1b4b", overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{record.paper}</div>
-                  {record.notes && <div style={{ marginTop: "4px", fontSize: "0.78rem", color: "#64748b", lineHeight: 1.45 }}>{record.notes}</div>}
-                </div>
-                <div style={{ textAlign: "right" }}>
-                  <div style={{ fontWeight: 950, color: "#4f46e5", fontSize: "1.05rem" }}>{Number(record.score)}/{Number(record.total)}</div>
-                  <div style={{ fontSize: "0.72rem", fontWeight: 900, color: "#7c3aed" }}>{Number.isFinite(percentage) ? percentage.toFixed(1) : "0.0"}%</div>
-                </div>
-                <button
-                  type="button"
-                  onClick={() => onDeleteRecord(record)}
-                  aria-label={`Delete ${record.paper}`}
-                  style={{ width: "42px", height: "42px", borderRadius: "12px", border: "none", background: "#fff1f2", color: "#e11d48", display: "grid", placeItems: "center", cursor: "pointer" }}
-                >
-                  <Trash2 size={17} />
-                </button>
-              </div>
-            );
-          }) : (
-            <div style={{ padding: "30px", borderRadius: "20px", background: "#f8fafc", border: "1px dashed #cbd5e1", color: "#64748b", textAlign: "center", fontWeight: 800 }}>
-              No HSC papers recorded yet.
-            </div>
-          )}
-        </div>
-      </div>
+      </section>
     </div>
   );
 };
