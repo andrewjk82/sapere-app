@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown, Search, Shuffle } from 'lucide-react';
-import { loadQuestionDna } from '../../services/hscTaxonomyService';
+import { loadQuestionDna, savedQuestionDna } from '../../services/hscTaxonomyService';
 import ReasoningStepCard from './ReasoningStepCard';
 
 // Teacher-facing QA page: browse every DNA's warmup pool (the randomized
@@ -68,22 +68,31 @@ const DnaWarmupReviewPage = () => {
   const [loading, setLoading] = useState(true);
   const [search, setSearch] = useState('');
   const [expandedId, setExpandedId] = useState(null);
+  const [failed, setFailed] = useState(false);
+  const [attempt, setAttempt] = useState(0);
 
   useEffect(() => {
     let cancelled = false;
+    let fresh = false;
+    // The saved copy shows at once; the server's answer replaces it.
+    savedQuestionDna().then((saved) => {
+      if (!cancelled && !fresh && saved?.length) { setDnaList(saved); setLoading(false); }
+    });
     (async () => {
       try {
         // Teacher review: always fresh (also refreshes this device's cached copy).
         const list = await loadQuestionDna({ force: true });
+        fresh = true;
         if (!cancelled) setDnaList(list);
       } catch (e) {
         console.warn('Failed to load question DNA:', e);
+        if (!cancelled) setFailed(true);
       } finally {
         if (!cancelled) setLoading(false);
       }
     })();
     return () => { cancelled = true; };
-  }, []);
+  }, [attempt]);
 
   const withPool = useMemo(
     () => dnaList
@@ -130,7 +139,14 @@ const DnaWarmupReviewPage = () => {
         <div style={{ textAlign: 'center', padding: '40px', color: '#94a3b8', fontSize: '0.85rem' }}>Loading…</div>
       )}
 
-      {!loading && filtered.length === 0 && (
+      {failed && withPool.length === 0 && (
+        <div role="alert" style={{ textAlign: 'center', padding: '40px', color: '#64748b', fontSize: '0.85rem' }}>
+          Couldn’t load.{' '}
+          <button type="button" onClick={() => { setFailed(false); setLoading(true); setAttempt((n) => n + 1); }} style={{ padding: '8px 18px', borderRadius: '999px', border: '1px solid #e2e8f0', background: '#fff', fontWeight: 800, cursor: 'pointer' }}>Retry</button>
+        </div>
+      )}
+
+      {!loading && !(failed && withPool.length === 0) && filtered.length === 0 && (
         <div style={{ textAlign: 'center', padding: '40px', color: '#94a3b8', fontSize: '0.85rem' }}>
           {withPool.length === 0 ? 'No DNA has a warmup pool yet.' : 'No DNA matches your search.'}
         </div>

@@ -13,6 +13,7 @@
 import { collection, getDocs } from 'firebase/firestore';
 import { db } from '../firebase/config';
 import { idbGet, idbSet } from '../utils/idbStore';
+import { readWithReconnect } from '../utils/reconnect';
 
 const REFRESH_MS = 24 * 60 * 60 * 1000;
 const CACHE_VERSION = 1;
@@ -21,7 +22,7 @@ const memo = new Map(); // collection → Promise<docs[]>
 const cacheKey = (name) => `hsc-taxonomy:v${CACHE_VERSION}:${name}`;
 
 const readFresh = async (name, idField) => {
-  const snap = await getDocs(collection(db, name));
+  const snap = await readWithReconnect(() => getDocs(collection(db, name)));
   const docs = snap.docs.map((d) => ({ [idField]: d.id, ...d.data() }));
   // Firestore Timestamps don't survive structured clone as Timestamps; nothing here needs them as such.
   idbSet(cacheKey(name), { savedAt: Date.now(), docs: JSON.parse(JSON.stringify(docs)) }).catch(() => {});
@@ -47,6 +48,9 @@ const load = (name, idField, { force = false } = {}) => {
   promise.catch(() => memo.delete(name));
   return promise;
 };
+
+/** The copy saved on this device (any age), or null — for painting before the server answers. */
+export const savedQuestionDna = async () => (await idbGet(cacheKey('question_dna')).catch(() => null))?.docs || null;
 
 /** question_types docs as `{ id, ...data }`. */
 export const loadQuestionTypes = (opts) => load('question_types', 'id', opts);
