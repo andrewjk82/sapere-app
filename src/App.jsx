@@ -1,3 +1,4 @@
+import { reconnectFirestore } from './utils/reconnect';
 import { useState, useEffect, useMemo, useCallback, useRef, lazy, Suspense } from 'react';
 import WhatsNewModal from './components/WhatsNewModal';
 import { shouldShowWhatsNew } from './utils/whatsNew';
@@ -1115,6 +1116,7 @@ function App() {
   }, [user?.uid, medalCelebrationPreview]);
 
   const hasProfile = Boolean(profile);
+  const rosterRequestRef = useRef(0);
   const handleRefreshStudents = useCallback(async (silent = false, forceRefresh = false) => {
     // 1. Need a signed-in user. Profile can still be loading for teachers —
     //    isAdmin is derived from auth email, not the profile doc.
@@ -1140,10 +1142,12 @@ function App() {
     if (!silent) setLoading(true);
 
     let syncError = null;
+    const request = ++rosterRequestRef.current;
+    const roster = studentService.getStudents(user.uid, isAdmin, { forceRefresh });
     try {
       // Cap wait so a slow/hanging roster fetch never traps the whole shell.
       const data = await Promise.race([
-        studentService.getStudents(user.uid, isAdmin, { forceRefresh }),
+        roster,
         new Promise((_, reject) => {
           window.setTimeout(() => reject(new Error('students-timeout')), forceRefresh ? 35000 : 10000);
         }),
@@ -1159,6 +1163,11 @@ function App() {
         console.warn('[App] Student roster fetch timed out — shell stays open');
         // Keep any previously loaded students; don't blank the UI.
         setLoadError('');
+        // The read carries on: show it when it lands (unless a newer request has started), else try once more.
+        const show = (data) => { if (request === rosterRequestRef.current && Array.isArray(data)) setStudents(data); };
+        roster.then(show)
+          .catch(() => studentService.getStudents(user.uid, isAdmin).then(show))
+          .catch((e) => console.warn('[App] Student roster retry failed:', e));
       } else {
         console.error(err);
         // Only show blocking error on explicit refresh; login path stays usable.
@@ -1210,6 +1219,25 @@ function App() {
     }, wait);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [rosterMeta.status, rosterMeta.data]);
+
+  // Teacher's iPad: back from the background or back online, reopen the Firestore connection (a suspended one can
+  // be dead, leaving reads waiting until a reload) and check the roster again.
+  useEffect(() => {
+    if (!isAdmin || !user?.uid) return undefined;
+    let hiddenAt = 0;
+    const resume = () => { reconnectFirestore().then(() => handleRefreshStudents(true)).catch(() => {}); };
+    const onVisibility = () => {
+      if (document.visibilityState === 'hidden') { hiddenAt = Date.now(); return; }
+      if (hiddenAt && Date.now() - hiddenAt > 60_000) resume();
+      hiddenAt = 0;
+    };
+    document.addEventListener('visibilitychange', onVisibility);
+    window.addEventListener('online', resume);
+    return () => {
+      document.removeEventListener('visibilitychange', onVisibility);
+      window.removeEventListener('online', resume);
+    };
+  }, [isAdmin, user?.uid, handleRefreshStudents]);
 
   // A background roster revalidation that did rescan replaces the cached list on screen.
   useEffect(() => studentService.onRosterUpdate((fresh) => {

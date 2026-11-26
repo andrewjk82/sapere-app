@@ -17,6 +17,7 @@ import {
 import { db } from "../firebase/config";
 import { upsertManualStudentLeaderboard, removeFromLeaderboard } from "./leaderboardService";
 import { localCache } from "./localCacheService";
+import { readWithReconnect } from "../utils/reconnect";
 import { buildAvatarUrl, buildDisplayName } from "../utils/avatarUtils";
 
 const COLLECTION_NAME = "students";
@@ -163,8 +164,8 @@ export const studentService = {
       // An explicit Sync rescans from the server (never the on-device copy) and does not depend on the meta read.
       const readDocs = forceRefresh ? getDocsFromServer : getDocs;
       const metaSnap = forceRefresh
-        ? await getDoc(doc(db, "sync_meta", getStudentsMetaId(tutorId, isAdmin))).catch(() => null)
-        : await getDoc(doc(db, "sync_meta", getStudentsMetaId(tutorId, isAdmin)));
+        ? await readWithReconnect(() => getDoc(doc(db, "sync_meta", getStudentsMetaId(tutorId, isAdmin)))).catch(() => null)
+        : await readWithReconnect(() => getDoc(doc(db, "sync_meta", getStudentsMetaId(tutorId, isAdmin))));
       const remoteVersion = metaVersionOf(metaSnap?.data());
       // XP / last activity / new sign-ups don't bump the roster version, hence the age cap.
       const cacheFresh = Date.now() - Number(cached?.savedAt || 0) < ROSTER_STALE_MS;
@@ -178,7 +179,7 @@ export const studentService = {
         ? query(studentsRef) 
         : query(studentsRef, where("tutorId", "==", tutorId));
 
-      const manualSnap = await readDocs(manualQuery);
+      const manualSnap = await readWithReconnect(() => readDocs(manualQuery));
       const manualStudents = manualSnap.docs.map(doc => ({
         id: doc.id,
         source: 'manual',
@@ -194,7 +195,7 @@ export const studentService = {
           const usersSnap = await Promise.race([
             readDocs(usersRef),
             new Promise((_, reject) => {
-              setTimeout(() => reject(new Error('users-scan-timeout')), forceRefresh ? 25000 : 8000);
+              setTimeout(() => reject(new Error('users-scan-timeout')), forceRefresh || revalidate ? 25000 : 8000);
             }),
           ]);
           registeredStudents = usersSnap.docs
@@ -218,12 +219,12 @@ export const studentService = {
           if (forceRefresh) throw scanErr;
           // A background check never swaps a full cached roster for a manual-only one.
           if (cached?.students?.length) return cached.students;
-          // Fall back to manual-only roster so the teacher UI still opens.
-          if (manualStudents.length > 0) {
-            const partial = mergeDuplicateStudentRecords(manualStudents, []);
-            memSet(cacheKey, partial);
-            return partial;
+          // Fall back to manual-only roster so the teacher UI still opens. Not remembered, and one background
+          // retry puts the full roster on screen (onRosterUpdate) without a reload.
+          if (!revalidate) {
+            setTimeout(() => { studentService.getStudents(tutorId, isAdmin, { revalidate: true }).catch(() => {}); }, 3000);
           }
+          return mergeDuplicateStudentRecords(manualStudents, []);
         }
       }
 

@@ -85,6 +85,7 @@ import ChallengeHistoryCard from "./ChallengeHistoryCard";
 import HomeworkSubmissionViewer from "./homework/HomeworkSubmissionViewer";
 import { markHomeworkChecked } from "../services/homeworkService";
 import useStudentSessions from "../hooks/useStudentSessions";
+import { readWithReconnect } from "../utils/reconnect";
 import { courseTopics, deriveTopicStates, topicStatuses, summarize, byChapter } from "../utils/topicProgress";
 import "./student-detail.css";
 import { compressAvatarImage } from '../utils/avatarUtils';
@@ -188,6 +189,8 @@ const StudentDetail = ({ studentId, onBack }) => {
   const [completedChapters, setCompletedChapters] = useState([]);
   const [homeworkSessions, setHomeworkSessions] = useState([]);
   const [homeworkLoading, setHomeworkLoading] = useState(false);
+  const [homeworkError, setHomeworkError] = useState(false);
+  const [homeworkTry, setHomeworkTry] = useState(0);
   const [viewHomeworkId, setViewHomeworkId] = useState(null);
   const [dailyPracticeConfig, setDailyPracticeConfig] = useState({ years: [], chapters: [] });
 
@@ -1110,20 +1113,27 @@ const StudentDetail = ({ studentId, onBack }) => {
   useEffect(() => {
     if (activeTab !== 'homework') return;
     if (!activeStudentId) return;
+    let cancelled = false;
     setHomeworkLoading(true);
+    setHomeworkError(false);
     const q = query(
       collection(db, 'sessions'),
       where('studentId', '==', activeStudentId),
     );
-    getDocs(q).then((snap) => {
+    readWithReconnect(() => getDocs(q)).then((snap) => {
+      if (cancelled) return;
       const all = snap.docs
         .map((d) => ({ id: d.id, ...d.data() }))
         .filter((s) => s.homework || (s.learnedTopics && s.learnedTopics.length > 0))
         .sort((a, b) => (b.date || '').localeCompare(a.date || ''));
       setHomeworkSessions(all);
       setHomeworkLoading(false);
-    }).catch(() => setHomeworkLoading(false));
-  }, [activeTab, activeStudentId]);
+    }).catch((err) => {
+      console.warn('Homework history load failed:', err);
+      if (!cancelled) { setHomeworkError(true); setHomeworkLoading(false); }
+    });
+    return () => { cancelled = true; };
+  }, [activeTab, activeStudentId, homeworkTry]);
 
   // Progress by topic, worked out from the lessons (same rule as the Class page: taught → homework checked →
   // mistakes reviewed = done; the teacher's own Done / Not done always wins).
@@ -2288,6 +2298,11 @@ const StudentDetail = ({ studentId, onBack }) => {
             </div>
             {homeworkLoading ? (
               <div style={{ textAlign: 'center', padding: '40px', color: '#94a3b8', fontWeight: 700 }}>Loading…</div>
+            ) : homeworkError ? (
+              <div role="alert" style={{ textAlign: 'center', padding: '40px', color: '#64748b', fontWeight: 700 }}>
+                Couldn’t load homework.{' '}
+                <button type="button" onClick={() => setHomeworkTry((n) => n + 1)} style={{ padding: '8px 18px', borderRadius: '999px', border: '1px solid #e2e8f0', background: '#fff', fontWeight: 800, cursor: 'pointer' }}>Retry</button>
+              </div>
             ) : homeworkSessions.length === 0 ? (
               <div style={{ textAlign: 'center', padding: '40px', color: '#94a3b8', fontWeight: 700, background: '#f8fafc', borderRadius: '16px', border: '1px dashed #e2e8f0' }}>
                 No homework recorded yet.
