@@ -1227,13 +1227,22 @@ function App() {
   }, [loading]);
 
   const handleAddStudent = async () => {
-    if (!newStudent.name || !newStudent.subject || !newStudent.email) {
-      showToast("Please fill in all fields including the student's email.", 'warning');
+    const name = newStudent.name.trim();
+    if (!name) {
+      showToast("Please enter the student's name.", 'warning');
       return;
     }
     
     try {
-      await studentService.addStudent(user.uid, newStudent);
+      // Email is optional: young students may not have one and are managed by the teacher only.
+      await studentService.addStudent(user.uid, {
+        ...newStudent,
+        name,
+        email: newStudent.email.trim().toLowerCase(),
+        subject: newStudent.subject.trim() || 'Maths',
+      });
+      showToast(`${name} added.`, 'success');
+      handleRefreshStudents(true, true).catch(() => {});
       setNewStudent({ name: '', email: '', subject: '', level: 'Year 10' });
       setIsModalOpen(false);
     } catch (error) {
@@ -1730,12 +1739,12 @@ function App() {
                   />
                 </div>
                 <div className="app-form-field">
-                  <label>Email Address</label>
+                  <label>Email Address (optional)</label>
                   <input 
                     type="email" 
                     value={newStudent.email}
                     onChange={(e) => setNewStudent({...newStudent, email: e.target.value})}
-                    placeholder="student@example.com" 
+                    placeholder="Leave blank if they have no email" 
                   />
                 </div>
                 <div className="app-form-field">
@@ -1753,12 +1762,8 @@ function App() {
                     value={newStudent.level}
                     onChange={(e) => setNewStudent({...newStudent, level: e.target.value})}
                   >
-                    <option value="Year 7">Year 7</option>
-                    <option value="Year 8">Year 8</option>
-                    <option value="Year 9">Year 9</option>
-                    <option value="Year 10">Year 10</option>
-                    <option value="Year 11">Year 11</option>
-                    <option value="Year 12">Year 12</option>
+                    <option value="Kindergarten">Kindergarten</option>
+                    {Array.from({ length: 12 }, (_, i) => <option key={i} value={`Year ${i + 1}`}>Year {i + 1}</option>)}
                   </select>
                 </div>
                 <button 
