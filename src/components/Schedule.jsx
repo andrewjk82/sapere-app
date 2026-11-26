@@ -1,8 +1,9 @@
 import { notifyHomework } from '../utils/notifyHomework';
+import { subscribeScheduleSessions } from '../services/teacherSessions';
 import React, { useEffect, useState, useMemo, useCallback, useRef } from 'react';
 import { Calendar, Clock, ChevronLeft, ChevronRight, CheckCircle2, Trash2, RotateCcw, X, Save, Check, List, BookOpen, PenLine } from 'lucide-react';
 import { db } from '../firebase/config';
-import { collection, query, where, onSnapshot, doc, updateDoc, deleteDoc, getDoc, getDocs, writeBatch } from 'firebase/firestore';
+import { collection, query, where, doc, updateDoc, deleteDoc, getDoc, getDocs, writeBatch } from 'firebase/firestore';
 import { addMakeupFromSession } from '../services/makeupService';
 import { useAuth } from '../context/AuthContext';
 import { useToast } from '../context/ToastContext';
@@ -318,20 +319,11 @@ const Schedule = ({ students = [] }) => {
       if (cancelled || document.visibilityState === 'hidden') return;
 
       if (isAdmin) {
-        const { startDate, endDate } = getAdminScheduleWindow();
-        const q = query(
-          collection(db, 'sessions'),
-          where('date', '>=', startDate),
-          where('date', '<=', endDate)
-        );
-        unsub1 = onSnapshot(q, (snap) => {
-          const docs = sortSessions(snap.docs.map(d => ({ id: d.id, ...d.data() })));
-          setSessions(docs);
+        // Shared with the Class page (services/teacherSessions).
+        unsub1 = subscribeScheduleSessions(({ docs }) => {
+          setSessions(sortSessions([...docs]));
           setLoading(false);
-        }, (err) => {
-          console.error('Firestore error:', err);
-          setLoading(false);
-        });
+        }, () => setLoading(false));
       } else {
         const cached = getCachedSessions(user.uid);
         if (cached?.sessions?.length) {

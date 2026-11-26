@@ -85,7 +85,7 @@ import ChallengeHistoryCard from "./ChallengeHistoryCard";
 import HomeworkSubmissionViewer from "./homework/HomeworkSubmissionViewer";
 import { markHomeworkChecked } from "../services/homeworkService";
 import useStudentSessions from "../hooks/useStudentSessions";
-import { readWithReconnect } from "../utils/reconnect";
+import { subscribeSessionHistory, resetSessionHistory } from "../services/teacherSessions";
 import { courseTopics, deriveTopicStates, topicStatuses, summarize, byChapter } from "../utils/topicProgress";
 import "./student-detail.css";
 import { compressAvatarImage } from '../utils/avatarUtils';
@@ -1113,26 +1113,19 @@ const StudentDetail = ({ studentId, onBack }) => {
   useEffect(() => {
     if (activeTab !== 'homework') return;
     if (!activeStudentId) return;
-    let cancelled = false;
     setHomeworkLoading(true);
     setHomeworkError(false);
-    const q = query(
-      collection(db, 'sessions'),
-      where('studentId', '==', activeStudentId),
-    );
-    readWithReconnect(() => getDocs(q)).then((snap) => {
-      if (cancelled) return;
-      const all = snap.docs
-        .map((d) => ({ id: d.id, ...d.data() }))
+    let received = false;
+    return subscribeSessionHistory('studentId', activeStudentId, ({ docs }) => {
+      received = true;
+      setHomeworkSessions(docs
         .filter((s) => s.homework || (s.learnedTopics && s.learnedTopics.length > 0))
-        .sort((a, b) => (b.date || '').localeCompare(a.date || ''));
-      setHomeworkSessions(all);
+        .sort((a, b) => (b.date || '').localeCompare(a.date || '')));
       setHomeworkLoading(false);
-    }).catch((err) => {
-      console.warn('Homework history load failed:', err);
-      if (!cancelled) { setHomeworkError(true); setHomeworkLoading(false); }
+      setHomeworkError(false);
+    }, () => {
+      if (!received) { setHomeworkError(true); setHomeworkLoading(false); }
     });
-    return () => { cancelled = true; };
   }, [activeTab, activeStudentId, homeworkTry]);
 
   // Progress by topic, worked out from the lessons (same rule as the Class page: taught → homework checked →
@@ -2301,7 +2294,7 @@ const StudentDetail = ({ studentId, onBack }) => {
             ) : homeworkError ? (
               <div role="alert" style={{ textAlign: 'center', padding: '40px', color: '#64748b', fontWeight: 700 }}>
                 Couldn’t load homework.{' '}
-                <button type="button" onClick={() => setHomeworkTry((n) => n + 1)} style={{ padding: '8px 18px', borderRadius: '999px', border: '1px solid #e2e8f0', background: '#fff', fontWeight: 800, cursor: 'pointer' }}>Retry</button>
+                <button type="button" onClick={() => { resetSessionHistory('studentId', activeStudentId); setHomeworkTry((n) => n + 1); }} style={{ padding: '8px 18px', borderRadius: '999px', border: '1px solid #e2e8f0', background: '#fff', fontWeight: 800, cursor: 'pointer' }}>Retry</button>
               </div>
             ) : homeworkSessions.length === 0 ? (
               <div style={{ textAlign: 'center', padding: '40px', color: '#94a3b8', fontWeight: 700, background: '#f8fafc', borderRadius: '16px', border: '1px dashed #e2e8f0' }}>

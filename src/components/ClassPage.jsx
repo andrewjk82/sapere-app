@@ -1,12 +1,13 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
-import { collection, doc, getDoc, onSnapshot, query, where, writeBatch, updateDoc, serverTimestamp } from 'firebase/firestore';
+import { doc, getDoc, writeBatch, updateDoc, serverTimestamp } from 'firebase/firestore';
 import { db } from '../firebase/config';
 import useLiveDoc from '../hooks/useLiveDoc';
 import { useLessonNote, useNoteFlush, saveNoteLocal, deleteNoteLocal, flushNotes } from '../utils/classNotes';
 import { localCache } from '../services/localCacheService';
 import ClassMonthCalendar from './ClassMonthCalendar';
 import MakeupClasses from './MakeupClasses';
+import { subscribeScheduleSessions, subscribeSessionHistory, resetSessionHistory } from '../services/teacherSessions';
 import WaitingList from './WaitingList';
 import LessonWorkspace from './LessonWorkspace';
 import ErrorBoundary from './ErrorBoundary';
@@ -315,20 +316,12 @@ export default function ClassPage({ students = [], onSelectStudent, onOpenReport
   const [liveUpcoming, setLiveUpcoming] = useState(false);
   useEffect(() => {
     const end = dateKey(addDays(new Date(`${today}T12:00:00`), 7));
-    const q = query(collection(db, 'sessions'), where('date', '>=', today), where('date', '<=', end));
-    let unsub = () => {};
-    const attach = () => {
-      unsub();
-      unsub = onSnapshot(q, { includeMetadataChanges: true }, (snap) => {
-        const list = snap.docs.map((d) => ({ id: d.id, ...d.data() })).filter((s) => sessionStudentId(s) && s.attendance !== 'cancelled');
-        setUpcoming(list);
-        if (!snap.metadata.fromCache) { setLiveUpcoming(true); localCache.set(UPCOMING_CACHE, { savedAt: Date.now(), list }); }
-      }, () => setUpcoming((prev) => prev || []));
-    };
-    const onVis = () => { if (document.visibilityState === 'hidden') { unsub(); unsub = () => {}; } else { setLiveUpcoming(false); attach(); } };
-    attach();
-    document.addEventListener('visibilitychange', onVis);
-    return () => { unsub(); document.removeEventListener('visibilitychange', onVis); };
+    return subscribeScheduleSessions(({ docs, fresh }) => {
+      const list = docs.filter((s) => (s.date || '') >= today && (s.date || '') <= end && sessionStudentId(s) && s.attendance !== 'cancelled');
+      setUpcoming(list);
+      setLiveUpcoming(fresh);
+      if (fresh) localCache.set(UPCOMING_CACHE, { savedAt: Date.now(), list });
+    }, () => setUpcoming((prev) => prev || []));
   }, [today]);
 
   const dayUnits = useMemo(() => {
@@ -370,25 +363,11 @@ export default function ClassPage({ students = [], onSelectStudent, onOpenReport
   const [historyTry, setHistoryTry] = useState(0);
   useEffect(() => {
     if (!historyKey) return undefined;
-    let cancelled = false;
     const [kind, id] = [historyKey.slice(0, 1), historyKey.slice(2)];
-    // A live listener, not getDocs: on the iPad a one-off getDocs for this query can wait forever while listeners
-    // keep working (the lesson list above is one). The listener also answers from the on-device copy first.
-    const q = query(collection(db, 'sessions'), where(kind === 'g' ? 'groupId' : 'studentId', '==', id));
-    const stall = window.setTimeout(() => {
-      if (!cancelled) setHistory((h) => (h.key === historyKey && h.list ? h : { key: historyKey, list: null, fresh: false, failed: true }));
-    }, 15000);
-    const unsub = onSnapshot(q, { includeMetadataChanges: true }, (snap) => {
-      if (cancelled) return;
-      // Nothing saved on this device yet and the server has not answered: wait, do not claim "no lessons".
-      if (snap.metadata.fromCache && snap.empty) return;
-      window.clearTimeout(stall);
-      const list = snap.docs.map((d) => ({ id: d.id, ...d.data() }));
-      const fresh = !snap.metadata.fromCache;
+    return subscribeSessionHistory(kind === 'g' ? 'groupId' : 'studentId', id, ({ docs: list, fresh }) => {
       if (fresh) localCache.set(historyCacheKey(historyKey), { savedAt: Date.now(), list });
       setHistory({ key: historyKey, list, fresh });
-    }, () => { if (!cancelled) setHistory({ key: historyKey, list: null, fresh: false, failed: true }); });
-    return () => { cancelled = true; window.clearTimeout(stall); unsub(); };
+    }, () => setHistory((h) => (h.key === historyKey && h.list ? h : { key: historyKey, list: null, fresh: false, failed: true })));
   }, [historyKey, historyTry]);
   const savedHistory = useMemo(() => {
     const c = historyKey ? localCache.get(historyCacheKey(historyKey)) : null;
@@ -482,7 +461,7 @@ export default function ClassPage({ students = [], onSelectStudent, onOpenReport
         {historyFailed && (
           <span className="cls-sync" role="alert">
             Couldn’t load lessons.{' '}
-            <button type="button" className="cls-link" onClick={() => { setHistory({ key: '', list: null, fresh: false }); setHistoryTry((n) => n + 1); }}>Retry</button>
+            <button type="button" className="cls-link" onClick={() => { resetSessionHistory(historyKey.startsWith('g') ? 'groupId' : 'studentId', historyKey.slice(2)); setHistory({ key: '', list: null, fresh: false }); setHistoryTry((n) => n + 1); }}>Retry</button>
           </span>
         )}
         {!historyFailed && (!liveUpcoming || (historyKey && !historyFresh)) && (
