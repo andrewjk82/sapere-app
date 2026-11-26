@@ -73,6 +73,8 @@ import DailyPracticeSettings from "./studentDetail/DailyPracticeSettings";
 import ChallengeAnalyticsPanel from "./studentDetail/ChallengeAnalyticsPanel";
 import ChallengePerformanceHero from "./studentDetail/ChallengePerformanceHero";
 import CollapsibleSection from "./studentDetail/CollapsibleSection";
+import LearningOverview from "./studentDetail/LearningOverview";
+import TermResultsCard from "./studentDetail/TermResultsCard";
 import SecretNotebookPanel from "./studentDetail/SecretNotebookPanel";
 import ExamPrepPanel from "./studentDetail/ExamPrepPanel";
 import HscPastPaperPanel from "./studentDetail/HscPastPaperPanel";
@@ -1927,11 +1929,23 @@ const StudentDetail = ({ studentId, onBack }) => {
   });
   chapters = uniqueChapters;
 
+  const todayKeyForHw = new Date().toLocaleDateString("en-CA");
+  const openHomeworkCount = (progressSessions || []).filter((x) => String(x.homework || "").trim()
+    && !["checked", "excused", "deleted", "submitted"].includes(x.homeworkStatus) && x.isHomeworkCompleted !== true
+    && (x.date || "") < todayKeyForHw).length;
+
   const renderTabContent = () => {
     switch (activeTab) {
       case "overview":
         return (
           <div style={{ display: "grid", gap: "24px" }}>
+            <LearningOverview
+              student={student}
+              dailyStats={dailyStats}
+              sessions={progressSessions}
+              topicProgress={topicProgress}
+              onGoTab={setActiveTab}
+            />
             {/* PERFORMANCE HERO — snapshot of accuracy, insight and key counters */}
             {studentAnalytics && (
               <ChallengePerformanceHero
@@ -1953,10 +1967,6 @@ const StudentDetail = ({ studentId, onBack }) => {
         chapters={chapters}
         completedChapters={completedChapters}
         topicProgress={topicProgress}
-        editingTerm={editingTerm}
-        setEditingTerm={setEditingTerm}
-        showToast={showToast}
-        onUpdateCurriculumSetting={handleUpdateCurriculumSetting}
       />
       {/* 3-4. Weekly progress trackers */}
       <WeeklyProgressTrackers
@@ -2439,6 +2449,14 @@ const StudentDetail = ({ studentId, onBack }) => {
         );
       case "hsc":
         return (
+          <div style={{ display: "grid", gap: "24px" }}>
+          <TermResultsCard
+            student={student}
+            editingTerm={editingTerm}
+            setEditingTerm={setEditingTerm}
+            showToast={showToast}
+            onUpdateCurriculumSetting={handleUpdateCurriculumSetting}
+          />
           <HscTab
             hscRecords={hscRecords}
             styles={styles}
@@ -2451,6 +2469,7 @@ const StudentDetail = ({ studentId, onBack }) => {
             onUpdateModeration={handleUpdateHscModeration}
             hscTypeStats={hscTypeStats}
           />
+          </div>
         );
       default:
         return null;
@@ -2482,88 +2501,29 @@ const StudentDetail = ({ studentId, onBack }) => {
       />
 
       {/* 5. Navigation */}
-      <div
-        className="nav-tabs-mobile"
-        style={{
-          display: "flex",
-          gap: "12px",
-          marginBottom: "24px",
-          flexWrap: "wrap",
-        }}
-      >
-        <button
-          onClick={() => setActiveTab("overview")}
-          style={{
-            ...styles.navBtn,
-            ...(activeTab === "overview" ? styles.navBtnActive : {}),
-          }}
-        >
-          <LayoutGrid size={18} /> Overview
-        </button>
-        <button
-          onClick={() => setActiveTab("curriculum")}
-          style={{
-            ...styles.navBtn,
-            ...(activeTab === "curriculum" ? styles.navBtnActive : {}),
-          }}
-        >
-          <BookOpen size={18} /> Progress
-        </button>
-        <button
-          onClick={() => setActiveTab("challenge")}
-          style={{
-            ...styles.navBtn,
-            ...(activeTab === "challenge" ? styles.navBtnActive : {}),
-          }}
-        >
-          <Trophy size={18} /> Practice
-        </button>
-        <button
-          onClick={() => setActiveTab("homework")}
-          style={{
-            ...styles.navBtn,
-            ...(activeTab === "homework" ? styles.navBtnActive : {}),
-          }}
-        >
-          <ClipboardList size={18} /> Homework
-        </button>
-        <button
-          onClick={() => setActiveTab("hsc")}
-          style={{
-            ...styles.navBtn,
-            ...(activeTab === "hsc" ? styles.navBtnActive : {}),
-          }}
-        >
-          <FileText size={18} /> Results
-        </button>
-        {/* Only for students doing OC / Selective / Scholarship (or with results already stored). */}
-        {(student?.scholarshipEnabled === true || Object.keys(student?.specialWeekly || {}).length > 0) && (
-          <button
-            onClick={() => setActiveTab("special")}
-            style={{
-              ...styles.navBtn,
-              ...(activeTab === "special" ? styles.navBtnActive : {}),
-            }}
-          >
-            <Target size={18} /> Special tests
+      <nav className="sd-tabs" aria-label="Student sections">
+        {[
+          ["overview", LayoutGrid, "Overview"],
+          ["curriculum", BookOpen, "Progress"],
+          ["challenge", Trophy, "Practice"],
+          ["homework", ClipboardList, "Homework"],
+          ["hsc", FileText, "Results"],
+          ...((student?.scholarshipEnabled === true || Object.keys(student?.specialWeekly || {}).length > 0)
+            ? [["special", Target, "Special tests"]] : []),
+        ].map(([key, Icon, label]) => (
+          <button key={key} type="button" className={`sd-tab${activeTab === key ? " is-on" : ""}`} aria-current={activeTab === key ? "page" : undefined} onClick={() => setActiveTab(key)}>
+            <Icon size={17} /> {label}
+            {key === "homework" && openHomeworkCount > 0 && <span className="sd-tab-count">{openHomeworkCount}</span>}
           </button>
-        )}
-        <button
-          onClick={() => setIsScheduleModalOpen(true)}
-          style={styles.navBtn}
-        >
-          <Calendar size={18} /> Add lesson
+        ))}
+        <span className="sd-tab-gap" />
+        <button type="button" className="sd-tab sd-tab--action" onClick={() => setIsScheduleModalOpen(true)}>
+          <Calendar size={17} /> Add lesson
         </button>
-        <button
-          onClick={() => setActiveTab("settings")}
-          style={{
-            ...styles.navBtn,
-            ...(activeTab === "settings" ? styles.navBtnActive : {}),
-          }}
-        >
-          <SettingsIcon size={18} /> Settings
+        <button type="button" className={`sd-tab${activeTab === "settings" ? " is-on" : ""}`} aria-current={activeTab === "settings" ? "page" : undefined} onClick={() => setActiveTab("settings")}>
+          <SettingsIcon size={17} /> Settings
         </button>
-      </div>
+      </nav>
 
       {/* 4. Content */}
       {renderTabContent()}
