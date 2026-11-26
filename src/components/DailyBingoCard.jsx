@@ -41,6 +41,30 @@ export default function DailyBingoCard({ uid, profile, planItems, studyRoomOn, s
   const mustLeft = board.filter((c) => c.kind === 'must' && !c.done);
   const next = mustLeft[0] || board.find((c) => !c.done && c.kind !== 'free');
 
+  // Celebrate each line once per day on this device: its cells hop in turn, a line is drawn through them, "+5 XP" rises.
+  const seenKey = `sapere:bingoSeen:v1:${uid}:${date}`;
+  const [show, setShow] = useState(null);           // { id, idx, n }
+  const queueRef = useRef([]);
+  useEffect(() => {
+    if (!uid) return;
+    let seen = [];
+    try { seen = JSON.parse(localStorage.getItem(seenKey) || '[]'); } catch { /* storage blocked */ }
+    const fresh = won.filter((l) => !seen.includes(l.id) && !queueRef.current.some((q) => q.id === l.id));
+    if (!fresh.length) return;
+    try { localStorage.setItem(seenKey, JSON.stringify([...seen, ...fresh.map((l) => l.id)])); } catch { /* storage blocked */ }
+    queueRef.current.push(...fresh);
+    if (!show) setShow({ ...queueRef.current.shift(), n: Date.now() });
+  }, [uid, won, seenKey, show]);
+  useEffect(() => {
+    if (!show) return undefined;
+    const t = window.setTimeout(() => {
+      const next = queueRef.current.shift();
+      setShow(next ? { ...next, n: Date.now() } : null);
+    }, 2600);
+    return () => window.clearTimeout(t);
+  }, [show]);
+  const center = (i) => [(i % 3) * 100 + 50, Math.floor(i / 3) * 100 + 50];
+
   // Pay for newly finished lines (the transaction skips any already paid, on any device).
   const askedRef = useRef('');
   useEffect(() => {
@@ -60,11 +84,12 @@ export default function DailyBingoCard({ uid, profile, planItems, studyRoomOn, s
       <div className="bingo-body">
         <div className="bingo-board">
           {board.map((c, i) => {
-            if (c.kind === 'free') return <div key={c.id} className="bingo-cell is-free"><Star size={26} /><b>Free</b></div>;
+            const hop = show && show.idx.includes(i) ? { className: ' is-hop', style: { animationDelay: `${show.idx.indexOf(i) * 140}ms` } } : { className: '', style: undefined };
+            if (c.kind === 'free') return <div key={c.id} className={`bingo-cell is-free${hop.className}`} style={hop.style}><Star size={26} /><b>Free</b></div>;
             const Icon = c.icon;
             return (
-              <button key={c.id} type="button" onClick={c.onClick}
-                className={`bingo-cell${c.done ? ' is-done' : ''}${c.kind === 'must' ? ' is-must' : ''}${finishing.has(i) ? ' is-finishing' : ''}`}
+              <button key={c.id} type="button" onClick={c.onClick} style={hop.style}
+                className={`bingo-cell${c.done ? ' is-done' : ''}${c.kind === 'must' ? ' is-must' : ''}${finishing.has(i) ? ' is-finishing' : ''}${hop.className}`}
                 aria-label={`${c.title}${c.kind === 'must' ? ', must do' : ''}${c.done ? ', done' : ''}`}>
                 {c.done ? <span className="bingo-check"><Check size={20} strokeWidth={3} /></span> : <Icon size={26} />}
                 <b>{c.title}</b>
@@ -72,6 +97,18 @@ export default function DailyBingoCard({ uid, profile, planItems, studyRoomOn, s
               </button>
             );
           })}
+          {show && (() => {
+            const [x1, y1] = center(show.idx[0]);
+            const [x2, y2] = center(show.idx[2]);
+            return (
+              <div key={show.n} className="bingo-celebrate" aria-live="polite">
+                <svg viewBox="0 0 300 300" preserveAspectRatio="none" aria-hidden="true">
+                  <line x1={x1} y1={y1} x2={x2} y2={y2} pathLength="1" />
+                </svg>
+                <span className="bingo-burst">Bingo! <b>+{XP_PER_LINE} XP</b></span>
+              </div>
+            );
+          })()}
         </div>
         <div className="bingo-side">
           <ul className="bingo-lines">
