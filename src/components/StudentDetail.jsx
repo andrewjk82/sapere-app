@@ -484,6 +484,20 @@ const StudentDetail = ({ studentId, onBack }) => {
     if (!studentId) return;
     let cancelled = false;
     let unsubManual = null;
+    let shown = false;
+
+    // The page opens on the student's own document. The manual↔registered link needs one-off reads and writes, which
+    // on the iPad app can stay unanswered for ever, so on first open it runs behind the page instead of before it.
+    const showThenLink = async (id, source, data, link) => {
+      const run = () => link().catch((err) => { console.warn("Duplicate record sync skipped:", err); return false; });
+      if (!shown) {
+        shown = true;
+        applyStudentData(id, source, data);
+        run();
+        return;
+      }
+      if (!(await run())) applyStudentData(id, source, data);
+    };
 
     const applyStudentData = (id, source, data, extra = {}) => {
       if (cancelled) return;
@@ -626,13 +640,7 @@ const StudentDetail = ({ studentId, onBack }) => {
           }
 
           const mData = mSnap.data();
-          try {
-            const linked = await syncManualToRegistered(mSnap.id, mData);
-            if (linked) return;
-          } catch (err) {
-            console.warn("Manual-to-registered curriculum sync skipped:", err);
-          }
-          applyStudentData(mSnap.id, "manual", mData);
+          await showThenLink(mSnap.id, "manual", mData, () => syncManualToRegistered(mSnap.id, mData));
         },
       );
     };
@@ -642,13 +650,7 @@ const StudentDetail = ({ studentId, onBack }) => {
         const data = snap.data();
         // If loading a registered user directly, track their UID immediately
         if (!cancelled) setRegisteredUid(studentId);
-        try {
-          const linked = await syncRegisteredWithManual(snap.id, data);
-          if (linked) return;
-        } catch (err) {
-          console.warn("Registered duplicate curriculum sync skipped:", err);
-        }
-        applyStudentData(snap.id, "users", data);
+        await showThenLink(snap.id, "users", data, () => syncRegisteredWithManual(snap.id, data));
       } else {
         loadManualStudent();
       }
