@@ -57,7 +57,18 @@
 .dash-split__room:empty { display: none; }
 @media (min-width: 768px) { .dash-split__side { grid-template-columns: repeat(2, minmax(0, 1fr)); } .dash-split__room { grid-column: 1 / -1; } }
 @media (min-width: 1100px) {
-  .dash-split { grid-template-columns: minmax(0, 520px) minmax(0, 1fr); }
-  .dash-split__main .bingo-head { align-items: flex-start; text-align: left; }
-  .dash-split__main .bingo-body { margin: 0; }
+  /* Bingo is the main thing: bigger column. The side cards are narrower and line up with the board's three rows. */
+  .dash-split { grid-template-columns: minmax(0, 660px) minmax(0, 480px); justify-content: center; align-items: stretch !important; }
+  .dash-split__main .bingo-head { height: 56px; margin-bottom: 14px; align-items: flex-start; justify-content: center; text-align: left; }
+  .dash-split__main .bingo-body { margin: 0; width: 100%; }
+  .dash-split__main .bingo-board { gap: 12px; }
+  .dash-split__main .bingo-cell svg { width: 36px; height: 36px; }
+  .dash-split__main .bingo-check svg { width: 24px; height: 24px; }
+  .dash-split__main .bingo-check { width: 44px; height: 44px; }
+  .dash-split__main .bingo-cell b { font-size: 1.1rem; }
+  .dash-split__main .bingo-cell small { font-size: 0.85rem; }
+  .dash-split__side { margin-top: 70px; align-self: stretch; grid-template-rows: repeat(3, minmax(0, 1fr)); grid-auto-rows: minmax(0, 1fr); align-items: stretch !important; gap: 12px !important; }
+  /* Same height for every side card (their own inline heights are for the stacked layout). */
+  .dash-split__side > *, .dash-split__room > button { height: 100% !important; min-height: 0 !important; max-height: none !important; box-sizing: border-box; overflow: hidden; }
+  .dash-split__room { gap: 12px; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); grid-auto-rows: minmax(0, 1fr); }
 }
