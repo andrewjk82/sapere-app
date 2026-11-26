@@ -5110,6 +5110,56 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "knox2020-y11a-q3",
+          "type": "mc",
+          "stem": "What is the value of \\(p\\) so that \\(\\dfrac{a^{2}a^{-3}}{\\sqrt a}=a^{p}\\) ?",
+          "difficulty": "medium",
+          "options": [
+            "\\(-3\\)",
+            "\\(12\\)",
+            "\\(-\\dfrac{1}{2}\\)",
+            "\\(-\\dfrac{3}{2}\\)"
+          ],
+          "answer": 3,
+          "hint": "Use the index laws: \\(a^{m}\\times a^{n}=a^{m+n}\\) (ADD powers when multiplying), \\(\\dfrac{a^{m}}{a^{n}}=a^{m-n}\\) (SUBTRACT when dividing) and \\(\\sqrt a=a^{\\frac12}\\).",
+          "steps": [
+            {
+              "explain": "Numerator: multiply, so add the powers: \\(2+(-3)=-1\\).",
+              "work": "\\(a^{2}a^{-3}=a^{-1}\\)"
+            },
+            {
+              "explain": "Rewrite the root as a power: \\(\\sqrt a=a^{\\frac12}\\).",
+              "work": "\\(\\dfrac{a^{-1}}{a^{\\frac12}}\\)"
+            },
+            {
+              "explain": "Divide, so subtract the powers: \\(-1-\\dfrac{1}{2}=-\\dfrac{3}{2}\\).",
+              "work": "\\(=a^{-1-\\frac12}=a^{-\\frac32}\\)"
+            },
+            {
+              "explain": "Compare with \\(a^{p}\\): \\(p=-\\dfrac{3}{2}\\). Why not the others: A (\\(-3\\)) forgets \\(\\sqrt a\\); B multiplies powers; C subtracts \\(\\dfrac{1}{2}\\) wrongly (\\(-1+\\dfrac{1}{2}\\)).",
+              "work": "\\(p=-\\dfrac{3}{2}\\)"
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">D</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "What is the value of \\(p\\)",
+              "note": "Add powers when multiplying; subtract when dividing."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Knox Grammar School 2020 Year 11 Mathematics Advanced Yearly Examination",
+            "school": "Knox Grammar School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -6680,6 +6730,56 @@
           "meta": {
             "source": "Merewether High School 2025 Year 12 Trial HSC Mathematics Advanced",
             "school": "Merewether High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "knox2020-y11a-q7",
+          "type": "mc",
+          "stem": "When evaluated, \\(\\log_{3}15+\\log_{3}18-\\log_{3}10=\\)",
+          "difficulty": "medium",
+          "options": [
+            "\\(1\\)",
+            "\\(2\\)",
+            "\\(3\\)",
+            "\\(\\log_{3}23\\)"
+          ],
+          "answer": 2,
+          "hint": "Log laws (same base): \\(\\log a+\\log b=\\log(ab)\\) (add \\(\\to\\) multiply) and \\(\\log a-\\log b=\\log\\dfrac{a}{b}\\) (subtract \\(\\to\\) divide). Then convert: \\(\\log_{3}27=3\\) because \\(3^{3}=27\\).",
+          "steps": [
+            {
+              "explain": "Combine into ONE log: add \\(\\to\\) multiply, subtract \\(\\to\\) divide.",
+              "work": "\\(\\log_{3}\\dfrac{15\\times18}{10}\\)"
+            },
+            {
+              "explain": "Calculate: \\(15\\times18=270\\); \\(270\\div10=27\\).",
+              "work": "\\(=\\log_{3}27\\)"
+            },
+            {
+              "explain": "Convert: the power of 3 that gives 27 (\\(3^{3}=27\\)).",
+              "work": "\\(\\log_{3}27=3\\)"
+            },
+            {
+              "explain": "Why not the others: D (\\(\\log_{3}23\\)) adds and subtracts the numbers instead of using the log laws; A, B are other powers of 3 (3, 9).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">C</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "When evaluated,",
+              "note": "Add \\(\\to\\) multiply; subtract \\(\\to\\) divide; \\(3^3=27\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Knox Grammar School 2020 Year 11 Mathematics Advanced Yearly Examination",
+            "school": "Knox Grammar School",
             "grade": "11",
             "origin": "teacher"
           }

@@ -5164,6 +5164,160 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "knox2020-y11a-q14ci",
+          "type": "mc",
+          "stem": "The population of native parrots on a tropical island has been studied since 1950 for conservation purposes. The number of parrots, \\(P\\), can be modelled by the equation \\(P=2500e^{-0.036t}\\), where \\(t\\) is the number of years after 1950. What was the population of native parrots in 1970 ?",
+          "difficulty": "easy",
+          "options": [
+            "\\(1217\\) parrots",
+            "\\(2411\\) parrots",
+            "\\(1250\\) parrots",
+            "\\(1780\\) parrots"
+          ],
+          "answer": 0,
+          "hint": "“\\(t\\) years AFTER 1950”: for 1970, \\(t=1970-1950=20\\). Substitute \\(t=20\\) (calculator: \\(e^{-0.72}\\)). Round to a whole number of parrots.",
+          "steps": [
+            {
+              "explain": "\\(t=1970-1950=20\\).",
+              "work": "\\(P=2500e^{-0.036\\times20}=2500e^{-0.72}\\)"
+            },
+            {
+              "explain": "\\(e^{-0.72}=0.4868\\).",
+              "work": "\\(P=2500\\times0.4868=1217.2\\ldots\\)"
+            },
+            {
+              "explain": "Round to a whole number.",
+              "work": "\\(P\\approx1217\\ \\text{parrots}\\)"
+            },
+            {
+              "explain": "Why not the others: B uses \\(t=1\\); C uses \\(2500\\times\\dfrac{1}{2}\\); D is \\(2500e^{-0.036(10)}\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "What was the population of native parrots in 1970 ?",
+              "note": "\\(t=20\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Knox Grammar School 2020 Year 11 Mathematics Advanced Yearly Examination",
+            "school": "Knox Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "knox2020-y11a-q14cii",
+          "type": "mc",
+          "stem": "The number of parrots is \\(P=2500e^{-0.036t}\\), where \\(t\\) is the number of years after 1950. Show that the parrot population was declining at a rate of approximately 44 parrots per year in 1970. Which working is correct?",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{dP}{dt}=-0.036\\times2500e^{-0.036t}=-0.036P\\); at \\(t=20\\): \\(-0.036\\times1217\\approx-44\\) parrots per year",
+            "\\(\\dfrac{dP}{dt}=2500e^{-0.036t}\\); at \\(t=20\\): \\(1217\\)",
+            "\\(\\dfrac{dP}{dt}=-0.036\\times2500=-90\\)",
+            "\\(\\dfrac{dP}{dt}=\\dfrac{P(20)-P(0)}{20}=\\dfrac{1217-2500}{20}\\approx-64\\)"
+          ],
+          "answer": 0,
+          "hint": "“Rate of change” \\(=\\) the DERIVATIVE \\(\\dfrac{dP}{dt}\\) at \\(t=20\\). For \\(e^{kt}\\): \\(\\dfrac{d}{dt}e^{kt}=ke^{kt}\\) (the constant \\(k\\) comes down). Negative rate \\(=\\) declining.",
+          "steps": [
+            {
+              "explain": "Differentiate: \\(\\dfrac{d}{dt}e^{-0.036t}=-0.036e^{-0.036t}\\).",
+              "work": "\\(\\dfrac{dP}{dt}=2500\\times(-0.036)e^{-0.036t}=-0.036P\\)"
+            },
+            {
+              "explain": "At \\(t=20\\) (1970): \\(P=1217\\) (part i).",
+              "work": "\\(\\dfrac{dP}{dt}=-0.036\\times1217.2=-43.8\\ldots\\)"
+            },
+            {
+              "explain": "\\(-43.8\\approx-44\\): the population is DECREASING by about 44 parrots per year.",
+              "work": "\\(\\dfrac{dP}{dt}\\approx-44\\ \\text{parrots per year}\\)"
+            },
+            {
+              "explain": "Why not the others: B forgets the constant \\(-0.036\\); C forgets the exponential; D is the AVERAGE rate over 20 years (not the rate at 1970).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that the parrot population was declining at a rate of approximately 44 parrots per year in 1970.",
+              "note": "Rate \\(=\\dfrac{dP}{dt}=-0.036P\\) at \\(t=20\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Knox Grammar School 2020 Year 11 Mathematics Advanced Yearly Examination",
+            "school": "Knox Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "knox2020-y11a-q14ciii",
+          "type": "mc",
+          "stem": "The number of parrots is \\(P=2500e^{-0.036t}\\). When the parrot population reaches 250, they are listed as being in danger of extinction. After how many years will this occur ?",
+          "difficulty": "medium",
+          "options": [
+            "\\(64\\) years",
+            "\\(32\\) years",
+            "\\(25\\) years",
+            "\\(100\\) years"
+          ],
+          "answer": 0,
+          "hint": "Set \\(P=250\\), isolate \\(e^{-0.036t}\\), then take NATURAL LOGS: \\(\\ln e^{x}=x\\) and \\(\\ln\\dfrac1{10}=-\\ln10\\).",
+          "steps": [
+            {
+              "explain": "Substitute \\(P=250\\).",
+              "work": "\\(250=2500e^{-0.036t}\\)"
+            },
+            {
+              "explain": "Divide by 2500.",
+              "work": "\\(e^{-0.036t}=\\dfrac{250}{2500}=0.1\\)"
+            },
+            {
+              "explain": "Take \\(\\ln\\): \\(-0.036t=\\ln0.1=-\\ln10\\). Divide by \\(-0.036\\).",
+              "work": "\\(t=\\dfrac{\\ln10}{0.036}=\\dfrac{2.3026}{0.036}=63.96\\ldots\\)"
+            },
+            {
+              "explain": "Round to the nearest year.",
+              "work": "\\(t\\approx64\\ \\text{years}\\)"
+            },
+            {
+              "explain": "Why not the others: B (32) is half; C and D are guesses (e.g. \\(\\dfrac{\\ln0.1}{0.036}\\) without the sign gives \\(-64\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "After how many years will this occur ?",
+              "note": "\\(250=2500e^{-0.036t}\\Rightarrow e^{-0.036t}=0.1\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Knox Grammar School 2020 Year 11 Mathematics Advanced Yearly Examination",
+            "school": "Knox Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     }

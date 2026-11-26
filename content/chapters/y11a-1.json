@@ -8903,6 +8903,56 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "knox2020-y11a-q5",
+          "type": "mc",
+          "stem": "Which of the following is equivalent to \\((x-3)(x-6)-(x-3)(x+3)\\) ?",
+          "difficulty": "medium",
+          "options": [
+            "\\(3x+9\\)",
+            "\\(-9x+9\\)",
+            "\\(3x+27\\)",
+            "\\(-9x+27\\)"
+          ],
+          "answer": 3,
+          "hint": "Two ways: (1) expand both products then subtract (watch the MINUS sign in front of the second bracket!), or (2) take out the common factor \\((x-3)\\).",
+          "steps": [
+            {
+              "explain": "Common factor \\((x-3)\\):",
+              "work": "\\((x-3)\\left[(x-6)-(x+3)\\right]\\)"
+            },
+            {
+              "explain": "Simplify the bracket: \\((x-6)-(x+3)=x-6-x-3=-9\\).",
+              "work": "\\(=(x-3)(-9)\\)"
+            },
+            {
+              "explain": "Expand.",
+              "work": "\\(=-9x+27\\)"
+            },
+            {
+              "explain": "Check by expanding: \\((x^{2}-9x+18)-(x^{2}-9)=-9x+27\\) ✓. Why not the others: A, C forget the minus sign on \\((x+3)\\); B forgets that \\(-9\\times-3=+27\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">D</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Which of the following is equivalent to",
+              "note": "Take out the common factor \\((x-3)\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Knox Grammar School 2020 Year 11 Mathematics Advanced Yearly Examination",
+            "school": "Knox Grammar School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -17559,6 +17609,102 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "knox2020-y11a-q11ai",
+          "type": "mc",
+          "stem": "Factorise fully, \\(4x^{2}+4x-15\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\((2x-3)(2x+5)\\)",
+            "\\((2x+3)(2x-5)\\)",
+            "\\((4x-3)(x+5)\\)",
+            "\\((2x-5)(2x+3)\\)"
+          ],
+          "answer": 0,
+          "hint": "Quadratic with \\(a\\ne1\\): find two numbers with product \\(a\\times c=4\\times(-15)=-60\\) and sum \\(b=4\\): they are \\(10\\) and \\(-6\\). Split the middle term and factorise by grouping.",
+          "steps": [
+            {
+              "explain": "Product \\(-60\\), sum \\(+4\\): \\(10\\times(-6)=-60\\) and \\(10+(-6)=4\\).",
+              "work": "\\(4x^{2}+10x-6x-15\\)"
+            },
+            {
+              "explain": "Group in pairs and factor each pair: \\(2x(2x+5)\\) and \\(-3(2x+5)\\).",
+              "work": "\\(=2x(2x+5)-3(2x+5)\\)"
+            },
+            {
+              "explain": "Take out the common factor \\((2x+5)\\).",
+              "work": "\\(=(2x-3)(2x+5)\\)"
+            },
+            {
+              "explain": "Check by expanding: \\(4x^{2}+10x-6x-15=4x^{2}+4x-15\\) ✓. Why not the others: B, D expand to \\(4x^{2}-4x-15\\); C expands to \\(4x^{2}+17x-15\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Factorise fully,",
+              "note": "Split \\(4x\\) using \\(10x-6x\\) (product \\(-60\\))."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Knox Grammar School 2020 Year 11 Mathematics Advanced Yearly Examination",
+            "school": "Knox Grammar School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "knox2020-y11a-q11aii",
+          "type": "mc",
+          "stem": "Factorise fully, \\(9x-xy^{2}\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(x(3-y)(3+y)\\)",
+            "\\(x\\left(9-y^{2}\\right)\\)",
+            "\\(x(3-y)^{2}\\)",
+            "\\(9x\\left(1-y^{2}\\right)\\)"
+          ],
+          "answer": 0,
+          "hint": "“Fully” means keep factorising until nothing more can be done: (1) take out the COMMON FACTOR \\(x\\); (2) look for a DIFFERENCE OF TWO SQUARES in the bracket: \\(a^{2}-b^{2}=(a-b)(a+b)\\).",
+          "steps": [
+            {
+              "explain": "Common factor \\(x\\).",
+              "work": "\\(9x-xy^{2}=x\\left(9-y^{2}\\right)\\)"
+            },
+            {
+              "explain": "\\(9-y^{2}=3^{2}-y^{2}\\) is a difference of two squares.",
+              "work": "\\(x\\left(3^{2}-y^{2}\\right)=x(3-y)(3+y)\\)"
+            },
+            {
+              "explain": "Why not the others: B stops too early (\\(9-y^{2}\\) still factorises); C is a perfect square, which expands to \\(9-6y+y^{2}\\); D takes out 9 but \\(xy^{2}\\) isn’t a multiple of \\(9x\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Factorise fully,",
+              "note": "Common factor, then difference of squares."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Knox Grammar School 2020 Year 11 Mathematics Advanced Yearly Examination",
+            "school": "Knox Grammar School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -21983,6 +22129,52 @@
           "meta": {
             "source": "Hornsby Girls High School 2020 Year 11 Mathematics Advanced Yearly Examination (Assessment 3 Term 3)",
             "school": "Hornsby Girls High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "knox2020-y11a-q11b",
+          "type": "mc",
+          "stem": "Simplify the expression \\(\\dfrac{1}{n-1}-\\dfrac{1}{n}\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{1}{n(n-1)}\\)",
+            "\\(\\dfrac{1}{-1}=-1\\)",
+            "\\(\\dfrac{2n-1}{n(n-1)}\\)",
+            "\\(0\\)"
+          ],
+          "answer": 0,
+          "hint": "To SUBTRACT algebraic fractions you need a COMMON DENOMINATOR: here \\(n(n-1)\\). Multiply each fraction’s top and bottom by what is missing, then subtract the numerators (use brackets!).",
+          "steps": [
+            {
+              "explain": "Common denominator \\(n(n-1)\\). First fraction: multiply top and bottom by \\(n\\). Second: by \\((n-1)\\).",
+              "work": "\\(\\dfrac{n}{n(n-1)}-\\dfrac{n-1}{n(n-1)}\\)"
+            },
+            {
+              "explain": "Subtract the numerators, keeping the BRACKET (the minus applies to both terms): \\(n-(n-1)=n-n+1\\).",
+              "work": "\\(=\\dfrac{n-(n-1)}{n(n-1)}=\\dfrac{1}{n(n-1)}\\)"
+            },
+            {
+              "explain": "Why not the others: B subtracts the denominators (illegal); C adds the numerators; D wrongly says the two fractions cancel.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Simplify the expression",
+              "note": "Common denominator \\(n(n-1)\\); bracket the subtraction."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Knox Grammar School 2020 Year 11 Mathematics Advanced Yearly Examination",
+            "school": "Knox Grammar School",
             "grade": "11",
             "origin": "teacher"
           }

@@ -5535,6 +5535,106 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "knox2020-y11a-q9",
+          "type": "mc",
+          "stem": "Given that \\(x\\in[0,2\\pi]\\), how many solutions has the equation \\(e^{x}(\\cos x+1)=0\\) ?",
+          "difficulty": "medium",
+          "options": [
+            "\\(0\\)",
+            "\\(1\\)",
+            "\\(2\\)",
+            "\\(3\\)"
+          ],
+          "answer": 1,
+          "hint": "A product is zero when ONE factor is zero: \\(e^{x}=0\\) or \\(\\cos x+1=0\\). An exponential \\(e^{x}\\) is NEVER 0 (always positive).",
+          "steps": [
+            {
+              "explain": "Null factor law.",
+              "work": "\\(e^{x}=0\\quad\\text{or}\\quad\\cos x+1=0\\)"
+            },
+            {
+              "explain": "\\(e^{x}=0\\) has NO solution (\\(e^{x}>0\\) for all \\(x\\)).",
+              "work": "\\(e^{x}>0\\ \\Rightarrow\\ \\text{no solution}\\)"
+            },
+            {
+              "explain": "\\(\\cos x=-1\\) on \\([0,2\\pi]\\): the cosine graph reaches \\(-1\\) only at \\(x=\\pi\\).",
+              "work": "\\(\\cos x=-1\\ \\Rightarrow\\ x=\\pi\\)"
+            },
+            {
+              "explain": "So there is exactly 1 solution (\\(x=\\pi\\)). Why not the others: A forgets \\(\\cos\\pi=-1\\); C, D count \\(\\cos x=0\\) solutions or endpoints.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">B</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "how many solutions has the equation",
+              "note": "\\(e^x\\ne0\\); \\(\\cos x=-1\\Rightarrow x=\\pi\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Knox Grammar School 2020 Year 11 Mathematics Advanced Yearly Examination",
+            "school": "Knox Grammar School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "knox2020-y11a-q15aii",
+          "type": "mc",
+          "stem": "Hence, or otherwise solve, \\(4\\cos^{2}\\theta\\left(\\sec^{2}\\theta-1\\right)=1\\), \\(0^{\\circ}\\le\\theta\\le2\\pi\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\theta=\\dfrac\\pi6,\\ \\dfrac{5\\pi}{6},\\ \\dfrac{7\\pi}{6},\\ \\dfrac{11\\pi}{6}\\)",
+            "\\(\\theta=\\dfrac\\pi6,\\ \\dfrac{5\\pi}{6}\\)",
+            "\\(\\theta=\\dfrac\\pi6,\\ \\dfrac{11\\pi}{6}\\)",
+            "\\(\\theta=\\dfrac\\pi3,\\ \\dfrac{2\\pi}{3},\\ \\dfrac{4\\pi}{3},\\ \\dfrac{5\\pi}{3}\\)"
+          ],
+          "answer": 0,
+          "hint": "“Hence”: use part (i): \\(\\cos^{2}\\theta\\left(\\sec^{2}\\theta-1\\right)=\\sin^{2}\\theta\\). Then solve \\(\\sin^{2}\\theta=\\dfrac{1}{4}\\). When you take a square root you get TWO signs: \\(\\sin\\theta=\\pm\\dfrac{1}{2}\\), giving FOUR solutions in \\([0,2\\pi]\\).",
+          "steps": [
+            {
+              "explain": "Replace by \\(\\sin^{2}\\theta\\) (part i).",
+              "work": "\\(4\\sin^{2}\\theta=1\\ \\Rightarrow\\ \\sin^{2}\\theta=\\dfrac{1}{4}\\)"
+            },
+            {
+              "explain": "Square root: BOTH signs.",
+              "work": "\\(\\sin\\theta=\\pm\\dfrac{1}{2}\\)"
+            },
+            {
+              "explain": "Related angle \\(\\dfrac\\pi6\\). \\(\\sin\\theta=+\\dfrac{1}{2}\\): quadrants 1 and 2: \\(\\dfrac\\pi6,\\ \\pi-\\dfrac\\pi6=\\dfrac{5\\pi}{6}\\). \\(\\sin\\theta=-\\dfrac{1}{2}\\): quadrants 3 and 4: \\(\\pi+\\dfrac\\pi6=\\dfrac{7\\pi}{6},\\ 2\\pi-\\dfrac\\pi6=\\dfrac{11\\pi}{6}\\).",
+              "work": "\\(\\theta=\\dfrac\\pi6,\\ \\dfrac{5\\pi}{6},\\ \\dfrac{7\\pi}{6},\\ \\dfrac{11\\pi}{6}\\)"
+            },
+            {
+              "explain": "Why not the others: B uses only \\(+\\dfrac{1}{2}\\); C misses quadrants; D uses related angle \\(\\dfrac\\pi3\\) (\\(\\sin\\dfrac\\pi3=\\dfrac{\\sqrt3}{2}\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Hence, or otherwise solve,",
+              "note": "\\(4\\sin^2\\theta=1\\Rightarrow\\sin\\theta=\\pm\\dfrac{1}{2}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Knox Grammar School 2020 Year 11 Mathematics Advanced Yearly Examination",
+            "school": "Knox Grammar School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -8733,6 +8833,163 @@
           "meta": {
             "source": "Killara High School 2020 Year 11 Mathematics Advanced Task 3 Examination",
             "school": "Killara High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "knox2020-y11a-q14bi",
+          "type": "mc",
+          "stem": "The diagram below shows sector \\(OAB\\) with centre \\(O\\) and a radius of 12 cm. The point \\(C\\) is the midpoint of \\(OB\\). The area of \\(\\triangle OAC\\) is \\(18\\sqrt3\\) cm\\(^{2}\\). Find the size of the obtuse angle \\(AOC\\) in radians.",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 250\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><polygon points=\"75.0,215.0 75.2,207.7 75.8,200.4 76.7,193.1 78.1,185.9 79.8,178.8 81.9,171.7 84.3,164.8 87.1,158.1 90.3,151.4 93.8,145.0 97.6,138.8 101.7,132.7 106.2,126.9 111.0,121.3 116.0,116.0 121.3,111.0 126.9,106.2 132.7,101.7 138.8,97.6 145.0,93.8 151.4,90.3 158.1,87.1 164.8,84.3 171.7,81.9 178.8,79.8 185.9,78.1 193.1,76.7 200.4,75.8 207.7,75.2 215.0,75.0 222.3,75.2 229.6,75.8 236.9,76.7 244.1,78.1 251.2,79.8 258.3,81.9 265.2,84.3 271.9,87.1 278.6,90.3 285.0,93.8 250.0,154.4\" fill=\"#64748b\" fill-opacity=\"0.6\" stroke=\"none\"/><polyline points=\"75.0,215.0 75.2,207.7 75.8,200.4 76.7,193.1 78.1,185.9 79.8,178.8 81.9,171.7 84.3,164.8 87.1,158.1 90.3,151.4 93.8,145.0 97.6,138.8 101.7,132.7 106.2,126.9 111.0,121.3 116.0,116.0 121.3,111.0 126.9,106.2 132.7,101.7 138.8,97.6 145.0,93.8 151.4,90.3 158.1,87.1 164.8,84.3 171.7,81.9 178.8,79.8 185.9,78.1 193.1,76.7 200.4,75.8 207.7,75.2 215.0,75.0 222.3,75.2 229.6,75.8 236.9,76.7 244.1,78.1 251.2,79.8 258.3,81.9 265.2,84.3 271.9,87.1 278.6,90.3 285.0,93.8\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2.6\"/><line x1=\"75.0\" y1=\"215.0\" x2=\"215.0\" y2=\"215.0\" stroke=\"#1e293b\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"215.0\" y1=\"215.0\" x2=\"285.0\" y2=\"93.8\" stroke=\"#1e293b\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"75.0\" y1=\"215.0\" x2=\"250.0\" y2=\"154.4\" stroke=\"#1e293b\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><text x=\"69.0\" y=\"219.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A</text><text x=\"223.0\" y=\"229.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">O</text><text x=\"293.0\" y=\"89.8\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text><text x=\"258.0\" y=\"168.4\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">C</text><text x=\"145.0\" y=\"233.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">12 cm</text><text x=\"322.0\" y=\"242.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#64748b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">NOT TO SCALE</text></svg>"
+          },
+          "options": [
+            "\\(\\dfrac{2\\pi}{3}\\)",
+            "\\(\\dfrac\\pi3\\)",
+            "\\(\\dfrac{5\\pi}{6}\\)",
+            "\\(\\dfrac{3\\pi}{4}\\)"
+          ],
+          "answer": 0,
+          "hint": "\\(OA=12\\) and \\(OC=6\\) (the MIDPOINT of \\(OB=12\\)). Triangle area \\(=\\dfrac12ab\\sin C\\) with the included angle \\(\\theta=\\angle AOC\\). Solve for \\(\\sin\\theta\\), then choose the OBTUSE angle (second quadrant): \\(\\theta=\\pi-\\) acute angle.",
+          "steps": [
+            {
+              "explain": "Sides \\(OA=12\\), \\(OC=\\dfrac{12}{2}=6\\); included angle \\(\\angle AOC=\\theta\\).",
+              "work": "\\(\\text{Area}=\\dfrac{1}{2}\\times12\\times6\\times\\sin\\theta=36\\sin\\theta\\)"
+            },
+            {
+              "explain": "Set equal to \\(18\\sqrt3\\) and solve for \\(\\sin\\theta\\).",
+              "work": "\\(36\\sin\\theta=18\\sqrt3\\ \\Rightarrow\\ \\sin\\theta=\\dfrac{\\sqrt3}{2}\\)"
+            },
+            {
+              "explain": "Acute solution: \\(\\dfrac\\pi3\\). The question wants the OBTUSE angle (2nd quadrant): \\(\\pi-\\dfrac\\pi3\\).",
+              "work": "\\(\\theta=\\pi-\\dfrac\\pi3=\\dfrac{2\\pi}{3}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 250\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><polygon points=\"75.0,215.0 75.2,207.7 75.8,200.4 76.7,193.1 78.1,185.9 79.8,178.8 81.9,171.7 84.3,164.8 87.1,158.1 90.3,151.4 93.8,145.0 97.6,138.8 101.7,132.7 106.2,126.9 111.0,121.3 116.0,116.0 121.3,111.0 126.9,106.2 132.7,101.7 138.8,97.6 145.0,93.8 151.4,90.3 158.1,87.1 164.8,84.3 171.7,81.9 178.8,79.8 185.9,78.1 193.1,76.7 200.4,75.8 207.7,75.2 215.0,75.0 222.3,75.2 229.6,75.8 236.9,76.7 244.1,78.1 251.2,79.8 258.3,81.9 265.2,84.3 271.9,87.1 278.6,90.3 285.0,93.8 250.0,154.4\" fill=\"#64748b\" fill-opacity=\"0.6\" stroke=\"none\"/><polyline points=\"75.0,215.0 75.2,207.7 75.8,200.4 76.7,193.1 78.1,185.9 79.8,178.8 81.9,171.7 84.3,164.8 87.1,158.1 90.3,151.4 93.8,145.0 97.6,138.8 101.7,132.7 106.2,126.9 111.0,121.3 116.0,116.0 121.3,111.0 126.9,106.2 132.7,101.7 138.8,97.6 145.0,93.8 151.4,90.3 158.1,87.1 164.8,84.3 171.7,81.9 178.8,79.8 185.9,78.1 193.1,76.7 200.4,75.8 207.7,75.2 215.0,75.0 222.3,75.2 229.6,75.8 236.9,76.7 244.1,78.1 251.2,79.8 258.3,81.9 265.2,84.3 271.9,87.1 278.6,90.3 285.0,93.8\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2.6\"/><line x1=\"75.0\" y1=\"215.0\" x2=\"215.0\" y2=\"215.0\" stroke=\"#1e293b\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"215.0\" y1=\"215.0\" x2=\"285.0\" y2=\"93.8\" stroke=\"#1e293b\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"75.0\" y1=\"215.0\" x2=\"250.0\" y2=\"154.4\" stroke=\"#1e293b\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><text x=\"69.0\" y=\"219.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A</text><text x=\"223.0\" y=\"229.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">O</text><text x=\"293.0\" y=\"89.8\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text><text x=\"258.0\" y=\"168.4\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">C</text><text x=\"145.0\" y=\"233.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">12 cm</text><polyline points=\"215.0,215.0 215.0,215.0 215.0,215.0 215.0,215.0 215.0,215.0 215.0,215.0 215.0,215.0 215.0,215.0 215.0,215.0 215.0,215.0 215.0,215.0 215.0,215.0 215.0,215.0 215.0,215.0 215.0,215.0 215.0,215.0 215.0,215.0 215.0,215.0 215.0,215.0 215.0,215.0 215.0,215.0 215.0,215.0 215.0,215.0 215.0,215.0 215.0,215.0 215.0,215.0 215.0,215.0 215.0,215.0 215.0,215.0 215.0,215.0 215.0,215.0 215.0,215.0 215.0,215.0 215.0,215.0 215.0,215.0 215.0,215.0 215.0,215.0 215.0,215.0 215.0,215.0 215.0,215.0 215.0,215.0\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.6\"/><path d=\"M 181,215 A 34 34 0 0 1 232.0,185.6\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"3\"/><text x=\"207.0\" y=\"171.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">120°</text><text x=\"264.0\" y=\"150.4\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">OC = 6</text><text x=\"266.0\" y=\"176.4\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\"></text><line x1=\"215.0\" y1=\"215.0\" x2=\"250.0\" y2=\"154.4\" stroke=\"#d97706\" stroke-width=\"4\" stroke-linecap=\"round\"/><text x=\"322.0\" y=\"242.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#64748b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">NOT TO SCALE</text></svg>"
+              }
+            },
+            {
+              "explain": "Why not the others: B (\\(\\dfrac\\pi3\\)) is the ACUTE solution; C and D have \\(\\sin\\ne\\dfrac{\\sqrt3}{2}\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the size of the obtuse angle \\(AOC\\) in radians.",
+              "note": "\\(\\dfrac12ab\\sin\\theta=18\\sqrt3\\); obtuse: \\(\\pi-\\)acute."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Knox Grammar School 2020 Year 11 Mathematics Advanced Yearly Examination",
+            "school": "Knox Grammar School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "knox2020-y11a-q14bii",
+          "type": "mc",
+          "stem": "The sector \\(OAB\\) has centre \\(O\\), radius 12 cm and \\(\\angle AOB=\\dfrac{2\\pi}{3}\\) (the same as \\(\\angle AOC\\)). Find the exact length of the arc \\(AB\\).",
+          "difficulty": "easy",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 250\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><polygon points=\"75.0,215.0 75.2,207.7 75.8,200.4 76.7,193.1 78.1,185.9 79.8,178.8 81.9,171.7 84.3,164.8 87.1,158.1 90.3,151.4 93.8,145.0 97.6,138.8 101.7,132.7 106.2,126.9 111.0,121.3 116.0,116.0 121.3,111.0 126.9,106.2 132.7,101.7 138.8,97.6 145.0,93.8 151.4,90.3 158.1,87.1 164.8,84.3 171.7,81.9 178.8,79.8 185.9,78.1 193.1,76.7 200.4,75.8 207.7,75.2 215.0,75.0 222.3,75.2 229.6,75.8 236.9,76.7 244.1,78.1 251.2,79.8 258.3,81.9 265.2,84.3 271.9,87.1 278.6,90.3 285.0,93.8 250.0,154.4\" fill=\"#64748b\" fill-opacity=\"0.6\" stroke=\"none\"/><polyline points=\"75.0,215.0 75.2,207.7 75.8,200.4 76.7,193.1 78.1,185.9 79.8,178.8 81.9,171.7 84.3,164.8 87.1,158.1 90.3,151.4 93.8,145.0 97.6,138.8 101.7,132.7 106.2,126.9 111.0,121.3 116.0,116.0 121.3,111.0 126.9,106.2 132.7,101.7 138.8,97.6 145.0,93.8 151.4,90.3 158.1,87.1 164.8,84.3 171.7,81.9 178.8,79.8 185.9,78.1 193.1,76.7 200.4,75.8 207.7,75.2 215.0,75.0 222.3,75.2 229.6,75.8 236.9,76.7 244.1,78.1 251.2,79.8 258.3,81.9 265.2,84.3 271.9,87.1 278.6,90.3 285.0,93.8\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2.6\"/><line x1=\"75.0\" y1=\"215.0\" x2=\"215.0\" y2=\"215.0\" stroke=\"#1e293b\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"215.0\" y1=\"215.0\" x2=\"285.0\" y2=\"93.8\" stroke=\"#1e293b\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"75.0\" y1=\"215.0\" x2=\"250.0\" y2=\"154.4\" stroke=\"#1e293b\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><text x=\"69.0\" y=\"219.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A</text><text x=\"223.0\" y=\"229.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">O</text><text x=\"293.0\" y=\"89.8\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text><text x=\"258.0\" y=\"168.4\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">C</text><text x=\"145.0\" y=\"233.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">12 cm</text><text x=\"322.0\" y=\"242.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#64748b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">NOT TO SCALE</text></svg>"
+          },
+          "options": [
+            "\\(8\\pi\\) cm",
+            "\\(4\\pi\\) cm",
+            "\\(24\\pi\\) cm",
+            "\\(12\\pi\\) cm"
+          ],
+          "answer": 0,
+          "hint": "Arc length \\(\\ell=r\\theta\\) (\\(\\theta\\) in radians). \\(C\\) lies on \\(OB\\), so \\(\\angle AOB=\\angle AOC\\). Leave the answer in terms of \\(\\pi\\).",
+          "steps": [
+            {
+              "explain": "\\(\\angle AOB=\\dfrac{2\\pi}{3}\\) (as \\(C\\) is on \\(OB\\)).",
+              "work": "\\(\\ell=r\\theta=12\\times\\dfrac{2\\pi}{3}\\)"
+            },
+            {
+              "explain": "\\(12\\times\\dfrac{2}{3}=8\\).",
+              "work": "\\(\\ell=8\\pi\\ \\text{cm}\\)"
+            },
+            {
+              "explain": "Why not the others: B is half of it; C is \\(12\\times2\\pi\\); D is the semicircle \\(12\\pi\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the exact length of the arc \\(AB\\).",
+              "note": "\\(\\ell=r\\theta\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Knox Grammar School 2020 Year 11 Mathematics Advanced Yearly Examination",
+            "school": "Knox Grammar School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "knox2020-y11a-q14biii",
+          "type": "mc",
+          "stem": "The sector \\(OAB\\) has radius 12 cm and \\(\\angle AOB=\\dfrac{2\\pi}{3}\\); the area of \\(\\triangle OAC\\) is \\(18\\sqrt3\\) cm\\(^{2}\\). Find the shaded area.",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 250\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><polygon points=\"75.0,215.0 75.2,207.7 75.8,200.4 76.7,193.1 78.1,185.9 79.8,178.8 81.9,171.7 84.3,164.8 87.1,158.1 90.3,151.4 93.8,145.0 97.6,138.8 101.7,132.7 106.2,126.9 111.0,121.3 116.0,116.0 121.3,111.0 126.9,106.2 132.7,101.7 138.8,97.6 145.0,93.8 151.4,90.3 158.1,87.1 164.8,84.3 171.7,81.9 178.8,79.8 185.9,78.1 193.1,76.7 200.4,75.8 207.7,75.2 215.0,75.0 222.3,75.2 229.6,75.8 236.9,76.7 244.1,78.1 251.2,79.8 258.3,81.9 265.2,84.3 271.9,87.1 278.6,90.3 285.0,93.8 250.0,154.4\" fill=\"#64748b\" fill-opacity=\"0.6\" stroke=\"none\"/><polyline points=\"75.0,215.0 75.2,207.7 75.8,200.4 76.7,193.1 78.1,185.9 79.8,178.8 81.9,171.7 84.3,164.8 87.1,158.1 90.3,151.4 93.8,145.0 97.6,138.8 101.7,132.7 106.2,126.9 111.0,121.3 116.0,116.0 121.3,111.0 126.9,106.2 132.7,101.7 138.8,97.6 145.0,93.8 151.4,90.3 158.1,87.1 164.8,84.3 171.7,81.9 178.8,79.8 185.9,78.1 193.1,76.7 200.4,75.8 207.7,75.2 215.0,75.0 222.3,75.2 229.6,75.8 236.9,76.7 244.1,78.1 251.2,79.8 258.3,81.9 265.2,84.3 271.9,87.1 278.6,90.3 285.0,93.8\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2.6\"/><line x1=\"75.0\" y1=\"215.0\" x2=\"215.0\" y2=\"215.0\" stroke=\"#1e293b\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"215.0\" y1=\"215.0\" x2=\"285.0\" y2=\"93.8\" stroke=\"#1e293b\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"75.0\" y1=\"215.0\" x2=\"250.0\" y2=\"154.4\" stroke=\"#1e293b\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><text x=\"69.0\" y=\"219.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A</text><text x=\"223.0\" y=\"229.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">O</text><text x=\"293.0\" y=\"89.8\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text><text x=\"258.0\" y=\"168.4\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">C</text><text x=\"145.0\" y=\"233.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">12 cm</text><text x=\"322.0\" y=\"242.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#64748b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">NOT TO SCALE</text></svg>"
+          },
+          "options": [
+            "\\(48\\pi-18\\sqrt3\\) cm\\(^{2}\\)",
+            "\\(48\\pi\\) cm\\(^{2}\\)",
+            "\\(48\\pi+18\\sqrt3\\) cm\\(^{2}\\)",
+            "\\(24\\pi-18\\sqrt3\\) cm\\(^{2}\\)"
+          ],
+          "answer": 0,
+          "hint": "Look at which region is shaded: it is the WHOLE sector with the TRIANGLE \\(OAC\\) REMOVED (white triangle). So shaded \\(=\\) sector \\(-\\) triangle. Sector: \\(\\dfrac12r^{2}\\theta\\).",
+          "steps": [
+            {
+              "explain": "Sector area.",
+              "work": "\\(A_{\\text{sector}}=\\dfrac{1}{2}(12)^{2}\\left(\\dfrac{2\\pi}{3}\\right)=72\\times\\dfrac{2\\pi}{3}=48\\pi\\)"
+            },
+            {
+              "explain": "Triangle \\(OAC\\) (given): \\(18\\sqrt3\\). Subtract.",
+              "work": "\\(\\text{shaded}=48\\pi-18\\sqrt3\\approx119.6\\ \\text{cm}^{2}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 250\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><polygon points=\"75.0,215.0 75.2,207.7 75.8,200.4 76.7,193.1 78.1,185.9 79.8,178.8 81.9,171.7 84.3,164.8 87.1,158.1 90.3,151.4 93.8,145.0 97.6,138.8 101.7,132.7 106.2,126.9 111.0,121.3 116.0,116.0 121.3,111.0 126.9,106.2 132.7,101.7 138.8,97.6 145.0,93.8 151.4,90.3 158.1,87.1 164.8,84.3 171.7,81.9 178.8,79.8 185.9,78.1 193.1,76.7 200.4,75.8 207.7,75.2 215.0,75.0 222.3,75.2 229.6,75.8 236.9,76.7 244.1,78.1 251.2,79.8 258.3,81.9 265.2,84.3 271.9,87.1 278.6,90.3 285.0,93.8 250.0,154.4\" fill=\"#047857\" fill-opacity=\"0.6\" stroke=\"none\"/><polyline points=\"75.0,215.0 75.2,207.7 75.8,200.4 76.7,193.1 78.1,185.9 79.8,178.8 81.9,171.7 84.3,164.8 87.1,158.1 90.3,151.4 93.8,145.0 97.6,138.8 101.7,132.7 106.2,126.9 111.0,121.3 116.0,116.0 121.3,111.0 126.9,106.2 132.7,101.7 138.8,97.6 145.0,93.8 151.4,90.3 158.1,87.1 164.8,84.3 171.7,81.9 178.8,79.8 185.9,78.1 193.1,76.7 200.4,75.8 207.7,75.2 215.0,75.0 222.3,75.2 229.6,75.8 236.9,76.7 244.1,78.1 251.2,79.8 258.3,81.9 265.2,84.3 271.9,87.1 278.6,90.3 285.0,93.8\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2.6\"/><line x1=\"75.0\" y1=\"215.0\" x2=\"215.0\" y2=\"215.0\" stroke=\"#1e293b\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"215.0\" y1=\"215.0\" x2=\"285.0\" y2=\"93.8\" stroke=\"#1e293b\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"75.0\" y1=\"215.0\" x2=\"250.0\" y2=\"154.4\" stroke=\"#1e293b\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><text x=\"69.0\" y=\"219.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A</text><text x=\"223.0\" y=\"229.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">O</text><text x=\"293.0\" y=\"89.8\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text><text x=\"258.0\" y=\"168.4\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">C</text><text x=\"145.0\" y=\"233.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">12 cm</text><polyline points=\"215.0,215.0 215.0,215.0 215.0,215.0 215.0,215.0 215.0,215.0 215.0,215.0 215.0,215.0 215.0,215.0 215.0,215.0 215.0,215.0 215.0,215.0 215.0,215.0 215.0,215.0 215.0,215.0 215.0,215.0 215.0,215.0 215.0,215.0 215.0,215.0 215.0,215.0 215.0,215.0 215.0,215.0 215.0,215.0 215.0,215.0 215.0,215.0 215.0,215.0 215.0,215.0 215.0,215.0 215.0,215.0 215.0,215.0 215.0,215.0 215.0,215.0 215.0,215.0 215.0,215.0 215.0,215.0 215.0,215.0 215.0,215.0 215.0,215.0 215.0,215.0 215.0,215.0 215.0,215.0 215.0,215.0\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.6\"/><path d=\"M 181,215 A 34 34 0 0 1 232.0,185.6\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"3\"/><text x=\"207.0\" y=\"171.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">120°</text><text x=\"264.0\" y=\"150.4\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">OC = 6</text><text x=\"266.0\" y=\"176.4\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\"></text><line x1=\"215.0\" y1=\"215.0\" x2=\"250.0\" y2=\"154.4\" stroke=\"#d97706\" stroke-width=\"4\" stroke-linecap=\"round\"/><text x=\"145.0\" y=\"123.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">shaded = sector − triangle OAC</text><text x=\"322.0\" y=\"242.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#64748b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">NOT TO SCALE</text></svg>"
+              }
+            },
+            {
+              "explain": "Why not the others: B forgets to subtract the triangle; C adds it; D uses \\(\\dfrac12r\\theta\\)… (half the sector).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the shaded area.",
+              "note": "Shaded \\(=\\) sector \\(-\\) triangle \\(OAC\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Knox Grammar School 2020 Year 11 Mathematics Advanced Yearly Examination",
+            "school": "Knox Grammar School",
             "grade": "11",
             "origin": "teacher"
           }

@@ -5927,6 +5927,56 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "knox2020-y11a-q1",
+          "type": "mc",
+          "stem": "When fully simplified, \\(\\sqrt{128}\\) is written as,",
+          "difficulty": "easy",
+          "options": [
+            "\\(16\\sqrt8\\)",
+            "\\(8\\sqrt2\\)",
+            "\\(100\\sqrt{28}\\)",
+            "\\(2\\sqrt{32}\\)"
+          ],
+          "answer": 1,
+          "hint": "Write the number under the root as (a PERFECT SQUARE) \\(\\times\\) (something): use the LARGEST perfect-square factor. “Fully simplified” means no perfect-square factor is left under the root.",
+          "steps": [
+            {
+              "explain": "The largest perfect square dividing 128 is 64 (\\(128=64\\times2\\)).",
+              "work": "\\(\\sqrt{128}=\\sqrt{64\\times2}\\)"
+            },
+            {
+              "explain": "Split the root: \\(\\sqrt{64\\times2}=\\sqrt{64}\\times\\sqrt2\\).",
+              "work": "\\(=8\\sqrt2\\)"
+            },
+            {
+              "explain": "Check the options: \\(2\\sqrt{32}=2\\times4\\sqrt2=8\\sqrt2\\) has the same VALUE but is NOT fully simplified (\\(\\sqrt{32}\\) still has the factor 16). \\(16\\sqrt8=32\\sqrt2\\) and \\(100\\sqrt{28}\\) are much bigger.",
+              "work": "\\(\\sqrt{128}=8\\sqrt2\\ \\text{(fully simplified)}\\)"
+            },
+            {
+              "explain": "So the answer is \\(8\\sqrt2\\): the only option that is both equal to \\(\\sqrt{128}\\) and fully simplified.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">B</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "When fully simplified,",
+              "note": "Largest square factor: \\(128=64\\times2\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Knox Grammar School 2020 Year 11 Mathematics Advanced Yearly Examination",
+            "school": "Knox Grammar School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -8863,6 +8913,56 @@
           "meta": {
             "source": "Killara High School 2020 Year 11 Mathematics Advanced Task 3 Examination",
             "school": "Killara High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "knox2020-y11a-q11e",
+          "type": "mc",
+          "stem": "Find the exact values of \\(a\\) and \\(b\\) if \\(\\dfrac{2}{\\sqrt5+2}=\\sqrt a+b\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(a=20,\\ b=-4\\)",
+            "\\(a=5,\\ b=-2\\)",
+            "\\(a=20,\\ b=4\\)",
+            "\\(a=2,\\ b=-4\\)"
+          ],
+          "answer": 0,
+          "hint": "RATIONALISE: multiply top and bottom by the CONJUGATE of \\(\\sqrt5+2\\), which is \\(\\sqrt5-2\\); the denominator becomes \\(\\left(\\sqrt5\\right)^{2}-2^{2}=5-4=1\\). Then write \\(2\\sqrt5\\) as \\(\\sqrt{20}\\) to match \\(\\sqrt a\\).",
+          "steps": [
+            {
+              "explain": "Multiply top and bottom by \\(\\sqrt5-2\\).",
+              "work": "\\(\\dfrac{2}{\\sqrt5+2}\\times\\dfrac{\\sqrt5-2}{\\sqrt5-2}=\\dfrac{2\\left(\\sqrt5-2\\right)}{5-4}\\)"
+            },
+            {
+              "explain": "Simplify: the denominator is 1. Expand the numerator.",
+              "work": "\\(=2\\sqrt5-4\\)"
+            },
+            {
+              "explain": "Match the form \\(\\sqrt a+b\\): \\(2\\sqrt5=\\sqrt{4\\times5}=\\sqrt{20}\\), so \\(a=20\\); \\(b=-4\\).",
+              "work": "\\(a=20,\\qquad b=-4\\)"
+            },
+            {
+              "explain": "Check: \\(\\dfrac{2}{4.236}=0.472\\) and \\(\\sqrt{20}-4=4.472-4=0.472\\) ✓. Why not the others: B misses that \\(2\\sqrt5=\\sqrt{20}\\); C has the wrong sign on \\(b\\); D is a slip.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the exact values of \\(a\\) and \\(b\\)",
+              "note": "Multiply by the conjugate \\(\\sqrt5-2\\); \\(2\\sqrt5=\\sqrt{20}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Knox Grammar School 2020 Year 11 Mathematics Advanced Yearly Examination",
+            "school": "Knox Grammar School",
             "grade": "11",
             "origin": "teacher"
           }
