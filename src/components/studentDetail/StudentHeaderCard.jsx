@@ -1,4 +1,5 @@
-import { ChevronLeft, Mail, Phone, FileDown } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
+import { ChevronLeft, Mail, Phone, FileDown, ChevronDown } from "lucide-react";
 
 const getRoleLabel = (role) => {
   if (role === "student") return "Student";
@@ -7,8 +8,8 @@ const getRoleLabel = (role) => {
   return "Role not set";
 };
 
+// Student page header: who, then the everyday actions; the less frequent ones sit under "More".
 export default function StudentHeaderCard({
-  styles,
   student,
   onBack,
   onOpenMessage,
@@ -21,162 +22,67 @@ export default function StudentHeaderCard({
   onEditProfile,
   extraActions = null,
 }) {
+  const [moreOpen, setMoreOpen] = useState(false);
+  const moreRef = useRef(null);
+  useEffect(() => {
+    if (!moreOpen) return undefined;
+    const close = (e) => { if (!moreRef.current?.contains(e.target)) setMoreOpen(false); };
+    const esc = (e) => { if (e.key === "Escape") setMoreOpen(false); };
+    document.addEventListener("pointerdown", close);
+    document.addEventListener("keydown", esc);
+    return () => { document.removeEventListener("pointerdown", close); document.removeEventListener("keydown", esc); };
+  }, [moreOpen]);
+
+  const name = student?.name
+    || (student?.firstName ? `${student.firstName} ${student.lastName || ""}`.trim() : null)
+    || student?.displayName || "Student";
+  const year = (() => {
+    const y = student?.year || student?.level;
+    if (!y) return "No grade";
+    return String(y).toLowerCase().includes("year") || String(y) === "Kindergarten" ? y : `Year ${y}`;
+  })();
+
   return (
-    <div style={styles.card} className="profile-card-mobile">
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          gap: "16px",
-          marginBottom: "24px",
-        }}
-      >
-        <button style={styles.backBtn} onClick={onBack}>
-          <ChevronLeft size={24} />
-        </button>
-        <h1 className="student-name-title" style={{ margin: 0 }}>
-          {student?.name ||
-            (student?.firstName
-              ? `${student.firstName} ${student.lastName || ""}`.trim()
-              : null) ||
-            student?.displayName ||
-            "Student"}
-        </h1>
-        <span
-          className="page-pill"
-          style={{ background: "#e0e7ff", color: "#6366f1" }}
-        >
-          {(() => {
-            const y = student?.year || student?.level;
-            if (!y) return "No Grade";
-            return String(y).toLowerCase().includes("year") ? y : `Year ${y}`;
-          })()}
-        </span>
-        <span
-          className="page-pill"
-          style={{
-            background: student?.role ? "#ecfdf5" : "#fff1f2",
-            color: student?.role ? "#047857" : "#e11d48",
-            border: `1px solid ${student?.role ? "#bbf7d0" : "#fecdd3"}`,
-          }}
-        >
-          {getRoleLabel(student?.role)}
-        </span>
-      </div>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-          flexWrap: "wrap",
-          gap: "16px",
-        }}
-      >
-        <div
-          style={{
-            display: "flex",
-            gap: "20px",
-            color: "#475569",
-            fontWeight: 600,
-            fontSize: "0.85rem",
-          }}
-        >
-          <div style={{ display: "flex", gap: "8px" }}>
-            <Mail size={16} /> {student?.email || "No Email"}
-          </div>
-          <div style={{ display: "flex", gap: "8px" }}>
-            <Phone size={16} /> {student?.phone || "No Phone"}
-          </div>
-        </div>
-        <div style={{ display: "flex", gap: "12px", flexWrap: "wrap" }}>
-          <button
-            onClick={onOpenMessage}
-            className="app-button"
-            style={{
-              padding: "8px 16px",
-              borderRadius: "12px",
-              background: "#f5f3ff",
-              color: "#6366f1",
-              fontWeight: 700,
-              border: "1px solid #e0e7ff",
-            }}
-          >
-            Message
-          </button>
-          <button
-            onClick={onSendReport}
-            disabled={sendingReport}
-            className="app-button"
-            style={{
-              padding: "8px 16px",
-              borderRadius: "12px",
-              background: sendingReport ? "#f1f5f9" : "#ecfdf5",
-              color: sendingReport ? "#94a3b8" : "#047857",
-              fontWeight: 700,
-              border: "1px solid #a7f3d0",
-              cursor: sendingReport ? "default" : "pointer",
-            }}
-          >
-            {sendingReport ? "Sending…" : "Weekly Report"}
-          </button>
-          {["en", "ko"].map((lang) => (
-            <button
-              key={lang}
-              onClick={() => onSendParentReport?.(lang)}
-              disabled={sendingParentReport}
-              className="app-button"
-              title={`Email this week's report to the parent (${lang === "ko" ? "Korean" : "English"}). Parent email is set in Edit profile.`}
-              style={{
-                padding: "8px 16px",
-                borderRadius: "12px",
-                background: sendingParentReport ? "#f1f5f9" : "#f0f9ff",
-                color: sendingParentReport ? "#94a3b8" : "#0369a1",
-                fontWeight: 700,
-                border: "1px solid #bae6fd",
-                cursor: sendingParentReport ? "default" : "pointer",
-              }}
-            >
-              {sendingParentReport ? "Sending…" : lang === "ko" ? "Parent 한국어" : "Parent EN"}
-            </button>
-          ))}
-          <button
-            onClick={onExportDailyPdf}
-            disabled={exportingDailyPdf}
-            className="app-button"
-            title="Print today's Daily Challenge as a PDF (question paper + answer key) — for students who find the online version hard to use."
-            style={{
-              padding: "8px 16px",
-              borderRadius: "12px",
-              background: exportingDailyPdf ? "#f1f5f9" : "#fff7ed",
-              color: exportingDailyPdf ? "#94a3b8" : "#c2410c",
-              fontWeight: 700,
-              border: "1px solid #fed7aa",
-              cursor: exportingDailyPdf ? "default" : "pointer",
-              display: "flex",
-              alignItems: "center",
-              gap: "6px",
-            }}
-          >
-            <FileDown size={16} />
-            {exportingDailyPdf ? "Generating…" : "Daily PDF"}
-          </button>
-          {extraActions}
-          <button
-            onClick={onEditProfile}
-            className="app-button"
-            style={{
-              padding: "8px 16px",
-              borderRadius: "12px",
-              background: "#6366f1",
-              color: "white",
-              fontWeight: 700,
-              border: 0,
-            }}
-          >
-            Edit
-          </button>
+    <header className="sd-head">
+      <button type="button" className="sd-icon-btn sd-back" onClick={onBack} aria-label="Back to students"><ChevronLeft size={24} /></button>
+      <span className="sd-av" aria-hidden="true">{name.charAt(0).toUpperCase()}</span>
+      <div className="sd-who">
+        <h1>{name}</h1>
+        <div className="sd-chips">
+          <span className="sd-chip">{year}</span>
+          {student?.school && <span className="sd-chip">{student.school}</span>}
+          <span className={`sd-chip${student?.role ? "" : " is-warn"}`}>{getRoleLabel(student?.role)}</span>
+          <span className="sd-chip sd-chip--plain"><Mail size={14} /> {student?.email || "No email"}</span>
+          <span className="sd-chip sd-chip--plain"><Phone size={14} /> {student?.phone || "No phone"}</span>
         </div>
       </div>
-    </div>
+      <div className="sd-acts">
+        <button type="button" className="sd-btn" onClick={onOpenMessage}>Message</button>
+        {extraActions}
+        <button type="button" className="sd-btn" onClick={onEditProfile}>Edit</button>
+        <div className="sd-more" ref={moreRef}>
+          <button type="button" className="sd-btn sd-btn--primary" aria-expanded={moreOpen} aria-haspopup="menu" onClick={() => setMoreOpen((v) => !v)}>
+            Reports <ChevronDown size={16} />
+          </button>
+          {moreOpen && (
+            <div className="sd-menu" role="menu">
+              <button type="button" role="menuitem" onClick={onSendReport} disabled={sendingReport}>
+                {sendingReport ? "Sending…" : "Weekly Report"}<small>email the student this week’s report</small>
+              </button>
+              {["en", "ko"].map((lang) => (
+                <button key={lang} type="button" role="menuitem" onClick={() => onSendParentReport?.(lang)} disabled={sendingParentReport}>
+                  {sendingParentReport ? "Sending…" : lang === "ko" ? "Parent report · 한국어" : "Parent report · English"}
+                  <small>to the parent email set in Edit</small>
+                </button>
+              ))}
+              <button type="button" role="menuitem" onClick={onExportDailyPdf} disabled={exportingDailyPdf}>
+                <span><FileDown size={15} /> {exportingDailyPdf ? "Generating…" : "Daily PDF"}</span>
+                <small>today’s Daily Challenge on paper, with answers</small>
+              </button>
+            </div>
+          )}
+        </div>
+      </div>
+    </header>
   );
 }

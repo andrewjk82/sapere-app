@@ -75,6 +75,7 @@ import ChallengePerformanceHero from "./studentDetail/ChallengePerformanceHero";
 import CollapsibleSection from "./studentDetail/CollapsibleSection";
 import LearningOverview from "./studentDetail/LearningOverview";
 import TermResultsCard from "./studentDetail/TermResultsCard";
+import QuickSwitches from "./studentDetail/QuickSwitches";
 import SecretNotebookPanel from "./studentDetail/SecretNotebookPanel";
 import ExamPrepPanel from "./studentDetail/ExamPrepPanel";
 import HscPastPaperPanel from "./studentDetail/HscPastPaperPanel";
@@ -2127,6 +2128,7 @@ const StudentDetail = ({ studentId, onBack }) => {
       case "settings":
         return (
           <div style={{ display: "grid", gap: "24px" }}>
+            <QuickSwitches student={student} onUpdateSetting={handleUpdateCurriculumSetting} />
             {/* DAILY PRACTICE SETTINGS - Accordion Design */}
             <CollapsibleSection
               title="Daily practice settings"
