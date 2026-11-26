@@ -1116,6 +1116,56 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "glenwood2020-pre-q3",
+          "type": "mc",
+          "stem": "What is the exact value of \\(\\cos(15^{\\circ})\\)?",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{\\sqrt6+\\sqrt2}{4}\\)",
+            "\\(\\dfrac{\\sqrt6-\\sqrt2}{4}\\)",
+            "\\(\\dfrac{\\sqrt6}{4}\\)",
+            "\\(\\dfrac{\\sqrt3}{4}\\)"
+          ],
+          "answer": 0,
+          "hint": "Write \\(15^{\\circ}=45^{\\circ}-30^{\\circ}\\) and use \\(\\cos(A-B)=\\cos A\\cos B+\\sin A\\sin B\\) with exact values for \\(45^{\\circ}\\) and \\(30^{\\circ}\\).",
+          "steps": [
+            {
+              "explain": "Compound angle formula: with MINUS in the angle, PLUS between the products.",
+              "work": "\\(\\cos(45^{\\circ}-30^{\\circ})=\\cos45^{\\circ}\\cos30^{\\circ}+\\sin45^{\\circ}\\sin30^{\\circ}\\)"
+            },
+            {
+              "explain": "Exact values: \\(\\cos45^{\\circ}=\\sin45^{\\circ}=\\dfrac{\\sqrt2}{2}\\), \\(\\cos30^{\\circ}=\\dfrac{\\sqrt3}{2}\\), \\(\\sin30^{\\circ}=\\dfrac{1}{2}\\).",
+              "work": "\\(=\\dfrac{\\sqrt2}{2}\\times\\dfrac{\\sqrt3}{2}+\\dfrac{\\sqrt2}{2}\\times\\dfrac{1}{2}\\)"
+            },
+            {
+              "explain": "Multiply: \\(\\dfrac{\\sqrt6}{4}+\\dfrac{\\sqrt2}{4}\\).",
+              "work": "\\(\\cos15^{\\circ}=\\dfrac{\\sqrt6+\\sqrt2}{4}\\)"
+            },
+            {
+              "explain": "Check: \\(\\dfrac{2.449+1.414}{4}=0.966=\\cos15^{\\circ}\\) ✓. Why not the others: B (\\(\\sqrt6-\\sqrt2\\)) is \\(\\sin15^{\\circ}\\) (or from a sign slip); C and D are not complete.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "What is the exact value of \\(\\cos(15^{\\circ})\\)?",
+              "note": "\\(15^\\circ=45^\\circ-30^\\circ\\); \\(\\cos(A-B)=\\cos A\\cos B+\\sin A\\sin B\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Glenwood High School 2020 Year 11 Mathematics Extension 1 Yearly Examination",
+            "school": "Glenwood High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -2048,6 +2098,110 @@
           "meta": {
             "source": "Gosford High School 2020 Trial HSC Mathematics Extension 1",
             "school": "Gosford High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "glenwood2020-pre-q7f",
+          "type": "mc",
+          "stem": "Show that \\(\\cos3\\theta=4\\cos^{3}\\theta-3\\cos\\theta\\). Which working is correct?",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\cos(2\\theta+\\theta)=\\cos2\\theta\\cos\\theta-\\sin2\\theta\\sin\\theta=(2\\cos^{2}\\theta-1)\\cos\\theta-2\\sin^{2}\\theta\\cos\\theta\\ \\to\\ 4\\cos^{3}\\theta-3\\cos\\theta\\)",
+            "\\(\\cos3\\theta=3\\cos\\theta\\) (multiply the angle by 3)",
+            "\\(\\cos(2\\theta+\\theta)=\\cos2\\theta\\cos\\theta+\\sin2\\theta\\sin\\theta\\ \\to\\ 2\\cos^{3}\\theta-\\cos\\theta\\)",
+            "\\(\\cos3\\theta=\\cos^{3}\\theta\\)"
+          ],
+          "answer": 0,
+          "hint": "Write \\(3\\theta=2\\theta+\\theta\\) and use \\(\\cos(A+B)=\\cos A\\cos B-\\sin A\\sin B\\). Then replace \\(\\cos2\\theta=2\\cos^{2}\\theta-1\\), \\(\\sin2\\theta=2\\sin\\theta\\cos\\theta\\) and \\(\\sin^{2}\\theta=1-\\cos^{2}\\theta\\) so everything is in terms of \\(\\cos\\theta\\).",
+          "steps": [
+            {
+              "explain": "Split the angle and use the compound angle formula (MINUS between the products for \\(\\cos(A+B)\\)).",
+              "work": "\\(\\cos3\\theta=\\cos(2\\theta+\\theta)=\\cos2\\theta\\cos\\theta-\\sin2\\theta\\sin\\theta\\)"
+            },
+            {
+              "explain": "Replace the double angles: \\(\\cos2\\theta=2\\cos^{2}\\theta-1\\) and \\(\\sin2\\theta=2\\sin\\theta\\cos\\theta\\).",
+              "work": "\\(=(2\\cos^{2}\\theta-1)\\cos\\theta-(2\\sin\\theta\\cos\\theta)\\sin\\theta\\)"
+            },
+            {
+              "explain": "Expand: \\(2\\cos^{3}\\theta-\\cos\\theta-2\\sin^{2}\\theta\\cos\\theta\\). Replace \\(\\sin^{2}\\theta=1-\\cos^{2}\\theta\\).",
+              "work": "\\(=2\\cos^{3}\\theta-\\cos\\theta-2(1-\\cos^{2}\\theta)\\cos\\theta\\)"
+            },
+            {
+              "explain": "Expand the last bracket: \\(-2\\cos\\theta+2\\cos^{3}\\theta\\). Collect like terms: \\(2\\cos^{3}\\theta+2\\cos^{3}\\theta=4\\cos^{3}\\theta\\); \\(-\\cos\\theta-2\\cos\\theta=-3\\cos\\theta\\).",
+              "work": "\\(=4\\cos^{3}\\theta-3\\cos\\theta\\ \\checkmark\\)"
+            },
+            {
+              "explain": "Why not the others: B treats \\(\\cos\\) as a linear function (it is not); C uses the wrong sign in the compound angle formula; D is not an identity.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that \\(\\cos3\\theta=4\\cos^{3}\\theta-3\\cos\\theta\\)",
+              "note": "\\(3\\theta=2\\theta+\\theta\\); then \\(\\sin^2=1-\\cos^2\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Glenwood High School 2020 Year 11 Mathematics Extension 1 Yearly Examination",
+            "school": "Glenwood High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "glenwood2020-pre-q8b",
+          "type": "mc",
+          "stem": "Show that \\(\\sin\\theta\\sin\\left(\\dfrac\\pi2-\\theta\\right)=\\dfrac{1}{2}\\cos\\left(2\\theta-\\dfrac\\pi2\\right)\\). Which working is correct?",
+          "difficulty": "medium",
+          "options": [
+            "LHS \\(=\\sin\\theta\\cos\\theta=\\dfrac{1}{2}\\sin2\\theta\\); RHS \\(=\\dfrac{1}{2}\\cos\\left(2\\theta-\\dfrac\\pi2\\right)=\\dfrac{1}{2}\\sin2\\theta\\)",
+            "LHS \\(=\\sin\\theta\\cdot\\sin\\theta=\\sin^{2}\\theta\\)",
+            "LHS \\(=\\sin\\theta\\cos\\theta=\\sin2\\theta\\)",
+            "RHS \\(=\\dfrac{1}{2}\\cos2\\theta\\cos\\dfrac\\pi2=0\\)"
+          ],
+          "answer": 0,
+          "hint": "Simplify the LEFT side with the complementary angle rule \\(\\sin\\left(\\dfrac\\pi2-\\theta\\right)=\\cos\\theta\\) and the double angle \\(\\sin2\\theta=2\\sin\\theta\\cos\\theta\\). Then expand the RIGHT side with \\(\\cos(A-B)\\) and show both sides are the same.",
+          "steps": [
+            {
+              "explain": "LHS: \\(\\sin\\left(\\dfrac\\pi2-\\theta\\right)=\\cos\\theta\\).",
+              "work": "\\(\\text{LHS}=\\sin\\theta\\cos\\theta=\\dfrac{1}{2}(2\\sin\\theta\\cos\\theta)=\\dfrac{1}{2}\\sin2\\theta\\)"
+            },
+            {
+              "explain": "RHS: use \\(\\cos(A-B)=\\cos A\\cos B+\\sin A\\sin B\\) with \\(A=2\\theta\\), \\(B=\\dfrac\\pi2\\).",
+              "work": "\\(\\dfrac{1}{2}\\cos\\left(2\\theta-\\dfrac\\pi2\\right)=\\dfrac{1}{2}\\left[\\cos2\\theta\\cos\\dfrac\\pi2+\\sin2\\theta\\sin\\dfrac\\pi2\\right]\\)"
+            },
+            {
+              "explain": "\\(\\cos\\dfrac\\pi2=0\\) and \\(\\sin\\dfrac\\pi2=1\\).",
+              "work": "\\(=\\dfrac{1}{2}\\left[0+\\sin2\\theta\\right]=\\dfrac{1}{2}\\sin2\\theta\\)"
+            },
+            {
+              "explain": "LHS \\(=\\) RHS \\(=\\dfrac{1}{2}\\sin2\\theta\\). ✓ Why not the others: B misapplies the complementary rule; C forgets the \\(\\dfrac{1}{2}\\); D drops the \\(\\sin2\\theta\\sin\\dfrac\\pi2\\) term.",
+              "work": "\\(\\text{LHS}=\\text{RHS}\\)"
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that \\(\\sin\\theta\\sin\\left(\\dfrac\\pi2-\\theta\\right)=\\dfrac{1}{2}\\cos\\left(2\\theta-\\dfrac\\pi2\\right)\\)",
+              "note": "\\(\\sin(\\dfrac\\pi2-\\theta)=\\cos\\theta\\); \\(\\cos(A-B)\\) expansion."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Glenwood High School 2020 Year 11 Mathematics Extension 1 Yearly Examination",
+            "school": "Glenwood High School",
             "grade": "11",
             "origin": "teacher"
           }

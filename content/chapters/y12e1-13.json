@@ -938,6 +938,211 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "glenwood2020-pre-q9ai",
+          "type": "mc",
+          "stem": "The solid shown below is a cylinder. The height of the cylinder is equal to its diameter. In an animation, the model is being scaled up so that its volume is increasing at a steady rate of 120 cm\\(^{3}\\) per second. Write an equation for the volume of the solid in terms of the radius \\(r\\).",
+          "difficulty": "easy",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 270\" width=\"100%\" height=\"auto\" style=\"max-width:380px;display:block;margin:0 auto\"><defs><pattern id=\"hc\" width=\"7\" height=\"7\" patternUnits=\"userSpaceOnUse\" patternTransform=\"rotate(45)\"><rect width=\"7\" height=\"7\" fill=\"#fdf2f8\"/><line x1=\"0\" y1=\"0\" x2=\"0\" y2=\"7\" stroke=\"#f9a8d4\" stroke-width=\"2\"/></pattern></defs><path d=\"M 90,70 L 90,200 A 100 28 0 0 0 290,200 L 290,70 Z\" fill=\"url(#hc)\" stroke=\"#1e293b\" stroke-width=\"2.4\"/><ellipse cx=\"190\" cy=\"70\" rx=\"100\" ry=\"28\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"2.4\"/><path d=\"M 90,200 A 100 28 0 0 1 290,200\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-dasharray=\"5 4\"/><line x1=\"190.0\" y1=\"70.0\" x2=\"282.0\" y2=\"70.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"3 3\"/><line x1=\"282.0\" y1=\"70.0\" x2=\"275.9\" y2=\"66.5\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"282.0\" y1=\"70.0\" x2=\"275.9\" y2=\"73.5\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"235.0\" y=\"62.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">r</text><line x1=\"56.0\" y1=\"70.0\" x2=\"56.0\" y2=\"200.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"3 3\"/><line x1=\"56.0\" y1=\"70.0\" x2=\"52.5\" y2=\"76.1\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"56.0\" y1=\"70.0\" x2=\"59.5\" y2=\"76.1\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"56.0\" y1=\"200.0\" x2=\"59.5\" y2=\"193.9\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"56.0\" y1=\"200.0\" x2=\"52.5\" y2=\"193.9\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"46.0\" y=\"139.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">h</text></svg>"
+          },
+          "options": [
+            "\\(V=2\\pi r^{3}\\)",
+            "\\(V=\\pi r^{3}\\)",
+            "\\(V=4\\pi r^{3}\\)",
+            "\\(V=\\pi r^{2}\\)"
+          ],
+          "answer": 0,
+          "hint": "Volume of a cylinder \\(V=\\pi r^{2}h\\). The height equals the DIAMETER, so \\(h=2r\\) (not \\(r\\)). Substitute so that only \\(r\\) remains.",
+          "steps": [
+            {
+              "explain": "Height \\(=\\) diameter \\(=2r\\) (green arrow in the diagram).",
+              "work": "\\(h=2r\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 270\" width=\"100%\" height=\"auto\" style=\"max-width:380px;display:block;margin:0 auto\"><defs><pattern id=\"hc\" width=\"7\" height=\"7\" patternUnits=\"userSpaceOnUse\" patternTransform=\"rotate(45)\"><rect width=\"7\" height=\"7\" fill=\"#fdf2f8\"/><line x1=\"0\" y1=\"0\" x2=\"0\" y2=\"7\" stroke=\"#f9a8d4\" stroke-width=\"2\"/></pattern></defs><path d=\"M 90,70 L 90,200 A 100 28 0 0 0 290,200 L 290,70 Z\" fill=\"url(#hc)\" stroke=\"#1e293b\" stroke-width=\"2.4\"/><ellipse cx=\"190\" cy=\"70\" rx=\"100\" ry=\"28\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"2.4\"/><path d=\"M 90,200 A 100 28 0 0 1 290,200\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-dasharray=\"5 4\"/><line x1=\"190.0\" y1=\"70.0\" x2=\"282.0\" y2=\"70.0\" stroke=\"#dc2626\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"3 3\"/><line x1=\"282.0\" y1=\"70.0\" x2=\"275.9\" y2=\"66.5\" stroke=\"#dc2626\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"282.0\" y1=\"70.0\" x2=\"275.9\" y2=\"73.5\" stroke=\"#dc2626\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"235.0\" y=\"62.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">r</text><line x1=\"56.0\" y1=\"70.0\" x2=\"56.0\" y2=\"200.0\" stroke=\"#3b4ea8\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"3 3\"/><line x1=\"56.0\" y1=\"70.0\" x2=\"52.5\" y2=\"76.1\" stroke=\"#3b4ea8\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"56.0\" y1=\"70.0\" x2=\"59.5\" y2=\"76.1\" stroke=\"#3b4ea8\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"56.0\" y1=\"200.0\" x2=\"59.5\" y2=\"193.9\" stroke=\"#3b4ea8\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"56.0\" y1=\"200.0\" x2=\"52.5\" y2=\"193.9\" stroke=\"#3b4ea8\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"46.0\" y=\"139.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">h</text><line x1=\"90.0\" y1=\"242.0\" x2=\"290.0\" y2=\"242.0\" stroke=\"#047857\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"90.0\" y1=\"242.0\" x2=\"96.1\" y2=\"245.5\" stroke=\"#047857\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"90.0\" y1=\"242.0\" x2=\"96.1\" y2=\"238.5\" stroke=\"#047857\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"290.0\" y1=\"242.0\" x2=\"283.9\" y2=\"238.5\" stroke=\"#047857\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"290.0\" y1=\"242.0\" x2=\"283.9\" y2=\"245.5\" stroke=\"#047857\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"190.0\" y=\"260.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">diameter = 2r = h</text></svg>"
+              }
+            },
+            {
+              "explain": "Substitute \\(h=2r\\) into \\(V=\\pi r^{2}h\\).",
+              "work": "\\(V=\\pi r^{2}(2r)\\)"
+            },
+            {
+              "explain": "Multiply the powers of \\(r\\): \\(r^{2}\\times r=r^{3}\\).",
+              "work": "\\(V=2\\pi r^{3}\\)"
+            },
+            {
+              "explain": "Why not the others: B uses \\(h=r\\) (radius instead of diameter); C is \\(\\pi(2r)^{3}\\)-type slip; D forgets the height.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Write an equation for the volume of the solid in terms of the radius \\(r\\).",
+              "note": "\\(V=\\pi r^2h\\), \\(h=2r\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Glenwood High School 2020 Year 11 Mathematics Extension 1 Yearly Examination",
+            "school": "Glenwood High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "glenwood2020-pre-q9aii",
+          "type": "mc",
+          "stem": "The solid shown is a cylinder whose height is equal to its diameter, with volume \\(V=2\\pi r^{3}\\). The model is being scaled up so that its volume is increasing at a steady rate of 120 cm\\(^{3}\\) per second, so \\(\\dfrac{dV}{dt}=120\\). Find an expression for \\(\\dfrac{dr}{dt}\\) in terms of \\(r\\).",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 270\" width=\"100%\" height=\"auto\" style=\"max-width:380px;display:block;margin:0 auto\"><defs><pattern id=\"hc\" width=\"7\" height=\"7\" patternUnits=\"userSpaceOnUse\" patternTransform=\"rotate(45)\"><rect width=\"7\" height=\"7\" fill=\"#fdf2f8\"/><line x1=\"0\" y1=\"0\" x2=\"0\" y2=\"7\" stroke=\"#f9a8d4\" stroke-width=\"2\"/></pattern></defs><path d=\"M 90,70 L 90,200 A 100 28 0 0 0 290,200 L 290,70 Z\" fill=\"url(#hc)\" stroke=\"#1e293b\" stroke-width=\"2.4\"/><ellipse cx=\"190\" cy=\"70\" rx=\"100\" ry=\"28\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"2.4\"/><path d=\"M 90,200 A 100 28 0 0 1 290,200\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-dasharray=\"5 4\"/><line x1=\"190.0\" y1=\"70.0\" x2=\"282.0\" y2=\"70.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"3 3\"/><line x1=\"282.0\" y1=\"70.0\" x2=\"275.9\" y2=\"66.5\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"282.0\" y1=\"70.0\" x2=\"275.9\" y2=\"73.5\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"235.0\" y=\"62.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">r</text><line x1=\"56.0\" y1=\"70.0\" x2=\"56.0\" y2=\"200.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"3 3\"/><line x1=\"56.0\" y1=\"70.0\" x2=\"52.5\" y2=\"76.1\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"56.0\" y1=\"70.0\" x2=\"59.5\" y2=\"76.1\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"56.0\" y1=\"200.0\" x2=\"59.5\" y2=\"193.9\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"56.0\" y1=\"200.0\" x2=\"52.5\" y2=\"193.9\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"46.0\" y=\"139.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">h</text></svg>"
+          },
+          "options": [
+            "\\(\\dfrac{dr}{dt}=\\dfrac{20}{\\pi r^{2}}\\)",
+            "\\(\\dfrac{dr}{dt}=\\dfrac{120}{6\\pi r}\\)",
+            "\\(\\dfrac{dr}{dt}=6\\pi r^{2}\\times120\\)",
+            "\\(\\dfrac{dr}{dt}=\\dfrac{120}{2\\pi r^{2}}\\)"
+          ],
+          "answer": 0,
+          "hint": "RELATED RATES (chain rule): \\(\\dfrac{dV}{dt}=\\dfrac{dV}{dr}\\times\\dfrac{dr}{dt}\\). Differentiate \\(V\\) with respect to \\(r\\), then rearrange for \\(\\dfrac{dr}{dt}\\).",
+          "steps": [
+            {
+              "explain": "Differentiate \\(V=2\\pi r^{3}\\) with respect to \\(r\\).",
+              "work": "\\(\\dfrac{dV}{dr}=6\\pi r^{2}\\)"
+            },
+            {
+              "explain": "Chain rule: \\(\\dfrac{dV}{dt}=\\dfrac{dV}{dr}\\cdot\\dfrac{dr}{dt}\\). Substitute \\(\\dfrac{dV}{dt}=120\\).",
+              "work": "\\(120=6\\pi r^{2}\\cdot\\dfrac{dr}{dt}\\)"
+            },
+            {
+              "explain": "Divide both sides by \\(6\\pi r^{2}\\).",
+              "work": "\\(\\dfrac{dr}{dt}=\\dfrac{120}{6\\pi r^{2}}=\\dfrac{20}{\\pi r^{2}}\\)"
+            },
+            {
+              "explain": "Why not the others: B has \\(r\\) instead of \\(r^{2}\\); C multiplies instead of dividing; D uses \\(\\dfrac{dV}{dr}=2\\pi r^{2}\\) (wrong derivative).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find an expression for \\(\\dfrac{dr}{dt}\\) in terms of \\(r\\).",
+              "note": "\\(\\dfrac{dV}{dt}=\\dfrac{dV}{dr}\\dfrac{dr}{dt}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Glenwood High School 2020 Year 11 Mathematics Extension 1 Yearly Examination",
+            "school": "Glenwood High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "glenwood2020-pre-q9aiii",
+          "type": "mc",
+          "stem": "A cylinder whose height equals its diameter has volume \\(V=2\\pi r^{3}\\) increasing at 120 cm\\(^{3}\\) per second, with \\(\\dfrac{dr}{dt}=\\dfrac{20}{\\pi r^{2}}\\). Find the rate at which the radius is increasing when it reaches 2 cm.",
+          "difficulty": "easy",
+          "options": [
+            "\\(\\dfrac{5}{\\pi}\\approx1.59\\) cm/s",
+            "\\(\\dfrac{10}{\\pi}\\approx3.18\\) cm/s",
+            "\\(\\dfrac{20}{\\pi}\\approx6.37\\) cm/s",
+            "\\(\\dfrac{5}{2\\pi}\\approx0.80\\) cm/s"
+          ],
+          "answer": 0,
+          "hint": "Substitute \\(r=2\\) into the formula for \\(\\dfrac{dr}{dt}\\). Square the 2 FIRST: \\(r^{2}=4\\) (not 2).",
+          "steps": [
+            {
+              "explain": "Substitute \\(r=2\\) into \\(\\dfrac{dr}{dt}=\\dfrac{20}{\\pi r^{2}}\\).",
+              "work": "\\(\\dfrac{dr}{dt}=\\dfrac{20}{\\pi(2)^{2}}=\\dfrac{20}{4\\pi}\\)"
+            },
+            {
+              "explain": "Simplify \\(\\dfrac{20}{4}=5\\).",
+              "work": "\\(\\dfrac{dr}{dt}=\\dfrac{5}{\\pi}\\approx1.59\\ \\text{cm per second}\\)"
+            },
+            {
+              "explain": "Why not the others: B uses \\(r^{2}=2\\); C forgets to square \\(r\\); D divides by \\(8\\pi\\) (cubed).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the rate at which the radius is increasing when it reaches 2 cm.",
+              "note": "Substitute \\(r=2\\): \\(\\dfrac{20}{4\\pi}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Glenwood High School 2020 Year 11 Mathematics Extension 1 Yearly Examination",
+            "school": "Glenwood High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "glenwood2020-pre-q9aiv",
+          "type": "mc",
+          "stem": "A cylinder whose height equals its diameter has \\(\\dfrac{dr}{dt}=\\dfrac{20}{\\pi r^{2}}\\). What is the radius when \\(\\dfrac{dr}{dt}=\\dfrac{80}{\\pi}\\)?",
+          "difficulty": "medium",
+          "options": [
+            "\\(r=\\dfrac{1}{2}\\) cm",
+            "\\(r=\\dfrac{1}{4}\\) cm",
+            "\\(r=2\\) cm",
+            "\\(r=4\\) cm"
+          ],
+          "answer": 0,
+          "hint": "Set \\(\\dfrac{20}{\\pi r^{2}}=\\dfrac{80}{\\pi}\\) and solve for \\(r\\) (cancel \\(\\pi\\), cross-multiply, square root, take the POSITIVE root since a radius is positive).",
+          "steps": [
+            {
+              "explain": "Equate the two expressions.",
+              "work": "\\(\\dfrac{20}{\\pi r^{2}}=\\dfrac{80}{\\pi}\\)"
+            },
+            {
+              "explain": "Multiply both sides by \\(\\pi\\) to cancel \\(\\pi\\): \\(\\dfrac{20}{r^{2}}=80\\).",
+              "work": "\\(20=80r^{2}\\)"
+            },
+            {
+              "explain": "Divide by 80, then square root.",
+              "work": "\\(r^{2}=\\dfrac{20}{80}=\\dfrac{1}{4}\\ \\Rightarrow\\ r=\\dfrac{1}{2}\\)"
+            },
+            {
+              "explain": "Check: \\(\\dfrac{20}{\\pi\\left(\\dfrac{1}{4}\\right)}=\\dfrac{80}{\\pi}\\) ✓ (a small radius grows quickly). Why not the others: B is \\(r^{2}\\); C and D come from \\(r^{2}=4,16\\) (inverting the fraction).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "What is the radius when \\(\\dfrac{dr}{dt}=\\dfrac{80}{\\pi}\\)?",
+              "note": "Solve \\(\\dfrac{20}{\\pi r^2}=\\dfrac{80}{\\pi}\\); \\(r>0\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Glenwood High School 2020 Year 11 Mathematics Extension 1 Yearly Examination",
+            "school": "Glenwood High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },

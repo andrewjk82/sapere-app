@@ -887,6 +887,56 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "glenwood2020-pre-q7ei",
+          "type": "mc",
+          "stem": "Consider the polynomial \\(P(x)=2x^{3}+3x^{2}-29x-60\\). Use the factor theorem to show that \\((x+3)\\) is a factor of \\(P(x)\\). Which working is correct?",
+          "difficulty": "easy",
+          "options": [
+            "\\(P(-3)=2(-27)+3(9)-29(-3)-60=0\\), so \\((x+3)\\) is a factor",
+            "\\(P(3)=2(27)+3(9)-29(3)-60=-66\\ne0\\), so it is not a factor",
+            "\\(P(-3)=-54+27-87-60=-174\\), so it is a factor",
+            "\\(P(3)=0\\), so \\((x+3)\\) is a factor"
+          ],
+          "answer": 0,
+          "hint": "Factor theorem: \\((x-a)\\) is a factor of \\(P(x)\\) if and only if \\(P(a)=0\\). For \\((x+3)=(x-(-3))\\) the value to test is \\(a=-3\\) (the OPPOSITE sign).",
+          "steps": [
+            {
+              "explain": "\\((x+3)=(x-(-3))\\), so substitute \\(x=-3\\).",
+              "work": "\\(P(-3)=2(-3)^{3}+3(-3)^{2}-29(-3)-60\\)"
+            },
+            {
+              "explain": "Evaluate each term carefully: \\(2(-27)=-54\\); \\(3(9)=27\\); \\(-29(-3)=+87\\).",
+              "work": "\\(P(-3)=-54+27+87-60\\)"
+            },
+            {
+              "explain": "Add: \\(-54+27=-27\\); \\(-27+87=60\\); \\(60-60=0\\).",
+              "work": "\\(P(-3)=0\\ \\Rightarrow\\ (x+3)\\ \\text{is a factor}\\)"
+            },
+            {
+              "explain": "Why not the others: B tests \\(x=3\\) (wrong sign); C makes a sign error (\\(-29\\times-3=+87\\)); D claims \\(P(3)=0\\), which is false.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Use the factor theorem to show that \\((x+3)\\) is a factor of \\(P(x)\\)",
+              "note": "Test \\(P(-3)\\), not \\(P(3)\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Glenwood High School 2020 Year 11 Mathematics Extension 1 Yearly Examination",
+            "school": "Glenwood High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -2196,6 +2246,56 @@
           "meta": {
             "source": "Girraween High School 2020 Year 11 Yearly Examination Mathematics Extension 1",
             "school": "Girraween High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "glenwood2020-pre-q7eii",
+          "type": "mc",
+          "stem": "Consider the polynomial \\(P(x)=2x^{3}+3x^{2}-29x-60\\), given that \\((x+3)\\) is a factor. Factorise \\(P(x)\\) completely.",
+          "difficulty": "medium",
+          "options": [
+            "\\((x+3)(2x+5)(x-4)\\)",
+            "\\((x+3)(2x-5)(x+4)\\)",
+            "\\((x+3)(x+5)(2x-4)\\)",
+            "\\((x+3)(2x+5)(x+4)\\)"
+          ],
+          "answer": 0,
+          "hint": "Divide \\(P(x)\\) by \\((x+3)\\) (long division or matching coefficients) to get a quadratic, then factorise the quadratic. Check by expanding or testing a root.",
+          "steps": [
+            {
+              "explain": "Write \\(P(x)=(x+3)(2x^{2}+bx+c)\\). Match the constant: \\(3c=-60\\Rightarrow c=-20\\). Match \\(x^{2}\\): \\(b+6=3\\Rightarrow b=-3\\).",
+              "work": "\\(P(x)=(x+3)\\left(2x^{2}-3x-20\\right)\\)"
+            },
+            {
+              "explain": "Factorise \\(2x^{2}-3x-20\\): two numbers with product \\(2\\times(-20)=-40\\) and sum \\(-3\\) are \\(-8\\) and \\(5\\).",
+              "work": "\\(2x^{2}-8x+5x-20=2x(x-4)+5(x-4)=(2x+5)(x-4)\\)"
+            },
+            {
+              "explain": "Combine.",
+              "work": "\\(P(x)=(x+3)(2x+5)(x-4)\\)"
+            },
+            {
+              "explain": "Check the roots: \\(x=4\\): \\(2(64)+3(16)-116-60=128+48-116-60=0\\) ✓. Why not the others: B, C, D don’t expand to \\(2x^{3}+3x^{2}-29x-60\\) (e.g. the constant term of D is \\(3\\times5\\times4=60\\), not \\(-60\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Factorise \\(P(x)\\) completely.",
+              "note": "\\(P(x)=(x+3)(2x^2+bx+c)\\); match coefficients."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Glenwood High School 2020 Year 11 Mathematics Extension 1 Yearly Examination",
+            "school": "Glenwood High School",
             "grade": "11",
             "origin": "teacher"
           }
@@ -3761,6 +3861,248 @@
           "meta": {
             "source": "Hills Grammar 2025 Trial HSC Mathematics Extension 1",
             "school": "The Hills Grammar School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "glenwood2020-pre-q4",
+          "type": "mc",
+          "stem": "It is known that two of the roots of the equation \\(3x^{3}+x^{2}-kx+6=0\\) are reciprocals of each other. What is the value of \\(k\\)?",
+          "difficulty": "hard",
+          "options": [
+            "\\(7\\)",
+            "\\(-2\\)",
+            "\\(6\\)",
+            "\\(17\\)"
+          ],
+          "answer": 0,
+          "hint": "Call the roots \\(a,\\ \\dfrac{1}{a},\\ b\\). For \\(ax^{3}+bx^{2}+cx+d\\): sum \\(=-\\dfrac{b}{a}\\), sum of pairs \\(=\\dfrac{c}{a}\\), product \\(=-\\dfrac{d}{a}\\). The PRODUCT of the roots will give \\(b\\) immediately because \\(a\\times\\dfrac{1}{a}=1\\).",
+          "steps": [
+            {
+              "explain": "Roots \\(a,\\ \\dfrac{1}{a},\\ r\\) (call the third root \\(r\\)). Product of roots \\(=-\\dfrac{6}{3}=-2\\). But \\(a\\times\\dfrac{1}{a}\\times r=r\\), so \\(r=-2\\).",
+              "work": "\\(a\\cdot\\dfrac{1}{a}\\cdot r=-2\\ \\Rightarrow\\ r=-2\\)"
+            },
+            {
+              "explain": "Sum of roots \\(=-\\dfrac{1}{3}\\). So \\(a+\\dfrac{1}{a}+r=-\\dfrac{1}{3}\\).",
+              "work": "\\(a+\\dfrac{1}{a}=-\\dfrac{1}{3}-(-2)=\\dfrac{5}{3}\\)"
+            },
+            {
+              "explain": "Sum of pairs \\(=\\dfrac{-k}{3}\\): \\(a\\cdot\\dfrac{1}{a}+r\\left(a+\\dfrac{1}{a}\\right)=1+(-2)\\left(\\dfrac{5}{3}\\right)\\).",
+              "work": "\\(1-\\dfrac{10}{3}=-\\dfrac{7}{3}\\)"
+            },
+            {
+              "explain": "Set \\(-\\dfrac{7}{3}=-\\dfrac{k}{3}\\) and solve.",
+              "work": "\\(k=7\\)"
+            },
+            {
+              "explain": "Why not the others: A-type values come from using \\(\\dfrac{c}{a}\\) with the wrong sign (e.g. \\(\\dfrac{k}{3}=\\dfrac{7}{3}\\to-7\\)); B, D are guesses.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "two of the roots of the equation \\(3x^{3}+x^{2}-kx+6=0\\) are reciprocals of each other",
+              "note": "Roots \\(a,\\dfrac{1}{a},r\\): product \\(\\Rightarrow r=-2\\); then sum of pairs."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Glenwood High School 2020 Year 11 Mathematics Extension 1 Yearly Examination",
+            "school": "Glenwood High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "glenwood2020-pre-q8ai",
+          "type": "mc",
+          "stem": "If \\(\\alpha\\), \\(\\beta\\) and \\(\\gamma\\) are the roots of the cubic equation \\(5x^{3}+2x^{2}-x-3=0\\), find the value of \\(\\alpha+\\beta+\\gamma\\)",
+          "difficulty": "easy",
+          "options": [
+            "\\(-\\dfrac{2}{5}\\)",
+            "\\(\\dfrac{2}{5}\\)",
+            "\\(\\dfrac{1}{5}\\)",
+            "\\(\\dfrac{3}{5}\\)"
+          ],
+          "answer": 0,
+          "hint": "For \\(ax^{3}+bx^{2}+cx+d=0\\): \\(\\alpha+\\beta+\\gamma=-\\dfrac{b}{a}\\); \\(\\alpha\\beta+\\beta\\gamma+\\alpha\\gamma=\\dfrac{c}{a}\\); \\(\\alpha\\beta\\gamma=-\\dfrac{d}{a}\\). Here \\(a=5,\\ b=2,\\ c=-1,\\ d=-3\\).",
+          "steps": [
+            {
+              "explain": "Identify the coefficients.",
+              "work": "\\(a=5,\\quad b=2,\\quad c=-1,\\quad d=-3\\)"
+            },
+            {
+              "explain": "Sum of the roots \\(=-\\dfrac{b}{a}\\).",
+              "work": "\\(\\alpha+\\beta+\\gamma=-\\dfrac{2}{5}\\)"
+            },
+            {
+              "explain": "Why not the others: B drops the minus sign; C is \\(\\dfrac{c}{a}\\) with the wrong sign; D is \\(-\\dfrac{d}{a}\\) (the product of roots).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "\\(\\alpha+\\beta+\\gamma\\)",
+              "note": "Sum of roots \\(=-\\dfrac{b}{a}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Glenwood High School 2020 Year 11 Mathematics Extension 1 Yearly Examination",
+            "school": "Glenwood High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "glenwood2020-pre-q8aii",
+          "type": "mc",
+          "stem": "If \\(\\alpha\\), \\(\\beta\\) and \\(\\gamma\\) are the roots of the cubic equation \\(5x^{3}+2x^{2}-x-3=0\\), find the value of \\(\\alpha\\beta+\\beta\\gamma+\\alpha\\gamma\\)",
+          "difficulty": "easy",
+          "options": [
+            "\\(-\\dfrac{1}{5}\\)",
+            "\\(\\dfrac{1}{5}\\)",
+            "\\(-\\dfrac{2}{5}\\)",
+            "\\(\\dfrac{3}{5}\\)"
+          ],
+          "answer": 0,
+          "hint": "Sum of the products of the roots in PAIRS \\(=\\dfrac{c}{a}\\) (coefficient of \\(x\\) over coefficient of \\(x^{3}\\), with its own sign).",
+          "steps": [
+            {
+              "explain": "\\(c=-1\\) (coefficient of \\(x\\)) and \\(a=5\\).",
+              "work": "\\(\\alpha\\beta+\\beta\\gamma+\\alpha\\gamma=\\dfrac{c}{a}=\\dfrac{-1}{5}=-\\dfrac{1}{5}\\)"
+            },
+            {
+              "explain": "Why not the others: B drops the sign; C is the sum of the roots; D is the product of the roots.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "\\(\\alpha\\beta+\\beta\\gamma+\\alpha\\gamma\\)",
+              "note": "Pairs \\(=\\dfrac{c}{a}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Glenwood High School 2020 Year 11 Mathematics Extension 1 Yearly Examination",
+            "school": "Glenwood High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "glenwood2020-pre-q8aiii",
+          "type": "mc",
+          "stem": "If \\(\\alpha\\), \\(\\beta\\) and \\(\\gamma\\) are the roots of the cubic equation \\(5x^{3}+2x^{2}-x-3=0\\), find the value of \\(\\alpha^{2}+\\beta^{2}+\\gamma^{2}\\)",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{14}{25}\\)",
+            "\\(\\dfrac{4}{25}\\)",
+            "\\(-\\dfrac{6}{25}\\)",
+            "\\(\\dfrac{2}{5}\\)"
+          ],
+          "answer": 0,
+          "hint": "Use the identity \\(\\alpha^{2}+\\beta^{2}+\\gamma^{2}=(\\alpha+\\beta+\\gamma)^{2}-2(\\alpha\\beta+\\beta\\gamma+\\alpha\\gamma)\\) with the answers to (i) and (ii).",
+          "steps": [
+            {
+              "explain": "Start from \\((\\alpha+\\beta+\\gamma)^{2}=\\alpha^{2}+\\beta^{2}+\\gamma^{2}+2(\\alpha\\beta+\\beta\\gamma+\\alpha\\gamma)\\) and rearrange.",
+              "work": "\\(\\alpha^{2}+\\beta^{2}+\\gamma^{2}=(\\alpha+\\beta+\\gamma)^{2}-2(\\alpha\\beta+\\beta\\gamma+\\alpha\\gamma)\\)"
+            },
+            {
+              "explain": "Substitute \\(-\\dfrac{2}{5}\\) (part i) and \\(-\\dfrac{1}{5}\\) (part ii).",
+              "work": "\\(=\\left(-\\dfrac{2}{5}\\right)^{2}-2\\left(-\\dfrac{1}{5}\\right)=\\dfrac{4}{25}+\\dfrac{2}{5}\\)"
+            },
+            {
+              "explain": "Common denominator 25: \\(\\dfrac{2}{5}=\\dfrac{10}{25}\\).",
+              "work": "\\(=\\dfrac{4}{25}+\\dfrac{10}{25}=\\dfrac{14}{25}\\)"
+            },
+            {
+              "explain": "Why not the others: B forgets the \\(-2(\\ldots)\\) term; C is \\(\\alpha\\beta\\gamma(\\alpha+\\beta+\\gamma)\\) (part iv); D is \\(\\dfrac{2}{5}\\) (sum of roots, sign changed).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "\\(\\alpha^{2}+\\beta^{2}+\\gamma^{2}\\)",
+              "note": "\\((\\alpha+\\beta+\\gamma)^2-2\\sum\\alpha\\beta\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Glenwood High School 2020 Year 11 Mathematics Extension 1 Yearly Examination",
+            "school": "Glenwood High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "glenwood2020-pre-q8aiv",
+          "type": "mc",
+          "stem": "If \\(\\alpha\\), \\(\\beta\\) and \\(\\gamma\\) are the roots of the cubic equation \\(5x^{3}+2x^{2}-x-3=0\\), find the value of \\(\\alpha^{2}\\beta\\gamma+\\alpha\\beta^{2}\\gamma+\\alpha\\beta\\gamma^{2}\\)",
+          "difficulty": "medium",
+          "options": [
+            "\\(-\\dfrac{6}{25}\\)",
+            "\\(\\dfrac{6}{25}\\)",
+            "\\(\\dfrac{3}{5}\\)",
+            "\\(-\\dfrac{3}{25}\\)"
+          ],
+          "answer": 0,
+          "hint": "Factor out \\(\\alpha\\beta\\gamma\\) from every term: \\(\\alpha^{2}\\beta\\gamma+\\alpha\\beta^{2}\\gamma+\\alpha\\beta\\gamma^{2}=\\alpha\\beta\\gamma(\\alpha+\\beta+\\gamma)\\). Then use the sum and product of the roots.",
+          "steps": [
+            {
+              "explain": "Take out the common factor \\(\\alpha\\beta\\gamma\\).",
+              "work": "\\(\\alpha^{2}\\beta\\gamma+\\alpha\\beta^{2}\\gamma+\\alpha\\beta\\gamma^{2}=\\alpha\\beta\\gamma(\\alpha+\\beta+\\gamma)\\)"
+            },
+            {
+              "explain": "Product of roots \\(=-\\dfrac{d}{a}=-\\dfrac{-3}{5}=\\dfrac{3}{5}\\). Sum of roots \\(=-\\dfrac{2}{5}\\) (part i).",
+              "work": "\\(\\alpha\\beta\\gamma=\\dfrac{3}{5},\\quad\\alpha+\\beta+\\gamma=-\\dfrac{2}{5}\\)"
+            },
+            {
+              "explain": "Multiply.",
+              "work": "\\(\\dfrac{3}{5}\\times\\left(-\\dfrac{2}{5}\\right)=-\\dfrac{6}{25}\\)"
+            },
+            {
+              "explain": "Why not the others: B loses the sign; C is \\(\\alpha\\beta\\gamma\\) alone; D is a calculation slip.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "\\(\\alpha^{2}\\beta\\gamma+\\alpha\\beta^{2}\\gamma+\\alpha\\beta\\gamma^{2}\\)",
+              "note": "Factor \\(\\alpha\\beta\\gamma\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Glenwood High School 2020 Year 11 Mathematics Extension 1 Yearly Examination",
+            "school": "Glenwood High School",
             "grade": "11",
             "origin": "teacher"
           }

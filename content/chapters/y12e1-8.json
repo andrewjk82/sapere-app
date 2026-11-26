@@ -176,6 +176,60 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "glenwood2020-pre-q8d",
+          "type": "mc",
+          "stem": "A particle is moving in a straight line, so that its displacement \\(x\\) metres from a fixed point on the line at \\(t\\) seconds (\\(t>0\\)) is given by \\(x=3t^{3}-t^{2}-2t\\). Find when the acceleration is positive.",
+          "difficulty": "medium",
+          "options": [
+            "\\(t>\\dfrac{1}{9}\\)",
+            "\\(t>\\dfrac{1}{9}\\) seconds and \\(t<0\\)",
+            "\\(0<t<\\dfrac{1}{9}\\)",
+            "\\(t>1\\)"
+          ],
+          "answer": 0,
+          "hint": "Differentiate once for VELOCITY \\(v=\\dfrac{dx}{dt}\\), again for ACCELERATION \\(a=\\dfrac{d^{2}x}{dt^{2}}\\). Then solve \\(a>0\\) for \\(t\\) (remember \\(t>0\\)).",
+          "steps": [
+            {
+              "explain": "Velocity: differentiate \\(x=3t^{3}-t^{2}-2t\\).",
+              "work": "\\(v=\\dfrac{dx}{dt}=9t^{2}-2t-2\\)"
+            },
+            {
+              "explain": "Acceleration: differentiate \\(v\\).",
+              "work": "\\(a=\\dfrac{dv}{dt}=18t-2\\)"
+            },
+            {
+              "explain": "Solve \\(a>0\\): \\(18t-2>0\\Rightarrow t>\\dfrac{2}{18}=\\dfrac{1}{9}\\).",
+              "work": "\\(18t-2>0\\ \\Rightarrow\\ t>\\dfrac{1}{9}\\)"
+            },
+            {
+              "explain": "Check with the condition \\(t>0\\): \\(t>\\dfrac{1}{9}\\) is already positive. The acceleration is positive for \\(t>\\dfrac{1}{9}\\) seconds (about 0.11 s).",
+              "work": "\\(t>\\dfrac{1}{9}\\ \\text{seconds}\\)"
+            },
+            {
+              "explain": "Why not the others: B includes \\(t<0\\), which is excluded; C is the interval where \\(a<0\\); D comes from \\(a=0\\) with an arithmetic slip.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find when the acceleration is positive.",
+              "note": "\\(a=\\dfrac{d^2x}{dt^2}=18t-2>0\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Glenwood High School 2020 Year 11 Mathematics Extension 1 Yearly Examination",
+            "school": "Glenwood High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     }
