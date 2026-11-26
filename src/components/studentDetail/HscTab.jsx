@@ -58,17 +58,19 @@ const HscTab = ({
     ? Object.entries(hscTypeStats).filter(([, s]) => s?.total > 0).sort(([, a], [, b]) => (b.total || 0) - (a.total || 0))
     : null;
 
-  // HSC tools matter from Year 11; younger students keep them one tap away.
-  const years = [student?.year, student?.level, ...(Array.isArray(student?.assignedYear) ? student.assignedYear : [student?.assignedYear])].map(String);
-  const isSenior = years.some((y) => /Year 1[12]/.test(y)) || hscRecords.length > 0;
+  // Only for students with HSC switched on (Settings → Features, or Edit profile).
+  const hscOn = student?.showHscGraph === true;
   const fmtDate = (k) => (k ? new Date(`${k}T12:00:00`).toLocaleDateString("en-AU", { day: "numeric", month: "short", year: "numeric" }) : "—");
 
-  if (!isSenior && !showTools) {
+  if (!hscOn && !showTools) {
     return (
       <section className="sd-tile">
-        <h3 className="sd-h">HSC <small>Years 11–12</small></h3>
-        <p className="sd-muted" style={{ margin: "0 0 12px" }}>Trial paper marks, HSC band projection and Practice by Type are for senior students.</p>
-        <button type="button" className="sd-btn sd-btn--soft" onClick={() => setShowTools(true)}>Show HSC tools</button>
+        <h3 className="sd-h">HSC <small>off for this student</small></h3>
+        <p className="sd-muted" style={{ margin: "0 0 12px" }}>
+          Trial papers, HSC band projection and Practice by Type show when HSC is on (Settings → Features).
+          {hscRecords.length > 0 && ` ${hscRecords.length} saved paper${hscRecords.length === 1 ? "" : "s"} are kept.`}
+        </p>
+        <button type="button" className="sd-btn sd-btn--soft" onClick={() => setShowTools(true)}>Show anyway</button>
       </section>
     );
   }

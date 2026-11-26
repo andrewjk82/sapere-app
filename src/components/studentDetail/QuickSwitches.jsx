@@ -3,6 +3,7 @@ const ITEMS = [
   { key: "calculationEnabled", label: "Daily Calculation", isOn: (s) => s?.calculationEnabled !== false },
   { key: "examPrepEnabled", label: "Exam prep", isOn: (s) => s?.examPrepEnabled === true },
   { key: "scholarshipEnabled", label: "Special tests", note: "OC · Selective · Scholarship", isOn: (s) => s?.scholarshipEnabled === true },
+  { key: "showHscGraph", label: "HSC", note: "HSC graph for the student · trial papers and band projection in Results", isOn: (s) => s?.showHscGraph === true },
   { key: "hscPastPaperEnabled", label: "HSC past paper questions", note: "extra questions in Daily Challenge", isOn: (s) => s?.hscPastPaperEnabled === true },
 ];
 
