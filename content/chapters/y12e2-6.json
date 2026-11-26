@@ -2294,6 +2294,60 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "hunters2020-e2-q14b",
+          "type": "mc",
+          "stem": "Use the substitution \\(u=e^{x}+1\\) to find \\(\\displaystyle\\int\\dfrac{e^{2x}}{\\left(e^{x}+1\\right)^{2}}\\,dx\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\ln\\left(e^{x}+1\\right)+\\dfrac{1}{e^{x}+1}+C\\)",
+            "\\(\\ln\\left(e^{x}+1\\right)-\\dfrac{1}{e^{x}+1}+C\\)",
+            "\\(\\dfrac{-1}{e^{x}+1}+C\\)",
+            "\\(\\dfrac{e^{3x}}{3\\left(e^{x}+1\\right)}+C\\)"
+          ],
+          "answer": 0,
+          "hint": "With \\(u=e^{x}+1\\): \\(du=e^{x}dx\\) and \\(e^{x}=u-1\\). Split \\(e^{2x}dx=e^{x}\\cdot e^{x}dx=(u-1)\\,du\\). Then divide: \\(\\dfrac{u-1}{u^{2}}=\\dfrac{1}{u}-\\dfrac1{u^{2}}\\).",
+          "steps": [
+            {
+              "explain": "\\(u=e^{x}+1\\Rightarrow du=e^{x}dx\\) and \\(e^{x}=u-1\\). So \\(e^{2x}dx=(u-1)\\,du\\).",
+              "work": "\\(\\int\\dfrac{e^{2x}}{(e^{x}+1)^{2}}dx=\\int\\dfrac{u-1}{u^{2}}du\\)"
+            },
+            {
+              "explain": "Split the fraction.",
+              "work": "\\(=\\int\\left(\\dfrac{1}{u}-u^{-2}\\right)du\\)"
+            },
+            {
+              "explain": "Integrate: \\(\\ln u-\\dfrac{u^{-1}}{-1}=\\ln u+\\dfrac{1}{u}\\).",
+              "work": "\\(=\\ln u+\\dfrac{1}{u}+C\\)"
+            },
+            {
+              "explain": "Substitute back \\(u=e^{x}+1\\) (positive, so no absolute value needed).",
+              "work": "\\(\\ln\\left(e^{x}+1\\right)+\\dfrac{1}{e^{x}+1}+C\\)"
+            },
+            {
+              "explain": "Why not the others: B has the wrong sign on \\(\\dfrac{1}{u}\\) (\\(\\int-u^{-2}du=+u^{-1}\\)); C forgets the \\(\\dfrac{1}{u}\\) term; D is not related.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Use the substitution \\(u=e^{x}+1\\) to find",
+              "note": "\\(e^{2x}dx=(u-1)du\\); split \\(\\dfrac{u-1}{u^2}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hunters Hill High School 2020 Trial Examination Mathematics Extension 2",
+            "school": "Hunters Hill High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -3593,6 +3647,276 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "hunters2020-e2-q11di",
+          "type": "mc",
+          "stem": "Find \\(a\\), \\(b\\) and \\(c\\) such that \\(\\dfrac{16}{\\left(x^{2}+4\\right)(2-x)}=\\dfrac{ax+b}{x^{2}+4}+\\dfrac{c}{2-x}\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(a=2,\\ b=4,\\ c=2\\)",
+            "\\(a=-2,\\ b=4,\\ c=2\\)",
+            "\\(a=2,\\ b=2,\\ c=4\\)",
+            "\\(a=4,\\ b=2,\\ c=2\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply both sides by \\(\\left(x^{2}+4\\right)(2-x)\\): \\(16=(ax+b)(2-x)+c\\left(x^{2}+4\\right)\\). Find \\(c\\) with a clever \\(x\\) (\\(x=2\\) kills the first term); then compare COEFFICIENTS for \\(a\\) and \\(b\\).",
+          "steps": [
+            {
+              "explain": "Clear the fractions.",
+              "work": "\\(16=(ax+b)(2-x)+c\\left(x^{2}+4\\right)\\)"
+            },
+            {
+              "explain": "Let \\(x=2\\): the first term vanishes.",
+              "work": "\\(16=c(4+4)=8c\\ \\Rightarrow\\ c=2\\)"
+            },
+            {
+              "explain": "Compare constant terms (\\(x=0\\)): \\(16=2b+4c=2b+8\\Rightarrow b=4\\). Compare \\(x^{2}\\) terms: \\(0=-a+c\\Rightarrow a=2\\).",
+              "work": "\\(b=4,\\qquad a=2\\)"
+            },
+            {
+              "explain": "Check the \\(x\\) terms: \\(0=2a-b=4-4\\) ✓. Why not the others: B, D have a wrong sign or swapped values (\\(x^{2}\\) terms: \\(-a+c=0\\) needs \\(a=c\\)).",
+              "work": "\\(a=2,\\ b=4,\\ c=2\\)"
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find \\(a\\), \\(b\\) and \\(c\\) such that",
+              "note": "\\(x=2\\Rightarrow c\\); compare coefficients."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hunters Hill High School 2020 Trial Examination Mathematics Extension 2",
+            "school": "Hunters Hill High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hurlstone2020-e2-q9",
+          "type": "mc",
+          "stem": "If \\(\\dfrac{5}{(2x+1)(2-x)}=\\dfrac{A}{2x+1}+\\dfrac{B}{2-x}\\), then \\(A\\) and \\(B\\) have values of:",
+          "difficulty": "medium",
+          "options": [
+            "\\(A=-1,\\ B=2\\)",
+            "\\(A=1,\\ B=-2\\)",
+            "\\(A=2,\\ B=-1\\)",
+            "\\(A=2,\\ B=1\\)"
+          ],
+          "answer": 3,
+          "hint": "Multiply both sides by \\((2x+1)(2-x)\\) to clear the denominators, then substitute the value of \\(x\\) that makes each bracket zero (the “cover-up” trick).",
+          "steps": [
+            {
+              "explain": "Multiply through by \\((2x+1)(2-x)\\).",
+              "work": "\\(5=A(2-x)+B(2x+1)\\)"
+            },
+            {
+              "explain": "Let \\(x=2\\): this makes \\((2-x)=0\\) and removes \\(A\\).",
+              "work": "\\(5=A(0)+B(5)\\ \\Rightarrow\\ B=1\\)"
+            },
+            {
+              "explain": "Let \\(x=-\\dfrac{1}{2}\\): this makes \\((2x+1)=0\\) and removes \\(B\\).",
+              "work": "\\(5=A\\left(2+\\dfrac{1}{2}\\right)=\\dfrac52A\\ \\Rightarrow\\ A=2\\)"
+            },
+            {
+              "explain": "Check with \\(x=0\\): \\(A(2)+B(1)=4+1=5\\) ✓.",
+              "work": "\\(A=2,\\quad B=1\\)"
+            },
+            {
+              "explain": "Why not the others: at \\(x=0\\) the right side must equal 5, but A and B give \\(2A+B=0\\) and C gives \\(2A+B=3\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">D</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "\\(A\\) and \\(B\\) have values of",
+              "note": "Cover-up: \\(x=2\\) gives \\(B\\); \\(x=-\\dfrac{1}{2}\\) gives \\(A\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hurlstone Agricultural High School 2020 Trial Higher School Certificate Examination Mathematics Extension 2",
+            "school": "Hurlstone Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hurlstone2020-e2-q12bi",
+          "type": "mc",
+          "stem": "If \\(\\dfrac{4x+10}{(2-x)\\left(x^{2}+2\\right)}=\\dfrac{A}{2-x}+\\dfrac{Bx+C}{x^{2}+2}\\), find the values of \\(A\\), \\(B\\) and \\(C\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(A=3,\\ B=3,\\ C=2\\)",
+            "\\(A=3,\\ B=2,\\ C=3\\)",
+            "\\(A=2,\\ B=3,\\ C=3\\)",
+            "\\(A=3,\\ B=-3,\\ C=2\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply both sides by \\((2-x)(x^{2}+2)\\), then substitute convenient values of \\(x\\) (\\(x=2\\) removes the \\(Bx+C\\) term) and compare coefficients of \\(x^{2}\\).",
+          "steps": [
+            {
+              "explain": "Clear the denominators.",
+              "work": "\\(4x+10=A\\left(x^{2}+2\\right)+(Bx+C)(2-x)\\)"
+            },
+            {
+              "explain": "Let \\(x=2\\): the bracket \\((2-x)\\) is zero, so \\(B\\) and \\(C\\) disappear.",
+              "work": "\\(18=A(6)\\ \\Rightarrow\\ A=3\\)"
+            },
+            {
+              "explain": "Let \\(x=0\\): substitute \\(A=3\\).",
+              "work": "\\(10=3(2)+C(2)\\ \\Rightarrow\\ 2C=4\\ \\Rightarrow\\ C=2\\)"
+            },
+            {
+              "explain": "Compare the coefficient of \\(x^{2}\\) on both sides: left has 0; right has \\(A\\) from the first term and \\(-B\\) from \\((Bx)(-x)\\).",
+              "work": "\\(0=A-B\\ \\Rightarrow\\ B=A=3\\)"
+            },
+            {
+              "explain": "Check with \\(x=1\\): left \\(4+10=14\\); right \\(3(3)+(3+2)(1)=9+5=14\\) ✓.",
+              "work": "\\(A=3,\\ B=3,\\ C=2\\)"
+            },
+            {
+              "explain": "Why not the others: B and C swap values; D has the wrong sign of \\(B\\) (the \\(x^{2}\\) terms must cancel: \\(A-B=0\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "find the values of \\(A\\), \\(B\\) and \\(C\\)",
+              "note": "Cover-up at \\(x=2\\) gives \\(A\\); \\(x^2\\) terms give \\(B\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hurlstone Agricultural High School 2020 Trial Higher School Certificate Examination Mathematics Extension 2",
+            "school": "Hurlstone Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hurlstone2020-e2-q15bi",
+          "type": "mc",
+          "stem": "Show that \\(f(x)=\\dfrac{2+x^{2}}{4-x^{2}}\\) can be written as \\(f(x)=-1+\\dfrac{6}{4-x^{2}}\\). Which working is correct?",
+          "difficulty": "medium",
+          "options": [
+            "Write the numerator as \\(2+x^{2}=-\\left(4-x^{2}\\right)+6\\). Then \\(f(x)=\\dfrac{-(4-x^{2})+6}{4-x^{2}}=-1+\\dfrac{6}{4-x^{2}}\\).",
+            "Write the numerator as \\(2+x^{2}=\\left(4-x^{2}\\right)-2\\). Then \\(f(x)=1-\\dfrac{2}{4-x^{2}}\\), which equals \\(-1+\\dfrac{6}{4-x^{2}}\\).",
+            "Write the numerator as \\(2+x^{2}=-\\left(4-x^{2}\\right)-6\\). Then \\(f(x)=-1-\\dfrac{6}{4-x^{2}}\\).",
+            "Cancel the \\(x^{2}\\) terms top and bottom: \\(\\dfrac{2+x^{2}}{4-x^{2}}=\\dfrac{2}{4}\\), which equals \\(-1+\\dfrac{6}{4-x^{2}}\\)."
+          ],
+          "answer": 0,
+          "hint": "Make the numerator look like the denominator: the denominator is \\(4-x^{2}\\), so write the numerator as \\(-\\left(4-x^{2}\\right)+(\\text{a constant})\\) and split the fraction. Check by expanding.",
+          "steps": [
+            {
+              "explain": "We want \\(2+x^{2}\\) in terms of \\(4-x^{2}\\). The \\(x^{2}\\) term has coefficient \\(+1\\), so use \\(-(4-x^{2})=-4+x^{2}\\) and add the constant needed: \\(2-(-4)=6\\).",
+              "work": "\\(2+x^{2}=-\\left(4-x^{2}\\right)+6\\)"
+            },
+            {
+              "explain": "Check: \\(-(4-x^{2})+6=-4+x^{2}+6=2+x^{2}\\) ✓.",
+              "work": ""
+            },
+            {
+              "explain": "Divide each part by \\(4-x^{2}\\).",
+              "work": "\\(f(x)=\\dfrac{-(4-x^{2})}{4-x^{2}}+\\dfrac{6}{4-x^{2}}=-1+\\dfrac{6}{4-x^{2}}\\)"
+            },
+            {
+              "explain": "Why not the others: B’s expression \\(1-\\dfrac{2}{4-x^{2}}\\) is a different function: at \\(x=1\\), \\(f(1)=\\dfrac{3}{3}=1\\) but \\(1-\\dfrac{2}{3}=\\dfrac{1}{3}\\); C has the wrong constant sign; D cancels terms that are not factors, which is never allowed.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "can be written as \\(f(x)=-1+\\dfrac{6}{4-x^{2}}\\)",
+              "note": "Numerator \\(=-(4-x^2)+6\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hurlstone Agricultural High School 2020 Trial Higher School Certificate Examination Mathematics Extension 2",
+            "school": "Hurlstone Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hurlstone2020-e2-q15bii",
+          "type": "mc",
+          "stem": "Find the exact area enclosed by the graph of \\(f(x)=\\dfrac{2+x^{2}}{4-x^{2}}\\), the \\(x\\)-axis, and the lines \\(x=-1\\) and \\(x=1\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(3\\ln3-2\\)",
+            "\\(6\\ln3-2\\)",
+            "\\(3\\ln3-1\\)",
+            "\\(\\ln3-2\\)"
+          ],
+          "answer": 0,
+          "hint": "Use \\(f(x)=-1+\\dfrac{6}{4-x^{2}}\\) and split \\(\\dfrac{6}{4-x^{2}}\\) into partial fractions. The graph is symmetric about the \\(y\\)-axis (even function), so area \\(=2\\int_{0}^{1}f(x)\\,dx\\).",
+          "steps": [
+            {
+              "explain": "\\(f(x)\\) is even (only \\(x^{2}\\) appears) and positive on \\([-1,1]\\), so double the area on \\([0,1]\\).",
+              "work": "\\(A=\\int_{-1}^{1}f(x)\\,dx=2\\int_{0}^{1}\\left(-1+\\dfrac{6}{4-x^{2}}\\right)dx\\)"
+            },
+            {
+              "explain": "Partial fractions: \\(\\dfrac{6}{(2-x)(2+x)}=\\dfrac{A}{2-x}+\\dfrac{B}{2+x}\\), \\(6=A(2+x)+B(2-x)\\). At \\(x=2\\): \\(6=4A\\), \\(A=\\dfrac{3}{2}\\). At \\(x=-2\\): \\(6=4B\\), \\(B=\\dfrac{3}{2}\\).",
+              "work": "\\(\\dfrac{6}{4-x^{2}}=\\dfrac{3}{2}\\cdot\\dfrac{1}{2-x}+\\dfrac{3}{2}\\cdot\\dfrac{1}{2+x}\\)"
+            },
+            {
+              "explain": "Integrate: \\(\\int\\dfrac{dx}{2-x}=-\\ln(2-x)\\) and \\(\\int\\dfrac{dx}{2+x}=\\ln(2+x)\\).",
+              "work": "\\(A=2\\left[-x-\\dfrac{3}{2}\\ln(2-x)+\\dfrac{3}{2}\\ln(2+x)\\right]_{0}^{1}=\\left[-2x+3\\ln\\dfrac{2+x}{2-x}\\right]_{0}^{1}\\)"
+            },
+            {
+              "explain": "Substitute the limits: at \\(x=1\\): \\(-2+3\\ln3\\). At \\(x=0\\): \\(0+3\\ln1=0\\).",
+              "work": "\\(A=(-2+3\\ln3)-0=3\\ln3-2\\)"
+            },
+            {
+              "explain": "Sanity check: \\(3\\ln3-2\\approx1.30\\). \\(f(0)=0.5\\) and \\(f(\\pm1)=1\\), so the average height is about 0.65 over a width of 2 ✓.",
+              "work": ""
+            },
+            {
+              "explain": "Why not the others: B forgets the \\(\\dfrac{3}{2}\\) in the partial fractions (coefficients 3 not \\(\\dfrac{3}{2}\\), then doubled); C and D lose the \\(-2x\\) term or the factor 3.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the exact area enclosed by the graph",
+              "note": "Even function: \\(2\\int_0^1\\); partial fractions \\(\\dfrac{3}{2}\\),\\(\\dfrac{3}{2}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hurlstone Agricultural High School 2020 Trial Higher School Certificate Examination Mathematics Extension 2",
+            "school": "Hurlstone Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -4278,6 +4602,268 @@
           "meta": {
             "source": "Hills Grammar 2025 Trial HSC Mathematics Extension 2",
             "school": "The Hills Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hunters2020-e2-q11a",
+          "type": "mc",
+          "stem": "Find \\(\\displaystyle\\int\\dfrac{dx}{x^{2}+6x+13}\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{1}{2}\\tan^{-1}\\left(\\dfrac{x+3}{2}\\right)+C\\)",
+            "\\(\\tan^{-1}\\left(\\dfrac{x+3}{2}\\right)+C\\)",
+            "\\(\\dfrac{1}{3}\\tan^{-1}\\left(\\dfrac{x+3}{3}\\right)+C\\)",
+            "\\(\\ln\\left(x^{2}+6x+13\\right)+C\\)"
+          ],
+          "answer": 0,
+          "hint": "The denominator has NO real roots, so COMPLETE THE SQUARE to reach the form \\((x+p)^{2}+a^{2}\\) and use \\(\\displaystyle\\int\\dfrac{dx}{x^{2}+a^{2}}=\\dfrac{1}{a}\\tan^{-1}\\dfrac{x}{a}+C\\).",
+          "steps": [
+            {
+              "explain": "Complete the square: \\(x^{2}+6x+13=(x+3)^{2}+9-9+13\\) (half of 6 is 3).",
+              "work": "\\(x^{2}+6x+13=(x+3)^{2}+4\\)"
+            },
+            {
+              "explain": "So \\(a^{2}=4\\), \\(a=2\\) and the variable is \\(u=x+3\\) (with \\(du=dx\\)).",
+              "work": "\\(\\int\\dfrac{dx}{(x+3)^{2}+2^{2}}\\)"
+            },
+            {
+              "explain": "Standard integral with \\(\\dfrac{1}{a}=\\dfrac{1}{2}\\).",
+              "work": "\\(=\\dfrac{1}{2}\\tan^{-1}\\left(\\dfrac{x+3}{2}\\right)+C\\)"
+            },
+            {
+              "explain": "Check by differentiating: \\(\\dfrac{1}{2}\\cdot\\dfrac{\\dfrac{1}{2}}{1+\\dfrac{(x+3)^{2}}{4}}=\\dfrac{1}{4+(x+3)^{2}}\\) ✓. Why not the others: B forgets the \\(\\dfrac{1}{a}\\); C uses \\(a=3\\) (a slip with 13−9 vs 13); D is a \\(\\ln\\) integral (the numerator is not the derivative of the denominator).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find \\(\\displaystyle\\int\\dfrac{dx}{x^{2}+6x+13}\\).",
+              "note": "Complete the square: \\((x+3)^2+2^2\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hunters Hill High School 2020 Trial Examination Mathematics Extension 2",
+            "school": "Hunters Hill High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hunters2020-e2-q11dii",
+          "type": "mc",
+          "stem": "Find \\(\\displaystyle\\int\\dfrac{16}{\\left(x^{2}+4\\right)(2-x)}\\,dx\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\ln\\left(x^{2}+4\\right)+2\\tan^{-1}\\dfrac{x}{2}-2\\ln|2-x|+C\\)",
+            "\\(\\ln\\left(x^{2}+4\\right)+\\tan^{-1}\\dfrac{x}{2}+2\\ln|2-x|+C\\)",
+            "\\(\\dfrac{1}{2}\\ln\\left(x^{2}+4\\right)+2\\tan^{-1}\\dfrac{x}{2}-2\\ln|2-x|+C\\)",
+            "\\(\\ln\\left(x^{2}+4\\right)+2\\tan^{-1}\\dfrac{x}{2}+2\\ln|2-x|+C\\)"
+          ],
+          "answer": 0,
+          "hint": "Use part (i): \\(\\dfrac{16}{\\left(x^{2}+4\\right)(2-x)}=\\dfrac{2x+4}{x^{2}+4}+\\dfrac{2}{2-x}\\). Split \\(\\dfrac{2x+4}{x^{2}+4}=\\dfrac{2x}{x^{2}+4}+\\dfrac{4}{x^{2}+4}\\): the first is \\(\\dfrac{f'}{f}\\) (a log); the second is a \\(\\tan^{-1}\\). For \\(\\int\\dfrac{2}{2-x}dx\\) remember the CHAIN rule sign: \\(-2\\ln|2-x|\\).",
+          "steps": [
+            {
+              "explain": "Substitute \\(a=2,b=4,c=2\\) and split the first fraction.",
+              "work": "\\(\\int\\dfrac{2x}{x^{2}+4}dx+\\int\\dfrac{4}{x^{2}+4}dx+\\int\\dfrac{2}{2-x}dx\\)"
+            },
+            {
+              "explain": "First: \\(\\dfrac{f'}{f}\\) with \\(f=x^{2}+4\\): \\(\\ln\\left(x^{2}+4\\right)\\). Second: \\(4\\times\\dfrac{1}{2}\\tan^{-1}\\dfrac{x}{2}=2\\tan^{-1}\\dfrac{x}{2}\\).",
+              "work": "\\(\\ln\\left(x^{2}+4\\right)+2\\tan^{-1}\\dfrac{x}{2}\\)"
+            },
+            {
+              "explain": "Third: the derivative of \\(2-x\\) is \\(-1\\), so \\(\\displaystyle\\int\\dfrac{2}{2-x}dx=-2\\ln|2-x|\\).",
+              "work": "\\(=-2\\ln|2-x|\\)"
+            },
+            {
+              "explain": "Combine.",
+              "work": "\\(\\ln\\left(x^{2}+4\\right)+2\\tan^{-1}\\dfrac{x}{2}-2\\ln|2-x|+C\\)"
+            },
+            {
+              "explain": "Why not the others: B, D have \\(+2\\ln|2-x|\\) (the chain-rule sign is missed); B forgets the 2 in \\(2\\tan^{-1}\\); C has \\(\\dfrac{1}{2}\\ln\\) (should be \\(\\dfrac{f'}{f}\\) with \\(f'=2x\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find \\(\\displaystyle\\int\\dfrac{16}{\\left(x^{2}+4\\right)(2-x)}\\,dx\\).",
+              "note": "Split into \\(\\dfrac{f\\,'}{f}\\), \\(\\tan^{-1}\\), and \\(\\dfrac{c}{2-x}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hunters Hill High School 2020 Trial Examination Mathematics Extension 2",
+            "school": "Hunters Hill High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hunters2020-e2-q16bi",
+          "type": "mc",
+          "stem": "Let \\(I_{n}=\\displaystyle\\int_{0}^{\\frac12}\\dfrac{1}{\\left(1+4x^{2}\\right)^{n}}dx\\), where \\(n\\) is a positive integer. Find the value of \\(I_{1}\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac\\pi8\\)",
+            "\\(\\dfrac\\pi4\\)",
+            "\\(\\dfrac\\pi2\\)",
+            "\\(\\dfrac{\\pi}{16}\\)"
+          ],
+          "answer": 0,
+          "hint": "\\(I_{1}=\\displaystyle\\int_{0}^{\\frac{1}{2}}\\dfrac{dx}{1+4x^{2}}\\). Write \\(1+4x^{2}=1+(2x)^{2}\\): a \\(\\tan^{-1}\\) integral with \\(u=2x\\) (\\(du=2\\,dx\\)): the \\(\\dfrac{1}{2}\\) from \\(\\dfrac{du}{2}\\) must appear.",
+          "steps": [
+            {
+              "explain": "\\(\\displaystyle\\int\\dfrac{dx}{1+(2x)^{2}}=\\dfrac{1}{2}\\tan^{-1}(2x)\\) (check: derivative \\(=\\dfrac{1}{2}\\cdot\\dfrac{2}{1+4x^{2}}\\) ✓).",
+              "work": "\\(I_{1}=\\left[\\dfrac{1}{2}\\tan^{-1}(2x)\\right]_{0}^{\\frac{1}{2}}\\)"
+            },
+            {
+              "explain": "Substitute: \\(\\tan^{-1}(1)=\\dfrac\\pi4\\) and \\(\\tan^{-1}0=0\\).",
+              "work": "\\(=\\dfrac{1}{2}\\left(\\dfrac\\pi4-0\\right)\\)"
+            },
+            {
+              "explain": "Calculate.",
+              "work": "\\(I_{1}=\\dfrac\\pi8\\)"
+            },
+            {
+              "explain": "Why not the others: B forgets the \\(\\dfrac{1}{2}\\); C, D come from the wrong limits/coefficient.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the value of \\(I_{1}\\).",
+              "note": "\\(\\dfrac{1}{2}\\tan^{-1}(2x)\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hunters Hill High School 2020 Trial Examination Mathematics Extension 2",
+            "school": "Hunters Hill High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hurlstone2020-e2-q12aii",
+          "type": "mc",
+          "stem": "Evaluate \\(\\displaystyle\\int\\dfrac{dx}{\\sqrt{6+4x-x^{2}}}\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\sin^{-1}\\dfrac{x-2}{\\sqrt{10}}+C\\)",
+            "\\(\\sin^{-1}\\dfrac{x-2}{10}+C\\)",
+            "\\(\\sin^{-1}\\dfrac{x+2}{\\sqrt{10}}+C\\)",
+            "\\(\\tan^{-1}\\dfrac{x-2}{\\sqrt{10}}+C\\)"
+          ],
+          "answer": 0,
+          "hint": "Complete the square under the root so that it has the form \\(a^{2}-(x-h)^{2}\\). Then use \\(\\displaystyle\\int\\dfrac{dx}{\\sqrt{a^{2}-u^{2}}}=\\sin^{-1}\\dfrac{u}{a}+C\\).",
+          "steps": [
+            {
+              "explain": "Complete the square: \\(6+4x-x^{2}=-\\left(x^{2}-4x\\right)+6=-\\left(x^{2}-4x+4\\right)+4+6\\).",
+              "work": "\\(6+4x-x^{2}=10-(x-2)^{2}\\)"
+            },
+            {
+              "explain": "Rewrite the integral. Now it has the form \\(\\sqrt{a^{2}-u^{2}}\\) with \\(a=\\sqrt{10}\\) and \\(u=x-2\\) (so \\(du=dx\\)).",
+              "work": "\\(\\int\\dfrac{dx}{\\sqrt{\\left(\\sqrt{10}\\right)^{2}-(x-2)^{2}}}\\)"
+            },
+            {
+              "explain": "Apply the standard integral.",
+              "work": "\\(=\\sin^{-1}\\dfrac{x-2}{\\sqrt{10}}+C\\)"
+            },
+            {
+              "explain": "Why not the others: B divides by 10 (it should be \\(a=\\sqrt{10}\\), not \\(a^{2}\\)); C has \\(x+2\\) (the centre of the square is \\(x-2\\)); D uses \\(\\tan^{-1}\\), which belongs to \\(\\dfrac{1}{a^{2}+u^{2}}\\), not to a square root.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "\\dfrac{dx}{\\sqrt{6+4x-x^{2}}}",
+              "note": "Complete the square: \\(10-(x-2)^2\\) \\(\\to\\sin^{-1}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hurlstone Agricultural High School 2020 Trial Higher School Certificate Examination Mathematics Extension 2",
+            "school": "Hurlstone Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hurlstone2020-e2-q12bii",
+          "type": "mc",
+          "stem": "Hence evaluate \\(\\displaystyle\\int\\dfrac{(4x+10)\\,dx}{(2-x)\\left(x^{2}+2\\right)}\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(-3\\ln|2-x|+\\dfrac{3}{2}\\ln\\left(x^{2}+2\\right)+\\sqrt2\\tan^{-1}\\dfrac{x}{\\sqrt2}+C\\)",
+            "\\(3\\ln|2-x|+\\dfrac{3}{2}\\ln\\left(x^{2}+2\\right)+\\sqrt2\\tan^{-1}\\dfrac{x}{\\sqrt2}+C\\)",
+            "\\(-3\\ln|2-x|+3\\ln\\left(x^{2}+2\\right)+\\sqrt2\\tan^{-1}\\dfrac{x}{\\sqrt2}+C\\)",
+            "\\(-3\\ln|2-x|+\\dfrac{3}{2}\\ln\\left(x^{2}+2\\right)+2\\tan^{-1}\\dfrac{x}{\\sqrt2}+C\\)"
+          ],
+          "answer": 0,
+          "hint": "Use the partial fractions from (i): \\(\\dfrac{3}{2-x}+\\dfrac{3x+2}{x^{2}+2}\\). Split \\(\\dfrac{3x+2}{x^{2}+2}\\) into a \\(\\ln\\) part (numerator \\(\\propto\\) derivative of the denominator) and a \\(\\tan^{-1}\\) part.",
+          "steps": [
+            {
+              "explain": "Replace the integrand by its partial fractions (\\(A=3,B=3,C=2\\)) and split the second fraction in two.",
+              "work": "\\(\\int\\left[\\dfrac{3}{2-x}+\\dfrac{3x}{x^{2}+2}+\\dfrac{2}{x^{2}+2}\\right]dx\\)"
+            },
+            {
+              "explain": "First term: \\(\\int\\dfrac{3}{2-x}dx=-3\\ln|2-x|\\) (the derivative of \\(2-x\\) is \\(-1\\), so a minus appears).",
+              "work": "\\(\\int\\dfrac{3}{2-x}dx=-3\\ln|2-x|\\)"
+            },
+            {
+              "explain": "Second term: the derivative of \\(x^{2}+2\\) is \\(2x\\), so \\(\\dfrac{3x}{x^{2}+2}=\\dfrac{3}{2}\\cdot\\dfrac{2x}{x^{2}+2}\\).",
+              "work": "\\(\\int\\dfrac{3x}{x^{2}+2}dx=\\dfrac{3}{2}\\ln\\left(x^{2}+2\\right)\\)"
+            },
+            {
+              "explain": "Third term: \\(\\displaystyle\\int\\dfrac{dx}{x^{2}+a^{2}}=\\dfrac{1}{a}\\tan^{-1}\\dfrac{x}{a}\\) with \\(a=\\sqrt2\\).",
+              "work": "\\(\\int\\dfrac{2}{x^{2}+2}dx=\\dfrac{2}{\\sqrt2}\\tan^{-1}\\dfrac{x}{\\sqrt2}=\\sqrt2\\tan^{-1}\\dfrac{x}{\\sqrt2}\\)"
+            },
+            {
+              "explain": "Add the three results.",
+              "work": "\\(-3\\ln|2-x|+\\dfrac{3}{2}\\ln\\left(x^{2}+2\\right)+\\sqrt2\\tan^{-1}\\dfrac{x}{\\sqrt2}+C\\)"
+            },
+            {
+              "explain": "Why not the others: B misses the minus from \\(\\dfrac{d}{dx}(2-x)=-1\\); C forgets the \\(\\dfrac{1}{2}\\) (\\(\\dfrac{3x}{x^{2}+2}\\) gives \\(\\dfrac{3}{2}\\ln\\), not \\(3\\ln\\)); D forgets the \\(\\dfrac1{\\sqrt2}\\) in the \\(\\tan^{-1}\\) rule.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Hence evaluate",
+              "note": "\\(\\dfrac{3x}{x^2+2}\\to\\dfrac{3}{2}\\ln\\); \\(\\dfrac{2}{x^2+2}\\to\\sqrt2\\tan^{-1}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hurlstone Agricultural High School 2020 Trial Higher School Certificate Examination Mathematics Extension 2",
+            "school": "Hurlstone Agricultural High School",
             "grade": "12",
             "origin": "teacher"
           }
@@ -5424,6 +6010,114 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "hunters2020-e2-q12b",
+          "type": "mc",
+          "stem": "Use integration by parts to show that \\(\\displaystyle\\int e^{x}\\cos x\\,dx=\\dfrac{e^{x}}{2}(\\sin x+\\cos x)\\). Which working is correct?",
+          "difficulty": "hard",
+          "options": [
+            "\\(I=e^{x}\\sin x-\\displaystyle\\int e^{x}\\sin x\\,dx=e^{x}\\sin x+e^{x}\\cos x-I\\ \\Rightarrow\\ 2I=e^{x}(\\sin x+\\cos x)\\)",
+            "\\(I=e^{x}\\sin x-\\displaystyle\\int e^{x}\\sin x\\,dx=e^{x}\\sin x-e^{x}\\cos x-I\\ \\Rightarrow\\ 2I=e^{x}(\\sin x-\\cos x)\\)",
+            "\\(I=e^{x}\\sin x+\\displaystyle\\int e^{x}\\sin x\\,dx\\)",
+            "\\(I=e^{x}\\cos x\\) (since \\(e^{x}\\) is its own integral)"
+          ],
+          "answer": 0,
+          "hint": "Integrate by parts TWICE: the integral REPEATS (a ‘cyclic’ integral), so call it \\(I\\) and SOLVE for \\(I\\). Keep the same choice both times (\\(u=e^{x}\\), \\(dv=\\) the trig function) so the integral does not become more complicated.",
+          "steps": [
+            {
+              "explain": "\\(I=\\int e^{x}\\cos x\\,dx\\). Parts with \\(u=e^{x}\\), \\(dv=\\cos x\\,dx\\) (\\(du=e^{x}dx\\), \\(v=\\sin x\\)).",
+              "work": "\\(I=e^{x}\\sin x-\\int e^{x}\\sin x\\,dx\\)"
+            },
+            {
+              "explain": "Parts again on \\(\\int e^{x}\\sin x\\,dx\\): \\(u=e^{x}\\), \\(dv=\\sin x\\,dx\\) (\\(v=-\\cos x\\)).",
+              "work": "\\(\\int e^{x}\\sin x\\,dx=-e^{x}\\cos x+\\int e^{x}\\cos x\\,dx=-e^{x}\\cos x+I\\)"
+            },
+            {
+              "explain": "Substitute back (careful with the minus sign in front!).",
+              "work": "\\(I=e^{x}\\sin x-\\left(-e^{x}\\cos x+I\\right)=e^{x}\\sin x+e^{x}\\cos x-I\\)"
+            },
+            {
+              "explain": "Solve: add \\(I\\) to both sides, divide by 2.",
+              "work": "\\(I=\\dfrac{e^{x}}{2}(\\sin x+\\cos x)\\ (+C)\\)"
+            },
+            {
+              "explain": "Why not the others: B drops the minus sign when expanding \\(-\\left(-e^{x}\\cos x\\right)\\); C has the wrong sign; D is not an antiderivative.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Use integration by parts to show that",
+              "note": "Parts twice; the integral repeats: solve for \\(I\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hunters Hill High School 2020 Trial Examination Mathematics Extension 2",
+            "school": "Hunters Hill High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hurlstone2020-e2-q1",
+          "type": "mc",
+          "stem": "Which expression is equal to \\(\\displaystyle\\int 2x\\,e^{-2x}\\,dx\\)?",
+          "difficulty": "medium",
+          "options": [
+            "\\(-xe^{-2x}+\\displaystyle\\int e^{-2x}\\,dx\\)",
+            "\\(-xe^{-2x}-\\displaystyle\\int e^{-2x}\\,dx\\)",
+            "\\(-2xe^{-2x}+\\displaystyle\\int e^{-2x}\\,dx\\)",
+            "\\(-2xe^{-2x}-\\displaystyle\\int e^{-2x}\\,dx\\)"
+          ],
+          "answer": 0,
+          "hint": "Integration by parts: \\(\\int u\\,v'\\,dx=uv-\\int v\\,u'\\,dx\\). Choose \\(u=2x\\) (it gets simpler when differentiated) and \\(v'=e^{-2x}\\). Be careful: integrating \\(e^{-2x}\\) gives a factor \\(-\\dfrac{1}{2}\\).",
+          "steps": [
+            {
+              "explain": "Choose the parts: \\(u=2x\\) so \\(u'=2\\); \\(v'=e^{-2x}\\) so \\(v=-\\dfrac12e^{-2x}\\) (integrate \\(e^{kx}\\) to get \\(\\dfrac{1}{k} e^{kx}\\) with \\(k=-2\\)).",
+              "work": "\\(u=2x,\\ u'=2,\\ v'=e^{-2x},\\ v=-\\dfrac12e^{-2x}\\)"
+            },
+            {
+              "explain": "Compute \\(uv\\): the \\(2\\) and the \\(-\\dfrac{1}{2}\\) multiply to \\(-1\\).",
+              "work": "\\(uv=2x\\left(-\\dfrac12e^{-2x}\\right)=-xe^{-2x}\\)"
+            },
+            {
+              "explain": "Compute \\(\\int v\\,u'\\,dx\\): the constants \\(-\\dfrac{1}{2}\\) and \\(2\\) multiply to \\(-1\\).",
+              "work": "\\(\\int vu'\\,dx=\\int\\left(-\\dfrac12e^{-2x}\\right)(2)\\,dx=-\\int e^{-2x}\\,dx\\)"
+            },
+            {
+              "explain": "Put it together: \\(uv-\\int vu'\\,dx\\). Subtracting a negative gives a plus.",
+              "work": "\\(\\int2xe^{-2x}\\,dx=-xe^{-2x}-\\left(-\\int e^{-2x}\\,dx\\right)=-xe^{-2x}+\\int e^{-2x}\\,dx\\)"
+            },
+            {
+              "explain": "Why not the others: C and D have \\(-2xe^{-2x}\\) (the \\(-\\dfrac{1}{2}\\) from integrating \\(e^{-2x}\\) was forgotten); B has the wrong sign on the remaining integral.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "2x\\,e^{-2x}\\,dx",
+              "note": "By parts: \\(u=2x\\), \\(v=-\\dfrac12e^{-2x}\\); \\(uv-\\int vu'\\,dx\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hurlstone Agricultural High School 2020 Trial Higher School Certificate Examination Mathematics Extension 2",
+            "school": "Hurlstone Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -5866,6 +6560,68 @@
           "meta": {
             "source": "Hornsby Girls High School 2021 Year 12 Trial Mathematics Extension 2",
             "school": "Hornsby Girls High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hurlstone2020-e2-q12ai",
+          "type": "mc",
+          "stem": "Evaluate \\(\\displaystyle\\int\\sin^{3}x\\cos^{2}x\\,dx\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{\\cos^{5}x}{5}-\\dfrac{\\cos^{3}x}{3}+C\\)",
+            "\\(\\dfrac{\\cos^{3}x}{3}-\\dfrac{\\cos^{5}x}{5}+C\\)",
+            "\\(\\dfrac{\\cos^{5}x}{5}+\\dfrac{\\cos^{3}x}{3}+C\\)",
+            "\\(\\dfrac{\\sin^{4}x}{4}\\cdot\\dfrac{\\cos^{3}x}{3}+C\\)"
+          ],
+          "answer": 0,
+          "hint": "An ODD power of \\(\\sin x\\): split off one \\(\\sin x\\), write the rest using \\(\\sin^{2}x=1-\\cos^{2}x\\), then substitute \\(u=\\cos x\\) (so \\(du=-\\sin x\\,dx\\)).",
+          "steps": [
+            {
+              "explain": "Split \\(\\sin^{3}x=\\sin^{2}x\\cdot\\sin x\\) and replace \\(\\sin^{2}x\\) by \\(1-\\cos^{2}x\\).",
+              "work": "\\(\\int\\sin^{3}x\\cos^{2}x\\,dx=\\int\\left(1-\\cos^{2}x\\right)\\cos^{2}x\\,\\sin x\\,dx\\)"
+            },
+            {
+              "explain": "Substitute \\(u=\\cos x\\), so \\(du=-\\sin x\\,dx\\), i.e. \\(\\sin x\\,dx=-du\\).",
+              "work": "\\(=-\\int\\left(1-u^{2}\\right)u^{2}\\,du\\)"
+            },
+            {
+              "explain": "Expand and remove the minus sign by swapping the order of the terms.",
+              "work": "\\(=\\int\\left(u^{4}-u^{2}\\right)du\\)"
+            },
+            {
+              "explain": "Integrate each power: \\(\\int u^{n}du=\\dfrac{u^{n+1}}{n+1}\\).",
+              "work": "\\(=\\dfrac{u^{5}}{5}-\\dfrac{u^{3}}{3}+C\\)"
+            },
+            {
+              "explain": "Substitute back \\(u=\\cos x\\).",
+              "work": "\\(=\\dfrac{\\cos^{5}x}{5}-\\dfrac{\\cos^{3}x}{3}+C\\)"
+            },
+            {
+              "explain": "Check by differentiating: \\(\\dfrac{d}{dx}\\left(\\dfrac{\\cos^{5}x}{5}-\\dfrac{\\cos^{3}x}{3}\\right)=-\\cos^{4}x\\sin x+\\cos^{2}x\\sin x=\\sin x\\cos^{2}x\\left(1-\\cos^{2}x\\right)=\\sin^{3}x\\cos^{2}x\\) ✓.",
+              "work": ""
+            },
+            {
+              "explain": "Why not the others: B has the opposite sign; C has a wrong sign on the \\(\\cos^{3}x\\) term; D integrates each factor separately, which is never allowed for a product.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "\\int\\sin^{3}x\\cos^{2}x\\,dx",
+              "note": "Odd power of \\(\\sin\\): \\(u=\\cos x\\), \\(\\sin^2=1-\\cos^2\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hurlstone Agricultural High School 2020 Trial Higher School Certificate Examination Mathematics Extension 2",
+            "school": "Hurlstone Agricultural High School",
             "grade": "12",
             "origin": "teacher"
           }
@@ -7480,6 +8236,346 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "hunters2020-e2-q16bii",
+          "type": "mc",
+          "stem": "Let \\(I_{n}=\\displaystyle\\int_{0}^{\\frac12}\\dfrac{1}{\\left(1+4x^{2}\\right)^{n}}dx\\). Using integration by parts, show that \\(I_{n}=\\dfrac{2nI_{n+1}}{2n-1}+\\dfrac{1}{2^{n+1}(1-2n)}\\). Which working is correct?",
+          "difficulty": "hard",
+          "options": [
+            "\\(u=\\left(1+4x^{2}\\right)^{-n}\\), \\(dv=dx\\): \\(I_{n}=\\left[x(1+4x^{2})^{-n}\\right]_{0}^{\\frac{1}{2}}+2n\\displaystyle\\int\\dfrac{4x^{2}}{(1+4x^{2})^{n+1}}dx=2^{-(n+1)}+2n\\left(I_{n}-I_{n+1}\\right)\\), then solve for \\(I_{n}\\)",
+            "\\(u=x\\), \\(dv=\\left(1+4x^{2}\\right)^{-n}dx\\): \\(I_{n}=\\left[x\\right]\\ldots\\) which is easier",
+            "Differentiate \\(I_{n}\\) with respect to \\(n\\)",
+            "\\(I_{n}=\\left(1+4x^{2}\\right)^{-n}\\left[\\dfrac{1}{2}\\right]\\) (evaluating the integrand at the end)"
+          ],
+          "answer": 0,
+          "hint": "Parts with \\(u=(1+4x^{2})^{-n}\\) (so \\(du=-n\\cdot8x(1+4x^{2})^{-n-1}dx\\)) and \\(dv=dx\\) (\\(v=x\\)). The new integral contains \\(x^{2}\\): rewrite \\(4x^{2}=(1+4x^{2})-1\\) (the HINT) to get \\(I_{n}\\) and \\(I_{n+1}\\) again, then SOLVE for \\(I_{n}\\).",
+          "steps": [
+            {
+              "explain": "By parts: \\(\\displaystyle\\int u\\,dv=uv-\\int v\\,du\\) with \\(u=(1+4x^{2})^{-n}\\), \\(v=x\\).",
+              "work": "\\(I_{n}=\\left[\\dfrac{x}{(1+4x^{2})^{n}}\\right]_{0}^{\\frac{1}{2}}+8n\\int_{0}^{\\frac{1}{2}}\\dfrac{x^{2}}{(1+4x^{2})^{n+1}}dx\\)"
+            },
+            {
+              "explain": "Boundary term: at \\(x=\\dfrac{1}{2}\\): \\(1+4\\cdot\\dfrac{1}{4}=2\\), so \\(\\dfrac{\\dfrac{1}{2}}{2^{n}}=2^{-(n+1)}\\); at 0 it is 0. Integral: \\(8x^{2}=2\\cdot4x^{2}\\) and \\(4x^{2}=(1+4x^{2})-1\\).",
+              "work": "\\(8n\\int\\dfrac{x^{2}}{(\\cdot)^{n+1}}=2n\\int\\dfrac{(1+4x^{2})-1}{(1+4x^{2})^{n+1}}dx=2n\\left(I_{n}-I_{n+1}\\right)\\)"
+            },
+            {
+              "explain": "So \\(I_{n}=2^{-(n+1)}+2nI_{n}-2nI_{n+1}\\). Collect \\(I_{n}\\): \\((1-2n)I_{n}=2^{-(n+1)}-2nI_{n+1}\\).",
+              "work": "\\((1-2n)I_{n}=\\dfrac{1}{2^{n+1}}-2nI_{n+1}\\)"
+            },
+            {
+              "explain": "Divide by \\((1-2n)\\) (note \\(\\dfrac{-2n}{1-2n}=\\dfrac{2n}{2n-1}\\)).",
+              "work": "\\(I_{n}=\\dfrac{2nI_{n+1}}{2n-1}+\\dfrac{1}{2^{n+1}(1-2n)}\\ \\ \\blacksquare\\)"
+            },
+            {
+              "explain": "Why not the others: B makes the new integral harder; C and D are not valid techniques.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Using integration by parts, show that",
+              "note": "\\(u=(1+4x^2)^{-n}\\), \\(dv=dx\\); use \\(4x^2=(1+4x^2)-1\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hunters Hill High School 2020 Trial Examination Mathematics Extension 2",
+            "school": "Hunters Hill High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hunters2020-e2-q16biii",
+          "type": "mc",
+          "stem": "Let \\(I_{n}=\\displaystyle\\int_{0}^{\\frac12}\\dfrac{1}{\\left(1+4x^{2}\\right)^{n}}dx\\), with \\(I_{1}=\\dfrac\\pi8\\) and \\(I_{n}=\\dfrac{2nI_{n+1}}{2n-1}+\\dfrac{1}{2^{n+1}(1-2n)}\\). Hence, evaluate \\(I_{3}=\\displaystyle\\int_{0}^{\\frac12}\\dfrac{1}{\\left(1+4x^{2}\\right)^{3}}dx\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\dfrac{3\\pi}{64}+\\dfrac{1}{8}\\)",
+            "\\(\\dfrac{3\\pi}{64}-\\dfrac{1}{8}\\)",
+            "\\(\\dfrac{\\pi}{16}+\\dfrac{1}{8}\\)",
+            "\\(\\dfrac{3\\pi}{32}+\\dfrac{1}{4}\\)"
+          ],
+          "answer": 0,
+          "hint": "Use the reduction formula to climb UP: \\(n=1\\) gives \\(I_{1}\\) in terms of \\(I_{2}\\) (so find \\(I_{2}\\)); then \\(n=2\\) gives \\(I_{2}\\) in terms of \\(I_{3}\\) (so find \\(I_{3}\\)). Rearrange each time to isolate the NEXT integral.",
+          "steps": [
+            {
+              "explain": "\\(n=1\\): \\(I_{1}=2I_{2}+\\dfrac{1}{4(-1)}=2I_{2}-\\dfrac{1}{4}\\). Solve for \\(I_{2}\\) with \\(I_{1}=\\dfrac\\pi8\\).",
+              "work": "\\(I_{2}=\\dfrac{1}{2}\\left(I_{1}+\\dfrac{1}{4}\\right)=\\dfrac\\pi{16}+\\dfrac{1}{8}\\)"
+            },
+            {
+              "explain": "\\(n=2\\): \\(I_{2}=\\dfrac{4I_{3}}{3}+\\dfrac{1}{8(-3)}=\\dfrac43I_{3}-\\dfrac1{24}\\). Solve for \\(I_{3}\\).",
+              "work": "\\(I_{3}=\\dfrac{3}{4}\\left(I_{2}+\\dfrac{1}{24}\\right)\\)"
+            },
+            {
+              "explain": "Substitute \\(I_{2}\\): \\(\\dfrac\\pi{16}+\\dfrac{1}{8}+\\dfrac1{24}=\\dfrac\\pi{16}+\\dfrac{3+1}{24}=\\dfrac\\pi{16}+\\dfrac{1}{6}\\).",
+              "work": "\\(I_{3}=\\dfrac{3}{4}\\left(\\dfrac\\pi{16}+\\dfrac{1}{6}\\right)=\\dfrac{3\\pi}{64}+\\dfrac{1}{8}\\)"
+            },
+            {
+              "explain": "Check numerically: \\(\\dfrac{3\\pi}{64}+\\dfrac{1}{8}=0.1473+0.125=0.272\\): the integrand falls from 1 to \\(\\dfrac{1}{8}\\) over \\(\\left[0,\\dfrac{1}{2}\\right]\\), average about 0.55: area \\(\\approx0.27\\) ✓. Why not the others: B has the wrong sign for \\(\\dfrac1{24}\\); C stops at \\(I_{2}\\); D doubles.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Hence, evaluate",
+              "note": "\\(n=1\\Rightarrow I_2\\); \\(n=2\\Rightarrow I_3\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hunters Hill High School 2020 Trial Examination Mathematics Extension 2",
+            "school": "Hunters Hill High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hurlstone2020-e2-q16di",
+          "type": "mc",
+          "stem": "Let \\(I_{n}=\\displaystyle\\int_{0}^{1}x^{n}\\tan^{-1}x\\,dx\\) where \\(n=0,1,2,\\dots\\). Show that \\((n+1)I_{n}=\\dfrac\\pi4-\\displaystyle\\int_{0}^{1}\\dfrac{x^{n+1}}{1+x^{2}}\\,dx\\) for \\(n\\ge0\\). Which set-up and working is correct?",
+          "difficulty": "hard",
+          "options": [
+            "Use integration by parts with \\(u=\\tan^{-1}x\\), \\(v'=x^{n}\\): \\(u'=\\dfrac1{1+x^{2}}\\), \\(v=\\dfrac{x^{n+1}}{n+1}\\). Then \\(I_{n}=\\left[\\dfrac{x^{n+1}}{n+1}\\tan^{-1}x\\right]_{0}^{1}-\\dfrac1{n+1}\\displaystyle\\int_{0}^{1}\\dfrac{x^{n+1}}{1+x^{2}}dx\\) and \\(\\tan^{-1}1=\\dfrac\\pi4\\); multiply by \\(n+1\\).",
+            "Use integration by parts with \\(u=x^{n}\\), \\(v'=\\tan^{-1}x\\). Then \\(u'=nx^{n-1}\\) and \\(v=\\dfrac{1}{1+x^{2}}\\); this gives the required result.",
+            "Use integration by parts with \\(u=\\tan^{-1}x\\), \\(v'=x^{n}\\): \\(v=x^{n}\\) and \\(u'=\\dfrac1{1+x^{2}}\\). Then \\(I_{n}=\\left[x^{n}\\tan^{-1}x\\right]_{0}^{1}-\\displaystyle\\int_{0}^{1}\\dfrac{x^{n}}{1+x^{2}}dx\\).",
+            "Use integration by parts with \\(u=\\tan^{-1}x\\), \\(v'=x^{n}\\) but evaluate \\(\\tan^{-1}1=1\\); then \\((n+1)I_{n}=1-\\displaystyle\\int_{0}^{1}\\dfrac{x^{n+1}}{1+x^{2}}dx\\)."
+          ],
+          "answer": 0,
+          "hint": "\\(\\tan^{-1}x\\) is hard to integrate but easy to differentiate (\\(\\dfrac{1}{1+x^{2}}\\)), so let \\(u=\\tan^{-1}x\\) and \\(v'=x^{n}\\). Do NOT forget to divide by \\(n+1\\) when integrating \\(x^{n}\\).",
+          "steps": [
+            {
+              "explain": "Choose the parts: \\(u=\\tan^{-1}x\\Rightarrow u'=\\dfrac1{1+x^{2}}\\); \\(v'=x^{n}\\Rightarrow v=\\dfrac{x^{n+1}}{n+1}\\).",
+              "work": "\\(u=\\tan^{-1}x,\\ u'=\\dfrac1{1+x^{2}},\\ v'=x^{n},\\ v=\\dfrac{x^{n+1}}{n+1}\\)"
+            },
+            {
+              "explain": "Apply \\(\\int u\\,v'\\,dx=\\left[uv\\right]-\\int v\\,u'\\,dx\\) between 0 and 1.",
+              "work": "\\(I_{n}=\\left[\\dfrac{x^{n+1}}{n+1}\\tan^{-1}x\\right]_{0}^{1}-\\int_{0}^{1}\\dfrac{x^{n+1}}{n+1}\\cdot\\dfrac{1}{1+x^{2}}\\,dx\\)"
+            },
+            {
+              "explain": "Evaluate the boundary term: at \\(x=1\\), \\(\\tan^{-1}1=\\dfrac\\pi4\\); at \\(x=0\\) it is 0 (\\(\\tan^{-1}0=0\\)).",
+              "work": "\\(\\left[\\dfrac{x^{n+1}}{n+1}\\tan^{-1}x\\right]_{0}^{1}=\\dfrac{1}{n+1}\\cdot\\dfrac\\pi4-0=\\dfrac{\\pi}{4(n+1)}\\)"
+            },
+            {
+              "explain": "Substitute and take out the constant factor \\(\\dfrac{1}{n+1}\\) from the integral.",
+              "work": "\\(I_{n}=\\dfrac{\\pi}{4(n+1)}-\\dfrac{1}{n+1}\\int_{0}^{1}\\dfrac{x^{n+1}}{1+x^{2}}\\,dx\\)"
+            },
+            {
+              "explain": "Multiply both sides by \\((n+1)\\).",
+              "work": "\\((n+1)I_{n}=\\dfrac\\pi4-\\int_{0}^{1}\\dfrac{x^{n+1}}{1+x^{2}}\\,dx\\)"
+            },
+            {
+              "explain": "Why not the others: B’s choice does not work (\\(\\int\\tan^{-1}x\\,dx\\) is not \\(\\dfrac1{1+x^{2}}\\)); C integrates \\(x^{n}\\) to \\(x^{n}\\) (forgetting \\(\\dfrac{x^{n+1}}{n+1}\\)); D uses \\(\\tan^{-1}1=1\\) (it is \\(\\dfrac\\pi4\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that \\((n+1)I_{n}=\\dfrac\\pi4-",
+              "note": "\\(u=\\tan^{-1}x\\), \\(v=\\dfrac{x^{n+1}}{n+1}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hurlstone Agricultural High School 2020 Trial Higher School Certificate Examination Mathematics Extension 2",
+            "school": "Hurlstone Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hurlstone2020-e2-q16dii",
+          "type": "mc",
+          "stem": "Let \\(I_{n}=\\displaystyle\\int_{0}^{1}x^{n}\\tan^{-1}x\\,dx\\). Using \\((n+1)I_{n}=\\dfrac\\pi4-\\displaystyle\\int_{0}^{1}\\dfrac{x^{n+1}}{1+x^{2}}\\,dx\\), find the value of \\(I_{0}\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac\\pi4-\\dfrac{1}{2}\\ln2\\)",
+            "\\(\\dfrac\\pi4-\\ln2\\)",
+            "\\(\\dfrac\\pi4+\\dfrac{1}{2}\\ln2\\)",
+            "\\(\\dfrac{1}{2}\\ln2-\\dfrac\\pi4\\)"
+          ],
+          "answer": 0,
+          "hint": "Put \\(n=0\\) in the formula. The remaining integral \\(\\int\\dfrac{x}{1+x^{2}}dx\\) has numerator \\(=\\dfrac{1}{2}\\) of the derivative of the denominator, so it is \\(\\dfrac{1}{2}\\ln\\left(1+x^{2}\\right)\\).",
+          "steps": [
+            {
+              "explain": "Let \\(n=0\\): \\((0+1)I_{0}=I_{0}\\).",
+              "work": "\\(I_{0}=\\dfrac\\pi4-\\int_{0}^{1}\\dfrac{x}{1+x^{2}}\\,dx\\)"
+            },
+            {
+              "explain": "The derivative of \\(1+x^{2}\\) is \\(2x\\), so \\(\\dfrac{x}{1+x^{2}}=\\dfrac{1}{2}\\cdot\\dfrac{2x}{1+x^{2}}\\).",
+              "work": "\\(\\int\\dfrac{x}{1+x^{2}}dx=\\dfrac{1}{2}\\ln\\left(1+x^{2}\\right)\\)"
+            },
+            {
+              "explain": "Evaluate between 0 and 1: \\(\\ln2\\) at the top and \\(\\ln1=0\\) at the bottom.",
+              "work": "\\(\\int_{0}^{1}\\dfrac{x}{1+x^{2}}dx=\\dfrac{1}{2}\\ln2-\\dfrac{1}{2}\\ln1=\\dfrac{1}{2}\\ln2\\)"
+            },
+            {
+              "explain": "Substitute.",
+              "work": "\\(I_{0}=\\dfrac\\pi4-\\dfrac{1}{2}\\ln2\\)"
+            },
+            {
+              "explain": "Numerical check: \\(\\dfrac\\pi4-\\dfrac{1}{2}\\ln2\\approx0.7854-0.3466=0.4388\\), and \\(\\displaystyle\\int_{0}^{1}\\tan^{-1}x\\,dx\\approx0.4388\\) ✓.",
+              "work": ""
+            },
+            {
+              "explain": "Why not the others: B forgets the \\(\\dfrac{1}{2}\\) in \\(\\dfrac{1}{2}\\ln(1+x^{2})\\); C has the wrong sign; D is the negative of the right answer.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "find the value of \\(I_{0}\\)",
+              "note": "\\(n=0\\); \\(\\int\\dfrac{x}{1+x^2}dx=\\dfrac{1}{2}\\ln(1+x^2)\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hurlstone Agricultural High School 2020 Trial Higher School Certificate Examination Mathematics Extension 2",
+            "school": "Hurlstone Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hurlstone2020-e2-q16diii",
+          "type": "mc",
+          "stem": "Let \\(I_{n}=\\displaystyle\\int_{0}^{1}x^{n}\\tan^{-1}x\\,dx\\). Given \\((n+1)I_{n}=\\dfrac\\pi4-\\displaystyle\\int_{0}^{1}\\dfrac{x^{n+1}}{1+x^{2}}\\,dx\\), show that \\((n+3)I_{n+2}+(n+1)I_{n}=\\dfrac\\pi2-\\dfrac{1}{n+2}\\). Which working is correct?",
+          "difficulty": "hard",
+          "options": [
+            "Replace \\(n\\) by \\(n+2\\): \\((n+3)I_{n+2}=\\dfrac\\pi4-\\displaystyle\\int_{0}^{1}\\dfrac{x^{n+3}}{1+x^{2}}dx\\). Add to the original: RHS \\(=\\dfrac\\pi2-\\displaystyle\\int_{0}^{1}\\dfrac{x^{n+1}+x^{n+3}}{1+x^{2}}dx=\\dfrac\\pi2-\\displaystyle\\int_{0}^{1}x^{n+1}dx=\\dfrac\\pi2-\\dfrac{1}{n+2}\\).",
+            "Replace \\(n\\) by \\(n+2\\) and add: RHS \\(=\\dfrac\\pi2-\\displaystyle\\int_{0}^{1}x^{n+1}dx\\), and \\(\\displaystyle\\int_{0}^{1}x^{n+1}dx=\\dfrac{1}{n+1}\\), so the result is \\(\\dfrac\\pi2-\\dfrac{1}{n+1}\\).",
+            "Replace \\(n\\) by \\(n+2\\) and SUBTRACT the two equations: RHS \\(=0-\\displaystyle\\int_{0}^{1}x^{n+1}dx\\), giving \\(-\\dfrac{1}{n+2}\\).",
+            "Replace \\(n\\) by \\(n+2\\) and add: RHS \\(=\\dfrac\\pi4-\\displaystyle\\int_{0}^{1}x^{n+1}dx=\\dfrac\\pi4-\\dfrac{1}{n+2}\\)."
+          ],
+          "answer": 0,
+          "hint": "Write the formula a second time with \\(n\\) replaced by \\(n+2\\), then ADD the two equations. The two integrals combine because \\(x^{n+1}+x^{n+3}=x^{n+1}\\left(1+x^{2}\\right)\\), which cancels the denominator \\(1+x^{2}\\).",
+          "steps": [
+            {
+              "explain": "Original formula (A).",
+              "work": "\\((n+1)I_{n}=\\dfrac\\pi4-\\int_{0}^{1}\\dfrac{x^{n+1}}{1+x^{2}}dx\\)"
+            },
+            {
+              "explain": "Replace \\(n\\) by \\(n+2\\) everywhere: \\(n+1\\to n+3\\) and \\(n+1\\) in the power \\(\\to n+3\\).",
+              "work": "\\((n+3)I_{n+2}=\\dfrac\\pi4-\\int_{0}^{1}\\dfrac{x^{n+3}}{1+x^{2}}dx\\)"
+            },
+            {
+              "explain": "Add the two equations. The \\(\\dfrac\\pi4\\) terms give \\(\\dfrac\\pi2\\) and the two integrals combine over the common denominator.",
+              "work": "\\((n+1)I_{n}+(n+3)I_{n+2}=\\dfrac\\pi2-\\int_{0}^{1}\\dfrac{x^{n+1}+x^{n+3}}{1+x^{2}}dx\\)"
+            },
+            {
+              "explain": "Factor the numerator: \\(x^{n+1}+x^{n+3}=x^{n+1}\\left(1+x^{2}\\right)\\), so the fraction simplifies to \\(x^{n+1}\\).",
+              "work": "\\(\\dfrac{x^{n+1}\\left(1+x^{2}\\right)}{1+x^{2}}=x^{n+1}\\)"
+            },
+            {
+              "explain": "Integrate: \\(\\int_{0}^{1}x^{n+1}dx=\\left[\\dfrac{x^{n+2}}{n+2}\\right]_{0}^{1}=\\dfrac{1}{n+2}\\).",
+              "work": "\\((n+3)I_{n+2}+(n+1)I_{n}=\\dfrac\\pi2-\\dfrac{1}{n+2}\\)"
+            },
+            {
+              "explain": "Why not the others: B integrates \\(x^{n+1}\\) to \\(\\dfrac{1}{n+1}\\) (the power rule gives \\(\\dfrac{x^{n+2}}{n+2}\\)); C subtracts instead of adding; D keeps \\(\\dfrac\\pi4\\) (it is \\(\\dfrac\\pi4+\\dfrac\\pi4=\\dfrac\\pi2\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "show that \\((n+3)I_{n+2}+(n+1)I_{n}=\\dfrac\\pi2-\\dfrac{1}{n+2}",
+              "note": "Add the formula for \\(n\\) and for \\(n+2\\); \\(x^{n+1}(1+x^2)\\) cancels."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hurlstone Agricultural High School 2020 Trial Higher School Certificate Examination Mathematics Extension 2",
+            "school": "Hurlstone Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hurlstone2020-e2-q16div",
+          "type": "mc",
+          "stem": "Let \\(I_{n}=\\displaystyle\\int_{0}^{1}x^{n}\\tan^{-1}x\\,dx\\). Given \\(I_{0}=\\dfrac\\pi4-\\dfrac{1}{2}\\ln2\\) and \\((n+3)I_{n+2}+(n+1)I_{n}=\\dfrac\\pi2-\\dfrac{1}{n+2}\\), find the value of \\(I_{4}\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\dfrac{\\pi+1-2\\ln2}{20}\\)",
+            "\\(\\dfrac{\\pi+1-\\ln2}{20}\\)",
+            "\\(\\dfrac{\\pi-1+2\\ln2}{20}\\)",
+            "\\(\\dfrac{\\pi+1-2\\ln2}{5}\\)"
+          ],
+          "answer": 0,
+          "hint": "Use the recurrence twice: first with \\(n=0\\) to get \\(I_{2}\\) from \\(I_{0}\\); then with \\(n=2\\) to get \\(I_{4}\\) from \\(I_{2}\\).",
+          "steps": [
+            {
+              "explain": "Put \\(n=0\\): \\(3I_{2}+I_{0}=\\dfrac\\pi2-\\dfrac{1}{2}\\).",
+              "work": "\\(3I_{2}+I_{0}=\\dfrac\\pi2-\\dfrac{1}{2}\\)"
+            },
+            {
+              "explain": "Substitute \\(I_{0}=\\dfrac\\pi4-\\dfrac{1}{2}\\ln2\\) and solve for \\(I_{2}\\).",
+              "work": "\\(3I_{2}=\\dfrac\\pi2-\\dfrac{1}{2}-\\dfrac\\pi4+\\dfrac{1}{2}\\ln2=\\dfrac\\pi4-\\dfrac{1}{2}+\\dfrac{1}{2}\\ln2\\)"
+            },
+            {
+              "explain": "Put \\(n=2\\): \\((2+3)I_{4}+(2+1)I_{2}=\\dfrac\\pi2-\\dfrac{1}{4}\\). Note \\(3I_{2}\\) appears here and we already know it.",
+              "work": "\\(5I_{4}+3I_{2}=\\dfrac\\pi2-\\dfrac{1}{4}\\)"
+            },
+            {
+              "explain": "Substitute \\(3I_{2}=\\dfrac\\pi4-\\dfrac{1}{2}+\\dfrac{1}{2}\\ln2\\).",
+              "work": "\\(5I_{4}=\\dfrac\\pi2-\\dfrac{1}{4}-\\left(\\dfrac\\pi4-\\dfrac{1}{2}+\\dfrac{1}{2}\\ln2\\right)=\\dfrac\\pi4+\\dfrac{1}{4}-\\dfrac{1}{2}\\ln2\\)"
+            },
+            {
+              "explain": "Divide by 5. Write over a common denominator of 4: \\(\\dfrac\\pi4+\\dfrac{1}{4}-\\dfrac{1}{2}\\ln2=\\dfrac{\\pi+1-2\\ln2}{4}\\).",
+              "work": "\\(I_{4}=\\dfrac{\\pi+1-2\\ln2}{20}\\)"
+            },
+            {
+              "explain": "Numerical check: \\(\\dfrac{3.1416+1-1.3863}{20}=0.1378\\), which matches \\(\\displaystyle\\int_{0}^{1}x^{4}\\tan^{-1}x\\,dx\\approx0.1378\\) ✓.",
+              "work": ""
+            },
+            {
+              "explain": "Why not the others: B forgets the 2 in \\(2\\ln2\\); C has the wrong signs; D divides by 5 instead of 20 (you must divide the \\(\\dfrac{1}{4}\\) form by 5).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "find the value of \\(I_{4}\\)",
+              "note": "\\(n=0\\to I_{2}\\); \\(n=2\\to I_{4}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hurlstone Agricultural High School 2020 Trial Higher School Certificate Examination Mathematics Extension 2",
+            "school": "Hurlstone Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -8059,6 +9155,56 @@
           "meta": {
             "source": "Hills Grammar 2025 Trial HSC Mathematics Extension 2",
             "school": "The Hills Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hunters2020-e2-q7",
+          "type": "mc",
+          "stem": "Which of the following expressions is equivalent to \\(\\displaystyle\\int_{0}^{2a}f(x)\\,dx\\) ?",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\displaystyle\\int_{0}^{2a}f(2a-x)\\,dx\\)",
+            "\\(\\displaystyle\\int_{0}^{2a}f(a-x)\\,dx\\)",
+            "\\(2\\displaystyle\\int_{0}^{2a}f(2a-x)\\,dx\\)",
+            "\\(2\\displaystyle\\int_{0}^{2a}f(a-x)\\,dx\\)"
+          ],
+          "answer": 0,
+          "hint": "The substitution \\(u=\\) (upper limit \\(+\\) lower limit) \\(-x\\) REVERSES the interval: \\(\\displaystyle\\int_{0}^{b}f(x)\\,dx=\\int_{0}^{b}f(b-x)\\,dx\\). Here \\(b=2a\\). Check the limits and the sign of \\(du\\).",
+          "steps": [
+            {
+              "explain": "Let \\(u=2a-x\\). Then \\(du=-dx\\). Limits: \\(x=0\\Rightarrow u=2a\\); \\(x=2a\\Rightarrow u=0\\).",
+              "work": "\\(\\int_{0}^{2a}f(2a-x)\\,dx=-\\int_{2a}^{0}f(u)\\,du\\)"
+            },
+            {
+              "explain": "Swap the limits (this removes the minus sign).",
+              "work": "\\(=\\int_{0}^{2a}f(u)\\,du\\)"
+            },
+            {
+              "explain": "\\(u\\) is a dummy variable: this equals \\(\\displaystyle\\int_{0}^{2a}f(x)\\,dx\\). ✓",
+              "work": "\\(\\int_{0}^{2a}f(2a-x)\\,dx=\\int_{0}^{2a}f(x)\\,dx\\)"
+            },
+            {
+              "explain": "Why not the others: B uses \\(a-x\\) (wrong reflection point); C and D double the integral.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Which of the following expressions is equivalent to",
+              "note": "Let \\(u=2a-x\\); swap limits."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hunters Hill High School 2020 Trial Examination Mathematics Extension 2",
+            "school": "Hunters Hill High School",
             "grade": "12",
             "origin": "teacher"
           }

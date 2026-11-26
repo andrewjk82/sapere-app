@@ -426,6 +426,60 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "hunters2020-e2-q14d",
+          "type": "mc",
+          "stem": "Using the substitution \\(t=\\tan\\dfrac{x}{2}\\), or otherwise, find \\(\\displaystyle\\int\\dfrac{dx}{5+3\\cos x}\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\dfrac{1}{2}\\tan^{-1}\\left(\\dfrac{1}{2}\\tan\\dfrac{x}{2}\\right)+C\\)",
+            "\\(\\tan^{-1}\\left(\\dfrac{1}{2}\\tan\\dfrac{x}{2}\\right)+C\\)",
+            "\\(\\dfrac{1}{2}\\ln\\left(5+3\\cos x\\right)+C\\)",
+            "\\(\\dfrac{1}{8}\\tan^{-1}\\left(\\tan\\dfrac{x}{2}\\right)+C\\)"
+          ],
+          "answer": 0,
+          "hint": "\\(t\\)-formulae: \\(\\cos x=\\dfrac{1-t^{2}}{1+t^{2}}\\) and \\(dx=\\dfrac{2\\,dt}{1+t^{2}}\\). Substitute, combine over a common denominator and simplify to a standard \\(\\tan^{-1}\\) form.",
+          "steps": [
+            {
+              "explain": "Replace \\(\\cos x\\) and \\(dx\\).",
+              "work": "\\(\\int\\dfrac{\\dfrac{2\\,dt}{1+t^{2}}}{5+3\\cdot\\dfrac{1-t^{2}}{1+t^{2}}}\\)"
+            },
+            {
+              "explain": "Multiply top and bottom by \\((1+t^{2})\\): the denominator becomes \\(5(1+t^{2})+3(1-t^{2})=8+2t^{2}\\).",
+              "work": "\\(=\\int\\dfrac{2\\,dt}{8+2t^{2}}=\\int\\dfrac{dt}{4+t^{2}}\\)"
+            },
+            {
+              "explain": "Standard integral with \\(a=2\\): \\(\\dfrac{1}{2}\\tan^{-1}\\dfrac{t}{2}\\).",
+              "work": "\\(=\\dfrac{1}{2}\\tan^{-1}\\dfrac{t}{2}+C\\)"
+            },
+            {
+              "explain": "Substitute back \\(t=\\tan\\dfrac{x}{2}\\).",
+              "work": "\\(\\dfrac{1}{2}\\tan^{-1}\\left(\\dfrac{1}{2}\\tan\\dfrac{x}{2}\\right)+C\\)"
+            },
+            {
+              "explain": "Why not the others: B forgets the \\(\\dfrac{1}{a}\\); C is a wrong log integral; D uses wrong constants.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Using the substitution \\(t=\\tan\\dfrac{x}{2}\\), or otherwise, find",
+              "note": "\\(\\cos x=\\dfrac{1-t^2}{1+t^2}\\), \\(dx=\\dfrac{2dt}{1+t^2}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hunters Hill High School 2020 Trial Examination Mathematics Extension 2",
+            "school": "Hunters Hill High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },

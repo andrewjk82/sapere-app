@@ -812,6 +812,268 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "hunters2020-e2-q13ci",
+          "type": "mc",
+          "stem": "Consider the polynomial \\(P(z)=z^{4}+4z^{3}+14z^{2}+20z+25\\). It is known that \\(P(-1+2i)=0\\). Show that \\(P'(-1+2i)=0\\) and explain the significance of this.",
+          "difficulty": "hard",
+          "options": [
+            "\\(P'(z)=4z^{3}+12z^{2}+28z+20\\); with \\(z=-1+2i\\) (\\(z^{2}=-3-4i\\), \\(z^{3}=11-2i\\)): \\(P'=44-8i-36-48i-28+56i+20=0\\). Since \\(P=P'=0\\), \\(-1+2i\\) is a DOUBLE root",
+            "\\(P'(-1+2i)=1\\ne0\\), so it is a simple root",
+            "\\(P'(z)=4z^{3}+12z^{2}+14z+20\\) gives \\(P'=0\\); this shows \\(P\\) has no real roots",
+            "\\(P'(-1+2i)=0\\) shows \\(P(-1+2i)=0\\)"
+          ],
+          "answer": 0,
+          "hint": "If \\(P(a)=0\\) AND \\(P'(a)=0\\) then \\(a\\) is a REPEATED root (multiplicity at least 2). Differentiate carefully, then substitute \\(z=-1+2i\\), working out \\(z^{2}\\) and \\(z^{3}\\) first with \\(i^{2}=-1\\).",
+          "steps": [
+            {
+              "explain": "Differentiate.",
+              "work": "\\(P'(z)=4z^{3}+12z^{2}+28z+20\\)"
+            },
+            {
+              "explain": "Powers of \\(z=-1+2i\\): \\(z^{2}=1-4i+4i^{2}=-3-4i\\); \\(z^{3}=z\\cdot z^{2}=(-1+2i)(-3-4i)=3+4i-6i-8i^{2}=11-2i\\).",
+              "work": "\\(z^{2}=-3-4i,\\qquad z^{3}=11-2i\\)"
+            },
+            {
+              "explain": "Substitute: \\(4(11-2i)+12(-3-4i)+28(-1+2i)+20\\).",
+              "work": "\\(=44-8i-36-48i-28+56i+20=0+0i=0\\)"
+            },
+            {
+              "explain": "Significance: \\(P(a)=0\\) and \\(P'(a)=0\\) means \\(a=-1+2i\\) is a repeated (DOUBLE) root of \\(P(z)\\).",
+              "work": "\\(P(-1+2i)=P'(-1+2i)=0\\ \\Rightarrow\\ \\text{double root}\\)"
+            },
+            {
+              "explain": "Why not the others: B is a wrong value; C has the wrong derivative (\\(14z\\) instead of \\(28z\\)) and the wrong conclusion; D confuses \\(P'=0\\) with \\(P=0\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that \\(P'(-1+2i)=0\\) and explain the significance of this.",
+              "note": "\\(P=P'=0\\Rightarrow\\) double root."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hunters Hill High School 2020 Trial Examination Mathematics Extension 2",
+            "school": "Hunters Hill High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hunters2020-e2-q13cii",
+          "type": "mc",
+          "stem": "Consider the polynomial \\(P(z)=z^{4}+4z^{3}+14z^{2}+20z+25\\) with real coefficients, and \\(P(-1+2i)=0\\). Explain why \\(-1-2i\\) is also a root of \\(P(z)\\).",
+          "difficulty": "easy",
+          "options": [
+            "Because the coefficients of \\(P(z)\\) are REAL, non-real roots come in CONJUGATE pairs: \\(\\overline{-1+2i}=-1-2i\\)",
+            "Because \\(-1-2i\\) is the negative of \\(-1+2i\\)",
+            "Because \\(P'(-1+2i)=0\\)",
+            "Because the polynomial has degree 4"
+          ],
+          "answer": 0,
+          "hint": "The CONJUGATE ROOT THEOREM: if a polynomial has REAL coefficients and \\(a+ib\\) is a root, then \\(a-ib\\) is also a root. (Reason: \\(P(\\bar z)=\\overline{P(z)}\\) when the coefficients are real.)",
+          "steps": [
+            {
+              "explain": "If \\(P(z)=0\\) and the coefficients are real, take the conjugate of both sides.",
+              "work": "\\(\\overline{P(z)}=P(\\bar z)=\\bar0=0\\)"
+            },
+            {
+              "explain": "So the conjugate \\(\\overline{-1+2i}=-1-2i\\) is also a root.",
+              "work": "\\(P(-1-2i)=0\\)"
+            },
+            {
+              "explain": "Why not the others: B (the negative) is not the conjugate; C is about repeated roots; D is not a reason.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Explain why \\(-1-2i\\) is also a root of \\(P(z)\\).",
+              "note": "Real coefficients \\(\\Rightarrow\\) conjugate pairs."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hunters Hill High School 2020 Trial Examination Mathematics Extension 2",
+            "school": "Hunters Hill High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hunters2020-e2-q13ciii",
+          "type": "mc",
+          "stem": "Hence, factorise \\(P(z)=z^{4}+4z^{3}+14z^{2}+20z+25\\) over the complex numbers and then over the real numbers.",
+          "difficulty": "hard",
+          "options": [
+            "Complex: \\((z+1-2i)^{2}(z+1+2i)^{2}\\); real: \\(\\left(z^{2}+2z+5\\right)^{2}\\)",
+            "Complex: \\((z+1-2i)(z+1+2i)\\); real: \\(z^{2}+2z+5\\)",
+            "Complex: \\((z-1+2i)^{2}(z-1-2i)^{2}\\); real: \\(\\left(z^{2}-2z+5\\right)^{2}\\)",
+            "Complex: \\((z+1-2i)^{2}(z+1+2i)^{2}\\); real: \\(\\left(z^{2}+2z+4\\right)^{2}\\)"
+          ],
+          "answer": 0,
+          "hint": "From (i) and (ii): \\(-1+2i\\) and \\(-1-2i\\) are BOTH DOUBLE roots (degree 4 means 4 roots altogether). Roots \\(r\\) give factors \\((z-r)\\). Multiply the conjugate pair \\((z-(-1+2i))(z-(-1-2i))\\) to get a REAL quadratic: \\(z^{2}-(\\text{sum})z+\\text{product}\\).",
+          "steps": [
+            {
+              "explain": "Roots \\(-1+2i\\) (double) and \\(-1-2i\\) (double): factors \\((z+1-2i)^{2}\\) and \\((z+1+2i)^{2}\\). The leading coefficient is 1.",
+              "work": "\\(P(z)=(z+1-2i)^{2}(z+1+2i)^{2}\\)"
+            },
+            {
+              "explain": "Real factorisation: multiply the conjugate pair. Sum of roots \\(=-2\\); product \\(=(-1)^{2}-(2i)^{2}=1+4=5\\).",
+              "work": "\\((z+1-2i)(z+1+2i)=(z+1)^{2}+4=z^{2}+2z+5\\)"
+            },
+            {
+              "explain": "So over the reals the factor appears squared.",
+              "work": "\\(P(z)=\\left(z^{2}+2z+5\\right)^{2}\\)"
+            },
+            {
+              "explain": "Check: \\(\\left(z^{2}+2z+5\\right)^{2}=z^{4}+4z^{3}+(4+10)z^{2}+20z+25\\) ✓. Why not the others: B has each factor only ONCE (degree 2, not 4); C has the wrong signs (roots \\(1\\mp2i\\)); D has the wrong product (4 instead of 5).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "over the complex numbers and then over the real numbers.",
+              "note": "Conjugate pair product: \\(z^2+2z+5\\); squared."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hunters Hill High School 2020 Trial Examination Mathematics Extension 2",
+            "school": "Hunters Hill High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hurlstone2020-e2-q11ci",
+          "type": "mc",
+          "stem": "The polynomial \\(P(x)=x^{3}-5x^{2}+ax+b\\), where \\(a\\) and \\(b\\) are real, has one root at \\(x=3-2\\sqrt2\\,i\\). Solve the equation \\(P(x)=0\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(x=3\\pm2\\sqrt2\\,i,\\ -1\\)",
+            "\\(x=3\\pm2\\sqrt2\\,i,\\ 1\\)",
+            "\\(x=3\\pm2\\sqrt2\\,i,\\ -5\\)",
+            "\\(x=3\\pm2\\sqrt2\\,i,\\ 5\\)"
+          ],
+          "answer": 0,
+          "hint": "For a polynomial with REAL coefficients, complex roots come in conjugate pairs. Then use the sum of roots \\(\\alpha+\\beta+\\gamma=-\\dfrac{\\text{coefficient of }x^{2}}{\\text{coefficient of }x^{3}}\\).",
+          "steps": [
+            {
+              "explain": "Real coefficients \\(\\Rightarrow\\) the conjugate \\(3+2\\sqrt2\\,i\\) is also a root. Call the roots \\(\\alpha=3-2\\sqrt2\\,i\\), \\(\\beta=3+2\\sqrt2\\,i\\) and \\(\\gamma\\).",
+              "work": "\\(\\alpha=3-2\\sqrt2\\,i,\\quad\\beta=3+2\\sqrt2\\,i\\)"
+            },
+            {
+              "explain": "Sum of roots \\(=-\\dfrac{-5}{1}=5\\).",
+              "work": "\\(\\alpha+\\beta+\\gamma=5\\)"
+            },
+            {
+              "explain": "The imaginary parts cancel: \\(\\alpha+\\beta=6\\). Then \\(6+\\gamma=5\\).",
+              "work": "\\(\\gamma=5-6=-1\\)"
+            },
+            {
+              "explain": "So the three roots are:",
+              "work": "\\(x=3-2\\sqrt2\\,i,\\quad 3+2\\sqrt2\\,i,\\quad-1\\)"
+            },
+            {
+              "explain": "Why not the others: B, C, D have the right pair but the wrong third root (\\(1\\), \\(-5\\), \\(5\\)): the sum of all roots must be 5, so \\(\\gamma=5-6=-1\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "has one root at \\(x=3-2\\sqrt2\\,i\\)",
+              "note": "Conjugate root; sum of roots \\(=5\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hurlstone Agricultural High School 2020 Trial Higher School Certificate Examination Mathematics Extension 2",
+            "school": "Hurlstone Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hurlstone2020-e2-q11cii",
+          "type": "mc",
+          "stem": "The polynomial \\(P(x)=x^{3}-5x^{2}+ax+b\\), where \\(a\\) and \\(b\\) are real, has roots \\(3-2\\sqrt2\\,i\\), \\(3+2\\sqrt2\\,i\\) and \\(-1\\). Hence find the values of \\(a\\) and \\(b\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(a=11,\\ b=17\\)",
+            "\\(a=11,\\ b=-17\\)",
+            "\\(a=-11,\\ b=17\\)",
+            "\\(a=17,\\ b=11\\)"
+          ],
+          "answer": 0,
+          "hint": "For \\(x^{3}-5x^{2}+ax+b\\): \\(\\alpha\\beta+\\alpha\\gamma+\\beta\\gamma=a\\) and \\(\\alpha\\beta\\gamma=-b\\). First find the product \\(\\alpha\\beta=(3-2\\sqrt2 i)(3+2\\sqrt2 i)=9+8\\).",
+          "steps": [
+            {
+              "explain": "Product of the conjugate pair: \\((x-iy)(x+iy)=x^{2}+y^{2}\\).",
+              "work": "\\(\\alpha\\beta=3^{2}+\\left(2\\sqrt2\\right)^{2}=9+8=17\\)"
+            },
+            {
+              "explain": "Sum of the pair: \\(\\alpha+\\beta=6\\). Use \\(\\gamma=-1\\).",
+              "work": "\\(\\alpha+\\beta=6\\)"
+            },
+            {
+              "explain": "Sum of products in pairs \\(=a\\): group \\(\\alpha\\gamma+\\beta\\gamma=\\gamma(\\alpha+\\beta)\\).",
+              "work": "\\(a=\\alpha\\beta+\\gamma(\\alpha+\\beta)=17+(-1)(6)=11\\)"
+            },
+            {
+              "explain": "Product of all roots \\(=-b\\) (for a cubic with leading coefficient 1).",
+              "work": "\\(\\alpha\\beta\\gamma=17\\times(-1)=-17=-b\\ \\Rightarrow\\ b=17\\)"
+            },
+            {
+              "explain": "Check: \\(P(x)=(x+1)\\left(x^{2}-6x+17\\right)=x^{3}-5x^{2}+11x+17\\) ✓.",
+              "work": "\\(a=11,\\quad b=17\\)"
+            },
+            {
+              "explain": "Why not the others: B and C have a sign error (the product of roots is \\(-b\\), not \\(b\\); \\(a\\) is a plain sum, no extra minus); D swaps \\(a\\) and \\(b\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Hence find the values of \\(a\\) and \\(b\\)",
+              "note": "\\(a=\\sum\\alpha\\beta\\); \\(\\alpha\\beta\\gamma=-b\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hurlstone Agricultural High School 2020 Trial Higher School Certificate Examination Mathematics Extension 2",
+            "school": "Hurlstone Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -1616,6 +1878,114 @@
           "meta": {
             "source": "Hills Grammar 2025 Trial HSC Mathematics Extension 2",
             "school": "The Hills Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hurlstone2020-e2-q11bii",
+          "type": "mc",
+          "stem": "Let \\(z=\\sqrt3+i\\). Find the smallest positive integer \\(n\\) such that \\(z^{n}-\\left(\\bar z\\right)^{n}=0\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(2\\)",
+            "\\(3\\)",
+            "\\(6\\)",
+            "\\(12\\)"
+          ],
+          "answer": 2,
+          "hint": "Write \\(z=2\\operatorname{cis}\\dfrac\\pi6\\) and \\(\\bar z=2\\operatorname{cis}\\left(-\\dfrac\\pi6\\right)\\). Use De Moivre: \\(\\left(\\operatorname{cis}\\theta\\right)^{n}=\\operatorname{cis}n\\theta\\). The difference is zero when the two powers are equal.",
+          "steps": [
+            {
+              "explain": "Mod-arg forms: \\(z=2\\operatorname{cis}\\dfrac\\pi6\\); the conjugate has the same modulus and the opposite argument.",
+              "work": "\\(z=2\\operatorname{cis}\\dfrac\\pi6,\\quad \\bar z=2\\operatorname{cis}\\left(-\\dfrac\\pi6\\right)\\)"
+            },
+            {
+              "explain": "De Moivre’s theorem: raise the modulus to the power \\(n\\) and multiply the argument by \\(n\\).",
+              "work": "\\(z^{n}-\\bar z^{\\,n}=2^{n}\\left[\\left(\\cos\\dfrac{n\\pi}{6}+i\\sin\\dfrac{n\\pi}{6}\\right)-\\left(\\cos\\dfrac{n\\pi}{6}-i\\sin\\dfrac{n\\pi}{6}\\right)\\right]\\)"
+            },
+            {
+              "explain": "The cosines cancel and the sines double.",
+              "work": "\\(=2^{n}\\cdot2i\\sin\\dfrac{n\\pi}{6}\\)"
+            },
+            {
+              "explain": "This is zero only when \\(\\sin\\dfrac{n\\pi}{6}=0\\), i.e. \\(\\dfrac{n\\pi}{6}=k\\pi\\) for an integer \\(k\\).",
+              "work": "\\(\\dfrac{n\\pi}{6}=k\\pi\\ \\Rightarrow\\ n=6k\\)"
+            },
+            {
+              "explain": "The smallest POSITIVE integer comes from \\(k=1\\).",
+              "work": "\\(n=6\\)"
+            },
+            {
+              "explain": "Check: \\(z^{6}=2^{6}\\operatorname{cis}\\pi=-64\\) and \\(\\bar z^{\\,6}=2^{6}\\operatorname{cis}(-\\pi)=-64\\): equal ✓. For \\(n=2\\) and \\(n=3\\) the sine is \\(\\sin\\dfrac\\pi3\\ne0\\) and \\(\\sin\\dfrac\\pi2\\ne0\\); \\(n=12\\) works but is not the smallest.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">C</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "smallest positive integer \\(n\\)",
+              "note": "\\(\\sin\\dfrac{n\\pi}{6}=0\\Rightarrow n=6k\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hurlstone Agricultural High School 2020 Trial Higher School Certificate Examination Mathematics Extension 2",
+            "school": "Hurlstone Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hurlstone2020-e2-q13aii",
+          "type": "mc",
+          "stem": "If \\(z=\\sqrt2-\\sqrt6\\,i\\), evaluate \\(z^{3}\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(-16\\sqrt2\\)",
+            "\\(16\\sqrt2\\)",
+            "\\(-16\\)",
+            "\\(16\\sqrt2\\,i\\)"
+          ],
+          "answer": 0,
+          "hint": "Use De Moivre’s theorem on the mod-arg form: \\(\\left[r\\operatorname{cis}\\theta\\right]^{n}=r^{n}\\operatorname{cis}n\\theta\\). Cube the modulus and TRIPLE the argument.",
+          "steps": [
+            {
+              "explain": "From part (i): \\(z=2\\sqrt2\\operatorname{cis}\\left(-\\dfrac\\pi3\\right)\\).",
+              "work": "\\(z^{3}=\\left[2\\sqrt2\\operatorname{cis}\\left(-\\dfrac\\pi3\\right)\\right]^{3}\\)"
+            },
+            {
+              "explain": "Modulus: \\(\\left(2\\sqrt2\\right)^{3}=8\\cdot2\\sqrt2=16\\sqrt2\\). Argument: \\(3\\times\\left(-\\dfrac\\pi3\\right)=-\\pi\\).",
+              "work": "\\(z^{3}=16\\sqrt2\\operatorname{cis}(-\\pi)\\)"
+            },
+            {
+              "explain": "Evaluate \\(\\operatorname{cis}(-\\pi)=\\cos\\pi-i\\sin\\pi=-1-0i=-1\\).",
+              "work": "\\(z^{3}=16\\sqrt2\\times(-1)=-16\\sqrt2\\)"
+            },
+            {
+              "explain": "Why not the others: B forgets \\(\\operatorname{cis}(-\\pi)=-1\\); C has \\((2\\sqrt2)^{3}=16\\) (the \\(\\sqrt2\\) was lost); D has an extra \\(i\\) (\\(\\operatorname{cis}(-\\pi)\\) is real).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "evaluate \\(z^{3}\\)",
+              "note": "De Moivre: \\(r^3\\operatorname{cis}3\\theta\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hurlstone Agricultural High School 2020 Trial Higher School Certificate Examination Mathematics Extension 2",
+            "school": "Hurlstone Agricultural High School",
             "grade": "12",
             "origin": "teacher"
           }
@@ -3164,6 +3534,172 @@
           "meta": {
             "source": "Hills Grammar 2025 Trial HSC Mathematics Extension 2",
             "school": "The Hills Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hurlstone2020-e2-q15ai",
+          "type": "mc",
+          "stem": "Use De Moivre’s Theorem to express \\(\\cos5\\theta\\) and \\(\\sin5\\theta\\) in terms of powers of \\(\\sin\\theta\\) and \\(\\cos\\theta\\). Which result is correct?",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\cos5\\theta=\\cos^{5}\\theta-10\\cos^{3}\\theta\\sin^{2}\\theta+5\\cos\\theta\\sin^{4}\\theta\\)  \\(\\sin5\\theta=5\\cos^{4}\\theta\\sin\\theta-10\\cos^{2}\\theta\\sin^{3}\\theta+\\sin^{5}\\theta\\)",
+            "\\(\\cos5\\theta=\\cos^{5}\\theta+10\\cos^{3}\\theta\\sin^{2}\\theta+5\\cos\\theta\\sin^{4}\\theta\\)  \\(\\sin5\\theta=5\\cos^{4}\\theta\\sin\\theta+10\\cos^{2}\\theta\\sin^{3}\\theta+\\sin^{5}\\theta\\)",
+            "\\(\\cos5\\theta=5\\cos^{4}\\theta\\sin\\theta-10\\cos^{2}\\theta\\sin^{3}\\theta+\\sin^{5}\\theta\\)  \\(\\sin5\\theta=\\cos^{5}\\theta-10\\cos^{3}\\theta\\sin^{2}\\theta+5\\cos\\theta\\sin^{4}\\theta\\)",
+            "\\(\\cos5\\theta=\\cos^{5}\\theta-5\\cos^{3}\\theta\\sin^{2}\\theta+5\\cos\\theta\\sin^{4}\\theta\\)  \\(\\sin5\\theta=5\\cos^{4}\\theta\\sin\\theta-5\\cos^{2}\\theta\\sin^{3}\\theta+\\sin^{5}\\theta\\)"
+          ],
+          "answer": 0,
+          "hint": "Expand \\((\\cos\\theta+i\\sin\\theta)^{5}\\) with the binomial theorem (coefficients \\(1,5,10,10,5,1\\)) and equate it to \\(\\cos5\\theta+i\\sin5\\theta\\). REAL parts give \\(\\cos5\\theta\\); IMAGINARY parts give \\(\\sin5\\theta\\). Powers of \\(i\\): \\(i^{2}=-1\\), \\(i^{3}=-i\\), \\(i^{4}=1\\), \\(i^{5}=i\\).",
+          "steps": [
+            {
+              "explain": "De Moivre: \\((\\cos\\theta+i\\sin\\theta)^{5}=\\cos5\\theta+i\\sin5\\theta\\). Expand the left side with the binomial theorem; write \\(c=\\cos\\theta\\), \\(s=\\sin\\theta\\).",
+              "work": "\\((c+is)^{5}=c^{5}+5c^{4}(is)+10c^{3}(is)^{2}+10c^{2}(is)^{3}+5c(is)^{4}+(is)^{5}\\)"
+            },
+            {
+              "explain": "Simplify the powers of \\(i\\): \\((is)^{2}=-s^{2}\\), \\((is)^{3}=-is^{3}\\), \\((is)^{4}=s^{4}\\), \\((is)^{5}=is^{5}\\).",
+              "work": "\\(=c^{5}+5ic^{4}s-10c^{3}s^{2}-10ic^{2}s^{3}+5cs^{4}+is^{5}\\)"
+            },
+            {
+              "explain": "Group the REAL terms (no \\(i\\)).",
+              "work": "\\(\\text{real: }c^{5}-10c^{3}s^{2}+5cs^{4}\\)"
+            },
+            {
+              "explain": "Group the IMAGINARY terms (the coefficient of \\(i\\)).",
+              "work": "\\(\\text{imaginary: }5c^{4}s-10c^{2}s^{3}+s^{5}\\)"
+            },
+            {
+              "explain": "Equate real parts and imaginary parts.",
+              "work": "\\(\\begin{aligned}&\\cos5\\theta&=\\cos^{5}\\theta-10\\cos^{3}\\theta\\sin^{2}\\theta+5\\cos\\theta\\sin^{4}\\theta\\\\ &\\sin5\\theta&=5\\cos^{4}\\theta\\sin\\theta-10\\cos^{2}\\theta\\sin^{3}\\theta+\\sin^{5}\\theta\\end{aligned}\\)"
+            },
+            {
+              "explain": "Why not the others: B ignores \\(i^{2}=-1\\) and \\(i^{3}=-i\\) (all plus signs); C swaps the real and imaginary parts; D uses the wrong coefficients (the binomial coefficients are \\(10\\), not \\(5\\), for the middle terms).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Use De Moivre’s Theorem to express",
+              "note": "Real parts \\(\\to\\cos5\\theta\\); imaginary \\(\\to\\sin5\\theta\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hurlstone Agricultural High School 2020 Trial Higher School Certificate Examination Mathematics Extension 2",
+            "school": "Hurlstone Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hurlstone2020-e2-q15aii",
+          "type": "mc",
+          "stem": "Write an expression for \\(\\tan5\\theta\\) in terms of \\(t\\), where \\(t=\\tan\\theta\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{5t-10t^{3}+t^{5}}{1-10t^{2}+5t^{4}}\\)",
+            "\\(\\dfrac{1-10t^{2}+5t^{4}}{5t-10t^{3}+t^{5}}\\)",
+            "\\(\\dfrac{5t-10t^{3}+t^{5}}{1+10t^{2}+5t^{4}}\\)",
+            "\\(\\dfrac{5t+10t^{3}+t^{5}}{1-10t^{2}+5t^{4}}\\)"
+          ],
+          "answer": 0,
+          "hint": "\\(\\tan5\\theta=\\dfrac{\\sin5\\theta}{\\cos5\\theta}\\). Use the results of part (i), then divide the top and bottom by \\(\\cos^{5}\\theta\\) so that every term becomes a power of \\(t=\\tan\\theta\\).",
+          "steps": [
+            {
+              "explain": "Write \\(\\tan5\\theta\\) as \\(\\dfrac{\\sin5\\theta}{\\cos5\\theta}\\) and substitute from part (i).",
+              "work": "\\(\\tan5\\theta=\\dfrac{5c^{4}s-10c^{2}s^{3}+s^{5}}{c^{5}-10c^{3}s^{2}+5cs^{4}}\\)"
+            },
+            {
+              "explain": "Divide EVERY term in the numerator and the denominator by \\(c^{5}=\\cos^{5}\\theta\\). Each term has total power 5, so \\(\\dfrac{c^{4}s}{c^{5}}=\\dfrac{s}{c}=t\\), \\(\\dfrac{c^{2}s^{3}}{c^{5}}=t^{3}\\), \\(\\dfrac{s^{5}}{c^{5}}=t^{5}\\).",
+              "work": "\\(\\text{numerator}\\to5t-10t^{3}+t^{5}\\)"
+            },
+            {
+              "explain": "Denominator: \\(\\dfrac{c^{5}}{c^{5}}=1\\), \\(\\dfrac{c^{3}s^{2}}{c^{5}}=t^{2}\\), \\(\\dfrac{cs^{4}}{c^{5}}=t^{4}\\).",
+              "work": "\\(\\text{denominator}\\to1-10t^{2}+5t^{4}\\)"
+            },
+            {
+              "explain": "Combine.",
+              "work": "\\(\\tan5\\theta=\\dfrac{5t-10t^{3}+t^{5}}{1-10t^{2}+5t^{4}}\\)"
+            },
+            {
+              "explain": "Why not the others: B is upside down (\\(\\cot5\\theta\\)); C and D have a sign error in one of the middle terms.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Write an expression for \\(\\tan5\\theta\\)",
+              "note": "Divide top and bottom by \\(\\cos^5\\theta\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hurlstone Agricultural High School 2020 Trial Higher School Certificate Examination Mathematics Extension 2",
+            "school": "Hurlstone Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hurlstone2020-e2-q15aiii",
+          "type": "mc",
+          "stem": "By solving \\(\\tan5\\theta=0\\), deduce that \\(\\tan\\dfrac\\pi5\\tan\\dfrac{2\\pi}5\\tan\\dfrac{3\\pi}5\\tan\\dfrac{4\\pi}5=5\\). Which argument is correct?",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\tan5\\theta=0\\Rightarrow5t-10t^{3}+t^{5}=0\\Rightarrow t\\left(t^{4}-10t^{2}+5\\right)=0\\). The 4 non-zero roots \\(\\tan\\dfrac{k\\pi}{5}\\) (\\(k=1,2,3,4\\)) satisfy \\(t^{4}-10t^{2}+5=0\\), whose product of roots is \\(\\dfrac{5}{1}=5\\).",
+            "\\(\\tan5\\theta=0\\Rightarrow5t-10t^{3}+t^{5}=0\\). The roots are \\(\\tan\\dfrac{k\\pi}{5}\\) (\\(k=0,\\dots,4\\)) and the product of all five roots is \\(5\\).",
+            "\\(\\tan5\\theta=0\\Rightarrow t^{4}-10t^{2}+5=0\\), whose product of roots is \\(-\\dfrac{5}{1}=-5\\), so the product is \\(-5\\).",
+            "\\(\\tan5\\theta=0\\Rightarrow t^{4}-10t^{2}+5=0\\), whose SUM of roots is \\(-\\dfrac{-10}{1}=10\\), so the product is 5."
+          ],
+          "answer": 0,
+          "hint": "A fraction is zero when its NUMERATOR is zero. Solve \\(5\\theta=k\\pi\\) to see which angles work. The roots of the quartic are \\(t=\\tan\\theta\\) for those angles. For \\(t^{4}+bt^{3}+ct^{2}+dt+e=0\\) the PRODUCT of the roots is \\(\\dfrac{e}{\\text{leading coeff.}}\\) (for an even-degree polynomial).",
+          "steps": [
+            {
+              "explain": "\\(\\tan5\\theta=0\\) when \\(5\\theta=0,\\pi,2\\pi,3\\pi,4\\pi,\\dots\\), so \\(\\theta=0,\\dfrac\\pi5,\\dfrac{2\\pi}5,\\dfrac{3\\pi}5,\\dfrac{4\\pi}5,\\dots\\) The five values \\(\\theta=\\dfrac{k\\pi}{5}\\), \\(k=0,\\dots,4\\), give five different values of \\(t=\\tan\\theta\\).",
+              "work": "\\(t=\\tan0,\\ \\tan\\dfrac\\pi5,\\ \\tan\\dfrac{2\\pi}5,\\ \\tan\\dfrac{3\\pi}5,\\ \\tan\\dfrac{4\\pi}5\\)"
+            },
+            {
+              "explain": "From (ii), \\(\\tan5\\theta=0\\) means the NUMERATOR is zero.",
+              "work": "\\(5t-10t^{3}+t^{5}=0\\ \\Rightarrow\\ t\\left(t^{4}-10t^{2}+5\\right)=0\\)"
+            },
+            {
+              "explain": "\\(t=0\\) corresponds to \\(\\theta=0\\). The OTHER four roots \\(\\tan\\dfrac\\pi5,\\tan\\dfrac{2\\pi}5,\\tan\\dfrac{3\\pi}5,\\tan\\dfrac{4\\pi}5\\) are the roots of the quartic.",
+              "work": "\\(t^{4}-10t^{2}+5=0\\)"
+            },
+            {
+              "explain": "Product of the roots of a quartic \\(at^{4}+bt^{3}+ct^{2}+dt+e=0\\) is \\(\\dfrac{e}{a}\\). Here \\(a=1\\) and \\(e=5\\).",
+              "work": "\\(\\tan\\dfrac\\pi5\\tan\\dfrac{2\\pi}5\\tan\\dfrac{3\\pi}5\\tan\\dfrac{4\\pi}5=\\dfrac{5}{1}=5\\)"
+            },
+            {
+              "explain": "Why not the others: B includes the root \\(t=0\\) (then the product would be 0 and \\(5\\) is not the constant term of a quintic); C uses a wrong sign (for a quartic the product is \\(+\\dfrac{e}{a}\\)); D computes the SUM of the roots, not the product.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "By solving \\(\\tan5\\theta=0\\), deduce that",
+              "note": "Numerator \\(=0\\); product of roots \\(=\\dfrac{e}{a}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hurlstone Agricultural High School 2020 Trial Higher School Certificate Examination Mathematics Extension 2",
+            "school": "Hurlstone Agricultural High School",
             "grade": "12",
             "origin": "teacher"
           }
@@ -5186,6 +5722,172 @@
           "meta": {
             "source": "Hills Grammar 2025 Trial HSC Mathematics Extension 2",
             "school": "The Hills Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hunters2020-e2-q1",
+          "type": "mc",
+          "stem": "Imagine \\(\\omega\\) is an imaginary cube root of unity, then \\(\\left(1+\\omega-\\omega^{2}\\right)^{2020}\\) is equal to",
+          "difficulty": "hard",
+          "options": [
+            "\\(-2^{2020}\\omega\\)",
+            "\\(2^{2020}\\omega\\)",
+            "\\(-2^{2020}\\omega^{2}\\)",
+            "\\(2^{2020}\\omega^{2}\\)"
+          ],
+          "answer": 3,
+          "hint": "Cube roots of unity satisfy \\(\\omega^{3}=1\\) and \\(1+\\omega+\\omega^{2}=0\\). Use the second fact to simplify the bracket first, then reduce the huge power of \\(\\omega\\) using \\(\\omega^{3}=1\\) (divide the power by 3 and keep the REMAINDER).",
+          "steps": [
+            {
+              "explain": "From \\(1+\\omega+\\omega^{2}=0\\): \\(1+\\omega=-\\omega^{2}\\). Substitute into the bracket.",
+              "work": "\\(1+\\omega-\\omega^{2}=-\\omega^{2}-\\omega^{2}=-2\\omega^{2}\\)"
+            },
+            {
+              "explain": "Raise to the power 2020: \\((-2)^{2020}=2^{2020}\\) (even power) and \\(\\left(\\omega^{2}\\right)^{2020}=\\omega^{4040}\\).",
+              "work": "\\(\\left(-2\\omega^{2}\\right)^{2020}=2^{2020}\\,\\omega^{4040}\\)"
+            },
+            {
+              "explain": "Reduce \\(\\omega^{4040}\\): \\(\\omega^{3}=1\\), so divide the power by 3: \\(4040=3\\times1346+2\\). Then \\(\\omega^{4040}=(\\omega^{3})^{1346}\\,\\omega^{2}=\\omega^{2}\\).",
+              "work": "\\(\\omega^{4040}=\\omega^{2}\\)"
+            },
+            {
+              "explain": "Combine.",
+              "work": "\\(2^{2020}\\omega^{2}\\)"
+            },
+            {
+              "explain": "Why not the others: A, B have \\(\\omega\\) (a remainder of 1); A, C have the wrong sign (an even power of \\(-2\\) is positive).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">D</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Imagine \\(\\omega\\) is an imaginary cube root of unity",
+              "note": "\\(1+\\omega=-\\omega^2\\); \\(\\omega^3=1\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hunters Hill High School 2020 Trial Examination Mathematics Extension 2",
+            "school": "Hunters Hill High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hunters2020-e2-q13bi",
+          "type": "mc",
+          "stem": "Find the square roots of \\(-24-10i\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\pm(1-5i)\\)",
+            "\\(\\pm(1+5i)\\)",
+            "\\(\\pm(5-i)\\)",
+            "\\(\\pm(4-\\sqrt{10}\\,i)\\)"
+          ],
+          "answer": 0,
+          "hint": "Let \\((a+ib)^{2}=-24-10i\\) with \\(a,b\\) REAL. Expand and EQUATE real and imaginary parts: \\(a^{2}-b^{2}=-24\\) and \\(2ab=-10\\). Also use the MODULUS: \\(a^{2}+b^{2}=|-24-10i|=\\sqrt{576+100}=26\\).",
+          "steps": [
+            {
+              "explain": "Expand \\((a+ib)^{2}=a^{2}-b^{2}+2abi\\) and equate parts.",
+              "work": "\\(a^{2}-b^{2}=-24,\\qquad2ab=-10\\)"
+            },
+            {
+              "explain": "Modulus trick: \\(a^{2}+b^{2}=\\sqrt{(-24)^{2}+(-10)^{2}}=26\\). Add and subtract the two equations.",
+              "work": "\\(2a^{2}=2\\Rightarrow a^{2}=1,\\qquad2b^{2}=50\\Rightarrow b^{2}=25\\)"
+            },
+            {
+              "explain": "\\(a=\\pm1\\), \\(b=\\pm5\\) with \\(ab=-5\\) (opposite signs): \\((a,b)=(1,-5)\\) or \\((-1,5)\\).",
+              "work": "\\(\\pm(1-5i)\\)"
+            },
+            {
+              "explain": "Check: \\((1-5i)^{2}=1-10i+25i^{2}=-24-10i\\) ✓. Why not the others: B has the wrong sign (\\(ab=+5\\)); C, D don’t square to \\(-24-10i\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the square roots of \\(-24-10i\\).",
+              "note": "\\((a+ib)^2\\): \\(a^2-b^2=-24,\\ 2ab=-10\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hunters Hill High School 2020 Trial Examination Mathematics Extension 2",
+            "school": "Hunters Hill High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hurlstone2020-e2-q11aiii",
+          "type": "mc",
+          "stem": "If \\(b=3-4i\\), evaluate \\(\\sqrt b\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\pm(2-i)\\)",
+            "\\(\\pm(2+i)\\)",
+            "\\(\\pm(1-2i)\\)",
+            "\\(2-i\\) only"
+          ],
+          "answer": 0,
+          "hint": "Let \\(\\sqrt b=x+iy\\) with \\(x,y\\) real. Square it, then equate real and imaginary parts. Remember every non-zero complex number has TWO square roots.",
+          "steps": [
+            {
+              "explain": "Let \\((x+iy)^{2}=3-4i\\) and expand the left side.",
+              "work": "\\(x^{2}-y^{2}+2xyi=3-4i\\)"
+            },
+            {
+              "explain": "Equate real parts and imaginary parts.",
+              "work": "\\(\\begin{aligned}&x^{2}-y^{2}&=3\\quad(A)\\\\ &2xy&=-4\\ \\Rightarrow\\ x=-\\dfrac{2}{y}\\quad(B)\\end{aligned}\\)"
+            },
+            {
+              "explain": "Substitute (B) into (A): \\(\\dfrac{4}{y^{2}}-y^{2}=3\\). Multiply by \\(y^{2}\\).",
+              "work": "\\(4-y^{4}=3y^{2}\\ \\Rightarrow\\ y^{4}+3y^{2}-4=0\\)"
+            },
+            {
+              "explain": "Factorise as a quadratic in \\(y^{2}\\): \\(\\left(y^{2}+4\\right)\\left(y^{2}-1\\right)=0\\). Since \\(y\\) is real, \\(y^{2}=-4\\) is impossible, so \\(y^{2}=1\\).",
+              "work": "\\(y^{2}=1\\ \\Rightarrow\\ y=\\pm1\\)"
+            },
+            {
+              "explain": "Find \\(x=-\\dfrac{2}{y}\\): \\(y=1\\Rightarrow x=-2\\); \\(y=-1\\Rightarrow x=2\\).",
+              "work": "\\(x+iy=-2+i\\quad\\text{or}\\quad 2-i\\)"
+            },
+            {
+              "explain": "Check: \\((2-i)^{2}=4-4i+i^{2}=3-4i\\) ✓. The two roots are negatives of each other.",
+              "work": "\\(\\sqrt{3-4i}=\\pm(2-i)\\)"
+            },
+            {
+              "explain": "Why not the others: \\((2+i)^{2}=3+4i\\) and \\((1-2i)^{2}=-3-4i\\) do not give \\(3-4i\\); D omits the second root.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "evaluate \\(\\sqrt b\\)",
+              "note": "Let \\((x+iy)^2=3-4i\\); equate real and imaginary parts."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hurlstone Agricultural High School 2020 Trial Higher School Certificate Examination Mathematics Extension 2",
+            "school": "Hurlstone Agricultural High School",
             "grade": "12",
             "origin": "teacher"
           }

@@ -7,7 +7,80 @@
       "topicId": "y12e2-7A",
       "code": "7A",
       "title": "Resolving Forces",
-      "questions": []
+      "questions": [
+        {
+          "id": "hurlstone2020-e2-q11d",
+          "type": "mc",
+          "stem": "The side of a marquee is supported by a vertical pole supplying a force of \\(F\\) newtons and a rope with a tension of 120 newtons. The tension in the marquee fabric is \\(T\\) newtons as shown. By resolving forces horizontally and vertically, or otherwise, find the exact values of \\(T\\) and \\(F\\).",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 280\" width=\"100%\" height=\"auto\" style=\"max-width:380px;display:block;margin:0 auto\"><line x1=\"40.0\" y1=\"240.0\" x2=\"310.0\" y2=\"240.0\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><polygon points=\"70,240 70,105 125,55 170,100 170,240\" fill=\"#bfdbfe\" stroke=\"#334155\" stroke-width=\"1.5\"/><text x=\"112.0\" y=\"180.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Marquee</text><text x=\"170.0\" y=\"257.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Pole</text><line x1=\"170.0\" y1=\"100.0\" x2=\"170.0\" y2=\"32.0\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><line x1=\"170.0\" y1=\"100.0\" x2=\"250.8\" y2=\"240.0\" stroke=\"#475569\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"170.0\" y1=\"100.0\" x2=\"212.5\" y2=\"173.6\" stroke=\"#047857\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"212.5\" y1=\"173.6\" x2=\"212.5\" y2=\"163.6\" stroke=\"#047857\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"212.5\" y1=\"173.6\" x2=\"203.8\" y2=\"168.6\" stroke=\"#047857\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"262.8\" y=\"234.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">120 N</text><text x=\"242.0\" y=\"140.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Rope</text><line x1=\"170.0\" y1=\"100.0\" x2=\"124.0\" y2=\"54.0\" stroke=\"#047857\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"124.0\" y1=\"54.0\" x2=\"126.6\" y2=\"63.7\" stroke=\"#047857\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"124.0\" y1=\"54.0\" x2=\"133.7\" y2=\"56.6\" stroke=\"#047857\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"116.0\" y=\"50.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">T</text><polyline points=\"170.0,74.0 169.5,74.0 169.0,74.0 168.5,74.0 168.0,74.1 167.5,74.1 166.9,74.2 166.4,74.2 165.9,74.3 165.4,74.4 164.9,74.5 164.4,74.6 163.9,74.7 163.4,74.8 162.9,75.0 162.5,75.1 162.0,75.3 161.5,75.4 161.0,75.6 160.5,75.8 160.1,76.0 159.6,76.2 159.1,76.4 158.7,76.6 158.2,76.8 157.7,77.1 157.3,77.3 156.9,77.6 156.4,77.8 156.0,78.1 155.6,78.4 155.1,78.7 154.7,79.0 154.3,79.3 153.9,79.6 153.5,79.9 153.1,80.2 152.7,80.6 152.4,80.9 152.0,81.3 151.6,81.6\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.8\"/><text x=\"178.0\" y=\"68.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">45°</text><line x1=\"170.0\" y1=\"180.0\" x2=\"170.0\" y2=\"140.0\" stroke=\"#047857\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"170.0\" y1=\"140.0\" x2=\"165.0\" y2=\"148.7\" stroke=\"#047857\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"170.0\" y1=\"140.0\" x2=\"175.0\" y2=\"148.7\" stroke=\"#047857\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"161.0\" y=\"170.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">F</text><polyline points=\"170.0,140.0 170.5,140.0 171.0,140.0 171.6,140.0 172.1,139.9 172.6,139.9 173.1,139.9 173.7,139.8 174.2,139.8 174.7,139.7 175.2,139.7 175.7,139.6 176.3,139.5 176.8,139.4 177.3,139.3 177.8,139.2 178.3,139.1 178.8,139.0 179.3,138.9 179.8,138.8 180.4,138.6 180.9,138.5 181.4,138.4 181.9,138.2 182.4,138.0 182.9,137.9 183.4,137.7 183.8,137.5 184.3,137.3 184.8,137.2 185.3,137.0 185.8,136.8 186.3,136.5 186.7,136.3 187.2,136.1 187.7,135.9 188.2,135.6 188.6,135.4 189.1,135.2 189.5,134.9 190.0,134.6\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.8\"/><text x=\"192.0\" y=\"162.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">30°</text><circle cx=\"170.0\" cy=\"100.0\" r=\"4\" fill=\"#1e293b\"/><text x=\"370.0\" y=\"70.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#64748b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">Not to scale</text></svg>"
+          },
+          "options": [
+            "\\(T=60\\sqrt2,\\ F=60\\sqrt3-60\\)",
+            "\\(T=60\\sqrt2,\\ F=60\\sqrt3+60\\)",
+            "\\(T=60,\\ F=60\\sqrt3-60\\)",
+            "\\(T=60\\sqrt3,\\ F=60\\sqrt2-60\\)"
+          ],
+          "answer": 0,
+          "hint": "The knot is in EQUILIBRIUM, so the forces balance in each direction. Resolve every force into a horizontal and a vertical part using the angle measured FROM THE VERTICAL: horizontal \\(=\\text{force}\\times\\sin\\), vertical \\(=\\text{force}\\times\\cos\\).",
+          "steps": [
+            {
+              "explain": "Mark the forces at the knot: \\(T\\) up-left at \\(45^{\\circ}\\) to the vertical, the rope tension 120 N down-right at \\(30^{\\circ}\\) to the vertical, and \\(F\\) vertically up. The angles are from the vertical, so horizontal parts use \\(\\sin\\) and vertical parts use \\(\\cos\\).",
+              "work": "\\(\\text{horizontal}=\\text{force}\\times\\sin\\theta,\\quad\\text{vertical}=\\text{force}\\times\\cos\\theta\\)"
+            },
+            {
+              "explain": "Resolve HORIZONTALLY (left = right since the knot is at rest). \\(T\\) pulls left by \\(T\\sin45^{\\circ}\\); the rope pulls right by \\(120\\sin30^{\\circ}\\). \\(F\\) has no horizontal part.",
+              "work": "\\(T\\sin45^{\\circ}=120\\sin30^{\\circ}\\)"
+            },
+            {
+              "explain": "Substitute \\(\\sin45^{\\circ}=\\dfrac{1}{\\sqrt2}\\) and \\(\\sin30^{\\circ}=\\dfrac{1}{2}\\), then solve for \\(T\\).",
+              "work": "\\(\\dfrac{T}{\\sqrt2}=60\\ \\Rightarrow\\ T=60\\sqrt2\\)"
+            },
+            {
+              "explain": "Resolve VERTICALLY (up = down). Upward: \\(F\\) and \\(T\\cos45^{\\circ}\\). Downward: \\(120\\cos30^{\\circ}\\).",
+              "work": "\\(F+T\\cos45^{\\circ}=120\\cos30^{\\circ}\\)"
+            },
+            {
+              "explain": "Substitute \\(T=60\\sqrt2\\), \\(\\cos45^{\\circ}=\\dfrac{1}{\\sqrt2}\\) and \\(\\cos30^{\\circ}=\\dfrac{\\sqrt3}{2}\\): \\(T\\cos45^{\\circ}=60\\sqrt2\\cdot\\dfrac{1}{\\sqrt2}=60\\).",
+              "work": "\\(F+60=120\\cdot\\dfrac{\\sqrt3}{2}=60\\sqrt3\\)"
+            },
+            {
+              "explain": "Solve for \\(F\\).",
+              "work": "\\(F=60\\sqrt3-60\\quad(\\approx44\\ \\text{N})\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 330\" width=\"100%\" height=\"auto\" style=\"max-width:420px;display:block;margin:0 auto\"><line x1=\"20.0\" y1=\"140.0\" x2=\"400.0\" y2=\"140.0\" stroke=\"#cbd5e1\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"210.0\" y1=\"20.0\" x2=\"210.0\" y2=\"320.0\" stroke=\"#cbd5e1\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"210.0\" y1=\"140.0\" x2=\"123.0\" y2=\"53.0\" stroke=\"#047857\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><line x1=\"123.0\" y1=\"53.0\" x2=\"125.6\" y2=\"62.7\" stroke=\"#047857\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"123.0\" y1=\"53.0\" x2=\"132.7\" y2=\"55.6\" stroke=\"#047857\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><text x=\"117.0\" y=\"47.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">T = 60√2</text><line x1=\"123.0\" y1=\"53.0\" x2=\"123.0\" y2=\"140.0\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><line x1=\"123.0\" y1=\"53.0\" x2=\"210.0\" y2=\"53.0\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><line x1=\"210.0\" y1=\"140.0\" x2=\"123.0\" y2=\"140.0\" stroke=\"#7c3aed\" stroke-width=\"4\" stroke-linecap=\"round\"/><text x=\"160.5\" y=\"158.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#7c3aed\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">T sin 45° = 60</text><line x1=\"218.0\" y1=\"140.0\" x2=\"218.0\" y2=\"53.0\" stroke=\"#d97706\" stroke-width=\"4\" stroke-linecap=\"round\"/><text x=\"226.0\" y=\"100.5\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">T cos 45° = 60</text><line x1=\"210.0\" y1=\"140.0\" x2=\"297.0\" y2=\"290.7\" stroke=\"#dc2626\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><line x1=\"297.0\" y1=\"290.7\" x2=\"297.0\" y2=\"280.7\" stroke=\"#dc2626\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"297.0\" y1=\"290.7\" x2=\"288.3\" y2=\"285.7\" stroke=\"#dc2626\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><text x=\"305.0\" y=\"294.7\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">120 N</text><line x1=\"297.0\" y1=\"140.0\" x2=\"297.0\" y2=\"290.7\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><line x1=\"210.0\" y1=\"290.7\" x2=\"297.0\" y2=\"290.7\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><line x1=\"210.0\" y1=\"140.0\" x2=\"297.0\" y2=\"140.0\" stroke=\"#7c3aed\" stroke-width=\"4\" stroke-linecap=\"round\"/><text x=\"288.0\" y=\"132.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#7c3aed\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">120 sin 30° = 60</text><line x1=\"210.0\" y1=\"142.0\" x2=\"210.0\" y2=\"290.7\" stroke=\"#d97706\" stroke-width=\"4\" stroke-linecap=\"round\"/><text x=\"202.0\" y=\"230.7\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">120 cos 30°</text><text x=\"202.0\" y=\"244.7\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">= 60√3</text><line x1=\"202.0\" y1=\"140.0\" x2=\"202.0\" y2=\"76.3\" stroke=\"#047857\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><line x1=\"202.0\" y1=\"76.3\" x2=\"197.0\" y2=\"85.0\" stroke=\"#047857\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"202.0\" y1=\"76.3\" x2=\"207.0\" y2=\"85.0\" stroke=\"#047857\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><text x=\"196.0\" y=\"72.3\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">F</text><circle cx=\"210.0\" cy=\"140.0\" r=\"4.5\" fill=\"#1e293b\"/></svg>"
+              }
+            },
+            {
+              "explain": "The diagram shows all the components: the PURPLE horizontal parts (60 N each) balance, and the ORANGE vertical parts together with \\(F\\) balance.",
+              "work": ""
+            },
+            {
+              "explain": "Why not the others: B has \\(+60\\) (the \\(T\\cos45^{\\circ}\\) was added to the wrong side); C uses \\(T=60\\) (forgot to divide by \\(\\sin45^{\\circ}\\)); D swaps the two answers.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "By resolving forces horizontally and vertically",
+              "note": "Equilibrium: horizontal and vertical forces balance; angles from vertical \\(\\to\\sin\\) horizontal."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hurlstone Agricultural High School 2020 Trial Higher School Certificate Examination Mathematics Extension 2",
+            "school": "Hurlstone Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        }
+      ]
     },
     {
       "topicId": "y12e2-7B",
@@ -676,6 +749,184 @@
           "meta": {
             "source": "Girraween High School 2020 Trial HSC Examination Mathematics Extension 2",
             "school": "Girraween High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hunters2020-e2-q3",
+          "type": "mc",
+          "stem": "The acceleration of a particle moving in a straight line with velocity \\(v\\) is given by \\(\\ddot x=\\dfrac{1}{v}\\). Which of the following functions best represents \\(v\\) in terms of \\(x\\)?",
+          "difficulty": "hard",
+          "options": [
+            "\\(v=x+\\dfrac{1}{3}\\)",
+            "\\(v=\\sqrt[3]{3x+1}\\)",
+            "\\(v=x+1\\)",
+            "\\(v=e^{x}\\)"
+          ],
+          "answer": 1,
+          "hint": "With \\(v\\) and \\(x\\) use \\(\\ddot x=v\\dfrac{dv}{dx}\\). Set \\(v\\dfrac{dv}{dx}=\\dfrac{1}{v}\\), separate variables (\\(v^{2}dv=dx\\)) and integrate to find \\(v\\) in terms of \\(x\\).",
+          "steps": [
+            {
+              "explain": "Replace the acceleration by \\(v\\dfrac{dv}{dx}\\).",
+              "work": "\\(v\\dfrac{dv}{dx}=\\dfrac{1}{v}\\)"
+            },
+            {
+              "explain": "Multiply by \\(v\\) and separate the variables: \\(v^{2}\\,dv=dx\\).",
+              "work": "\\(\\int v^{2}dv=\\int dx\\)"
+            },
+            {
+              "explain": "Integrate both sides.",
+              "work": "\\(\\dfrac{v^{3}}{3}=x+C\\ \\Rightarrow\\ v^{3}=3x+3C\\)"
+            },
+            {
+              "explain": "Take the cube root: \\(v=\\sqrt[3]{3x+3C}\\). With \\(3C=1\\) this is option B (the constant \\(C\\) depends on the initial condition).",
+              "work": "\\(v=\\sqrt[3]{3x+1}\\)"
+            },
+            {
+              "explain": "Check: \\(v^{3}=3x+1\\Rightarrow3v^{2}\\dfrac{dv}{dx}=3\\Rightarrow v\\dfrac{dv}{dx}=\\dfrac{1}{v}\\) ✓. Why not the others: A, C, D give \\(v\\dfrac{dv}{dx}=x+\\dfrac{1}{3}\\),… not \\(\\dfrac{1}{v}\\) (e.g. \\(v=x+1\\Rightarrow v\\dfrac{dv}{dx}=x+1\\ne\\dfrac{1}{x+1}\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">B</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "The acceleration of a particle moving in a straight line with velocity \\(v\\) is given by",
+              "note": "\\(\\ddot x=v\\dfrac{dv}{dx}\\); separate: \\(v^2dv=dx\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hunters Hill High School 2020 Trial Examination Mathematics Extension 2",
+            "school": "Hunters Hill High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hurlstone2020-e2-q8",
+          "type": "mc",
+          "stem": "A particle is moving along a straight line. At time \\(t\\), its velocity is \\(v\\) and its displacement from a fixed origin is \\(x\\). If \\(\\dfrac{dv}{dx}=\\dfrac{1}{2v}\\), which of the following best describes the particle’s acceleration and velocity?",
+          "difficulty": "hard",
+          "options": [
+            "Constant acceleration and constant velocity.",
+            "Constant acceleration and decreasing velocity.",
+            "Constant acceleration and increasing velocity.",
+            "Increasing acceleration and increasing velocity."
+          ],
+          "answer": 2,
+          "hint": "Acceleration in terms of \\(x\\): \\(a=v\\dfrac{dv}{dx}\\). Substitute the given \\(\\dfrac{dv}{dx}\\) and see whether the result depends on \\(v\\) or \\(x\\). Then use the SIGN of \\(a\\) to decide whether \\(v\\) increases or decreases.",
+          "steps": [
+            {
+              "explain": "Use \\(a=v\\dfrac{dv}{dx}\\) (this is the rate of change of velocity with time, since \\(\\dfrac{dv}{dt}=\\dfrac{dv}{dx}\\cdot\\dfrac{dx}{dt}\\)).",
+              "work": "\\(a=\\dfrac{dv}{dt}=v\\dfrac{dv}{dx}\\)"
+            },
+            {
+              "explain": "Substitute \\(\\dfrac{dv}{dx}=\\dfrac{1}{2v}\\): the \\(v\\) cancels.",
+              "work": "\\(a=v\\cdot\\dfrac{1}{2v}=\\dfrac{1}{2}\\)"
+            },
+            {
+              "explain": "The acceleration is the constant \\(\\dfrac{1}{2}\\ \\text{ms}^{-2}\\), so it is CONSTANT (not increasing).",
+              "work": "\\(a=\\dfrac{1}{2}>0\\)"
+            },
+            {
+              "explain": "Positive acceleration means \\(\\dfrac{dv}{dt}>0\\): the velocity is always INCREASING, whichever way the particle moves.",
+              "work": "\\(\\dfrac{dv}{dt}=\\dfrac{1}{2}>0\\ \\Rightarrow\\ v\\ \\text{increases}\\)"
+            },
+            {
+              "explain": "Why not the others: the velocity cannot be constant or decreasing because \\(a=\\dfrac{1}{2}\\ne0\\) and positive; D is wrong because the acceleration does not increase.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">C</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "If \\(\\dfrac{dv}{dx}=\\dfrac{1}{2v}\\)",
+              "note": "\\(a=v\\dfrac{dv}{dx}\\); sign of \\(a\\) decides if \\(v\\) rises."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hurlstone Agricultural High School 2020 Trial Higher School Certificate Examination Mathematics Extension 2",
+            "school": "Hurlstone Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hurlstone2020-e2-q13d",
+          "type": "mc",
+          "stem": "A mass has acceleration \\(a\\ \\text{ms}^{-2}\\) given by \\(a=v^{2}-3\\), where \\(v\\ \\text{ms}^{-1}\\) is the velocity of the mass when it has a displacement of \\(x\\) metres from the origin. Find \\(v\\) in terms of \\(x\\) given that \\(v=-2\\) where \\(x=1\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(v=-\\sqrt{3+e^{2(x-1)}}\\)",
+            "\\(v=\\sqrt{3+e^{2(x-1)}}\\)",
+            "\\(v=-\\sqrt{3-e^{2(x-1)}}\\)",
+            "\\(v=-\\sqrt{3+e^{x-1}}\\)"
+          ],
+          "answer": 0,
+          "hint": "Acceleration as a function of \\(x\\) uses \\(a=v\\dfrac{dv}{dx}\\). Separate the variables, integrate, use the initial condition to find the constant, then choose the correct sign for \\(v\\) from the given \\(v=-2\\).",
+          "steps": [
+            {
+              "explain": "Write \\(a=v\\dfrac{dv}{dx}\\) and equate to \\(v^{2}-3\\).",
+              "work": "\\(v\\dfrac{dv}{dx}=v^{2}-3\\)"
+            },
+            {
+              "explain": "Take the reciprocal to get \\(\\dfrac{dx}{dv}\\), then integrate with respect to \\(v\\).",
+              "work": "\\(\\dfrac{dx}{dv}=\\dfrac{v}{v^{2}-3}\\ \\Rightarrow\\ x=\\int\\dfrac{v}{v^{2}-3}\\,dv\\)"
+            },
+            {
+              "explain": "The numerator is \\(\\dfrac{1}{2}\\) of the derivative of the denominator (\\(\\dfrac{d}{dv}\\left(v^{2}-3\\right)=2v\\)), so the integral is a logarithm.",
+              "work": "\\(x=\\dfrac{1}{2}\\ln\\left|v^{2}-3\\right|+C\\)"
+            },
+            {
+              "explain": "Use \\(v=-2\\) at \\(x=1\\): \\(v^{2}-3=4-3=1\\) and \\(\\ln1=0\\).",
+              "work": "\\(1=\\dfrac{1}{2}\\ln1+C\\ \\Rightarrow\\ C=1\\)"
+            },
+            {
+              "explain": "Rearrange: multiply by 2 and take the exponential.",
+              "work": "\\(2(x-1)=\\ln\\left|v^{2}-3\\right|\\ \\Rightarrow\\ \\left|v^{2}-3\\right|=e^{2(x-1)}\\)"
+            },
+            {
+              "explain": "At the start \\(v^{2}-3=1>0\\) and the expression \\(v^{2}-3=\\pm e^{2(x-1)}\\) can never change sign (the exponential is never zero), so the positive sign applies.",
+              "work": "\\(v^{2}=3+e^{2(x-1)}\\)"
+            },
+            {
+              "explain": "The velocity was NEGATIVE (\\(v=-2\\)) and cannot change sign (\\(v^{2}\\ge 3\\) means \\(v\\ne0\\)), so take the negative square root.",
+              "work": "\\(v=-\\sqrt{3+e^{2(x-1)}}\\)"
+            },
+            {
+              "explain": "Check: at \\(x=1\\): \\(v=-\\sqrt{3+1}=-2\\) ✓.",
+              "work": ""
+            },
+            {
+              "explain": "Why not the others: B has the wrong sign; C has \\(3-e^{\\dots}\\) (wrong sign inside); D has \\(e^{x-1}\\) (the factor 2 in the exponent was lost).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find \\(v\\) in terms of \\(x\\)",
+              "note": "\\(a=v\\dfrac{dv}{dx}\\); \\(v=-2\\) fixes the sign."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hurlstone Agricultural High School 2020 Trial Higher School Certificate Examination Mathematics Extension 2",
+            "school": "Hurlstone Agricultural High School",
             "grade": "12",
             "origin": "teacher"
           }
@@ -1696,6 +1947,110 @@
           "meta": {
             "source": "Hills Grammar 2025 Trial HSC Mathematics Extension 2",
             "school": "The Hills Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hunters2020-e2-q10",
+          "type": "mc",
+          "stem": "A bob on a spring moves vertically in simple harmonic motion, with equation of motion given as \\(x=a\\sin nt\\). Which of the following best describes the initial placement and motion of the bob?",
+          "difficulty": "medium",
+          "options": [
+            "the motion starts at the top and moves downwards",
+            "the motion starts at the bottom and moves upwards",
+            "the motion starts at the centre and moves upwards",
+            "the motion starts at the centre and moves downwards"
+          ],
+          "answer": 2,
+          "hint": "The initial POSITION is \\(x(0)\\); the initial DIRECTION is the sign of the velocity \\(\\dot x(0)\\). Take \\(x>0\\) as UP (the positive direction).",
+          "steps": [
+            {
+              "explain": "Position at \\(t=0\\): \\(x(0)=a\\sin0=0\\): the CENTRE of the motion.",
+              "work": "\\(x(0)=a\\sin0=0\\)"
+            },
+            {
+              "explain": "Velocity: differentiate. At \\(t=0\\): \\(\\dot x(0)=an\\cos0=an>0\\).",
+              "work": "\\(\\dot x=an\\cos nt\\ \\Rightarrow\\ \\dot x(0)=an>0\\)"
+            },
+            {
+              "explain": "Positive velocity: moving in the positive direction (UP). So the bob starts at the centre and moves upwards.",
+              "work": "\\(\\text{centre, moving up}\\)"
+            },
+            {
+              "explain": "Why not the others: A, B would need \\(x(0)=\\pm a\\) (\\(x=a\\cos nt\\)); D needs \\(\\dot x(0)<0\\) (\\(x=-a\\sin nt\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">C</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Which of the following best describes the initial placement and motion of the bob?",
+              "note": "\\(x(0)=0\\); \\(\\dot x(0)=an>0\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hunters Hill High School 2020 Trial Examination Mathematics Extension 2",
+            "school": "Hunters Hill High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hurlstone2020-e2-q4",
+          "type": "mc",
+          "stem": "A particle is describing SHM in a straight line with an amplitude of 4 metres. Its speed is 6 m/s when the particle is 2 metres from the centre of the motion. What is the period of the motion?",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{\\sqrt3\\pi}{2}\\)",
+            "\\(\\dfrac{2\\sqrt3\\pi}{3}\\)",
+            "\\(\\sqrt3\\pi\\)",
+            "\\(\\dfrac{2\\sqrt2\\pi}{3}\\)"
+          ],
+          "answer": 1,
+          "hint": "Use the SHM speed formula \\(v^{2}=n^{2}\\left(a^{2}-x^{2}\\right)\\) to find \\(n\\), then the period is \\(T=\\dfrac{2\\pi}{n}\\).",
+          "steps": [
+            {
+              "explain": "List the data: amplitude \\(a=4\\); at distance \\(x=2\\) the speed is \\(v=6\\).",
+              "work": "\\(a=4,\\quad x=2,\\quad v=6\\)"
+            },
+            {
+              "explain": "Substitute into \\(v^{2}=n^{2}(a^{2}-x^{2})\\).",
+              "work": "\\(6^{2}=n^{2}\\left(4^{2}-2^{2}\\right)\\)"
+            },
+            {
+              "explain": "Simplify: \\(36=12n^{2}\\).",
+              "work": "\\(n^{2}=\\dfrac{36}{12}=3\\ \\Rightarrow\\ n=\\sqrt3\\)"
+            },
+            {
+              "explain": "Period: \\(T=\\dfrac{2\\pi}{n}\\). Rationalise by multiplying top and bottom by \\(\\sqrt3\\).",
+              "work": "\\(T=\\dfrac{2\\pi}{\\sqrt3}=\\dfrac{2\\sqrt3\\,\\pi}{3}\\)"
+            },
+            {
+              "explain": "Why not the others: A halves the answer; C uses \\(T=\\pi n\\) (wrong formula); D comes from an arithmetic slip in \\(n^{2}\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">B</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "amplitude of 4 metres",
+              "note": "\\(v^2=n^2(a^2-x^2)\\), then \\(T=\\dfrac{2\\pi}{n}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hurlstone Agricultural High School 2020 Trial Higher School Certificate Examination Mathematics Extension 2",
+            "school": "Hurlstone Agricultural High School",
             "grade": "12",
             "origin": "teacher"
           }
@@ -2881,6 +3236,206 @@
           "meta": {
             "source": "Hills Grammar 2025 Trial HSC Mathematics Extension 2",
             "school": "The Hills Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hunters2020-e2-q15bi",
+          "type": "mc",
+          "stem": "A particle moving in simple harmonic motion has a period of \\(\\pi\\) seconds. Initially the particle is at \\(x=2\\) with a velocity of \\(8\\) ms\\(^{-1}\\). Find \\(x\\) as a function of \\(t\\) in the form \\(x=b\\cos nt+c\\sin nt\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(x=2\\cos2t+4\\sin2t\\)",
+            "\\(x=2\\cos t+8\\sin t\\)",
+            "\\(x=2\\cos2t+8\\sin2t\\)",
+            "\\(x=4\\cos2t+2\\sin2t\\)"
+          ],
+          "answer": 0,
+          "hint": "Period \\(T=\\dfrac{2\\pi}{n}\\) gives \\(n\\). Use the INITIAL conditions: \\(x(0)=b\\) (since \\(\\cos0=1\\), \\(\\sin0=0\\)) and \\(\\dot x(0)=nc\\) (differentiate first!).",
+          "steps": [
+            {
+              "explain": "Period \\(\\pi=\\dfrac{2\\pi}{n}\\Rightarrow n=2\\).",
+              "work": "\\(x=b\\cos2t+c\\sin2t\\)"
+            },
+            {
+              "explain": "\\(x(0)=2\\): \\(b\\cos0+c\\sin0=b\\).",
+              "work": "\\(b=2\\)"
+            },
+            {
+              "explain": "Velocity: \\(\\dot x=-2b\\sin2t+2c\\cos2t\\). At \\(t=0\\): \\(\\dot x(0)=2c=8\\).",
+              "work": "\\(c=4\\)"
+            },
+            {
+              "explain": "Why not the others: B uses \\(n=1\\); C forgets to divide by \\(n=2\\) (\\(c=8\\)); D swaps \\(b\\) and \\(c\\).",
+              "work": "\\(x=2\\cos2t+4\\sin2t\\)"
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find \\(x\\) as a function of \\(t\\) in the form \\(x=b\\cos nt+c\\sin nt\\).",
+              "note": "\\(T=\\dfrac{2\\pi}n\\); \\(x(0)=b\\); \\(\\dot x(0)=nc\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hunters Hill High School 2020 Trial Examination Mathematics Extension 2",
+            "school": "Hunters Hill High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hunters2020-e2-q15bii",
+          "type": "mc",
+          "stem": "A particle moves with \\(x=2\\cos2t+4\\sin2t\\). Find \\(x\\) as a function of \\(t\\) in the form \\(x=a\\cos(nt-\\alpha)\\), where \\(a>0\\) and \\(0\\le\\alpha\\le2\\pi\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(x=2\\sqrt5\\cos(2t-\\alpha)\\) with \\(\\alpha=\\tan^{-1}2\\approx1.107\\)",
+            "\\(x=\\sqrt{20}\\cos(2t-\\alpha)\\) with \\(\\alpha=\\tan^{-1}\\dfrac{1}{2}\\approx0.464\\)",
+            "\\(x=6\\cos(2t-\\alpha)\\) with \\(\\alpha=\\tan^{-1}2\\)",
+            "\\(x=2\\sqrt5\\cos(2t+\\alpha)\\) with \\(\\alpha=\\tan^{-1}2\\)"
+          ],
+          "answer": 0,
+          "hint": "Expand \\(a\\cos(nt-\\alpha)=a\\cos\\alpha\\cos nt+a\\sin\\alpha\\sin nt\\) and MATCH coefficients: \\(a\\cos\\alpha=2\\), \\(a\\sin\\alpha=4\\). Then \\(a=\\sqrt{2^{2}+4^{2}}\\) and \\(\\tan\\alpha=\\dfrac{4}{2}\\) (both positive: 1st quadrant).",
+          "steps": [
+            {
+              "explain": "Compound angle: \\(a\\cos(2t-\\alpha)=a\\cos\\alpha\\cos2t+a\\sin\\alpha\\sin2t\\). Compare with \\(2\\cos2t+4\\sin2t\\).",
+              "work": "\\(a\\cos\\alpha=2,\\qquad a\\sin\\alpha=4\\)"
+            },
+            {
+              "explain": "Square and add: \\(a^{2}=4+16=20\\), so \\(a=2\\sqrt5\\) (\\(a>0\\)).",
+              "work": "\\(a=\\sqrt{20}=2\\sqrt5\\)"
+            },
+            {
+              "explain": "Divide: \\(\\tan\\alpha=\\dfrac{a\\sin\\alpha}{a\\cos\\alpha}=\\dfrac{4}{2}=2\\), with both positive: \\(\\alpha=\\tan^{-1}2\\) (1st quadrant, within \\([0,2\\pi]\\)).",
+              "work": "\\(\\alpha=\\tan^{-1}2\\approx1.107\\)"
+            },
+            {
+              "explain": "Why not the others: B uses \\(\\tan\\alpha=\\dfrac{1}{2}\\) (swapped); C adds the coefficients (\\(2+4\\)); D has \\(\\cos(nt+\\alpha)\\) (that expands with a minus sign).",
+              "work": "\\(x=2\\sqrt5\\cos\\left(2t-\\tan^{-1}2\\right)\\)"
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find \\(x\\) as a function of \\(t\\) in the form \\(x=a\\cos(nt-\\alpha)\\), where \\(a>0\\) and \\(0\\le\\alpha\\le2\\pi\\).",
+              "note": "\\(a\\cos\\alpha=2\\), \\(a\\sin\\alpha=4\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hunters Hill High School 2020 Trial Examination Mathematics Extension 2",
+            "school": "Hunters Hill High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hunters2020-e2-q15biii",
+          "type": "mc",
+          "stem": "A particle moves with \\(x=2\\sqrt5\\cos\\left(2t-\\tan^{-1}2\\right)\\). Hence, find the amplitude and the maximum speed of the particle.",
+          "difficulty": "medium",
+          "options": [
+            "amplitude \\(2\\sqrt5\\) m; maximum speed \\(4\\sqrt5\\) m/s",
+            "amplitude \\(4\\sqrt5\\) m; maximum speed \\(2\\sqrt5\\) m/s",
+            "amplitude \\(2\\sqrt5\\) m; maximum speed \\(2\\sqrt5\\) m/s",
+            "amplitude \\(6\\) m; maximum speed \\(12\\) m/s"
+          ],
+          "answer": 0,
+          "hint": "For \\(x=a\\cos(nt-\\alpha)\\): the AMPLITUDE is \\(a\\) and the MAXIMUM SPEED is \\(an\\) (the maximum of \\(|\\dot x|=an|\\sin(nt-\\alpha)|\\)), reached at the centre.",
+          "steps": [
+            {
+              "explain": "Amplitude \\(=a\\).",
+              "work": "\\(a=2\\sqrt5\\ \\text{m}\\)"
+            },
+            {
+              "explain": "Velocity: \\(\\dot x=-2\\sqrt5\\cdot2\\sin(2t-\\alpha)\\). Its largest magnitude is \\(an=2\\sqrt5\\times2\\).",
+              "work": "\\(v_{\\max}=an=4\\sqrt5\\ \\text{m per second}\\approx8.94\\)"
+            },
+            {
+              "explain": "Check with \\(v^{2}=n^{2}(a^{2}-x^{2})\\): at the centre \\(x=0\\), \\(v^{2}=4(20)=80\\), so \\(v=\\sqrt{80}=4\\sqrt5\\) ✓. Why not the others: B swaps amplitude and speed; C forgets the factor \\(n=2\\); D adds the coefficients.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Hence, find the amplitude and the maximum speed of the particle.",
+              "note": "Amplitude \\(a\\); \\(v_{\\max}=an\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hunters Hill High School 2020 Trial Examination Mathematics Extension 2",
+            "school": "Hunters Hill High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hurlstone2020-e2-q6",
+          "type": "mc",
+          "stem": "A particle moves in simple harmonic motion along the \\(x\\)-axis about the origin. Initially, the particle is at its extreme positive position. The amplitude of the motion is 12 metres and the particle returns to its initial position every 3 seconds. What is the equation for the position of the particle at time \\(t\\) seconds?",
+          "difficulty": "medium",
+          "options": [
+            "\\(x=12\\cos\\dfrac{2\\pi t}{3}\\)",
+            "\\(x=24\\cos\\dfrac{2\\pi t}{3}\\)",
+            "\\(x=12\\cos3t\\)",
+            "\\(x=24\\cos3t\\)"
+          ],
+          "answer": 0,
+          "hint": "Use \\(x=a\\cos(nt+\\alpha)\\). Starting at the extreme positive position means \\(x=a\\) at \\(t=0\\) (cosine with no phase). Get \\(n\\) from the period: \\(T=\\dfrac{2\\pi}{n}\\).",
+          "steps": [
+            {
+              "explain": "Amplitude \\(a=12\\) (the maximum distance from the centre), so the coefficient of the cosine is 12, not 24.",
+              "work": "\\(a=12\\)"
+            },
+            {
+              "explain": "Initially at the extreme positive position: \\(x(0)=12\\). A cosine starts at its maximum, so no phase shift is needed.",
+              "work": "\\(x=12\\cos(nt)\\ \\Rightarrow\\ x(0)=12\\cos0=12\\ \\checkmark\\)"
+            },
+            {
+              "explain": "Period: it returns to the start every 3 seconds, so \\(T=3\\).",
+              "work": "\\(T=\\dfrac{2\\pi}{n}=3\\ \\Rightarrow\\ n=\\dfrac{2\\pi}{3}\\)"
+            },
+            {
+              "explain": "Combine.",
+              "work": "\\(x=12\\cos\\dfrac{2\\pi t}{3}\\)"
+            },
+            {
+              "explain": "Why not the others: B and D have amplitude 24 (double); C and D use \\(n=3\\), which is the PERIOD, not \\(\\dfrac{2\\pi}{T}\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Initially, the particle is at its extreme positive position",
+              "note": "Extreme at \\(t=0\\): \\(x=a\\cos nt\\). \\(n=\\dfrac{2\\pi}{T}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hurlstone Agricultural High School 2020 Trial Higher School Certificate Examination Mathematics Extension 2",
+            "school": "Hurlstone Agricultural High School",
             "grade": "12",
             "origin": "teacher"
           }
@@ -4580,6 +5135,175 @@
           "meta": {
             "source": "Hills Grammar 2025 Trial HSC Mathematics Extension 2",
             "school": "The Hills Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hunters2020-e2-q16ai",
+          "type": "mc",
+          "stem": "A skydiver jumps out of a stationary balloon and starts falling freely to Earth. She experiences gravity of \\(mg\\) and air resistance of \\(\\dfrac{mv^{2}}{360}\\) upwards. Given that down is positive, \\(x=t=0\\) at the balloon and that \\(g=9.8\\) ms\\(^{-2}\\), show that \\(\\ddot x=g-\\dfrac{v^{2}}{360}\\) and find her terminal velocity.",
+          "difficulty": "medium",
+          "options": [
+            "\\(m\\ddot x=mg-\\dfrac{mv^{2}}{360}\\Rightarrow\\ddot x=g-\\dfrac{v^{2}}{360}\\); terminal when \\(\\ddot x=0\\): \\(v^{2}=360g\\), \\(v=\\sqrt{3528}\\approx59.4\\) m/s",
+            "\\(m\\ddot x=mg+\\dfrac{mv^{2}}{360}\\); terminal \\(v=\\sqrt{-360g}\\) (impossible)",
+            "\\(\\ddot x=g-\\dfrac{v}{360}\\); terminal \\(v=360g=3528\\) m/s",
+            "\\(m\\ddot x=\\dfrac{mv^{2}}{360}-mg\\); terminal \\(v=59.4\\) m/s"
+          ],
+          "answer": 0,
+          "hint": "NEWTON’S 2nd LAW: net force \\(=m\\ddot x\\). With DOWN positive: gravity \\(mg\\) is POSITIVE (down), air resistance \\(\\dfrac{mv^{2}}{360}\\) is NEGATIVE (up). TERMINAL velocity: the speed where the forces balance, so \\(\\ddot x=0\\).",
+          "steps": [
+            {
+              "explain": "Net downward force \\(=\\) gravity \\(-\\) resistance (resistance acts UP, opposing the motion).",
+              "work": "\\(m\\ddot x=mg-\\dfrac{mv^{2}}{360}\\)"
+            },
+            {
+              "explain": "Divide by \\(m\\).",
+              "work": "\\(\\ddot x=g-\\dfrac{v^{2}}{360}\\)"
+            },
+            {
+              "explain": "Terminal velocity: the acceleration becomes 0 (forces balance).",
+              "work": "\\(0=g-\\dfrac{v^{2}}{360}\\ \\Rightarrow\\ v^{2}=360g=3528\\)"
+            },
+            {
+              "explain": "Take the positive root (she is falling DOWN, \\(v>0\\)).",
+              "work": "\\(v_{T}=\\sqrt{3528}=42\\sqrt2\\approx59.4\\ \\text{m per second}\\)"
+            },
+            {
+              "explain": "Why not the others: B adds the resistance (wrong direction); C uses \\(v\\) instead of \\(v^{2}\\); D has the signs reversed (up positive).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "show that \\(\\ddot x=g-\\dfrac{v^{2}}{360}\\) and find her terminal velocity.",
+              "note": "\\(m\\ddot x=mg-\\dfrac{mv^2}{360}\\); terminal: \\(\\ddot x=0\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hunters Hill High School 2020 Trial Examination Mathematics Extension 2",
+            "school": "Hunters Hill High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hunters2020-e2-q16aii",
+          "type": "mc",
+          "stem": "A skydiver falls from rest with \\(\\ddot x=g-\\dfrac{v^{2}}{360}\\) (down positive, \\(x=0\\) at \\(t=0\\), \\(g=9.8\\) ms\\(^{-2}\\)). Show that \\(x=180\\ln\\left(\\dfrac{360g}{360g-v^{2}}\\right)\\) and find the distance fallen when the skydiver reaches \\(50\\) ms\\(^{-1}\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(v\\dfrac{dv}{dx}=\\dfrac{360g-v^{2}}{360}\\Rightarrow x=\\displaystyle\\int\\dfrac{360v}{360g-v^{2}}dv=-180\\ln\\left(360g-v^{2}\\right)+C\\), giving \\(x=180\\ln\\dfrac{360g}{360g-v^{2}}\\); at \\(v=50\\): \\(x\\approx222\\) m",
+            "\\(x=180\\ln\\dfrac{360g}{360g-v^{2}}\\) and at \\(v=50\\), \\(x=180\\ln\\dfrac{3528}{2500}\\approx62\\) m",
+            "\\(x=360\\ln\\left(360g-v^{2}\\right)\\) and \\(x\\approx2000\\) m",
+            "\\(x=\\dfrac{v^{2}}{2g}=127.6\\) m (free fall)"
+          ],
+          "answer": 0,
+          "hint": "With \\(v\\) and \\(x\\) use \\(\\ddot x=v\\dfrac{dv}{dx}\\). SEPARATE variables, integrate (the derivative of \\(360g-v^{2}\\) is \\(-2v\\), so a MINUS appears), and use \\(x=0\\) when \\(v=0\\) to find \\(C\\).",
+          "steps": [
+            {
+              "explain": "Replace the acceleration.",
+              "work": "\\(v\\dfrac{dv}{dx}=\\dfrac{360g-v^{2}}{360}\\)"
+            },
+            {
+              "explain": "Separate: \\(dx=\\dfrac{360v}{360g-v^{2}}dv\\). The numerator \\(v\\) is \\(-\\dfrac{1}{2}\\) of the derivative of the denominator, so \\(\\displaystyle\\int\\dfrac{360v}{360g-v^{2}}dv=-180\\ln(360g-v^{2})\\).",
+              "work": "\\(x=-180\\ln\\left(360g-v^{2}\\right)+C\\)"
+            },
+            {
+              "explain": "\\(x=0\\) when \\(v=0\\): \\(C=180\\ln(360g)\\). Combine the logs.",
+              "work": "\\(x=180\\ln(360g)-180\\ln\\left(360g-v^{2}\\right)=180\\ln\\left(\\dfrac{360g}{360g-v^{2}}\\right)\\)"
+            },
+            {
+              "explain": "At \\(v=50\\): \\(360g=3528\\) and \\(360g-v^{2}=3528-2500=1028\\).",
+              "work": "\\(x=180\\ln\\dfrac{3528}{1028}=180\\ln3.4319=180\\times1.2332\\)"
+            },
+            {
+              "explain": "Calculate.",
+              "work": "\\(x\\approx222\\ \\text{m}\\)"
+            },
+            {
+              "explain": "Why not the others: B uses \\(2500\\) (the wrong denominator); C and D are not what the integration gives (D ignores air resistance).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that",
+              "note": "\\(\\ddot x=v\\dfrac{dv}{dx}\\); separate; \\(x=0\\) when \\(v=0\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hunters Hill High School 2020 Trial Examination Mathematics Extension 2",
+            "school": "Hunters Hill High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hunters2020-e2-q16aiii",
+          "type": "mc",
+          "stem": "A skydiver falls from rest with \\(\\ddot x=g-\\dfrac{v^{2}}{360}\\) (down positive, \\(g=9.8\\) ms\\(^{-2}\\)). Find the time taken for the skydiver to reach \\(50\\) ms\\(^{-1}\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(7.44\\) s",
+            "\\(5.10\\) s",
+            "\\(50\\) s",
+            "\\(0.14\\) s"
+          ],
+          "answer": 0,
+          "hint": "Use \\(\\ddot x=\\dfrac{dv}{dt}\\) and separate: \\(dt=\\dfrac{360\\,dv}{360g-v^{2}}\\). Write \\(360g-v^{2}=k^{2}-v^{2}\\) with \\(k=\\sqrt{3528}\\approx59.4\\) (the terminal velocity) and use \\(\\displaystyle\\int\\dfrac{dv}{k^{2}-v^{2}}=\\dfrac1{2k}\\ln\\dfrac{k+v}{k-v}\\) (partial fractions).",
+          "steps": [
+            {
+              "explain": "Separate the variables and integrate from \\(v=0\\) (when \\(t=0\\)) to \\(v=50\\).",
+              "work": "\\(t=\\int_{0}^{50}\\dfrac{360}{k^{2}-v^{2}}dv,\\qquad k=\\sqrt{3528}\\approx59.40\\)"
+            },
+            {
+              "explain": "Partial fractions: \\(\\dfrac{1}{k^{2}-v^{2}}=\\dfrac{1}{2k}\\left(\\dfrac{1}{k-v}+\\dfrac1{k+v}\\right)\\). Integrate: \\(\\dfrac1{2k}\\ln\\dfrac{k+v}{k-v}\\).",
+              "work": "\\(t=\\dfrac{360}{2k}\\left[\\ln\\dfrac{k+v}{k-v}\\right]_{0}^{50}\\)"
+            },
+            {
+              "explain": "Substitute \\(k=59.40\\): \\(\\dfrac{360}{2k}=3.0305\\); \\(\\dfrac{k+50}{k-50}=\\dfrac{109.40}{9.40}=11.64\\); \\(\\ln11.64=2.455\\).",
+              "work": "\\(t=3.0305\\times2.455\\)"
+            },
+            {
+              "explain": "Calculate. (The graph shows \\(v\\) approaching the terminal velocity: \\(v=50\\) at about \\(7.4\\) s.)",
+              "work": "\\(t\\approx7.44\\ \\text{s}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 270\" width=\"100%\" height=\"auto\" style=\"max-width:420px;display:block;margin:0 auto\"><line x1=\"6.0\" y1=\"225.5\" x2=\"414.0\" y2=\"225.5\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"53.5\" y1=\"264.0\" x2=\"53.5\" y2=\"6.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"414.0\" y1=\"225.5\" x2=\"407.1\" y2=\"221.5\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"414.0\" y1=\"225.5\" x2=\"407.1\" y2=\"229.5\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"53.5\" y1=\"6.0\" x2=\"49.5\" y2=\"12.9\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"53.5\" y1=\"6.0\" x2=\"57.5\" y2=\"12.9\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><text x=\"416.0\" y=\"240.5\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">t (s)</text><text x=\"62.5\" y=\"16.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">v (m/s)</text><polyline points=\"53.5,225.5 54.1,224.3 54.8,223.2 55.4,222.1 56.0,220.9 56.7,219.8 57.3,218.6 58.0,217.5 58.6,216.3 59.3,215.2 59.9,214.1 60.5,212.9 61.2,211.8 61.8,210.6 62.5,209.5 63.1,208.4 63.8,207.2 64.4,206.1 65.0,205.0 65.7,203.9 66.3,202.7 67.0,201.6 67.6,200.5 68.2,199.4 68.9,198.3 69.5,197.1 70.2,196.0 70.8,194.9 71.5,193.8 72.1,192.7 72.7,191.6 73.4,190.5 74.0,189.4 74.7,188.3 75.3,187.2 76.0,186.1 76.6,185.1 77.2,184.0 77.9,182.9 78.5,181.8 79.2,180.8 79.8,179.7 80.4,178.6 81.1,177.6 81.7,176.5 82.4,175.5 83.0,174.4 83.7,173.4 84.3,172.3 84.9,171.3 85.6,170.3 86.2,169.2 86.9,168.2 87.5,167.2 88.2,166.2 88.8,165.2 89.4,164.2 90.1,163.2 90.7,162.2 91.4,161.2 92.0,160.2 92.7,159.2 93.3,158.3 93.9,157.3 94.6,156.3 95.2,155.4 95.9,154.4 96.5,153.5 97.1,152.5 97.8,151.6 98.4,150.6 99.1,149.7 99.7,148.8 100.4,147.9 101.0,147.0 101.6,146.1 102.3,145.2 102.9,144.3 103.6,143.4 104.2,142.5 104.9,141.6 105.5,140.7 106.1,139.9 106.8,139.0 107.4,138.1 108.1,137.3 108.7,136.4 109.3,135.6 110.0,134.8 110.6,133.9 111.3,133.1 111.9,132.3 112.6,131.5 113.2,130.7 113.8,129.9 114.5,129.1 115.1,128.3 115.8,127.5 116.4,126.8 117.1,126.0 117.7,125.2 118.3,124.5 119.0,123.7 119.6,123.0 120.3,122.2 120.9,121.5 121.5,120.8 122.2,120.0 122.8,119.3 123.5,118.6 124.1,117.9 124.8,117.2 125.4,116.5 126.0,115.8 126.7,115.1 127.3,114.4 128.0,113.8 128.6,113.1 129.3,112.4 129.9,111.8 130.5,111.1 131.2,110.5 131.8,109.9 132.5,109.2 133.1,108.6 133.7,108.0 134.4,107.4 135.0,106.8 135.7,106.1 136.3,105.5 137.0,105.0 137.6,104.4 138.2,103.8 138.9,103.2 139.5,102.6 140.2,102.1 140.8,101.5 141.5,100.9 142.1,100.4 142.7,99.9 143.4,99.3 144.0,98.8 144.7,98.2 145.3,97.7 145.9,97.2 146.6,96.7 147.2,96.2 147.9,95.7 148.5,95.2 149.2,94.7 149.8,94.2 150.4,93.7 151.1,93.2 151.7,92.7 152.4,92.3 153.0,91.8 153.7,91.3 154.3,90.9 154.9,90.4 155.6,90.0 156.2,89.5 156.9,89.1 157.5,88.7 158.1,88.2 158.8,87.8 159.4,87.4 160.1,87.0 160.7,86.6 161.4,86.2 162.0,85.8 162.6,85.4 163.3,85.0 163.9,84.6 164.6,84.2 165.2,83.8 165.9,83.4 166.5,83.1 167.1,82.7 167.8,82.3 168.4,82.0 169.1,81.6 169.7,81.2 170.3,80.9 171.0,80.5 171.6,80.2 172.3,79.9 172.9,79.5 173.6,79.2 174.2,78.9 174.8,78.5 175.5,78.2 176.1,77.9 176.8,77.6 177.4,77.3 178.1,77.0 178.7,76.7 179.3,76.4 180.0,76.1 180.6,75.8 181.3,75.5 181.9,75.2 182.5,74.9 183.2,74.6 183.8,74.4 184.5,74.1 185.1,73.8 185.8,73.6 186.4,73.3 187.0,73.0 187.7,72.8 188.3,72.5 189.0,72.3 189.6,72.0 190.3,71.8 190.9,71.5 191.5,71.3 192.2,71.1 192.8,70.8 193.5,70.6 194.1,70.4 194.7,70.1 195.4,69.9 196.0,69.7 196.7,69.5 197.3,69.2 198.0,69.0 198.6,68.8 199.2,68.6 199.9,68.4 200.5,68.2 201.2,68.0 201.8,67.8 202.5,67.6 203.1,67.4 203.7,67.2 204.4,67.0 205.0,66.8 205.7,66.7 206.3,66.5 206.9,66.3 207.6,66.1 208.2,65.9 208.9,65.8 209.5,65.6 210.2,65.4 210.8,65.3 211.4,65.1 212.1,64.9 212.7,64.8 213.4,64.6 214.0,64.4 214.7,64.3 215.3,64.1 215.9,64.0 216.6,63.8 217.2,63.7 217.9,63.5 218.5,63.4 219.2,63.3 219.8,63.1 220.4,63.0 221.1,62.8 221.7,62.7 222.4,62.6 223.0,62.4 223.6,62.3 224.3,62.2 224.9,62.0 225.6,61.9 226.2,61.8 226.9,61.7 227.5,61.5 228.1,61.4 228.8,61.3 229.4,61.2 230.1,61.1 230.7,61.0 231.4,60.8 232.0,60.7 232.6,60.6 233.3,60.5 233.9,60.4 234.6,60.3 235.2,60.2 235.8,60.1 236.5,60.0 237.1,59.9 237.8,59.8 238.4,59.7 239.1,59.6 239.7,59.5 240.3,59.4 241.0,59.3 241.6,59.2 242.3,59.1 242.9,59.0 243.6,58.9 244.2,58.9 244.8,58.8 245.5,58.7 246.1,58.6 246.8,58.5 247.4,58.4 248.0,58.4 248.7,58.3 249.3,58.2 250.0,58.1 250.6,58.0 251.3,58.0 251.9,57.9 252.5,57.8 253.2,57.7 253.8,57.7 254.5,57.6 255.1,57.5 255.8,57.5 256.4,57.4 257.0,57.3 257.7,57.2 258.3,57.2 259.0,57.1 259.6,57.1 260.2,57.0 260.9,56.9 261.5,56.9 262.2,56.8 262.8,56.7 263.5,56.7 264.1,56.6 264.7,56.6 265.4,56.5 266.0,56.4 266.7,56.4 267.3,56.3 268.0,56.3 268.6,56.2 269.2,56.2 269.9,56.1 270.5,56.1 271.2,56.0 271.8,56.0 272.4,55.9 273.1,55.9 273.7,55.8 274.4,55.8 275.0,55.7 275.7,55.7 276.3,55.6 276.9,55.6 277.6,55.5 278.2,55.5 278.9,55.5 279.5,55.4 280.2,55.4 280.8,55.3 281.4,55.3 282.1,55.2 282.7,55.2 283.4,55.2 284.0,55.1 284.6,55.1 285.3,55.0 285.9,55.0 286.6,55.0 287.2,54.9 287.9,54.9 288.5,54.9 289.1,54.8 289.8,54.8 290.4,54.8 291.1,54.7 291.7,54.7 292.4,54.6 293.0,54.6 293.6,54.6 294.3,54.6 294.9,54.5 295.6,54.5 296.2,54.5 296.8,54.4 297.5,54.4 298.1,54.4 298.8,54.3 299.4,54.3 300.1,54.3 300.7,54.3 301.3,54.2 302.0,54.2 302.6,54.2 303.3,54.1 303.9,54.1 304.6,54.1 305.2,54.1 305.8,54.0 306.5,54.0 307.1,54.0 307.8,54.0 308.4,53.9 309.0,53.9 309.7,53.9 310.3,53.9 311.0,53.8 311.6,53.8 312.3,53.8 312.9,53.8 313.5,53.8 314.2,53.7 314.8,53.7 315.5,53.7 316.1,53.7 316.8,53.7 317.4,53.6 318.0,53.6 318.7,53.6 319.3,53.6 320.0,53.6 320.6,53.5 321.2,53.5 321.9,53.5 322.5,53.5 323.2,53.5 323.8,53.4 324.5,53.4 325.1,53.4 325.7,53.4 326.4,53.4 327.0,53.4 327.7,53.3 328.3,53.3 329.0,53.3 329.6,53.3 330.2,53.3 330.9,53.3 331.5,53.3 332.2,53.2 332.8,53.2 333.5,53.2 334.1,53.2 334.7,53.2 335.4,53.2 336.0,53.2 336.7,53.1 337.3,53.1 337.9,53.1 338.6,53.1 339.2,53.1 339.9,53.1 340.5,53.1 341.2,53.0 341.8,53.0 342.4,53.0 343.1,53.0 343.7,53.0 344.4,53.0 345.0,53.0 345.7,53.0 346.3,53.0 346.9,52.9 347.6,52.9 348.2,52.9 348.9,52.9 349.5,52.9 350.1,52.9 350.8,52.9 351.4,52.9 352.1,52.9 352.7,52.8 353.4,52.8 354.0,52.8 354.6,52.8 355.3,52.8 355.9,52.8 356.6,52.8 357.2,52.8 357.9,52.8 358.5,52.8 359.1,52.8 359.8,52.7 360.4,52.7 361.1,52.7 361.7,52.7 362.3,52.7 363.0,52.7 363.6,52.7 364.3,52.7 364.9,52.7 365.6,52.7 366.2,52.7 366.8,52.7 367.5,52.7 368.1,52.6 368.8,52.6 369.4,52.6 370.1,52.6 370.7,52.6 371.3,52.6 372.0,52.6 372.6,52.6 373.3,52.6 373.9,52.6 374.5,52.6\" fill=\"none\" stroke=\"#3b4ea8\" stroke-width=\"3.6\" stroke-linejoin=\"round\"/><polyline points=\"53.5,52.1 54.2,52.1 54.8,52.1 55.5,52.1 56.2,52.1 56.9,52.1 57.5,52.1 58.2,52.1 58.9,52.1 59.5,52.1 60.2,52.1 60.9,52.1 61.6,52.1 62.2,52.1 62.9,52.1 63.6,52.1 64.3,52.1 64.9,52.1 65.6,52.1 66.3,52.1 67.0,52.1 67.6,52.1 68.3,52.1 69.0,52.1 69.7,52.1 70.3,52.1 71.0,52.1 71.7,52.1 72.4,52.1 73.0,52.1 73.7,52.1 74.4,52.1 75.1,52.1 75.7,52.1 76.4,52.1 77.1,52.1 77.8,52.1 78.4,52.1 79.1,52.1 79.8,52.1 80.4,52.1 81.1,52.1 81.8,52.1 82.5,52.1 83.1,52.1 83.8,52.1 84.5,52.1 85.2,52.1 85.8,52.1 86.5,52.1 87.2,52.1 87.9,52.1 88.5,52.1 89.2,52.1 89.9,52.1 90.6,52.1 91.2,52.1 91.9,52.1 92.6,52.1 93.3,52.1 93.9,52.1 94.6,52.1 95.3,52.1 96.0,52.1 96.6,52.1 97.3,52.1 98.0,52.1 98.7,52.1 99.3,52.1 100.0,52.1 100.7,52.1 101.4,52.1 102.0,52.1 102.7,52.1 103.4,52.1 104.0,52.1 104.7,52.1 105.4,52.1 106.1,52.1 106.7,52.1 107.4,52.1 108.1,52.1 108.8,52.1 109.4,52.1 110.1,52.1 110.8,52.1 111.5,52.1 112.1,52.1 112.8,52.1 113.5,52.1 114.2,52.1 114.8,52.1 115.5,52.1 116.2,52.1 116.9,52.1 117.5,52.1 118.2,52.1 118.9,52.1 119.6,52.1 120.2,52.1 120.9,52.1 121.6,52.1 122.3,52.1 122.9,52.1 123.6,52.1 124.3,52.1 124.9,52.1 125.6,52.1 126.3,52.1 127.0,52.1 127.6,52.1 128.3,52.1 129.0,52.1 129.7,52.1 130.3,52.1 131.0,52.1 131.7,52.1 132.4,52.1 133.0,52.1 133.7,52.1 134.4,52.1 135.1,52.1 135.7,52.1 136.4,52.1 137.1,52.1 137.8,52.1 138.4,52.1 139.1,52.1 139.8,52.1 140.5,52.1 141.1,52.1 141.8,52.1 142.5,52.1 143.2,52.1 143.8,52.1 144.5,52.1 145.2,52.1 145.9,52.1 146.5,52.1 147.2,52.1 147.9,52.1 148.5,52.1 149.2,52.1 149.9,52.1 150.6,52.1 151.2,52.1 151.9,52.1 152.6,52.1 153.3,52.1 153.9,52.1 154.6,52.1 155.3,52.1 156.0,52.1 156.6,52.1 157.3,52.1 158.0,52.1 158.7,52.1 159.3,52.1 160.0,52.1 160.7,52.1 161.4,52.1 162.0,52.1 162.7,52.1 163.4,52.1 164.1,52.1 164.7,52.1 165.4,52.1 166.1,52.1 166.8,52.1 167.4,52.1 168.1,52.1 168.8,52.1 169.4,52.1 170.1,52.1 170.8,52.1 171.5,52.1 172.1,52.1 172.8,52.1 173.5,52.1 174.2,52.1 174.8,52.1 175.5,52.1 176.2,52.1 176.9,52.1 177.5,52.1 178.2,52.1 178.9,52.1 179.6,52.1 180.2,52.1 180.9,52.1 181.6,52.1 182.3,52.1 182.9,52.1 183.6,52.1 184.3,52.1 185.0,52.1 185.6,52.1 186.3,52.1 187.0,52.1 187.7,52.1 188.3,52.1 189.0,52.1 189.7,52.1 190.4,52.1 191.0,52.1 191.7,52.1 192.4,52.1 193.0,52.1 193.7,52.1 194.4,52.1 195.1,52.1 195.7,52.1 196.4,52.1 197.1,52.1 197.8,52.1 198.4,52.1 199.1,52.1 199.8,52.1 200.5,52.1 201.1,52.1 201.8,52.1 202.5,52.1 203.2,52.1 203.8,52.1 204.5,52.1 205.2,52.1 205.9,52.1 206.5,52.1 207.2,52.1 207.9,52.1 208.6,52.1 209.2,52.1 209.9,52.1 210.6,52.1 211.3,52.1 211.9,52.1 212.6,52.1 213.3,52.1 213.9,52.1 214.6,52.1 215.3,52.1 216.0,52.1 216.6,52.1 217.3,52.1 218.0,52.1 218.7,52.1 219.3,52.1 220.0,52.1 220.7,52.1 221.4,52.1 222.0,52.1 222.7,52.1 223.4,52.1 224.1,52.1 224.7,52.1 225.4,52.1 226.1,52.1 226.8,52.1 227.4,52.1 228.1,52.1 228.8,52.1 229.5,52.1 230.1,52.1 230.8,52.1 231.5,52.1 232.2,52.1 232.8,52.1 233.5,52.1 234.2,52.1 234.9,52.1 235.5,52.1 236.2,52.1 236.9,52.1 237.5,52.1 238.2,52.1 238.9,52.1 239.6,52.1 240.2,52.1 240.9,52.1 241.6,52.1 242.3,52.1 242.9,52.1 243.6,52.1 244.3,52.1 245.0,52.1 245.6,52.1 246.3,52.1 247.0,52.1 247.7,52.1 248.3,52.1 249.0,52.1 249.7,52.1 250.4,52.1 251.0,52.1 251.7,52.1 252.4,52.1 253.1,52.1 253.7,52.1 254.4,52.1 255.1,52.1 255.8,52.1 256.4,52.1 257.1,52.1 257.8,52.1 258.4,52.1 259.1,52.1 259.8,52.1 260.5,52.1 261.1,52.1 261.8,52.1 262.5,52.1 263.2,52.1 263.8,52.1 264.5,52.1 265.2,52.1 265.9,52.1 266.5,52.1 267.2,52.1 267.9,52.1 268.6,52.1 269.2,52.1 269.9,52.1 270.6,52.1 271.3,52.1 271.9,52.1 272.6,52.1 273.3,52.1 274.0,52.1 274.6,52.1 275.3,52.1 276.0,52.1 276.7,52.1 277.3,52.1 278.0,52.1 278.7,52.1 279.4,52.1 280.0,52.1 280.7,52.1 281.4,52.1 282.0,52.1 282.7,52.1 283.4,52.1 284.1,52.1 284.7,52.1 285.4,52.1 286.1,52.1 286.8,52.1 287.4,52.1 288.1,52.1 288.8,52.1 289.5,52.1 290.1,52.1 290.8,52.1 291.5,52.1 292.2,52.1 292.8,52.1 293.5,52.1 294.2,52.1 294.9,52.1 295.5,52.1 296.2,52.1 296.9,52.1 297.6,52.1 298.2,52.1 298.9,52.1 299.6,52.1 300.3,52.1 300.9,52.1 301.6,52.1 302.3,52.1 302.9,52.1 303.6,52.1 304.3,52.1 305.0,52.1 305.6,52.1 306.3,52.1 307.0,52.1 307.7,52.1 308.3,52.1 309.0,52.1 309.7,52.1 310.4,52.1 311.0,52.1 311.7,52.1 312.4,52.1 313.1,52.1 313.7,52.1 314.4,52.1 315.1,52.1 315.8,52.1 316.4,52.1 317.1,52.1 317.8,52.1 318.5,52.1 319.1,52.1 319.8,52.1 320.5,52.1 321.2,52.1 321.8,52.1 322.5,52.1 323.2,52.1 323.9,52.1 324.5,52.1 325.2,52.1 325.9,52.1 326.5,52.1 327.2,52.1 327.9,52.1 328.6,52.1 329.2,52.1 329.9,52.1 330.6,52.1 331.3,52.1 331.9,52.1 332.6,52.1 333.3,52.1 334.0,52.1 334.6,52.1 335.3,52.1 336.0,52.1 336.7,52.1 337.3,52.1 338.0,52.1 338.7,52.1 339.4,52.1 340.0,52.1 340.7,52.1 341.4,52.1 342.1,52.1 342.7,52.1 343.4,52.1 344.1,52.1 344.8,52.1 345.4,52.1 346.1,52.1 346.8,52.1 347.4,52.1 348.1,52.1 348.8,52.1 349.5,52.1 350.1,52.1 350.8,52.1 351.5,52.1 352.2,52.1 352.8,52.1 353.5,52.1 354.2,52.1 354.9,52.1 355.5,52.1 356.2,52.1 356.9,52.1 357.6,52.1 358.2,52.1 358.9,52.1 359.6,52.1 360.3,52.1 360.9,52.1 361.6,52.1 362.3,52.1 363.0,52.1 363.6,52.1 364.3,52.1 365.0,52.1 365.7,52.1 366.3,52.1 367.0,52.1 367.7,52.1 368.4,52.1 369.0,52.1 369.7,52.1 370.4,52.1 371.0,52.1 371.7,52.1 372.4,52.1 373.1,52.1 373.7,52.1 374.4,52.1 375.1,52.1 375.8,52.1 376.4,52.1 377.1,52.1 377.8,52.1 378.5,52.1 379.1,52.1 379.8,52.1 380.5,52.1 381.2,52.1 381.8,52.1 382.5,52.1 383.2,52.1 383.9,52.1 384.5,52.1 385.2,52.1 385.9,52.1 386.6,52.1 387.2,52.1 387.9,52.1 388.6,52.1 389.3,52.1 389.9,52.1 390.6,52.1\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.8\" stroke-dasharray=\"6 4\" stroke-linejoin=\"round\"/><circle cx=\"172.9\" cy=\"79.5\" r=\"4.6\" fill=\"#dc2626\"/><line x1=\"133.7\" y1=\"222.5\" x2=\"133.7\" y2=\"228.5\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"133.7\" y=\"239.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">5</text><line x1=\"214.0\" y1=\"222.5\" x2=\"214.0\" y2=\"228.5\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"214.0\" y=\"239.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">10</text><line x1=\"294.3\" y1=\"222.5\" x2=\"294.3\" y2=\"228.5\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"294.3\" y=\"239.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">15</text><line x1=\"374.5\" y1=\"222.5\" x2=\"374.5\" y2=\"228.5\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"374.5\" y=\"239.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">20</text><line x1=\"50.5\" y1=\"152.5\" x2=\"56.5\" y2=\"152.5\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"46.5\" y=\"156.5\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">25</text><line x1=\"50.5\" y1=\"79.5\" x2=\"56.5\" y2=\"79.5\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"46.5\" y=\"83.5\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">50</text><text x=\"175.5\" y=\"97.1\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">(7.44 s, 50 m/s)</text><text x=\"382.6\" y=\"44.5\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"800\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">v = 59.4 (terminal)</text><line x1=\"172.9\" y1=\"79.5\" x2=\"172.9\" y2=\"225.5\" stroke=\"#dc2626\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><line x1=\"53.5\" y1=\"79.5\" x2=\"172.9\" y2=\"79.5\" stroke=\"#dc2626\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/></svg>"
+              }
+            },
+            {
+              "explain": "Why not the others: B (5.10) and D come from a wrong constant (e.g. \\(\\dfrac{180}{k}\\) with a misread logarithm); C (50) confuses speed with time.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the time taken for the skydiver to reach",
+              "note": "\\(\\dfrac{dv}{dt}=\\dfrac{k^2-v^2}{360}\\); partial fractions."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hunters Hill High School 2020 Trial Examination Mathematics Extension 2",
+            "school": "Hunters Hill High School",
             "grade": "12",
             "origin": "teacher"
           }
