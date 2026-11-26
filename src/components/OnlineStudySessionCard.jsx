@@ -3,6 +3,8 @@ import { Video } from 'lucide-react';
 import { doc, onSnapshot } from 'firebase/firestore';
 import { db } from '../firebase/config';
 import FilmingGuidelinesModal from './FilmingGuidelinesModal';
+import { useAuth } from '../context/AuthContext';
+import { markActivity } from '../utils/bingoActivity';
 
 const START_MIN = 19 * 60 + 30; // 7:30 PM
 const END_MIN = 22 * 60 + 30;   // 10:30 PM
@@ -21,16 +23,20 @@ function sydneyTotalMinutes() {
 // OR any time an admin has flipped the manual "Open Study Session Now"
 // override in Settings — that lets the teacher open the room on demand
 // instead of waiting for the fixed schedule. See Settings.jsx.
-const OnlineStudySessionCard = () => {
+const OnlineStudySessionCard = ({ onConfig }) => {
+  const { user } = useAuth();
   const [config, setConfig] = useState(null);
   const [nowMin, setNowMin] = useState(sydneyTotalMinutes);
   const [showGuidelines, setShowGuidelines] = useState(null);   // the link to open after the guidelines
 
   useEffect(() => {
     const unsub = onSnapshot(doc(db, 'system_config', 'onlineStudySession'), (snap) => {
-      setConfig(snap.exists() ? snap.data() : null);
+      const next = snap.exists() ? snap.data() : null;
+      setConfig(next);
+      onConfig?.(next);
     });
     return unsub;
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- onConfig is a setter from the dashboard
   }, []);
 
   useEffect(() => {
@@ -86,6 +92,7 @@ const OnlineStudySessionCard = () => {
       onProceed={() => {
         const link = showGuidelines;
         setShowGuidelines(null);
+        markActivity(user?.uid, 'studyRoom');
         window.open(link, '_blank', 'noopener,noreferrer');
       }}
     />

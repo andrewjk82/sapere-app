@@ -1,4 +1,4 @@
-import { Fragment, useState, useEffect, useRef, useMemo } from "react";
+import { useState, useEffect, useRef, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { TIME_OPTIONS } from "../constants/timeOptions";
 import {
@@ -17,8 +17,8 @@ import {
   X,
   Target,
   ClipboardList,
-  CheckCircle2,
-  Circle,
+  LayoutGrid,
+  Settings as SettingsIcon,
 } from "lucide-react";
 import { db, auth } from "../firebase/config";
 import {
@@ -62,7 +62,6 @@ import { CURRICULUM_DATA } from "../constants/curriculumData";
 import MathView, { toDisplayText } from "./MathView";
 import HscScoreChart from "./HscScoreChart";
 import HscTab from "./studentDetail/HscTab";
-import CurriculumTab from "./studentDetail/CurriculumTab";
 import WeeklyProgressTrackers from "./studentDetail/WeeklyProgressTrackers";
 import ChallengeDetailModal from "./studentDetail/ChallengeDetailModal";
 import ExtraRoundsPanel from "./challenge/ExtraRoundsPanel";
@@ -71,6 +70,12 @@ import DailyPracticeSettings from "./studentDetail/DailyPracticeSettings";
 import ChallengeAnalyticsPanel from "./studentDetail/ChallengeAnalyticsPanel";
 import ChallengePerformanceHero from "./studentDetail/ChallengePerformanceHero";
 import CollapsibleSection from "./studentDetail/CollapsibleSection";
+import LearningOverview from "./studentDetail/LearningOverview";
+import TermResultsCard from "./studentDetail/TermResultsCard";
+import QuickSwitches from "./studentDetail/QuickSwitches";
+import HomeworkTab from "./studentDetail/HomeworkTab";
+import PracticeHistory from "./studentDetail/PracticeHistory";
+import ProgressTab from "./studentDetail/ProgressTab";
 import SecretNotebookPanel from "./studentDetail/SecretNotebookPanel";
 import ExamPrepPanel from "./studentDetail/ExamPrepPanel";
 import HscPastPaperPanel from "./studentDetail/HscPastPaperPanel";
@@ -81,10 +86,10 @@ import EditStudentModal from "./studentDetail/EditStudentModal";
 import ScheduleModal from "./studentDetail/ScheduleModal";
 import StudentHeaderCard from "./studentDetail/StudentHeaderCard";
 import StudentDashboardCard from "./studentDetail/StudentDashboardCard";
-import ChallengeHistoryCard from "./ChallengeHistoryCard";
 import HomeworkSubmissionViewer from "./homework/HomeworkSubmissionViewer";
 import { markHomeworkChecked } from "../services/homeworkService";
 import useStudentSessions from "../hooks/useStudentSessions";
+import { subscribeSessionHistory, resetSessionHistory } from "../services/teacherSessions";
 import { courseTopics, deriveTopicStates, topicStatuses, summarize, byChapter } from "../utils/topicProgress";
 import "./student-detail.css";
 import { compressAvatarImage } from '../utils/avatarUtils';
@@ -183,11 +188,13 @@ const StudentDetail = ({ studentId, onBack }) => {
   const fileInputRef = useRef(null);
   const [isEditModalOpen, setIsEditModalOpen] = useState(false);
   const [isScheduleModalOpen, setIsScheduleModalOpen] = useState(false);
-  const [activeTab, setActiveTab] = useState("curriculum");
+  const [activeTab, setActiveTab] = useState("overview");
   const [assignedChapters, setAssignedChapters] = useState([]);
   const [completedChapters, setCompletedChapters] = useState([]);
   const [homeworkSessions, setHomeworkSessions] = useState([]);
   const [homeworkLoading, setHomeworkLoading] = useState(false);
+  const [homeworkError, setHomeworkError] = useState(false);
+  const [homeworkTry, setHomeworkTry] = useState(0);
   const [viewHomeworkId, setViewHomeworkId] = useState(null);
   const [dailyPracticeConfig, setDailyPracticeConfig] = useState({ years: [], chapters: [] });
 
@@ -481,6 +488,20 @@ const StudentDetail = ({ studentId, onBack }) => {
     if (!studentId) return;
     let cancelled = false;
     let unsubManual = null;
+    let shown = false;
+
+    // The page opens on the student's own document. The manual↔registered link needs one-off reads and writes, which
+    // on the iPad app can stay unanswered for ever, so on first open it runs behind the page instead of before it.
+    const showThenLink = async (id, source, data, link) => {
+      const run = () => link().catch((err) => { console.warn("Duplicate record sync skipped:", err); return false; });
+      if (!shown) {
+        shown = true;
+        applyStudentData(id, source, data);
+        run();
+        return;
+      }
+      if (!(await run())) applyStudentData(id, source, data);
+    };
 
     const applyStudentData = (id, source, data, extra = {}) => {
       if (cancelled) return;
@@ -623,13 +644,7 @@ const StudentDetail = ({ studentId, onBack }) => {
           }
 
           const mData = mSnap.data();
-          try {
-            const linked = await syncManualToRegistered(mSnap.id, mData);
-            if (linked) return;
-          } catch (err) {
-            console.warn("Manual-to-registered curriculum sync skipped:", err);
-          }
-          applyStudentData(mSnap.id, "manual", mData);
+          await showThenLink(mSnap.id, "manual", mData, () => syncManualToRegistered(mSnap.id, mData));
         },
       );
     };
@@ -639,13 +654,7 @@ const StudentDetail = ({ studentId, onBack }) => {
         const data = snap.data();
         // If loading a registered user directly, track their UID immediately
         if (!cancelled) setRegisteredUid(studentId);
-        try {
-          const linked = await syncRegisteredWithManual(snap.id, data);
-          if (linked) return;
-        } catch (err) {
-          console.warn("Registered duplicate curriculum sync skipped:", err);
-        }
-        applyStudentData(snap.id, "users", data);
+        await showThenLink(snap.id, "users", data, () => syncRegisteredWithManual(snap.id, data));
       } else {
         loadManualStudent();
       }
@@ -1111,28 +1120,30 @@ const StudentDetail = ({ studentId, onBack }) => {
     if (activeTab !== 'homework') return;
     if (!activeStudentId) return;
     setHomeworkLoading(true);
-    const q = query(
-      collection(db, 'sessions'),
-      where('studentId', '==', activeStudentId),
-    );
-    getDocs(q).then((snap) => {
-      const all = snap.docs
-        .map((d) => ({ id: d.id, ...d.data() }))
+    setHomeworkError(false);
+    let received = false;
+    return subscribeSessionHistory('studentId', activeStudentId, ({ docs }) => {
+      received = true;
+      setHomeworkSessions(docs
         .filter((s) => s.homework || (s.learnedTopics && s.learnedTopics.length > 0))
-        .sort((a, b) => (b.date || '').localeCompare(a.date || ''));
-      setHomeworkSessions(all);
+        .sort((a, b) => (b.date || '').localeCompare(a.date || '')));
       setHomeworkLoading(false);
-    }).catch(() => setHomeworkLoading(false));
-  }, [activeTab, activeStudentId]);
+      setHomeworkError(false);
+    }, () => {
+      if (!received) { setHomeworkError(true); setHomeworkLoading(false); }
+    });
+  }, [activeTab, activeStudentId, homeworkTry]);
 
   // Progress by topic, worked out from the lessons (same rule as the Class page: taught → homework checked →
   // mistakes reviewed = done; the teacher's own Done / Not done always wins).
   const progressSessions = useStudentSessions(activeStudentId);
   const topicProgress = useMemo(() => {
-    const { topics } = courseTopics(student || {});
     const derived = progressSessions ? deriveTopicStates(progressSessions, new Date().toLocaleDateString('en-CA')) : new Map();
-    const statuses = topicStatuses(topics, derived, { completed: completedChapters, overrides: student?.progressOverrides || {} });
-    return { loaded: Boolean(progressSessions), sum: summarize(statuses), chapters: byChapter(statuses) };
+    const statusesFor = (topics) => topicStatuses(topics, derived, { completed: completedChapters, overrides: student?.progressOverrides || {} });
+    // The total follows the course being taught; chapter bars also keep the assigned year's chapters.
+    const current = statusesFor(courseTopics(student || {}, progressSessions || []).topics);
+    const assigned = statusesFor(courseTopics(student || {}).topics);
+    return { loaded: Boolean(progressSessions), sum: summarize(current), chapters: { ...byChapter(assigned), ...byChapter(current) } };
   }, [student, progressSessions, completedChapters]);
 
   // Toggle a homework session's completed flag (teacher checks off HW as done).
@@ -1918,24 +1929,23 @@ const StudentDetail = ({ studentId, onBack }) => {
   });
   chapters = uniqueChapters;
 
+  const todayKeyForHw = new Date().toLocaleDateString("en-CA");
+  const openHomeworkCount = (progressSessions || []).filter((x) => String(x.homework || "").trim()
+    && !["checked", "excused", "deleted", "submitted"].includes(x.homeworkStatus) && x.isHomeworkCompleted !== true
+    && (x.date || "") < todayKeyForHw).length;
+
   const renderTabContent = () => {
     switch (activeTab) {
-      case "curriculum":
-        return (
-          <CurriculumTab
-            styles={styles}
-            assignedYears={assignedYears}
-            chapters={chapters}
-            assignedChapters={assignedChapters}
-            completedChapters={completedChapters}
-            topicProgress={topicProgress}
-            onToggleChapter={handleToggleChapter}
-          />
-        );
-      case "challenge":
+      case "overview":
         return (
           <div style={{ display: "grid", gap: "24px" }}>
-
+            <LearningOverview
+              student={student}
+              dailyStats={dailyStats}
+              sessions={progressSessions}
+              topicProgress={topicProgress}
+              onGoTab={setActiveTab}
+            />
             {/* PERFORMANCE HERO — snapshot of accuracy, insight and key counters */}
             {studentAnalytics && (
               <ChallengePerformanceHero
@@ -1947,6 +1957,51 @@ const StudentDetail = ({ studentId, onBack }) => {
               />
             )}
 
+            {/* 2. Dashboard & Progress */}
+      <StudentDashboardCard
+        styles={styles}
+        student={student}
+        uploading={uploading}
+        fileInputRef={fileInputRef}
+        onImageUpload={handleImageUpload}
+        chapters={chapters}
+        completedChapters={completedChapters}
+        topicProgress={topicProgress}
+      />
+      {/* 3-4. Weekly progress trackers */}
+      <WeeklyProgressTrackers
+        dailyStats={dailyStats}
+        calculationEnabled={student?.calculationEnabled}
+      />
+
+          </div>
+        );
+      case "curriculum":
+        return (
+          <ProgressTab
+            student={student}
+            collectionName={activeStudentCollection}
+            studentDocId={activeStudentId}
+            chapters={chapters}
+            assignedYears={assignedYears}
+            assignedChapters={assignedChapters}
+            completedChapters={completedChapters}
+            sessions={progressSessions}
+            onToggleChapter={handleToggleChapter}
+          />
+        );
+      case "challenge":
+        return (
+          <div style={{ display: "grid", gap: "24px" }}>
+            <PracticeHistory
+              dailyPracticeStats={dailyPracticeStats}
+              calculationStats={calculationStats}
+              calculationEnabled={student?.calculationEnabled}
+              onSelect={setSelectedChallenge}
+              onReset={handleResetChallenge}
+              renderExtra={(stat) => <ExtraRoundsPanel uid={challengeResultsUid} date={stat.id} summary={stat.extraSummary} />}
+            />
+
             {/* ANALYTICS PANEL */}
             {studentAnalytics && (
               <ChallengeAnalyticsPanel
@@ -1957,7 +2012,12 @@ const StudentDetail = ({ studentId, onBack }) => {
 
             {/* SECRET NOTEBOOK PANEL */}
             <SecretNotebookPanel student={student} />
-
+          </div>
+        );
+      case "settings":
+        return (
+          <div style={{ display: "grid", gap: "24px" }}>
+            <QuickSwitches student={student} onUpdateSetting={handleUpdateCurriculumSetting} />
             {/* DAILY PRACTICE SETTINGS - Accordion Design */}
             <CollapsibleSection
               title="Daily practice settings"
@@ -1976,226 +2036,12 @@ const StudentDetail = ({ studentId, onBack }) => {
               />
             </CollapsibleSection>
 
-            <CollapsibleSection
-              title="Challenge history"
-              summary={`${dailyPracticeStats.length} daily · ${calculationStats.length} calc sessions`}
-              badge={String(dailyPracticeStats.length + calculationStats.length)}
-            >
-              <div
-                style={{
-                  display: "flex",
-                  justifyContent: "space-between",
-                  alignItems: "center",
-                  marginBottom: "24px",
-                }}
-              >
-                <div
-                  className="section-title"
-                  style={{
-                    fontSize: "0.75rem",
-                    fontWeight: 800,
-                    color: "#94a3b8",
-                    margin: 0,
-                  }}
-                >
-                  CHALLENGE HISTORY
-                </div>
-                <button
-                  onClick={handleRecalculateXP}
-                  style={{
-                    padding: "6px 12px",
-                    borderRadius: "8px",
-                    background: "#f5f3ff",
-                    color: "#6366f1",
-                    border: "1px solid #e0e7ff",
-                    fontSize: "0.7rem",
-                    fontWeight: 800,
-                    cursor: "pointer",
-                  }}
-                >
-                  Recalculate XP
-                </button>
-                <button
-                  onClick={handleAdjustXP}
-                  style={{
-                    padding: "6px 12px",
-                    borderRadius: "8px",
-                    background: "#fefce8",
-                    color: "#ca8a04",
-                    border: "1px solid #fef08a",
-                    fontSize: "0.7rem",
-                    fontWeight: 800,
-                    cursor: "pointer",
-                  }}
-                >
-                  ± Adjust XP
-                </button>
-                <button
-                  onClick={async () => {
-                    const todayStr = new Date().toLocaleDateString("en-CA", { timeZone: "Australia/Sydney" });
-                    const syncUid = challengeResultsUid || activeStudentId;
-                    await handleResetChallenge({
-                      id: todayStr,
-                      studentId: syncUid,
-                      challengeType: "daily",
-                      statCollection: "daily_stats",
-                    });
-                  }}
-                  style={{
-                    padding: "6px 12px",
-                    borderRadius: "8px",
-                    background: "#fff1f2",
-                    color: "#e11d48",
-                    border: "1px solid #ffe4e6",
-                    fontSize: "0.7rem",
-                    fontWeight: 800,
-                    cursor: "pointer",
-                    marginLeft: "8px",
-                  }}
-                >
-                  Force Reset Daily
-                </button>
-                <button
-                  onClick={async () => {
-                    const todayStr = new Date().toLocaleDateString("en-CA", { timeZone: "Australia/Sydney" });
-                    const syncUid = challengeResultsUid || activeStudentId;
-                    await handleResetChallenge({
-                      id: todayStr,
-                      studentId: syncUid,
-                      challengeType: "calc",
-                      statCollection: "calc_stats",
-                    });
-                  }}
-                  style={{
-                    padding: "6px 12px",
-                    borderRadius: "8px",
-                    background: "#fff1f2",
-                    color: "#e11d48",
-                    border: "1px solid #ffe4e6",
-                    fontSize: "0.7rem",
-                    fontWeight: 800,
-                    cursor: "pointer",
-                    marginLeft: "8px",
-                  }}
-                >
-                  Force Reset Calc
-                </button>
-              </div>
-              <div style={{ display: "grid", gap: "12px" }}>
-                <div
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "space-between",
-                    marginTop: "4px",
-                  }}
-                >
-                  <div
-                    style={{
-                      fontSize: "0.72rem",
-                      fontWeight: 900,
-                      color: "#64748b",
-                      letterSpacing: "0.08em",
-                      textTransform: "uppercase",
-                    }}
-                  >
-                    Daily Practice
-                  </div>
-                  <div
-                    style={{
-                      fontSize: "0.72rem",
-                      fontWeight: 900,
-                      color: "#94a3b8",
-                    }}
-                  >
-                    {dailyPracticeStats.length}
-                  </div>
-                </div>
-                {dailyPracticeStats.length > 0 ? (
-                  dailyPracticeStats.map((stat) => (
-                    <Fragment key={`${stat.statCollection || stat.challengeType || 'daily'}-${stat.id}`}>
-                      <ChallengeHistoryCard
-                        stat={stat}
-                        onSelect={setSelectedChallenge}
-                        onReset={handleResetChallenge}
-                      />
-                      {stat.hasExtraRounds && (
-                        <ExtraRoundsPanel uid={challengeResultsUid} date={stat.id} summary={stat.extraSummary} />
-                      )}
-                    </Fragment>
-                  ))
-                ) : (
-                  <div
-                    style={{
-                      textAlign: "center",
-                      padding: "24px",
-                      color: "#94a3b8",
-                      fontWeight: 600,
-                      background: "#f8fafc",
-                      borderRadius: "18px",
-                      border: "1px dashed #e2e8f0",
-                    }}
-                  >
-                    No Daily Practice history yet.
-                  </div>
-                )}
-
-                <div
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "space-between",
-                    marginTop: "16px",
-                  }}
-                >
-                  <div
-                    style={{
-                      fontSize: "0.72rem",
-                      fontWeight: 900,
-                      color: "#92400e",
-                      letterSpacing: "0.08em",
-                      textTransform: "uppercase",
-                    }}
-                  >
-                    Daily Calculation
-                  </div>
-                  <div
-                    style={{
-                      fontSize: "0.72rem",
-                      fontWeight: 900,
-                      color: "#d97706",
-                    }}
-                  >
-                    {calculationStats.length}
-                  </div>
-                </div>
-                {calculationStats.length > 0 ? (
-                  calculationStats.map((stat) => (
-                    <ChallengeHistoryCard
-                      key={`${stat.statCollection || stat.challengeType || 'calc'}-${stat.id}`}
-                      stat={stat}
-                      onSelect={setSelectedChallenge}
-                      onReset={handleResetChallenge}
-                    />
-                  ))
-                ) : (
-                  <div
-                    style={{
-                      textAlign: "center",
-                      padding: "24px",
-                      color: "#b45309",
-                      fontWeight: 700,
-                      background: "#fffbeb",
-                      borderRadius: "18px",
-                      border: "1px dashed #fde68a",
-                    }}
-                  >
-                    No Daily Calculation history yet.
-                  </div>
-                )}
-              </div>
-            </CollapsibleSection>
-
+            {[student.calculationEnabled === false && "Daily Calculation", student.examPrepEnabled !== true && "Exam prep", student.scholarshipEnabled !== true && "Special tests", student.hscPastPaperEnabled !== true && "HSC past paper questions"].filter(Boolean).length > 0 && (
+              <p className="sd-muted" style={{ margin: 0, fontSize: "0.85rem" }}>
+                Off: {[student.calculationEnabled === false && "Daily Calculation", student.examPrepEnabled !== true && "Exam prep", student.scholarshipEnabled !== true && "Special tests", student.hscPastPaperEnabled !== true && "HSC past paper questions"].filter(Boolean).join(", ")}. Turn one on in Features above to see its options.
+              </p>
+            )}
+            {student.calculationEnabled !== false && (
             <CollapsibleSection
               title="Daily Calculation"
               summary={student.calculationEnabled === false ? 'Disabled' : 'Timed calculation rounds'}
@@ -2228,10 +2074,12 @@ const StudentDetail = ({ studentId, onBack }) => {
                   }}
                 />
             </CollapsibleSection>
+            )}
 
             {/* EXAM PREP — same accordion shape as Basic calculation. The
                 ENABLE/DISABLE toggle inside the panel controls the per-student
                 flag, replacing the toggle that used to live in Edit Student. */}
+            {student.examPrepEnabled === true && (
             <CollapsibleSection
               title="Exam prep"
               summary={student.examPrepEnabled === true ? '15-question random rounds · no daily limit' : 'Disabled'}
@@ -2247,7 +2095,9 @@ const StudentDetail = ({ studentId, onBack }) => {
               />
 
             </CollapsibleSection>
+            )}
 
+            {student.scholarshipEnabled === true && (
             <CollapsibleSection
               title="Special tests"
               summary={student.scholarshipEnabled === true ? 'OC · Selective · Scholarship pages' : 'Disabled'}
@@ -2260,7 +2110,9 @@ const StudentDetail = ({ studentId, onBack }) => {
                 onUpdateSetting={handleUpdateCurriculumSetting}
               />
             </CollapsibleSection>
+            )}
 
+            {student.hscPastPaperEnabled === true && (
             <CollapsibleSection
               title="HSC past paper questions"
               summary={student.hscPastPaperEnabled === true ? `+${student.hscPastPaperCount || 3} questions per Daily Challenge` : 'Disabled'}
@@ -2273,6 +2125,40 @@ const StudentDetail = ({ studentId, onBack }) => {
                 onUpdateSetting={handleUpdateCurriculumSetting}
               />
             </CollapsibleSection>
+            )}
+
+            <section className="sd-tile">
+              <h3 className="sd-h">XP <small>{`${Number(student.totalXP) || 0} XP`}</small></h3>
+              <div className="sd-setting-row">
+                <span>Recalculate XP<small>adds up XP again from every saved result</small></span>
+                <button type="button" className="sd-btn sd-btn--soft" onClick={handleRecalculateXP}>Recalculate</button>
+              </div>
+              <div className="sd-setting-row">
+                <span>Adjust XP<small>add or take away XP by hand</small></span>
+                <button type="button" className="sd-btn sd-btn--soft" onClick={handleAdjustXP}>± Adjust</button>
+              </div>
+            </section>
+
+            <section className="sd-tile sd-danger">
+              <h3 className="sd-h">Reset <small>can’t be undone · asks to confirm</small></h3>
+              <div className="sd-setting-row">
+                <span>Force reset today’s Daily Challenge<small>clears today’s result so the student can do it again</small></span>
+                <button type="button" className="sd-btn sd-btn--warn" onClick={async () => {
+                  const todayStr = new Date().toLocaleDateString("en-CA", { timeZone: "Australia/Sydney" });
+                  const syncUid = challengeResultsUid || activeStudentId;
+                  await handleResetChallenge({ id: todayStr, studentId: syncUid, challengeType: "daily", statCollection: "daily_stats" });
+                }}>Reset</button>
+              </div>
+              <div className="sd-setting-row">
+                <span>Force reset today’s Daily Calculation<small>clears today’s result so the student can do it again</small></span>
+                <button type="button" className="sd-btn sd-btn--warn" onClick={async () => {
+                  const todayStr = new Date().toLocaleDateString("en-CA", { timeZone: "Australia/Sydney" });
+                  const syncUid = challengeResultsUid || activeStudentId;
+                  await handleResetChallenge({ id: todayStr, studentId: syncUid, challengeType: "calc", statCollection: "calc_stats" });
+                }}>Reset</button>
+              </div>
+              <p className="sd-muted" style={{ margin: "10px 0 0", fontSize: "0.82rem" }}>Secret Notebook reset is in Practice → Secret Notebook.</p>
+            </section>
           </div>
         );
       case "special":
@@ -2280,121 +2166,14 @@ const StudentDetail = ({ studentId, onBack }) => {
       case "homework":
         return (
           <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '4px' }}>
-              <ClipboardList size={20} style={{ color: '#7c3aed' }} />
-              <h3 style={{ fontSize: '1.1rem', fontWeight: 800, color: '#1e1b4b', margin: 0 }}>Homework History</h3>
-            </div>
-            {homeworkLoading ? (
-              <div style={{ textAlign: 'center', padding: '40px', color: '#94a3b8', fontWeight: 700 }}>Loading…</div>
-            ) : homeworkSessions.length === 0 ? (
-              <div style={{ textAlign: 'center', padding: '40px', color: '#94a3b8', fontWeight: 700, background: '#f8fafc', borderRadius: '16px', border: '1px dashed #e2e8f0' }}>
-                No homework recorded yet.
-              </div>
-            ) : (
-              homeworkSessions.map((session) => {
-                const done = session.isHomeworkCompleted === true;
-                const excused = session.homeworkStatus === 'excused';
-                const hasPending = session.homework && !done && !excused;
-                return (
-                  <div key={session.id} style={{
-                    background: '#fff',
-                    borderRadius: '16px',
-                    border: `1.5px solid ${done ? '#bbf7d0' : hasPending ? '#fde68a' : '#e2e8f0'}`,
-                    padding: '18px 20px',
-                    boxShadow: '0 2px 8px rgba(15,23,42,0.04)',
-                  }}>
-                    {/* Header row */}
-                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '10px' }}>
-                      <span style={{ fontSize: '0.82rem', fontWeight: 800, color: '#64748b' }}>
-                        📅 {session.date || '—'}
-                        {session.startTime && ` · ${session.startTime}`}
-                      </span>
-                      <span style={{
-                        display: 'inline-flex', alignItems: 'center', gap: '5px',
-                        fontSize: '0.72rem', fontWeight: 900, padding: '3px 10px', borderRadius: '999px',
-                        background: done ? '#f0fdf4' : hasPending ? '#fffbeb' : '#f8fafc',
-                        color: done ? '#15803d' : hasPending ? '#b45309' : '#64748b',
-                        border: `1px solid ${done ? '#bbf7d0' : hasPending ? '#fde68a' : '#e2e8f0'}`,
-                      }}>
-                        {done ? <><CheckCircle2 size={12} /> Done</> : hasPending ? <><Circle size={12} /> Pending</> : excused ? 'Excused' : 'No homework'}
-                      </span>
-                    </div>
-
-                    {/* Topics covered */}
-                    {Array.isArray(session.learnedTopics) && session.learnedTopics.length > 0 && (
-                      <div style={{ marginBottom: '10px' }}>
-                        <div style={{ fontSize: '0.7rem', fontWeight: 900, color: '#7c3aed', textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: '6px' }}>Topics Covered</div>
-                        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px' }}>
-                          {session.learnedTopics.map((t, i) => (
-                            <span key={i} style={{ background: '#f5f3ff', color: '#6d28d9', fontSize: '0.75rem', fontWeight: 700, padding: '3px 10px', borderRadius: '999px' }}>
-                              {t.label || t.id || t}
-                            </span>
-                          ))}
-                        </div>
-                      </div>
-                    )}
-
-                    {/* Homework text */}
-                    {session.homework && (
-                      <div>
-                        <div style={{ fontSize: '0.7rem', fontWeight: 900, color: '#f59e0b', textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: '6px' }}>Homework</div>
-                        <div style={{ fontSize: '0.9rem', fontWeight: 600, color: '#1e293b', whiteSpace: 'pre-wrap', lineHeight: 1.6 }}>
-                          {session.homework}
-                        </div>
-                      </div>
-                    )}
-
-                    {/* Score */}
-                    {(session.homeworkScore !== undefined && session.homeworkScore !== '') && (
-                      <div style={{ marginTop: '10px', fontSize: '0.8rem', fontWeight: 800, color: '#64748b' }}>
-                        Score: <span style={{ color: '#7c3aed' }}>{session.homeworkScore}{session.homeworkTotal ? ` / ${session.homeworkTotal}` : ''}</span>
-                      </div>
-                    )}
-
-                    {/* Notes */}
-                    {session.notes && (
-                      <div style={{ marginTop: '10px', padding: '10px 12px', background: '#f8fafc', borderRadius: '10px', fontSize: '0.82rem', color: '#475569', fontWeight: 600, lineHeight: 1.5 }}>
-                        📝 {session.notes}
-                      </div>
-                    )}
-
-                    {(session.homeworkStatus === 'submitted' || session.homeworkStatus === 'checked') && (
-                      <div style={{ marginTop: '12px' }}>
-                        <button
-                          type="button"
-                          onClick={() => setViewHomeworkId(session.id)}
-                          style={{ padding: '8px 14px', borderRadius: '12px', border: '1.5px solid #ddd6fe', background: '#f5f3ff', color: '#6d28d9', fontWeight: 800, fontSize: '0.82rem', cursor: 'pointer' }}
-                        >
-                          View submission{session.homeworkStatus === 'submitted' ? ' · new' : ''}
-                        </button>
-                      </div>
-                    )}
-
-                    {/* Complete toggle — teacher checks HW off as done */}
-                    {session.homework && (
-                      <div style={{ marginTop: '14px', display: 'flex', justifyContent: 'flex-end' }}>
-                        <button
-                          onClick={() => toggleHomeworkComplete(session)}
-                          style={{
-                            display: 'inline-flex', alignItems: 'center', gap: '7px',
-                            padding: '9px 16px', borderRadius: '12px', cursor: 'pointer',
-                            border: `1.5px solid ${done ? '#bbf7d0' : '#ddd6fe'}`,
-                            background: done ? '#f0fdf4' : 'linear-gradient(135deg, #a78bfa, #7c3aed)',
-                            color: done ? '#15803d' : '#fff',
-                            fontSize: '0.82rem', fontWeight: 800,
-                            boxShadow: done ? 'none' : '0 6px 16px rgba(124,58,237,0.22)',
-                          }}
-                        >
-                          {done
-                            ? <><CheckCircle2 size={15} /> Completed · tap to undo</>
-                            : <><Circle size={15} /> Mark as completed</>}
-                        </button>
-                      </div>
-                    )}
-                  </div>
-                );
-              })
-            )}
+            <HomeworkTab
+              sessions={homeworkSessions}
+              loading={homeworkLoading}
+              error={homeworkError}
+              onRetry={() => { resetSessionHistory('studentId', activeStudentId); setHomeworkTry((n) => n + 1); }}
+              onToggleComplete={toggleHomeworkComplete}
+              onView={setViewHomeworkId}
+            />
             {viewHomeworkId && (
               <HomeworkSubmissionViewer
                 sessionId={viewHomeworkId}
@@ -2407,6 +2186,14 @@ const StudentDetail = ({ studentId, onBack }) => {
         );
       case "hsc":
         return (
+          <div style={{ display: "grid", gap: "24px" }}>
+          <TermResultsCard
+            student={student}
+            editingTerm={editingTerm}
+            setEditingTerm={setEditingTerm}
+            showToast={showToast}
+            onUpdateCurriculumSetting={handleUpdateCurriculumSetting}
+          />
           <HscTab
             hscRecords={hscRecords}
             styles={styles}
@@ -2419,6 +2206,7 @@ const StudentDetail = ({ studentId, onBack }) => {
             onUpdateModeration={handleUpdateHscModeration}
             hscTypeStats={hscTypeStats}
           />
+          </div>
         );
       default:
         return null;
@@ -2449,92 +2237,30 @@ const StudentDetail = ({ studentId, onBack }) => {
         )}
       />
 
-      {/* 2. Dashboard & Progress */}
-      <StudentDashboardCard
-        styles={styles}
-        student={student}
-        uploading={uploading}
-        fileInputRef={fileInputRef}
-        onImageUpload={handleImageUpload}
-        chapters={chapters}
-        completedChapters={completedChapters}
-        topicProgress={topicProgress}
-        editingTerm={editingTerm}
-        setEditingTerm={setEditingTerm}
-        showToast={showToast}
-        onUpdateCurriculumSetting={handleUpdateCurriculumSetting}
-      />
-      {/* 3-4. Weekly progress trackers */}
-      <WeeklyProgressTrackers
-        dailyStats={dailyStats}
-        calculationEnabled={student?.calculationEnabled}
-      />
-
       {/* 5. Navigation */}
-      <div
-        className="nav-tabs-mobile"
-        style={{
-          display: "flex",
-          gap: "12px",
-          marginBottom: "24px",
-          flexWrap: "wrap",
-        }}
-      >
-        <button
-          onClick={() => setActiveTab("curriculum")}
-          style={{
-            ...styles.navBtn,
-            ...(activeTab === "curriculum" ? styles.navBtnActive : {}),
-          }}
-        >
-          <BookOpen size={18} /> Curriculum
-        </button>
-        <button
-          onClick={() => setActiveTab("challenge")}
-          style={{
-            ...styles.navBtn,
-            ...(activeTab === "challenge" ? styles.navBtnActive : {}),
-          }}
-        >
-          <Trophy size={18} /> Challenge
-        </button>
-        <button
-          onClick={() => setActiveTab("homework")}
-          style={{
-            ...styles.navBtn,
-            ...(activeTab === "homework" ? styles.navBtnActive : {}),
-          }}
-        >
-          <ClipboardList size={18} /> Homework
-        </button>
-        <button
-          onClick={() => setActiveTab("hsc")}
-          style={{
-            ...styles.navBtn,
-            ...(activeTab === "hsc" ? styles.navBtnActive : {}),
-          }}
-        >
-          <FileText size={18} /> HSC
-        </button>
-        {/* Only for students doing OC / Selective / Scholarship (or with results already stored). */}
-        {(student?.scholarshipEnabled === true || Object.keys(student?.specialWeekly || {}).length > 0) && (
-          <button
-            onClick={() => setActiveTab("special")}
-            style={{
-              ...styles.navBtn,
-              ...(activeTab === "special" ? styles.navBtnActive : {}),
-            }}
-          >
-            <Target size={18} /> Special tests
+      <nav className="sd-tabs" aria-label="Student sections">
+        {[
+          ["overview", LayoutGrid, "Overview"],
+          ["curriculum", BookOpen, "Progress"],
+          ["challenge", Trophy, "Practice"],
+          ["homework", ClipboardList, "Homework"],
+          ["hsc", FileText, "Results"],
+          ...((student?.scholarshipEnabled === true || Object.keys(student?.specialWeekly || {}).length > 0)
+            ? [["special", Target, "Special tests"]] : []),
+        ].map(([key, Icon, label]) => (
+          <button key={key} type="button" className={`sd-tab${activeTab === key ? " is-on" : ""}`} aria-current={activeTab === key ? "page" : undefined} onClick={() => setActiveTab(key)}>
+            <Icon size={17} /> {label}
+            {key === "homework" && openHomeworkCount > 0 && <span className="sd-tab-count">{openHomeworkCount}</span>}
           </button>
-        )}
-        <button
-          onClick={() => setIsScheduleModalOpen(true)}
-          style={styles.navBtn}
-        >
-          <Calendar size={18} /> Add Schedule
+        ))}
+        <span className="sd-tab-gap" />
+        <button type="button" className="sd-tab sd-tab--action" onClick={() => setIsScheduleModalOpen(true)}>
+          <Calendar size={17} /> Add lesson
         </button>
-      </div>
+        <button type="button" className={`sd-tab${activeTab === "settings" ? " is-on" : ""}`} aria-current={activeTab === "settings" ? "page" : undefined} onClick={() => setActiveTab("settings")}>
+          <SettingsIcon size={17} /> Settings
+        </button>
+      </nav>
 
       {/* 4. Content */}
       {renderTabContent()}

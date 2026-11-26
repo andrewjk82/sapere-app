@@ -1,3 +1,4 @@
+import { markActivity } from './bingoActivity';
 // Extra rounds wait on this device and go to Firestore together when the student stops (services/extraRoundService).
 // Nothing here touches the network. `storage` is injectable for tests.
 const pendingKey = (uid) => `sapere:extraRounds:pending:v1:${uid}`;
@@ -78,6 +79,7 @@ export const loadPendingRounds = (uid, storage = globalThis.localStorage) => rea
 
 // False when the device has no room even for the marks; the caller should send the round straight away.
 export const addPendingRound = (uid, round, storage = globalThis.localStorage) => {
+  markActivity(uid, 'extra');
   const pending = loadPendingRounds(uid, storage);
   try {
     storage.setItem(pendingKey(uid), JSON.stringify([...pending, round]));

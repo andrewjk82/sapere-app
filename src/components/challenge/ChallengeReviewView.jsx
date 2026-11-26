@@ -1,3 +1,4 @@
+import { packReport } from '../../utils/packReport';
 import { useState, useRef, useMemo, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, CheckCircle2, XCircle, ArrowLeft, ArrowRight, Lightbulb, MessageCircle, Flag, PenLine, GraduationCap } from 'lucide-react';
@@ -99,7 +100,7 @@ const ChallengeReviewView = ({
       sketchDataUrl = hadPages ? null : (reportImages[0] || null);
       workingOutPages = hadPages ? reportImages : [];
 
-      await withTimeout(addDoc(collection(db, 'reports'), {
+      await withTimeout(addDoc(collection(db, 'reports'), await packReport({
         studentId: user?.uid || '',
         studentName: user?.displayName || user?.email || 'Student',
         questionId: reportQ.id || '',
@@ -131,7 +132,7 @@ const ChallengeReviewView = ({
         message: reportMessage,
         status: 'open',
         createdAt: serverTimestamp(),
-      }), REPORT_SEND_TIMEOUT_MS);
+      })), REPORT_SEND_TIMEOUT_MS);
       setReportedIdxs(prev => new Set([...prev, reportingIdx]));
       setReportingIdx(null);
       setReportMessage('');

@@ -1,3 +1,4 @@
+import { packReport } from '../../utils/packReport';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { playAnswerResult } from '../../utils/answerSound';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -699,7 +700,7 @@ const SecretNoteView = ({ kind, uid, user, studentProfile, studentName, onClose,
       try {
         canvasImage = await canvasRef.current?.exportImage?.({ force: true });
       } catch { /* canvas optional */ }
-      await addDoc(collection(db, 'reports'), {
+      await addDoc(collection(db, 'reports'), await packReport({
         studentId: uid,
         studentName: studentName || user?.displayName || user?.email || 'Student',
         source: 'secret_note',
@@ -726,7 +727,7 @@ const SecretNoteView = ({ kind, uid, user, studentProfile, studentName, onClose,
         message: reviewMsg.trim() || 'Secret Note review request',
         status: 'open',
         createdAt: serverTimestamp(),
-      });
+      }));
       setReviewSentIds((ids) => [...ids, question.id]);
       setReviewOpen(false);
       setReviewMsg('');

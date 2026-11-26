@@ -1,3 +1,4 @@
+import { markActivity } from '../utils/bingoActivity';
 /**
  * Exam Prep — local-first data layer.
  *
@@ -685,6 +686,7 @@ export const endSession = async (uid, results, { questions = [] } = {}) => {
   // Only count as a session if the student answered at least one question.
   const answered = Array.isArray(results) ? results.length : 0;
   if (answered > 0) {
+    markActivity(uid, 'examPrep');
     stats.sessions = (Number(stats.sessions) || 0) + 1;
     saveStats(uid, stats);
   }

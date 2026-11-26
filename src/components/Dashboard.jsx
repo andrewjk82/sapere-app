@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Plus, Search, Users, Clock, CheckCircle2, GraduationCap, X, Calendar, Check, Star, Bell, BookOpen, ChevronRight, PlayCircle, Target, AlertTriangle, TrendingUp, ArrowRight, PenLine, Zap, Calculator, FileText, Award } from 'lucide-react';
+import { Plus, Search, Users, Clock, CheckCircle2, GraduationCap, X, Calendar, Star, Bell, BookOpen, ChevronRight, PlayCircle, Target, AlertTriangle, TrendingUp, ArrowRight, PenLine, Zap, Calculator, FileText, Award } from 'lucide-react';
 import StatCard from './StatCard';
 import StudentRow from './StudentRow';
 import { useAuth } from '../context/AuthContext';
@@ -34,62 +34,12 @@ import { listTopicNoteDates } from '../utils/curriculumLocalNotes';
 import { loadLastStudy, continueCaption, requestContinueStudy, requestOpenTopic } from '../utils/lastStudy';
 import { OPEN_DAILY_SET_KEY, dailySetDoneToday, dailySetFor, dailySetExamsFor } from '../utils/examHub';
 import { requestPlanStart } from '../utils/planStart';
+import DailyBingoCard from './DailyBingoCard';
 
 // 카드에 마우스를 올리면 살짝 떠오르는 hover 효과 (Journey Map 카드와 동일한 느낌).
 const liftHover = {
   onMouseEnter: (e) => { e.currentTarget.style.transform = 'translateY(-3px)'; },
   onMouseLeave: (e) => { e.currentTarget.style.transform = ''; },
-};
-
-// Student "Today's plan": one equal-size tile per task. Finished = green + check, the next unfinished one gets a purple
-// ring, tasks that are not once-a-day (done === null, e.g. Exam Prep) stay neutral.
-const TodayPlanCard = ({ items, children, compact = false }) => {
-  const tracked = items.filter((i) => i.done !== null);
-  const doneCount = tracked.filter((i) => i.done).length;
-  const pct = tracked.length ? Math.round((doneCount / tracked.length) * 100) : 0;
-  const nextKey = (items.find((i) => i.done === false) || {}).key;
-  return (
-    <div>
-      <div style={{ display: 'flex', alignItems: 'center', gap: compact ? '10px' : '16px', marginBottom: '14px', flexWrap: compact ? 'nowrap' : 'wrap' }}>
-        <h2 style={{ margin: 0, fontFamily: "'Poppins', sans-serif", fontSize: compact ? '1.1rem' : '1.4rem', whiteSpace: 'nowrap', fontWeight: 800, color: '#0f172a' }}>Today&apos;s plan</h2>
-        <div style={{ flex: compact ? '1 1 40px' : '1 1 160px', height: 8, borderRadius: 999, background: '#eef2ff', overflow: 'hidden' }}>
-          <div style={{ width: `${pct}%`, height: '100%', background: '#4f46e5', borderRadius: 999, transition: 'width 0.35s ease' }} />
-        </div>
-        <span style={{ fontSize: compact ? '0.78rem' : '0.95rem', fontWeight: 700, color: '#475569', whiteSpace: 'nowrap' }}>{doneCount} of {tracked.length} done</span>
-      </div>
-      <div style={{ display: 'grid', gridTemplateColumns: compact ? 'repeat(2, minmax(0, 1fr))' : 'repeat(auto-fill, minmax(210px, 1fr))', gap: compact ? '10px' : '14px' }}>
-        {items.map(({ key, icon: Icon, title, sub, cta, done, onClick }) => {
-          const isDone = done === true;
-          const isNext = key === nextKey;
-          return (
-            <button
-              key={key}
-              type="button"
-              onClick={onClick}
-              {...liftHover}
-              style={{
-                position: 'relative', textAlign: 'left', cursor: 'pointer', minHeight: compact ? 118 : 150, boxSizing: 'border-box',
-                padding: compact ? '12px 14px' : '16px 18px', borderRadius: '24px', display: 'flex', flexDirection: 'column', gap: 4,
-                background: isDone ? '#ecfdf5' : '#ffffff',
-                border: isDone ? '2px solid #a7f3d0' : (isNext ? '2px solid #4f46e5' : '1px solid #f1f5f9'),
-                boxShadow: isDone ? 'none' : (isNext ? '0 0 0 3px rgba(79,70,229,0.18), 0 10px 24px rgba(0,0,0,0.06)' : '0 10px 24px rgba(0,0,0,0.06)'),
-                transition: 'transform 0.15s',
-              }}
-            >
-              {isNext && <span style={{ position: 'absolute', top: 12, right: 14, fontSize: '0.68rem', fontWeight: 800, color: '#fff', background: '#4f46e5', borderRadius: 999, padding: '2px 10px' }}>Next</span>}
-              <span style={{ width: 44, height: 44, borderRadius: isDone ? 999 : 14, background: isDone ? '#059669' : '#eef2ff', display: 'grid', placeItems: 'center', marginBottom: 6 }}>
-                {isDone ? <Check size={22} color="#fff" strokeWidth={3} /> : <Icon size={20} color="#4f46e5" strokeWidth={2.4} />}
-              </span>
-              <span style={{ fontWeight: 800, fontSize: '1.05rem', color: isDone ? '#065f46' : '#0f172a' }}>{title}</span>
-              <span style={{ fontSize: '0.82rem', color: isDone ? '#047857' : '#475569', overflow: 'hidden', display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical' }}>{sub}</span>
-              <span style={{ marginTop: 'auto', paddingTop: 8, fontSize: '0.88rem', fontWeight: 800, color: isDone ? '#059669' : '#4338ca' }}>{isDone ? 'Done ✓' : cta}</span>
-            </button>
-          );
-        })}
-        {children}
-      </div>
-    </div>
-  );
 };
 
 // Mon→Sun of the current week: [{ day, dateStr, isToday }].
@@ -111,6 +61,7 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
   const { showToast } = useToast();
   const { profile } = useProfile();
   const [avatarOpen, setAvatarOpen] = useState(false);
+  const [studyRoomOn, setStudyRoomOn] = useState(false);
   const [showScheduleModal, setShowScheduleModal] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
@@ -427,6 +378,7 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
     const dailyDone = dailyToday?.completed === true;
     const rows = [{
       key: 'daily',
+      kind: 'must',
       icon: Zap,
       title: 'Daily Challenge',
       sub: dailyDone ? scoreText(dailyToday) : "Today's questions are ready",
@@ -439,6 +391,7 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
       const calcDone = calcToday?.completed === true;
       rows.push({
         key: 'calc',
+        kind: 'must',
         icon: Calculator,
         title: 'Daily Calculation',
         sub: calcDone ? scoreText(calcToday) : 'A quick timed calculation round',
@@ -451,6 +404,7 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
       const setDone = user?.uid ? dailySetDoneToday(user.uid, examId) : false;
       rows.push({
         key: `special-${examId}`,
+        kind: 'extra',
         icon: examId === 'sch-acer' ? Award : Target,
         title: `${dailySetFor(examId, profile).label} daily`,
         sub: setDone ? 'Completed today' : "Today's set is ready",
@@ -465,8 +419,9 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
     });
     const hwItems = getHomeworkItems(studentSessions);
     const pending = hwItems.filter(i => i.status === 'todo');
-    rows.push({
+    if (hwItems.length > 0) rows.push({
       key: 'homework',
+      kind: 'must',
       icon: PenLine,
       title: pending.length > 0 ? `Homework — ${pending.length} to do` : 'Homework',
       sub: pending.length > 0
@@ -482,6 +437,7 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
     if (profile?.examPrepEnabled === true) {
       rows.push({
         key: 'exam-prep',
+        kind: 'extra',
         icon: Target,
         title: 'Exam Prep',
         sub: nextTermExam
@@ -590,11 +546,15 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
           </header>
         )}
         {!isAdmin && (
-          <div className="student-hero-container" style={{ display: 'grid', gridTemplateColumns: isMobile ? 'minmax(0, 1fr)' : 'repeat(12, 1fr)', gap: isMobile ? '16px' : '24px', padding: isMobile ? '0 0 16px 0' : '0 0 24px 0', alignItems: 'stretch' }}>
-            <div style={{ gridColumn: '1 / -1' }}>
-              <TodayPlanCard items={todayPlan} compact={isMobile}><OnlineStudySessionCard /></TodayPlanCard>
+          <div className="student-hero-container dash-split" style={{ display: 'grid', gap: isMobile ? '16px' : '24px', padding: isMobile ? '0 0 16px 0' : '0 0 24px 0', alignItems: 'start' }}>
+            {/* Bingo on the left, everything else beside it, so the whole dashboard fits on one screen. */}
+            <div className="dash-split__main">
+              <DailyBingoCard uid={user?.uid} profile={profile} planItems={todayPlan} studyRoomOn={studyRoomOn} setActiveTab={setActiveTab} showToast={showToast} compact={isMobile} />
             </div>
-            <div style={{ gridColumn: '1 / -1', display: 'grid', gridTemplateColumns: isMobile ? 'minmax(0, 1fr)' : 'repeat(auto-fit, minmax(300px, 1fr))', gap: isMobile ? '16px' : '20px', alignItems: 'start', padding: 0 }}>
+            <div className="dash-split__side" style={{ display: 'grid', gap: isMobile ? '16px' : '18px', alignItems: 'start', padding: 0 }}>
+              <div id="sapere-study-room" className="dash-split__room">
+                <OnlineStudySessionCard onConfig={(c) => setStudyRoomOn(Boolean(c?.enabled && c?.zoomLink))} />
+              </div>
               {/* Journey Map snapshot */}
               <JourneyMapSnapshot
                 profile={profile}

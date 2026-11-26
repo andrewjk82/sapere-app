@@ -1,3 +1,4 @@
+import { packReport } from '../utils/packReport';
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { playAnswerResult } from '../utils/answerSound';
 import { createPortal } from 'react-dom';
@@ -1856,7 +1857,7 @@ const ExamPrep = ({ profile, onExamActiveChange }) => {
     if (!target || !reportMessage.trim() || !user?.uid) return;
     setSubmittingReport(true);
     try {
-      await addDoc(collection(db, 'reports'), {
+      await addDoc(collection(db, 'reports'), await packReport({
         studentId: user.uid,
         studentName: user.displayName || user.email || 'Student',
         questionId: target.id || '',
@@ -1879,7 +1880,7 @@ const ExamPrep = ({ profile, onExamActiveChange }) => {
         message: reportMessage.trim(),
         status: 'open',
         createdAt: serverTimestamp(),
-      });
+      }));
       showToast('Report submitted — we will review it.', 'success');
       reportTargetRef.current = null;
       setReportTarget(null);

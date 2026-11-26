@@ -1,3 +1,4 @@
+import { packReport } from '../utils/packReport';
 import { useState, useEffect, useCallback, useRef, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
@@ -477,7 +478,7 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
     if (!target || !reportMessage.trim() || !user?.uid) return;
     setSubmittingReport(true);
     try {
-      await addDoc(collection(db, 'reports'), {
+      await addDoc(collection(db, 'reports'), await packReport({
         studentId: user.uid,
         studentName: user.displayName || user.email || profile?.name || 'Student',
         questionId: target.id || '',
@@ -502,7 +503,7 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
         message: reportMessage.trim(),
         status: 'open',
         createdAt: serverTimestamp(),
-      });
+      }));
       showToast('Report submitted — your teacher will review it.', 'success');
       reportTargetRef.current = null;
       setReportOpen(false);

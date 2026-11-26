@@ -19,7 +19,7 @@ export default function ClassProgressCard({ student, sessions }) {
   const [error, setError] = useState('');
   const [expanded, setExpanded] = useState(null);       // chapterId
 
-  const { topics, year } = useMemo(() => courseTopics(student || {}), [student]);
+  const { topics, year } = useMemo(() => courseTopics(student || {}, sessions || []), [student, sessions]);
   const derived = useMemo(() => (sessions ? deriveTopicStates(sessions, todayKey()) : new Map()), [sessions]);
 
   const overrides = useMemo(() => {

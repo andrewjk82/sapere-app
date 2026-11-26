@@ -1,3 +1,4 @@
+import { markActivity } from '../utils/bingoActivity';
 /**
  * timesTableSprintService.js
  *
@@ -304,6 +305,7 @@ export const submitSprintRun = async ({
 }) => {
   if (!userId) throw new Error('submitSprintRun requires a userId');
   if (!boardId) throw new Error('submitSprintRun requires a boardId');
+  markActivity(userId, 'sprint');
 
   const resultRef = doc(db, RESULTS_COLLECTION, `${boardId}_${userId}`);
   const name = buildDisplayName(profile);

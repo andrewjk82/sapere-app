@@ -2,7 +2,6 @@ import {
   collection,
   addDoc,
   getDocs,
-  getDocsFromServer,
   query,
   where,
   onSnapshot,
@@ -17,6 +16,7 @@ import {
 import { db } from "../firebase/config";
 import { upsertManualStudentLeaderboard, removeFromLeaderboard } from "./leaderboardService";
 import { localCache } from "./localCacheService";
+import { serverRead } from "../utils/serverRead";
 import { buildAvatarUrl, buildDisplayName } from "../utils/avatarUtils";
 
 const COLLECTION_NAME = "students";
@@ -160,11 +160,10 @@ export const studentService = {
     }
 
     try {
-      // An explicit Sync rescans from the server (never the on-device copy) and does not depend on the meta read.
-      const readDocs = forceRefresh ? getDocsFromServer : getDocs;
-      const metaSnap = forceRefresh
-        ? await getDoc(doc(db, "sync_meta", getStudentsMetaId(tutorId, isAdmin))).catch(() => null)
-        : await getDoc(doc(db, "sync_meta", getStudentsMetaId(tutorId, isAdmin)));
+      // All reads go through a listener (utils/serverRead): server data only, and it answers on the iPad app.
+      const metaRead = serverRead(doc(db, "sync_meta", getStudentsMetaId(tutorId, isAdmin)));
+      // An explicit Sync does not depend on the meta read.
+      const metaSnap = forceRefresh ? await metaRead.catch(() => null) : await metaRead;
       const remoteVersion = metaVersionOf(metaSnap?.data());
       // XP / last activity / new sign-ups don't bump the roster version, hence the age cap.
       const cacheFresh = Date.now() - Number(cached?.savedAt || 0) < ROSTER_STALE_MS;
@@ -178,7 +177,7 @@ export const studentService = {
         ? query(studentsRef) 
         : query(studentsRef, where("tutorId", "==", tutorId));
 
-      const manualSnap = await readDocs(manualQuery);
+      const manualSnap = await serverRead(manualQuery, { ms: 20_000 });
       const manualStudents = manualSnap.docs.map(doc => ({
         id: doc.id,
         source: 'manual',
@@ -191,12 +190,7 @@ export const studentService = {
         // Teachers can still teach with manual students while registered accounts load.
         try {
           const usersRef = collection(db, "users");
-          const usersSnap = await Promise.race([
-            readDocs(usersRef),
-            new Promise((_, reject) => {
-              setTimeout(() => reject(new Error('users-scan-timeout')), forceRefresh ? 25000 : 8000);
-            }),
-          ]);
+          const usersSnap = await serverRead(usersRef, { ms: forceRefresh || revalidate ? 25000 : 8000 });
           registeredStudents = usersSnap.docs
             .filter(doc =>
               doc.data().email !== "andrewjk82@gmail.com" &&
@@ -218,12 +212,12 @@ export const studentService = {
           if (forceRefresh) throw scanErr;
           // A background check never swaps a full cached roster for a manual-only one.
           if (cached?.students?.length) return cached.students;
-          // Fall back to manual-only roster so the teacher UI still opens.
-          if (manualStudents.length > 0) {
-            const partial = mergeDuplicateStudentRecords(manualStudents, []);
-            memSet(cacheKey, partial);
-            return partial;
+          // Fall back to manual-only roster so the teacher UI still opens. Not remembered, and one background
+          // retry puts the full roster on screen (onRosterUpdate) without a reload.
+          if (!revalidate) {
+            setTimeout(() => { studentService.getStudents(tutorId, isAdmin, { revalidate: true }).catch(() => {}); }, 3000);
           }
+          return mergeDuplicateStudentRecords(manualStudents, []);
         }
       }
 

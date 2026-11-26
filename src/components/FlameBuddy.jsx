@@ -1647,6 +1647,13 @@ function FlameSvg({ idPrefix = '' } = {}) {
  * @param {boolean} [props.hidden]
  */
 export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidden = false }) {
+  // Closest Daily Bingo line, from the dashboard card (DailyBingoCard).
+  const [bingoHint, setBingoHint] = useState(() => (typeof window !== 'undefined' ? window.__sapereBingoHint || null : null));
+  useEffect(() => {
+    const on = (e) => setBingoHint(e.detail || null);
+    window.addEventListener('sapere:bingo-hint', on);
+    return () => window.removeEventListener('sapere:bingo-hint', on);
+  }, []);
   const hour = useLocalHour();
   const [legacyTasks, setTasks] = useState({ dailyDone: false, calcDone: false, loaded: false });
   const [nextSession, setNextSession] = useState(null);
@@ -2193,6 +2200,25 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
     // Dashboard (and other tabs): time-escalating practice coaching.
     const needDaily = !tasks.dailyDone;
     const needCalc = calcEnabled && !tasks.calcDone;
+    // Daily Bingo: the closest line, said by the buddy instead of a list on the card.
+    const bingoOn = activeTab === 'Dashboard' && bingoHint?.line && bingoHint.left?.length;
+    const bingoFinishes = (id) => bingoOn && bingoHint.left.length === 1 && bingoHint.left[0].id === id;
+    const bingoTail = (id) => (bingoFinishes(id) ? ` Bonus: it finishes your ${bingoHint.line} for +5 XP!` : '');
+
+    if (!needDaily && !needCalc && bingoOn) {
+      const names = bingoHint.left.map((c) => c.title);
+      const one = names.length === 1;
+      return {
+        mood: one ? 'cheer' : 'hint',
+        eyebrow: 'Bingo',
+        msg: one
+          ? `${firstName ? `${firstName}, your` : 'Your'} ${bingoHint.line} is 1 away — just ${names[0]}!`
+          : `${bingoHint.line}: ${names.length} to go — ${names.join(' and ')}.`,
+        sub: `Every line you finish is +5 XP.${bingoHint.won ? ` ${bingoHint.won} line${bingoHint.won === 1 ? '' : 's'} done today already!` : ''}`,
+        cta: null,
+        key: `bingo-${today}-${bingoHint.line}-${names.join('|')}-${speechEpoch}`,
+      };
+    }
 
     if (!needDaily && !needCalc) {
       if (dueNotes > 0) {
@@ -2230,7 +2256,7 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
         mood: pack.mood,
         eyebrow: stage >= 5 ? 'Almost midnight' : stage >= 3 ? 'Evening check-in' : 'Daily Practice',
         msg: line.msg,
-        sub: line.sub,
+        sub: `${line.sub}${bingoTail('daily')}`,
         cta: { label: 'Start practice', tab: 'Challenge' },
         key: `daily-${today}-${stage}-${slot}-${speechEpoch}`,
       };
@@ -2243,11 +2269,11 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
       mood: pack.mood,
       eyebrow: stage >= 5 ? 'Sprint — last call' : 'Daily Calculation',
       msg: line.msg,
-      sub: line.sub,
+      sub: `${line.sub}${bingoTail('calc')}`,
       cta: { label: 'Start sprint', tab: 'Challenge' },
       key: `calc-${today}-${stage}-${slot}-${speechEpoch}`,
     };
-  }, [cheerUntil, resultCoach, quizSession, tasks, calcEnabled, dueNotes, stage, today, activeTab, nextSession, uid, firstName, recentPerf, unreadFeedback, hour, speechEpoch, examPrepSnap, profile?.examPrepEnabled]);
+  }, [cheerUntil, resultCoach, quizSession, tasks, calcEnabled, dueNotes, stage, today, activeTab, nextSession, uid, firstName, recentPerf, unreadFeedback, hour, speechEpoch, examPrepSnap, profile?.examPrepEnabled, bingoHint]);
 
   // Auto-open bubble when situation key changes (new day / tab / urgency / complete).
   // Challenge tab is allowed — that is where the performance briefing lives.

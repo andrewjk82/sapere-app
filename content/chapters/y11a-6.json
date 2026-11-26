@@ -8114,82 +8114,145 @@
           "type": "multipart",
           "difficulty": "medium",
           "stem": "By referring to the graph of the function \\(y = \\cos x\\) drawn in degrees, write down its domain, range, period, and amplitude.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 170\" width=\"65%\" height=\"auto\" style=\"max-width:468px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"360\" height=\"170\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><line x1=\"40.0\" y1=\"31.0\" x2=\"40.0\" y2=\"141.0\" stroke=\"#e2e8f0\" stroke-width=\"0.9\"/><line x1=\"75.0\" y1=\"31.0\" x2=\"75.0\" y2=\"141.0\" stroke=\"#e2e8f0\" stroke-width=\"0.9\"/><line x1=\"110.0\" y1=\"31.0\" x2=\"110.0\" y2=\"141.0\" stroke=\"#e2e8f0\" stroke-width=\"0.9\"/><line x1=\"145.0\" y1=\"31.0\" x2=\"145.0\" y2=\"141.0\" stroke=\"#e2e8f0\" stroke-width=\"0.9\"/><line x1=\"215.0\" y1=\"31.0\" x2=\"215.0\" y2=\"141.0\" stroke=\"#e2e8f0\" stroke-width=\"0.9\"/><line x1=\"250.0\" y1=\"31.0\" x2=\"250.0\" y2=\"141.0\" stroke=\"#e2e8f0\" stroke-width=\"0.9\"/><line x1=\"285.0\" y1=\"31.0\" x2=\"285.0\" y2=\"141.0\" stroke=\"#e2e8f0\" stroke-width=\"0.9\"/><line x1=\"320.0\" y1=\"31.0\" x2=\"320.0\" y2=\"141.0\" stroke=\"#e2e8f0\" stroke-width=\"0.9\"/><line x1=\"20\" y1=\"86\" x2=\"340\" y2=\"86\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"180\" y1=\"18\" x2=\"180\" y2=\"152\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><polyline points=\"27,82 20,86 27,90\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><polyline points=\"333,82 340,86 333,90\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"348\" y=\"90\" text-anchor=\"start\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"12\">x</text><text x=\"188\" y=\"22\" text-anchor=\"start\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"12\">y</text><text x=\"40.0\" y=\"101\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"9.5\" fill=\"#475569\">−360°</text><text x=\"110.0\" y=\"101\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"9.5\" fill=\"#475569\">−180°</text><text x=\"250.0\" y=\"101\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"9.5\" fill=\"#475569\">180°</text><text x=\"320.0\" y=\"101\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"9.5\" fill=\"#475569\">360°</text><text x=\"173\" y=\"45.5\" text-anchor=\"end\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"10\" fill=\"#334155\">1</text><text x=\"173\" y=\"133.5\" text-anchor=\"end\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"10\" fill=\"#334155\">−1</text><polyline points=\"32.2,44.7 34.2,43.5 36.1,42.7 38.1,42.2 40.0,42.0 41.9,42.2 43.9,42.7 45.8,43.5 47.8,44.7 49.7,46.1 51.7,47.9 53.6,50.0 55.6,52.3 57.5,54.9 59.4,57.7 61.4,60.8 63.3,64.0 65.3,67.4 67.2,71.0 69.2,74.6 71.1,78.4 73.1,82.2 75.0,86.0 76.9,89.8 78.9,93.6 80.8,97.4 82.8,101.0 84.7,104.6 86.7,108.0 88.6,111.2 90.6,114.3 92.5,117.1 94.4,119.7 96.4,122.0 98.3,124.1 100.3,125.9 102.2,127.3 104.2,128.5 106.1,129.3 108.1,129.8 110.0,130.0 111.9,129.8 113.9,129.3 115.8,128.5 117.8,127.3 119.7,125.9 121.7,124.1 123.6,122.0 125.6,119.7 127.5,117.1 129.4,114.3 131.4,111.2 133.3,108.0 135.3,104.6 137.2,101.0 139.2,97.4 141.1,93.6 143.1,89.8 145.0,86.0 146.9,82.2 148.9,78.4 150.8,74.6 152.8,71.0 154.7,67.4 156.7,64.0 158.6,60.8 160.6,57.7 162.5,54.9 164.4,52.3 166.4,50.0 168.3,47.9 170.3,46.1 172.2,44.7 174.2,43.5 176.1,42.7 178.1,42.2 180.0,42.0 181.9,42.2 183.9,42.7 185.8,43.5 187.8,44.7 189.7,46.1 191.7,47.9 193.6,50.0 195.6,52.3 197.5,54.9 199.4,57.7 201.4,60.8 203.3,64.0 205.3,67.4 207.2,71.0 209.2,74.6 211.1,78.4 213.1,82.2 215.0,86.0 216.9,89.8 218.9,93.6 220.8,97.4 222.8,101.0 224.7,104.6 226.7,108.0 228.6,111.2 230.6,114.3 232.5,117.1 234.4,119.7 236.4,122.0 238.3,124.1 240.3,125.9 242.2,127.3 244.2,128.5 246.1,129.3 248.1,129.8 250.0,130.0 251.9,129.8 253.9,129.3 255.8,128.5 257.8,127.3 259.7,125.9 261.7,124.1 263.6,122.0 265.6,119.7 267.5,117.1 269.4,114.3 271.4,111.2 273.3,108.0 275.3,104.6 277.2,101.0 279.2,97.4 281.1,93.6 283.1,89.8 285.0,86.0 286.9,82.2 288.9,78.4 290.8,74.6 292.8,71.0 294.7,67.4 296.7,64.0 298.6,60.8 300.6,57.7 302.5,54.9 304.4,52.3 306.4,50.0 308.3,47.9 310.3,46.1 312.2,44.7 314.2,43.5 316.1,42.7 318.1,42.2 320.0,42.0 321.9,42.2 323.9,42.7 325.8,43.5 327.8,44.7\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.2\"/><rect x=\"262\" y=\"18\" width=\"66\" height=\"18\" rx=\"4\" fill=\"#ffffff\" fill-opacity=\"0.92\"/><text x=\"295\" y=\"31\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11.5\" fill=\"#1d4ed8\"><tspan font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\">y</tspan> = cos <tspan font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\">x</tspan></text></svg>"
+          },
+          "hint": "Use the cosine wave graph: check how far it extends left and right (domain), its lowest and highest \\(y\\)-values (range), the length of one full wave (period), and the distance from the midline \\(y = 0\\) to a peak (amplitude).",
           "parts": [
             {
               "id": "y11a-6c-q9a",
-              "type": "short",
+              "type": "mc",
+              "difficulty": "easy",
               "stem": "What is the domain of \\(y = \\cos x\\)?",
-              "answer": "All real x",
+              "options": [
+                "All real \\(x\\) (\\(-\\infty < x < \\infty\\))",
+                "\\(0^\\circ \\le x \\le 360^\\circ\\)",
+                "\\(-1 \\le x \\le 1\\)",
+                "\\(x \\ge 0^\\circ\\)"
+              ],
+              "answer": 0,
+              "hint": "Can you substitute ANY positive, negative, or zero angle into \\(\\cos x\\) without any restriction or division by zero?",
               "steps": [
                 {
-                  "explain": "Cosine is defined for any real angle.",
-                  "work": "\\text{Domain: } -\\infty < x < \\infty"
+                  "explain": "Look horizontally along the \\(x\\)-axis of \\(y = \\cos x\\): the cosine wave continues indefinitely to both the left (\\(-\\infty\\)) and right (\\(+\\infty\\)) with no gaps or asymptotes.",
+                  "work": "\\(-\\infty < x < \\infty\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 196\" width=\"65%\" height=\"auto\" style=\"max-width:468px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"360\" height=\"196\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><line x1=\"40.0\" y1=\"31.0\" x2=\"40.0\" y2=\"141.0\" stroke=\"#e2e8f0\" stroke-width=\"0.9\"/><line x1=\"75.0\" y1=\"31.0\" x2=\"75.0\" y2=\"141.0\" stroke=\"#e2e8f0\" stroke-width=\"0.9\"/><line x1=\"110.0\" y1=\"31.0\" x2=\"110.0\" y2=\"141.0\" stroke=\"#e2e8f0\" stroke-width=\"0.9\"/><line x1=\"145.0\" y1=\"31.0\" x2=\"145.0\" y2=\"141.0\" stroke=\"#e2e8f0\" stroke-width=\"0.9\"/><line x1=\"215.0\" y1=\"31.0\" x2=\"215.0\" y2=\"141.0\" stroke=\"#e2e8f0\" stroke-width=\"0.9\"/><line x1=\"250.0\" y1=\"31.0\" x2=\"250.0\" y2=\"141.0\" stroke=\"#e2e8f0\" stroke-width=\"0.9\"/><line x1=\"285.0\" y1=\"31.0\" x2=\"285.0\" y2=\"141.0\" stroke=\"#e2e8f0\" stroke-width=\"0.9\"/><line x1=\"320.0\" y1=\"31.0\" x2=\"320.0\" y2=\"141.0\" stroke=\"#e2e8f0\" stroke-width=\"0.9\"/><line x1=\"20\" y1=\"86\" x2=\"340\" y2=\"86\" stroke=\"#2563eb\" stroke-width=\"2.4\"/><line x1=\"180\" y1=\"18\" x2=\"180\" y2=\"152\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><polyline points=\"27,82 20,86 27,90\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.2\"/><polyline points=\"333,82 340,86 333,90\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.2\"/><text x=\"348\" y=\"90\" text-anchor=\"start\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"12\">x</text><text x=\"188\" y=\"22\" text-anchor=\"start\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"12\">y</text><text x=\"40.0\" y=\"101\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"9.5\" fill=\"#475569\">−360°</text><text x=\"110.0\" y=\"101\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"9.5\" fill=\"#475569\">−180°</text><text x=\"250.0\" y=\"101\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"9.5\" fill=\"#475569\">180°</text><text x=\"320.0\" y=\"101\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"9.5\" fill=\"#475569\">360°</text><text x=\"173\" y=\"45.5\" text-anchor=\"end\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"10\" fill=\"#334155\">1</text><text x=\"173\" y=\"133.5\" text-anchor=\"end\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"10\" fill=\"#334155\">−1</text><polyline points=\"32.2,44.7 34.2,43.5 36.1,42.7 38.1,42.2 40.0,42.0 41.9,42.2 43.9,42.7 45.8,43.5 47.8,44.7 49.7,46.1 51.7,47.9 53.6,50.0 55.6,52.3 57.5,54.9 59.4,57.7 61.4,60.8 63.3,64.0 65.3,67.4 67.2,71.0 69.2,74.6 71.1,78.4 73.1,82.2 75.0,86.0 76.9,89.8 78.9,93.6 80.8,97.4 82.8,101.0 84.7,104.6 86.7,108.0 88.6,111.2 90.6,114.3 92.5,117.1 94.4,119.7 96.4,122.0 98.3,124.1 100.3,125.9 102.2,127.3 104.2,128.5 106.1,129.3 108.1,129.8 110.0,130.0 111.9,129.8 113.9,129.3 115.8,128.5 117.8,127.3 119.7,125.9 121.7,124.1 123.6,122.0 125.6,119.7 127.5,117.1 129.4,114.3 131.4,111.2 133.3,108.0 135.3,104.6 137.2,101.0 139.2,97.4 141.1,93.6 143.1,89.8 145.0,86.0 146.9,82.2 148.9,78.4 150.8,74.6 152.8,71.0 154.7,67.4 156.7,64.0 158.6,60.8 160.6,57.7 162.5,54.9 164.4,52.3 166.4,50.0 168.3,47.9 170.3,46.1 172.2,44.7 174.2,43.5 176.1,42.7 178.1,42.2 180.0,42.0 181.9,42.2 183.9,42.7 185.8,43.5 187.8,44.7 189.7,46.1 191.7,47.9 193.6,50.0 195.6,52.3 197.5,54.9 199.4,57.7 201.4,60.8 203.3,64.0 205.3,67.4 207.2,71.0 209.2,74.6 211.1,78.4 213.1,82.2 215.0,86.0 216.9,89.8 218.9,93.6 220.8,97.4 222.8,101.0 224.7,104.6 226.7,108.0 228.6,111.2 230.6,114.3 232.5,117.1 234.4,119.7 236.4,122.0 238.3,124.1 240.3,125.9 242.2,127.3 244.2,128.5 246.1,129.3 248.1,129.8 250.0,130.0 251.9,129.8 253.9,129.3 255.8,128.5 257.8,127.3 259.7,125.9 261.7,124.1 263.6,122.0 265.6,119.7 267.5,117.1 269.4,114.3 271.4,111.2 273.3,108.0 275.3,104.6 277.2,101.0 279.2,97.4 281.1,93.6 283.1,89.8 285.0,86.0 286.9,82.2 288.9,78.4 290.8,74.6 292.8,71.0 294.7,67.4 296.7,64.0 298.6,60.8 300.6,57.7 302.5,54.9 304.4,52.3 306.4,50.0 308.3,47.9 310.3,46.1 312.2,44.7 314.2,43.5 316.1,42.7 318.1,42.2 320.0,42.0 321.9,42.2 323.9,42.7 325.8,43.5 327.8,44.7\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.2\"/><text x=\"44\" y=\"76\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"700\" fill=\"#2563eb\">← −∞</text><text x=\"314\" y=\"76\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"700\" fill=\"#2563eb\">+∞ →</text><text x=\"180\" y=\"189\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#0369a1\">Graph extends infinitely left and right → Domain: all real x</text></svg>"
+                  }
+                },
+                {
+                  "explain": "On the unit circle, a ray can rotate by any real angle \\(x\\) (positive or negative) and always has a well-defined \\(x\\)-coordinate \\(\\cos x\\).",
+                  "work": "\\(\\cos x \\text{ is defined for every } x \\in \\mathbb{R}\\)"
+                },
+                {
+                  "explain": "Therefore, the domain of \\(y = \\cos x\\) is all real \\(x\\) (\\(-\\infty < x < \\infty\\)).",
+                  "work": "\\(\\text{Domain: all real } x\\)"
                 }
               ],
+              "timeLimit": 60,
               "xp": 1
             },
             {
               "id": "y11a-6c-q9b",
-              "type": "short",
+              "type": "mc",
+              "difficulty": "easy",
               "stem": "What is the range of \\(y = \\cos x\\)?",
-              "answer": "-1 <= y <= 1",
+              "options": [
+                "\\(0 \\le y \\le 1\\)",
+                "All real \\(y\\)",
+                "\\(-1 \\le y \\le 1\\)",
+                "\\(-360 \\le y \\le 360\\)"
+              ],
+              "answer": 2,
+              "hint": "Read the lowest trough and highest peak on the vertical \\(y\\)-axis of the cosine wave!",
               "steps": [
                 {
-                  "explain": "Cosine oscillates between -1 and 1.",
-                  "work": "-1 \\le y \\le 1"
+                  "explain": "Inspect the vertical extent of \\(y = \\cos x\\) (shaded blue): the maximum peaks sit at \\(y = 1\\) (e.g. \\(x = 0^\\circ, \\pm 360^\\circ\\)) and the minimum troughs sit at \\(y = -1\\) (e.g. \\(x = \\pm 180^\\circ\\)).",
+                  "work": "\\(y_{\\min} = -1, \\quad y_{\\max} = 1\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 196\" width=\"65%\" height=\"auto\" style=\"max-width:468px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"360\" height=\"196\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><rect x=\"32.2\" y=\"42.0\" width=\"295.6\" height=\"88.0\" fill=\"#dbeafe\" fill-opacity=\"0.45\"/><line x1=\"32.2\" y1=\"42.0\" x2=\"327.8\" y2=\"42.0\" stroke=\"#2563eb\" stroke-width=\"1.6\" stroke-dasharray=\"4,3\"/><line x1=\"32.2\" y1=\"130.0\" x2=\"327.8\" y2=\"130.0\" stroke=\"#2563eb\" stroke-width=\"1.6\" stroke-dasharray=\"4,3\"/><line x1=\"40.0\" y1=\"31.0\" x2=\"40.0\" y2=\"141.0\" stroke=\"#e2e8f0\" stroke-width=\"0.9\"/><line x1=\"75.0\" y1=\"31.0\" x2=\"75.0\" y2=\"141.0\" stroke=\"#e2e8f0\" stroke-width=\"0.9\"/><line x1=\"110.0\" y1=\"31.0\" x2=\"110.0\" y2=\"141.0\" stroke=\"#e2e8f0\" stroke-width=\"0.9\"/><line x1=\"145.0\" y1=\"31.0\" x2=\"145.0\" y2=\"141.0\" stroke=\"#e2e8f0\" stroke-width=\"0.9\"/><line x1=\"215.0\" y1=\"31.0\" x2=\"215.0\" y2=\"141.0\" stroke=\"#e2e8f0\" stroke-width=\"0.9\"/><line x1=\"250.0\" y1=\"31.0\" x2=\"250.0\" y2=\"141.0\" stroke=\"#e2e8f0\" stroke-width=\"0.9\"/><line x1=\"285.0\" y1=\"31.0\" x2=\"285.0\" y2=\"141.0\" stroke=\"#e2e8f0\" stroke-width=\"0.9\"/><line x1=\"320.0\" y1=\"31.0\" x2=\"320.0\" y2=\"141.0\" stroke=\"#e2e8f0\" stroke-width=\"0.9\"/><line x1=\"20\" y1=\"86\" x2=\"340\" y2=\"86\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"180\" y1=\"18\" x2=\"180\" y2=\"152\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><polyline points=\"27,82 20,86 27,90\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><polyline points=\"333,82 340,86 333,90\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"348\" y=\"90\" text-anchor=\"start\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"12\">x</text><text x=\"188\" y=\"22\" text-anchor=\"start\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"12\">y</text><text x=\"40.0\" y=\"101\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"9.5\" fill=\"#475569\">−360°</text><text x=\"110.0\" y=\"101\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"9.5\" fill=\"#475569\">−180°</text><text x=\"250.0\" y=\"101\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"9.5\" fill=\"#475569\">180°</text><text x=\"320.0\" y=\"101\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"9.5\" fill=\"#475569\">360°</text><text x=\"173\" y=\"45.5\" text-anchor=\"end\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"10\" fill=\"#334155\">1</text><text x=\"173\" y=\"133.5\" text-anchor=\"end\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"10\" fill=\"#334155\">−1</text><polyline points=\"32.2,44.7 34.2,43.5 36.1,42.7 38.1,42.2 40.0,42.0 41.9,42.2 43.9,42.7 45.8,43.5 47.8,44.7 49.7,46.1 51.7,47.9 53.6,50.0 55.6,52.3 57.5,54.9 59.4,57.7 61.4,60.8 63.3,64.0 65.3,67.4 67.2,71.0 69.2,74.6 71.1,78.4 73.1,82.2 75.0,86.0 76.9,89.8 78.9,93.6 80.8,97.4 82.8,101.0 84.7,104.6 86.7,108.0 88.6,111.2 90.6,114.3 92.5,117.1 94.4,119.7 96.4,122.0 98.3,124.1 100.3,125.9 102.2,127.3 104.2,128.5 106.1,129.3 108.1,129.8 110.0,130.0 111.9,129.8 113.9,129.3 115.8,128.5 117.8,127.3 119.7,125.9 121.7,124.1 123.6,122.0 125.6,119.7 127.5,117.1 129.4,114.3 131.4,111.2 133.3,108.0 135.3,104.6 137.2,101.0 139.2,97.4 141.1,93.6 143.1,89.8 145.0,86.0 146.9,82.2 148.9,78.4 150.8,74.6 152.8,71.0 154.7,67.4 156.7,64.0 158.6,60.8 160.6,57.7 162.5,54.9 164.4,52.3 166.4,50.0 168.3,47.9 170.3,46.1 172.2,44.7 174.2,43.5 176.1,42.7 178.1,42.2 180.0,42.0 181.9,42.2 183.9,42.7 185.8,43.5 187.8,44.7 189.7,46.1 191.7,47.9 193.6,50.0 195.6,52.3 197.5,54.9 199.4,57.7 201.4,60.8 203.3,64.0 205.3,67.4 207.2,71.0 209.2,74.6 211.1,78.4 213.1,82.2 215.0,86.0 216.9,89.8 218.9,93.6 220.8,97.4 222.8,101.0 224.7,104.6 226.7,108.0 228.6,111.2 230.6,114.3 232.5,117.1 234.4,119.7 236.4,122.0 238.3,124.1 240.3,125.9 242.2,127.3 244.2,128.5 246.1,129.3 248.1,129.8 250.0,130.0 251.9,129.8 253.9,129.3 255.8,128.5 257.8,127.3 259.7,125.9 261.7,124.1 263.6,122.0 265.6,119.7 267.5,117.1 269.4,114.3 271.4,111.2 273.3,108.0 275.3,104.6 277.2,101.0 279.2,97.4 281.1,93.6 283.1,89.8 285.0,86.0 286.9,82.2 288.9,78.4 290.8,74.6 292.8,71.0 294.7,67.4 296.7,64.0 298.6,60.8 300.6,57.7 302.5,54.9 304.4,52.3 306.4,50.0 308.3,47.9 310.3,46.1 312.2,44.7 314.2,43.5 316.1,42.7 318.1,42.2 320.0,42.0 321.9,42.2 323.9,42.7 325.8,43.5 327.8,44.7\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.2\"/><text x=\"180\" y=\"189\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#0369a1\">Graph stays between y = −1 and y = 1 → Range: −1 ≤ y ≤ 1</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Because the wave is continuous, it takes every value between \\(-1\\) and \\(1\\) inclusive, and never goes above \\(1\\) or below \\(-1\\).",
+                  "work": "\\(-1 \\le \\cos x \\le 1\\)"
+                },
+                {
+                  "explain": "Therefore, the range of \\(y = \\cos x\\) is \\(-1 \\le y \\le 1\\).",
+                  "work": "\\(\\text{Range: } -1 \\le y \\le 1\\)"
                 }
               ],
+              "timeLimit": 60,
               "xp": 1
             },
             {
               "id": "y11a-6c-q9c",
-              "type": "short",
+              "type": "mc",
+              "difficulty": "easy",
               "stem": "What is the period of \\(y = \\cos x\\) in degrees?",
-              "answer": "360°",
+              "options": [
+                "\\(180^\\circ\\)",
+                "\\(360^\\circ\\)",
+                "\\(90^\\circ\\)",
+                "\\(720^\\circ\\)"
+              ],
+              "answer": 1,
+              "hint": "Measure the horizontal distance from one peak at \\(x = 0^\\circ\\) to the next identical peak at \\(x = 360^\\circ\\)!",
               "steps": [
                 {
-                  "explain": "One cycle is completed in 360 degrees.",
-                  "work": "\\text{Period} = 360^{\\circ}"
+                  "explain": "Follow one complete cycle of \\(y = \\cos x\\) (highlighted green): starting at the peak \\((0^\\circ, 1)\\), it drops through \\((90^\\circ, 0)\\) to the trough \\((180^\\circ, -1)\\), rises through \\((270^\\circ, 0)\\), and returns to the next peak at \\((360^\\circ, 1)\\).",
+                  "work": "\\(\\text{One full cycle: } 0^\\circ \\to 360^\\circ\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 196\" width=\"65%\" height=\"auto\" style=\"max-width:468px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"360\" height=\"196\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><rect x=\"180.0\" y=\"35.4\" width=\"140.0\" height=\"101.2\" fill=\"#dcfce7\" fill-opacity=\"0.45\"/><line x1=\"40.0\" y1=\"31.0\" x2=\"40.0\" y2=\"141.0\" stroke=\"#e2e8f0\" stroke-width=\"0.9\"/><line x1=\"75.0\" y1=\"31.0\" x2=\"75.0\" y2=\"141.0\" stroke=\"#e2e8f0\" stroke-width=\"0.9\"/><line x1=\"110.0\" y1=\"31.0\" x2=\"110.0\" y2=\"141.0\" stroke=\"#e2e8f0\" stroke-width=\"0.9\"/><line x1=\"145.0\" y1=\"31.0\" x2=\"145.0\" y2=\"141.0\" stroke=\"#e2e8f0\" stroke-width=\"0.9\"/><line x1=\"215.0\" y1=\"31.0\" x2=\"215.0\" y2=\"141.0\" stroke=\"#e2e8f0\" stroke-width=\"0.9\"/><line x1=\"250.0\" y1=\"31.0\" x2=\"250.0\" y2=\"141.0\" stroke=\"#e2e8f0\" stroke-width=\"0.9\"/><line x1=\"285.0\" y1=\"31.0\" x2=\"285.0\" y2=\"141.0\" stroke=\"#e2e8f0\" stroke-width=\"0.9\"/><line x1=\"320.0\" y1=\"31.0\" x2=\"320.0\" y2=\"141.0\" stroke=\"#e2e8f0\" stroke-width=\"0.9\"/><line x1=\"20\" y1=\"86\" x2=\"340\" y2=\"86\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"180\" y1=\"18\" x2=\"180\" y2=\"152\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><polyline points=\"27,82 20,86 27,90\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><polyline points=\"333,82 340,86 333,90\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"348\" y=\"90\" text-anchor=\"start\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"12\">x</text><text x=\"188\" y=\"22\" text-anchor=\"start\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"12\">y</text><text x=\"40.0\" y=\"101\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"9.5\" fill=\"#475569\">−360°</text><text x=\"110.0\" y=\"101\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"9.5\" fill=\"#475569\">−180°</text><text x=\"250.0\" y=\"101\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"9.5\" fill=\"#475569\">180°</text><text x=\"320.0\" y=\"101\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"9.5\" fill=\"#475569\">360°</text><text x=\"173\" y=\"45.5\" text-anchor=\"end\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"10\" fill=\"#334155\">1</text><text x=\"173\" y=\"133.5\" text-anchor=\"end\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"10\" fill=\"#334155\">−1</text><polyline points=\"32.2,44.7 34.2,43.5 36.1,42.7 38.1,42.2 40.0,42.0 41.9,42.2 43.9,42.7 45.8,43.5 47.8,44.7 49.7,46.1 51.7,47.9 53.6,50.0 55.6,52.3 57.5,54.9 59.4,57.7 61.4,60.8 63.3,64.0 65.3,67.4 67.2,71.0 69.2,74.6 71.1,78.4 73.1,82.2 75.0,86.0 76.9,89.8 78.9,93.6 80.8,97.4 82.8,101.0 84.7,104.6 86.7,108.0 88.6,111.2 90.6,114.3 92.5,117.1 94.4,119.7 96.4,122.0 98.3,124.1 100.3,125.9 102.2,127.3 104.2,128.5 106.1,129.3 108.1,129.8 110.0,130.0 111.9,129.8 113.9,129.3 115.8,128.5 117.8,127.3 119.7,125.9 121.7,124.1 123.6,122.0 125.6,119.7 127.5,117.1 129.4,114.3 131.4,111.2 133.3,108.0 135.3,104.6 137.2,101.0 139.2,97.4 141.1,93.6 143.1,89.8 145.0,86.0 146.9,82.2 148.9,78.4 150.8,74.6 152.8,71.0 154.7,67.4 156.7,64.0 158.6,60.8 160.6,57.7 162.5,54.9 164.4,52.3 166.4,50.0 168.3,47.9 170.3,46.1 172.2,44.7 174.2,43.5 176.1,42.7 178.1,42.2 180.0,42.0 181.9,42.2 183.9,42.7 185.8,43.5 187.8,44.7 189.7,46.1 191.7,47.9 193.6,50.0 195.6,52.3 197.5,54.9 199.4,57.7 201.4,60.8 203.3,64.0 205.3,67.4 207.2,71.0 209.2,74.6 211.1,78.4 213.1,82.2 215.0,86.0 216.9,89.8 218.9,93.6 220.8,97.4 222.8,101.0 224.7,104.6 226.7,108.0 228.6,111.2 230.6,114.3 232.5,117.1 234.4,119.7 236.4,122.0 238.3,124.1 240.3,125.9 242.2,127.3 244.2,128.5 246.1,129.3 248.1,129.8 250.0,130.0 251.9,129.8 253.9,129.3 255.8,128.5 257.8,127.3 259.7,125.9 261.7,124.1 263.6,122.0 265.6,119.7 267.5,117.1 269.4,114.3 271.4,111.2 273.3,108.0 275.3,104.6 277.2,101.0 279.2,97.4 281.1,93.6 283.1,89.8 285.0,86.0 286.9,82.2 288.9,78.4 290.8,74.6 292.8,71.0 294.7,67.4 296.7,64.0 298.6,60.8 300.6,57.7 302.5,54.9 304.4,52.3 306.4,50.0 308.3,47.9 310.3,46.1 312.2,44.7 314.2,43.5 316.1,42.7 318.1,42.2 320.0,42.0 321.9,42.2 323.9,42.7 325.8,43.5 327.8,44.7\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.2\"/><polyline points=\"180.0,42.0 181.9,42.2 183.9,42.7 185.8,43.5 187.8,44.7 189.7,46.1 191.7,47.9 193.6,50.0 195.6,52.3 197.5,54.9 199.4,57.7 201.4,60.8 203.3,64.0 205.3,67.4 207.2,71.0 209.2,74.6 211.1,78.4 213.1,82.2 215.0,86.0 216.9,89.8 218.9,93.6 220.8,97.4 222.8,101.0 224.7,104.6 226.7,108.0 228.6,111.2 230.6,114.3 232.5,117.1 234.4,119.7 236.4,122.0 238.3,124.1 240.3,125.9 242.2,127.3 244.2,128.5 246.1,129.3 248.1,129.8 250.0,130.0 251.9,129.8 253.9,129.3 255.8,128.5 257.8,127.3 259.7,125.9 261.7,124.1 263.6,122.0 265.6,119.7 267.5,117.1 269.4,114.3 271.4,111.2 273.3,108.0 275.3,104.6 277.2,101.0 279.2,97.4 281.1,93.6 283.1,89.8 285.0,86.0 286.9,82.2 288.9,78.4 290.8,74.6 292.8,71.0 294.7,67.4 296.7,64.0 298.6,60.8 300.6,57.7 302.5,54.9 304.4,52.3 306.4,50.0 308.3,47.9 310.3,46.1 312.2,44.7 314.2,43.5 316.1,42.7 318.1,42.2 320.0,42.0\" fill=\"none\" stroke=\"#15803d\" stroke-width=\"3\"/><line x1=\"180\" y1=\"28\" x2=\"320\" y2=\"28\" stroke=\"#15803d\" stroke-width=\"1.8\"/><text x=\"250\" y=\"24\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#15803d\">Period = 360°</text><text x=\"180\" y=\"189\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#0369a1\">One complete peak-to-peak cycle spans 360°</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Calculate the horizontal length of this cycle: \\(360^\\circ - 0^\\circ = 360^\\circ\\).",
+                  "work": "\\(\\text{Period} = 360^\\circ - 0^\\circ = 360^\\circ\\)"
+                },
+                {
+                  "explain": "Therefore, the period of \\(y = \\cos x\\) is \\(360^\\circ\\).",
+                  "work": "\\(\\text{Period} = 360^\\circ\\)"
                 }
               ],
+              "timeLimit": 60,
               "xp": 1
             },
             {
               "id": "y11a-6c-q9d",
-              "type": "short",
+              "type": "mc",
+              "difficulty": "easy",
               "stem": "What is the amplitude of \\(y = \\cos x\\)?",
-              "answer": "1",
+              "options": [
+                "\\(0\\)",
+                "\\(2\\)",
+                "\\(360\\)",
+                "\\(1\\)"
+              ],
+              "answer": 3,
+              "hint": "Amplitude is HALF the total height from trough to peak: \\(\\dfrac{\\max - \\min}{2} = \\dfrac{1 - (-1)}{2}\\) (the distance from the centre line \\(y = 0\\) to the peak \\(y = 1\\))!",
               "steps": [
                 {
-                  "explain": "Amplitude is 1.",
-                  "work": "\\text{Amplitude} = 1"
+                  "explain": "Amplitude is the vertical distance from the centre line (\\(y = 0\\)) to a maximum peak (\\(y = 1\\)), highlighted in red.",
+                  "work": "\\(\\text{Amplitude} = \\dfrac{y_{\\max} - y_{\\min}}{2}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 196\" width=\"65%\" height=\"auto\" style=\"max-width:468px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"360\" height=\"196\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><line x1=\"40.0\" y1=\"31.0\" x2=\"40.0\" y2=\"141.0\" stroke=\"#e2e8f0\" stroke-width=\"0.9\"/><line x1=\"75.0\" y1=\"31.0\" x2=\"75.0\" y2=\"141.0\" stroke=\"#e2e8f0\" stroke-width=\"0.9\"/><line x1=\"110.0\" y1=\"31.0\" x2=\"110.0\" y2=\"141.0\" stroke=\"#e2e8f0\" stroke-width=\"0.9\"/><line x1=\"145.0\" y1=\"31.0\" x2=\"145.0\" y2=\"141.0\" stroke=\"#e2e8f0\" stroke-width=\"0.9\"/><line x1=\"215.0\" y1=\"31.0\" x2=\"215.0\" y2=\"141.0\" stroke=\"#e2e8f0\" stroke-width=\"0.9\"/><line x1=\"250.0\" y1=\"31.0\" x2=\"250.0\" y2=\"141.0\" stroke=\"#e2e8f0\" stroke-width=\"0.9\"/><line x1=\"285.0\" y1=\"31.0\" x2=\"285.0\" y2=\"141.0\" stroke=\"#e2e8f0\" stroke-width=\"0.9\"/><line x1=\"320.0\" y1=\"31.0\" x2=\"320.0\" y2=\"141.0\" stroke=\"#e2e8f0\" stroke-width=\"0.9\"/><line x1=\"20\" y1=\"86\" x2=\"340\" y2=\"86\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"180\" y1=\"18\" x2=\"180\" y2=\"152\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><polyline points=\"27,82 20,86 27,90\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><polyline points=\"333,82 340,86 333,90\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"348\" y=\"90\" text-anchor=\"start\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"12\">x</text><text x=\"188\" y=\"22\" text-anchor=\"start\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"12\">y</text><text x=\"40.0\" y=\"101\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"9.5\" fill=\"#475569\">−360°</text><text x=\"110.0\" y=\"101\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"9.5\" fill=\"#475569\">−180°</text><text x=\"250.0\" y=\"101\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"9.5\" fill=\"#475569\">180°</text><text x=\"320.0\" y=\"101\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"9.5\" fill=\"#475569\">360°</text><text x=\"173\" y=\"45.5\" text-anchor=\"end\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"10\" fill=\"#334155\">1</text><text x=\"173\" y=\"133.5\" text-anchor=\"end\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"10\" fill=\"#334155\">−1</text><polyline points=\"32.2,44.7 34.2,43.5 36.1,42.7 38.1,42.2 40.0,42.0 41.9,42.2 43.9,42.7 45.8,43.5 47.8,44.7 49.7,46.1 51.7,47.9 53.6,50.0 55.6,52.3 57.5,54.9 59.4,57.7 61.4,60.8 63.3,64.0 65.3,67.4 67.2,71.0 69.2,74.6 71.1,78.4 73.1,82.2 75.0,86.0 76.9,89.8 78.9,93.6 80.8,97.4 82.8,101.0 84.7,104.6 86.7,108.0 88.6,111.2 90.6,114.3 92.5,117.1 94.4,119.7 96.4,122.0 98.3,124.1 100.3,125.9 102.2,127.3 104.2,128.5 106.1,129.3 108.1,129.8 110.0,130.0 111.9,129.8 113.9,129.3 115.8,128.5 117.8,127.3 119.7,125.9 121.7,124.1 123.6,122.0 125.6,119.7 127.5,117.1 129.4,114.3 131.4,111.2 133.3,108.0 135.3,104.6 137.2,101.0 139.2,97.4 141.1,93.6 143.1,89.8 145.0,86.0 146.9,82.2 148.9,78.4 150.8,74.6 152.8,71.0 154.7,67.4 156.7,64.0 158.6,60.8 160.6,57.7 162.5,54.9 164.4,52.3 166.4,50.0 168.3,47.9 170.3,46.1 172.2,44.7 174.2,43.5 176.1,42.7 178.1,42.2 180.0,42.0 181.9,42.2 183.9,42.7 185.8,43.5 187.8,44.7 189.7,46.1 191.7,47.9 193.6,50.0 195.6,52.3 197.5,54.9 199.4,57.7 201.4,60.8 203.3,64.0 205.3,67.4 207.2,71.0 209.2,74.6 211.1,78.4 213.1,82.2 215.0,86.0 216.9,89.8 218.9,93.6 220.8,97.4 222.8,101.0 224.7,104.6 226.7,108.0 228.6,111.2 230.6,114.3 232.5,117.1 234.4,119.7 236.4,122.0 238.3,124.1 240.3,125.9 242.2,127.3 244.2,128.5 246.1,129.3 248.1,129.8 250.0,130.0 251.9,129.8 253.9,129.3 255.8,128.5 257.8,127.3 259.7,125.9 261.7,124.1 263.6,122.0 265.6,119.7 267.5,117.1 269.4,114.3 271.4,111.2 273.3,108.0 275.3,104.6 277.2,101.0 279.2,97.4 281.1,93.6 283.1,89.8 285.0,86.0 286.9,82.2 288.9,78.4 290.8,74.6 292.8,71.0 294.7,67.4 296.7,64.0 298.6,60.8 300.6,57.7 302.5,54.9 304.4,52.3 306.4,50.0 308.3,47.9 310.3,46.1 312.2,44.7 314.2,43.5 316.1,42.7 318.1,42.2 320.0,42.0 321.9,42.2 323.9,42.7 325.8,43.5 327.8,44.7\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.2\"/><line x1=\"180\" y1=\"86\" x2=\"180\" y2=\"42\" stroke=\"#dc2626\" stroke-width=\"3\"/><circle cx=\"180\" cy=\"42\" r=\"4\" fill=\"#dc2626\"/><rect x=\"188\" y=\"56.08\" width=\"74\" height=\"17\" rx=\"4\" fill=\"#ffffff\" fill-opacity=\"0.92\"/><text x=\"225\" y=\"67.52\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#dc2626\">Amplitude = 1</text><text x=\"180\" y=\"189\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#0369a1\">Distance from midline y = 0 to peak y = 1 is 1</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Substitute \\(y_{\\max} = 1\\) and \\(y_{\\min} = -1\\): \\(\\dfrac{1 - (-1)}{2} = \\dfrac{2}{2} = 1\\). (Avoid the common trap of giving the full peak-to-trough height \\(2\\)!)",
+                  "work": "\\(\\text{Amplitude} = \\dfrac{1 - (-1)}{2} = \\dfrac{2}{2} = 1\\)"
+                },
+                {
+                  "explain": "Therefore, the amplitude of \\(y = \\cos x\\) is \\(1\\).",
+                  "work": "\\(\\text{Amplitude} = 1\\)"
                 }
               ],
+              "timeLimit": 60,
               "xp": 1
             }
           ],
-          "answer": "Domain: all real x. Range: -1 <= y <= 1. Period: 360°. Amplitude: 1.",
-          "hint": "Consider the properties of the cosine wave.",
-          "solution": "Domain: all real \\(x\\). Range: \\(-1 \\le y \\le 1\\). Period: \\(360^{\\circ}\\). Amplitude: \\(1\\).",
-          "steps": [
-            {
-              "explain": "The unit circle is a circle centered at the origin with radius 1. At each standard angle (0°, 90°, 180°, 270°), a ray from the center intersects the circle at a specific point (x, y).",
-              "work": "Unit circle coordinates: 0° = (1, 0), 90° = (0, 1), 180° = (−1, 0), 270° = (0, −1)"
-            },
-            {
-              "explain": "The sine function is the ratio of the y-coordinate to the radius: sin θ = y/r. Since r = 1 on the unit circle, sin θ simply equals the y-coordinate.",
-              "work": "sin θ = y (from the unit circle)"
-            },
-            {
-              "explain": "The cosine function is the ratio of the x-coordinate to the radius: cos θ = x/r. Since r = 1 on the unit circle, cos θ simply equals the x-coordinate.",
-              "work": "cos θ = x (from the unit circle)"
-            },
-            {
-              "explain": "The tangent function is the ratio of the y-coordinate to the x-coordinate: tan θ = y/x. When x = 0, the tangent is undefined because we cannot divide by zero.",
-              "work": "tan θ = y/x (undefined when x = 0)"
-            }
-          ],
-          "manual": true,
+          "steps": [],
           "timeLimit": 90
         },
         {
