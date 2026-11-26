@@ -303,6 +303,102 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "gosford2020-pre-q8",
+          "type": "mc",
+          "stem": "What is the expansion of \\(\\left(3-2\\sqrt2\\right)^{3}\\) ?",
+          "difficulty": "medium",
+          "options": [
+            "\\(99-70\\sqrt2\\)",
+            "\\(27-16\\sqrt2\\)",
+            "\\(51-34\\sqrt2\\)",
+            "\\(171-124\\sqrt2\\)"
+          ],
+          "answer": 0,
+          "hint": "Use the binomial expansion \\((a+b)^{3}=a^{3}+3a^{2}b+3ab^{2}+b^{3}\\) with \\(a=3\\), \\(b=-2\\sqrt2\\). Be careful: \\(\\left(2\\sqrt2\\right)^{2}=8\\) and \\(\\left(2\\sqrt2\\right)^{3}=16\\sqrt2\\).",
+          "steps": [
+            {
+              "explain": "Write down the terms with \\(a=3\\), \\(b=-2\\sqrt2\\).",
+              "work": "\\(3^{3}+3(3)^{2}(-2\\sqrt2)+3(3)(-2\\sqrt2)^{2}+(-2\\sqrt2)^{3}\\)"
+            },
+            {
+              "explain": "Evaluate each: \\(27\\); \\(3\\times9\\times(-2\\sqrt2)=-54\\sqrt2\\); \\(9\\times8=72\\); \\((-2\\sqrt2)^{3}=-8\\times2\\sqrt2=-16\\sqrt2\\).",
+              "work": "\\(=27-54\\sqrt2+72-16\\sqrt2\\)"
+            },
+            {
+              "explain": "Collect like terms: numbers \\(27+72=99\\); surds \\(-54\\sqrt2-16\\sqrt2=-70\\sqrt2\\).",
+              "work": "\\(=99-70\\sqrt2\\)"
+            },
+            {
+              "explain": "Check: \\(3-2\\sqrt2\\approx0.1716\\), cubed \\(\\approx0.00505\\); and \\(99-70\\sqrt2=99-98.9949=0.0051\\) ✓. Why not the others: B, C and D come from slips such as forgetting that \\(\\left(2\\sqrt2\\right)^{2}=8\\) or using wrong binomial coefficients.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "What is the expansion of",
+              "note": "\\((a+b)^3\\); \\((2\\sqrt2)^2=8\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Year 11 Preliminary Mathematics Extension 1 Final Assessment",
+            "school": "Gosford High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "gosford2020-pre-q10di",
+          "type": "mc",
+          "stem": "Write down the binomial expansion of \\((1+x)^{n}\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(\\displaystyle\\binom{n}{0}+\\binom{n}{1}x+\\binom{n}{2}x^{2}+\\dots+\\binom{n}{n}x^{n}\\)",
+            "\\(\\displaystyle\\binom{n}{1}x+\\binom{n}{2}x^{2}+\\dots+\\binom{n}{n}x^{n}\\)",
+            "\\(\\displaystyle1+nx+nx^{2}+\\dots+nx^{n}\\)",
+            "\\(\\displaystyle\\binom{n}{0}x^{n}+\\binom{n}{1}x^{n-1}+\\dots+\\binom{n}{n}\\cdot1\\cdot x\\)"
+          ],
+          "answer": 0,
+          "hint": "Binomial theorem: \\((a+b)^{n}=\\displaystyle\\sum_{k=0}^{n}\\binom{n}{k}a^{n-k}b^{k}\\). With \\(a=1\\) and \\(b=x\\) every power of 1 is 1, leaving \\(\\binom{n}{k}x^{k}\\).",
+          "steps": [
+            {
+              "explain": "General term: \\(\\binom{n}{k}(1)^{n-k}x^{k}=\\binom{n}{k}x^{k}\\), for \\(k=0,1,2,\\dots,n\\).",
+              "work": "\\(\\binom{n}{k}(1)^{n-k}x^{k}=\\binom{n}{k}x^{k}\\)"
+            },
+            {
+              "explain": "Write out the terms: the first is \\(k=0\\) (\\(\\binom{n}{0}=1\\)), the last is \\(k=n\\) (\\(\\binom{n}{n} x^{n}\\)).",
+              "work": "\\((1+x)^{n}=\\binom{n}{0}+\\binom{n}{1}x+\\binom{n}{2}x^{2}+\\binom{n}{3}x^{3}+\\dots+\\binom{n}{n}x^{n}\\)"
+            },
+            {
+              "explain": "Why not the others: B misses the \\(k=0\\) term; C uses \\(n\\) for every coefficient; D has the powers of \\(x\\) running the wrong way.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Write down the binomial expansion of \\((1+x)^{n}\\)",
+              "note": "\\(\\sum_{k=0}^{n}\\binom{n}{k}x^{k}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Year 11 Preliminary Mathematics Extension 1 Final Assessment",
+            "school": "Gosford High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -2270,6 +2366,160 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "gosford2020-pre-q7",
+          "type": "mc",
+          "stem": "In how many ways can a group of 6 people line up in a queue so that the oldest person is in front of the youngest person?",
+          "difficulty": "medium",
+          "options": [
+            "\\(360\\)",
+            "\\(180\\)",
+            "\\(540\\)",
+            "\\(720\\)"
+          ],
+          "answer": 0,
+          "hint": "Use SYMMETRY. Among all \\(6!\\) queues, in exactly half the oldest is in front of the youngest and in the other half the youngest is in front (swapping the two people turns one into the other).",
+          "steps": [
+            {
+              "explain": "Total queues with no restriction.",
+              "work": "\\(6!=720\\)"
+            },
+            {
+              "explain": "Pair every queue with the one where the oldest and youngest SWAP places. In each pair exactly one has the oldest in front.",
+              "work": "\\(\\text{favourable}=\\dfrac{1}{2}\\times720\\)"
+            },
+            {
+              "explain": "Calculate.",
+              "work": "\\(\\dfrac{1}{2}\\times6!=360\\)"
+            },
+            {
+              "explain": "Why not the others: D (720) ignores the condition; B (180) is a quarter of 720 and C (540) is three quarters.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "In how many ways can a group of 6 people line up in a queue",
+              "note": "Half of \\(6!\\) by symmetry."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Year 11 Preliminary Mathematics Extension 1 Final Assessment",
+            "school": "Gosford High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "gosford2020-pre-q12ai",
+          "type": "mc",
+          "stem": "Find the number of ways in which the letters of the word TRIANGLE can be arranged in a line so that all the vowels are next to each other and all the consonants are next to each other.",
+          "difficulty": "medium",
+          "options": [
+            "\\(1440\\)",
+            "\\(720\\)",
+            "\\(14400\\)",
+            "\\(40320\\)"
+          ],
+          "answer": 0,
+          "hint": "Treat the VOWEL group and the CONSONANT group as two blocks. Count: (order of the 2 blocks) \\(\\times\\) (arrangements inside the vowel block) \\(\\times\\) (arrangements inside the consonant block).",
+          "steps": [
+            {
+              "explain": "TRIANGLE has 8 letters: vowels I, A, E (3) and consonants T, R, N, G, L (5).",
+              "work": "\\(\\text{vowels}=3,\\qquad\\text{consonants}=5\\)"
+            },
+            {
+              "explain": "Two blocks (vowels together, consonants together) can be in 2 orders: VC or CV.",
+              "work": "\\(2!=2\\)"
+            },
+            {
+              "explain": "Inside the blocks: the 3 vowels in \\(3!\\) ways, the 5 consonants in \\(5!\\) ways.",
+              "work": "\\(3!=6,\\qquad5!=120\\)"
+            },
+            {
+              "explain": "Multiply all three.",
+              "work": "\\(2\\times6\\times120=1440\\)"
+            },
+            {
+              "explain": "Why not the others: B (720) forgets the order of the blocks (or one factor); C (14400) is part (ii); D (40320) is \\(8!\\) (no restriction).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "so that all the vowels are next to each other and all the consonants are next to each other.",
+              "note": "\\(2!\\times3!\\times5!\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Year 11 Preliminary Mathematics Extension 1 Final Assessment",
+            "school": "Gosford High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "gosford2020-pre-q12aii",
+          "type": "mc",
+          "stem": "Find the number of ways in which the letters of the word TRIANGLE can be arranged in a line so that consonants are in the two end positions.",
+          "difficulty": "medium",
+          "options": [
+            "\\(14400\\)",
+            "\\(1440\\)",
+            "\\(720\\)",
+            "\\(40320\\)"
+          ],
+          "answer": 0,
+          "hint": "Fill the two END positions first (with consonants), then arrange the remaining 6 letters in the middle. Positions at the ends are different (first and last), so ORDER matters: \\(5\\times4\\).",
+          "steps": [
+            {
+              "explain": "There are 5 consonants (T, R, N, G, L). First position: 5 choices. Last position: 4 choices left.",
+              "work": "\\(5\\times4=20\\)"
+            },
+            {
+              "explain": "The remaining 6 letters (3 vowels and 3 consonants) fill the 6 middle places in any order.",
+              "work": "\\(6!=720\\)"
+            },
+            {
+              "explain": "Multiply (end positions AND middle).",
+              "work": "\\(20\\times720=14400\\)"
+            },
+            {
+              "explain": "Why not the others: B (1440) is part (i); C (720) forgets the \\(5\\times4\\); D (40320) has no restriction.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "so that consonants are in the two end positions.",
+              "note": "\\(5\\times4\\times6!\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Year 11 Preliminary Mathematics Extension 1 Final Assessment",
+            "school": "Gosford High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -3013,6 +3263,106 @@
           "meta": {
             "source": "Hills Grammar 2025 Trial HSC Mathematics Extension 1",
             "school": "The Hills Grammar School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "gosford2020-pre-q12ci",
+          "type": "mc",
+          "stem": "Find the number of ways in which 2 boys and 5 girls can be arranged in a circle if there is no restrictions.",
+          "difficulty": "medium",
+          "options": [
+            "\\(720\\)",
+            "\\(5040\\)",
+            "\\(240\\)",
+            "\\(120\\)"
+          ],
+          "answer": 0,
+          "hint": "In a CIRCLE rotations of the same arrangement count as one. Fix ONE person in place to remove the rotations, then arrange the others in a line: \\((n-1)!\\).",
+          "steps": [
+            {
+              "explain": "Total people \\(=2+5=7\\).",
+              "work": "\\(n=7\\)"
+            },
+            {
+              "explain": "Fix one person (to fix the rotation) and arrange the remaining 6 in order around the circle.",
+              "work": "\\((7-1)!=6!\\)"
+            },
+            {
+              "explain": "Calculate.",
+              "work": "\\(6!=720\\)"
+            },
+            {
+              "explain": "Why not the others: B (5040) is \\(7!\\) (a line); C (240) is part (ii); D (120) is \\(5!\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "if there is no restrictions",
+              "note": "Circle: \\((n-1)!\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Year 11 Preliminary Mathematics Extension 1 Final Assessment",
+            "school": "Gosford High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "gosford2020-pre-q12cii",
+          "type": "mc",
+          "stem": "Find the number of ways in which 2 boys and 5 girls can be arranged in a circle if the boys are to sit together.",
+          "difficulty": "medium",
+          "options": [
+            "\\(240\\)",
+            "\\(720\\)",
+            "\\(120\\)",
+            "\\(1440\\)"
+          ],
+          "answer": 0,
+          "hint": "Glue the 2 boys into ONE block. Then arrange (block + 5 girls) \\(=6\\) objects in a circle: \\((6-1)!\\). Finally the 2 boys can swap inside the block: \\(2!\\).",
+          "steps": [
+            {
+              "explain": "Treat the boys as one block: 5 girls \\(+\\) 1 block \\(=6\\) objects in a circle.",
+              "work": "\\((6-1)!=5!=120\\)"
+            },
+            {
+              "explain": "The two boys can sit in either order inside the block.",
+              "work": "\\(2!=2\\)"
+            },
+            {
+              "explain": "Multiply.",
+              "work": "\\(5!\\times2!=120\\times2=240\\)"
+            },
+            {
+              "explain": "Why not the others: B (720) is part (i); C (120) forgets the boys’ order; D (1440) is \\(6!\\times2\\) (treating the 6 objects as a line).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "if the boys are to sit together",
+              "note": "\\(5!\\times2!\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Year 11 Preliminary Mathematics Extension 1 Final Assessment",
+            "school": "Gosford High School",
             "grade": "11",
             "origin": "teacher"
           }
@@ -3869,6 +4219,102 @@
           "meta": {
             "source": "Glenwood High School 2020 Year 11 Mathematics Extension 1 Yearly Examination",
             "school": "Glenwood High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "gosford2020-pre-q10ai",
+          "type": "mc",
+          "stem": "Find the number of ways that 4 students can be chosen from 6 juniors and 3 seniors without restriction.",
+          "difficulty": "easy",
+          "options": [
+            "\\(126\\)",
+            "\\(81\\)",
+            "\\(3024\\)",
+            "\\(15\\)"
+          ],
+          "answer": 0,
+          "hint": "Choosing a GROUP has no order, so use combinations. “Without restriction” means all \\(6+3=9\\) students are treated alike.",
+          "steps": [
+            {
+              "explain": "Total students \\(=6+3=9\\). Choose 4 of them.",
+              "work": "\\(\\binom{9}{4}=\\dfrac{9\\times8\\times7\\times6}{4\\times3\\times2\\times1}\\)"
+            },
+            {
+              "explain": "Calculate: numerator \\(3024\\), denominator \\(24\\).",
+              "work": "\\(\\dfrac{3024}{24}=126\\)"
+            },
+            {
+              "explain": "Why not the others: B (81) is the answer to part (ii); C (3024) is \\(9\\times8\\times7\\times6\\) (ordered, not divided by \\(4!\\)); D (15) is \\(\\binom{6}{2}\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "without restriction",
+              "note": "\\(\\binom{9}{4}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Year 11 Preliminary Mathematics Extension 1 Final Assessment",
+            "school": "Gosford High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "gosford2020-pre-q10aii",
+          "type": "mc",
+          "stem": "Find the number of ways that 4 students can be chosen from 6 juniors and 3 seniors so that there are unequal numbers of juniors and seniors.",
+          "difficulty": "medium",
+          "options": [
+            "\\(81\\)",
+            "\\(126\\)",
+            "\\(45\\)",
+            "\\(15\\)"
+          ],
+          "answer": 0,
+          "hint": "“Unequal numbers” is awkward to count directly, so use the COMPLEMENT: total \\(-\\) (equal numbers). Equal numbers with 4 students means 2 juniors AND 2 seniors.",
+          "steps": [
+            {
+              "explain": "Total ways (from part i).",
+              "work": "\\(\\binom{9}{4}=126\\)"
+            },
+            {
+              "explain": "Equal numbers: 2 juniors and 2 seniors. Choose the juniors AND the seniors (multiply).",
+              "work": "\\(\\binom{6}{2}\\times\\binom{3}{2}=15\\times3=45\\)"
+            },
+            {
+              "explain": "Unequal \\(=\\) total \\(-\\) equal.",
+              "work": "\\(126-45=81\\)"
+            },
+            {
+              "explain": "Check by direct count: (1 junior, 3 seniors) \\(6\\times1=6\\); (3 juniors, 1 senior) \\(20\\times3=60\\); (4 juniors, 0 seniors) \\(15\\times1=15\\); \\(6+60+15=81\\) ✓. Why not the others: B is the total; C is the equal case; D is \\(\\binom{6}{2}\\) only.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "so that there are unequal numbers of juniors and seniors.",
+              "note": "Complement: total \\(-\\) (2 juniors, 2 seniors)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Year 11 Preliminary Mathematics Extension 1 Final Assessment",
+            "school": "Gosford High School",
             "grade": "11",
             "origin": "teacher"
           }

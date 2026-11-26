@@ -2302,6 +2302,56 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "gosford2020-pre-q1",
+          "type": "mc",
+          "stem": "What is the Cartesian equation of the curve with parametric equations \\(x=20t\\) and \\(y=40t-5t^{2}\\) ?",
+          "difficulty": "medium",
+          "options": [
+            "\\(y=2x-\\dfrac{x^{2}}{80}\\)",
+            "\\(y=2x-\\dfrac{x^{2}}{400}\\)",
+            "\\(y=2x-\\dfrac{x^{2}}{200}\\)",
+            "\\(y=2x-\\dfrac{x^{2}}{160}\\)"
+          ],
+          "answer": 0,
+          "hint": "To ELIMINATE the parameter \\(t\\): make \\(t\\) the subject of the simpler equation (the one for \\(x\\)), then substitute into the other equation. Be careful squaring: \\(\\left(\\dfrac{x}{20}\\right)^{2}=\\dfrac{x^{2}}{400}\\).",
+          "steps": [
+            {
+              "explain": "From \\(x=20t\\): \\(t=\\dfrac{x}{20}\\).",
+              "work": "\\(t=\\dfrac{x}{20}\\)"
+            },
+            {
+              "explain": "Substitute into \\(y=40t-5t^{2}\\).",
+              "work": "\\(y=40\\left(\\dfrac{x}{20}\\right)-5\\left(\\dfrac{x}{20}\\right)^{2}\\)"
+            },
+            {
+              "explain": "Simplify each term: \\(40\\times\\dfrac x{20}=2x\\) and \\(5\\times\\dfrac{x^{2}}{400}=\\dfrac{x^{2}}{80}\\) (divide top and bottom by 5).",
+              "work": "\\(y=2x-\\dfrac{5x^{2}}{400}=2x-\\dfrac{x^{2}}{80}\\)"
+            },
+            {
+              "explain": "Why not the others: B forgets to cancel the 5 (\\(\\dfrac{5x^{2}}{400}\\) is NOT \\(\\dfrac{x^{2}}{400}\\)); C and D use \\(\\left(\\dfrac{x}{10}\\right)^{2}\\)-type slips.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "What is the Cartesian equation of the curve",
+              "note": "\\(t=\\dfrac x{20}\\); substitute; \\(\\dfrac{5}{400}=\\dfrac1{80}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Year 11 Preliminary Mathematics Extension 1 Final Assessment",
+            "school": "Gosford High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },

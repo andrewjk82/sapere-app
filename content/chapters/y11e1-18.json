@@ -185,6 +185,56 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "gosford2020-pre-q10dii",
+          "type": "mc",
+          "stem": "Use the expansion of \\((1+x)^{n}\\) to show that \\({}^{n}C_{0}+{}^{n}C_{1}+\\dots+{}^{n}C_{n}=2^{n}\\). Which working proves it?",
+          "difficulty": "medium",
+          "options": [
+            "Put \\(x=1\\): LHS \\(=(1+1)^{n}=2^{n}\\); RHS \\(={}^{n}C_{0}+{}^{n}C_{1}(1)+{}^{n}C_{2}(1)^{2}+\\dots+{}^{n}C_{n}(1)^{n}\\)",
+            "Put \\(x=0\\): LHS \\(=1\\), RHS \\(={}^{n}C_{0}\\)",
+            "Put \\(x=-1\\): LHS \\(=0\\), RHS \\(={}^{n}C_{0}-{}^{n}C_{1}+\\dots\\)",
+            "Put \\(x=2\\): LHS \\(=3^{n}\\)"
+          ],
+          "answer": 0,
+          "hint": "The identity \\((1+x)^{n}={}^{n}C_{0}+{}^{n}C_{1}x+\\dots+{}^{n}C_{n}x^{n}\\) is true for EVERY \\(x\\). Choose a value of \\(x\\) that makes every power of \\(x\\) equal to 1: \\(x=1\\).",
+          "steps": [
+            {
+              "explain": "Start from the expansion (true for all \\(x\\)).",
+              "work": "\\((1+x)^{n}={}^{n}C_{0}+{}^{n}C_{1}x+{}^{n}C_{2}x^{2}+\\dots+{}^{n}C_{n}x^{n}\\)"
+            },
+            {
+              "explain": "Substitute \\(x=1\\): every \\(x^{k}\\) becomes 1.",
+              "work": "\\((1+1)^{n}={}^{n}C_{0}+{}^{n}C_{1}+{}^{n}C_{2}+\\dots+{}^{n}C_{n}\\)"
+            },
+            {
+              "explain": "Left side: \\((1+1)^{n}=2^{n}\\).",
+              "work": "\\({}^{n}C_{0}+{}^{n}C_{1}+\\dots+{}^{n}C_{n}=2^{n}\\ \\checkmark\\)"
+            },
+            {
+              "explain": "Why not the others: \\(x=0\\) gives only the first term; \\(x=-1\\) gives the ALTERNATING sum \\(=0\\); \\(x=2\\) gives \\(3^{n}={}^{n}C_{0}+2\\,{}^{n}C_{1}+\\dots\\) (a different identity).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Use the expansion of \\((1+x)^{n}\\) to show that",
+              "note": "Substitute \\(x=1\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Year 11 Preliminary Mathematics Extension 1 Final Assessment",
+            "school": "Gosford High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     }

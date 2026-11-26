@@ -1166,6 +1166,60 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "gosford2020-pre-q12b",
+          "type": "mc",
+          "stem": "If \\(\\sec x+\\tan x=k\\), find in terms of \\(k\\) the value of \\(\\sec x\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\sec x=\\dfrac{1}{2}\\left(k+\\dfrac{1}{k}\\right)\\)",
+            "\\(\\sec x=\\dfrac{1}{2}\\left(k-\\dfrac{1}{k}\\right)\\)",
+            "\\(\\sec x=k-\\tan x\\cdot k\\)",
+            "\\(\\sec x=2k\\)"
+          ],
+          "answer": 0,
+          "hint": "Use the identity \\(\\sec^{2}x-\\tan^{2}x=1\\) and the difference of two squares: \\((\\sec x+\\tan x)(\\sec x-\\tan x)=1\\). This gives \\(\\sec x-\\tan x\\) in terms of \\(k\\); then ADD the two equations to eliminate \\(\\tan x\\).",
+          "steps": [
+            {
+              "explain": "Difference of two squares with \\(\\sec^{2}x-\\tan^{2}x=1\\) (from \\(1+\\tan^{2}x=\\sec^{2}x\\)).",
+              "work": "\\((\\sec x+\\tan x)(\\sec x-\\tan x)=1\\)"
+            },
+            {
+              "explain": "Substitute \\(\\sec x+\\tan x=k\\) and solve for the second factor.",
+              "work": "\\(k(\\sec x-\\tan x)=1\\ \\Rightarrow\\ \\sec x-\\tan x=\\dfrac{1}{k}\\)"
+            },
+            {
+              "explain": "Add the two equations: \\(\\sec x+\\tan x=k\\) and \\(\\sec x-\\tan x=\\dfrac{1}{k}\\). The \\(\\tan x\\) terms cancel.",
+              "work": "\\(2\\sec x=k+\\dfrac{1}{k}\\)"
+            },
+            {
+              "explain": "Divide by 2.",
+              "work": "\\(\\sec x=\\dfrac{1}{2}\\left(k+\\dfrac{1}{k}\\right)\\)"
+            },
+            {
+              "explain": "Check: \\(x=0\\): \\(\\sec0+\\tan0=1=k\\), then \\(\\dfrac{1}{2}(1+1)=1=\\sec0\\) ✓. Why not the others: B SUBTRACTS (that gives \\(\\tan x=\\dfrac{1}{2}\\left(k-\\dfrac{1}{k}\\right)\\)); C and D are not valid.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "find in terms of \\(k\\) the value of \\(\\sec x\\).",
+              "note": "\\(\\sec^2-\\tan^2=1\\); add \\(\\sec+\\tan\\) and \\(\\sec-\\tan\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Year 11 Preliminary Mathematics Extension 1 Final Assessment",
+            "school": "Gosford High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -2205,6 +2259,60 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "gosford2020-pre-q9c",
+          "type": "mc",
+          "stem": "Show that \\(\\dfrac{1-\\cos2x+\\sin2x}{1+\\cos2x+\\sin2x}=\\tan x\\). Which working is correct?",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\dfrac{2\\sin^{2}x+2\\sin x\\cos x}{2\\cos^{2}x+2\\sin x\\cos x}=\\dfrac{2\\sin x(\\sin x+\\cos x)}{2\\cos x(\\cos x+\\sin x)}=\\tan x\\)",
+            "\\(\\dfrac{2\\cos^{2}x+2\\sin x\\cos x}{2\\sin^{2}x+2\\sin x\\cos x}=\\cot x\\)",
+            "\\(\\dfrac{1-\\cos2x+\\sin2x}{1+\\cos2x+\\sin2x}=\\dfrac{\\sin2x}{\\sin2x}=1\\)",
+            "\\(\\dfrac{2\\sin^{2}x+\\sin x\\cos x}{2\\cos^{2}x+\\sin x\\cos x}=\\tan x\\)"
+          ],
+          "answer": 0,
+          "hint": "Use the double angle formulas that turn “1 \\(\\pm\\) cos \\(2x\\)” into a single term: \\(1-\\cos2x=2\\sin^{2}x\\), \\(1+\\cos2x=2\\cos^{2}x\\), and \\(\\sin2x=2\\sin x\\cos x\\). Then factorise and cancel.",
+          "steps": [
+            {
+              "explain": "Numerator: \\(1-\\cos2x=2\\sin^{2}x\\) and \\(\\sin2x=2\\sin x\\cos x\\).",
+              "work": "\\(\\text{numerator}=2\\sin^{2}x+2\\sin x\\cos x\\)"
+            },
+            {
+              "explain": "Denominator: \\(1+\\cos2x=2\\cos^{2}x\\) and \\(\\sin2x=2\\sin x\\cos x\\).",
+              "work": "\\(\\text{denominator}=2\\cos^{2}x+2\\sin x\\cos x\\)"
+            },
+            {
+              "explain": "Factor out \\(2\\sin x\\) on top and \\(2\\cos x\\) at the bottom.",
+              "work": "\\(\\dfrac{2\\sin x(\\sin x+\\cos x)}{2\\cos x(\\cos x+\\sin x)}\\)"
+            },
+            {
+              "explain": "Cancel the common factors \\(2\\) and \\((\\sin x+\\cos x)\\).",
+              "work": "\\(=\\dfrac{\\sin x}{\\cos x}=\\tan x\\ \\checkmark\\)"
+            },
+            {
+              "explain": "Why not the others: B has numerator and denominator swapped (gives \\(\\cot x\\)); C wrongly cancels the \\(1\\pm\\cos2x\\) terms; D drops the 2 in \\(2\\sin x\\cos x\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that",
+              "note": "\\(1-\\cos2x=2\\sin^2x\\); \\(1+\\cos2x=2\\cos^2x\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Year 11 Preliminary Mathematics Extension 1 Final Assessment",
+            "school": "Gosford High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -3190,6 +3298,63 @@
           "meta": {
             "source": "Hills Grammar 2025 Trial HSC Mathematics Extension 1",
             "school": "The Hills Grammar School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "gosford2020-pre-q11c",
+          "type": "mc",
+          "stem": "Solve the equation \\(\\sin^{2}\\theta=\\cos\\theta+1\\) where \\(0\\le\\theta\\le2\\pi\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\theta=\\dfrac\\pi2,\\ \\pi,\\ \\dfrac{3\\pi}{2}\\)",
+            "\\(\\theta=\\dfrac\\pi2,\\ \\dfrac{3\\pi}{2}\\)",
+            "\\(\\theta=\\pi\\)",
+            "\\(\\theta=0,\\ \\pi,\\ 2\\pi\\)"
+          ],
+          "answer": 0,
+          "hint": "Everything must be in ONE trig function. Replace \\(\\sin^{2}\\theta=1-\\cos^{2}\\theta\\) so the equation is a quadratic in \\(\\cos\\theta\\). Factorise (do NOT divide by \\(\\cos\\theta\\): you would lose solutions).",
+          "steps": [
+            {
+              "explain": "Replace \\(\\sin^{2}\\theta\\) using \\(\\sin^{2}\\theta+\\cos^{2}\\theta=1\\).",
+              "work": "\\(1-\\cos^{2}\\theta=\\cos\\theta+1\\)"
+            },
+            {
+              "explain": "Move everything to one side: add \\(\\cos^{2}\\theta\\), subtract 1 and \\(\\cos\\theta\\).",
+              "work": "\\(\\cos^{2}\\theta+\\cos\\theta=0\\)"
+            },
+            {
+              "explain": "Factorise by taking out \\(\\cos\\theta\\).",
+              "work": "\\(\\cos\\theta(\\cos\\theta+1)=0\\)"
+            },
+            {
+              "explain": "Two cases: \\(\\cos\\theta=0\\) gives \\(\\theta=\\dfrac\\pi2,\\dfrac{3\\pi}{2}\\); \\(\\cos\\theta=-1\\) gives \\(\\theta=\\pi\\) (see the graph of \\(y=\\cos\\theta\\)).",
+              "work": "\\(\\theta=\\dfrac\\pi2,\\ \\pi,\\ \\dfrac{3\\pi}{2}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 250\" width=\"100%\" height=\"auto\" style=\"max-width:420px;display:block;margin:0 auto\"><line x1=\"6.0\" y1=\"125.0\" x2=\"414.0\" y2=\"125.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"58.8\" y1=\"244.0\" x2=\"58.8\" y2=\"6.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"414.0\" y1=\"125.0\" x2=\"407.1\" y2=\"121.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"414.0\" y1=\"125.0\" x2=\"407.1\" y2=\"129.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"58.8\" y1=\"6.0\" x2=\"54.8\" y2=\"12.9\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"58.8\" y1=\"6.0\" x2=\"62.8\" y2=\"12.9\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><text x=\"416.0\" y=\"140.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">θ</text><text x=\"67.8\" y=\"16.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">y</text><polyline points=\"58.8,58.3 59.4,58.3 60.0,58.4 60.6,58.4 61.2,58.4 61.8,58.5 62.4,58.5 63.1,58.6 63.7,58.7 64.3,58.8 64.9,58.9 65.5,59.0 66.1,59.1 66.7,59.2 67.4,59.4 68.0,59.5 68.6,59.7 69.2,59.8 69.8,60.0 70.4,60.2 71.0,60.4 71.7,60.6 72.3,60.9 72.9,61.1 73.5,61.3 74.1,61.6 74.7,61.9 75.4,62.1 76.0,62.4 76.6,62.7 77.2,63.0 77.8,63.3 78.4,63.7 79.0,64.0 79.7,64.3 80.3,64.7 80.9,65.0 81.5,65.4 82.1,65.8 82.7,66.2 83.3,66.6 84.0,67.0 84.6,67.4 85.2,67.8 85.8,68.3 86.4,68.7 87.0,69.2 87.6,69.6 88.3,70.1 88.9,70.6 89.5,71.1 90.1,71.6 90.7,72.1 91.3,72.6 92.0,73.1 92.6,73.6 93.2,74.2 93.8,74.7 94.4,75.3 95.0,75.8 95.6,76.4 96.3,77.0 96.9,77.6 97.5,78.2 98.1,78.8 98.7,79.4 99.3,80.0 99.9,80.6 100.6,81.2 101.2,81.9 101.8,82.5 102.4,83.2 103.0,83.8 103.6,84.5 104.2,85.1 104.9,85.8 105.5,86.5 106.1,87.2 106.7,87.9 107.3,88.6 107.9,89.3 108.5,90.0 109.2,90.7 109.8,91.4 110.4,92.2 111.0,92.9 111.6,93.6 112.2,94.4 112.9,95.1 113.5,95.9 114.1,96.6 114.7,97.4 115.3,98.1 115.9,98.9 116.5,99.7 117.2,100.5 117.8,101.2 118.4,102.0 119.0,102.8 119.6,103.6 120.2,104.4 120.8,105.2 121.5,106.0 122.1,106.8 122.7,107.6 123.3,108.4 123.9,109.2 124.5,110.0 125.1,110.9 125.8,111.7 126.4,112.5 127.0,113.3 127.6,114.2 128.2,115.0 128.8,115.8 129.5,116.6 130.1,117.5 130.7,118.3 131.3,119.1 131.9,120.0 132.5,120.8 133.1,121.7 133.8,122.5 134.4,123.3 135.0,124.2 135.6,125.0 136.2,125.8 136.8,126.7 137.4,127.5 138.1,128.3 138.7,129.2 139.3,130.0 139.9,130.9 140.5,131.7 141.1,132.5 141.7,133.4 142.4,134.2 143.0,135.0 143.6,135.8 144.2,136.7 144.8,137.5 145.4,138.3 146.1,139.1 146.7,140.0 147.3,140.8 147.9,141.6 148.5,142.4 149.1,143.2 149.7,144.0 150.4,144.8 151.0,145.6 151.6,146.4 152.2,147.2 152.8,148.0 153.4,148.8 154.0,149.5 154.7,150.3 155.3,151.1 155.9,151.9 156.5,152.6 157.1,153.4 157.7,154.1 158.3,154.9 159.0,155.6 159.6,156.4 160.2,157.1 160.8,157.8 161.4,158.6 162.0,159.3 162.6,160.0 163.3,160.7 163.9,161.4 164.5,162.1 165.1,162.8 165.7,163.5 166.3,164.2 167.0,164.9 167.6,165.5 168.2,166.2 168.8,166.8 169.4,167.5 170.0,168.1 170.6,168.8 171.3,169.4 171.9,170.0 172.5,170.6 173.1,171.2 173.7,171.8 174.3,172.4 174.9,173.0 175.6,173.6 176.2,174.2 176.8,174.7 177.4,175.3 178.0,175.8 178.6,176.4 179.2,176.9 179.9,177.4 180.5,177.9 181.1,178.4 181.7,178.9 182.3,179.4 182.9,179.9 183.6,180.4 184.2,180.8 184.8,181.3 185.4,181.7 186.0,182.2 186.6,182.6 187.2,183.0 187.9,183.4 188.5,183.8 189.1,184.2 189.7,184.6 190.3,185.0 190.9,185.3 191.5,185.7 192.2,186.0 192.8,186.3 193.4,186.7 194.0,187.0 194.6,187.3 195.2,187.6 195.8,187.9 196.5,188.1 197.1,188.4 197.7,188.7 198.3,188.9 198.9,189.1 199.5,189.4 200.2,189.6 200.8,189.8 201.4,190.0 202.0,190.2 202.6,190.3 203.2,190.5 203.8,190.6 204.5,190.8 205.1,190.9 205.7,191.0 206.3,191.1 206.9,191.2 207.5,191.3 208.1,191.4 208.8,191.5 209.4,191.5 210.0,191.6 210.6,191.6 211.2,191.6 211.8,191.7 212.4,191.7 213.1,191.7 213.7,191.6 214.3,191.6 214.9,191.6 215.5,191.5 216.1,191.5 216.7,191.4 217.4,191.3 218.0,191.2 218.6,191.1 219.2,191.0 219.8,190.9 220.4,190.8 221.1,190.6 221.7,190.5 222.3,190.3 222.9,190.2 223.5,190.0 224.1,189.8 224.7,189.6 225.4,189.4 226.0,189.1 226.6,188.9 227.2,188.7 227.8,188.4 228.4,188.1 229.0,187.9 229.7,187.6 230.3,187.3 230.9,187.0 231.5,186.7 232.1,186.3 232.7,186.0 233.3,185.7 234.0,185.3 234.6,185.0 235.2,184.6 235.8,184.2 236.4,183.8 237.0,183.4 237.7,183.0 238.3,182.6 238.9,182.2 239.5,181.7 240.1,181.3 240.7,180.8 241.3,180.4 242.0,179.9 242.6,179.4 243.2,178.9 243.8,178.4 244.4,177.9 245.0,177.4 245.6,176.9 246.3,176.4 246.9,175.8 247.5,175.3 248.1,174.7 248.7,174.2 249.3,173.6 249.9,173.0 250.6,172.4 251.2,171.8 251.8,171.2 252.4,170.6 253.0,170.0 253.6,169.4 254.3,168.8 254.9,168.1 255.5,167.5 256.1,166.8 256.7,166.2 257.3,165.5 257.9,164.9 258.6,164.2 259.2,163.5 259.8,162.8 260.4,162.1 261.0,161.4 261.6,160.7 262.2,160.0 262.9,159.3 263.5,158.6 264.1,157.8 264.7,157.1 265.3,156.4 265.9,155.6 266.5,154.9 267.2,154.1 267.8,153.4 268.4,152.6 269.0,151.9 269.6,151.1 270.2,150.3 270.8,149.5 271.5,148.8 272.1,148.0 272.7,147.2 273.3,146.4 273.9,145.6 274.5,144.8 275.2,144.0 275.8,143.2 276.4,142.4 277.0,141.6 277.6,140.8 278.2,140.0 278.8,139.1 279.5,138.3 280.1,137.5 280.7,136.7 281.3,135.8 281.9,135.0 282.5,134.2 283.1,133.4 283.8,132.5 284.4,131.7 285.0,130.9 285.6,130.0 286.2,129.2 286.8,128.3 287.4,127.5 288.1,126.7 288.7,125.8 289.3,125.0 289.9,124.2 290.5,123.3 291.1,122.5 291.8,121.7 292.4,120.8 293.0,120.0 293.6,119.1 294.2,118.3 294.8,117.5 295.4,116.6 296.1,115.8 296.7,115.0 297.3,114.2 297.9,113.3 298.5,112.5 299.1,111.7 299.7,110.9 300.4,110.0 301.0,109.2 301.6,108.4 302.2,107.6 302.8,106.8 303.4,106.0 304.0,105.2 304.7,104.4 305.3,103.6 305.9,102.8 306.5,102.0 307.1,101.2 307.7,100.5 308.4,99.7 309.0,98.9 309.6,98.1 310.2,97.4 310.8,96.6 311.4,95.9 312.0,95.1 312.7,94.4 313.3,93.6 313.9,92.9 314.5,92.2 315.1,91.4 315.7,90.7 316.3,90.0 317.0,89.3 317.6,88.6 318.2,87.9 318.8,87.2 319.4,86.5 320.0,85.8 320.6,85.1 321.3,84.5 321.9,83.8 322.5,83.2 323.1,82.5 323.7,81.9 324.3,81.2 324.9,80.6 325.6,80.0 326.2,79.4 326.8,78.8 327.4,78.2 328.0,77.6 328.6,77.0 329.3,76.4 329.9,75.8 330.5,75.3 331.1,74.7 331.7,74.2 332.3,73.6 332.9,73.1 333.6,72.6 334.2,72.1 334.8,71.6 335.4,71.1 336.0,70.6 336.6,70.1 337.2,69.6 337.9,69.2 338.5,68.7 339.1,68.3 339.7,67.8 340.3,67.4 340.9,67.0 341.5,66.6 342.2,66.2 342.8,65.8 343.4,65.4 344.0,65.0 344.6,64.7 345.2,64.3 345.9,64.0 346.5,63.7 347.1,63.3 347.7,63.0 348.3,62.7 348.9,62.4 349.5,62.1 350.2,61.9 350.8,61.6 351.4,61.3 352.0,61.1 352.6,60.9 353.2,60.6 353.8,60.4 354.5,60.2 355.1,60.0 355.7,59.8 356.3,59.7 356.9,59.5 357.5,59.4 358.1,59.2 358.8,59.1 359.4,59.0 360.0,58.9 360.6,58.8 361.2,58.7 361.8,58.6 362.5,58.5 363.1,58.5 363.7,58.4 364.3,58.4 364.9,58.4 365.5,58.3 366.1,58.3\" fill=\"none\" stroke=\"#3b4ea8\" stroke-width=\"3.4\" stroke-linejoin=\"round\"/><polyline points=\"58.8,125.0 59.4,125.0 60.0,125.0 60.6,125.0 61.2,125.0 61.8,125.0 62.4,125.0 63.1,125.0 63.7,125.0 64.3,125.0 64.9,125.0 65.5,125.0 66.1,125.0 66.7,125.0 67.4,125.0 68.0,125.0 68.6,125.0 69.2,125.0 69.8,125.0 70.4,125.0 71.0,125.0 71.7,125.0 72.3,125.0 72.9,125.0 73.5,125.0 74.1,125.0 74.7,125.0 75.4,125.0 76.0,125.0 76.6,125.0 77.2,125.0 77.8,125.0 78.4,125.0 79.0,125.0 79.7,125.0 80.3,125.0 80.9,125.0 81.5,125.0 82.1,125.0 82.7,125.0 83.3,125.0 84.0,125.0 84.6,125.0 85.2,125.0 85.8,125.0 86.4,125.0 87.0,125.0 87.6,125.0 88.3,125.0 88.9,125.0 89.5,125.0 90.1,125.0 90.7,125.0 91.3,125.0 92.0,125.0 92.6,125.0 93.2,125.0 93.8,125.0 94.4,125.0 95.0,125.0 95.6,125.0 96.3,125.0 96.9,125.0 97.5,125.0 98.1,125.0 98.7,125.0 99.3,125.0 99.9,125.0 100.6,125.0 101.2,125.0 101.8,125.0 102.4,125.0 103.0,125.0 103.6,125.0 104.2,125.0 104.9,125.0 105.5,125.0 106.1,125.0 106.7,125.0 107.3,125.0 107.9,125.0 108.5,125.0 109.2,125.0 109.8,125.0 110.4,125.0 111.0,125.0 111.6,125.0 112.2,125.0 112.9,125.0 113.5,125.0 114.1,125.0 114.7,125.0 115.3,125.0 115.9,125.0 116.5,125.0 117.2,125.0 117.8,125.0 118.4,125.0 119.0,125.0 119.6,125.0 120.2,125.0 120.8,125.0 121.5,125.0 122.1,125.0 122.7,125.0 123.3,125.0 123.9,125.0 124.5,125.0 125.1,125.0 125.8,125.0 126.4,125.0 127.0,125.0 127.6,125.0 128.2,125.0 128.8,125.0 129.5,125.0 130.1,125.0 130.7,125.0 131.3,125.0 131.9,125.0 132.5,125.0 133.1,125.0 133.8,125.0 134.4,125.0 135.0,125.0 135.6,125.0 136.2,125.0 136.8,125.0 137.4,125.0 138.1,125.0 138.7,125.0 139.3,125.0 139.9,125.0 140.5,125.0 141.1,125.0 141.7,125.0 142.4,125.0 143.0,125.0 143.6,125.0 144.2,125.0 144.8,125.0 145.4,125.0 146.1,125.0 146.7,125.0 147.3,125.0 147.9,125.0 148.5,125.0 149.1,125.0 149.7,125.0 150.4,125.0 151.0,125.0 151.6,125.0 152.2,125.0 152.8,125.0 153.4,125.0 154.0,125.0 154.7,125.0 155.3,125.0 155.9,125.0 156.5,125.0 157.1,125.0 157.7,125.0 158.3,125.0 159.0,125.0 159.6,125.0 160.2,125.0 160.8,125.0 161.4,125.0 162.0,125.0 162.6,125.0 163.3,125.0 163.9,125.0 164.5,125.0 165.1,125.0 165.7,125.0 166.3,125.0 167.0,125.0 167.6,125.0 168.2,125.0 168.8,125.0 169.4,125.0 170.0,125.0 170.6,125.0 171.3,125.0 171.9,125.0 172.5,125.0 173.1,125.0 173.7,125.0 174.3,125.0 174.9,125.0 175.6,125.0 176.2,125.0 176.8,125.0 177.4,125.0 178.0,125.0 178.6,125.0 179.2,125.0 179.9,125.0 180.5,125.0 181.1,125.0 181.7,125.0 182.3,125.0 182.9,125.0 183.6,125.0 184.2,125.0 184.8,125.0 185.4,125.0 186.0,125.0 186.6,125.0 187.2,125.0 187.9,125.0 188.5,125.0 189.1,125.0 189.7,125.0 190.3,125.0 190.9,125.0 191.5,125.0 192.2,125.0 192.8,125.0 193.4,125.0 194.0,125.0 194.6,125.0 195.2,125.0 195.8,125.0 196.5,125.0 197.1,125.0 197.7,125.0 198.3,125.0 198.9,125.0 199.5,125.0 200.2,125.0 200.8,125.0 201.4,125.0 202.0,125.0 202.6,125.0 203.2,125.0 203.8,125.0 204.5,125.0 205.1,125.0 205.7,125.0 206.3,125.0 206.9,125.0 207.5,125.0 208.1,125.0 208.8,125.0 209.4,125.0 210.0,125.0 210.6,125.0 211.2,125.0 211.8,125.0 212.4,125.0 213.1,125.0 213.7,125.0 214.3,125.0 214.9,125.0 215.5,125.0 216.1,125.0 216.7,125.0 217.4,125.0 218.0,125.0 218.6,125.0 219.2,125.0 219.8,125.0 220.4,125.0 221.1,125.0 221.7,125.0 222.3,125.0 222.9,125.0 223.5,125.0 224.1,125.0 224.7,125.0 225.4,125.0 226.0,125.0 226.6,125.0 227.2,125.0 227.8,125.0 228.4,125.0 229.0,125.0 229.7,125.0 230.3,125.0 230.9,125.0 231.5,125.0 232.1,125.0 232.7,125.0 233.3,125.0 234.0,125.0 234.6,125.0 235.2,125.0 235.8,125.0 236.4,125.0 237.0,125.0 237.7,125.0 238.3,125.0 238.9,125.0 239.5,125.0 240.1,125.0 240.7,125.0 241.3,125.0 242.0,125.0 242.6,125.0 243.2,125.0 243.8,125.0 244.4,125.0 245.0,125.0 245.6,125.0 246.3,125.0 246.9,125.0 247.5,125.0 248.1,125.0 248.7,125.0 249.3,125.0 249.9,125.0 250.6,125.0 251.2,125.0 251.8,125.0 252.4,125.0 253.0,125.0 253.6,125.0 254.3,125.0 254.9,125.0 255.5,125.0 256.1,125.0 256.7,125.0 257.3,125.0 257.9,125.0 258.6,125.0 259.2,125.0 259.8,125.0 260.4,125.0 261.0,125.0 261.6,125.0 262.2,125.0 262.9,125.0 263.5,125.0 264.1,125.0 264.7,125.0 265.3,125.0 265.9,125.0 266.5,125.0 267.2,125.0 267.8,125.0 268.4,125.0 269.0,125.0 269.6,125.0 270.2,125.0 270.8,125.0 271.5,125.0 272.1,125.0 272.7,125.0 273.3,125.0 273.9,125.0 274.5,125.0 275.2,125.0 275.8,125.0 276.4,125.0 277.0,125.0 277.6,125.0 278.2,125.0 278.8,125.0 279.5,125.0 280.1,125.0 280.7,125.0 281.3,125.0 281.9,125.0 282.5,125.0 283.1,125.0 283.8,125.0 284.4,125.0 285.0,125.0 285.6,125.0 286.2,125.0 286.8,125.0 287.4,125.0 288.1,125.0 288.7,125.0 289.3,125.0 289.9,125.0 290.5,125.0 291.1,125.0 291.8,125.0 292.4,125.0 293.0,125.0 293.6,125.0 294.2,125.0 294.8,125.0 295.4,125.0 296.1,125.0 296.7,125.0 297.3,125.0 297.9,125.0 298.5,125.0 299.1,125.0 299.7,125.0 300.4,125.0 301.0,125.0 301.6,125.0 302.2,125.0 302.8,125.0 303.4,125.0 304.0,125.0 304.7,125.0 305.3,125.0 305.9,125.0 306.5,125.0 307.1,125.0 307.7,125.0 308.4,125.0 309.0,125.0 309.6,125.0 310.2,125.0 310.8,125.0 311.4,125.0 312.0,125.0 312.7,125.0 313.3,125.0 313.9,125.0 314.5,125.0 315.1,125.0 315.7,125.0 316.3,125.0 317.0,125.0 317.6,125.0 318.2,125.0 318.8,125.0 319.4,125.0 320.0,125.0 320.6,125.0 321.3,125.0 321.9,125.0 322.5,125.0 323.1,125.0 323.7,125.0 324.3,125.0 324.9,125.0 325.6,125.0 326.2,125.0 326.8,125.0 327.4,125.0 328.0,125.0 328.6,125.0 329.3,125.0 329.9,125.0 330.5,125.0 331.1,125.0 331.7,125.0 332.3,125.0 332.9,125.0 333.6,125.0 334.2,125.0 334.8,125.0 335.4,125.0 336.0,125.0 336.6,125.0 337.2,125.0 337.9,125.0 338.5,125.0 339.1,125.0 339.7,125.0 340.3,125.0 340.9,125.0 341.5,125.0 342.2,125.0 342.8,125.0 343.4,125.0 344.0,125.0 344.6,125.0 345.2,125.0 345.9,125.0 346.5,125.0 347.1,125.0 347.7,125.0 348.3,125.0 348.9,125.0 349.5,125.0 350.2,125.0 350.8,125.0 351.4,125.0 352.0,125.0 352.6,125.0 353.2,125.0 353.8,125.0 354.5,125.0 355.1,125.0 355.7,125.0 356.3,125.0 356.9,125.0 357.5,125.0 358.1,125.0 358.8,125.0 359.4,125.0 360.0,125.0 360.6,125.0 361.2,125.0 361.8,125.0 362.5,125.0 363.1,125.0 363.7,125.0 364.3,125.0 364.9,125.0 365.5,125.0 366.1,125.0\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><circle cx=\"135.6\" cy=\"125.0\" r=\"4.6\" fill=\"#dc2626\"/><circle cx=\"212.4\" cy=\"191.7\" r=\"4.6\" fill=\"#dc2626\"/><circle cx=\"289.3\" cy=\"125.0\" r=\"4.6\" fill=\"#dc2626\"/><line x1=\"135.6\" y1=\"122.0\" x2=\"135.6\" y2=\"128.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"135.6\" y=\"139.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"9.5\" font-weight=\"800\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">π</text><line x1=\"129.7\" y1=\"143.0\" x2=\"141.5\" y2=\"143.0\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"135.6\" y=\"152.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"9.5\" font-weight=\"800\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><line x1=\"212.4\" y1=\"122.0\" x2=\"212.4\" y2=\"128.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"212.4\" y=\"139.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">π</text><line x1=\"289.3\" y1=\"122.0\" x2=\"289.3\" y2=\"128.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"289.3\" y=\"139.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"9.5\" font-weight=\"800\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3π</text><line x1=\"280.4\" y1=\"143.0\" x2=\"298.2\" y2=\"143.0\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"289.3\" y=\"152.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"9.5\" font-weight=\"800\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><line x1=\"366.1\" y1=\"122.0\" x2=\"366.1\" y2=\"128.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"366.1\" y=\"139.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2π</text><text x=\"135.6\" y=\"98.3\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">cos θ = 0</text><text x=\"212.4\" y=\"211.7\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">cos θ = −1</text><text x=\"289.3\" y=\"98.3\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">cos θ = 0</text></svg>"
+              }
+            },
+            {
+              "explain": "Check \\(\\theta=\\pi\\): \\(\\sin^{2}\\pi=0\\) and \\(\\cos\\pi+1=0\\) ✓. Why not the others: B loses \\(\\theta=\\pi\\) (a solution of the second factor); C only has it; D gives \\(\\cos\\theta=1\\) values (\\(0,2\\pi\\)) which fail: \\(0\\ne2\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Solve the equation \\(\\sin^{2}\\theta=\\cos\\theta+1\\)",
+              "note": "\\(\\sin^2=1-\\cos^2\\); then \\(\\cos\\theta(\\cos\\theta+1)=0\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Year 11 Preliminary Mathematics Extension 1 Final Assessment",
+            "school": "Gosford High School",
             "grade": "11",
             "origin": "teacher"
           }
@@ -4812,6 +4977,175 @@
           "meta": {
             "source": "Hills Grammar 2025 Trial HSC Mathematics Extension 1",
             "school": "The Hills Grammar School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "gosford2020-pre-q6",
+          "type": "mc",
+          "stem": "Which of the following is NOT an expression for \\(\\tan\\left(\\dfrac{x}{2}+\\dfrac\\pi4\\right)\\) ?",
+          "difficulty": "hard",
+          "options": [
+            "\\((1+\\tan x)^{2}\\)",
+            "\\(\\sec x+\\tan x\\)",
+            "\\(\\dfrac{1+\\sin x}{\\cos x}\\)",
+            "\\(\\dfrac{\\cos x}{1-\\sin x}\\)"
+          ],
+          "answer": 0,
+          "hint": "Let \\(t=\\tan\\dfrac{x}{2}\\) and use \\(\\tan\\dfrac\\pi4=1\\) with \\(\\tan(A+B)=\\dfrac{\\tan A+\\tan B}{1-\\tan A\\tan B}\\). Then compare each option with the “\\(t\\)-results” \\(\\sin x=\\dfrac{2t}{1+t^{2}}\\), \\(\\cos x=\\dfrac{1-t^{2}}{1+t^{2}}\\).",
+          "steps": [
+            {
+              "explain": "Compound angle formula with \\(\\tan\\dfrac\\pi4=1\\).",
+              "work": "\\(\\tan\\left(\\dfrac{x}{2}+\\dfrac\\pi4\\right)=\\dfrac{t+1}{1-t}\\)"
+            },
+            {
+              "explain": "Option \\(\\sec x+\\tan x\\): \\(\\dfrac{1}{\\cos x}+\\dfrac{\\sin x}{\\cos x}=\\dfrac{1+\\sin x}{\\cos x}\\) with the \\(t\\)-results gives \\(\\dfrac{1+t^{2}+2t}{1-t^{2}}=\\dfrac{(1+t)^{2}}{(1-t)(1+t)}=\\dfrac{1+t}{1-t}\\) ✓.",
+              "work": "\\(\\sec x+\\tan x=\\dfrac{1+\\sin x}{\\cos x}=\\dfrac{1+t}{1-t}\\)"
+            },
+            {
+              "explain": "Option \\(\\dfrac{\\cos x}{1-\\sin x}\\): multiply top and bottom by \\(1+\\sin x\\): \\(\\dfrac{\\cos x(1+\\sin x)}{1-\\sin^{2}x}=\\dfrac{\\cos x(1+\\sin x)}{\\cos^{2}x}=\\dfrac{1+\\sin x}{\\cos x}\\) ✓ (same).",
+              "work": "\\(\\dfrac{\\cos x}{1-\\sin x}=\\dfrac{1+\\sin x}{\\cos x}\\)"
+            },
+            {
+              "explain": "Option \\((1+\\tan x)^{2}\\): test \\(x=\\dfrac\\pi4\\). Left side: \\(\\tan\\left(\\dfrac\\pi8+\\dfrac\\pi4\\right)=\\tan\\dfrac{3\\pi}{8}\\approx2.414\\). Right side: \\((1+1)^{2}=4\\). They are NOT equal ✗.",
+              "work": "\\(x=\\dfrac\\pi4:\\quad2.414\\ne4\\)"
+            },
+            {
+              "explain": "So the expression that is NOT equivalent is \\((1+\\tan x)^{2}\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Which of the following is NOT an expression for",
+              "note": "\\(t=\\tan\\dfrac{x}{2}\\); compare each with \\(\\dfrac{1+t}{1-t}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Year 11 Preliminary Mathematics Extension 1 Final Assessment",
+            "school": "Gosford High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "gosford2020-pre-q10c",
+          "type": "mc",
+          "stem": "Write \\(\\cos x-3\\sin x+3\\) using the “\\(t\\)” results given that \\(t=\\tan\\dfrac{x}{2}\\). Which expression is correct (in fully factorised form)?",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\dfrac{2(t-1)(t-2)}{1+t^{2}}\\)",
+            "\\(\\dfrac{2(t+1)(t+2)}{1+t^{2}}\\)",
+            "\\(\\dfrac{2t^{2}-6t+4}{1-t^{2}}\\)",
+            "\\(\\dfrac{2(t-1)(t-2)}{1-t^{2}}\\)"
+          ],
+          "answer": 0,
+          "hint": "Replace \\(\\cos x=\\dfrac{1-t^{2}}{1+t^{2}}\\) and \\(\\sin x=\\dfrac{2t}{1+t^{2}}\\). Put everything over the common denominator \\(1+t^{2}\\) (write the 3 as \\(\\dfrac{3(1+t^{2})}{1+t^{2}}\\)), then simplify and factorise.",
+          "steps": [
+            {
+              "explain": "Substitute the \\(t\\)-results.",
+              "work": "\\(\\cos x-3\\sin x+3=\\dfrac{1-t^{2}}{1+t^{2}}-3\\left(\\dfrac{2t}{1+t^{2}}\\right)+3\\)"
+            },
+            {
+              "explain": "Common denominator \\(1+t^{2}\\): write \\(3=\\dfrac{3(1+t^{2})}{1+t^{2}}\\).",
+              "work": "\\(=\\dfrac{1-t^{2}-6t+3+3t^{2}}{1+t^{2}}\\)"
+            },
+            {
+              "explain": "Collect like terms: \\(-t^{2}+3t^{2}=2t^{2}\\); \\(1+3=4\\).",
+              "work": "\\(=\\dfrac{2t^{2}-6t+4}{1+t^{2}}\\)"
+            },
+            {
+              "explain": "Factorise the numerator: take out 2, then \\(t^{2}-3t+2=(t-1)(t-2)\\).",
+              "work": "\\(=\\dfrac{2\\left(t^{2}-3t+2\\right)}{1+t^{2}}=\\dfrac{2(t-1)(t-2)}{1+t^{2}}\\)"
+            },
+            {
+              "explain": "Why not the others: B has the wrong signs in the factors; C has not been factorised and has the wrong denominator; D uses \\(1-t^{2}\\) (that is the numerator of \\(\\cos x\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Write \\(\\cos x-3\\sin x+3\\) using the “\\(t\\)” results",
+              "note": "\\(\\cos x=\\dfrac{1-t^2}{1+t^2}\\), \\(\\sin x=\\dfrac{2t}{1+t^2}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Year 11 Preliminary Mathematics Extension 1 Final Assessment",
+            "school": "Gosford High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "gosford2020-pre-q12e",
+          "type": "mc",
+          "stem": "Express \\(\\cos x-\\sqrt3\\sin x\\) in the form \\(R\\cos(x+\\alpha)\\) where \\(R>0\\) and \\(0\\le x\\le2\\pi\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(2\\cos\\left(x+\\dfrac\\pi3\\right)\\)",
+            "\\(2\\cos\\left(x-\\dfrac\\pi3\\right)\\)",
+            "\\(4\\cos\\left(x+\\dfrac\\pi3\\right)\\)",
+            "\\(2\\cos\\left(x+\\dfrac\\pi6\\right)\\)"
+          ],
+          "answer": 0,
+          "hint": "Expand \\(R\\cos(x+\\alpha)=R\\cos\\alpha\\cos x-R\\sin\\alpha\\sin x\\) and MATCH the coefficients of \\(\\cos x\\) and \\(\\sin x\\). Then \\(R=\\sqrt{a^{2}+b^{2}}\\) and \\(\\tan\\alpha=\\dfrac{b}{a}\\). Check the quadrant of \\(\\alpha\\) from the signs of \\(R\\cos\\alpha\\) and \\(R\\sin\\alpha\\) (both positive \\(\\Rightarrow\\) first quadrant).",
+          "steps": [
+            {
+              "explain": "Expand the compound angle (note the MINUS in \\(\\cos(A+B)\\)).",
+              "work": "\\(R\\cos(x+\\alpha)=R\\cos\\alpha\\cos x-R\\sin\\alpha\\sin x\\)"
+            },
+            {
+              "explain": "Match with \\(\\cos x-\\sqrt3\\sin x\\): coefficient of \\(\\cos x\\) is 1; of \\(\\sin x\\) is \\(-\\sqrt3\\), so \\(R\\sin\\alpha=+\\sqrt3\\) (the minus is already in the formula).",
+              "work": "\\(R\\cos\\alpha=1,\\qquad R\\sin\\alpha=\\sqrt3\\)"
+            },
+            {
+              "explain": "Square and add: \\(R^{2}\\cos^{2}\\alpha+R^{2}\\sin^{2}\\alpha=R^{2}\\).",
+              "work": "\\(R^{2}=1^{2}+(\\sqrt3)^{2}=4\\ \\Rightarrow\\ R=2\\ \\ (R>0)\\)"
+            },
+            {
+              "explain": "Divide: \\(\\tan\\alpha=\\dfrac{R\\sin\\alpha}{R\\cos\\alpha}=\\sqrt3\\), with both \\(\\cos\\alpha\\) and \\(\\sin\\alpha\\) positive (first quadrant).",
+              "work": "\\(\\tan\\alpha=\\sqrt3\\ \\Rightarrow\\ \\alpha=\\dfrac\\pi3\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 410 270\" width=\"100%\" height=\"auto\" style=\"max-width:410px;display:block;margin:0 auto\"><polygon points=\"50,200 160,200 50,9.5\" fill=\"#7c3aed\" fill-opacity=\"0.12\" stroke=\"#1e293b\" stroke-width=\"2.6\"/><path d=\"M 50,184 L 66,184 L 66,200\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2\"/><line x1=\"50.0\" y1=\"200.0\" x2=\"160.0\" y2=\"200.0\" stroke=\"#3b4ea8\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><line x1=\"50.0\" y1=\"200.0\" x2=\"50.0\" y2=\"9.5\" stroke=\"#d97706\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><text x=\"105.0\" y=\"220.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1  (cos x coefficient)</text><text x=\"42.0\" y=\"104.7\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">√3</text><text x=\"119.0\" y=\"104.7\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">R = 2</text><path d=\"M 130,200 A 30 30 0 0 1 145.0,174.0\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.6\"/><text x=\"116.0\" y=\"190.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">α</text><text x=\"60.0\" y=\"3.5\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">(√3 sin x coefficient)</text></svg>"
+              }
+            },
+            {
+              "explain": "Result and check at \\(x=0\\): \\(2\\cos\\dfrac\\pi3=2\\times\\dfrac{1}{2}=1=\\cos0-\\sqrt3\\sin0\\) ✓.",
+              "work": "\\(\\cos x-\\sqrt3\\sin x=2\\cos\\left(x+\\dfrac\\pi3\\right)\\)"
+            },
+            {
+              "explain": "Why not the others: B (\\(x-\\dfrac\\pi3\\)) has the wrong sign (that expands to \\(\\cos x+\\sqrt3\\sin x\\)); C has \\(R=4\\) (forgot the square root); D has \\(\\alpha=\\dfrac\\pi6\\) (\\(\\tan\\dfrac\\pi6=\\dfrac1{\\sqrt3}\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Express \\(\\cos x-\\sqrt3\\sin x\\) in the form \\(R\\cos(x+\\alpha)\\)",
+              "note": "Match: \\(R\\cos\\alpha=1\\), \\(R\\sin\\alpha=\\sqrt3\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Year 11 Preliminary Mathematics Extension 1 Final Assessment",
+            "school": "Gosford High School",
             "grade": "11",
             "origin": "teacher"
           }

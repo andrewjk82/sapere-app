@@ -937,6 +937,110 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "gosford2020-pre-q4",
+          "type": "mc",
+          "stem": "Which of the following is NOT a factor of \\(P(x)=x^{3}+2x^{2}-5x-6\\) ?",
+          "difficulty": "easy",
+          "options": [
+            "\\((x-3)\\)",
+            "\\((x+1)\\)",
+            "\\((x-2)\\)",
+            "\\((x+3)\\)"
+          ],
+          "answer": 0,
+          "hint": "Factor theorem: \\((x-a)\\) is a factor iff \\(P(a)=0\\). Test the value \\(a\\) for each option (the OPPOSITE sign to the one in the bracket). The one that does NOT give 0 is the answer.",
+          "steps": [
+            {
+              "explain": "\\((x+1)\\): test \\(x=-1\\).",
+              "work": "\\(P(-1)=-1+2+5-6=0\\ \\checkmark\\ \\text{factor}\\)"
+            },
+            {
+              "explain": "\\((x-2)\\): test \\(x=2\\).",
+              "work": "\\(P(2)=8+8-10-6=0\\ \\checkmark\\ \\text{factor}\\)"
+            },
+            {
+              "explain": "\\((x+3)\\): test \\(x=-3\\).",
+              "work": "\\(P(-3)=-27+18+15-6=0\\ \\checkmark\\ \\text{factor}\\)"
+            },
+            {
+              "explain": "\\((x-3)\\): test \\(x=3\\).",
+              "work": "\\(P(3)=27+18-15-6=24\\ne0\\ \\times\\ \\text{NOT a factor}\\)"
+            },
+            {
+              "explain": "So \\(P(x)=(x+1)(x-2)(x+3)\\) and the factor that does not belong is \\((x-3)\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Which of the following is NOT a factor of",
+              "note": "Test \\(P(a)=0\\) for each option."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Year 11 Preliminary Mathematics Extension 1 Final Assessment",
+            "school": "Gosford High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "gosford2020-pre-q9ei",
+          "type": "mc",
+          "stem": "Consider the polynomial \\(P(x)=k^{2}x^{3}-k^{3}x^{2}-x+k\\) where \\(k\\ne0\\). Show that \\((x-k)\\) is a factor of \\(P(x)\\). Which working is correct?",
+          "difficulty": "medium",
+          "options": [
+            "\\(P(k)=k^{2}k^{3}-k^{3}k^{2}-k+k=k^{5}-k^{5}-k+k=0\\)",
+            "\\(P(-k)=-k^{5}-k^{5}+k+k=-2k^{5}+2k\\)",
+            "\\(P(k)=k^{5}-k^{5}-k+k=2k\\)",
+            "\\(P(0)=k\\ne0\\), so \\((x-k)\\) is not a factor"
+          ],
+          "answer": 0,
+          "hint": "Factor theorem: \\((x-k)\\) is a factor iff \\(P(k)=0\\). Substitute \\(x=k\\) (NOT \\(-k\\)) into every \\(x\\).",
+          "steps": [
+            {
+              "explain": "Replace each \\(x\\) by \\(k\\).",
+              "work": "\\(P(k)=k^{2}(k)^{3}-k^{3}(k)^{2}-(k)+k\\)"
+            },
+            {
+              "explain": "Multiply the powers: \\(k^{2}\\cdot k^{3}=k^{5}\\) and \\(k^{3}\\cdot k^{2}=k^{5}\\).",
+              "work": "\\(P(k)=k^{5}-k^{5}-k+k\\)"
+            },
+            {
+              "explain": "Everything cancels.",
+              "work": "\\(P(k)=0\\ \\Rightarrow\\ (x-k)\\ \\text{is a factor}\\)"
+            },
+            {
+              "explain": "Why not the others: B tests \\(-k\\) (the wrong sign for the factor \\((x-k)\\)); C makes an arithmetic error (\\(-k+k=0\\), not \\(2k\\)); D tests \\(x=0\\) (irrelevant).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that \\((x-k)\\) is a factor of \\(P(x)\\).",
+              "note": "Test \\(P(k)=0\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Year 11 Preliminary Mathematics Extension 1 Final Assessment",
+            "school": "Gosford High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -2296,6 +2400,163 @@
           "meta": {
             "source": "Glenwood High School 2020 Year 11 Mathematics Extension 1 Yearly Examination",
             "school": "Glenwood High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "gosford2020-pre-q9b",
+          "type": "mc",
+          "stem": "The equation \\(P(x)=0\\) where \\(P(x)=x^{3}+cx+d\\) has a double root \\(x=1\\). Find the values of \\(c\\) and \\(d\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(c=-3,\\ d=2\\)",
+            "\\(c=3,\\ d=-2\\)",
+            "\\(c=-3,\\ d=-2\\)",
+            "\\(c=0,\\ d=-1\\)"
+          ],
+          "answer": 0,
+          "hint": "A DOUBLE root at \\(x=1\\) means BOTH \\(P(1)=0\\) AND \\(P'(1)=0\\) (the graph touches the axis at \\(x=1\\)).",
+          "steps": [
+            {
+              "explain": "Differentiate: \\(P'(x)=3x^{2}+c\\). The gradient must be 0 at the double root.",
+              "work": "\\(P'(1)=3+c=0\\ \\Rightarrow\\ c=-3\\)"
+            },
+            {
+              "explain": "Now \\(P(1)=0\\): \\(1+c+d=0\\) with \\(c=-3\\).",
+              "work": "\\(1-3+d=0\\ \\Rightarrow\\ d=2\\)"
+            },
+            {
+              "explain": "Check: \\(P(x)=x^{3}-3x+2=(x-1)^{2}(x+2)\\) (expand: \\((x^{2}-2x+1)(x+2)=x^{3}-3x+2\\) ✓). The third root is \\(-2\\).",
+              "work": "\\(c=-3,\\quad d=2\\)"
+            },
+            {
+              "explain": "Why not the others: B has both signs reversed; C has the wrong \\(d\\) (\\(P(1)\\ne0\\)); D fails \\(P'(1)=0\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "has a double root \\(x=1\\). Find the values of \\(c\\) and \\(d\\).",
+              "note": "Double root: \\(P(1)=0\\) and \\(P\\,'(1)=0\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Year 11 Preliminary Mathematics Extension 1 Final Assessment",
+            "school": "Gosford High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "gosford2020-pre-q9eii",
+          "type": "mc",
+          "stem": "Consider the polynomial \\(P(x)=k^{2}x^{3}-k^{3}x^{2}-x+k\\) where \\(k\\ne0\\). Solve the equation \\(P(x)=0\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(x=k,\\ \\ x=\\dfrac{1}{k},\\ \\ x=-\\dfrac{1}{k}\\)",
+            "\\(x=k,\\ \\ x=k,\\ \\ x=-k\\)",
+            "\\(x=k,\\ \\ x=\\dfrac{1}{k^{2}},\\ \\ x=-\\dfrac{1}{k^{2}}\\)",
+            "\\(x=-k,\\ \\ x=\\dfrac{1}{k},\\ \\ x=-\\dfrac{1}{k}\\)"
+          ],
+          "answer": 0,
+          "hint": "GROUP the four terms in pairs so a common factor \\((x-k)\\) appears: \\(k^{2}x^{3}-k^{3}x^{2}=k^{2}x^{2}(x-k)\\) and \\(-x+k=-(x-k)\\). Then factorise the remaining quadratic as a DIFFERENCE OF SQUARES.",
+          "steps": [
+            {
+              "explain": "Group the terms in pairs and factor each pair.",
+              "work": "\\(P(x)=k^{2}x^{2}(x-k)-(x-k)\\)"
+            },
+            {
+              "explain": "Take out the common factor \\((x-k)\\).",
+              "work": "\\(P(x)=(x-k)\\left(k^{2}x^{2}-1\\right)\\)"
+            },
+            {
+              "explain": "Difference of two squares: \\(k^{2}x^{2}-1=(kx)^{2}-1^{2}=(kx-1)(kx+1)\\).",
+              "work": "\\(P(x)=(x-k)(kx-1)(kx+1)\\)"
+            },
+            {
+              "explain": "Set each factor to zero (\\(k\\ne0\\)): \\(x=k\\); \\(kx=1\\Rightarrow x=\\dfrac{1}{k}\\); \\(kx=-1\\Rightarrow x=-\\dfrac{1}{k}\\).",
+              "work": "\\(x=k,\\ \\ x=\\dfrac{1}{k},\\ \\ x=-\\dfrac{1}{k}\\)"
+            },
+            {
+              "explain": "Why not the others: B repeats \\(k\\); C divides by \\(k^{2}\\) (forgets \\(kx\\) not \\(k^{2}x\\)); D has the wrong first root (the factor is \\((x-k)\\), so \\(x=+k\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Solve the equation \\(P(x)=0\\).",
+              "note": "Group in pairs: \\(k^2x^2(x-k)-(x-k)\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Year 11 Preliminary Mathematics Extension 1 Final Assessment",
+            "school": "Gosford High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "gosford2020-pre-q11a",
+          "type": "mc",
+          "stem": "Find the multiplicity of the root \\(x=-1\\) of the equation \\(P(x)=0\\) where \\(P(x)=x^{4}+4x^{3}+7x^{2}+6x+2\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(2\\)",
+            "\\(1\\)",
+            "\\(3\\)",
+            "\\(4\\)"
+          ],
+          "answer": 0,
+          "hint": "The multiplicity of a root \\(a\\) is the number of times \\((x-a)\\) divides \\(P(x)\\). Keep differentiating: if \\(P(a)=0\\) and \\(P'(a)=0\\) but \\(P''(a)\\ne0\\), the multiplicity is 2.",
+          "steps": [
+            {
+              "explain": "Is \\(x=-1\\) a root? \\(P(-1)=1-4+7-6+2=0\\) ✓ (multiplicity at least 1).",
+              "work": "\\(P(-1)=0\\)"
+            },
+            {
+              "explain": "First derivative: \\(P'(x)=4x^{3}+12x^{2}+14x+6\\). \\(P'(-1)=-4+12-14+6=0\\), so it is at least a double root (graph touches the axis).",
+              "work": "\\(P'(-1)=0\\)"
+            },
+            {
+              "explain": "Second derivative: \\(P''(x)=12x^{2}+24x+14\\). \\(P''(-1)=12-24+14=2\\ne0\\).",
+              "work": "\\(P''(-1)=2\\ne0\\ \\Rightarrow\\ \\text{multiplicity }2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 290\" width=\"100%\" height=\"auto\" style=\"max-width:420px;display:block;margin:0 auto\"><line x1=\"6.0\" y1=\"241.1\" x2=\"414.0\" y2=\"241.1\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"287.4\" y1=\"284.0\" x2=\"287.4\" y2=\"6.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"414.0\" y1=\"241.1\" x2=\"407.1\" y2=\"237.1\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"414.0\" y1=\"241.1\" x2=\"407.1\" y2=\"245.1\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"287.4\" y1=\"6.0\" x2=\"283.4\" y2=\"12.9\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"287.4\" y1=\"6.0\" x2=\"291.4\" y2=\"12.9\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><text x=\"416.0\" y=\"256.1\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><text x=\"296.4\" y=\"16.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">y</text><polyline points=\"63.8,120.3 64.4,122.0 65.0,123.8 65.6,125.5 66.1,127.2 66.7,128.9 67.3,130.5 67.9,132.2 68.5,133.8 69.1,135.4 69.6,137.0 70.2,138.5 70.8,140.1 71.4,141.6 72.0,143.1 72.6,144.6 73.2,146.1 73.7,147.5 74.3,149.0 74.9,150.4 75.5,151.8 76.1,153.2 76.7,154.6 77.3,155.9 77.8,157.2 78.4,158.6 79.0,159.9 79.6,161.2 80.2,162.4 80.8,163.7 81.3,164.9 81.9,166.2 82.5,167.4 83.1,168.6 83.7,169.7 84.3,170.9 84.9,172.1 85.4,173.2 86.0,174.3 86.6,175.4 87.2,176.5 87.8,177.6 88.4,178.6 88.9,179.7 89.5,180.7 90.1,181.7 90.7,182.8 91.3,183.7 91.9,184.7 92.5,185.7 93.0,186.7 93.6,187.6 94.2,188.5 94.8,189.4 95.4,190.3 96.0,191.2 96.5,192.1 97.1,193.0 97.7,193.8 98.3,194.7 98.9,195.5 99.5,196.3 100.1,197.1 100.6,197.9 101.2,198.7 101.8,199.5 102.4,200.3 103.0,201.0 103.6,201.8 104.2,202.5 104.7,203.2 105.3,203.9 105.9,204.6 106.5,205.3 107.1,206.0 107.7,206.6 108.2,207.3 108.8,208.0 109.4,208.6 110.0,209.2 110.6,209.8 111.2,210.5 111.8,211.1 112.3,211.6 112.9,212.2 113.5,212.8 114.1,213.4 114.7,213.9 115.3,214.5 115.8,215.0 116.4,215.5 117.0,216.1 117.6,216.6 118.2,217.1 118.8,217.6 119.4,218.1 119.9,218.5 120.5,219.0 121.1,219.5 121.7,219.9 122.3,220.4 122.9,220.8 123.4,221.3 124.0,221.7 124.6,222.1 125.2,222.5 125.8,222.9 126.4,223.3 127.0,223.7 127.5,224.1 128.1,224.5 128.7,224.9 129.3,225.2 129.9,225.6 130.5,226.0 131.1,226.3 131.6,226.6 132.2,227.0 132.8,227.3 133.4,227.6 134.0,228.0 134.6,228.3 135.1,228.6 135.7,228.9 136.3,229.2 136.9,229.5 137.5,229.7 138.1,230.0 138.7,230.3 139.2,230.6 139.8,230.8 140.4,231.1 141.0,231.3 141.6,231.6 142.2,231.8 142.7,232.1 143.3,232.3 143.9,232.5 144.5,232.8 145.1,233.0 145.7,233.2 146.3,233.4 146.8,233.6 147.4,233.8 148.0,234.0 148.6,234.2 149.2,234.4 149.8,234.6 150.4,234.8 150.9,235.0 151.5,235.2 152.1,235.3 152.7,235.5 153.3,235.7 153.9,235.8 154.4,236.0 155.0,236.1 155.6,236.3 156.2,236.4 156.8,236.6 157.4,236.7 158.0,236.9 158.5,237.0 159.1,237.1 159.7,237.3 160.3,237.4 160.9,237.5 161.5,237.6 162.0,237.8 162.6,237.9 163.2,238.0 163.8,238.1 164.4,238.2 165.0,238.3 165.6,238.4 166.1,238.5 166.7,238.6 167.3,238.7 167.9,238.8 168.5,238.9 169.1,239.0 169.6,239.1 170.2,239.1 170.8,239.2 171.4,239.3 172.0,239.4 172.6,239.5 173.2,239.5 173.7,239.6 174.3,239.7 174.9,239.7 175.5,239.8 176.1,239.9 176.7,239.9 177.3,240.0 177.8,240.0 178.4,240.1 179.0,240.2 179.6,240.2 180.2,240.3 180.8,240.3 181.3,240.4 181.9,240.4 182.5,240.4 183.1,240.5 183.7,240.5 184.3,240.6 184.9,240.6 185.4,240.6 186.0,240.7 186.6,240.7 187.2,240.7 187.8,240.8 188.4,240.8 188.9,240.8 189.5,240.9 190.1,240.9 190.7,240.9 191.3,240.9 191.9,240.9 192.5,241.0 193.0,241.0 193.6,241.0 194.2,241.0 194.8,241.0 195.4,241.0 196.0,241.1 196.5,241.1 197.1,241.1 197.7,241.1 198.3,241.1 198.9,241.1 199.5,241.1 200.1,241.1 200.6,241.1 201.2,241.1 201.8,241.1 202.4,241.1 203.0,241.1 203.6,241.1 204.2,241.1 204.7,241.1 205.3,241.1 205.9,241.1 206.5,241.1 207.1,241.1 207.7,241.0 208.2,241.0 208.8,241.0 209.4,241.0 210.0,241.0 210.6,241.0 211.2,240.9 211.8,240.9 212.3,240.9 212.9,240.9 213.5,240.8 214.1,240.8 214.7,240.8 215.3,240.8 215.8,240.7 216.4,240.7 217.0,240.7 217.6,240.6 218.2,240.6 218.8,240.6 219.4,240.5 219.9,240.5 220.5,240.4 221.1,240.4 221.7,240.3 222.3,240.3 222.9,240.2 223.5,240.2 224.0,240.1 224.6,240.1 225.2,240.0 225.8,240.0 226.4,239.9 227.0,239.8 227.5,239.8 228.1,239.7 228.7,239.6 229.3,239.6 229.9,239.5 230.5,239.4 231.1,239.4 231.6,239.3 232.2,239.2 232.8,239.1 233.4,239.0 234.0,238.9 234.6,238.9 235.1,238.8 235.7,238.7 236.3,238.6 236.9,238.5 237.5,238.4 238.1,238.3 238.7,238.2 239.2,238.1 239.8,237.9 240.4,237.8 241.0,237.7 241.6,237.6 242.2,237.5 242.7,237.3 243.3,237.2 243.9,237.1 244.5,236.9 245.1,236.8 245.7,236.7 246.3,236.5 246.8,236.4 247.4,236.2 248.0,236.1 248.6,235.9 249.2,235.8 249.8,235.6 250.4,235.4 250.9,235.3 251.5,235.1 252.1,234.9 252.7,234.7 253.3,234.5 253.9,234.3 254.4,234.2 255.0,234.0 255.6,233.8 256.2,233.5 256.8,233.3 257.4,233.1 258.0,232.9 258.5,232.7 259.1,232.5 259.7,232.2 260.3,232.0 260.9,231.7 261.5,231.5 262.0,231.2 262.6,231.0 263.2,230.7 263.8,230.5 264.4,230.2 265.0,229.9 265.6,229.6 266.1,229.3 266.7,229.1 267.3,228.8 267.9,228.5 268.5,228.1 269.1,227.8 269.6,227.5 270.2,227.2 270.8,226.8 271.4,226.5 272.0,226.2 272.6,225.8 273.2,225.5 273.7,225.1 274.3,224.7 274.9,224.3 275.5,224.0 276.1,223.6 276.7,223.2 277.3,222.8 277.8,222.4 278.4,222.0 279.0,221.5 279.6,221.1 280.2,220.7 280.8,220.2 281.3,219.8 281.9,219.3 282.5,218.8 283.1,218.4 283.7,217.9 284.3,217.4 284.9,216.9 285.4,216.4 286.0,215.8 286.6,215.3 287.2,214.8 287.8,214.2 288.4,213.7 288.9,213.1 289.5,212.6 290.1,212.0 290.7,211.4 291.3,210.8 291.9,210.2 292.5,209.6 293.0,209.0 293.6,208.3 294.2,207.7 294.8,207.0 295.4,206.4 296.0,205.7 296.6,205.0 297.1,204.3 297.7,203.6 298.3,202.9 298.9,202.2 299.5,201.5 300.1,200.7 300.6,199.9 301.2,199.2 301.8,198.4 302.4,197.6 303.0,196.8 303.6,196.0 304.2,195.2 304.7,194.3 305.3,193.5 305.9,192.6 306.5,191.8 307.1,190.9 307.7,190.0 308.2,189.1 308.8,188.1 309.4,187.2 310.0,186.3 310.6,185.3 311.2,184.3 311.8,183.3 312.3,182.3 312.9,181.3 313.5,180.3 314.1,179.3 314.7,178.2 315.3,177.1 315.8,176.1 316.4,175.0 317.0,173.8 317.6,172.7 318.2,171.6 318.8,170.4 319.4,169.3 319.9,168.1 320.5,166.9 321.1,165.7 321.7,164.4 322.3,163.2 322.9,161.9 323.5,160.6 324.0,159.3 324.6,158.0 325.2,156.7 325.8,155.4 326.4,154.0 327.0,152.6 327.5,151.2 328.1,149.8 328.7,148.4 329.3,146.9 329.9,145.5 330.5,144.0 331.1,142.5 331.6,141.0 332.2,139.4 332.8,137.9 333.4,136.3 334.0,134.7 334.6,133.1 335.1,131.5 335.7,129.9 336.3,128.2 336.9,126.5 337.5,124.8 338.1,123.1 338.7,121.3 339.2,119.6 339.8,117.8 340.4,116.0 341.0,114.2 341.6,112.3 342.2,110.4 342.7,108.6 343.3,106.6 343.9,104.7 344.5,102.8 345.1,100.8 345.7,98.8 346.3,96.8 346.8,94.7 347.4,92.7 348.0,90.6 348.6,88.5 349.2,86.4 349.8,84.2 350.4,82.0 350.9,79.8 351.5,77.6 352.1,75.4 352.7,73.1 353.3,70.8 353.9,68.5 354.4,66.2 355.0,63.8 355.6,61.4 356.2,59.0\" fill=\"none\" stroke=\"#3b4ea8\" stroke-width=\"3.4\" stroke-linejoin=\"round\"/><circle cx=\"201.4\" cy=\"241.1\" r=\"4.6\" fill=\"#dc2626\"/><line x1=\"115.4\" y1=\"238.1\" x2=\"115.4\" y2=\"244.1\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"115.4\" y=\"255.1\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">−2</text><line x1=\"201.4\" y1=\"238.1\" x2=\"201.4\" y2=\"244.1\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"201.4\" y=\"255.1\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">−1</text><line x1=\"287.4\" y1=\"238.1\" x2=\"287.4\" y2=\"244.1\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"287.4\" y=\"255.1\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0</text><line x1=\"284.4\" y1=\"214.6\" x2=\"290.4\" y2=\"214.6\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"280.4\" y=\"218.6\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><line x1=\"284.4\" y1=\"108.5\" x2=\"290.4\" y2=\"108.5\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"280.4\" y=\"112.5\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">10</text><text x=\"201.4\" y=\"254.4\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">(−1, 0): touches the axis</text></svg>"
+              }
+            },
+            {
+              "explain": "Check: \\(P(x)=(x+1)^{2}\\left(x^{2}+2x+2\\right)\\) and \\(x^{2}+2x+2\\) has no root at \\(-1\\) (value 1). Why not the others: 1 would need \\(P'(-1)\\ne0\\); 3 would need \\(P''(-1)=0\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the multiplicity of the root \\(x=-1\\)",
+              "note": "\\(P(-1)=P\\,'(-1)=0\\), \\(P\\,''(-1)\\ne0\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Year 11 Preliminary Mathematics Extension 1 Final Assessment",
+            "school": "Gosford High School",
             "grade": "11",
             "origin": "teacher"
           }
@@ -4103,6 +4364,110 @@
           "meta": {
             "source": "Glenwood High School 2020 Year 11 Mathematics Extension 1 Yearly Examination",
             "school": "Glenwood High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "gosford2020-pre-q10bi",
+          "type": "mc",
+          "stem": "The equation \\(2x^{3}+6x^{2}+4x+1=0\\) has roots \\(\\alpha\\), \\(\\beta\\) and \\(\\gamma\\). Find the value of \\((1-\\alpha)+(1-\\beta)+(1-\\gamma)\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(6\\)",
+            "\\(0\\)",
+            "\\(-3\\)",
+            "\\(3\\)"
+          ],
+          "answer": 0,
+          "hint": "Group the 1’s: \\((1-\\alpha)+(1-\\beta)+(1-\\gamma)=3-(\\alpha+\\beta+\\gamma)\\). For \\(ax^{3}+bx^{2}+\\ldots\\): \\(\\alpha+\\beta+\\gamma=-\\dfrac{b}{a}\\).",
+          "steps": [
+            {
+              "explain": "Rewrite the expression.",
+              "work": "\\((1-\\alpha)+(1-\\beta)+(1-\\gamma)=3-(\\alpha+\\beta+\\gamma)\\)"
+            },
+            {
+              "explain": "Sum of the roots: \\(a=2\\), \\(b=6\\).",
+              "work": "\\(\\alpha+\\beta+\\gamma=-\\dfrac{6}{2}=-3\\)"
+            },
+            {
+              "explain": "Substitute (minus a negative adds).",
+              "work": "\\(3-(-3)=6\\)"
+            },
+            {
+              "explain": "Why not the others: B (0) comes from \\(3-3\\); C (\\(-3\\)) is the sum of the roots itself; D (3) forgets the minus sign on the sum.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the value of \\((1-\\alpha)+(1-\\beta)+(1-\\gamma)\\).",
+              "note": "\\(3-(\\alpha+\\beta+\\gamma)\\); sum \\(=-\\dfrac{b}{a}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Year 11 Preliminary Mathematics Extension 1 Final Assessment",
+            "school": "Gosford High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "gosford2020-pre-q10bii",
+          "type": "mc",
+          "stem": "The equation \\(2x^{3}+6x^{2}+4x+1=0\\) has roots \\(\\alpha\\), \\(\\beta\\) and \\(\\gamma\\). Find the value of \\((1-\\alpha)(1-\\beta)(1-\\gamma)\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\dfrac{13}{2}\\)",
+            "\\(-\\dfrac{13}{2}\\)",
+            "\\(13\\)",
+            "\\(\\dfrac{1}{2}\\)"
+          ],
+          "answer": 0,
+          "hint": "Write \\(P(x)=2x^{3}+6x^{2}+4x+1=2(x-\\alpha)(x-\\beta)(x-\\gamma)\\) and substitute \\(x=1\\): \\(P(1)=2(1-\\alpha)(1-\\beta)(1-\\gamma)\\). So the product \\(=\\dfrac{P(1)}{2}\\).",
+          "steps": [
+            {
+              "explain": "Because \\(\\alpha,\\beta,\\gamma\\) are the roots, the polynomial factorises with leading coefficient 2.",
+              "work": "\\(P(x)=2(x-\\alpha)(x-\\beta)(x-\\gamma)\\)"
+            },
+            {
+              "explain": "Substitute \\(x=1\\).",
+              "work": "\\(P(1)=2(1-\\alpha)(1-\\beta)(1-\\gamma)\\)"
+            },
+            {
+              "explain": "Evaluate \\(P(1)\\) directly from the equation: \\(2+6+4+1=13\\).",
+              "work": "\\(2(1-\\alpha)(1-\\beta)(1-\\gamma)=13\\)"
+            },
+            {
+              "explain": "Divide by 2.",
+              "work": "\\((1-\\alpha)(1-\\beta)(1-\\gamma)=\\dfrac{13}{2}=6\\dfrac{1}{2}\\)"
+            },
+            {
+              "explain": "Why not the others: B has the wrong sign; C forgets to divide by 2; D uses \\(P(0)\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the value of \\((1-\\alpha)(1-\\beta)(1-\\gamma)\\).",
+              "note": "\\(P(1)=2(1-\\alpha)(1-\\beta)(1-\\gamma)\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Year 11 Preliminary Mathematics Extension 1 Final Assessment",
+            "school": "Gosford High School",
             "grade": "11",
             "origin": "teacher"
           }
