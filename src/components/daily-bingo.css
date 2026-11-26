@@ -1,9 +1,9 @@
 /* Daily Bingo (student dashboard). */
 .bingo { font-family: 'Nunito', var(--font-sans); color: #2c2350; }
-.bingo-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; margin-bottom: 14px; }
+.bingo-head { display: flex; flex-direction: column; align-items: center; gap: 2px; margin-bottom: 14px; text-align: center; }
 .bingo-head h2 { margin: 0; font-size: 1.4rem; font-weight: 900; color: #0f172a; }
 .bingo-sub { color: #6f6a8a; font-weight: 700; font-size: 0.9rem; }
-.bingo-body { display: grid; grid-template-columns: minmax(0, 520px) minmax(0, 1fr); gap: 18px; align-items: start; }
+.bingo-body { width: min(560px, 100%); margin: 0 auto; }
 .bingo-board { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
 .bingo-cell { position: relative; aspect-ratio: 1; min-width: 0; border: 0; border-radius: 22px; background: #fff; color: #2c2350; display: grid; place-items: center; align-content: center; gap: 2px; padding: 6px; text-align: center; cursor: pointer; font-family: inherit; box-shadow: inset 0 3px 5px rgba(255,255,255,.8), inset 0 -6px 9px rgba(60,50,120,.06), 0 10px 20px rgba(110,100,180,.14); transition: transform .15s; }
 .bingo-cell svg { color: #7a5fd0; }
@@ -29,7 +29,6 @@
 .bingo-go { border: 0; border-radius: 999px; min-height: 52px; padding: 0 22px; background: #7a5fd0; color: #fff; font: 900 1rem 'Nunito', var(--font-sans); cursor: pointer; }
 .bingo-alldone { margin: 0; font-weight: 900; color: #1f9d61; }
 .bingo--compact .bingo-body, .bingo-body { }
-@media (max-width: 860px) { .bingo-body { grid-template-columns: minmax(0, 1fr); } }
 @media (max-width: 420px) { .bingo-cell b { font-size: 0.78rem; } .bingo-cell small { font-size: 0.68rem; } .bingo-board { gap: 7px; } .bingo-cell { border-radius: 18px; } }
 @media (prefers-reduced-motion: reduce) { .bingo-cell { transition: none; } }
 

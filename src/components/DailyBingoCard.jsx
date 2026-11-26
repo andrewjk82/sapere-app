@@ -39,7 +39,6 @@ export default function DailyBingoCard({ uid, profile, planItems, studyRoomOn, s
   const bingo = profile?.bingo;
   const paidLines = useMemo(() => (bingo?.date === date ? (bingo.lines || []) : []), [bingo, date]);
   const mustLeft = board.filter((c) => c.kind === 'must' && !c.done);
-  const next = mustLeft[0] || board.find((c) => !c.done && c.kind !== 'free');
 
   // Celebrate each line once per day on this device: its cells hop in turn, a line is drawn through them, "+5 XP" rises.
   const seenKey = `sapere:bingoSeen:v1:${uid}:${date}`;
@@ -87,7 +86,7 @@ export default function DailyBingoCard({ uid, profile, planItems, studyRoomOn, s
     <section className={`bingo${compact ? ' bingo--compact' : ''}`} aria-label="Today's Bingo">
       <div className="bingo-head">
         <h2>Today&apos;s Bingo</h2>
-        <span className="bingo-sub">{mustLeft.length ? `${mustLeft.length} must-do left` : 'All must-do done'} · new board at midnight</span>
+        <span className="bingo-sub">{mustLeft.length ? `${mustLeft.length} must-do left` : 'All must-do done'} · +{XP_PER_LINE} XP a line{won.length ? ` · ${won.length} done` : ''}</span>
       </div>
       <div className="bingo-body">
         <div className="bingo-board">
@@ -117,11 +116,6 @@ export default function DailyBingoCard({ uid, profile, planItems, studyRoomOn, s
               </div>
             );
           })()}
-        </div>
-        <div className="bingo-side">
-          <p className="bingo-prize">Each line +{XP_PER_LINE} XP · {won.length} of 8 lines today</p>
-          {next ? <button type="button" className="bingo-go" onClick={next.onClick}>Start {next.title}</button>
-            : <p className="bingo-alldone">Whole board done today 🎉</p>}
         </div>
       </div>
     </section>
