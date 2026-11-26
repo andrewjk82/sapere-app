@@ -293,6 +293,11 @@ const ChallengeQuizView = ({
     return () => window.clearTimeout(timer);
   }, [isFeedback, currentIdx, showSideCanvas]);
 
+  // Draw-your-answer questions render their own pad beside the Submit button on narrow screens.
+  const isDrawQuestion = currentQuestion?.type === 'graph_sketch' || currentQuestion?.type === 'teacher_review' || (currentQuestion?.requiresManualGrading && /(draw|sketch|construct)/i.test(currentQuestion?.question || ''));
+  // The pad below the answer: tablet widths, and phones whenever there is a pad to show (Daily Calculation).
+  const padBelow = !showSideCanvas && (isTabletCanvasLayout || (showSplitScreen && !isDrawQuestion));
+
   // Subtle full-screen pastel flash right after grading: green = correct,
   // red = wrong, amber = pending review. Animates 0.45 → 0 over ~650ms.
   const flashColor =
@@ -710,7 +715,7 @@ const ChallengeQuizView = ({
                 </button>
               )}
             </div>
-          ) : (currentQuestion?.type === 'graph_sketch' || currentQuestion?.type === 'teacher_review' || (currentQuestion?.requiresManualGrading && /(draw|sketch|construct)/i.test(currentQuestion?.question || ''))) ? (
+          ) : isDrawQuestion ? (
             <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
               {/* Inline canvas for mobile / non-split-screen layouts so the
                   student always has somewhere to draw AND the export captures ink */}
@@ -955,8 +960,8 @@ const ChallengeQuizView = ({
             );
           })()}
 
-          {/* Sketch pad — portrait layout: below the answer input */}
-          {isTabletCanvasLayout && (
+          {/* Sketch pad — portrait / phone layout: below the answer input */}
+          {padBelow && (
             <ChallengeSketchBoard
               placement="tablet"
               questionId={currentQuestion?.id || currentIdx}
