@@ -15261,6 +15261,56 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "killara2020-y11a-q16",
+          "type": "mc",
+          "stem": "Find the exact value of \\(\\sec^{2}(330^{\\circ})\\)",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{4}{3}\\)",
+            "\\(\\dfrac{2}{\\sqrt3}\\)",
+            "\\(-\\dfrac{4}{3}\\)",
+            "\\(\\dfrac{3}{4}\\)"
+          ],
+          "answer": 0,
+          "hint": "\\(\\sec\\theta=\\dfrac1{\\cos\\theta}\\). Find \\(\\cos330^{\\circ}\\) using the related angle (\\(330^{\\circ}=360^{\\circ}-30^{\\circ}\\), quadrant 4 where \\(\\cos\\) is positive). Square at the end.",
+          "steps": [
+            {
+              "explain": "Convert: \\(\\sec^{2}330^{\\circ}=\\dfrac{1}{\\cos^{2}330^{\\circ}}\\).",
+              "work": "\\(\\sec^{2}330^{\\circ}=\\dfrac{1}{\\left(\\cos330^{\\circ}\\right)^{2}}\\)"
+            },
+            {
+              "explain": "Related angle \\(30^{\\circ}\\); quadrant 4: \\(\\cos\\) is positive.",
+              "work": "\\(\\cos330^{\\circ}=\\cos30^{\\circ}=\\dfrac{\\sqrt3}{2}\\)"
+            },
+            {
+              "explain": "Square: \\(\\left(\\dfrac{\\sqrt3}{2}\\right)^{2}=\\dfrac{3}{4}\\). Then take the reciprocal.",
+              "work": "\\(\\sec^{2}330^{\\circ}=\\dfrac{1}{\\dfrac{3}{4}}=\\dfrac{4}{3}\\)"
+            },
+            {
+              "explain": "Why not the others: B is \\(\\sec330^{\\circ}\\) (not squared); C has the wrong sign (a square is never negative); D is \\(\\cos^{2}330^{\\circ}\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the exact value of",
+              "note": "\\(\\sec=\\dfrac1{\\cos}\\); \\(\\cos330^\\circ=\\dfrac{\\sqrt3}2\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School 2020 Year 11 Mathematics Advanced Task 3 Examination",
+            "school": "Killara High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -21339,6 +21389,59 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "killara2020-y11a-q8",
+          "type": "mc",
+          "stem": "If \\(\\cos\\beta=-\\dfrac{2}{5}\\) and \\(\\sin\\beta<0\\), find the exact value of \\(\\tan\\beta\\)",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{1}{2}\\)",
+            "\\(\\dfrac{\\sqrt{21}}{2}\\)",
+            "\\(-\\dfrac{\\sqrt{21}}{5}\\)",
+            "\\(\\dfrac{\\sqrt{29}}{2}\\)"
+          ],
+          "answer": 1,
+          "hint": "Step 1: use the SIGNS to find the quadrant (ASTC). Step 2: draw a right triangle with the given ratio and find the missing side by Pythagoras. Step 3: \\(\\tan\\beta=\\dfrac{\\sin\\beta}{\\cos\\beta}=\\dfrac{\\text{opp}}{\\text{adj}}\\) with the sign from the quadrant.",
+          "steps": [
+            {
+              "explain": "\\(\\cos\\beta<0\\) and \\(\\sin\\beta<0\\): only TANGENT is positive in the 3rd quadrant, so \\(\\beta\\) is in the 3rd quadrant and \\(\\tan\\beta>0\\).",
+              "work": "\\(\\beta\\in\\text{3rd quadrant}\\ \\Rightarrow\\ \\tan\\beta>0\\)"
+            },
+            {
+              "explain": "\\(\\cos\\beta=\\dfrac{\\text{adj}}{\\text{hyp}}=\\dfrac{-2}{5}\\): adjacent \\(=2\\), hypotenuse \\(=5\\). Pythagoras for the opposite side.",
+              "work": "\\(\\text{opp}=\\sqrt{5^{2}-2^{2}}=\\sqrt{21}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 250\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><line x1=\"20.0\" y1=\"125.0\" x2=\"310.0\" y2=\"125.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"165.0\" y1=\"235.0\" x2=\"165.0\" y2=\"15.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"310.0\" y1=\"125.0\" x2=\"303.1\" y2=\"121.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"310.0\" y1=\"125.0\" x2=\"303.1\" y2=\"129.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"165.0\" y1=\"15.0\" x2=\"161.0\" y2=\"21.9\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"165.0\" y1=\"15.0\" x2=\"169.0\" y2=\"21.9\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"165.0\" y1=\"125.0\" x2=\"121.0\" y2=\"225.8\" stroke=\"#dc2626\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"121.0\" y1=\"225.8\" x2=\"121.0\" y2=\"125.0\" stroke=\"#047857\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"121.0\" y1=\"125.0\" x2=\"165.0\" y2=\"125.0\" stroke=\"#d97706\" stroke-width=\"3\" stroke-linecap=\"round\"/><path d=\"M 137,125 A 28 28 0 1 0 153.8,150.7\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"2.4\"/><text x=\"115.0\" y=\"175.4\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">−√21</text><text x=\"143.0\" y=\"117.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">−2</text><text x=\"173.0\" y=\"185.4\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">hyp = 5</text><text x=\"107.0\" y=\"241.8\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#7c3aed\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">β</text><text x=\"55.0\" y=\"45.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">II</text><text x=\"275.0\" y=\"45.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">I</text><text x=\"55.0\" y=\"215.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">III</text><text x=\"275.0\" y=\"215.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">IV</text></svg>"
+              }
+            },
+            {
+              "explain": "\\(\\tan\\beta=\\dfrac{\\text{opp}}{\\text{adj}}=\\dfrac{\\sin\\beta}{\\cos\\beta}=\\dfrac{-\\dfrac{\\sqrt{21}}{5}}{-\\dfrac{2}{5}}\\): the two negatives cancel.",
+              "work": "\\(\\tan\\beta=\\dfrac{\\sqrt{21}}{2}\\)"
+            },
+            {
+              "explain": "Why not the others: A is \\(\\dfrac{1}{2}\\) (no triangle); C is \\(\\sin\\beta\\) (negative); D uses \\(\\sqrt{5^{2}+2^{2}}=\\sqrt{29}\\) (added instead of subtracting).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">B</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "find the exact value of \\(\\tan\\beta\\)",
+              "note": "ASTC: 3rd quadrant; opp \\(=\\sqrt{25-4}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School 2020 Year 11 Mathematics Advanced Task 3 Examination",
+            "school": "Killara High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -23710,6 +23813,60 @@
           "meta": {
             "source": "Merewether High School 2025 Year 12 Trial HSC Mathematics Advanced",
             "school": "Merewether High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2020-y11a-q26",
+          "type": "mc",
+          "stem": "Prove \\(\\dfrac{1-\\sin^{2}\\theta\\cos^{2}\\theta}{\\cos^{2}\\theta}=\\tan^{2}\\theta+\\cos^{2}\\theta\\). Which working proves it?",
+          "difficulty": "hard",
+          "options": [
+            "LHS \\(=\\dfrac{\\sin^{2}\\theta+\\cos^{2}\\theta-\\sin^{2}\\theta\\cos^{2}\\theta}{\\cos^{2}\\theta}=\\tan^{2}\\theta+1-\\sin^{2}\\theta=\\tan^{2}\\theta+\\cos^{2}\\theta=\\) RHS",
+            "LHS \\(=\\dfrac{1-\\sin^{2}\\theta}{1}\\times\\dfrac{\\cos^{2}\\theta}{\\cos^{2}\\theta}=\\cos^{2}\\theta\\)",
+            "LHS \\(=\\dfrac{1}{\\cos^{2}\\theta}-\\sin^{2}\\theta=\\sec^{2}\\theta-\\sin^{2}\\theta\\ne\\) RHS",
+            "LHS \\(=\\dfrac{1-\\sin\\theta\\cos\\theta}{\\cos\\theta}=\\tan\\theta\\)"
+          ],
+          "answer": 0,
+          "hint": "Work on ONE side (the LEFT). Replace the “1” in the numerator by \\(\\sin^{2}\\theta+\\cos^{2}\\theta\\), SPLIT the fraction into three terms, then use \\(\\dfrac{\\sin^{2}\\theta}{\\cos^{2}\\theta}=\\tan^{2}\\theta\\) and \\(1-\\sin^{2}\\theta=\\cos^{2}\\theta\\).",
+          "steps": [
+            {
+              "explain": "Pythagorean identity: \\(1=\\sin^{2}\\theta+\\cos^{2}\\theta\\).",
+              "work": "\\(\\text{LHS}=\\dfrac{\\sin^{2}\\theta+\\cos^{2}\\theta-\\sin^{2}\\theta\\cos^{2}\\theta}{\\cos^{2}\\theta}\\)"
+            },
+            {
+              "explain": "Split into three fractions (each divided by \\(\\cos^{2}\\theta\\)).",
+              "work": "\\(=\\dfrac{\\sin^{2}\\theta}{\\cos^{2}\\theta}+\\dfrac{\\cos^{2}\\theta}{\\cos^{2}\\theta}-\\dfrac{\\sin^{2}\\theta\\cos^{2}\\theta}{\\cos^{2}\\theta}\\)"
+            },
+            {
+              "explain": "Simplify: \\(\\dfrac{\\sin^{2}\\theta}{\\cos^{2}\\theta}=\\tan^{2}\\theta\\); \\(\\dfrac{\\cos^{2}\\theta}{\\cos^{2}\\theta}=1\\); the last term cancels to \\(\\sin^{2}\\theta\\).",
+              "work": "\\(=\\tan^{2}\\theta+1-\\sin^{2}\\theta\\)"
+            },
+            {
+              "explain": "Use \\(1-\\sin^{2}\\theta=\\cos^{2}\\theta\\).",
+              "work": "\\(=\\tan^{2}\\theta+\\cos^{2}\\theta=\\text{RHS}\\ \\checkmark\\)"
+            },
+            {
+              "explain": "Why not the others: B drops the \\(\\sin^{2}\\theta\\cos^{2}\\theta\\) term incorrectly; C splits wrongly and does not reach the RHS; D ‘cancels’ powers illegally.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Prove",
+              "note": "\\(1=\\sin^2+\\cos^2\\); split; \\(\\dfrac{\\sin^2}{\\cos^2}=\\tan^2\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School 2020 Year 11 Mathematics Advanced Task 3 Examination",
+            "school": "Killara High School",
             "grade": "11",
             "origin": "teacher"
           }
@@ -29122,6 +29279,56 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "killara2020-y11a-q14b",
+          "type": "mc",
+          "stem": "Solve the equation \\(2\\cos\\theta=\\sqrt3\\) in the interval \\(0\\le\\theta\\le360^{\\circ}\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(\\theta=30^{\\circ}\\) and \\(330^{\\circ}\\)",
+            "\\(\\theta=30^{\\circ}\\) and \\(150^{\\circ}\\)",
+            "\\(\\theta=60^{\\circ}\\) and \\(300^{\\circ}\\)",
+            "\\(\\theta=30^{\\circ}\\) only"
+          ],
+          "answer": 0,
+          "hint": "Isolate \\(\\cos\\theta\\), find the ACUTE related angle from the exact values, then use ASTC: \\(\\cos\\) is POSITIVE in quadrants 1 and 4.",
+          "steps": [
+            {
+              "explain": "Divide by 2.",
+              "work": "\\(\\cos\\theta=\\dfrac{\\sqrt3}{2}\\)"
+            },
+            {
+              "explain": "Related (acute) angle: \\(\\cos30^{\\circ}=\\dfrac{\\sqrt3}{2}\\) (exact value from the reference sheet).",
+              "work": "\\(\\text{related angle}=30^{\\circ}\\)"
+            },
+            {
+              "explain": "\\(\\cos\\) is positive in quadrant 1 (\\(\\theta=30^{\\circ}\\)) and quadrant 4 (\\(\\theta=360^{\\circ}-30^{\\circ}\\)).",
+              "work": "\\(\\theta=30^{\\circ},\\ \\ 330^{\\circ}\\)"
+            },
+            {
+              "explain": "Why not the others: B (150°) is in quadrant 2 where \\(\\cos<0\\); C has the wrong related angle; D misses quadrant 4.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Solve the equation \\(2\\cos\\theta=\\sqrt3\\)",
+              "note": "\\(\\cos\\theta=\\dfrac{\\sqrt3}2\\); quadrants 1 and 4."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School 2020 Year 11 Mathematics Advanced Task 3 Examination",
+            "school": "Killara High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -32359,6 +32566,118 @@
           "meta": {
             "source": "Merewether High School 2025 Year 12 Trial HSC Mathematics Advanced",
             "school": "Merewether High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2020-y11a-q4",
+          "type": "mc",
+          "stem": "What is the value of AB, correct to one decimal place?",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 210\" width=\"100%\" height=\"auto\" style=\"max-width:380px;display:block;margin:0 auto\"><polygon points=\"30,170 180,170 236.2,30.9\" fill=\"#fff\" fill-opacity=\"0.1\" stroke=\"#1e293b\" stroke-width=\"2.6\"/><text x=\"38.0\" y=\"166.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A</text><text x=\"244.2\" y=\"26.9\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text><text x=\"184.0\" y=\"188.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">C</text><text x=\"222.1\" y=\"100.5\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">13 cm</text><text x=\"90.0\" y=\"160.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">34°</text><text x=\"154.0\" y=\"162.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">112°</text><text x=\"370.0\" y=\"202.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#64748b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Not to scale</text></svg>"
+          },
+          "options": [
+            "\\(13.0\\) cm",
+            "\\(20.9\\) cm",
+            "\\(21.6\\) cm",
+            "\\(40.6\\) cm"
+          ],
+          "answer": 2,
+          "hint": "Two angles and one side \\(\\Rightarrow\\) SINE RULE: \\(\\dfrac{a}{\\sin A}=\\dfrac{b}{\\sin B}\\). Each side is paired with the sine of the angle OPPOSITE it. \\(BC=13\\) is opposite \\(\\angle A=34^{\\circ}\\); \\(AB\\) is opposite \\(\\angle C=112^{\\circ}\\).",
+          "steps": [
+            {
+              "explain": "Match the sides to their opposite angles: \\(AB\\leftrightarrow\\angle C=112^{\\circ}\\) (green side, red angle at \\(C\\)); \\(BC=13\\leftrightarrow\\angle A=34^{\\circ}\\) (orange side, red angle at \\(A\\)).",
+              "work": "\\(\\dfrac{AB}{\\sin112^{\\circ}}=\\dfrac{13}{\\sin34^{\\circ}}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 210\" width=\"100%\" height=\"auto\" style=\"max-width:380px;display:block;margin:0 auto\"><polygon points=\"30,170 180,170 236.2,30.9\" fill=\"#7c3aed\" fill-opacity=\"0.1\" stroke=\"#1e293b\" stroke-width=\"2.6\"/><line x1=\"180.0\" y1=\"170.0\" x2=\"236.2\" y2=\"30.9\" stroke=\"#d97706\" stroke-width=\"3.6\" stroke-linecap=\"round\"/><line x1=\"30.0\" y1=\"170.0\" x2=\"236.2\" y2=\"30.9\" stroke=\"#047857\" stroke-width=\"3.6\" stroke-linecap=\"round\"/><text x=\"38.0\" y=\"166.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A</text><text x=\"244.2\" y=\"26.9\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text><text x=\"184.0\" y=\"188.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">C</text><text x=\"222.1\" y=\"100.5\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">13 cm</text><text x=\"90.0\" y=\"160.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">34°</text><text x=\"154.0\" y=\"162.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">112°</text><text x=\"113.1\" y=\"84.5\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">AB = ?</text><text x=\"370.0\" y=\"202.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#64748b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Not to scale</text></svg>"
+              }
+            },
+            {
+              "explain": "Multiply both sides by \\(\\sin112^{\\circ}\\).",
+              "work": "\\(AB=\\dfrac{13\\sin112^{\\circ}}{\\sin34^{\\circ}}\\)"
+            },
+            {
+              "explain": "Calculate (calculator in DEGREE mode): \\(\\sin112^{\\circ}=0.9272\\), \\(\\sin34^{\\circ}=0.5592\\).",
+              "work": "\\(AB=\\dfrac{13\\times0.9272}{0.5592}=21.55\\ldots\\approx21.6\\ \\text{cm}\\)"
+            },
+            {
+              "explain": "Why not the others: A (13.0) is just \\(BC\\); B (20.9) uses \\(\\sin 112^{\\circ}\\) wrongly (e.g. \\(\\sin68^{\\circ}\\) mis-set); D (40.6) multiplies by the wrong sine.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">C</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "What is the value of AB, correct to one decimal place?",
+              "note": "Sine rule: \\(\\dfrac{AB}{\\sin112^\\circ}=\\dfrac{13}{\\sin34^\\circ}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School 2020 Year 11 Mathematics Advanced Task 3 Examination",
+            "school": "Killara High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2020-y11a-q28d",
+          "type": "mc",
+          "stem": "In triangle \\(ABC\\), \\(AB=340\\) km, \\(BC=620\\) km, \\(AC=421\\) km and \\(\\angle ABC=40^{\\circ}\\). The bearing from Cherrytown to Balnara is \\(260^{\\circ}T\\). Calculate the bearing from Cherrytown to Avalon.",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 250\" width=\"100%\" height=\"auto\" style=\"max-width:400px;display:block;margin:0 auto\"><line x1=\"150.0\" y1=\"39.0\" x2=\"150.0\" y2=\"3.0\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><line x1=\"150.0\" y1=\"3.0\" x2=\"146.5\" y2=\"9.1\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"3.0\" x2=\"153.5\" y2=\"9.1\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"142.0\" y=\"11.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#64748b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">N</text><line x1=\"84.0\" y1=\"117.0\" x2=\"84.0\" y2=\"81.0\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><line x1=\"84.0\" y1=\"81.0\" x2=\"80.5\" y2=\"87.1\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"84.0\" y1=\"81.0\" x2=\"87.5\" y2=\"87.1\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"76.0\" y=\"89.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#64748b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">N</text><line x1=\"150.0\" y1=\"45.0\" x2=\"84.0\" y2=\"123.0\" stroke=\"#1e293b\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"84.0\" y1=\"123.0\" x2=\"268.0\" y2=\"91.0\" stroke=\"#1e293b\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><circle cx=\"150.0\" cy=\"45.0\" r=\"4\" fill=\"#1e293b\"/><circle cx=\"84.0\" cy=\"123.0\" r=\"4\" fill=\"#1e293b\"/><circle cx=\"268.0\" cy=\"91.0\" r=\"4\" fill=\"#1e293b\"/><text x=\"158.0\" y=\"35.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Avalon  A</text><text x=\"88.0\" y=\"141.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Balnara  B</text><text x=\"276.0\" y=\"95.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Cherrytown  C</text><polyline points=\"150.0,15.0 152.9,15.1 155.7,15.6 158.5,16.2 161.2,17.2 163.9,18.4 166.3,19.8 168.7,21.5 170.8,23.4 172.8,25.5 174.6,27.8 176.1,30.2 177.4,32.8 178.4,35.5 179.2,38.3 179.7,41.1 180.0,44.0 179.9,46.8 179.6,49.7 179.0,52.5 178.2,55.3 177.1,57.9 175.7,60.5 174.1,62.8 172.3,65.1 170.3,67.1 168.1,69.0 165.7,70.6 163.2,72.0 160.5,73.1 157.8,74.0 155.0,74.6 152.1,74.9 149.2,75.0 146.3,74.8 143.5,74.3 140.7,73.5 138.0,72.5 135.5,71.2 133.0,69.7 130.7,68.0\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.6\"/><text x=\"184.0\" y=\"73.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">220°</text><polyline points=\"84.0,95.0 85.0,95.0 86.0,95.1 86.9,95.2 87.9,95.3 88.9,95.4 89.8,95.6 90.8,95.8 91.7,96.1 92.7,96.4 93.6,96.7 94.5,97.0 95.4,97.4 96.3,97.8 97.1,98.3 98.0,98.8 98.8,99.3 99.7,99.8 100.5,100.3 101.2,100.9 102.0,101.6 102.7,102.2 103.5,102.9 104.1,103.5 104.8,104.3 105.4,105.0 106.1,105.8 106.7,106.5 107.2,107.3 107.7,108.2 108.2,109.0 108.7,109.9 109.2,110.7 109.6,111.6 110.0,112.5 110.3,113.4 110.6,114.3 110.9,115.3 111.2,116.2 111.4,117.2 111.6,118.1\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.6\"/><text x=\"128.0\" y=\"128.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">080°</text><text x=\"138.0\" y=\"75.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">340 km</text><text x=\"210.0\" y=\"129.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">620 km</text></svg>"
+          },
+          "options": [
+            "\\(291^{\\circ}T\\)",
+            "\\(031^{\\circ}T\\)",
+            "\\(249^{\\circ}T\\)",
+            "\\(111^{\\circ}T\\)"
+          ],
+          "answer": 0,
+          "hint": "Step 1: find \\(\\angle ACB\\) with the SINE rule (or cosine rule: it is the OBTUSE-case safe way). Step 2: turn it into a BEARING with a diagram: bearing of \\(B\\) from \\(C\\) is \\(260^{\\circ}\\) (back bearing of \\(080^{\\circ}\\)); \\(A\\) lies slightly further CLOCKWISE (towards north), so ADD the angle.",
+          "steps": [
+            {
+              "explain": "Sine rule: \\(\\dfrac{\\sin\\angle ACB}{AB}=\\dfrac{\\sin40^{\\circ}}{AC}\\) (\\(AB=340\\) is opposite \\(\\angle C\\); \\(AC=421\\) is opposite \\(\\angle B=40^{\\circ}\\)).",
+              "work": "\\(\\sin\\angle ACB=\\dfrac{340\\sin40^{\\circ}}{421}=0.5191\\ldots\\)"
+            },
+            {
+              "explain": "\\(\\angle ACB=\\sin^{-1}(0.5191)\\approx31^{\\circ}\\). (It must be acute: the longest side is \\(BC\\), opposite \\(\\angle A\\), so \\(\\angle C\\) cannot be obtuse.)",
+              "work": "\\(\\angle ACB\\approx31^{\\circ}\\)"
+            },
+            {
+              "explain": "Bearing of \\(B\\) from \\(C\\): back bearing of \\(080^{\\circ}\\) is \\(080^{\\circ}+180^{\\circ}=260^{\\circ}\\). \\(A\\) is rotated \\(31^{\\circ}\\) further CLOCKWISE (towards the north-west), so add.",
+              "work": "\\(260^{\\circ}+31^{\\circ}=291^{\\circ}T\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 250\" width=\"100%\" height=\"auto\" style=\"max-width:400px;display:block;margin:0 auto\"><line x1=\"150.0\" y1=\"39.0\" x2=\"150.0\" y2=\"3.0\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><line x1=\"150.0\" y1=\"3.0\" x2=\"146.5\" y2=\"9.1\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"3.0\" x2=\"153.5\" y2=\"9.1\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"142.0\" y=\"11.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#64748b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">N</text><line x1=\"84.0\" y1=\"117.0\" x2=\"84.0\" y2=\"81.0\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><line x1=\"84.0\" y1=\"81.0\" x2=\"80.5\" y2=\"87.1\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"84.0\" y1=\"81.0\" x2=\"87.5\" y2=\"87.1\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"76.0\" y=\"89.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#64748b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">N</text><line x1=\"150.0\" y1=\"45.0\" x2=\"84.0\" y2=\"123.0\" stroke=\"#1e293b\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"84.0\" y1=\"123.0\" x2=\"268.0\" y2=\"91.0\" stroke=\"#1e293b\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"45.0\" x2=\"268.0\" y2=\"91.0\" stroke=\"#047857\" stroke-width=\"3\" stroke-linecap=\"round\"/><circle cx=\"150.0\" cy=\"45.0\" r=\"4\" fill=\"#1e293b\"/><circle cx=\"84.0\" cy=\"123.0\" r=\"4\" fill=\"#1e293b\"/><circle cx=\"268.0\" cy=\"91.0\" r=\"4\" fill=\"#1e293b\"/><text x=\"158.0\" y=\"35.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Avalon  A</text><text x=\"88.0\" y=\"141.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Balnara  B</text><text x=\"276.0\" y=\"95.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Cherrytown  C</text><polyline points=\"150.0,15.0 152.9,15.1 155.7,15.6 158.5,16.2 161.2,17.2 163.9,18.4 166.3,19.8 168.7,21.5 170.8,23.4 172.8,25.5 174.6,27.8 176.1,30.2 177.4,32.8 178.4,35.5 179.2,38.3 179.7,41.1 180.0,44.0 179.9,46.8 179.6,49.7 179.0,52.5 178.2,55.3 177.1,57.9 175.7,60.5 174.1,62.8 172.3,65.1 170.3,67.1 168.1,69.0 165.7,70.6 163.2,72.0 160.5,73.1 157.8,74.0 155.0,74.6 152.1,74.9 149.2,75.0 146.3,74.8 143.5,74.3 140.7,73.5 138.0,72.5 135.5,71.2 133.0,69.7 130.7,68.0\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.6\"/><text x=\"184.0\" y=\"73.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">220°</text><polyline points=\"84.0,95.0 85.0,95.0 86.0,95.1 86.9,95.2 87.9,95.3 88.9,95.4 89.8,95.6 90.8,95.8 91.7,96.1 92.7,96.4 93.6,96.7 94.5,97.0 95.4,97.4 96.3,97.8 97.1,98.3 98.0,98.8 98.8,99.3 99.7,99.8 100.5,100.3 101.2,100.9 102.0,101.6 102.7,102.2 103.5,102.9 104.1,103.5 104.8,104.3 105.4,105.0 106.1,105.8 106.7,106.5 107.2,107.3 107.7,108.2 108.2,109.0 108.7,109.9 109.2,110.7 109.6,111.6 110.0,112.5 110.3,113.4 110.6,114.3 110.9,115.3 111.2,116.2 111.4,117.2 111.6,118.1\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.6\"/><text x=\"128.0\" y=\"128.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">080°</text><text x=\"138.0\" y=\"75.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">340 km</text><text x=\"210.0\" y=\"129.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">620 km</text><line x1=\"268.0\" y1=\"85.0\" x2=\"268.0\" y2=\"49.0\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><line x1=\"268.0\" y1=\"49.0\" x2=\"264.5\" y2=\"55.1\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"268.0\" y1=\"49.0\" x2=\"271.5\" y2=\"55.1\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"260.0\" y=\"57.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#64748b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">N</text><line x1=\"268.0\" y1=\"91.0\" x2=\"150.0\" y2=\"45.0\" stroke=\"#047857\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><polyline points=\"268.0,67.0 271.0,67.2 274.0,67.8 276.9,68.7 279.7,70.0 282.2,71.7 284.6,73.6 286.6,75.9 288.4,78.4 289.8,81.1 290.9,83.9 291.6,86.9 292.0,89.9 291.9,93.0 291.5,96.0 290.7,98.9 289.5,101.7 287.9,104.4 286.1,106.8 283.9,108.9 281.5,110.8 278.9,112.4 276.1,113.6 273.2,114.4 270.2,114.9 267.1,115.0 264.1,114.7 261.1,114.0 258.3,112.9 255.6,111.5 253.1,109.8 250.8,107.7 248.8,105.4 247.1,102.9 245.8,100.1 244.8,97.3 244.2,94.3 244.0,91.2 244.2,88.2 244.7,85.2 245.6,82.3\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.8\" stroke-dasharray=\"4 3\"/><text x=\"238.0\" y=\"39.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">291°</text><polyline points=\"228.6,97.9 228.5,97.4 228.4,96.9 228.4,96.3 228.3,95.8 228.2,95.2 228.2,94.7 228.1,94.2 228.1,93.6 228.1,93.1 228.0,92.5 228.0,92.0 228.0,91.4 228.0,90.9 228.0,90.3 228.0,89.8 228.0,89.2 228.1,88.7 228.1,88.2 228.1,87.6 228.2,87.1 228.3,86.5 228.3,86.0 228.4,85.4 228.5,84.9 228.6,84.4 228.7,83.8 228.8,83.3 228.9,82.7 229.0,82.2 229.1,81.7 229.2,81.1 229.4,80.6 229.5,80.1 229.7,79.6 229.8,79.0 230.0,78.5 230.2,78.0 230.3,77.5 230.5,77.0 230.7,76.5\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"3.4\"/><text x=\"214.0\" y=\"113.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#7c3aed\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">31°</text></svg>"
+              }
+            },
+            {
+              "explain": "Why not the others: B is the angle itself (a bearing needs the north line); C subtracts (\\(260^{\\circ}-31^{\\circ}\\) points south-west of \\(CB\\)); D uses \\(080^{\\circ}+31^{\\circ}\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Calculate the bearing from Cherrytown to Avalon.",
+              "note": "Find \\(\\angle ACB\\approx31^\\circ\\); back bearing \\(260^\\circ\\); add."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School 2020 Year 11 Mathematics Advanced Task 3 Examination",
+            "school": "Killara High School",
             "grade": "11",
             "origin": "teacher"
           }
@@ -37959,6 +38278,62 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "killara2020-y11a-q28c",
+          "type": "mc",
+          "stem": "In triangle \\(ABC\\), \\(AB=340\\) km, \\(BC=620\\) km and \\(\\angle ABC=40^{\\circ}\\). Calculate, to the nearest kilometre, the distance the plane has to travel to fly directly from Cherrytown back to Avalon.",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 250\" width=\"100%\" height=\"auto\" style=\"max-width:400px;display:block;margin:0 auto\"><line x1=\"150.0\" y1=\"39.0\" x2=\"150.0\" y2=\"3.0\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><line x1=\"150.0\" y1=\"3.0\" x2=\"146.5\" y2=\"9.1\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"3.0\" x2=\"153.5\" y2=\"9.1\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"142.0\" y=\"11.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#64748b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">N</text><line x1=\"84.0\" y1=\"117.0\" x2=\"84.0\" y2=\"81.0\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><line x1=\"84.0\" y1=\"81.0\" x2=\"80.5\" y2=\"87.1\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"84.0\" y1=\"81.0\" x2=\"87.5\" y2=\"87.1\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"76.0\" y=\"89.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#64748b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">N</text><line x1=\"150.0\" y1=\"45.0\" x2=\"84.0\" y2=\"123.0\" stroke=\"#1e293b\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"84.0\" y1=\"123.0\" x2=\"268.0\" y2=\"91.0\" stroke=\"#1e293b\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><circle cx=\"150.0\" cy=\"45.0\" r=\"4\" fill=\"#1e293b\"/><circle cx=\"84.0\" cy=\"123.0\" r=\"4\" fill=\"#1e293b\"/><circle cx=\"268.0\" cy=\"91.0\" r=\"4\" fill=\"#1e293b\"/><text x=\"158.0\" y=\"35.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Avalon  A</text><text x=\"88.0\" y=\"141.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Balnara  B</text><text x=\"276.0\" y=\"95.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Cherrytown  C</text><polyline points=\"150.0,15.0 152.9,15.1 155.7,15.6 158.5,16.2 161.2,17.2 163.9,18.4 166.3,19.8 168.7,21.5 170.8,23.4 172.8,25.5 174.6,27.8 176.1,30.2 177.4,32.8 178.4,35.5 179.2,38.3 179.7,41.1 180.0,44.0 179.9,46.8 179.6,49.7 179.0,52.5 178.2,55.3 177.1,57.9 175.7,60.5 174.1,62.8 172.3,65.1 170.3,67.1 168.1,69.0 165.7,70.6 163.2,72.0 160.5,73.1 157.8,74.0 155.0,74.6 152.1,74.9 149.2,75.0 146.3,74.8 143.5,74.3 140.7,73.5 138.0,72.5 135.5,71.2 133.0,69.7 130.7,68.0\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.6\"/><text x=\"184.0\" y=\"73.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">220°</text><polyline points=\"84.0,95.0 85.0,95.0 86.0,95.1 86.9,95.2 87.9,95.3 88.9,95.4 89.8,95.6 90.8,95.8 91.7,96.1 92.7,96.4 93.6,96.7 94.5,97.0 95.4,97.4 96.3,97.8 97.1,98.3 98.0,98.8 98.8,99.3 99.7,99.8 100.5,100.3 101.2,100.9 102.0,101.6 102.7,102.2 103.5,102.9 104.1,103.5 104.8,104.3 105.4,105.0 106.1,105.8 106.7,106.5 107.2,107.3 107.7,108.2 108.2,109.0 108.7,109.9 109.2,110.7 109.6,111.6 110.0,112.5 110.3,113.4 110.6,114.3 110.9,115.3 111.2,116.2 111.4,117.2 111.6,118.1\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.6\"/><text x=\"128.0\" y=\"128.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">080°</text><text x=\"138.0\" y=\"75.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">340 km</text><text x=\"210.0\" y=\"129.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">620 km</text></svg>"
+          },
+          "options": [
+            "\\(421\\) km",
+            "\\(960\\) km",
+            "\\(177\\ 032\\) km",
+            "\\(366\\) km"
+          ],
+          "answer": 0,
+          "hint": "Two sides and the INCLUDED angle \\(\\Rightarrow\\) COSINE RULE: \\(c^{2}=a^{2}+b^{2}-2ab\\cos C\\). The angle \\(40^{\\circ}\\) is at \\(B\\), between the sides \\(AB\\) and \\(BC\\), so it is opposite the side \\(AC\\). Calculator in DEGREE mode; square root at the END.",
+          "steps": [
+            {
+              "explain": "Cosine rule for the side \\(AC\\) opposite \\(\\angle B=40^{\\circ}\\).",
+              "work": "\\(AC^{2}=340^{2}+620^{2}-2(340)(620)\\cos40^{\\circ}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 250\" width=\"100%\" height=\"auto\" style=\"max-width:400px;display:block;margin:0 auto\"><line x1=\"150.0\" y1=\"39.0\" x2=\"150.0\" y2=\"3.0\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><line x1=\"150.0\" y1=\"3.0\" x2=\"146.5\" y2=\"9.1\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"3.0\" x2=\"153.5\" y2=\"9.1\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"142.0\" y=\"11.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#64748b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">N</text><line x1=\"84.0\" y1=\"117.0\" x2=\"84.0\" y2=\"81.0\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><line x1=\"84.0\" y1=\"81.0\" x2=\"80.5\" y2=\"87.1\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"84.0\" y1=\"81.0\" x2=\"87.5\" y2=\"87.1\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"76.0\" y=\"89.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#64748b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">N</text><line x1=\"150.0\" y1=\"45.0\" x2=\"84.0\" y2=\"123.0\" stroke=\"#1e293b\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"84.0\" y1=\"123.0\" x2=\"268.0\" y2=\"91.0\" stroke=\"#1e293b\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"45.0\" x2=\"268.0\" y2=\"91.0\" stroke=\"#047857\" stroke-width=\"3\" stroke-linecap=\"round\"/><circle cx=\"150.0\" cy=\"45.0\" r=\"4\" fill=\"#1e293b\"/><circle cx=\"84.0\" cy=\"123.0\" r=\"4\" fill=\"#1e293b\"/><circle cx=\"268.0\" cy=\"91.0\" r=\"4\" fill=\"#1e293b\"/><text x=\"158.0\" y=\"35.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Avalon  A</text><text x=\"88.0\" y=\"141.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Balnara  B</text><text x=\"276.0\" y=\"95.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Cherrytown  C</text><polyline points=\"150.0,15.0 152.9,15.1 155.7,15.6 158.5,16.2 161.2,17.2 163.9,18.4 166.3,19.8 168.7,21.5 170.8,23.4 172.8,25.5 174.6,27.8 176.1,30.2 177.4,32.8 178.4,35.5 179.2,38.3 179.7,41.1 180.0,44.0 179.9,46.8 179.6,49.7 179.0,52.5 178.2,55.3 177.1,57.9 175.7,60.5 174.1,62.8 172.3,65.1 170.3,67.1 168.1,69.0 165.7,70.6 163.2,72.0 160.5,73.1 157.8,74.0 155.0,74.6 152.1,74.9 149.2,75.0 146.3,74.8 143.5,74.3 140.7,73.5 138.0,72.5 135.5,71.2 133.0,69.7 130.7,68.0\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.6\"/><text x=\"184.0\" y=\"73.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">220°</text><polyline points=\"84.0,95.0 85.0,95.0 86.0,95.1 86.9,95.2 87.9,95.3 88.9,95.4 89.8,95.6 90.8,95.8 91.7,96.1 92.7,96.4 93.6,96.7 94.5,97.0 95.4,97.4 96.3,97.8 97.1,98.3 98.0,98.8 98.8,99.3 99.7,99.8 100.5,100.3 101.2,100.9 102.0,101.6 102.7,102.2 103.5,102.9 104.1,103.5 104.8,104.3 105.4,105.0 106.1,105.8 106.7,106.5 107.2,107.3 107.7,108.2 108.2,109.0 108.7,109.9 109.2,110.7 109.6,111.6 110.0,112.5 110.3,113.4 110.6,114.3 110.9,115.3 111.2,116.2 111.4,117.2 111.6,118.1\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.6\"/><text x=\"128.0\" y=\"128.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">080°</text><text x=\"138.0\" y=\"75.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">340 km</text><text x=\"210.0\" y=\"129.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">620 km</text><text x=\"225.0\" y=\"94.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">AC = 421 km</text><polyline points=\"112.3,89.3 112.9,89.8 113.4,90.3 114.0,90.8 114.6,91.3 115.1,91.9 115.7,92.4 116.2,93.0 116.7,93.6 117.2,94.1 117.7,94.7 118.2,95.3 118.7,95.9 119.1,96.5 119.6,97.1 120.0,97.8 120.5,98.4 120.9,99.0 121.3,99.7 121.7,100.3 122.1,101.0 122.5,101.7 122.8,102.3 123.2,103.0 123.5,103.7 123.9,104.4 124.2,105.1 124.5,105.8 124.8,106.5 125.1,107.2 125.3,108.0 125.6,108.7 125.8,109.4 126.1,110.1 126.3,110.9 126.5,111.6 126.7,112.4 126.9,113.1 127.0,113.9 127.2,114.6 127.3,115.4\" fill=\"none\" stroke=\"#047857\" stroke-width=\"3.4\"/><text x=\"142.0\" y=\"91.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">40°</text></svg>"
+              }
+            },
+            {
+              "explain": "Evaluate: \\(340^{2}=115\\ 600\\); \\(620^{2}=384\\ 400\\); \\(2(340)(620)\\cos40^{\\circ}=421\\ 600\\times0.76604=322\\ 968\\).",
+              "work": "\\(AC^{2}=115\\ 600+384\\ 400-322\\ 968=177\\ 032\\)"
+            },
+            {
+              "explain": "Square root and round.",
+              "work": "\\(AC=\\sqrt{177\\ 032}=420.8\\ldots\\approx421\\ \\text{km}\\)"
+            },
+            {
+              "explain": "Why not the others: B (960) adds \\(340+620\\); C (177 032) forgets the square root; D uses \\(\\sin40^{\\circ}\\) or degrees/radians mix-up.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Calculate, to the nearest kilometre, the distance the plane has to travel to fly directly from Cherrytown back to Avalon.",
+              "note": "Cosine rule with the included angle \\(40^\\circ\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School 2020 Year 11 Mathematics Advanced Task 3 Examination",
+            "school": "Killara High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -40738,6 +41113,110 @@
           ],
           "timeLimit": 90,
           "xp": 2
+        },
+        {
+          "id": "killara2020-y11a-q28a",
+          "type": "mc",
+          "stem": "The diagram shows the path of a plane flying from Avalon to Balnara, a distance of 340 kilometres, on a bearing of \\(220^{\\circ}T\\). At Balnara, the plane changed course and flew to Cherrytown, a distance of 620 kilometres on a bearing of \\(080^{\\circ}T\\). On the diagram above, show the bearings and distances. Which labelling is correct?",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 250\" width=\"100%\" height=\"auto\" style=\"max-width:400px;display:block;margin:0 auto\"><line x1=\"150.0\" y1=\"39.0\" x2=\"150.0\" y2=\"3.0\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><line x1=\"150.0\" y1=\"3.0\" x2=\"146.5\" y2=\"9.1\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"3.0\" x2=\"153.5\" y2=\"9.1\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"142.0\" y=\"11.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#64748b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">N</text><line x1=\"84.0\" y1=\"117.0\" x2=\"84.0\" y2=\"81.0\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><line x1=\"84.0\" y1=\"81.0\" x2=\"80.5\" y2=\"87.1\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"84.0\" y1=\"81.0\" x2=\"87.5\" y2=\"87.1\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"76.0\" y=\"89.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#64748b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">N</text><line x1=\"150.0\" y1=\"45.0\" x2=\"84.0\" y2=\"123.0\" stroke=\"#1e293b\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"84.0\" y1=\"123.0\" x2=\"268.0\" y2=\"91.0\" stroke=\"#1e293b\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"45.0\" x2=\"268.0\" y2=\"91.0\" stroke=\"#1e293b\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><circle cx=\"150.0\" cy=\"45.0\" r=\"4\" fill=\"#1e293b\"/><circle cx=\"84.0\" cy=\"123.0\" r=\"4\" fill=\"#1e293b\"/><circle cx=\"268.0\" cy=\"91.0\" r=\"4\" fill=\"#1e293b\"/><text x=\"158.0\" y=\"35.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Avalon  A</text><text x=\"88.0\" y=\"141.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Balnara  B</text><text x=\"276.0\" y=\"95.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Cherrytown  C</text></svg>"
+          },
+          "options": [
+            "At \\(A\\): \\(220^{\\circ}\\) measured CLOCKWISE from the north line to \\(AB\\), \\(AB=340\\) km. At \\(B\\): \\(080^{\\circ}\\) clockwise from the north line at \\(B\\) to \\(BC\\), \\(BC=620\\) km",
+            "At \\(A\\): \\(220^{\\circ}\\) measured ANTI-clockwise from north; \\(AB=620\\) km; at \\(B\\): \\(080^{\\circ}\\) anti-clockwise; \\(BC=340\\) km",
+            "At \\(A\\): \\(140^{\\circ}\\) clockwise from north; \\(AB=340\\) km; at \\(B\\): \\(080^{\\circ}\\) clockwise from north; \\(BC=620\\) km",
+            "At \\(A\\): \\(220^{\\circ}\\) from the north line at \\(B\\); \\(AB=340\\) km; at \\(C\\): \\(080^{\\circ}\\); \\(BC=620\\) km"
+          ],
+          "answer": 0,
+          "hint": "BEARINGS are always measured (1) from the NORTH line at the STARTING point of that leg, (2) CLOCKWISE, (3) as a 3-digit angle. So the first leg uses the north line at \\(A\\) and the second leg uses the north line at \\(B\\).",
+          "steps": [
+            {
+              "explain": "Leg 1: start at \\(A\\). Draw the north line at \\(A\\); measure \\(220^{\\circ}\\) CLOCKWISE (past east at 90°, past south at 180°, to south-west at 220°). \\(AB=340\\) km.",
+              "work": "\\(A\\to B:\\ \\ 220^{\\circ}T,\\ \\ 340\\ \\text{km}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 250\" width=\"100%\" height=\"auto\" style=\"max-width:400px;display:block;margin:0 auto\"><line x1=\"150.0\" y1=\"39.0\" x2=\"150.0\" y2=\"3.0\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><line x1=\"150.0\" y1=\"3.0\" x2=\"146.5\" y2=\"9.1\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"3.0\" x2=\"153.5\" y2=\"9.1\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"142.0\" y=\"11.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#64748b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">N</text><line x1=\"84.0\" y1=\"117.0\" x2=\"84.0\" y2=\"81.0\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><line x1=\"84.0\" y1=\"81.0\" x2=\"80.5\" y2=\"87.1\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"84.0\" y1=\"81.0\" x2=\"87.5\" y2=\"87.1\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"76.0\" y=\"89.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#64748b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">N</text><line x1=\"150.0\" y1=\"45.0\" x2=\"84.0\" y2=\"123.0\" stroke=\"#1e293b\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"84.0\" y1=\"123.0\" x2=\"268.0\" y2=\"91.0\" stroke=\"#1e293b\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><circle cx=\"150.0\" cy=\"45.0\" r=\"4\" fill=\"#1e293b\"/><circle cx=\"84.0\" cy=\"123.0\" r=\"4\" fill=\"#1e293b\"/><circle cx=\"268.0\" cy=\"91.0\" r=\"4\" fill=\"#1e293b\"/><text x=\"158.0\" y=\"35.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Avalon  A</text><text x=\"88.0\" y=\"141.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Balnara  B</text><text x=\"276.0\" y=\"95.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Cherrytown  C</text><polyline points=\"150.0,15.0 152.9,15.1 155.7,15.6 158.5,16.2 161.2,17.2 163.9,18.4 166.3,19.8 168.7,21.5 170.8,23.4 172.8,25.5 174.6,27.8 176.1,30.2 177.4,32.8 178.4,35.5 179.2,38.3 179.7,41.1 180.0,44.0 179.9,46.8 179.6,49.7 179.0,52.5 178.2,55.3 177.1,57.9 175.7,60.5 174.1,62.8 172.3,65.1 170.3,67.1 168.1,69.0 165.7,70.6 163.2,72.0 160.5,73.1 157.8,74.0 155.0,74.6 152.1,74.9 149.2,75.0 146.3,74.8 143.5,74.3 140.7,73.5 138.0,72.5 135.5,71.2 133.0,69.7 130.7,68.0\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.6\"/><text x=\"184.0\" y=\"73.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">220°</text><polyline points=\"84.0,95.0 85.0,95.0 86.0,95.1 86.9,95.2 87.9,95.3 88.9,95.4 89.8,95.6 90.8,95.8 91.7,96.1 92.7,96.4 93.6,96.7 94.5,97.0 95.4,97.4 96.3,97.8 97.1,98.3 98.0,98.8 98.8,99.3 99.7,99.8 100.5,100.3 101.2,100.9 102.0,101.6 102.7,102.2 103.5,102.9 104.1,103.5 104.8,104.3 105.4,105.0 106.1,105.8 106.7,106.5 107.2,107.3 107.7,108.2 108.2,109.0 108.7,109.9 109.2,110.7 109.6,111.6 110.0,112.5 110.3,113.4 110.6,114.3 110.9,115.3 111.2,116.2 111.4,117.2 111.6,118.1\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.6\"/><text x=\"128.0\" y=\"128.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">080°</text><text x=\"138.0\" y=\"75.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">340 km</text><text x=\"210.0\" y=\"129.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">620 km</text></svg>"
+              }
+            },
+            {
+              "explain": "Leg 2: start at \\(B\\). Draw a (parallel) north line at \\(B\\); measure \\(080^{\\circ}\\) CLOCKWISE (almost east, slightly north). \\(BC=620\\) km.",
+              "work": "\\(B\\to C:\\ \\ 080^{\\circ}T,\\ \\ 620\\ \\text{km}\\)"
+            },
+            {
+              "explain": "Why not the others: B measures anti-clockwise and swaps the distances; C uses 140° (that would be \\(360^{\\circ}-220^{\\circ}\\), measured the wrong way); D measures the angle from the wrong place.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "On the diagram above, show the bearings and distances.",
+              "note": "Clockwise from the north line at the START of each leg."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School 2020 Year 11 Mathematics Advanced Task 3 Examination",
+            "school": "Killara High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2020-y11a-q28b",
+          "type": "mc",
+          "stem": "The plane flew from Avalon (\\(A\\)) to Balnara (\\(B\\)) on a bearing of \\(220^{\\circ}T\\), then to Cherrytown (\\(C\\)) on a bearing of \\(080^{\\circ}T\\). Why is \\(\\angle ABC=40^{\\circ}\\)? Show clearly on the diagram and give reasons.",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 250\" width=\"100%\" height=\"auto\" style=\"max-width:400px;display:block;margin:0 auto\"><line x1=\"150.0\" y1=\"39.0\" x2=\"150.0\" y2=\"3.0\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><line x1=\"150.0\" y1=\"3.0\" x2=\"146.5\" y2=\"9.1\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"3.0\" x2=\"153.5\" y2=\"9.1\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"142.0\" y=\"11.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#64748b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">N</text><line x1=\"84.0\" y1=\"117.0\" x2=\"84.0\" y2=\"81.0\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><line x1=\"84.0\" y1=\"81.0\" x2=\"80.5\" y2=\"87.1\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"84.0\" y1=\"81.0\" x2=\"87.5\" y2=\"87.1\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"76.0\" y=\"89.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#64748b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">N</text><line x1=\"150.0\" y1=\"45.0\" x2=\"84.0\" y2=\"123.0\" stroke=\"#1e293b\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"84.0\" y1=\"123.0\" x2=\"268.0\" y2=\"91.0\" stroke=\"#1e293b\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><circle cx=\"150.0\" cy=\"45.0\" r=\"4\" fill=\"#1e293b\"/><circle cx=\"84.0\" cy=\"123.0\" r=\"4\" fill=\"#1e293b\"/><circle cx=\"268.0\" cy=\"91.0\" r=\"4\" fill=\"#1e293b\"/><text x=\"158.0\" y=\"35.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Avalon  A</text><text x=\"88.0\" y=\"141.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Balnara  B</text><text x=\"276.0\" y=\"95.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Cherrytown  C</text><polyline points=\"150.0,15.0 152.9,15.1 155.7,15.6 158.5,16.2 161.2,17.2 163.9,18.4 166.3,19.8 168.7,21.5 170.8,23.4 172.8,25.5 174.6,27.8 176.1,30.2 177.4,32.8 178.4,35.5 179.2,38.3 179.7,41.1 180.0,44.0 179.9,46.8 179.6,49.7 179.0,52.5 178.2,55.3 177.1,57.9 175.7,60.5 174.1,62.8 172.3,65.1 170.3,67.1 168.1,69.0 165.7,70.6 163.2,72.0 160.5,73.1 157.8,74.0 155.0,74.6 152.1,74.9 149.2,75.0 146.3,74.8 143.5,74.3 140.7,73.5 138.0,72.5 135.5,71.2 133.0,69.7 130.7,68.0\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.6\"/><text x=\"184.0\" y=\"73.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">220°</text><polyline points=\"84.0,95.0 85.0,95.0 86.0,95.1 86.9,95.2 87.9,95.3 88.9,95.4 89.8,95.6 90.8,95.8 91.7,96.1 92.7,96.4 93.6,96.7 94.5,97.0 95.4,97.4 96.3,97.8 97.1,98.3 98.0,98.8 98.8,99.3 99.7,99.8 100.5,100.3 101.2,100.9 102.0,101.6 102.7,102.2 103.5,102.9 104.1,103.5 104.8,104.3 105.4,105.0 106.1,105.8 106.7,106.5 107.2,107.3 107.7,108.2 108.2,109.0 108.7,109.9 109.2,110.7 109.6,111.6 110.0,112.5 110.3,113.4 110.6,114.3 110.9,115.3 111.2,116.2 111.4,117.2 111.6,118.1\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.6\"/><text x=\"128.0\" y=\"128.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">080°</text><text x=\"138.0\" y=\"75.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">340 km</text><text x=\"210.0\" y=\"129.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">620 km</text></svg>"
+          },
+          "options": [
+            "The north lines at \\(A\\) and \\(B\\) are parallel. The bearing of \\(A\\) from \\(B\\) is \\(220^{\\circ}-180^{\\circ}=40^{\\circ}\\) (alternate angles on parallel lines). So \\(\\angle ABC=80^{\\circ}-40^{\\circ}=40^{\\circ}\\)",
+            "\\(\\angle ABC=220^{\\circ}-80^{\\circ}-100^{\\circ}=40^{\\circ}\\) (angle sum of a triangle)",
+            "\\(\\angle ABC=220^{\\circ}-180^{\\circ}=40^{\\circ}\\) because bearings add to \\(360^{\\circ}\\)",
+            "\\(\\angle ABC=80^{\\circ}\\) because \\(BC\\) is on a bearing of \\(080^{\\circ}\\)"
+          ],
+          "answer": 0,
+          "hint": "Find the bearing of \\(A\\) FROM \\(B\\) (the BACK bearing: add or subtract \\(180^{\\circ}\\)). The north lines at \\(A\\) and \\(B\\) are parallel, so alternate (or co-interior) angles give the back bearing. Then subtract from the bearing of \\(C\\).",
+          "steps": [
+            {
+              "explain": "North lines at \\(A\\) and \\(B\\) are PARALLEL. Bearing of \\(B\\) from \\(A\\) is \\(220^{\\circ}\\); the BACK bearing (of \\(A\\) from \\(B\\)) is \\(220^{\\circ}-180^{\\circ}=040^{\\circ}\\) (alternate angles on parallel lines). In the diagram: the angle between the north line at \\(B\\) and \\(BA\\) is \\(40^{\\circ}\\).",
+              "work": "\\(\\angle(\\text{north at }B,\\ BA)=40^{\\circ}\\quad(\\text{alternate angles})\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 250\" width=\"100%\" height=\"auto\" style=\"max-width:400px;display:block;margin:0 auto\"><line x1=\"150.0\" y1=\"39.0\" x2=\"150.0\" y2=\"3.0\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><line x1=\"150.0\" y1=\"3.0\" x2=\"146.5\" y2=\"9.1\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"3.0\" x2=\"153.5\" y2=\"9.1\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"142.0\" y=\"11.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#64748b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">N</text><line x1=\"84.0\" y1=\"117.0\" x2=\"84.0\" y2=\"81.0\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><line x1=\"84.0\" y1=\"81.0\" x2=\"80.5\" y2=\"87.1\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"84.0\" y1=\"81.0\" x2=\"87.5\" y2=\"87.1\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"76.0\" y=\"89.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#64748b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">N</text><line x1=\"150.0\" y1=\"45.0\" x2=\"84.0\" y2=\"123.0\" stroke=\"#1e293b\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"84.0\" y1=\"123.0\" x2=\"268.0\" y2=\"91.0\" stroke=\"#1e293b\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><circle cx=\"150.0\" cy=\"45.0\" r=\"4\" fill=\"#1e293b\"/><circle cx=\"84.0\" cy=\"123.0\" r=\"4\" fill=\"#1e293b\"/><circle cx=\"268.0\" cy=\"91.0\" r=\"4\" fill=\"#1e293b\"/><text x=\"158.0\" y=\"35.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Avalon  A</text><text x=\"88.0\" y=\"141.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Balnara  B</text><text x=\"276.0\" y=\"95.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Cherrytown  C</text><polyline points=\"150.0,15.0 152.9,15.1 155.7,15.6 158.5,16.2 161.2,17.2 163.9,18.4 166.3,19.8 168.7,21.5 170.8,23.4 172.8,25.5 174.6,27.8 176.1,30.2 177.4,32.8 178.4,35.5 179.2,38.3 179.7,41.1 180.0,44.0 179.9,46.8 179.6,49.7 179.0,52.5 178.2,55.3 177.1,57.9 175.7,60.5 174.1,62.8 172.3,65.1 170.3,67.1 168.1,69.0 165.7,70.6 163.2,72.0 160.5,73.1 157.8,74.0 155.0,74.6 152.1,74.9 149.2,75.0 146.3,74.8 143.5,74.3 140.7,73.5 138.0,72.5 135.5,71.2 133.0,69.7 130.7,68.0\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.6\"/><text x=\"184.0\" y=\"73.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">220°</text><polyline points=\"84.0,95.0 85.0,95.0 86.0,95.1 86.9,95.2 87.9,95.3 88.9,95.4 89.8,95.6 90.8,95.8 91.7,96.1 92.7,96.4 93.6,96.7 94.5,97.0 95.4,97.4 96.3,97.8 97.1,98.3 98.0,98.8 98.8,99.3 99.7,99.8 100.5,100.3 101.2,100.9 102.0,101.6 102.7,102.2 103.5,102.9 104.1,103.5 104.8,104.3 105.4,105.0 106.1,105.8 106.7,106.5 107.2,107.3 107.7,108.2 108.2,109.0 108.7,109.9 109.2,110.7 109.6,111.6 110.0,112.5 110.3,113.4 110.6,114.3 110.9,115.3 111.2,116.2 111.4,117.2 111.6,118.1\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.6\"/><text x=\"128.0\" y=\"128.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">080°</text><text x=\"138.0\" y=\"75.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">340 km</text><text x=\"210.0\" y=\"129.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">620 km</text><polyline points=\"112.3,89.3 112.9,89.8 113.4,90.3 114.0,90.8 114.6,91.3 115.1,91.9 115.7,92.4 116.2,93.0 116.7,93.6 117.2,94.1 117.7,94.7 118.2,95.3 118.7,95.9 119.1,96.5 119.6,97.1 120.0,97.8 120.5,98.4 120.9,99.0 121.3,99.7 121.7,100.3 122.1,101.0 122.5,101.7 122.8,102.3 123.2,103.0 123.5,103.7 123.9,104.4 124.2,105.1 124.5,105.8 124.8,106.5 125.1,107.2 125.3,108.0 125.6,108.7 125.8,109.4 126.1,110.1 126.3,110.9 126.5,111.6 126.7,112.4 126.9,113.1 127.0,113.9 127.2,114.6 127.3,115.4\" fill=\"none\" stroke=\"#047857\" stroke-width=\"4\"/><text x=\"142.0\" y=\"91.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">∠ABC = 40°</text><line x1=\"84.0\" y1=\"123.0\" x2=\"122.6\" y2=\"77.0\" stroke=\"#047857\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"5 3\"/><text x=\"78.0\" y=\"109.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#7c3aed\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">40°</text><polyline points=\"84.0,105.0 84.3,105.0 84.6,105.0 84.9,105.0 85.3,105.0 85.6,105.1 85.9,105.1 86.2,105.1 86.5,105.2 86.8,105.2 87.1,105.3 87.4,105.3 87.7,105.4 88.0,105.5 88.4,105.5 88.7,105.6 89.0,105.7 89.3,105.8 89.6,105.9 89.9,106.0 90.2,106.1 90.5,106.2 90.7,106.3 91.0,106.4 91.3,106.6 91.6,106.7 91.9,106.8 92.2,107.0 92.5,107.1 92.7,107.3 93.0,107.4 93.3,107.6 93.5,107.7 93.8,107.9 94.1,108.1 94.3,108.3 94.6,108.4 94.8,108.6 95.1,108.8 95.3,109.0 95.6,109.2\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"2.4\"/></svg>"
+              }
+            },
+            {
+              "explain": "At \\(B\\) the bearing of \\(C\\) is \\(080^{\\circ}\\): the angle from the north line at \\(B\\) to \\(BC\\) is \\(80^{\\circ}\\). The angle between \\(BA\\) (at \\(40^{\\circ}\\)) and \\(BC\\) (at \\(80^{\\circ}\\)) is the DIFFERENCE.",
+              "work": "\\(\\angle ABC=80^{\\circ}-40^{\\circ}=40^{\\circ}\\)"
+            },
+            {
+              "explain": "Why not the others: B misuses the angle sum with an unknown 100°; C is not a valid reason (bearings do not add to 360° like that); D gives the angle from north, not \\(\\angle ABC\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Why is \\(\\angle ABC=40^{\\circ}\\)?",
+              "note": "Back bearing \\(220^\\circ-180^\\circ=40^\\circ\\); parallel north lines."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School 2020 Year 11 Mathematics Advanced Task 3 Examination",
+            "school": "Killara High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     }

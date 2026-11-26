@@ -17509,6 +17509,56 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "killara2020-y11a-q12a",
+          "type": "mc",
+          "stem": "Fully factorise the following expression: \\(m^{4}-1\\)",
+          "difficulty": "medium",
+          "options": [
+            "\\((m-1)(m+1)\\left(m^{2}+1\\right)\\)",
+            "\\(\\left(m^{2}-1\\right)^{2}\\)",
+            "\\((m-1)^{2}(m+1)^{2}\\)",
+            "\\((m-1)(m+1)\\)"
+          ],
+          "answer": 0,
+          "hint": "“FULLY” means keep factorising until nothing can be factorised further. \\(m^{4}=\\left(m^{2}\\right)^{2}\\), so use the DIFFERENCE OF TWO SQUARES twice (\\(a^{2}-b^{2}=(a-b)(a+b)\\)). Note \\(m^{2}+1\\) cannot be factorised over the reals.",
+          "steps": [
+            {
+              "explain": "Write as a difference of squares: \\(m^{4}-1=\\left(m^{2}\\right)^{2}-1^{2}\\).",
+              "work": "\\(m^{4}-1=\\left(m^{2}-1\\right)\\left(m^{2}+1\\right)\\)"
+            },
+            {
+              "explain": "\\(m^{2}-1\\) is again a difference of squares.",
+              "work": "\\(=(m-1)(m+1)\\left(m^{2}+1\\right)\\)"
+            },
+            {
+              "explain": "\\(m^{2}+1\\) is a SUM of squares: it has no real factors, so we stop.",
+              "work": "\\(m^{4}-1=(m-1)(m+1)\\left(m^{2}+1\\right)\\)"
+            },
+            {
+              "explain": "Why not the others: B (\\(\\left(m^{2}-1\\right)^{2}\\)) expands to \\(m^{4}-2m^{2}+1\\); C is the same as B expanded; D stops too early (that is \\(m^{2}-1\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Fully factorise the following expression",
+              "note": "Difference of squares twice; \\(m^2+1\\) stays."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School 2020 Year 11 Mathematics Advanced Task 3 Examination",
+            "school": "Killara High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },

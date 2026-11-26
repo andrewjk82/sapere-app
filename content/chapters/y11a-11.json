@@ -4840,6 +4840,52 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "killara2020-y11a-q14a",
+          "type": "mc",
+          "stem": "Convert \\(130^{\\circ}\\) into radians (Leave your answer in exact form).",
+          "difficulty": "easy",
+          "options": [
+            "\\(\\dfrac{13\\pi}{18}\\)",
+            "\\(\\dfrac{13\\pi}{9}\\)",
+            "\\(\\dfrac{130}{\\pi}\\)",
+            "\\(\\dfrac{18\\pi}{13}\\)"
+          ],
+          "answer": 0,
+          "hint": "\\(180^{\\circ}=\\pi\\) radians, so multiply degrees by \\(\\dfrac{\\pi}{180}\\). Cancel the common factor (10) to reach the simplest exact fraction.",
+          "steps": [
+            {
+              "explain": "Multiply by \\(\\dfrac{\\pi}{180^{\\circ}}\\).",
+              "work": "\\(130^{\\circ}\\times\\dfrac{\\pi}{180^{\\circ}}=\\dfrac{130\\pi}{180}\\)"
+            },
+            {
+              "explain": "Divide top and bottom by 10.",
+              "work": "\\(=\\dfrac{13\\pi}{18}\\)"
+            },
+            {
+              "explain": "Check: \\(\\dfrac{13}{18}\\times180^{\\circ}=130^{\\circ}\\) ✓. Why not the others: B has the wrong denominator; C divides by \\(\\pi\\) (inverted); D is the inverse fraction.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Convert \\(130^{\\circ}\\) into radians",
+              "note": "\\(\\times\\dfrac{\\pi}{180}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School 2020 Year 11 Mathematics Advanced Task 3 Examination",
+            "school": "Killara High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -5440,6 +5486,52 @@
           "meta": {
             "source": "Kambala 2020 Preliminary Yearly Mathematics Advanced",
             "school": "Kambala",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2020-y11a-q14c",
+          "type": "mc",
+          "stem": "Solve the equation \\(\\sin\\theta=-\\dfrac{1}{\\sqrt2}\\) in the interval \\(x\\in[0,2\\pi]\\). (Leave your answer in terms of \\(\\pi\\))",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\theta=\\dfrac{5\\pi}{4},\\ \\dfrac{7\\pi}{4}\\)",
+            "\\(\\theta=\\dfrac{\\pi}{4},\\ \\dfrac{3\\pi}{4}\\)",
+            "\\(\\theta=\\dfrac{3\\pi}{4},\\ \\dfrac{5\\pi}{4}\\)",
+            "\\(\\theta=-\\dfrac{\\pi}{4},\\ \\dfrac{7\\pi}{4}\\)"
+          ],
+          "answer": 0,
+          "hint": "Ignore the minus sign to find the related angle (\\(\\sin\\dfrac\\pi4=\\dfrac1{\\sqrt2}\\)). \\(\\sin\\) is NEGATIVE in quadrants 3 and 4: use \\(\\pi+\\) related and \\(2\\pi-\\) related. Work in radians (no degrees).",
+          "steps": [
+            {
+              "explain": "Related angle: \\(\\sin\\theta=\\dfrac{1}{\\sqrt2}\\Rightarrow\\theta=\\dfrac\\pi4\\).",
+              "work": "\\(\\text{related angle}=\\dfrac\\pi4\\)"
+            },
+            {
+              "explain": "\\(\\sin<0\\): quadrant 3 (\\(\\pi+\\dfrac\\pi4\\)) and quadrant 4 (\\(2\\pi-\\dfrac\\pi4\\)).",
+              "work": "\\(\\theta=\\pi+\\dfrac\\pi4=\\dfrac{5\\pi}{4},\\qquad\\theta=2\\pi-\\dfrac\\pi4=\\dfrac{7\\pi}{4}\\)"
+            },
+            {
+              "explain": "Why not the others: B is where \\(\\sin>0\\); C mixes quadrants 2 and 3; D has a negative angle (outside \\([0,2\\pi]\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Solve the equation \\(\\sin\\theta=-\\dfrac{1}{\\sqrt2}\\)",
+              "note": "Related angle \\(\\dfrac\\pi4\\); quadrants 3 and 4."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School 2020 Year 11 Mathematics Advanced Task 3 Examination",
+            "school": "Killara High School",
             "grade": "11",
             "origin": "teacher"
           }
@@ -8477,6 +8569,170 @@
           "meta": {
             "source": "Moriah College 2021 HSC Trial Examination Mathematics Advanced",
             "school": "Moriah College",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2020-y11a-q15",
+          "type": "mc",
+          "stem": "The sector below has an area of \\(3\\pi\\) square metres. Find the length of the radius in metres. Leave your answer in exact form.",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 250\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><polygon points=\"50,125 179.9,50.0 181.2,52.3 182.4,54.6 183.7,56.9 184.8,59.2 185.9,61.6 187.0,64.0 188.1,66.4 189.1,68.8 190.0,71.2 191.0,73.7 191.8,76.2 192.7,78.6 193.4,81.1 194.2,83.7 194.9,86.2 195.5,88.7 196.2,91.3 196.7,93.8 197.2,96.4 197.7,99.0 198.2,101.5 198.5,104.1 198.9,106.7 199.2,109.3 199.4,111.9 199.6,114.5 199.8,117.1 199.9,119.8 200.0,122.4 200.0,125.0 200.0,127.6 199.9,130.2 199.8,132.9 199.6,135.5 199.4,138.1 199.2,140.7 198.9,143.3 198.5,145.9 198.2,148.5 197.7,151.0 197.2,153.6 196.7,156.2 196.2,158.7 195.5,161.3 194.9,163.8 194.2,166.3 193.4,168.9 192.7,171.4 191.8,173.8 191.0,176.3 190.0,178.8 189.1,181.2 188.1,183.6 187.0,186.0 185.9,188.4 184.8,190.8 183.7,193.1 182.4,195.4 181.2,197.7 179.9,200.0\" fill=\"#fff\" fill-opacity=\"0.18\" stroke=\"#1e293b\" stroke-width=\"2.6\"/><path d=\"M 84.6,105.0 A 40 40 0 0 1 84.6,145.0\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.6\"/><text x=\"108.0\" y=\"129.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">π</text><line x1=\"110.0\" y1=\"134.0\" x2=\"122.0\" y2=\"134.0\" stroke=\"#dc2626\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"116.0\" y=\"149.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3</text><text x=\"109.0\" y=\"77.5\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">r</text><text x=\"109.0\" y=\"184.5\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">r</text></svg>"
+          },
+          "options": [
+            "\\(3\\sqrt2\\) m",
+            "\\(\\sqrt{18\\pi}\\) m",
+            "\\(18\\) m",
+            "\\(6\\) m"
+          ],
+          "answer": 0,
+          "hint": "For a sector with the angle \\(\\theta\\) in RADIANS: \\(A=\\dfrac12r^{2}\\theta\\). Substitute \\(A=3\\pi\\) and \\(\\theta=\\dfrac\\pi3\\), then solve for \\(r\\) (take the positive root). Leave surds in simplest form: \\(\\sqrt{18}=3\\sqrt2\\).",
+          "steps": [
+            {
+              "explain": "Sector formula with \\(\\theta=\\dfrac\\pi3\\) (blue shaded region, area \\(3\\pi\\)).",
+              "work": "\\(3\\pi=\\dfrac{1}{2}\\times\\dfrac\\pi3\\times r^{2}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 250\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><polygon points=\"50,125 179.9,50.0 181.2,52.3 182.4,54.6 183.7,56.9 184.8,59.2 185.9,61.6 187.0,64.0 188.1,66.4 189.1,68.8 190.0,71.2 191.0,73.7 191.8,76.2 192.7,78.6 193.4,81.1 194.2,83.7 194.9,86.2 195.5,88.7 196.2,91.3 196.7,93.8 197.2,96.4 197.7,99.0 198.2,101.5 198.5,104.1 198.9,106.7 199.2,109.3 199.4,111.9 199.6,114.5 199.8,117.1 199.9,119.8 200.0,122.4 200.0,125.0 200.0,127.6 199.9,130.2 199.8,132.9 199.6,135.5 199.4,138.1 199.2,140.7 198.9,143.3 198.5,145.9 198.2,148.5 197.7,151.0 197.2,153.6 196.7,156.2 196.2,158.7 195.5,161.3 194.9,163.8 194.2,166.3 193.4,168.9 192.7,171.4 191.8,173.8 191.0,176.3 190.0,178.8 189.1,181.2 188.1,183.6 187.0,186.0 185.9,188.4 184.8,190.8 183.7,193.1 182.4,195.4 181.2,197.7 179.9,200.0\" fill=\"#3b4ea8\" fill-opacity=\"0.18\" stroke=\"#1e293b\" stroke-width=\"2.6\"/><path d=\"M 84.6,105.0 A 40 40 0 0 1 84.6,145.0\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.6\"/><text x=\"108.0\" y=\"129.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">π</text><line x1=\"110.0\" y1=\"134.0\" x2=\"122.0\" y2=\"134.0\" stroke=\"#dc2626\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"116.0\" y=\"149.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3</text><text x=\"109.0\" y=\"77.5\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">r</text><text x=\"109.0\" y=\"184.5\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">r</text><text x=\"167.0\" y=\"130.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">A = 3π</text></svg>"
+              }
+            },
+            {
+              "explain": "Simplify \\(\\dfrac{1}{2}\\times\\dfrac\\pi3=\\dfrac\\pi6\\), then multiply both sides by \\(\\dfrac6\\pi\\).",
+              "work": "\\(3\\pi=\\dfrac\\pi6r^{2}\\ \\Rightarrow\\ r^{2}=3\\pi\\times\\dfrac6\\pi=18\\)"
+            },
+            {
+              "explain": "Square root: \\(r>0\\). Simplify \\(\\sqrt{18}=\\sqrt{9\\times2}\\).",
+              "work": "\\(r=\\sqrt{18}=3\\sqrt2\\ \\text{m}\\)"
+            },
+            {
+              "explain": "Check: \\(\\dfrac{1}{2}\\cdot\\dfrac\\pi3\\cdot18=3\\pi\\) ✓. Why not the others: B leaves \\(\\pi\\) inside the root; C (18) is \\(r^{2}\\); D (6) would give an area of \\(6\\pi\\), not \\(3\\pi\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the length of the radius in metres. Leave your answer in exact form.",
+              "note": "\\(A=\\dfrac12r^2\\theta\\); \\(\\theta\\) in radians."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School 2020 Year 11 Mathematics Advanced Task 3 Examination",
+            "school": "Killara High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2020-y11a-q20a",
+          "type": "mc",
+          "stem": "In a circle of radius 6 cm, \\(C\\) is the centre. \\(AC\\) and \\(BC\\) are both radii of the circle. \\(\\angle ACB\\) is 2.3 radians. What is the length of the minor arc \\(AB\\)?",
+          "difficulty": "easy",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 250\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><circle cx=\"165\" cy=\"100\" r=\"85\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"2.4\"/><polygon points=\"87.4,134.7 88.0,135.9 88.6,137.3 89.3,138.6 89.9,139.9 90.7,141.2 91.4,142.5 92.1,143.8 92.9,145.0 93.7,146.3 94.5,147.5 95.4,148.8 96.2,150.0 97.1,151.2 98.0,152.3 98.9,153.5 99.9,154.6 100.8,155.8 101.8,156.9 102.8,158.0 103.9,159.0 104.9,160.1 106.0,161.1 107.0,162.2 108.1,163.2 109.2,164.2 110.4,165.1 111.5,166.1 112.7,167.0 113.8,167.9 115.0,168.8 116.2,169.6 117.5,170.5 118.7,171.3 120.0,172.1 121.2,172.9 122.5,173.6 123.8,174.3 125.1,175.1 126.4,175.7 127.7,176.4 129.1,177.0 130.4,177.7 131.8,178.2 133.2,178.8 134.5,179.4 135.9,179.9 137.3,180.4 138.7,180.8 140.1,181.3 141.6,181.7 143.0,182.1 144.4,182.5 145.9,182.8 147.3,183.1 148.8,183.4 150.2,183.7 151.7,184.0 153.2,184.2 154.6,184.4 156.1,184.5 157.6,184.7 159.1,184.8 160.6,184.9 162.0,184.9 163.5,185.0 165.0,185.0 166.5,185.0 168.0,184.9 169.4,184.9 170.9,184.8 172.4,184.7 173.9,184.5 175.4,184.4 176.8,184.2 178.3,184.0 179.8,183.7 181.2,183.4 182.7,183.1 184.1,182.8 185.6,182.5 187.0,182.1 188.4,181.7 189.9,181.3 191.3,180.8 192.7,180.4 194.1,179.9 195.5,179.4 196.8,178.8 198.2,178.2 199.6,177.7 200.9,177.0 202.3,176.4 203.6,175.7 204.9,175.1 206.2,174.3 207.5,173.6 208.8,172.9 210.0,172.1 211.3,171.3 212.5,170.5 213.8,169.6 215.0,168.8 216.2,167.9 217.3,167.0 218.5,166.1 219.6,165.1 220.8,164.2 221.9,163.2 223.0,162.2 224.0,161.1 225.1,160.1 226.1,159.0 227.2,158.0 228.2,156.9 229.2,155.8 230.1,154.6 231.1,153.5 232.0,152.3 232.9,151.2 233.8,150.0 234.6,148.8 235.5,147.5 236.3,146.3 237.1,145.0 237.9,143.8 238.6,142.5 239.3,141.2 240.1,139.9 240.7,138.6 241.4,137.3 242.0,135.9 242.7,134.6 242.6,134.7\" fill=\"#64748b\" fill-opacity=\"0.62\"/><line x1=\"165.0\" y1=\"100.0\" x2=\"87.4\" y2=\"134.7\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"165.0\" y1=\"100.0\" x2=\"242.6\" y2=\"134.7\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"87.4\" y1=\"134.7\" x2=\"242.6\" y2=\"134.7\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M 149,109 A 18 18 0 0 0 181,109\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.4\"/><text x=\"165.0\" y=\"132.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2.3</text><text x=\"203.2\" y=\"106.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">6 cm</text><circle cx=\"165.0\" cy=\"100.0\" r=\"3.4\" fill=\"#1e293b\"/><text x=\"165.0\" y=\"92.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">C</text><text x=\"79.4\" y=\"138.7\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A</text><text x=\"250.6\" y=\"138.7\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text></svg>"
+          },
+          "options": [
+            "\\(13.8\\) cm",
+            "\\(27.6\\) cm",
+            "\\(2.3\\) cm",
+            "\\(10.8\\) cm"
+          ],
+          "answer": 0,
+          "hint": "Arc length \\(\\ell=r\\theta\\) with \\(\\theta\\) in RADIANS (no need for degrees!). Make sure you find the ARC (curved), not the CHORD (straight line).",
+          "steps": [
+            {
+              "explain": "Arc length formula with \\(r=6\\), \\(\\theta=2.3\\) (the orange curve below the chord).",
+              "work": "\\(\\ell=r\\theta=6\\times2.3\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 250\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><circle cx=\"165\" cy=\"100\" r=\"85\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"2.4\"/><polygon points=\"87.4,134.7 88.0,135.9 88.6,137.3 89.3,138.6 89.9,139.9 90.7,141.2 91.4,142.5 92.1,143.8 92.9,145.0 93.7,146.3 94.5,147.5 95.4,148.8 96.2,150.0 97.1,151.2 98.0,152.3 98.9,153.5 99.9,154.6 100.8,155.8 101.8,156.9 102.8,158.0 103.9,159.0 104.9,160.1 106.0,161.1 107.0,162.2 108.1,163.2 109.2,164.2 110.4,165.1 111.5,166.1 112.7,167.0 113.8,167.9 115.0,168.8 116.2,169.6 117.5,170.5 118.7,171.3 120.0,172.1 121.2,172.9 122.5,173.6 123.8,174.3 125.1,175.1 126.4,175.7 127.7,176.4 129.1,177.0 130.4,177.7 131.8,178.2 133.2,178.8 134.5,179.4 135.9,179.9 137.3,180.4 138.7,180.8 140.1,181.3 141.6,181.7 143.0,182.1 144.4,182.5 145.9,182.8 147.3,183.1 148.8,183.4 150.2,183.7 151.7,184.0 153.2,184.2 154.6,184.4 156.1,184.5 157.6,184.7 159.1,184.8 160.6,184.9 162.0,184.9 163.5,185.0 165.0,185.0 166.5,185.0 168.0,184.9 169.4,184.9 170.9,184.8 172.4,184.7 173.9,184.5 175.4,184.4 176.8,184.2 178.3,184.0 179.8,183.7 181.2,183.4 182.7,183.1 184.1,182.8 185.6,182.5 187.0,182.1 188.4,181.7 189.9,181.3 191.3,180.8 192.7,180.4 194.1,179.9 195.5,179.4 196.8,178.8 198.2,178.2 199.6,177.7 200.9,177.0 202.3,176.4 203.6,175.7 204.9,175.1 206.2,174.3 207.5,173.6 208.8,172.9 210.0,172.1 211.3,171.3 212.5,170.5 213.8,169.6 215.0,168.8 216.2,167.9 217.3,167.0 218.5,166.1 219.6,165.1 220.8,164.2 221.9,163.2 223.0,162.2 224.0,161.1 225.1,160.1 226.1,159.0 227.2,158.0 228.2,156.9 229.2,155.8 230.1,154.6 231.1,153.5 232.0,152.3 232.9,151.2 233.8,150.0 234.6,148.8 235.5,147.5 236.3,146.3 237.1,145.0 237.9,143.8 238.6,142.5 239.3,141.2 240.1,139.9 240.7,138.6 241.4,137.3 242.0,135.9 242.7,134.6 242.6,134.7\" fill=\"#64748b\" fill-opacity=\"0.62\"/><line x1=\"165.0\" y1=\"100.0\" x2=\"87.4\" y2=\"134.7\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"165.0\" y1=\"100.0\" x2=\"242.6\" y2=\"134.7\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"87.4\" y1=\"134.7\" x2=\"242.6\" y2=\"134.7\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><polyline points=\"242.7,134.6 242.0,135.9 241.4,137.3 240.7,138.6 240.1,139.9 239.3,141.2 238.6,142.5 237.9,143.8 237.1,145.0 236.3,146.3 235.5,147.5 234.6,148.8 233.8,150.0 232.9,151.2 232.0,152.3 231.1,153.5 230.1,154.6 229.2,155.8 228.2,156.9 227.2,158.0 226.1,159.0 225.1,160.1 224.0,161.1 223.0,162.2 221.9,163.2 220.8,164.2 219.6,165.1 218.5,166.1 217.3,167.0 216.2,167.9 215.0,168.8 213.8,169.6 212.5,170.5 211.3,171.3 210.0,172.1 208.8,172.9 207.5,173.6 206.2,174.3 204.9,175.1 203.6,175.7 202.3,176.4 200.9,177.0 199.6,177.7 198.2,178.2 196.8,178.8 195.5,179.4 194.1,179.9 192.7,180.4 191.3,180.8 189.9,181.3 188.4,181.7 187.0,182.1 185.6,182.5 184.1,182.8 182.7,183.1 181.2,183.4 179.8,183.7 178.3,184.0 176.8,184.2 175.4,184.4 173.9,184.5 172.4,184.7 170.9,184.8 169.4,184.9 168.0,184.9 166.5,185.0 165.0,185.0 163.5,185.0 162.0,184.9 160.6,184.9 159.1,184.8 157.6,184.7 156.1,184.5 154.6,184.4 153.2,184.2 151.7,184.0 150.2,183.7 148.8,183.4 147.3,183.1 145.9,182.8 144.4,182.5 143.0,182.1 141.6,181.7 140.1,181.3 138.7,180.8 137.3,180.4 135.9,179.9 134.5,179.4 133.2,178.8 131.8,178.2 130.4,177.7 129.1,177.0 127.7,176.4 126.4,175.7 125.1,175.1 123.8,174.3 122.5,173.6 121.2,172.9 120.0,172.1 118.7,171.3 117.5,170.5 116.2,169.6 115.0,168.8 113.8,167.9 112.7,167.0 111.5,166.1 110.4,165.1 109.2,164.2 108.1,163.2 107.0,162.2 106.0,161.1 104.9,160.1 103.9,159.0 102.8,158.0 101.8,156.9 100.8,155.8 99.9,154.6 98.9,153.5 98.0,152.3 97.1,151.2 96.2,150.0 95.4,148.8 94.5,147.5 93.7,146.3 92.9,145.0 92.1,143.8 91.4,142.5 90.7,141.2 89.9,139.9 89.3,138.6 88.6,137.3 88.0,135.9\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"4.6\"/><text x=\"165.0\" y=\"203.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">arc AB = rθ = 13.8</text><path d=\"M 149,109 A 18 18 0 0 0 181,109\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.4\"/><text x=\"165.0\" y=\"132.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2.3</text><text x=\"203.2\" y=\"106.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">6 cm</text><circle cx=\"165.0\" cy=\"100.0\" r=\"3.4\" fill=\"#1e293b\"/><text x=\"165.0\" y=\"92.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">C</text><text x=\"79.4\" y=\"138.7\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A</text><text x=\"250.6\" y=\"138.7\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text></svg>"
+              }
+            },
+            {
+              "explain": "Multiply.",
+              "work": "\\(\\ell=13.8\\ \\text{cm}\\)"
+            },
+            {
+              "explain": "Why not the others: B doubles it; C is just \\(\\theta\\); D is the CHORD length \\(2\\times6\\sin(1.15)=10.9\\) (a straight line, not the arc).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "What is the length of the minor arc \\(AB\\)?",
+              "note": "\\(\\ell=r\\theta\\), \\(\\theta\\) in radians."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School 2020 Year 11 Mathematics Advanced Task 3 Examination",
+            "school": "Killara High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2020-y11a-q20b",
+          "type": "mc",
+          "stem": "In a circle of radius 6 cm, \\(C\\) is the centre. \\(AC\\) and \\(BC\\) are both radii of the circle. \\(\\angle ACB\\) is 2.3 radians. Calculate the size of the shaded area, correct to two decimal places.",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 250\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><circle cx=\"165\" cy=\"100\" r=\"85\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"2.4\"/><polygon points=\"87.4,134.7 88.0,135.9 88.6,137.3 89.3,138.6 89.9,139.9 90.7,141.2 91.4,142.5 92.1,143.8 92.9,145.0 93.7,146.3 94.5,147.5 95.4,148.8 96.2,150.0 97.1,151.2 98.0,152.3 98.9,153.5 99.9,154.6 100.8,155.8 101.8,156.9 102.8,158.0 103.9,159.0 104.9,160.1 106.0,161.1 107.0,162.2 108.1,163.2 109.2,164.2 110.4,165.1 111.5,166.1 112.7,167.0 113.8,167.9 115.0,168.8 116.2,169.6 117.5,170.5 118.7,171.3 120.0,172.1 121.2,172.9 122.5,173.6 123.8,174.3 125.1,175.1 126.4,175.7 127.7,176.4 129.1,177.0 130.4,177.7 131.8,178.2 133.2,178.8 134.5,179.4 135.9,179.9 137.3,180.4 138.7,180.8 140.1,181.3 141.6,181.7 143.0,182.1 144.4,182.5 145.9,182.8 147.3,183.1 148.8,183.4 150.2,183.7 151.7,184.0 153.2,184.2 154.6,184.4 156.1,184.5 157.6,184.7 159.1,184.8 160.6,184.9 162.0,184.9 163.5,185.0 165.0,185.0 166.5,185.0 168.0,184.9 169.4,184.9 170.9,184.8 172.4,184.7 173.9,184.5 175.4,184.4 176.8,184.2 178.3,184.0 179.8,183.7 181.2,183.4 182.7,183.1 184.1,182.8 185.6,182.5 187.0,182.1 188.4,181.7 189.9,181.3 191.3,180.8 192.7,180.4 194.1,179.9 195.5,179.4 196.8,178.8 198.2,178.2 199.6,177.7 200.9,177.0 202.3,176.4 203.6,175.7 204.9,175.1 206.2,174.3 207.5,173.6 208.8,172.9 210.0,172.1 211.3,171.3 212.5,170.5 213.8,169.6 215.0,168.8 216.2,167.9 217.3,167.0 218.5,166.1 219.6,165.1 220.8,164.2 221.9,163.2 223.0,162.2 224.0,161.1 225.1,160.1 226.1,159.0 227.2,158.0 228.2,156.9 229.2,155.8 230.1,154.6 231.1,153.5 232.0,152.3 232.9,151.2 233.8,150.0 234.6,148.8 235.5,147.5 236.3,146.3 237.1,145.0 237.9,143.8 238.6,142.5 239.3,141.2 240.1,139.9 240.7,138.6 241.4,137.3 242.0,135.9 242.7,134.6 242.6,134.7\" fill=\"#64748b\" fill-opacity=\"0.62\"/><line x1=\"165.0\" y1=\"100.0\" x2=\"87.4\" y2=\"134.7\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"165.0\" y1=\"100.0\" x2=\"242.6\" y2=\"134.7\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"87.4\" y1=\"134.7\" x2=\"242.6\" y2=\"134.7\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M 149,109 A 18 18 0 0 0 181,109\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.4\"/><text x=\"165.0\" y=\"132.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2.3</text><text x=\"203.2\" y=\"106.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">6 cm</text><circle cx=\"165.0\" cy=\"100.0\" r=\"3.4\" fill=\"#1e293b\"/><text x=\"165.0\" y=\"92.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">C</text><text x=\"79.4\" y=\"138.7\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A</text><text x=\"250.6\" y=\"138.7\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text></svg>"
+          },
+          "options": [
+            "\\(27.98\\) cm\\(^{2}\\)",
+            "\\(41.4\\) cm\\(^{2}\\)",
+            "\\(13.4\\) cm\\(^{2}\\)",
+            "\\(5.35\\) cm\\(^{2}\\)"
+          ],
+          "answer": 0,
+          "hint": "The SHADED region is a SEGMENT \\(=\\) SECTOR \\(-\\) TRIANGLE. Sector: \\(\\dfrac12r^{2}\\theta\\). Triangle: \\(\\dfrac12ab\\sin C\\). Keep the calculator in RADIAN mode: \\(\\sin(2.3)\\) means 2.3 radians.",
+          "steps": [
+            {
+              "explain": "Sector \\(ACB\\): \\(\\dfrac12r^{2}\\theta\\).",
+              "work": "\\(\\text{sector}=\\dfrac{1}{2}(6)^{2}(2.3)=41.4\\ \\text{cm}^{2}\\)"
+            },
+            {
+              "explain": "Triangle \\(ACB\\) (two sides 6, included angle 2.3 rad): \\(\\dfrac{1}{2}\\times6\\times6\\times\\sin2.3\\) with \\(\\sin2.3=0.7457\\).",
+              "work": "\\(\\text{triangle}=\\dfrac{1}{2}(6)(6)\\sin2.3=13.42\\ \\text{cm}^{2}\\)"
+            },
+            {
+              "explain": "Shaded segment \\(=\\) sector \\(-\\) triangle.",
+              "work": "\\(41.4-13.42=27.98\\ \\text{cm}^{2}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 250\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><circle cx=\"165\" cy=\"100\" r=\"85\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"2.4\"/><polygon points=\"87.4,134.7 88.0,135.9 88.6,137.3 89.3,138.6 89.9,139.9 90.7,141.2 91.4,142.5 92.1,143.8 92.9,145.0 93.7,146.3 94.5,147.5 95.4,148.8 96.2,150.0 97.1,151.2 98.0,152.3 98.9,153.5 99.9,154.6 100.8,155.8 101.8,156.9 102.8,158.0 103.9,159.0 104.9,160.1 106.0,161.1 107.0,162.2 108.1,163.2 109.2,164.2 110.4,165.1 111.5,166.1 112.7,167.0 113.8,167.9 115.0,168.8 116.2,169.6 117.5,170.5 118.7,171.3 120.0,172.1 121.2,172.9 122.5,173.6 123.8,174.3 125.1,175.1 126.4,175.7 127.7,176.4 129.1,177.0 130.4,177.7 131.8,178.2 133.2,178.8 134.5,179.4 135.9,179.9 137.3,180.4 138.7,180.8 140.1,181.3 141.6,181.7 143.0,182.1 144.4,182.5 145.9,182.8 147.3,183.1 148.8,183.4 150.2,183.7 151.7,184.0 153.2,184.2 154.6,184.4 156.1,184.5 157.6,184.7 159.1,184.8 160.6,184.9 162.0,184.9 163.5,185.0 165.0,185.0 166.5,185.0 168.0,184.9 169.4,184.9 170.9,184.8 172.4,184.7 173.9,184.5 175.4,184.4 176.8,184.2 178.3,184.0 179.8,183.7 181.2,183.4 182.7,183.1 184.1,182.8 185.6,182.5 187.0,182.1 188.4,181.7 189.9,181.3 191.3,180.8 192.7,180.4 194.1,179.9 195.5,179.4 196.8,178.8 198.2,178.2 199.6,177.7 200.9,177.0 202.3,176.4 203.6,175.7 204.9,175.1 206.2,174.3 207.5,173.6 208.8,172.9 210.0,172.1 211.3,171.3 212.5,170.5 213.8,169.6 215.0,168.8 216.2,167.9 217.3,167.0 218.5,166.1 219.6,165.1 220.8,164.2 221.9,163.2 223.0,162.2 224.0,161.1 225.1,160.1 226.1,159.0 227.2,158.0 228.2,156.9 229.2,155.8 230.1,154.6 231.1,153.5 232.0,152.3 232.9,151.2 233.8,150.0 234.6,148.8 235.5,147.5 236.3,146.3 237.1,145.0 237.9,143.8 238.6,142.5 239.3,141.2 240.1,139.9 240.7,138.6 241.4,137.3 242.0,135.9 242.7,134.6 242.6,134.7\" fill=\"#047857\" fill-opacity=\"0.62\"/><line x1=\"165.0\" y1=\"100.0\" x2=\"87.4\" y2=\"134.7\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"165.0\" y1=\"100.0\" x2=\"242.6\" y2=\"134.7\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"87.4\" y1=\"134.7\" x2=\"242.6\" y2=\"134.7\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"87.4\" y1=\"134.7\" x2=\"242.6\" y2=\"134.7\" stroke=\"#dc2626\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"165.0\" y=\"203.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">segment = sector − triangle ACB</text><path d=\"M 149,109 A 18 18 0 0 0 181,109\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.4\"/><text x=\"165.0\" y=\"132.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2.3</text><text x=\"203.2\" y=\"106.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">6 cm</text><circle cx=\"165.0\" cy=\"100.0\" r=\"3.4\" fill=\"#1e293b\"/><text x=\"165.0\" y=\"92.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">C</text><text x=\"79.4\" y=\"138.7\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A</text><text x=\"250.6\" y=\"138.7\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text></svg>"
+              }
+            },
+            {
+              "explain": "Or use \\(A=\\dfrac12r^{2}(\\theta-\\sin\\theta)=18(2.3-0.7457)=27.98\\) ✓. Why not the others: B is the whole sector; C is the triangle only; D uses degrees mode (\\(\\sin2.3^{\\circ}\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Calculate the size of the shaded area, correct to two decimal places.",
+              "note": "Segment \\(=\\dfrac12r^2\\theta-\\dfrac12r^2\\sin\\theta\\) (radians)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School 2020 Year 11 Mathematics Advanced Task 3 Examination",
+            "school": "Killara High School",
             "grade": "11",
             "origin": "teacher"
           }

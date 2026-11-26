@@ -10840,6 +10840,56 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "killara2020-y11a-q19b",
+          "type": "mc",
+          "stem": "Test whether \\(f(x)=\\dfrac{6x^{3}}{x^{2}+x^{4}}\\) is odd, even or neither. Justify your answer.",
+          "difficulty": "medium",
+          "options": [
+            "Odd: \\(f(-x)=\\dfrac{-6x^{3}}{x^{2}+x^{4}}=-f(x)\\)",
+            "Even: \\(f(-x)=f(x)\\)",
+            "Neither: \\(f(-x)\\ne f(x)\\) and \\(f(-x)\\ne-f(x)\\)",
+            "Odd: because \\(f(0)=0\\)"
+          ],
+          "answer": 0,
+          "hint": "EVEN: \\(f(-x)=f(x)\\) (symmetric in the \\(y\\)-axis). ODD: \\(f(-x)=-f(x)\\) (half-turn symmetry about the origin). Replace \\(x\\) by \\(-x\\) everywhere and compare. \\((-x)^{3}=-x^{3}\\) but \\((-x)^{2}=x^{2}\\) and \\((-x)^{4}=x^{4}\\).",
+          "steps": [
+            {
+              "explain": "Replace every \\(x\\) by \\(-x\\).",
+              "work": "\\(f(-x)=\\dfrac{6(-x)^{3}}{(-x)^{2}+(-x)^{4}}\\)"
+            },
+            {
+              "explain": "Odd powers keep the minus sign; even powers lose it.",
+              "work": "\\(=\\dfrac{-6x^{3}}{x^{2}+x^{4}}\\)"
+            },
+            {
+              "explain": "Compare with \\(f(x)\\): this is exactly \\(-f(x)\\).",
+              "work": "\\(f(-x)=-\\dfrac{6x^{3}}{x^{2}+x^{4}}=-f(x)\\ \\Rightarrow\\ f\\ \\text{is odd}\\)"
+            },
+            {
+              "explain": "Why not the others: B ignores the sign of the numerator; C is false (we found \\(f(-x)=-f(x)\\)); D is not a proof (\\(f(0)\\) is not even defined here: the denominator is 0).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Test whether \\(f(x)=\\dfrac{6x^{3}}{x^{2}+x^{4}}\\) is odd, even or neither.",
+              "note": "Find \\(f(-x)\\) and compare with \\(\\pm f(x)\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School 2020 Year 11 Mathematics Advanced Task 3 Examination",
+            "school": "Killara High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -21079,6 +21129,52 @@
           "meta": {
             "source": "Kambala 2020 Preliminary Yearly Mathematics Advanced",
             "school": "Kambala",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2020-y11a-q9",
+          "type": "mc",
+          "stem": "If \\(f\\) and \\(g\\) are two functions such that \\(f(x)=2x\\) and \\(g(x)=3x+1\\). The function \\(f(g(x))\\) is:",
+          "difficulty": "easy",
+          "options": [
+            "\\(6x+1\\)",
+            "\\(6x+2\\)",
+            "\\(6x-10\\)",
+            "\\(6x^{2}+1\\)"
+          ],
+          "answer": 1,
+          "hint": "\\(f(g(x))\\) means: put \\(g(x)\\) INSIDE \\(f\\) — wherever \\(f\\) has an \\(x\\), write \\(g(x)=3x+1\\) in brackets.",
+          "steps": [
+            {
+              "explain": "\\(f(x)=2x\\) doubles its input. The input is \\(g(x)=3x+1\\).",
+              "work": "\\(f(g(x))=2\\times g(x)=2(3x+1)\\)"
+            },
+            {
+              "explain": "Expand the bracket: multiply BOTH terms by 2.",
+              "work": "\\(=6x+2\\)"
+            },
+            {
+              "explain": "Why not the others: A forgets to double the 1; C is \\(2x-\\ldots\\) nonsense; D squares \\(x\\). Careful: \\(g(f(x))=3(2x)+1=6x+1\\) is the OTHER order.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">B</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "The function \\(f(g(x))\\) is:",
+              "note": "Put \\(g(x)\\) inside \\(f\\): \\(2(3x+1)\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School 2020 Year 11 Mathematics Advanced Task 3 Examination",
+            "school": "Killara High School",
             "grade": "11",
             "origin": "teacher"
           }

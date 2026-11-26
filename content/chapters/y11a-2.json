@@ -5877,6 +5877,56 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "killara2020-y11a-q11b",
+          "type": "mc",
+          "stem": "Express \\(\\left(2\\sqrt3+1\\right)\\left(2-\\sqrt3\\right)\\) in the form \\(a+b\\sqrt3\\), where \\(a\\) and \\(b\\) are integers.",
+          "difficulty": "medium",
+          "options": [
+            "\\(a=-4,\\ b=3\\)",
+            "\\(a=-8,\\ b=3\\)",
+            "\\(a=4,\\ b=-3\\)",
+            "\\(a=8,\\ b=3\\)"
+          ],
+          "answer": 0,
+          "hint": "Expand with FOIL (First, Outer, Inner, Last), then collect the plain numbers and the \\(\\sqrt3\\) terms separately. Remember \\(\\sqrt3\\times\\sqrt3=3\\) and a negative times a positive is negative.",
+          "steps": [
+            {
+              "explain": "First \\(2\\sqrt3\\times2=4\\sqrt3\\); Outer \\(2\\sqrt3\\times(-\\sqrt3)=-2\\times3=-6\\); Inner \\(1\\times2=+2\\); Last \\(1\\times(-\\sqrt3)=-\\sqrt3\\).",
+              "work": "\\(=4\\sqrt3-6+2-\\sqrt3\\)"
+            },
+            {
+              "explain": "Collect numbers: \\(-6+2=-4\\). Collect surds: \\(4\\sqrt3-\\sqrt3=3\\sqrt3\\).",
+              "work": "\\(=-4+3\\sqrt3\\)"
+            },
+            {
+              "explain": "Compare with \\(a+b\\sqrt3\\): \\(a=-4\\) and \\(b=3\\).",
+              "work": "\\(a=-4,\\quad b=3\\)"
+            },
+            {
+              "explain": "Why not the others: B (\\(-8\\)) uses \\(1\\times2=-2\\)-type slip (the printed solution makes this slip); C has the signs swapped; D adds \\(6+2\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Express \\(\\left(2\\sqrt3+1\\right)\\left(2-\\sqrt3\\right)\\) in the form \\(a+b\\sqrt3\\)",
+              "note": "FOIL; \\(\\sqrt3\\cdot\\sqrt3=3\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School 2020 Year 11 Mathematics Advanced Task 3 Examination",
+            "school": "Killara High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -8763,6 +8813,56 @@
           "meta": {
             "source": "International Grammar School 2020 Assessment Task 3 Mathematics Advanced",
             "school": "International Grammar School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2020-y11a-q11a",
+          "type": "mc",
+          "stem": "Rationalise the denominator \\(\\dfrac{\\sqrt5}{4\\sqrt3+2}\\)",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{2\\sqrt{15}-\\sqrt5}{22}\\)",
+            "\\(\\dfrac{2\\sqrt{15}+\\sqrt5}{22}\\)",
+            "\\(\\dfrac{4\\sqrt{15}-2\\sqrt5}{14}\\)",
+            "\\(\\dfrac{\\sqrt5}{4\\sqrt3}\\)"
+          ],
+          "answer": 0,
+          "hint": "To rationalise a denominator of the form \\(a+b\\) with a surd, multiply top and bottom by the CONJUGATE (change the sign in the middle): \\((a+b)(a-b)=a^{2}-b^{2}\\) removes the surd. Square the 4 AND the \\(\\sqrt3\\): \\(\\left(4\\sqrt3\\right)^{2}=16\\times3=48\\).",
+          "steps": [
+            {
+              "explain": "The conjugate of \\(4\\sqrt3+2\\) is \\(4\\sqrt3-2\\). Multiply top and bottom by it.",
+              "work": "\\(\\dfrac{\\sqrt5}{4\\sqrt3+2}\\times\\dfrac{4\\sqrt3-2}{4\\sqrt3-2}\\)"
+            },
+            {
+              "explain": "Top: expand \\(\\sqrt5(4\\sqrt3-2)=4\\sqrt{15}-2\\sqrt5\\). Bottom: difference of two squares.",
+              "work": "\\(\\dfrac{4\\sqrt{15}-2\\sqrt5}{\\left(4\\sqrt3\\right)^{2}-2^{2}}=\\dfrac{4\\sqrt{15}-2\\sqrt5}{48-4}\\)"
+            },
+            {
+              "explain": "Simplify: \\(\\dfrac{4\\sqrt{15}-2\\sqrt5}{44}\\). Divide top and bottom by 2.",
+              "work": "\\(=\\dfrac{2\\sqrt{15}-\\sqrt5}{22}\\)"
+            },
+            {
+              "explain": "Why not the others: B has the wrong sign (didn’t use the conjugate correctly); C uses \\(16-2=14\\) (forgot to square the 2 and \\(\\sqrt3\\)); D is unchanged.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Rationalise the denominator",
+              "note": "Multiply by the conjugate \\(4\\sqrt3-2\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School 2020 Year 11 Mathematics Advanced Task 3 Examination",
+            "school": "Killara High School",
             "grade": "11",
             "origin": "teacher"
           }
