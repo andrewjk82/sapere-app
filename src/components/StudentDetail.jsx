@@ -17,8 +17,6 @@ import {
   X,
   Target,
   ClipboardList,
-  CheckCircle2,
-  Circle,
   LayoutGrid,
   Settings as SettingsIcon,
 } from "lucide-react";
@@ -76,6 +74,7 @@ import CollapsibleSection from "./studentDetail/CollapsibleSection";
 import LearningOverview from "./studentDetail/LearningOverview";
 import TermResultsCard from "./studentDetail/TermResultsCard";
 import QuickSwitches from "./studentDetail/QuickSwitches";
+import HomeworkTab from "./studentDetail/HomeworkTab";
 import SecretNotebookPanel from "./studentDetail/SecretNotebookPanel";
 import ExamPrepPanel from "./studentDetail/ExamPrepPanel";
 import HscPastPaperPanel from "./studentDetail/HscPastPaperPanel";
@@ -2319,126 +2318,14 @@ const StudentDetail = ({ studentId, onBack }) => {
       case "homework":
         return (
           <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '4px' }}>
-              <ClipboardList size={20} style={{ color: '#7c3aed' }} />
-              <h3 style={{ fontSize: '1.1rem', fontWeight: 800, color: '#1e1b4b', margin: 0 }}>Homework History</h3>
-            </div>
-            {homeworkLoading ? (
-              <div style={{ textAlign: 'center', padding: '40px', color: '#94a3b8', fontWeight: 700 }}>Loading…</div>
-            ) : homeworkError ? (
-              <div role="alert" style={{ textAlign: 'center', padding: '40px', color: '#64748b', fontWeight: 700 }}>
-                Couldn’t load homework.{' '}
-                <button type="button" onClick={() => { resetSessionHistory('studentId', activeStudentId); setHomeworkTry((n) => n + 1); }} style={{ padding: '8px 18px', borderRadius: '999px', border: '1px solid #e2e8f0', background: '#fff', fontWeight: 800, cursor: 'pointer' }}>Retry</button>
-              </div>
-            ) : homeworkSessions.length === 0 ? (
-              <div style={{ textAlign: 'center', padding: '40px', color: '#94a3b8', fontWeight: 700, background: '#f8fafc', borderRadius: '16px', border: '1px dashed #e2e8f0' }}>
-                No homework recorded yet.
-              </div>
-            ) : (
-              homeworkSessions.map((session) => {
-                const done = session.isHomeworkCompleted === true;
-                const excused = session.homeworkStatus === 'excused';
-                const hasPending = session.homework && !done && !excused;
-                return (
-                  <div key={session.id} style={{
-                    background: '#fff',
-                    borderRadius: '16px',
-                    border: `1.5px solid ${done ? '#bbf7d0' : hasPending ? '#fde68a' : '#e2e8f0'}`,
-                    padding: '18px 20px',
-                    boxShadow: '0 2px 8px rgba(15,23,42,0.04)',
-                  }}>
-                    {/* Header row */}
-                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '10px' }}>
-                      <span style={{ fontSize: '0.82rem', fontWeight: 800, color: '#64748b' }}>
-                        📅 {session.date || '—'}
-                        {session.startTime && ` · ${session.startTime}`}
-                      </span>
-                      <span style={{
-                        display: 'inline-flex', alignItems: 'center', gap: '5px',
-                        fontSize: '0.72rem', fontWeight: 900, padding: '3px 10px', borderRadius: '999px',
-                        background: done ? '#f0fdf4' : hasPending ? '#fffbeb' : '#f8fafc',
-                        color: done ? '#15803d' : hasPending ? '#b45309' : '#64748b',
-                        border: `1px solid ${done ? '#bbf7d0' : hasPending ? '#fde68a' : '#e2e8f0'}`,
-                      }}>
-                        {done ? <><CheckCircle2 size={12} /> Done</> : hasPending ? <><Circle size={12} /> Pending</> : excused ? 'Excused' : 'No homework'}
-                      </span>
-                    </div>
-
-                    {/* Topics covered */}
-                    {Array.isArray(session.learnedTopics) && session.learnedTopics.length > 0 && (
-                      <div style={{ marginBottom: '10px' }}>
-                        <div style={{ fontSize: '0.7rem', fontWeight: 900, color: '#7c3aed', textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: '6px' }}>Topics Covered</div>
-                        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px' }}>
-                          {session.learnedTopics.map((t, i) => (
-                            <span key={i} style={{ background: '#f5f3ff', color: '#6d28d9', fontSize: '0.75rem', fontWeight: 700, padding: '3px 10px', borderRadius: '999px' }}>
-                              {t.label || t.id || t}
-                            </span>
-                          ))}
-                        </div>
-                      </div>
-                    )}
-
-                    {/* Homework text */}
-                    {session.homework && (
-                      <div>
-                        <div style={{ fontSize: '0.7rem', fontWeight: 900, color: '#f59e0b', textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: '6px' }}>Homework</div>
-                        <div style={{ fontSize: '0.9rem', fontWeight: 600, color: '#1e293b', whiteSpace: 'pre-wrap', lineHeight: 1.6 }}>
-                          {session.homework}
-                        </div>
-                      </div>
-                    )}
-
-                    {/* Score */}
-                    {(session.homeworkScore !== undefined && session.homeworkScore !== '') && (
-                      <div style={{ marginTop: '10px', fontSize: '0.8rem', fontWeight: 800, color: '#64748b' }}>
-                        Score: <span style={{ color: '#7c3aed' }}>{session.homeworkScore}{session.homeworkTotal ? ` / ${session.homeworkTotal}` : ''}</span>
-                      </div>
-                    )}
-
-                    {/* Notes */}
-                    {session.notes && (
-                      <div style={{ marginTop: '10px', padding: '10px 12px', background: '#f8fafc', borderRadius: '10px', fontSize: '0.82rem', color: '#475569', fontWeight: 600, lineHeight: 1.5 }}>
-                        📝 {session.notes}
-                      </div>
-                    )}
-
-                    {(session.homeworkStatus === 'submitted' || session.homeworkStatus === 'checked') && (
-                      <div style={{ marginTop: '12px' }}>
-                        <button
-                          type="button"
-                          onClick={() => setViewHomeworkId(session.id)}
-                          style={{ padding: '8px 14px', borderRadius: '12px', border: '1.5px solid #ddd6fe', background: '#f5f3ff', color: '#6d28d9', fontWeight: 800, fontSize: '0.82rem', cursor: 'pointer' }}
-                        >
-                          View submission{session.homeworkStatus === 'submitted' ? ' · new' : ''}
-                        </button>
-                      </div>
-                    )}
-
-                    {/* Complete toggle — teacher checks HW off as done */}
-                    {session.homework && (
-                      <div style={{ marginTop: '14px', display: 'flex', justifyContent: 'flex-end' }}>
-                        <button
-                          onClick={() => toggleHomeworkComplete(session)}
-                          style={{
-                            display: 'inline-flex', alignItems: 'center', gap: '7px',
-                            padding: '9px 16px', borderRadius: '12px', cursor: 'pointer',
-                            border: `1.5px solid ${done ? '#bbf7d0' : '#ddd6fe'}`,
-                            background: done ? '#f0fdf4' : 'linear-gradient(135deg, #a78bfa, #7c3aed)',
-                            color: done ? '#15803d' : '#fff',
-                            fontSize: '0.82rem', fontWeight: 800,
-                            boxShadow: done ? 'none' : '0 6px 16px rgba(124,58,237,0.22)',
-                          }}
-                        >
-                          {done
-                            ? <><CheckCircle2 size={15} /> Completed · tap to undo</>
-                            : <><Circle size={15} /> Mark as completed</>}
-                        </button>
-                      </div>
-                    )}
-                  </div>
-                );
-              })
-            )}
+            <HomeworkTab
+              sessions={homeworkSessions}
+              loading={homeworkLoading}
+              error={homeworkError}
+              onRetry={() => { resetSessionHistory('studentId', activeStudentId); setHomeworkTry((n) => n + 1); }}
+              onToggleComplete={toggleHomeworkComplete}
+              onView={setViewHomeworkId}
+            />
             {viewHomeworkId && (
               <HomeworkSubmissionViewer
                 sessionId={viewHomeworkId}

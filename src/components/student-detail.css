@@ -211,3 +211,23 @@
 .sd-switch[aria-checked="true"]::after { left: 24px; }
 .sd-switch:focus-visible, .sd-menu button:focus-visible { outline: 3px solid #b9a6f0; outline-offset: 2px; }
 @media (prefers-reduced-motion: reduce) { .sd-switch::after { transition: none; } }
+
+.sd-hw-groups { display: grid; gap: 16px; }
+.sd-count { display: inline-block; margin-left: 6px; min-width: 22px; text-align: center; border-radius: 999px; padding: 0 7px; background: #f3ebdf; color: #7a6a64; font-size: 0.78rem; font-variant-numeric: tabular-nums; }
+.sd-hw-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.sd-hw { background: #fff; border: 1px solid #f0e2cc; border-radius: 18px; padding: 12px 14px; display: grid; gap: 8px; min-width: 0; }
+.sd-hw-top { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.sd-hw-date { font-weight: 900; font-variant-numeric: tabular-nums; }
+.sd-hw-score { margin-left: auto; font-weight: 900; color: #6d4fc4; font-variant-numeric: tabular-nums; }
+.sd-hw-topics { display: flex; flex-wrap: wrap; gap: 6px; }
+.sd-hw-topics span { background: #ece5fb; color: #3b2a78; border-radius: 10px; padding: 2px 9px; font-size: 0.8rem; font-weight: 800; }
+.sd-hw-toggle { justify-self: start; border: 0; background: none; padding: 2px 0; color: #8a70d4; font: 900 0.82rem 'Nunito', var(--font-sans); cursor: pointer; }
+.sd-hw-detail { display: grid; gap: 8px; }
+.sd-hw-text { margin: 0; white-space: pre-wrap; line-height: 1.55; font-weight: 600; overflow-wrap: anywhere; }
+.sd-hw-note { margin: 0; background: #fff8ee; border-radius: 12px; padding: 8px 10px; color: #7a6a64; font-weight: 600; font-size: 0.88rem; }
+.sd-hw-acts { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 8px; }
+.sd-btn--soft { background: #ece5fb; color: #3b2a78; display: inline-flex; align-items: center; gap: 6px; }
+.sd-btn--done { background: #d8f1de; color: #1f6b43; display: inline-flex; align-items: center; gap: 6px; }
+.sd-btn--primary { display: inline-flex; align-items: center; gap: 6px; }
+.sd-tag--g { background: #d8f1de; color: #1f6b43; } .sd-tag--n { background: #f3ebdf; color: #7a6a64; }
+.sd-hw-toggle:focus-visible, .sd-btn:focus-visible { outline: 3px solid #b9a6f0; outline-offset: 2px; }
