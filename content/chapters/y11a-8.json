@@ -7601,6 +7601,118 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "moriah2021-q7",
+          "type": "mc",
+          "stem": "It is given that \\(2\\ln x=3\\ln y+1\\), where \\(x\\) and \\(y\\) are both positive. Which of the following statements is true?",
+          "difficulty": "medium",
+          "options": [
+            "\\(2x-3y=e\\)",
+            "\\(x^{2}=y^{3}+e\\)",
+            "\\(\\dfrac{x^{2}}{y^{3}}=1\\)",
+            "\\(\\dfrac{x^{2}}{y^{3}}=e\\)"
+          ],
+          "answer": 3,
+          "hint": "Collect the logs on ONE side: \\(2\\ln x-3\\ln y=1\\). Use \\(a\\ln b=\\ln b^{a}\\) and \\(\\ln A-\\ln B=\\ln\\dfrac{A}{B}\\). Then remember \\(1=\\ln e\\) (or \\(\\ln A=1\\Rightarrow A=e\\)).",
+          "steps": [
+            {
+              "explain": "Move the \\(\\ln y\\) term to the left.",
+              "work": "\\(2\\ln x-3\\ln y=1\\)"
+            },
+            {
+              "explain": "Power law: \\(2\\ln x=\\ln x^{2}\\) and \\(3\\ln y=\\ln y^{3}\\).",
+              "work": "\\(\\ln x^{2}-\\ln y^{3}=1\\)"
+            },
+            {
+              "explain": "Subtraction law: \\(\\ln A-\\ln B=\\ln\\dfrac{A}{B}\\).",
+              "work": "\\(\\ln\\dfrac{x^{2}}{y^{3}}=1\\)"
+            },
+            {
+              "explain": "Convert to exponential form: \\(\\ln A=1\\Rightarrow A=e^{1}\\).",
+              "work": "\\(\\dfrac{x^{2}}{y^{3}}=e\\)"
+            },
+            {
+              "explain": "Why not the others: A and B treat \\(\\ln\\) as if it could be removed term by term (\\(\\ln(x^{2})\\ne2x\\), and \\(\\ln A-\\ln B\\ne\\ln(A-B)\\)); C uses \\(1=\\ln1\\) (that is \\(0\\)); the constant 1 equals \\(\\ln e\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">D</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Which of the following statements is true?",
+              "note": "\\(2\\ln x-3\\ln y=1\\Rightarrow\\ln\\dfrac{x^{2}}{y^{3}}=1\\Rightarrow=e\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Moriah College 2021 HSC Trial Examination Mathematics Advanced",
+            "school": "Moriah College",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "moriah2021-q24",
+          "type": "mc",
+          "stem": "Solve \\(\\ln(8-2x)=\\dfrac{1}{2}\\ln(4-x)\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(x=\\dfrac{15}{4}\\)",
+            "\\(x=4\\) only",
+            "\\(x=4\\) or \\(x=\\dfrac{15}{4}\\)",
+            "\\(x=\\dfrac{7}{2}\\)"
+          ],
+          "answer": 0,
+          "hint": "Write the right side as a single log using the power law (\\(\\dfrac{1}{2}\\ln A=\\ln\\sqrt A\\)). Then, since \\(\\ln P=\\ln Q\\Rightarrow P=Q\\), solve the resulting equation. ALWAYS CHECK the answers in the original: the argument of a \\(\\ln\\) must be POSITIVE.",
+          "steps": [
+            {
+              "explain": "Power law: \\(\\dfrac{1}{2}\\ln(4-x)=\\ln(4-x)^{\\frac12}\\).",
+              "work": "\\(\\ln(8-2x)=\\ln\\sqrt{4-x}\\)"
+            },
+            {
+              "explain": "Equal logs \\(\\Rightarrow\\) equal arguments. Then square both sides.",
+              "work": "\\(8-2x=\\sqrt{4-x}\\ \\Rightarrow\\ (8-2x)^{2}=4-x\\)"
+            },
+            {
+              "explain": "Note \\(8-2x=2(4-x)\\). So \\(4(4-x)^{2}=(4-x)\\).",
+              "work": "\\(4(4-x)^{2}-(4-x)=0\\)"
+            },
+            {
+              "explain": "Factor out \\((4-x)\\).",
+              "work": "\\((4-x)\\left[4(4-x)-1\\right]=0\\ \\Rightarrow\\ (4-x)(15-4x)=0\\)"
+            },
+            {
+              "explain": "Solutions: \\(x=4\\) or \\(x=\\dfrac{15}{4}\\). CHECK: \\(x=4\\) gives \\(\\ln(0)\\), which is undefined (the argument must be \\(>0\\)), so REJECT \\(x=4\\). \\(x=\\dfrac{15}{4}\\): \\(8-2x=0.5>0\\) and \\(4-x=0.25>0\\), \\(\\ln0.5=\\dfrac{1}{2}\\ln0.25\\) ✓.",
+              "work": "\\(x=\\dfrac{15}{4}\\)"
+            },
+            {
+              "explain": "Why not the others: B and C include the extraneous root \\(x=4\\) (\\(\\ln0\\) undefined); D is a guess.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Solve",
+              "note": "\\(\\dfrac{1}{2}\\ln A=\\ln\\sqrt A\\); check \\(\\ln\\) arguments \\(>0\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Moriah College 2021 HSC Trial Examination Mathematics Advanced",
+            "school": "Moriah College",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },

@@ -3575,6 +3575,66 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "moriah2021-q6",
+          "type": "mc",
+          "stem": "Part of the graph of the function \\(y=\\sin\\left(\\dfrac{\\pi x}{3}\\right)+\\sin\\left(\\dfrac{\\pi x}{6}\\right)\\), where \\(x\\ge0\\) is shown below. What is the period of the function?",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 450 250\" width=\"100%\" height=\"auto\" style=\"max-width:450px;display:block;margin:0 auto\"><line x1=\"32.0\" y1=\"110.0\" x2=\"466.2\" y2=\"110.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"40.0\" y1=\"189.2\" x2=\"40.0\" y2=\"-5.2\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"466.2\" y1=\"110.0\" x2=\"459.3\" y2=\"106.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"466.2\" y1=\"110.0\" x2=\"459.3\" y2=\"114.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"40.0\" y1=\"-5.2\" x2=\"36.0\" y2=\"1.7\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"40.0\" y1=\"-5.2\" x2=\"44.0\" y2=\"1.7\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><polyline points=\"40.0,110.0 40.8,107.2 41.5,104.4 42.3,101.5 43.1,98.8 43.9,96.0 44.6,93.2 45.4,90.5 46.2,87.9 47.0,85.3 47.8,82.7 48.5,80.2 49.3,77.7 50.1,75.3 50.9,73.0 51.6,70.8 52.4,68.6 53.2,66.5 54.0,64.5 54.7,62.6 55.5,60.8 56.3,59.1 57.0,57.5 57.8,56.0 58.6,54.6 59.4,53.3 60.2,52.1 60.9,51.1 61.7,50.1 62.5,49.3 63.2,48.5 64.0,47.9 64.8,47.4 65.6,47.1 66.3,46.8 67.1,46.7 67.9,46.6 68.7,46.7 69.5,46.9 70.2,47.2 71.0,47.6 71.8,48.2 72.6,48.8 73.3,49.5 74.1,50.4 74.9,51.3 75.7,52.3 76.4,53.4 77.2,54.6 78.0,55.9 78.8,57.2 79.5,58.7 80.3,60.1 81.1,61.7 81.8,63.3 82.6,65.0 83.4,66.7 84.2,68.5 84.9,70.3 85.7,72.1 86.5,74.0 87.3,75.9 88.1,77.8 88.8,79.7 89.6,81.7 90.4,83.6 91.2,85.6 91.9,87.5 92.7,89.4 93.5,91.3 94.2,93.2 95.0,95.1 95.8,96.9 96.6,98.7 97.3,100.5 98.1,102.2 98.9,103.9 99.7,105.5 100.4,107.0 101.2,108.6 102.0,110.0 102.8,111.4 103.5,112.7 104.3,113.9 105.1,115.1 105.9,116.2 106.6,117.2 107.4,118.2 108.2,119.0 109.0,119.8 109.8,120.5 110.5,121.2 111.3,121.7 112.1,122.2 112.9,122.6 113.6,122.9 114.4,123.1 115.2,123.2 116.0,123.3 116.7,123.3 117.5,123.2 118.3,123.0 119.0,122.8 119.8,122.5 120.6,122.1 121.4,121.7 122.1,121.2 122.9,120.6 123.7,120.0 124.5,119.4 125.2,118.7 126.0,117.9 126.8,117.2 127.6,116.3 128.4,115.5 129.1,114.6 129.9,113.7 130.7,112.8 131.4,111.9 132.2,110.9 133.0,110.0 133.8,109.1 134.6,108.1 135.3,107.2 136.1,106.3 136.9,105.4 137.6,104.5 138.4,103.7 139.2,102.8 140.0,102.1 140.8,101.3 141.5,100.6 142.3,100.0 143.1,99.4 143.9,98.8 144.6,98.3 145.4,97.9 146.2,97.5 146.9,97.2 147.7,97.0 148.5,96.8 149.3,96.7 150.1,96.7 150.8,96.8 151.6,96.9 152.4,97.1 153.1,97.4 153.9,97.8 154.7,98.3 155.5,98.8 156.2,99.5 157.0,100.2 157.8,101.0 158.6,101.8 159.4,102.8 160.1,103.8 160.9,104.9 161.7,106.1 162.4,107.3 163.2,108.6 164.0,110.0 164.8,111.4 165.6,113.0 166.3,114.5 167.1,116.1 167.9,117.8 168.7,119.5 169.4,121.3 170.2,123.1 171.0,124.9 171.8,126.8 172.5,128.7 173.3,130.6 174.1,132.5 174.8,134.4 175.6,136.4 176.4,138.3 177.2,140.3 178.0,142.2 178.7,144.1 179.5,146.0 180.3,147.9 181.0,149.7 181.8,151.5 182.6,153.3 183.4,155.0 184.2,156.7 184.9,158.3 185.7,159.9 186.5,161.3 187.2,162.8 188.0,164.1 188.8,165.4 189.6,166.6 190.3,167.7 191.1,168.7 191.9,169.6 192.7,170.5 193.5,171.2 194.2,171.8 195.0,172.4 195.8,172.8 196.5,173.1 197.3,173.3 198.1,173.4 198.9,173.3 199.7,173.2 200.4,172.9 201.2,172.6 202.0,172.1 202.8,171.5 203.5,170.7 204.3,169.9 205.1,168.9 205.8,167.9 206.6,166.7 207.4,165.4 208.2,164.0 209.0,162.5 209.7,160.9 210.5,159.2 211.3,157.4 212.0,155.5 212.8,153.5 213.6,151.4 214.4,149.2 215.2,147.0 215.9,144.7 216.7,142.3 217.5,139.8 218.2,137.3 219.0,134.7 219.8,132.1 220.6,129.5 221.3,126.8 222.1,124.0 222.9,121.2 223.7,118.5 224.5,115.6 225.2,112.8 226.0,110.0 226.8,107.2 227.5,104.4 228.3,101.5 229.1,98.8 229.9,96.0 230.7,93.2 231.4,90.5 232.2,87.9 233.0,85.3 233.8,82.7 234.5,80.2 235.3,77.7 236.1,75.3 236.8,73.0 237.6,70.8 238.4,68.6 239.2,66.5 240.0,64.5 240.7,62.6 241.5,60.8 242.3,59.1 243.0,57.5 243.8,56.0 244.6,54.6 245.4,53.3 246.2,52.1 246.9,51.1 247.7,50.1 248.5,49.3 249.2,48.5 250.0,47.9 250.8,47.4 251.6,47.1 252.3,46.8 253.1,46.7 253.9,46.6 254.7,46.7 255.5,46.9 256.2,47.2 257.0,47.6 257.8,48.2 258.5,48.8 259.3,49.5 260.1,50.4 260.9,51.3 261.6,52.3 262.4,53.4 263.2,54.6 264.0,55.9 264.8,57.2 265.5,58.7 266.3,60.1 267.1,61.7 267.9,63.3 268.6,65.0 269.4,66.7 270.2,68.5 271.0,70.3 271.7,72.1 272.5,74.0 273.3,75.9 274.0,77.8 274.8,79.7 275.6,81.7 276.4,83.6 277.1,85.6 277.9,87.5 278.7,89.4 279.5,91.3 280.2,93.2 281.0,95.1 281.8,96.9 282.6,98.7 283.4,100.5 284.1,102.2 284.9,103.9 285.7,105.5 286.5,107.0 287.2,108.6 288.0,110.0 288.8,111.4 289.6,112.7 290.3,113.9 291.1,115.1 291.9,116.2 292.6,117.2 293.4,118.2 294.2,119.0 295.0,119.8 295.8,120.5 296.5,121.2 297.3,121.7 298.1,122.2 298.8,122.6 299.6,122.9 300.4,123.1 301.2,123.2 301.9,123.3 302.7,123.3 303.5,123.2 304.3,123.0 305.1,122.8 305.8,122.5 306.6,122.1 307.4,121.7 308.2,121.2 308.9,120.6 309.7,120.0 310.5,119.4 311.2,118.7 312.0,117.9 312.8,117.2 313.6,116.3 314.3,115.5 315.1,114.6 315.9,113.7 316.7,112.8 317.4,111.9 318.2,110.9 319.0,110.0 319.8,109.1 320.6,108.1 321.3,107.2 322.1,106.3 322.9,105.4 323.7,104.5 324.4,103.7 325.2,102.8 326.0,102.1 326.8,101.3 327.5,100.6 328.3,100.0 329.1,99.4 329.8,98.8 330.6,98.3 331.4,97.9 332.2,97.5 332.9,97.2 333.7,97.0 334.5,96.8 335.3,96.7 336.1,96.7 336.8,96.8 337.6,96.9 338.4,97.1 339.2,97.4 339.9,97.8 340.7,98.3 341.5,98.8 342.2,99.5 343.0,100.2 343.8,101.0 344.6,101.8 345.3,102.8 346.1,103.8 346.9,104.9 347.7,106.1 348.4,107.3 349.2,108.6 350.0,110.0 350.8,111.4 351.6,113.0 352.3,114.5 353.1,116.1 353.9,117.8 354.7,119.5 355.4,121.3 356.2,123.1 357.0,124.9 357.8,126.8 358.5,128.7 359.3,130.6 360.1,132.5 360.8,134.4 361.6,136.4 362.4,138.3 363.2,140.3 363.9,142.2 364.7,144.1 365.5,146.0 366.3,147.9 367.1,149.7 367.8,151.5 368.6,153.3 369.4,155.0 370.2,156.7 370.9,158.3 371.7,159.9 372.5,161.3 373.2,162.8 374.0,164.1 374.8,165.4 375.6,166.6 376.3,167.7 377.1,168.7 377.9,169.6 378.7,170.5 379.4,171.2 380.2,171.8 381.0,172.4 381.8,172.8 382.6,173.1 383.3,173.3 384.1,173.4 384.9,173.3 385.7,173.2 386.4,172.9 387.2,172.6 388.0,172.1 388.8,171.5 389.5,170.7 390.3,169.9 391.1,168.9 391.8,167.9 392.6,166.7 393.4,165.4 394.2,164.0 394.9,162.5 395.7,160.9 396.5,159.2 397.3,157.4 398.1,155.5 398.8,153.5 399.6,151.4 400.4,149.2 401.2,147.0 401.9,144.7 402.7,142.3 403.5,139.8 404.2,137.3 405.0,134.7 405.8,132.1 406.6,129.5 407.3,126.8 408.1,124.0 408.9,121.2 409.7,118.5 410.4,115.6 411.2,112.8 412.0,110.0 412.8,107.2 413.6,104.4 414.3,101.5 415.1,98.8 415.9,96.0 416.7,93.2 417.4,90.5 418.2,87.9 419.0,85.3 419.8,82.7 420.5,80.2 421.3,77.7 422.1,75.3 422.8,73.0 423.6,70.8 424.4,68.6 425.2,66.5 425.9,64.5 426.7,62.6 427.5,60.8 428.3,59.1 429.1,57.5 429.8,56.0 430.6,54.6 431.4,53.3 432.2,52.1 432.9,51.1 433.7,50.1 434.5,49.3 435.2,48.5 436.0,47.9 436.8,47.4 437.6,47.1 438.3,46.8 439.1,46.7 439.9,46.6 440.7,46.7 441.4,46.9 442.2,47.2 443.0,47.6\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2\"/><line x1=\"117.5\" y1=\"107.0\" x2=\"117.5\" y2=\"113.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"117.5\" y=\"125.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">5</text><line x1=\"195.0\" y1=\"107.0\" x2=\"195.0\" y2=\"113.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"195.0\" y=\"125.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">10</text><line x1=\"272.5\" y1=\"107.0\" x2=\"272.5\" y2=\"113.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"272.5\" y=\"125.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">15</text><line x1=\"350.0\" y1=\"107.0\" x2=\"350.0\" y2=\"113.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"350.0\" y=\"125.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">20</text><line x1=\"427.5\" y1=\"107.0\" x2=\"427.5\" y2=\"113.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"427.5\" y=\"125.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">25</text><line x1=\"37.0\" y1=\"182.0\" x2=\"43.0\" y2=\"182.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"33.0\" y=\"186.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">-2</text><line x1=\"37.0\" y1=\"146.0\" x2=\"43.0\" y2=\"146.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"33.0\" y=\"150.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">-1</text><line x1=\"37.0\" y1=\"74.0\" x2=\"43.0\" y2=\"74.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"33.0\" y=\"78.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><line x1=\"37.0\" y1=\"38.0\" x2=\"43.0\" y2=\"38.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"33.0\" y=\"42.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><line x1=\"37.0\" y1=\"2.0\" x2=\"43.0\" y2=\"2.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"33.0\" y=\"6.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3</text><text x=\"466.2\" y=\"102.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><text x=\"50.0\" y=\"2.8\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">y</text></svg>"
+          },
+          "options": [
+            "\\(6\\)",
+            "\\(10\\)",
+            "\\(12\\)",
+            "\\(24\\)"
+          ],
+          "answer": 2,
+          "hint": "The period of \\(\\sin(bx)\\) is \\(\\dfrac{2\\pi}{b}\\). The sum repeats when BOTH waves have completed whole cycles at the same time: find the LOWEST COMMON MULTIPLE of the two periods. You can also check on the graph where the pattern first repeats.",
+          "steps": [
+            {
+              "explain": "Period of \\(\\sin\\dfrac{\\pi x}{3}\\): \\(b=\\dfrac\\pi3\\), so \\(T_{1}=\\dfrac{2\\pi}{\\dfrac{\\pi}{3}}=6\\).",
+              "work": "\\(T_{1}=2\\pi\\div\\dfrac\\pi3=6\\)"
+            },
+            {
+              "explain": "Period of \\(\\sin\\dfrac{\\pi x}{6}\\): \\(b=\\dfrac\\pi6\\), so \\(T_{2}=\\dfrac{2\\pi}{\\dfrac{\\pi}{6}}=12\\).",
+              "work": "\\(T_{2}=2\\pi\\div\\dfrac\\pi6=12\\)"
+            },
+            {
+              "explain": "The sum repeats when both waves repeat together: LCM\\((6,12)=12\\). (In 12 units wave 1 does 2 cycles and wave 2 does 1 cycle.)",
+              "work": "\\(\\text{LCM}(6,12)=12\\)"
+            },
+            {
+              "explain": "Check on the graph: the pattern from \\(x=0\\) to \\(x=12\\) (up to the crossing at 12) is repeated exactly from \\(x=12\\) to \\(x=24\\).",
+              "work": "\\(\\text{period}=12\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 450 250\" width=\"100%\" height=\"auto\" style=\"max-width:450px;display:block;margin:0 auto\"><line x1=\"32.0\" y1=\"110.0\" x2=\"466.2\" y2=\"110.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"40.0\" y1=\"189.2\" x2=\"40.0\" y2=\"-5.2\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"466.2\" y1=\"110.0\" x2=\"459.3\" y2=\"106.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"466.2\" y1=\"110.0\" x2=\"459.3\" y2=\"114.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"40.0\" y1=\"-5.2\" x2=\"36.0\" y2=\"1.7\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"40.0\" y1=\"-5.2\" x2=\"44.0\" y2=\"1.7\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><polyline points=\"40.0,110.0 40.8,107.2 41.5,104.4 42.3,101.5 43.1,98.8 43.9,96.0 44.6,93.2 45.4,90.5 46.2,87.9 47.0,85.3 47.8,82.7 48.5,80.2 49.3,77.7 50.1,75.3 50.9,73.0 51.6,70.8 52.4,68.6 53.2,66.5 54.0,64.5 54.7,62.6 55.5,60.8 56.3,59.1 57.0,57.5 57.8,56.0 58.6,54.6 59.4,53.3 60.2,52.1 60.9,51.1 61.7,50.1 62.5,49.3 63.2,48.5 64.0,47.9 64.8,47.4 65.6,47.1 66.3,46.8 67.1,46.7 67.9,46.6 68.7,46.7 69.5,46.9 70.2,47.2 71.0,47.6 71.8,48.2 72.6,48.8 73.3,49.5 74.1,50.4 74.9,51.3 75.7,52.3 76.4,53.4 77.2,54.6 78.0,55.9 78.8,57.2 79.5,58.7 80.3,60.1 81.1,61.7 81.8,63.3 82.6,65.0 83.4,66.7 84.2,68.5 84.9,70.3 85.7,72.1 86.5,74.0 87.3,75.9 88.1,77.8 88.8,79.7 89.6,81.7 90.4,83.6 91.2,85.6 91.9,87.5 92.7,89.4 93.5,91.3 94.2,93.2 95.0,95.1 95.8,96.9 96.6,98.7 97.3,100.5 98.1,102.2 98.9,103.9 99.7,105.5 100.4,107.0 101.2,108.6 102.0,110.0 102.8,111.4 103.5,112.7 104.3,113.9 105.1,115.1 105.9,116.2 106.6,117.2 107.4,118.2 108.2,119.0 109.0,119.8 109.8,120.5 110.5,121.2 111.3,121.7 112.1,122.2 112.9,122.6 113.6,122.9 114.4,123.1 115.2,123.2 116.0,123.3 116.7,123.3 117.5,123.2 118.3,123.0 119.0,122.8 119.8,122.5 120.6,122.1 121.4,121.7 122.1,121.2 122.9,120.6 123.7,120.0 124.5,119.4 125.2,118.7 126.0,117.9 126.8,117.2 127.6,116.3 128.4,115.5 129.1,114.6 129.9,113.7 130.7,112.8 131.4,111.9 132.2,110.9 133.0,110.0 133.8,109.1 134.6,108.1 135.3,107.2 136.1,106.3 136.9,105.4 137.6,104.5 138.4,103.7 139.2,102.8 140.0,102.1 140.8,101.3 141.5,100.6 142.3,100.0 143.1,99.4 143.9,98.8 144.6,98.3 145.4,97.9 146.2,97.5 146.9,97.2 147.7,97.0 148.5,96.8 149.3,96.7 150.1,96.7 150.8,96.8 151.6,96.9 152.4,97.1 153.1,97.4 153.9,97.8 154.7,98.3 155.5,98.8 156.2,99.5 157.0,100.2 157.8,101.0 158.6,101.8 159.4,102.8 160.1,103.8 160.9,104.9 161.7,106.1 162.4,107.3 163.2,108.6 164.0,110.0 164.8,111.4 165.6,113.0 166.3,114.5 167.1,116.1 167.9,117.8 168.7,119.5 169.4,121.3 170.2,123.1 171.0,124.9 171.8,126.8 172.5,128.7 173.3,130.6 174.1,132.5 174.8,134.4 175.6,136.4 176.4,138.3 177.2,140.3 178.0,142.2 178.7,144.1 179.5,146.0 180.3,147.9 181.0,149.7 181.8,151.5 182.6,153.3 183.4,155.0 184.2,156.7 184.9,158.3 185.7,159.9 186.5,161.3 187.2,162.8 188.0,164.1 188.8,165.4 189.6,166.6 190.3,167.7 191.1,168.7 191.9,169.6 192.7,170.5 193.5,171.2 194.2,171.8 195.0,172.4 195.8,172.8 196.5,173.1 197.3,173.3 198.1,173.4 198.9,173.3 199.7,173.2 200.4,172.9 201.2,172.6 202.0,172.1 202.8,171.5 203.5,170.7 204.3,169.9 205.1,168.9 205.8,167.9 206.6,166.7 207.4,165.4 208.2,164.0 209.0,162.5 209.7,160.9 210.5,159.2 211.3,157.4 212.0,155.5 212.8,153.5 213.6,151.4 214.4,149.2 215.2,147.0 215.9,144.7 216.7,142.3 217.5,139.8 218.2,137.3 219.0,134.7 219.8,132.1 220.6,129.5 221.3,126.8 222.1,124.0 222.9,121.2 223.7,118.5 224.5,115.6 225.2,112.8 226.0,110.0 226.8,107.2 227.5,104.4 228.3,101.5 229.1,98.8 229.9,96.0 230.7,93.2 231.4,90.5 232.2,87.9 233.0,85.3 233.8,82.7 234.5,80.2 235.3,77.7 236.1,75.3 236.8,73.0 237.6,70.8 238.4,68.6 239.2,66.5 240.0,64.5 240.7,62.6 241.5,60.8 242.3,59.1 243.0,57.5 243.8,56.0 244.6,54.6 245.4,53.3 246.2,52.1 246.9,51.1 247.7,50.1 248.5,49.3 249.2,48.5 250.0,47.9 250.8,47.4 251.6,47.1 252.3,46.8 253.1,46.7 253.9,46.6 254.7,46.7 255.5,46.9 256.2,47.2 257.0,47.6 257.8,48.2 258.5,48.8 259.3,49.5 260.1,50.4 260.9,51.3 261.6,52.3 262.4,53.4 263.2,54.6 264.0,55.9 264.8,57.2 265.5,58.7 266.3,60.1 267.1,61.7 267.9,63.3 268.6,65.0 269.4,66.7 270.2,68.5 271.0,70.3 271.7,72.1 272.5,74.0 273.3,75.9 274.0,77.8 274.8,79.7 275.6,81.7 276.4,83.6 277.1,85.6 277.9,87.5 278.7,89.4 279.5,91.3 280.2,93.2 281.0,95.1 281.8,96.9 282.6,98.7 283.4,100.5 284.1,102.2 284.9,103.9 285.7,105.5 286.5,107.0 287.2,108.6 288.0,110.0 288.8,111.4 289.6,112.7 290.3,113.9 291.1,115.1 291.9,116.2 292.6,117.2 293.4,118.2 294.2,119.0 295.0,119.8 295.8,120.5 296.5,121.2 297.3,121.7 298.1,122.2 298.8,122.6 299.6,122.9 300.4,123.1 301.2,123.2 301.9,123.3 302.7,123.3 303.5,123.2 304.3,123.0 305.1,122.8 305.8,122.5 306.6,122.1 307.4,121.7 308.2,121.2 308.9,120.6 309.7,120.0 310.5,119.4 311.2,118.7 312.0,117.9 312.8,117.2 313.6,116.3 314.3,115.5 315.1,114.6 315.9,113.7 316.7,112.8 317.4,111.9 318.2,110.9 319.0,110.0 319.8,109.1 320.6,108.1 321.3,107.2 322.1,106.3 322.9,105.4 323.7,104.5 324.4,103.7 325.2,102.8 326.0,102.1 326.8,101.3 327.5,100.6 328.3,100.0 329.1,99.4 329.8,98.8 330.6,98.3 331.4,97.9 332.2,97.5 332.9,97.2 333.7,97.0 334.5,96.8 335.3,96.7 336.1,96.7 336.8,96.8 337.6,96.9 338.4,97.1 339.2,97.4 339.9,97.8 340.7,98.3 341.5,98.8 342.2,99.5 343.0,100.2 343.8,101.0 344.6,101.8 345.3,102.8 346.1,103.8 346.9,104.9 347.7,106.1 348.4,107.3 349.2,108.6 350.0,110.0 350.8,111.4 351.6,113.0 352.3,114.5 353.1,116.1 353.9,117.8 354.7,119.5 355.4,121.3 356.2,123.1 357.0,124.9 357.8,126.8 358.5,128.7 359.3,130.6 360.1,132.5 360.8,134.4 361.6,136.4 362.4,138.3 363.2,140.3 363.9,142.2 364.7,144.1 365.5,146.0 366.3,147.9 367.1,149.7 367.8,151.5 368.6,153.3 369.4,155.0 370.2,156.7 370.9,158.3 371.7,159.9 372.5,161.3 373.2,162.8 374.0,164.1 374.8,165.4 375.6,166.6 376.3,167.7 377.1,168.7 377.9,169.6 378.7,170.5 379.4,171.2 380.2,171.8 381.0,172.4 381.8,172.8 382.6,173.1 383.3,173.3 384.1,173.4 384.9,173.3 385.7,173.2 386.4,172.9 387.2,172.6 388.0,172.1 388.8,171.5 389.5,170.7 390.3,169.9 391.1,168.9 391.8,167.9 392.6,166.7 393.4,165.4 394.2,164.0 394.9,162.5 395.7,160.9 396.5,159.2 397.3,157.4 398.1,155.5 398.8,153.5 399.6,151.4 400.4,149.2 401.2,147.0 401.9,144.7 402.7,142.3 403.5,139.8 404.2,137.3 405.0,134.7 405.8,132.1 406.6,129.5 407.3,126.8 408.1,124.0 408.9,121.2 409.7,118.5 410.4,115.6 411.2,112.8 412.0,110.0 412.8,107.2 413.6,104.4 414.3,101.5 415.1,98.8 415.9,96.0 416.7,93.2 417.4,90.5 418.2,87.9 419.0,85.3 419.8,82.7 420.5,80.2 421.3,77.7 422.1,75.3 422.8,73.0 423.6,70.8 424.4,68.6 425.2,66.5 425.9,64.5 426.7,62.6 427.5,60.8 428.3,59.1 429.1,57.5 429.8,56.0 430.6,54.6 431.4,53.3 432.2,52.1 432.9,51.1 433.7,50.1 434.5,49.3 435.2,48.5 436.0,47.9 436.8,47.4 437.6,47.1 438.3,46.8 439.1,46.7 439.9,46.6 440.7,46.7 441.4,46.9 442.2,47.2 443.0,47.6\" fill=\"none\" stroke=\"#3b4ea8\" stroke-width=\"3\"/><line x1=\"117.5\" y1=\"107.0\" x2=\"117.5\" y2=\"113.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"117.5\" y=\"125.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">5</text><line x1=\"195.0\" y1=\"107.0\" x2=\"195.0\" y2=\"113.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"195.0\" y=\"125.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">10</text><line x1=\"272.5\" y1=\"107.0\" x2=\"272.5\" y2=\"113.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"272.5\" y=\"125.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">15</text><line x1=\"350.0\" y1=\"107.0\" x2=\"350.0\" y2=\"113.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"350.0\" y=\"125.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">20</text><line x1=\"427.5\" y1=\"107.0\" x2=\"427.5\" y2=\"113.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"427.5\" y=\"125.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">25</text><line x1=\"37.0\" y1=\"182.0\" x2=\"43.0\" y2=\"182.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"33.0\" y=\"186.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">-2</text><line x1=\"37.0\" y1=\"146.0\" x2=\"43.0\" y2=\"146.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"33.0\" y=\"150.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">-1</text><line x1=\"37.0\" y1=\"74.0\" x2=\"43.0\" y2=\"74.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"33.0\" y=\"78.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><line x1=\"37.0\" y1=\"38.0\" x2=\"43.0\" y2=\"38.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"33.0\" y=\"42.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><line x1=\"37.0\" y1=\"2.0\" x2=\"43.0\" y2=\"2.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"33.0\" y=\"6.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3</text><text x=\"466.2\" y=\"102.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><text x=\"50.0\" y=\"2.8\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">y</text><line x1=\"40.0\" y1=\"183.8\" x2=\"226.0\" y2=\"183.8\" stroke=\"#dc2626\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"226.0\" y1=\"183.8\" x2=\"219.1\" y2=\"179.8\" stroke=\"#dc2626\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"226.0\" y1=\"183.8\" x2=\"219.1\" y2=\"187.8\" stroke=\"#dc2626\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"40.0\" y1=\"183.8\" x2=\"46.9\" y2=\"187.8\" stroke=\"#dc2626\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"40.0\" y1=\"183.8\" x2=\"46.9\" y2=\"179.8\" stroke=\"#dc2626\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"226.0\" y1=\"183.8\" x2=\"412.0\" y2=\"183.8\" stroke=\"#047857\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"412.0\" y1=\"183.8\" x2=\"405.1\" y2=\"179.8\" stroke=\"#047857\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"412.0\" y1=\"183.8\" x2=\"405.1\" y2=\"187.8\" stroke=\"#047857\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"226.0\" y1=\"183.8\" x2=\"232.9\" y2=\"187.8\" stroke=\"#047857\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"226.0\" y1=\"183.8\" x2=\"232.9\" y2=\"179.8\" stroke=\"#047857\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><text x=\"133.0\" y=\"198.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">one period = 12</text><text x=\"319.0\" y=\"198.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">next period = 12</text><circle cx=\"40.0\" cy=\"110.0\" r=\"4.5\" fill=\"#dc2626\"/><circle cx=\"226.0\" cy=\"110.0\" r=\"4.5\" fill=\"#dc2626\"/><circle cx=\"412.0\" cy=\"110.0\" r=\"4.5\" fill=\"#dc2626\"/></svg>"
+              }
+            },
+            {
+              "explain": "Why not the others: 6 is the period of only one term (the other wave has not repeated); 10 and 24 are not the common repeat length (24 is a multiple but not the SMALLEST).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">C</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "What is the period of the function?",
+              "note": "Periods \\(6\\) and \\(12\\); lowest common multiple."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Moriah College 2021 HSC Trial Examination Mathematics Advanced",
+            "school": "Moriah College",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -10302,6 +10362,56 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "moriah2021-q19a",
+          "type": "mc",
+          "stem": "Use the fact that \\(\\sec x=(\\cos x)^{-1}\\) to show that \\(\\dfrac{d}{dx}(\\sec x)=\\sec x\\tan x\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\begin{aligned}&\\dfrac{d}{dx}(\\cos x)^{-1}=-(\\cos x)^{-2}\\times(-\\sin x)=\\dfrac{\\sin x}{\\cos^{2}x}\\\\ &=\\dfrac{1}{\\cos x}\\times\\dfrac{\\sin x}{\\cos x}=\\sec x\\tan x\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\dfrac{d}{dx}(\\cos x)^{-1}=-(\\cos x)^{-2}\\times\\sin x=-\\dfrac{\\sin x}{\\cos^{2}x}\\\\ &=-\\sec x\\tan x\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\dfrac{d}{dx}(\\cos x)^{-1}=-(\\cos x)^{-2}=-\\sec^{2}x\\\\ &\\text{(chain rule factor missing)}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\dfrac{d}{dx}(\\cos x)^{-1}=-(\\sin x)^{-2}\\times(-\\cos x)=\\dfrac{\\cos x}{\\sin^{2}x}\\\\ &=\\csc x\\cot x\\end{aligned}\\)"
+          ],
+          "answer": 0,
+          "hint": "Chain rule: \\(\\dfrac{d}{dx}[f(x)]^{n}=n[f(x)]^{n-1}f'(x)\\) with \\(f=\\cos x\\), \\(n=-1\\), \\(f'=-\\sin x\\). Two minus signs cancel. Then split \\(\\dfrac{\\sin x}{\\cos^{2}x}=\\dfrac{1}{\\cos x}\\cdot\\dfrac{\\sin x}{\\cos x}\\).",
+          "steps": [
+            {
+              "explain": "Power \\(n=-1\\): bring it down and reduce the power by 1, giving \\((\\cos x)^{-2}\\); multiply by the derivative of the inside, \\(\\dfrac{d}{dx}\\cos x=-\\sin x\\).",
+              "work": "\\(\\dfrac{d}{dx}(\\cos x)^{-1}=(-1)(\\cos x)^{-2}\\times(-\\sin x)\\)"
+            },
+            {
+              "explain": "Two negatives make a positive; \\((\\cos x)^{-2}=\\dfrac{1}{\\cos^{2}x}\\).",
+              "work": "\\(=\\dfrac{\\sin x}{\\cos^{2}x}\\)"
+            },
+            {
+              "explain": "Split the denominator \\(\\cos^{2}x=\\cos x\\cdot\\cos x\\) so each part is a recognised function.",
+              "work": "\\(=\\dfrac{1}{\\cos x}\\times\\dfrac{\\sin x}{\\cos x}=\\sec x\\tan x\\ \\ \\blacksquare\\)"
+            },
+            {
+              "explain": "Why not the others: B drops the minus from \\(-\\sin x\\) (answer would be negative); C forgets to multiply by \\(-\\sin x\\); D differentiates with the wrong function (\\(\\sin\\) instead of \\(\\cos\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "show that",
+              "note": "Chain rule on \\((\\cos x)^{-1}\\): \\(-1(\\cos x)^{-2}\\cdot(-\\sin x)\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Moriah College 2021 HSC Trial Examination Mathematics Advanced",
+            "school": "Moriah College",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -13208,6 +13318,56 @@
           "meta": {
             "source": "The King's School 2022 Year 12 Mathematics Advanced Trial Examination",
             "school": "The King's School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "moriah2021-q28a",
+          "type": "mc",
+          "stem": "If \\(y=1-xe^{-x}\\) find \\(\\dfrac{dy}{dx}\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{dy}{dx}=e^{-x}(x-1)\\)",
+            "\\(\\dfrac{dy}{dx}=-e^{-x}(x+1)\\)",
+            "\\(\\dfrac{dy}{dx}=-e^{-x}\\)",
+            "\\(\\dfrac{dy}{dx}=e^{-x}(1-x)\\)"
+          ],
+          "answer": 0,
+          "hint": "Product rule on \\(xe^{-x}\\): \\(\\dfrac{d}{dx}(uv)=u'v+uv'\\) with \\(u=x\\), \\(v=e^{-x}\\). The derivative of \\(e^{-x}\\) is \\(-e^{-x}\\) (chain rule). The \\(1\\) differentiates to 0.",
+          "steps": [
+            {
+              "explain": "Let \\(u=x\\Rightarrow u'=1\\) and \\(v=e^{-x}\\Rightarrow v'=-e^{-x}\\).",
+              "work": "\\(u'=1,\\quad v'=-e^{-x}\\)"
+            },
+            {
+              "explain": "\\(\\dfrac{d}{dx}(xe^{-x})=u'v+uv'=e^{-x}-xe^{-x}\\).",
+              "work": "\\(\\dfrac{d}{dx}(xe^{-x})=e^{-x}-xe^{-x}\\)"
+            },
+            {
+              "explain": "Because \\(y=1-xe^{-x}\\), change the sign.",
+              "work": "\\(\\dfrac{dy}{dx}=-e^{-x}+xe^{-x}=e^{-x}(x-1)\\)"
+            },
+            {
+              "explain": "Why not the others: B has a wrong sign in the bracket; C forgets the product rule; D is the negative of the answer.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "find \\(\\dfrac{dy}{dx}\\)",
+              "note": "Product rule on \\(xe^{-x}\\); \\((e^{-x})\\,'=-e^{-x}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Moriah College 2021 HSC Trial Examination Mathematics Advanced",
+            "school": "Moriah College",
             "grade": "12",
             "origin": "teacher"
           }
@@ -17268,6 +17428,110 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "moriah2021-q3",
+          "type": "mc",
+          "stem": "What is \\(\\displaystyle\\int\\left(\\pi+\\cos(\\pi x)\\right)dx\\)?",
+          "difficulty": "easy",
+          "options": [
+            "\\(\\pi x+\\sin(\\pi x)+C\\)",
+            "\\(\\pi x+\\dfrac{\\sin(\\pi x)}{\\pi}+C\\)",
+            "\\(\\pi+\\dfrac{\\sin(\\pi x)}{\\pi}+C\\)",
+            "\\(\\dfrac{\\pi^{2}}{2}+\\sin(\\pi x)+C\\)"
+          ],
+          "answer": 1,
+          "hint": "Integrate term by term. \\(\\pi\\) is just a CONSTANT, so \\(\\int\\pi\\,dx=\\pi x\\). For \\(\\int\\cos(ax)dx=\\dfrac{\\sin(ax)}{a}\\): divide by the coefficient of \\(x\\) (here \\(a=\\pi\\)).",
+          "steps": [
+            {
+              "explain": "Split the integral into two terms.",
+              "work": "\\(\\int\\pi\\,dx+\\int\\cos(\\pi x)\\,dx\\)"
+            },
+            {
+              "explain": "\\(\\pi\\) is a constant (like 3): \\(\\int c\\,dx=cx\\).",
+              "work": "\\(\\int\\pi\\,dx=\\pi x\\)"
+            },
+            {
+              "explain": "Reverse chain rule: \\(\\dfrac{d}{dx}\\sin(\\pi x)=\\pi\\cos(\\pi x)\\), so to get \\(\\cos(\\pi x)\\) we must DIVIDE by \\(\\pi\\).",
+              "work": "\\(\\int\\cos(\\pi x)\\,dx=\\dfrac{\\sin(\\pi x)}{\\pi}\\)"
+            },
+            {
+              "explain": "Add the constant of integration.",
+              "work": "\\(\\pi x+\\dfrac{\\sin(\\pi x)}{\\pi}+C\\)"
+            },
+            {
+              "explain": "Why not the others: A forgets the \\(\\dfrac1\\pi\\); C integrates \\(\\pi\\) as \\(\\pi\\) (a constant integrates to \\(\\pi x\\)); D treats \\(\\pi\\) like a variable (\\(\\dfrac{\\pi^{2}}{2}\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">B</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "What is \\(\\displaystyle\\int\\left(\\pi+\\cos(\\pi x)\\right)dx\\)?",
+              "note": "\\(\\int\\cos(ax)dx=\\dfrac{1}{a}\\sin(ax)\\); \\(\\int\\pi\\,dx=\\pi x\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Moriah College 2021 HSC Trial Examination Mathematics Advanced",
+            "school": "Moriah College",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "moriah2021-q19b",
+          "type": "mc",
+          "stem": "Hence find \\(\\displaystyle\\int_{0}^{\\frac{\\pi}{6}}\\sec2x\\tan2x\\,dx\\)",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{1}{2}\\)",
+            "\\(1\\)",
+            "\\(\\dfrac{1}{4}\\)",
+            "\\(2\\)"
+          ],
+          "answer": 0,
+          "hint": "From (a): \\(\\int\\sec x\\tan x\\,dx=\\sec x\\). For \\(\\sec2x\\tan2x\\) divide by the coefficient 2 of \\(x\\) (reverse chain rule): \\(\\int\\sec2x\\tan2x\\,dx=\\dfrac{1}{2}\\sec2x\\). Remember \\(\\sec\\theta=\\dfrac{1}{\\cos\\theta}\\).",
+          "steps": [
+            {
+              "explain": "Reverse chain rule: \\(\\dfrac{d}{dx}\\sec2x=2\\sec2x\\tan2x\\), so we need \\(\\dfrac{1}{2}\\sec2x\\).",
+              "work": "\\(\\int\\sec2x\\tan2x\\,dx=\\dfrac{1}{2}\\sec2x\\)"
+            },
+            {
+              "explain": "Substitute the limits: upper \\(x=\\dfrac\\pi6\\Rightarrow2x=\\dfrac\\pi3\\): \\(\\sec\\dfrac\\pi3=\\dfrac{1}{\\cos\\left(\\dfrac{\\pi}{3}\\right)}=\\dfrac{1}{\\dfrac{1}{2}}=2\\). Lower \\(x=0\\): \\(\\sec0=1\\).",
+              "work": "\\(=\\dfrac{1}{2}\\left[\\sec\\dfrac\\pi3-\\sec0\\right]\\)"
+            },
+            {
+              "explain": "Calculate.",
+              "work": "\\(=\\dfrac{1}{2}(2-1)=\\dfrac{1}{2}\\)"
+            },
+            {
+              "explain": "Why not the others: B forgets the \\(\\dfrac{1}{2}\\); C uses \\(\\sec\\dfrac\\pi3=1.5\\) wrongly; D misreads \\(\\sec\\dfrac\\pi3\\) as \\(4\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Hence find",
+              "note": "\\(\\int\\sec x\\tan x=\\sec x\\); \\(\\dfrac{1}{2}\\sec2x\\); \\(\\sec\\dfrac\\pi3=2\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Moriah College 2021 HSC Trial Examination Mathematics Advanced",
+            "school": "Moriah College",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -20533,6 +20797,160 @@
           ],
           "timeLimit": 150,
           "xp": 3
+        },
+        {
+          "id": "moriah2021-q26a",
+          "type": "mc",
+          "stem": "The half-life of a substance is the time taken to decay to half the original mass. Strontium-90 has a half-life of 28 days. Its mass \\(S\\) is given by \\(S=S_{0}e^{-kt}\\) where \\(S\\) is measured in mg and \\(t\\) is measured in days. A sample has an initial mass of 50 mg. Find the value of \\(k\\) correct to 3 decimal places.",
+          "difficulty": "medium",
+          "options": [
+            "\\(k=0.025\\)",
+            "\\(k=0.036\\)",
+            "\\(k=0.693\\)",
+            "\\(k=0.050\\)"
+          ],
+          "answer": 0,
+          "hint": "After one half-life (\\(t=28\\)) the mass is HALF of 50, i.e. 25 mg. Substitute and take natural logs of both sides.",
+          "steps": [
+            {
+              "explain": "At \\(t=28\\), \\(S=25\\).",
+              "work": "\\(25=50e^{-28k}\\)"
+            },
+            {
+              "explain": "Divide by 50.",
+              "work": "\\(e^{-28k}=\\dfrac{1}{2}\\)"
+            },
+            {
+              "explain": "Take \\(\\ln\\) of both sides: \\(\\ln\\dfrac{1}{2}=-\\ln2\\).",
+              "work": "\\(-28k=-\\ln2\\ \\Rightarrow\\ k=\\dfrac{\\ln2}{28}\\)"
+            },
+            {
+              "explain": "Calculate: \\(\\dfrac{0.6931}{28}=0.02475\\ldots\\approx0.025\\).",
+              "work": "\\(k\\approx0.025\\)"
+            },
+            {
+              "explain": "Why not the others: B (0.036) is \\(\\dfrac{\\ln2}{19.25}\\), a wrong half-life; C is \\(\\ln2\\) (forgot to divide by 28); D is \\(\\dfrac{1.4}{28}\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the value of \\(k\\) correct to 3 decimal places.",
+              "note": "\\(25=50e^{-28k}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Moriah College 2021 HSC Trial Examination Mathematics Advanced",
+            "school": "Moriah College",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "moriah2021-q26b",
+          "type": "mc",
+          "stem": "Use the exact value of \\(k\\) to find the mass remaining after 40 days. (Give mg correct to 3 decimal places.)",
+          "difficulty": "medium",
+          "options": [
+            "\\(18.575\\) mg",
+            "\\(18.2\\) mg",
+            "\\(25.0\\) mg",
+            "\\(9.3\\) mg"
+          ],
+          "answer": 0,
+          "hint": "Use the EXACT \\(k=\\dfrac{\\ln2}{28}\\) from your calculator memory, not the rounded 0.025. Substitute \\(t=40\\).",
+          "steps": [
+            {
+              "explain": "Substitute \\(S_0=50\\), \\(k=\\dfrac{\\ln2}{28}\\), \\(t=40\\).",
+              "work": "\\(S=50e^{-\\frac{\\ln2}{28}\\times40}\\)"
+            },
+            {
+              "explain": "Exponent: \\(-\\dfrac{40\\ln2}{28}=-\\dfrac{27.726}{28}=-0.99021\\).",
+              "work": "\\(S=50e^{-0.99021}\\)"
+            },
+            {
+              "explain": "Calculate.",
+              "work": "\\(S\\approx18.575\\ \\text{mg}\\)"
+            },
+            {
+              "explain": "Why not the others: B is the mass after 28+ days with a wrong exponent; C is the mass after one half-life; D is the mass after about 57 days.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Use the exact value of \\(k\\) to find the mass remaining after 40 days.",
+              "note": "\\(S=50e^{-\\frac{\\ln2}{28}\\times40}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Moriah College 2021 HSC Trial Examination Mathematics Advanced",
+            "school": "Moriah College",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "moriah2021-q26c",
+          "type": "mc",
+          "stem": "How long does it take (to the nearest day) for the sample to decay to a mass of 2 mg?",
+          "difficulty": "hard",
+          "options": [
+            "\\(130\\) days",
+            "\\(28\\) days",
+            "\\(91\\) days",
+            "\\(112\\) days"
+          ],
+          "answer": 0,
+          "hint": "Substitute \\(S=2\\) and use the exact \\(k\\). Isolate \\(e^{-kt}\\), take \\(\\ln\\), divide. Note \\(\\ln\\dfrac{1}{25}=-\\ln25\\). (The printed solution repeats part (a) by mistake.)",
+          "steps": [
+            {
+              "explain": "Set \\(S=2\\), \\(S_0=50\\).",
+              "work": "\\(2=50e^{-kt}\\ \\Rightarrow\\ e^{-kt}=\\dfrac{1}{25}\\)"
+            },
+            {
+              "explain": "Take \\(\\ln\\): \\(-kt=\\ln\\dfrac1{25}=-\\ln25\\), so \\(t=\\dfrac{\\ln25}{k}\\).",
+              "work": "\\(t=\\dfrac{\\ln25}{k}=\\dfrac{28\\ln25}{\\ln2}\\)"
+            },
+            {
+              "explain": "Calculate: \\(\\dfrac{28\\times3.2189}{0.6931}=130.03\\).",
+              "work": "\\(t\\approx130\\ \\text{days}\\)"
+            },
+            {
+              "explain": "Check: \\(25=2^{4.64}\\); 4.64 half-lives \\(\\times\\,28=130\\) ✓. Why not the others: B (28) is one half-life; C (91) and D (112) are 3.25 and 4 half-lives.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "How long does it take (to the nearest day) for the sample to decay to a mass of 2 mg?",
+              "note": "\\(t=\\dfrac{\\ln25}{k}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Moriah College 2021 HSC Trial Examination Mathematics Advanced",
+            "school": "Moriah College",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     }

@@ -13288,6 +13288,117 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "moriah2021-q8",
+          "type": "mc",
+          "stem": "In an exam worth 100 marks, Billie got 75 and was 2 standard deviations above the mean. Charlie got 45 and was one standard deviation below the mean. If this a normal distribution, what is the probability of Denise achieving a score of 85 or more?",
+          "difficulty": "hard",
+          "options": [
+            "\\(0.05\\)",
+            "\\(0.025\\)",
+            "\\(0.34\\)",
+            "\\(0.0015\\)"
+          ],
+          "answer": 3,
+          "hint": "Use the two given scores to find the MEAN \\(\\mu\\) and STANDARD DEVIATION \\(\\sigma\\) (two equations from \\(x=\\mu+z\\sigma\\)). Then find the \\(z\\)-score of 85 and use the 68–95–99.7 rule (99.7% lie within 3 standard deviations, so each tail beyond \\(+3\\sigma\\) is \\(\\dfrac{0.003}{2}=0.0015\\)).",
+          "steps": [
+            {
+              "explain": "Billie: \\(75=\\mu+2\\sigma\\). Charlie: \\(45=\\mu-\\sigma\\). Subtract the equations: \\(30=3\\sigma\\).",
+              "work": "\\(\\sigma=10,\\qquad\\mu=45+10=55\\)"
+            },
+            {
+              "explain": "\\(z\\)-score of 85: \\(z=\\dfrac{x-\\mu}{\\sigma}=\\dfrac{85-55}{10}=3\\). Denise is 3 standard deviations above the mean.",
+              "work": "\\(z=\\dfrac{85-55}{10}=3\\)"
+            },
+            {
+              "explain": "Empirical rule: \\(99.7\\%\\) of scores lie between \\(z=-3\\) and \\(z=3\\). That leaves \\(0.3\\%=0.003\\) in the two tails, split equally by symmetry.",
+              "work": "\\(P(Z\\ge3)=\\dfrac{1-0.997}{2}=0.0015\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 230\" width=\"100%\" height=\"auto\" style=\"max-width:420px;display:block;margin:0 auto\"><line x1=\"-8.4\" y1=\"185.0\" x2=\"428.4\" y2=\"185.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><polygon points=\"366.0,185 366.0,183.7 367.0,183.8 368.1,183.9 369.1,183.9 370.2,184.0 371.2,184.1 372.2,184.1 373.3,184.2 374.3,184.2 375.4,184.3 376.4,184.3 377.4,184.4 378.5,184.4 379.5,184.4 380.6,184.5 381.6,184.5 382.6,184.5 383.7,184.6 384.7,184.6 385.8,184.6 386.8,184.6 387.8,184.7 388.9,184.7 389.9,184.7 391.0,184.7 392.0,184.7 393.0,184.8 394.1,184.8 395.1,184.8 396.2,184.8 397.2,184.8 398.2,184.8 399.3,184.8 400.3,184.9 401.4,184.9 402.4,184.9 403.4,184.9 404.5,184.9 405.5,184.9 406.6,184.9 407.6,184.9 408.6,184.9 409.7,184.9 410.7,184.9 411.8,184.9 412.8,184.9 413.8,184.9 414.9,185.0 415.9,185.0 417.0,185.0 418.0,185.0 419.0,185.0 420.1,185.0 421.1,185.0 422.2,185.0 423.2,185.0 424.2,185.0 425.3,185.0 426.3,185.0 427.4,185.0 428.4,185.0 428.4,185\" fill=\"#dc2626\" fill-opacity=\"0.5\"/><polyline points=\"2.0,185.0 4.1,185.0 6.2,184.9 8.2,184.9 10.3,184.9 12.4,184.9 14.5,184.9 16.6,184.9 18.6,184.9 20.7,184.8 22.8,184.8 24.9,184.8 27.0,184.8 29.0,184.7 31.1,184.7 33.2,184.6 35.3,184.6 37.4,184.5 39.4,184.5 41.5,184.4 43.6,184.3 45.7,184.2 47.8,184.1 49.8,184.0 51.9,183.9 54.0,183.7 56.1,183.6 58.2,183.4 60.2,183.2 62.3,182.9 64.4,182.7 66.5,182.4 68.6,182.1 70.6,181.8 72.7,181.5 74.8,181.1 76.9,180.6 79.0,180.2 81.0,179.7 83.1,179.1 85.2,178.5 87.3,177.9 89.4,177.2 91.4,176.4 93.5,175.6 95.6,174.7 97.7,173.8 99.8,172.8 101.8,171.7 103.9,170.6 106.0,169.3 108.1,168.1 110.2,166.7 112.2,165.2 114.3,163.7 116.4,162.1 118.5,160.4 120.6,158.6 122.6,156.8 124.7,154.9 126.8,152.8 128.9,150.7 131.0,148.6 133.0,146.3 135.1,144.0 137.2,141.6 139.3,139.1 141.4,136.6 143.4,134.0 145.5,131.4 147.6,128.7 149.7,126.0 151.8,123.2 153.8,120.4 155.9,117.6 158.0,114.8 160.1,112.0 162.2,109.2 164.2,106.4 166.3,103.7 168.4,101.0 170.5,98.3 172.6,95.7 174.6,93.2 176.7,90.7 178.8,88.4 180.9,86.1 183.0,83.9 185.0,81.9 187.1,80.0 189.2,78.2 191.3,76.6 193.4,75.1 195.4,73.8 197.5,72.6 199.6,71.6 201.7,70.8 203.8,70.1 205.8,69.7 207.9,69.4 210.0,69.3 212.1,69.4 214.2,69.7 216.2,70.1 218.3,70.8 220.4,71.6 222.5,72.6 224.6,73.8 226.6,75.1 228.7,76.6 230.8,78.2 232.9,80.0 235.0,81.9 237.0,83.9 239.1,86.1 241.2,88.4 243.3,90.7 245.4,93.2 247.4,95.7 249.5,98.3 251.6,101.0 253.7,103.7 255.8,106.4 257.8,109.2 259.9,112.0 262.0,114.8 264.1,117.6 266.2,120.4 268.2,123.2 270.3,126.0 272.4,128.7 274.5,131.4 276.6,134.0 278.6,136.6 280.7,139.1 282.8,141.6 284.9,144.0 287.0,146.3 289.0,148.6 291.1,150.7 293.2,152.8 295.3,154.9 297.4,156.8 299.4,158.6 301.5,160.4 303.6,162.1 305.7,163.7 307.8,165.2 309.8,166.7 311.9,168.1 314.0,169.3 316.1,170.6 318.2,171.7 320.2,172.8 322.3,173.8 324.4,174.7 326.5,175.6 328.6,176.4 330.6,177.2 332.7,177.9 334.8,178.5 336.9,179.1 339.0,179.7 341.0,180.2 343.1,180.6 345.2,181.1 347.3,181.5 349.4,181.8 351.4,182.1 353.5,182.4 355.6,182.7 357.7,182.9 359.8,183.2 361.8,183.4 363.9,183.6 366.0,183.7 368.1,183.9 370.2,184.0 372.2,184.1 374.3,184.2 376.4,184.3 378.5,184.4 380.6,184.5 382.6,184.5 384.7,184.6 386.8,184.6 388.9,184.7 391.0,184.7 393.0,184.8 395.1,184.8 397.2,184.8 399.3,184.8 401.4,184.9 403.4,184.9 405.5,184.9 407.6,184.9 409.7,184.9 411.8,184.9 413.8,184.9 415.9,185.0 418.0,185.0\" fill=\"none\" stroke=\"#3b4ea8\" stroke-width=\"2.6\"/><line x1=\"54.0\" y1=\"182.0\" x2=\"54.0\" y2=\"188.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"54.0\" y=\"201.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">−3</text><line x1=\"106.0\" y1=\"182.0\" x2=\"106.0\" y2=\"188.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"106.0\" y=\"201.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">−2</text><line x1=\"158.0\" y1=\"182.0\" x2=\"158.0\" y2=\"188.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"158.0\" y=\"201.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">−1</text><line x1=\"210.0\" y1=\"182.0\" x2=\"210.0\" y2=\"188.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"210.0\" y=\"201.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0</text><line x1=\"262.0\" y1=\"182.0\" x2=\"262.0\" y2=\"188.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"262.0\" y=\"201.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><line x1=\"314.0\" y1=\"182.0\" x2=\"314.0\" y2=\"188.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"314.0\" y=\"201.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><line x1=\"366.0\" y1=\"182.0\" x2=\"366.0\" y2=\"188.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"366.0\" y=\"201.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3</text><text x=\"402.4\" y=\"161.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">tail</text><text x=\"210.0\" y=\"40.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">z-scores (σ units)</text></svg>"
+              }
+            },
+            {
+              "explain": "Why not the others: 0.05 and 0.025 are the tails beyond \\(z=2\\) (95% rule); 0.34 is the area between \\(0\\) and \\(1\\sigma\\); using \\(\\mu=50\\) or the wrong \\(\\sigma\\) leads to these.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">D</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "what is the probability of Denise achieving a score of 85 or more?",
+              "note": "\\(\\sigma=10\\), \\(\\mu=55\\); \\(z=3\\); tail \\(=0.0015\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Moriah College 2021 HSC Trial Examination Mathematics Advanced",
+            "school": "Moriah College",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "moriah2021-q18",
+          "type": "mc",
+          "stem": "In the city of Tangentia the average number of books in a residence is normally distributed with mean of 10 books and a variance of 9 books. If two households are chosen at random Show that the probability at least one of them has between 4 and 13 books is 0.97 (2 dp)",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\begin{aligned}&\\sigma=\\sqrt9=3;\\ \\ 4=\\mu-2\\sigma,\\ 13=\\mu+\\sigma\\ \\Rightarrow\\ P=47.5\\%+34\\%=81.5\\%\\\\ &P(\\text{at least one})=1-(1-0.815)^{2}=1-0.185^{2}=0.966\\approx0.97\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\sigma=\\sqrt9=3;\\ \\ 4=\\mu-2\\sigma,\\ 13=\\mu+\\sigma\\ \\Rightarrow\\ P=47.5\\%+34\\%=81.5\\%\\\\ &P(\\text{at least one})=0.815^{2}=0.664\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\sigma=9;\\ \\ 4=\\mu-\\sigma\\ (\\text{approx}),\\ 13=\\mu+\\sigma\\ \\Rightarrow\\ P=68\\%\\\\ &P(\\text{at least one})=1-0.32^{2}=0.90\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\sigma=3;\\ \\ P(4\\le X\\le13)=81.5\\%\\\\ &P(\\text{at least one})=0.815+0.815=1.63\\end{aligned}\\)"
+          ],
+          "answer": 0,
+          "hint": "Variance \\(=\\sigma^{2}\\), so \\(\\sigma=\\sqrt{\\text{variance}}\\). Convert 4 and 13 to numbers of standard deviations from the mean and use the 68–95–99.7 rule. For “AT LEAST ONE” use the COMPLEMENT: \\(1-P(\\text{none})\\).",
+          "steps": [
+            {
+              "explain": "Variance \\(=9\\) means \\(\\sigma^{2}=9\\), so \\(\\sigma=3\\) books.",
+              "work": "\\(\\sigma=\\sqrt9=3\\)"
+            },
+            {
+              "explain": "\\(z\\)-scores: \\(4=10-2(3)\\) is 2 standard deviations BELOW the mean; \\(13=10+1(3)\\) is 1 standard deviation ABOVE the mean.",
+              "work": "\\(z=-2\\ \\text{and}\\ z=+1\\)"
+            },
+            {
+              "explain": "Empirical rule: between \\(-2\\sigma\\) and the mean: \\(\\dfrac{95\\%}{2}=47.5\\%\\); between the mean and \\(+1\\sigma\\): \\(\\dfrac{68\\%}{2}=34\\%\\). Add.",
+              "work": "\\(P(4\\le X\\le13)=47.5\\%+34\\%=81.5\\%=0.815\\)"
+            },
+            {
+              "explain": "For one household: probability of NOT being in the range \\(=1-0.815=0.185\\).",
+              "work": "\\(P(\\text{not between 4 and 13})=0.185\\)"
+            },
+            {
+              "explain": "Two independent households: P(neither is in the range) \\(=0.185\\times0.185=0.185^{2}\\). “At least one is” is the complement.",
+              "work": "\\(P(\\text{at least one})=1-0.185^{2}=1-0.0342=0.9658\\approx0.97\\ \\ \\blacksquare\\)"
+            },
+            {
+              "explain": "Why not the others: B finds P(BOTH in range) instead of “at least one”; C takes \\(\\sigma=9\\) (the variance, not its root) and the wrong \\(z\\)-scores; D adds the two probabilities (a probability cannot exceed 1).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that the probability at least one of them has between 4 and 13 books is 0.97",
+              "note": "\\(\\sigma=3\\); \\(81.5\\%\\); “at least one” \\(=1-P(\\text{neither})\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Moriah College 2021 HSC Trial Examination Mathematics Advanced",
+            "school": "Moriah College",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -14444,6 +14555,167 @@
           "meta": {
             "source": "Knox Grammar School 2021 Trial HSC Examination Mathematics Advanced",
             "school": "Knox Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "moriah2021-q30a",
+          "type": "mc",
+          "stem": "A probability density function is given by \\(f(x)=\\begin{cases}\\dfrac{1}{2\\sqrt{4-x}} & 0\\le x\\le3\\\\ 0 & \\text{otherwise}\\end{cases}\\). Prove that this is a valid probability density function (you may assume \\(f(x)\\ge0\\)). What must be shown, and what is the result?",
+          "difficulty": "medium",
+          "options": [
+            "The total area \\(\\displaystyle\\int_{0}^{3}\\dfrac{1}{2\\sqrt{4-x}}dx\\) equals 1",
+            "The total area \\(\\displaystyle\\int_{0}^{3}\\dfrac{1}{2\\sqrt{4-x}}dx\\) equals \\(\\dfrac{1}{2}\\)",
+            "\\(f(x)\\) is increasing on \\([0,3]\\)",
+            "The total area \\(\\displaystyle\\int_{0}^{3}\\dfrac{1}{2\\sqrt{4-x}}dx\\) equals 3"
+          ],
+          "answer": 0,
+          "hint": "A valid PDF needs \\(f(x)\\ge0\\) (given) and TOTAL AREA \\(=\\displaystyle\\int f(x)\\,dx=1\\). Write \\(\\dfrac{1}{\\sqrt{4-x}}=(4-x)^{-\\frac12}\\) and integrate (the chain rule gives a MINUS from the \\(-x\\)).",
+          "steps": [
+            {
+              "explain": "Rewrite with a negative power.",
+              "work": "\\(\\int_{0}^{3}\\dfrac{1}{2\\sqrt{4-x}}dx=\\dfrac{1}{2}\\int_{0}^{3}(4-x)^{-\\frac12}dx\\)"
+            },
+            {
+              "explain": "Antiderivative: \\(\\dfrac{(4-x)^{\\frac12}}{\\dfrac{1}{2}}\\times(-1)=-2\\sqrt{4-x}\\). So with the \\(\\dfrac{1}{2}\\) outside: \\(-\\sqrt{4-x}\\).",
+              "work": "\\(=\\left[-\\sqrt{4-x}\\right]_{0}^{3}\\)"
+            },
+            {
+              "explain": "Substitute limits: \\(x=3\\): \\(-\\sqrt1=-1\\). \\(x=0\\): \\(-\\sqrt4=-2\\).",
+              "work": "\\(=(-1)-(-2)=1\\)"
+            },
+            {
+              "explain": "Total area is 1 and \\(f\\ge0\\), so it is a valid PDF.",
+              "work": "\\(\\int_{0}^{3}f(x)\\,dx=1\\ \\checkmark\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 230\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><line x1=\"42.0\" y1=\"190.0\" x2=\"338.0\" y2=\"190.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"50.0\" y1=\"198.0\" x2=\"50.0\" y2=\"79.5\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"338.0\" y1=\"190.0\" x2=\"331.1\" y2=\"186.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"338.0\" y1=\"190.0\" x2=\"331.1\" y2=\"194.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"50.0\" y1=\"79.5\" x2=\"46.0\" y2=\"86.4\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"50.0\" y1=\"79.5\" x2=\"54.0\" y2=\"86.4\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><polygon points=\"50.0,190 50.0,157.5 51.6,157.4 53.2,157.3 54.8,157.3 56.4,157.2 58.0,157.1 59.6,157.0 61.2,156.9 62.8,156.8 64.4,156.7 66.0,156.7 67.6,156.6 69.2,156.5 70.8,156.4 72.4,156.3 74.0,156.2 75.6,156.1 77.2,156.0 78.8,155.9 80.4,155.8 82.0,155.7 83.6,155.6 85.2,155.6 86.8,155.5 88.4,155.4 90.0,155.3 91.6,155.2 93.2,155.1 94.8,155.0 96.4,154.9 98.0,154.7 99.6,154.6 101.2,154.5 102.8,154.4 104.4,154.3 106.0,154.2 107.6,154.1 109.2,154.0 110.8,153.9 112.4,153.8 114.0,153.7 115.6,153.5 117.2,153.4 118.8,153.3 120.4,153.2 122.0,153.1 123.6,153.0 125.2,152.8 126.8,152.7 128.4,152.6 130.0,152.5 131.6,152.3 133.2,152.2 134.8,152.1 136.4,152.0 138.0,151.8 139.6,151.7 141.2,151.6 142.8,151.4 144.4,151.3 146.0,151.2 147.6,151.0 149.2,150.9 150.8,150.7 152.4,150.6 154.0,150.4 155.6,150.3 157.2,150.1 158.8,150.0 160.4,149.8 162.0,149.7 163.6,149.5 165.2,149.4 166.8,149.2 168.4,149.1 170.0,148.9 171.6,148.7 173.2,148.6 174.8,148.4 176.4,148.2 178.0,148.0 179.6,147.9 181.2,147.7 182.8,147.5 184.4,147.3 186.0,147.1 187.6,147.0 189.2,146.8 190.8,146.6 192.4,146.4 194.0,146.2 195.6,146.0 197.2,145.8 198.8,145.6 200.4,145.4 202.0,145.1 203.6,144.9 205.2,144.7 206.8,144.5 208.4,144.3 210.0,144.0 211.6,143.8 213.2,143.6 214.8,143.3 216.4,143.1 218.0,142.8 219.6,142.6 221.2,142.3 222.8,142.1 224.4,141.8 226.0,141.6 227.6,141.3 229.2,141.0 230.8,140.7 232.4,140.4 234.0,140.1 235.6,139.9 237.2,139.6 238.8,139.2 240.4,138.9 242.0,138.6 243.6,138.3 245.2,138.0 246.8,137.6 248.4,137.3 250.0,136.9 251.6,136.6 253.2,136.2 254.8,135.8 256.4,135.5 258.0,135.1 259.6,134.7 261.2,134.3 262.8,133.8 264.4,133.4 266.0,133.0 267.6,132.5 269.2,132.1 270.8,131.6 272.4,131.2 274.0,130.7 275.6,130.2 277.2,129.6 278.8,129.1 280.4,128.6 282.0,128.0 283.6,127.5 285.2,126.9 286.8,126.3 288.4,125.6 290.0,125.0 290.0,190\" fill=\"#3b4ea8\" fill-opacity=\"0.25\" stroke=\"none\"/><polyline points=\"50.0,157.5 51.6,157.4 53.2,157.3 54.8,157.3 56.4,157.2 58.0,157.1 59.6,157.0 61.2,156.9 62.8,156.8 64.4,156.7 66.0,156.7 67.6,156.6 69.2,156.5 70.8,156.4 72.4,156.3 74.0,156.2 75.6,156.1 77.2,156.0 78.8,155.9 80.4,155.8 82.0,155.7 83.6,155.6 85.2,155.6 86.8,155.5 88.4,155.4 90.0,155.3 91.6,155.2 93.2,155.1 94.8,155.0 96.4,154.9 98.0,154.7 99.6,154.6 101.2,154.5 102.8,154.4 104.4,154.3 106.0,154.2 107.6,154.1 109.2,154.0 110.8,153.9 112.4,153.8 114.0,153.7 115.6,153.5 117.2,153.4 118.8,153.3 120.4,153.2 122.0,153.1 123.6,153.0 125.2,152.8 126.8,152.7 128.4,152.6 130.0,152.5 131.6,152.3 133.2,152.2 134.8,152.1 136.4,152.0 138.0,151.8 139.6,151.7 141.2,151.6 142.8,151.4 144.4,151.3 146.0,151.2 147.6,151.0 149.2,150.9 150.8,150.7 152.4,150.6 154.0,150.4 155.6,150.3 157.2,150.1 158.8,150.0 160.4,149.8 162.0,149.7 163.6,149.5 165.2,149.4 166.8,149.2 168.4,149.1 170.0,148.9 171.6,148.7 173.2,148.6 174.8,148.4 176.4,148.2 178.0,148.0 179.6,147.9 181.2,147.7 182.8,147.5 184.4,147.3 186.0,147.1 187.6,147.0 189.2,146.8 190.8,146.6 192.4,146.4 194.0,146.2 195.6,146.0 197.2,145.8 198.8,145.6 200.4,145.4 202.0,145.1 203.6,144.9 205.2,144.7 206.8,144.5 208.4,144.3 210.0,144.0 211.6,143.8 213.2,143.6 214.8,143.3 216.4,143.1 218.0,142.8 219.6,142.6 221.2,142.3 222.8,142.1 224.4,141.8 226.0,141.6 227.6,141.3 229.2,141.0 230.8,140.7 232.4,140.4 234.0,140.1 235.6,139.9 237.2,139.6 238.8,139.2 240.4,138.9 242.0,138.6 243.6,138.3 245.2,138.0 246.8,137.6 248.4,137.3 250.0,136.9 251.6,136.6 253.2,136.2 254.8,135.8 256.4,135.5 258.0,135.1 259.6,134.7 261.2,134.3 262.8,133.8 264.4,133.4 266.0,133.0 267.6,132.5 269.2,132.1 270.8,131.6 272.4,131.2 274.0,130.7 275.6,130.2 277.2,129.6 278.8,129.1 280.4,128.6 282.0,128.0 283.6,127.5 285.2,126.9 286.8,126.3 288.4,125.6 290.0,125.0\" fill=\"none\" stroke=\"#3b4ea8\" stroke-width=\"3\"/><line x1=\"50.0\" y1=\"187.0\" x2=\"50.0\" y2=\"193.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"50.0\" y=\"207.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0</text><line x1=\"130.0\" y1=\"187.0\" x2=\"130.0\" y2=\"193.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"130.0\" y=\"207.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><line x1=\"210.0\" y1=\"187.0\" x2=\"210.0\" y2=\"193.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"210.0\" y=\"207.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><line x1=\"290.0\" y1=\"187.0\" x2=\"290.0\" y2=\"193.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"290.0\" y=\"207.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3</text><text x=\"146.0\" y=\"131.5\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">area = 1</text></svg>"
+              }
+            },
+            {
+              "explain": "Why not the others: B, D give the wrong total; C: \\(f\\) IS increasing but that is not the test for a valid PDF.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Prove that this is a valid probability density function",
+              "note": "Need \\(\\int f\\,dx=1\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Moriah College 2021 HSC Trial Examination Mathematics Advanced",
+            "school": "Moriah College",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "moriah2021-q30b",
+          "type": "mc",
+          "stem": "For the probability density function \\(f(x)=\\dfrac{1}{2\\sqrt{4-x}}\\) on \\(0\\le x\\le3\\) (0 otherwise), find the cumulative distribution function \\(F(x)\\) for \\(0\\le x\\le3\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(F(x)=2-\\sqrt{4-x}\\)",
+            "\\(F(x)=\\sqrt{4-x}-2\\)",
+            "\\(F(x)=2-2\\sqrt{4-x}\\)",
+            "\\(F(x)=\\dfrac{1}{2}\\sqrt{4-x}\\)"
+          ],
+          "answer": 0,
+          "hint": "\\(F(x)=\\displaystyle\\int_{0}^{x}f(t)\\,dt\\) (the area from the start, 0, up to \\(x\\)). Check: \\(F(0)=0\\) and \\(F(3)=1\\).",
+          "steps": [
+            {
+              "explain": "Integrate from 0 to \\(x\\) (use \\(t\\) inside).",
+              "work": "\\(F(x)=\\dfrac{1}{2}\\int_{0}^{x}(4-t)^{-\\frac12}dt=\\left[-\\sqrt{4-t}\\right]_{0}^{x}\\)"
+            },
+            {
+              "explain": "Substitute limits: upper \\(-\\sqrt{4-x}\\), lower \\(-\\sqrt4=-2\\).",
+              "work": "\\(F(x)=-\\sqrt{4-x}-(-2)=2-\\sqrt{4-x}\\)"
+            },
+            {
+              "explain": "Check: \\(F(0)=2-2=0\\) ✓ and \\(F(3)=2-1=1\\) ✓.",
+              "work": "\\(F(x)=2-\\sqrt{4-x},\\quad0\\le x\\le3\\)"
+            },
+            {
+              "explain": "Why not the others: B is negative (\\(F(3)=-1\\)); C has an extra factor 2 (\\(F(3)=0\\)); D has no integration.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "find the cumulative distribution function",
+              "note": "\\(F(x)=\\int_0^xf\\); check \\(F(0)=0,F(3)=1\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Moriah College 2021 HSC Trial Examination Mathematics Advanced",
+            "school": "Moriah College",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "moriah2021-q30c",
+          "type": "mc",
+          "stem": "Find the median of the probability density function \\(f(x)=\\dfrac{1}{2\\sqrt{4-x}}\\), \\(0\\le x\\le3\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{7}{4}\\)",
+            "\\(\\dfrac{3}{2}\\)",
+            "\\(\\dfrac{9}{4}\\)",
+            "\\(\\dfrac{5}{4}\\)"
+          ],
+          "answer": 0,
+          "hint": "The median \\(m\\) satisfies \\(F(m)=\\dfrac{1}{2}\\) (half the area on each side). Use \\(F(x)=2-\\sqrt{4-x}\\) from (b). Square both sides to remove the root and check the answer lies in \\([0,3]\\).",
+          "steps": [
+            {
+              "explain": "Set \\(F(m)=\\dfrac{1}{2}\\).",
+              "work": "\\(2-\\sqrt{4-m}=\\dfrac{1}{2}\\)"
+            },
+            {
+              "explain": "Isolate the root.",
+              "work": "\\(\\sqrt{4-m}=\\dfrac{3}{2}\\)"
+            },
+            {
+              "explain": "Square both sides.",
+              "work": "\\(4-m=\\dfrac{9}{4}\\ \\Rightarrow\\ m=4-\\dfrac{9}{4}=\\dfrac{7}{4}\\)"
+            },
+            {
+              "explain": "Check: \\(\\dfrac{7}{4}=1.75\\) lies in \\([0,3]\\) ✓; \\(F\\left(\\dfrac{7}{4}\\right)=2-\\sqrt{\\dfrac{9}{4}}=2-1.5=0.5\\) ✓.",
+              "work": "\\(m=\\dfrac{7}{4}\\)"
+            },
+            {
+              "explain": "Why not the others: B (\\(\\dfrac{3}{2}\\)) is \\(\\sqrt{4-m}\\) not \\(m\\); C (\\(\\dfrac{9}{4}\\)) is \\(4-m\\); D is a guess.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the median of the probability density function",
+              "note": "\\(F(m)=\\dfrac{1}{2}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Moriah College 2021 HSC Trial Examination Mathematics Advanced",
+            "school": "Moriah College",
             "grade": "12",
             "origin": "teacher"
           }

@@ -24650,6 +24650,60 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "moriah2021-q9",
+          "type": "mc",
+          "stem": "The function \\(y=f(x)\\) has a stationary point at \\((2,1)\\). Which one of the following is definitely a stationary point of \\(y=-f\\left(\\dfrac{x}{3}\\right)+4\\)?",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\left(\\dfrac{2}{3},-3\\right)\\)",
+            "\\(\\left(\\dfrac{2}{3},3\\right)\\)",
+            "\\((6,3)\\)",
+            "\\((6,-3)\\)"
+          ],
+          "answer": 2,
+          "hint": "Transform the POINT through each step in the order of the formula. Inside the brackets \\(\\dfrac{x}{3}\\) STRETCHES horizontally by 3 (so \\(x\\to3x\\)); the minus sign REFLECTS in the \\(x\\)-axis (\\(y\\to-y\\)); the \\(+4\\) shifts UP 4.",
+          "steps": [
+            {
+              "explain": "Horizontal: \\(f\\left(\\dfrac{x}{3}\\right)\\) is a horizontal dilation by factor 3 (inside operations do the OPPOSITE to what you expect). \\(x\\)-coordinate: \\(2\\to2\\times3=6\\).",
+              "work": "\\((2,1)\\to(6,1)\\)"
+            },
+            {
+              "explain": "Reflection: \\(-f(\\ldots)\\) flips in the \\(x\\)-axis: \\(y\\to-y\\).",
+              "work": "\\((6,1)\\to(6,-1)\\)"
+            },
+            {
+              "explain": "Vertical shift: \\(+4\\) moves up 4.",
+              "work": "\\((6,-1)\\to(6,3)\\)"
+            },
+            {
+              "explain": "A stationary point stays a stationary point under these transformations (they are stretches, reflections and translations), so \\((6,3)\\) is definitely stationary.",
+              "work": "\\((6,3)\\)"
+            },
+            {
+              "explain": "Check with calculus: \\(y'=-\\dfrac13f'\\left(\\dfrac{x}{3}\\right)\\); at \\(x=6\\): \\(-\\dfrac13f'(2)=0\\) ✓. Why not the others: A and B divide \\(x\\) by 3 (\\(\\dfrac{2}{3}\\)) — wrong direction; D reflects but then subtracts 4 instead of adding.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">C</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "definitely a stationary point",
+              "note": "\\(\\dfrac{x}{3}\\): \\(x\\to3x\\); \\(-f\\): \\(y\\to-y\\); \\(+4\\): \\(y\\to y+4\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Moriah College 2021 HSC Trial Examination Mathematics Advanced",
+            "school": "Moriah College",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },

@@ -6947,6 +6947,168 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "moriah2021-q5",
+          "type": "mc",
+          "stem": "A box contains six red marbles and four blue marbles. Two marbles are drawn from the box without replacement. What is the probability they are both the same colour?",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{1}{2}\\)",
+            "\\(\\dfrac{28}{45}\\)",
+            "\\(\\dfrac{7}{15}\\)",
+            "\\(\\dfrac{3}{5}\\)"
+          ],
+          "answer": 2,
+          "hint": "“Same colour” can happen in TWO ways: both red OR both blue. Find each with a probability tree (multiply along the branches; the second draw has ONE FEWER marble) then ADD the two cases.",
+          "steps": [
+            {
+              "explain": "10 marbles: 6 red (R), 4 blue (B). Without replacement the second draw is from 9 marbles.",
+              "work": "\\(P(R)=\\dfrac{6}{10},\\quad P(B)=\\dfrac{4}{10}\\)"
+            },
+            {
+              "explain": "Both red: first red \\(\\dfrac{6}{10}\\), then (5 reds left of 9) \\(\\dfrac{5}{9}\\).",
+              "work": "\\(P(RR)=\\dfrac{6}{10}\\times\\dfrac{5}{9}=\\dfrac{30}{90}\\)"
+            },
+            {
+              "explain": "Both blue: first blue \\(\\dfrac{4}{10}\\), then (3 blues left of 9) \\(\\dfrac{3}{9}\\).",
+              "work": "\\(P(BB)=\\dfrac{4}{10}\\times\\dfrac{3}{9}=\\dfrac{12}{90}\\)"
+            },
+            {
+              "explain": "“OR” for mutually exclusive cases: ADD.",
+              "work": "\\(P(\\text{same})=\\dfrac{30}{90}+\\dfrac{12}{90}=\\dfrac{42}{90}=\\dfrac{7}{15}\\)"
+            },
+            {
+              "explain": "Why not the others: B (\\(\\dfrac{28}{45}\\)) is bigger than the true total because the second-draw probabilities were not reduced correctly; A (\\(\\dfrac{1}{2}\\)) guesses equal chances; D (\\(\\dfrac{3}{5}\\)) is just \\(P(R)\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">C</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "probability they are both the same colour",
+              "note": "\\(P(RR)+P(BB)\\): \\(\\dfrac6{10}\\cdot\\dfrac{5}{9}+\\dfrac4{10}\\cdot\\dfrac{3}{9}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Moriah College 2021 HSC Trial Examination Mathematics Advanced",
+            "school": "Moriah College",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "moriah2021-q29a",
+          "type": "mc",
+          "stem": "Albert borrows \\(\\text{\\textdollar}200\\,000\\) at \\(6\\%\\) per annum compounded monthly. He makes monthly payments of \\(\\text{\\textdollar}2000\\) at the end of each month. \\(B_n\\) is the balance owing after \\(n\\) months. Show that the amount owing after 2 years is given by \\(B_{24}=\\text{\\textdollar}174\\,568.04\\). Which working is correct?",
+          "difficulty": "hard",
+          "options": [
+            "\\(B_{24}=200000(1.005)^{24}-2000\\left[\\dfrac{1.005^{24}-1}{1.005-1}\\right]\\)",
+            "\\(B_{24}=200000(1.06)^{24}-2000\\left[\\dfrac{1.06^{24}-1}{1.06-1}\\right]\\)",
+            "\\(B_{24}=200000(1.005)^{2}-2000\\left[\\dfrac{1.005^{2}-1}{1.005-1}\\right]\\)",
+            "\\(B_{24}=200000(1.005)^{24}-2000(24)\\)"
+          ],
+          "answer": 0,
+          "hint": "Monthly rate: \\(\\dfrac{6\\%}{12}=0.5\\%=0.005\\), so each month multiplies by \\(1.005\\). \\(B_1=200000(1.005)-2000\\), then repeat. The payments form a GEOMETRIC series \\(1+1.005+1.005^{2}+\\dots\\) (24 terms).",
+          "steps": [
+            {
+              "explain": "Monthly rate \\(r=\\dfrac{0.06}{12}=0.005\\). After 1 month: add interest, subtract the payment.",
+              "work": "\\(B_1=200000(1.005)-2000\\)"
+            },
+            {
+              "explain": "After 2 months: apply again, expand.",
+              "work": "\\(B_2=200000(1.005)^{2}-2000(1.005)-2000=200000(1.005)^{2}-2000(1+1.005)\\)"
+            },
+            {
+              "explain": "Pattern for \\(n\\) months: the payments form a geometric series with first term 1, ratio 1.005, \\(n\\) terms.",
+              "work": "\\(B_n=200000(1.005)^{n}-2000\\left(1+1.005+\\dots+1.005^{n-1}\\right)\\)"
+            },
+            {
+              "explain": "Sum of GP \\(S_n=\\dfrac{a(r^{n}-1)}{r-1}\\) with \\(n=24\\).",
+              "work": "\\(B_{24}=200000(1.005)^{24}-2000\\left[\\dfrac{1.005^{24}-1}{1.005-1}\\right]\\)"
+            },
+            {
+              "explain": "Calculate: \\(200000(1.005)^{24}=225\\,435.9\\ldots\\) and \\(2000\\times25.4320\\ldots=50\\,864.0\\ldots\\).",
+              "work": "\\(B_{24}=\\text{\\textdollar}174\\,568.04\\)"
+            },
+            {
+              "explain": "Why not the others: B uses 6% per month; C uses 2 months (not 24); D treats the payments as simple (no interest on the amount paid).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that the amount owing after 2 years is given by",
+              "note": "\\(r=0.005\\); payments form a GP."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Moriah College 2021 HSC Trial Examination Mathematics Advanced",
+            "school": "Moriah College",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "moriah2021-q29b",
+          "type": "mc",
+          "stem": "Albert decides he wants to pay the balance of the loan off after a further 8 years. What should his new monthly payment be? (Use the balance \\(\\text{\\textdollar}174\\,568.04\\) after 2 years.)",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\text{\\textdollar}2294.07\\)",
+            "\\(\\text{\\textdollar}2000.00\\)",
+            "\\(\\text{\\textdollar}1818.50\\)",
+            "\\(\\text{\\textdollar}2582.20\\)"
+          ],
+          "answer": 0,
+          "hint": "Further 8 years \\(=96\\) months. Let \\(M\\) be the new payment and set the balance after 96 months to ZERO: \\(174568.04(1.005)^{96}-M\\left[\\dfrac{1.005^{96}-1}{1.005-1}\\right]=0\\). Solve for \\(M\\).",
+          "steps": [
+            {
+              "explain": "New 8 years \\(=8\\times12=96\\) months, starting balance \\(\\text{\\textdollar}174\\,568.04\\).",
+              "work": "\\(A_{96}=174568.04(1.005)^{96}-M\\left[\\dfrac{1.005^{96}-1}{0.005}\\right]=0\\)"
+            },
+            {
+              "explain": "Rearrange for \\(M\\).",
+              "work": "\\(M=\\dfrac{174568.04(1.005)^{96}\\times0.005}{1.005^{96}-1}\\)"
+            },
+            {
+              "explain": "Calculate: \\(1.005^{96}=1.6141\\ldots\\); numerator \\(=174568.04\\times1.6141\\times0.005=1409.0\\); denominator \\(0.6141\\).",
+              "work": "\\(M\\approx\\text{\\textdollar}2294.07\\)"
+            },
+            {
+              "explain": "Why not the others: B is the old payment (would not pay off in 8 years); C divides the balance by 96 and ignores interest (\\(\\dfrac{174568.04}{96}\\approx1818.4\\)); D is too high.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "What should his new monthly payment be?",
+              "note": "\\(n=96\\); set balance \\(=0\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Moriah College 2021 HSC Trial Examination Mathematics Advanced",
+            "school": "Moriah College",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },

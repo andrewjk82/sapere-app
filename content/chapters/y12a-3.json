@@ -1356,6 +1356,56 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "moriah2021-q14",
+          "type": "mc",
+          "stem": "Evaluate \\(\\displaystyle\\int_{0}^{4}x\\left(x^{2}+6\\right)dx\\)",
+          "difficulty": "easy",
+          "options": [
+            "\\(112\\)",
+            "\\(160\\)",
+            "\\(64\\)",
+            "\\(76\\)"
+          ],
+          "answer": 0,
+          "hint": "EXPAND first: \\(x(x^{2}+6)=x^{3}+6x\\) (you cannot integrate a product of two brackets directly). Then integrate each term and substitute the limits.",
+          "steps": [
+            {
+              "explain": "Expand the bracket.",
+              "work": "\\(x(x^{2}+6)=x^{3}+6x\\)"
+            },
+            {
+              "explain": "Integrate with \\(\\int x^{n}dx=\\dfrac{x^{n+1}}{n+1}\\): \\(\\dfrac{x^{4}}{4}\\) and \\(6\\cdot\\dfrac{x^{2}}{2}=3x^{2}\\).",
+              "work": "\\(\\int_{0}^{4}(x^{3}+6x)\\,dx=\\left[\\dfrac{x^{4}}{4}+3x^{2}\\right]_{0}^{4}\\)"
+            },
+            {
+              "explain": "Substitute the upper limit \\(x=4\\): \\(\\dfrac{256}{4}+3(16)=64+48=112\\). Lower limit \\(x=0\\): \\(0\\).",
+              "work": "\\(=(64+48)-0=112\\)"
+            },
+            {
+              "explain": "Why not the others: B (160) uses \\(6x^{2}\\) (forgot the \\(\\dfrac{1}{2}\\)); C (64) forgets the \\(3x^{2}\\) term; D (76) has an arithmetic slip.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Evaluate",
+              "note": "Expand: \\(x^{3}+6x\\); then \\(\\left[\\dfrac{x^{4}}4+3x^{2}\\right]_0^4\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Moriah College 2021 HSC Trial Examination Mathematics Advanced",
+            "school": "Moriah College",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -9657,6 +9707,159 @@
           "meta": {
             "source": "Northern Beaches Secondary College Manly Campus 2020 Year 12 Trial Examination Mathematics Advanced",
             "school": "Northern Beaches Secondary College, Manly Campus",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "moriah2021-q20a",
+          "type": "mc",
+          "stem": "A function is defined by \\(f(x)=2^{-x}+1\\). Complete the table of values below: for \\(x=0,1,2\\), what are \\(f(x)\\)?",
+          "difficulty": "easy",
+          "options": [
+            "\\(f(0)=2,\\ f(1)=1.5,\\ f(2)=1.25\\)",
+            "\\(f(0)=1,\\ f(1)=0.5,\\ f(2)=0.25\\)",
+            "\\(f(0)=2,\\ f(1)=3,\\ f(2)=5\\)",
+            "\\(f(0)=2,\\ f(1)=1.25,\\ f(2)=1.5\\)"
+          ],
+          "answer": 0,
+          "hint": "Substitute each \\(x\\) into \\(2^{-x}+1\\). A NEGATIVE power means reciprocal: \\(2^{-x}=\\dfrac{1}{2^{x}}\\). Don't forget to add 1 at the end.",
+          "steps": [
+            {
+              "explain": "\\(x=0\\): \\(2^{0}=1\\), plus 1.",
+              "work": "\\(f(0)=2^{0}+1=1+1=2\\)"
+            },
+            {
+              "explain": "\\(x=1\\): \\(2^{-1}=\\dfrac{1}{2}\\), plus 1.",
+              "work": "\\(f(1)=\\dfrac{1}{2}+1=1.5\\)"
+            },
+            {
+              "explain": "\\(x=2\\): \\(2^{-2}=\\dfrac{1}{4}\\), plus 1.",
+              "work": "\\(f(2)=\\dfrac{1}{4}+1=1.25\\)"
+            },
+            {
+              "explain": "Why not the others: B forgets the \\(+1\\); C uses \\(2^{x}\\) (positive power); D swaps the last two values.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Complete the table of values below",
+              "note": "\\(2^{-x}=\\dfrac1{2^{x}}\\); add 1."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Moriah College 2021 HSC Trial Examination Mathematics Advanced",
+            "school": "Moriah College",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "moriah2021-q20b",
+          "type": "mc",
+          "stem": "Use the trapezoidal rule with all the above function values (\\(f(0)=2\\), \\(f(1)=1.5\\), \\(f(2)=1.25\\)) to estimate the value of \\(\\displaystyle\\int_{0}^{2}\\left(2^{-x}+1\\right)dx\\) correct to three decimal places.",
+          "difficulty": "easy",
+          "options": [
+            "\\(3.125\\)",
+            "\\(3.082\\)",
+            "\\(6.250\\)",
+            "\\(3.250\\)"
+          ],
+          "answer": 0,
+          "hint": "Trapezoidal rule with 3 function values (2 strips of width \\(h=1\\)): \\(\\int\\approx\\dfrac{h}{2}\\left[y_{0}+2y_{1}+y_{2}\\right]\\) — the MIDDLE value is DOUBLED, the end values are used once.",
+          "steps": [
+            {
+              "explain": "Strip width \\(h=\\dfrac{2-0}{2}=1\\).",
+              "work": "\\(h=1\\)"
+            },
+            {
+              "explain": "Apply the rule: first + 2×middle + last.",
+              "work": "\\(\\int_{0}^{2}f\\,dx\\approx\\dfrac{1}{2}(1)\\left[2+2(1.5)+1.25\\right]\\)"
+            },
+            {
+              "explain": "Add inside: \\(2+3+1.25=6.25\\). Then half of it.",
+              "work": "\\(=\\dfrac{1}{2}(6.25)=3.125\\)"
+            },
+            {
+              "explain": "Why not the others: B (3.082) is the EXACT integral (part (c)), not the estimate; C forgets the \\(\\dfrac{1}{2}\\); D uses \\(2(2)+\\ldots\\) errors.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Use the trapezoidal rule with all the above function values",
+              "note": "\\(\\dfrac{h}{2}[y_0+2y_1+y_2]\\), \\(h=1\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Moriah College 2021 HSC Trial Examination Mathematics Advanced",
+            "school": "Moriah College",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "moriah2021-q20d",
+          "type": "mc",
+          "stem": "Why would you expect the value of the integral to be less than the approximation? (A diagram may prove useful.)",
+          "difficulty": "medium",
+          "options": [
+            "The curve \\(y=2^{-x}+1\\) is concave up, so each trapezium's slanted top (the chord between two points on the curve) lies ABOVE the curve; the trapezia contain slightly more area than the area under the curve.",
+            "The curve is concave down, so the trapezia lie below the curve and give an under-estimate.",
+            "The function is decreasing, so the trapezia always overestimate regardless of concavity.",
+            "The trapezoidal rule is exact for this function, so the integral equals the approximation."
+          ],
+          "answer": 0,
+          "hint": "The trapezoidal rule joins points on the curve with straight lines. If the curve bends UPWARD (concave up, \\(f''>0\\)) each chord lies ABOVE the curve, so the trapezium has MORE area than the region under the curve. Check concavity: \\(f(x)=2^{-x}+1\\), \\(f''(x)=(\\ln2)^{2}2^{-x}>0\\).",
+          "steps": [
+            {
+              "explain": "Concavity: \\(f'(x)=-\\ln2\\cdot2^{-x}\\) and \\(f''(x)=(\\ln2)^{2}2^{-x}>0\\) for all \\(x\\): the graph is CONCAVE UP (it curves like a bowl).",
+              "work": "\\(f''(x)=(\\ln2)^{2}\\,2^{-x}>0\\)"
+            },
+            {
+              "explain": "On a concave-up curve the straight line (chord) joining two points on it lies ABOVE the curve between those points (see the diagram: the orange trapezia sit just over the blue curve).",
+              "work": "\\(\\text{trapezia area}>\\text{area under curve}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 270\" width=\"100%\" height=\"auto\" style=\"max-width:440px;display:block;margin:0 auto\"><line x1=\"42.0\" y1=\"215.0\" x2=\"441.0\" y2=\"215.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"50.0\" y1=\"223.0\" x2=\"50.0\" y2=\"26.4\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"441.0\" y1=\"215.0\" x2=\"434.1\" y2=\"211.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"441.0\" y1=\"215.0\" x2=\"434.1\" y2=\"219.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"50.0\" y1=\"26.4\" x2=\"46.0\" y2=\"33.3\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"50.0\" y1=\"26.4\" x2=\"54.0\" y2=\"33.3\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><polygon points=\"50.0,215 50.0,51.0 220.0,92.0 390.0,112.5 390.0,215\" fill=\"#d97706\" fill-opacity=\"0.3\" stroke=\"#d97706\" stroke-width=\"2.4\"/><polyline points=\"50.0,51.0 51.7,51.6 53.4,52.1 55.1,52.7 56.8,53.2 58.5,53.8 60.2,54.3 61.9,54.9 63.6,55.4 65.3,56.0 67.0,56.5 68.7,57.0 70.4,57.5 72.1,58.1 73.8,58.6 75.5,59.1 77.2,59.6 78.9,60.1 80.6,60.6 82.3,61.1 84.0,61.6 85.7,62.1 87.4,62.6 89.1,63.1 90.8,63.6 92.5,64.0 94.2,64.5 95.9,65.0 97.6,65.5 99.3,65.9 101.0,66.4 102.7,66.9 104.4,67.3 106.1,67.8 107.8,68.2 109.5,68.7 111.2,69.1 112.9,69.5 114.6,70.0 116.3,70.4 118.0,70.9 119.7,71.3 121.4,71.7 123.1,72.1 124.8,72.6 126.5,73.0 128.2,73.4 129.9,73.8 131.6,74.2 133.3,74.6 135.0,75.0 136.7,75.4 138.4,75.8 140.1,76.2 141.8,76.6 143.5,77.0 145.2,77.4 146.9,77.8 148.6,78.1 150.3,78.5 152.0,78.9 153.7,79.3 155.4,79.6 157.1,80.0 158.8,80.4 160.5,80.7 162.2,81.1 163.9,81.5 165.6,81.8 167.3,82.2 169.0,82.5 170.7,82.9 172.4,83.2 174.1,83.6 175.8,83.9 177.5,84.2 179.2,84.6 180.9,84.9 182.6,85.2 184.3,85.6 186.0,85.9 187.7,86.2 189.4,86.6 191.1,86.9 192.8,87.2 194.5,87.5 196.2,87.8 197.9,88.1 199.6,88.4 201.3,88.8 203.0,89.1 204.7,89.4 206.4,89.7 208.1,90.0 209.8,90.3 211.5,90.6 213.2,90.8 214.9,91.1 216.6,91.4 218.3,91.7 220.0,92.0 221.7,92.3 223.4,92.6 225.1,92.8 226.8,93.1 228.5,93.4 230.2,93.7 231.9,93.9 233.6,94.2 235.3,94.5 237.0,94.7 238.7,95.0 240.4,95.3 242.1,95.5 243.8,95.8 245.5,96.0 247.2,96.3 248.9,96.6 250.6,96.8 252.3,97.1 254.0,97.3 255.7,97.6 257.4,97.8 259.1,98.0 260.8,98.3 262.5,98.5 264.2,98.8 265.9,99.0 267.6,99.2 269.3,99.5 271.0,99.7 272.7,99.9 274.4,100.2 276.1,100.4 277.8,100.6 279.5,100.8 281.2,101.1 282.9,101.3 284.6,101.5 286.3,101.7 288.0,101.9 289.7,102.1 291.4,102.4 293.1,102.6 294.8,102.8 296.5,103.0 298.2,103.2 299.9,103.4 301.6,103.6 303.3,103.8 305.0,104.0 306.7,104.2 308.4,104.4 310.1,104.6 311.8,104.8 313.5,105.0 315.2,105.2 316.9,105.4 318.6,105.6 320.3,105.8 322.0,106.0 323.7,106.1 325.4,106.3 327.1,106.5 328.8,106.7 330.5,106.9 332.2,107.1 333.9,107.2 335.6,107.4 337.3,107.6 339.0,107.8 340.7,107.9 342.4,108.1 344.1,108.3 345.8,108.5 347.5,108.6 349.2,108.8 350.9,109.0 352.6,109.1 354.3,109.3 356.0,109.5 357.7,109.6 359.4,109.8 361.1,109.9 362.8,110.1 364.5,110.3 366.2,110.4 367.9,110.6 369.6,110.7 371.3,110.9 373.0,111.0 374.7,111.2 376.4,111.3 378.1,111.5 379.8,111.6 381.5,111.8 383.2,111.9 384.9,112.1 386.6,112.2 388.3,112.4 390.0,112.5\" fill=\"none\" stroke=\"#3b4ea8\" stroke-width=\"3\"/><line x1=\"220.0\" y1=\"215.0\" x2=\"220.0\" y2=\"92.0\" stroke=\"#d97706\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"50.0\" y1=\"212.0\" x2=\"50.0\" y2=\"218.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"50.0\" y=\"231.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0</text><line x1=\"220.0\" y1=\"212.0\" x2=\"220.0\" y2=\"218.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"220.0\" y=\"231.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><line x1=\"390.0\" y1=\"212.0\" x2=\"390.0\" y2=\"218.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"390.0\" y=\"231.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><text x=\"126.5\" y=\"19.8\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">trapezium tops lie above the curve</text><text x=\"271.0\" y=\"148.4\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">curve (concave up)</text></svg>"
+              }
+            },
+            {
+              "explain": "So the trapezoidal estimate (3.125) is BIGGER than the true value (3.082): the integral is less than the approximation.",
+              "work": "\\(3.082<3.125\\)"
+            },
+            {
+              "explain": "Why not the others: B has the wrong concavity (the curve is concave up); C ignores concavity (a decreasing function can be over- or under-estimated depending on how it bends); D is false: the rule is exact only for linear functions.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Why would you expect the value of the integral to be less than the approximation?",
+              "note": "Concave up \\(f\\,''>0\\): chords lie above the curve."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Moriah College 2021 HSC Trial Examination Mathematics Advanced",
+            "school": "Moriah College",
             "grade": "12",
             "origin": "teacher"
           }

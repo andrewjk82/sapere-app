@@ -8427,6 +8427,59 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "moriah2021-q22",
+          "type": "mc",
+          "stem": "\\(OBC\\) is a sector of a circle centre \\(O\\) and radius 8 cm. The length of the arc \\(BC\\) is \\(4\\pi\\) cm. Calculate the exact area of the sector \\(OBC\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(16\\pi\\) cm\\(^{2}\\)",
+            "\\(32\\pi\\) cm\\(^{2}\\)",
+            "\\(8\\pi\\) cm\\(^{2}\\)",
+            "\\(64\\pi\\) cm\\(^{2}\\)"
+          ],
+          "answer": 0,
+          "hint": "Two steps: (1) ARC LENGTH \\(\\ell=r\\theta\\) gives the angle \\(\\theta\\) (in RADIANS); (2) SECTOR AREA \\(A=\\dfrac12r^{2}\\theta\\). Keep \\(\\pi\\) in the answer for “exact”.",
+          "steps": [
+            {
+              "explain": "Arc length formula \\(\\ell=r\\theta\\) with \\(\\ell=4\\pi\\), \\(r=8\\).",
+              "work": "\\(4\\pi=8\\theta\\ \\Rightarrow\\ \\theta=\\dfrac{4\\pi}{8}=\\dfrac\\pi2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 250\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><polygon points=\"150,200 20.0,200.0 20.0,196.6 20.2,193.2 20.4,189.8 20.7,186.4 21.1,183.0 21.6,179.7 22.2,176.3 22.8,173.0 23.6,169.7 24.4,166.4 25.4,163.1 26.4,159.8 27.5,156.6 28.6,153.4 29.9,150.3 31.2,147.1 32.7,144.0 34.2,141.0 35.8,138.0 37.4,135.0 39.2,132.1 41.0,129.2 42.9,126.4 44.8,123.6 46.9,120.9 49.0,118.2 51.1,115.6 53.4,113.0 55.7,110.5 58.1,108.1 60.5,105.7 63.0,103.4 65.6,101.1 68.2,99.0 70.9,96.9 73.6,94.8 76.4,92.9 79.2,91.0 82.1,89.2 85.0,87.4 88.0,85.8 91.0,84.2 94.0,82.7 97.1,81.2 100.3,79.9 103.4,78.6 106.6,77.5 109.8,76.4 113.1,75.4 116.4,74.4 119.7,73.6 123.0,72.8 126.3,72.2 129.7,71.6 133.0,71.1 136.4,70.7 139.8,70.4 143.2,70.2 146.6,70.0 150.0,70.0\" fill=\"#e0e7ff\" fill-opacity=\"0.5\" stroke=\"#1e293b\" stroke-width=\"2.6\"/><text x=\"90.0\" y=\"220.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">8 cm (radius)</text><text x=\"164.0\" y=\"140.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">8 cm</text><text x=\"58.0\" y=\"82.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">arc 4π cm</text><path d=\"M 126,200 L 126,176 L 150,176\" fill=\"none\" stroke=\"#047857\" stroke-width=\"2.4\"/><text x=\"106.0\" y=\"166.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">θ = 90°</text><text x=\"14.0\" y=\"204.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text><text x=\"156.0\" y=\"66.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">C</text><text x=\"158.0\" y=\"216.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">O</text></svg>"
+              }
+            },
+            {
+              "explain": "Sector area \\(A=\\dfrac12r^{2}\\theta\\).",
+              "work": "\\(A=\\dfrac{1}{2}\\times8^{2}\\times\\dfrac\\pi2=\\dfrac{1}{2}\\times64\\times\\dfrac\\pi2\\)"
+            },
+            {
+              "explain": "Calculate: \\(\\dfrac{1}{2}\\times64=32\\), then \\(32\\times\\dfrac\\pi2=16\\pi\\).",
+              "work": "\\(A=16\\pi\\ \\text{cm}^{2}\\)"
+            },
+            {
+              "explain": "Check: the sector is a quarter of the whole circle (\\(\\theta=\\dfrac\\pi2\\)), and \\(\\dfrac{1}{4}\\pi(8)^{2}=16\\pi\\) ✓. Why not the others: B forgets the \\(\\dfrac{1}{2}\\) (\\(r^{2}\\theta\\)); C and D use degrees or wrong multiples.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Calculate the exact area of the sector \\(OBC\\).",
+              "note": "\\(\\ell=r\\theta\\Rightarrow\\theta=\\dfrac\\pi2\\); \\(A=\\dfrac12r^{2}\\theta\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Moriah College 2021 HSC Trial Examination Mathematics Advanced",
+            "school": "Moriah College",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },

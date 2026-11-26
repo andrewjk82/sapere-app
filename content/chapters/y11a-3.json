@@ -15365,6 +15365,106 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "moriah2021-q1",
+          "type": "mc",
+          "stem": "A function is given by \\(f(x)=\\sqrt{4-x^{2}}\\). What is the domain of this function?",
+          "difficulty": "easy",
+          "options": [
+            "\\(-2<x<2\\)",
+            "\\(x\\le2\\)",
+            "\\(-4\\le x\\le4\\)",
+            "\\(-2\\le x\\le2\\)"
+          ],
+          "answer": 3,
+          "hint": "A square root is defined only when the number inside is NOT NEGATIVE: \\(4-x^{2}\\ge0\\). Solve this inequality (think of the parabola \\(y=4-x^{2}\\) and where it is on or above the \\(x\\)-axis).",
+          "steps": [
+            {
+              "explain": "Require the inside of the root to be greater than or equal to 0 (it may equal 0, since \\(\\sqrt0=0\\) is fine).",
+              "work": "\\(4-x^{2}\\ge0\\)"
+            },
+            {
+              "explain": "Rearrange: \\(x^{2}\\le4\\). Take the square root of both sides — for \\(x^{2}\\le4\\) this means \\(|x|\\le2\\), i.e. between \\(-2\\) and \\(2\\).",
+              "work": "\\(x^{2}\\le4\\ \\Rightarrow\\ |x|\\le2\\ \\Rightarrow\\ -2\\le x\\le2\\)"
+            },
+            {
+              "explain": "Check the endpoints: \\(f(2)=\\sqrt{4-4}=0\\) and \\(f(-2)=0\\) are both defined, so the endpoints are INCLUDED (square brackets). \\(f(0)=2\\) is fine and \\(f(3)=\\sqrt{-5}\\) is not.",
+              "work": "\\(\\text{domain}=[-2,2]\\)"
+            },
+            {
+              "explain": "Why not the others: A (\\(-2<x<2\\)) wrongly excludes the endpoints; B (\\(x\\le2\\)) forgets that \\(x=-3\\) gives \\(\\sqrt{-5}\\); C (\\(-4\\le x\\le4\\)) uses \\(\\sqrt{4}\\ne2\\) slip (it solves \\(x^{2}\\le16\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">D</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "What is the domain of this function?",
+              "note": "Inside the root \\(\\ge0\\): \\(4-x^{2}\\ge0\\); endpoints are allowed."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Moriah College 2021 HSC Trial Examination Mathematics Advanced",
+            "school": "Moriah College",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "moriah2021-q2",
+          "type": "mc",
+          "stem": "Which would be the best description of \\(h(x)=x^{4}+1\\)",
+          "difficulty": "easy",
+          "options": [
+            "one to one",
+            "many to one",
+            "one to many",
+            "many to many"
+          ],
+          "answer": 1,
+          "hint": "Test with the same OUTPUT. A relation is ONE-TO-ONE if every \\(y\\) comes from only one \\(x\\); MANY-TO-ONE if different \\(x\\) values can give the same \\(y\\). Try \\(x=1\\) and \\(x=-1\\).",
+          "steps": [
+            {
+              "explain": "\\(h\\) is a FUNCTION (each \\(x\\) gives exactly one \\(y\\)), so it cannot be “one to many” or “many to many”.",
+              "work": "\\(h(x)=x^{4}+1\\ \\text{gives one output for each }x\\)"
+            },
+            {
+              "explain": "Try opposite inputs: even powers give the same value for \\(x\\) and \\(-x\\).",
+              "work": "\\(h(1)=1^{4}+1=2,\\qquad h(-1)=(-1)^{4}+1=2\\)"
+            },
+            {
+              "explain": "Two DIFFERENT inputs (\\(1\\) and \\(-1\\)) give the SAME output \\(2\\), so the function is many-to-one (it also fails the horizontal line test: the line \\(y=2\\) cuts the graph twice).",
+              "work": "\\(\\text{many }x\\to\\text{one }y\\)"
+            },
+            {
+              "explain": "Why not the others: A is false (the example above); C and D are false because the relation is a function.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">B</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "best description",
+              "note": "Different \\(x\\) with the same \\(y\\)? \\(h(1)=h(-1)\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Moriah College 2021 HSC Trial Examination Mathematics Advanced",
+            "school": "Moriah College",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -18299,6 +18399,162 @@
           "meta": {
             "source": "Knox Grammar School 2021 Trial HSC Examination Mathematics Advanced",
             "school": "Knox Grammar School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "moriah2021-q15a",
+          "type": "mc",
+          "stem": "Nicky has opened a business to customise skateboards. The cost of production is given by \\(C=20x+600\\) dollars and income earned is given by \\(I=50x\\), where \\(x\\) is the number of skateboards produced. If the production cost is \\(\\text{\\textdollar}800\\), how many skateboards have been manufactured?",
+          "difficulty": "easy",
+          "options": [
+            "\\(10\\)",
+            "\\(40\\)",
+            "\\(30\\)",
+            "\\(20\\)"
+          ],
+          "answer": 0,
+          "hint": "Replace \\(C\\) by 800 in \\(C=20x+600\\) and SOLVE the linear equation for \\(x\\). (The 600 is a fixed cost; \\(20x\\) depends on the number made.)",
+          "steps": [
+            {
+              "explain": "Substitute \\(C=800\\).",
+              "work": "\\(800=20x+600\\)"
+            },
+            {
+              "explain": "Subtract 600 from both sides.",
+              "work": "\\(200=20x\\)"
+            },
+            {
+              "explain": "Divide by 20.",
+              "work": "\\(x=10\\)"
+            },
+            {
+              "explain": "Check: \\(20(10)+600=800\\) ✓. Why not the others: B (40) divides 800 by 20; C (30) is \\(\\dfrac{600}{20}\\); D (20) is \\(800-600\\) divided wrongly.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "how many skateboards have been manufactured?",
+              "note": "\\(800=20x+600\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Moriah College 2021 HSC Trial Examination Mathematics Advanced",
+            "school": "Moriah College",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "moriah2021-q15b",
+          "type": "mc",
+          "stem": "Nicky has opened a business to customise skateboards. The cost of production is given by \\(C=20x+600\\) dollars and income earned is given by \\(I=50x\\), where \\(x\\) is the number of skateboards produced. Graph both equations on the axes provided. Which diagram (A–D) shows both graphs correctly?",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 614 474\" width=\"100%\" height=\"auto\" style=\"max-width:620px;display:block;margin:0 auto\"><g transform=\"translate(3,3)\"><rect x=\"-3\" y=\"-3\" width=\"300\" height=\"230\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"40.0\" y1=\"196.0\" x2=\"292.0\" y2=\"196.0\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"44.0\" y1=\"200.0\" x2=\"44.0\" y2=\"20.0\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"292.0\" y1=\"196.0\" x2=\"285.9\" y2=\"192.5\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"292.0\" y1=\"196.0\" x2=\"285.9\" y2=\"199.5\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"44.0\" y1=\"20.0\" x2=\"40.5\" y2=\"26.1\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"44.0\" y1=\"20.0\" x2=\"47.5\" y2=\"26.1\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"124.0\" y1=\"193.0\" x2=\"124.0\" y2=\"199.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"124.0\" y=\"211.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">20</text><line x1=\"204.0\" y1=\"193.0\" x2=\"204.0\" y2=\"199.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"204.0\" y=\"211.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">40</text><line x1=\"284.0\" y1=\"193.0\" x2=\"284.0\" y2=\"199.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"284.0\" y=\"211.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">60</text><line x1=\"41.0\" y1=\"153.5\" x2=\"47.0\" y2=\"153.5\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"38.0\" y=\"157.5\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">300</text><line x1=\"41.0\" y1=\"111.0\" x2=\"47.0\" y2=\"111.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"38.0\" y=\"115.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">600</text><line x1=\"41.0\" y1=\"68.5\" x2=\"47.0\" y2=\"68.5\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"38.0\" y=\"72.5\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">900</text><line x1=\"41.0\" y1=\"26.0\" x2=\"47.0\" y2=\"26.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"38.0\" y=\"30.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1200</text><text x=\"288.0\" y=\"188.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><text x=\"52.0\" y=\"30.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">$</text><line x1=\"44.0\" y1=\"111.0\" x2=\"164.0\" y2=\"26.0\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"44.0\" y1=\"196.0\" x2=\"140.0\" y2=\"26.0\" stroke=\"#d97706\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"8\" y=\"22\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"19\" font-weight=\"800\" fill=\"#1e293b\">A</text></g><g transform=\"translate(317,3)\"><rect x=\"-3\" y=\"-3\" width=\"300\" height=\"230\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"40.0\" y1=\"196.0\" x2=\"292.0\" y2=\"196.0\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"44.0\" y1=\"200.0\" x2=\"44.0\" y2=\"20.0\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"292.0\" y1=\"196.0\" x2=\"285.9\" y2=\"192.5\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"292.0\" y1=\"196.0\" x2=\"285.9\" y2=\"199.5\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"44.0\" y1=\"20.0\" x2=\"40.5\" y2=\"26.1\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"44.0\" y1=\"20.0\" x2=\"47.5\" y2=\"26.1\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"124.0\" y1=\"193.0\" x2=\"124.0\" y2=\"199.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"124.0\" y=\"211.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">20</text><line x1=\"204.0\" y1=\"193.0\" x2=\"204.0\" y2=\"199.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"204.0\" y=\"211.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">40</text><line x1=\"284.0\" y1=\"193.0\" x2=\"284.0\" y2=\"199.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"284.0\" y=\"211.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">60</text><line x1=\"41.0\" y1=\"153.5\" x2=\"47.0\" y2=\"153.5\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"38.0\" y=\"157.5\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">300</text><line x1=\"41.0\" y1=\"111.0\" x2=\"47.0\" y2=\"111.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"38.0\" y=\"115.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">600</text><line x1=\"41.0\" y1=\"68.5\" x2=\"47.0\" y2=\"68.5\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"38.0\" y=\"72.5\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">900</text><line x1=\"41.0\" y1=\"26.0\" x2=\"47.0\" y2=\"26.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"38.0\" y=\"30.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1200</text><text x=\"288.0\" y=\"188.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><text x=\"52.0\" y=\"30.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">$</text><line x1=\"44.0\" y1=\"196.0\" x2=\"284.0\" y2=\"26.0\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"44.0\" y1=\"111.0\" x2=\"92.0\" y2=\"26.0\" stroke=\"#d97706\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"8\" y=\"22\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"19\" font-weight=\"800\" fill=\"#1e293b\">B</text></g><g transform=\"translate(3,247)\"><rect x=\"-3\" y=\"-3\" width=\"300\" height=\"230\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"40.0\" y1=\"196.0\" x2=\"292.0\" y2=\"196.0\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"44.0\" y1=\"200.0\" x2=\"44.0\" y2=\"20.0\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"292.0\" y1=\"196.0\" x2=\"285.9\" y2=\"192.5\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"292.0\" y1=\"196.0\" x2=\"285.9\" y2=\"199.5\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"44.0\" y1=\"20.0\" x2=\"40.5\" y2=\"26.1\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"44.0\" y1=\"20.0\" x2=\"47.5\" y2=\"26.1\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"124.0\" y1=\"193.0\" x2=\"124.0\" y2=\"199.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"124.0\" y=\"211.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">20</text><line x1=\"204.0\" y1=\"193.0\" x2=\"204.0\" y2=\"199.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"204.0\" y=\"211.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">40</text><line x1=\"284.0\" y1=\"193.0\" x2=\"284.0\" y2=\"199.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"284.0\" y=\"211.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">60</text><line x1=\"41.0\" y1=\"153.5\" x2=\"47.0\" y2=\"153.5\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"38.0\" y=\"157.5\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">300</text><line x1=\"41.0\" y1=\"111.0\" x2=\"47.0\" y2=\"111.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"38.0\" y=\"115.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">600</text><line x1=\"41.0\" y1=\"68.5\" x2=\"47.0\" y2=\"68.5\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"38.0\" y=\"72.5\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">900</text><line x1=\"41.0\" y1=\"26.0\" x2=\"47.0\" y2=\"26.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"38.0\" y=\"30.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1200</text><text x=\"288.0\" y=\"188.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><text x=\"52.0\" y=\"30.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">$</text><line x1=\"44.0\" y1=\"111.0\" x2=\"164.0\" y2=\"26.0\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"44.0\" y1=\"196.0\" x2=\"284.0\" y2=\"26.0\" stroke=\"#d97706\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"8\" y=\"22\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"19\" font-weight=\"800\" fill=\"#1e293b\">C</text></g><g transform=\"translate(317,247)\"><rect x=\"-3\" y=\"-3\" width=\"300\" height=\"230\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"40.0\" y1=\"196.0\" x2=\"292.0\" y2=\"196.0\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"44.0\" y1=\"200.0\" x2=\"44.0\" y2=\"20.0\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"292.0\" y1=\"196.0\" x2=\"285.9\" y2=\"192.5\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"292.0\" y1=\"196.0\" x2=\"285.9\" y2=\"199.5\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"44.0\" y1=\"20.0\" x2=\"40.5\" y2=\"26.1\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"44.0\" y1=\"20.0\" x2=\"47.5\" y2=\"26.1\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"124.0\" y1=\"193.0\" x2=\"124.0\" y2=\"199.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"124.0\" y=\"211.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">20</text><line x1=\"204.0\" y1=\"193.0\" x2=\"204.0\" y2=\"199.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"204.0\" y=\"211.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">40</text><line x1=\"284.0\" y1=\"193.0\" x2=\"284.0\" y2=\"199.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"284.0\" y=\"211.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">60</text><line x1=\"41.0\" y1=\"153.5\" x2=\"47.0\" y2=\"153.5\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"38.0\" y=\"157.5\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">300</text><line x1=\"41.0\" y1=\"111.0\" x2=\"47.0\" y2=\"111.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"38.0\" y=\"115.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">600</text><line x1=\"41.0\" y1=\"68.5\" x2=\"47.0\" y2=\"68.5\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"38.0\" y=\"72.5\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">900</text><line x1=\"41.0\" y1=\"26.0\" x2=\"47.0\" y2=\"26.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"38.0\" y=\"30.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1200</text><text x=\"288.0\" y=\"188.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><text x=\"52.0\" y=\"30.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">$</text><line x1=\"44.0\" y1=\"111.0\" x2=\"92.0\" y2=\"26.0\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"44.0\" y1=\"196.0\" x2=\"284.0\" y2=\"26.0\" stroke=\"#d97706\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"8\" y=\"22\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"19\" font-weight=\"800\" fill=\"#1e293b\">D</text></g></svg>"
+          },
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "answer": 0,
+          "hint": "Each equation is a straight line \\(y=mx+c\\): \\(c\\) is the \\(y\\)-INTERCEPT (value at \\(x=0\\)) and \\(m\\) is the GRADIENT. Find two points on each line: \\(x=0\\) and \\(x=20\\) are convenient.",
+          "steps": [
+            {
+              "explain": "Cost \\(C=20x+600\\): \\(y\\)-intercept 600 (the fixed cost) and gradient 20. Points: \\((0,600)\\) and \\((20,1000)\\).",
+              "work": "\\(C(0)=600,\\qquad C(20)=20(20)+600=1000\\)"
+            },
+            {
+              "explain": "Income \\(I=50x\\): passes through the ORIGIN (no income if nothing sold), gradient 50. Points: \\((0,0)\\) and \\((20,1000)\\).",
+              "work": "\\(I(0)=0,\\qquad I(20)=50(20)=1000\\)"
+            },
+            {
+              "explain": "Both lines pass through \\((20,1000)\\): that is where cost = income (the break-even point): \\(50x=20x+600\\Rightarrow x=20\\). Draw the steeper line (income, from the origin) and the flatter line (cost, starting at 600).",
+              "work": "\\(\\text{break-even at }(20,1000)\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 230\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><line x1=\"40.0\" y1=\"196.0\" x2=\"292.0\" y2=\"196.0\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"44.0\" y1=\"200.0\" x2=\"44.0\" y2=\"20.0\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"292.0\" y1=\"196.0\" x2=\"285.9\" y2=\"192.5\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"292.0\" y1=\"196.0\" x2=\"285.9\" y2=\"199.5\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"44.0\" y1=\"20.0\" x2=\"40.5\" y2=\"26.1\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"44.0\" y1=\"20.0\" x2=\"47.5\" y2=\"26.1\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"124.0\" y1=\"193.0\" x2=\"124.0\" y2=\"199.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"124.0\" y=\"211.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">20</text><line x1=\"204.0\" y1=\"193.0\" x2=\"204.0\" y2=\"199.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"204.0\" y=\"211.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">40</text><line x1=\"284.0\" y1=\"193.0\" x2=\"284.0\" y2=\"199.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"284.0\" y=\"211.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">60</text><line x1=\"41.0\" y1=\"153.5\" x2=\"47.0\" y2=\"153.5\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"38.0\" y=\"157.5\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">300</text><line x1=\"41.0\" y1=\"111.0\" x2=\"47.0\" y2=\"111.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"38.0\" y=\"115.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">600</text><line x1=\"41.0\" y1=\"68.5\" x2=\"47.0\" y2=\"68.5\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"38.0\" y=\"72.5\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">900</text><line x1=\"41.0\" y1=\"26.0\" x2=\"47.0\" y2=\"26.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"38.0\" y=\"30.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1200</text><text x=\"288.0\" y=\"188.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><text x=\"52.0\" y=\"30.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">$</text><line x1=\"44.0\" y1=\"111.0\" x2=\"164.0\" y2=\"26.0\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"44.0\" y1=\"196.0\" x2=\"140.0\" y2=\"26.0\" stroke=\"#d97706\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"175.0\" y=\"60.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">cost: 600 + 20x</text><text x=\"150.0\" y=\"150.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">income: 50x</text><circle cx=\"124.0\" cy=\"54.3\" r=\"5\" fill=\"#dc2626\"/></svg>"
+              }
+            },
+            {
+              "explain": "Why not the others: B swaps the intercepts (cost from 0, income from 600); C draws two parallel lines (both with gradient 20); D swaps the gradients (cost steeper than income).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Graph both equations on the axes provided.",
+              "note": "\\(C\\): intercept 600, slope 20; \\(I\\): origin, slope 50; meet at \\((20,1000)\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Moriah College 2021 HSC Trial Examination Mathematics Advanced",
+            "school": "Moriah College",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "moriah2021-q15c",
+          "type": "mc",
+          "stem": "Nicky has opened a business to customise skateboards. The cost of production is given by \\(C=20x+600\\) dollars and income earned is given by \\(I=50x\\), where \\(x\\) is the number of skateboards produced. What is the minimum number of skateboards that Nicky must sell to make a profit?",
+          "difficulty": "medium",
+          "options": [
+            "\\(21\\)",
+            "\\(20\\)",
+            "\\(30\\)",
+            "\\(600\\)"
+          ],
+          "answer": 0,
+          "hint": "PROFIT means income is GREATER than cost: \\(I>C\\) (strictly greater — at equality there is no profit). Solve the inequality, then take the smallest WHOLE number above the answer (you can only sell whole skateboards).",
+          "steps": [
+            {
+              "explain": "Profit \\(\\Leftrightarrow\\) income \\(>\\) cost.",
+              "work": "\\(50x>20x+600\\)"
+            },
+            {
+              "explain": "Subtract \\(20x\\): \\(30x>600\\). Divide by 30.",
+              "work": "\\(x>20\\)"
+            },
+            {
+              "explain": "\\(x>20\\) does NOT include 20 (at \\(x=20\\): income \\(=1000=\\) cost, no profit). The smallest whole number bigger than 20 is 21.",
+              "work": "\\(x=21\\)"
+            },
+            {
+              "explain": "Check: \\(x=21\\): \\(I=1050\\), \\(C=1020\\): profit \\(\\text{\\textdollar}30\\) ✓. Why not the others: B (20) is the break-even number (no profit); C and D are not the minimum.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "What is the minimum number of skateboards that Nicky must sell to make a profit?",
+              "note": "\\(50x>20x+600\\Rightarrow x>20\\); whole number."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Moriah College 2021 HSC Trial Examination Mathematics Advanced",
+            "school": "Moriah College",
             "grade": "11",
             "origin": "teacher"
           }
@@ -22602,6 +22858,64 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "moriah2021-q12",
+          "type": "mc",
+          "stem": "A crystal growth furnace is designed to manufacture components for a space shuttle. For proper growth the temperature must by controlled accurately by adjusting the input power. Suppose the relationship is given by \\(T=0.1w^{2}+2.155w+20\\), where \\(T\\) is the temperature in Celsius and \\(w\\) is the (positive) input power in watts. How much power is needed to maintain the temperature at \\(200^{\\circ}C\\)?",
+          "difficulty": "medium",
+          "options": [
+            "\\(33.0\\) watts",
+            "\\(54.5\\) watts",
+            "\\(-54.5\\) watts",
+            "\\(180\\) watts"
+          ],
+          "answer": 0,
+          "hint": "Put \\(T=200\\), rearrange to a quadratic \\(aw^{2}+bw+c=0\\) (one side zero), use the QUADRATIC FORMULA, then keep only the POSITIVE root (the question says \\(w\\) is positive).",
+          "steps": [
+            {
+              "explain": "Substitute \\(T=200\\).",
+              "work": "\\(200=0.1w^{2}+2.155w+20\\)"
+            },
+            {
+              "explain": "Subtract 200 from both sides to make one side 0.",
+              "work": "\\(0.1w^{2}+2.155w-180=0\\qquad(a=0.1,\\ b=2.155,\\ c=-180)\\)"
+            },
+            {
+              "explain": "Quadratic formula: \\(w=\\dfrac{-b\\pm\\sqrt{b^{2}-4ac}}{2a}\\). Discriminant: \\(2.155^{2}-4(0.1)(-180)=4.644+72=76.644\\), \\(\\sqrt{76.644}=8.755\\).",
+              "work": "\\(w=\\dfrac{-2.155\\pm8.755}{0.2}\\)"
+            },
+            {
+              "explain": "Two roots: \\(\\dfrac{6.600}{0.2}=33.0\\) and \\(\\dfrac{-10.910}{0.2}=-54.5\\).",
+              "work": "\\(w=33.0\\ \\ \\text{or}\\ \\ w=-54.5\\)"
+            },
+            {
+              "explain": "Power must be POSITIVE, so reject \\(-54.5\\). Check: \\(0.1(33)^{2}+2.155(33)+20=108.9+71.1+20=200\\) ✓.",
+              "work": "\\(w\\approx33.0\\ \\text{watts}\\)"
+            },
+            {
+              "explain": "Why not the others: B is the absolute value of the negative root; C is the negative root (not allowed); D mixes up 200 with 20 (\\(200-20=180\\), which is the constant term, not \\(w\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "How much power is needed to maintain the temperature at \\(200^{\\circ}C\\)?",
+              "note": "\\(0.1w^{2}+2.155w-180=0\\); quadratic formula; positive root."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Moriah College 2021 HSC Trial Examination Mathematics Advanced",
+            "school": "Moriah College",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -24988,6 +25302,63 @@
           "meta": {
             "source": "International Grammar School 2020 Assessment Task 3 Mathematics Advanced",
             "school": "International Grammar School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "moriah2021-q4",
+          "type": "mc",
+          "stem": "Which interval gives the range of the relation \\(x^{2}+(y-1)^{2}=4\\)?",
+          "difficulty": "medium",
+          "options": [
+            "\\([-2,2]\\)",
+            "\\((-2,2)\\)",
+            "\\([0,1]\\)",
+            "\\([-1,3]\\)"
+          ],
+          "answer": 3,
+          "hint": "\\(x^{2}+(y-k)^{2}=r^{2}\\) is a CIRCLE with centre \\((0,k)\\) and radius \\(r\\). The RANGE is the set of \\(y\\)-values: from \\(k-r\\) (lowest point) up to \\(k+r\\) (highest point). The \\(x\\)-values give the DOMAIN.",
+          "steps": [
+            {
+              "explain": "Compare with \\(x^{2}+(y-1)^{2}=2^{2}\\): centre \\((0,1)\\), radius \\(2\\).",
+              "work": "\\(\\text{centre }(0,1),\\qquad r=2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 280\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><line x1=\"30.0\" y1=\"180.0\" x2=\"290.0\" y2=\"180.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"272.0\" x2=\"150.0\" y2=\"12.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"290.0\" y1=\"180.0\" x2=\"283.1\" y2=\"176.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"290.0\" y1=\"180.0\" x2=\"283.1\" y2=\"184.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"12.0\" x2=\"146.0\" y2=\"18.9\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"12.0\" x2=\"154.0\" y2=\"18.9\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"288.0\" y=\"196.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><text x=\"158.0\" y=\"16.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">y</text><circle cx=\"150\" cy=\"130\" r=\"100\" fill=\"#e0e7ff\" fill-opacity=\"0.4\" stroke=\"#3b4ea8\" stroke-width=\"3\"/><circle cx=\"150\" cy=\"130\" r=\"3.5\" fill=\"#3b4ea8\"/><text x=\"158.0\" y=\"146.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">(0, 1)</text><line x1=\"150.0\" y1=\"130.0\" x2=\"150.0\" y2=\"30.0\" stroke=\"#dc2626\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"130.0\" x2=\"150.0\" y2=\"230.0\" stroke=\"#047857\" stroke-width=\"3\" stroke-linecap=\"round\"/><circle cx=\"150\" cy=\"30\" r=\"5\" fill=\"#dc2626\"/><circle cx=\"150\" cy=\"230\" r=\"5\" fill=\"#047857\"/><text x=\"160.0\" y=\"34.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">y = 3 (top)</text><text x=\"160.0\" y=\"234.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">y = −1 (bottom)</text><text x=\"144.0\" y=\"80.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><text x=\"144.0\" y=\"180.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text></svg>"
+              }
+            },
+            {
+              "explain": "Lowest point: centre \\(y\\) minus radius.",
+              "work": "\\(y_{min}=1-2=-1\\)"
+            },
+            {
+              "explain": "Highest point: centre \\(y\\) plus radius.",
+              "work": "\\(y_{max}=1+2=3\\)"
+            },
+            {
+              "explain": "Range \\(=[-1,3]\\). (The domain would be \\([-2,2]\\), the \\(x\\)-values.)",
+              "work": "\\(\\text{range}=[-1,3]\\)"
+            },
+            {
+              "explain": "Why not the others: A (\\([-2,2]\\)) is the DOMAIN (the \\(x\\)-values) and B is the domain with the ends removed; C \\([0,1]\\) is a guess based on the centre.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">D</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Which interval gives the range of the relation",
+              "note": "Circle centre \\((0,1)\\), radius 2: \\(y\\) from \\(1-2\\) to \\(1+2\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Moriah College 2021 HSC Trial Examination Mathematics Advanced",
+            "school": "Moriah College",
             "grade": "11",
             "origin": "teacher"
           }
@@ -29583,6 +29954,56 @@
               "note": "Inverse variation has the form t=k/n. Since n counts people, use positive whole-number values; as n grows, t decreases quickly at first and then levels off."
             }
           ]
+        },
+        {
+          "id": "moriah2021-q23",
+          "type": "mc",
+          "stem": "The time taken to complete a building project varies inversely with the number of builders. If the building can be completed in 180 days by 55 workers, find how many workers will be needed to finish the project in exactly 99 days",
+          "difficulty": "medium",
+          "options": [
+            "\\(100\\)",
+            "\\(60\\)",
+            "\\(180\\)",
+            "\\(30\\)"
+          ],
+          "answer": 0,
+          "hint": "INVERSE variation: \\(T=\\dfrac{k}{W}\\) (more workers, less time). Find the constant \\(k\\) from the first situation, then use it for the second. Check the answer makes sense: fewer days needs MORE workers.",
+          "steps": [
+            {
+              "explain": "Write the relationship: time varies inversely with workers.",
+              "work": "\\(T=\\dfrac{k}{W}\\)"
+            },
+            {
+              "explain": "Find \\(k\\) using \\(T=180\\), \\(W=55\\): multiply both sides by 55.",
+              "work": "\\(180=\\dfrac{k}{55}\\ \\Rightarrow\\ k=180\\times55=9900\\)"
+            },
+            {
+              "explain": "Now use \\(T=99\\) days: \\(99=\\dfrac{9900}{W}\\).",
+              "work": "\\(W=\\dfrac{9900}{99}=100\\)"
+            },
+            {
+              "explain": "Check: 99 days is less than 180 days, so MORE workers than 55 are needed: 100 ✓. (Time \\(\\times\\) workers \\(=9900\\) always.) Why not the others: B (60) uses a direct (not inverse) proportion error; C (180) copies the days; D (30) is too few.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "find how many workers will be needed",
+              "note": "\\(T=\\dfrac{k}{W}\\); \\(k=180\\times55\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Moriah College 2021 HSC Trial Examination Mathematics Advanced",
+            "school": "Moriah College",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     }
