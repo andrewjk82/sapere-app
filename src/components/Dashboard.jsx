@@ -546,14 +546,15 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
           </header>
         )}
         {!isAdmin && (
-          <div className="student-hero-container" style={{ display: 'grid', gridTemplateColumns: isMobile ? 'minmax(0, 1fr)' : 'repeat(12, 1fr)', gap: isMobile ? '16px' : '24px', padding: isMobile ? '0 0 16px 0' : '0 0 24px 0', alignItems: 'stretch' }}>
-            <div style={{ gridColumn: '1 / -1' }}>
+          <div className="student-hero-container dash-split" style={{ display: 'grid', gap: isMobile ? '16px' : '24px', padding: isMobile ? '0 0 16px 0' : '0 0 24px 0', alignItems: 'start' }}>
+            {/* Bingo on the left, everything else beside it, so the whole dashboard fits on one screen. */}
+            <div className="dash-split__main">
               <DailyBingoCard uid={user?.uid} profile={profile} planItems={todayPlan} studyRoomOn={studyRoomOn} setActiveTab={setActiveTab} showToast={showToast} compact={isMobile} />
-              <div id="sapere-study-room" style={{ display: 'grid', gridTemplateColumns: isMobile ? 'minmax(0, 1fr)' : 'repeat(auto-fill, minmax(210px, 1fr))', gap: '14px', marginTop: 14 }}>
+            </div>
+            <div className="dash-split__side" style={{ display: 'grid', gap: isMobile ? '16px' : '18px', alignItems: 'start', padding: 0 }}>
+              <div id="sapere-study-room" className="dash-split__room">
                 <OnlineStudySessionCard onConfig={(c) => setStudyRoomOn(Boolean(c?.enabled && c?.zoomLink))} />
               </div>
-            </div>
-            <div style={{ gridColumn: '1 / -1', display: 'grid', gridTemplateColumns: isMobile ? 'minmax(0, 1fr)' : 'repeat(auto-fit, minmax(300px, 1fr))', gap: isMobile ? '16px' : '20px', alignItems: 'start', padding: 0 }}>
               {/* Journey Map snapshot */}
               <JourneyMapSnapshot
                 profile={profile}
