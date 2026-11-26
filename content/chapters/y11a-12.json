@@ -7001,114 +7001,6 @@
             "grade": "11",
             "origin": "teacher"
           }
-        },
-        {
-          "id": "moriah2021-q29a",
-          "type": "mc",
-          "stem": "Albert borrows \\(\\text{\\textdollar}200\\,000\\) at \\(6\\%\\) per annum compounded monthly. He makes monthly payments of \\(\\text{\\textdollar}2000\\) at the end of each month. \\(B_n\\) is the balance owing after \\(n\\) months. Show that the amount owing after 2 years is given by \\(B_{24}=\\text{\\textdollar}174\\,568.04\\). Which working is correct?",
-          "difficulty": "hard",
-          "options": [
-            "\\(B_{24}=200000(1.005)^{24}-2000\\left[\\dfrac{1.005^{24}-1}{1.005-1}\\right]\\)",
-            "\\(B_{24}=200000(1.06)^{24}-2000\\left[\\dfrac{1.06^{24}-1}{1.06-1}\\right]\\)",
-            "\\(B_{24}=200000(1.005)^{2}-2000\\left[\\dfrac{1.005^{2}-1}{1.005-1}\\right]\\)",
-            "\\(B_{24}=200000(1.005)^{24}-2000(24)\\)"
-          ],
-          "answer": 0,
-          "hint": "Monthly rate: \\(\\dfrac{6\\%}{12}=0.5\\%=0.005\\), so each month multiplies by \\(1.005\\). \\(B_1=200000(1.005)-2000\\), then repeat. The payments form a GEOMETRIC series \\(1+1.005+1.005^{2}+\\dots\\) (24 terms).",
-          "steps": [
-            {
-              "explain": "Monthly rate \\(r=\\dfrac{0.06}{12}=0.005\\). After 1 month: add interest, subtract the payment.",
-              "work": "\\(B_1=200000(1.005)-2000\\)"
-            },
-            {
-              "explain": "After 2 months: apply again, expand.",
-              "work": "\\(B_2=200000(1.005)^{2}-2000(1.005)-2000=200000(1.005)^{2}-2000(1+1.005)\\)"
-            },
-            {
-              "explain": "Pattern for \\(n\\) months: the payments form a geometric series with first term 1, ratio 1.005, \\(n\\) terms.",
-              "work": "\\(B_n=200000(1.005)^{n}-2000\\left(1+1.005+\\dots+1.005^{n-1}\\right)\\)"
-            },
-            {
-              "explain": "Sum of GP \\(S_n=\\dfrac{a(r^{n}-1)}{r-1}\\) with \\(n=24\\).",
-              "work": "\\(B_{24}=200000(1.005)^{24}-2000\\left[\\dfrac{1.005^{24}-1}{1.005-1}\\right]\\)"
-            },
-            {
-              "explain": "Calculate: \\(200000(1.005)^{24}=225\\,435.9\\ldots\\) and \\(2000\\times25.4320\\ldots=50\\,864.0\\ldots\\).",
-              "work": "\\(B_{24}=\\text{\\textdollar}174\\,568.04\\)"
-            },
-            {
-              "explain": "Why not the others: B uses 6% per month; C uses 2 months (not 24); D treats the payments as simple (no interest on the amount paid).",
-              "work": ""
-            },
-            {
-              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
-              "work": ""
-            }
-          ],
-          "keyPoints": [
-            {
-              "text": "Show that the amount owing after 2 years is given by",
-              "note": "\\(r=0.005\\); payments form a GP."
-            }
-          ],
-          "timeLimit": 60,
-          "xp": 1,
-          "meta": {
-            "source": "Moriah College 2021 HSC Trial Examination Mathematics Advanced",
-            "school": "Moriah College",
-            "grade": "11",
-            "origin": "teacher"
-          }
-        },
-        {
-          "id": "moriah2021-q29b",
-          "type": "mc",
-          "stem": "Albert decides he wants to pay the balance of the loan off after a further 8 years. What should his new monthly payment be? (Use the balance \\(\\text{\\textdollar}174\\,568.04\\) after 2 years.)",
-          "difficulty": "hard",
-          "options": [
-            "\\(\\text{\\textdollar}2294.07\\)",
-            "\\(\\text{\\textdollar}2000.00\\)",
-            "\\(\\text{\\textdollar}1818.50\\)",
-            "\\(\\text{\\textdollar}2582.20\\)"
-          ],
-          "answer": 0,
-          "hint": "Further 8 years \\(=96\\) months. Let \\(M\\) be the new payment and set the balance after 96 months to ZERO: \\(174568.04(1.005)^{96}-M\\left[\\dfrac{1.005^{96}-1}{1.005-1}\\right]=0\\). Solve for \\(M\\).",
-          "steps": [
-            {
-              "explain": "New 8 years \\(=8\\times12=96\\) months, starting balance \\(\\text{\\textdollar}174\\,568.04\\).",
-              "work": "\\(A_{96}=174568.04(1.005)^{96}-M\\left[\\dfrac{1.005^{96}-1}{0.005}\\right]=0\\)"
-            },
-            {
-              "explain": "Rearrange for \\(M\\).",
-              "work": "\\(M=\\dfrac{174568.04(1.005)^{96}\\times0.005}{1.005^{96}-1}\\)"
-            },
-            {
-              "explain": "Calculate: \\(1.005^{96}=1.6141\\ldots\\); numerator \\(=174568.04\\times1.6141\\times0.005=1409.0\\); denominator \\(0.6141\\).",
-              "work": "\\(M\\approx\\text{\\textdollar}2294.07\\)"
-            },
-            {
-              "explain": "Why not the others: B is the old payment (would not pay off in 8 years); C divides the balance by 96 and ignores interest (\\(\\dfrac{174568.04}{96}\\approx1818.4\\)); D is too high.",
-              "work": ""
-            },
-            {
-              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
-              "work": ""
-            }
-          ],
-          "keyPoints": [
-            {
-              "text": "What should his new monthly payment be?",
-              "note": "\\(n=96\\); set balance \\(=0\\)."
-            }
-          ],
-          "timeLimit": 60,
-          "xp": 1,
-          "meta": {
-            "source": "Moriah College 2021 HSC Trial Examination Mathematics Advanced",
-            "school": "Moriah College",
-            "grade": "11",
-            "origin": "teacher"
-          }
         }
       ]
     },
@@ -8825,6 +8717,108 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "moriah2021-q25a",
+          "type": "mc",
+          "stem": "Terry will play in the semi-final of a tennis tournament. If Terry wins the semi-final she will progress to the final. If she loses she will not progress. If Terry wins the final she will be champion. The probability that Terry will win the semi-final is \\(p\\). If she wins the semi-final then the probability she will be the champion is \\(0.6\\). Complete the values in the tree diagram. What are the two missing values on the branches from \\(\\text{Terry wins the semi-final}\\)?",
+          "difficulty": "easy",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 250\" width=\"100%\" height=\"auto\" style=\"max-width:380px;display:block;margin:0 auto\"><line x1=\"18.0\" y1=\"125.0\" x2=\"118.0\" y2=\"70.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"18.0\" y1=\"125.0\" x2=\"118.0\" y2=\"190.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"55.0\" y=\"102.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">p</text><text x=\"55.0\" y=\"168.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1 − p</text><text x=\"136.0\" y=\"74.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Wins semi</text><text x=\"136.0\" y=\"194.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Loses semi</text><line x1=\"205.0\" y1=\"70.0\" x2=\"270.0\" y2=\"30.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><rect x=\"221.0\" y=\"32.0\" width=\"34\" height=\"24\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><text x=\"278.0\" y=\"35.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Wins final</text><line x1=\"205.0\" y1=\"70.0\" x2=\"270.0\" y2=\"110.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><rect x=\"221.0\" y=\"84.0\" width=\"34\" height=\"24\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><text x=\"278.0\" y=\"115.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Loses final</text></svg>"
+          },
+          "options": [
+            "Wins the final: \\(0.6\\); loses the final: \\(0.4\\)",
+            "Wins the final: \\(0.6\\); loses the final: \\(0.6\\)",
+            "Wins the final: \\(p\\times0.6\\); loses the final: \\(p\\times0.4\\)",
+            "Wins the final: \\(0.4\\); loses the final: \\(0.6\\)"
+          ],
+          "answer": 0,
+          "hint": "The two branches leaving the same node must add to 1. The probability she is champion GIVEN she won the semi-final is the value on the 'wins the final' branch.",
+          "steps": [
+            {
+              "explain": "Given she wins the semi-final, \\(P(\\text{champion})=0.6\\): this is the 'wins the final' branch.",
+              "work": "\\(P(\\text{wins final}\\mid\\text{wins semi})=0.6\\)"
+            },
+            {
+              "explain": "Branches from one node sum to 1, so 'loses the final' is \\(1-0.6\\).",
+              "work": "\\(1-0.6=0.4\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 250\" width=\"100%\" height=\"auto\" style=\"max-width:380px;display:block;margin:0 auto\"><line x1=\"18.0\" y1=\"125.0\" x2=\"118.0\" y2=\"70.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"18.0\" y1=\"125.0\" x2=\"118.0\" y2=\"190.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"55.0\" y=\"102.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">p</text><text x=\"55.0\" y=\"168.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1 − p</text><text x=\"136.0\" y=\"74.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Wins semi</text><text x=\"136.0\" y=\"194.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Loses semi</text><line x1=\"205.0\" y1=\"70.0\" x2=\"270.0\" y2=\"30.0\" stroke=\"#047857\" stroke-width=\"2\" stroke-linecap=\"round\"/><rect x=\"221.0\" y=\"32.0\" width=\"34\" height=\"24\" fill=\"#fff\" stroke=\"#047857\" stroke-width=\"1.8\"/><text x=\"238.0\" y=\"49.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0.6</text><text x=\"278.0\" y=\"35.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Wins final</text><line x1=\"205.0\" y1=\"70.0\" x2=\"270.0\" y2=\"110.0\" stroke=\"#047857\" stroke-width=\"2\" stroke-linecap=\"round\"/><rect x=\"221.0\" y=\"84.0\" width=\"34\" height=\"24\" fill=\"#fff\" stroke=\"#047857\" stroke-width=\"1.8\"/><text x=\"238.0\" y=\"101.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0.4</text><text x=\"278.0\" y=\"115.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Loses final</text></svg>"
+              }
+            },
+            {
+              "explain": "Why not the others: B has branches summing to 1.2; C multiplies by \\(p\\) (that is the END of the path, not the branch); D swaps the values.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Complete the values in the tree diagram.",
+              "note": "Branches from one node add to 1."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Moriah College 2021 HSC Trial Examination Mathematics Advanced",
+            "school": "Moriah College",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "moriah2021-q25b",
+          "type": "mc",
+          "stem": "The probability that Terry will not be the champion is \\(0.58\\). Find the value of \\(p\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(p=0.7\\)",
+            "\\(p=0.3\\)",
+            "\\(p=0.42\\)",
+            "\\(p=0.58\\)"
+          ],
+          "answer": 0,
+          "hint": "Add the probabilities of ALL paths that end in 'not champion': (loses the semi) OR (wins the semi AND loses the final). Multiply along each path, add between paths, set equal to 0.58.",
+          "steps": [
+            {
+              "explain": "Path 1: loses the semi-final, probability \\(1-p\\). Path 2: wins semi then loses final, probability \\(p\\times0.4\\).",
+              "work": "\\(P(\\text{not champion})=(1-p)+0.4p\\)"
+            },
+            {
+              "explain": "Set equal to 0.58 and simplify.",
+              "work": "\\(1-0.6p=0.58\\)"
+            },
+            {
+              "explain": "Solve.",
+              "work": "\\(-0.6p=-0.42\\ \\Rightarrow\\ p=\\dfrac{0.42}{0.6}=0.7\\)"
+            },
+            {
+              "explain": "Why not the others: B (0.3) is \\(1-p\\); C uses 0.42 directly; D copies the given probability.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the value of \\(p\\).",
+              "note": "\\((1-p)+0.4p=0.58\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Moriah College 2021 HSC Trial Examination Mathematics Advanced",
+            "school": "Moriah College",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -10289,6 +10283,52 @@
           "meta": {
             "source": "Kambala 2020 Preliminary Yearly Mathematics Advanced",
             "school": "Kambala",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "moriah2021-q25c",
+          "type": "mc",
+          "stem": "Given that Terry did not become the champion, find the probability she lost in the semi-final. (Use \\(p=0.7\\).)",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{15}{29}\\)",
+            "\\(\\dfrac{3}{10}\\)",
+            "\\(\\dfrac{14}{29}\\)",
+            "\\(\\dfrac{29}{50}\\)"
+          ],
+          "answer": 0,
+          "hint": "'Given that' means conditional probability: \\(P(A\\mid B)=\\dfrac{P(A\\cap B)}{P(B)}\\). Here A = lost the semi, B = not champion (probability 0.58).",
+          "steps": [
+            {
+              "explain": "Losing the semi-final already means not champion, so the intersection is just \\(1-p=1-0.7=0.3\\).",
+              "work": "\\(P(\\text{lost semi}\\cap\\text{not champion})=0.3\\)"
+            },
+            {
+              "explain": "Divide by \\(P(\\text{not champion})=0.58\\).",
+              "work": "\\(P=\\dfrac{0.3}{0.58}=\\dfrac{30}{58}=\\dfrac{15}{29}\\)"
+            },
+            {
+              "explain": "Why not the others: B is the unconditional \\(0.3\\) (forgets to divide by 0.58); C is \\(\\dfrac{0.28}{0.58}\\) (the other path); D is 0.58 as a fraction.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Given that Terry did not become the champion, find the probability she lost in the semi-final.",
+              "note": "\\(P(A|B)=\\dfrac{P(A\\cap B)}{P(B)}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Moriah College 2021 HSC Trial Examination Mathematics Advanced",
+            "school": "Moriah College",
             "grade": "11",
             "origin": "teacher"
           }

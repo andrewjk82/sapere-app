@@ -4283,6 +4283,160 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "moriah2021-q26a",
+          "type": "mc",
+          "stem": "The half-life of a substance is the time taken to decay to half the original mass. Strontium-90 has a half-life of 28 days. Its mass \\(S\\) is given by \\(S=S_{0}e^{-kt}\\) where \\(S\\) is measured in mg and \\(t\\) is measured in days. A sample has an initial mass of 50 mg. Find the value of \\(k\\) correct to 3 decimal places.",
+          "difficulty": "medium",
+          "options": [
+            "\\(k=0.025\\)",
+            "\\(k=0.036\\)",
+            "\\(k=0.693\\)",
+            "\\(k=0.050\\)"
+          ],
+          "answer": 0,
+          "hint": "After one half-life (\\(t=28\\)) the mass is HALF of 50, i.e. 25 mg. Substitute and take natural logs of both sides.",
+          "steps": [
+            {
+              "explain": "At \\(t=28\\), \\(S=25\\).",
+              "work": "\\(25=50e^{-28k}\\)"
+            },
+            {
+              "explain": "Divide by 50.",
+              "work": "\\(e^{-28k}=\\dfrac{1}{2}\\)"
+            },
+            {
+              "explain": "Take \\(\\ln\\) of both sides: \\(\\ln\\dfrac{1}{2}=-\\ln2\\).",
+              "work": "\\(-28k=-\\ln2\\ \\Rightarrow\\ k=\\dfrac{\\ln2}{28}\\)"
+            },
+            {
+              "explain": "Calculate: \\(\\dfrac{0.6931}{28}=0.02475\\ldots\\approx0.025\\).",
+              "work": "\\(k\\approx0.025\\)"
+            },
+            {
+              "explain": "Why not the others: B (0.036) is \\(\\dfrac{\\ln2}{19.25}\\), a wrong half-life; C is \\(\\ln2\\) (forgot to divide by 28); D is \\(\\dfrac{1.4}{28}\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the value of \\(k\\) correct to 3 decimal places.",
+              "note": "\\(25=50e^{-28k}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Moriah College 2021 HSC Trial Examination Mathematics Advanced",
+            "school": "Moriah College",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "moriah2021-q26b",
+          "type": "mc",
+          "stem": "Use the exact value of \\(k\\) to find the mass remaining after 40 days. (Give mg correct to 3 decimal places.)",
+          "difficulty": "medium",
+          "options": [
+            "\\(18.575\\) mg",
+            "\\(18.2\\) mg",
+            "\\(25.0\\) mg",
+            "\\(9.3\\) mg"
+          ],
+          "answer": 0,
+          "hint": "Use the EXACT \\(k=\\dfrac{\\ln2}{28}\\) from your calculator memory, not the rounded 0.025. Substitute \\(t=40\\).",
+          "steps": [
+            {
+              "explain": "Substitute \\(S_0=50\\), \\(k=\\dfrac{\\ln2}{28}\\), \\(t=40\\).",
+              "work": "\\(S=50e^{-\\frac{\\ln2}{28}\\times40}\\)"
+            },
+            {
+              "explain": "Exponent: \\(-\\dfrac{40\\ln2}{28}=-\\dfrac{27.726}{28}=-0.99021\\).",
+              "work": "\\(S=50e^{-0.99021}\\)"
+            },
+            {
+              "explain": "Calculate.",
+              "work": "\\(S\\approx18.575\\ \\text{mg}\\)"
+            },
+            {
+              "explain": "Why not the others: B is the mass after 28+ days with a wrong exponent; C is the mass after one half-life; D is the mass after about 57 days.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Use the exact value of \\(k\\) to find the mass remaining after 40 days.",
+              "note": "\\(S=50e^{-\\frac{\\ln2}{28}\\times40}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Moriah College 2021 HSC Trial Examination Mathematics Advanced",
+            "school": "Moriah College",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "moriah2021-q26c",
+          "type": "mc",
+          "stem": "How long does it take (to the nearest day) for the sample to decay to a mass of 2 mg?",
+          "difficulty": "hard",
+          "options": [
+            "\\(130\\) days",
+            "\\(28\\) days",
+            "\\(91\\) days",
+            "\\(112\\) days"
+          ],
+          "answer": 0,
+          "hint": "Substitute \\(S=2\\) and use the exact \\(k\\). Isolate \\(e^{-kt}\\), take \\(\\ln\\), divide. Note \\(\\ln\\dfrac{1}{25}=-\\ln25\\). (The printed solution repeats part (a) by mistake.)",
+          "steps": [
+            {
+              "explain": "Set \\(S=2\\), \\(S_0=50\\).",
+              "work": "\\(2=50e^{-kt}\\ \\Rightarrow\\ e^{-kt}=\\dfrac{1}{25}\\)"
+            },
+            {
+              "explain": "Take \\(\\ln\\): \\(-kt=\\ln\\dfrac1{25}=-\\ln25\\), so \\(t=\\dfrac{\\ln25}{k}\\).",
+              "work": "\\(t=\\dfrac{\\ln25}{k}=\\dfrac{28\\ln25}{\\ln2}\\)"
+            },
+            {
+              "explain": "Calculate: \\(\\dfrac{28\\times3.2189}{0.6931}=130.03\\).",
+              "work": "\\(t\\approx130\\ \\text{days}\\)"
+            },
+            {
+              "explain": "Check: \\(25=2^{4.64}\\); 4.64 half-lives \\(\\times\\,28=130\\) ✓. Why not the others: B (28) is one half-life; C (91) and D (112) are 3.25 and 4 half-lives.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "How long does it take (to the nearest day) for the sample to decay to a mass of 2 mg?",
+              "note": "\\(t=\\dfrac{\\ln25}{k}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Moriah College 2021 HSC Trial Examination Mathematics Advanced",
+            "school": "Moriah College",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     }

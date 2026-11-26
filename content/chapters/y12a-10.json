@@ -9398,6 +9398,167 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "moriah2021-q30a",
+          "type": "mc",
+          "stem": "A probability density function is given by \\(f(x)=\\begin{cases}\\dfrac{1}{2\\sqrt{4-x}} & 0\\le x\\le3\\\\ 0 & \\text{otherwise}\\end{cases}\\). Prove that this is a valid probability density function (you may assume \\(f(x)\\ge0\\)). What must be shown, and what is the result?",
+          "difficulty": "medium",
+          "options": [
+            "The total area \\(\\displaystyle\\int_{0}^{3}\\dfrac{1}{2\\sqrt{4-x}}dx\\) equals 1",
+            "The total area \\(\\displaystyle\\int_{0}^{3}\\dfrac{1}{2\\sqrt{4-x}}dx\\) equals \\(\\dfrac{1}{2}\\)",
+            "\\(f(x)\\) is increasing on \\([0,3]\\)",
+            "The total area \\(\\displaystyle\\int_{0}^{3}\\dfrac{1}{2\\sqrt{4-x}}dx\\) equals 3"
+          ],
+          "answer": 0,
+          "hint": "A valid PDF needs \\(f(x)\\ge0\\) (given) and TOTAL AREA \\(=\\displaystyle\\int f(x)\\,dx=1\\). Write \\(\\dfrac{1}{\\sqrt{4-x}}=(4-x)^{-\\frac12}\\) and integrate (the chain rule gives a MINUS from the \\(-x\\)).",
+          "steps": [
+            {
+              "explain": "Rewrite with a negative power.",
+              "work": "\\(\\int_{0}^{3}\\dfrac{1}{2\\sqrt{4-x}}dx=\\dfrac{1}{2}\\int_{0}^{3}(4-x)^{-\\frac12}dx\\)"
+            },
+            {
+              "explain": "Antiderivative: \\(\\dfrac{(4-x)^{\\frac12}}{\\dfrac{1}{2}}\\times(-1)=-2\\sqrt{4-x}\\). So with the \\(\\dfrac{1}{2}\\) outside: \\(-\\sqrt{4-x}\\).",
+              "work": "\\(=\\left[-\\sqrt{4-x}\\right]_{0}^{3}\\)"
+            },
+            {
+              "explain": "Substitute limits: \\(x=3\\): \\(-\\sqrt1=-1\\). \\(x=0\\): \\(-\\sqrt4=-2\\).",
+              "work": "\\(=(-1)-(-2)=1\\)"
+            },
+            {
+              "explain": "Total area is 1 and \\(f\\ge0\\), so it is a valid PDF.",
+              "work": "\\(\\int_{0}^{3}f(x)\\,dx=1\\ \\checkmark\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 230\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><line x1=\"42.0\" y1=\"190.0\" x2=\"338.0\" y2=\"190.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"50.0\" y1=\"198.0\" x2=\"50.0\" y2=\"79.5\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"338.0\" y1=\"190.0\" x2=\"331.1\" y2=\"186.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"338.0\" y1=\"190.0\" x2=\"331.1\" y2=\"194.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"50.0\" y1=\"79.5\" x2=\"46.0\" y2=\"86.4\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"50.0\" y1=\"79.5\" x2=\"54.0\" y2=\"86.4\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><polygon points=\"50.0,190 50.0,157.5 51.6,157.4 53.2,157.3 54.8,157.3 56.4,157.2 58.0,157.1 59.6,157.0 61.2,156.9 62.8,156.8 64.4,156.7 66.0,156.7 67.6,156.6 69.2,156.5 70.8,156.4 72.4,156.3 74.0,156.2 75.6,156.1 77.2,156.0 78.8,155.9 80.4,155.8 82.0,155.7 83.6,155.6 85.2,155.6 86.8,155.5 88.4,155.4 90.0,155.3 91.6,155.2 93.2,155.1 94.8,155.0 96.4,154.9 98.0,154.7 99.6,154.6 101.2,154.5 102.8,154.4 104.4,154.3 106.0,154.2 107.6,154.1 109.2,154.0 110.8,153.9 112.4,153.8 114.0,153.7 115.6,153.5 117.2,153.4 118.8,153.3 120.4,153.2 122.0,153.1 123.6,153.0 125.2,152.8 126.8,152.7 128.4,152.6 130.0,152.5 131.6,152.3 133.2,152.2 134.8,152.1 136.4,152.0 138.0,151.8 139.6,151.7 141.2,151.6 142.8,151.4 144.4,151.3 146.0,151.2 147.6,151.0 149.2,150.9 150.8,150.7 152.4,150.6 154.0,150.4 155.6,150.3 157.2,150.1 158.8,150.0 160.4,149.8 162.0,149.7 163.6,149.5 165.2,149.4 166.8,149.2 168.4,149.1 170.0,148.9 171.6,148.7 173.2,148.6 174.8,148.4 176.4,148.2 178.0,148.0 179.6,147.9 181.2,147.7 182.8,147.5 184.4,147.3 186.0,147.1 187.6,147.0 189.2,146.8 190.8,146.6 192.4,146.4 194.0,146.2 195.6,146.0 197.2,145.8 198.8,145.6 200.4,145.4 202.0,145.1 203.6,144.9 205.2,144.7 206.8,144.5 208.4,144.3 210.0,144.0 211.6,143.8 213.2,143.6 214.8,143.3 216.4,143.1 218.0,142.8 219.6,142.6 221.2,142.3 222.8,142.1 224.4,141.8 226.0,141.6 227.6,141.3 229.2,141.0 230.8,140.7 232.4,140.4 234.0,140.1 235.6,139.9 237.2,139.6 238.8,139.2 240.4,138.9 242.0,138.6 243.6,138.3 245.2,138.0 246.8,137.6 248.4,137.3 250.0,136.9 251.6,136.6 253.2,136.2 254.8,135.8 256.4,135.5 258.0,135.1 259.6,134.7 261.2,134.3 262.8,133.8 264.4,133.4 266.0,133.0 267.6,132.5 269.2,132.1 270.8,131.6 272.4,131.2 274.0,130.7 275.6,130.2 277.2,129.6 278.8,129.1 280.4,128.6 282.0,128.0 283.6,127.5 285.2,126.9 286.8,126.3 288.4,125.6 290.0,125.0 290.0,190\" fill=\"#3b4ea8\" fill-opacity=\"0.25\" stroke=\"none\"/><polyline points=\"50.0,157.5 51.6,157.4 53.2,157.3 54.8,157.3 56.4,157.2 58.0,157.1 59.6,157.0 61.2,156.9 62.8,156.8 64.4,156.7 66.0,156.7 67.6,156.6 69.2,156.5 70.8,156.4 72.4,156.3 74.0,156.2 75.6,156.1 77.2,156.0 78.8,155.9 80.4,155.8 82.0,155.7 83.6,155.6 85.2,155.6 86.8,155.5 88.4,155.4 90.0,155.3 91.6,155.2 93.2,155.1 94.8,155.0 96.4,154.9 98.0,154.7 99.6,154.6 101.2,154.5 102.8,154.4 104.4,154.3 106.0,154.2 107.6,154.1 109.2,154.0 110.8,153.9 112.4,153.8 114.0,153.7 115.6,153.5 117.2,153.4 118.8,153.3 120.4,153.2 122.0,153.1 123.6,153.0 125.2,152.8 126.8,152.7 128.4,152.6 130.0,152.5 131.6,152.3 133.2,152.2 134.8,152.1 136.4,152.0 138.0,151.8 139.6,151.7 141.2,151.6 142.8,151.4 144.4,151.3 146.0,151.2 147.6,151.0 149.2,150.9 150.8,150.7 152.4,150.6 154.0,150.4 155.6,150.3 157.2,150.1 158.8,150.0 160.4,149.8 162.0,149.7 163.6,149.5 165.2,149.4 166.8,149.2 168.4,149.1 170.0,148.9 171.6,148.7 173.2,148.6 174.8,148.4 176.4,148.2 178.0,148.0 179.6,147.9 181.2,147.7 182.8,147.5 184.4,147.3 186.0,147.1 187.6,147.0 189.2,146.8 190.8,146.6 192.4,146.4 194.0,146.2 195.6,146.0 197.2,145.8 198.8,145.6 200.4,145.4 202.0,145.1 203.6,144.9 205.2,144.7 206.8,144.5 208.4,144.3 210.0,144.0 211.6,143.8 213.2,143.6 214.8,143.3 216.4,143.1 218.0,142.8 219.6,142.6 221.2,142.3 222.8,142.1 224.4,141.8 226.0,141.6 227.6,141.3 229.2,141.0 230.8,140.7 232.4,140.4 234.0,140.1 235.6,139.9 237.2,139.6 238.8,139.2 240.4,138.9 242.0,138.6 243.6,138.3 245.2,138.0 246.8,137.6 248.4,137.3 250.0,136.9 251.6,136.6 253.2,136.2 254.8,135.8 256.4,135.5 258.0,135.1 259.6,134.7 261.2,134.3 262.8,133.8 264.4,133.4 266.0,133.0 267.6,132.5 269.2,132.1 270.8,131.6 272.4,131.2 274.0,130.7 275.6,130.2 277.2,129.6 278.8,129.1 280.4,128.6 282.0,128.0 283.6,127.5 285.2,126.9 286.8,126.3 288.4,125.6 290.0,125.0\" fill=\"none\" stroke=\"#3b4ea8\" stroke-width=\"3\"/><line x1=\"50.0\" y1=\"187.0\" x2=\"50.0\" y2=\"193.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"50.0\" y=\"207.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0</text><line x1=\"130.0\" y1=\"187.0\" x2=\"130.0\" y2=\"193.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"130.0\" y=\"207.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><line x1=\"210.0\" y1=\"187.0\" x2=\"210.0\" y2=\"193.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"210.0\" y=\"207.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><line x1=\"290.0\" y1=\"187.0\" x2=\"290.0\" y2=\"193.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"290.0\" y=\"207.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3</text><text x=\"146.0\" y=\"131.5\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">area = 1</text></svg>"
+              }
+            },
+            {
+              "explain": "Why not the others: B, D give the wrong total; C: \\(f\\) IS increasing but that is not the test for a valid PDF.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Prove that this is a valid probability density function",
+              "note": "Need \\(\\int f\\,dx=1\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Moriah College 2021 HSC Trial Examination Mathematics Advanced",
+            "school": "Moriah College",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "moriah2021-q30b",
+          "type": "mc",
+          "stem": "For the probability density function \\(f(x)=\\dfrac{1}{2\\sqrt{4-x}}\\) on \\(0\\le x\\le3\\) (0 otherwise), find the cumulative distribution function \\(F(x)\\) for \\(0\\le x\\le3\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(F(x)=2-\\sqrt{4-x}\\)",
+            "\\(F(x)=\\sqrt{4-x}-2\\)",
+            "\\(F(x)=2-2\\sqrt{4-x}\\)",
+            "\\(F(x)=\\dfrac{1}{2}\\sqrt{4-x}\\)"
+          ],
+          "answer": 0,
+          "hint": "\\(F(x)=\\displaystyle\\int_{0}^{x}f(t)\\,dt\\) (the area from the start, 0, up to \\(x\\)). Check: \\(F(0)=0\\) and \\(F(3)=1\\).",
+          "steps": [
+            {
+              "explain": "Integrate from 0 to \\(x\\) (use \\(t\\) inside).",
+              "work": "\\(F(x)=\\dfrac{1}{2}\\int_{0}^{x}(4-t)^{-\\frac12}dt=\\left[-\\sqrt{4-t}\\right]_{0}^{x}\\)"
+            },
+            {
+              "explain": "Substitute limits: upper \\(-\\sqrt{4-x}\\), lower \\(-\\sqrt4=-2\\).",
+              "work": "\\(F(x)=-\\sqrt{4-x}-(-2)=2-\\sqrt{4-x}\\)"
+            },
+            {
+              "explain": "Check: \\(F(0)=2-2=0\\) ✓ and \\(F(3)=2-1=1\\) ✓.",
+              "work": "\\(F(x)=2-\\sqrt{4-x},\\quad0\\le x\\le3\\)"
+            },
+            {
+              "explain": "Why not the others: B is negative (\\(F(3)=-1\\)); C has an extra factor 2 (\\(F(3)=0\\)); D has no integration.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "find the cumulative distribution function",
+              "note": "\\(F(x)=\\int_0^xf\\); check \\(F(0)=0,F(3)=1\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Moriah College 2021 HSC Trial Examination Mathematics Advanced",
+            "school": "Moriah College",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "moriah2021-q30c",
+          "type": "mc",
+          "stem": "Find the median of the probability density function \\(f(x)=\\dfrac{1}{2\\sqrt{4-x}}\\), \\(0\\le x\\le3\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{7}{4}\\)",
+            "\\(\\dfrac{3}{2}\\)",
+            "\\(\\dfrac{9}{4}\\)",
+            "\\(\\dfrac{5}{4}\\)"
+          ],
+          "answer": 0,
+          "hint": "The median \\(m\\) satisfies \\(F(m)=\\dfrac{1}{2}\\) (half the area on each side). Use \\(F(x)=2-\\sqrt{4-x}\\) from (b). Square both sides to remove the root and check the answer lies in \\([0,3]\\).",
+          "steps": [
+            {
+              "explain": "Set \\(F(m)=\\dfrac{1}{2}\\).",
+              "work": "\\(2-\\sqrt{4-m}=\\dfrac{1}{2}\\)"
+            },
+            {
+              "explain": "Isolate the root.",
+              "work": "\\(\\sqrt{4-m}=\\dfrac{3}{2}\\)"
+            },
+            {
+              "explain": "Square both sides.",
+              "work": "\\(4-m=\\dfrac{9}{4}\\ \\Rightarrow\\ m=4-\\dfrac{9}{4}=\\dfrac{7}{4}\\)"
+            },
+            {
+              "explain": "Check: \\(\\dfrac{7}{4}=1.75\\) lies in \\([0,3]\\) ✓; \\(F\\left(\\dfrac{7}{4}\\right)=2-\\sqrt{\\dfrac{9}{4}}=2-1.5=0.5\\) ✓.",
+              "work": "\\(m=\\dfrac{7}{4}\\)"
+            },
+            {
+              "explain": "Why not the others: B (\\(\\dfrac{3}{2}\\)) is \\(\\sqrt{4-m}\\) not \\(m\\); C (\\(\\dfrac{9}{4}\\)) is \\(4-m\\); D is a guess.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the median of the probability density function",
+              "note": "\\(F(m)=\\dfrac{1}{2}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Moriah College 2021 HSC Trial Examination Mathematics Advanced",
+            "school": "Moriah College",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -14555,167 +14716,6 @@
           "meta": {
             "source": "Knox Grammar School 2021 Trial HSC Examination Mathematics Advanced",
             "school": "Knox Grammar School",
-            "grade": "12",
-            "origin": "teacher"
-          }
-        },
-        {
-          "id": "moriah2021-q30a",
-          "type": "mc",
-          "stem": "A probability density function is given by \\(f(x)=\\begin{cases}\\dfrac{1}{2\\sqrt{4-x}} & 0\\le x\\le3\\\\ 0 & \\text{otherwise}\\end{cases}\\). Prove that this is a valid probability density function (you may assume \\(f(x)\\ge0\\)). What must be shown, and what is the result?",
-          "difficulty": "medium",
-          "options": [
-            "The total area \\(\\displaystyle\\int_{0}^{3}\\dfrac{1}{2\\sqrt{4-x}}dx\\) equals 1",
-            "The total area \\(\\displaystyle\\int_{0}^{3}\\dfrac{1}{2\\sqrt{4-x}}dx\\) equals \\(\\dfrac{1}{2}\\)",
-            "\\(f(x)\\) is increasing on \\([0,3]\\)",
-            "The total area \\(\\displaystyle\\int_{0}^{3}\\dfrac{1}{2\\sqrt{4-x}}dx\\) equals 3"
-          ],
-          "answer": 0,
-          "hint": "A valid PDF needs \\(f(x)\\ge0\\) (given) and TOTAL AREA \\(=\\displaystyle\\int f(x)\\,dx=1\\). Write \\(\\dfrac{1}{\\sqrt{4-x}}=(4-x)^{-\\frac12}\\) and integrate (the chain rule gives a MINUS from the \\(-x\\)).",
-          "steps": [
-            {
-              "explain": "Rewrite with a negative power.",
-              "work": "\\(\\int_{0}^{3}\\dfrac{1}{2\\sqrt{4-x}}dx=\\dfrac{1}{2}\\int_{0}^{3}(4-x)^{-\\frac12}dx\\)"
-            },
-            {
-              "explain": "Antiderivative: \\(\\dfrac{(4-x)^{\\frac12}}{\\dfrac{1}{2}}\\times(-1)=-2\\sqrt{4-x}\\). So with the \\(\\dfrac{1}{2}\\) outside: \\(-\\sqrt{4-x}\\).",
-              "work": "\\(=\\left[-\\sqrt{4-x}\\right]_{0}^{3}\\)"
-            },
-            {
-              "explain": "Substitute limits: \\(x=3\\): \\(-\\sqrt1=-1\\). \\(x=0\\): \\(-\\sqrt4=-2\\).",
-              "work": "\\(=(-1)-(-2)=1\\)"
-            },
-            {
-              "explain": "Total area is 1 and \\(f\\ge0\\), so it is a valid PDF.",
-              "work": "\\(\\int_{0}^{3}f(x)\\,dx=1\\ \\checkmark\\)",
-              "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 230\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><line x1=\"42.0\" y1=\"190.0\" x2=\"338.0\" y2=\"190.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"50.0\" y1=\"198.0\" x2=\"50.0\" y2=\"79.5\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"338.0\" y1=\"190.0\" x2=\"331.1\" y2=\"186.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"338.0\" y1=\"190.0\" x2=\"331.1\" y2=\"194.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"50.0\" y1=\"79.5\" x2=\"46.0\" y2=\"86.4\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"50.0\" y1=\"79.5\" x2=\"54.0\" y2=\"86.4\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><polygon points=\"50.0,190 50.0,157.5 51.6,157.4 53.2,157.3 54.8,157.3 56.4,157.2 58.0,157.1 59.6,157.0 61.2,156.9 62.8,156.8 64.4,156.7 66.0,156.7 67.6,156.6 69.2,156.5 70.8,156.4 72.4,156.3 74.0,156.2 75.6,156.1 77.2,156.0 78.8,155.9 80.4,155.8 82.0,155.7 83.6,155.6 85.2,155.6 86.8,155.5 88.4,155.4 90.0,155.3 91.6,155.2 93.2,155.1 94.8,155.0 96.4,154.9 98.0,154.7 99.6,154.6 101.2,154.5 102.8,154.4 104.4,154.3 106.0,154.2 107.6,154.1 109.2,154.0 110.8,153.9 112.4,153.8 114.0,153.7 115.6,153.5 117.2,153.4 118.8,153.3 120.4,153.2 122.0,153.1 123.6,153.0 125.2,152.8 126.8,152.7 128.4,152.6 130.0,152.5 131.6,152.3 133.2,152.2 134.8,152.1 136.4,152.0 138.0,151.8 139.6,151.7 141.2,151.6 142.8,151.4 144.4,151.3 146.0,151.2 147.6,151.0 149.2,150.9 150.8,150.7 152.4,150.6 154.0,150.4 155.6,150.3 157.2,150.1 158.8,150.0 160.4,149.8 162.0,149.7 163.6,149.5 165.2,149.4 166.8,149.2 168.4,149.1 170.0,148.9 171.6,148.7 173.2,148.6 174.8,148.4 176.4,148.2 178.0,148.0 179.6,147.9 181.2,147.7 182.8,147.5 184.4,147.3 186.0,147.1 187.6,147.0 189.2,146.8 190.8,146.6 192.4,146.4 194.0,146.2 195.6,146.0 197.2,145.8 198.8,145.6 200.4,145.4 202.0,145.1 203.6,144.9 205.2,144.7 206.8,144.5 208.4,144.3 210.0,144.0 211.6,143.8 213.2,143.6 214.8,143.3 216.4,143.1 218.0,142.8 219.6,142.6 221.2,142.3 222.8,142.1 224.4,141.8 226.0,141.6 227.6,141.3 229.2,141.0 230.8,140.7 232.4,140.4 234.0,140.1 235.6,139.9 237.2,139.6 238.8,139.2 240.4,138.9 242.0,138.6 243.6,138.3 245.2,138.0 246.8,137.6 248.4,137.3 250.0,136.9 251.6,136.6 253.2,136.2 254.8,135.8 256.4,135.5 258.0,135.1 259.6,134.7 261.2,134.3 262.8,133.8 264.4,133.4 266.0,133.0 267.6,132.5 269.2,132.1 270.8,131.6 272.4,131.2 274.0,130.7 275.6,130.2 277.2,129.6 278.8,129.1 280.4,128.6 282.0,128.0 283.6,127.5 285.2,126.9 286.8,126.3 288.4,125.6 290.0,125.0 290.0,190\" fill=\"#3b4ea8\" fill-opacity=\"0.25\" stroke=\"none\"/><polyline points=\"50.0,157.5 51.6,157.4 53.2,157.3 54.8,157.3 56.4,157.2 58.0,157.1 59.6,157.0 61.2,156.9 62.8,156.8 64.4,156.7 66.0,156.7 67.6,156.6 69.2,156.5 70.8,156.4 72.4,156.3 74.0,156.2 75.6,156.1 77.2,156.0 78.8,155.9 80.4,155.8 82.0,155.7 83.6,155.6 85.2,155.6 86.8,155.5 88.4,155.4 90.0,155.3 91.6,155.2 93.2,155.1 94.8,155.0 96.4,154.9 98.0,154.7 99.6,154.6 101.2,154.5 102.8,154.4 104.4,154.3 106.0,154.2 107.6,154.1 109.2,154.0 110.8,153.9 112.4,153.8 114.0,153.7 115.6,153.5 117.2,153.4 118.8,153.3 120.4,153.2 122.0,153.1 123.6,153.0 125.2,152.8 126.8,152.7 128.4,152.6 130.0,152.5 131.6,152.3 133.2,152.2 134.8,152.1 136.4,152.0 138.0,151.8 139.6,151.7 141.2,151.6 142.8,151.4 144.4,151.3 146.0,151.2 147.6,151.0 149.2,150.9 150.8,150.7 152.4,150.6 154.0,150.4 155.6,150.3 157.2,150.1 158.8,150.0 160.4,149.8 162.0,149.7 163.6,149.5 165.2,149.4 166.8,149.2 168.4,149.1 170.0,148.9 171.6,148.7 173.2,148.6 174.8,148.4 176.4,148.2 178.0,148.0 179.6,147.9 181.2,147.7 182.8,147.5 184.4,147.3 186.0,147.1 187.6,147.0 189.2,146.8 190.8,146.6 192.4,146.4 194.0,146.2 195.6,146.0 197.2,145.8 198.8,145.6 200.4,145.4 202.0,145.1 203.6,144.9 205.2,144.7 206.8,144.5 208.4,144.3 210.0,144.0 211.6,143.8 213.2,143.6 214.8,143.3 216.4,143.1 218.0,142.8 219.6,142.6 221.2,142.3 222.8,142.1 224.4,141.8 226.0,141.6 227.6,141.3 229.2,141.0 230.8,140.7 232.4,140.4 234.0,140.1 235.6,139.9 237.2,139.6 238.8,139.2 240.4,138.9 242.0,138.6 243.6,138.3 245.2,138.0 246.8,137.6 248.4,137.3 250.0,136.9 251.6,136.6 253.2,136.2 254.8,135.8 256.4,135.5 258.0,135.1 259.6,134.7 261.2,134.3 262.8,133.8 264.4,133.4 266.0,133.0 267.6,132.5 269.2,132.1 270.8,131.6 272.4,131.2 274.0,130.7 275.6,130.2 277.2,129.6 278.8,129.1 280.4,128.6 282.0,128.0 283.6,127.5 285.2,126.9 286.8,126.3 288.4,125.6 290.0,125.0\" fill=\"none\" stroke=\"#3b4ea8\" stroke-width=\"3\"/><line x1=\"50.0\" y1=\"187.0\" x2=\"50.0\" y2=\"193.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"50.0\" y=\"207.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0</text><line x1=\"130.0\" y1=\"187.0\" x2=\"130.0\" y2=\"193.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"130.0\" y=\"207.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><line x1=\"210.0\" y1=\"187.0\" x2=\"210.0\" y2=\"193.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"210.0\" y=\"207.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><line x1=\"290.0\" y1=\"187.0\" x2=\"290.0\" y2=\"193.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"290.0\" y=\"207.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3</text><text x=\"146.0\" y=\"131.5\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">area = 1</text></svg>"
-              }
-            },
-            {
-              "explain": "Why not the others: B, D give the wrong total; C: \\(f\\) IS increasing but that is not the test for a valid PDF.",
-              "work": ""
-            },
-            {
-              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
-              "work": ""
-            }
-          ],
-          "keyPoints": [
-            {
-              "text": "Prove that this is a valid probability density function",
-              "note": "Need \\(\\int f\\,dx=1\\)."
-            }
-          ],
-          "timeLimit": 60,
-          "xp": 1,
-          "meta": {
-            "source": "Moriah College 2021 HSC Trial Examination Mathematics Advanced",
-            "school": "Moriah College",
-            "grade": "12",
-            "origin": "teacher"
-          }
-        },
-        {
-          "id": "moriah2021-q30b",
-          "type": "mc",
-          "stem": "For the probability density function \\(f(x)=\\dfrac{1}{2\\sqrt{4-x}}\\) on \\(0\\le x\\le3\\) (0 otherwise), find the cumulative distribution function \\(F(x)\\) for \\(0\\le x\\le3\\).",
-          "difficulty": "medium",
-          "options": [
-            "\\(F(x)=2-\\sqrt{4-x}\\)",
-            "\\(F(x)=\\sqrt{4-x}-2\\)",
-            "\\(F(x)=2-2\\sqrt{4-x}\\)",
-            "\\(F(x)=\\dfrac{1}{2}\\sqrt{4-x}\\)"
-          ],
-          "answer": 0,
-          "hint": "\\(F(x)=\\displaystyle\\int_{0}^{x}f(t)\\,dt\\) (the area from the start, 0, up to \\(x\\)). Check: \\(F(0)=0\\) and \\(F(3)=1\\).",
-          "steps": [
-            {
-              "explain": "Integrate from 0 to \\(x\\) (use \\(t\\) inside).",
-              "work": "\\(F(x)=\\dfrac{1}{2}\\int_{0}^{x}(4-t)^{-\\frac12}dt=\\left[-\\sqrt{4-t}\\right]_{0}^{x}\\)"
-            },
-            {
-              "explain": "Substitute limits: upper \\(-\\sqrt{4-x}\\), lower \\(-\\sqrt4=-2\\).",
-              "work": "\\(F(x)=-\\sqrt{4-x}-(-2)=2-\\sqrt{4-x}\\)"
-            },
-            {
-              "explain": "Check: \\(F(0)=2-2=0\\) ✓ and \\(F(3)=2-1=1\\) ✓.",
-              "work": "\\(F(x)=2-\\sqrt{4-x},\\quad0\\le x\\le3\\)"
-            },
-            {
-              "explain": "Why not the others: B is negative (\\(F(3)=-1\\)); C has an extra factor 2 (\\(F(3)=0\\)); D has no integration.",
-              "work": ""
-            },
-            {
-              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
-              "work": ""
-            }
-          ],
-          "keyPoints": [
-            {
-              "text": "find the cumulative distribution function",
-              "note": "\\(F(x)=\\int_0^xf\\); check \\(F(0)=0,F(3)=1\\)."
-            }
-          ],
-          "timeLimit": 60,
-          "xp": 1,
-          "meta": {
-            "source": "Moriah College 2021 HSC Trial Examination Mathematics Advanced",
-            "school": "Moriah College",
-            "grade": "12",
-            "origin": "teacher"
-          }
-        },
-        {
-          "id": "moriah2021-q30c",
-          "type": "mc",
-          "stem": "Find the median of the probability density function \\(f(x)=\\dfrac{1}{2\\sqrt{4-x}}\\), \\(0\\le x\\le3\\).",
-          "difficulty": "medium",
-          "options": [
-            "\\(\\dfrac{7}{4}\\)",
-            "\\(\\dfrac{3}{2}\\)",
-            "\\(\\dfrac{9}{4}\\)",
-            "\\(\\dfrac{5}{4}\\)"
-          ],
-          "answer": 0,
-          "hint": "The median \\(m\\) satisfies \\(F(m)=\\dfrac{1}{2}\\) (half the area on each side). Use \\(F(x)=2-\\sqrt{4-x}\\) from (b). Square both sides to remove the root and check the answer lies in \\([0,3]\\).",
-          "steps": [
-            {
-              "explain": "Set \\(F(m)=\\dfrac{1}{2}\\).",
-              "work": "\\(2-\\sqrt{4-m}=\\dfrac{1}{2}\\)"
-            },
-            {
-              "explain": "Isolate the root.",
-              "work": "\\(\\sqrt{4-m}=\\dfrac{3}{2}\\)"
-            },
-            {
-              "explain": "Square both sides.",
-              "work": "\\(4-m=\\dfrac{9}{4}\\ \\Rightarrow\\ m=4-\\dfrac{9}{4}=\\dfrac{7}{4}\\)"
-            },
-            {
-              "explain": "Check: \\(\\dfrac{7}{4}=1.75\\) lies in \\([0,3]\\) ✓; \\(F\\left(\\dfrac{7}{4}\\right)=2-\\sqrt{\\dfrac{9}{4}}=2-1.5=0.5\\) ✓.",
-              "work": "\\(m=\\dfrac{7}{4}\\)"
-            },
-            {
-              "explain": "Why not the others: B (\\(\\dfrac{3}{2}\\)) is \\(\\sqrt{4-m}\\) not \\(m\\); C (\\(\\dfrac{9}{4}\\)) is \\(4-m\\); D is a guess.",
-              "work": ""
-            },
-            {
-              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
-              "work": ""
-            }
-          ],
-          "keyPoints": [
-            {
-              "text": "Find the median of the probability density function",
-              "note": "\\(F(m)=\\dfrac{1}{2}\\)"
-            }
-          ],
-          "timeLimit": 60,
-          "xp": 1,
-          "meta": {
-            "source": "Moriah College 2021 HSC Trial Examination Mathematics Advanced",
-            "school": "Moriah College",
             "grade": "12",
             "origin": "teacher"
           }
