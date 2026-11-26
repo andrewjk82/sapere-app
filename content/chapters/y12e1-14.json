@@ -209,6 +209,60 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "gosford2020-e1-q6",
+          "type": "mc",
+          "stem": "The equation \\(y=e^{ax}\\) satisfies the differential equation \\(\\dfrac{d^{2}y}{dx^{2}}+\\dfrac{dy}{dx}-6y=0\\). What are the possible values of \\(a\\)?",
+          "difficulty": "medium",
+          "options": [
+            "\\(a=-2\\) or \\(a=3\\)",
+            "\\(a=-1\\) or \\(a=6\\)",
+            "\\(a=2\\) or \\(a=-3\\)",
+            "\\(a=1\\) or \\(a=-6\\)"
+          ],
+          "answer": 2,
+          "hint": "Differentiate \\(y=e^{ax}\\) twice (\\(y'=ae^{ax}\\), \\(y''=a^{2}e^{ax}\\)), substitute into the DE and divide by \\(e^{ax}\\) (never zero). You get a quadratic in \\(a\\).",
+          "steps": [
+            {
+              "explain": "Differentiate: each derivative multiplies by \\(a\\).",
+              "work": "\\(y=e^{ax},\\qquad\\dfrac{dy}{dx}=ae^{ax},\\qquad\\dfrac{d^{2}y}{dx^{2}}=a^{2}e^{ax}\\)"
+            },
+            {
+              "explain": "Substitute into \\(y''+y'-6y=0\\).",
+              "work": "\\(a^{2}e^{ax}+ae^{ax}-6e^{ax}=0\\)"
+            },
+            {
+              "explain": "Factor out \\(e^{ax}\\), which is never 0, so the bracket must be 0.",
+              "work": "\\(e^{ax}\\left(a^{2}+a-6\\right)=0\\ \\Rightarrow\\ a^{2}+a-6=0\\)"
+            },
+            {
+              "explain": "Factorise: two numbers that multiply to \\(-6\\) and add to \\(+1\\) are \\(3\\) and \\(-2\\).",
+              "work": "\\((a+3)(a-2)=0\\ \\Rightarrow\\ a=2\\ \\text{or}\\ a=-3\\)"
+            },
+            {
+              "explain": "Check \\(a=2\\): \\(4+2-6=0\\) ✓; \\(a=-3\\): \\(9-3-6=0\\) ✓. Why not the others: A has the signs swapped (\\(a=-2,3\\) gives \\(a^{2}+a-6=4-2-6\\ne0\\)); B and D do not satisfy the quadratic.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">C</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "What are the possible values of \\(a\\)?",
+              "note": "\\(y'=ae^{ax}\\), \\(y''=a^{2}e^{ax}\\); solve \\(a^{2}+a-6=0\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Trial HSC Mathematics Extension 1",
+            "school": "Gosford High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -1483,6 +1537,114 @@
           "meta": {
             "source": "Glenwood High School 2020 Year 12 Mathematics Extension 1 Trial HSC Examination",
             "school": "Glenwood High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hillsgrammar-25-3u-q12d",
+          "type": "mc",
+          "stem": "Find the curve which satisfies the differential equation \\(\\dfrac{dy}{dx}=\\dfrac{y}{2}\\) and passes through the point \\((0,-1)\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(y=-e^{\\frac{x}{2}}\\)",
+            "\\(y=e^{\\frac{x}{2}}\\)",
+            "\\(y=-e^{2x}\\)",
+            "\\(y=-1+\\dfrac{x}{2}\\)"
+          ],
+          "answer": 0,
+          "hint": "SEPARABLE: put all \\(y\\) on one side, all \\(x\\) on the other: \\(\\dfrac{1}{y}\\,dy=\\dfrac{1}{2}\\,dx\\). Integrate (a LOG on the left), then use the point to find the constant. Careful: \\(y\\) is NEGATIVE here, so write \\(\\ln|y|\\).",
+          "steps": [
+            {
+              "explain": "Separate the variables.",
+              "work": "\\(\\dfrac{1}{y}\\,dy=\\dfrac{1}{2}\\,dx\\)"
+            },
+            {
+              "explain": "Integrate both sides.",
+              "work": "\\(\\ln|y|=\\dfrac{x}{2}+c\\)"
+            },
+            {
+              "explain": "Take \\(e\\) of both sides: \\(|y|=e^{\\frac x2+c}=Ae^{\\frac x2}\\), so \\(y=\\pm Ae^{\\frac x2}=Be^{\\frac x2}\\) for a constant \\(B\\).",
+              "work": "\\(y=Be^{\\frac{x}{2}}\\)"
+            },
+            {
+              "explain": "Use the point \\((0,-1)\\): \\(-1=Be^{0}=B\\).",
+              "work": "\\(B=-1\\ \\Rightarrow\\ y=-e^{\\frac{x}{2}}\\)"
+            },
+            {
+              "explain": "Check: \\(y'=-\\dfrac12e^{\\frac x2}=\\dfrac{y}{2}\\) ✓ and \\(y(0)=-1\\) ✓. Why not the others: B has the wrong sign (\\(y(0)=+1\\)); C has \\(e^{2x}\\) (the exponent is \\(\\dfrac12x\\), the coefficient of \\(dx\\)); D is a straight line, not an exponential.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the curve which satisfies the differential equation",
+              "note": "\\(\\dfrac1ydy=\\dfrac12dx\\Rightarrow y=Be^{\\dfrac{x}{2}}\\); use \\((0,-1)\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hills Grammar 2025 Trial HSC Mathematics Extension 1",
+            "school": "The Hills Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hillsgrammar-25-3u-q13c",
+          "type": "mc",
+          "stem": "A rocket is fired horizontally from a platform which is two metres above the origin. The gradient of its trajectory is given by \\(\\dfrac{dy}{dx}=\\dfrac{x^{2}}{y}\\) for \\(x\\ge0\\). Find the equation of its trajectory in the form \\(y=f(x)\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(y=\\sqrt{\\dfrac{2x^{3}}{3}+4}\\)",
+            "\\(y=\\sqrt{\\dfrac{2x^{3}}{3}+2}\\)",
+            "\\(y=\\dfrac{2x^{3}}{3}+2\\)",
+            "\\(y=\\sqrt{\\dfrac{x^{3}}{3}+4}\\)"
+          ],
+          "answer": 0,
+          "hint": "SEPARABLE: multiply both sides by \\(y\\) and by \\(dx\\): \\(y\\,dy=x^{2}\\,dx\\). Integrate, use the starting point \\((0,2)\\) (the platform is 2 m above the origin), then solve for \\(y\\) (positive root, since \\(y=2>0\\)).",
+          "steps": [
+            {
+              "explain": "Separate: \\(y\\,dy=x^{2}\\,dx\\).",
+              "work": "\\(\\int y\\,dy=\\int x^{2}\\,dx\\)"
+            },
+            {
+              "explain": "Integrate both sides.",
+              "work": "\\(\\dfrac{y^{2}}{2}=\\dfrac{x^{3}}{3}+c\\)"
+            },
+            {
+              "explain": "The rocket starts 2 m above the origin: at \\(x=0\\), \\(y=2\\). Substitute.",
+              "work": "\\(\\dfrac{2^{2}}{2}=0+c\\ \\Rightarrow\\ c=2\\)"
+            },
+            {
+              "explain": "Multiply by 2: \\(y^{2}=\\dfrac{2x^{3}}{3}+4\\). Take the POSITIVE root (the rocket is above the ground, and \\(y(0)=+2\\)).",
+              "work": "\\(y=\\sqrt{\\dfrac{2x^{3}}{3}+4}\\)"
+            },
+            {
+              "explain": "Check: at \\(x=0\\), \\(y=\\sqrt4=2\\) ✓; \\(\\dfrac{dy}{dx}=\\dfrac{1}{2y}\\cdot2x^{2}=\\dfrac{x^{2}}{y}\\) ✓. Why not the others: B forgot to multiply the constant 2 by 2 (\\(y^{2}=\\dots+2\\cdot2\\)); C leaves out the square root; D forgets to multiply \\(\\dfrac{x^{3}}{3}\\) by 2.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the equation of its trajectory in the form \\(y=f(x)\\).",
+              "note": "\\(y\\,dy=x^{2}dx\\); \\(\\dfrac{y^{2}}2=\\dfrac{x^{3}}3+c\\); \\((0,2)\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hills Grammar 2025 Trial HSC Mathematics Extension 1",
+            "school": "The Hills Grammar School",
             "grade": "12",
             "origin": "teacher"
           }
@@ -2915,6 +3077,210 @@
           "meta": {
             "source": "Fort Street High School 2020 Preliminary HSC Assessment Task 3 Mathematics Extension 1",
             "school": "Fort Street High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "gosford2020-e1-q14c1",
+          "type": "mc",
+          "stem": "A tank contains 2500 litres of water and 25 Kg of dissolved salt. Fresh water enters the tank at a rate of 20 litres per minute. The solution is thoroughly mixed at all times and is drained from the tank at a rate of 15 litres per minute. Using \\(y\\) for the amount of salt in the tank in kilograms (as a function of time), and \\(t\\) for time in minutes, show that the concentrations of salt in the tank at time \\(t\\) can be given by \\(C=\\dfrac{y}{2500+5t}\\)",
+          "difficulty": "easy",
+          "options": [
+            "\\(\\begin{aligned}&\\text{volume}=2500+20t-15t=2500+5t\\ \\text{litres}\\\\ &C=\\dfrac{\\text{amount of salt}}{\\text{volume}}=\\dfrac{y}{2500+5t}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\text{volume}=2500+20t+15t=2500+35t\\\\ &C=\\dfrac{y}{2500+35t}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\text{volume}=2500-5t\\\\ &C=\\dfrac{y}{2500-5t}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\text{volume}=2500\\ \\text{(constant)}\\\\ &C=\\dfrac{y}{2500}\\end{aligned}\\)"
+          ],
+          "answer": 0,
+          "hint": "Concentration \\(=\\dfrac{\\text{amount of salt}}{\\text{volume of liquid}}\\). The VOLUME changes with time: it starts at 2500 L, gains 20 L every minute and loses 15 L every minute.",
+          "steps": [
+            {
+              "explain": "Volume at time \\(t\\): start \\(+\\) inflow \\(-\\) outflow. Inflow \\(=20t\\) litres, outflow \\(=15t\\) litres.",
+              "work": "\\(V(t)=2500+20t-15t=2500+5t\\)"
+            },
+            {
+              "explain": "Concentration (kg per litre) \\(=\\) salt \\(\\div\\) volume.",
+              "work": "\\(C=\\dfrac{y}{2500+5t}\\ \\ \\blacksquare\\)"
+            },
+            {
+              "explain": "Why not the others: B adds the outflow; C subtracts the net rate (the tank is GROWING by 5 L per minute); D ignores the change in volume.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "show that the concentrations of salt in the tank at time \\(t\\) can be given by",
+              "note": "Volume \\(=2500+20t-15t\\); \\(C=\\) salt \\(\\div\\) volume."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Trial HSC Mathematics Extension 1",
+            "school": "Gosford High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "gosford2020-e1-q14c2",
+          "type": "mc",
+          "stem": "A tank contains 2500 litres of water and 25 Kg of dissolved salt. Fresh water enters at 20 litres per minute and the well-mixed solution is drained at 15 litres per minute. \\(y\\) is the amount of salt (kg) and the concentration is \\(C=\\dfrac{y}{2500+5t}\\). Explain why the rate of change of salt in the tank can be given by \\(y'=-15C\\)",
+          "difficulty": "medium",
+          "options": [
+            "Rate of change of salt \\(=\\) (salt in) \\(-\\) (salt out). Fresh water brings in NO salt, and salt leaves at the drain rate \\(15\\) L/min times the concentration \\(C\\) kg/L, so \\(y'=0-15C=-15C\\).",
+            "Rate of change of salt \\(=\\) (salt in) \\(-\\) (salt out). Fresh water enters at \\(20\\) L/min, so \\(y'=20C-15C=5C\\).",
+            "The salt in the tank is constant (it has nowhere to go), so \\(y'=0\\).",
+            "Salt leaves at \\(20\\) L/min (the inflow rate), so \\(y'=-20C\\)."
+          ],
+          "answer": 0,
+          "hint": "For mixing problems: \\(\\dfrac{dy}{dt}=\\) (rate salt ENTERS) \\(-\\) (rate salt LEAVES). Rate \\(=\\) (litres per minute) \\(\\times\\) (concentration in kg per litre). Ask: what is the concentration of the incoming water? Which flow carries salt away?",
+          "steps": [
+            {
+              "explain": "Salt IN: the incoming water is FRESH (no salt), so concentration \\(=0\\) and salt enters at \\(20\\times0=0\\) kg/min.",
+              "work": "\\(\\text{rate in}=20\\times0=0\\)"
+            },
+            {
+              "explain": "Salt OUT: the drained solution has the tank's concentration \\(C\\) (well mixed) and flows at 15 L/min.",
+              "work": "\\(\\text{rate out}=15\\times C=15C\\ \\text{ kg per min}\\)"
+            },
+            {
+              "explain": "Net rate of change \\(=\\) in \\(-\\) out.",
+              "work": "\\(y'=0-15C=-15C\\ \\ \\blacksquare\\)"
+            },
+            {
+              "explain": "Why not the others: B counts salt entering the tank; C ignores the drain; D uses the inflow rate (20) instead of the drain rate (15) for the salt leaving.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Explain why the rate of change of salt in the tank can be given by \\(y'=-15C\\)",
+              "note": "\\(y'=\\) in \\(-\\) out; fresh water carries 0 salt."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Trial HSC Mathematics Extension 1",
+            "school": "Gosford High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "gosford2020-e1-q14c3",
+          "type": "mc",
+          "stem": "A tank contains 2500 litres of water and 25 Kg of dissolved salt. The amount of salt \\(y\\) satisfies \\(y'=-15C\\) where \\(C=\\dfrac{y}{2500+5t}\\). Find \\(y\\), the amount of salt in the tank as a function of \\(t\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(y=\\dfrac{25\\times2500^{3}}{(2500+5t)^{3}}\\)",
+            "\\(y=\\dfrac{25\\times2500}{2500+5t}\\)",
+            "\\(y=25e^{-15t}\\)",
+            "\\(y=\\dfrac{25\\times2500^{3}}{(2500-5t)^{3}}\\)"
+          ],
+          "answer": 0,
+          "hint": "Write the DE as \\(\\dfrac{dy}{dt}=\\dfrac{-15y}{2500+5t}\\). It is SEPARABLE: \\(\\dfrac{1}{y}dy=\\dfrac{-15}{2500+5t}dt\\). Integrate both sides (a log each), combine the logs, then use \\(y=25\\) at \\(t=0\\).",
+          "steps": [
+            {
+              "explain": "Substitute \\(C\\) into \\(y'=-15C\\) and separate the variables: \\(y\\) terms with \\(dy\\), \\(t\\) terms with \\(dt\\).",
+              "work": "\\(\\dfrac{dy}{dt}=\\dfrac{-15y}{2500+5t}\\ \\Rightarrow\\ \\int\\dfrac{1}{y}\\,dy=-3\\int\\dfrac{5}{2500+5t}\\,dt\\)"
+            },
+            {
+              "explain": "Integrate: \\(\\int\\dfrac{5}{2500+5t}dt=\\ln(2500+5t)\\) (top is the derivative of the bottom).",
+              "work": "\\(\\ln|y|=-3\\ln(2500+5t)+k\\)"
+            },
+            {
+              "explain": "Move the log terms together using \\(3\\ln A=\\ln A^{3}\\), then remove the logs with \\(e\\).",
+              "work": "\\(\\ln|y|+\\ln(2500+5t)^{3}=k\\ \\Rightarrow\\ y(2500+5t)^{3}=e^{k}=A\\)"
+            },
+            {
+              "explain": "Initial condition: \\(t=0\\), \\(y=25\\): \\(25\\times2500^{3}=A\\).",
+              "work": "\\(A=25\\times2500^{3}\\)"
+            },
+            {
+              "explain": "Solve for \\(y\\).",
+              "work": "\\(y=\\dfrac{25\\times2500^{3}}{(2500+5t)^{3}}\\)"
+            },
+            {
+              "explain": "Check: at \\(t=0\\), \\(y=25\\) ✓; as \\(t\\) increases \\(y\\) decreases (salt is washed out) ✓. Why not the others: B has power 1 (it forgets the factor \\(3=\\dfrac{15}{5}\\) in front of the log); C is the solution when the volume is constant at 1 L per minute; D has \\(2500-5t\\) (the volume is increasing).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find \\(y\\), the amount of salt in the tank as a function of \\(t\\).",
+              "note": "Separable: \\(\\int\\dfrac1ydy=-3\\int\\dfrac{5}{2500+5t}dt\\); \\(y(0)=25\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Trial HSC Mathematics Extension 1",
+            "school": "Gosford High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hillsgrammar-25-3u-q12b",
+          "type": "mc",
+          "stem": "The volume, \\(V\\), of a weather balloon in cubic metres after \\(t\\) minutes is modelled by the function \\(V=1.26+Ae^{0.1t}\\). The balloon initially has a volume of 2.5 cubic metres. Find the volume of the weather balloon after ten minutes, correct to two decimal places.",
+          "difficulty": "easy",
+          "options": [
+            "\\(4.63\\) m\\(^{3}\\)",
+            "\\(6.80\\) m\\(^{3}\\)",
+            "\\(3.37\\) m\\(^{3}\\)",
+            "\\(3.76\\) m\\(^{3}\\)"
+          ],
+          "answer": 0,
+          "hint": "Use the INITIAL condition (\\(t=0\\), \\(V=2.5\\)) to find \\(A\\) first. Then substitute \\(t=10\\). Careful: \\(e^{0}=1\\) and \\(e^{0.1\\times10}=e^{1}\\).",
+          "steps": [
+            {
+              "explain": "At \\(t=0\\): \\(e^{0.1\\times0}=e^{0}=1\\), so \\(V(0)=1.26+A\\). Set equal to 2.5.",
+              "work": "\\(2.5=1.26+A\\ \\Rightarrow\\ A=1.24\\)"
+            },
+            {
+              "explain": "The model is \\(V=1.26+1.24e^{0.1t}\\). At \\(t=10\\): \\(e^{0.1\\times10}=e^{1}=e\\approx2.71828\\).",
+              "work": "\\(V(10)=1.26+1.24e^{1}\\)"
+            },
+            {
+              "explain": "Calculate: \\(1.24\\times2.71828=3.3707\\). Add \\(1.26\\).",
+              "work": "\\(V(10)=1.26+3.3707=4.6307\\approx4.63\\ \\text{m}^{3}\\)"
+            },
+            {
+              "explain": "Why not the others: B (\\(6.80\\)) uses \\(A=2.5\\) (forgot to subtract 1.26); C (\\(3.37\\)) forgets to add 1.26; D uses \\(e^{0.1}\\) instead of \\(e^{1}\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the volume of the weather balloon after ten minutes",
+              "note": "\\(V(0)=1.26+A=2.5\\Rightarrow A=1.24\\); \\(V(10)=1.26+1.24e\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hills Grammar 2025 Trial HSC Mathematics Extension 1",
+            "school": "The Hills Grammar School",
             "grade": "12",
             "origin": "teacher"
           }

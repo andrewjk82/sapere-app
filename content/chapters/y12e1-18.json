@@ -373,6 +373,160 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "gosford2020-e1-q13c1",
+          "type": "mc",
+          "stem": "On a roulette wheel, there are 18 red numbers, 18 black numbers, and 1 green number. A ball is dropped onto the spinning wheel and lands on one of the numbers randomly. Each result is independent. A gambler bets that the ball will land on any of the black numbers. Define the gambler's bet as a Bernoulli random variable \\(X\\) and give its mean and variance.",
+          "difficulty": "medium",
+          "options": [
+            "\\(X\\sim\\mathrm{Ber}\\left(\\dfrac{18}{37}\\right)\\); mean \\(\\dfrac{18}{37}\\), variance \\(\\dfrac{342}{1369}\\)",
+            "\\(X\\sim\\mathrm{Ber}\\left(\\dfrac{1}{2}\\right)\\); mean \\(\\dfrac{1}{2}\\), variance \\(\\dfrac{1}{4}\\)",
+            "\\(X\\sim\\mathrm{Ber}\\left(\\dfrac{18}{37}\\right)\\); mean \\(\\dfrac{18}{37}\\), variance \\(\\dfrac{18}{37}\\)",
+            "\\(X\\sim\\mathrm{Ber}\\left(\\dfrac{18}{36}\\right)\\); mean \\(\\dfrac{18}{36}\\), variance \\(\\dfrac{9}{37}\\)"
+          ],
+          "answer": 0,
+          "hint": "A Bernoulli variable has only TWO outcomes: 1 (success) with probability \\(p\\), 0 (failure) with probability \\(1-p\\). Its mean is \\(p\\) and its variance is \\(p(1-p)\\). Count the TOTAL number of numbers on the wheel carefully (including the green).",
+          "steps": [
+            {
+              "explain": "Total numbers: \\(18+18+1=37\\). Success = the ball lands on black: 18 of the 37 numbers.",
+              "work": "\\(p=P(\\text{black})=\\dfrac{18}{37}\\)"
+            },
+            {
+              "explain": "Define \\(X=1\\) if black, \\(X=0\\) otherwise: a Bernoulli trial.",
+              "work": "\\(X\\sim\\mathrm{Ber}\\left(\\dfrac{18}{37}\\right)\\ \\ (=\\mathrm{Bin}(1,\\dfrac{18}{37}))\\)"
+            },
+            {
+              "explain": "Mean of a Bernoulli variable: \\(\\mu=p\\).",
+              "work": "\\(\\mu=\\dfrac{18}{37}\\)"
+            },
+            {
+              "explain": "Variance: \\(\\sigma^{2}=p(1-p)=\\dfrac{18}{37}\\times\\dfrac{19}{37}\\).",
+              "work": "\\(\\sigma^{2}=\\dfrac{18\\times19}{37^{2}}=\\dfrac{342}{1369}\\)"
+            },
+            {
+              "explain": "Why not the others: B treats the wheel as a fair coin (ignores the green); C uses variance \\(=p\\) (it is \\(p(1-p)\\)); D uses 36 total numbers.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Define the gambler's bet as a Bernoulli random variable \\(X\\) and give its mean and variance.",
+              "note": "\\(p=\\dfrac{18}{37}\\); mean \\(p\\); variance \\(p(1-p)\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Trial HSC Mathematics Extension 1",
+            "school": "Gosford High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "gosford2020-e1-q13c3",
+          "type": "mc",
+          "stem": "A gambler makes the same bet (probability \\(\\dfrac{18}{37}\\) of winning) five times. What is the probability he will win more times than he loses? Give your answer correct to three decimal places.",
+          "difficulty": "hard",
+          "options": [
+            "\\(0.475\\)",
+            "\\(0.525\\)",
+            "\\(0.243\\)",
+            "\\(0.350\\)"
+          ],
+          "answer": 0,
+          "hint": "Out of 5 bets, he wins MORE times than he loses when he wins at least 3 (since \\(3>2\\)). Use \\(P(W\\ge3)=P(W=3)+P(W=4)+P(W=5)\\) with \\(P(W=r)=\\binom5r\\left(\\dfrac{18}{37}\\right)^{r}\\left(\\dfrac{19}{37}\\right)^{5-r}\\).",
+          "steps": [
+            {
+              "explain": "Wins \\(W\\sim\\mathrm{Bin}\\left(5,\\dfrac{18}{37}\\right)\\). More wins than losses means \\(W>5-W\\), i.e. \\(W\\ge3\\).",
+              "work": "\\(P(W\\ge3)=P(W=3)+P(W=4)+P(W=5)\\)"
+            },
+            {
+              "explain": "Binomial formula for each term.",
+              "work": "\\(=\\binom53\\left(\\dfrac{18}{37}\\right)^{3}\\left(\\dfrac{19}{37}\\right)^{2}+\\binom54\\left(\\dfrac{18}{37}\\right)^{4}\\left(\\dfrac{19}{37}\\right)+\\binom55\\left(\\dfrac{18}{37}\\right)^{5}\\)"
+            },
+            {
+              "explain": "Evaluate each term with a calculator (keep full accuracy): \\(P(W=3)\\approx0.3036\\), \\(P(W=4)\\approx0.1438\\), \\(P(W=5)\\approx0.0272\\).",
+              "work": "\\(P(W\\ge3)\\approx0.3036+0.1438+0.0272=0.4747\\ldots\\approx0.475\\)"
+            },
+            {
+              "explain": "Why not the others: \\(0.525\\) is \\(P(W\\le2)\\) (the opposite event); \\(0.243\\) and \\(0.350\\) use only one or two of the three terms.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "What is the probability he will win more times than he loses?",
+              "note": "\\(W\\ge3\\): add \\(P(3)+P(4)+P(5)\\) of \\(\\mathrm{Bin}(5,\\dfrac{18}{37})\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Trial HSC Mathematics Extension 1",
+            "school": "Gosford High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hillsgrammar-25-3u-q12f",
+          "type": "mc",
+          "stem": "When a fair coin is tossed, the chance that it will come up heads is exactly 50%. The coin is tossed 100 times. What is the probability that it will NOT come up heads exactly 50 times to the nearest percentage?",
+          "difficulty": "medium",
+          "options": [
+            "\\(92\\%\\)",
+            "\\(8\\%\\)",
+            "\\(50\\%\\)",
+            "\\(95\\%\\)"
+          ],
+          "answer": 0,
+          "hint": "Use the COMPLEMENT: \\(P(\\text{not }50)=1-P(X=50)\\) where \\(X\\sim\\mathrm{Bin}(100,0.5)\\) and \\(P(X=50)=\\binom{100}{50}(0.5)^{100}\\). Many students expect exactly 50 heads to be likely — but it is only about 8%.",
+          "steps": [
+            {
+              "explain": "\\(X\\) = number of heads in 100 tosses: \\(X\\sim\\mathrm{Bin}(100,\\,0.5)\\). \\(P(X=r)=\\binom{100}{r}(0.5)^{r}(0.5)^{100-r}\\).",
+              "work": "\\(P(X=50)=\\binom{100}{50}(0.5)^{100}\\)"
+            },
+            {
+              "explain": "Calculator: \\(\\binom{100}{50}=1.0089\\times10^{29}\\) and \\((0.5)^{100}=7.889\\times10^{-31}\\).",
+              "work": "\\(P(X=50)\\approx0.0796\\approx8\\%\\)"
+            },
+            {
+              "explain": "“NOT exactly 50 heads” is the complement.",
+              "work": "\\(P(X\\ne50)=1-0.0796=0.9204\\approx92\\%\\)"
+            },
+            {
+              "explain": "Why not the others: B (8%) is \\(P(X=50)\\) itself; C assumes the most likely single outcome is likely; D is the chance of being within about 10 of the mean.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "What is the probability that it will NOT come up heads exactly 50 times",
+              "note": "\\(1-\\binom{100}{50}(0.5)^{100}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hills Grammar 2025 Trial HSC Mathematics Extension 1",
+            "school": "The Hills Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -754,6 +908,102 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "gosford2020-e1-q3",
+          "type": "mc",
+          "stem": "An examination consists of 30 multiple-choice questions, each question having five possible answers. A student guesses the answer to every question. Let \\(X\\) be the number of correct answers. What is \\(E(X)\\)?",
+          "difficulty": "easy",
+          "options": [
+            "\\(5\\)",
+            "\\(6\\)",
+            "\\(9\\)",
+            "\\(15\\)"
+          ],
+          "answer": 1,
+          "hint": "Guessing is a binomial situation: \\(n=30\\) independent trials, probability of success \\(p=\\dfrac{1}{5}\\) each. The mean of \\(X\\sim\\mathrm{Bin}(n,p)\\) is \\(E(X)=np\\).",
+          "steps": [
+            {
+              "explain": "Each question: 5 possible answers, one correct, guessed at random, so \\(p=\\dfrac{1}{5}=0.2\\). There are \\(n=30\\) independent questions.",
+              "work": "\\(X\\sim\\mathrm{Bin}\\left(30,\\dfrac{1}{5}\\right)\\)"
+            },
+            {
+              "explain": "For a binomial distribution \\(E(X)=np\\) (the number of trials times the chance of success).",
+              "work": "\\(E(X)=30\\times\\dfrac{1}{5}=6\\)"
+            },
+            {
+              "explain": "Why not the others: A is \\(\\dfrac{30}{6}\\); C is \\(30\\times0.3\\); D is \\(\\dfrac{30}{2}\\) (assuming a 50% chance — that is for 2 answers, not 5).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">B</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "What is \\(E(X)\\)?",
+              "note": "\\(X\\sim\\mathrm{Bin}(30,\\dfrac{1}{5})\\); \\(E(X)=np\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Trial HSC Mathematics Extension 1",
+            "school": "Gosford High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "gosford2020-e1-q13c2",
+          "type": "mc",
+          "stem": "A gambler bets that a ball will land on any of the 18 black numbers of a roulette wheel with 37 numbers (18 red, 18 black, 1 green). If the gambler makes the same bet five times, let the random variable \\(Y\\) be the number of times the gambler wins. Describe the distribution of \\(Y\\), and give its mean and variance.",
+          "difficulty": "medium",
+          "options": [
+            "\\(Y\\sim\\mathrm{Bin}\\left(5,\\dfrac{18}{37}\\right)\\); mean \\(\\dfrac{90}{37}\\approx2.43\\), variance \\(\\dfrac{1710}{1369}\\approx1.25\\)",
+            "\\(Y\\sim\\mathrm{Bin}\\left(5,\\dfrac{18}{37}\\right)\\); mean \\(\\dfrac{18}{37}\\), variance \\(\\dfrac{342}{1369}\\)",
+            "\\(Y\\sim\\mathrm{Bin}\\left(18,\\dfrac{5}{37}\\right)\\); mean \\(\\dfrac{90}{37}\\), variance \\(\\dfrac{1710}{1369}\\)",
+            "\\(Y\\sim\\mathrm{Ber}\\left(\\dfrac{18}{37}\\right)\\); mean \\(2.43\\), variance \\(1.25\\)"
+          ],
+          "answer": 0,
+          "hint": "Repeating the SAME independent Bernoulli trial \\(n\\) times and counting successes gives a BINOMIAL distribution \\(\\mathrm{Bin}(n,p)\\). Mean \\(=np\\); variance \\(=np(1-p)\\).",
+          "steps": [
+            {
+              "explain": "Five independent identical bets, each with success probability \\(p=\\dfrac{18}{37}\\): \\(Y\\) counts the wins.",
+              "work": "\\(Y\\sim\\mathrm{Bin}\\left(5,\\dfrac{18}{37}\\right)\\)"
+            },
+            {
+              "explain": "Mean \\(=np\\).",
+              "work": "\\(E(Y)=5\\times\\dfrac{18}{37}=\\dfrac{90}{37}\\approx2.43\\)"
+            },
+            {
+              "explain": "Variance \\(=np(1-p)\\) (5 times the variance of one bet).",
+              "work": "\\(\\mathrm{Var}(Y)=5\\times\\dfrac{18}{37}\\times\\dfrac{19}{37}=\\dfrac{1710}{1369}\\approx1.25\\)"
+            },
+            {
+              "explain": "Why not the others: B gives the mean and variance of ONE bet; C swaps \\(n\\) and \\(p\\); D calls it Bernoulli (that is for a single bet).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Describe the distribution of \\(Y\\), and give its mean and variance.",
+              "note": "\\(\\mathrm{Bin}(n,p)\\): mean \\(np\\), variance \\(np(1-p)\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Trial HSC Mathematics Extension 1",
+            "school": "Gosford High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -902,6 +1152,110 @@
               ]
             }
           ]
+        },
+        {
+          "id": "hillsgrammar-25-3u-q10",
+          "type": "mc",
+          "stem": "The sample proportion \\(\\hat{p}\\) from a sample size \\(n\\) is calculated, with the experiment repeated a large number of times. It is known that \\(p\\) is very close to \\(0.4\\). It is found that on exactly nineteen times out of every twenty experiments that \\(0.38\\le\\hat{p}\\le0.42\\). What is the best estimate for the value of \\(n\\)?",
+          "difficulty": "hard",
+          "options": [
+            "\\(12\\)",
+            "\\(24\\)",
+            "\\(600\\)",
+            "\\(2400\\)"
+          ],
+          "answer": 3,
+          "hint": "\\(\\hat p\\) is approximately normal with mean \\(p\\) and standard deviation \\(\\sqrt{\\dfrac{p(1-p)}{n}}\\). “19 out of 20” means \\(95\\%\\): about \\(2\\) standard deviations either side of the mean (the 95% rule). So \\(2\\sigma=0.02\\).",
+          "steps": [
+            {
+              "explain": "\\(\\dfrac{19}{20}=0.95=95\\%\\): approximately 95% of values lie within 2 standard deviations of the mean (z-scores between \\(-2\\) and \\(2\\) on the reference sheet).",
+              "work": "\\(0.38\\le\\hat p\\le0.42:\\ \\ 0.4\\pm0.02\\ \\Rightarrow\\ 2\\sigma=0.02,\\ \\sigma=0.01\\)"
+            },
+            {
+              "explain": "Standard deviation of the sample proportion: \\(\\sigma=\\sqrt{\\dfrac{p(1-p)}{n}}=\\sqrt{\\dfrac{0.4\\times0.6}{n}}=\\sqrt{\\dfrac{0.24}{n}}\\).",
+              "work": "\\(\\sqrt{\\dfrac{0.24}{n}}=0.01\\)"
+            },
+            {
+              "explain": "Square both sides: \\(\\dfrac{0.24}{n}=0.0001\\).",
+              "work": "\\(\\dfrac{0.24}{n}=0.0001\\ \\Rightarrow\\ n=\\dfrac{0.24}{0.0001}=2400\\)"
+            },
+            {
+              "explain": "Check: \\(\\sigma=\\sqrt{\\dfrac{0.24}{2400}}=\\sqrt{0.0001}=0.01\\) ✓. Why not the others: 12 and 24 would give \\(\\sigma\\) far too large; 600 gives \\(\\sigma=\\sqrt{0.0004}=0.02\\) (that would make 0.02 only ONE standard deviation, about 68%).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">D</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "What is the best estimate for the value of \\(n\\)?",
+              "note": "95% \\(\\Rightarrow2\\sigma=0.02\\); \\(\\sigma=\\sqrt{\\dfrac{p(1-p)}{n}}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hills Grammar 2025 Trial HSC Mathematics Extension 1",
+            "school": "The Hills Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hillsgrammar-25-3u-q13d",
+          "type": "mc",
+          "stem": "A bus driver passes through the same set of traffic lights forty times every day. Each time the driver approaches the traffic lights there is a 20% chance that the lights are green. Use the standard normal distribution to approximate the probability that, on a particular day, the lights are green at least twelve times. Answer as percentage correct to one decimal place.",
+          "difficulty": "hard",
+          "options": [
+            "\\(5.7\\%\\)",
+            "\\(94.3\\%\\)",
+            "\\(8.4\\%\\)",
+            "\\(1.2\\%\\)"
+          ],
+          "answer": 0,
+          "hint": "\\(X\\sim\\mathrm{Bin}(40,0.2)\\). Approximate with a normal distribution of the same mean \\(\\mu=np\\) and standard deviation \\(\\sigma=\\sqrt{np(1-p)}\\). Convert \\(X=12\\) to a \\(z\\)-score \\(z=\\dfrac{x-\\mu}{\\sigma}\\), then use the table \\(P(Z<z)\\). “At least 12” is the UPPER tail: \\(1-P(Z<z)\\).",
+          "steps": [
+            {
+              "explain": "Mean and standard deviation of \\(X\\sim\\mathrm{Bin}(40,0.2)\\).",
+              "work": "\\(\\mu=40\\times0.2=8,\\qquad\\sigma=\\sqrt{40\\times0.2\\times0.8}=\\sqrt{6.4}=2.5298\\)"
+            },
+            {
+              "explain": "Standardise \\(x=12\\).",
+              "work": "\\(z=\\dfrac{12-8}{2.5298}=1.581\\approx1.58\\)"
+            },
+            {
+              "explain": "Table value: \\(P(Z<1.58)=0.9429\\) (row 1.50, column 0.08).",
+              "work": "\\(P(Z<1.58)=0.9429\\)"
+            },
+            {
+              "explain": "“At least 12” means \\(X\\ge12\\), the upper tail: \\(1-0.9429\\).",
+              "work": "\\(P(X\\ge12)\\approx1-0.9429=0.0571\\approx5.7\\%\\)"
+            },
+            {
+              "explain": "Why not the others: B (94.3%) is \\(P(Z<1.58)\\) — the LOWER tail; C (8.4%) uses a continuity correction (\\(x=11.5\\)), which is not required here; D uses the wrong \\(\\sigma\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Use the standard normal distribution to approximate the probability",
+              "note": "\\(\\mu=8\\), \\(\\sigma=\\sqrt{6.4}\\); \\(z=1.58\\); upper tail \\(1-0.9429\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hills Grammar 2025 Trial HSC Mathematics Extension 1",
+            "school": "The Hills Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     }

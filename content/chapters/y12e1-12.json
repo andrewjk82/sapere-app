@@ -1113,6 +1113,110 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "gosford2020-e1-q5",
+          "type": "mc",
+          "stem": "If \\(y=\\sin^{-1}\\dfrac{a}{x}\\) then \\(\\dfrac{dy}{dx}\\) equals:",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{-a}{x^{2}\\sqrt{x^{2}-a^{2}}}\\)",
+            "\\(\\dfrac{x}{\\sqrt{x^{2}-a^{2}}}\\)",
+            "\\(\\dfrac{-x}{\\sqrt{x^{2}-a^{2}}}\\)",
+            "\\(\\dfrac{-a}{x\\sqrt{x^{2}-a^{2}}}\\)"
+          ],
+          "answer": 3,
+          "hint": "Use \\(\\dfrac{d}{dx}\\sin^{-1}f(x)=\\dfrac{f'(x)}{\\sqrt{1-[f(x)]^{2}}}\\) with \\(f(x)=\\dfrac{a}{x}=ax^{-1}\\), so \\(f'(x)=-\\dfrac{a}{x^{2}}\\). Then simplify the square root: \\(\\sqrt{1-\\dfrac{a^{2}}{x^{2}}}=\\dfrac{\\sqrt{x^{2}-a^{2}}}{x}\\) (taking \\(x>0\\)).",
+          "steps": [
+            {
+              "explain": "Chain rule for inverse sine with \\(f=\\dfrac{a}{x}\\): \\(f'=-\\dfrac{a}{x^{2}}\\).",
+              "work": "\\(\\dfrac{dy}{dx}=\\dfrac{-\\dfrac{a}{x^{2}}}{\\sqrt{1-\\dfrac{a^{2}}{x^{2}}}}\\)"
+            },
+            {
+              "explain": "Simplify the root: \\(1-\\dfrac{a^{2}}{x^{2}}=\\dfrac{x^{2}-a^{2}}{x^{2}}\\), so \\(\\sqrt{\\ }=\\dfrac{\\sqrt{x^{2}-a^{2}}}{x}\\) (for \\(x>0\\)).",
+              "work": "\\(\\sqrt{1-\\dfrac{a^{2}}{x^{2}}}=\\dfrac{\\sqrt{x^{2}-a^{2}}}{x}\\)"
+            },
+            {
+              "explain": "Divide: multiply the top by the reciprocal of the bottom.",
+              "work": "\\(\\dfrac{dy}{dx}=-\\dfrac{a}{x^{2}}\\cdot\\dfrac{x}{\\sqrt{x^{2}-a^{2}}}=-\\dfrac{a}{x\\sqrt{x^{2}-a^{2}}}\\)"
+            },
+            {
+              "explain": "Why not the others: A leaves \\(x^{2}\\) in the denominator (the \\(x\\) from the root was not used); B and C have no \\(a\\) in the numerator (the derivative of \\(\\dfrac{a}{x}\\) is \\(-\\dfrac{a}{x^{2}}\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">D</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "If \\(y=\\sin^{-1}\\dfrac{a}{x}\\) then \\(\\dfrac{dy}{dx}\\) equals:",
+              "note": "\\(f=\\dfrac{a}{x}\\); \\(f\\,'=-\\dfrac a{x^{2}}\\); simplify \\(\\sqrt{1-f^{2}}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Trial HSC Mathematics Extension 1",
+            "school": "Gosford High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hillsgrammar-25-3u-q13e",
+          "type": "mc",
+          "stem": "Show that the equation of the tangent to the curve \\(y=x^{2}\\sin^{-1}x\\) at the point with coordinates \\(\\left(\\dfrac{1}{2},\\dfrac{\\pi}{24}\\right)\\) is \\(y=\\dfrac{\\sqrt3+\\pi}{6}x-\\dfrac{2\\sqrt3+\\pi}{24}\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\begin{aligned}&y'=2x\\sin^{-1}x+\\dfrac{x^{2}}{\\sqrt{1-x^{2}}};\\ \\ x=\\dfrac{1}{2}:\\ \\ m=\\dfrac\\pi6+\\dfrac{1}{2\\sqrt3}=\\dfrac{\\pi+\\sqrt3}{6}\\\\ &y-\\dfrac{\\pi}{24}=\\dfrac{\\pi+\\sqrt3}{6}\\left(x-\\dfrac{1}{2}\\right)\\ \\Rightarrow\\ y=\\dfrac{\\sqrt3+\\pi}{6}x-\\dfrac{2\\sqrt3+\\pi}{24}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&y'=2x\\sin^{-1}x+\\dfrac{x^{2}}{\\sqrt{1-x^{2}}};\\ \\ x=\\dfrac{1}{2}:\\ \\ m=\\dfrac\\pi6-\\dfrac{1}{2\\sqrt3}\\\\ &y=\\dfrac{\\pi-\\sqrt3}{6}x+\\ldots\\end{aligned}\\)",
+            "\\(\\begin{aligned}&y'=2x\\sin^{-1}x=\\dfrac\\pi6\\ \\ (\\text{product rule not used})\\\\ &y-\\dfrac{\\pi}{24}=\\dfrac\\pi6\\left(x-\\dfrac{1}{2}\\right)\\end{aligned}\\)",
+            "\\(\\begin{aligned}&y'=2x\\sin^{-1}x+\\dfrac{x^{2}}{1-x^{2}};\\ \\ x=\\dfrac{1}{2}:\\ \\ m=\\dfrac\\pi6+\\dfrac{1}{3}\\\\ &y=\\left(\\dfrac\\pi6+\\dfrac{1}{3}\\right)x-\\ldots\\end{aligned}\\)"
+          ],
+          "answer": 0,
+          "hint": "TANGENT: gradient \\(m=\\dfrac{dy}{dx}\\) at \\(x=\\dfrac{1}{2}\\), then \\(y-y_{1}=m(x-x_{1})\\). Differentiate with the PRODUCT rule: \\(\\dfrac{d}{dx}\\left(x^{2}\\sin^{-1}x\\right)=2x\\sin^{-1}x+x^{2}\\cdot\\dfrac{1}{\\sqrt{1-x^{2}}}\\).",
+          "steps": [
+            {
+              "explain": "Product rule \\(u=x^{2},\\ v=\\sin^{-1}x\\): \\(u'=2x\\), \\(v'=\\dfrac{1}{\\sqrt{1-x^{2}}}\\).",
+              "work": "\\(\\dfrac{dy}{dx}=2x\\sin^{-1}x+\\dfrac{x^{2}}{\\sqrt{1-x^{2}}}\\)"
+            },
+            {
+              "explain": "At \\(x=\\dfrac{1}{2}\\): \\(\\sin^{-1}\\dfrac{1}{2}=\\dfrac\\pi6\\); \\(\\sqrt{1-\\dfrac{1}{4}}=\\dfrac{\\sqrt3}{2}\\), so \\(\\dfrac{x^{2}}{\\sqrt{1-x^{2}}}=\\dfrac{\\dfrac{1}{4}}{\\dfrac{\\sqrt3}{2}}=\\dfrac{1}{2\\sqrt3}=\\dfrac{\\sqrt3}{6}\\).",
+              "work": "\\(m=2\\cdot\\dfrac{1}{2}\\cdot\\dfrac\\pi6+\\dfrac{\\sqrt3}{6}=\\dfrac{\\pi}{6}+\\dfrac{\\sqrt3}{6}=\\dfrac{\\pi+\\sqrt3}{6}\\)"
+            },
+            {
+              "explain": "Point-gradient form with \\(\\left(\\dfrac{1}{2},\\dfrac\\pi{24}\\right)\\).",
+              "work": "\\(y-\\dfrac{\\pi}{24}=\\dfrac{\\pi+\\sqrt3}{6}\\left(x-\\dfrac{1}{2}\\right)\\)"
+            },
+            {
+              "explain": "Expand the bracket: \\(\\dfrac{\\pi+\\sqrt3}{6}\\cdot\\dfrac{1}{2}=\\dfrac{\\pi+\\sqrt3}{12}=\\dfrac{2\\pi+2\\sqrt3}{24}\\). Then \\(-\\dfrac{2\\pi+2\\sqrt3}{24}+\\dfrac{\\pi}{24}=-\\dfrac{\\pi+2\\sqrt3}{24}\\).",
+              "work": "\\(y=\\dfrac{\\sqrt3+\\pi}{6}x-\\dfrac{2\\sqrt3+\\pi}{24}\\ \\ \\blacksquare\\)"
+            },
+            {
+              "explain": "Why not the others: B has a sign error in the second term; C forgets the product rule (drops \\(x^{2}\\cdot v'\\)); D writes \\(\\dfrac{d}{dx}\\sin^{-1}x=\\dfrac{1}{1-x^{2}}\\) (the root is missing).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that the equation of the tangent to the curve",
+              "note": "Product rule; \\(m=\\dfrac\\pi6+\\dfrac{\\sqrt3}{6}\\); \\(y-y_{1}=m(x-x_{1})\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hills Grammar 2025 Trial HSC Mathematics Extension 1",
+            "school": "The Hills Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -1672,6 +1776,218 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "gosford2020-e1-q7",
+          "type": "mc",
+          "stem": "Which of the following is an expression for \\(\\displaystyle\\int\\dfrac{x}{\\sqrt{9-x^{2}}}\\,dx\\)? Use the substitution \\(u=9-x^{2}\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(-\\sqrt{9-x^{2}}+C\\)",
+            "\\(-2\\sqrt{9-x^{2}}+C\\)",
+            "\\(\\sqrt{9-x^{2}}+C\\)",
+            "\\(2\\sqrt{9-x^{2}}+C\\)"
+          ],
+          "answer": 0,
+          "hint": "Let \\(u=9-x^{2}\\). Then \\(du=-2x\\,dx\\), so \\(x\\,dx=-\\dfrac12du\\). The integral becomes \\(-\\dfrac{1}{2}\\int u^{-\\frac{1}{2}}du\\).",
+          "steps": [
+            {
+              "explain": "Differentiate the substitution: \\(\\dfrac{du}{dx}=-2x\\), so \\(x\\,dx=-\\dfrac{du}{2}\\).",
+              "work": "\\(u=9-x^{2},\\qquad x\\,dx=-\\dfrac{1}{2}\\,du\\)"
+            },
+            {
+              "explain": "Rewrite the integral: \\(\\sqrt{9-x^{2}}=u^{\\frac12}\\).",
+              "work": "\\(\\int\\dfrac{x\\,dx}{\\sqrt{9-x^{2}}}=-\\dfrac{1}{2}\\int u^{-\\frac12}\\,du\\)"
+            },
+            {
+              "explain": "Integrate: \\(\\int u^{-\\frac12}du=\\dfrac{u^{\\frac12}}{\\dfrac{1}{2}}=2u^{\\frac12}\\).",
+              "work": "\\(=-\\dfrac{1}{2}\\cdot2u^{\\frac12}+C=-u^{\\frac12}+C\\)"
+            },
+            {
+              "explain": "Back-substitute \\(u=9-x^{2}\\).",
+              "work": "\\(=-\\sqrt{9-x^{2}}+C\\)"
+            },
+            {
+              "explain": "Check: \\(\\dfrac{d}{dx}\\left(-\\sqrt{9-x^{2}}\\right)=-\\dfrac{-2x}{2\\sqrt{9-x^{2}}}=\\dfrac{x}{\\sqrt{9-x^{2}}}\\) ✓. Why not the others: B has an extra factor 2 (the \\(-\\dfrac{1}{2}\\) was not applied); C and D have the wrong sign (\\(du=-2x\\,dx\\) gives a minus).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Use the substitution \\(u=9-x^{2}\\).",
+              "note": "\\(du=-2x\\,dx\\Rightarrow x\\,dx=-\\dfrac12du\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Trial HSC Mathematics Extension 1",
+            "school": "Gosford High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "gosford2020-e1-q11a",
+          "type": "mc",
+          "stem": "Use the substitution \\(u=\\cos x+1\\), find the exact value of the following integral: \\(\\displaystyle\\int_{0}^{\\frac{\\pi}{2}}e^{\\cos x+1}\\sin x\\,dx\\)",
+          "difficulty": "medium",
+          "options": [
+            "\\(e^{2}-e\\)",
+            "\\(e-e^{2}\\)",
+            "\\(e^{2}-1\\)",
+            "\\(e^{2}+e\\)"
+          ],
+          "answer": 0,
+          "hint": "With \\(u=\\cos x+1\\), \\(du=-\\sin x\\,dx\\): the \\(\\sin x\\,dx\\) becomes \\(-du\\). Change the LIMITS as well: \\(x=0\\Rightarrow u=2\\) and \\(x=\\dfrac{\\pi}{2}\\Rightarrow u=1\\).",
+          "steps": [
+            {
+              "explain": "Differentiate: \\(\\dfrac{du}{dx}=-\\sin x\\), so \\(\\sin x\\,dx=-du\\).",
+              "work": "\\(u=\\cos x+1,\\qquad\\sin x\\,dx=-du\\)"
+            },
+            {
+              "explain": "New limits: \\(x=0\\Rightarrow u=\\cos0+1=2\\); \\(x=\\dfrac{\\pi}{2}\\Rightarrow u=\\cos\\dfrac{\\pi}{2}+1=1\\).",
+              "work": "\\(x:0\\to\\dfrac{\\pi}{2}\\ \\Longrightarrow\\ u:2\\to1\\)"
+            },
+            {
+              "explain": "Substitute.",
+              "work": "\\(\\int_{2}^{1}e^{u}(-du)=-\\int_{2}^{1}e^{u}\\,du=\\int_{1}^{2}e^{u}\\,du\\)"
+            },
+            {
+              "explain": "Reversing the limits removed the minus sign. Integrate \\(e^{u}\\).",
+              "work": "\\(=\\Big[e^{u}\\Big]_{1}^{2}=e^{2}-e^{1}\\)"
+            },
+            {
+              "explain": "Why not the others: B has the limits the wrong way round (negative); C evaluates the lower limit as \\(e^{0}=1\\) (it should be \\(u=1\\), \\(e^{1}\\)); D adds instead of subtracting.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Use the substitution \\(u=\\cos x+1\\)",
+              "note": "\\(\\sin x\\,dx=-du\\); limits \\(2\\) to \\(1\\); reverse."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Trial HSC Mathematics Extension 1",
+            "school": "Gosford High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hillsgrammar-25-3u-q2",
+          "type": "mc",
+          "stem": "Evaluate \\(\\displaystyle\\int_{0}^{1}\\dfrac{dx}{\\sqrt{25-x^{2}}}\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(\\sin^{-1}\\left(\\dfrac{1}{5}\\right)\\)",
+            "\\(\\dfrac{1}{5}\\sin^{-1}\\left(\\dfrac{1}{5}\\right)\\)",
+            "\\(\\tan^{-1}\\left(\\dfrac{1}{5}\\right)\\)",
+            "\\(\\dfrac{1}{5}\\tan^{-1}\\left(\\dfrac{1}{5}\\right)\\)"
+          ],
+          "answer": 0,
+          "hint": "Standard form: \\(\\displaystyle\\int\\dfrac{dx}{\\sqrt{a^{2}-x^{2}}}=\\sin^{-1}\\dfrac{x}{a}\\) (NO factor \\(\\dfrac{1}{a}\\); that one belongs to the \\(\\tan^{-1}\\) form). Here \\(a^{2}=25\\), \\(a=5\\).",
+          "steps": [
+            {
+              "explain": "Compare \\(25-x^{2}\\) with \\(a^{2}-x^{2}\\): \\(a=5\\). The integral is the inverse SINE form (square root in the denominator, minus sign).",
+              "work": "\\(\\int\\dfrac{dx}{\\sqrt{5^{2}-x^{2}}}=\\sin^{-1}\\dfrac{x}{5}\\)"
+            },
+            {
+              "explain": "Evaluate between the limits: upper \\(x=1\\), lower \\(x=0\\).",
+              "work": "\\(\\Big[\\sin^{-1}\\dfrac{x}{5}\\Big]_{0}^{1}=\\sin^{-1}\\dfrac{1}{5}-\\sin^{-1}0\\)"
+            },
+            {
+              "explain": "\\(\\sin^{-1}0=0\\).",
+              "work": "\\(=\\sin^{-1}\\dfrac{1}{5}\\)"
+            },
+            {
+              "explain": "Why not the others: B puts an extra \\(\\dfrac{1}{5}\\) (that belongs only to \\(\\int\\dfrac{dx}{a^{2}+x^{2}}=\\dfrac{1}{a}\\tan^{-1}\\dfrac{x}{a}\\)); C and D are \\(\\tan^{-1}\\) answers (they need \\(a^{2}+x^{2}\\) in the denominator, not a square root).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Evaluate",
+              "note": "\\(\\int\\dfrac{dx}{\\sqrt{a^{2}-x^{2}}}=\\sin^{-1}\\dfrac{x}{a}\\); \\(a=5\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hills Grammar 2025 Trial HSC Mathematics Extension 1",
+            "school": "The Hills Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hillsgrammar-25-3u-q11b",
+          "type": "mc",
+          "stem": "Using the substitution \\(u=3x^{3}+2\\), or otherwise, find \\(\\displaystyle\\int x^{2}\\left(3x^{3}+2\\right)^{5}dx\\)",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{\\left(3x^{3}+2\\right)^{6}}{54}+c\\)",
+            "\\(\\dfrac{\\left(3x^{3}+2\\right)^{6}}{6}+c\\)",
+            "\\(\\dfrac{\\left(3x^{3}+2\\right)^{6}}{18}+c\\)",
+            "\\(\\dfrac{\\left(3x^{3}+2\\right)^{6}}{9}+c\\)"
+          ],
+          "answer": 0,
+          "hint": "\\(u=3x^{3}+2\\Rightarrow du=9x^{2}dx\\), so \\(x^{2}dx=\\dfrac{du}{9}\\). The integral becomes \\(\\dfrac{1}{9}\\int u^{5}du\\). Don't forget the \\(\\dfrac{1}{9}\\) AND the \\(\\dfrac{1}{6}\\) from the power rule.",
+          "steps": [
+            {
+              "explain": "Differentiate: \\(\\dfrac{du}{dx}=9x^{2}\\), so \\(x^{2}\\,dx=\\dfrac{1}{9}\\,du\\).",
+              "work": "\\(u=3x^{3}+2,\\qquad x^{2}\\,dx=\\dfrac{1}{9}\\,du\\)"
+            },
+            {
+              "explain": "Substitute.",
+              "work": "\\(\\int x^{2}\\left(3x^{3}+2\\right)^{5}dx=\\dfrac{1}{9}\\int u^{5}\\,du\\)"
+            },
+            {
+              "explain": "Integrate with the power rule \\(\\int u^{5}du=\\dfrac{u^{6}}{6}\\).",
+              "work": "\\(=\\dfrac{1}{9}\\cdot\\dfrac{u^{6}}{6}+c=\\dfrac{u^{6}}{54}+c\\)"
+            },
+            {
+              "explain": "Back-substitute.",
+              "work": "\\(=\\dfrac{\\left(3x^{3}+2\\right)^{6}}{54}+c\\)"
+            },
+            {
+              "explain": "Check: \\(\\dfrac{d}{dx}\\dfrac{(3x^{3}+2)^{6}}{54}=\\dfrac{6(3x^{3}+2)^{5}\\cdot9x^{2}}{54}=x^{2}(3x^{3}+2)^{5}\\) ✓. Why not the others: B forgets the \\(\\dfrac{1}{9}\\); C is \\(\\dfrac{1}{3\\times6}\\) (used \\(du=3x^{2}\\)); D forgets the \\(\\dfrac{1}{6}\\) of the power rule.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Using the substitution \\(u=3x^{3}+2\\)",
+              "note": "\\(du=9x^{2}dx\\); \\(\\dfrac{1}{9}\\int u^{5}du\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hills Grammar 2025 Trial HSC Mathematics Extension 1",
+            "school": "The Hills Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -2159,6 +2475,63 @@
           "meta": {
             "source": "Frensham School 2021 Year 12 Trial HSC Examination Mathematics Extension 1",
             "school": "Frensham School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "gosford2020-e1-q9",
+          "type": "mc",
+          "stem": "Which of the following expressions represents the area of the region bounded by the curve \\(y=\\sin^{3}x\\) and the \\(x\\)-axis from \\(x=-\\pi\\) to \\(x=2\\pi\\)? Use the substitution \\(u=\\cos x\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(-\\displaystyle\\int_{-\\pi}^{2\\pi}\\left(1-u^{2}\\right)du\\)",
+            "\\(-3\\displaystyle\\int_{0}^{\\pi}\\left(1-u^{2}\\right)du\\)",
+            "\\(-\\displaystyle\\int_{-1}^{1}\\left(1-u^{2}\\right)du\\)",
+            "\\(3\\displaystyle\\int_{-1}^{1}\\left(1-u^{2}\\right)du\\)"
+          ],
+          "answer": 3,
+          "hint": "AREA must be positive: split at the \\(x\\)-intercepts \\(x=-\\pi,0,\\pi,2\\pi\\). The curve is below the axis on \\((-\\pi,0)\\) and \\((\\pi,2\\pi)\\) but above on \\((0,\\pi)\\), and all three pieces have the SAME area (the graph repeats). So area \\(=3\\times\\int_{0}^{\\pi}\\sin^{3}x\\,dx\\). Then \\(u=\\cos x\\) turns the limits \\(0\\to\\pi\\) into \\(1\\to-1\\).",
+          "steps": [
+            {
+              "explain": "Sketch \\(y=\\sin^{3}x\\): it crosses the axis at \\(-\\pi,0,\\pi,2\\pi\\), with lobes of equal size (one above, two below). Each lobe has area \\(A\\), so the total area is \\(3A\\) (areas below the axis are counted positively).",
+              "work": "\\(\\text{Area}=3\\int_{0}^{\\pi}\\sin^{3}x\\,dx\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 500 230\" width=\"100%\" height=\"auto\" style=\"max-width:500px;display:block;margin:0 auto\"><line x1=\"5.2\" y1=\"120.0\" x2=\"487.6\" y2=\"120.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"170.0\" y1=\"210.0\" x2=\"170.0\" y2=\"14.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"487.6\" y1=\"120.0\" x2=\"480.7\" y2=\"116.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"487.6\" y1=\"120.0\" x2=\"480.7\" y2=\"124.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"170.0\" y1=\"14.0\" x2=\"166.0\" y2=\"20.9\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"170.0\" y1=\"14.0\" x2=\"174.0\" y2=\"20.9\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><polygon points=\"19.2,120 19.2,120.0 21.1,120.0 23.0,120.0 24.9,120.1 26.7,120.3 28.6,120.5 30.5,120.9 32.4,121.4 34.3,122.1 36.2,122.9 38.1,123.9 39.9,125.1 41.8,126.5 43.7,128.2 45.6,130.0 47.5,132.0 49.4,134.2 51.2,136.6 53.1,139.2 55.0,141.9 56.9,144.7 58.8,147.7 60.7,150.8 62.6,153.9 64.4,157.1 66.3,160.2 68.2,163.4 70.1,166.5 72.0,169.5 73.9,172.4 75.8,175.2 77.6,177.8 79.5,180.2 81.4,182.4 83.3,184.4 85.2,186.0 87.1,187.4 88.9,188.6 90.8,189.4 92.7,189.8 94.6,190.0 96.5,189.8 98.4,189.4 100.3,188.6 102.1,187.4 104.0,186.0 105.9,184.4 107.8,182.4 109.7,180.2 111.6,177.8 113.5,175.2 115.3,172.4 117.2,169.5 119.1,166.5 121.0,163.4 122.9,160.2 124.8,157.1 126.6,153.9 128.5,150.8 130.4,147.7 132.3,144.7 134.2,141.9 136.1,139.2 138.0,136.6 139.8,134.2 141.7,132.0 143.6,130.0 145.5,128.2 147.4,126.5 149.3,125.1 151.2,123.9 153.0,122.9 154.9,122.1 156.8,121.4 158.7,120.9 160.6,120.5 162.5,120.3 164.3,120.1 166.2,120.0 168.1,120.0 170.0,120.0 170.0,120\" fill=\"#d97706\" fill-opacity=\"0.35\"/><polygon points=\"170.0,120 170.0,120.0 171.9,120.0 173.8,120.0 175.7,119.9 177.5,119.7 179.4,119.5 181.3,119.1 183.2,118.6 185.1,117.9 187.0,117.1 188.8,116.1 190.7,114.9 192.6,113.5 194.5,111.8 196.4,110.0 198.3,108.0 200.2,105.8 202.0,103.4 203.9,100.8 205.8,98.1 207.7,95.3 209.6,92.3 211.5,89.2 213.4,86.1 215.2,82.9 217.1,79.8 219.0,76.6 220.9,73.5 222.8,70.5 224.7,67.6 226.5,64.8 228.4,62.2 230.3,59.8 232.2,57.6 234.1,55.6 236.0,54.0 237.9,52.6 239.7,51.4 241.6,50.6 243.5,50.2 245.4,50.0 247.3,50.2 249.2,50.6 251.1,51.4 252.9,52.6 254.8,54.0 256.7,55.6 258.6,57.6 260.5,59.8 262.4,62.2 264.2,64.8 266.1,67.6 268.0,70.5 269.9,73.5 271.8,76.6 273.7,79.8 275.6,82.9 277.4,86.1 279.3,89.2 281.2,92.3 283.1,95.3 285.0,98.1 286.9,100.8 288.8,103.4 290.6,105.8 292.5,108.0 294.4,110.0 296.3,111.8 298.2,113.5 300.1,114.9 301.9,116.1 303.8,117.1 305.7,117.9 307.6,118.6 309.5,119.1 311.4,119.5 313.3,119.7 315.1,119.9 317.0,120.0 318.9,120.0 320.8,120.0 320.8,120\" fill=\"#3b4ea8\" fill-opacity=\"0.35\"/><polygon points=\"320.8,120 320.8,120.0 322.7,120.0 324.6,120.0 326.5,120.1 328.3,120.3 330.2,120.5 332.1,120.9 334.0,121.4 335.9,122.1 337.8,122.9 339.6,123.9 341.5,125.1 343.4,126.5 345.3,128.2 347.2,130.0 349.1,132.0 351.0,134.2 352.8,136.6 354.7,139.2 356.6,141.9 358.5,144.7 360.4,147.7 362.3,150.8 364.2,153.9 366.0,157.1 367.9,160.2 369.8,163.4 371.7,166.5 373.6,169.5 375.5,172.4 377.3,175.2 379.2,177.8 381.1,180.2 383.0,182.4 384.9,184.4 386.8,186.0 388.7,187.4 390.5,188.6 392.4,189.4 394.3,189.8 396.2,190.0 398.1,189.8 400.0,189.4 401.8,188.6 403.7,187.4 405.6,186.0 407.5,184.4 409.4,182.4 411.3,180.2 413.2,177.8 415.0,175.2 416.9,172.4 418.8,169.5 420.7,166.5 422.6,163.4 424.5,160.2 426.4,157.1 428.2,153.9 430.1,150.8 432.0,147.7 433.9,144.7 435.8,141.9 437.7,139.2 439.5,136.6 441.4,134.2 443.3,132.0 445.2,130.0 447.1,128.2 449.0,126.5 450.9,125.1 452.7,123.9 454.6,122.9 456.5,122.1 458.4,121.4 460.3,120.9 462.2,120.5 464.1,120.3 465.9,120.1 467.8,120.0 469.7,120.0 471.6,120.0 471.6,120\" fill=\"#d97706\" fill-opacity=\"0.35\"/><polyline points=\"19.2,120.0 20.7,120.0 22.2,120.0 23.7,120.1 25.2,120.1 26.7,120.3 28.3,120.5 29.8,120.7 31.3,121.1 32.8,121.5 34.3,122.1 35.8,122.7 37.3,123.5 38.8,124.4 40.3,125.4 41.8,126.5 43.3,127.8 44.8,129.2 46.3,130.8 47.9,132.4 49.4,134.2 50.9,136.1 52.4,138.1 53.9,140.2 55.4,142.5 56.9,144.7 58.4,147.1 59.9,149.5 61.4,152.0 62.9,154.5 64.4,157.1 66.0,159.6 67.5,162.1 69.0,164.6 70.5,167.1 72.0,169.5 73.5,171.9 75.0,174.1 76.5,176.3 78.0,178.3 79.5,180.2 81.0,182.0 82.5,183.6 84.0,185.1 85.6,186.3 87.1,187.4 88.6,188.4 90.1,189.1 91.6,189.6 93.1,189.9 94.6,190.0 96.1,189.9 97.6,189.6 99.1,189.1 100.6,188.4 102.1,187.4 103.6,186.3 105.2,185.1 106.7,183.6 108.2,182.0 109.7,180.2 111.2,178.3 112.7,176.3 114.2,174.1 115.7,171.9 117.2,169.5 118.7,167.1 120.2,164.6 121.7,162.1 123.3,159.6 124.8,157.1 126.3,154.5 127.8,152.0 129.3,149.5 130.8,147.1 132.3,144.7 133.8,142.5 135.3,140.2 136.8,138.1 138.3,136.1 139.8,134.2 141.3,132.4 142.9,130.8 144.4,129.2 145.9,127.8 147.4,126.5 148.9,125.4 150.4,124.4 151.9,123.5 153.4,122.7 154.9,122.1 156.4,121.5 157.9,121.1 159.4,120.7 161.0,120.5 162.5,120.3 164.0,120.1 165.5,120.1 167.0,120.0 168.5,120.0 170.0,120.0 171.5,120.0 173.0,120.0 174.5,119.9 176.0,119.9 177.5,119.7 179.0,119.5 180.6,119.3 182.1,118.9 183.6,118.5 185.1,117.9 186.6,117.3 188.1,116.5 189.6,115.6 191.1,114.6 192.6,113.5 194.1,112.2 195.6,110.8 197.1,109.2 198.7,107.6 200.2,105.8 201.7,103.9 203.2,101.9 204.7,99.8 206.2,97.5 207.7,95.3 209.2,92.9 210.7,90.5 212.2,88.0 213.7,85.5 215.2,82.9 216.7,80.4 218.3,77.9 219.8,75.4 221.3,72.9 222.8,70.5 224.3,68.1 225.8,65.9 227.3,63.7 228.8,61.7 230.3,59.8 231.8,58.0 233.3,56.4 234.8,54.9 236.4,53.7 237.9,52.6 239.4,51.6 240.9,50.9 242.4,50.4 243.9,50.1 245.4,50.0 246.9,50.1 248.4,50.4 249.9,50.9 251.4,51.6 252.9,52.6 254.4,53.7 256.0,54.9 257.5,56.4 259.0,58.0 260.5,59.8 262.0,61.7 263.5,63.7 265.0,65.9 266.5,68.1 268.0,70.5 269.5,72.9 271.0,75.4 272.5,77.9 274.0,80.4 275.6,82.9 277.1,85.5 278.6,88.0 280.1,90.5 281.6,92.9 283.1,95.3 284.6,97.5 286.1,99.8 287.6,101.9 289.1,103.9 290.6,105.8 292.1,107.6 293.7,109.2 295.2,110.8 296.7,112.2 298.2,113.5 299.7,114.6 301.2,115.6 302.7,116.5 304.2,117.3 305.7,117.9 307.2,118.5 308.7,118.9 310.2,119.3 311.7,119.5 313.3,119.7 314.8,119.9 316.3,119.9 317.8,120.0 319.3,120.0 320.8,120.0 322.3,120.0 323.8,120.0 325.3,120.1 326.8,120.1 328.3,120.3 329.8,120.5 331.4,120.7 332.9,121.1 334.4,121.5 335.9,122.1 337.4,122.7 338.9,123.5 340.4,124.4 341.9,125.4 343.4,126.5 344.9,127.8 346.4,129.2 347.9,130.8 349.4,132.4 351.0,134.2 352.5,136.1 354.0,138.1 355.5,140.2 357.0,142.5 358.5,144.7 360.0,147.1 361.5,149.5 363.0,152.0 364.5,154.5 366.0,157.1 367.5,159.6 369.1,162.1 370.6,164.6 372.1,167.1 373.6,169.5 375.1,171.9 376.6,174.1 378.1,176.3 379.6,178.3 381.1,180.2 382.6,182.0 384.1,183.6 385.6,185.1 387.1,186.3 388.7,187.4 390.2,188.4 391.7,189.1 393.2,189.6 394.7,189.9 396.2,190.0 397.7,189.9 399.2,189.6 400.7,189.1 402.2,188.4 403.7,187.4 405.2,186.3 406.8,185.1 408.3,183.6 409.8,182.0 411.3,180.2 412.8,178.3 414.3,176.3 415.8,174.1 417.3,171.9 418.8,169.5 420.3,167.1 421.8,164.6 423.3,162.1 424.8,159.6 426.4,157.1 427.9,154.5 429.4,152.0 430.9,149.5 432.4,147.1 433.9,144.7 435.4,142.5 436.9,140.2 438.4,138.1 439.9,136.1 441.4,134.2 442.9,132.4 444.4,130.8 446.0,129.2 447.5,127.8 449.0,126.5 450.5,125.4 452.0,124.4 453.5,123.5 455.0,122.7 456.5,122.1 458.0,121.5 459.5,121.1 461.0,120.7 462.5,120.5 464.1,120.3 465.6,120.1 467.1,120.1 468.6,120.0 470.1,120.0 471.6,120.0\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2.4\"/><line x1=\"19.2\" y1=\"117.0\" x2=\"19.2\" y2=\"123.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"19.2\" y=\"137.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">−π</text><line x1=\"320.8\" y1=\"117.0\" x2=\"320.8\" y2=\"123.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"320.8\" y=\"137.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">π</text><line x1=\"471.6\" y1=\"117.0\" x2=\"471.6\" y2=\"123.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"471.6\" y=\"137.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2π</text><text x=\"94.6\" y=\"155.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">A</text><text x=\"245.4\" y=\"96.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">A</text><text x=\"396.2\" y=\"155.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">A</text><text x=\"481.6\" y=\"112.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><text x=\"180.0\" y=\"22.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">y</text></svg>"
+              }
+            },
+            {
+              "explain": "Substitute \\(u=\\cos x\\): \\(du=-\\sin x\\,dx\\). Write \\(\\sin^{3}x\\,dx=\\sin^{2}x\\cdot\\sin x\\,dx=(1-\\cos^{2}x)\\sin x\\,dx=-(1-u^{2})\\,du\\).",
+              "work": "\\(\\sin^{3}x\\,dx=-(1-u^{2})\\,du\\)"
+            },
+            {
+              "explain": "Change the limits: \\(x=0\\Rightarrow u=\\cos0=1\\); \\(x=\\pi\\Rightarrow u=\\cos\\pi=-1\\).",
+              "work": "\\(3\\int_{0}^{\\pi}\\sin^{3}x\\,dx=3\\int_{1}^{-1}-(1-u^{2})\\,du\\)"
+            },
+            {
+              "explain": "Reverse the limits to remove the minus sign: \\(-\\int_{1}^{-1}=\\int_{-1}^{1}\\).",
+              "work": "\\(=3\\int_{-1}^{1}\\left(1-u^{2}\\right)du\\)"
+            },
+            {
+              "explain": "Check the value: \\(3\\left[u-\\dfrac{u^{3}}{3}\\right]_{-1}^{1}=3\\left(\\dfrac{2}{3}+\\dfrac{2}{3}\\right)=4\\) ✓ (positive, as an area must be). Why not the others: A and C are NEGATIVE (\\(-\\int_{-1}^{1}(1-u^{2})du=-\\dfrac{4}{3}\\)); B has the limits \\(0\\) to \\(\\pi\\) left in \\(x\\) (not converted to \\(u\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">D</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "area of the region",
+              "note": "Three equal lobes: \\(3\\int_{0}^{\\pi}\\sin^{3}x\\,dx\\); \\(u=\\cos x\\): limits \\(1\\to-1\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Trial HSC Mathematics Extension 1",
+            "school": "Gosford High School",
             "grade": "12",
             "origin": "teacher"
           }
@@ -3325,6 +3698,60 @@
           "meta": {
             "source": "Glenwood High School 2020 Year 12 Mathematics Extension 1 Trial HSC Examination",
             "school": "Glenwood High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hillsgrammar-25-3u-q11c",
+          "type": "mc",
+          "stem": "Evaluate \\(\\displaystyle\\int_{0}^{\\frac{\\pi}{3}}\\cos^{2}2x\\,dx\\)",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{\\pi}{6}-\\dfrac{\\sqrt3}{16}\\)",
+            "\\(\\dfrac{\\pi}{6}+\\dfrac{\\sqrt3}{16}\\)",
+            "\\(\\dfrac{\\pi}{3}-\\dfrac{\\sqrt3}{8}\\)",
+            "\\(\\dfrac{\\pi}{6}-\\dfrac{\\sqrt3}{4}\\)"
+          ],
+          "answer": 0,
+          "hint": "A SQUARED trig function cannot be integrated directly. Use the double-angle identity \\(\\cos^{2}A=\\dfrac{1+\\cos2A}{2}\\) with \\(A=2x\\): \\(\\cos^{2}2x=\\dfrac{1+\\cos4x}{2}\\) (on the reference sheet).",
+          "steps": [
+            {
+              "explain": "Apply \\(\\cos^{2}nx=\\dfrac{1}{2}(1+\\cos2nx)\\) with \\(n=2\\).",
+              "work": "\\(\\cos^{2}2x=\\dfrac{1}{2}\\left(1+\\cos4x\\right)\\)"
+            },
+            {
+              "explain": "Integrate: \\(\\int1\\,dx=x\\) and \\(\\int\\cos4x\\,dx=\\dfrac{\\sin4x}{4}\\).",
+              "work": "\\(\\int_{0}^{\\frac\\pi3}\\dfrac{1}{2}(1+\\cos4x)\\,dx=\\dfrac{1}{2}\\Big[x+\\dfrac{\\sin4x}{4}\\Big]_{0}^{\\frac\\pi3}\\)"
+            },
+            {
+              "explain": "Upper limit \\(x=\\dfrac\\pi3\\): \\(\\dfrac\\pi3+\\dfrac{\\sin\\dfrac{4\\pi}{3}}{4}\\), where \\(\\sin\\dfrac{4\\pi}{3}=-\\sin\\dfrac\\pi3=-\\dfrac{\\sqrt3}{2}\\) (third quadrant). Lower limit: \\(0\\).",
+              "work": "\\(=\\dfrac{1}{2}\\left(\\dfrac\\pi3+\\dfrac{-\\dfrac{\\sqrt3}{2}}{4}\\right)=\\dfrac{1}{2}\\left(\\dfrac\\pi3-\\dfrac{\\sqrt3}{8}\\right)\\)"
+            },
+            {
+              "explain": "Distribute the \\(\\dfrac{1}{2}\\).",
+              "work": "\\(=\\dfrac{\\pi}{6}-\\dfrac{\\sqrt3}{16}\\)"
+            },
+            {
+              "explain": "Check numerically: \\(\\dfrac\\pi6-\\dfrac{\\sqrt3}{16}\\approx0.5236-0.1083=0.4153\\), plausible since \\(\\cos^{2}2x\\) averages about \\(\\dfrac{1}{2}\\) over a length \\(\\approx1.05\\). Why not the others: B has the wrong sign (\\(\\sin\\dfrac{4\\pi}{3}<0\\)); C forgets the \\(\\dfrac{1}{2}\\) outside; D uses \\(\\dfrac{\\sqrt3}{4}\\) (forgot the \\(\\dfrac{1}{4}\\) from integrating \\(\\cos4x\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Evaluate",
+              "note": "\\(\\cos^{2}2x=\\dfrac{1}{2}(1+\\cos4x)\\); \\(\\sin\\dfrac{4\\pi}{3}=-\\dfrac{\\sqrt3}{2}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hills Grammar 2025 Trial HSC Mathematics Extension 1",
+            "school": "The Hills Grammar School",
             "grade": "12",
             "origin": "teacher"
           }

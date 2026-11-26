@@ -837,6 +837,56 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "hillsgrammar-25-3u-q5",
+          "type": "mc",
+          "stem": "Let \\(P(x)\\) be polynomial of degree 6. When \\(P(x)\\) is divided by the polynomial \\(Q(x)\\), the remainder is \\(x^{2}+2\\). Which statement is true about the about the degree of \\(Q(x)\\)?",
+          "difficulty": "medium",
+          "options": [
+            "The degree of \\(Q(x)\\) must be at least 2",
+            "The degree of \\(Q(x)\\) must be 2",
+            "The degree of \\(Q(x)\\) must be at least 3",
+            "The degree of \\(Q(x)\\) must be 3"
+          ],
+          "answer": 2,
+          "hint": "Division rule: \\(P(x)=Q(x)A(x)+R(x)\\) where the REMAINDER \\(R(x)\\) has degree LESS THAN the divisor \\(Q(x)\\). The remainder here has degree 2.",
+          "steps": [
+            {
+              "explain": "Write the division identity.",
+              "work": "\\(P(x)=Q(x)\\,A(x)+\\left(x^{2}+2\\right)\\)"
+            },
+            {
+              "explain": "The remainder must have a smaller degree than the divisor: \\(\\deg R<\\deg Q\\). Here \\(\\deg R=2\\), so \\(\\deg Q>2\\).",
+              "work": "\\(2<\\deg Q\\ \\Rightarrow\\ \\deg Q\\ge3\\)"
+            },
+            {
+              "explain": "Also \\(\\deg Q\\le6\\) (since \\(P\\) has degree 6), so \\(\\deg Q\\) can be 3, 4, 5 or 6 — not just 3. Hence “at least 3”.",
+              "work": "\\(3\\le\\deg Q\\le6\\)"
+            },
+            {
+              "explain": "Why not the others: A (“at least 2”) allows degree 2, but a degree-2 divisor cannot leave a degree-2 remainder; B (“must be 2”) is impossible for the same reason; D (“must be 3”) is too restrictive.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">C</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Which statement is true about the about the degree of \\(Q(x)\\)?",
+              "note": "Remainder degree \\(<\\) divisor degree."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hills Grammar 2025 Trial HSC Mathematics Extension 1",
+            "school": "The Hills Grammar School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -3549,6 +3599,168 @@
           "meta": {
             "source": "Girraween High School 2020 Year 11 Yearly Examination Mathematics Extension 1",
             "school": "Girraween High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "gosford2020-e1-q12a1",
+          "type": "mc",
+          "stem": "The roots of \\(x^{3}-x^{2}-5x+2=0\\) are \\(\\alpha,\\beta,\\gamma\\). Show that \\(\\beta+\\gamma=1-\\alpha\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(\\begin{aligned}&\\alpha+\\beta+\\gamma=-\\dfrac{b}{a}=-\\dfrac{-1}{1}=1\\\\ &\\text{subtract }\\alpha\\text{ from both sides: }\\beta+\\gamma=1-\\alpha\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\alpha+\\beta+\\gamma=-\\dfrac{b}{a}=\\dfrac{-1}{1}=-1\\\\ &\\beta+\\gamma=-1-\\alpha\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\alpha+\\beta+\\gamma=\\dfrac{c}{a}=-5\\\\ &\\beta+\\gamma=-5-\\alpha\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\alpha\\beta\\gamma=-\\dfrac{d}{a}=-2\\\\ &\\beta+\\gamma=-2-\\alpha\\end{aligned}\\)"
+          ],
+          "answer": 0,
+          "hint": "For \\(ax^{3}+bx^{2}+cx+d=0\\): the SUM of the roots is \\(\\alpha+\\beta+\\gamma=-\\dfrac{b}{a}\\). Find it from the coefficients, then rearrange to isolate \\(\\beta+\\gamma\\).",
+          "steps": [
+            {
+              "explain": "Read the coefficients: \\(a=1\\), \\(b=-1\\), \\(c=-5\\), \\(d=2\\).",
+              "work": "\\(a=1,\\quad b=-1,\\quad c=-5,\\quad d=2\\)"
+            },
+            {
+              "explain": "Sum of the roots of a cubic: \\(\\alpha+\\beta+\\gamma=-\\dfrac{b}{a}\\) (minus the \\(x^{2}\\) coefficient over the \\(x^{3}\\) coefficient).",
+              "work": "\\(\\alpha+\\beta+\\gamma=-\\dfrac{-1}{1}=1\\)"
+            },
+            {
+              "explain": "Subtract \\(\\alpha\\) from both sides.",
+              "work": "\\(\\beta+\\gamma=1-\\alpha\\ \\ \\blacksquare\\)"
+            },
+            {
+              "explain": "Why not the others: B forgets that \\(\\dfrac{-b}{a}\\) with \\(b=-1\\) is \\(+1\\); C uses \\(\\dfrac{c}{a}\\) (that is the sum of PRODUCTS of pairs); D uses the product \\(\\alpha\\beta\\gamma\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that \\(\\beta+\\gamma=1-\\alpha\\).",
+              "note": "\\(\\alpha+\\beta+\\gamma=-\\dfrac{b}{a}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Trial HSC Mathematics Extension 1",
+            "school": "Gosford High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "gosford2020-e1-q12a2",
+          "type": "mc",
+          "stem": "The roots of \\(x^{3}-x^{2}-5x+2=0\\) are \\(\\alpha,\\beta,\\gamma\\). Using part (i), and similar results, evaluate \\(\\dfrac{\\beta+\\gamma}{\\alpha}+\\dfrac{\\gamma+\\alpha}{\\beta}+\\dfrac{\\alpha+\\beta}{\\gamma}\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(-\\dfrac{1}{2}\\)",
+            "\\(\\dfrac{1}{2}\\)",
+            "\\(\\dfrac{11}{2}\\)",
+            "\\(-\\dfrac{11}{2}\\)"
+          ],
+          "answer": 0,
+          "hint": "Replace each numerator using \\(\\beta+\\gamma=1-\\alpha\\), \\(\\gamma+\\alpha=1-\\beta\\), \\(\\alpha+\\beta=1-\\gamma\\). Each fraction splits as \\(\\dfrac{1}{\\alpha}-1\\). Then \\(\\dfrac1\\alpha+\\dfrac1\\beta+\\dfrac1\\gamma=\\dfrac{\\alpha\\beta+\\beta\\gamma+\\gamma\\alpha}{\\alpha\\beta\\gamma}\\).",
+          "steps": [
+            {
+              "explain": "Similar results to part (i) (each pair sums to \\(1\\) minus the third root).",
+              "work": "\\(\\beta+\\gamma=1-\\alpha,\\quad\\gamma+\\alpha=1-\\beta,\\quad\\alpha+\\beta=1-\\gamma\\)"
+            },
+            {
+              "explain": "Substitute and split each fraction: \\(\\dfrac{1-\\alpha}{\\alpha}=\\dfrac1\\alpha-1\\).",
+              "work": "\\(\\dfrac{1-\\alpha}{\\alpha}+\\dfrac{1-\\beta}{\\beta}+\\dfrac{1-\\gamma}{\\gamma}=\\left(\\dfrac1\\alpha+\\dfrac1\\beta+\\dfrac1\\gamma\\right)-3\\)"
+            },
+            {
+              "explain": "Combine the reciprocals over the common denominator \\(\\alpha\\beta\\gamma\\).",
+              "work": "\\(\\dfrac1\\alpha+\\dfrac1\\beta+\\dfrac1\\gamma=\\dfrac{\\alpha\\beta+\\beta\\gamma+\\gamma\\alpha}{\\alpha\\beta\\gamma}\\)"
+            },
+            {
+              "explain": "From the coefficients: \\(\\alpha\\beta+\\beta\\gamma+\\gamma\\alpha=\\dfrac{c}{a}=-5\\) and \\(\\alpha\\beta\\gamma=-\\dfrac{d}{a}=-2\\).",
+              "work": "\\(\\dfrac{-5}{-2}=\\dfrac{5}{2}\\)"
+            },
+            {
+              "explain": "Subtract 3.",
+              "work": "\\(\\dfrac{5}{2}-3=-\\dfrac{1}{2}\\)"
+            },
+            {
+              "explain": "Why not the others: B drops the sign; C and D come from not subtracting 3 or from using \\(\\alpha\\beta\\gamma=2\\) (the product is \\(\\dfrac{-d}{a}=-2\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Using part (i), and similar results, evaluate",
+              "note": "\\(\\dfrac{1-\\alpha}{\\alpha}=\\dfrac1\\alpha-1\\); \\(\\sum\\dfrac1\\alpha=\\dfrac{\\sum\\alpha\\beta}{\\alpha\\beta\\gamma}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Trial HSC Mathematics Extension 1",
+            "school": "Gosford High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hillsgrammar-25-3u-q11f",
+          "type": "mc",
+          "stem": "The cubic polynomial \\(P(x)=x^{3}+x^{2}-8x-12\\) has roots \\(\\alpha,\\beta\\) and \\(\\gamma\\). Find \\(\\alpha^{2}+\\beta^{2}+\\gamma^{2}\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(17\\)",
+            "\\(-15\\)",
+            "\\(1\\)",
+            "\\(65\\)"
+          ],
+          "answer": 0,
+          "hint": "You cannot square the roots directly, but \\((\\alpha+\\beta+\\gamma)^{2}=\\alpha^{2}+\\beta^{2}+\\gamma^{2}+2(\\alpha\\beta+\\beta\\gamma+\\gamma\\alpha)\\). Rearrange: \\(\\sum\\alpha^{2}=(\\sum\\alpha)^{2}-2\\sum\\alpha\\beta\\). Get both sums from the coefficients.",
+          "steps": [
+            {
+              "explain": "Coefficients: \\(a=1\\), \\(b=1\\), \\(c=-8\\), \\(d=-12\\).",
+              "work": "\\(\\alpha+\\beta+\\gamma=-\\dfrac{b}{a}=-1,\\qquad\\alpha\\beta+\\beta\\gamma+\\gamma\\alpha=\\dfrac{c}{a}=-8\\)"
+            },
+            {
+              "explain": "Expand the square of the sum.",
+              "work": "\\((\\alpha+\\beta+\\gamma)^{2}=\\alpha^{2}+\\beta^{2}+\\gamma^{2}+2(\\alpha\\beta+\\beta\\gamma+\\gamma\\alpha)\\)"
+            },
+            {
+              "explain": "Rearrange for the sum of squares.",
+              "work": "\\(\\alpha^{2}+\\beta^{2}+\\gamma^{2}=(\\alpha+\\beta+\\gamma)^{2}-2(\\alpha\\beta+\\beta\\gamma+\\gamma\\alpha)\\)"
+            },
+            {
+              "explain": "Substitute: \\((-1)^{2}=1\\) and \\(-2(-8)=+16\\).",
+              "work": "\\(=(-1)^{2}-2(-8)=1+16=17\\)"
+            },
+            {
+              "explain": "Check: \\(P(x)=(x+2)^{2}(x-3)\\) (roots \\(-2,-2,3\\)): \\(4+4+9=17\\) ✓. Why not the others: B forgets the \\(-8\\) is negative; C is only \\((\\alpha+\\beta+\\gamma)^{2}\\); D adds \\(1+64\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find \\(\\alpha^{2}+\\beta^{2}+\\gamma^{2}\\).",
+              "note": "\\(\\sum\\alpha^{2}=(\\sum\\alpha)^{2}-2\\sum\\alpha\\beta\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hills Grammar 2025 Trial HSC Mathematics Extension 1",
+            "school": "The Hills Grammar School",
             "grade": "11",
             "origin": "teacher"
           }

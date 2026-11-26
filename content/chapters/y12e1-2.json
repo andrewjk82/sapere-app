@@ -504,6 +504,64 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "hillsgrammar-25-3u-q12c",
+          "type": "mc",
+          "stem": "Use mathematical induction to prove for all integers \\(n\\ge1\\) that \\(1\\times2+2\\times3+3\\times4+\\cdots+n(n+1)=\\dfrac13n(n+1)(n+2)\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\begin{aligned}&n=1:\\ \\text{LHS}=1\\times2=2,\\ \\text{RHS}=\\dfrac{1}{3}(1)(2)(3)=2.\\ \\text{Assume }S_{k}=\\dfrac13k(k+1)(k+2)\\\\ &S_{k+1}=\\dfrac13k(k+1)(k+2)+(k+1)(k+2)=\\dfrac{1}{3}(k+1)(k+2)(k+3)\\end{aligned}\\)",
+            "\\(\\begin{aligned}&n=1:\\ \\text{LHS}=1\\times2=2,\\ \\text{RHS}=\\dfrac{1}{3}(1)(2)(3)=2.\\ \\text{Assume }S_{k}=\\dfrac13k(k+1)(k+2)\\\\ &S_{k+1}=\\dfrac13k(k+1)(k+2)+k(k+1)=\\dfrac{1}{3}(k+1)(k+2)(k+3)\\end{aligned}\\)",
+            "\\(\\begin{aligned}&n=1:\\ \\text{LHS}=1\\times2=2,\\ \\text{RHS}=\\dfrac{1}{3}(1)(2)(3)=2.\\ \\text{Assume }S_{k}=\\dfrac13k(k+1)(k+2)\\\\ &S_{k+1}=\\dfrac13k(k+1)(k+2)+(k+1)(k+2)=\\dfrac{1}{3}(k+1)(k+2)(k+2)\\end{aligned}\\)",
+            "\\(\\begin{aligned}&n=1:\\ \\text{LHS}=1\\times2=2,\\ \\text{RHS}=\\dfrac{1}{3}(1)(2)(3)=6\\\\ &\\text{(base case fails)}\\end{aligned}\\)"
+          ],
+          "answer": 0,
+          "hint": "Base case \\(n=1\\); assume \\(P(k)\\); for \\(P(k+1)\\) ADD the NEXT term \\((k+1)(k+2)\\) to the assumed sum, then factor out \\((k+1)(k+2)\\).",
+          "steps": [
+            {
+              "explain": "Base case \\(n=1\\): LHS \\(=1\\times2=2\\). RHS \\(=\\dfrac{1}{3}(1)(2)(3)=2\\). Equal ✓.",
+              "work": "\\(\\text{LHS}=2=\\text{RHS}\\)"
+            },
+            {
+              "explain": "Assume \\(P(k)\\): \\(1\\times2+\\cdots+k(k+1)=\\dfrac13k(k+1)(k+2)\\).",
+              "work": "\\(S_{k}=\\dfrac13k(k+1)(k+2)\\)"
+            },
+            {
+              "explain": "RTP \\(P(k+1)\\): \\(S_{k+1}=\\dfrac{1}{3}(k+1)(k+2)(k+3)\\). The \\((k+1)\\)th term is \\((k+1)\\big((k+1)+1\\big)=(k+1)(k+2)\\).",
+              "work": "\\(S_{k+1}=S_{k}+(k+1)(k+2)\\)"
+            },
+            {
+              "explain": "Substitute the assumption and factor out the common factor \\((k+1)(k+2)\\).",
+              "work": "\\(=\\dfrac13k(k+1)(k+2)+(k+1)(k+2)=(k+1)(k+2)\\left(\\dfrac{k}{3}+1\\right)\\)"
+            },
+            {
+              "explain": "Simplify the bracket: \\(\\dfrac{k}{3}+1=\\dfrac{k+3}{3}\\).",
+              "work": "\\(=\\dfrac{1}{3}(k+1)(k+2)(k+3)\\)"
+            },
+            {
+              "explain": "This is \\(P(k+1)\\). \\(P(1)\\) is true and \\(P(k)\\Rightarrow P(k+1)\\), so \\(P(n)\\) is true for all \\(n\\ge1\\) by induction. ∎ Why not the others: B adds \\(k(k+1)\\) (the \\(k\\)th term, not the \\((k+1)\\)th); C factors incorrectly (\\(k+2\\) instead of \\(k+3\\)); D evaluates the base case wrongly.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Use mathematical induction to prove",
+              "note": "Base \\(n=1\\); add the \\((k+1)\\)th term \\((k+1)(k+2)\\); factor."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hills Grammar 2025 Trial HSC Mathematics Extension 1",
+            "school": "The Hills Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -987,6 +1045,126 @@
           "meta": {
             "source": "Girraween High School 2020 Mathematics Extension 1 Trial HSC Examination",
             "school": "Girraween High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "gosford2020-e1-q10",
+          "type": "mc",
+          "stem": "Emma made an error proving that \\(2^{n}+(-1)^{n+1}\\) is divisible by 3 for all integers \\(n\\ge1\\) using mathematical induction. The proof is shown below.\n\nStep 1: To prove \\(2^{n}+(-1)^{n+1}\\) is divisible by 3 (\\(n\\) is integer). To prove true for \\(n=1\\): \\(2^{1}+(-1)^{1+1}=2+1=3\\times1\\). Result is true for \\(n=1\\). (Line 1)\n\nStep 2: Assume true for \\(n=k\\): \\(2^{k}+(-1)^{k+1}=3m\\) (\\(m\\) is an integer). (Line 2)\n\nStep 3: To prove true for \\(n=k+1\\): \\(2^{k+1}+(-1)^{k+1+1}=2(2^{k})+(-1)^{k+2}\\). (Line 3) \\(=2\\left[3m+(-1)^{k+1}\\right]+(-1)^{k+2}\\). (Line 4) \\(=2\\times3m+2\\times(-1)^{k+2}+(-1)^{k+2}=3\\left[2m+(-1)^{k+2}\\right]\\), which is a multiple of 3 since \\(m\\) and \\(k\\) are integers.\n\nStep 4: True by induction.\n\nIn which line did Emma make an error?",
+          "difficulty": "hard",
+          "options": [
+            "Line 1",
+            "Line 2",
+            "Line 3",
+            "Line 4"
+          ],
+          "answer": 3,
+          "hint": "Check each line: Line 1 is the base case, Line 2 is the assumption, Line 3 just splits \\(2^{k+1}=2\\cdot2^{k}\\). In Line 4 she replaces \\(2^{k}\\). From Line 2, \\(2^{k}=3m-(-1)^{k+1}\\) — look carefully at the SIGN of the \\((-1)^{k+1}\\) term she used.",
+          "steps": [
+            {
+              "explain": "Line 1: \\(n=1\\): \\(2^{1}+(-1)^{2}=2+1=3=3\\times1\\). Correct.",
+              "work": "\\(2+1=3\\times1\\ \\checkmark\\)"
+            },
+            {
+              "explain": "Line 2: the assumption \\(2^{k}+(-1)^{k+1}=3m\\) is the correct statement of \\(P(k)\\).",
+              "work": "\\(2^{k}+(-1)^{k+1}=3m\\ \\checkmark\\)"
+            },
+            {
+              "explain": "Line 3: \\(2^{k+1}=2\\cdot2^{k}\\) and \\((-1)^{k+1+1}=(-1)^{k+2}\\). Correct.",
+              "work": "\\(2^{k+1}+(-1)^{k+2}=2(2^{k})+(-1)^{k+2}\\ \\checkmark\\)"
+            },
+            {
+              "explain": "Line 4: she needs \\(2^{k}\\) from Line 2. Subtract \\((-1)^{k+1}\\) from both sides: \\(2^{k}=3m-(-1)^{k+1}\\). She wrote \\(2^{k}=3m+(-1)^{k+1}\\) — a SIGN ERROR.",
+              "work": "\\(\\text{correct: }2^{k}=3m-(-1)^{k+1}\\qquad\\text{Emma: }2^{k}=3m+(-1)^{k+1}\\ \\times\\)"
+            },
+            {
+              "explain": "Fix it: \\(2\\left[3m-(-1)^{k+1}\\right]+(-1)^{k+2}=6m-2(-1)^{k+1}+(-1)^{k+2}\\). Since \\((-1)^{k+2}=-(-1)^{k+1}\\), this is \\(6m+2(-1)^{k+2}+(-1)^{k+2}=6m+3(-1)^{k+2}=3\\left[2m+(-1)^{k+2}\\right]\\) — the same final result, so the proof can be repaired, but Line 4 as written is wrong.",
+              "work": "\\(=3\\left[2m+(-1)^{k+2}\\right]\\)"
+            },
+            {
+              "explain": "So the error is in Line 4. Why not the others: Lines 1–3 are all correct statements.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">D</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "In which line did Emma make an error?",
+              "note": "Solve Line 2 for \\(2^{k}\\): subtract \\((-1)^{k+1}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Trial HSC Mathematics Extension 1",
+            "school": "Gosford High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "gosford2020-e1-q12b",
+          "type": "mc",
+          "stem": "Use mathematical induction to prove that \\(15^{n}+2^{3n}-2\\) is a multiple of 7 for \\(n\\ge1\\)",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\begin{aligned}&n=1:\\ 15+8-2=21=7\\times3.\\quad\\text{Assume }15^{k}+2^{3k}-2=7q,\\ \\text{so }15^{k}=7q-2^{3k}+2\\\\ &15^{k+1}+2^{3(k+1)}-2=15(7q-2^{3k}+2)+8\\cdot2^{3k}-2=7(15q-2^{3k}+4)\\ \\text{a multiple of 7}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&n=1:\\ 15+8-2=21=7\\times3.\\quad\\text{Assume }15^{k}+2^{3k}-2=7q,\\ \\text{so }15^{k}=7q-2^{3k}+2\\\\ &15^{k+1}+2^{3(k+1)}-2=15(7q-2^{3k}+2)+8\\cdot2^{3k}-2=7(15q-2^{3k}+4)+2^{3k}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&n=1:\\ 15+8-2=21=7\\times3.\\quad\\text{Assume }15^{k}+2^{3k}-2=7q,\\ \\text{so }15^{k}=7q+2^{3k}-2\\\\ &15^{k+1}+2^{3(k+1)}-2=15(7q+2^{3k}-2)+8\\cdot2^{3k}-2=7(15q+\\ldots)+23\\cdot2^{3k}-32\\end{aligned}\\)",
+            "\\(\\begin{aligned}&n=1:\\ 15+8-2=21\\ \\text{so the result is true for all }n\\\\ &\\text{(no inductive step)}\\end{aligned}\\)"
+          ],
+          "answer": 0,
+          "hint": "Three steps: BASE CASE \\(n=1\\); ASSUME \\(P(k)\\): \\(15^{k}+2^{3k}-2=7q\\); PROVE \\(P(k+1)\\). In the last step write \\(15^{k+1}=15\\cdot15^{k}\\) and \\(2^{3(k+1)}=8\\cdot2^{3k}\\), and substitute \\(15^{k}=7q-2^{3k}+2\\) from the assumption.",
+          "steps": [
+            {
+              "explain": "Base case \\(n=1\\): \\(15^{1}+2^{3}-2=15+8-2=21=7\\times3\\) ✓ a multiple of 7.",
+              "work": "\\(15+8-2=21=7\\times3\\)"
+            },
+            {
+              "explain": "Assume true for \\(n=k\\) (\\(k\\ge1\\)): \\(15^{k}+2^{3k}-2=7q\\) for some integer \\(q\\). Rearrange to get \\(15^{k}\\).",
+              "work": "\\(15^{k}=7q-2^{3k}+2\\)"
+            },
+            {
+              "explain": "Prove \\(n=k+1\\): \\(15^{k+1}+2^{3(k+1)}-2\\). Split the powers: \\(15^{k+1}=15\\cdot15^{k}\\), \\(2^{3k+3}=2^{3}\\cdot2^{3k}=8\\cdot2^{3k}\\).",
+              "work": "\\(15\\cdot15^{k}+8\\cdot2^{3k}-2\\)"
+            },
+            {
+              "explain": "Substitute \\(15^{k}=7q-2^{3k}+2\\).",
+              "work": "\\(=15\\left(7q-2^{3k}+2\\right)+8\\cdot2^{3k}-2=105q-15\\cdot2^{3k}+30+8\\cdot2^{3k}-2\\)"
+            },
+            {
+              "explain": "Collect: \\(-15\\cdot2^{3k}+8\\cdot2^{3k}=-7\\cdot2^{3k}\\) and \\(30-2=28\\). Everything now has a factor 7.",
+              "work": "\\(=105q-7\\cdot2^{3k}+28=7\\left(15q-2^{3k}+4\\right)\\)"
+            },
+            {
+              "explain": "\\(15q-2^{3k}+4\\) is an integer, so the expression is a multiple of 7. \\(P(1)\\) is true and \\(P(k)\\Rightarrow P(k+1)\\), so by mathematical induction it is true for all \\(n\\ge1\\). ∎",
+              "work": "\\(=7M\\quad(M\\in\\mathbb{Z})\\)"
+            },
+            {
+              "explain": "Why not the others: B leaves a leftover \\(+2^{3k}\\) (an arithmetic slip); C uses \\(15^{k}=7q+2^{3k}-2\\) (wrong sign from the assumption); D has no inductive step.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Use mathematical induction to prove that",
+              "note": "Base \\(n=1\\); \\(15^{k}=7q-2^{3k}+2\\); \\(15^{k+1}=15\\cdot15^{k}\\), \\(2^{3k+3}=8\\cdot2^{3k}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Trial HSC Mathematics Extension 1",
+            "school": "Gosford High School",
             "grade": "12",
             "origin": "teacher"
           }

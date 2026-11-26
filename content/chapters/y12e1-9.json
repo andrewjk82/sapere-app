@@ -550,6 +550,130 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "hillsgrammar-25-3u-q3",
+          "type": "mc",
+          "stem": "It is given that \\(\\underset{\\sim}{a}=\\overrightarrow{OA}=\\begin{pmatrix}2\\\\ 1\\end{pmatrix}\\) and \\(\\underset{\\sim}{b}=\\overrightarrow{OB}=\\begin{pmatrix}2\\\\ 3\\end{pmatrix}\\), and \\(\\underset{\\sim}{v}\\) starts at the tip of \\(2\\underset{\\sim}{b}\\) and finishes at the tip of \\(3\\underset{\\sim}{a}\\) as shown. Which vector is equal to \\(\\underset{\\sim}{v}\\)?",
+          "difficulty": "easy",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 300\" width=\"100%\" height=\"auto\" style=\"max-width:380px;display:block;margin:0 auto\"><line x1=\"40.0\" y1=\"260.0\" x2=\"160.0\" y2=\"200.0\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"160.0\" y1=\"200.0\" x2=\"150.0\" y2=\"199.4\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"160.0\" y1=\"200.0\" x2=\"154.5\" y2=\"208.3\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"40.0\" y1=\"260.0\" x2=\"120.0\" y2=\"140.0\" stroke=\"#d97706\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"120.0\" y1=\"140.0\" x2=\"111.0\" y2=\"144.4\" stroke=\"#d97706\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"120.0\" y1=\"140.0\" x2=\"119.4\" y2=\"150.0\" stroke=\"#d97706\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"120.0\" y1=\"140.0\" x2=\"160.0\" y2=\"200.0\" stroke=\"#dc2626\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"160.0\" y1=\"200.0\" x2=\"159.4\" y2=\"190.0\" stroke=\"#dc2626\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"160.0\" y1=\"200.0\" x2=\"151.0\" y2=\"195.6\" stroke=\"#dc2626\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"30.0\" y=\"274.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">O</text><text x=\"108.0\" y=\"248.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">3a</text><text x=\"70.0\" y=\"200.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">2b</text><text x=\"152.0\" y=\"166.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">v</text></svg>"
+          },
+          "options": [
+            "\\(\\begin{pmatrix}-2\\\\ 3\\end{pmatrix}\\)",
+            "\\(\\begin{pmatrix}2\\\\-3\\end{pmatrix}\\)",
+            "\\(\\begin{pmatrix}4\\\\ 4\\end{pmatrix}\\)",
+            "\\(\\begin{pmatrix}10\\\\ 9\\end{pmatrix}\\)"
+          ],
+          "answer": 1,
+          "hint": "A vector from a START point to an END point is END \\(-\\) START (position vectors). Here start \\(=2\\underset{\\sim}{b}\\), end \\(=3\\underset{\\sim}{a}\\), so \\(\\underset{\\sim}{v}=3\\underset{\\sim}{a}-2\\underset{\\sim}{b}\\). Go round the triangle: \\(O\\to2\\underset{\\sim}{b}\\to3\\underset{\\sim}{a}\\) equals \\(O\\to3\\underset{\\sim}{a}\\).",
+          "steps": [
+            {
+              "explain": "Triangle rule: \\(2\\underset{\\sim}{b}+\\underset{\\sim}{v}=3\\underset{\\sim}{a}\\) (go to the tip of \\(2\\underset{\\sim}{b}\\), then along \\(\\underset{\\sim}{v}\\), arriving at the tip of \\(3\\underset{\\sim}{a}\\)). So \\(\\underset{\\sim}{v}=3\\underset{\\sim}{a}-2\\underset{\\sim}{b}\\).",
+              "work": "\\(\\underset{\\sim}{v}=3\\underset{\\sim}{a}-2\\underset{\\sim}{b}\\)"
+            },
+            {
+              "explain": "Scale the vectors: \\(3\\underset{\\sim}{a}=3\\begin{pmatrix}2\\\\ 1\\end{pmatrix}=\\begin{pmatrix}6\\\\ 3\\end{pmatrix}\\) and \\(2\\underset{\\sim}{b}=2\\begin{pmatrix}2\\\\ 3\\end{pmatrix}=\\begin{pmatrix}4\\\\ 6\\end{pmatrix}\\).",
+              "work": "\\(3\\underset{\\sim}{a}=\\begin{pmatrix}6\\\\ 3\\end{pmatrix},\\qquad2\\underset{\\sim}{b}=\\begin{pmatrix}4\\\\ 6\\end{pmatrix}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 300\" width=\"100%\" height=\"auto\" style=\"max-width:380px;display:block;margin:0 auto\"><line x1=\"40.0\" y1=\"260.0\" x2=\"160.0\" y2=\"200.0\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"160.0\" y1=\"200.0\" x2=\"150.0\" y2=\"199.4\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"160.0\" y1=\"200.0\" x2=\"154.5\" y2=\"208.3\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"40.0\" y1=\"260.0\" x2=\"120.0\" y2=\"140.0\" stroke=\"#d97706\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"120.0\" y1=\"140.0\" x2=\"111.0\" y2=\"144.4\" stroke=\"#d97706\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"120.0\" y1=\"140.0\" x2=\"119.4\" y2=\"150.0\" stroke=\"#d97706\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"120.0\" y1=\"140.0\" x2=\"160.0\" y2=\"200.0\" stroke=\"#dc2626\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"160.0\" y1=\"200.0\" x2=\"159.4\" y2=\"190.0\" stroke=\"#dc2626\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"160.0\" y1=\"200.0\" x2=\"151.0\" y2=\"195.6\" stroke=\"#dc2626\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"30.0\" y=\"274.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">O</text><text x=\"108.0\" y=\"248.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">3a</text><text x=\"70.0\" y=\"200.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">2b</text><text x=\"152.0\" y=\"166.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">v</text><line x1=\"40.0\" y1=\"260.0\" x2=\"40.0\" y2=\"260.0\" stroke=\"#1e293b\" stroke-width=\"0.1\" stroke-linecap=\"round\"/><text x=\"168.0\" y=\"216.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">(6, 3)</text><text x=\"112.0\" y=\"134.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">(4, 6)</text></svg>"
+              }
+            },
+            {
+              "explain": "Subtract component by component: \\(6-4=2\\) and \\(3-6=-3\\).",
+              "work": "\\(\\underset{\\sim}{v}=\\begin{pmatrix}6-4\\\\ 3-6\\end{pmatrix}=\\begin{pmatrix}2\\\\-3\\end{pmatrix}\\)"
+            },
+            {
+              "explain": "Check with the diagram: \\(\\underset{\\sim}{v}\\) goes to the RIGHT (positive \\(x\\)) and DOWN (negative \\(y\\)) from \\((4,6)\\) to \\((6,3)\\) ✓. Why not the others: A is \\(2\\underset{\\sim}{b}-3\\underset{\\sim}{a}\\) (reversed direction); C is \\(\\underset{\\sim}{a}+\\underset{\\sim}{b}\\); D is \\(3\\underset{\\sim}{a}+2\\underset{\\sim}{b}\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">B</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Which vector is equal to \\(\\underset{\\sim}{v}\\)?",
+              "note": "\\(\\underset{\\sim}{v}\\) = end \\(-\\) start \\(=3\\underset{\\sim}{a}-2\\underset{\\sim}{b}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hills Grammar 2025 Trial HSC Mathematics Extension 1",
+            "school": "The Hills Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hillsgrammar-25-3u-q14e",
+          "type": "mc",
+          "stem": "In the parallelogram \\(OABC\\), \\(M\\) is the midpoint of \\(BC\\) and \\(N\\) is the midpoint of \\(OC\\). Let \\(\\overrightarrow{OA}=\\underset{\\sim}{a}\\) and \\(\\overrightarrow{OC}=\\underset{\\sim}{c}\\). Prove that \\(\\overrightarrow{OP}=\\dfrac{1}{5}\\underset{\\sim}{a}+\\dfrac{2}{5}\\underset{\\sim}{c}\\).",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 250\" width=\"100%\" height=\"auto\" style=\"max-width:400px;display:block;margin:0 auto\"><polygon points=\"60,200 300,200 360,40 120,40\" fill=\"#e0e7ff\" fill-opacity=\"0.1\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><line x1=\"60.0\" y1=\"200.0\" x2=\"330.0\" y2=\"120.0\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"120.0\" y1=\"40.0\" x2=\"180.0\" y2=\"200.0\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><circle cx=\"60.0\" cy=\"200.0\" r=\"3.8\" fill=\"#1e293b\"/><text x=\"48.0\" y=\"214.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">O</text><circle cx=\"120.0\" cy=\"40.0\" r=\"3.8\" fill=\"#1e293b\"/><text x=\"116.0\" y=\"30.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A</text><circle cx=\"360.0\" cy=\"40.0\" r=\"3.8\" fill=\"#1e293b\"/><text x=\"370.0\" y=\"34.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text><circle cx=\"300.0\" cy=\"200.0\" r=\"3.8\" fill=\"#1e293b\"/><text x=\"310.0\" y=\"214.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">C</text><circle cx=\"330.0\" cy=\"120.0\" r=\"3.8\" fill=\"#1e293b\"/><text x=\"342.0\" y=\"124.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">M</text><circle cx=\"180.0\" cy=\"200.0\" r=\"3.8\" fill=\"#1e293b\"/><text x=\"180.0\" y=\"218.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">N</text><circle cx=\"168.0\" cy=\"168.0\" r=\"3.8\" fill=\"#1e293b\"/><text x=\"156.0\" y=\"164.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">P</text></svg>"
+          },
+          "options": [
+            "\\(\\begin{aligned}&\\overrightarrow{OM}=\\underset{\\sim}{c}+\\dfrac{1}{2}\\underset{\\sim}{a},\\ \\ \\overrightarrow{AN}=\\dfrac{1}{2}\\underset{\\sim}{c}-\\underset{\\sim}{a}.\\ \\ \\overrightarrow{OP}=\\lambda\\overrightarrow{OM}=\\underset{\\sim}{a}+\\mu\\overrightarrow{AN}\\\\ &\\dfrac\\lambda2=1-\\mu,\\ \\lambda=\\dfrac\\mu2\\ \\Rightarrow\\ \\lambda=\\dfrac{2}{5}\\ \\Rightarrow\\ \\overrightarrow{OP}=\\dfrac{2}{5}\\left(\\underset{\\sim}{c}+\\dfrac{1}{2}\\underset{\\sim}{a}\\right)=\\dfrac{1}{5}\\underset{\\sim}{a}+\\dfrac{2}{5}\\underset{\\sim}{c}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\overrightarrow{OM}=\\underset{\\sim}{c}+\\dfrac{1}{2}\\underset{\\sim}{a},\\ \\ \\overrightarrow{AN}=\\dfrac{1}{2}\\underset{\\sim}{c}-\\underset{\\sim}{a}.\\ \\ \\overrightarrow{OP}=\\lambda\\overrightarrow{OM}=\\underset{\\sim}{a}+\\mu\\overrightarrow{AN}\\\\ &\\dfrac\\lambda2=1-\\mu,\\ \\lambda=\\mu\\ \\Rightarrow\\ \\lambda=\\dfrac{2}{3}\\ \\Rightarrow\\ \\overrightarrow{OP}=\\dfrac{1}{3}\\underset{\\sim}{a}+\\dfrac{2}{3}\\underset{\\sim}{c}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\overrightarrow{OM}=\\underset{\\sim}{a}+\\dfrac{1}{2}\\underset{\\sim}{c},\\ \\ \\overrightarrow{AN}=\\dfrac{1}{2}\\underset{\\sim}{c}-\\underset{\\sim}{a}.\\ \\ \\overrightarrow{OP}=\\lambda\\overrightarrow{OM}=\\underset{\\sim}{a}+\\mu\\overrightarrow{AN}\\\\ &\\lambda=1-\\mu,\\ \\dfrac\\lambda2=\\dfrac\\mu2\\ \\Rightarrow\\ \\lambda=\\dfrac{1}{2}\\ \\Rightarrow\\ \\overrightarrow{OP}=\\dfrac{1}{2}\\underset{\\sim}{a}+\\dfrac{1}{4}\\underset{\\sim}{c}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\overrightarrow{OM}=\\underset{\\sim}{c}+\\dfrac{1}{2}\\underset{\\sim}{a},\\ \\ \\overrightarrow{OP}=\\lambda\\overrightarrow{OM}\\\\ &\\text{and }P\\text{ is the midpoint of }OM\\Rightarrow\\overrightarrow{OP}=\\dfrac{1}{2}\\underset{\\sim}{c}+\\dfrac{1}{4}\\underset{\\sim}{a}\\end{aligned}\\)"
+          ],
+          "answer": 0,
+          "hint": "\\(P\\) lies on BOTH lines \\(OM\\) and \\(AN\\). Write \\(\\overrightarrow{OP}\\) in two ways: \\(\\overrightarrow{OP}=\\lambda\\overrightarrow{OM}\\) and \\(\\overrightarrow{OP}=\\overrightarrow{OA}+\\mu\\overrightarrow{AN}\\). Compare the coefficients of \\(\\underset{\\sim}{a}\\) and \\(\\underset{\\sim}{c}\\) (they are independent vectors) to get two equations.",
+          "steps": [
+            {
+              "explain": "Parallelogram \\(OABC\\): \\(\\overrightarrow{CB}=\\overrightarrow{OA}=\\underset{\\sim}{a}\\), so \\(M\\) (midpoint of \\(BC\\)) is \\(\\dfrac{1}{2}\\underset{\\sim}{a}\\) from \\(C\\). \\(N\\) is the midpoint of \\(OC\\): \\(\\overrightarrow{ON}=\\dfrac{1}{2}\\underset{\\sim}{c}\\).",
+              "work": "\\(\\overrightarrow{OM}=\\underset{\\sim}{c}+\\dfrac{1}{2}\\underset{\\sim}{a},\\qquad\\overrightarrow{ON}=\\dfrac{1}{2}\\underset{\\sim}{c}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 250\" width=\"100%\" height=\"auto\" style=\"max-width:400px;display:block;margin:0 auto\"><polygon points=\"60,200 300,200 360,40 120,40\" fill=\"#e0e7ff\" fill-opacity=\"0.35\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><line x1=\"60.0\" y1=\"200.0\" x2=\"330.0\" y2=\"120.0\" stroke=\"#dc2626\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"120.0\" y1=\"40.0\" x2=\"180.0\" y2=\"200.0\" stroke=\"#047857\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><circle cx=\"60.0\" cy=\"200.0\" r=\"3.8\" fill=\"#1e293b\"/><text x=\"48.0\" y=\"214.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">O</text><circle cx=\"120.0\" cy=\"40.0\" r=\"3.8\" fill=\"#1e293b\"/><text x=\"116.0\" y=\"30.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A</text><circle cx=\"360.0\" cy=\"40.0\" r=\"3.8\" fill=\"#1e293b\"/><text x=\"370.0\" y=\"34.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text><circle cx=\"300.0\" cy=\"200.0\" r=\"3.8\" fill=\"#1e293b\"/><text x=\"310.0\" y=\"214.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">C</text><circle cx=\"330.0\" cy=\"120.0\" r=\"3.8\" fill=\"#1e293b\"/><text x=\"342.0\" y=\"124.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">M</text><circle cx=\"180.0\" cy=\"200.0\" r=\"3.8\" fill=\"#1e293b\"/><text x=\"180.0\" y=\"218.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">N</text><circle cx=\"168.0\" cy=\"168.0\" r=\"3.8\" fill=\"#1e293b\"/><text x=\"156.0\" y=\"164.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">P</text><line x1=\"60.0\" y1=\"200.0\" x2=\"120.0\" y2=\"40.0\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"120.0\" y1=\"40.0\" x2=\"113.0\" y2=\"45.7\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"120.0\" y1=\"40.0\" x2=\"121.5\" y2=\"48.9\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"96.0\" y=\"120.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">a</text><line x1=\"60.0\" y1=\"200.0\" x2=\"300.0\" y2=\"200.0\" stroke=\"#d97706\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"300.0\" y1=\"200.0\" x2=\"292.2\" y2=\"195.5\" stroke=\"#d97706\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"300.0\" y1=\"200.0\" x2=\"292.2\" y2=\"204.5\" stroke=\"#d97706\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"180.0\" y=\"234.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">c</text></svg>"
+              }
+            },
+            {
+              "explain": "\\(\\overrightarrow{AN}=\\overrightarrow{ON}-\\overrightarrow{OA}\\) (end minus start).",
+              "work": "\\(\\overrightarrow{AN}=\\dfrac{1}{2}\\underset{\\sim}{c}-\\underset{\\sim}{a}\\)"
+            },
+            {
+              "explain": "\\(P\\) on \\(OM\\): \\(\\overrightarrow{OP}=\\lambda\\overrightarrow{OM}=\\dfrac\\lambda2\\underset{\\sim}{a}+\\lambda\\underset{\\sim}{c}\\). \\(P\\) on \\(AN\\): \\(\\overrightarrow{OP}=\\overrightarrow{OA}+\\mu\\overrightarrow{AN}=(1-\\mu)\\underset{\\sim}{a}+\\dfrac\\mu2\\underset{\\sim}{c}\\).",
+              "work": "\\(\\dfrac\\lambda2\\underset{\\sim}{a}+\\lambda\\underset{\\sim}{c}=(1-\\mu)\\underset{\\sim}{a}+\\dfrac\\mu2\\underset{\\sim}{c}\\)"
+            },
+            {
+              "explain": "\\(\\underset{\\sim}{a}\\) and \\(\\underset{\\sim}{c}\\) are not parallel, so the coefficients match: \\(\\dfrac\\lambda2=1-\\mu\\) and \\(\\lambda=\\dfrac\\mu2\\).",
+              "work": "\\(\\dfrac\\lambda2=1-\\mu\\ \\ (1),\\qquad\\lambda=\\dfrac\\mu2\\ \\ (2)\\)"
+            },
+            {
+              "explain": "From (2) \\(\\mu=2\\lambda\\). Substitute in (1): \\(\\dfrac\\lambda2=1-2\\lambda\\Rightarrow\\dfrac{5\\lambda}{2}=1\\Rightarrow\\lambda=\\dfrac{2}{5}\\).",
+              "work": "\\(\\lambda=\\dfrac{2}{5}\\)"
+            },
+            {
+              "explain": "Substitute \\(\\lambda\\) into \\(\\overrightarrow{OP}=\\lambda\\overrightarrow{OM}\\).",
+              "work": "\\(\\overrightarrow{OP}=\\dfrac{2}{5}\\left(\\underset{\\sim}{c}+\\dfrac{1}{2}\\underset{\\sim}{a}\\right)=\\dfrac{1}{5}\\underset{\\sim}{a}+\\dfrac{2}{5}\\underset{\\sim}{c}\\ \\ \\blacksquare\\)"
+            },
+            {
+              "explain": "Why not the others: B uses \\(\\lambda=\\mu\\) (error in the \\(\\underset{\\sim}{c}\\) coefficients); C swaps \\(\\overrightarrow{OM}\\) (it is \\(\\underset{\\sim}{c}+\\dfrac{1}{2}\\underset{\\sim}{a}\\), not \\(\\underset{\\sim}{a}+\\dfrac{1}{2}\\underset{\\sim}{c}\\)); D assumes \\(P\\) is the midpoint of \\(OM\\) (not given).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Prove that \\(\\overrightarrow{OP}=\\dfrac{1}{5}\\underset{\\sim}{a}+\\dfrac{2}{5}\\underset{\\sim}{c}\\).",
+              "note": "\\(\\overrightarrow{OP}=\\lambda\\overrightarrow{OM}=\\overrightarrow{OA}+\\mu\\overrightarrow{AN}\\); equate coefficients."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hills Grammar 2025 Trial HSC Mathematics Extension 1",
+            "school": "The Hills Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -1248,6 +1372,109 @@
           "meta": {
             "source": "Girraween High School 2020 Mathematics Extension 1 Trial HSC Examination",
             "school": "Girraween High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "gosford2020-e1-q12c1",
+          "type": "mc",
+          "stem": "Points \\(A,B\\) have position vectors \\(\\overrightarrow{OA}=3\\underset{\\sim}{i}-2\\underset{\\sim}{j}\\), \\(\\overrightarrow{OB}=-\\underset{\\sim}{i}+\\underset{\\sim}{j}\\). Find the unit vector along \\(\\overrightarrow{AB}\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(\\dfrac{1}{5}\\begin{pmatrix}-4\\\\ 3\\end{pmatrix}\\)",
+            "\\(\\dfrac{1}{5}\\begin{pmatrix}4\\\\-3\\end{pmatrix}\\)",
+            "\\(\\begin{pmatrix}-4\\\\ 3\\end{pmatrix}\\)",
+            "\\(\\dfrac{1}{7}\\begin{pmatrix}-4\\\\ 3\\end{pmatrix}\\)"
+          ],
+          "answer": 0,
+          "hint": "\\(\\overrightarrow{AB}=\\overrightarrow{OB}-\\overrightarrow{OA}\\) (END minus START). A UNIT vector has length 1: divide the vector by its magnitude \\(\\hat{\\underset{\\sim}{c}}=\\dfrac{\\underset{\\sim}{c}}{|\\underset{\\sim}{c}|}\\).",
+          "steps": [
+            {
+              "explain": "Position vectors as columns: \\(\\overrightarrow{OA}=\\begin{pmatrix}3\\\\-2\\end{pmatrix}\\), \\(\\overrightarrow{OB}=\\begin{pmatrix}-1\\\\ 1\\end{pmatrix}\\).",
+              "work": "\\(\\overrightarrow{AB}=\\overrightarrow{OB}-\\overrightarrow{OA}=\\begin{pmatrix}-1-3\\\\ 1-(-2)\\end{pmatrix}=\\begin{pmatrix}-4\\\\ 3\\end{pmatrix}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 280\" width=\"100%\" height=\"auto\" style=\"max-width:340px;display:block;margin:0 auto\"><line x1=\"20.0\" y1=\"170.0\" x2=\"330.0\" y2=\"170.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"140.0\" y1=\"272.0\" x2=\"140.0\" y2=\"12.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"330.0\" y1=\"170.0\" x2=\"323.1\" y2=\"166.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"330.0\" y1=\"170.0\" x2=\"323.1\" y2=\"174.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"140.0\" y1=\"12.0\" x2=\"136.0\" y2=\"18.9\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"140.0\" y1=\"12.0\" x2=\"144.0\" y2=\"18.9\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"328.0\" y=\"186.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">i</text><text x=\"148.0\" y=\"16.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">j</text><line x1=\"140.0\" y1=\"170.0\" x2=\"248.0\" y2=\"242.0\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"248.0\" y1=\"242.0\" x2=\"243.6\" y2=\"233.0\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"248.0\" y1=\"242.0\" x2=\"238.0\" y2=\"241.4\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"140.0\" y1=\"170.0\" x2=\"104.0\" y2=\"134.0\" stroke=\"#d97706\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"104.0\" y1=\"134.0\" x2=\"106.6\" y2=\"143.7\" stroke=\"#d97706\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"104.0\" y1=\"134.0\" x2=\"113.7\" y2=\"136.6\" stroke=\"#d97706\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"248.0\" y1=\"242.0\" x2=\"104.0\" y2=\"134.0\" stroke=\"#047857\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><text x=\"256.0\" y=\"256.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A(3, −2)</text><text x=\"96.0\" y=\"130.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B(−1, 1)</text></svg>"
+              }
+            },
+            {
+              "explain": "Magnitude (Pythagoras): \\(|\\overrightarrow{AB}|=\\sqrt{(-4)^{2}+3^{2}}=\\sqrt{16+9}=5\\).",
+              "work": "\\(|\\overrightarrow{AB}|=5\\)"
+            },
+            {
+              "explain": "Divide each component by 5 to get length 1.",
+              "work": "\\(\\hat{\\underset{\\sim}{c}}=\\dfrac{1}{5}\\begin{pmatrix}-4\\\\ 3\\end{pmatrix}=\\begin{pmatrix}-\\dfrac{4}{5}\\\\\\ dfrac{3}{5}\\end{pmatrix}\\)"
+            },
+            {
+              "explain": "Check the length: \\(\\sqrt{\\dfrac{16}{25}+\\dfrac{9}{25}}=1\\) ✓. Why not the others: B is \\(\\overrightarrow{BA}\\) (opposite direction: start and end swapped); C is not a unit vector (length 5); D divides by 7 (\\(4+3\\), adding instead of Pythagoras).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the unit vector along \\(\\overrightarrow{AB}\\).",
+              "note": "\\(\\overrightarrow{AB}=\\overrightarrow{OB}-\\overrightarrow{OA}\\); divide by \\(|\\overrightarrow{AB}|\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Trial HSC Mathematics Extension 1",
+            "school": "Gosford High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hillsgrammar-25-3u-q6",
+          "type": "mc",
+          "stem": "The vectors \\(128\\underset{\\sim}{i}+m\\underset{\\sim}{j}\\) and \\(\\sqrt{m}\\underset{\\sim}{i}+\\sqrt[3]{m}\\underset{\\sim}{j}\\) are parallel, where \\(m\\) is a real number. What is the value of \\(m\\)?",
+          "difficulty": "hard",
+          "options": [
+            "\\(m=1\\)",
+            "\\(m=8\\)",
+            "\\(m=27\\)",
+            "\\(m=64\\)"
+          ],
+          "answer": 3,
+          "hint": "Parallel vectors have PROPORTIONAL components: \\(\\dfrac{128}{\\sqrt m}=\\dfrac{m}{\\sqrt[3]m}\\). Simplest: TEST each option — the correct \\(m\\) makes both \\(\\sqrt m\\) and \\(\\sqrt[3]m\\) whole numbers whose ratio matches \\(128:m\\).",
+          "steps": [
+            {
+              "explain": "Parallel means one vector is a multiple of the other, so the ratios of matching components are equal.",
+              "work": "\\(\\dfrac{128}{\\sqrt{m}}=\\dfrac{m}{\\sqrt[3]{m}}\\ \\Longleftrightarrow\\ 128\\sqrt[3]{m}=m\\sqrt{m}\\)"
+            },
+            {
+              "explain": "Write with indices: \\(128\\,m^{\\frac13}=m^{\\frac32}\\Rightarrow m^{\\frac32-\\frac13}=128\\Rightarrow m^{\\frac76}=128=2^{7}\\).",
+              "work": "\\(m^{\\frac76}=2^{7}\\ \\Rightarrow\\ m=2^{7\\times\\frac67}=2^{6}=64\\)"
+            },
+            {
+              "explain": "Check \\(m=64\\): \\(\\sqrt{64}=8\\), \\(\\sqrt[3]{64}=4\\). The vectors are \\(128\\underset{\\sim}{i}+64\\underset{\\sim}{j}\\) and \\(8\\underset{\\sim}{i}+4\\underset{\\sim}{j}\\), and \\(128\\underset{\\sim}{i}+64\\underset{\\sim}{j}=16\\left(8\\underset{\\sim}{i}+4\\underset{\\sim}{j}\\right)\\) ✓ parallel.",
+              "work": "\\(\\begin{pmatrix}128\\\\ 64\\end{pmatrix}=16\\begin{pmatrix}8\\\\ 4\\end{pmatrix}\\)"
+            },
+            {
+              "explain": "Why not the others: \\(m=1\\): \\((128,1)\\) vs \\((1,1)\\) — ratios \\(128\\ne1\\); \\(m=8\\): \\((128,8)\\) vs \\((2.83,2)\\) — ratios \\(45.3\\ne4\\); \\(m=27\\): \\((128,27)\\) vs \\((5.2,3)\\) — ratios \\(24.6\\ne9\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">D</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "What is the value of \\(m\\)?",
+              "note": "Proportional components; test \\(m=64\\): \\(\\sqrt{64}=8\\), \\(\\sqrt[3]{64}=4\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hills Grammar 2025 Trial HSC Mathematics Extension 1",
+            "school": "The Hills Grammar School",
             "grade": "12",
             "origin": "teacher"
           }
@@ -2413,6 +2640,229 @@
           "meta": {
             "source": "Girraween High School 2020 Mathematics Extension 1 Trial HSC Examination",
             "school": "Girraween High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "gosford2020-e1-q4",
+          "type": "mc",
+          "stem": "An equilateral triangle of side 3 units is shown below. Vectors \\(\\underset{\\sim}{u}\\) and \\(\\underset{\\sim}{v}\\) are represented in the diagram. What is the value of \\(\\underset{\\sim}{u}\\cdot\\underset{\\sim}{v}\\)?",
+          "difficulty": "easy",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 250\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><polygon points=\"60,205 270,205 165.0,23.1\" fill=\"#e0e7ff\" fill-opacity=\"0.15\" stroke=\"#1e293b\" stroke-width=\"2\"/><line x1=\"60.0\" y1=\"205.0\" x2=\"165.0\" y2=\"23.1\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"165.0\" y1=\"23.1\" x2=\"156.3\" y2=\"28.1\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"165.0\" y1=\"23.1\" x2=\"165.0\" y2=\"33.1\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"205.0\" x2=\"270.0\" y2=\"205.0\" stroke=\"#d97706\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"270.0\" y1=\"205.0\" x2=\"261.3\" y2=\"200.0\" stroke=\"#d97706\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"270.0\" y1=\"205.0\" x2=\"261.3\" y2=\"210.0\" stroke=\"#d97706\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"98.5\" y=\"114.1\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">u</text><text x=\"165.0\" y=\"225.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">v</text></svg>"
+          },
+          "options": [
+            "\\(0\\)",
+            "\\(\\dfrac{9}{\\sqrt2}\\)",
+            "\\(\\dfrac{9}{2}\\)",
+            "\\(9\\)"
+          ],
+          "answer": 2,
+          "hint": "\\(\\underset{\\sim}{u}\\cdot\\underset{\\sim}{v}=|\\underset{\\sim}{u}||\\underset{\\sim}{v}|\\cos\\theta\\) where \\(\\theta\\) is the angle between the vectors when they are drawn from the SAME STARTING POINT. Here both arrows start at the bottom-left vertex, so \\(\\theta\\) is the angle of the triangle there.",
+          "steps": [
+            {
+              "explain": "Both vectors start at the same vertex (bottom-left): \\(\\underset{\\sim}{u}\\) goes up the left side, \\(\\underset{\\sim}{v}\\) goes along the base. Each has length 3 (the triangle is equilateral, side 3).",
+              "work": "\\(|\\underset{\\sim}{u}|=3,\\qquad|\\underset{\\sim}{v}|=3\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 250\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><polygon points=\"60,205 270,205 165.0,23.1\" fill=\"#e0e7ff\" fill-opacity=\"0.5\" stroke=\"#1e293b\" stroke-width=\"2\"/><line x1=\"60.0\" y1=\"205.0\" x2=\"165.0\" y2=\"23.1\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"165.0\" y1=\"23.1\" x2=\"156.3\" y2=\"28.1\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"165.0\" y1=\"23.1\" x2=\"165.0\" y2=\"33.1\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"205.0\" x2=\"270.0\" y2=\"205.0\" stroke=\"#d97706\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"270.0\" y1=\"205.0\" x2=\"261.3\" y2=\"200.0\" stroke=\"#d97706\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"270.0\" y1=\"205.0\" x2=\"261.3\" y2=\"210.0\" stroke=\"#d97706\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"98.5\" y=\"114.1\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">u</text><text x=\"165.0\" y=\"225.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">v</text><polyline points=\"94.0,205.0 94.0,204.1 94.0,203.2 93.9,202.3 93.8,201.4 93.7,200.6 93.6,199.7 93.4,198.8 93.3,197.9 93.1,197.1 92.8,196.2 92.6,195.3 92.3,194.5 92.0,193.7 91.7,192.8 91.4,192.0 91.1,191.2 90.7,190.4 90.3,189.6 89.9,188.8 89.4,188.0 89.0,187.2 88.5,186.5 88.0,185.7 87.5,185.0 87.0,184.3 86.4,183.6 85.9,182.9 85.3,182.2 84.7,181.6 84.0,181.0 83.4,180.3 82.8,179.7 82.1,179.1 81.4,178.6 80.7,178.0 80.0,177.5 79.3,177.0 78.5,176.5 77.8,176.0 77.0,175.6\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.8\"/><text x=\"104.0\" y=\"189.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">60°</text><text x=\"175.0\" y=\"27.1\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3</text><text x=\"205.0\" y=\"197.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3</text><text x=\"264.0\" y=\"225.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#64748b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3 (third side)</text></svg>"
+              }
+            },
+            {
+              "explain": "The angle between them is an angle of the equilateral triangle: \\(60^{\\circ}\\) (all angles are \\(60^{\\circ}\\)).",
+              "work": "\\(\\theta=60^{\\circ}\\)"
+            },
+            {
+              "explain": "Dot product formula \\(\\underset{\\sim}{u}\\cdot\\underset{\\sim}{v}=|\\underset{\\sim}{u}||\\underset{\\sim}{v}|\\cos\\theta\\) with \\(\\cos60^{\\circ}=\\dfrac{1}{2}\\).",
+              "work": "\\(\\underset{\\sim}{u}\\cdot\\underset{\\sim}{v}=3\\times3\\times\\cos60^{\\circ}=9\\times\\dfrac{1}{2}=\\dfrac{9}{2}\\)"
+            },
+            {
+              "explain": "Why not the others: A would need \\(90^{\\circ}\\); B uses \\(\\cos45^{\\circ}\\); D uses \\(\\cos0^{\\circ}=1\\) (parallel vectors).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">C</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "What is the value of \\(\\underset{\\sim}{u}\\cdot\\underset{\\sim}{v}\\)?",
+              "note": "Tail to tail: angle \\(60^{\\circ}\\); \\(3\\times3\\times\\cos60^{\\circ}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Trial HSC Mathematics Extension 1",
+            "school": "Gosford High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "gosford2020-e1-q8",
+          "type": "mc",
+          "stem": "Let \\(\\underset{\\sim}{u}=\\underset{\\sim}{i}+\\underset{\\sim}{j}\\) and \\(\\underset{\\sim}{v}=\\underset{\\sim}{i}-\\underset{\\sim}{j}\\). What is the angle between the two vectors.",
+          "difficulty": "easy",
+          "options": [
+            "\\(\\dfrac{\\pi}{2}\\)",
+            "\\(\\dfrac{\\pi}{4}\\)",
+            "\\(\\pi\\)",
+            "\\(2\\pi\\)"
+          ],
+          "answer": 0,
+          "hint": "Use \\(\\cos\\theta=\\dfrac{\\underset{\\sim}{u}\\cdot\\underset{\\sim}{v}}{|\\underset{\\sim}{u}||\\underset{\\sim}{v}|}\\). Compute the dot product first: if it is 0 the vectors are perpendicular.",
+          "steps": [
+            {
+              "explain": "Column form: \\(\\underset{\\sim}{u}=\\begin{pmatrix}1\\\\ 1\\end{pmatrix}\\), \\(\\underset{\\sim}{v}=\\begin{pmatrix}1\\\\-1\\end{pmatrix}\\). Dot product: multiply matching components and add.",
+              "work": "\\(\\underset{\\sim}{u}\\cdot\\underset{\\sim}{v}=(1)(1)+(1)(-1)=0\\)"
+            },
+            {
+              "explain": "Magnitudes: \\(|\\underset{\\sim}{u}|=\\sqrt{1+1}=\\sqrt2\\) and \\(|\\underset{\\sim}{v}|=\\sqrt{1+1}=\\sqrt2\\).",
+              "work": "\\(|\\underset{\\sim}{u}|=|\\underset{\\sim}{v}|=\\sqrt2\\)"
+            },
+            {
+              "explain": "Substitute: \\(\\cos\\theta=\\dfrac{0}{\\sqrt2\\cdot\\sqrt2}=0\\), so \\(\\theta=\\dfrac{\\pi}{2}\\) (\\(90^{\\circ}\\)). In the diagram \\(\\underset{\\sim}{u}\\) is at \\(+45^{\\circ}\\) and \\(\\underset{\\sim}{v}\\) at \\(-45^{\\circ}\\): the angle between them is \\(45^{\\circ}+45^{\\circ}=90^{\\circ}\\).",
+              "work": "\\(\\cos\\theta=0\\ \\Rightarrow\\ \\theta=\\dfrac{\\pi}{2}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 240\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><line x1=\"30.0\" y1=\"120.0\" x2=\"290.0\" y2=\"120.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"232.0\" x2=\"150.0\" y2=\"12.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"290.0\" y1=\"120.0\" x2=\"283.1\" y2=\"116.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"290.0\" y1=\"120.0\" x2=\"283.1\" y2=\"124.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"12.0\" x2=\"146.0\" y2=\"18.9\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"12.0\" x2=\"154.0\" y2=\"18.9\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"288.0\" y=\"136.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><text x=\"158.0\" y=\"16.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">y</text><line x1=\"150.0\" y1=\"120.0\" x2=\"220.0\" y2=\"50.0\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"220.0\" y1=\"50.0\" x2=\"210.3\" y2=\"52.6\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"220.0\" y1=\"50.0\" x2=\"217.4\" y2=\"59.7\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"228.0\" y=\"44.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">u = i + j</text><line x1=\"150.0\" y1=\"120.0\" x2=\"220.0\" y2=\"190.0\" stroke=\"#d97706\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"220.0\" y1=\"190.0\" x2=\"217.4\" y2=\"180.3\" stroke=\"#d97706\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"220.0\" y1=\"190.0\" x2=\"210.3\" y2=\"187.4\" stroke=\"#d97706\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"228.0\" y=\"204.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">v = i − j</text><polyline points=\"166,114 172,120.5 166,126\" fill=\"none\"/><polyline points=\"174.0,144.0 175.0,143.1 175.9,142.1 176.7,141.0 177.5,140.0 178.3,138.9 179.0,137.8 179.7,136.6 180.3,135.4 180.9,134.2 181.4,133.0 181.9,131.8 182.3,130.5 182.7,129.2 183.1,127.9 183.3,126.6 183.6,125.3 183.8,124.0 183.9,122.7 184.0,121.3 184.0,120.0 184.0,118.7 183.9,117.3 183.8,116.0 183.6,114.7 183.3,113.4 183.1,112.1 182.7,110.8 182.3,109.5 181.9,108.2 181.4,107.0 180.9,105.8 180.3,104.6 179.7,103.4 179.0,102.2 178.3,101.1 177.5,100.0 176.7,99.0 175.9,97.9 175.0,96.9 174.0,96.0\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.8\"/><text x=\"196.0\" y=\"142.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">90°</text><polyline points=\"170.0,120.0 170.0,119.6 170.0,119.2 170.0,118.8 169.9,118.4 169.9,118.0 169.9,117.6 169.8,117.3 169.8,116.9 169.7,116.5 169.6,116.1 169.5,115.7 169.4,115.3 169.4,115.0 169.2,114.6 169.1,114.2 169.0,113.8 168.9,113.4 168.8,113.1 168.6,112.7 168.5,112.3 168.3,112.0 168.2,111.6 168.0,111.3 167.8,110.9 167.6,110.6 167.4,110.2 167.3,109.9 167.1,109.6 166.8,109.2 166.6,108.9 166.4,108.6 166.2,108.2 165.9,107.9 165.7,107.6 165.5,107.3 165.2,107.0 165.0,106.7 164.7,106.4 164.4,106.1 164.1,105.9\" fill=\"none\" stroke=\"#047857\" stroke-width=\"2\"/><polyline points=\"164.1,134.1 164.4,133.9 164.7,133.6 165.0,133.3 165.2,133.0 165.5,132.7 165.7,132.4 165.9,132.1 166.2,131.8 166.4,131.4 166.6,131.1 166.8,130.8 167.1,130.4 167.3,130.1 167.4,129.8 167.6,129.4 167.8,129.1 168.0,128.7 168.2,128.4 168.3,128.0 168.5,127.7 168.6,127.3 168.8,126.9 168.9,126.6 169.0,126.2 169.1,125.8 169.2,125.4 169.4,125.0 169.4,124.7 169.5,124.3 169.6,123.9 169.7,123.5 169.8,123.1 169.8,122.7 169.9,122.4 169.9,122.0 169.9,121.6 170.0,121.2 170.0,120.8 170.0,120.4 170.0,120.0\" fill=\"none\" stroke=\"#047857\" stroke-width=\"2\"/><text x=\"210.0\" y=\"98.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">45° each side</text></svg>"
+              }
+            },
+            {
+              "explain": "Why not the others: \\(\\dfrac{\\pi}{4}\\) is the angle of each vector with the \\(x\\)-axis, not between them; \\(\\pi\\) would mean opposite directions and \\(2\\pi\\) is a full turn (not an angle between vectors).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "What is the angle between the two vectors.",
+              "note": "Dot product \\(=0\\Rightarrow\\) perpendicular."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Trial HSC Mathematics Extension 1",
+            "school": "Gosford High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "gosford2020-e1-q12c2",
+          "type": "mc",
+          "stem": "Points \\(A,B\\) have position vectors \\(\\overrightarrow{OA}=3\\underset{\\sim}{i}-2\\underset{\\sim}{j}\\), \\(\\overrightarrow{OB}=-\\underset{\\sim}{i}+\\underset{\\sim}{j}\\). Suppose \\(P\\) is a point on \\(AB\\) such that \\(\\overrightarrow{OP}\\perp\\overrightarrow{AB}\\). Find \\(\\overrightarrow{OP}\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\overrightarrow{OP}=\\dfrac{3}{25}\\underset{\\sim}{i}+\\dfrac{4}{25}\\underset{\\sim}{j}\\)",
+            "\\(\\overrightarrow{OP}=\\dfrac{4}{25}\\underset{\\sim}{i}+\\dfrac{3}{25}\\underset{\\sim}{j}\\)",
+            "\\(\\overrightarrow{OP}=-\\dfrac{3}{25}\\underset{\\sim}{i}+\\dfrac{4}{25}\\underset{\\sim}{j}\\)",
+            "\\(\\overrightarrow{OP}=\\dfrac{3}{5}\\underset{\\sim}{i}+\\dfrac{4}{5}\\underset{\\sim}{j}\\)"
+          ],
+          "answer": 0,
+          "hint": "Let \\(P=(x,y)\\). TWO conditions: (1) \\(\\overrightarrow{OP}\\perp\\overrightarrow{AB}\\Rightarrow\\overrightarrow{OP}\\cdot\\overrightarrow{AB}=0\\); (2) \\(P\\) is ON line \\(AB\\), i.e. \\(\\overrightarrow{AP}\\) is a multiple of \\(\\overrightarrow{AB}\\) (equal gradients). Solve the two equations together.",
+          "steps": [
+            {
+              "explain": "Perpendicular: dot product zero, with \\(\\overrightarrow{AB}=\\begin{pmatrix}-4\\\\ 3\\end{pmatrix}\\) and \\(\\overrightarrow{OP}=\\begin{pmatrix}x\\\\ y\\end{pmatrix}\\).",
+              "work": "\\(-4x+3y=0\\quad(1)\\)"
+            },
+            {
+              "explain": "\\(P\\) on line \\(AB\\): the line through \\(B(-1,1)\\) with direction \\(\\begin{pmatrix}-4\\\\ 3\\end{pmatrix}\\) has gradient \\(\\dfrac{3}{-4}\\). Gradient from \\(P\\) to \\(B\\): \\(\\dfrac{1-y}{-1-x}\\). Set equal.",
+              "work": "\\(\\dfrac{1-y}{-1-x}=-\\dfrac{3}{4}\\ \\Rightarrow\\ 4-4y=3+3x\\ \\Rightarrow\\ 3x+4y-1=0\\quad(2)\\)"
+            },
+            {
+              "explain": "Solve: from (1) \\(y=\\dfrac{4x}{3}\\). Substitute into (2): \\(3x+\\dfrac{16x}{3}-1=0\\Rightarrow\\dfrac{25x}{3}=1\\Rightarrow x=\\dfrac{3}{25}\\).",
+              "work": "\\(x=\\dfrac{3}{25},\\qquad y=\\dfrac{4}{3}\\cdot\\dfrac{3}{25}=\\dfrac{4}{25}\\)"
+            },
+            {
+              "explain": "So \\(P\\left(\\dfrac{3}{25},\\dfrac{4}{25}\\right)\\) and \\(\\overrightarrow{OP}=\\dfrac{3}{25}\\underset{\\sim}{i}+\\dfrac{4}{25}\\underset{\\sim}{j}\\) (it is the foot of the perpendicular from \\(O\\) to \\(AB\\)). Check (1): \\(-\\dfrac{12}{25}+\\dfrac{12}{25}=0\\) ✓; check (2): \\(\\dfrac{9}{25}+\\dfrac{16}{25}-1=0\\) ✓.",
+              "work": "\\(\\overrightarrow{OP}=\\begin{pmatrix}\\dfrac{3}{25}\\\\\\ dfrac{4}{25}\\end{pmatrix}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 280\" width=\"100%\" height=\"auto\" style=\"max-width:340px;display:block;margin:0 auto\"><line x1=\"20.0\" y1=\"170.0\" x2=\"330.0\" y2=\"170.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"140.0\" y1=\"272.0\" x2=\"140.0\" y2=\"12.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"330.0\" y1=\"170.0\" x2=\"323.1\" y2=\"166.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"330.0\" y1=\"170.0\" x2=\"323.1\" y2=\"174.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"140.0\" y1=\"12.0\" x2=\"136.0\" y2=\"18.9\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"140.0\" y1=\"12.0\" x2=\"144.0\" y2=\"18.9\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"328.0\" y=\"186.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">i</text><text x=\"148.0\" y=\"16.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">j</text><line x1=\"140.0\" y1=\"170.0\" x2=\"248.0\" y2=\"242.0\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"248.0\" y1=\"242.0\" x2=\"243.6\" y2=\"233.0\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"248.0\" y1=\"242.0\" x2=\"238.0\" y2=\"241.4\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"140.0\" y1=\"170.0\" x2=\"104.0\" y2=\"134.0\" stroke=\"#d97706\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"104.0\" y1=\"134.0\" x2=\"106.6\" y2=\"143.7\" stroke=\"#d97706\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"104.0\" y1=\"134.0\" x2=\"113.7\" y2=\"136.6\" stroke=\"#d97706\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"248.0\" y1=\"242.0\" x2=\"104.0\" y2=\"134.0\" stroke=\"#047857\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><text x=\"256.0\" y=\"256.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A(3, −2)</text><text x=\"96.0\" y=\"130.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B(−1, 1)</text><line x1=\"140.0\" y1=\"170.0\" x2=\"144.3\" y2=\"164.2\" stroke=\"#dc2626\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><circle cx=\"144.3\" cy=\"164.2\" r=\"4.5\" fill=\"#dc2626\"/><text x=\"152.3\" y=\"154.2\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">P</text><text x=\"194.0\" y=\"137.6\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">OP ⟂ AB</text></svg>"
+              }
+            },
+            {
+              "explain": "Why not the others: B swaps the components (it does not satisfy \\(-4x+3y=0\\)); C has the wrong sign on \\(x\\); D is \\(\\dfrac{1}{5}\\) of a unit vector perpendicular to \\(AB\\) through the origin, but it does not lie on line \\(AB\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find \\(\\overrightarrow{OP}\\).",
+              "note": "\\(\\overrightarrow{OP}\\cdot\\overrightarrow{AB}=0\\) AND \\(P\\) on \\(AB\\); solve the two equations."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Trial HSC Mathematics Extension 1",
+            "school": "Gosford High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hillsgrammar-25-3u-q11e",
+          "type": "mc",
+          "stem": "Find the angle between the vectors \\(\\begin{pmatrix}-12\\\\ 5\\end{pmatrix}\\) and \\(\\begin{pmatrix}8\\\\ 6\\end{pmatrix}\\) correct to the nearest degree.",
+          "difficulty": "medium",
+          "options": [
+            "\\(121^{\\circ}\\)",
+            "\\(59^{\\circ}\\)",
+            "\\(60^{\\circ}\\)",
+            "\\(120^{\\circ}\\)"
+          ],
+          "answer": 0,
+          "hint": "\\(\\cos\\theta=\\dfrac{\\underset{\\sim}{u}\\cdot\\underset{\\sim}{v}}{|\\underset{\\sim}{u}||\\underset{\\sim}{v}|}\\). A NEGATIVE dot product means an OBTUSE angle (more than \\(90^{\\circ}\\)). Don't round too early.",
+          "steps": [
+            {
+              "explain": "Dot product: multiply matching components, then add.",
+              "work": "\\(\\underset{\\sim}{u}\\cdot\\underset{\\sim}{v}=(-12)(8)+(5)(6)=-96+30=-66\\)"
+            },
+            {
+              "explain": "Magnitudes: \\(|\\underset{\\sim}{u}|=\\sqrt{144+25}=13\\) and \\(|\\underset{\\sim}{v}|=\\sqrt{64+36}=10\\).",
+              "work": "\\(|\\underset{\\sim}{u}|=13,\\qquad|\\underset{\\sim}{v}|=10\\)"
+            },
+            {
+              "explain": "Substitute into the formula.",
+              "work": "\\(\\cos\\theta=\\dfrac{-66}{13\\times10}=-\\dfrac{66}{130}=-0.50769\\ldots\\)"
+            },
+            {
+              "explain": "Inverse cosine (degree mode): \\(\\theta=\\cos^{-1}(-0.50769)=120.51^{\\circ}\\). The negative cosine confirms an obtuse angle (see the diagram: the vectors point more than a quarter-turn apart). Round to the nearest degree: \\(120.51\\to121^{\\circ}\\).",
+              "work": "\\(\\theta\\approx120.51^{\\circ}\\approx121^{\\circ}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 250\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><line x1=\"20.0\" y1=\"150.0\" x2=\"320.0\" y2=\"150.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"180.0\" y1=\"242.0\" x2=\"180.0\" y2=\"16.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"320.0\" y1=\"150.0\" x2=\"313.1\" y2=\"146.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"320.0\" y1=\"150.0\" x2=\"313.1\" y2=\"154.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"180.0\" y1=\"16.0\" x2=\"176.0\" y2=\"22.9\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"180.0\" y1=\"16.0\" x2=\"184.0\" y2=\"22.9\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"180.0\" y1=\"150.0\" x2=\"48.0\" y2=\"95.0\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"48.0\" y1=\"95.0\" x2=\"54.1\" y2=\"102.9\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"48.0\" y1=\"95.0\" x2=\"57.9\" y2=\"93.7\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"180.0\" y1=\"150.0\" x2=\"268.0\" y2=\"84.0\" stroke=\"#d97706\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"268.0\" y1=\"84.0\" x2=\"258.1\" y2=\"85.2\" stroke=\"#d97706\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"268.0\" y1=\"84.0\" x2=\"264.1\" y2=\"93.2\" stroke=\"#d97706\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"44.0\" y=\"87.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">(−12, 5)</text><text x=\"274.0\" y=\"78.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">(8, 6)</text><polyline points=\"212.0,126.0 210.7,124.4 209.3,122.8 207.8,121.3 206.3,119.8 204.7,118.5 203.0,117.3 201.2,116.1 199.4,115.0 197.5,114.1 195.6,113.2 193.7,112.4 191.7,111.7 189.7,111.2 187.6,110.7 185.5,110.4 183.4,110.1 181.3,110.0 179.2,110.0 177.1,110.1 175.0,110.3 173.0,110.6 170.9,111.0 168.9,111.6 166.9,112.2 164.9,113.0 163.0,113.8 161.1,114.8 159.3,115.8 157.5,116.9 155.8,118.2 154.1,119.5 152.6,120.9 151.1,122.4 149.7,123.9 148.3,125.5 147.1,127.2 146.0,129.0 144.9,130.8 143.9,132.7 143.1,134.6\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.6\"/><text x=\"162.0\" y=\"102.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">θ ≈ 121°</text><text x=\"114.0\" y=\"130.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">|a| = 13</text><text x=\"224.0\" y=\"137.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">|b| = 10</text></svg>"
+              }
+            },
+            {
+              "explain": "Why not the others: B (\\(59^{\\circ}\\)) is \\(180^{\\circ}-121^{\\circ}\\) (the sign of the dot product was ignored); C and D (\\(60^{\\circ},120^{\\circ}\\)) come from rounding \\(\\cos\\theta\\) to \\(-0.5\\) (the exact value is \\(-0.5077\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the angle between the vectors",
+              "note": "\\(\\cos\\theta=\\dfrac{-66}{13\\times10}\\); negative \\(\\Rightarrow\\) obtuse."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hills Grammar 2025 Trial HSC Mathematics Extension 1",
+            "school": "The Hills Grammar School",
             "grade": "12",
             "origin": "teacher"
           }

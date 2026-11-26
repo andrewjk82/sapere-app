@@ -2812,6 +2812,106 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "hillsgrammar-25-3u-q11d1",
+          "type": "mc",
+          "stem": "In how many ways can the letters of the word SUCCESS be arranged in a line if there are no restrictions?",
+          "difficulty": "easy",
+          "options": [
+            "\\(420\\)",
+            "\\(5040\\)",
+            "\\(840\\)",
+            "\\(210\\)"
+          ],
+          "answer": 0,
+          "hint": "Arrangements of \\(n\\) objects where some are IDENTICAL: \\(\\dfrac{n!}{p!\\,q!\\cdots}\\). Count the letters: S, U, C, C, E, S, S — 7 letters in total; S appears 3 times and C twice.",
+          "steps": [
+            {
+              "explain": "Count the letters of SUCCESS: \\(n=7\\). Repeated letters: S three times (S, S, S) and C twice (C, C); U and E appear once.",
+              "work": "\\(n=7:\\ \\ S\\times3,\\ C\\times2,\\ U,\\ E\\)"
+            },
+            {
+              "explain": "If all letters were different there would be \\(7!=5040\\) arrangements. But swapping the identical S's (\\(3!\\) ways) or the identical C's (\\(2!\\) ways) gives the SAME word, so divide.",
+              "work": "\\(\\dfrac{7!}{3!\\,2!}\\)"
+            },
+            {
+              "explain": "Calculate: \\(7!=5040\\), \\(3!=6\\), \\(2!=2\\).",
+              "work": "\\(\\dfrac{5040}{6\\times2}=\\dfrac{5040}{12}=420\\)"
+            },
+            {
+              "explain": "Why not the others: B is \\(7!\\) (treats the S's and C's as different); C divides only by \\(3!\\) (\\(\\dfrac{5040}{6}=840\\)); D divides by \\(4!\\)-type numbers incorrectly.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "In how many ways can the letters of the word SUCCESS be arranged in a line if there are no restrictions?",
+              "note": "\\(\\dfrac{7!}{3!\\,2!}\\) (S three times, C twice)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hills Grammar 2025 Trial HSC Mathematics Extension 1",
+            "school": "The Hills Grammar School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hillsgrammar-25-3u-q11d2",
+          "type": "mc",
+          "stem": "In how many ways can the letters of the word SUCCESS be arranged in a line if the two Cs are NOT adjacent?",
+          "difficulty": "medium",
+          "options": [
+            "\\(300\\)",
+            "\\(120\\)",
+            "\\(540\\)",
+            "\\(420\\)"
+          ],
+          "answer": 0,
+          "hint": "“NOT adjacent” problems: count ALL arrangements, then SUBTRACT the arrangements where the two Cs ARE together. To count those, glue the two Cs into ONE block “CC”.",
+          "steps": [
+            {
+              "explain": "Total arrangements (part (i)): \\(\\dfrac{7!}{3!\\,2!}=420\\).",
+              "work": "\\(\\text{Total}=420\\)"
+            },
+            {
+              "explain": "Cs ADJACENT: glue \\(CC\\) into one block. Now we arrange 6 objects: \\(S,S,S,U,E,(CC)\\) with S three times.",
+              "work": "\\(\\text{Adjacent}=\\dfrac{6!}{3!}=\\dfrac{720}{6}=120\\)"
+            },
+            {
+              "explain": "Cs NOT adjacent \\(=\\) total \\(-\\) adjacent.",
+              "work": "\\(420-120=300\\)"
+            },
+            {
+              "explain": "Why not the others: B (120) is the number with the Cs TOGETHER; C and D mis-subtract or reuse the total (420 is the total with no restriction).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "if the two Cs are NOT adjacent?",
+              "note": "Total \\(-\\) (glue \\(CC\\)): \\(420-\\dfrac{6!}{3!}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hills Grammar 2025 Trial HSC Mathematics Extension 1",
+            "school": "The Hills Grammar School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -3511,6 +3611,110 @@
           "meta": {
             "source": "Girraween High School 2020 Year 11 Yearly Examination Mathematics Extension 1",
             "school": "Girraween High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "gosford2020-e1-q14b",
+          "type": "mc",
+          "stem": "Show that, among any four integers, there are two integers whose difference is divisible by 3.",
+          "difficulty": "medium",
+          "options": [
+            "There are only 3 possible remainders (0, 1, 2) on division by 3. With 4 integers, by the pigeonhole principle two have the same remainder, say \\(3M+r\\) and \\(3N+r\\); their difference is \\(3(N-M)\\), divisible by 3.",
+            "There are 4 possible remainders (0, 1, 2, 3) on division by 3. With 4 integers, each has a different remainder, so no two have a difference divisible by 3.",
+            "Test the integers 1, 2, 3, 4: \\(4-1=3\\) is divisible by 3, so the statement is true for all sets of four integers.",
+            "There are 3 possible remainders on division by 3, so among 4 integers two are divisible by 3 and their difference is divisible by 3."
+          ],
+          "answer": 0,
+          "hint": "PIGEONHOLE PRINCIPLE: if you put more objects (pigeons) than boxes (pigeonholes), some box has at least 2 objects. Boxes = the possible REMAINDERS on division by 3. Two integers with the SAME remainder have a difference divisible by 3.",
+          "steps": [
+            {
+              "explain": "Every integer leaves remainder \\(0\\), \\(1\\) or \\(2\\) when divided by 3: that is only 3 'boxes'.",
+              "work": "\\(\\text{boxes: remainder }0,\\ 1,\\ 2\\)"
+            },
+            {
+              "explain": "We have 4 integers (pigeons) and 3 boxes. By the pigeonhole principle at least one box contains at least 2 integers.",
+              "work": "\\(4>3\\ \\Rightarrow\\ \\text{two integers share a remainder }r\\)"
+            },
+            {
+              "explain": "Write the two integers with the same remainder \\(r\\): \\(3M+r\\) and \\(3N+r\\), with \\(M,N\\) integers.",
+              "work": "\\(a=3M+r,\\qquad b=3N+r\\)"
+            },
+            {
+              "explain": "Subtract: the \\(r\\) cancels and \\(3\\) factors out.",
+              "work": "\\(a-b=(3M+r)-(3N+r)=3(M-N)\\)"
+            },
+            {
+              "explain": "\\(M-N\\) is an integer, so \\(a-b\\) is divisible by 3. ∎ Why not the others: B counts 4 remainders (there are only 3); C checks one example, which is not a proof; D wrongly says two integers are divisible by 3 (the remainders are shared, not necessarily 0).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that, among any four integers, there are two integers whose difference is divisible by 3.",
+              "note": "Boxes: remainders 0, 1, 2. Same remainder \\(\\Rightarrow\\) \\(3M+r-(3N+r)=3(M-N)\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Trial HSC Mathematics Extension 1",
+            "school": "Gosford High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hillsgrammar-25-3u-q1",
+          "type": "mc",
+          "stem": "Students from seven different schools are eligible for the district netball training squad. What is the minimum number of students in the training squad if it is known that there must be at least 3 students from at least one of the schools?",
+          "difficulty": "medium",
+          "options": [
+            "\\(14\\)",
+            "\\(15\\)",
+            "\\(21\\)",
+            "\\(22\\)"
+          ],
+          "answer": 1,
+          "hint": "PIGEONHOLE PRINCIPLE (generalised): to GUARANTEE some box has at least 3 objects you must be able to exceed the worst case where EVERY box has at most 2. Find the largest squad with no school having 3, then add one.",
+          "steps": [
+            {
+              "explain": "Boxes = 7 schools. The worst case (no school has 3 students) is when every school has exactly 2 students.",
+              "work": "\\(7\\ \\text{schools}\\times2\\ \\text{students}=14\\)"
+            },
+            {
+              "explain": "A squad of 14 could have exactly 2 from each school, so 14 does NOT guarantee 3 from one school.",
+              "work": "\\(14\\ \\text{students: possibly }2,2,2,2,2,2,2\\)"
+            },
+            {
+              "explain": "Add ONE more student: whichever school they come from, that school now has 3. So 15 forces at least 3 from some school.",
+              "work": "\\(14+1=15\\)"
+            },
+            {
+              "explain": "Why not the others: A (14) is the worst case with no school reaching 3; C (21) is \\(7\\times3\\) (needed only if EVERY school had 3); D (22) is too many (\\(7\\times3+1\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">B</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "minimum number of students in the training squad",
+              "note": "Worst case: 2 from each school (14); add 1."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hills Grammar 2025 Trial HSC Mathematics Extension 1",
+            "school": "The Hills Grammar School",
             "grade": "11",
             "origin": "teacher"
           }
@@ -4241,6 +4445,60 @@
           "meta": {
             "source": "Girraween High School 2020 Year 11 Yearly Examination Mathematics Extension 1",
             "school": "Girraween High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hillsgrammar-25-3u-q14a",
+          "type": "mc",
+          "stem": "The digits 1, 2, 3, 4, 5 and 6 are spaced evenly around a circle. Each digit has another digit which is directly opposite it on the circle. If the digits are placed around the circle at random, what is the probability that exactly one pair of opposite digits add to 7?",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\dfrac{2}{5}\\)",
+            "\\(\\dfrac{1}{5}\\)",
+            "\\(\\dfrac{3}{5}\\)",
+            "\\(\\dfrac{1}{3}\\)"
+          ],
+          "answer": 0,
+          "hint": "The 6 digits form 3 OPPOSITE PAIRS. The number of ways to split 6 digits into 3 unordered pairs is \\(5\\times3\\times1=15\\) (all equally likely). Pairs adding to 7: \\(\\{1,6\\},\\{2,5\\},\\{3,4\\}\\). Count the pairings with EXACTLY ONE of these.",
+          "steps": [
+            {
+              "explain": "Opposite-pair matchings: pair digit 1 with any of 5 digits, then the smallest remaining digit with any of 3, then the last two together.",
+              "work": "\\(5\\times3\\times1=15\\ \\text{equally likely pairings}\\)"
+            },
+            {
+              "explain": "Special pairs (sum 7): \\(\\{1,6\\},\\{2,5\\},\\{3,4\\}\\). EXACTLY ONE special pair: choose which one (3 ways), say \\(\\{1,6\\}\\). The remaining digits \\(2,5,3,4\\) must be paired with NO special pair.",
+              "work": "\\(\\text{choose the special pair: }3\\text{ ways}\\)"
+            },
+            {
+              "explain": "Pair up \\(2,5,3,4\\): there are 3 matchings: \\(\\{25,34\\}\\) (both special — not allowed), \\(\\{23,45\\}\\) ✓, \\(\\{24,35\\}\\) ✓. So 2 allowed.",
+              "work": "\\(\\{2,3\\}\\{4,5\\}\\ \\text{and}\\ \\{2,4\\}\\{3,5\\}:\\ 2\\ \\text{ways}\\)"
+            },
+            {
+              "explain": "Favourable matchings \\(=3\\times2=6\\) out of 15.",
+              "work": "\\(P=\\dfrac{3\\times2}{15}=\\dfrac{6}{15}=\\dfrac{2}{5}\\)"
+            },
+            {
+              "explain": "Why not the others: \\(\\dfrac{1}{5}\\) is the chance of all three pairs adding to 7 (\\(\\dfrac{3!\\cdots}{15}\\) type slip) or one specific pair; \\(\\dfrac{3}{5}\\) forgets that choosing the special pair leaves an extra special pair possible; \\(\\dfrac{1}{3}\\) is \\(\\dfrac{5}{15}\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "what is the probability that exactly one pair of opposite digits add to 7?",
+              "note": "15 pairings; pick the sum-7 pair (3); the other 4 digits: 2 safe pairings."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hills Grammar 2025 Trial HSC Mathematics Extension 1",
+            "school": "The Hills Grammar School",
             "grade": "11",
             "origin": "teacher"
           }

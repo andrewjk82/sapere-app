@@ -1052,6 +1052,70 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "gosford2020-e1-q11c",
+          "type": "mc",
+          "stem": "Use the unit circle and the vectors in the diagram to derive the expansion of \\(\\cos(\\alpha+\\beta)\\).",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 280\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><circle cx=\"140\" cy=\"130\" r=\"100\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\"/><line x1=\"20.0\" y1=\"130.0\" x2=\"270.0\" y2=\"130.0\" stroke=\"#cbd5e1\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"140.0\" y1=\"250.0\" x2=\"140.0\" y2=\"6.0\" stroke=\"#cbd5e1\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"140.0\" y1=\"130.0\" x2=\"240.0\" y2=\"130.0\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"240.0\" y1=\"130.0\" x2=\"231.3\" y2=\"125.0\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"240.0\" y1=\"130.0\" x2=\"231.3\" y2=\"135.0\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"140.0\" y1=\"130.0\" x2=\"140.0\" y2=\"30.0\" stroke=\"#d97706\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"140.0\" y1=\"30.0\" x2=\"135.0\" y2=\"38.7\" stroke=\"#d97706\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"140.0\" y1=\"30.0\" x2=\"145.0\" y2=\"38.7\" stroke=\"#d97706\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"140.0\" y1=\"130.0\" x2=\"197.4\" y2=\"48.1\" stroke=\"#dc2626\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"197.4\" y1=\"48.1\" x2=\"188.3\" y2=\"52.3\" stroke=\"#dc2626\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"197.4\" y1=\"48.1\" x2=\"196.5\" y2=\"58.0\" stroke=\"#dc2626\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"140.0\" y1=\"130.0\" x2=\"216.6\" y2=\"194.3\" stroke=\"#047857\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"216.6\" y1=\"194.3\" x2=\"213.2\" y2=\"184.9\" stroke=\"#047857\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"216.6\" y1=\"194.3\" x2=\"206.8\" y2=\"192.5\" stroke=\"#047857\" stroke-width=\"3\" stroke-linecap=\"round\"/><circle cx=\"197.4\" cy=\"48.1\" r=\"4\" fill=\"#1e293b\"/><circle cx=\"216.6\" cy=\"194.3\" r=\"4\" fill=\"#1e293b\"/><text x=\"205.4\" y=\"42.1\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">P</text><text x=\"224.6\" y=\"206.3\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">Q</text><text x=\"130.0\" y=\"146.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">O</text><text x=\"195.0\" y=\"120.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">i</text><text x=\"128.0\" y=\"70.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">j</text><text x=\"159.5\" y=\"82.9\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">p</text><text x=\"170.1\" y=\"179.4\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">q</text><polyline points=\"176.0,130.0 176.0,129.1 176.0,128.3 175.9,127.4 175.8,126.5 175.7,125.7 175.6,124.8 175.5,124.0 175.3,123.1 175.2,122.3 175.0,121.4 174.8,120.6 174.5,119.8 174.3,119.0 174.0,118.1 173.7,117.3 173.4,116.5 173.0,115.7 172.7,114.9 172.3,114.1 171.9,113.4 171.5,112.6 171.1,111.9 170.7,111.1 170.2,110.4 169.7,109.7 169.2,109.0 168.7,108.3 168.2,107.6 167.6,106.9 167.1,106.3 166.5,105.6 165.9,105.0 165.3,104.4 164.7,103.8 164.0,103.2 163.4,102.6 162.7,102.1 162.0,101.5 161.4,101.0 160.6,100.5\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.4\"/><text x=\"182.0\" y=\"106.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">α</text><polyline points=\"175.2,159.6 175.7,158.9 176.2,158.3 176.7,157.7 177.2,157.0 177.7,156.4 178.1,155.7 178.6,155.1 179.0,154.4 179.4,153.7 179.8,153.0 180.2,152.3 180.6,151.6 181.0,150.9 181.3,150.2 181.7,149.4 182.0,148.7 182.3,148.0 182.7,147.2 182.9,146.5 183.2,145.7 183.5,145.0 183.7,144.2 184.0,143.4 184.2,142.7 184.4,141.9 184.6,141.1 184.8,140.3 185.0,139.6 185.2,138.8 185.3,138.0 185.4,137.2 185.6,136.4 185.7,135.6 185.7,134.8 185.8,134.0 185.9,133.2 185.9,132.4 186.0,131.6 186.0,130.8 186.0,130.0\" fill=\"none\" stroke=\"#047857\" stroke-width=\"2.4\"/><text x=\"192.0\" y=\"152.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">β</text></svg>"
+          },
+          "options": [
+            "\\(\\begin{aligned}&\\underset{\\sim}{p}=\\cos\\alpha\\,\\underset{\\sim}{i}+\\sin\\alpha\\,\\underset{\\sim}{j},\\ \\ \\underset{\\sim}{q}=\\cos\\beta\\,\\underset{\\sim}{i}-\\sin\\beta\\,\\underset{\\sim}{j}\\\\ &\\cos(\\alpha+\\beta)=\\underset{\\sim}{p}\\cdot\\underset{\\sim}{q}=\\cos\\alpha\\cos\\beta-\\sin\\alpha\\sin\\beta\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\underset{\\sim}{p}=\\cos\\alpha\\,\\underset{\\sim}{i}+\\sin\\alpha\\,\\underset{\\sim}{j},\\ \\ \\underset{\\sim}{q}=\\cos\\beta\\,\\underset{\\sim}{i}+\\sin\\beta\\,\\underset{\\sim}{j}\\\\ &\\cos(\\alpha+\\beta)=\\underset{\\sim}{p}\\cdot\\underset{\\sim}{q}=\\cos\\alpha\\cos\\beta+\\sin\\alpha\\sin\\beta\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\underset{\\sim}{p}=\\cos\\alpha\\,\\underset{\\sim}{i}+\\sin\\alpha\\,\\underset{\\sim}{j},\\ \\ \\underset{\\sim}{q}=\\cos\\beta\\,\\underset{\\sim}{i}-\\sin\\beta\\,\\underset{\\sim}{j}\\\\ &\\cos(\\alpha+\\beta)=\\underset{\\sim}{p}\\cdot\\underset{\\sim}{q}=\\cos\\alpha\\sin\\beta-\\sin\\alpha\\cos\\beta\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\underset{\\sim}{p}=\\cos\\alpha\\,\\underset{\\sim}{i}+\\sin\\alpha\\,\\underset{\\sim}{j},\\ \\ \\underset{\\sim}{q}=\\cos\\beta\\,\\underset{\\sim}{i}-\\sin\\beta\\,\\underset{\\sim}{j}\\\\ &\\cos(\\alpha+\\beta)=|\\underset{\\sim}{p}|+|\\underset{\\sim}{q}|=2\\end{aligned}\\)"
+          ],
+          "answer": 0,
+          "hint": "\\(\\underset{\\sim}{p}\\) and \\(\\underset{\\sim}{q}\\) are UNIT vectors (the circle has radius 1), so \\(\\underset{\\sim}{p}\\cdot\\underset{\\sim}{q}=|\\underset{\\sim}{p}||\\underset{\\sim}{q}|\\cos\\theta=\\cos\\theta\\) where \\(\\theta\\) is the angle between them \\(=\\alpha+\\beta\\). Compute the SAME dot product from the components.",
+          "steps": [
+            {
+              "explain": "The angle from \\(\\underset{\\sim}{p}\\) (above the horizontal by \\(\\alpha\\)) to \\(\\underset{\\sim}{q}\\) (below the horizontal by \\(\\beta\\)) is \\(\\alpha+\\beta\\). Both vectors end on the unit circle, so \\(|\\underset{\\sim}{p}|=|\\underset{\\sim}{q}|=1\\).",
+              "work": "\\(\\underset{\\sim}{p}\\cdot\\underset{\\sim}{q}=|\\underset{\\sim}{p}||\\underset{\\sim}{q}|\\cos(\\alpha+\\beta)=\\cos(\\alpha+\\beta)\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 280\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><circle cx=\"140\" cy=\"130\" r=\"100\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\"/><line x1=\"20.0\" y1=\"130.0\" x2=\"270.0\" y2=\"130.0\" stroke=\"#cbd5e1\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"140.0\" y1=\"250.0\" x2=\"140.0\" y2=\"6.0\" stroke=\"#cbd5e1\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"140.0\" y1=\"130.0\" x2=\"240.0\" y2=\"130.0\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"240.0\" y1=\"130.0\" x2=\"231.3\" y2=\"125.0\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"240.0\" y1=\"130.0\" x2=\"231.3\" y2=\"135.0\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"140.0\" y1=\"130.0\" x2=\"140.0\" y2=\"30.0\" stroke=\"#d97706\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"140.0\" y1=\"30.0\" x2=\"135.0\" y2=\"38.7\" stroke=\"#d97706\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"140.0\" y1=\"30.0\" x2=\"145.0\" y2=\"38.7\" stroke=\"#d97706\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"140.0\" y1=\"130.0\" x2=\"197.4\" y2=\"48.1\" stroke=\"#dc2626\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"197.4\" y1=\"48.1\" x2=\"188.3\" y2=\"52.3\" stroke=\"#dc2626\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"197.4\" y1=\"48.1\" x2=\"196.5\" y2=\"58.0\" stroke=\"#dc2626\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"140.0\" y1=\"130.0\" x2=\"216.6\" y2=\"194.3\" stroke=\"#047857\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"216.6\" y1=\"194.3\" x2=\"213.2\" y2=\"184.9\" stroke=\"#047857\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"216.6\" y1=\"194.3\" x2=\"206.8\" y2=\"192.5\" stroke=\"#047857\" stroke-width=\"3\" stroke-linecap=\"round\"/><circle cx=\"197.4\" cy=\"48.1\" r=\"4\" fill=\"#1e293b\"/><circle cx=\"216.6\" cy=\"194.3\" r=\"4\" fill=\"#1e293b\"/><text x=\"205.4\" y=\"42.1\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">P</text><text x=\"224.6\" y=\"206.3\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">Q</text><text x=\"130.0\" y=\"146.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">O</text><text x=\"195.0\" y=\"120.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">i</text><text x=\"128.0\" y=\"70.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">j</text><text x=\"159.5\" y=\"82.9\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">p</text><text x=\"170.1\" y=\"179.4\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">q</text><polyline points=\"176.0,130.0 176.0,129.1 176.0,128.3 175.9,127.4 175.8,126.5 175.7,125.7 175.6,124.8 175.5,124.0 175.3,123.1 175.2,122.3 175.0,121.4 174.8,120.6 174.5,119.8 174.3,119.0 174.0,118.1 173.7,117.3 173.4,116.5 173.0,115.7 172.7,114.9 172.3,114.1 171.9,113.4 171.5,112.6 171.1,111.9 170.7,111.1 170.2,110.4 169.7,109.7 169.2,109.0 168.7,108.3 168.2,107.6 167.6,106.9 167.1,106.3 166.5,105.6 165.9,105.0 165.3,104.4 164.7,103.8 164.0,103.2 163.4,102.6 162.7,102.1 162.0,101.5 161.4,101.0 160.6,100.5\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.4\"/><text x=\"182.0\" y=\"106.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">α</text><polyline points=\"175.2,159.6 175.7,158.9 176.2,158.3 176.7,157.7 177.2,157.0 177.7,156.4 178.1,155.7 178.6,155.1 179.0,154.4 179.4,153.7 179.8,153.0 180.2,152.3 180.6,151.6 181.0,150.9 181.3,150.2 181.7,149.4 182.0,148.7 182.3,148.0 182.7,147.2 182.9,146.5 183.2,145.7 183.5,145.0 183.7,144.2 184.0,143.4 184.2,142.7 184.4,141.9 184.6,141.1 184.8,140.3 185.0,139.6 185.2,138.8 185.3,138.0 185.4,137.2 185.6,136.4 185.7,135.6 185.7,134.8 185.8,134.0 185.9,133.2 185.9,132.4 186.0,131.6 186.0,130.8 186.0,130.0\" fill=\"none\" stroke=\"#047857\" stroke-width=\"2.4\"/><text x=\"192.0\" y=\"152.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">β</text><polyline points=\"225.8,202.0 228.7,198.4 231.5,194.6 234.1,190.8 236.5,186.8 238.8,182.8 240.9,178.7 242.8,174.4 244.6,170.1 246.1,165.8 247.5,161.3 248.7,156.9 249.8,152.3 250.6,147.8 251.2,143.2 251.7,138.5 251.9,133.9 252.0,129.3 251.9,124.6 251.6,120.0 251.0,115.4 250.3,110.8 249.4,106.2 248.4,101.7 247.1,97.3 245.7,92.8 244.0,88.5 242.2,84.2 240.2,80.0 238.1,75.9 235.8,71.9 233.3,68.0 230.6,64.2 227.8,60.5 224.8,56.9 221.7,53.4 218.5,50.1 215.1,46.9 211.6,43.9 208.0,41.0 204.2,38.3\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"3\"/><text x=\"256.0\" y=\"100.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#7c3aed\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">α + β</text><polyline points=\"197.4,48.1 197.4,130.0\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"4 3\"/><polyline points=\"216.6,194.3 216.6,130.0\" fill=\"none\" stroke=\"#047857\" stroke-width=\"1.5\" stroke-dasharray=\"4 3\"/></svg>"
+              }
+            },
+            {
+              "explain": "Components of \\(\\underset{\\sim}{p}\\) (angle \\(\\alpha\\) ABOVE the \\(\\underset{\\sim}{i}\\) axis): \\(\\cos\\alpha\\) along \\(\\underset{\\sim}{i}\\) and \\(\\sin\\alpha\\) up along \\(\\underset{\\sim}{j}\\).",
+              "work": "\\(\\underset{\\sim}{p}=\\cos\\alpha\\,\\underset{\\sim}{i}+\\sin\\alpha\\,\\underset{\\sim}{j}\\)"
+            },
+            {
+              "explain": "Components of \\(\\underset{\\sim}{q}\\) (angle \\(\\beta\\) BELOW the \\(\\underset{\\sim}{i}\\) axis): \\(\\cos\\beta\\) along \\(\\underset{\\sim}{i}\\) but the \\(\\underset{\\sim}{j}\\) component is NEGATIVE.",
+              "work": "\\(\\underset{\\sim}{q}=\\cos\\beta\\,\\underset{\\sim}{i}-\\sin\\beta\\,\\underset{\\sim}{j}\\)"
+            },
+            {
+              "explain": "Dot product from components: multiply the \\(\\underset{\\sim}{i}\\) parts, multiply the \\(\\underset{\\sim}{j}\\) parts, add.",
+              "work": "\\(\\underset{\\sim}{p}\\cdot\\underset{\\sim}{q}=\\cos\\alpha\\cos\\beta+\\sin\\alpha(-\\sin\\beta)=\\cos\\alpha\\cos\\beta-\\sin\\alpha\\sin\\beta\\)"
+            },
+            {
+              "explain": "Equate the two expressions for \\(\\underset{\\sim}{p}\\cdot\\underset{\\sim}{q}\\).",
+              "work": "\\(\\cos(\\alpha+\\beta)=\\cos\\alpha\\cos\\beta-\\sin\\alpha\\sin\\beta\\ \\ \\blacksquare\\)"
+            },
+            {
+              "explain": "Why not the others: B takes the \\(\\underset{\\sim}{j}\\) component of \\(\\underset{\\sim}{q}\\) positive (that gives the formula for \\(\\cos(\\alpha-\\beta)\\)); C mixes sine and cosine; D confuses the dot product with the sum of lengths.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "derive the expansion of \\(\\cos(\\alpha+\\beta)\\)",
+              "note": "Unit vectors: \\(\\underset{\\sim}{p}\\cdot\\underset{\\sim}{q}=\\cos(\\alpha+\\beta)\\); \\(\\underset{\\sim}{q}\\) has a NEGATIVE \\(\\underset{\\sim}{j}\\) part."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Trial HSC Mathematics Extension 1",
+            "school": "Gosford High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -1930,6 +1994,63 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "gosford2020-e1-q1",
+          "type": "mc",
+          "stem": "What is the value of \\(\\sin2x\\) given that \\(\\sin x=\\dfrac{2\\sqrt3}{4}\\) and \\(x\\) is obtuse?",
+          "difficulty": "medium",
+          "options": [
+            "\\(-\\dfrac{\\sqrt3}{4}\\)",
+            "\\(-\\dfrac{\\sqrt3}{2}\\)",
+            "\\(\\dfrac{\\sqrt3}{4}\\)",
+            "\\(\\dfrac{\\sqrt3}{2}\\)"
+          ],
+          "answer": 1,
+          "hint": "Use \\(\\sin2x=2\\sin x\\cos x\\). You know \\(\\sin x\\); find \\(\\cos x\\) from \\(\\sin^{2}x+\\cos^{2}x=1\\) and decide its SIGN from the quadrant: an OBTUSE angle (between \\(90^{\\circ}\\) and \\(180^{\\circ}\\)) has a NEGATIVE cosine.",
+          "steps": [
+            {
+              "explain": "Simplify the given value: \\(\\dfrac{2\\sqrt3}{4}=\\dfrac{\\sqrt3}{2}\\). So \\(\\sin x=\\dfrac{\\sqrt3}{2}\\).",
+              "work": "\\(\\sin x=\\dfrac{\\sqrt3}{2}\\)"
+            },
+            {
+              "explain": "Find \\(\\cos^{2}x=1-\\sin^{2}x=1-\\dfrac{3}{4}=\\dfrac{1}{4}\\), so \\(\\cos x=\\pm\\dfrac{1}{2}\\).",
+              "work": "\\(\\cos^{2}x=1-\\left(\\dfrac{\\sqrt3}{2}\\right)^{2}=\\dfrac{1}{4}\\)"
+            },
+            {
+              "explain": "\\(x\\) is OBTUSE (second quadrant, \\(x=120^{\\circ}\\)): cosine is negative there (the point is to the LEFT of the \\(y\\)-axis).",
+              "work": "\\(\\cos x=-\\dfrac{1}{2}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 250\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><line x1=\"30.0\" y1=\"130.0\" x2=\"320.0\" y2=\"130.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"165.0\" y1=\"242.0\" x2=\"165.0\" y2=\"12.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"320.0\" y1=\"130.0\" x2=\"313.1\" y2=\"126.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"320.0\" y1=\"130.0\" x2=\"313.1\" y2=\"134.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"165.0\" y1=\"12.0\" x2=\"161.0\" y2=\"18.9\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"165.0\" y1=\"12.0\" x2=\"169.0\" y2=\"18.9\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"318.0\" y=\"146.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><text x=\"173.0\" y=\"16.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">y</text><circle cx=\"165\" cy=\"130\" r=\"80\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><line x1=\"165.0\" y1=\"130.0\" x2=\"125.0\" y2=\"60.7\" stroke=\"#dc2626\" stroke-width=\"3\" stroke-linecap=\"round\"/><circle cx=\"125.0\" cy=\"60.7\" r=\"4.5\" fill=\"#dc2626\"/><text x=\"117.0\" y=\"54.7\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">x = 120°</text><line x1=\"125.0\" y1=\"60.7\" x2=\"125.0\" y2=\"130.0\" stroke=\"#047857\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"117.0\" y=\"95.4\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">√3/2 (=sin x)</text><polyline points=\"191.0,130.0 191.0,128.6 190.9,127.3 190.7,125.9 190.4,124.6 190.1,123.3 189.7,122.0 189.3,120.7 188.8,119.4 188.2,118.2 187.5,117.0 186.8,115.8 186.0,114.7 185.2,113.6 184.3,112.6 183.4,111.6 182.4,110.7 181.4,109.8 180.3,109.0 179.2,108.2 178.0,107.5 176.8,106.8 175.6,106.2 174.3,105.7 173.0,105.3 171.7,104.9 170.4,104.6 169.1,104.3 167.7,104.1 166.4,104.0 165.0,104.0 163.6,104.0 162.3,104.1 160.9,104.3 159.6,104.6 158.3,104.9 157.0,105.3 155.7,105.7 154.4,106.2 153.2,106.8 152.0,107.5\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.2\"/></svg>"
+              }
+            },
+            {
+              "explain": "Double-angle formula: \\(\\sin2x=2\\sin x\\cos x\\).",
+              "work": "\\(\\sin2x=2\\times\\dfrac{\\sqrt3}{2}\\times\\left(-\\dfrac{1}{2}\\right)=-\\dfrac{\\sqrt3}{2}\\)"
+            },
+            {
+              "explain": "Check: \\(2x=240^{\\circ}\\) and \\(\\sin240^{\\circ}=-\\sin60^{\\circ}=-\\dfrac{\\sqrt3}{2}\\) ✓. Why not the others: A has the wrong size (forgot the 2 or halved wrongly); C and D are POSITIVE — they use \\(\\cos x=+\\dfrac{1}{2}\\), ignoring that \\(x\\) is obtuse.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">B</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "\\(x\\) is obtuse",
+              "note": "\\(\\sin2x=2\\sin x\\cos x\\); obtuse \\(\\Rightarrow\\cos x<0\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Trial HSC Mathematics Extension 1",
+            "school": "Gosford High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -2707,6 +2828,214 @@
           "meta": {
             "source": "Fort Street High School 2020 Preliminary HSC Assessment Task 3 Mathematics Extension 1",
             "school": "Fort Street High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "gosford2020-e1-q14a1",
+          "type": "mc",
+          "stem": "Given that \\(t=\\tan\\dfrac{\\theta}{2}\\), then \\(\\sin\\theta=\\dfrac{2t}{1+t^{2}}\\) and \\(\\cos\\theta=\\dfrac{1-t^{2}}{1+t^{2}}\\) for any angle \\(\\theta\\). (DO NOT PROVE THIS) Show that the equation \\(7\\cos\\theta+4\\sin\\theta+5=0\\) can be written as \\(t^{2}-4t-6=0\\)",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\begin{aligned}&7\\cdot\\dfrac{1-t^{2}}{1+t^{2}}+4\\cdot\\dfrac{2t}{1+t^{2}}+5=0\\ \\Rightarrow\\ 7(1-t^{2})+8t+5(1+t^{2})=0\\\\ &12+8t-2t^{2}=0\\ \\Rightarrow\\ -2\\left(t^{2}-4t-6\\right)=0\\ \\Rightarrow\\ t^{2}-4t-6=0\\end{aligned}\\)",
+            "\\(\\begin{aligned}&7\\cdot\\dfrac{1-t^{2}}{1+t^{2}}+4\\cdot\\dfrac{2t}{1+t^{2}}+5=0\\ \\Rightarrow\\ 7(1-t^{2})+8t+5=0\\\\ &12+8t-7t^{2}=0\\ \\Rightarrow\\ 7t^{2}-8t-12=0\\end{aligned}\\)",
+            "\\(\\begin{aligned}&7\\cdot\\dfrac{1-t^{2}}{1+t^{2}}+4\\cdot\\dfrac{2t}{1+t^{2}}+5=0\\ \\Rightarrow\\ 7(1-t^{2})+8t+5(1+t^{2})=0\\\\ &2-t^{2}+8t=0\\ \\Rightarrow\\ t^{2}-8t-2=0\\end{aligned}\\)",
+            "\\(\\begin{aligned}&7\\cdot\\dfrac{1-t^{2}}{1+t^{2}}+4\\cdot\\dfrac{2t}{1+t^{2}}+5=0\\ \\Rightarrow\\ 7(1+t^{2})+8t+5(1-t^{2})=0\\\\ &12+8t+2t^{2}=0\\ \\Rightarrow\\ t^{2}+4t+6=0\\end{aligned}\\)"
+          ],
+          "answer": 0,
+          "hint": "Substitute the \\(t\\)-formulae for \\(\\cos\\theta\\) and \\(\\sin\\theta\\), then multiply EVERY term (including the constant 5) by \\((1+t^{2})\\) to clear the denominators. Expand, collect like terms and divide by \\(-2\\).",
+          "steps": [
+            {
+              "explain": "Substitute \\(\\cos\\theta=\\dfrac{1-t^{2}}{1+t^{2}}\\) and \\(\\sin\\theta=\\dfrac{2t}{1+t^{2}}\\).",
+              "work": "\\(7\\cdot\\dfrac{1-t^{2}}{1+t^{2}}+4\\cdot\\dfrac{2t}{1+t^{2}}+5=0\\)"
+            },
+            {
+              "explain": "Multiply every term by \\(1+t^{2}\\) — including the \\(5\\), which becomes \\(5(1+t^{2})\\).",
+              "work": "\\(7(1-t^{2})+8t+5(1+t^{2})=0\\)"
+            },
+            {
+              "explain": "Expand the brackets: \\(7-7t^{2}+8t+5+5t^{2}=0\\). Collect: constants \\(7+5=12\\); \\(t^{2}\\) terms \\(-7t^{2}+5t^{2}=-2t^{2}\\).",
+              "work": "\\(12+8t-2t^{2}=0\\)"
+            },
+            {
+              "explain": "Divide by \\(-2\\) and write in standard order.",
+              "work": "\\(t^{2}-4t-6=0\\ \\ \\blacksquare\\)"
+            },
+            {
+              "explain": "Why not the others: B does not multiply the 5 by \\((1+t^{2})\\); C makes an arithmetic slip in collecting terms; D uses \\(1+t^{2}\\) with the \\(7\\) and \\(1-t^{2}\\) with the \\(5\\) (swapped).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that the equation",
+              "note": "Multiply every term by \\(1+t^{2}\\) (include the 5)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Trial HSC Mathematics Extension 1",
+            "school": "Gosford High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "gosford2020-e1-q14a2",
+          "type": "mc",
+          "stem": "\\(\\theta_{1},\\theta_{2}\\) are the solutions of the equation \\(7\\cos\\theta+4\\sin\\theta+5=0\\) for \\(\\left(\\theta_{1}>0,\\ 0<\\theta_{2}<2\\pi\\right)\\). Then without solving for \\(\\theta\\), show that \\(\\cot\\dfrac{\\theta_{1}}{2}+\\cot\\dfrac{\\theta_{2}}{2}=-\\dfrac{2}{3}\\)",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\begin{aligned}&t=\\tan\\dfrac\\theta2\\ \\text{satisfies}\\ t^{2}-4t-6=0,\\ \\text{roots }t_{1},t_{2}:\\ t_{1}+t_{2}=4,\\ t_{1}t_{2}=-6\\\\ &\\cot\\dfrac{\\theta_{1}}{2}+\\cot\\dfrac{\\theta_{2}}{2}=\\dfrac{1}{t_{1}}+\\dfrac{1}{t_{2}}=\\dfrac{t_{1}+t_{2}}{t_{1}t_{2}}=\\dfrac{4}{-6}=-\\dfrac{2}{3}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&t=\\tan\\dfrac\\theta2\\ \\text{satisfies}\\ t^{2}-4t-6=0,\\ \\text{roots }t_{1},t_{2}:\\ t_{1}+t_{2}=4,\\ t_{1}t_{2}=-6\\\\ &\\cot\\dfrac{\\theta_{1}}{2}+\\cot\\dfrac{\\theta_{2}}{2}=t_{1}+t_{2}=4\\end{aligned}\\)",
+            "\\(\\begin{aligned}&t=\\tan\\dfrac\\theta2\\ \\text{satisfies}\\ t^{2}-4t-6=0,\\ \\text{roots }t_{1},t_{2}:\\ t_{1}+t_{2}=-4,\\ t_{1}t_{2}=-6\\\\ &\\dfrac{1}{t_{1}}+\\dfrac{1}{t_{2}}=\\dfrac{t_{1}+t_{2}}{t_{1}t_{2}}=\\dfrac{-4}{-6}=\\dfrac{2}{3}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&t=\\tan\\dfrac\\theta2\\ \\text{satisfies}\\ t^{2}-4t-6=0,\\ \\text{roots }t_{1},t_{2}:\\ t_{1}+t_{2}=4,\\ t_{1}t_{2}=-6\\\\ &\\dfrac{1}{t_{1}}+\\dfrac{1}{t_{2}}=\\dfrac{1}{t_{1}+t_{2}}=\\dfrac{1}{4}\\end{aligned}\\)"
+          ],
+          "answer": 0,
+          "hint": "Each solution \\(\\theta\\) gives a root \\(t=\\tan\\dfrac\\theta2\\) of \\(t^{2}-4t-6=0\\) (part (i)). So \\(t_{1}=\\tan\\dfrac{\\theta_{1}}{2}\\), \\(t_{2}=\\tan\\dfrac{\\theta_{2}}{2}\\) are the two roots. \\(\\cot=\\dfrac{1}{\\tan}\\). Use SUM and PRODUCT of roots \\(\\left(-\\dfrac{b}{a},\\dfrac{c}{a}\\right)\\) — no need to solve.",
+          "steps": [
+            {
+              "explain": "From part (i), \\(t_{1}=\\tan\\dfrac{\\theta_{1}}{2}\\) and \\(t_{2}=\\tan\\dfrac{\\theta_{2}}{2}\\) are the two roots of \\(t^{2}-4t-6=0\\).",
+              "work": "\\(t_{1}+t_{2}=-\\dfrac{-4}{1}=4,\\qquad t_{1}t_{2}=\\dfrac{-6}{1}=-6\\)"
+            },
+            {
+              "explain": "\\(\\cot x=\\dfrac{1}{\\tan x}\\), so the required sum is \\(\\dfrac{1}{t_{1}}+\\dfrac{1}{t_{2}}\\).",
+              "work": "\\(\\cot\\dfrac{\\theta_{1}}{2}+\\cot\\dfrac{\\theta_{2}}{2}=\\dfrac{1}{t_{1}}+\\dfrac{1}{t_{2}}\\)"
+            },
+            {
+              "explain": "Common denominator \\(t_{1}t_{2}\\).",
+              "work": "\\(=\\dfrac{t_{2}+t_{1}}{t_{1}t_{2}}=\\dfrac{4}{-6}=-\\dfrac{2}{3}\\ \\ \\blacksquare\\)"
+            },
+            {
+              "explain": "Why not the others: B adds the tangents instead of cotangents; C uses \\(t_{1}+t_{2}=-4\\) (sign error: sum \\(=\\dfrac{-b}{a}=+4\\)); D adds the denominators.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "without solving for \\(\\theta\\), show that",
+              "note": "Sum \\(=4\\), product \\(=-6\\); \\(\\dfrac1{t_1}+\\dfrac1{t_2}=\\dfrac{t_1+t_2}{t_1t_2}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Trial HSC Mathematics Extension 1",
+            "school": "Gosford High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hillsgrammar-25-3u-q13a",
+          "type": "mc",
+          "stem": "Using \\(t=\\tan\\dfrac{x}{2}\\), or otherwise, prove that \\(\\dfrac{2}{1+\\cos x}=\\sec^{2}\\left(\\dfrac{x}{2}\\right)\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\begin{aligned}&\\cos x=\\dfrac{1-t^{2}}{1+t^{2}}\\ \\Rightarrow\\ 1+\\cos x=\\dfrac{(1+t^{2})+(1-t^{2})}{1+t^{2}}=\\dfrac{2}{1+t^{2}}\\\\ &\\dfrac{2}{1+\\cos x}=2\\cdot\\dfrac{1+t^{2}}{2}=1+t^{2}=1+\\tan^{2}\\dfrac{x}{2}=\\sec^{2}\\dfrac{x}{2}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\cos x=\\dfrac{1-t^{2}}{1+t^{2}}\\ \\Rightarrow\\ 1+\\cos x=\\dfrac{(1+t^{2})+(1-t^{2})}{1+t^{2}}=\\dfrac{2}{1+t^{2}}\\\\ &\\dfrac{2}{1+\\cos x}=2\\cdot\\dfrac{2}{1+t^{2}}=\\dfrac{4}{1+t^{2}}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\cos x=\\dfrac{1-t^{2}}{1+t^{2}}\\ \\Rightarrow\\ 1+\\cos x=\\dfrac{(1+t^{2})-(1-t^{2})}{1+t^{2}}=\\dfrac{2t^{2}}{1+t^{2}}\\\\ &\\dfrac{2}{1+\\cos x}=\\dfrac{1+t^{2}}{t^{2}}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\cos x=\\dfrac{1+t^{2}}{1-t^{2}}\\ \\Rightarrow\\ 1+\\cos x=\\dfrac{2}{1-t^{2}}\\\\ &\\dfrac{2}{1+\\cos x}=1-t^{2}\\end{aligned}\\)"
+          ],
+          "answer": 0,
+          "hint": "Use \\(\\cos x=\\dfrac{1-t^{2}}{1+t^{2}}\\) (reference sheet). Write \\(1+\\cos x\\) as ONE fraction (common denominator \\(1+t^{2}\\)), then flip it. Finish with \\(1+\\tan^{2}A=\\sec^{2}A\\) where \\(A=\\dfrac{x}{2}\\).",
+          "steps": [
+            {
+              "explain": "Write \\(1+\\cos x\\) over the common denominator \\(1+t^{2}\\).",
+              "work": "\\(1+\\cos x=\\dfrac{1+t^{2}}{1+t^{2}}+\\dfrac{1-t^{2}}{1+t^{2}}=\\dfrac{2}{1+t^{2}}\\)"
+            },
+            {
+              "explain": "Divide 2 by this fraction: dividing by \\(\\dfrac{2}{1+t^{2}}\\) is multiplying by \\(\\dfrac{1+t^{2}}{2}\\).",
+              "work": "\\(\\dfrac{2}{1+\\cos x}=2\\times\\dfrac{1+t^{2}}{2}=1+t^{2}\\)"
+            },
+            {
+              "explain": "Recall \\(t=\\tan\\dfrac{x}{2}\\) and the Pythagorean identity \\(1+\\tan^{2}A=\\sec^{2}A\\).",
+              "work": "\\(1+t^{2}=1+\\tan^{2}\\dfrac{x}{2}=\\sec^{2}\\dfrac{x}{2}\\ \\ \\blacksquare\\)"
+            },
+            {
+              "explain": "Why not the others: B multiplies by 2 instead of dividing by \\(\\dfrac{2}{1+t^{2}}\\); C subtracts (\\(1+\\cos x\\) needs a PLUS); D inverts the \\(t\\)-formula for \\(\\cos x\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "prove that \\(\\dfrac{2}{1+\\cos x}=\\sec^{2}\\left(\\dfrac{x}{2}\\right)\\)",
+              "note": "\\(1+\\cos x=\\dfrac{2}{1+t^{2}}\\); then \\(1+\\tan^{2}=\\sec^{2}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hills Grammar 2025 Trial HSC Mathematics Extension 1",
+            "school": "The Hills Grammar School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hillsgrammar-25-3u-q14b",
+          "type": "mc",
+          "stem": "It is given that \\(\\tan3\\theta=\\dfrac{3\\tan\\theta-\\tan^{3}\\theta}{1-3\\tan^{2}\\theta}\\). By letting \\(x=\\tan\\theta\\), where \\(0<\\theta<\\pi\\), solve \\(x^{3}-3x^{2}-3x+1=0\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(x=2-\\sqrt3,\\ \\ 2+\\sqrt3,\\ \\ -1\\)",
+            "\\(x=2-\\sqrt3,\\ \\ 2+\\sqrt3,\\ \\ 1\\)",
+            "\\(x=\\sqrt3-2,\\ \\ -2-\\sqrt3,\\ \\ -1\\)",
+            "\\(x=1,\\ \\ -1,\\ \\ 0\\)"
+          ],
+          "answer": 0,
+          "hint": "Rearrange the cubic so that it matches \\(\\tan3\\theta=\\dfrac{3x-x^{3}}{1-3x^{2}}\\): \\(x^{3}-3x^{2}-3x+1=0\\) means \\(1-3x^{2}=3x-x^{3}\\), i.e. \\(\\tan3\\theta=1\\). Then solve for \\(3\\theta\\) in the range \\(0<3\\theta<3\\pi\\).",
+          "steps": [
+            {
+              "explain": "With \\(x=\\tan\\theta\\): \\(\\tan3\\theta=\\dfrac{3x-x^{3}}{1-3x^{2}}\\). Rewrite the cubic by moving terms: \\(1-3x^{2}=3x-x^{3}\\) (add \\(3x\\) and \\(-x^{3}\\) to the other side: \\(x^{3}-3x^{2}-3x+1=0\\Leftrightarrow(1-3x^{2})-(3x-x^{3})=0\\)).",
+              "work": "\\(1-3x^{2}=3x-x^{3}\\ \\Rightarrow\\ \\dfrac{3x-x^{3}}{1-3x^{2}}=1\\ \\Rightarrow\\ \\tan3\\theta=1\\)"
+            },
+            {
+              "explain": "\\(0<\\theta<\\pi\\) means \\(0<3\\theta<3\\pi\\). \\(\\tan\\) equals 1 at \\(\\dfrac\\pi4\\) and then every \\(\\pi\\).",
+              "work": "\\(3\\theta=\\dfrac\\pi4,\\ \\dfrac{5\\pi}{4},\\ \\dfrac{9\\pi}{4}\\)"
+            },
+            {
+              "explain": "Divide by 3.",
+              "work": "\\(\\theta=\\dfrac{\\pi}{12},\\ \\dfrac{5\\pi}{12},\\ \\dfrac{3\\pi}{4}\\)"
+            },
+            {
+              "explain": "Now \\(x=\\tan\\theta\\): \\(\\tan\\dfrac\\pi{12}=\\tan15^{\\circ}=2-\\sqrt3\\), \\(\\tan\\dfrac{5\\pi}{12}=\\tan75^{\\circ}=2+\\sqrt3\\), \\(\\tan\\dfrac{3\\pi}{4}=\\tan135^{\\circ}=-1\\).",
+              "work": "\\(x=2-\\sqrt3,\\quad2+\\sqrt3,\\quad-1\\)"
+            },
+            {
+              "explain": "Check with the coefficients: the sum of roots \\(=-\\dfrac{b}{a}=3\\): \\((2-\\sqrt3)+(2+\\sqrt3)+(-1)=3\\) ✓; the product \\(=-\\dfrac{d}{a}=-1\\): \\((4-3)(-1)=-1\\) ✓. Why not the others: B has \\(\\tan\\dfrac{3\\pi}{4}=+1\\) (it is \\(-1\\)); C reverses the signs; D is not a solution of the cubic (\\(x=1\\): \\(1-3-3+1=-4\\ne0\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "By letting \\(x=\\tan\\theta\\), where \\(0<\\theta<\\pi\\), solve",
+              "note": "Cubic \\(\\Leftrightarrow\\tan3\\theta=1\\); \\(3\\theta=\\dfrac\\pi4,\\dfrac{5\\pi}4,\\dfrac{9\\pi}4\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hills Grammar 2025 Trial HSC Mathematics Extension 1",
+            "school": "The Hills Grammar School",
             "grade": "11",
             "origin": "teacher"
           }
@@ -4168,6 +4497,167 @@
           "meta": {
             "source": "Girraween High School 2020 Mathematics Extension 1 Trial HSC Examination",
             "school": "Girraween High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "gosford2020-e1-q11b1",
+          "type": "mc",
+          "stem": "Express \\(6\\cos\\theta+8\\sin\\theta\\) in the form \\(R\\cos(\\theta-\\alpha)\\), where \\(R>0\\), and \\(0\\le\\alpha<2\\pi\\). Give \\(\\alpha\\) correct to 1 decimal place.",
+          "difficulty": "medium",
+          "options": [
+            "\\(10\\cos(\\theta-0.9)\\)",
+            "\\(10\\cos(\\theta-0.6)\\)",
+            "\\(14\\cos(\\theta-0.9)\\)",
+            "\\(10\\cos(\\theta+0.9)\\)"
+          ],
+          "answer": 0,
+          "hint": "Expand \\(R\\cos(\\theta-\\alpha)=R\\cos\\alpha\\cos\\theta+R\\sin\\alpha\\sin\\theta\\) and MATCH it to \\(6\\cos\\theta+8\\sin\\theta\\): \\(R\\cos\\alpha=6\\) and \\(R\\sin\\alpha=8\\). Then \\(R=\\sqrt{6^{2}+8^{2}}\\) and \\(\\tan\\alpha=\\dfrac{8}{6}\\).",
+          "steps": [
+            {
+              "explain": "Expand the target form using the compound-angle formula \\(\\cos(A-B)=\\cos A\\cos B+\\sin A\\sin B\\).",
+              "work": "\\(R\\cos(\\theta-\\alpha)=R\\cos\\alpha\\cos\\theta+R\\sin\\alpha\\sin\\theta\\)"
+            },
+            {
+              "explain": "Match coefficients of \\(\\cos\\theta\\) and \\(\\sin\\theta\\) with \\(6\\cos\\theta+8\\sin\\theta\\).",
+              "work": "\\(R\\cos\\alpha=6,\\qquad R\\sin\\alpha=8\\)"
+            },
+            {
+              "explain": "Square and add, using \\(\\cos^{2}\\alpha+\\sin^{2}\\alpha=1\\): \\(R^{2}=36+64\\).",
+              "work": "\\(R=\\sqrt{36+64}=10\\)"
+            },
+            {
+              "explain": "Divide the two equations: \\(\\tan\\alpha=\\dfrac{R\\sin\\alpha}{R\\cos\\alpha}=\\dfrac{8}{6}=\\dfrac{4}{3}\\). Both \\(6\\) and \\(8\\) are positive, so \\(\\alpha\\) is in the 1st quadrant (right-angled triangle with sides 6, 8, 10).",
+              "work": "\\(\\alpha=\\tan^{-1}\\dfrac{4}{3}\\approx0.927\\approx0.9\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 250\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><line x1=\"30.0\" y1=\"190.0\" x2=\"320.0\" y2=\"190.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"240.0\" x2=\"60.0\" y2=\"14.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"320.0\" y1=\"190.0\" x2=\"313.1\" y2=\"186.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"320.0\" y1=\"190.0\" x2=\"313.1\" y2=\"194.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"14.0\" x2=\"56.0\" y2=\"20.9\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"14.0\" x2=\"64.0\" y2=\"20.9\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"190.0\" x2=\"144.0\" y2=\"190.0\" stroke=\"#d97706\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"144.0\" y1=\"190.0\" x2=\"144.0\" y2=\"78.0\" stroke=\"#047857\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"190.0\" x2=\"144.0\" y2=\"78.0\" stroke=\"#dc2626\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><text x=\"102.0\" y=\"208.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">R cos α = 6</text><text x=\"152.0\" y=\"134.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">R sin α = 8</text><text x=\"76.0\" y=\"124.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">R = 10</text><polyline points=\"98.0,190.0 98.0,189.1 98.0,188.2 97.9,187.4 97.8,186.5 97.7,185.6 97.6,184.7 97.5,183.9 97.3,183.0 97.2,182.1 97.0,181.3 96.8,180.4 96.5,179.6 96.3,178.7 96.0,177.9 95.7,177.1 95.4,176.2 95.1,175.4 94.7,174.6 94.4,173.8 94.0,173.0 93.6,172.2 93.2,171.4 92.7,170.7 92.3,169.9 91.8,169.2 91.3,168.5 90.8,167.7 90.3,167.0 89.7,166.3 89.2,165.7 88.6,165.0 88.0,164.3 87.4,163.7 86.8,163.1 86.2,162.4 85.5,161.8 84.9,161.3 84.2,160.7 83.5,160.1 82.8,159.6\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.4\"/><text x=\"106.0\" y=\"176.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">α</text></svg>"
+              }
+            },
+            {
+              "explain": "Write the answer: \\(6\\cos\\theta+8\\sin\\theta=10\\cos(\\theta-0.9)\\). Check at \\(\\theta=0\\): LHS \\(=6\\); RHS \\(=10\\cos(0.9)=10\\times0.6216=6.2\\approx6\\) ✓. Why not the others: B uses \\(\\tan\\alpha=\\dfrac{6}{8}\\) (the ratio upside-down, \\(\\alpha\\approx0.6\\)); C has \\(R=6+8\\) (adding instead of Pythagoras); D has \\(\\theta+\\alpha\\) (the form requires \\(\\theta-\\alpha\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Express \\(6\\cos\\theta+8\\sin\\theta\\) in the form \\(R\\cos(\\theta-\\alpha)\\)",
+              "note": "\\(R\\cos\\alpha=6\\), \\(R\\sin\\alpha=8\\); \\(R=\\sqrt{6^{2}+8^{2}}\\); \\(\\tan\\alpha=\\dfrac{8}{6}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Trial HSC Mathematics Extension 1",
+            "school": "Gosford High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "gosford2020-e1-q11b2",
+          "type": "mc",
+          "stem": "Hence calculate the maximum value of \\(\\dfrac{4}{12+6\\cos\\theta+8\\sin\\theta}\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(2\\)",
+            "\\(\\dfrac{2}{11}\\)",
+            "\\(\\dfrac{1}{3}\\)",
+            "\\(\\dfrac{1}{5}\\)"
+          ],
+          "answer": 0,
+          "hint": "Use part (i): the denominator is \\(12+10\\cos(\\theta-0.9)\\). A fraction with a POSITIVE numerator is LARGEST when its denominator is SMALLEST. The smallest value of \\(\\cos(\\ldots)\\) is \\(-1\\).",
+          "steps": [
+            {
+              "explain": "Rewrite using part (i).",
+              "work": "\\(\\dfrac{4}{12+10\\cos(\\theta-\\alpha)}\\)"
+            },
+            {
+              "explain": "\\(\\cos(\\theta-\\alpha)\\) ranges from \\(-1\\) to \\(1\\), so the denominator \\(12+10\\cos(\\theta-\\alpha)\\) ranges from \\(12-10=2\\) to \\(12+10=22\\) (always positive, so no division by zero).",
+              "work": "\\(2\\le12+10\\cos(\\theta-\\alpha)\\le22\\)"
+            },
+            {
+              "explain": "The fraction is largest when the denominator is smallest (dividing 4 by a smaller positive number gives a bigger result).",
+              "work": "\\(\\max=\\dfrac{4}{2}=2\\)"
+            },
+            {
+              "explain": "Why not the others: \\(\\dfrac{4}{22}=\\dfrac{2}{11}\\) is the MINIMUM value (largest denominator); C and D use \\(12\\) or \\(20\\) as denominators (ignoring the \\(\\cos\\) range).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "calculate the maximum value of",
+              "note": "Max of \\(\\dfrac{4}{D}\\) when \\(D\\) is smallest: \\(12-10=2\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Trial HSC Mathematics Extension 1",
+            "school": "Gosford High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hillsgrammar-25-3u-q12a",
+          "type": "mc",
+          "stem": "It is given that \\(3\\cos x+b\\sin x=5\\cos(x+\\theta)\\), where \\(b>0,\\ -90^{\\circ}<\\theta<90^{\\circ}\\). Find the values of \\(b\\) and \\(\\theta\\), giving your answer for \\(\\theta\\) correct to the nearest minute.",
+          "difficulty": "medium",
+          "options": [
+            "\\(b=4,\\ \\theta=-53^{\\circ}8'\\)",
+            "\\(b=4,\\ \\theta=53^{\\circ}8'\\)",
+            "\\(b=4,\\ \\theta=-36^{\\circ}52'\\)",
+            "\\(b=5,\\ \\theta=-53^{\\circ}8'\\)"
+          ],
+          "answer": 0,
+          "hint": "Expand \\(5\\cos(x+\\theta)=5\\cos\\theta\\cos x-5\\sin\\theta\\sin x\\) and MATCH coefficients with \\(3\\cos x+b\\sin x\\): \\(5\\cos\\theta=3\\) and \\(-5\\sin\\theta=b\\). Since \\(b>0\\), \\(\\sin\\theta<0\\): \\(\\theta\\) is NEGATIVE (4th quadrant).",
+          "steps": [
+            {
+              "explain": "Expand with the compound-angle formula \\(\\cos(A+B)=\\cos A\\cos B-\\sin A\\sin B\\).",
+              "work": "\\(5\\cos(x+\\theta)=5\\cos\\theta\\cos x-5\\sin\\theta\\sin x\\)"
+            },
+            {
+              "explain": "Equate coefficients of \\(\\cos x\\) and \\(\\sin x\\).",
+              "work": "\\(5\\cos\\theta=3,\\qquad-5\\sin\\theta=b\\)"
+            },
+            {
+              "explain": "From the first: \\(\\cos\\theta=\\dfrac{3}{5}\\), with \\(-90^{\\circ}<\\theta<90^{\\circ}\\). A 3-4-5 triangle gives \\(\\sin\\theta=\\pm\\dfrac{4}{5}\\). Since \\(b>0\\), \\(-5\\sin\\theta>0\\Rightarrow\\sin\\theta<0\\), so \\(\\sin\\theta=-\\dfrac{4}{5}\\).",
+              "work": "\\(\\sin\\theta=-\\dfrac{4}{5}\\ \\Rightarrow\\ b=-5\\left(-\\dfrac{4}{5}\\right)=4\\)"
+            },
+            {
+              "explain": "Angle: \\(\\tan\\theta=\\dfrac{\\sin\\theta}{\\cos\\theta}=-\\dfrac{4}{3}\\) and \\(\\theta\\) is negative: \\(\\theta=-\\tan^{-1}\\dfrac{4}{3}=-53.1301^{\\circ}\\). Convert: \\(0.1301\\times60=7.8'\\approx8'\\).",
+              "work": "\\(\\theta=-53^{\\circ}8'\\)"
+            },
+            {
+              "explain": "Check: \\(5\\cos(x-53^{\\circ}8')\\) at \\(x=0\\): \\(5\\cos(53.13^{\\circ})=5\\times0.6=3\\) ✓. Why not the others: B has the wrong sign of \\(\\theta\\) (that would make \\(b<0\\)); C uses \\(\\tan^{-1}\\dfrac{3}{4}\\); D has \\(R=5\\) mistaken for \\(b\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the values of \\(b\\) and \\(\\theta\\)",
+              "note": "Match \\(5\\cos\\theta=3\\), \\(-5\\sin\\theta=b\\); \\(b>0\\Rightarrow\\theta<0\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hills Grammar 2025 Trial HSC Mathematics Extension 1",
+            "school": "The Hills Grammar School",
             "grade": "11",
             "origin": "teacher"
           }

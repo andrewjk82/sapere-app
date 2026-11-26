@@ -1900,6 +1900,408 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "gosford2020-e1-q11d1",
+          "type": "mc",
+          "stem": "A man throws a ball from a point \\(O\\) on the horizontal ground so that it lands on the ground at a point \\(P\\) distant 80 m from him. The ball reaches the highest point 20 m above the ground. Neglect the sizes of the man and the ball. Take \\(g=10\\ \\mathrm{m\\,s^{-2}}\\). Find the vertical and horizontal components of velocity of projection of the ball.",
+          "difficulty": "medium",
+          "options": [
+            "Vertical \\(20\\) m/s, horizontal \\(20\\) m/s",
+            "Vertical \\(40\\) m/s, horizontal \\(20\\) m/s",
+            "Vertical \\(20\\) m/s, horizontal \\(40\\) m/s",
+            "Vertical \\(10\\) m/s, horizontal \\(20\\) m/s"
+          ],
+          "answer": 0,
+          "hint": "Treat vertical and horizontal motion SEPARATELY. Vertically (acceleration \\(-10\\)): at the top \\(v_y=0\\) after rising 20 m, so \\(0=V_y^{2}-2(10)(20)\\). Horizontally (no acceleration): range \\(=V_x\\times\\) total time, and total time \\(=2\\times\\) time to the top.",
+          "steps": [
+            {
+              "explain": "Vertical: rising from \\(y=0\\) to the top (\\(y=20\\), \\(v_y=0\\)) with \\(a=-10\\). Use \\(v^{2}=u^{2}+2as\\).",
+              "work": "\\(0=V_{y}^{2}-2(10)(20)\\ \\Rightarrow\\ V_{y}^{2}=400\\ \\Rightarrow\\ V_{y}=20\\ \\text{ m per s}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 230\" width=\"100%\" height=\"auto\" style=\"max-width:520px;display:block;margin:0 auto\"><line x1=\"26.0\" y1=\"180.0\" x2=\"488.0\" y2=\"180.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"40.0\" y1=\"188.0\" x2=\"40.0\" y2=\"60.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"488.0\" y1=\"180.0\" x2=\"481.1\" y2=\"176.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"488.0\" y1=\"180.0\" x2=\"481.1\" y2=\"184.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><polyline points=\"40.0,180.0 44.0,176.1 48.0,172.2 52.0,168.4 56.0,164.8 60.0,161.2 64.0,157.8 68.0,154.4 72.0,151.2 76.0,148.1 80.0,145.0 84.0,142.1 88.0,139.2 92.0,136.4 96.0,133.8 100.0,131.2 104.0,128.8 108.0,126.5 112.0,124.2 116.0,122.0 120.0,120.0 124.0,118.0 128.0,116.2 132.0,114.5 136.0,112.8 140.0,111.2 144.0,109.8 148.0,108.5 152.0,107.2 156.0,106.0 160.0,105.0 164.0,104.0 168.0,103.2 172.0,102.5 176.0,101.8 180.0,101.2 184.0,100.8 188.0,100.5 192.0,100.2 196.0,100.0 200.0,100.0 204.0,100.0 208.0,100.2 212.0,100.5 216.0,100.8 220.0,101.2 224.0,101.8 228.0,102.5 232.0,103.2 236.0,104.0 240.0,105.0 244.0,106.0 248.0,107.2 252.0,108.5 256.0,109.8 260.0,111.2 264.0,112.8 268.0,114.5 272.0,116.2 276.0,118.0 280.0,120.0 284.0,122.0 288.0,124.2 292.0,126.5 296.0,128.8 300.0,131.2 304.0,133.8 308.0,136.4 312.0,139.2 316.0,142.1 320.0,145.0 324.0,148.1 328.0,151.2 332.0,154.4 336.0,157.8 340.0,161.2 344.0,164.8 348.0,168.4 352.0,172.2 356.0,176.1 360.0,180.0\" fill=\"none\" stroke=\"#3b4ea8\" stroke-width=\"2.6\"/><line x1=\"200.0\" y1=\"180.0\" x2=\"200.0\" y2=\"100.0\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"200.0\" y1=\"100.0\" x2=\"196.0\" y2=\"106.9\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"200.0\" y1=\"100.0\" x2=\"204.0\" y2=\"106.9\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"200.0\" y1=\"180.0\" x2=\"204.0\" y2=\"173.1\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"200.0\" y1=\"180.0\" x2=\"196.0\" y2=\"173.1\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"208.0\" y=\"144.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">20 m</text><circle cx=\"40.0\" cy=\"180\" r=\"4\" fill=\"#1e293b\"/><circle cx=\"360.0\" cy=\"180\" r=\"4\" fill=\"#1e293b\"/><circle cx=\"440.0\" cy=\"180\" r=\"4\" fill=\"#1e293b\"/><text x=\"34.0\" y=\"196.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">O</text><text x=\"360.0\" y=\"196.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">P</text><text x=\"440.0\" y=\"196.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text><line x1=\"40.0\" y1=\"210.0\" x2=\"360.0\" y2=\"210.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"200.0\" y=\"226.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">80 m</text><line x1=\"440.0\" y1=\"148.0\" x2=\"406.0\" y2=\"148.0\" stroke=\"#d97706\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"406.0\" y1=\"148.0\" x2=\"413.8\" y2=\"152.5\" stroke=\"#d97706\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"406.0\" y1=\"148.0\" x2=\"413.8\" y2=\"143.5\" stroke=\"#d97706\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"436.0\" y=\"140.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">5 m/s</text><line x1=\"440.0\" y1=\"180.0\" x2=\"440.0\" y2=\"100.0\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><line x1=\"40.0\" y1=\"180.0\" x2=\"66.0\" y2=\"154.0\" stroke=\"#d97706\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"66.0\" y1=\"154.0\" x2=\"57.3\" y2=\"156.3\" stroke=\"#d97706\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"66.0\" y1=\"154.0\" x2=\"63.7\" y2=\"162.7\" stroke=\"#d97706\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"74.0\" y=\"146.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">V</text><polyline points=\"64.0,180.0 64.0,179.6 64.0,179.2 64.0,178.7 63.9,178.3 63.9,177.9 63.9,177.5 63.8,177.1 63.8,176.7 63.7,176.2 63.6,175.8 63.6,175.4 63.5,175.0 63.4,174.6 63.3,174.2 63.2,173.8 63.1,173.4 63.0,173.0 62.8,172.6 62.7,172.2 62.6,171.8 62.4,171.4 62.3,171.0 62.1,170.6 61.9,170.2 61.8,169.9 61.6,169.5 61.4,169.1 61.2,168.7 61.0,168.4 60.8,168.0 60.6,167.6 60.4,167.3 60.1,166.9 59.9,166.6 59.7,166.2 59.4,165.9 59.2,165.6 58.9,165.2 58.7,164.9 58.4,164.6\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2\"/><text x=\"70.0\" y=\"174.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">α</text><line x1=\"40.0\" y1=\"180.0\" x2=\"80.0\" y2=\"180.0\" stroke=\"#3b4ea8\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><line x1=\"80.0\" y1=\"180.0\" x2=\"72.2\" y2=\"175.5\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"80.0\" y1=\"180.0\" x2=\"72.2\" y2=\"184.5\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"50.0\" y=\"196.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">horizontal</text><line x1=\"40.0\" y1=\"180.0\" x2=\"40.0\" y2=\"100.0\" stroke=\"#047857\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><text x=\"48.0\" y=\"110.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">vertical</text></svg>"
+              }
+            },
+            {
+              "explain": "Time to the top: \\(v=u+at\\Rightarrow0=20-10t\\Rightarrow t=2\\) s. The path is symmetric, so the TOTAL flight time is \\(2\\times2=4\\) s.",
+              "work": "\\(t_{up}=2\\ \\text{s},\\qquad T=4\\ \\text{s}\\)"
+            },
+            {
+              "explain": "Horizontal: constant velocity \\(V_{x}\\), so range \\(=V_{x}T\\). The ball lands 80 m away.",
+              "work": "\\(80=V_{x}\\times4\\ \\Rightarrow\\ V_{x}=20\\ \\text{ m per s}\\)"
+            },
+            {
+              "explain": "Both components are 20 m/s (so the angle of projection is \\(45^{\\circ}\\)). Why not the others: B and C swap or double a component (using \\(T=2\\) s or \\(h=40\\)); D forgets that rising 20 m needs \\(V_{y}=\\sqrt{2gh}=\\sqrt{400}=20\\), not 10.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the vertical and horizontal components of velocity of projection of the ball.",
+              "note": "Vertical: \\(v^{2}=u^{2}-2gh\\); horizontal: range \\(=V_{x}\\times T\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Trial HSC Mathematics Extension 1",
+            "school": "Gosford High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "gosford2020-e1-q11d2",
+          "type": "mc",
+          "stem": "A man throws a ball from a point \\(O\\) on the horizontal ground so that it lands at a point \\(P\\) 80 m away, reaching a highest point 20 m above the ground. The components of the velocity of projection are 20 m/s horizontally and 20 m/s vertically. Take \\(g=10\\ \\mathrm{m\\,s^{-2}}\\). Find the velocity of projection of the ball.",
+          "difficulty": "easy",
+          "options": [
+            "\\(20\\sqrt2\\) m/s at \\(45^{\\circ}\\) to the horizontal",
+            "\\(40\\) m/s at \\(45^{\\circ}\\) to the horizontal",
+            "\\(20\\sqrt2\\) m/s at \\(30^{\\circ}\\) to the horizontal",
+            "\\(20\\) m/s at \\(45^{\\circ}\\) to the horizontal"
+          ],
+          "answer": 0,
+          "hint": "The velocity of projection is the resultant of its two components: use Pythagoras for the SPEED and \\(\\tan\\alpha=\\dfrac{V_{y}}{V_{x}}\\) for the angle.",
+          "steps": [
+            {
+              "explain": "Draw the right-angled triangle with sides \\(V_{x}=20\\) and \\(V_{y}=20\\); the hypotenuse is the speed \\(V\\).",
+              "work": "\\(V^{2}=20^{2}+20^{2}=800\\)"
+            },
+            {
+              "explain": "Take the square root: \\(\\sqrt{800}=\\sqrt{400\\times2}=20\\sqrt2\\).",
+              "work": "\\(V=20\\sqrt2\\approx28.3\\ \\text{ m per s}\\)"
+            },
+            {
+              "explain": "Angle: \\(\\tan\\alpha=\\dfrac{20}{20}=1\\), so \\(\\alpha=45^{\\circ}\\).",
+              "work": "\\(\\alpha=45^{\\circ}\\)"
+            },
+            {
+              "explain": "Why not the others: B adds the components (\\(20+20\\)); C uses the wrong angle; D uses one component only (it forgets the Pythagoras).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the velocity of projection of the ball.",
+              "note": "\\(V=\\sqrt{V_{x}^{2}+V_{y}^{2}}\\); \\(\\tan\\alpha=\\dfrac{V_{y}}{V_{x}}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Trial HSC Mathematics Extension 1",
+            "school": "Gosford High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "gosford2020-e1-q11d3",
+          "type": "mc",
+          "stem": "A man throws a ball from a point \\(O\\) on the horizontal ground so that it lands at a point \\(P\\) 80 m from him (total flight time 4 s). Find the further distance from the other boy \\(B\\) who starts running at the speed of \\(5\\ \\mathrm{m\\,s^{-1}}\\) to catch the ball at the point \\(P\\) simultaneously.",
+          "difficulty": "easy",
+          "options": [
+            "\\(20\\) m (so \\(B\\) starts \\(100\\) m from the man)",
+            "\\(10\\) m",
+            "\\(5\\) m",
+            "\\(40\\) m"
+          ],
+          "answer": 0,
+          "hint": "\\(B\\) runs at constant speed for the SAME time the ball is in the air (4 s). Distance \\(=\\) speed \\(\\times\\) time. That distance is how far \\(B\\) must start beyond \\(P\\).",
+          "steps": [
+            {
+              "explain": "The ball is in the air for \\(T=4\\) s (found in part (i)). \\(B\\) must reach \\(P\\) at the same moment, so \\(B\\) runs for 4 s.",
+              "work": "\\(t=4\\ \\text{s}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 230\" width=\"100%\" height=\"auto\" style=\"max-width:520px;display:block;margin:0 auto\"><line x1=\"26.0\" y1=\"180.0\" x2=\"488.0\" y2=\"180.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"40.0\" y1=\"188.0\" x2=\"40.0\" y2=\"60.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"488.0\" y1=\"180.0\" x2=\"481.1\" y2=\"176.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"488.0\" y1=\"180.0\" x2=\"481.1\" y2=\"184.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><polyline points=\"40.0,180.0 44.0,176.1 48.0,172.2 52.0,168.4 56.0,164.8 60.0,161.2 64.0,157.8 68.0,154.4 72.0,151.2 76.0,148.1 80.0,145.0 84.0,142.1 88.0,139.2 92.0,136.4 96.0,133.8 100.0,131.2 104.0,128.8 108.0,126.5 112.0,124.2 116.0,122.0 120.0,120.0 124.0,118.0 128.0,116.2 132.0,114.5 136.0,112.8 140.0,111.2 144.0,109.8 148.0,108.5 152.0,107.2 156.0,106.0 160.0,105.0 164.0,104.0 168.0,103.2 172.0,102.5 176.0,101.8 180.0,101.2 184.0,100.8 188.0,100.5 192.0,100.2 196.0,100.0 200.0,100.0 204.0,100.0 208.0,100.2 212.0,100.5 216.0,100.8 220.0,101.2 224.0,101.8 228.0,102.5 232.0,103.2 236.0,104.0 240.0,105.0 244.0,106.0 248.0,107.2 252.0,108.5 256.0,109.8 260.0,111.2 264.0,112.8 268.0,114.5 272.0,116.2 276.0,118.0 280.0,120.0 284.0,122.0 288.0,124.2 292.0,126.5 296.0,128.8 300.0,131.2 304.0,133.8 308.0,136.4 312.0,139.2 316.0,142.1 320.0,145.0 324.0,148.1 328.0,151.2 332.0,154.4 336.0,157.8 340.0,161.2 344.0,164.8 348.0,168.4 352.0,172.2 356.0,176.1 360.0,180.0\" fill=\"none\" stroke=\"#3b4ea8\" stroke-width=\"2.6\"/><line x1=\"200.0\" y1=\"180.0\" x2=\"200.0\" y2=\"100.0\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"200.0\" y1=\"100.0\" x2=\"196.0\" y2=\"106.9\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"200.0\" y1=\"100.0\" x2=\"204.0\" y2=\"106.9\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"200.0\" y1=\"180.0\" x2=\"204.0\" y2=\"173.1\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"200.0\" y1=\"180.0\" x2=\"196.0\" y2=\"173.1\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"208.0\" y=\"144.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">20 m</text><circle cx=\"40.0\" cy=\"180\" r=\"4\" fill=\"#1e293b\"/><circle cx=\"360.0\" cy=\"180\" r=\"4\" fill=\"#1e293b\"/><circle cx=\"440.0\" cy=\"180\" r=\"4\" fill=\"#1e293b\"/><text x=\"34.0\" y=\"196.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">O</text><text x=\"360.0\" y=\"196.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">P</text><text x=\"440.0\" y=\"196.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text><line x1=\"40.0\" y1=\"210.0\" x2=\"360.0\" y2=\"210.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"200.0\" y=\"226.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">80 m</text><line x1=\"440.0\" y1=\"148.0\" x2=\"406.0\" y2=\"148.0\" stroke=\"#d97706\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"406.0\" y1=\"148.0\" x2=\"413.8\" y2=\"152.5\" stroke=\"#d97706\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"406.0\" y1=\"148.0\" x2=\"413.8\" y2=\"143.5\" stroke=\"#d97706\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"436.0\" y=\"140.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">5 m/s</text><line x1=\"440.0\" y1=\"180.0\" x2=\"440.0\" y2=\"100.0\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><line x1=\"40.0\" y1=\"180.0\" x2=\"66.0\" y2=\"154.0\" stroke=\"#d97706\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"66.0\" y1=\"154.0\" x2=\"57.3\" y2=\"156.3\" stroke=\"#d97706\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"66.0\" y1=\"154.0\" x2=\"63.7\" y2=\"162.7\" stroke=\"#d97706\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"74.0\" y=\"146.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">V</text><polyline points=\"64.0,180.0 64.0,179.6 64.0,179.2 64.0,178.7 63.9,178.3 63.9,177.9 63.9,177.5 63.8,177.1 63.8,176.7 63.7,176.2 63.6,175.8 63.6,175.4 63.5,175.0 63.4,174.6 63.3,174.2 63.2,173.8 63.1,173.4 63.0,173.0 62.8,172.6 62.7,172.2 62.6,171.8 62.4,171.4 62.3,171.0 62.1,170.6 61.9,170.2 61.8,169.9 61.6,169.5 61.4,169.1 61.2,168.7 61.0,168.4 60.8,168.0 60.6,167.6 60.4,167.3 60.1,166.9 59.9,166.6 59.7,166.2 59.4,165.9 59.2,165.6 58.9,165.2 58.7,164.9 58.4,164.6\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2\"/><text x=\"70.0\" y=\"174.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">α</text><line x1=\"360.0\" y1=\"170.0\" x2=\"440.0\" y2=\"170.0\" stroke=\"#047857\" stroke-width=\"4\" stroke-linecap=\"round\"/><text x=\"400.0\" y=\"162.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">20 m</text><circle cx=\"360.0\" cy=\"180\" r=\"6\" fill=\"#047857\"/></svg>"
+              }
+            },
+            {
+              "explain": "Distance \\(=\\) speed \\(\\times\\) time.",
+              "work": "\\(d=5\\times4=20\\ \\text{m}\\)"
+            },
+            {
+              "explain": "\\(B\\) runs TOWARDS the man, so \\(B\\) starts 20 m further from the man than \\(P\\): \\(80+20=100\\) m from \\(O\\).",
+              "work": "\\(B\\text{ starts }80+20=100\\ \\text{m from }O\\)"
+            },
+            {
+              "explain": "Why not the others: \\(5\\times2=10\\) uses the time to the TOP (2 s) not the whole flight; \\(5\\) m is one second only; \\(40\\) m assumes \\(10\\) m/s.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the further distance from the other boy \\(B\\)",
+              "note": "\\(B\\) runs for the whole flight time: \\(5\\times4\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Trial HSC Mathematics Extension 1",
+            "school": "Gosford High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "gosford2020-e1-q12d1",
+          "type": "mc",
+          "stem": "A particle is projected across horizontal ground from the origin \\(O\\). Its initial velocity vector is \\(12\\underset{\\sim}{i}+5\\underset{\\sim}{j}\\) and its acceleration vector is \\(0\\underset{\\sim}{i}-10\\underset{\\sim}{j}\\). Find the initial speed of the particle.",
+          "difficulty": "easy",
+          "options": [
+            "\\(13\\) m/s",
+            "\\(17\\) m/s",
+            "\\(\\sqrt{119}\\) m/s",
+            "\\(60\\) m/s"
+          ],
+          "answer": 0,
+          "hint": "SPEED is the MAGNITUDE of the velocity vector: \\(|\\underset{\\sim}{v}|=\\sqrt{x^{2}+y^{2}}\\). Use the INITIAL velocity \\(12\\underset{\\sim}{i}+5\\underset{\\sim}{j}\\) (at \\(t=0\\)).",
+          "steps": [
+            {
+              "explain": "Components of the initial velocity: \\(12\\) horizontally, \\(5\\) vertically.",
+              "work": "\\(\\underset{\\sim}{v}(0)=12\\underset{\\sim}{i}+5\\underset{\\sim}{j}\\)"
+            },
+            {
+              "explain": "Speed \\(=\\) magnitude (Pythagoras). \\(12,5,13\\) is a Pythagorean triple.",
+              "work": "\\(|\\underset{\\sim}{v}|=\\sqrt{12^{2}+5^{2}}=\\sqrt{144+25}=\\sqrt{169}=13\\ \\text{ m per s}\\)"
+            },
+            {
+              "explain": "Why not the others: B adds \\(12+5\\); C subtracts (\\(144-25=119\\)); D multiplies.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the initial speed of the particle",
+              "note": "Speed \\(=\\sqrt{12^{2}+5^{2}}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Trial HSC Mathematics Extension 1",
+            "school": "Gosford High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "gosford2020-e1-q12d2",
+          "type": "mc",
+          "stem": "A particle is projected across horizontal ground from the origin \\(O\\) with initial velocity vector \\(12\\underset{\\sim}{i}+5\\underset{\\sim}{j}\\). Find the angle of projection, correct to the nearest minute.",
+          "difficulty": "easy",
+          "options": [
+            "\\(22^{\\circ}37'\\)",
+            "\\(67^{\\circ}23'\\)",
+            "\\(22^{\\circ}62'\\)",
+            "\\(25^{\\circ}0'\\)"
+          ],
+          "answer": 0,
+          "hint": "The angle of projection \\(\\theta\\) is the angle of the velocity vector ABOVE the horizontal: \\(\\tan\\theta=\\dfrac{\\text{vertical}}{\\text{horizontal}}=\\dfrac{5}{12}\\). Convert the decimal degrees to minutes (\\(1^{\\circ}=60'\\)).",
+          "steps": [
+            {
+              "explain": "Draw the velocity triangle: horizontal 12, vertical 5. The angle \\(\\theta\\) with the horizontal has opposite side 5 and adjacent side 12.",
+              "work": "\\(\\tan\\theta=\\dfrac{5}{12}\\)"
+            },
+            {
+              "explain": "Calculator in degree mode: \\(\\theta=\\tan^{-1}\\dfrac{5}{12}=22.6199\\ldots^{\\circ}\\).",
+              "work": "\\(\\theta=22.6199^{\\circ}\\)"
+            },
+            {
+              "explain": "Convert the decimal part to minutes: \\(0.6199\\times60=37.19\\approx37'\\).",
+              "work": "\\(\\theta\\approx22^{\\circ}37'\\)"
+            },
+            {
+              "explain": "Why not the others: B (\\(67^{\\circ}23'\\)) is the angle with the VERTICAL (\\(\\tan^{-1}\\dfrac{12}{5}\\)); C is not a valid angle format (minutes must be less than 60); D is a guess.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the angle of projection, correct to the nearest minute.",
+              "note": "\\(\\tan\\theta=\\dfrac{5}{12}\\); \\(0.62^{\\circ}\\times60\\approx37'\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Trial HSC Mathematics Extension 1",
+            "school": "Gosford High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "gosford2020-e1-q12d3",
+          "type": "mc",
+          "stem": "A particle is projected across horizontal ground from the origin \\(O\\). Its initial velocity vector is \\(12\\underset{\\sim}{i}+5\\underset{\\sim}{j}\\) and its acceleration vector is \\(0\\underset{\\sim}{i}-10\\underset{\\sim}{j}\\). Beginning with its acceleration vector, derive the velocity at any time \\(t\\) in the form \\(\\underset{\\sim}{v}=\\dot{x}\\underset{\\sim}{i}+\\dot{y}\\underset{\\sim}{j}\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\begin{aligned}&\\ddot{x}=0\\Rightarrow\\dot{x}=c_{1};\\ \\ \\ddot{y}=-10\\Rightarrow\\dot{y}=-10t+c_{2}\\\\ &t=0:\\ \\dot{x}=12,\\ \\dot{y}=5\\Rightarrow\\underset{\\sim}{v}=12\\underset{\\sim}{i}+(5-10t)\\underset{\\sim}{j}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\ddot{x}=0\\Rightarrow\\dot{x}=c_{1};\\ \\ \\ddot{y}=-10\\Rightarrow\\dot{y}=-10t+c_{2}\\\\ &t=0:\\ \\dot{x}=12,\\ \\dot{y}=5\\Rightarrow\\underset{\\sim}{v}=12\\underset{\\sim}{i}+(5+10t)\\underset{\\sim}{j}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\ddot{x}=0\\Rightarrow\\dot{x}=0;\\ \\ \\ddot{y}=-10\\Rightarrow\\dot{y}=-10t\\\\ &\\underset{\\sim}{v}=0\\underset{\\sim}{i}-10t\\underset{\\sim}{j}\\ \\text{(initial velocity ignored)}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\ddot{x}=0\\Rightarrow\\dot{x}=c_{1};\\ \\ \\ddot{y}=-10\\Rightarrow\\dot{y}=-5t^{2}+c_{2}\\\\ &\\underset{\\sim}{v}=12\\underset{\\sim}{i}+(5-5t^{2})\\underset{\\sim}{j}\\end{aligned}\\)"
+          ],
+          "answer": 0,
+          "hint": "Velocity is the INTEGRAL of acceleration (with respect to \\(t\\)), component by component. Each integration gives a constant: find it from the INITIAL velocity \\(\\underset{\\sim}{v}(0)=12\\underset{\\sim}{i}+5\\underset{\\sim}{j}\\).",
+          "steps": [
+            {
+              "explain": "Acceleration components: \\(\\ddot{x}=0\\) and \\(\\ddot{y}=-10\\).",
+              "work": "\\(\\ddot{x}=0,\\qquad\\ddot{y}=-10\\)"
+            },
+            {
+              "explain": "Integrate with respect to \\(t\\) (add a constant each time): \\(\\int0\\,dt=c_{1}\\) and \\(\\int-10\\,dt=-10t+c_{2}\\).",
+              "work": "\\(\\dot{x}=c_{1},\\qquad\\dot{y}=-10t+c_{2}\\)"
+            },
+            {
+              "explain": "Initial velocity (\\(t=0\\)): \\(\\dot{x}(0)=12\\Rightarrow c_{1}=12\\); \\(\\dot{y}(0)=5\\Rightarrow c_{2}=5\\).",
+              "work": "\\(c_{1}=12,\\qquad c_{2}=5\\)"
+            },
+            {
+              "explain": "Write the velocity vector.",
+              "work": "\\(\\underset{\\sim}{v}=12\\underset{\\sim}{i}+(5-10t)\\underset{\\sim}{j}\\)"
+            },
+            {
+              "explain": "Check: at \\(t=0\\), \\(\\underset{\\sim}{v}=12\\underset{\\sim}{i}+5\\underset{\\sim}{j}\\) ✓; differentiating gives \\(0\\underset{\\sim}{i}-10\\underset{\\sim}{j}\\) ✓. Why not the others: B has \\(+10t\\) (gravity slows the upward motion); C ignores the initial velocity; D integrates \\(-10\\) as \\(-5t^{2}\\) (that is the displacement, not velocity).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "derive the velocity at any time \\(t\\)",
+              "note": "Integrate \\(\\ddot{x}=0\\), \\(\\ddot{y}=-10\\); constants from \\(\\underset{\\sim}{v}(0)\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Trial HSC Mathematics Extension 1",
+            "school": "Gosford High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "gosford2020-e1-q12d4",
+          "type": "mc",
+          "stem": "A particle is projected across horizontal ground from the origin \\(O\\) with velocity \\(\\underset{\\sim}{v}=12\\underset{\\sim}{i}+(5-10t)\\underset{\\sim}{j}\\). Show that its displacement at time \\(t\\) is \\(\\underset{\\sim}{r}=(12t)\\underset{\\sim}{i}+\\left(5t-5t^{2}\\right)\\underset{\\sim}{j}\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(\\begin{aligned}&x=\\int12\\,dt=12t+c_{2},\\quad y=\\int(5-10t)\\,dt=5t-5t^{2}+c_{3}\\\\ &t=0:\\ x=0,\\ y=0\\Rightarrow c_{2}=c_{3}=0\\Rightarrow\\underset{\\sim}{r}=12t\\underset{\\sim}{i}+(5t-5t^{2})\\underset{\\sim}{j}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&x=\\int12\\,dt=12t+c_{2},\\quad y=\\int(5-10t)\\,dt=5t-10t^{2}+c_{3}\\\\ &\\underset{\\sim}{r}=12t\\underset{\\sim}{i}+(5t-10t^{2})\\underset{\\sim}{j}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&x=\\dfrac{d}{dt}(12)=0,\\quad y=\\dfrac{d}{dt}(5-10t)=-10\\\\ &\\underset{\\sim}{r}=0\\underset{\\sim}{i}-10\\underset{\\sim}{j}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&x=12t,\\quad y=5t-5t^{2}+5\\\\ &\\text{(starts at }y=5\\text{, not at the origin)}\\end{aligned}\\)"
+          ],
+          "answer": 0,
+          "hint": "Displacement is the INTEGRAL of velocity. Integrate each component and use \\(\\underset{\\sim}{r}(0)=\\underset{\\sim}{0}\\) (the particle starts at the origin) to find the constants.",
+          "steps": [
+            {
+              "explain": "Integrate \\(\\dot{x}=12\\): \\(x=12t+c_{2}\\). Integrate \\(\\dot{y}=5-10t\\): \\(y=5t-\\dfrac{10t^{2}}{2}+c_{3}=5t-5t^{2}+c_{3}\\).",
+              "work": "\\(x=12t+c_{2},\\qquad y=5t-5t^{2}+c_{3}\\)"
+            },
+            {
+              "explain": "At \\(t=0\\) the particle is at the origin: \\(x=0\\), \\(y=0\\), so \\(c_{2}=0\\) and \\(c_{3}=0\\).",
+              "work": "\\(c_{2}=c_{3}=0\\)"
+            },
+            {
+              "explain": "Write as a vector.",
+              "work": "\\(\\underset{\\sim}{r}=(12t)\\underset{\\sim}{i}+\\left(5t-5t^{2}\\right)\\underset{\\sim}{j}\\ \\ \\blacksquare\\)"
+            },
+            {
+              "explain": "Why not the others: B integrates \\(-10t\\) as \\(-10t^{2}\\) (it should be \\(-5t^{2}\\), dividing by the new power 2); C DIFFERENTIATES instead of integrating; D chooses \\(c_{3}=5\\) (the particle starts at the origin, so \\(c_{3}=0\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that its displacement at time \\(t\\) is",
+              "note": "\\(\\int(5-10t)dt=5t-5t^{2}\\); constants \\(=0\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Trial HSC Mathematics Extension 1",
+            "school": "Gosford High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "gosford2020-e1-q12d5",
+          "type": "mc",
+          "stem": "A particle is projected across horizontal ground from the origin \\(O\\). Its displacement at time \\(t\\) is \\(\\underset{\\sim}{r}=(12t)\\underset{\\sim}{i}+\\left(5t-5t^{2}\\right)\\underset{\\sim}{j}\\). Find the maximum height of the particle.",
+          "difficulty": "easy",
+          "options": [
+            "\\(1.25\\) m",
+            "\\(5\\) m",
+            "\\(2.5\\) m",
+            "\\(0.5\\) m"
+          ],
+          "answer": 0,
+          "hint": "Maximum height occurs when the VERTICAL velocity is zero: \\(\\dot{y}=0\\). Find that time, then substitute it into \\(y=5t-5t^{2}\\).",
+          "steps": [
+            {
+              "explain": "Vertical velocity \\(\\dot{y}=5-10t\\). At the top the particle is momentarily not rising or falling: \\(\\dot{y}=0\\).",
+              "work": "\\(5-10t=0\\ \\Rightarrow\\ t=0.5\\ \\text{s}\\)"
+            },
+            {
+              "explain": "Height at \\(t=0.5\\): substitute into \\(y=5t-5t^{2}\\).",
+              "work": "\\(y=5(0.5)-5(0.5)^{2}=2.5-1.25=1.25\\ \\text{m}\\)"
+            },
+            {
+              "explain": "Check with \\(v^{2}=u^{2}+2as\\): \\(0=5^{2}-2(10)h\\Rightarrow h=\\dfrac{25}{20}=1.25\\) ✓. Why not the others: B is \\(\\dfrac{25}{5}\\); C forgot to subtract the \\(5t^{2}\\) term (2.5 is only \\(5t\\)); D uses \\(t=0.5\\) as the height.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the maximum height of the particle.",
+              "note": "\\(\\dot{y}=0\\Rightarrow t=0.5\\); then \\(y(0.5)\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Trial HSC Mathematics Extension 1",
+            "school": "Gosford High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -2731,6 +3133,124 @@
           "meta": {
             "source": "Girraween High School 2020 Mathematics Extension 1 Trial HSC Examination",
             "school": "Girraween High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "gosford2020-e1-q2",
+          "type": "mc",
+          "stem": "A ball is thrown from the origin \\(O\\) with a velocity \\(V\\) and an angle of elevation of \\(\\theta\\), where \\(\\theta\\ne\\dfrac{\\pi}{2}\\). What is the Cartesian equation of the flight path? Take \\(g=10\\ \\mathrm{ms^{-1}}\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(y=x\\tan\\theta-\\dfrac{5x^{2}}{V^{2}}\\left(1+\\tan^{2}\\theta\\right)\\)",
+            "\\(y=x\\tan\\theta-\\dfrac{10x^{2}}{V^{2}}\\left(1+\\tan^{2}\\theta\\right)\\)",
+            "\\(x=V\\cos\\theta\\,t\\) and \\(y=-5t^{2}+V\\sin\\theta\\,t\\)",
+            "\\(x=V\\cos\\theta\\,t\\) and \\(y=-10t^{2}+V\\sin\\theta\\,t\\)"
+          ],
+          "answer": 0,
+          "hint": "A CARTESIAN equation has only \\(x\\) and \\(y\\) (no \\(t\\)). Start from \\(x=Vt\\cos\\theta\\) and \\(y=-5t^{2}+Vt\\sin\\theta\\), solve the first for \\(t\\), substitute into the second, and use \\(\\dfrac{1}{\\cos^{2}\\theta}=1+\\tan^{2}\\theta\\).",
+          "steps": [
+            {
+              "explain": "Acceleration is \\(0\\) horizontally and \\(-g=-10\\) vertically. Integrating (starting at the origin) gives the parametric equations.",
+              "work": "\\(x=Vt\\cos\\theta,\\qquad y=Vt\\sin\\theta-5t^{2}\\)"
+            },
+            {
+              "explain": "Eliminate \\(t\\): from \\(x=Vt\\cos\\theta\\) we get \\(t=\\dfrac{x}{V\\cos\\theta}\\).",
+              "work": "\\(t=\\dfrac{x}{V\\cos\\theta}\\)"
+            },
+            {
+              "explain": "Substitute into \\(y\\).",
+              "work": "\\(y=V\\sin\\theta\\cdot\\dfrac{x}{V\\cos\\theta}-5\\left(\\dfrac{x}{V\\cos\\theta}\\right)^{2}=x\\tan\\theta-\\dfrac{5x^{2}}{V^{2}\\cos^{2}\\theta}\\)"
+            },
+            {
+              "explain": "Use \\(\\dfrac{1}{\\cos^{2}\\theta}=\\sec^{2}\\theta=1+\\tan^{2}\\theta\\).",
+              "work": "\\(y=x\\tan\\theta-\\dfrac{5x^{2}}{V^{2}}\\left(1+\\tan^{2}\\theta\\right)\\)"
+            },
+            {
+              "explain": "Why not the others: B uses \\(10x^{2}\\) (it forgets the \\(\\dfrac{1}{2}\\) in \\(\\dfrac12gt^{2}\\): \\(\\dfrac{1}{2}\\times10=5\\)); C and D are PARAMETRIC (they still contain \\(t\\)), and D also has \\(-10t^{2}\\) instead of \\(-5t^{2}\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "What is the Cartesian equation of the flight path?",
+              "note": "Eliminate \\(t\\); \\(\\sec^{2}\\theta=1+\\tan^{2}\\theta\\); \\(\\dfrac12g=5\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Trial HSC Mathematics Extension 1",
+            "school": "Gosford High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hillsgrammar-25-3u-q13b",
+          "type": "mc",
+          "stem": "When an object is projected from the origin with initial speed 5 m/s at an angle of projection \\(40^{\\circ}\\) to the horizontal, from a height of 1.5 metres, its horizontal and vertical displacement \\(t\\) seconds after projection are \\(x=5t\\cos40^{\\circ}\\), \\(y=5t\\sin40^{\\circ}-5t^{2}+1.5\\) (Do NOT prove these). A student is standing in the doorway to a classroom, which has a height of \\(h\\) metres and a width of \\(w\\) metres. They throw a ball from a height of 1.5 metres, at a speed of 5 m/s with an angle of projection of \\(40^{\\circ}\\). The ball just touches the ceiling before landing at the junction of the floor and the wall, as shown. Find the width and height of the room, correct to the nearest centimetre.",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 470 270\" width=\"100%\" height=\"auto\" style=\"max-width:470px;display:block;margin:0 auto\"><rect x=\"70\" y=\"40\" width=\"360\" height=\"175\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><polyline points=\"70.0,85.0 73.0,82.9 76.0,80.7 79.0,78.6 82.0,76.6 85.0,74.6 88.0,72.7 91.0,70.9 94.0,69.1 97.0,67.3 100.0,65.6 103.0,64.0 106.0,62.4 109.0,60.9 112.0,59.4 115.0,58.0 118.0,56.6 121.0,55.3 124.0,54.0 127.1,52.8 130.1,51.7 133.1,50.6 136.1,49.5 139.1,48.6 142.1,47.6 145.1,46.8 148.1,46.0 151.1,45.2 154.1,44.5 157.1,43.8 160.1,43.2 163.1,42.7 166.1,42.2 169.1,41.8 172.1,41.4 175.1,41.1 178.1,40.8 181.1,40.6 184.1,40.5 187.1,40.4 190.1,40.3 193.1,40.3 196.1,40.4 199.1,40.5 202.1,40.7 205.1,40.9 208.1,41.2 211.1,41.5 214.1,41.9 217.1,42.4 220.1,42.9 223.1,43.4 226.1,44.1 229.1,44.7 232.1,45.5 235.1,46.2 238.1,47.1 241.2,48.0 244.2,48.9 247.2,49.9 250.2,51.0 253.2,52.1 256.2,53.2 259.2,54.5 262.2,55.7 265.2,57.1 268.2,58.4 271.2,59.9 274.2,61.4 277.2,62.9 280.2,64.5 283.2,66.2 286.2,67.9 289.2,69.7 292.2,71.5 295.2,73.4 298.2,75.3 301.2,77.3 304.2,79.4 307.2,81.5 310.2,83.6 313.2,85.8 316.2,88.1 319.2,90.4 322.2,92.8 325.2,95.2 328.2,97.7 331.2,100.2 334.2,102.8 337.2,105.5 340.2,108.2 343.2,111.0 346.2,113.8 349.2,116.6 352.2,119.6 355.3,122.6 358.3,125.6 361.3,128.7 364.3,131.8 367.3,135.0 370.3,138.3 373.3,141.6 376.3,145.0 379.3,148.4 382.3,151.9 385.3,155.4 388.3,159.0 391.3,162.6 394.3,166.3 397.3,170.1 400.3,173.9 403.3,177.7 406.3,181.7 409.3,185.6 412.3,189.7 415.3,193.7 418.3,197.9 421.3,202.1 424.3,206.3 427.3,210.6 430.3,215.0\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-dasharray=\"5 3\"/><line x1=\"70.0\" y1=\"85.0\" x2=\"91.4\" y2=\"67.1\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"91.4\" y1=\"67.1\" x2=\"83.6\" y2=\"68.4\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"91.4\" y1=\"67.1\" x2=\"88.7\" y2=\"74.6\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"85.0\" x2=\"125.0\" y2=\"85.0\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><polyline points=\"104.0,85.0 104.0,84.5 104.0,83.9 104.0,83.3 103.9,82.7 103.9,82.1 103.8,81.5 103.7,80.9 103.7,80.3 103.6,79.7 103.5,79.1 103.4,78.6 103.3,78.0 103.1,77.4 103.0,76.8 102.8,76.2 102.7,75.7 102.5,75.1 102.3,74.5 102.1,74.0 101.9,73.4 101.7,72.9 101.5,72.3 101.3,71.8 101.1,71.2 100.8,70.7 100.6,70.1 100.3,69.6 100.0,69.1 99.7,68.6 99.4,68.0 99.1,67.5 98.8,67.0 98.5,66.5 98.2,66.0 97.9,65.5 97.5,65.1 97.2,64.6 96.8,64.1 96.4,63.7 96.0,63.2\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"110.0\" y=\"81.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">40°</text><text x=\"76.0\" y=\"103.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">5 m per s</text><line x1=\"44.0\" y1=\"85.0\" x2=\"44.0\" y2=\"215.0\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"44.0\" y1=\"85.0\" x2=\"40.5\" y2=\"91.1\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"44.0\" y1=\"85.0\" x2=\"47.5\" y2=\"91.1\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"44.0\" y1=\"215.0\" x2=\"47.5\" y2=\"208.9\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"44.0\" y1=\"215.0\" x2=\"40.5\" y2=\"208.9\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"38.0\" y=\"154.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1.5 m</text><line x1=\"452.0\" y1=\"40.0\" x2=\"452.0\" y2=\"215.0\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"452.0\" y1=\"40.0\" x2=\"448.5\" y2=\"46.1\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"452.0\" y1=\"40.0\" x2=\"455.5\" y2=\"46.1\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"452.0\" y1=\"215.0\" x2=\"455.5\" y2=\"208.9\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"452.0\" y1=\"215.0\" x2=\"448.5\" y2=\"208.9\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"458.0\" y=\"131.5\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">h</text><line x1=\"70.0\" y1=\"237.0\" x2=\"430.0\" y2=\"237.0\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"237.0\" x2=\"76.1\" y2=\"240.5\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"237.0\" x2=\"76.1\" y2=\"233.5\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"430.0\" y1=\"237.0\" x2=\"423.9\" y2=\"233.5\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"430.0\" y1=\"237.0\" x2=\"423.9\" y2=\"240.5\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"250.0\" y=\"255.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">w</text><text x=\"464.0\" y=\"264.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#64748b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">(NOT TO SCALE)</text></svg>"
+          },
+          "options": [
+            "\\(w=366\\) cm, \\(h=202\\) cm",
+            "\\(w=246\\) cm, \\(h=52\\) cm",
+            "\\(w=366\\) cm, \\(h=52\\) cm",
+            "\\(w=246\\) cm, \\(h=202\\) cm"
+          ],
+          "answer": 0,
+          "hint": "HEIGHT \\(h\\): the ball just touches the ceiling at its HIGHEST point, where \\(\\dot y=0\\). WIDTH \\(w\\): the ball lands where \\(y=0\\) (the floor); solve the quadratic in \\(t\\) and substitute into \\(x\\). Don't forget the launch height 1.5 m in \\(y\\).",
+          "steps": [
+            {
+              "explain": "Maximum height: vertical velocity \\(\\dot y=5\\sin40^{\\circ}-10t=0\\Rightarrow t=0.5\\sin40^{\\circ}=0.3214\\) s.",
+              "work": "\\(t_{top}=0.5\\sin40^{\\circ}\\approx0.3214\\ \\text{s}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 470 270\" width=\"100%\" height=\"auto\" style=\"max-width:470px;display:block;margin:0 auto\"><rect x=\"70\" y=\"40\" width=\"360\" height=\"175\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><polyline points=\"70.0,85.0 73.0,82.9 76.0,80.7 79.0,78.6 82.0,76.6 85.0,74.6 88.0,72.7 91.0,70.9 94.0,69.1 97.0,67.3 100.0,65.6 103.0,64.0 106.0,62.4 109.0,60.9 112.0,59.4 115.0,58.0 118.0,56.6 121.0,55.3 124.0,54.0 127.1,52.8 130.1,51.7 133.1,50.6 136.1,49.5 139.1,48.6 142.1,47.6 145.1,46.8 148.1,46.0 151.1,45.2 154.1,44.5 157.1,43.8 160.1,43.2 163.1,42.7 166.1,42.2 169.1,41.8 172.1,41.4 175.1,41.1 178.1,40.8 181.1,40.6 184.1,40.5 187.1,40.4 190.1,40.3 193.1,40.3 196.1,40.4 199.1,40.5 202.1,40.7 205.1,40.9 208.1,41.2 211.1,41.5 214.1,41.9 217.1,42.4 220.1,42.9 223.1,43.4 226.1,44.1 229.1,44.7 232.1,45.5 235.1,46.2 238.1,47.1 241.2,48.0 244.2,48.9 247.2,49.9 250.2,51.0 253.2,52.1 256.2,53.2 259.2,54.5 262.2,55.7 265.2,57.1 268.2,58.4 271.2,59.9 274.2,61.4 277.2,62.9 280.2,64.5 283.2,66.2 286.2,67.9 289.2,69.7 292.2,71.5 295.2,73.4 298.2,75.3 301.2,77.3 304.2,79.4 307.2,81.5 310.2,83.6 313.2,85.8 316.2,88.1 319.2,90.4 322.2,92.8 325.2,95.2 328.2,97.7 331.2,100.2 334.2,102.8 337.2,105.5 340.2,108.2 343.2,111.0 346.2,113.8 349.2,116.6 352.2,119.6 355.3,122.6 358.3,125.6 361.3,128.7 364.3,131.8 367.3,135.0 370.3,138.3 373.3,141.6 376.3,145.0 379.3,148.4 382.3,151.9 385.3,155.4 388.3,159.0 391.3,162.6 394.3,166.3 397.3,170.1 400.3,173.9 403.3,177.7 406.3,181.7 409.3,185.6 412.3,189.7 415.3,193.7 418.3,197.9 421.3,202.1 424.3,206.3 427.3,210.6 430.3,215.0\" fill=\"none\" stroke=\"#3b4ea8\" stroke-width=\"3.2\" stroke-dasharray=\"0\"/><line x1=\"70.0\" y1=\"85.0\" x2=\"91.4\" y2=\"67.1\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"91.4\" y1=\"67.1\" x2=\"83.6\" y2=\"68.4\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"91.4\" y1=\"67.1\" x2=\"88.7\" y2=\"74.6\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"85.0\" x2=\"125.0\" y2=\"85.0\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><polyline points=\"104.0,85.0 104.0,84.5 104.0,83.9 104.0,83.3 103.9,82.7 103.9,82.1 103.8,81.5 103.7,80.9 103.7,80.3 103.6,79.7 103.5,79.1 103.4,78.6 103.3,78.0 103.1,77.4 103.0,76.8 102.8,76.2 102.7,75.7 102.5,75.1 102.3,74.5 102.1,74.0 101.9,73.4 101.7,72.9 101.5,72.3 101.3,71.8 101.1,71.2 100.8,70.7 100.6,70.1 100.3,69.6 100.0,69.1 99.7,68.6 99.4,68.0 99.1,67.5 98.8,67.0 98.5,66.5 98.2,66.0 97.9,65.5 97.5,65.1 97.2,64.6 96.8,64.1 96.4,63.7 96.0,63.2\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"110.0\" y=\"81.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">40°</text><text x=\"76.0\" y=\"103.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">5 m per s</text><line x1=\"44.0\" y1=\"85.0\" x2=\"44.0\" y2=\"215.0\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"44.0\" y1=\"85.0\" x2=\"40.5\" y2=\"91.1\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"44.0\" y1=\"85.0\" x2=\"47.5\" y2=\"91.1\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"44.0\" y1=\"215.0\" x2=\"47.5\" y2=\"208.9\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"44.0\" y1=\"215.0\" x2=\"40.5\" y2=\"208.9\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"38.0\" y=\"154.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1.5 m</text><line x1=\"452.0\" y1=\"40.0\" x2=\"452.0\" y2=\"215.0\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"452.0\" y1=\"40.0\" x2=\"448.5\" y2=\"46.1\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"452.0\" y1=\"40.0\" x2=\"455.5\" y2=\"46.1\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"452.0\" y1=\"215.0\" x2=\"455.5\" y2=\"208.9\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"452.0\" y1=\"215.0\" x2=\"448.5\" y2=\"208.9\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"458.0\" y=\"131.5\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">h</text><line x1=\"70.0\" y1=\"237.0\" x2=\"430.0\" y2=\"237.0\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"237.0\" x2=\"76.1\" y2=\"240.5\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"237.0\" x2=\"76.1\" y2=\"233.5\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"430.0\" y1=\"237.0\" x2=\"423.9\" y2=\"233.5\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"430.0\" y1=\"237.0\" x2=\"423.9\" y2=\"240.5\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"250.0\" y=\"255.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">w</text><line x1=\"191.1\" y1=\"40.3\" x2=\"191.1\" y2=\"215.0\" stroke=\"#dc2626\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"5 3\"/><circle cx=\"191.1\" cy=\"40.3\" r=\"5\" fill=\"#dc2626\"/><text x=\"201.1\" y=\"86.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">top: h = 2.02 m</text><circle cx=\"430.3\" cy=\"215\" r=\"5\" fill=\"#047857\"/><text x=\"422.0\" y=\"205.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">lands: w = 3.66 m</text></svg>"
+              }
+            },
+            {
+              "explain": "Substitute into \\(y\\): \\(5(0.3214)\\sin40^{\\circ}-5(0.3214)^{2}+1.5=1.0330-0.5165+1.5\\). Using \\(\\dfrac{(5\\sin40^{\\circ})^{2}}{20}=0.5165\\):",
+              "work": "\\(h=1.5+0.5165=2.0165\\approx2.02\\ \\text{m}=202\\ \\text{cm}\\)"
+            },
+            {
+              "explain": "Landing: \\(y=0\\): \\(5t\\sin40^{\\circ}-5t^{2}+1.5=0\\), i.e. \\(5t^{2}-3.2139t-1.5=0\\) (using \\(5\\sin40^{\\circ}=3.2139\\)).",
+              "work": "\\(t=\\dfrac{3.2139\\pm\\sqrt{3.2139^{2}+4(5)(1.5)}}{10}=\\dfrac{3.2139\\pm6.3505}{10}\\)"
+            },
+            {
+              "explain": "Take the positive root (time cannot be negative): \\(t=0.9564\\) s.",
+              "work": "\\(t=0.9564\\ \\text{s}\\)"
+            },
+            {
+              "explain": "Width: \\(w=x=5t\\cos40^{\\circ}=5(0.9564)(0.7660)=3.663\\ldots\\approx3.66\\) m \\(=366\\) cm.",
+              "work": "\\(w=366\\ \\text{cm},\\qquad h=202\\ \\text{cm}\\)"
+            },
+            {
+              "explain": "Why not the others: B and D (\\(w=246\\)) solve \\(y=0\\) without the \\(+1.5\\) (ball launched from the ground); B and C (\\(h=52\\)) forget to ADD the 1.5 m launch height to the maximum rise of 0.52 m.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the width and height of the room, correct to the nearest centimetre.",
+              "note": "Top: \\(\\dot y=0\\); landing: \\(y=0\\) (quadratic, include 1.5)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hills Grammar 2025 Trial HSC Mathematics Extension 1",
+            "school": "The Hills Grammar School",
             "grade": "12",
             "origin": "teacher"
           }

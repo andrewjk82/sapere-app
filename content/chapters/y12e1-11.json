@@ -871,6 +871,122 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "gosford2020-e1-q14d",
+          "type": "mc",
+          "stem": "Find the six solutions of the equation: \\(\\sin\\left(2\\cos^{-1}\\left(\\cot\\left(2\\tan^{-1}x\\right)\\right)\\right)=0\\). Give your answers as simplified surds",
+          "difficulty": "hard",
+          "options": [
+            "\\(x=\\pm1,\\ \\pm\\left(1+\\sqrt2\\right),\\ \\pm\\left(\\sqrt2-1\\right)\\)",
+            "\\(x=\\pm1,\\ \\pm\\sqrt2,\\ \\pm\\dfrac{1}{\\sqrt2}\\)",
+            "\\(x=0,\\ \\pm1,\\ \\pm\\left(1+\\sqrt2\\right),\\ \\pm\\sqrt3\\)",
+            "\\(x=\\pm1,\\ \\pm\\left(2+\\sqrt3\\right),\\ \\pm\\left(2-\\sqrt3\\right)\\)"
+          ],
+          "answer": 0,
+          "hint": "Work from the OUTSIDE in. \\(\\sin(\\text{angle})=0\\) means the angle is \\(0,\\pi\\) (since \\(2\\cos^{-1}\\) lies in \\([0,2\\pi]\\)). So \\(\\cos^{-1}(\\ldots)=0,\\dfrac\\pi2,\\pi\\), giving \\(\\cot(2\\tan^{-1}x)=1,0,-1\\). Then use \\(\\cot2\\alpha=\\dfrac{1-x^{2}}{2x}\\) with \\(x=\\tan\\alpha\\).",
+          "steps": [
+            {
+              "explain": "Let \\(\\beta=\\cos^{-1}(\\cot(2\\tan^{-1}x))\\in[0,\\pi]\\). The equation is \\(\\sin2\\beta=0\\), so \\(2\\beta=0,\\pi,2\\pi\\), i.e. \\(\\beta=0,\\dfrac\\pi2,\\pi\\). Then \\(\\cos\\beta=1,\\ 0,\\ -1\\).",
+              "work": "\\(\\cot(2\\tan^{-1}x)=1,\\ 0,\\ \\text{or}\\ -1\\)"
+            },
+            {
+              "explain": "Let \\(\\alpha=\\tan^{-1}x\\) (so \\(x=\\tan\\alpha\\)). Use \\(\\cot2\\alpha=\\dfrac{1}{\\tan2\\alpha}=\\dfrac{1-\\tan^{2}\\alpha}{2\\tan\\alpha}=\\dfrac{1-x^{2}}{2x}\\).",
+              "work": "\\(\\dfrac{1-x^{2}}{2x}=1,\\ 0,\\ -1\\)"
+            },
+            {
+              "explain": "Case \\(=0\\): \\(1-x^{2}=0\\Rightarrow x=\\pm1\\).",
+              "work": "\\(x=\\pm1\\)"
+            },
+            {
+              "explain": "Case \\(=1\\): \\(1-x^{2}=2x\\Rightarrow x^{2}+2x-1=0\\Rightarrow x=\\dfrac{-2\\pm\\sqrt8}{2}=-1\\pm\\sqrt2\\).",
+              "work": "\\(x=-1+\\sqrt2,\\quad x=-1-\\sqrt2\\)"
+            },
+            {
+              "explain": "Case \\(=-1\\): \\(1-x^{2}=-2x\\Rightarrow x^{2}-2x-1=0\\Rightarrow x=\\dfrac{2\\pm\\sqrt8}{2}=1\\pm\\sqrt2\\).",
+              "work": "\\(x=1+\\sqrt2,\\quad x=1-\\sqrt2\\)"
+            },
+            {
+              "explain": "Collect all six: \\(\\pm1\\), and \\(\\sqrt2-1,\\ -(\\sqrt2-1)=1-\\sqrt2,\\ 1+\\sqrt2,\\ -(1+\\sqrt2)\\).",
+              "work": "\\(x=\\pm1,\\ \\pm\\left(1+\\sqrt2\\right),\\ \\pm\\left(\\sqrt2-1\\right)\\)"
+            },
+            {
+              "explain": "Check one: \\(x=\\sqrt2-1=\\tan22.5^{\\circ}\\Rightarrow2\\tan^{-1}x=45^{\\circ}\\Rightarrow\\cot45^{\\circ}=1\\Rightarrow\\cos^{-1}1=0\\Rightarrow\\sin0=0\\) ✓. Why not the others: B (\\(\\pm\\sqrt2,\\ \\pm\\dfrac{1}{\\sqrt2}\\)) solves \\(2x^{2}\\)-type equations; C includes \\(0\\) and \\(\\sqrt3\\) (not solutions: \\(\\cot(0)\\) is undefined); D is the cubic/\\(\\tan15^{\\circ}\\) set from a different problem.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the six solutions of the equation",
+              "note": "\\(\\sin2\\beta=0\\); \\(\\cot2\\alpha=\\dfrac{1-x^{2}}{2x}\\in\\{1,0,-1\\}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Trial HSC Mathematics Extension 1",
+            "school": "Gosford High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hillsgrammar-25-3u-q7",
+          "type": "mc",
+          "stem": "Which of the following functions has a range of \\([0,\\pi]\\)?",
+          "difficulty": "medium",
+          "options": [
+            "\\(y=\\left|\\sin^{-1}x\\right|\\)",
+            "\\(y=\\left|\\cos^{-1}(x-1)\\right|\\)",
+            "\\(y=\\sin^{-1}|x+1|\\)",
+            "\\(y=\\cos^{-1}|2x|\\)"
+          ],
+          "answer": 1,
+          "hint": "Know the basic ranges: \\(\\sin^{-1}\\) gives \\(\\left[-\\dfrac\\pi2,\\dfrac\\pi2\\right]\\); \\(\\cos^{-1}\\) gives \\([0,\\pi]\\). Absolute value \\(|\\ |\\) makes negative outputs positive; a shift or stretch INSIDE changes the domain, not the range.",
+          "steps": [
+            {
+              "explain": "A: \\(\\sin^{-1}x\\) has range \\(\\left[-\\dfrac\\pi2,\\dfrac\\pi2\\right]\\). Taking the absolute value folds the negative part up: range \\(\\left[0,\\dfrac\\pi2\\right]\\). ✗",
+              "work": "\\(\\left|\\sin^{-1}x\\right|\\in\\left[0,\\dfrac{\\pi}{2}\\right]\\)"
+            },
+            {
+              "explain": "B: \\(\\cos^{-1}(x-1)\\) is \\(\\cos^{-1}\\) with a horizontal shift (domain \\(0\\le x\\le2\\)); the range is still \\([0,\\pi]\\). It is already non-negative, so \\(|\\ |\\) changes nothing. ✓",
+              "work": "\\(\\left|\\cos^{-1}(x-1)\\right|\\in[0,\\pi]\\)"
+            },
+            {
+              "explain": "C: \\(\\sin^{-1}|x+1|\\) has the input \\(|x+1|\\ge0\\), so only the positive part of \\(\\sin^{-1}\\) is used: range \\(\\left[0,\\dfrac\\pi2\\right]\\). ✗",
+              "work": "\\(\\sin^{-1}|x+1|\\in\\left[0,\\dfrac{\\pi}{2}\\right]\\)"
+            },
+            {
+              "explain": "D: \\(\\cos^{-1}|2x|\\) has input \\(|2x|\\in[0,1]\\), so \\(\\cos^{-1}\\) takes only values from \\(0\\) to \\(\\dfrac\\pi2\\): range \\(\\left[0,\\dfrac\\pi2\\right]\\). ✗",
+              "work": "\\(\\cos^{-1}|2x|\\in\\left[0,\\dfrac{\\pi}{2}\\right]\\)"
+            },
+            {
+              "explain": "Only B keeps the full range \\([0,\\pi]\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">B</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "has a range of \\([0,\\pi]\\)",
+              "note": "\\(\\cos^{-1}\\): \\([0,\\pi]\\); \\(|\\cdot|\\) inside shrinks it to \\([0,\\dfrac\\pi2]\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hills Grammar 2025 Trial HSC Mathematics Extension 1",
+            "school": "The Hills Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     }
