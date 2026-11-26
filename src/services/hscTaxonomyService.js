@@ -13,7 +13,7 @@
 import { collection, getDocs } from 'firebase/firestore';
 import { db } from '../firebase/config';
 import { idbGet, idbSet } from '../utils/idbStore';
-import { readWithReconnect } from '../utils/reconnect';
+import { readWithRetry } from '../utils/readRetry';
 
 const REFRESH_MS = 24 * 60 * 60 * 1000;
 const CACHE_VERSION = 1;
@@ -22,7 +22,7 @@ const memo = new Map(); // collection → Promise<docs[]>
 const cacheKey = (name) => `hsc-taxonomy:v${CACHE_VERSION}:${name}`;
 
 const readFresh = async (name, idField) => {
-  const snap = await readWithReconnect(() => getDocs(collection(db, name)));
+  const snap = await readWithRetry(() => getDocs(collection(db, name)));
   const docs = snap.docs.map((d) => ({ [idField]: d.id, ...d.data() }));
   // Firestore Timestamps don't survive structured clone as Timestamps; nothing here needs them as such.
   idbSet(cacheKey(name), { savedAt: Date.now(), docs: JSON.parse(JSON.stringify(docs)) }).catch(() => {});

@@ -1,9 +1,8 @@
 import { onSnapshot } from 'firebase/firestore';
-import { reconnectFirestore } from '../utils/reconnect';
 
 // One realtime listener per query key, shared by every screen that wants it. It stays up for a while after the last
 // screen leaves (switching tabs back and forth costs nothing and paints at once), pauses while the app is hidden, and
-// reconnects once if the server does not answer.
+// listens again once if the server does not answer.
 const LINGER_MS = 10 * 60_000;
 const STALL_MS = 12_000;
 const entries = new Map();
@@ -33,7 +32,7 @@ function attach(entry, retried = false) {
       entry.listeners.forEach((l) => l.onError?.(new Error('timeout')));
       return;
     }
-    reconnectFirestore().then(() => { if (entry.attached) attach(entry, true); });
+    attach(entry, true);
   }, STALL_MS);
   entry.unsub = onSnapshot(entry.makeQuery(), { includeMetadataChanges: true }, (snap) => {
     const fresh = !snap.metadata.fromCache;

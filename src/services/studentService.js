@@ -17,7 +17,7 @@ import {
 import { db } from "../firebase/config";
 import { upsertManualStudentLeaderboard, removeFromLeaderboard } from "./leaderboardService";
 import { localCache } from "./localCacheService";
-import { readWithReconnect } from "../utils/reconnect";
+import { readWithRetry } from "../utils/readRetry";
 import { buildAvatarUrl, buildDisplayName } from "../utils/avatarUtils";
 
 const COLLECTION_NAME = "students";
@@ -164,8 +164,8 @@ export const studentService = {
       // An explicit Sync rescans from the server (never the on-device copy) and does not depend on the meta read.
       const readDocs = forceRefresh ? getDocsFromServer : getDocs;
       const metaSnap = forceRefresh
-        ? await readWithReconnect(() => getDoc(doc(db, "sync_meta", getStudentsMetaId(tutorId, isAdmin)))).catch(() => null)
-        : await readWithReconnect(() => getDoc(doc(db, "sync_meta", getStudentsMetaId(tutorId, isAdmin))));
+        ? await readWithRetry(() => getDoc(doc(db, "sync_meta", getStudentsMetaId(tutorId, isAdmin)))).catch(() => null)
+        : await readWithRetry(() => getDoc(doc(db, "sync_meta", getStudentsMetaId(tutorId, isAdmin))));
       const remoteVersion = metaVersionOf(metaSnap?.data());
       // XP / last activity / new sign-ups don't bump the roster version, hence the age cap.
       const cacheFresh = Date.now() - Number(cached?.savedAt || 0) < ROSTER_STALE_MS;
@@ -179,7 +179,7 @@ export const studentService = {
         ? query(studentsRef) 
         : query(studentsRef, where("tutorId", "==", tutorId));
 
-      const manualSnap = await readWithReconnect(() => readDocs(manualQuery));
+      const manualSnap = await readWithRetry(() => readDocs(manualQuery));
       const manualStudents = manualSnap.docs.map(doc => ({
         id: doc.id,
         source: 'manual',

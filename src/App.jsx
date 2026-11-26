@@ -1,4 +1,3 @@
-import { reconnectFirestore } from './utils/reconnect';
 import { useState, useEffect, useMemo, useCallback, useRef, lazy, Suspense } from 'react';
 import WhatsNewModal from './components/WhatsNewModal';
 import { shouldShowWhatsNew } from './utils/whatsNew';
@@ -1220,12 +1219,11 @@ function App() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [rosterMeta.status, rosterMeta.data]);
 
-  // Teacher's iPad: back from the background or back online, reopen the Firestore connection (a suspended one can
-  // be dead, leaving reads waiting until a reload) and check the roster again.
+  // Teacher's iPad: back from the background or back online, check the roster again.
   useEffect(() => {
     if (!isAdmin || !user?.uid) return undefined;
     let hiddenAt = 0;
-    const resume = () => { reconnectFirestore().then(() => handleRefreshStudents(true)).catch(() => {}); };
+    const resume = () => { handleRefreshStudents(true).catch(() => {}); };
     const onVisibility = () => {
       if (document.visibilityState === 'hidden') { hiddenAt = Date.now(); return; }
       if (hiddenAt && Date.now() - hiddenAt > 60_000) resume();
