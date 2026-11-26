@@ -1,4 +1,4 @@
-import { Fragment, useState, useEffect, useRef, useMemo } from "react";
+import { useState, useEffect, useRef, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { TIME_OPTIONS } from "../constants/timeOptions";
 import {
@@ -75,6 +75,7 @@ import LearningOverview from "./studentDetail/LearningOverview";
 import TermResultsCard from "./studentDetail/TermResultsCard";
 import QuickSwitches from "./studentDetail/QuickSwitches";
 import HomeworkTab from "./studentDetail/HomeworkTab";
+import PracticeHistory from "./studentDetail/PracticeHistory";
 import SecretNotebookPanel from "./studentDetail/SecretNotebookPanel";
 import ExamPrepPanel from "./studentDetail/ExamPrepPanel";
 import HscPastPaperPanel from "./studentDetail/HscPastPaperPanel";
@@ -85,7 +86,6 @@ import EditStudentModal from "./studentDetail/EditStudentModal";
 import ScheduleModal from "./studentDetail/ScheduleModal";
 import StudentHeaderCard from "./studentDetail/StudentHeaderCard";
 import StudentDashboardCard from "./studentDetail/StudentDashboardCard";
-import ChallengeHistoryCard from "./ChallengeHistoryCard";
 import HomeworkSubmissionViewer from "./homework/HomeworkSubmissionViewer";
 import { markHomeworkChecked } from "../services/homeworkService";
 import useStudentSessions from "../hooks/useStudentSessions";
@@ -1991,6 +1991,14 @@ const StudentDetail = ({ studentId, onBack }) => {
       case "challenge":
         return (
           <div style={{ display: "grid", gap: "24px" }}>
+            <PracticeHistory
+              dailyPracticeStats={dailyPracticeStats}
+              calculationStats={calculationStats}
+              calculationEnabled={student?.calculationEnabled}
+              onSelect={setSelectedChallenge}
+              onReset={handleResetChallenge}
+              renderExtra={(stat) => <ExtraRoundsPanel uid={challengeResultsUid} date={stat.id} summary={stat.extraSummary} />}
+            />
 
             {/* ANALYTICS PANEL */}
             {studentAnalytics && (
@@ -2002,126 +2010,6 @@ const StudentDetail = ({ studentId, onBack }) => {
 
             {/* SECRET NOTEBOOK PANEL */}
             <SecretNotebookPanel student={student} />
-
-            <CollapsibleSection
-              title="Challenge history"
-              summary={`${dailyPracticeStats.length} daily · ${calculationStats.length} calc sessions`}
-              badge={String(dailyPracticeStats.length + calculationStats.length)}
-            >
-              <div style={{ display: "grid", gap: "12px" }}>
-                <div
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "space-between",
-                    marginTop: "4px",
-                  }}
-                >
-                  <div
-                    style={{
-                      fontSize: "0.72rem",
-                      fontWeight: 900,
-                      color: "#64748b",
-                      letterSpacing: "0.08em",
-                      textTransform: "uppercase",
-                    }}
-                  >
-                    Daily Practice
-                  </div>
-                  <div
-                    style={{
-                      fontSize: "0.72rem",
-                      fontWeight: 900,
-                      color: "#94a3b8",
-                    }}
-                  >
-                    {dailyPracticeStats.length}
-                  </div>
-                </div>
-                {dailyPracticeStats.length > 0 ? (
-                  dailyPracticeStats.map((stat) => (
-                    <Fragment key={`${stat.statCollection || stat.challengeType || 'daily'}-${stat.id}`}>
-                      <ChallengeHistoryCard
-                        stat={stat}
-                        onSelect={setSelectedChallenge}
-                        onReset={handleResetChallenge}
-                      />
-                      {stat.hasExtraRounds && (
-                        <ExtraRoundsPanel uid={challengeResultsUid} date={stat.id} summary={stat.extraSummary} />
-                      )}
-                    </Fragment>
-                  ))
-                ) : (
-                  <div
-                    style={{
-                      textAlign: "center",
-                      padding: "24px",
-                      color: "#94a3b8",
-                      fontWeight: 600,
-                      background: "#f8fafc",
-                      borderRadius: "18px",
-                      border: "1px dashed #e2e8f0",
-                    }}
-                  >
-                    No Daily Practice history yet.
-                  </div>
-                )}
-
-                <div
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "space-between",
-                    marginTop: "16px",
-                  }}
-                >
-                  <div
-                    style={{
-                      fontSize: "0.72rem",
-                      fontWeight: 900,
-                      color: "#92400e",
-                      letterSpacing: "0.08em",
-                      textTransform: "uppercase",
-                    }}
-                  >
-                    Daily Calculation
-                  </div>
-                  <div
-                    style={{
-                      fontSize: "0.72rem",
-                      fontWeight: 900,
-                      color: "#d97706",
-                    }}
-                  >
-                    {calculationStats.length}
-                  </div>
-                </div>
-                {calculationStats.length > 0 ? (
-                  calculationStats.map((stat) => (
-                    <ChallengeHistoryCard
-                      key={`${stat.statCollection || stat.challengeType || 'calc'}-${stat.id}`}
-                      stat={stat}
-                      onSelect={setSelectedChallenge}
-                      onReset={handleResetChallenge}
-                    />
-                  ))
-                ) : (
-                  <div
-                    style={{
-                      textAlign: "center",
-                      padding: "24px",
-                      color: "#b45309",
-                      fontWeight: 700,
-                      background: "#fffbeb",
-                      borderRadius: "18px",
-                      border: "1px dashed #fde68a",
-                    }}
-                  >
-                    No Daily Calculation history yet.
-                  </div>
-                )}
-              </div>
-            </CollapsibleSection>
           </div>
         );
       case "settings":
