@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Search, Filter, Plus, MoreVertical, Mail, BookOpen, AlertCircle, CheckCircle, Trophy, RefreshCw, BellRing, RotateCcw } from 'lucide-react';
+import { Search, Filter, Plus, MoreVertical, Mail, BookOpen, AlertCircle, CheckCircle, Trophy, RefreshCw, UserPlus, BellRing, RotateCcw } from 'lucide-react';
 import { studentService } from '../services/studentService';
 import { db, requestForcedLongPolling, wantsForcedLongPolling } from '../firebase/config';
 import { collection, doc, getDoc, getDocs, setDoc, writeBatch } from 'firebase/firestore';
@@ -239,7 +239,7 @@ const StudentList = ({ students, onAddStudent, onRefreshStudents, onSelectStuden
             </span>
           )}
         </div>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+        <div style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap', gap: '8px' }}>
           <button
             onClick={handleResetAllXP}
             disabled={isResettingAllXP}
@@ -268,6 +268,10 @@ const StudentList = ({ students, onAddStudent, onRefreshStudents, onSelectStuden
           >
             <RefreshCw size={18} className={isRefreshing ? 'animate-spin' : ''} />
             {isRefreshing ? 'Syncing...' : 'Sync Students'}
+          </button>
+          <button onClick={onAddStudent} className="app-button app-button--primary" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+            <UserPlus size={18} />
+            Add Student
           </button>
         </div>
       </div>

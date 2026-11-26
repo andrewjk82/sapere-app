@@ -147,5 +147,6 @@ html[data-clay="1"] .app-shell__main [style*="color: rgb(15, 23, 42)"] { color: 
 html[data-clay="1"] .app-shell__main [style*="color: rgb(71, 85, 105)"] { color: var(--clay-soft) !important; }
 html[data-clay="1"] .app-shell__main [style*="color: rgb(148, 163, 184)"] { color: #a08c82 !important; }
 html[data-clay="1"] .app-shell__main [style*="color: rgb(67, 56, 202)"],
-html[data-clay="1"] .app-shell__main [style*="color: rgb(79, 70, 229)"] { color: #6b4fc4 !important; }
+html[data-clay="1"] .app-shell__main [style^="color: rgb(79, 70, 229)"],
+html[data-clay="1"] .app-shell__main [style*="; color: rgb(79, 70, 229)"] { color: #6b4fc4 !important; }
 html[data-clay="1"] .app-shell__main [style*="Poppins"] { font-family: var(--font-heading) !important; }
