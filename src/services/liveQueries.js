@@ -1,8 +1,9 @@
 import { onSnapshot } from 'firebase/firestore';
 
 // One realtime listener per query key, shared by every screen that wants it. It stays up for a while after the last
-// screen leaves (switching tabs back and forth costs nothing and paints at once), pauses while the app is hidden, and
-// listens again once if the server does not answer.
+// screen leaves (switching tabs back and forth costs nothing and paints at once) and listens again once if the server
+// does not answer. It is NOT detached when the app is hidden: re-attaching downloads every document again, while a
+// live listener only receives changes.
 const LINGER_MS = 10 * 60_000;
 const STALL_MS = 12_000;
 const entries = new Map();
@@ -24,7 +25,6 @@ const fail = (entry, error) => {
 
 function attach(entry, retried = false) {
   detach(entry);
-  if (document.visibilityState === 'hidden') return;
   entry.attached = true;
   entry.stall = setTimeout(() => {
     if (retried) {
@@ -46,12 +46,10 @@ function attach(entry, retried = false) {
 
 const drop = (entry) => { detach(entry); clearTimeout(entry.linger); entries.delete(entry.key); };
 
+// Back on screen: only listeners that had failed are started again.
 document.addEventListener('visibilitychange', () => {
-  entries.forEach((entry) => {
-    if (document.visibilityState === 'hidden') detach(entry);
-    else if (entry.listeners.size) attach(entry);
-    else drop(entry);
-  });
+  if (document.visibilityState === 'hidden') return;
+  entries.forEach((entry) => { if (!entry.attached && entry.listeners.size) attach(entry); });
 });
 
 /** onData({ docs, fresh }) on every change, and at once if the data is already here. Returns unsubscribe. */

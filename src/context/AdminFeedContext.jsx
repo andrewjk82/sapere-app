@@ -66,7 +66,7 @@ export const AdminFeedProvider = ({ children }) => {
       unsubReports();
       unsubGrading = () => {};
       unsubReports = () => {};
-      if (cancelled || document.visibilityState === 'hidden') return;
+      if (cancelled) return;
 
       const qGrading = query(
         collection(db, 'grading_queue'),
@@ -130,22 +130,13 @@ export const AdminFeedProvider = ({ children }) => {
       );
     };
 
+    // The listeners stay up while the app is in the background. Detaching and re-attaching on every return downloaded
+    // every pending item again (about 4 MB with their images — most of the Firestore data-transfer bill); a live
+    // listener only receives what changed.
     attach();
-    const onVis = () => {
-      if (document.visibilityState === 'hidden') {
-        unsubGrading();
-        unsubReports();
-        unsubGrading = () => {};
-        unsubReports = () => {};
-      } else {
-        attach();
-      }
-    };
-    document.addEventListener('visibilitychange', onVis);
 
     return () => {
       cancelled = true;
-      document.removeEventListener('visibilitychange', onVis);
       unsubGrading();
       unsubReports();
     };
