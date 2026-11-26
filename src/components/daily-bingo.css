@@ -1,0 +1,34 @@
+/* Daily Bingo (student dashboard). */
+.bingo { font-family: 'Nunito', var(--font-sans); color: #2c2350; }
+.bingo-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; margin-bottom: 14px; }
+.bingo-head h2 { margin: 0; font-size: 1.4rem; font-weight: 900; color: #0f172a; }
+.bingo-sub { color: #6f6a8a; font-weight: 700; font-size: 0.9rem; }
+.bingo-body { display: grid; grid-template-columns: minmax(0, 520px) minmax(0, 1fr); gap: 18px; align-items: start; }
+.bingo-board { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+.bingo-cell { position: relative; aspect-ratio: 1; min-width: 0; border: 0; border-radius: 22px; background: #fff; color: #2c2350; display: grid; place-items: center; align-content: center; gap: 2px; padding: 6px; text-align: center; cursor: pointer; font-family: inherit; box-shadow: inset 0 3px 5px rgba(255,255,255,.8), inset 0 -6px 9px rgba(60,50,120,.06), 0 10px 20px rgba(110,100,180,.14); transition: transform .15s; }
+.bingo-cell svg { color: #7a5fd0; }
+.bingo-cell b { font-size: 0.9rem; font-weight: 900; line-height: 1.15; overflow-wrap: anywhere; }
+.bingo-cell small { font-size: 0.75rem; color: #6f6a8a; font-weight: 700; }
+.bingo-cell:hover { transform: translateY(-2px); }
+.bingo-cell.is-must::before { content: ""; position: absolute; top: 10px; right: 10px; width: 10px; height: 10px; border-radius: 50%; background: #d3473a; }
+.bingo-cell.is-done { background: #dcf5e7; }
+.bingo-cell.is-done svg, .bingo-cell.is-done small { color: #1f9d61; }
+.bingo-check { width: 34px; height: 34px; border-radius: 50%; background: #1f9d61; display: grid; place-items: center; }
+.bingo-check svg { color: #fff !important; }
+.bingo-cell.is-free { background: #ffefc2; color: #8a5a00; cursor: default; }
+.bingo-cell.is-free svg { color: #e3a008; }
+.bingo-cell.is-finishing { box-shadow: 0 0 0 3px #f2b632, 0 10px 20px rgba(110,100,180,.14); }
+.bingo-cell:focus-visible, .bingo-go:focus-visible { outline: 3px solid #b9a6f0; outline-offset: 2px; }
+.bingo-side { display: grid; gap: 12px; }
+.bingo-lines { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.bingo-lines li { display: flex; justify-content: space-between; gap: 10px; background: #fff; border: 1px solid #e6e8f5; border-radius: 14px; padding: 10px 12px; font-weight: 800; }
+.bingo-lines li small { color: #6f6a8a; font-weight: 700; text-align: right; }
+.bingo-lines li.is-won { background: #dcf5e7; border-color: transparent; color: #1f9d61; }
+.bingo-lines li.is-won small { color: #1f9d61; }
+.bingo-prize { margin: 0; background: #ffefc2; color: #8a5a00; border-radius: 16px; padding: 10px 14px; font-weight: 800; }
+.bingo-go { border: 0; border-radius: 999px; min-height: 52px; padding: 0 22px; background: #7a5fd0; color: #fff; font: 900 1rem 'Nunito', var(--font-sans); cursor: pointer; }
+.bingo-alldone { margin: 0; font-weight: 900; color: #1f9d61; }
+.bingo--compact .bingo-body, .bingo-body { }
+@media (max-width: 860px) { .bingo-body { grid-template-columns: minmax(0, 1fr); } }
+@media (max-width: 420px) { .bingo-cell b { font-size: 0.78rem; } .bingo-cell small { font-size: 0.68rem; } .bingo-board { gap: 7px; } .bingo-cell { border-radius: 18px; } }
+@media (prefers-reduced-motion: reduce) { .bingo-cell { transition: none; } }

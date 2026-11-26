@@ -1,3 +1,4 @@
+import { markActivity } from './bingoActivity';
 /* ==========================================================================
    Secret Notebook (비밀 노트) — local-only mistake review queue
    --------------------------------------------------------------------------
@@ -300,6 +301,7 @@ export function recordResult(kind, uid, questionId, correct) {
   }
 
   it.correctStreak = (it.correctStreak || 0) + 1;
+  markActivity(uid, 'snCorrect');
 
   if (procedural) {
     // Procedural: original correct → must also pass a twin to graduate.

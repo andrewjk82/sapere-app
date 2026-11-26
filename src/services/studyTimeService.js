@@ -1,3 +1,4 @@
+import { markActivity } from '../utils/bingoActivity';
 /**
  * studyTimeService.js
  *
@@ -184,6 +185,7 @@ export const flushStudySession = async ({ uid, dateStr, subject, deltaSec, avata
   if (!uid || !dateStr || !subject || !Number.isFinite(deltaSec) || deltaSec <= 0) {
     return { totalSec: null, meta: currentMeta };
   }
+  markActivity(uid, 'studySec', deltaSec, dateStr);
 
   const dailyStatsRef = doc(db, 'users', uid, 'daily_stats', dateStr);
   const totalsRef = doc(db, TOTALS_COLLECTION, uid);
