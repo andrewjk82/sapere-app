@@ -65,6 +65,14 @@ export default function DailyBingoCard({ uid, profile, planItems, studyRoomOn, s
   }, [show]);
   const center = (i) => [(i % 3) * 100 + 50, Math.floor(i / 3) * 100 + 50];
 
+  // The closest unfinished line goes to the Flame buddy, who says it ("Middle row is 1 away: Daily Calculation").
+  useEffect(() => {
+    const open = lines.filter((l) => l.left.length).sort((a, b) => a.left.length - b.left.length)[0];
+    const hint = open ? { line: open.name, left: open.left.map((i) => ({ id: board[i].id, title: board[i].title })), won: won.length } : { line: '', left: [], won: won.length };
+    window.__sapereBingoHint = hint;
+    window.dispatchEvent(new CustomEvent('sapere:bingo-hint', { detail: hint }));
+  }, [lines, board, won.length]);
+
   // Pay for newly finished lines (the transaction skips any already paid, on any device).
   const askedRef = useRef('');
   useEffect(() => {
@@ -111,14 +119,6 @@ export default function DailyBingoCard({ uid, profile, planItems, studyRoomOn, s
           })()}
         </div>
         <div className="bingo-side">
-          <ul className="bingo-lines">
-            {[...lines].sort((a, b) => a.left.length - b.left.length).slice(0, compact ? 3 : 5).map((l) => (
-              <li key={l.id} className={l.left.length ? '' : 'is-won'}>
-                <span>{l.name}</span>
-                <small>{l.left.length ? `${l.left.length} to go: ${l.left.map((i) => board[i].title).join(', ')}` : `Bingo! +${XP_PER_LINE} XP`}</small>
-              </li>
-            ))}
-          </ul>
           <p className="bingo-prize">Each line +{XP_PER_LINE} XP · {won.length} of 8 lines today</p>
           {next ? <button type="button" className="bingo-go" onClick={next.onClick}>Start {next.title}</button>
             : <p className="bingo-alldone">Whole board done today 🎉</p>}
