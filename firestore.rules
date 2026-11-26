@@ -158,6 +158,11 @@ service cloud.firestore {
       allow read, write: if isAdmin();
     }
 
+    // Waiting list (Class page). Admin-only: names and phone numbers.
+    match /waiting_list/{entryId} {
+      allow read, write: if isAdmin();
+    }
+
     // System config — read for all authenticated, write for admin only
     match /system_config/{docId} {
       allow read: if isSignedIn();
