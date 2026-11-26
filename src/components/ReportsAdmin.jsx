@@ -1,6 +1,6 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { collection, query, orderBy, doc, updateDoc, deleteDoc, getDoc, limit, setDoc, arrayUnion, increment, runTransaction, serverTimestamp } from 'firebase/firestore';
+import { doc, updateDoc, deleteDoc, getDoc, setDoc, arrayUnion, increment, runTransaction, serverTimestamp } from 'firebase/firestore';
 import { db } from '../firebase/config';
 import { useAdminFeed } from '../context/AdminFeedContext';
 import { gradeSubmission } from '../services/gradingService';
@@ -18,7 +18,7 @@ import { resolveCorrectOptionIndex, resolveCorrectOptionText } from '../utils/mc
 import { adminGetQuestion } from '../services/contentLoader';
 import { contentPatch } from '../services/contentApi';
 import { withTimeout } from '../utils/withTimeout';
-import { listenOnce } from '../utils/reconnect';
+import { subscribeReports, resetReports } from '../services/teacherReports';
 
 // ── Report provenance ────────────────────────────────────────────────────────
 // Students file reports from several places. Only some of them correspond to a
@@ -263,7 +263,6 @@ const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode, onOpenI
   const [aiBusy, setAiBusy] = useState({}); // { [itemId]: true } while re-running AI grading
   // Live question docs for grading-queue items missing subQuestions (keyed by questionId).
   const [gradingLiveQuestions, setGradingLiveQuestions] = useState({});
-  const ADMIN_REPORT_LIMIT = 100;
 
   const formatStudentAnswer = (answer) => {
     if (answer === null || answer === undefined || answer === '') return 'No answer recorded';
@@ -355,23 +354,13 @@ const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode, onOpenI
     return null;
   };
 
-  // One-shot fetch instead of a permanent onSnapshot subscription.
-  // AdminFeedContext already covers live badge counts and new-item toasts.
-  // We refresh after every mutating action so the list stays accurate.
-  const fetchReports = useCallback(async () => {
-    try {
-      const qReports = query(collection(db, 'reports'), orderBy('createdAt', 'desc'), limit(ADMIN_REPORT_LIMIT));
-      // The saved copy shows at once. No server answer: reconnect and ask again, then an error with a Retry button.
-      const toList = (snap) => snap.docs.map(d => ({ id: d.id, ...d.data() }));
-      const snapshot = await listenOnce(qReports, {
-        onCached: (snap) => { setReports(toList(snap)); setReportsLoading(false); },
-      });
-      const rawReports = toList(snapshot);
-      // Show the list right away; the live-question enrichment below fills in multi-part details afterwards, so a slow
-      // or stuck content download can no longer keep the whole screen on "Loading items...".
-      setReports(rawReports);
-      setReportsError('');
-      setReportsLoading(false);
+  // Live list (services/teacherReports): changes made here or by students show without refetching.
+  const [reportsTry, setReportsTry] = useState(0);
+  useEffect(() => {
+    let cancelled = false;
+    let received = false;
+    let rawReports = [];
+    const liveById = {};   // questionId → live question (null while loading or missing)
 
       // Reports save only a lightweight questionData snapshot that omits
       // subQuestions, so multi-part questions showed only the parent prompt.
@@ -384,58 +373,51 @@ const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode, onOpenI
       // it, and merging that in here would hide the actual (current,
       // correct) options behind stale sub-question labels
       // (2026-08-30: y10-5g-q14).
-      const idsToFetch = [...new Set(
-        rawReports
-          .filter(r => {
-            const qid = r.questionId || r.questionData?.id;
-            const hasSubs = Array.isArray(r.questionData?.subQuestions) && r.questionData.subQuestions.length > 0;
-            const hasOptions = Array.isArray(r.questionData?.options) && r.questionData.options.length > 0;
-            return qid && !hasSubs && !hasOptions;
-          })
-          .map(r => r.questionId || r.questionData?.id)
-      )];
-      const liveById = {};
-      await Promise.all(idsToFetch.map(async (qid) => {
-        try {
-          const d = await withTimeout(readLiveQuestion(qid), 15000);
-          if (d) liveById[qid] = d;
-        } catch { /* non-fatal — report still renders its parent prompt */ }
-      }));
-      const enriched = rawReports.map(r => {
-        const qid = r.questionId || r.questionData?.id;
-        const live = qid ? liveById[qid] : null;
-        if (live && Array.isArray(live.subQuestions) && live.subQuestions.length > 0) {
-          return {
-            ...r,
-            questionData: {
-              ...(r.questionData || {}),
-              subQuestions: live.subQuestions,
-              graphData: r.questionData?.graphData ?? live.graphData,
-            },
-          };
-        }
-        return r;
-      });
-      setReports(enriched);
-      setReportsError('');
-    } catch (err) {
-      console.error('Reports fetch error:', err);
-      setReportsError(err?.message === 'timeout' ? 'The reports did not load in time.' : (err?.message || 'The reports could not be loaded.'));
-    } finally {
-      setReportsLoading(false);
-    }
-  }, []);
+    const needsLive = (r) => !(r.questionData?.subQuestions?.length > 0) && !(r.questionData?.options?.length > 0);
+    const enrich = (r) => {
+      const live = needsLive(r) ? liveById[r.questionId || r.questionData?.id] : null;
+      if (!(live?.subQuestions?.length > 0)) return r;
+      return {
+        ...r,
+        questionData: {
+          ...(r.questionData || {}),
+          subQuestions: live.subQuestions,
+          graphData: r.questionData?.graphData ?? live.graphData,
+        },
+      };
+    };
+    const show = () => { if (!cancelled) setReports(rawReports.map(enrich)); };
 
-  useEffect(() => {
-    fetchReports();
-  }, [fetchReports]);
+    const unsubscribe = subscribeReports(({ docs }) => {
+      received = true;
+      rawReports = docs;
+      // Show the list right away; the details above fill in afterwards, so a slow content download never blocks it.
+      show();
+      setReportsError('');
+      setReportsLoading(false);
+
+      const ids = [...new Set(docs.filter(needsLive).map((r) => r.questionId || r.questionData?.id))]
+        .filter((qid) => qid && !(qid in liveById));
+      if (!ids.length) return;
+      ids.forEach((qid) => { liveById[qid] = null; });
+      Promise.all(ids.map(async (qid) => {
+        try {
+          liveById[qid] = await withTimeout(readLiveQuestion(qid), 15000);
+        } catch { /* non-fatal — report still renders its parent prompt */ }
+      })).then(show);
+    }, (err) => {
+      if (cancelled || received) return;
+      setReportsError(err?.message === 'timeout' ? 'The reports did not load in time.' : (err?.message || 'The reports could not be loaded.'));
+      setReportsLoading(false);
+    });
+    return () => { cancelled = true; unsubscribe(); };
+  }, [reportsTry]);
 
   const loading = viewMode === 'reports' ? reportsLoading : gradingLoading;
 
   const handleMarkResolved = async (reportId) => {
     try {
       await updateDoc(doc(db, 'reports', reportId), { status: 'resolved' });
-      await fetchReports();
     } catch (err) {
       console.error('Error resolving report:', err);
     }
@@ -912,7 +894,6 @@ const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode, onOpenI
 
     try {
       await deleteDoc(doc(db, 'reports', reportId));
-      await fetchReports();
     } catch (err) {
       console.error('Error deleting report:', err);
       alert('Failed to delete report. Please try again.');
@@ -927,7 +908,6 @@ const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode, onOpenI
     try {
       setIsDeletingAll(true);
       await Promise.all(reports.map(report => deleteDoc(doc(db, 'reports', report.id))));
-      await fetchReports();
     } catch (err) {
       console.error('Error deleting reports:', err);
       alert('Failed to delete reports. Please try again.');
@@ -1610,7 +1590,7 @@ const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode, onOpenI
           <div style={{ textAlign: 'center', padding: '80px 0' }}>
             <p style={{ color: '#be123c', fontWeight: 800, marginBottom: 6 }}>{reportsError}</p>
             <p style={{ color: '#94a3b8', fontWeight: 600, fontSize: '0.85rem', marginBottom: 16 }}>Check the connection, then try again.</p>
-            <button type="button" onClick={() => { setReportsLoading(true); fetchReports(); }} style={{ height: 40, padding: '0 20px', borderRadius: 12, border: 0, background: '#6366f1', color: '#fff', fontWeight: 800, cursor: 'pointer' }}>Retry</button>
+            <button type="button" onClick={() => { resetReports(); setReportsError(''); setReportsLoading(true); setReportsTry((n) => n + 1); }} style={{ height: 40, padding: '0 20px', borderRadius: 12, border: 0, background: '#6366f1', color: '#fff', fontWeight: 800, cursor: 'pointer' }}>Retry</button>
           </div>
         ) : loading ? (
           <div style={{ textAlign: 'center', padding: '100px 0' }}>

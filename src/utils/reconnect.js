@@ -1,4 +1,4 @@
-import { disableNetwork, enableNetwork, onSnapshot } from 'firebase/firestore';
+import { disableNetwork, enableNetwork } from 'firebase/firestore';
 import { db } from '../firebase/config';
 import { TIMEOUT_MESSAGE, withTimeout } from './withTimeout';
 
@@ -35,18 +35,3 @@ export const readWithReconnect = async (start, { ms = 10_000, tries = 3 } = {}) 
     }
   }
 };
-
-// One server answer to `query`, read through a live listener: on the iPad a one-off getDocs can stay unanswered while
-// listeners keep working. The on-device copy (if any) is handed to onCached straight away.
-export const listenOnce = (query, { onCached, ms = 12_000, tries = 2 } = {}) => readWithReconnect(() => {
-  let unsubscribe = () => {};
-  let timer;
-  return new Promise((resolve, reject) => {
-    const stop = () => { clearTimeout(timer); unsubscribe(); };
-    unsubscribe = onSnapshot(query, { includeMetadataChanges: true }, (snapshot) => {
-      if (!snapshot.metadata.fromCache) { stop(); resolve(snapshot); } else if (!snapshot.empty) onCached?.(snapshot);
-    }, (error) => { stop(); reject(error); });
-    // Drop the listener when readWithReconnect gives up on this attempt.
-    timer = setTimeout(stop, ms);
-  });
-}, { ms, tries });
