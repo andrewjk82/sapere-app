@@ -1,3 +1,4 @@
+import { notifyHomework } from '../utils/notifyHomework';
 import React, { useEffect, useState, useMemo, useCallback, useRef } from 'react';
 import { Calendar, Clock, ChevronLeft, ChevronRight, CheckCircle2, Trash2, RotateCcw, X, Save, Check, List, BookOpen, PenLine } from 'lucide-react';
 import { db } from '../firebase/config';
@@ -623,10 +624,9 @@ const Schedule = ({ students = [] }) => {
         : buildScheduleUpdateHtml(selectedSession, updatePayload);
       // Fire update notifications in the background — don't block the save UI
       // on email delivery (Gmail SMTP can take several seconds per message).
-      Promise.allSettled(recipients.map((recipient) => fetch('/api/send-notif', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
+      const requests = recipients.map((recipient) => ({
+        name: recipient.studentName || selectedSession.studentName || 'Student',
+        payload: {
           studentId: recipient.studentId,
           email: recipient.studentEmail || recipient.email || '',
           subject: notificationTitle,
@@ -641,17 +641,26 @@ const Schedule = ({ students = [] }) => {
             learnedTopics: updatePayload.learnedTopics,
             homework: homeworkNotification ? updatePayload.homework : undefined,
           }
-        })
-      }))).then((results) => {
-        results
-          .filter(result => result.status === 'rejected')
-          .forEach(result => console.warn('Schedule update notification failed:', result.reason));
-      });
+        }
+      }));
+      if (!homeworkNotification) {
+        Promise.allSettled(requests.map(({ payload }) => fetch('/api/send-notif', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload),
+        }))).then((results) => {
+          results
+            .filter(result => result.status === 'rejected')
+            .forEach(result => console.warn('Schedule update notification failed:', result.reason));
+        });
+      }
 
       // The Firestore write is already done — close immediately.
       setSaveChoiceOpen(null);
       setSelectedSession(null);
       showToast(writeQueued ? 'Saved on this device — it will upload when the connection is back.' : 'Changes saved successfully!', writeQueued ? 'info' : 'success');
+      // After the save toast, so the delivery result is what stays on screen.
+      if (homeworkNotification) notifyHomework(requests, showToast);
     } catch (e) {
       console.error('Failed to update session:', e);
       showToast('Failed to update.', 'error');

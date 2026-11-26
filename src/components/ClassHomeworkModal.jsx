@@ -5,6 +5,8 @@ import LessonTopicPicker from './schedule/LessonTopicPicker';
 import { getAssignedCurriculumTopics, getStudentDisplayYear } from '../utils/curriculumTopicOptions';
 import { findPreviousCoveredSession, findNextTopic, splitHomeworkExtra, composeHomework } from '../utils/lessonTopics';
 import { toHistoryRow, topicHomeworkStates } from '../utils/homeworkTopicHistory';
+import { useToast } from '../context/ToastContext';
+import { notifyHomework } from '../utils/notifyHomework';
 
 // "Assign homework" from the Class page: the same "Today covered" topic picker the Schedule lesson editor uses.
 // The picked topics are the lesson's learnedTopics AND the homework (worksheet PDFs); the optional extra note is
@@ -18,6 +20,7 @@ const nextLessonDate = (sessions, studentId, after) => (sessions || [])
   .map((s) => s.date).sort()[0] || '';
 
 export default function ClassHomeworkModal({ unit, student, sessions, onSaved, onClose }) {
+  const { showToast } = useToast();
   const lesson = unit.sessions[0];
   const studentId = lesson.studentId || lesson.groupStudents?.[0]?.studentId || '';
   const [selected, setSelected] = useState(() => (Array.isArray(lesson.learnedTopics) ? lesson.learnedTopics : []));
@@ -62,20 +65,16 @@ export default function ClassHomeworkModal({ unit, student, sessions, onSaved, o
       if (homework && changed) {
         const title = hadHomework ? 'Homework updated' : 'New homework assigned';
         const subject = lesson.subject || 'lesson';
-        unit.sessions.forEach((s) => {
-          try {
-            fetch('/api/send-notif', {
-              method: 'POST',
-              headers: { 'Content-Type': 'application/json' },
-              body: JSON.stringify({
-                studentId: s.studentId, email: s.studentEmail || '', subject: title,
-                text: `${title} for your ${subject} session.\n\nDate: ${lesson.date}\nTime: ${lesson.startTime} - ${lesson.endTime}\n\nHomework:\n${homework}`,
-                html: `<p>${esc(title)} for your <strong>${esc(subject)}</strong> session.</p><p>${esc(lesson.date)} · ${esc(lesson.startTime)} - ${esc(lesson.endTime)}</p><h3 style="margin:18px 0 8px; color:#1e1b4b;">Homework</h3><p style="white-space:pre-wrap; margin:0;">${esc(homework)}</p>`,
-                metadata: { type: hadHomework ? 'homework_updated' : 'homework_assigned', sessionId: s.id, date: lesson.date, learnedTopics: selected, homework },
-              }),
-            }).catch(() => {});
-          } catch { /* best effort */ }
-        });
+        // Not awaited: email can take seconds, and the toast outlives this modal.
+        notifyHomework(unit.sessions.map((s) => ({
+          name: s.studentName || 'Student',
+          payload: {
+            studentId: s.studentId, email: s.studentEmail || '', subject: title,
+            text: `${title} for your ${subject} session.\n\nDate: ${lesson.date}\nTime: ${lesson.startTime} - ${lesson.endTime}\n\nHomework:\n${homework}`,
+            html: `<p>${esc(title)} for your <strong>${esc(subject)}</strong> session.</p><p>${esc(lesson.date)} · ${esc(lesson.startTime)} - ${esc(lesson.endTime)}</p><h3 style="margin:18px 0 8px; color:#1e1b4b;">Homework</h3><p style="white-space:pre-wrap; margin:0;">${esc(homework)}</p>`,
+            metadata: { type: hadHomework ? 'homework_updated' : 'homework_assigned', sessionId: s.id, date: lesson.date, learnedTopics: selected, homework },
+          },
+        })), showToast);
       }
       if (queued) setError('');
       onClose();
