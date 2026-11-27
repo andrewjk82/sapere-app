@@ -26,6 +26,11 @@ export default function DailyBingoCard({ uid, profile, planItems, studyRoomOn, s
       { id: 'study-timer', kind: 'shared', icon: Clock, title: 'Study timer', sub: '20 minutes', done: (act.studySec || 0) >= 1200, progress: `${Math.min(20, Math.floor((act.studySec || 0) / 60))}/20 min`, onClick: go('StudyTimer') },
       { id: 'sprint', kind: 'shared', icon: Flag, title: 'Sprint', sub: '1 round', done: (act.sprint || 0) >= 1, onClick: go('TimesTableSprint') },
       { id: 'extra-round', kind: 'shared', icon: Plus, title: 'Extra round', sub: 'After Daily Challenge', done: (act.extra || 0) >= 1, onClick: go('Challenge') },
+      // Harder versions of the same four, so a board with few lessons never shows spare "Free" squares.
+      { id: 'secret-note-5', kind: 'shared', icon: BookOpen, title: 'Secret Note+', sub: 'Get 5 right', done: (act.snCorrect || 0) >= 5, progress: `${Math.min(5, act.snCorrect || 0)}/5`, onClick: go('Challenge') },
+      { id: 'study-timer-40', kind: 'shared', icon: Clock, title: 'Long study', sub: '40 minutes', done: (act.studySec || 0) >= 2400, progress: `${Math.min(40, Math.floor((act.studySec || 0) / 60))}/40 min`, onClick: go('StudyTimer') },
+      { id: 'sprint-2', kind: 'shared', icon: Flag, title: 'Double sprint', sub: '2 rounds', done: (act.sprint || 0) >= 2, progress: `${Math.min(2, act.sprint || 0)}/2`, onClick: go('TimesTableSprint') },
+      { id: 'extra-round-2', kind: 'shared', icon: Plus, title: 'Two extra rounds', sub: 'After Daily Challenge', done: (act.extra || 0) >= 2, progress: `${Math.min(2, act.extra || 0)}/2`, onClick: go('Challenge') },
       ...(studyRoomOn ? [{ id: 'study-room', kind: 'shared', icon: Video, title: 'Study Room', sub: 'Join tonight', done: (act.studyRoom || 0) >= 1, onClick: () => document.getElementById('sapere-study-room')?.scrollIntoView({ behavior: 'smooth', block: 'center' }) }] : []),
     ];
     const plan = planItems.map((p) => ({ ...p, id: p.key, done: p.key === 'exam-prep' ? (act.examPrep || 0) >= 1 : p.done === true }));
@@ -100,7 +105,7 @@ export default function DailyBingoCard({ uid, profile, planItems, studyRoomOn, s
                 aria-label={`${c.title}${c.kind === 'must' ? ', must do' : ''}${c.done ? ', done' : ''}`}>
                 {c.done ? <span className="bingo-check"><Check size={20} strokeWidth={3} /></span> : <Icon size={26} />}
                 <b>{c.title}</b>
-                <small>{c.done ? 'Done' : (c.progress && c.progress !== '0/3' && c.progress !== '0/20 min' ? c.progress : c.sub)}</small>
+                <small>{c.done ? 'Done' : (c.progress && !/^0\//.test(c.progress) ? c.progress : c.sub)}</small>
               </button>
             );
           })}

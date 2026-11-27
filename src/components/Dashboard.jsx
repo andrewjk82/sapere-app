@@ -423,10 +423,8 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
       key: 'homework',
       kind: 'must',
       icon: PenLine,
-      title: pending.length > 0 ? `Homework — ${pending.length} to do` : 'Homework',
-      sub: pending.length > 0
-        ? pending.map(p => p.topics.map(t => t.label).join(', ')).join(' · ')
-        : (hwItems.length > 0 ? 'All handed in' : 'No homework right now'),
+      title: 'Homework',
+      sub: pending.length > 0 ? `${pending.length} to do` : 'All handed in',
       cta: pending.length > 0 ? 'Start' : 'Open',
       done: pending.length === 0,
       onClick: () => {
