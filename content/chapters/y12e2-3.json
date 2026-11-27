@@ -1409,6 +1409,114 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "manly2020-e2-q15ci",
+          "type": "mc",
+          "stem": "Let \\(P(x)=x^{4}+16x^{3}+108x^{2}+400x+800\\). \\(P(x)\\) has roots \\(a+2ib\\) and \\(3a+ib\\), where \\(a,b\\in\\mathbb R\\). Find the roots of \\(P(x)\\) with integer values for \\(a\\) and \\(b\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(-2\\pm4i\\) and \\(-6\\pm2i\\)",
+            "\\(2\\pm4i\\) and \\(6\\pm2i\\)",
+            "\\(-2\\pm2i\\) and \\(-6\\pm4i\\)",
+            "\\(-4\\pm2i\\) and \\(-4\\pm6i\\)"
+          ],
+          "answer": 0,
+          "hint": "\\(P\\) has REAL coefficients, so the CONJUGATES \\(a-2ib\\) and \\(3a-ib\\) are also roots: that is all 4 roots. Use the SUM of the roots \\(=-16\\) to find \\(a\\), then the PRODUCT of the roots \\(=800\\) to find \\(b\\).",
+          "steps": [
+            {
+              "explain": "The four roots: \\(a\\pm2ib\\) and \\(3a\\pm ib\\). Sum \\(=(a+2ib)+(a-2ib)+(3a+ib)+(3a-ib)=8a\\). For \\(x^{4}+16x^{3}+\\cdots\\): sum of roots \\(=-16\\).",
+              "work": "\\(8a=-16\\ \\Rightarrow\\ a=-2\\)"
+            },
+            {
+              "explain": "Product of the four roots \\(=+800\\) (constant term, even degree). Pair conjugates: \\((a+2ib)(a-2ib)=a^{2}+4b^{2}\\) and \\((3a+ib)(3a-ib)=9a^{2}+b^{2}\\).",
+              "work": "\\(\\left(a^{2}+4b^{2}\\right)\\left(9a^{2}+b^{2}\\right)=800\\)"
+            },
+            {
+              "explain": "With \\(a=-2\\): \\(\\left(4+4b^{2}\\right)\\left(36+b^{2}\\right)=800\\). Divide by 4: \\(\\left(1+b^{2}\\right)\\left(36+b^{2}\\right)=200\\). Let \\(B=b^{2}\\): \\(B^{2}+37B+36=200\\).",
+              "work": "\\(B^{2}+37B-164=0\\ \\Rightarrow\\ (B-4)(B+41)=0\\)"
+            },
+            {
+              "explain": "\\(b^{2}=4\\) (since \\(b^{2}\\ge0\\)), so \\(b=\\pm2\\). Take \\(b=2\\): roots \\(a+2ib=-2+4i\\) and \\(3a+ib=-6+2i\\), plus their conjugates.",
+              "work": "\\(-2\\pm4i,\\qquad-6\\pm2i\\)"
+            },
+            {
+              "explain": "Check the sum of the roots: \\(2(-2)+2(-6)=-16\\) ✓.",
+              "work": ""
+            },
+            {
+              "explain": "Why not the others: B has \\(a=+2\\) (sum \\(+16\\), not \\(-16\\)); C and D do not satisfy the product \\(=800\\) condition.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the roots of \\(P(x)\\) with integer values for \\(a\\) and \\(b\\)",
+              "note": "Conjugates; sum \\(8a=-16\\); product \\(=800\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Manly Selective Campus 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Manly Selective Campus",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "manly2020-e2-q15cii",
+          "type": "mc",
+          "stem": "Let \\(P(x)=x^{4}+16x^{3}+108x^{2}+400x+800\\). \\(P(x)\\) has roots \\(a+2ib\\) and \\(3a+ib\\), where \\(a,b\\in\\mathbb R\\). The roots of \\(P(x)\\) are \\(-2\\pm4i\\) and \\(-6\\pm2i\\). Factorise \\(P(x)\\) into its quadratic factors with real coefficients.",
+          "difficulty": "medium",
+          "options": [
+            "\\(P(x)=\\left(x^{2}+4x+20\\right)\\left(x^{2}+12x+40\\right)\\)",
+            "\\(P(x)=\\left(x^{2}-4x+20\\right)\\left(x^{2}-12x+40\\right)\\)",
+            "\\(P(x)=\\left(x^{2}+4x+16\\right)\\left(x^{2}+12x+36\\right)\\)",
+            "\\(P(x)=\\left(x^{2}+4x+20\\right)\\left(x^{2}+6x+10\\right)\\)"
+          ],
+          "answer": 0,
+          "hint": "Each CONJUGATE PAIR \\(p\\pm qi\\) gives a real quadratic \\(x^{2}-2p\\,x+\\left(p^{2}+q^{2}\\right)\\) (sum of roots \\(=2p\\), product \\(=p^{2}+q^{2}\\)). Multiply the two quadratics to check.",
+          "steps": [
+            {
+              "explain": "Pair \\(-2\\pm4i\\): sum \\(=-4\\), product \\(=(-2)^{2}+4^{2}=20\\). Quadratic: \\(x^{2}-(\\text{sum})x+\\text{product}\\).",
+              "work": "\\(x^{2}+4x+20\\)"
+            },
+            {
+              "explain": "Pair \\(-6\\pm2i\\): sum \\(=-12\\), product \\(=36+4=40\\).",
+              "work": "\\(x^{2}+12x+40\\)"
+            },
+            {
+              "explain": "Check by expanding: \\(\\left(x^{2}+4x+20\\right)\\left(x^{2}+12x+40\\right)=x^{4}+12x^{3}+40x^{2}+4x^{3}+48x^{2}+160x+20x^{2}+240x+800\\).",
+              "work": "\\(=x^{4}+16x^{3}+108x^{2}+400x+800\\ \\checkmark\\)"
+            },
+            {
+              "explain": "Why not the others: B has the wrong sign of the middle terms (roots would be positive); C uses \\(16\\) and \\(36\\) (squares of the real parts only); D uses \\(x^{2}+6x+10\\) (the sum of roots is \\(-12\\), not \\(-6\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Factorise \\(P(x)\\) into its quadratic factors with real coefficients",
+              "note": "Pair conjugates: \\(x^2-2px+(p^2+q^2)\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Manly Selective Campus 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Manly Selective Campus",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -7394,6 +7502,60 @@
           "meta": {
             "source": "Knox Grammar School 2021 Trial HSC Examination Mathematics Extension 2",
             "school": "Knox Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "manly2020-e2-q6",
+          "type": "mc",
+          "stem": "Given that \\(w^{5}=1\\) and \\(w\\) is a complex number what is the value of \\(1+w+w^{2}+w^{3}+w^{4}+w^{5}\\)?",
+          "difficulty": "medium",
+          "options": [
+            "\\(1\\)",
+            "\\(0\\)",
+            "\\(w\\)",
+            "\\(-w\\)"
+          ],
+          "answer": 0,
+          "hint": "For a non-real 5th root of unity \\(w\\) (\\(w\\ne1\\)): \\(w^{5}-1=(w-1)\\left(w^{4}+w^{3}+w^{2}+w+1\\right)=0\\) and \\(w-1\\ne0\\), so \\(1+w+w^{2}+w^{3}+w^{4}=0\\). Then the extra term \\(w^{5}=1\\).",
+          "steps": [
+            {
+              "explain": "\\(w^{5}-1=0\\) factorises (difference of powers): \\((w-1)\\left(1+w+w^{2}+w^{3}+w^{4}\\right)=0\\).",
+              "work": "\\(w^{5}-1=(w-1)\\left(w^{4}+w^{3}+w^{2}+w+1\\right)=0\\)"
+            },
+            {
+              "explain": "\\(w\\) is a (non-real) complex root, so \\(w\\ne1\\) and \\(w-1\\ne0\\). Therefore the other factor is zero.",
+              "work": "\\(1+w+w^{2}+w^{3}+w^{4}=0\\)"
+            },
+            {
+              "explain": "The sum in the question has ONE MORE term, \\(w^{5}\\), which equals 1 (given).",
+              "work": "\\(1+w+w^{2}+w^{3}+w^{4}+w^{5}=0+w^{5}=0+1=1\\)"
+            },
+            {
+              "explain": "(Equivalently: the sum of all five 5th roots of unity is 0, because the coefficient of \\(w^{4}\\) in \\(w^{5}-1\\) is 0.)",
+              "work": ""
+            },
+            {
+              "explain": "Why not the others: 0 forgets the extra term \\(w^{5}\\); \\(w\\) and \\(-w\\) are not the value of a symmetric sum.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Given that \\(w^{5}=1\\) and \\(w\\) is a complex number",
+              "note": "\\(1+w+\\dots+w^4=0\\) for \\(w\\ne1\\); plus \\(w^5=1\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Manly Selective Campus 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Manly Selective Campus",
             "grade": "12",
             "origin": "teacher"
           }

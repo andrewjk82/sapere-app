@@ -650,6 +650,60 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "manly2020-e2-q11b",
+          "type": "mc",
+          "stem": "Use the substitution \\(t=\\tan\\left(\\dfrac{x}{2}\\right)\\) to find \\(\\displaystyle\\int\\dfrac{dx}{1+\\cos x-\\sin x}\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(-\\ln\\left|1-\\tan\\dfrac{x}{2}\\right|+C\\)",
+            "\\(\\ln\\left|1-\\tan\\dfrac{x}{2}\\right|+C\\)",
+            "\\(-\\ln\\left|1+\\tan\\dfrac{x}{2}\\right|+C\\)",
+            "\\(\\ln\\left|1+\\tan\\dfrac{x}{2}\\right|+C\\)"
+          ],
+          "answer": 0,
+          "hint": "With \\(t=\\tan\\dfrac{x}{2}\\): \\(\\cos x=\\dfrac{1-t^{2}}{1+t^{2}}\\), \\(\\sin x=\\dfrac{2t}{1+t^{2}}\\), \\(dx=\\dfrac{2\\,dt}{1+t^{2}}\\). Put the denominator over \\(1+t^{2}\\); it simplifies to \\(\\dfrac{2-2t}{1+t^{2}}\\). Beware the chain-rule MINUS in \\(\\int\\dfrac{dt}{1-t}\\).",
+          "steps": [
+            {
+              "explain": "Denominator: \\(1+\\dfrac{1-t^{2}}{1+t^{2}}-\\dfrac{2t}{1+t^{2}}=\\dfrac{(1+t^{2})+(1-t^{2})-2t}{1+t^{2}}\\).",
+              "work": "\\(=\\dfrac{2-2t}{1+t^{2}}\\)"
+            },
+            {
+              "explain": "Integrand: \\(\\dfrac{1+t^{2}}{2-2t}\\cdot\\dfrac{2}{1+t^{2}}\\): the \\(1+t^{2}\\) cancels and \\(\\dfrac{2}{2-2t}=\\dfrac{1}{1-t}\\).",
+              "work": "\\(\\int\\dfrac{dt}{1-t}\\)"
+            },
+            {
+              "explain": "Integrate: \\(\\dfrac{d}{dt}(1-t)=-1\\), so \\(\\int\\dfrac{dt}{1-t}=-\\ln|1-t|\\).",
+              "work": "\\(=-\\ln|1-t|+C\\)"
+            },
+            {
+              "explain": "Substitute back \\(t=\\tan\\dfrac{x}{2}\\).",
+              "work": "\\(=-\\ln\\left|1-\\tan\\dfrac{x}{2}\\right|+C\\)"
+            },
+            {
+              "explain": "Why not the others: B misses the minus from the chain rule; C and D have \\(1+t\\) (the denominator is \\(1-t\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Use the substitution \\(t=\\tan\\left(\\dfrac{x}{2}\\right)\\) to find",
+              "note": "Denominator \\(\\to\\dfrac{2-2t}{1+t^2}\\); \\(\\int\\dfrac{dt}{1-t}=-\\ln|1-t|\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Manly Selective Campus 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Manly Selective Campus",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },

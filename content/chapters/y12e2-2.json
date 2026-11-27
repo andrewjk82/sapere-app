@@ -1747,6 +1747,210 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "manly2020-e2-q4",
+          "type": "mc",
+          "stem": "Which symbol belongs in the box in the following statement? \\(y=e^{x}\\ \\boxed{\\ \\ }\\ x=\\log_{e}y\\)",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\forall\\)",
+            "\\(\\exists\\)",
+            "\\(\\Rightarrow\\)",
+            "\\(\\Leftrightarrow\\)"
+          ],
+          "answer": 2,
+          "hint": "The box must hold a LOGICAL CONNECTIVE between two statements (not a quantifier). Decide whether the statement works in ONE direction (\\(\\Rightarrow\\)) or BOTH (\\(\\Leftrightarrow\\)). Notice \\(\\log_{e}y\\) is only defined for \\(y>0\\).",
+          "steps": [
+            {
+              "explain": "\\(\\forall\\) and \\(\\exists\\) are QUANTIFIERS (“for all”, “there exists”); they cannot sit between two equations. So A and B are out.",
+              "work": "\\(y=e^{x}\\ \\Box\\ x=\\log_{e}y\\)"
+            },
+            {
+              "explain": "\\(y=e^{x}\\Rightarrow x=\\log_{e}y\\): taking \\(\\log_{e}\\) of both sides of \\(y=e^{x}\\) gives \\(\\log_{e}y=x\\). Since \\(e^{x}>0\\) for every real \\(x\\), \\(y>0\\) automatically and \\(\\log_{e}y\\) is defined. So the implication holds.",
+              "work": "\\(y=e^{x}\\Rightarrow x=\\log_{e}y\\)"
+            },
+            {
+              "explain": "The marking solution chooses \\(\\Rightarrow\\): the statement on the right says “there is an \\(x\\) such that \\(x=\\log_{e}y\\)” and that follows from \\(y=e^{x}\\). The equivalence \\(\\Leftrightarrow\\) is not claimed because the right-hand side is not defined for \\(y\\le0\\) (the two statements do not have the same domain).",
+              "work": ""
+            },
+            {
+              "explain": "Why not the others: \\(\\forall\\) and \\(\\exists\\) are not connectives; \\(\\Leftrightarrow\\) over-claims for all real \\(y\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">C</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Which symbol belongs in the box in the following statement",
+              "note": "Connective: \\(y=e^x\\Rightarrow x=\\log_ey\\) (needs \\(y>0\\))."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Manly Selective Campus 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Manly Selective Campus",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "manly2020-e2-q11ai",
+          "type": "mc",
+          "stem": "Consider the following statement: \\(\\forall m\\in\\mathbb Z^{+},\\ \\exists n\\in\\mathbb Z^{+}\\) such that \\(\\dfrac{1}{n}-\\dfrac{1}{n+1}<\\dfrac{1}{m}\\). Write in symbolic notation the negation of the above statement (without the negation symbol present).",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\exists m\\in\\mathbb Z^{+},\\ \\forall n\\in\\mathbb Z^{+}\\) such that \\(\\dfrac{1}{n}-\\dfrac{1}{n+1}\\ge\\dfrac{1}{m}\\)",
+            "\\(\\exists m\\in\\mathbb Z^{+},\\ \\forall n\\in\\mathbb Z^{+}\\) such that \\(\\dfrac{1}{n}-\\dfrac{1}{n+1}>\\dfrac{1}{m}\\)",
+            "\\(\\forall m\\in\\mathbb Z^{+},\\ \\exists n\\in\\mathbb Z^{+}\\) such that \\(\\dfrac{1}{n}-\\dfrac{1}{n+1}\\ge\\dfrac{1}{m}\\)",
+            "\\(\\exists m\\in\\mathbb Z^{+},\\ \\exists n\\in\\mathbb Z^{+}\\) such that \\(\\dfrac{1}{n}-\\dfrac{1}{n+1}\\ge\\dfrac{1}{m}\\)"
+          ],
+          "answer": 0,
+          "hint": "To negate: swap each quantifier IN ORDER (\\(\\forall\\to\\exists\\), \\(\\exists\\to\\forall\\)) and negate the condition at the end. The negation of “\\(<\\)” is “\\(\\ge\\)” (NOT “\\(>\\)”).",
+          "steps": [
+            {
+              "explain": "Original: \\(\\forall m\\ \\exists n:\\ \\dfrac{1}{n}-\\dfrac1{n+1}<\\dfrac{1}{m}\\).",
+              "work": "\\(\\forall m\\in\\mathbb Z^{+}\\ \\exists n\\in\\mathbb Z^{+}:\\ \\dfrac{1}{n}-\\dfrac1{n+1}<\\dfrac{1}{m}\\)"
+            },
+            {
+              "explain": "Negate the outer \\(\\forall\\): becomes \\(\\exists m\\). Negate the inner \\(\\exists\\): becomes \\(\\forall n\\).",
+              "work": "\\(\\exists m\\ \\forall n\\)"
+            },
+            {
+              "explain": "Negate the condition: not \\((a<b)\\) means \\(a\\ge b\\) (equal is also “not less than”).",
+              "work": "\\(\\dfrac{1}{n}-\\dfrac1{n+1}\\ge\\dfrac{1}{m}\\)"
+            },
+            {
+              "explain": "Result.",
+              "work": "\\(\\exists m\\in\\mathbb Z^{+},\\ \\forall n\\in\\mathbb Z^{+}:\\ \\dfrac{1}{n}-\\dfrac{1}{n+1}\\ge\\dfrac{1}{m}\\)"
+            },
+            {
+              "explain": "Why not the others: B negates “\\(<\\)” as “\\(>\\)” (misses equality); C keeps the quantifiers unchanged; D changes \\(\\forall n\\) to \\(\\exists n\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Write in symbolic notation the negation of the above statement",
+              "note": "Swap \\(\\forall\\leftrightarrow\\exists\\) in order; \\(\\neg(<)\\) is \\(\\ge\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Manly Selective Campus 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Manly Selective Campus",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "manly2020-e2-q11aii",
+          "type": "mc",
+          "stem": "Consider the statement: \\(\\forall m\\in\\mathbb Z^{+},\\ \\exists n\\in\\mathbb Z^{+}\\) such that \\(\\dfrac{1}{n}-\\dfrac{1}{n+1}<\\dfrac{1}{m}\\). Prove that the original statement is true. Which proof is correct?",
+          "difficulty": "medium",
+          "options": [
+            "Given any positive integer \\(m\\), CHOOSE \\(n=m\\). Then \\(\\dfrac{1}{n}-\\dfrac1{n+1}=\\dfrac{1}{m}-\\dfrac1{m+1}=\\dfrac{1}{m(m+1)}\\). Since \\(m+1>1\\), \\(m(m+1)>m\\), so \\(\\dfrac{1}{m(m+1)}<\\dfrac{1}{m}\\). Hence the statement is true.",
+            "Take \\(m=1\\) and \\(n=1\\): \\(\\dfrac{1}{1}-\\dfrac{1}{2}=\\dfrac{1}{2}<1\\). Hence the statement is true for all \\(m\\).",
+            "Choose \\(n=1\\) for every \\(m\\): \\(\\dfrac{1}{1}-\\dfrac{1}{2}=\\dfrac{1}{2}<\\dfrac{1}{m}\\) for all \\(m\\).",
+            "Choose \\(n=m\\). Then \\(\\dfrac{1}{n}-\\dfrac1{n+1}=\\dfrac{1}{m(m+1)}\\), which is greater than \\(\\dfrac{1}{m}\\) because \\(m(m+1)>m\\)."
+          ],
+          "answer": 0,
+          "hint": "For a “\\(\\forall m\\ \\exists n\\)” statement: take an ARBITRARY \\(m\\), then EXHIBIT a suitable \\(n\\) (it may depend on \\(m\\)). Try \\(n=m\\) and simplify \\(\\dfrac{1}{n}-\\dfrac1{n+1}=\\dfrac{1}{n(n+1)}\\).",
+          "steps": [
+            {
+              "explain": "Let \\(m\\) be any positive integer (arbitrary).",
+              "work": "\\(m\\in\\mathbb Z^{+}\\ \\text{arbitrary}\\)"
+            },
+            {
+              "explain": "CHOOSE \\(n=m\\) (a positive integer). Common denominator: \\(\\dfrac{1}{m}-\\dfrac1{m+1}=\\dfrac{(m+1)-m}{m(m+1)}\\).",
+              "work": "\\(\\dfrac{1}{n}-\\dfrac1{n+1}=\\dfrac{1}{m(m+1)}\\)"
+            },
+            {
+              "explain": "Compare with \\(\\dfrac{1}{m}\\): \\(m(m+1)=m\\cdot(m+1)>m\\cdot1\\) since \\(m+1>1\\). A bigger denominator gives a smaller fraction.",
+              "work": "\\(\\dfrac{1}{m(m+1)}<\\dfrac{1}{m}\\)"
+            },
+            {
+              "explain": "So for every \\(m\\) there is an \\(n\\) (namely \\(n=m\\)) that works: the statement is TRUE. (Its negation from part (i) is therefore false.)",
+              "work": ""
+            },
+            {
+              "explain": "Why not the others: B checks one value of \\(m\\) (not a proof); C uses \\(n=1\\), which fails for \\(m\\ge2\\) (e.g. \\(m=3\\): \\(\\dfrac{1}{2}<\\dfrac{1}{3}\\) is false); D reverses the inequality.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Prove that the original statement is true",
+              "note": "Choose \\(n=m\\): \\(\\dfrac{1}{m(m+1)}<\\dfrac{1}{m}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Manly Selective Campus 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Manly Selective Campus",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "manly2020-e2-q13dii",
+          "type": "mc",
+          "stem": "Let \\(n\\) be a natural number. The proposition in part (i) is: “If \\(n\\) is composite, then there exists a factor of \\(n\\) not equal to 1, and at most equal to \\(\\sqrt n\\).” State the converse of the proposition in part (i).",
+          "difficulty": "medium",
+          "options": [
+            "If there exists a factor of \\(n\\) not equal to 1, and at most equal to \\(\\sqrt n\\), then \\(n\\) is composite.",
+            "If \\(n\\) is not composite, then there does not exist a factor of \\(n\\) not equal to 1, and at most equal to \\(\\sqrt n\\).",
+            "If there does not exist a factor of \\(n\\) not equal to 1, and at most equal to \\(\\sqrt n\\), then \\(n\\) is not composite.",
+            "\\(n\\) is composite if and only if \\(n\\) has a factor equal to \\(\\sqrt n\\)."
+          ],
+          "answer": 0,
+          "hint": "For \\(P\\Rightarrow Q\\) the CONVERSE is \\(Q\\Rightarrow P\\) (just swap the two parts, do NOT negate). Identify \\(P\\) and \\(Q\\) first.",
+          "steps": [
+            {
+              "explain": "\\(P\\): “\\(n\\) is composite”. \\(Q\\): “there exists a factor of \\(n\\) not equal to 1 and at most \\(\\sqrt n\\)”. The proposition is \\(P\\Rightarrow Q\\).",
+              "work": "\\(P\\Rightarrow Q\\)"
+            },
+            {
+              "explain": "Converse: swap the parts: \\(Q\\Rightarrow P\\).",
+              "work": "\\(Q\\Rightarrow P:\\ \\text{“If }n\\text{ has a factor}\\ne1\\text{ at most }\\sqrt n,\\text{ then }n\\text{ is composite.”}\\)"
+            },
+            {
+              "explain": "Why not the others: B is the INVERSE (\\(\\neg P\\Rightarrow\\neg Q\\)); C is the CONTRAPOSITIVE (\\(\\neg Q\\Rightarrow\\neg P\\)); D is a different statement.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "State the converse of the proposition in part (i)",
+              "note": "Converse of \\(P\\Rightarrow Q\\) is \\(Q\\Rightarrow P\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Manly Selective Campus 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Manly Selective Campus",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -2805,6 +3009,114 @@
           "meta": {
             "source": "Knox Grammar School 2021 Trial HSC Examination Mathematics Extension 2",
             "school": "Knox Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "manly2020-e2-q13di",
+          "type": "mc",
+          "stem": "Let \\(n\\) be a natural number. Show that if \\(n\\) is composite, then there exists a factor of \\(n\\) not equal to 1, and at most equal to \\(\\sqrt n\\). Which proof is correct?",
+          "difficulty": "medium",
+          "options": [
+            "Since \\(n\\) is composite, \\(n=pq\\) with \\(1<p\\le q<n\\) (choose \\(p\\) to be the SMALLER factor). If \\(p>\\sqrt n\\), then \\(q\\ge p>\\sqrt n\\), so \\(pq>\\sqrt n\\cdot\\sqrt n=n\\), contradicting \\(pq=n\\). Hence \\(p\\le\\sqrt n\\): \\(p\\) is a factor of \\(n\\), not equal to 1, and at most \\(\\sqrt n\\).",
+            "Since \\(n\\) is composite, \\(n=pq\\). Take \\(p=\\sqrt n\\). Then \\(p\\) is a factor at most \\(\\sqrt n\\).",
+            "Since \\(n\\) is composite, \\(n=pq\\) with \\(p>\\sqrt n\\) and \\(q>\\sqrt n\\); this gives a factor at most \\(\\sqrt n\\).",
+            "Since \\(n\\) is composite, it has the factor \\(n\\) itself, which is at most \\(\\sqrt n\\) because \\(n\\le\\sqrt n\\)."
+          ],
+          "answer": 0,
+          "hint": "Composite means \\(n=pq\\) with \\(1<p\\le q<n\\) (two factors, both bigger than 1). Take the SMALLER one \\(p\\). If BOTH factors were bigger than \\(\\sqrt n\\), their product would exceed \\(n\\) — impossible. So the smaller factor is \\(\\le\\sqrt n\\).",
+          "steps": [
+            {
+              "explain": "\\(n\\) composite \\(\\Rightarrow\\) \\(n=pq\\) with integers \\(1<p<n\\), \\(1<q<n\\). Relabel so that \\(p\\le q\\).",
+              "work": "\\(n=pq,\\qquad1<p\\le q<n\\)"
+            },
+            {
+              "explain": "Suppose (for contradiction) \\(p>\\sqrt n\\). Then \\(q\\ge p>\\sqrt n\\) too.",
+              "work": "\\(pq>\\sqrt n\\cdot\\sqrt n=n\\)"
+            },
+            {
+              "explain": "But \\(pq=n\\): contradiction. So \\(p\\le\\sqrt n\\).",
+              "work": "\\(1<p\\le\\sqrt n\\)"
+            },
+            {
+              "explain": "So \\(p\\) is a factor of \\(n\\), different from 1, and at most \\(\\sqrt n\\).",
+              "work": ""
+            },
+            {
+              "explain": "Why not the others: B assumes \\(p=\\sqrt n\\) (not always an integer); C claims both factors exceed \\(\\sqrt n\\) (impossible); D uses \\(n\\le\\sqrt n\\) (false for \\(n>1\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that if \\(n\\) is composite, then there exists a factor of \\(n\\)",
+              "note": "Smaller factor \\(p\\): if \\(p>\\sqrt n\\) then \\(pq>n\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Manly Selective Campus 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Manly Selective Campus",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "manly2020-e2-q15b",
+          "type": "mc",
+          "stem": "It is given that \\(a\\) and \\(b\\) are positive real numbers. Consider the statement \\(\\forall a\\ \\left(\\forall b,\\ a^{\\ln b}=b^{\\ln a}\\right)\\). Either prove the statement is true or provide a counter-example. Which answer is correct?",
+          "difficulty": "medium",
+          "options": [
+            "TRUE. Take \\(\\ln\\) of both sides: \\(\\ln\\left(a^{\\ln b}\\right)=\\ln b\\cdot\\ln a\\) and \\(\\ln\\left(b^{\\ln a}\\right)=\\ln a\\cdot\\ln b\\). These are equal, and \\(\\ln\\) is one-to-one (\\(a^{\\ln b}\\) and \\(b^{\\ln a}\\) are positive), so \\(a^{\\ln b}=b^{\\ln a}\\).",
+            "FALSE. Counter-example: \\(a=e\\), \\(b=2\\): \\(e^{\\ln2}=2\\) but \\(2^{\\ln e}=2^{1}=2\\)… so they are equal here, but another pair must fail.",
+            "TRUE. Test \\(a=2\\), \\(b=2\\): \\(2^{\\ln2}=2^{\\ln2}\\). Since both sides match, the statement is true for all \\(a,b\\).",
+            "FALSE. Counter-example: \\(a=1\\), \\(b=2\\): \\(1^{\\ln2}=1\\) and \\(2^{\\ln1}=2^{0}=1\\) are equal, but the two sides are different expressions."
+          ],
+          "answer": 0,
+          "hint": "Take the NATURAL LOG of both sides. Use \\(\\ln\\left(x^{k}\\right)=k\\ln x\\). Both sides become the product \\(\\ln a\\cdot\\ln b\\) (multiplication commutes). Then use that \\(\\ln\\) is ONE-TO-ONE to get back to the original equation.",
+          "steps": [
+            {
+              "explain": "Start from the left side and take \\(\\ln\\): \\(\\ln\\left(a^{\\ln b}\\right)=\\ln b\\cdot\\ln a\\) (the power rule \\(\\ln x^{k}=k\\ln x\\) with \\(k=\\ln b\\)).",
+              "work": "\\(\\ln\\left(a^{\\ln b}\\right)=\\ln b\\cdot\\ln a\\)"
+            },
+            {
+              "explain": "Right side: \\(\\ln\\left(b^{\\ln a}\\right)=\\ln a\\cdot\\ln b\\).",
+              "work": "\\(\\ln\\left(b^{\\ln a}\\right)=\\ln a\\cdot\\ln b\\)"
+            },
+            {
+              "explain": "\\(\\ln b\\cdot\\ln a=\\ln a\\cdot\\ln b\\) (multiplication is commutative). So \\(\\ln\\left(a^{\\ln b}\\right)=\\ln\\left(b^{\\ln a}\\right)\\).",
+              "work": "\\(\\ln\\left(a^{\\ln b}\\right)=\\ln\\left(b^{\\ln a}\\right)\\)"
+            },
+            {
+              "explain": "\\(\\ln\\) is one-to-one on the positive reals, and \\(a^{\\ln b}>0\\), \\(b^{\\ln a}>0\\). So the arguments must be equal: \\(a^{\\ln b}=b^{\\ln a}\\). The statement is TRUE for all positive \\(a,b\\).",
+              "work": "\\(a^{\\ln b}=b^{\\ln a}\\)"
+            },
+            {
+              "explain": "Why not the others: B and D claim FALSE but give pairs where the identity actually holds (no counter-example exists); C checks one case (not a proof).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Either prove the statement is true or provide a counter-example",
+              "note": "\\(\\ln\\) both sides: \\(\\ln a\\ln b\\) on each; \\(\\ln\\) is one-to-one."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Manly Selective Campus 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Manly Selective Campus",
             "grade": "12",
             "origin": "teacher"
           }
@@ -4093,6 +4405,106 @@
           "meta": {
             "source": "Knox Grammar School 2021 Trial HSC Examination Mathematics Extension 2",
             "school": "Knox Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "manly2020-e2-q5",
+          "type": "mc",
+          "stem": "The following solution demonstrates that \\(\\sqrt2\\) is an irrational number. Let \\(\\sqrt2=\\dfrac{p}{q}\\), where \\(p\\) and \\(q\\) are positive integers and have no common factors. \\(2=\\dfrac{p^{2}}{q^{2}}\\) on squaring both sides, \\(p^{2}=2q^{2}\\), \\(\\therefore p^{2}\\) is even, \\(\\therefore p\\) is even. Let \\(p=2k\\), where \\(k\\) is an integer. \\(4k^{2}=2q^{2}\\), \\(\\therefore q^{2}=2k^{2}\\), \\(\\therefore q^{2}\\) is even, \\(\\therefore q\\) is even. Which method was used in this proof?",
+          "difficulty": "medium",
+          "options": [
+            "Direct proof",
+            "Proof by contradiction",
+            "Proof by contrapositive",
+            "Proof by counter-examples"
+          ],
+          "answer": 1,
+          "hint": "Look at the STRUCTURE: does the proof start by ASSUMING the opposite of what we want and finish with an impossible result? That is contradiction. A direct proof goes straight from the hypotheses to the conclusion; a contrapositive proof proves \\(\\neg Q\\Rightarrow\\neg P\\).",
+          "steps": [
+            {
+              "explain": "We want to show \\(\\sqrt2\\) is IRRATIONAL. The proof starts with “Let \\(\\sqrt2=\\dfrac{p}{q}\\) (rational) with NO common factors”: it ASSUMES the opposite (rational).",
+              "work": "\\(\\text{assume }\\sqrt2=\\dfrac{p}{q},\\ \\gcd(p,q)=1\\)"
+            },
+            {
+              "explain": "Derives \\(p\\) even and then \\(q\\) even. So \\(p\\) and \\(q\\) BOTH have the factor 2.",
+              "work": "\\(2\\mid p\\ \\text{and}\\ 2\\mid q\\)"
+            },
+            {
+              "explain": "This contradicts “no common factors”. The assumption is false, so \\(\\sqrt2\\) is irrational. A proof that assumes the negation and reaches a contradiction is a PROOF BY CONTRADICTION.",
+              "work": "\\(\\text{contradiction}\\ \\Rightarrow\\ \\sqrt2\\notin\\mathbb Q\\)"
+            },
+            {
+              "explain": "Why not the others: it is not direct (it assumes the opposite); not contrapositive (there is no statement \\(P\\Rightarrow Q\\) being replaced); a counter-example would disprove a “for all” claim.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">B</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Which method was used in this proof",
+              "note": "Assume the opposite; reach a contradiction."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Manly Selective Campus 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Manly Selective Campus",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "manly2020-e2-q13diii",
+          "type": "mc",
+          "stem": "Let \\(n\\) be a natural number. The proposition in part (i) is: “If \\(n\\) is composite, then there exists a factor of \\(n\\) not equal to 1, and at most equal to \\(\\sqrt n\\).” Write down the contrapositive of the proposition in part (i).",
+          "difficulty": "medium",
+          "options": [
+            "If there does not exist a factor of \\(n\\) not equal to 1 and at most equal to \\(\\sqrt n\\), then \\(n\\) is not composite (i.e. \\(n\\) is prime or 1).",
+            "If \\(n\\) is not composite, then there does not exist a factor of \\(n\\) not equal to 1 and at most equal to \\(\\sqrt n\\).",
+            "If there exists a factor of \\(n\\) not equal to 1 and at most equal to \\(\\sqrt n\\), then \\(n\\) is composite.",
+            "If \\(n\\) is composite, then there does not exist a factor of \\(n\\) not equal to 1 and at most equal to \\(\\sqrt n\\)."
+          ],
+          "answer": 0,
+          "hint": "Contrapositive of \\(P\\Rightarrow Q\\) is \\(\\neg Q\\Rightarrow\\neg P\\): NEGATE both parts AND swap them. A statement and its contrapositive are logically equivalent.",
+          "steps": [
+            {
+              "explain": "\\(P\\): \\(n\\) composite; \\(Q\\): \\(\\exists\\) a factor \\(\\ne1\\) that is \\(\\le\\sqrt n\\).",
+              "work": "\\(P\\Rightarrow Q\\)"
+            },
+            {
+              "explain": "\\(\\neg Q\\): “there does NOT exist a factor of \\(n\\) other than 1 that is at most \\(\\sqrt n\\)”. \\(\\neg P\\): “\\(n\\) is NOT composite”.",
+              "work": "\\(\\neg Q\\Rightarrow\\neg P\\)"
+            },
+            {
+              "explain": "This is the prime-testing rule: if no number from 2 up to \\(\\sqrt n\\) divides \\(n\\), then \\(n\\) is prime (or 1).",
+              "work": ""
+            },
+            {
+              "explain": "Why not the others: B is the INVERSE; C is the CONVERSE; D contradicts the proposition (negates only \\(Q\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Write down the contrapositive of the proposition in part (i)",
+              "note": "\\(\\neg Q\\Rightarrow\\neg P\\): negate AND swap."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Manly Selective Campus 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Manly Selective Campus",
             "grade": "12",
             "origin": "teacher"
           }
@@ -6600,6 +7012,156 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "manly2020-e2-q14bi",
+          "type": "mc",
+          "stem": "Prove that \\(\\dfrac{x}{y}+\\dfrac{y}{x}\\ge2\\) where \\(x,y>0\\). Which proof is correct?",
+          "difficulty": "medium",
+          "options": [
+            "Since \\(x,y>0\\), \\(\\dfrac{x}{y}+\\dfrac{y}{x}-2=\\dfrac{x^{2}+y^{2}-2xy}{xy}=\\dfrac{(x-y)^{2}}{xy}\\ge0\\) (a square over a positive number). Hence \\(\\dfrac{x}{y}+\\dfrac{y}{x}\\ge2\\).",
+            "\\(\\dfrac{x}{y}+\\dfrac{y}{x}=\\dfrac{x+y}{xy}\\ge2\\) because \\(x+y\\ge2\\).",
+            "\\(\\dfrac{x}{y}+\\dfrac{y}{x}-2=\\dfrac{(x+y)^{2}}{xy}\\ge0\\), so the result follows.",
+            "Take \\(x=y=1\\): \\(1+1=2\\ge2\\). Hence true for all \\(x,y>0\\)."
+          ],
+          "answer": 0,
+          "hint": "Move 2 to the left side, combine over the common denominator \\(xy\\), and recognise a PERFECT SQUARE: \\(x^{2}-2xy+y^{2}=(x-y)^{2}\\ge0\\). The denominator \\(xy>0\\) (both positive).",
+          "steps": [
+            {
+              "explain": "Common denominator \\(xy\\).",
+              "work": "\\(\\dfrac{x}{y}+\\dfrac{y}{x}-2=\\dfrac{x^{2}+y^{2}-2xy}{xy}\\)"
+            },
+            {
+              "explain": "Numerator is a perfect square.",
+              "work": "\\(=\\dfrac{(x-y)^{2}}{xy}\\)"
+            },
+            {
+              "explain": "\\((x-y)^{2}\\ge0\\) and \\(xy>0\\), so the fraction is \\(\\ge0\\). Hence \\(\\dfrac{x}{y}+\\dfrac{y}{x}\\ge2\\).",
+              "work": "\\(\\dfrac{x}{y}+\\dfrac{y}{x}\\ge2\\)"
+            },
+            {
+              "explain": "Why not the others: B has the wrong combination (\\(\\dfrac{x^{2}+y^{2}}{xy}\\), not \\(\\dfrac{x+y}{xy}\\)); C uses \\((x+y)^{2}\\) (it is \\((x-y)^{2}\\)); D is one example (not a proof).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Prove that \\(\\dfrac{x}{y}+\\dfrac{y}{x}\\ge2\\)",
+              "note": "Subtract 2; \\(\\dfrac{(x-y)^2}{xy}\\ge0\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Manly Selective Campus 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Manly Selective Campus",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "manly2020-e2-q14bii",
+          "type": "mc",
+          "stem": "Using \\(\\dfrac{x}{y}+\\dfrac{y}{x}\\ge2\\) for \\(x,y>0\\), hence, or otherwise, show that \\((x+y)\\left(\\dfrac{1}{x}+\\dfrac{1}{y}\\right)\\ge4\\). Which working is correct?",
+          "difficulty": "medium",
+          "options": [
+            "Expand: \\((x+y)\\left(\\dfrac{1}{x}+\\dfrac{1}{y}\\right)=\\dfrac{x}{x}+\\dfrac{x}{y}+\\dfrac{y}{x}+\\dfrac{y}{y}=2+\\left(\\dfrac{x}{y}+\\dfrac{y}{x}\\right)\\ge2+2=4\\).",
+            "Expand: \\((x+y)\\left(\\dfrac{1}{x}+\\dfrac{1}{y}\\right)=1+1+\\dfrac{x}{y}+\\dfrac{y}{x}\\ge1+1+1=3\\).",
+            "Expand: \\(=\\dfrac{x}{x}\\cdot\\dfrac{y}{y}+\\dfrac{x}{y}\\cdot\\dfrac{y}{x}=1+1=2\\), which is less than 4.",
+            "Take \\(x=y\\): \\((2x)\\cdot\\dfrac{2}{x}=4\\), so the inequality holds with equality."
+          ],
+          "answer": 0,
+          "hint": "Expand the product (FOIL): four terms, two of which are \\(\\dfrac{x}{x}=1\\) and \\(\\dfrac{y}{y}=1\\). The other two form \\(\\dfrac{x}{y}+\\dfrac{y}{x}\\), which is at least 2 by part (i).",
+          "steps": [
+            {
+              "explain": "Expand.",
+              "work": "\\((x+y)\\left(\\dfrac{1}{x}+\\dfrac{1}{y}\\right)=\\dfrac{x}{x}+\\dfrac{x}{y}+\\dfrac{y}{x}+\\dfrac{y}{y}\\)"
+            },
+            {
+              "explain": "\\(\\dfrac{x}{x}=\\dfrac{y}{y}=1\\), leaving \\(2+\\left(\\dfrac{x}{y}+\\dfrac{y}{x}\\right)\\).",
+              "work": "\\(=2+\\left(\\dfrac{x}{y}+\\dfrac{y}{x}\\right)\\)"
+            },
+            {
+              "explain": "Use part (i): \\(\\dfrac{x}{y}+\\dfrac{y}{x}\\ge2\\).",
+              "work": "\\(\\ge2+2=4\\)"
+            },
+            {
+              "explain": "Why not the others: B uses only 1 for the sum (it is at least 2); C multiplies instead of adding the four terms; D checks only the equal case \\(x=y\\) (not a proof).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "show that \\((x+y)\\left(\\dfrac{1}{x}+\\dfrac{1}{y}\\right)\\ge4\\)",
+              "note": "Expand: \\(2+(\\dfrac{x}{y}+\\dfrac{y}{x})\\ge4\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Manly Selective Campus 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Manly Selective Campus",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "manly2020-e2-q14biii",
+          "type": "mc",
+          "stem": "Using \\((x+y)\\left(\\dfrac{1}{x}+\\dfrac{1}{y}\\right)\\ge4\\) for positive \\(x,y\\), deduce that \\((x+y+z)\\left(\\dfrac{1}{x}+\\dfrac{1}{y}+\\dfrac{1}{z}\\right)\\ge9\\). Which working is correct?",
+          "difficulty": "hard",
+          "options": [
+            "Expand: \\((x+y+z)\\left(\\dfrac{1}{x}+\\dfrac{1}{y}+\\dfrac{1}{z}\\right)=3+\\left(\\dfrac{x}{y}+\\dfrac{y}{x}\\right)+\\left(\\dfrac{x}{z}+\\dfrac{z}{x}\\right)+\\left(\\dfrac{y}{z}+\\dfrac{z}{y}\\right)\\). Each bracket is \\(\\ge2\\) by part (i), so the total is \\(\\ge3+2+2+2=9\\).",
+            "Expand: \\(=3+\\left(\\dfrac{x}{y}+\\dfrac{y}{x}\\right)+\\left(\\dfrac{x}{z}+\\dfrac{z}{x}\\right)+\\left(\\dfrac{y}{z}+\\dfrac{z}{y}\\right)\\). Each bracket is \\(\\ge1\\), so the total is \\(\\ge6\\).",
+            "Apply part (ii) three times: \\(\\ge4+4+4=12\\), so the inequality \\(\\ge9\\) is true.",
+            "Take \\(x=y=z=1\\): \\(3\\cdot3=9\\). Hence true for all positive \\(x,y,z\\)."
+          ],
+          "answer": 0,
+          "hint": "Expand the product of the two 3-term brackets: 9 terms. Three are \\(\\dfrac{x}{x}\\), \\(\\dfrac{y}{y}\\), \\(\\dfrac{z}{z}\\) (each 1). The other six pair up as \\(\\dfrac{x}{y}+\\dfrac{y}{x}\\), \\(\\dfrac{x}{z}+\\dfrac{z}{x}\\), \\(\\dfrac{y}{z}+\\dfrac{z}{y}\\) — each pair is \\(\\ge2\\) by part (i).",
+          "steps": [
+            {
+              "explain": "Multiply every term of the first bracket by every term of the second: the DIAGONAL terms are \\(1+1+1=3\\).",
+              "work": "\\((x+y+z)\\left(\\dfrac{1}{x}+\\dfrac{1}{y}+\\dfrac{1}{z}\\right)=3+\\dfrac{x}{y}+\\dfrac{x}{z}+\\dfrac{y}{x}+\\dfrac{y}{z}+\\dfrac{z}{x}+\\dfrac{z}{y}\\)"
+            },
+            {
+              "explain": "Group the six remaining terms in RECIPROCAL pairs.",
+              "work": "\\(=3+\\left(\\dfrac{x}{y}+\\dfrac{y}{x}\\right)+\\left(\\dfrac{x}{z}+\\dfrac{z}{x}\\right)+\\left(\\dfrac{y}{z}+\\dfrac{z}{y}\\right)\\)"
+            },
+            {
+              "explain": "Apply part (i) (\\(\\dfrac{a}{b}+\\dfrac{b}{a}\\ge2\\)) to each of the three pairs.",
+              "work": "\\(\\ge3+2+2+2=9\\)"
+            },
+            {
+              "explain": "Why not the others: B uses \\(\\ge1\\) for each pair (it is \\(\\ge2\\)); C wrongly adds three copies of part (ii) (the expression is not a sum of such products); D tests only one case.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "deduce that \\((x+y+z)\\left(\\dfrac{1}{x}+\\dfrac{1}{y}+\\dfrac{1}{z}\\right)\\ge9\\)",
+              "note": "\\(3+\\) three reciprocal pairs, each \\(\\ge2\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Manly Selective Campus 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Manly Selective Campus",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -8563,6 +9125,180 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "manly2020-e2-q11c",
+          "type": "mc",
+          "stem": "Show by Mathematical Induction that \\(8^{n}+2\\times7^{n}-1\\) is divisible by 7 for \\(n\\ge1\\). Which proof is correct?",
+          "difficulty": "hard",
+          "options": [
+            "BASE \\(n=1\\): \\(8+14-1=21=7\\times3\\) ✓. ASSUME \\(8^{k}+2\\cdot7^{k}-1=7M\\) for some integer \\(M\\). Then \\(8^{k+1}+2\\cdot7^{k+1}-1=8\\cdot8^{k}+14\\cdot7^{k}-1\\). Using \\(8^{k}=7M-2\\cdot7^{k}+1\\): \\(=8\\left(7M-2\\cdot7^{k}+1\\right)+14\\cdot7^{k}-1=56M-2\\cdot7^{k}+7=7\\left(8M-2\\cdot7^{k-1}+1\\right)\\), a multiple of 7.",
+            "BASE \\(n=1\\) ✓. ASSUME true for \\(n=k\\). Then \\(8^{k+1}+2\\cdot7^{k+1}-1=8^{k}+2\\cdot7^{k}-1+8+14=7M+22\\), which is divisible by 7.",
+            "BASE \\(n=1\\): \\(8+14-1=21\\) ✓. Then for \\(n=k+1\\): \\(8^{k+1}+2\\cdot7^{k+1}-1\\) is obtained by multiplying \\(8^{k}+2\\cdot7^{k}-1\\) by 8, so it is divisible by 7.",
+            "BASE \\(n=0\\): \\(1+2-1=2\\), not divisible by 7, so the statement is false."
+          ],
+          "answer": 0,
+          "hint": "Induction: BASE case, ASSUME for \\(n=k\\) (\\(=7M\\)), then for \\(n=k+1\\) write \\(8^{k+1}=8\\cdot8^{k}\\) and \\(7^{k+1}=7\\cdot7^{k}\\); SUBSTITUTE \\(8^{k}\\) from the assumption so that everything is a multiple of 7; CONCLUDE.",
+          "steps": [
+            {
+              "explain": "BASE CASE \\(n=1\\): \\(8^{1}+2\\cdot7^{1}-1=8+14-1=21=7\\times3\\) ✓.",
+              "work": "\\(21=7\\times3\\)"
+            },
+            {
+              "explain": "ASSUME for some integer \\(k\\ge1\\): \\(8^{k}+2\\cdot7^{k}-1=7M\\), \\(M\\in\\mathbb Z\\). Rearrange to isolate \\(8^{k}\\).",
+              "work": "\\(8^{k}=7M-2\\cdot7^{k}+1\\)"
+            },
+            {
+              "explain": "STEP: \\(n=k+1\\): \\(8^{k+1}+2\\cdot7^{k+1}-1=8\\cdot8^{k}+14\\cdot7^{k}-1\\). Substitute \\(8^{k}\\).",
+              "work": "\\(=8\\left(7M-2\\cdot7^{k}+1\\right)+14\\cdot7^{k}-1\\)"
+            },
+            {
+              "explain": "Expand: \\(56M-16\\cdot7^{k}+8+14\\cdot7^{k}-1=56M-2\\cdot7^{k}+7\\).",
+              "work": "\\(=56M-2\\cdot7^{k}+7\\)"
+            },
+            {
+              "explain": "Every term is a multiple of 7: \\(56M=7(8M)\\); \\(2\\cdot7^{k}=7\\left(2\\cdot7^{k-1}\\right)\\) (\\(k\\ge1\\)); \\(7=7(1)\\).",
+              "work": "\\(=7\\left(8M-2\\cdot7^{k-1}+1\\right)\\)"
+            },
+            {
+              "explain": "CONCLUSION: true for \\(n=1\\), and if true for \\(n=k\\) then true for \\(n=k+1\\); so true for all integers \\(n\\ge1\\).",
+              "work": ""
+            },
+            {
+              "explain": "Why not the others: B adds \\(8+14\\) (wrong: the new terms are \\(7\\cdot8^{k}\\) and \\(12\\cdot7^{k}\\), not 8 and 14); C is false (multiplying by 8 does not produce the \\(-1\\) term); D uses \\(n=0\\) (outside the statement).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show by Mathematical Induction that",
+              "note": "Substitute \\(8^k=7M-2\\cdot7^k+1\\) into \\(8\\cdot8^k+14\\cdot7^k-1\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Manly Selective Campus 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Manly Selective Campus",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "manly2020-e2-q13c",
+          "type": "mc",
+          "stem": "Given that \\(a_{1}=2\\) and \\(a_{n}=\\dfrac{a_{n-1}}{n}\\) for \\(n\\ge2\\), prove that \\(a_{n}=\\dfrac{2}{n!}\\) for \\(n\\ge1\\). Which proof is correct?",
+          "difficulty": "medium",
+          "options": [
+            "BASE \\(n=1\\): \\(a_{1}=2=\\dfrac{2}{1!}\\) ✓. ASSUME \\(a_{k}=\\dfrac{2}{k!}\\). Then \\(a_{k+1}=\\dfrac{a_{k}}{k+1}=\\dfrac{2}{k!}\\cdot\\dfrac{1}{k+1}=\\dfrac{2}{(k+1)\\,k!}=\\dfrac{2}{(k+1)!}\\). So true for \\(n=k+1\\); by induction true for all \\(n\\ge1\\).",
+            "BASE \\(n=1\\) ✓. ASSUME \\(a_{k}=\\dfrac{2}{k!}\\). Then \\(a_{k+1}=\\dfrac{a_{k}}{k}=\\dfrac{2}{k\\cdot k!}\\), which is \\(\\dfrac{2}{(k+1)!}\\).",
+            "BASE \\(n=1\\) ✓. ASSUME \\(a_{k}=\\dfrac{2}{k!}\\). Then \\(a_{k+1}=a_{k}\\cdot(k+1)=\\dfrac{2(k+1)}{k!}=\\dfrac{2}{(k+1)!}\\).",
+            "Compute \\(a_{1}=2\\), \\(a_{2}=1\\), \\(a_{3}=\\dfrac{1}{3}\\): these equal \\(\\dfrac{2}{n!}\\) (\\(2,1,\\dfrac{1}{3}\\)). Hence \\(a_{n}=\\dfrac{2}{n!}\\) for all \\(n\\)."
+          ],
+          "answer": 0,
+          "hint": "Induction with a RECURRENCE: BASE \\(a_{1}\\); ASSUME \\(a_{k}=\\dfrac{2}{k!}\\); use the recurrence for \\(a_{k+1}=\\dfrac{a_{k}}{k+1}\\) (divide by the NEW index \\(k+1\\)) and \\((k+1)\\,k!=(k+1)!\\).",
+          "steps": [
+            {
+              "explain": "BASE CASE \\(n=1\\): \\(a_{1}=2\\) and \\(\\dfrac{2}{1!}=2\\) ✓.",
+              "work": "\\(a_{1}=2=\\dfrac{2}{1!}\\)"
+            },
+            {
+              "explain": "ASSUME \\(a_{k}=\\dfrac{2}{k!}\\) for some \\(k\\ge1\\). The recurrence with \\(n=k+1\\): \\(a_{k+1}=\\dfrac{a_{k}}{k+1}\\).",
+              "work": "\\(a_{k+1}=\\dfrac{a_{k}}{k+1}=\\dfrac{2}{k!}\\cdot\\dfrac{1}{k+1}\\)"
+            },
+            {
+              "explain": "Use \\((k+1)\\cdot k!=(k+1)!\\).",
+              "work": "\\(a_{k+1}=\\dfrac{2}{(k+1)\\,k!}=\\dfrac{2}{(k+1)!}\\)"
+            },
+            {
+              "explain": "CONCLUSION: true for \\(n=1\\); if true for \\(n=k\\) then true for \\(n=k+1\\); so \\(a_{n}=\\dfrac{2}{n!}\\) for all \\(n\\ge1\\).",
+              "work": ""
+            },
+            {
+              "explain": "Why not the others: B divides by \\(k\\) (the recurrence divides by the NEW index \\(k+1\\)); C multiplies instead of divides; D checks only three cases (not a proof).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "prove that \\(a_{n}=\\dfrac{2}{n!}\\) for \\(n\\ge1\\)",
+              "note": "\\(a_{k+1}=\\dfrac{a_k}{k+1}\\); \\((k+1)k!=(k+1)!\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Manly Selective Campus 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Manly Selective Campus",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "manly2020-e2-q16cii",
+          "type": "mc",
+          "stem": "Hence, use a calculus method and Mathematical Induction to show that for \\(x\\ge0\\), \\(e^{x}\\ge\\dfrac{x^{n}}{n!}\\) for all \\(n\\in\\mathbb Z^{+}\\). Which proof is correct?",
+          "difficulty": "hard",
+          "options": [
+            "BASE \\(n=1\\): \\(e^{x}>x=\\dfrac{x^{1}}{1!}\\) by part (i) ✓. ASSUME \\(e^{x}\\ge\\dfrac{x^{k}}{k!}\\) for all \\(x\\ge0\\). INTEGRATE both sides from 0 to \\(x\\): \\(\\displaystyle\\int_{0}^{x}e^{t}dt\\ge\\int_{0}^{x}\\dfrac{t^{k}}{k!}dt\\), so \\(e^{x}-1\\ge\\dfrac{x^{k+1}}{(k+1)!}\\). Then \\(e^{x}\\ge1+\\dfrac{x^{k+1}}{(k+1)!}\\ge\\dfrac{x^{k+1}}{(k+1)!}\\). So true for \\(n=k+1\\).",
+            "BASE \\(n=1\\) ✓. ASSUME \\(e^{x}\\ge\\dfrac{x^{k}}{k!}\\). DIFFERENTIATE both sides: \\(e^{x}\\ge\\dfrac{x^{k-1}}{(k-1)!}\\), which gives the result for \\(n=k+1\\).",
+            "BASE \\(n=1\\) ✓. ASSUME \\(e^{x}\\ge\\dfrac{x^{k}}{k!}\\). Multiply both sides by \\(x\\): \\(xe^{x}\\ge\\dfrac{x^{k+1}}{k!}\\), so \\(e^{x}\\ge\\dfrac{x^{k+1}}{(k+1)!}\\).",
+            "BASE \\(n=1\\) ✓. ASSUME \\(e^{x}\\ge\\dfrac{x^{k}}{k!}\\). Integrate both sides: \\(e^{x}\\ge\\dfrac{x^{k+1}}{(k+1)!}\\) (the constant of integration is not needed because the inequality is true for \\(x\\ge0\\))."
+          ],
+          "answer": 0,
+          "hint": "Induction with a calculus step: (1) BASE \\(n=1\\) from part (i); (2) ASSUME \\(e^{x}\\ge\\dfrac{x^{k}}{k!}\\) for all \\(x\\ge0\\); (3) INTEGRATE both sides from 0 to \\(x\\) (integrating a larger function gives a larger area), using the limit 0 to handle the constant; (4) CONCLUDE.",
+          "steps": [
+            {
+              "explain": "BASE \\(n=1\\): \\(\\dfrac{x^{1}}{1!}=x\\) and \\(e^{x}>x\\) for \\(x\\ge0\\) by part (i) ✓.",
+              "work": "\\(e^{x}\\ge x\\)"
+            },
+            {
+              "explain": "ASSUME \\(e^{x}\\ge\\dfrac{x^{k}}{k!}\\) for all \\(x\\ge0\\), for some \\(k\\ge1\\). To prove \\(e^{x}\\ge\\dfrac{x^{k+1}}{(k+1)!}\\).",
+              "work": "\\(e^{t}\\ge\\dfrac{t^{k}}{k!}\\quad(t\\ge0)\\)"
+            },
+            {
+              "explain": "Integrate both sides from \\(t=0\\) to \\(t=x\\) (if \\(f(t)\\ge g(t)\\) on \\([0,x]\\) then \\(\\int_{0}^{x}f\\ge\\int_{0}^{x}g\\)).",
+              "work": "\\(\\int_{0}^{x}e^{t}dt\\ge\\int_{0}^{x}\\dfrac{t^{k}}{k!}dt\\ \\Rightarrow\\ \\left[e^{t}\\right]_{0}^{x}\\ge\\left[\\dfrac{t^{k+1}}{(k+1)!}\\right]_{0}^{x}\\)"
+            },
+            {
+              "explain": "Evaluate: \\(e^{x}-1\\ge\\dfrac{x^{k+1}}{(k+1)!}\\). Add 1: \\(e^{x}\\ge1+\\dfrac{x^{k+1}}{(k+1)!}\\).",
+              "work": "\\(e^{x}\\ge1+\\dfrac{x^{k+1}}{(k+1)!}>\\dfrac{x^{k+1}}{(k+1)!}\\)"
+            },
+            {
+              "explain": "CONCLUSION: true for \\(n=1\\); if true for \\(n=k\\) then true for \\(n=k+1\\); so \\(e^{x}\\ge\\dfrac{x^{n}}{n!}\\) for all \\(n\\in\\mathbb Z^{+}\\).",
+              "work": ""
+            },
+            {
+              "explain": "Why not the others: B differentiates (the inequality between functions is NOT preserved by differentiation); C multiplies by \\(x\\) but the denominator is wrong; D omits the limits (the lower limit 0 handles the constant, and \\(-1\\) is part of the result).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "use a calculus method and Mathematical Induction to show that",
+              "note": "Integrate \\(e^t\\ge\\dfrac{t^k}{k!}\\) from 0 to \\(x\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Manly Selective Campus 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Manly Selective Campus",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -9747,6 +10483,60 @@
           "meta": {
             "source": "Killara High School 2020 Trial HSC Examination Mathematics Extension 2",
             "school": "Killara High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "manly2020-e2-q16ci",
+          "type": "mc",
+          "stem": "By considering \\(f'(x)\\) where \\(f(x)=e^{x}-x\\), show that \\(e^{x}>x\\) for \\(x\\ge0\\). Which argument is correct?",
+          "difficulty": "medium",
+          "options": [
+            "\\(f'(x)=e^{x}-1\\). For \\(x>0\\), \\(e^{x}>e^{0}=1\\), so \\(f'(x)>0\\): \\(f\\) is INCREASING for \\(x\\ge0\\). Also \\(f(0)=e^{0}-0=1>0\\). A function that starts positive and increases stays positive: \\(f(x)>0\\), i.e. \\(e^{x}>x\\) for \\(x\\ge0\\).",
+            "\\(f'(x)=e^{x}-x\\). Since \\(e^{x}\\) grows faster than \\(x\\), \\(f'(x)>0\\), so \\(f\\) is increasing; therefore \\(e^{x}>x\\).",
+            "\\(f'(x)=e^{x}-1>0\\) for \\(x>0\\), so \\(f\\) is increasing. Hence \\(e^{x}>x\\) (we do not need \\(f(0)\\)).",
+            "\\(f'(x)=e^{x}-1\\) and \\(f'(0)=0\\), so \\(f\\) has a minimum at \\(x=0\\) equal to \\(f(0)=0\\). Hence \\(e^{x}\\ge x\\) with equality at 0."
+          ],
+          "answer": 0,
+          "hint": "Differentiate: \\(f'(x)=e^{x}-1\\). Show \\(f'(x)>0\\) for \\(x>0\\) (so \\(f\\) is increasing) and find the STARTING value \\(f(0)\\). Increasing from a positive value stays positive.",
+          "steps": [
+            {
+              "explain": "\\(f(x)=e^{x}-x\\Rightarrow f'(x)=e^{x}-1\\).",
+              "work": "\\(f'(x)=e^{x}-1\\)"
+            },
+            {
+              "explain": "For \\(x>0\\): \\(e^{x}>e^{0}=1\\) (exponentials are increasing), so \\(f'(x)>0\\).",
+              "work": "\\(f'(x)>0\\ \\text{for }x>0\\ \\Rightarrow\\ f\\text{ is increasing}\\)"
+            },
+            {
+              "explain": "Starting value: \\(f(0)=e^{0}-0=1>0\\).",
+              "work": "\\(f(0)=1>0\\)"
+            },
+            {
+              "explain": "\\(f\\) starts at 1 and is increasing, so \\(f(x)\\ge1>0\\) for all \\(x\\ge0\\): \\(e^{x}-x>0\\).",
+              "work": "\\(e^{x}>x\\quad(x\\ge0)\\)"
+            },
+            {
+              "explain": "Why not the others: B has the wrong derivative (\\(\\dfrac{d}{dx}x=1\\), so \\(f'=e^{x}-1\\)); C forgets the starting value (an increasing function could still be negative); D finds a minimum value 0 (but \\(f(0)=1\\), not 0).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "By considering \\(f'(x)\\) where \\(f(x)=e^{x}-x\\), show that",
+              "note": "\\(f\\,'=e^x-1>0\\) and \\(f(0)=1>0\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Manly Selective Campus 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Manly Selective Campus",
             "grade": "12",
             "origin": "teacher"
           }

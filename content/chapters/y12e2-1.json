@@ -4872,6 +4872,268 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "manly2020-e2-q7",
+          "type": "mc",
+          "stem": "Let \\(\\arg(z)=\\dfrac\\pi5\\) for a certain complex number \\(z\\). What is \\(\\arg\\left(z^{7}\\right)\\)?",
+          "difficulty": "medium",
+          "options": [
+            "\\(-\\dfrac{7\\pi}{5}\\)",
+            "\\(-\\dfrac{3\\pi}{5}\\)",
+            "\\(\\dfrac{2\\pi}{5}\\)",
+            "\\(\\dfrac{3\\pi}{5}\\)"
+          ],
+          "answer": 1,
+          "hint": "\\(\\arg\\left(z^{n}\\right)=n\\arg z\\) (mod \\(2\\pi\\)). But the PRINCIPAL argument must lie in \\(-\\pi<\\theta\\le\\pi\\): subtract \\(2\\pi\\) if the result is too big.",
+          "steps": [
+            {
+              "explain": "Multiply the argument by the power.",
+              "work": "\\(\\arg\\left(z^{7}\\right)=7\\cdot\\dfrac\\pi5=\\dfrac{7\\pi}{5}\\)"
+            },
+            {
+              "explain": "\\(\\dfrac{7\\pi}{5}=1.4\\pi\\) is bigger than \\(\\pi\\): subtract \\(2\\pi\\) to bring it into \\(-\\pi<\\theta\\le\\pi\\).",
+              "work": "\\(\\dfrac{7\\pi}{5}-2\\pi=-\\dfrac{3\\pi}{5}\\)"
+            },
+            {
+              "explain": "So the principal argument is \\(-\\dfrac{3\\pi}{5}\\) (the point is in the 3rd quadrant).",
+              "work": "\\(\\arg\\left(z^{7}\\right)=-\\dfrac{3\\pi}{5}\\)"
+            },
+            {
+              "explain": "Why not the others: \\(-\\dfrac{7\\pi}{5}\\) is outside the principal range; \\(\\dfrac{2\\pi}{5}\\) is \\(2\\arg z\\) (power 2 instead of 7); \\(\\dfrac{3\\pi}{5}\\) has the wrong sign.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">B</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "What is \\(\\arg\\left(z^{7}\\right)\\)",
+              "note": "\\(n\\arg z\\), then reduce into \\((-\\pi,\\pi]\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Manly Selective Campus 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Manly Selective Campus",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "manly2020-e2-q12ci",
+          "type": "mc",
+          "stem": "Let \\(z=2e^{\\frac{2\\pi i}{3}}\\) and \\(w=\\sqrt2e^{\\frac{i\\pi}{4}}\\). Convert \\(z\\) and \\(w\\) to Cartesian form.",
+          "difficulty": "medium",
+          "options": [
+            "\\(z=-1+\\sqrt3\\,i\\),  \\(w=1+i\\)",
+            "\\(z=1+\\sqrt3\\,i\\),  \\(w=1+i\\)",
+            "\\(z=-1+\\sqrt3\\,i\\),  \\(w=\\sqrt2+\\sqrt2\\,i\\)",
+            "\\(z=-\\sqrt3+i\\),  \\(w=1+i\\)"
+          ],
+          "answer": 0,
+          "hint": "\\(re^{i\\theta}=r\\cos\\theta+ir\\sin\\theta\\). Evaluate the exact trig values for \\(\\dfrac{2\\pi}{3}=120^{\\circ}\\) (2nd quadrant: cos negative) and \\(\\dfrac\\pi4=45^{\\circ}\\).",
+          "steps": [
+            {
+              "explain": "\\(z=2\\left(\\cos\\dfrac{2\\pi}{3}+i\\sin\\dfrac{2\\pi}{3}\\right)\\): \\(\\cos120^{\\circ}=-\\dfrac{1}{2}\\), \\(\\sin120^{\\circ}=\\dfrac{\\sqrt3}{2}\\).",
+              "work": "\\(z=2\\left(-\\dfrac{1}{2}+\\dfrac{\\sqrt3}{2}i\\right)=-1+\\sqrt3\\,i\\)"
+            },
+            {
+              "explain": "\\(w=\\sqrt2\\left(\\cos\\dfrac\\pi4+i\\sin\\dfrac\\pi4\\right)\\): both \\(\\dfrac{\\sqrt2}{2}\\).",
+              "work": "\\(w=\\sqrt2\\left(\\dfrac{\\sqrt2}{2}+\\dfrac{\\sqrt2}{2}i\\right)=1+i\\)"
+            },
+            {
+              "explain": "Check: \\(|z|=\\sqrt{1+3}=2\\) ✓ and \\(|w|=\\sqrt{1+1}=\\sqrt2\\) ✓.",
+              "work": ""
+            },
+            {
+              "explain": "Why not the others: B has the wrong sign for \\(\\cos120^{\\circ}\\); C leaves \\(w\\) as \\(\\sqrt2+\\sqrt2i\\) (forgetting the \\(\\dfrac{\\sqrt2}{2}\\)); D swaps \\(\\cos\\) and \\(\\sin\\) for \\(z\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Convert \\(z\\) and \\(w\\) to Cartesian form",
+              "note": "\\(re^{i\\theta}=r\\cos\\theta+ir\\sin\\theta\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Manly Selective Campus 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Manly Selective Campus",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "manly2020-e2-q12cii",
+          "type": "mc",
+          "stem": "Let \\(z=-1+\\sqrt3\\,i=2e^{\\frac{2\\pi i}{3}}\\) and \\(w=1+i=\\sqrt2e^{\\frac{i\\pi}{4}}\\). Find \\(\\dfrac{z}{w}\\) in Cartesian and polar form.",
+          "difficulty": "medium",
+          "options": [
+            "Cartesian: \\(\\dfrac{\\left(\\sqrt3-1\\right)+\\left(\\sqrt3+1\\right)i}{2}\\); polar: \\(\\sqrt2e^{\\frac{5\\pi i}{12}}\\)",
+            "Cartesian: \\(\\dfrac{\\left(\\sqrt3+1\\right)+\\left(\\sqrt3-1\\right)i}{2}\\); polar: \\(\\sqrt2e^{\\frac{5\\pi i}{12}}\\)",
+            "Cartesian: \\(\\dfrac{\\left(\\sqrt3-1\\right)+\\left(\\sqrt3+1\\right)i}{2}\\); polar: \\(\\sqrt2e^{\\frac{11\\pi i}{12}}\\)",
+            "Cartesian: \\(\\dfrac{\\left(\\sqrt3-1\\right)+\\left(\\sqrt3+1\\right)i}{2}\\); polar: \\(2\\sqrt2e^{\\frac{5\\pi i}{12}}\\)"
+          ],
+          "answer": 0,
+          "hint": "CARTESIAN: multiply top and bottom by the conjugate of the denominator. POLAR: DIVIDE the moduli and SUBTRACT the arguments.",
+          "steps": [
+            {
+              "explain": "Cartesian: multiply by \\(\\dfrac{1-i}{1-i}\\) (conjugate of \\(1+i\\)); denominator \\((1+i)(1-i)=2\\).",
+              "work": "\\(\\dfrac{z}{w}=\\dfrac{\\left(-1+\\sqrt3i\\right)(1-i)}{2}\\)"
+            },
+            {
+              "explain": "Numerator: \\(-1+i+\\sqrt3i-\\sqrt3i^{2}=-1+i+\\sqrt3i+\\sqrt3=(\\sqrt3-1)+(\\sqrt3+1)i\\).",
+              "work": "\\(\\dfrac{z}{w}=\\dfrac{(\\sqrt3-1)+(\\sqrt3+1)i}{2}\\)"
+            },
+            {
+              "explain": "Polar: moduli \\(\\dfrac{2}{\\sqrt2}=\\sqrt2\\); arguments \\(\\dfrac{2\\pi}{3}-\\dfrac\\pi4=\\dfrac{8\\pi-3\\pi}{12}=\\dfrac{5\\pi}{12}\\).",
+              "work": "\\(\\dfrac{z}{w}=\\sqrt2e^{\\frac{5\\pi i}{12}}\\)"
+            },
+            {
+              "explain": "Check the modulus of the Cartesian form: \\(\\dfrac{1}{2}\\sqrt{(\\sqrt3-1)^{2}+(\\sqrt3+1)^{2}}=\\dfrac{1}{2}\\sqrt{8}=\\sqrt2\\) ✓.",
+              "work": ""
+            },
+            {
+              "explain": "Why not the others: B swaps real and imaginary parts; C adds the arguments (\\(\\dfrac{2\\pi}{3}+\\dfrac\\pi4=\\dfrac{11\\pi}{12}\\)); D multiplies the moduli instead of dividing.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find \\(\\dfrac{z}{w}\\) in Cartesian and polar form",
+              "note": "Cartesian: multiply by conjugate; polar: \\(\\div r\\), \\(-\\arg\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Manly Selective Campus 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Manly Selective Campus",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "manly2020-e2-q12ciii",
+          "type": "mc",
+          "stem": "Given \\(\\dfrac{z}{w}=\\dfrac{(\\sqrt3-1)+(\\sqrt3+1)i}{2}=\\sqrt2e^{\\frac{5\\pi i}{12}}\\), hence find the exact values of \\(\\cos\\left(\\dfrac{5\\pi}{12}\\right)\\) and \\(\\sin\\left(\\dfrac{5\\pi}{12}\\right)\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\cos\\dfrac{5\\pi}{12}=\\dfrac{\\sqrt6-\\sqrt2}{4}\\),  \\(\\sin\\dfrac{5\\pi}{12}=\\dfrac{\\sqrt6+\\sqrt2}{4}\\)",
+            "\\(\\cos\\dfrac{5\\pi}{12}=\\dfrac{\\sqrt6+\\sqrt2}{4}\\),  \\(\\sin\\dfrac{5\\pi}{12}=\\dfrac{\\sqrt6-\\sqrt2}{4}\\)",
+            "\\(\\cos\\dfrac{5\\pi}{12}=\\dfrac{\\sqrt3-1}{2}\\),  \\(\\sin\\dfrac{5\\pi}{12}=\\dfrac{\\sqrt3+1}{2}\\)",
+            "\\(\\cos\\dfrac{5\\pi}{12}=\\dfrac{\\sqrt3-1}{4}\\),  \\(\\sin\\dfrac{5\\pi}{12}=\\dfrac{\\sqrt3+1}{4}\\)"
+          ],
+          "answer": 0,
+          "hint": "Equate the TWO forms of the same number: \\(\\sqrt2\\left(\\cos\\dfrac{5\\pi}{12}+i\\sin\\dfrac{5\\pi}{12}\\right)=\\dfrac{(\\sqrt3-1)+(\\sqrt3+1)i}{2}\\). Compare real parts and imaginary parts, then divide by \\(\\sqrt2\\) and rationalise.",
+          "steps": [
+            {
+              "explain": "Expand the polar form: \\(\\sqrt2e^{\\frac{5\\pi i}{12}}=\\sqrt2\\cos\\dfrac{5\\pi}{12}+i\\sqrt2\\sin\\dfrac{5\\pi}{12}\\). Equate to the Cartesian form.",
+              "work": "\\(\\begin{aligned}&\\sqrt2\\cos\\dfrac{5\\pi}{12}&=\\dfrac{\\sqrt3-1}{2}\\\\ &\\sqrt2\\sin\\dfrac{5\\pi}{12}&=\\dfrac{\\sqrt3+1}{2}\\end{aligned}\\)"
+            },
+            {
+              "explain": "Divide by \\(\\sqrt2\\) and rationalise (multiply top and bottom by \\(\\sqrt2\\)): \\(\\dfrac{\\sqrt3-1}{2\\sqrt2}=\\dfrac{\\sqrt2(\\sqrt3-1)}{4}=\\dfrac{\\sqrt6-\\sqrt2}{4}\\).",
+              "work": "\\(\\cos\\dfrac{5\\pi}{12}=\\dfrac{\\sqrt6-\\sqrt2}{4}\\approx0.259\\)"
+            },
+            {
+              "explain": "Same for the sine.",
+              "work": "\\(\\sin\\dfrac{5\\pi}{12}=\\dfrac{\\sqrt6+\\sqrt2}{4}\\approx0.966\\)"
+            },
+            {
+              "explain": "Check: \\(75^{\\circ}\\) is near \\(90^{\\circ}\\), so \\(\\sin\\) is close to 1 and \\(\\cos\\) is small ✓; and \\(\\cos^{2}+\\sin^{2}=\\dfrac{(8-2\\sqrt{12})+(8+2\\sqrt{12})}{16}=1\\) ✓.",
+              "work": ""
+            },
+            {
+              "explain": "Why not the others: B swaps cos and sin; C and D forget to divide by \\(\\sqrt2\\) (or divide by 2 only).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "hence find the exact values of",
+              "note": "Equate real/imag parts; divide by \\(\\sqrt2\\); rationalise."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Manly Selective Campus 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Manly Selective Campus",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "manly2020-e2-q14c",
+          "type": "mc",
+          "stem": "Find all the solutions for \\(\\theta\\) given \\(\\left|e^{2i\\theta}-1\\right|=\\sqrt3\\) satisfying \\(-\\pi<\\theta<\\pi\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\theta=\\pm\\dfrac\\pi3,\\ \\pm\\dfrac{2\\pi}{3}\\)",
+            "\\(\\theta=\\pm\\dfrac\\pi6,\\ \\pm\\dfrac{5\\pi}{6}\\)",
+            "\\(\\theta=\\dfrac\\pi3,\\ \\dfrac{2\\pi}{3}\\) only",
+            "\\(\\theta=\\pm\\dfrac\\pi3\\) only"
+          ],
+          "answer": 0,
+          "hint": "Write \\(e^{2i\\theta}-1=\\cos2\\theta-1+i\\sin2\\theta\\) and find its modulus, OR use \\(e^{i\\varphi}-1=e^{\\frac{i\\varphi}{2}}\\left(e^{\\frac{i\\varphi}{2}}-e^{-\\frac{i\\varphi}{2}}\\right)=2i\\sin\\dfrac\\varphi2\\,e^{\\frac{i\\varphi}{2}}\\), so \\(\\left|e^{i\\varphi}-1\\right|=2\\left|\\sin\\dfrac\\varphi2\\right|\\).",
+          "steps": [
+            {
+              "explain": "With \\(\\varphi=2\\theta\\): \\(\\left|e^{2i\\theta}-1\\right|=\\left|e^{i\\theta}\\right|\\left|e^{i\\theta}-e^{-i\\theta}\\right|=\\left|2i\\sin\\theta\\right|=2|\\sin\\theta|\\).",
+              "work": "\\(\\left|e^{2i\\theta}-1\\right|=2|\\sin\\theta|\\)"
+            },
+            {
+              "explain": "Set equal to \\(\\sqrt3\\).",
+              "work": "\\(2|\\sin\\theta|=\\sqrt3\\ \\Rightarrow\\ \\sin\\theta=\\pm\\dfrac{\\sqrt3}{2}\\)"
+            },
+            {
+              "explain": "\\(\\sin\\theta=+\\dfrac{\\sqrt3}{2}\\): \\(\\theta=\\dfrac\\pi3,\\ \\dfrac{2\\pi}{3}\\). \\(\\sin\\theta=-\\dfrac{\\sqrt3}{2}\\): \\(\\theta=-\\dfrac\\pi3,\\ -\\dfrac{2\\pi}{3}\\) (in \\(-\\pi<\\theta<\\pi\\)).",
+              "work": "\\(\\theta=\\pm\\dfrac\\pi3,\\ \\pm\\dfrac{2\\pi}{3}\\)"
+            },
+            {
+              "explain": "Check \\(\\theta=\\dfrac\\pi3\\): \\(e^{\\frac{2\\pi i}{3}}-1=-\\dfrac{3}{2}+\\dfrac{\\sqrt3}{2}i\\), modulus \\(\\sqrt{\\dfrac{9}{4}+\\dfrac{3}{4}}=\\sqrt3\\) ✓.",
+              "work": ""
+            },
+            {
+              "explain": "Why not the others: B uses \\(\\sin\\theta=\\pm\\dfrac{1}{2}\\); C and D miss some of the four solutions (the sign \\(\\pm\\) and the second quadrant).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find all the solutions for \\(\\theta\\) given",
+              "note": "\\(|e^{2i\\theta}-1|=2|\\sin\\theta|\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Manly Selective Campus 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Manly Selective Campus",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -5930,6 +6192,188 @@
           "meta": {
             "source": "James Ruse Agricultural High School 2020 Trial Higher School Certificate Examination Mathematics Extension 2",
             "school": "James Ruse Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "manly2020-e2-q15di",
+          "type": "mc",
+          "stem": "Let the complex numbers \\(W(w)\\), \\(Z(z)\\) and the origin form a triangle of area \\(1\\ \\text{u}^{2}\\) on the Argand diagram. \\(M\\) is the midpoint of \\(WZ\\). Let \\(\\angle ZMO=\\theta\\). Show that \\(|z+w||z-w|\\sin\\theta=4\\). Which working is correct?",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 280\" width=\"100%\" height=\"auto\" style=\"max-width:380px;display:block;margin:0 auto\"><line x1=\"10.0\" y1=\"240.0\" x2=\"370.0\" y2=\"240.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"272.0\" x2=\"70.0\" y2=\"10.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"370.0\" y1=\"240.0\" x2=\"363.9\" y2=\"236.5\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"370.0\" y1=\"240.0\" x2=\"363.9\" y2=\"243.5\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"10.0\" x2=\"66.5\" y2=\"16.1\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"10.0\" x2=\"73.5\" y2=\"16.1\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"368.0\" y=\"255.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><text x=\"78.0\" y=\"18.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">y</text><polygon points=\"70,240 150,60 340,170\" fill=\"none\" fill-opacity=\"0.45\" stroke=\"#475569\" stroke-width=\"2.4\"/><line x1=\"70.0\" y1=\"240.0\" x2=\"245.0\" y2=\"115.0\" stroke=\"#d97706\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><text x=\"215.0\" y=\"149.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#7c3aed\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">θ</text><circle cx=\"70.0\" cy=\"240.0\" r=\"4.6\" fill=\"#1e293b\"/><text x=\"60.0\" y=\"256.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">O</text><circle cx=\"150.0\" cy=\"60.0\" r=\"4.6\" fill=\"#1e293b\"/><text x=\"144.0\" y=\"52.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">W (w)</text><circle cx=\"340.0\" cy=\"170.0\" r=\"4.6\" fill=\"#1e293b\"/><text x=\"350.0\" y=\"180.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">Z (z)</text><circle cx=\"245.0\" cy=\"115.0\" r=\"4.6\" fill=\"#1e293b\"/><text x=\"257.0\" y=\"107.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">M</text></svg>"
+          },
+          "options": [
+            "\\(M=\\dfrac{z+w}{2}\\), so \\(OM=\\dfrac{|z+w|}{2}\\). \\(\\overrightarrow{WZ}=z-w\\), so \\(MZ=\\dfrac{|z-w|}{2}\\). The median \\(OM\\) splits \\(\\triangle OWZ\\) into two triangles of EQUAL area, so \\(\\text{Area}(OMZ)=\\dfrac{1}{2}\\). Also \\(\\text{Area}(OMZ)=\\dfrac{1}{2}\\cdot OM\\cdot MZ\\cdot\\sin\\theta=\\dfrac{|z+w||z-w|\\sin\\theta}{8}\\). Equate: \\(\\dfrac{|z+w||z-w|\\sin\\theta}{8}=\\dfrac{1}{2}\\), so \\(|z+w||z-w|\\sin\\theta=4\\).",
+            "\\(OM=|z+w|\\) and \\(MZ=|z-w|\\). Area of \\(\\triangle OMZ=\\dfrac{1}{2}\\cdot OM\\cdot MZ\\cdot\\sin\\theta=1\\), so \\(|z+w||z-w|\\sin\\theta=2\\).",
+            "\\(OM=\\dfrac{|z+w|}{2}\\) and \\(MZ=\\dfrac{|z-w|}{2}\\). Area of \\(\\triangle OMZ=\\dfrac{1}{2}\\cdot OM\\cdot MZ\\cdot\\sin\\theta=1\\) (the whole triangle's area), giving \\(|z+w||z-w|\\sin\\theta=8\\).",
+            "\\(M\\) is the midpoint, so \\(OM=MZ\\). Hence the area is \\(OM^{2}\\sin\\theta\\), and \\(|z+w||z-w|\\sin\\theta=4\\) follows."
+          ],
+          "answer": 0,
+          "hint": "Two facts: (1) \\(M=\\dfrac{z+w}{2}\\) (midpoint), so \\(OM=\\dfrac{1}{2}|z+w|\\); \\(MZ=\\dfrac{1}{2}|z-w|\\) (half of \\(WZ\\)). (2) A MEDIAN divides a triangle into two triangles of equal area. Use Area \\(=\\dfrac12ab\\sin C\\) on \\(\\triangle OMZ\\).",
+          "steps": [
+            {
+              "explain": "Midpoint: \\(M=\\dfrac{z+w}{2}\\). \\(OM=\\left|\\dfrac{z+w}{2}\\right|\\). Side \\(WZ=|z-w|\\) and \\(M\\) bisects it, so \\(MZ=\\dfrac{|z-w|}{2}\\).",
+              "work": "\\(OM=\\dfrac{|z+w|}{2},\\qquad MZ=\\dfrac{|z-w|}{2}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 280\" width=\"100%\" height=\"auto\" style=\"max-width:380px;display:block;margin:0 auto\"><line x1=\"10.0\" y1=\"240.0\" x2=\"370.0\" y2=\"240.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"272.0\" x2=\"70.0\" y2=\"10.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"370.0\" y1=\"240.0\" x2=\"363.9\" y2=\"236.5\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"370.0\" y1=\"240.0\" x2=\"363.9\" y2=\"243.5\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"10.0\" x2=\"66.5\" y2=\"16.1\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"10.0\" x2=\"73.5\" y2=\"16.1\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"368.0\" y=\"255.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><text x=\"78.0\" y=\"18.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">y</text><polygon points=\"70,240 150,60 340,170\" fill=\"#c4cae5\" fill-opacity=\"0.45\" stroke=\"#475569\" stroke-width=\"2.4\"/><line x1=\"70.0\" y1=\"240.0\" x2=\"245.0\" y2=\"115.0\" stroke=\"#d97706\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><line x1=\"245.0\" y1=\"115.0\" x2=\"340.0\" y2=\"170.0\" stroke=\"#047857\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"240.0\" x2=\"245.0\" y2=\"115.0\" stroke=\"#d97706\" stroke-width=\"4\" stroke-linecap=\"round\"/><polyline points=\"265.8,127.0 266.9,124.7 267.9,122.3 268.5,119.8 268.9,117.3 269.0,114.7 268.8,112.2 268.4,109.6 267.7,107.2 266.7,104.8 265.5,102.5 264.0,100.4 262.4,98.4 260.5,96.7 258.5,95.1 256.3,93.8 253.9,92.7 251.5,91.9 249.0,91.3 246.4,91.0 243.9,91.0 241.3,91.3 238.8,91.8 236.3,92.6 234.0,93.7 231.8,95.0 229.7,96.5 227.8,98.2 226.1,100.2 224.6,102.3 223.4,104.5 222.4,106.9 221.7,109.4 221.2,111.9 221.0,114.5 221.1,117.0 221.4,119.6 222.1,122.1 223.0,124.5 224.1,126.8 225.5,128.9\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"2.4\"/><text x=\"215.0\" y=\"149.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#7c3aed\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">θ</text><circle cx=\"70.0\" cy=\"240.0\" r=\"4.6\" fill=\"#1e293b\"/><text x=\"60.0\" y=\"256.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">O</text><circle cx=\"150.0\" cy=\"60.0\" r=\"4.6\" fill=\"#1e293b\"/><text x=\"144.0\" y=\"52.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">W (w)</text><circle cx=\"340.0\" cy=\"170.0\" r=\"4.6\" fill=\"#1e293b\"/><text x=\"350.0\" y=\"180.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">Z (z)</text><circle cx=\"245.0\" cy=\"115.0\" r=\"4.6\" fill=\"#1e293b\"/><text x=\"257.0\" y=\"107.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">M</text><text x=\"151.5\" y=\"167.5\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">OM = |z+w|/2</text><text x=\"296.5\" y=\"164.5\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">MZ = |z−w|/2</text></svg>"
+              }
+            },
+            {
+              "explain": "\\(\\triangle OWM\\) and \\(\\triangle OMZ\\) have the same height from \\(O\\) and equal bases \\(WM=MZ\\), so they have EQUAL area. Their sum is 1, so each is \\(\\dfrac{1}{2}\\).",
+              "work": "\\(\\text{Area}(\\triangle OMZ)=\\dfrac{1}{2}\\)"
+            },
+            {
+              "explain": "Area \\(=\\dfrac{1}{2}\\cdot OM\\cdot MZ\\cdot\\sin\\theta\\) (two sides and the INCLUDED angle \\(\\theta=\\angle ZMO\\)).",
+              "work": "\\(\\dfrac{1}{2}\\cdot\\dfrac{|z+w|}{2}\\cdot\\dfrac{|z-w|}{2}\\sin\\theta=\\dfrac{|z+w||z-w|\\sin\\theta}{8}\\)"
+            },
+            {
+              "explain": "Equate to \\(\\dfrac{1}{2}\\) and multiply by 8.",
+              "work": "\\(\\dfrac{|z+w||z-w|\\sin\\theta}{8}=\\dfrac{1}{2}\\ \\Rightarrow\\ |z+w||z-w|\\sin\\theta=4\\)"
+            },
+            {
+              "explain": "Why not the others: B forgets the halves in \\(OM\\) and \\(MZ\\) (and the \\(\\dfrac{1}{2}\\) area); C uses the whole area 1 for the small triangle; D claims \\(OM=MZ\\) (not true in general).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that \\(|z+w||z-w|\\sin\\theta=4\\)",
+              "note": "\\(OM=\\dfrac{|z+w|}{2}\\), \\(MZ=\\dfrac{|z-w|}{2}\\); \\(\\triangle OMZ\\) has area \\(\\dfrac{1}{2}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Manly Selective Campus 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Manly Selective Campus",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "manly2020-e2-q15dii",
+          "type": "mc",
+          "stem": "Prove that \\(|z|^{2}+|w|^{2}=\\dfrac{|z+w|^{2}+|z-w|^{2}}{2}\\). Which proof is correct?",
+          "difficulty": "hard",
+          "options": [
+            "Use \\(|u|^{2}=u\\bar u\\). \\(|z+w|^{2}=(z+w)(\\bar z+\\bar w)=|z|^{2}+z\\bar w+\\bar zw+|w|^{2}\\). \\(|z-w|^{2}=(z-w)(\\bar z-\\bar w)=|z|^{2}-z\\bar w-\\bar zw+|w|^{2}\\). Add: the cross terms \\(\\pm(z\\bar w+\\bar zw)\\) cancel, leaving \\(2|z|^{2}+2|w|^{2}\\). Divide by 2.",
+            "\\(|z+w|^{2}=|z|^{2}+|w|^{2}\\) and \\(|z-w|^{2}=|z|^{2}+|w|^{2}\\). Their average is \\(|z|^{2}+|w|^{2}\\).",
+            "\\(|z+w|^{2}=|z|^{2}+2z\\bar w+|w|^{2}\\) and \\(|z-w|^{2}=|z|^{2}-2z\\bar w+|w|^{2}\\); adding gives \\(2|z|^{2}+2|w|^{2}\\), which divided by 2 gives the result.",
+            "\\(|z+w|+|z-w|=|z|+|w|\\) (triangle equality), so squaring both sides gives the result."
+          ],
+          "answer": 0,
+          "hint": "Expand each squared modulus with \\(|u|^{2}=u\\,\\bar u\\) and the conjugate of a sum. The two expansions have the SAME squared terms and OPPOSITE cross terms; add them so the cross terms cancel.",
+          "steps": [
+            {
+              "explain": "\\(|z+w|^{2}=(z+w)\\overline{(z+w)}=(z+w)(\\bar z+\\bar w)\\).",
+              "work": "\\(|z+w|^{2}=z\\bar z+z\\bar w+w\\bar z+w\\bar w=|z|^{2}+z\\bar w+\\bar zw+|w|^{2}\\)"
+            },
+            {
+              "explain": "\\(|z-w|^{2}=(z-w)(\\bar z-\\bar w)\\): the cross terms have the OPPOSITE sign.",
+              "work": "\\(|z-w|^{2}=|z|^{2}-z\\bar w-\\bar zw+|w|^{2}\\)"
+            },
+            {
+              "explain": "Add the two results: \\(z\\bar w+\\bar zw\\) and \\(-z\\bar w-\\bar zw\\) cancel.",
+              "work": "\\(|z+w|^{2}+|z-w|^{2}=2|z|^{2}+2|w|^{2}\\)"
+            },
+            {
+              "explain": "Divide by 2.",
+              "work": "\\(|z|^{2}+|w|^{2}=\\dfrac{|z+w|^{2}+|z-w|^{2}}{2}\\)"
+            },
+            {
+              "explain": "(This is the PARALLELOGRAM LAW: sum of the squares of the diagonals \\(=2\\times\\) sum of the squares of two adjacent sides.)",
+              "work": ""
+            },
+            {
+              "explain": "Why not the others: B and C drop or mis-handle the cross terms (\\(z\\bar w+\\bar zw\\ne2z\\bar w\\) in general); D uses a false “triangle equality”.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Prove that \\(|z|^{2}+|w|^{2}=",
+              "note": "\\(|u|^2=u\\bar u\\); cross terms cancel when adding."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Manly Selective Campus 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Manly Selective Campus",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "manly2020-e2-q15diii",
+          "type": "mc",
+          "stem": "Let the complex numbers \\(W(w)\\), \\(Z(z)\\) and the origin form a triangle of area \\(1\\ \\text{u}^{2}\\) on the Argand diagram. \\(M\\) is the midpoint of \\(WZ\\). Let \\(\\angle ZMO=\\theta\\). If \\(\\theta=\\dfrac\\pi2\\), prove that \\(\\left(|z|-|w|\\right)\\left(|z|+|w|\\right)=0\\). Which proof is correct?",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 280\" width=\"100%\" height=\"auto\" style=\"max-width:380px;display:block;margin:0 auto\"><line x1=\"10.0\" y1=\"240.0\" x2=\"370.0\" y2=\"240.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"272.0\" x2=\"70.0\" y2=\"10.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"370.0\" y1=\"240.0\" x2=\"363.9\" y2=\"236.5\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"370.0\" y1=\"240.0\" x2=\"363.9\" y2=\"243.5\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"10.0\" x2=\"66.5\" y2=\"16.1\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"10.0\" x2=\"73.5\" y2=\"16.1\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"368.0\" y=\"255.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><text x=\"78.0\" y=\"18.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">y</text><polygon points=\"70,240 150,60 340,170\" fill=\"none\" fill-opacity=\"0.45\" stroke=\"#475569\" stroke-width=\"2.4\"/><line x1=\"70.0\" y1=\"240.0\" x2=\"245.0\" y2=\"115.0\" stroke=\"#d97706\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><text x=\"215.0\" y=\"149.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#7c3aed\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">θ</text><circle cx=\"70.0\" cy=\"240.0\" r=\"4.6\" fill=\"#1e293b\"/><text x=\"60.0\" y=\"256.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">O</text><circle cx=\"150.0\" cy=\"60.0\" r=\"4.6\" fill=\"#1e293b\"/><text x=\"144.0\" y=\"52.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">W (w)</text><circle cx=\"340.0\" cy=\"170.0\" r=\"4.6\" fill=\"#1e293b\"/><text x=\"350.0\" y=\"180.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">Z (z)</text><circle cx=\"245.0\" cy=\"115.0\" r=\"4.6\" fill=\"#1e293b\"/><text x=\"257.0\" y=\"107.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">M</text></svg>"
+          },
+          "options": [
+            "If \\(\\theta=\\dfrac\\pi2\\) then \\(OM\\perp MZ\\), so \\(OM\\) is the PERPENDICULAR BISECTOR of \\(WZ\\) (\\(M\\) is the midpoint). Right triangles \\(OMZ\\) and \\(OMW\\) have a common side \\(OM\\) and equal sides \\(MZ=MW\\), so by Pythagoras \\(|z|^{2}=OM^{2}+MZ^{2}=OM^{2}+MW^{2}=|w|^{2}\\). Hence \\(|z|^{2}-|w|^{2}=(|z|-|w|)(|z|+|w|)=0\\).",
+            "If \\(\\theta=\\dfrac\\pi2\\) then \\(\\sin\\theta=1\\), so \\(|z+w||z-w|=4\\). Hence \\(|z|=|w|\\).",
+            "If \\(\\theta=\\dfrac\\pi2\\), then \\(OW\\perp OZ\\), so \\(|z|^{2}+|w|^{2}=|z-w|^{2}\\), which gives \\(|z|=|w|\\).",
+            "If \\(\\theta=\\dfrac\\pi2\\) then \\(M\\) coincides with \\(O\\), so \\(|z|=|w|=0\\)."
+          ],
+          "answer": 0,
+          "hint": "\\(\\theta=\\dfrac\\pi2\\) means the median \\(OM\\) is PERPENDICULAR to \\(WZ\\). Then use Pythagoras in the TWO right triangles \\(OMZ\\) and \\(OMW\\) (they share \\(OM\\); \\(MZ=MW\\)). Finally \\(|z|^{2}-|w|^{2}=(|z|-|w|)(|z|+|w|)\\).",
+          "steps": [
+            {
+              "explain": "\\(\\angle ZMO=\\dfrac\\pi2\\): \\(OM\\perp WZ\\). Since \\(M\\) is also the MIDPOINT of \\(WZ\\), \\(MZ=MW\\).",
+              "work": "\\(OM\\perp WZ,\\qquad MZ=MW\\)"
+            },
+            {
+              "explain": "Pythagoras in \\(\\triangle OMZ\\) and in \\(\\triangle OMW\\) (right angle at \\(M\\)).",
+              "work": "\\(\\begin{aligned}&|z|^{2}=OZ^{2}&=OM^{2}+MZ^{2}\\\\ &|w|^{2}=OW^{2}&=OM^{2}+MW^{2}\\end{aligned}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 280\" width=\"100%\" height=\"auto\" style=\"max-width:380px;display:block;margin:0 auto\"><line x1=\"10.0\" y1=\"240.0\" x2=\"370.0\" y2=\"240.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"272.0\" x2=\"70.0\" y2=\"10.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"370.0\" y1=\"240.0\" x2=\"363.9\" y2=\"236.5\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"370.0\" y1=\"240.0\" x2=\"363.9\" y2=\"243.5\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"10.0\" x2=\"66.5\" y2=\"16.1\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"10.0\" x2=\"73.5\" y2=\"16.1\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"368.0\" y=\"255.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><text x=\"78.0\" y=\"18.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">y</text><polygon points=\"70,240 150,60 340,170\" fill=\"#c4cae5\" fill-opacity=\"0.45\" stroke=\"#475569\" stroke-width=\"2.4\"/><line x1=\"70.0\" y1=\"240.0\" x2=\"245.0\" y2=\"115.0\" stroke=\"#d97706\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><line x1=\"245.0\" y1=\"115.0\" x2=\"340.0\" y2=\"170.0\" stroke=\"#047857\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"240.0\" x2=\"245.0\" y2=\"115.0\" stroke=\"#d97706\" stroke-width=\"4\" stroke-linecap=\"round\"/><polyline points=\"265.8,127.0 266.9,124.7 267.9,122.3 268.5,119.8 268.9,117.3 269.0,114.7 268.8,112.2 268.4,109.6 267.7,107.2 266.7,104.8 265.5,102.5 264.0,100.4 262.4,98.4 260.5,96.7 258.5,95.1 256.3,93.8 253.9,92.7 251.5,91.9 249.0,91.3 246.4,91.0 243.9,91.0 241.3,91.3 238.8,91.8 236.3,92.6 234.0,93.7 231.8,95.0 229.7,96.5 227.8,98.2 226.1,100.2 224.6,102.3 223.4,104.5 222.4,106.9 221.7,109.4 221.2,111.9 221.0,114.5 221.1,117.0 221.4,119.6 222.1,122.1 223.0,124.5 224.1,126.8 225.5,128.9\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"2.4\"/><text x=\"215.0\" y=\"149.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#7c3aed\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">θ</text><rect x=\"239.0\" y=\"113.0\" width=\"14\" height=\"14\" fill=\"#fde68a\" fill-opacity=\"0.9\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"289.0\" y=\"149.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#7c3aed\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">θ = 90°</text><circle cx=\"70.0\" cy=\"240.0\" r=\"4.6\" fill=\"#1e293b\"/><text x=\"60.0\" y=\"256.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">O</text><circle cx=\"150.0\" cy=\"60.0\" r=\"4.6\" fill=\"#1e293b\"/><text x=\"144.0\" y=\"52.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">W (w)</text><circle cx=\"340.0\" cy=\"170.0\" r=\"4.6\" fill=\"#1e293b\"/><text x=\"350.0\" y=\"180.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">Z (z)</text><circle cx=\"245.0\" cy=\"115.0\" r=\"4.6\" fill=\"#1e293b\"/><text x=\"257.0\" y=\"107.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">M</text><text x=\"151.5\" y=\"167.5\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">OM = |z+w|/2</text><text x=\"296.5\" y=\"164.5\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">MZ = |z−w|/2</text></svg>"
+              }
+            },
+            {
+              "explain": "Since \\(MZ=MW\\), the right-hand sides are equal: \\(|z|^{2}=|w|^{2}\\).",
+              "work": "\\(|z|^{2}-|w|^{2}=0\\)"
+            },
+            {
+              "explain": "Factorise the difference of squares.",
+              "work": "\\((|z|-|w|)(|z|+|w|)=0\\)"
+            },
+            {
+              "explain": "(So the triangle is ISOSCELES with \\(OW=OZ\\): the median from the apex is perpendicular to the base.)",
+              "work": ""
+            },
+            {
+              "explain": "Why not the others: B does not conclude \\(|z|=|w|\\) (the product \\(|z+w||z-w|=4\\) is just a number); C uses the wrong right angle (at \\(O\\), not at \\(M\\)); D is nonsense (\\(M\\) is not at \\(O\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "If \\(\\theta=\\dfrac\\pi2\\), prove that",
+              "note": "\\(OM\\perp WZ\\), \\(MZ=MW\\): Pythagoras twice."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Manly Selective Campus 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Manly Selective Campus",
             "grade": "12",
             "origin": "teacher"
           }
@@ -8441,6 +8885,111 @@
           "meta": {
             "source": "Knox Grammar School 2021 Trial HSC Examination Mathematics Extension 2",
             "school": "Knox Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "manly2020-e2-q11di",
+          "type": "mc",
+          "stem": "A complex number \\(z\\) is defined by the equation \\(\\arg(z-2-i)=\\dfrac{3\\pi}{4}\\). Plot on an argand diagram all the points which satisfy this relationship. Which diagram is correct?",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 614 474\" width=\"100%\" height=\"auto\" style=\"max-width:620px;display:block;margin:0 auto\"><g transform=\"translate(3,3)\"><rect x=\"-3\" y=\"-3\" width=\"300\" height=\"230\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><clipPath id=\"r135\"><rect width=\"300\" height=\"230\"/></clipPath><g clip-path=\"url(#r135)\"><line x1=\"8.0\" y1=\"175.0\" x2=\"292.0\" y2=\"175.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"100.0\" y1=\"224.0\" x2=\"100.0\" y2=\"8.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"292.0\" y1=\"175.0\" x2=\"285.9\" y2=\"171.5\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"292.0\" y1=\"175.0\" x2=\"285.9\" y2=\"178.5\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"100.0\" y1=\"8.0\" x2=\"96.5\" y2=\"14.1\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"100.0\" y1=\"8.0\" x2=\"103.5\" y2=\"14.1\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"152.0\" y1=\"149.0\" x2=\"41.7\" y2=\"38.7\" stroke=\"#3b4ea8\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><circle cx=\"152.0\" cy=\"149.0\" r=\"4.6\" fill=\"#fff\" stroke=\"#3b4ea8\" stroke-width=\"2.4\"/><text x=\"162.0\" y=\"165.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">(2, 1)</text><text x=\"288.0\" y=\"189.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Re</text><text x=\"108.0\" y=\"16.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Im</text></g><text x=\"8\" y=\"22\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"19\" font-weight=\"800\" fill=\"#1e293b\">A</text></g><g transform=\"translate(317,3)\"><rect x=\"-3\" y=\"-3\" width=\"300\" height=\"230\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><clipPath id=\"r45\"><rect width=\"300\" height=\"230\"/></clipPath><g clip-path=\"url(#r45)\"><line x1=\"8.0\" y1=\"175.0\" x2=\"292.0\" y2=\"175.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"100.0\" y1=\"224.0\" x2=\"100.0\" y2=\"8.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"292.0\" y1=\"175.0\" x2=\"285.9\" y2=\"171.5\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"292.0\" y1=\"175.0\" x2=\"285.9\" y2=\"178.5\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"100.0\" y1=\"8.0\" x2=\"96.5\" y2=\"14.1\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"100.0\" y1=\"8.0\" x2=\"103.5\" y2=\"14.1\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"152.0\" y1=\"149.0\" x2=\"262.3\" y2=\"38.7\" stroke=\"#3b4ea8\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><circle cx=\"152.0\" cy=\"149.0\" r=\"4.6\" fill=\"#fff\" stroke=\"#3b4ea8\" stroke-width=\"2.4\"/><text x=\"162.0\" y=\"165.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">(2, 1)</text><text x=\"288.0\" y=\"189.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Re</text><text x=\"108.0\" y=\"16.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Im</text></g><text x=\"8\" y=\"22\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"19\" font-weight=\"800\" fill=\"#1e293b\">B</text></g><g transform=\"translate(3,247)\"><rect x=\"-3\" y=\"-3\" width=\"300\" height=\"230\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><clipPath id=\"r225\"><rect width=\"300\" height=\"230\"/></clipPath><g clip-path=\"url(#r225)\"><line x1=\"8.0\" y1=\"175.0\" x2=\"292.0\" y2=\"175.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"100.0\" y1=\"224.0\" x2=\"100.0\" y2=\"8.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"292.0\" y1=\"175.0\" x2=\"285.9\" y2=\"171.5\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"292.0\" y1=\"175.0\" x2=\"285.9\" y2=\"178.5\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"100.0\" y1=\"8.0\" x2=\"96.5\" y2=\"14.1\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"100.0\" y1=\"8.0\" x2=\"103.5\" y2=\"14.1\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"152.0\" y1=\"149.0\" x2=\"41.7\" y2=\"259.3\" stroke=\"#3b4ea8\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><circle cx=\"152.0\" cy=\"149.0\" r=\"4.6\" fill=\"#fff\" stroke=\"#3b4ea8\" stroke-width=\"2.4\"/><text x=\"162.0\" y=\"165.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">(2, 1)</text><text x=\"288.0\" y=\"189.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Re</text><text x=\"108.0\" y=\"16.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Im</text></g><text x=\"8\" y=\"22\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"19\" font-weight=\"800\" fill=\"#1e293b\">C</text></g><g transform=\"translate(317,247)\"><rect x=\"-3\" y=\"-3\" width=\"300\" height=\"230\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><clipPath id=\"r315\"><rect width=\"300\" height=\"230\"/></clipPath><g clip-path=\"url(#r315)\"><line x1=\"8.0\" y1=\"175.0\" x2=\"292.0\" y2=\"175.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"100.0\" y1=\"224.0\" x2=\"100.0\" y2=\"8.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"292.0\" y1=\"175.0\" x2=\"285.9\" y2=\"171.5\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"292.0\" y1=\"175.0\" x2=\"285.9\" y2=\"178.5\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"100.0\" y1=\"8.0\" x2=\"96.5\" y2=\"14.1\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"100.0\" y1=\"8.0\" x2=\"103.5\" y2=\"14.1\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"152.0\" y1=\"149.0\" x2=\"262.3\" y2=\"259.3\" stroke=\"#3b4ea8\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><circle cx=\"152.0\" cy=\"149.0\" r=\"4.6\" fill=\"#fff\" stroke=\"#3b4ea8\" stroke-width=\"2.4\"/><text x=\"162.0\" y=\"165.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">(2, 1)</text><text x=\"288.0\" y=\"189.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Re</text><text x=\"108.0\" y=\"16.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Im</text></g><text x=\"8\" y=\"22\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"19\" font-weight=\"800\" fill=\"#1e293b\">D</text></g></svg>"
+          },
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "answer": 0,
+          "hint": "\\(\\arg(z-w)=\\theta\\) is a RAY that STARTS at \\(w\\) (the start is excluded: open circle) and goes in the direction of angle \\(\\theta\\) from the positive real direction. Here \\(w=2+i\\), \\(\\theta=\\dfrac{3\\pi}{4}=135^{\\circ}\\): up and to the LEFT.",
+          "steps": [
+            {
+              "explain": "Starting point: \\(z-2-i=0\\) gives \\(z=2+i\\), the point \\((2,1)\\). The argument of 0 is undefined, so this point is EXCLUDED (open circle).",
+              "work": "\\(\\text{start: }(2,1)\\ \\text{(open circle)}\\)"
+            },
+            {
+              "explain": "Direction: \\(\\dfrac{3\\pi}{4}=135^{\\circ}\\) from the positive real axis (2nd-quadrant direction): the ray goes up-left, along \\(y-1=-(x-2)\\), i.e. \\(x+y=3\\) with \\(x<2\\).",
+              "work": "\\(y=3-x,\\quad x<2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 300\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><line x1=\"10.0\" y1=\"230.0\" x2=\"350.0\" y2=\"230.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"100.0\" y1=\"292.0\" x2=\"100.0\" y2=\"10.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"350.0\" y1=\"230.0\" x2=\"343.9\" y2=\"226.5\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"350.0\" y1=\"230.0\" x2=\"343.9\" y2=\"233.5\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"100.0\" y1=\"10.0\" x2=\"96.5\" y2=\"16.1\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"100.0\" y1=\"10.0\" x2=\"103.5\" y2=\"16.1\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"196.0\" y1=\"182.0\" x2=\"196.0\" y2=\"182.0\" stroke=\"#334155\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"196.0\" y1=\"182.0\" x2=\"349.6\" y2=\"182.0\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><line x1=\"196.0\" y1=\"182.0\" x2=\"32.8\" y2=\"18.8\" stroke=\"#3b4ea8\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><line x1=\"32.8\" y1=\"18.8\" x2=\"35.4\" y2=\"28.5\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"32.8\" y1=\"18.8\" x2=\"42.5\" y2=\"21.4\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linecap=\"round\"/><polyline points=\"236.0,182.0 235.9,179.6 235.7,177.3 235.4,175.0 234.9,172.7 234.3,170.4 233.5,168.2 232.6,166.0 231.6,163.8 230.5,161.8 229.3,159.8 227.9,157.9 226.4,156.0 224.8,154.3 223.2,152.6 221.4,151.1 219.5,149.6 217.6,148.3 215.5,147.1 213.5,146.0 211.3,145.0 209.1,144.2 206.9,143.5 204.6,142.9 202.3,142.5 199.9,142.2 197.6,142.0 195.2,142.0 192.9,142.1 190.5,142.4 188.2,142.8 185.9,143.3 183.6,144.0 181.4,144.8 179.3,145.7 177.1,146.7 175.1,147.9 173.1,149.2 171.2,150.6 169.4,152.1 167.7,153.7\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"2.6\"/><text x=\"230.0\" y=\"148.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#7c3aed\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">135°</text><circle cx=\"196.0\" cy=\"182.0\" r=\"5\" fill=\"#fff\" stroke=\"#3b4ea8\" stroke-width=\"2.6\"/><text x=\"206.0\" y=\"200.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">start: 2 + i (open)</text><text x=\"105.6\" y=\"73.2\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">up and to the LEFT</text></svg>"
+              }
+            },
+            {
+              "explain": "Why not the others: B points at \\(45^{\\circ}\\) (up-right); C points at \\(225^{\\circ}\\) (down-left); D points at \\(315^{\\circ}\\) (down-right).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Plot on an argand diagram all the points which satisfy this relationship",
+              "note": "Ray from \\(2+i\\) (open) at \\(135^\\circ\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Manly Selective Campus 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Manly Selective Campus",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "manly2020-e2-q11dii",
+          "type": "mc",
+          "stem": "A complex number \\(z\\) is defined by the equation \\(\\arg(z-2-i)=\\dfrac{3\\pi}{4}\\). What is the minimum value that \\(|z|\\) can take?",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{3\\sqrt2}{2}\\)",
+            "\\(\\sqrt5\\)",
+            "\\(3\\)",
+            "\\(\\dfrac{3}{2}\\)"
+          ],
+          "answer": 0,
+          "hint": "\\(|z|\\) is the distance from the ORIGIN to a point of the ray. The shortest distance from the origin to the LINE \\(x+y=3\\) is along the perpendicular. Check the foot of the perpendicular is actually ON the ray (not beyond the start).",
+          "steps": [
+            {
+              "explain": "The ray lies on \\(x+y=3\\) (\\(x<2\\)). Perpendicular distance from the origin to \\(x+y-3=0\\): \\(\\dfrac{|0+0-3|}{\\sqrt{1^{2}+1^{2}}}\\).",
+              "work": "\\(d=\\dfrac{3}{\\sqrt2}=\\dfrac{3\\sqrt2}{2}\\approx2.12\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 300\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><line x1=\"10.0\" y1=\"230.0\" x2=\"350.0\" y2=\"230.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"100.0\" y1=\"292.0\" x2=\"100.0\" y2=\"10.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"350.0\" y1=\"230.0\" x2=\"343.9\" y2=\"226.5\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"350.0\" y1=\"230.0\" x2=\"343.9\" y2=\"233.5\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"100.0\" y1=\"10.0\" x2=\"96.5\" y2=\"16.1\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"100.0\" y1=\"10.0\" x2=\"103.5\" y2=\"16.1\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"196.0\" y1=\"182.0\" x2=\"23.2\" y2=\"9.2\" stroke=\"#3b4ea8\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><line x1=\"23.2\" y1=\"9.2\" x2=\"25.8\" y2=\"18.9\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"23.2\" y1=\"9.2\" x2=\"32.9\" y2=\"11.8\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linecap=\"round\"/><circle cx=\"196.0\" cy=\"182.0\" r=\"5\" fill=\"#fff\" stroke=\"#3b4ea8\" stroke-width=\"2.6\"/><text x=\"206.0\" y=\"198.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2 + i</text><line x1=\"100.0\" y1=\"230.0\" x2=\"172.0\" y2=\"158.0\" stroke=\"#dc2626\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><circle cx=\"172.0\" cy=\"158.0\" r=\"5\" fill=\"#dc2626\"/><text x=\"180.0\" y=\"150.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">(1.5, 1.5)</text><text x=\"121.6\" y=\"180.8\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">|z|min = 3/√2</text><line x1=\"52.0\" y1=\"38.0\" x2=\"244.0\" y2=\"230.0\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><text x=\"248.0\" y=\"224.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#64748b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">x + y = 3</text></svg>"
+              }
+            },
+            {
+              "explain": "Foot of the perpendicular: by symmetry on \\(y=x\\): \\((1.5,1.5)\\). Is it on the ray? \\(x=1.5<2\\) ✓ (the ray has \\(x<2\\)).",
+              "work": "\\(\\text{foot}=(1.5,1.5)\\in\\text{ray}\\)"
+            },
+            {
+              "explain": "Algebra check: points of the ray \\((2-s,\\ 1+s)\\), \\(s>0\\): \\(|z|^{2}=(2-s)^{2}+(1+s)^{2}=2s^{2}-2s+5\\). Minimum at \\(s=\\dfrac{1}{2}\\): \\(2\\cdot\\dfrac{1}{4}-1+5=4.5\\), so \\(|z|=\\sqrt{4.5}=\\dfrac{3}{\\sqrt2}\\) ✓.",
+              "work": "\\(|z|_{\\min}=\\dfrac{3\\sqrt2}{2}\\)"
+            },
+            {
+              "explain": "Why not the others: \\(\\sqrt5\\) is the distance to the START \\((2,1)\\) (the ray’s starting point, not the closest); 3 and \\(\\dfrac{3}{2}\\) are slips.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "What is the minimum value that \\(|z|\\) can take",
+              "note": "Perpendicular distance to \\(x+y=3\\): \\(\\dfrac{3}{\\sqrt2}\\); foot on the ray."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Manly Selective Campus 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Manly Selective Campus",
             "grade": "12",
             "origin": "teacher"
           }

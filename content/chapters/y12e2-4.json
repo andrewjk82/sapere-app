@@ -1674,6 +1674,110 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "manly2020-e2-q13a",
+          "type": "mc",
+          "stem": "The point \\(B\\begin{pmatrix}x\\\\ y\\\\ z\\end{pmatrix}\\) is on the interval \\(AC\\) and is twice as far from \\(A\\begin{pmatrix}1\\\\ 2\\\\ 2\\end{pmatrix}\\) as it is from \\(C\\begin{pmatrix}4\\\\-1\\\\ 5\\end{pmatrix}\\). Use vectors to find the coordinates of \\(B\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\((3,0,4)\\)",
+            "\\((2,1,3)\\)",
+            "\\(\\left(\\dfrac{5}{2},\\dfrac{1}{2},\\dfrac{7}{2}\\right)\\)",
+            "\\((6,-4,8)\\)"
+          ],
+          "answer": 0,
+          "hint": "\\(B\\) is twice as far from \\(A\\) as from \\(C\\): \\(AB:BC=2:1\\), so \\(AB=\\dfrac23AC\\). Then \\(\\overrightarrow{OB}=\\overrightarrow{OA}+\\dfrac{2}{3}\\overrightarrow{AC}\\).",
+          "steps": [
+            {
+              "explain": "\\(AB=2\\cdot BC\\) and \\(B\\) is on \\(AC\\), so \\(AB+BC=AC\\) gives \\(AB=\\dfrac23AC\\) (2 parts of 3).",
+              "work": "\\(\\overrightarrow{AB}=\\dfrac{2}{3}\\overrightarrow{AC}\\)"
+            },
+            {
+              "explain": "\\(\\overrightarrow{AC}=C-A\\).",
+              "work": "\\(\\overrightarrow{AC}=\\begin{pmatrix}4-1\\\\-1-2\\\\ 5-2\\end{pmatrix}=\\begin{pmatrix}3\\\\-3\\\\ 3\\end{pmatrix}\\)"
+            },
+            {
+              "explain": "\\(\\overrightarrow{OB}=\\overrightarrow{OA}+\\dfrac{2}{3}\\overrightarrow{AC}\\).",
+              "work": "\\(\\overrightarrow{OB}=\\begin{pmatrix}1\\\\ 2\\\\ 2\\end{pmatrix}+\\dfrac{2}{3}\\begin{pmatrix}3\\\\-3\\\\ 3\\end{pmatrix}=\\begin{pmatrix}1+2\\\\ 2-2\\\\ 2+2\\end{pmatrix}=\\begin{pmatrix}3\\\\ 0\\\\ 4\\end{pmatrix}\\)"
+            },
+            {
+              "explain": "Check: \\(AB=\\left|(2,-2,2)\\right|=\\sqrt{12}\\) and \\(BC=\\left|(1,-1,1)\\right|=\\sqrt3\\); \\(\\sqrt{12}=2\\sqrt3\\), so \\(AB=2\\,BC\\) ✓.",
+              "work": ""
+            },
+            {
+              "explain": "Why not the others: B is the point \\(\\dfrac{1}{3}\\) of the way (ratio \\(1:2\\)); C is the midpoint; D is outside the interval.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Use vectors to find the coordinates of \\(B\\)",
+              "note": "\\(AB:BC=2:1\\Rightarrow\\overrightarrow{AB}=\\dfrac{2}{3}\\overrightarrow{AC}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Manly Selective Campus 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Manly Selective Campus",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "manly2020-e2-q16a",
+          "type": "mc",
+          "stem": "Write the Cartesian equation \\(3x-4y=11\\) as a vector equation.",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\underset{\\sim}{r}=\\begin{pmatrix}1\\\\-2\\end{pmatrix}+\\lambda\\begin{pmatrix}4\\\\ 3\\end{pmatrix}\\)",
+            "\\(\\underset{\\sim}{r}=\\begin{pmatrix}1\\\\-2\\end{pmatrix}+\\lambda\\begin{pmatrix}3\\\\-4\\end{pmatrix}\\)",
+            "\\(\\underset{\\sim}{r}=\\begin{pmatrix}11\\\\ 0\\end{pmatrix}+\\lambda\\begin{pmatrix}4\\\\ 3\\end{pmatrix}\\)",
+            "\\(\\underset{\\sim}{r}=\\begin{pmatrix}3\\\\-4\\end{pmatrix}+\\lambda\\begin{pmatrix}1\\\\-2\\end{pmatrix}\\)"
+          ],
+          "answer": 0,
+          "hint": "A line \\(\\underset{\\sim}{r}=\\underset{\\sim}{a}+\\lambda\\underset{\\sim}{d}\\) needs a POINT on the line and a DIRECTION vector. A point: choose \\(x\\), solve for \\(y\\) (it must satisfy \\(3x-4y=11\\)). Direction: the line has gradient \\(\\dfrac{3}{4}\\), so the direction is \\((4,3)\\) (NOT the coefficients \\((3,-4)\\): those form the NORMAL).",
+          "steps": [
+            {
+              "explain": "Find a point: \\(x=1\\): \\(3-4y=11\\Rightarrow y=-2\\). The point \\((1,-2)\\) is on the line (check: \\(3(1)-4(-2)=11\\) ✓).",
+              "work": "\\(\\underset{\\sim}{a}=\\begin{pmatrix}1\\\\-2\\end{pmatrix}\\)"
+            },
+            {
+              "explain": "Gradient: \\(3x-4y=11\\Rightarrow y=\\dfrac34x-\\dfrac{11}{4}\\), gradient \\(\\dfrac{3}{4}\\): move 4 across and 3 up, so the direction vector is \\((4,3)\\).",
+              "work": "\\(\\underset{\\sim}{d}=\\begin{pmatrix}4\\\\ 3\\end{pmatrix}\\)"
+            },
+            {
+              "explain": "Check that \\(\\underset{\\sim}{d}\\) is perpendicular to the normal \\((3,-4)\\): \\(3\\cdot4+(-4)\\cdot3=0\\) ✓.",
+              "work": "\\(\\underset{\\sim}{r}=\\begin{pmatrix}1\\\\-2\\end{pmatrix}+\\lambda\\begin{pmatrix}4\\\\ 3\\end{pmatrix}\\)"
+            },
+            {
+              "explain": "Why not the others: B uses the NORMAL vector \\((3,-4)\\) as the direction; C uses \\((11,0)\\), which is NOT on the line (\\(33\\ne11\\)); D has a wrong point and direction.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Write the Cartesian equation \\(3x-4y=11\\) as a vector equation",
+              "note": "Point on the line + direction \\((4,3)\\) (gradient \\(\\dfrac{3}{4}\\))."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Manly Selective Campus 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Manly Selective Campus",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -2738,6 +2842,60 @@
           "meta": {
             "source": "Killara High School 2020 Trial HSC Examination Mathematics Extension 2",
             "school": "Killara High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "manly2020-e2-q15a",
+          "type": "mc",
+          "stem": "The line \\(l_{1}\\) has the equation \\(\\underset{\\sim}{r}=\\begin{pmatrix}1\\\\ 0\\\\-1\\end{pmatrix}+\\lambda\\begin{pmatrix}1\\\\ 1\\\\ 0\\end{pmatrix}\\). The line \\(l_{2}\\) has the equation \\(\\underset{\\sim}{r}=\\begin{pmatrix}1\\\\ 3\\\\ 6\\end{pmatrix}+\\mu\\begin{pmatrix}2\\\\ 1\\\\-1\\end{pmatrix}\\). Show that \\(l_{1}\\) and \\(l_{2}\\) do not meet. Which working is correct?",
+          "difficulty": "medium",
+          "options": [
+            "Equate components: \\(1+\\lambda=1+2\\mu\\) (1), \\(\\lambda=3+\\mu\\) (2), \\(-1=6-\\mu\\) (3). From (3): \\(\\mu=7\\). From (2): \\(\\lambda=10\\). Check (1): LHS \\(=11\\), RHS \\(=15\\): NOT equal. So no common point. (The directions \\((1,1,0)\\) and \\((2,1,-1)\\) are not parallel, so the lines are SKEW.)",
+            "The direction vectors \\((1,1,0)\\) and \\((2,1,-1)\\) are not parallel, so the lines do not meet.",
+            "Equate components: \\(\\lambda=2\\mu\\) (1), \\(\\lambda=3+\\mu\\) (2). Solving gives \\(\\mu=3\\), \\(\\lambda=6\\), so the lines meet at \\(l_{1}(6)=(7,6,-1)\\).",
+            "Equate components: \\(1+\\lambda=1+2\\mu\\), \\(\\lambda=3+\\mu\\), \\(-1=6-\\mu\\). From the first two \\(\\mu=3\\), \\(\\lambda=6\\); the third equation is not needed, so the lines meet."
+          ],
+          "answer": 0,
+          "hint": "Lines meet only if ONE pair \\((\\lambda,\\mu)\\) satisfies ALL THREE component equations. Solve the two simplest equations first, then SUBSTITUTE in the third: if it fails, the lines do not meet. (Non-parallel directions alone are not enough.)",
+          "steps": [
+            {
+              "explain": "Equate the \\(x\\)-, \\(y\\)-, \\(z\\)-components.",
+              "work": "\\(\\begin{aligned}&1+\\lambda&=1+2\\mu\\quad(1)\\\\ &0+\\lambda&=3+\\mu\\quad(2)\\\\ &-1&=6-\\mu\\quad(3)\\end{aligned}\\)"
+            },
+            {
+              "explain": "Equation (3) involves only \\(\\mu\\): \\(\\mu=7\\). Then (2): \\(\\lambda=3+7=10\\).",
+              "work": "\\(\\mu=7,\\qquad\\lambda=10\\)"
+            },
+            {
+              "explain": "Test (1): LHS \\(=1+10=11\\); RHS \\(=1+2(7)=15\\). \\(11\\ne15\\): the equations are INCONSISTENT.",
+              "work": "\\(11\\ne15\\)"
+            },
+            {
+              "explain": "No pair \\((\\lambda,\\mu)\\) satisfies all three, so the lines do not meet. The direction vectors \\((1,1,0)\\) and \\((2,1,-1)\\) are not parallel, so the lines are not parallel either: they are SKEW.",
+              "work": ""
+            },
+            {
+              "explain": "Why not the others: B skips the intersection test (non-parallel lines in 3D can still miss); C and D solve only two equations and ignore the third (or use a wrong first equation).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that \\(l_{1}\\) and \\(l_{2}\\) do not meet",
+              "note": "Solve (3), (2); TEST (1): \\(11\\ne15\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Manly Selective Campus 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Manly Selective Campus",
             "grade": "12",
             "origin": "teacher"
           }
@@ -4109,6 +4267,114 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "manly2020-e2-q16bi",
+          "type": "mc",
+          "stem": "The point \\(\\underset{\\sim}{v}\\) is a point on the surface of a sphere with centre \\(P(1,3,1)\\) and radius 14 units. Write down the vector equation of the sphere.",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\left|\\underset{\\sim}{v}-\\begin{pmatrix}1\\\\ 3\\\\ 1\\end{pmatrix}\\right|=14\\)",
+            "\\(\\left|\\underset{\\sim}{v}+\\begin{pmatrix}1\\\\ 3\\\\ 1\\end{pmatrix}\\right|=14\\)",
+            "\\(\\underset{\\sim}{v}\\cdot\\begin{pmatrix}1\\\\ 3\\\\ 1\\end{pmatrix}=14\\)",
+            "\\(|\\underset{\\sim}{v}|-\\left|\\begin{pmatrix}1\\\\ 3\\\\ 1\\end{pmatrix}\\right|=14\\)"
+          ],
+          "answer": 0,
+          "hint": "A sphere with centre \\(\\underset{\\sim}{c}\\) and radius \\(r\\) is the set of points \\(\\underset{\\sim}{v}\\) whose DISTANCE from \\(\\underset{\\sim}{c}\\) is \\(r\\): \\(|\\underset{\\sim}{v}-\\underset{\\sim}{c}|=r\\).",
+          "steps": [
+            {
+              "explain": "The distance from the point \\(\\underset{\\sim}{v}\\) to the centre \\(\\underset{\\sim}{c}=\\begin{pmatrix}1\\\\ 3\\\\ 1\\end{pmatrix}\\) is \\(|\\underset{\\sim}{v}-\\underset{\\sim}{c}|\\) (vector from the centre to the point).",
+              "work": "\\(|\\underset{\\sim}{v}-\\underset{\\sim}{c}|=14\\)"
+            },
+            {
+              "explain": "Substitute the centre.",
+              "work": "\\(\\left|\\underset{\\sim}{v}-\\begin{pmatrix}1\\\\ 3\\\\ 1\\end{pmatrix}\\right|=14\\)"
+            },
+            {
+              "explain": "In Cartesian form: \\((x-1)^{2}+(y-3)^{2}+(z-1)^{2}=14^{2}\\). (The paper’s marking solution uses radius 14 as printed.)",
+              "work": ""
+            },
+            {
+              "explain": "Why not the others: B has a plus sign (the centre would be \\((-1,-3,-1)\\)); C is a PLANE (dot product constant); D is not the distance (it subtracts lengths).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Write down the vector equation of the sphere",
+              "note": "\\(|v-c|=r\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Manly Selective Campus 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Manly Selective Campus",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "manly2020-e2-q16bii",
+          "type": "mc",
+          "stem": "The point \\(Q(2,1,4)\\) lies on the surface of the sphere with centre \\(P(1,3,1)\\). Find the Cartesian equation of the tangent to the sphere at \\(Q\\). (You may assume that the radius drawn to the point of contact of the tangent is perpendicular to the tangent.)",
+          "difficulty": "hard",
+          "options": [
+            "\\(x-2y+3z=12\\)",
+            "\\(x-2y+3z=0\\)",
+            "\\(x+2y-3z=-8\\)",
+            "\\(2x+y+4z=21\\)"
+          ],
+          "answer": 0,
+          "hint": "The tangent PLANE at \\(Q\\) is perpendicular to the RADIUS \\(\\overrightarrow{PQ}\\). So \\(\\overrightarrow{PQ}\\) is the NORMAL of the plane, and every point \\(X\\) of the plane satisfies \\(\\overrightarrow{QX}\\cdot\\overrightarrow{PQ}=0\\).",
+          "steps": [
+            {
+              "explain": "Radius vector (end \\(-\\) start): \\(\\overrightarrow{PQ}=Q-P\\).",
+              "work": "\\(\\overrightarrow{PQ}=\\begin{pmatrix}2-1\\\\ 1-3\\\\ 4-1\\end{pmatrix}=\\begin{pmatrix}1\\\\-2\\\\ 3\\end{pmatrix}\\)"
+            },
+            {
+              "explain": "For a point \\(X(x,y,z)\\) on the tangent plane, \\(\\overrightarrow{QX}\\) lies in the plane, so it is perpendicular to \\(\\overrightarrow{PQ}\\): dot product 0. \\(\\overrightarrow{QX}=(x-2,\\ y-1,\\ z-4)\\).",
+              "work": "\\(1(x-2)-2(y-1)+3(z-4)=0\\)"
+            },
+            {
+              "explain": "Expand: \\(x-2-2y+2+3z-12=0\\).",
+              "work": "\\(x-2y+3z-12=0\\)"
+            },
+            {
+              "explain": "Cartesian equation.",
+              "work": "\\(x-2y+3z=12\\)"
+            },
+            {
+              "explain": "Check: \\(Q\\) satisfies it: \\(2-2+12=12\\) ✓ (the tangent plane passes through \\(Q\\)).",
+              "work": ""
+            },
+            {
+              "explain": "Why not the others: B has the constant 0 (the plane would pass through the origin, not \\(Q\\)); C has wrong signs; D uses the position vector of \\(Q\\) as the normal (not the radius from the centre \\(P\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the Cartesian equation of the tangent to the sphere at \\(Q\\)",
+              "note": "Normal \\(=\\overrightarrow{PQ}=(1,-2,3)\\); \\(\\overrightarrow{QX}\\cdot\\overrightarrow{PQ}=0\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Manly Selective Campus 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Manly Selective Campus",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -4574,6 +4840,62 @@
           "meta": {
             "source": "Killara High School 2020 Trial HSC Examination Mathematics Extension 2",
             "school": "Killara High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "manly2020-e2-q10",
+          "type": "mc",
+          "stem": "Which of the following graphs is correct for the following parametric function? \\(x=-|2\\cos t|\\), \\(y=|2\\sin t|\\)",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 614 474\" width=\"100%\" height=\"auto\" style=\"max-width:620px;display:block;margin:0 auto\"><g transform=\"translate(3,3)\"><rect x=\"-3\" y=\"-3\" width=\"300\" height=\"230\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><clipPath id=\"qa\"><rect width=\"300\" height=\"230\"/></clipPath><g clip-path=\"url(#qa)\"><line x1=\"8.0\" y1=\"115.0\" x2=\"292.0\" y2=\"115.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"224.0\" x2=\"150.0\" y2=\"8.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"292.0\" y1=\"115.0\" x2=\"285.9\" y2=\"111.5\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"292.0\" y1=\"115.0\" x2=\"285.9\" y2=\"118.5\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"8.0\" x2=\"146.5\" y2=\"14.1\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"8.0\" x2=\"153.5\" y2=\"14.1\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><polyline points=\"150.0,35.0 145.8,35.1 141.6,35.4 137.5,36.0 133.4,36.7 129.3,37.7 125.3,38.9 121.3,40.3 117.5,41.9 113.7,43.7 110.0,45.7 106.4,47.9 103.0,50.3 99.7,52.8 96.5,55.5 93.4,58.4 90.5,61.5 87.8,64.7 85.3,68.0 82.9,71.4 80.7,75.0 78.7,78.7 76.9,82.5 75.3,86.3 73.9,90.3 72.7,94.3 71.7,98.4 71.0,102.5 70.4,106.6 70.1,110.8 70.0,115.0 70.1,119.2 70.4,123.4 71.0,127.5 71.7,131.6 72.7,135.7 73.9,139.7 75.3,143.7 76.9,147.5 78.7,151.3 80.7,155.0 82.9,158.6 85.3,162.0 87.8,165.3 90.5,168.5 93.4,171.6 96.5,174.5 99.7,177.2 103.0,179.7 106.4,182.1 110.0,184.3 113.7,186.3 117.5,188.1 121.3,189.7 125.3,191.1 129.3,192.3 133.4,193.3 137.5,194.0 141.6,194.6 145.8,194.9 150.0,195.0\" fill=\"none\" stroke=\"#3b4ea8\" stroke-width=\"3.4\"/><text x=\"70.0\" y=\"129.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">−2</text><text x=\"144.0\" y=\"199.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">−2</text><text x=\"230.0\" y=\"129.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><text x=\"144.0\" y=\"39.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><text x=\"288.0\" y=\"109.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><text x=\"158.0\" y=\"16.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">y</text></g><text x=\"8\" y=\"22\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"19\" font-weight=\"800\" fill=\"#1e293b\">A</text></g><g transform=\"translate(317,3)\"><rect x=\"-3\" y=\"-3\" width=\"300\" height=\"230\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><clipPath id=\"qb\"><rect width=\"300\" height=\"230\"/></clipPath><g clip-path=\"url(#qb)\"><line x1=\"8.0\" y1=\"115.0\" x2=\"292.0\" y2=\"115.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"224.0\" x2=\"150.0\" y2=\"8.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"292.0\" y1=\"115.0\" x2=\"285.9\" y2=\"111.5\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"292.0\" y1=\"115.0\" x2=\"285.9\" y2=\"118.5\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"8.0\" x2=\"146.5\" y2=\"14.1\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"8.0\" x2=\"153.5\" y2=\"14.1\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><polyline points=\"230.0,115.0 229.9,110.8 229.6,106.6 229.0,102.5 228.3,98.4 227.3,94.3 226.1,90.3 224.7,86.3 223.1,82.5 221.3,78.7 219.3,75.0 217.1,71.4 214.7,68.0 212.2,64.7 209.5,61.5 206.6,58.4 203.5,55.5 200.3,52.8 197.0,50.3 193.6,47.9 190.0,45.7 186.3,43.7 182.5,41.9 178.7,40.3 174.7,38.9 170.7,37.7 166.6,36.7 162.5,36.0 158.4,35.4 154.2,35.1 150.0,35.0 145.8,35.1 141.6,35.4 137.5,36.0 133.4,36.7 129.3,37.7 125.3,38.9 121.3,40.3 117.5,41.9 113.7,43.7 110.0,45.7 106.4,47.9 103.0,50.3 99.7,52.8 96.5,55.5 93.4,58.4 90.5,61.5 87.8,64.7 85.3,68.0 82.9,71.4 80.7,75.0 78.7,78.7 76.9,82.5 75.3,86.3 73.9,90.3 72.7,94.3 71.7,98.4 71.0,102.5 70.4,106.6 70.1,110.8 70.0,115.0\" fill=\"none\" stroke=\"#3b4ea8\" stroke-width=\"3.4\"/><text x=\"70.0\" y=\"129.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">−2</text><text x=\"144.0\" y=\"199.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">−2</text><text x=\"230.0\" y=\"129.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><text x=\"144.0\" y=\"39.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><text x=\"288.0\" y=\"109.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><text x=\"158.0\" y=\"16.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">y</text></g><text x=\"8\" y=\"22\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"19\" font-weight=\"800\" fill=\"#1e293b\">B</text></g><g transform=\"translate(3,247)\"><rect x=\"-3\" y=\"-3\" width=\"300\" height=\"230\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><clipPath id=\"qc\"><rect width=\"300\" height=\"230\"/></clipPath><g clip-path=\"url(#qc)\"><line x1=\"8.0\" y1=\"115.0\" x2=\"292.0\" y2=\"115.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"224.0\" x2=\"150.0\" y2=\"8.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"292.0\" y1=\"115.0\" x2=\"285.9\" y2=\"111.5\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"292.0\" y1=\"115.0\" x2=\"285.9\" y2=\"118.5\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"8.0\" x2=\"146.5\" y2=\"14.1\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"8.0\" x2=\"153.5\" y2=\"14.1\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><polyline points=\"150.0,35.0 147.9,35.0 145.8,35.1 143.7,35.2 141.6,35.4 139.6,35.7 137.5,36.0 135.4,36.3 133.4,36.7 131.3,37.2 129.3,37.7 127.3,38.3 125.3,38.9 123.3,39.6 121.3,40.3 119.4,41.1 117.5,41.9 115.6,42.8 113.7,43.7 111.8,44.7 110.0,45.7 108.2,46.8 106.4,47.9 104.7,49.1 103.0,50.3 101.3,51.5 99.7,52.8 98.0,54.2 96.5,55.5 94.9,57.0 93.4,58.4 92.0,59.9 90.5,61.5 89.2,63.0 87.8,64.7 86.5,66.3 85.3,68.0 84.1,69.7 82.9,71.4 81.8,73.2 80.7,75.0 79.7,76.8 78.7,78.7 77.8,80.6 76.9,82.5 76.1,84.4 75.3,86.3 74.6,88.3 73.9,90.3 73.3,92.3 72.7,94.3 72.2,96.3 71.7,98.4 71.3,100.4 71.0,102.5 70.7,104.6 70.4,106.6 70.2,108.7 70.1,110.8 70.0,112.9 70.0,115.0\" fill=\"none\" stroke=\"#3b4ea8\" stroke-width=\"3.4\"/><text x=\"70.0\" y=\"129.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">−2</text><text x=\"144.0\" y=\"199.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">−2</text><text x=\"230.0\" y=\"129.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><text x=\"144.0\" y=\"39.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><text x=\"288.0\" y=\"109.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><text x=\"158.0\" y=\"16.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">y</text></g><text x=\"8\" y=\"22\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"19\" font-weight=\"800\" fill=\"#1e293b\">C</text></g><g transform=\"translate(317,247)\"><rect x=\"-3\" y=\"-3\" width=\"300\" height=\"230\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><clipPath id=\"qd\"><rect width=\"300\" height=\"230\"/></clipPath><g clip-path=\"url(#qd)\"><line x1=\"8.0\" y1=\"115.0\" x2=\"292.0\" y2=\"115.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"224.0\" x2=\"150.0\" y2=\"8.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"292.0\" y1=\"115.0\" x2=\"285.9\" y2=\"111.5\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"292.0\" y1=\"115.0\" x2=\"285.9\" y2=\"118.5\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"8.0\" x2=\"146.5\" y2=\"14.1\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"8.0\" x2=\"153.5\" y2=\"14.1\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><polyline points=\"230.0,115.0 230.0,112.9 229.9,110.8 229.8,108.7 229.6,106.6 229.3,104.6 229.0,102.5 228.7,100.4 228.3,98.4 227.8,96.3 227.3,94.3 226.7,92.3 226.1,90.3 225.4,88.3 224.7,86.3 223.9,84.4 223.1,82.5 222.2,80.6 221.3,78.7 220.3,76.8 219.3,75.0 218.2,73.2 217.1,71.4 215.9,69.7 214.7,68.0 213.5,66.3 212.2,64.7 210.8,63.0 209.5,61.5 208.0,59.9 206.6,58.4 205.1,57.0 203.5,55.5 202.0,54.2 200.3,52.8 198.7,51.5 197.0,50.3 195.3,49.1 193.6,47.9 191.8,46.8 190.0,45.7 188.2,44.7 186.3,43.7 184.4,42.8 182.5,41.9 180.6,41.1 178.7,40.3 176.7,39.6 174.7,38.9 172.7,38.3 170.7,37.7 168.7,37.2 166.6,36.7 164.6,36.3 162.5,36.0 160.4,35.7 158.4,35.4 156.3,35.2 154.2,35.1 152.1,35.0 150.0,35.0\" fill=\"none\" stroke=\"#3b4ea8\" stroke-width=\"3.4\"/><text x=\"70.0\" y=\"129.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">−2</text><text x=\"144.0\" y=\"199.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">−2</text><text x=\"230.0\" y=\"129.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><text x=\"144.0\" y=\"39.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><text x=\"288.0\" y=\"109.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><text x=\"158.0\" y=\"16.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">y</text></g><text x=\"8\" y=\"22\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"19\" font-weight=\"800\" fill=\"#1e293b\">D</text></g></svg>"
+          },
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "answer": 2,
+          "hint": "Both coordinates are ABSOLUTE VALUES with a sign: \\(x=-|2\\cos t|\\le0\\) and \\(y=|2\\sin t|\\ge0\\). Also \\(x^{2}+y^{2}=4\\cos^{2}t+4\\sin^{2}t=4\\): the points lie on the circle of radius 2. Combine: the part of the circle with \\(x\\le0\\) and \\(y\\ge0\\).",
+          "steps": [
+            {
+              "explain": "Eliminate \\(t\\): \\(x^{2}+y^{2}=4\\cos^{2}t+4\\sin^{2}t=4\\). A circle, centre \\(O\\), radius 2 (\\(x=\\pm2\\), \\(y=\\pm2\\) are the extremes).",
+              "work": "\\(x^{2}+y^{2}=4\\)"
+            },
+            {
+              "explain": "Signs: \\(x=-|2\\cos t|\\) is NEVER positive (\\(x\\le0\\)), and \\(y=|2\\sin t|\\) is NEVER negative (\\(y\\ge0\\)).",
+              "work": "\\(x\\le0,\\qquad y\\ge0\\)"
+            },
+            {
+              "explain": "The only part of the circle with \\(x\\le0\\) and \\(y\\ge0\\) is the QUARTER circle in the 2nd quadrant (from \\((0,2)\\) round to \\((-2,0)\\)).",
+              "work": "\\(x^{2}+y^{2}=4,\\ x\\le0,\\ y\\ge0\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 300\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><line x1=\"10.0\" y1=\"170.0\" x2=\"350.0\" y2=\"170.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"180.0\" y1=\"292.0\" x2=\"180.0\" y2=\"10.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"350.0\" y1=\"170.0\" x2=\"343.9\" y2=\"166.5\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"350.0\" y1=\"170.0\" x2=\"343.9\" y2=\"173.5\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"180.0\" y1=\"10.0\" x2=\"176.5\" y2=\"16.1\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"180.0\" y1=\"10.0\" x2=\"183.5\" y2=\"16.1\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><polyline points=\"180.0,50.0 176.9,50.0 173.7,50.2 170.6,50.4 167.5,50.7 164.3,51.0 161.2,51.5 158.1,52.0 155.1,52.6 152.0,53.3 148.9,54.1 145.9,54.9 142.9,55.9 139.9,56.9 137.0,58.0 134.1,59.1 131.2,60.4 128.3,61.7 125.5,63.1 122.7,64.5 120.0,66.1 117.3,67.7 114.6,69.4 112.0,71.1 109.5,72.9 106.9,74.8 104.5,76.7 102.1,78.8 99.7,80.8 97.4,83.0 95.1,85.1 93.0,87.4 90.8,89.7 88.8,92.1 86.7,94.5 84.8,96.9 82.9,99.5 81.1,102.0 79.4,104.6 77.7,107.3 76.1,110.0 74.5,112.7 73.1,115.5 71.7,118.3 70.4,121.2 69.1,124.1 68.0,127.0 66.9,129.9 65.9,132.9 64.9,135.9 64.1,138.9 63.3,142.0 62.6,145.1 62.0,148.1 61.5,151.2 61.0,154.3 60.7,157.5 60.4,160.6 60.2,163.7 60.0,166.9 60.0,170.0\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"3.8\"/><circle cx=\"180.0\" cy=\"170.0\" r=\"120\" fill=\"none\" stroke=\"#cbd5e1\" stroke-width=\"1.6\" stroke-dasharray=\"5 4\"/><circle cx=\"88.1\" cy=\"92.9\" r=\"5.2\" fill=\"#d97706\"/><text x=\"80.1\" y=\"84.9\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">(x, y)</text><line x1=\"180.0\" y1=\"170.0\" x2=\"88.1\" y2=\"92.9\" stroke=\"#d97706\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-dasharray=\"5 3\"/><text x=\"56.0\" y=\"186.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">−2</text><text x=\"188.0\" y=\"54.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><text x=\"96.0\" y=\"200.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">x ≤ 0, y ≥ 0</text></svg>"
+              }
+            },
+            {
+              "explain": "Why not the others: A is the whole left semicircle (it would need \\(y\\) to be negative too); B is the whole upper semicircle (it would need \\(x>0\\) too); D is the quarter in the 1st quadrant (it would need \\(x\\ge0\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">C</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Which of the following graphs is correct for the following parametric function",
+              "note": "\\(x^2+y^2=4\\); \\(x\\le0\\), \\(y\\ge0\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Manly Selective Campus 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Manly Selective Campus",
             "grade": "12",
             "origin": "teacher"
           }
@@ -6818,6 +7140,114 @@
           "meta": {
             "source": "Knox Grammar School 2021 Trial HSC Examination Mathematics Extension 2",
             "school": "Knox Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "manly2020-e2-q8",
+          "type": "mc",
+          "stem": "If \\(\\underset{\\sim}{a}=-2\\underset{\\sim}{i}-\\underset{\\sim}{j}+3\\underset{\\sim}{k}\\) and \\(\\underset{\\sim}{b}=-m\\underset{\\sim}{i}+\\underset{\\sim}{j}+2\\underset{\\sim}{k}\\) where \\(m\\) is a real constant, the vector \\(\\underset{\\sim}{a}-\\underset{\\sim}{b}\\) will be perpendicular to the vector \\(\\underset{\\sim}{b}\\) when \\(m\\) equals",
+          "difficulty": "medium",
+          "options": [
+            "\\(0\\) only",
+            "\\(2\\) only",
+            "\\(0\\) or \\(2\\)",
+            "\\(0\\) or \\(-2\\)"
+          ],
+          "answer": 2,
+          "hint": "Perpendicular means DOT PRODUCT \\(=0\\). First find \\(\\underset{\\sim}{a}-\\underset{\\sim}{b}\\) (component by component), then \\((\\underset{\\sim}{a}-\\underset{\\sim}{b})\\cdot\\underset{\\sim}{b}\\), a quadratic in \\(m\\).",
+          "steps": [
+            {
+              "explain": "\\(\\underset{\\sim}{a}-\\underset{\\sim}{b}=(-2-(-m),\\ -1-1,\\ 3-2)\\).",
+              "work": "\\(\\underset{\\sim}{a}-\\underset{\\sim}{b}=\\begin{pmatrix}m-2\\\\-2\\\\ 1\\end{pmatrix}\\)"
+            },
+            {
+              "explain": "Dot with \\(\\underset{\\sim}{b}=(-m,1,2)\\).",
+              "work": "\\((\\underset{\\sim}{a}-\\underset{\\sim}{b})\\cdot\\underset{\\sim}{b}=(m-2)(-m)+(-2)(1)+(1)(2)=-m^{2}+2m-2+2\\)"
+            },
+            {
+              "explain": "Simplify and set equal to 0: \\(-m^{2}+2m=-m(m-2)\\).",
+              "work": "\\(-m(m-2)=0\\ \\Rightarrow\\ m=0\\ \\text{or}\\ m=2\\)"
+            },
+            {
+              "explain": "Check \\(m=2\\): \\(\\underset{\\sim}{a}-\\underset{\\sim}{b}=(0,-2,1)\\), \\(\\underset{\\sim}{b}=(-2,1,2)\\): \\(0-2+2=0\\) ✓.",
+              "work": ""
+            },
+            {
+              "explain": "Why not the others: A and B give only one root; D has \\(-2\\) (a sign slip when factorising).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">C</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "will be perpendicular to the vector",
+              "note": "\\((a-b)\\cdot b=0\\): \\(-m(m-2)=0\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Manly Selective Campus 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Manly Selective Campus",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "manly2020-e2-q9",
+          "type": "mc",
+          "stem": "Points \\(A\\), \\(B\\) and \\(C\\) have position vectors \\(\\underset{\\sim}{a}=2\\underset{\\sim}{i}+\\underset{\\sim}{j}\\), \\(\\underset{\\sim}{b}=3\\underset{\\sim}{i}-\\underset{\\sim}{j}+\\underset{\\sim}{k}\\) and \\(\\underset{\\sim}{c}=-3\\underset{\\sim}{j}+\\underset{\\sim}{k}\\) respectively. The cosine of the angle \\(ABC\\) is equal to?",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{7}{\\sqrt6\\sqrt{13}}\\)",
+            "\\(-\\dfrac{1}{\\sqrt6\\sqrt{13}}\\)",
+            "\\(-\\dfrac{7}{\\sqrt{21}\\sqrt6}\\)",
+            "\\(-\\dfrac{2}{\\sqrt6\\sqrt{13}}\\)"
+          ],
+          "answer": 1,
+          "hint": "The angle \\(ABC\\) is at \\(B\\): use the vectors that START at \\(B\\): \\(\\overrightarrow{BA}=\\underset{\\sim}{a}-\\underset{\\sim}{b}\\) and \\(\\overrightarrow{BC}=\\underset{\\sim}{c}-\\underset{\\sim}{b}\\). Then \\(\\cos B=\\dfrac{\\overrightarrow{BA}\\cdot\\overrightarrow{BC}}{|\\overrightarrow{BA}||\\overrightarrow{BC}|}\\).",
+          "steps": [
+            {
+              "explain": "Vectors from \\(B\\) (end \\(-\\) start).",
+              "work": "\\(\\overrightarrow{BA}=\\underset{\\sim}{a}-\\underset{\\sim}{b}=\\begin{pmatrix}-1\\\\ 2\\\\-1\\end{pmatrix},\\qquad\\overrightarrow{BC}=\\underset{\\sim}{c}-\\underset{\\sim}{b}=\\begin{pmatrix}-3\\\\-2\\\\ 0\\end{pmatrix}\\)"
+            },
+            {
+              "explain": "Dot product.",
+              "work": "\\(\\overrightarrow{BA}\\cdot\\overrightarrow{BC}=(-1)(-3)+(2)(-2)+(-1)(0)=3-4+0=-1\\)"
+            },
+            {
+              "explain": "Magnitudes.",
+              "work": "\\(|\\overrightarrow{BA}|=\\sqrt{1+4+1}=\\sqrt6,\\qquad|\\overrightarrow{BC}|=\\sqrt{9+4+0}=\\sqrt{13}\\)"
+            },
+            {
+              "explain": "Cosine (negative: the angle at \\(B\\) is obtuse).",
+              "work": "\\(\\cos\\angle ABC=\\dfrac{-1}{\\sqrt6\\sqrt{13}}\\)"
+            },
+            {
+              "explain": "Why not the others: A, C and D come from arithmetic slips in the dot product or from using vectors that do not both start at \\(B\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">B</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "The cosine of the angle \\(ABC\\) is equal to",
+              "note": "Vectors from \\(B\\): \\(a-b\\) and \\(c-b\\); \\(\\cos=\\dfrac{\\text{dot}}{\\text{lengths}}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Manly Selective Campus 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Manly Selective Campus",
             "grade": "12",
             "origin": "teacher"
           }
@@ -9384,6 +9814,119 @@
           "meta": {
             "source": "James Ruse Agricultural High School 2020 Trial Higher School Certificate Examination Mathematics Extension 2",
             "school": "James Ruse Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "manly2020-e2-q14di",
+          "type": "mc",
+          "stem": "The faces of the tetrahedron \\(ODEF\\) are equilateral triangles of side length 1 unit. Its base \\(ODE\\) lies flat on the \\(xy\\) plane with two vertices at \\(O\\) and \\(D(1,0,0)\\) with \\(F\\) above the \\(xy\\) plane. Show that the coordinates of \\(E\\) are \\(\\left(\\dfrac{1}{2},\\dfrac{\\sqrt3}{2},0\\right)\\). Which working is correct?",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 300\" width=\"100%\" height=\"auto\" style=\"max-width:420px;display:block;margin:0 auto\"><line x1=\"200.0\" y1=\"200.0\" x2=\"200.0\" y2=\"20.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"200.0\" y1=\"20.0\" x2=\"196.0\" y2=\"26.9\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"200.0\" y1=\"20.0\" x2=\"204.0\" y2=\"26.9\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"190.0\" y=\"30.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">z</text><line x1=\"200.0\" y1=\"200.0\" x2=\"55.0\" y2=\"287.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"55.0\" y1=\"287.0\" x2=\"63.0\" y2=\"287.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"55.0\" y1=\"287.0\" x2=\"59.0\" y2=\"280.1\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"48.0\" y=\"304.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><line x1=\"200.0\" y1=\"200.0\" x2=\"390.0\" y2=\"225.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"390.0\" y1=\"225.0\" x2=\"383.7\" y2=\"220.1\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"390.0\" y1=\"225.0\" x2=\"382.6\" y2=\"228.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"396.0\" y=\"234.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">y</text><line x1=\"200.0\" y1=\"200.0\" x2=\"100.0\" y2=\"260.0\" stroke=\"#475569\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"100.0\" y1=\"260.0\" x2=\"288.6\" y2=\"247.3\" stroke=\"#475569\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"200.0\" y1=\"200.0\" x2=\"288.6\" y2=\"247.3\" stroke=\"#475569\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"196.2\" y1=\"56.1\" x2=\"100.0\" y2=\"260.0\" stroke=\"#475569\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"196.2\" y1=\"56.1\" x2=\"200.0\" y2=\"200.0\" stroke=\"#475569\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-dasharray=\"6 3\"/><line x1=\"196.2\" y1=\"56.1\" x2=\"288.6\" y2=\"247.3\" stroke=\"#475569\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><circle cx=\"200.0\" cy=\"200.0\" r=\"5\" fill=\"#3b4ea8\"/><text x=\"212.0\" y=\"194.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">O</text><circle cx=\"100.0\" cy=\"260.0\" r=\"5\" fill=\"#3b4ea8\"/><text x=\"90.0\" y=\"274.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">D</text><circle cx=\"288.6\" cy=\"247.3\" r=\"5\" fill=\"#3b4ea8\"/><text x=\"300.6\" y=\"261.3\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">E</text><circle cx=\"196.2\" cy=\"56.1\" r=\"5\" fill=\"#3b4ea8\"/><text x=\"206.2\" y=\"52.1\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">F</text></svg>"
+          },
+          "options": [
+            "\\(E\\) is above the midpoint of \\(OD\\) (the triangle is equilateral): \\(x=\\dfrac{1}{2}\\). The height of an equilateral triangle of side 1 is \\(\\sqrt{1^{2}-\\left(\\dfrac{1}{2}\\right)^{2}}=\\dfrac{\\sqrt3}{2}\\), so \\(E=\\left(\\dfrac{1}{2},\\dfrac{\\sqrt3}{2},0\\right)\\) (in the plane \\(z=0\\)).",
+            "\\(E\\) is above the midpoint of \\(OD\\): \\(x=\\dfrac{1}{2}\\). The height of the triangle is \\(\\sqrt{1^{2}+\\left(\\dfrac{1}{2}\\right)^{2}}=\\dfrac{\\sqrt5}{2}\\), so \\(E=\\left(\\dfrac{1}{2},\\dfrac{\\sqrt5}{2},0\\right)\\).",
+            "\\(E\\) is above \\(D\\): \\(x=1\\), and the height is 1, so \\(E=(1,1,0)\\).",
+            "\\(E\\) is above the midpoint of \\(OD\\) with height \\(\\dfrac{1}{2}\\) (half the side), so \\(E=\\left(\\dfrac{1}{2},\\dfrac{1}{2},0\\right)\\)."
+          ],
+          "answer": 0,
+          "hint": "\\(O=(0,0,0)\\), \\(D=(1,0,0)\\), and \\(E\\) is in the \\(xy\\)-plane (\\(z=0\\)) with \\(OE=DE=1\\). In an equilateral triangle the third vertex lies above the MIDPOINT of the base, at height \\(\\sqrt{\\text{side}^{2}-\\left(\\dfrac{\\text{side}}{2}\\right)^{2}}\\) (Pythagoras).",
+          "steps": [
+            {
+              "explain": "Midpoint of \\(OD\\): \\(\\left(\\dfrac{1}{2},0,0\\right)\\). \\(E\\) has \\(x=\\dfrac{1}{2}\\) and \\(z=0\\); let \\(E=\\left(\\dfrac{1}{2},y,0\\right)\\).",
+              "work": "\\(E=\\left(\\dfrac{1}{2},\\,y,\\,0\\right)\\)"
+            },
+            {
+              "explain": "\\(OE=1\\): \\(\\left(\\dfrac{1}{2}\\right)^{2}+y^{2}=1\\).",
+              "work": "\\(y^{2}=1-\\dfrac{1}{4}=\\dfrac{3}{4}\\ \\Rightarrow\\ y=\\dfrac{\\sqrt3}{2}\\ (\\text{choose }y>0\\text{ as in the diagram})\\)"
+            },
+            {
+              "explain": "So \\(E=\\left(\\dfrac{1}{2},\\dfrac{\\sqrt3}{2},0\\right)\\). Check \\(DE\\): \\(\\left(\\dfrac{1}{2}-1\\right)^{2}+\\dfrac{3}{4}=\\dfrac{1}{4}+\\dfrac{3}{4}=1\\) ✓.",
+              "work": "\\(E=\\left(\\dfrac{1}{2},\\dfrac{\\sqrt3}{2},0\\right)\\)"
+            },
+            {
+              "explain": "Why not the others: B uses \\(+\\left(\\dfrac{1}{2}\\right)^{2}\\) (Pythagoras needs \\(1-\\dfrac{1}{4}\\)); C puts \\(E\\) above \\(D\\); D uses half the side as the height.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that the coordinates of \\(E\\) are",
+              "note": "\\(x=\\dfrac{1}{2}\\); \\(\\dfrac{1}{4}+y^2=1\\Rightarrow y=\\dfrac{\\sqrt3}{2}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Manly Selective Campus 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Manly Selective Campus",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "manly2020-e2-q14dii",
+          "type": "mc",
+          "stem": "The faces of the tetrahedron \\(ODEF\\) are equilateral triangles of side length 1 unit. Its base \\(ODE\\) lies flat on the \\(xy\\) plane with two vertices at \\(O\\) and \\(D(1,0,0)\\) with \\(F\\) above the \\(xy\\) plane. Using vectors, prove the coordinates of the vertex \\(F\\) are \\(\\left(\\dfrac{1}{2},\\dfrac{\\sqrt3}{6},\\dfrac{\\sqrt6}{3}\\right)\\). Which working is correct?",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 300\" width=\"100%\" height=\"auto\" style=\"max-width:420px;display:block;margin:0 auto\"><line x1=\"200.0\" y1=\"200.0\" x2=\"200.0\" y2=\"20.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"200.0\" y1=\"20.0\" x2=\"196.0\" y2=\"26.9\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"200.0\" y1=\"20.0\" x2=\"204.0\" y2=\"26.9\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"190.0\" y=\"30.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">z</text><line x1=\"200.0\" y1=\"200.0\" x2=\"55.0\" y2=\"287.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"55.0\" y1=\"287.0\" x2=\"63.0\" y2=\"287.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"55.0\" y1=\"287.0\" x2=\"59.0\" y2=\"280.1\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"48.0\" y=\"304.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><line x1=\"200.0\" y1=\"200.0\" x2=\"390.0\" y2=\"225.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"390.0\" y1=\"225.0\" x2=\"383.7\" y2=\"220.1\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"390.0\" y1=\"225.0\" x2=\"382.6\" y2=\"228.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"396.0\" y=\"234.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">y</text><line x1=\"200.0\" y1=\"200.0\" x2=\"100.0\" y2=\"260.0\" stroke=\"#475569\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"100.0\" y1=\"260.0\" x2=\"288.6\" y2=\"247.3\" stroke=\"#475569\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"200.0\" y1=\"200.0\" x2=\"288.6\" y2=\"247.3\" stroke=\"#475569\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"196.2\" y1=\"56.1\" x2=\"100.0\" y2=\"260.0\" stroke=\"#475569\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"196.2\" y1=\"56.1\" x2=\"200.0\" y2=\"200.0\" stroke=\"#475569\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-dasharray=\"6 3\"/><line x1=\"196.2\" y1=\"56.1\" x2=\"288.6\" y2=\"247.3\" stroke=\"#475569\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><circle cx=\"200.0\" cy=\"200.0\" r=\"5\" fill=\"#3b4ea8\"/><text x=\"212.0\" y=\"194.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">O</text><circle cx=\"100.0\" cy=\"260.0\" r=\"5\" fill=\"#3b4ea8\"/><text x=\"90.0\" y=\"274.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">D</text><circle cx=\"288.6\" cy=\"247.3\" r=\"5\" fill=\"#3b4ea8\"/><text x=\"300.6\" y=\"261.3\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">E</text><circle cx=\"196.2\" cy=\"56.1\" r=\"5\" fill=\"#3b4ea8\"/><text x=\"206.2\" y=\"52.1\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">F</text></svg>"
+          },
+          "options": [
+            "Let \\(F=(x,y,z)\\) with \\(OF=DF=EF=1\\). \\(OF^{2}=DF^{2}\\): \\(x^{2}+y^{2}+z^{2}=(x-1)^{2}+y^{2}+z^{2}\\Rightarrow x=\\dfrac{1}{2}\\). \\(OF^{2}=EF^{2}\\) with \\(E=\\left(\\dfrac{1}{2},\\dfrac{\\sqrt3}{2},0\\right)\\) gives \\(y=\\dfrac{\\sqrt3}{6}\\). Then \\(OF^{2}=1\\): \\(\\dfrac{1}{4}+\\dfrac{1}{12}+z^{2}=1\\Rightarrow z^{2}=\\dfrac{2}{3}\\Rightarrow z=\\dfrac{\\sqrt6}{3}\\) (\\(F\\) above the plane).",
+            "Let \\(F=(x,y,z)\\). Since \\(F\\) is above the midpoint of \\(OD\\), \\(x=\\dfrac{1}{2}\\), \\(y=0\\) and \\(z=1\\) (the side length), so \\(F=\\left(\\dfrac{1}{2},0,1\\right)\\).",
+            "\\(F\\) is above \\(E\\): \\(F=\\left(\\dfrac{1}{2},\\dfrac{\\sqrt3}{2},1\\right)\\).",
+            "\\(OF^{2}=1\\) gives \\(x^{2}+y^{2}+z^{2}=1\\) only; the single equation determines \\(F\\) uniquely."
+          ],
+          "answer": 0,
+          "hint": "Three unknowns \\((x,y,z)\\) need THREE equations: \\(|OF|=|DF|=|EF|=1\\). Subtract pairs of squared lengths to get LINEAR equations for \\(x\\) and \\(y\\); then use \\(|OF|^{2}=1\\) for \\(z\\) (\\(z>0\\)).",
+          "steps": [
+            {
+              "explain": "Equal edges: \\(|OF|=|DF|\\): \\(x^{2}+y^{2}+z^{2}=(x-1)^{2}+y^{2}+z^{2}\\). Cancel and expand: \\(0=-2x+1\\).",
+              "work": "\\(x=\\dfrac{1}{2}\\)"
+            },
+            {
+              "explain": "\\(|OF|=|EF|\\) with \\(E=\\left(\\dfrac{1}{2},\\dfrac{\\sqrt3}{2},0\\right)\\): \\(x^{2}+y^{2}+z^{2}=\\left(x-\\dfrac{1}{2}\\right)^{2}+\\left(y-\\dfrac{\\sqrt3}{2}\\right)^{2}+z^{2}\\). Expand and cancel: \\(0=-x-\\sqrt3y+\\dfrac{1}{4}+\\dfrac{3}{4}\\). With \\(x=\\dfrac{1}{2}\\): \\(\\sqrt3y=\\dfrac{1}{2}\\).",
+              "work": "\\(y=\\dfrac{1}{2\\sqrt3}=\\dfrac{\\sqrt3}{6}\\)"
+            },
+            {
+              "explain": "\\(|OF|^{2}=1\\): \\(\\dfrac{1}{4}+\\dfrac{3}{36}+z^{2}=1\\), i.e. \\(\\dfrac{1}{4}+\\dfrac{1}{12}=\\dfrac{1}{3}\\).",
+              "work": "\\(z^{2}=1-\\dfrac{1}{3}=\\dfrac{2}{3}\\ \\Rightarrow\\ z=\\dfrac{\\sqrt2}{\\sqrt3}=\\dfrac{\\sqrt6}{3}\\ (z>0)\\)"
+            },
+            {
+              "explain": "So \\(F=\\left(\\dfrac{1}{2},\\dfrac{\\sqrt3}{6},\\dfrac{\\sqrt6}{3}\\right)\\): above the CENTROID of the base \\(ODE\\) (\\(x=\\dfrac{1}{2}\\), \\(y=\\dfrac{\\sqrt3}{6}\\), the point \\(G\\) in the figure), at height \\(\\sqrt{\\dfrac{2}{3}}\\).",
+              "work": "\\(F=\\left(\\dfrac{1}{2},\\dfrac{\\sqrt3}{6},\\dfrac{\\sqrt6}{3}\\right)\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 300\" width=\"100%\" height=\"auto\" style=\"max-width:420px;display:block;margin:0 auto\"><line x1=\"200.0\" y1=\"200.0\" x2=\"200.0\" y2=\"20.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"200.0\" y1=\"20.0\" x2=\"196.0\" y2=\"26.9\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"200.0\" y1=\"20.0\" x2=\"204.0\" y2=\"26.9\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"190.0\" y=\"30.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">z</text><line x1=\"200.0\" y1=\"200.0\" x2=\"55.0\" y2=\"287.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"55.0\" y1=\"287.0\" x2=\"63.0\" y2=\"287.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"55.0\" y1=\"287.0\" x2=\"59.0\" y2=\"280.1\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"48.0\" y=\"304.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><line x1=\"200.0\" y1=\"200.0\" x2=\"390.0\" y2=\"225.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"390.0\" y1=\"225.0\" x2=\"383.7\" y2=\"220.1\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"390.0\" y1=\"225.0\" x2=\"382.6\" y2=\"228.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"396.0\" y=\"234.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">y</text><line x1=\"200.0\" y1=\"200.0\" x2=\"100.0\" y2=\"260.0\" stroke=\"#475569\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"100.0\" y1=\"260.0\" x2=\"288.6\" y2=\"247.3\" stroke=\"#475569\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"200.0\" y1=\"200.0\" x2=\"288.6\" y2=\"247.3\" stroke=\"#475569\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"196.2\" y1=\"56.1\" x2=\"100.0\" y2=\"260.0\" stroke=\"#475569\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"196.2\" y1=\"56.1\" x2=\"200.0\" y2=\"200.0\" stroke=\"#475569\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-dasharray=\"6 3\"/><line x1=\"196.2\" y1=\"56.1\" x2=\"288.6\" y2=\"247.3\" stroke=\"#475569\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"200.0\" y1=\"200.0\" x2=\"196.2\" y2=\"56.1\" stroke=\"#dc2626\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><line x1=\"196.2\" y1=\"56.1\" x2=\"191.4\" y2=\"64.9\" stroke=\"#dc2626\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"196.2\" y1=\"56.1\" x2=\"201.4\" y2=\"64.7\" stroke=\"#dc2626\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"196.2\" y1=\"235.8\" x2=\"196.2\" y2=\"56.1\" stroke=\"#047857\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-dasharray=\"5 3\"/><circle cx=\"196.2\" cy=\"235.8\" r=\"4.4\" fill=\"#047857\"/><text x=\"204.2\" y=\"249.8\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">G (centroid of ODE)</text><text x=\"206.2\" y=\"42.1\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">F = (½, √3/6, √6/3)</text><circle cx=\"200.0\" cy=\"200.0\" r=\"5\" fill=\"#3b4ea8\"/><text x=\"212.0\" y=\"194.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">O</text><circle cx=\"100.0\" cy=\"260.0\" r=\"5\" fill=\"#3b4ea8\"/><text x=\"90.0\" y=\"274.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">D</text><circle cx=\"288.6\" cy=\"247.3\" r=\"5\" fill=\"#3b4ea8\"/><text x=\"300.6\" y=\"261.3\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">E</text><circle cx=\"196.2\" cy=\"56.1\" r=\"5\" fill=\"#3b4ea8\"/><text x=\"206.2\" y=\"52.1\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">F</text></svg>"
+              }
+            },
+            {
+              "explain": "Why not the others: B and C put \\(F\\) at the wrong place (the vertex is above the CENTROID, not the midpoint or \\(E\\)); D forgets that three conditions are needed.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Using vectors, prove the coordinates of the vertex \\(F\\)",
+              "note": "\\(OF=DF=EF=1\\): subtract squares; \\(x=\\dfrac{1}{2}\\), \\(y=\\dfrac{\\sqrt3}{6}\\), \\(z^2=\\dfrac{2}{3}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Manly Selective Campus 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Manly Selective Campus",
             "grade": "12",
             "origin": "teacher"
           }
