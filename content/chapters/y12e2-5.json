@@ -480,6 +480,122 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "kinross2022-e2-q15a",
+          "type": "mc",
+          "stem": "Use the substitution \\(t=\\tan\\dfrac{x}{2}\\) to find in simplest exact form the value of \\(\\displaystyle\\int_{0}^{\\frac\\pi2}\\dfrac{1}{3+5\\sin x}\\,dx\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\dfrac{1}{4}\\ln3\\)",
+            "\\(\\dfrac{1}{2}\\ln3\\)",
+            "\\(\\dfrac{1}{4}\\ln\\dfrac{1}{3}\\)",
+            "\\(\\dfrac{1}{8}\\ln3\\)"
+          ],
+          "answer": 0,
+          "hint": "With \\(t=\\tan\\dfrac{x}{2}\\): \\(\\sin x=\\dfrac{2t}{1+t^{2}}\\) and \\(dx=\\dfrac{2\\,dt}{1+t^{2}}\\). Change the LIMITS too (\\(x=0\\to t=0\\); \\(x=\\dfrac\\pi2\\to t=\\tan\\dfrac\\pi4=1\\)). You will get \\(\\dfrac{2}{(3t+1)(t+3)}\\): use partial fractions.",
+          "steps": [
+            {
+              "explain": "Substitute \\(\\sin x=\\dfrac{2t}{1+t^{2}}\\), \\(dx=\\dfrac{2}{1+t^{2}}dt\\); limits \\(t=0\\) to \\(t=1\\).",
+              "work": "\\(\\int_{0}^{1}\\dfrac{1}{3+\\dfrac{10t}{1+t^{2}}}\\cdot\\dfrac{2}{1+t^{2}}\\,dt\\)"
+            },
+            {
+              "explain": "Multiply the top and bottom of the big fraction by \\(1+t^{2}\\): the denominator becomes \\(3(1+t^{2})+10t\\).",
+              "work": "\\(=\\int_{0}^{1}\\dfrac{2}{3t^{2}+10t+3}\\,dt=\\int_{0}^{1}\\dfrac{2}{(3t+1)(t+3)}\\,dt\\)"
+            },
+            {
+              "explain": "Partial fractions: \\(\\dfrac{2}{(3t+1)(t+3)}=\\dfrac{A}{3t+1}+\\dfrac{B}{t+3}\\), so \\(2=A(t+3)+B(3t+1)\\). \\(t=-3\\): \\(2=-8B\\), \\(B=-\\dfrac{1}{4}\\). \\(t=-\\dfrac{1}{3}\\): \\(2=\\dfrac83A\\), \\(A=\\dfrac{3}{4}\\).",
+              "work": "\\(\\dfrac{2}{(3t+1)(t+3)}=\\dfrac{3}{4(3t+1)}-\\dfrac{1}{4(t+3)}\\)"
+            },
+            {
+              "explain": "Integrate: \\(\\int\\dfrac{3}{4(3t+1)}dt=\\dfrac{1}{4}\\ln(3t+1)\\) and \\(\\int\\dfrac{1}{4(t+3)}dt=\\dfrac{1}{4}\\ln(t+3)\\).",
+              "work": "\\(=\\dfrac{1}{4}\\left[\\ln(3t+1)-\\ln(t+3)\\right]_{0}^{1}=\\dfrac{1}{4}\\left[\\ln\\dfrac{3t+1}{t+3}\\right]_{0}^{1}\\)"
+            },
+            {
+              "explain": "At \\(t=1\\): \\(\\ln\\dfrac{4}{4}=\\ln1=0\\). At \\(t=0\\): \\(\\ln\\dfrac{1}{3}\\).",
+              "work": "\\(=\\dfrac{1}{4}\\left(0-\\ln\\dfrac{1}{3}\\right)=\\dfrac{1}{4}\\ln3\\)"
+            },
+            {
+              "explain": "Why not the others: \\(\\dfrac{1}{2}\\ln3\\) forgets the \\(\\dfrac{1}{4}\\); \\(\\dfrac{1}{4}\\ln\\dfrac{1}{3}\\) has the wrong sign (the lower limit is subtracted); \\(\\dfrac{1}{8}\\ln3\\) has an arithmetic slip in \\(A\\) and \\(B\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Use the substitution \\(t=\\tan\\dfrac{x}{2}\\)",
+              "note": "\\(\\sin x=\\dfrac{2t}{1+t^2}\\); limits \\(0\\to1\\); partial fractions."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Kinross Wolaroi School 2022 Trial HSC Examination Mathematics Extension 2",
+            "school": "Kinross Wolaroi School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2020-e2-q12c",
+          "type": "mc",
+          "stem": "Evaluate \\(\\displaystyle\\int_{0}^{\\frac\\pi2}\\dfrac{d\\theta}{2+\\cos\\theta}\\) by using the substitution \\(t=\\tan\\dfrac\\theta2\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\dfrac{\\pi\\sqrt3}{9}\\)",
+            "\\(\\dfrac\\pi9\\)",
+            "\\(\\dfrac{\\pi\\sqrt3}{3}\\)",
+            "\\(\\dfrac{2\\pi}{3}\\)"
+          ],
+          "answer": 0,
+          "hint": "With \\(t=\\tan\\dfrac\\theta2\\): \\(\\cos\\theta=\\dfrac{1-t^{2}}{1+t^{2}}\\), \\(d\\theta=\\dfrac{2\\,dt}{1+t^{2}}\\). Limits: \\(\\theta=0\\to t=0\\); \\(\\theta=\\dfrac\\pi2\\to t=1\\). The result is \\(\\int\\dfrac{2}{t^{2}+3}dt\\), a \\(\\tan^{-1}\\) integral.",
+          "steps": [
+            {
+              "explain": "Substitute: \\(\\dfrac{1}{2+\\dfrac{1-t^{2}}{1+t^{2}}}\\cdot\\dfrac{2}{1+t^{2}}\\).",
+              "work": "\\(\\int_{0}^{1}\\dfrac{2\\,dt}{2\\left(1+t^{2}\\right)+1-t^{2}}\\)"
+            },
+            {
+              "explain": "Simplify the denominator: \\(2+2t^{2}+1-t^{2}=t^{2}+3\\).",
+              "work": "\\(=\\int_{0}^{1}\\dfrac{2}{t^{2}+3}\\,dt=\\int_{0}^{1}\\dfrac{2}{t^{2}+\\left(\\sqrt3\\right)^{2}}\\,dt\\)"
+            },
+            {
+              "explain": "Standard integral \\(\\dfrac{1}{a}\\tan^{-1}\\dfrac{t}{a}\\) with \\(a=\\sqrt3\\) (times the constant 2).",
+              "work": "\\(=\\dfrac{2}{\\sqrt3}\\left[\\tan^{-1}\\dfrac{t}{\\sqrt3}\\right]_{0}^{1}\\)"
+            },
+            {
+              "explain": "Limits: \\(\\tan^{-1}\\dfrac{1}{\\sqrt3}=\\dfrac\\pi6\\) and \\(\\tan^{-1}0=0\\).",
+              "work": "\\(=\\dfrac{2}{\\sqrt3}\\cdot\\dfrac\\pi6=\\dfrac{\\pi}{3\\sqrt3}\\)"
+            },
+            {
+              "explain": "Rationalise: multiply top and bottom by \\(\\sqrt3\\).",
+              "work": "\\(=\\dfrac{\\pi\\sqrt3}{9}\\)"
+            },
+            {
+              "explain": "Why not the others: \\(\\dfrac\\pi9\\) forgets \\(\\sqrt3\\); \\(\\dfrac{\\pi\\sqrt3}{3}\\) and \\(\\dfrac{2\\pi}{3}\\) come from using \\(\\tan^{-1}1=\\dfrac\\pi4\\) or wrong constants.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "by using the substitution \\(t=\\tan\\dfrac\\theta2\\)",
+              "note": "\\(\\cos\\theta=\\dfrac{1-t^2}{1+t^2}\\); limits \\(0\\to1\\); \\(\\tan^{-1}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Killara High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },

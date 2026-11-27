@@ -1240,6 +1240,117 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "kinross2022-e2-q11ci",
+          "type": "mc",
+          "stem": "Consider the equation \\(z^{3}-11z^{2}+55z-125=0\\). Find the three roots of the equation in the form \\(a+ib\\), where \\(a,b\\) are real.",
+          "difficulty": "medium",
+          "options": [
+            "\\(z=5,\\ 3\\pm4i\\)",
+            "\\(z=5,\\ -3\\pm4i\\)",
+            "\\(z=-5,\\ 3\\pm4i\\)",
+            "\\(z=5,\\ 3\\pm2i\\)"
+          ],
+          "answer": 0,
+          "hint": "Try small integer factors of 125 (\\(\\pm1,\\pm5,\\dots\\)) to find a real root. Then FACTOR out \\((z-\\text{root})\\), and solve the remaining quadratic with the quadratic formula.",
+          "steps": [
+            {
+              "explain": "Test \\(z=5\\): \\(125-275+275-125=0\\), so \\(5\\) is a root and \\((z-5)\\) is a factor.",
+              "work": "\\(P(5)=5^{3}-11(5)^{2}+55(5)-125=125-275+275-125=0\\)"
+            },
+            {
+              "explain": "Divide: \\(z^{3}-11z^{2}+55z-125=(z-5)\\left(z^{2}+az+25\\right)\\). Compare the \\(z^{2}\\) coefficients: \\(-11=a-5\\), so \\(a=-6\\).",
+              "work": "\\((z-5)\\left(z^{2}-6z+25\\right)=0\\)"
+            },
+            {
+              "explain": "Quadratic formula for \\(z^{2}-6z+25=0\\): \\(\\Delta=36-100=-64\\), \\(\\sqrt{-64}=8i\\).",
+              "work": "\\(z=\\dfrac{6\\pm8i}{2}=3\\pm4i\\)"
+            },
+            {
+              "explain": "So the roots are \\(5\\), \\(3+4i\\) and \\(3-4i\\) (a conjugate pair, as expected for real coefficients).",
+              "work": "\\(z=5,\\ 3+4i,\\ 3-4i\\)"
+            },
+            {
+              "explain": "Why not the others: B has the wrong sign of the real part (sum of roots must be \\(11\\): \\(5+3+3=11\\)); C has \\(-5\\) (\\(P(-5)\\ne0\\)); D gives \\(3\\pm2i\\) (a slip in \\(\\sqrt{-64}\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the three roots of the equation",
+              "note": "Rational root test; divide; quadratic formula."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Kinross Wolaroi School 2022 Trial HSC Examination Mathematics Extension 2",
+            "school": "Kinross Wolaroi School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "kinross2022-e2-q11cii",
+          "type": "mc",
+          "stem": "The roots of \\(z^{3}-11z^{2}+55z-125=0\\) are \\(5\\), \\(3+4i\\) and \\(3-4i\\), represented on the Argand diagram by the points \\(A\\), \\(B\\) and \\(C\\) respectively. Show that the points \\(A\\), \\(B\\) and \\(C\\) lie on a circle of the form \\(|z|=k\\) for some constant \\(k\\), and find the area of \\(\\Delta ABC\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(k=5\\), area \\(=8\\)",
+            "\\(k=5\\), area \\(=16\\)",
+            "\\(k=5\\), area \\(=4\\)",
+            "\\(k=\\sqrt{34}\\), area \\(=8\\)"
+          ],
+          "answer": 0,
+          "hint": "\\(|z|\\) is the distance from the origin: compute it for each root. Then take the triangle with the vertical side \\(BC\\) as the BASE and the horizontal distance from \\(A\\) to the line \\(BC\\) as the HEIGHT.",
+          "steps": [
+            {
+              "explain": "Modulus of each root: \\(|5|=5\\); \\(|3\\pm4i|=\\sqrt{9+16}=5\\). All three equal 5, so they lie on the circle \\(|z|=5\\).",
+              "work": "\\(|5|=|3+4i|=|3-4i|=5\\ \\Rightarrow\\ k=5\\)"
+            },
+            {
+              "explain": "\\(B(3,4)\\) and \\(C(3,-4)\\) lie on the vertical line \\(x=3\\): the base \\(BC\\) has length \\(4-(-4)=8\\).",
+              "work": "\\(BC=8\\)"
+            },
+            {
+              "explain": "The height is the horizontal distance from \\(A(5,0)\\) to the line \\(x=3\\).",
+              "work": "\\(h=5-3=2\\)"
+            },
+            {
+              "explain": "Area of a triangle \\(=\\dfrac{1}{2}\\times\\text{base}\\times\\text{height}\\) (the base and height are marked on the diagram).",
+              "work": "\\(\\text{Area}=\\dfrac{1}{2}\\times8\\times2=8\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 300\" width=\"100%\" height=\"auto\" style=\"max-width:370px;display:block;margin:0 auto\"><line x1=\"0.4\" y1=\"150.0\" x2=\"308.8\" y2=\"150.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"278.8\" x2=\"150.0\" y2=\"17.2\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"308.8\" y1=\"150.0\" x2=\"301.9\" y2=\"146.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"308.8\" y1=\"150.0\" x2=\"301.9\" y2=\"154.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"17.2\" x2=\"146.0\" y2=\"24.1\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"17.2\" x2=\"154.0\" y2=\"24.1\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"304.8\" y=\"166.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Re(z)</text><text x=\"158.0\" y=\"23.2\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Im(z)</text><circle cx=\"150.0\" cy=\"150.0\" r=\"130.0\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2\"/><circle cx=\"280.0\" cy=\"150.0\" r=\"4.6\" fill=\"#dc2626\"/><text x=\"288.0\" y=\"142.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A (5)</text><circle cx=\"228.0\" cy=\"46.0\" r=\"4.6\" fill=\"#047857\"/><text x=\"236.0\" y=\"40.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B (3 + 4i)</text><circle cx=\"228.0\" cy=\"254.0\" r=\"4.6\" fill=\"#d97706\"/><text x=\"236.0\" y=\"270.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">C (3 − 4i)</text><polygon points=\"280.0,150.0 228.0,46.0 228.0,254.0\" fill=\"#c4cae5\" fill-opacity=\"0.75\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><line x1=\"228.0\" y1=\"254.0\" x2=\"228.0\" y2=\"46.0\" stroke=\"#7c3aed\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><text x=\"222.0\" y=\"144.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#7c3aed\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">base 8</text><line x1=\"228.0\" y1=\"150.0\" x2=\"280.0\" y2=\"150.0\" stroke=\"#d97706\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><text x=\"254.0\" y=\"142.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">height 2</text></svg>"
+              }
+            },
+            {
+              "explain": "Why not the others: 16 forgets the \\(\\dfrac{1}{2}\\); 4 uses base 4 (half of BC); \\(\\sqrt{34}\\) is \\(|3+5i|\\) (a wrong root).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "lie on a circle of the form",
+              "note": "\\(|z|\\) for each root; base \\(BC=8\\), height 2."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Kinross Wolaroi School 2022 Trial HSC Examination Mathematics Extension 2",
+            "school": "Kinross Wolaroi School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -2152,6 +2263,60 @@
           "meta": {
             "source": "Hurlstone Agricultural High School 2020 Trial Higher School Certificate Examination Mathematics Extension 2",
             "school": "Hurlstone Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2020-e2-q11bii",
+          "type": "mc",
+          "stem": "Given \\(z=\\sqrt2-i\\sqrt2=2e^{-\\frac{i\\pi}{4}}\\), hence write \\(z^{22}\\) in the \\(a+ib\\) form where \\(a,b\\in R\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(2^{22}i\\)",
+            "\\(-2^{22}i\\)",
+            "\\(2^{22}\\)",
+            "\\(-2^{22}\\)"
+          ],
+          "answer": 0,
+          "hint": "Raise the exponential form to the power: \\(\\left(re^{i\\theta}\\right)^{n}=r^{n}e^{in\\theta}\\). Then REDUCE the angle by multiples of \\(2\\pi\\) (a full turn) to find a simple angle.",
+          "steps": [
+            {
+              "explain": "Raise to the power 22: modulus \\(2^{22}\\), argument multiplied by 22.",
+              "work": "\\(z^{22}=2^{22}e^{-\\frac{22i\\pi}{4}}=2^{22}e^{-\\frac{11i\\pi}{2}}\\)"
+            },
+            {
+              "explain": "Reduce the angle: add \\(6\\pi=\\dfrac{12\\pi}{2}\\) (three full turns) to \\(-\\dfrac{11\\pi}{2}\\).",
+              "work": "\\(-\\dfrac{11\\pi}{2}+6\\pi=\\dfrac\\pi2\\)"
+            },
+            {
+              "explain": "So \\(e^{-\\frac{11i\\pi}{2}}=e^{\\frac{i\\pi}{2}}=\\cos\\dfrac\\pi2+i\\sin\\dfrac\\pi2=i\\).",
+              "work": "\\(z^{22}=2^{22}i=4\\,194\\,304\\,i\\)"
+            },
+            {
+              "explain": "Check another way: \\(z^{2}=4e^{-\\frac{i\\pi}{2}}=-4i\\), and \\(\\left(-4i\\right)^{11}=(-4)^{11}i^{11}=-4^{11}\\cdot(-i)=4^{11}i=2^{22}i\\) ✓.",
+              "work": ""
+            },
+            {
+              "explain": "Why not the others: \\(-2^{22}i\\) has the sign of the angle wrong after reducing; \\(2^{22}\\) and \\(-2^{22}\\) are real (the angle \\(\\dfrac\\pi2\\) gives a purely imaginary number).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "hence write \\(z^{22}\\) in the \\(a+ib\\) form",
+              "note": "\\(re^{i\\theta}\\) to the power 22; reduce the angle by \\(2\\pi\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Killara High School",
             "grade": "12",
             "origin": "teacher"
           }
@@ -4139,6 +4304,326 @@
           "meta": {
             "source": "James Ruse Agricultural High School 2020 Trial Higher School Certificate Examination Mathematics Extension 2",
             "school": "James Ruse Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "kinross2022-e2-q14ai",
+          "type": "mc",
+          "stem": "Use de Moivre’s Theorem to show that \\(\\cos5\\theta=16\\cos^{5}\\theta-20\\cos^{3}\\theta+5\\cos\\theta\\). Which working is correct?",
+          "difficulty": "hard",
+          "options": [
+            "\\((\\cos\\theta+i\\sin\\theta)^{5}=\\cos5\\theta+i\\sin5\\theta\\). The REAL part of the binomial expansion is \\(c^{5}-10c^{3}s^{2}+5cs^{4}\\). Substituting \\(s^{2}=1-c^{2}\\): \\(c^{5}-10c^{3}\\left(1-c^{2}\\right)+5c\\left(1-c^{2}\\right)^{2}=16c^{5}-20c^{3}+5c\\).",
+            "The real part is \\(c^{5}-10c^{3}s^{2}+5cs^{4}\\). Substituting \\(s^{2}=1+c^{2}\\) (a mistake): \\(c^{5}-10c^{3}(1+c^{2})+5c(1+c^{2})^{2}=-4c^{5}+5c\\), which is not the required expression.",
+            "The IMAGINARY part \\(5c^{4}s-10c^{2}s^{3}+s^{5}\\) equals \\(\\cos5\\theta\\); substituting \\(s^{2}=1-c^{2}\\) gives the result.",
+            "The real part is \\(c^{5}-5c^{3}s^{2}+5cs^{4}\\) (coefficients \\(1,5,5\\)); substituting \\(s^{2}=1-c^{2}\\) gives \\(11c^{5}-10c^{3}+5c\\)."
+          ],
+          "answer": 0,
+          "hint": "Expand \\((c+is)^{5}\\) with the binomial coefficients \\(1,5,10,10,5,1\\) and \\(i^{2}=-1\\). The REAL part gives \\(\\cos5\\theta\\). Then replace every \\(s^{2}\\) by \\(1-c^{2}\\) and expand \\((1-c^{2})^{2}\\).",
+          "steps": [
+            {
+              "explain": "De Moivre: \\((\\cos\\theta+i\\sin\\theta)^{5}=\\cos5\\theta+i\\sin5\\theta\\). Binomial expansion with \\(c=\\cos\\theta\\), \\(s=\\sin\\theta\\).",
+              "work": "\\((c+is)^{5}=c^{5}+5c^{4}(is)+10c^{3}(is)^{2}+10c^{2}(is)^{3}+5c(is)^{4}+(is)^{5}\\)"
+            },
+            {
+              "explain": "Real terms only (the even powers of \\(i\\): \\(i^{2}=-1\\), \\(i^{4}=1\\)).",
+              "work": "\\(\\cos5\\theta=c^{5}-10c^{3}s^{2}+5cs^{4}\\)"
+            },
+            {
+              "explain": "Replace \\(s^{2}=1-c^{2}\\) and \\(s^{4}=\\left(1-c^{2}\\right)^{2}=1-2c^{2}+c^{4}\\).",
+              "work": "\\(=c^{5}-10c^{3}\\left(1-c^{2}\\right)+5c\\left(1-2c^{2}+c^{4}\\right)\\)"
+            },
+            {
+              "explain": "Expand: \\(c^{5}-10c^{3}+10c^{5}+5c-10c^{3}+5c^{5}\\).",
+              "work": "\\(=(1+10+5)c^{5}-(10+10)c^{3}+5c=16c^{5}-20c^{3}+5c\\)"
+            },
+            {
+              "explain": "Why not the others: B uses \\(s^{2}=1+c^{2}\\) (the identity is \\(1-c^{2}\\)); C uses the imaginary part (that is \\(\\sin5\\theta\\)); D has wrong binomial coefficients.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Use de Moivre’s Theorem to show that",
+              "note": "Real part of \\((c+is)^5\\); \\(s^2=1-c^2\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Kinross Wolaroi School 2022 Trial HSC Examination Mathematics Extension 2",
+            "school": "Kinross Wolaroi School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "kinross2022-e2-q14aii",
+          "type": "mc",
+          "stem": "Solve the equation \\(\\cos5\\theta=-1\\) for \\(0\\le\\theta\\le2\\pi\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\theta=\\dfrac\\pi5,\\ \\dfrac{3\\pi}{5},\\ \\pi,\\ \\dfrac{7\\pi}{5},\\ \\dfrac{9\\pi}{5}\\)",
+            "\\(\\theta=0,\\ \\dfrac{2\\pi}{5},\\ \\dfrac{4\\pi}{5},\\ \\dfrac{6\\pi}{5},\\ \\dfrac{8\\pi}{5}\\)",
+            "\\(\\theta=\\dfrac{\\pi}{10},\\ \\dfrac{3\\pi}{10},\\ \\dfrac{\\pi}{2},\\ \\dfrac{7\\pi}{10},\\ \\dfrac{9\\pi}{10}\\)",
+            "\\(\\theta=\\dfrac\\pi5,\\ \\dfrac{2\\pi}{5},\\ \\dfrac{3\\pi}{5},\\ \\dfrac{4\\pi}{5},\\ \\pi\\)"
+          ],
+          "answer": 0,
+          "hint": "\\(\\cos\\varphi=-1\\) when \\(\\varphi=\\pi,3\\pi,5\\pi,\\dots\\) (ODD multiples of \\(\\pi\\)). Here \\(\\varphi=5\\theta\\), and \\(0\\le\\theta\\le2\\pi\\) means \\(0\\le5\\theta\\le10\\pi\\).",
+          "steps": [
+            {
+              "explain": "Let \\(\\varphi=5\\theta\\). Range: \\(0\\le\\varphi\\le10\\pi\\).",
+              "work": "\\(0\\le5\\theta\\le10\\pi\\)"
+            },
+            {
+              "explain": "\\(\\cos\\varphi=-1\\) at the odd multiples of \\(\\pi\\) in this range.",
+              "work": "\\(5\\theta=\\pi,\\ 3\\pi,\\ 5\\pi,\\ 7\\pi,\\ 9\\pi\\)"
+            },
+            {
+              "explain": "Divide by 5.",
+              "work": "\\(\\theta=\\dfrac\\pi5,\\ \\dfrac{3\\pi}{5},\\ \\pi,\\ \\dfrac{7\\pi}{5},\\ \\dfrac{9\\pi}{5}\\)"
+            },
+            {
+              "explain": "Why not the others: B solves \\(\\cos5\\theta=+1\\) (EVEN multiples of \\(\\pi\\)); C solves \\(\\cos5\\theta=0\\); D includes values where \\(5\\theta\\) is an EVEN multiple of \\(\\pi\\) (\\(\\cos=+1\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Solve the equation \\(\\cos5\\theta=-1\\)",
+              "note": "\\(\\cos\\varphi=-1\\): odd multiples of \\(\\pi\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Kinross Wolaroi School 2022 Trial HSC Examination Mathematics Extension 2",
+            "school": "Kinross Wolaroi School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "kinross2022-e2-q14aiii",
+          "type": "mc",
+          "stem": "Using \\(\\cos5\\theta=16\\cos^{5}\\theta-20\\cos^{3}\\theta+5\\cos\\theta\\) and the solutions \\(\\theta=\\dfrac\\pi5,\\dfrac{3\\pi}{5},\\pi,\\dfrac{7\\pi}{5},\\dfrac{9\\pi}{5}\\) of \\(\\cos5\\theta=-1\\), show that \\(\\cos\\dfrac\\pi5+\\cos\\dfrac{3\\pi}{5}=\\dfrac{1}{2}\\) and \\(\\cos\\dfrac\\pi5\\cos\\dfrac{3\\pi}{5}=-\\dfrac{1}{4}\\). Which working is correct?",
+          "difficulty": "hard",
+          "options": [
+            "\\(x=\\cos\\theta\\) satisfies \\(16x^{5}-20x^{3}+5x+1=0\\), which factorises as \\((x+1)\\left(4x^{2}-2x-1\\right)^{2}=0\\). The roots \\(\\cos\\dfrac\\pi5\\) and \\(\\cos\\dfrac{3\\pi}{5}\\) (the others repeat these or equal \\(-1\\)) satisfy \\(4x^{2}-2x-1=0\\), so the sum is \\(\\dfrac{2}{4}=\\dfrac{1}{2}\\) and the product is \\(-\\dfrac{1}{4}\\).",
+            "\\(x=\\cos\\theta\\) satisfies \\(16x^{5}-20x^{3}+5x+1=0\\), which factorises as \\((x+1)\\left(4x^{2}-2x-1\\right)^{2}=0\\). The roots satisfy \\(4x^{2}-2x-1=0\\), so the sum is \\(-\\dfrac{2}{4}=-\\dfrac{1}{2}\\) and the product is \\(\\dfrac{1}{4}\\).",
+            "\\(x=\\cos\\theta\\) satisfies \\(16x^{5}-20x^{3}+5x-1=0\\) (using \\(\\cos5\\theta=1\\)), which factorises as \\((x-1)\\left(4x^{2}+2x-1\\right)^{2}\\); the sum of the roots is \\(-\\dfrac{1}{2}\\) and the product is \\(-\\dfrac{1}{4}\\).",
+            "\\(x=\\cos\\theta\\) satisfies \\(4x^{2}-2x-1=0\\) immediately (no factorisation needed); sum \\(=\\dfrac{1}{2}\\), product \\(=-\\dfrac{1}{4}\\)."
+          ],
+          "answer": 0,
+          "hint": "Put \\(x=\\cos\\theta\\): \\(\\cos5\\theta=-1\\) becomes \\(16x^{5}-20x^{3}+5x+1=0\\). Factor out \\((x+1)\\) (since \\(\\theta=\\pi\\) gives \\(x=-1\\)); the quartic left is a perfect square. Use sum \\(=-\\dfrac{b}{a}\\) and product \\(=\\dfrac{c}{a}\\) for \\(ax^{2}+bx+c\\).",
+          "steps": [
+            {
+              "explain": "\\(\\cos5\\theta=-1\\) means \\(16x^{5}-20x^{3}+5x=-1\\), i.e. \\(16x^{5}-20x^{3}+5x+1=0\\), where \\(x=\\cos\\theta\\).",
+              "work": "\\(16x^{5}-20x^{3}+5x+1=0\\)"
+            },
+            {
+              "explain": "\\(\\theta=\\pi\\) gives the root \\(x=-1\\), so \\((x+1)\\) is a factor. Division: \\(16x^{5}-20x^{3}+5x+1=(x+1)\\left(16x^{4}-16x^{3}-4x^{2}+4x+1\\right)\\).",
+              "work": "\\(16x^{4}-16x^{3}-4x^{2}+4x+1=\\left(4x^{2}-2x-1\\right)^{2}\\)"
+            },
+            {
+              "explain": "Check the square: \\(\\left(4x^{2}-2x-1\\right)^{2}=16x^{4}-16x^{3}+4x^{2}-8x^{2}+4x+1=16x^{4}-16x^{3}-4x^{2}+4x+1\\) ✓.",
+              "work": ""
+            },
+            {
+              "explain": "The other four solutions are \\(\\cos\\dfrac\\pi5\\), \\(\\cos\\dfrac{3\\pi}{5}\\), \\(\\cos\\dfrac{7\\pi}{5}=\\cos\\dfrac{3\\pi}{5}\\) and \\(\\cos\\dfrac{9\\pi}{5}=\\cos\\dfrac\\pi5\\): so \\(\\cos\\dfrac\\pi5\\) and \\(\\cos\\dfrac{3\\pi}{5}\\) are the two roots of \\(4x^{2}-2x-1=0\\).",
+              "work": "\\(4x^{2}-2x-1=0\\)"
+            },
+            {
+              "explain": "For \\(ax^{2}+bx+c\\): sum \\(=-\\dfrac{b}{a}=\\dfrac{2}{4}\\) and product \\(=\\dfrac{c}{a}=-\\dfrac{1}{4}\\).",
+              "work": "\\(\\cos\\dfrac\\pi5+\\cos\\dfrac{3\\pi}{5}=\\dfrac{1}{2},\\qquad\\cos\\dfrac\\pi5\\cos\\dfrac{3\\pi}{5}=-\\dfrac{1}{4}\\)"
+            },
+            {
+              "explain": "Why not the others: B has the signs of sum and product reversed; C uses \\(\\cos5\\theta=+1\\) (different equation); D skips the factor \\((x+1)\\) and the repeated roots.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "\\(\\cos\\dfrac\\pi5+\\cos\\dfrac{3\\pi}{5}=\\dfrac{1}{2}\\)",
+              "note": "\\(x=\\cos\\theta\\); factor \\((x+1)(4x^2-2x-1)^2\\); sum/product of roots."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Kinross Wolaroi School 2022 Trial HSC Examination Mathematics Extension 2",
+            "school": "Kinross Wolaroi School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2020-e2-q14bi",
+          "type": "mc",
+          "stem": "If \\(Z=\\cos\\theta+i\\sin\\theta\\), express \\(Z^{n}+Z^{-n}\\) in terms of \\(\\theta\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(2\\cos n\\theta\\)",
+            "\\(2i\\sin n\\theta\\)",
+            "\\(2\\cos\\theta^{n}\\)",
+            "\\(\\cos n\\theta+\\sin n\\theta\\)"
+          ],
+          "answer": 0,
+          "hint": "De Moivre: \\(Z^{n}=\\cos n\\theta+i\\sin n\\theta\\). For \\(Z^{-n}\\) use \\(n\\to-n\\) and the facts \\(\\cos(-x)=\\cos x\\), \\(\\sin(-x)=-\\sin x\\). Add.",
+          "steps": [
+            {
+              "explain": "De Moivre: \\(Z^{n}=\\cos n\\theta+i\\sin n\\theta\\).",
+              "work": "\\(Z^{n}=\\cos n\\theta+i\\sin n\\theta\\)"
+            },
+            {
+              "explain": "\\(Z^{-n}=\\left(\\cos\\theta+i\\sin\\theta\\right)^{-n}=\\cos(-n\\theta)+i\\sin(-n\\theta)=\\cos n\\theta-i\\sin n\\theta\\).",
+              "work": "\\(Z^{-n}=\\cos n\\theta-i\\sin n\\theta\\)"
+            },
+            {
+              "explain": "Add: the imaginary parts cancel and the cosines double.",
+              "work": "\\(Z^{n}+Z^{-n}=2\\cos n\\theta\\)"
+            },
+            {
+              "explain": "Why not the others: B is \\(Z^{n}-Z^{-n}\\); C has \\(\\theta^{n}\\) in the wrong place; D drops the 2 and the \\(i\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "express \\(Z^{n}+Z^{-n}\\) in terms of \\(\\theta\\)",
+              "note": "\\(Z^{-n}=\\cos n\\theta-i\\sin n\\theta\\); add."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Killara High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2020-e2-q14bii",
+          "type": "mc",
+          "stem": "Let, for real values of \\(k\\), \\(f(\\theta)=1+k\\cos\\theta+k^{2}\\cos2\\theta+k^{3}\\cos3\\theta+\\cdots+k^{n}\\cos n\\theta+\\cdots\\). Using \\(Z^{n}+Z^{-n}=2\\cos n\\theta\\) and expressing \\(f(\\theta)\\) as the sum of two geometric progressions, prove that \\(f(\\theta)=\\dfrac{1-k\\cos\\theta}{1-2k\\cos\\theta+k^{2}}\\), \\(|k|<1\\). Which working is correct?",
+          "difficulty": "hard",
+          "options": [
+            "Write \\(k^{n}\\cos n\\theta=\\dfrac12k^{n}\\left(Z^{n}+Z^{-n}\\right)\\). So \\(f=\\dfrac{1}{2}\\sum_{n\\ge0}(kZ)^{n}+\\dfrac{1}{2}\\sum_{n\\ge0}\\left(kZ^{-1}\\right)^{n}\\) (two GPs with ratios \\(kZ\\) and \\(kZ^{-1}\\), both of modulus \\(|k|<1\\)). Sum: \\(f=\\dfrac{1}{2}\\left[\\dfrac{1}{1-kZ}+\\dfrac{1}{1-kZ^{-1}}\\right]=\\dfrac{1}{2}\\cdot\\dfrac{2-k\\left(Z+Z^{-1}\\right)}{1-k\\left(Z+Z^{-1}\\right)+k^{2}}=\\dfrac{1-k\\cos\\theta}{1-2k\\cos\\theta+k^{2}}\\).",
+            "Write \\(k^{n}\\cos n\\theta=k^{n}\\left(Z^{n}+Z^{-n}\\right)\\) (forgetting the \\(\\dfrac{1}{2}\\)). So \\(f=\\dfrac{1}{1-kZ}+\\dfrac{1}{1-kZ^{-1}}=\\dfrac{2-2k\\cos\\theta}{1-2k\\cos\\theta+k^{2}}\\).",
+            "Write \\(f=\\sum k^{n}\\cos n\\theta\\) as a single GP with ratio \\(k\\cos\\theta\\): \\(f=\\dfrac{1}{1-k\\cos\\theta}\\).",
+            "Write \\(\\cos n\\theta=\\dfrac{Z^{n}-Z^{-n}}{2}\\). So \\(f=\\dfrac{1}{2}\\left[\\dfrac{1}{1-kZ}-\\dfrac{1}{1-kZ^{-1}}\\right]\\), which simplifies to the result."
+          ],
+          "answer": 0,
+          "hint": "Replace each \\(\\cos n\\theta\\) by \\(\\dfrac{1}{2}\\left(Z^{n}+Z^{-n}\\right)\\). The series splits into two GPs: \\(\\sum(kZ)^{n}\\) and \\(\\sum(kZ^{-1})^{n}\\), each with \\(|\\text{ratio}|=|k|<1\\), so each sums to \\(\\dfrac{1}{1-\\text{ratio}}\\). Combine over a common denominator and use \\(Z+Z^{-1}=2\\cos\\theta\\), \\(ZZ^{-1}=1\\).",
+          "steps": [
+            {
+              "explain": "From part (i), \\(\\cos n\\theta=\\dfrac{1}{2}\\left(Z^{n}+Z^{-n}\\right)\\). The \\(n=0\\) term is \\(\\dfrac{1}{2}(1+1)=1\\) ✓.",
+              "work": "\\(f(\\theta)=\\dfrac{1}{2}\\sum_{n=0}^{\\infty}(kZ)^{n}+\\dfrac{1}{2}\\sum_{n=0}^{\\infty}\\left(kZ^{-1}\\right)^{n}\\)"
+            },
+            {
+              "explain": "Each is an infinite GP with first term 1 and ratio \\(kZ\\) or \\(kZ^{-1}\\). Since \\(|Z|=1\\), the ratios have modulus \\(|k|<1\\), so the sums are \\(\\dfrac{1}{1-\\text{ratio}}\\).",
+              "work": "\\(f=\\dfrac{1}{2}\\left[\\dfrac{1}{1-kZ}+\\dfrac{1}{1-kZ^{-1}}\\right]\\)"
+            },
+            {
+              "explain": "Common denominator: \\((1-kZ)\\left(1-kZ^{-1}\\right)=1-k\\left(Z+Z^{-1}\\right)+k^{2}ZZ^{-1}=1-2k\\cos\\theta+k^{2}\\). Numerator: \\(\\left(1-kZ^{-1}\\right)+(1-kZ)=2-k\\left(Z+Z^{-1}\\right)=2-2k\\cos\\theta\\).",
+              "work": "\\(f=\\dfrac{1}{2}\\cdot\\dfrac{2-2k\\cos\\theta}{1-2k\\cos\\theta+k^{2}}\\)"
+            },
+            {
+              "explain": "Cancel the \\(\\dfrac{1}{2}\\) with the 2.",
+              "work": "\\(f(\\theta)=\\dfrac{1-k\\cos\\theta}{1-2k\\cos\\theta+k^{2}}\\)"
+            },
+            {
+              "explain": "Why not the others: B forgets the \\(\\dfrac{1}{2}\\) (the result would be doubled); C treats \\(\\cos n\\theta\\) as \\(\\cos^{n}\\theta\\); D uses \\(\\dfrac{Z^{n}-Z^{-n}}{2}\\) (that is \\(i\\sin n\\theta\\), not \\(\\cos n\\theta\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "prove that \\(f(\\theta)=\\dfrac{1-k\\cos\\theta}{1-2k\\cos\\theta+k^{2}}\\)",
+              "note": "\\(\\cos n\\theta=\\dfrac{1}{2}(Z^n+Z^{-n})\\); two GPs; \\(|k|<1\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Killara High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2020-e2-q14biii",
+          "type": "mc",
+          "stem": "Verify the result \\(f(\\theta)=\\dfrac{1-k\\cos\\theta}{1-2k\\cos\\theta+k^{2}}\\) in (ii) for \\(|k|<1\\) and \\(\\theta=\\dfrac\\pi2\\). Which verification is correct?",
+          "difficulty": "medium",
+          "options": [
+            "At \\(\\theta=\\dfrac\\pi2\\): \\(\\cos\\dfrac{n\\pi}{2}=0\\) for odd \\(n\\), and \\(\\cos\\dfrac{n\\pi}{2}=(-1)^{\\frac{n}{2}}\\) for even \\(n\\). So \\(f=1-k^{2}+k^{4}-k^{6}+\\cdots\\), a GP with first term 1 and ratio \\(-k^{2}\\) (\\(|{-k^{2}}|<1\\)), sum \\(\\dfrac{1}{1+k^{2}}\\). The formula gives \\(\\dfrac{1-0}{1-0+k^{2}}=\\dfrac{1}{1+k^{2}}\\) ✓.",
+            "At \\(\\theta=\\dfrac\\pi2\\): \\(\\cos\\dfrac{n\\pi}{2}=1\\) for all \\(n\\), so \\(f=1+k+k^{2}+\\cdots=\\dfrac{1}{1-k}\\). The formula gives \\(\\dfrac{1}{1-k}\\) ✓.",
+            "At \\(\\theta=\\dfrac\\pi2\\): \\(f=1-k^{2}+k^{4}-\\cdots\\) with ratio \\(k^{2}\\), sum \\(\\dfrac{1}{1-k^{2}}\\). The formula gives \\(\\dfrac{1}{1-k^{2}}\\) ✓.",
+            "At \\(\\theta=\\dfrac\\pi2\\): the formula gives \\(\\dfrac{1-k\\cdot1}{1-2k+k^{2}}=\\dfrac{1}{1-k}\\), which matches the series."
+          ],
+          "answer": 0,
+          "hint": "Substitute \\(\\theta=\\dfrac\\pi2\\) in BOTH sides. For the series list \\(\\cos\\dfrac{n\\pi}{2}\\) for \\(n=0,1,2,3,4\\): \\(1,0,-1,0,1\\). The series becomes a GP; compare its sum with the formula (use \\(\\cos\\dfrac\\pi2=0\\)).",
+          "steps": [
+            {
+              "explain": "Series: \\(\\cos0=1\\); \\(\\cos\\dfrac\\pi2=0\\); \\(\\cos\\pi=-1\\); \\(\\cos\\dfrac{3\\pi}{2}=0\\); \\(\\cos2\\pi=1\\); … So only EVEN terms survive.",
+              "work": "\\(f\\left(\\dfrac\\pi2\\right)=1+0-k^{2}+0+k^{4}-\\cdots=1-k^{2}+k^{4}-k^{6}+\\cdots\\)"
+            },
+            {
+              "explain": "A GP with first term 1 and common ratio \\(-k^{2}\\); \\(|-k^{2}|<1\\), so the sum is \\(\\dfrac{1}{1-(-k^{2})}\\).",
+              "work": "\\(f\\left(\\dfrac\\pi2\\right)=\\dfrac{1}{1+k^{2}}\\)"
+            },
+            {
+              "explain": "Formula: \\(\\cos\\dfrac\\pi2=0\\).",
+              "work": "\\(\\dfrac{1-k\\cdot0}{1-2k\\cdot0+k^{2}}=\\dfrac{1}{1+k^{2}}\\)"
+            },
+            {
+              "explain": "Both agree, so the result is verified for \\(\\theta=\\dfrac\\pi2\\).",
+              "work": ""
+            },
+            {
+              "explain": "Why not the others: B takes \\(\\cos\\dfrac{n\\pi}{2}=1\\) always (false); C takes the ratio as \\(k^{2}\\) (the signs alternate: ratio \\(-k^{2}\\)); D uses \\(\\cos\\dfrac\\pi2=1\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Verify the result",
+              "note": "\\(\\cos\\dfrac{n\\pi}{2}\\): \\(1,0,-1,0,\\dots\\); GP ratio \\(-k^2\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Killara High School",
             "grade": "12",
             "origin": "teacher"
           }
@@ -6439,6 +6924,160 @@
           "meta": {
             "source": "James Ruse Agricultural High School 2020 Trial Higher School Certificate Examination Mathematics Extension 2",
             "school": "James Ruse Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2020-e2-q11ci",
+          "type": "mc",
+          "stem": "Find the square roots of \\(-35+12i\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\pm(1+6i)\\)",
+            "\\(\\pm(1-6i)\\)",
+            "\\(\\pm(6+i)\\)",
+            "\\(1+6i\\) only"
+          ],
+          "answer": 0,
+          "hint": "Let \\((a+ib)^{2}=-35+12i\\), expand, and equate real and imaginary parts. Look for integers \\(a\\), \\(b\\) with \\(ab=\\) half the imaginary part. Remember there are TWO square roots.",
+          "steps": [
+            {
+              "explain": "Expand \\((a+ib)^{2}\\) and equate.",
+              "work": "\\(\\begin{aligned}&a^{2}-b^{2}&=-35\\quad(1)\\\\ &2ab&=12\\ \\Rightarrow\\ ab=6\\quad(2)\\end{aligned}\\)"
+            },
+            {
+              "explain": "Integer pairs with \\(ab=6\\): \\((1,6),(2,3),(3,2),(6,1)\\) and negatives. Test (1): \\(a=1,b=6\\): \\(1-36=-35\\) ✓.",
+              "work": "\\(a=1,\\ b=6\\quad\\text{or}\\quad a=-1,\\ b=-6\\)"
+            },
+            {
+              "explain": "Check: \\((1+6i)^{2}=1+12i+36i^{2}=1+12i-36=-35+12i\\) ✓.",
+              "work": "\\(\\sqrt{-35+12i}=\\pm(1+6i)\\)"
+            },
+            {
+              "explain": "Why not the others: \\((1-6i)^{2}=-35-12i\\); \\((6+i)^{2}=35+12i\\); the last option gives only one of the two roots.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the square roots of \\(-35+12i\\)",
+              "note": "\\((a+ib)^2\\): \\(a^2-b^2=-35\\), \\(ab=6\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Killara High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2020-e2-q12di",
+          "type": "mc",
+          "stem": "Show that if \\(1,\\omega_{1},\\omega_{2}\\) are the cube roots of 1, then \\(1+\\omega_{1}+\\omega_{1}^{2}=0\\) and \\(1+\\omega_{2}+\\omega_{2}^{2}=0\\). Which argument is correct?",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\omega\\) is a root of \\(z^{3}-1=0\\), and \\(z^{3}-1=(z-1)\\left(z^{2}+z+1\\right)\\). \\(\\omega_{1}\\ne1\\), so \\(\\omega_{1}-1\\ne0\\), hence \\(\\omega_{1}^{2}+\\omega_{1}+1=0\\). The same argument applies to \\(\\omega_{2}\\).",
+            "\\(\\omega^{3}=1\\), so \\(\\omega=1\\); then \\(1+1+1=3\\), which must be 0, so we divide by 3.",
+            "The three cube roots sum to \\(1+\\omega_{1}+\\omega_{2}=0\\), so \\(1+\\omega_{1}+\\omega_{1}^{2}\\) is also 0 automatically.",
+            "\\(z^{3}-1=(z-1)^{3}\\), so the roots are all 1 and the sums are 3."
+          ],
+          "answer": 0,
+          "hint": "The cube roots of 1 satisfy \\(z^{3}=1\\), i.e. \\(z^{3}-1=0\\). Factorise the difference of two cubes: \\(z^{3}-1=(z-1)\\left(z^{2}+z+1\\right)\\). A non-real root is NOT a root of the factor \\((z-1)\\), so it must be a root of the other factor.",
+          "steps": [
+            {
+              "explain": "Each cube root \\(z\\) satisfies \\(z^{3}-1=0\\). Factorise (difference of two cubes \\(a^{3}-b^{3}=(a-b)\\left(a^{2}+ab+b^{2}\\right)\\)).",
+              "work": "\\(z^{3}-1=(z-1)\\left(z^{2}+z+1\\right)=0\\)"
+            },
+            {
+              "explain": "For \\(\\omega_{1}\\) (which is NOT equal to 1), \\(\\omega_{1}-1\\ne0\\). A product is zero only if a factor is zero, so the other factor must be zero.",
+              "work": "\\(\\omega_{1}^{2}+\\omega_{1}+1=0\\)"
+            },
+            {
+              "explain": "The same reasoning for \\(\\omega_{2}\\ne1\\).",
+              "work": "\\(\\omega_{2}^{2}+\\omega_{2}+1=0\\)"
+            },
+            {
+              "explain": "Why not the others: B wrongly says \\(\\omega=1\\) (the other two roots are complex); C assumes the result (the sum of the three roots is a different identity); D is false: \\(z^{3}-1\\ne(z-1)^{3}\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that if \\(1,\\omega_{1},\\omega_{2}\\) are the cube roots of 1",
+              "note": "\\(z^3-1=(z-1)(z^2+z+1)\\); \\(\\omega\\ne1\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Killara High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2020-e2-q12dii",
+          "type": "mc",
+          "stem": "If \\(n\\) is not a multiple of 3, prove that \\(x^{2n}+x^{n}+1\\) is divisible by \\(x^{2}+x+1\\). Which proof is correct?",
+          "difficulty": "hard",
+          "options": [
+            "The roots of \\(x^{2}+x+1\\) are \\(\\omega\\) and \\(\\omega^{2}\\) (the complex cube roots of 1). It is enough to show \\(P(x)=x^{2n}+x^{n}+1\\) is zero at \\(x=\\omega\\) and \\(x=\\omega^{2}\\). Since \\(n\\) is not a multiple of 3, \\(\\omega^{n}\\) is a complex cube root of 1 (\\(\\ne1\\)), so \\(\\left(\\omega^{n}\\right)^{2}+\\omega^{n}+1=0\\). The same works for \\(\\omega^{2}\\).",
+            "The roots of \\(x^{2}+x+1\\) are \\(\\omega\\) and \\(\\omega^{2}\\). Then \\(P(\\omega)=\\omega^{2n}+\\omega^{n}+1=1+1+1=3\\ne0\\), so the statement is false.",
+            "Test \\(n=1\\): \\(x^{2}+x+1\\) is divisible by itself. Hence the statement is true for all \\(n\\).",
+            "Since \\(n\\) is not a multiple of 3, \\(x^{n}\\) is divisible by \\(x\\). Therefore \\(x^{2n}+x^{n}+1\\) is divisible by \\(x^{2}+x+1\\)."
+          ],
+          "answer": 0,
+          "hint": "\\(x^{2}+x+1\\) divides \\(P(x)\\) exactly when \\(P(\\omega)=P(\\omega^{2})=0\\) (they are the two roots of \\(x^{2}+x+1\\)). Use \\(\\omega^{3}=1\\) and part (i). Key: if \\(n\\) is NOT a multiple of 3, then \\(\\omega^{n}\\ne1\\).",
+          "steps": [
+            {
+              "explain": "Roots of \\(x^{2}+x+1=0\\) are \\(\\omega\\) and \\(\\omega^{2}\\) (\\(\\omega=\\operatorname{cis}\\dfrac{2\\pi}{3}\\)). \\(P(x)\\) is divisible by \\(x^{2}+x+1\\) if \\(P(\\omega)=0\\) and \\(P(\\omega^{2})=0\\).",
+              "work": "\\(P(x)=x^{2n}+x^{n}+1\\)"
+            },
+            {
+              "explain": "\\(P(\\omega)=\\left(\\omega^{n}\\right)^{2}+\\omega^{n}+1\\). Since \\(\\omega^{3}=1\\), \\(\\omega^{n}\\) depends only on the remainder of \\(n\\) divided by 3. If \\(n\\) is not a multiple of 3 the remainder is 1 or 2, so \\(\\omega^{n}=\\omega\\) or \\(\\omega^{2}\\): a complex cube root of 1 other than 1.",
+              "work": "\\(\\omega^{n}\\in\\{\\omega,\\omega^{2}\\}\\)"
+            },
+            {
+              "explain": "By part (i), each of \\(\\omega\\) and \\(\\omega^{2}\\) satisfies \\(z^{2}+z+1=0\\). So \\(\\left(\\omega^{n}\\right)^{2}+\\omega^{n}+1=0\\), i.e. \\(P(\\omega)=0\\). The same for \\(P(\\omega^{2})\\) (\\(\\left(\\omega^{2}\\right)^{n}\\) is also \\(\\omega\\) or \\(\\omega^{2}\\)).",
+              "work": "\\(P(\\omega)=0,\\quad P(\\omega^{2})=0\\)"
+            },
+            {
+              "explain": "Hence \\(\\omega\\) and \\(\\omega^{2}\\) are both roots of \\(P(x)\\), so \\(\\left(x-\\omega\\right)\\left(x-\\omega^{2}\\right)=x^{2}+x+1\\) is a factor of \\(P(x)\\).",
+              "work": "\\(x^{2}+x+1\\mid x^{2n}+x^{n}+1\\)"
+            },
+            {
+              "explain": "Why not the others: B uses \\(\\omega^{n}=1\\) (false if \\(n\\) is not a multiple of 3); C checks one case (not a proof); D is meaningless (divisibility by \\(x\\) is irrelevant).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "prove that \\(x^{2n}+x^{n}+1\\) is divisible by \\(x^{2}+x+1\\)",
+              "note": "Show \\(P(\\omega)=P(\\omega^2)=0\\); \\(\\omega^n\\ne1\\) when \\(3\\nmid n\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Killara High School",
             "grade": "12",
             "origin": "teacher"
           }

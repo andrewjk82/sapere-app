@@ -1385,6 +1385,164 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "kinross2022-e2-q1",
+          "type": "mc",
+          "stem": "Of the following, select the statement that is TRUE for all real numbers \\(x\\) and \\(y\\):",
+          "difficulty": "medium",
+          "options": [
+            "If \\(x^{3}>y^{3}\\), then \\(x>y\\)",
+            "If \\(x^{2}>y^{2}\\), then \\(x>y\\)",
+            "If \\(x>y\\), then \\(\\dfrac{1}{x}<\\dfrac{1}{y}\\)",
+            "If \\(|x|>|y|\\), then \\(x>y\\)"
+          ],
+          "answer": 0,
+          "hint": "A statement is TRUE for ALL real numbers only if it can never fail. Test each option with a counterexample using NEGATIVE numbers (squares, absolute values and reciprocals can behave differently for negatives).",
+          "steps": [
+            {
+              "explain": "(A) The function \\(f(x)=x^{3}\\) is strictly increasing for ALL real \\(x\\), so it preserves order in both directions: \\(x^{3}>y^{3}\\iff x>y\\). Test: \\(x=-1,y=-2\\): \\((-1)^{3}=-1>-8=(-2)^{3}\\) and indeed \\(-1>-2\\) ✓.",
+              "work": "\\(x^{3}>y^{3}\\ \\Rightarrow\\ x>y\\quad\\text{(always true)}\\)"
+            },
+            {
+              "explain": "(B) Counterexample: \\(x=-3\\), \\(y=1\\). Then \\(x^{2}=9>1=y^{2}\\) but \\(x=-3<1=y\\).",
+              "work": "\\(x^{2}>y^{2}\\ \\not\\Rightarrow\\ x>y\\)"
+            },
+            {
+              "explain": "(C) Counterexample: \\(x=1\\), \\(y=-1\\). Then \\(x>y\\) but \\(\\dfrac{1}{x}=1\\) is NOT less than \\(\\dfrac{1}{y}=-1\\).",
+              "work": "\\(x>y\\ \\not\\Rightarrow\\ \\dfrac{1}{x}<\\dfrac{1}{y}\\)"
+            },
+            {
+              "explain": "(D) Counterexample: \\(x=-3\\), \\(y=1\\). Then \\(|x|=3>1=|y|\\) but \\(x<y\\).",
+              "work": "\\(|x|>|y|\\ \\not\\Rightarrow\\ x>y\\)"
+            },
+            {
+              "explain": "Only (A) has no counterexample, so (A) is the TRUE statement.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "select the statement that is TRUE for all real numbers",
+              "note": "Find a counterexample for each wrong option (try negatives)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Kinross Wolaroi School 2022 Trial HSC Examination Mathematics Extension 2",
+            "school": "Kinross Wolaroi School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "kinross2022-e2-q6",
+          "type": "mc",
+          "stem": "Consider the statement: For any function \\(f(x)\\), \\(f(x)\\) is not continuous at \\(x=c\\ \\Rightarrow\\ f(x)\\) is not differentiable at \\(x=c\\). Which of the following is correct?",
+          "difficulty": "medium",
+          "options": [
+            "The contrapositive statement is false and the converse statement is false.",
+            "The contrapositive statement is false and the converse statement is true.",
+            "The contrapositive statement is true and the converse statement is false.",
+            "The contrapositive statement is true and the converse statement is true."
+          ],
+          "answer": 2,
+          "hint": "For \\(P\\Rightarrow Q\\): contrapositive \\(\\neg Q\\Rightarrow\\neg P\\) (always has the SAME truth value as the original); converse \\(Q\\Rightarrow P\\) (may differ). Use the known fact: differentiable \\(\\Rightarrow\\) continuous.",
+          "steps": [
+            {
+              "explain": "\\(P\\): “\\(f\\) is not continuous at \\(c\\)”; \\(Q\\): “\\(f\\) is not differentiable at \\(c\\)”. The original statement \\(P\\Rightarrow Q\\) is TRUE (if a function is not continuous it cannot be differentiable).",
+              "work": "\\(P\\Rightarrow Q\\)"
+            },
+            {
+              "explain": "Contrapositive \\(\\neg Q\\Rightarrow\\neg P\\): “if \\(f\\) is differentiable at \\(c\\) then \\(f\\) is continuous at \\(c\\)”. This is TRUE (a standard theorem), as it must be since it is equivalent to the original.",
+              "work": "\\(\\neg Q\\Rightarrow\\neg P\\ \\text{is TRUE}\\)"
+            },
+            {
+              "explain": "Converse \\(Q\\Rightarrow P\\): “if \\(f\\) is not differentiable at \\(c\\) then \\(f\\) is not continuous at \\(c\\)”. This is FALSE: \\(f(x)=|x|\\) is continuous at \\(0\\) but not differentiable at \\(0\\).",
+              "work": "\\(Q\\Rightarrow P\\ \\text{is FALSE (e.g. }f(x)=|x|,\\ c=0)\\)"
+            },
+            {
+              "explain": "So the contrapositive is true and the converse is false.",
+              "work": ""
+            },
+            {
+              "explain": "Why not the others: A and B call the contrapositive false (it is always equivalent to the original, which is true); D says the converse is true, but \\(|x|\\) is a counterexample.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">C</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Which of the following is correct",
+              "note": "Contrapositive \\(\\equiv\\) original; converse: test \\(|x|\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Kinross Wolaroi School 2022 Trial HSC Examination Mathematics Extension 2",
+            "school": "Kinross Wolaroi School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2020-e2-q7",
+          "type": "mc",
+          "stem": "Which of the following statements is a negation of the following statement? \\(\\forall x\\in R^{+},\\exists y\\in R^{+}:xy=1\\)",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\exists x,y\\in R^{+}\\) such that \\(xy\\ne1\\)",
+            "\\(\\forall x,y\\in R^{+}\\), \\(xy\\ne1\\)",
+            "\\(\\exists x\\in R^{+}:\\forall y\\in R^{+},\\ xy\\ne1\\)",
+            "\\(\\forall x\\in R^{+}\\), there exists a positive real number \\(y\\) such that \\(xy\\ne1\\)"
+          ],
+          "answer": 2,
+          "hint": "Negate a statement with quantifiers by swapping each quantifier (\\(\\forall\\leftrightarrow\\exists\\)) IN ORDER and negating the final condition: \\(\\neg(\\forall x\\,\\exists y\\,P)\\equiv\\exists x\\,\\forall y\\,\\neg P\\).",
+          "steps": [
+            {
+              "explain": "Original: \\(\\forall x\\ \\exists y:\\ xy=1\\) (every positive real has a reciprocal).",
+              "work": "\\(\\forall x\\in R^{+}\\ \\exists y\\in R^{+}:\\ xy=1\\)"
+            },
+            {
+              "explain": "Negate the outer quantifier: \\(\\neg\\forall x=\\exists x\\neg\\). Then negate the inner quantifier: \\(\\neg\\exists y=\\forall y\\neg\\). Finally \\(\\neg(xy=1)\\) is \\(xy\\ne1\\).",
+              "work": "\\(\\exists x\\in R^{+}:\\ \\forall y\\in R^{+},\\ xy\\ne1\\)"
+            },
+            {
+              "explain": "In words: there is a positive real number \\(x\\) such that NO positive \\(y\\) satisfies \\(xy=1\\).",
+              "work": ""
+            },
+            {
+              "explain": "Why not the others: A changes both quantifiers to \\(\\exists\\) (not the right order); B changes both to \\(\\forall\\); D keeps \\(\\forall x\\) (the outer quantifier must become \\(\\exists x\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">C</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "is a negation of the following statement",
+              "note": "Swap quantifiers in order; negate the end."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Killara High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -2173,6 +2331,114 @@
           "meta": {
             "source": "Hurlstone Agricultural High School 2020 Trial Higher School Certificate Examination Mathematics Extension 2",
             "school": "Hurlstone Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "kinross2022-e2-q14ci",
+          "type": "mc",
+          "stem": "Show that \\(\\dfrac{n}{n+1}\\,{}^{2n}C_{n}={}^{2n}C_{n-1}\\) for \\(n\\ge1\\). Which working is correct?",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\dfrac{n}{n+1}\\,{}^{2n}C_{n}=\\dfrac{n}{n+1}\\cdot\\dfrac{(2n)!}{n!\\,n!}=\\dfrac{(2n)!}{(n+1)\\,(n-1)!\\,n!}=\\dfrac{(2n)!}{(n-1)!\\,(n+1)!}={}^{2n}C_{n-1}\\).",
+            "\\(\\dfrac{n}{n+1}\\,{}^{2n}C_{n}=\\dfrac{n}{n+1}\\cdot\\dfrac{(2n)!}{n!\\,n!}=\\dfrac{(2n)!}{(n-1)!\\,n!\\,(n+1)}\\); since \\((n+1)\\cdot n!=(n+2)!\\), this equals \\({}^{2n}C_{n-1}\\).",
+            "\\({}^{2n}C_{n-1}=\\dfrac{(2n)!}{(n-1)!\\,n!}\\) (the factorial lower indices add to \\(2n-1\\)), and dividing by \\(\\dfrac{n+1}{n}\\) gives \\({}^{2n}C_{n}\\).",
+            "\\(\\dfrac{n}{n+1}\\,{}^{2n}C_{n}=\\dfrac{n}{n+1}\\cdot\\dfrac{2n}{n}=\\dfrac{2n}{n+1}={}^{2n}C_{n-1}\\)."
+          ],
+          "answer": 0,
+          "hint": "Use \\({}^{N}C_{k}=\\dfrac{N!}{k!\\,(N-k)!}\\) with \\(N=2n\\). Write both sides in factorials and use \\(n!=n\\cdot(n-1)!\\) and \\((n+1)!=(n+1)\\cdot n!\\).",
+          "steps": [
+            {
+              "explain": "Left side: \\(^{2n}C_{n}=\\dfrac{(2n)!}{n!\\,n!}\\).",
+              "work": "\\(\\dfrac{n}{n+1}\\cdot\\dfrac{(2n)!}{n!\\,n!}\\)"
+            },
+            {
+              "explain": "Use \\(n!=n\\,(n-1)!\\) in ONE of the \\(n!\\) to cancel the factor \\(n\\) in the numerator.",
+              "work": "\\(=\\dfrac{(2n)!}{(n+1)\\,(n-1)!\\,n!}\\)"
+            },
+            {
+              "explain": "Use \\((n+1)!=(n+1)\\,n!\\) to combine \\((n+1)\\cdot n!\\) into \\((n+1)!\\).",
+              "work": "\\(=\\dfrac{(2n)!}{(n-1)!\\,(n+1)!}\\)"
+            },
+            {
+              "explain": "Right side: \\(^{2n}C_{n-1}=\\dfrac{(2n)!}{(n-1)!\\,(2n-(n-1))!}=\\dfrac{(2n)!}{(n-1)!\\,(n+1)!}\\). Same as the left side.",
+              "work": "\\({}^{2n}C_{n-1}=\\dfrac{(2n)!}{(n-1)!\\,(n+1)!}\\)"
+            },
+            {
+              "explain": "Why not the others: B uses \\((n+1)n!=(n+2)!\\) (it equals \\((n+1)!\\)); C has wrong factorials for \\({}^{2n}C_{n-1}\\); D replaces \\({}^{2n}C_{n}\\) by a wrong number.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that \\(\\dfrac{n}{n+1}\\,{}^{2n}C_{n}={}^{2n}C_{n-1}\\)",
+              "note": "\\(n!=n\\,(n-1)!\\); \\((n+1)!=(n+1)\\,n!\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Kinross Wolaroi School 2022 Trial HSC Examination Mathematics Extension 2",
+            "school": "Kinross Wolaroi School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "kinross2022-e2-q14cii",
+          "type": "mc",
+          "stem": "Using \\(\\dfrac{n}{n+1}\\,{}^{2n}C_{n}={}^{2n}C_{n-1}\\), show that \\(\\dfrac{1}{n+1}\\,{}^{2n}C_{n}\\) is an integer for \\(n\\ge1\\). Which argument is correct?",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{1}{n+1}\\,{}^{2n}C_{n}={}^{2n}C_{n}-\\dfrac{n}{n+1}\\,{}^{2n}C_{n}={}^{2n}C_{n}-{}^{2n}C_{n-1}\\), because \\(1-\\dfrac{n}{n+1}=\\dfrac1{n+1}\\). A difference of two binomial coefficients (integers) is an integer.",
+            "\\(\\dfrac{1}{n+1}\\,{}^{2n}C_{n}={}^{2n}C_{n}+{}^{2n}C_{n-1}\\), a sum of two integers, so it is an integer.",
+            "\\(\\dfrac{1}{n+1}\\,{}^{2n}C_{n}={}^{2n}C_{n-1}\\) directly (the factor \\(n\\) can be ignored), which is an integer.",
+            "Since \\(n+1\\) divides \\(2n\\) for all \\(n\\), \\(\\dfrac{1}{n+1}\\,{}^{2n}C_{n}\\) is an integer."
+          ],
+          "answer": 0,
+          "hint": "Write \\(\\dfrac{1}{n+1}=1-\\dfrac{n}{n+1}\\). Then \\(\\dfrac{1}{n+1}\\,{}^{2n}C_{n}={}^{2n}C_{n}-\\dfrac{n}{n+1}\\,{}^{2n}C_{n}\\) and use part (i) on the second term.",
+          "steps": [
+            {
+              "explain": "Split \\(\\dfrac{1}{n+1}=1-\\dfrac{n}{n+1}\\) (check: \\(\\dfrac{n+1-n}{n+1}=\\dfrac{1}{n+1}\\)).",
+              "work": "\\(\\dfrac{1}{n+1}\\,{}^{2n}C_{n}=\\left(1-\\dfrac{n}{n+1}\\right){}^{2n}C_{n}={}^{2n}C_{n}-\\dfrac{n}{n+1}\\,{}^{2n}C_{n}\\)"
+            },
+            {
+              "explain": "Substitute part (i) into the second term.",
+              "work": "\\(={}^{2n}C_{n}-{}^{2n}C_{n-1}\\)"
+            },
+            {
+              "explain": "Binomial coefficients are integers, and a difference of integers is an integer.",
+              "work": "\\(\\dfrac{1}{n+1}\\,{}^{2n}C_{n}\\in\\mathbb Z\\)"
+            },
+            {
+              "explain": "Test: \\(n=3\\): \\(\\dfrac{1}{4}\\,{}^{6}C_{3}=\\dfrac{20}{4}=5\\) and \\({}^{6}C_{3}-{}^{6}C_{2}=20-15=5\\) ✓ (the Catalan numbers).",
+              "work": ""
+            },
+            {
+              "explain": "Why not the others: B has a plus sign; C drops the factor \\(\\dfrac{n}{n+1}\\) (it is not 1); D is false (e.g. \\(n=2\\): \\(n+1=3\\) does not divide \\(2n=4\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "show that \\(\\dfrac{1}{n+1}\\,{}^{2n}C_{n}\\) is an integer",
+              "note": "\\(\\dfrac1{n+1}=1-\\dfrac n{n+1}\\); use part (i)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Kinross Wolaroi School 2022 Trial HSC Examination Mathematics Extension 2",
+            "school": "Kinross Wolaroi School",
             "grade": "12",
             "origin": "teacher"
           }
@@ -3249,6 +3515,114 @@
           "meta": {
             "source": "James Ruse Agricultural High School 2020 Trial Higher School Certificate Examination Mathematics Extension 2",
             "school": "James Ruse Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "kinross2022-e2-q15c",
+          "type": "mc",
+          "stem": "Prove by contradiction that \\(\\log_{5}7\\) is irrational. Which proof is correct?",
+          "difficulty": "medium",
+          "options": [
+            "Assume \\(\\log_{5}7\\) is rational: \\(\\log_{5}7=\\dfrac{a}{b}\\) with \\(a,b\\) positive integers. Then \\(5^{\\frac ab}=7\\), so \\(5^{a}=7^{b}\\). The left side is divisible by 5 but the right side is not (7 and 5 are distinct primes, and by unique factorisation \\(7^{b}\\) has no factor 5). This is a contradiction, so \\(\\log_{5}7\\) is irrational.",
+            "Assume \\(\\log_{5}7\\) is irrational. Then \\(5^{a}=7^{b}\\) for integers \\(a,b\\), a contradiction, so it is rational.",
+            "\\(\\log_{5}7\\approx1.209\\), which does not terminate or repeat in a calculator, so it is irrational.",
+            "Assume \\(\\log_{5}7=\\dfrac{a}{b}\\) in lowest terms. Then \\(5^{a}=7^{b}\\), so both \\(a\\) and \\(b\\) are even, contradicting lowest terms."
+          ],
+          "answer": 0,
+          "hint": "Proof by contradiction: assume the OPPOSITE (that \\(\\log_{5}7\\) is rational, \\(=\\dfrac{a}{b}\\)), convert the logarithm to an index equation \\(5^{a}=7^{b}\\) and find a statement that cannot be true (divisibility by 5).",
+          "steps": [
+            {
+              "explain": "ASSUME the opposite: \\(\\log_{5}7=\\dfrac{a}{b}\\) for positive integers \\(a,b\\) (positive since \\(\\log_{5}7>0\\)).",
+              "work": "\\(\\log_{5}7=\\dfrac{a}{b}\\)"
+            },
+            {
+              "explain": "Convert to index form: \\(\\log_{5}7=\\dfrac{a}{b}\\iff5^{\\frac ab}=7\\). Raise both sides to the power \\(b\\).",
+              "work": "\\(5^{a}=7^{b}\\)"
+            },
+            {
+              "explain": "The left side \\(5^{a}\\) (with \\(a\\ge1\\)) is DIVISIBLE by 5. The right side \\(7^{b}\\) is a power of the prime 7: its only prime factor is 7, so it is NOT divisible by 5.",
+              "work": "\\(5\\mid5^{a}\\quad\\text{but}\\quad5\\nmid7^{b}\\)"
+            },
+            {
+              "explain": "A number cannot be both divisible and not divisible by 5, so we have a CONTRADICTION. Hence the assumption is false and \\(\\log_{5}7\\) is irrational.",
+              "work": ""
+            },
+            {
+              "explain": "Why not the others: B assumes the wrong thing (irrational); C uses a calculator decimal (not a proof); D invents an “even” argument (5 and 7 are odd).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Prove by contradiction that \\(\\log_{5}7\\) is irrational",
+              "note": "Assume \\(\\dfrac{a}{b}\\); \\(5^a=7^b\\); divisibility by 5."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Kinross Wolaroi School 2022 Trial HSC Examination Mathematics Extension 2",
+            "school": "Kinross Wolaroi School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2020-e2-q12a",
+          "type": "mc",
+          "stem": "Prove the following statement using a proof by contradiction. “For each irrational number \\(s\\), the number \\(2s+1\\) is also irrational”. Which proof is correct?",
+          "difficulty": "medium",
+          "options": [
+            "Assume the statement is false: there is an irrational \\(s\\) with \\(2s+1\\) RATIONAL, say \\(2s+1=\\dfrac{p}{q}\\) (\\(p,q\\) integers, \\(q\\ne0\\)). Then \\(s=\\dfrac{1}{2}\\left(\\dfrac{p}{q}-1\\right)=\\dfrac{p-q}{2q}\\), a ratio of integers, so \\(s\\) is rational. This contradicts \\(s\\) irrational, so \\(2s+1\\) must be irrational.",
+            "Assume \\(s\\) is RATIONAL, \\(s=\\dfrac{p}{q}\\). Then \\(2s+1=\\dfrac{2p+q}{q}\\) is rational. This contradicts the statement, so the statement is false.",
+            "Assume \\(2s+1\\) is IRRATIONAL. Then \\(s=\\dfrac{(2s+1)-1}{2}\\) is irrational, which is what we wanted to prove. Hence the statement is true.",
+            "Take \\(s=\\sqrt2\\). Then \\(2\\sqrt2+1\\) is irrational. Hence the statement is true for all irrational \\(s\\)."
+          ],
+          "answer": 0,
+          "hint": "Proof by contradiction: assume the NEGATION of the statement. The statement is “for all irrational \\(s\\), \\(2s+1\\) is irrational”, so its negation is “there EXISTS an irrational \\(s\\) such that \\(2s+1\\) is RATIONAL”. Write \\(2s+1=\\dfrac{p}{q}\\) and solve for \\(s\\) to show \\(s\\) would be rational: a contradiction.",
+          "steps": [
+            {
+              "explain": "ASSUME the opposite: for some irrational \\(s\\), \\(2s+1\\) is rational. A rational number is a ratio of integers.",
+              "work": "\\(2s+1=\\dfrac{p}{q},\\qquad p,q\\in\\mathbb Z,\\ q\\ne0\\)"
+            },
+            {
+              "explain": "Solve for \\(s\\): subtract 1 (write \\(1=\\dfrac{q}{q}\\)) and divide by 2.",
+              "work": "\\(s=\\dfrac{1}{2}\\left(\\dfrac{p}{q}-1\\right)=\\dfrac{1}{2}\\cdot\\dfrac{p-q}{q}=\\dfrac{p-q}{2q}\\)"
+            },
+            {
+              "explain": "\\(p-q\\) and \\(2q\\) are integers and \\(2q\\ne0\\), so \\(s\\) is RATIONAL. But \\(s\\) was assumed IRRATIONAL: CONTRADICTION.",
+              "work": "\\(s\\in\\mathbb Q\\quad\\text{contradicts}\\quad s\\notin\\mathbb Q\\)"
+            },
+            {
+              "explain": "Hence the assumption is false, and for every irrational \\(s\\), \\(2s+1\\) is irrational.",
+              "work": ""
+            },
+            {
+              "explain": "Why not the others: B assumes \\(s\\) rational (not the negation); C assumes the conclusion is false but then derives something that is not a contradiction; D checks one example (not a proof).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Prove the following statement using a proof by contradiction",
+              "note": "Negation: some irrational \\(s\\) has \\(2s+1=\\dfrac{p}{q}\\) rational \\(\\Rightarrow s\\) rational."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Killara High School",
             "grade": "12",
             "origin": "teacher"
           }
@@ -5298,6 +5672,306 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "kinross2022-e2-q16ai",
+          "type": "mc",
+          "stem": "Show that, for all positive values of \\(x\\) and \\(y\\), \\(\\dfrac{x+y}{2}\\ge\\sqrt{xy}\\). Which proof is correct?",
+          "difficulty": "medium",
+          "options": [
+            "Since \\(x,y>0\\), \\(\\left(\\sqrt x-\\sqrt y\\right)^{2}\\ge0\\). Expanding: \\(x-2\\sqrt{xy}+y\\ge0\\), so \\(x+y\\ge2\\sqrt{xy}\\). Dividing by 2: \\(\\dfrac{x+y}{2}\\ge\\sqrt{xy}\\).",
+            "Since \\((x-y)^{2}\\ge0\\), \\(x^{2}+y^{2}\\ge2xy\\). Dividing by 2: \\(\\dfrac{x+y}{2}\\ge\\sqrt{xy}\\).",
+            "Take \\(x=y=1\\): \\(\\dfrac{1+1}{2}=1=\\sqrt{1\\cdot1}\\). Hence true for all positive \\(x,y\\).",
+            "Since \\(\\left(\\sqrt x+\\sqrt y\\right)^{2}\\ge0\\): \\(x+2\\sqrt{xy}+y\\ge0\\), so \\(\\dfrac{x+y}{2}\\ge-\\sqrt{xy}\\)."
+          ],
+          "answer": 0,
+          "hint": "Start from a TRUE fact: the square of a real number is never negative. Use \\(\\left(\\sqrt x-\\sqrt y\\right)^{2}\\ge0\\) (it needs \\(x,y\\ge0\\)), expand, and rearrange.",
+          "steps": [
+            {
+              "explain": "\\(x,y>0\\) so \\(\\sqrt x,\\sqrt y\\) are real: \\(\\left(\\sqrt x-\\sqrt y\\right)^{2}\\ge0\\).",
+              "work": "\\(\\left(\\sqrt x-\\sqrt y\\right)^{2}\\ge0\\)"
+            },
+            {
+              "explain": "Expand: \\(\\left(\\sqrt x\\right)^{2}-2\\sqrt x\\sqrt y+\\left(\\sqrt y\\right)^{2}=x-2\\sqrt{xy}+y\\).",
+              "work": "\\(x-2\\sqrt{xy}+y\\ge0\\ \\Rightarrow\\ x+y\\ge2\\sqrt{xy}\\)"
+            },
+            {
+              "explain": "Divide by 2.",
+              "work": "\\(\\dfrac{x+y}{2}\\ge\\sqrt{xy}\\)"
+            },
+            {
+              "explain": "Why not the others: B proves a different inequality (\\(x^{2}+y^{2}\\ge2xy\\)); C tests one example only; D uses a plus sign (that gives a weaker statement with \\(-\\sqrt{xy}\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that, for all positive values of \\(x\\) and \\(y\\)",
+              "note": "\\((\\sqrt x-\\sqrt y)^2\\ge0\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Kinross Wolaroi School 2022 Trial HSC Examination Mathematics Extension 2",
+            "school": "Kinross Wolaroi School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "kinross2022-e2-q16aii",
+          "type": "mc",
+          "stem": "Using \\(\\dfrac{x+y}{2}\\ge\\sqrt{xy}\\) for positive \\(x,y\\), prove that \\((b+c)(c+a)(a+b)\\ge8abc\\) for positive real numbers \\(a,b,c\\). Which argument is correct?",
+          "difficulty": "medium",
+          "options": [
+            "Apply the result to each factor: \\(b+c\\ge2\\sqrt{bc}\\), \\(c+a\\ge2\\sqrt{ca}\\), \\(a+b\\ge2\\sqrt{ab}\\). All sides are positive, so multiply: \\((b+c)(c+a)(a+b)\\ge8\\sqrt{bc\\cdot ca\\cdot ab}=8\\sqrt{a^{2}b^{2}c^{2}}=8abc\\).",
+            "Apply the result to each factor: \\(b+c\\ge\\sqrt{bc}\\), \\(c+a\\ge\\sqrt{ca}\\), \\(a+b\\ge\\sqrt{ab}\\). Multiply: \\((b+c)(c+a)(a+b)\\ge\\sqrt{a^{2}b^{2}c^{2}}=abc\\), and \\(abc\\ge8abc\\).",
+            "Add the three inequalities \\(b+c\\ge2\\sqrt{bc}\\), \\(c+a\\ge2\\sqrt{ca}\\), \\(a+b\\ge2\\sqrt{ab}\\) to get \\(2(a+b+c)\\ge2\\left(\\sqrt{ab}+\\sqrt{bc}+\\sqrt{ca}\\right)\\), then multiply by \\(4abc\\).",
+            "Apply the result to each factor and SUBTRACT: \\((b+c)-(c+a)\\ge2\\sqrt{bc}-2\\sqrt{ca}\\), and so on, giving \\(8abc\\)."
+          ],
+          "answer": 0,
+          "hint": "Each factor \\((b+c)\\), \\((c+a)\\), \\((a+b)\\) is a sum of two positive numbers, so apply \\(x+y\\ge2\\sqrt{xy}\\) to each. Because everything is POSITIVE, you may MULTIPLY the three inequalities. Then simplify the product of square roots.",
+          "steps": [
+            {
+              "explain": "From part (i): \\(x+y\\ge2\\sqrt{xy}\\) for positive \\(x,y\\). Apply to each factor.",
+              "work": "\\(\\begin{aligned}&b+c&\\ge2\\sqrt{bc}\\\\ &c+a&\\ge2\\sqrt{ca}\\\\ &a+b&\\ge2\\sqrt{ab}\\end{aligned}\\)"
+            },
+            {
+              "explain": "All six quantities are positive, so we can multiply the three inequalities (multiplying inequalities between positive numbers keeps the direction).",
+              "work": "\\((b+c)(c+a)(a+b)\\ge8\\sqrt{bc}\\sqrt{ca}\\sqrt{ab}\\)"
+            },
+            {
+              "explain": "Simplify the product of square roots: \\(\\sqrt{bc\\cdot ca\\cdot ab}=\\sqrt{a^{2}b^{2}c^{2}}=abc\\) (positive).",
+              "work": "\\((b+c)(c+a)(a+b)\\ge8abc\\)"
+            },
+            {
+              "explain": "Why not the others: B uses \\(\\sqrt{xy}\\) without the 2 (its conclusion \\(abc\\ge8abc\\) is false); C ADDS instead of multiplying, which does not give the product; D subtracts inequalities (not allowed).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "prove that \\((b+c)(c+a)(a+b)\\ge8abc\\)",
+              "note": "\\(x+y\\ge2\\sqrt{xy}\\) on each factor; multiply."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Kinross Wolaroi School 2022 Trial HSC Examination Mathematics Extension 2",
+            "school": "Kinross Wolaroi School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "kinross2022-e2-q16d",
+          "type": "mc",
+          "stem": "If \\(p\\), \\(q\\) and \\(r\\) are positive real numbers and \\(p+q\\ge r\\), prove that \\(\\dfrac{p}{1+p}+\\dfrac{q}{1+q}-\\dfrac{r}{1+r}\\ge0\\). Which proof is correct?",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\dfrac{p}{1+p}\\ge\\dfrac{p}{1+p+q}\\) and \\(\\dfrac{q}{1+q}\\ge\\dfrac{q}{1+p+q}\\) (the denominators are smaller). Adding: \\(\\dfrac{p}{1+p}+\\dfrac{q}{1+q}\\ge\\dfrac{p+q}{1+p+q}\\). The function \\(f(t)=\\dfrac{t}{1+t}=1-\\dfrac{1}{1+t}\\) is increasing and \\(p+q\\ge r\\), so \\(\\dfrac{p+q}{1+p+q}\\ge\\dfrac{r}{1+r}\\). Combining gives the result.",
+            "\\(\\dfrac{p}{1+p}\\le\\dfrac{p}{1+p+q}\\) and \\(\\dfrac{q}{1+q}\\le\\dfrac{q}{1+p+q}\\). Adding and using \\(f(t)=\\dfrac{t}{1+t}\\) increasing gives the result.",
+            "Since \\(p+q\\ge r\\), \\(\\dfrac{p}{1+p}+\\dfrac{q}{1+q}\\ge\\dfrac{p+q}{1+p+q}\\ge\\dfrac{r}{1+p+q}\\), and \\(\\dfrac{r}{1+p+q}\\ge\\dfrac{r}{1+r}\\), which proves it.",
+            "Take \\(p=q=r=1\\): \\(\\dfrac{1}{2}+\\dfrac{1}{2}-\\dfrac{1}{2}=\\dfrac{1}{2}\\ge0\\). Hence the inequality is true for all positive \\(p,q,r\\)."
+          ],
+          "answer": 0,
+          "hint": "Two steps: (1) \\(\\dfrac{p}{1+p}\\ge\\dfrac{p}{1+p+q}\\) (a BIGGER denominator makes the fraction smaller), similarly for \\(q\\); add. (2) The function \\(f(t)=\\dfrac{t}{1+t}\\) is INCREASING, and \\(p+q\\ge r\\).",
+          "steps": [
+            {
+              "explain": "Compare denominators: \\(1+p<1+p+q\\), so \\(\\dfrac{p}{1+p}>\\dfrac{p}{1+p+q}\\). Similarly \\(\\dfrac{q}{1+q}>\\dfrac{q}{1+p+q}\\) (since \\(p,q>0\\)).",
+              "work": "\\(\\dfrac{p}{1+p}+\\dfrac{q}{1+q}\\ \\ge\\ \\dfrac{p}{1+p+q}+\\dfrac{q}{1+p+q}=\\dfrac{p+q}{1+p+q}\\)"
+            },
+            {
+              "explain": "Let \\(f(t)=\\dfrac{t}{1+t}=1-\\dfrac{1}{1+t}\\): as \\(t\\) increases, \\(\\dfrac{1}{1+t}\\) decreases, so \\(f(t)\\) INCREASES. Because \\(p+q\\ge r\\), \\(f(p+q)\\ge f(r)\\).",
+              "work": "\\(\\dfrac{p+q}{1+p+q}\\ge\\dfrac{r}{1+r}\\)"
+            },
+            {
+              "explain": "Combine the two inequalities (transitivity).",
+              "work": "\\(\\dfrac{p}{1+p}+\\dfrac{q}{1+q}\\ge\\dfrac{p+q}{1+p+q}\\ge\\dfrac{r}{1+r}\\ \\Rightarrow\\ \\dfrac{p}{1+p}+\\dfrac{q}{1+q}-\\dfrac{r}{1+r}\\ge0\\)"
+            },
+            {
+              "explain": "Why not the others: B reverses the first inequality; C changes \\(r\\)'s denominator without justification; D checks one example only (not a proof).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "prove that \\(\\dfrac{p}{1+p}+\\dfrac{q}{1+q}-\\dfrac{r}{1+r}\\ge0\\)",
+              "note": "Bigger denominator \\(\\Rightarrow\\) smaller; \\(\\dfrac{t}{1+t}\\) is increasing."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Kinross Wolaroi School 2022 Trial HSC Examination Mathematics Extension 2",
+            "school": "Kinross Wolaroi School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2020-e2-q14ai",
+          "type": "mc",
+          "stem": "Show that \\(a^{2}+b^{2}>2ab\\), where \\(a\\) and \\(b\\) are distinct positive real numbers. Which proof is correct?",
+          "difficulty": "medium",
+          "options": [
+            "Since \\(a\\ne b\\), \\(a-b\\ne0\\), so \\((a-b)^{2}>0\\). Expanding: \\(a^{2}-2ab+b^{2}>0\\), so \\(a^{2}+b^{2}>2ab\\).",
+            "Since \\((a+b)^{2}>0\\): \\(a^{2}+2ab+b^{2}>0\\), so \\(a^{2}+b^{2}>-2ab\\).",
+            "Since \\((a-b)^{2}\\ge0\\), \\(a^{2}+b^{2}\\ge2ab\\). The inequality is therefore strict.",
+            "Take \\(a=1\\), \\(b=2\\): \\(1+4=5>4=2ab\\). Hence \\(a^{2}+b^{2}>2ab\\) for all distinct positive \\(a,b\\)."
+          ],
+          "answer": 0,
+          "hint": "The square of a NON-ZERO real number is strictly positive. \\(a\\) and \\(b\\) are DISTINCT, so \\(a-b\\ne0\\). Use \\((a-b)^{2}>0\\) and expand.",
+          "steps": [
+            {
+              "explain": "\\(a\\ne b\\Rightarrow a-b\\ne0\\Rightarrow(a-b)^{2}>0\\) (strictly, because the square of a non-zero real number is positive).",
+              "work": "\\((a-b)^{2}>0\\)"
+            },
+            {
+              "explain": "Expand \\((a-b)^{2}=a^{2}-2ab+b^{2}\\).",
+              "work": "\\(a^{2}-2ab+b^{2}>0\\)"
+            },
+            {
+              "explain": "Add \\(2ab\\) to both sides.",
+              "work": "\\(a^{2}+b^{2}>2ab\\)"
+            },
+            {
+              "explain": "Why not the others: B uses \\(a+b\\) (that gives the weaker \\(a^{2}+b^{2}>-2ab\\)); C gives only \\(\\ge\\) and then asserts strictness without a reason (the reason is \\(a\\ne b\\)); D checks one example (not a proof).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that \\(a^{2}+b^{2}>2ab\\)",
+              "note": "Distinct \\(\\Rightarrow(a-b)^2>0\\); expand."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Killara High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2020-e2-q14aii",
+          "type": "mc",
+          "stem": "Using \\(a^{2}+b^{2}>2ab\\) for distinct positive reals, show that \\(a^{2}+b^{2}+c^{2}>ab+bc+ca\\), where \\(a,b\\) and \\(c\\) are distinct positive real numbers. Which argument is correct?",
+          "difficulty": "medium",
+          "options": [
+            "Apply part (i) to each pair: \\(a^{2}+b^{2}>2ab\\), \\(b^{2}+c^{2}>2bc\\), \\(c^{2}+a^{2}>2ca\\). Add the three: \\(2\\left(a^{2}+b^{2}+c^{2}\\right)>2(ab+bc+ca)\\). Divide by 2.",
+            "Apply part (i) to each pair and MULTIPLY: \\(\\left(a^{2}+b^{2}\\right)\\left(b^{2}+c^{2}\\right)\\left(c^{2}+a^{2}\\right)>8abc\\cdot abc\\). Take the square root.",
+            "Apply part (i) to each pair and SUBTRACT: \\(\\left(a^{2}+b^{2}\\right)-\\left(b^{2}+c^{2}\\right)>2ab-2bc\\), which gives the result.",
+            "Put \\(a=b=c\\): both sides equal \\(3a^{2}\\). Hence the inequality holds."
+          ],
+          "answer": 0,
+          "hint": "Apply part (i) to the THREE pairs \\((a,b)\\), \\((b,c)\\), \\((c,a)\\) and ADD the three inequalities (inequalities in the same direction can be added). Each square appears twice on the left.",
+          "steps": [
+            {
+              "explain": "Part (i) for each pair of the numbers.",
+              "work": "\\(\\begin{aligned}&a^{2}+b^{2}&>2ab\\\\ &b^{2}+c^{2}&>2bc\\\\ &c^{2}+a^{2}&>2ca\\end{aligned}\\)"
+            },
+            {
+              "explain": "Add the three inequalities (adding inequalities pointing the same way is allowed). Each of \\(a^{2},b^{2},c^{2}\\) appears twice on the left.",
+              "work": "\\(2\\left(a^{2}+b^{2}+c^{2}\\right)>2(ab+bc+ca)\\)"
+            },
+            {
+              "explain": "Divide by 2.",
+              "work": "\\(a^{2}+b^{2}+c^{2}>ab+bc+ca\\)"
+            },
+            {
+              "explain": "Why not the others: B multiplies (that is a different inequality and the conclusion does not follow); C subtracts (not allowed with inequalities); D uses the equal case \\(a=b=c\\), which is excluded (the numbers are distinct).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "show that \\(a^{2}+b^{2}+c^{2}>ab+bc+ca\\)",
+              "note": "Apply (i) to three pairs; ADD."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Killara High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2020-e2-q14aiii",
+          "type": "mc",
+          "stem": "Using \\(a^{2}+b^{2}+c^{2}>ab+bc+ca\\) for distinct positive reals, prove that \\(\\dfrac{a^{2}b^{2}+b^{2}c^{2}+c^{2}a^{2}}{a+b+c}>abc\\), where \\(a,b\\) and \\(c\\) are distinct positive real numbers. Which proof is correct?",
+          "difficulty": "hard",
+          "options": [
+            "Apply the previous result to the three numbers \\(ab\\), \\(bc\\), \\(ca\\): \\((ab)^{2}+(bc)^{2}+(ca)^{2}>ab\\cdot bc+bc\\cdot ca+ca\\cdot ab=abc(a+b+c)\\). Since \\(a+b+c>0\\), divide both sides by it.",
+            "Apply the previous result directly to \\(a,b,c\\): \\(a^{2}+b^{2}+c^{2}>ab+bc+ca\\). Multiply both sides by \\(abc\\) and divide by \\(a+b+c\\).",
+            "Apply the previous result to \\(ab\\), \\(bc\\), \\(ca\\): \\((ab)^{2}+(bc)^{2}+(ca)^{2}>abc(a+b+c)\\). Divide both sides by \\(abc\\) to get the result.",
+            "The previous result with \\(a=b=c=1\\) gives \\(3>3\\), hence the statement."
+          ],
+          "answer": 0,
+          "hint": "Replace \\(a,b,c\\) in the result of (ii) by the products \\(ab\\), \\(bc\\), \\(ca\\). Simplify the right side: \\(ab\\cdot bc+bc\\cdot ca+ca\\cdot ab=abc(b+c+a)\\). Then divide by the POSITIVE number \\(a+b+c\\).",
+          "steps": [
+            {
+              "explain": "Let \\(x=ab\\), \\(y=bc\\), \\(z=ca\\) (distinct positive numbers). Part (ii) says \\(x^{2}+y^{2}+z^{2}>xy+yz+zx\\).",
+              "work": "\\((ab)^{2}+(bc)^{2}+(ca)^{2}>(ab)(bc)+(bc)(ca)+(ca)(ab)\\)"
+            },
+            {
+              "explain": "Simplify the right side: \\((ab)(bc)=ab^{2}c\\); \\((bc)(ca)=abc^{2}\\); \\((ca)(ab)=a^{2}bc\\). Factor out \\(abc\\).",
+              "work": "\\(ab^{2}c+abc^{2}+a^{2}bc=abc\\,(b+c+a)\\)"
+            },
+            {
+              "explain": "So \\(a^{2}b^{2}+b^{2}c^{2}+c^{2}a^{2}>abc\\,(a+b+c)\\). Divide both sides by \\(a+b+c>0\\) (the direction stays).",
+              "work": "\\(\\dfrac{a^{2}b^{2}+b^{2}c^{2}+c^{2}a^{2}}{a+b+c}>abc\\)"
+            },
+            {
+              "explain": "Why not the others: B applies the result to \\(a,b,c\\) (which gives a different inequality); C divides by \\(abc\\) instead of \\(a+b+c\\); D uses equal numbers (they must be distinct).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "prove that \\(\\dfrac{a^{2}b^{2}+b^{2}c^{2}+c^{2}a^{2}}{a+b+c}>abc\\)",
+              "note": "Use (ii) with \\(ab,bc,ca\\); RHS \\(=abc(a+b+c)\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Killara High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -7079,6 +7753,126 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "kinross2022-e2-q12d",
+          "type": "mc",
+          "stem": "Use Mathematical Induction to prove that \\(\\left(1-\\dfrac1{2^{2}}\\right)\\left(1-\\dfrac1{3^{2}}\\right)\\cdots\\left(1-\\dfrac1{n^{2}}\\right)=\\dfrac{n+1}{2n}\\) for \\(n\\ge2\\). Which inductive step is correct?",
+          "difficulty": "hard",
+          "options": [
+            "Assume true for \\(n=k\\). Then \\(\\text{LHS}_{k+1}=\\dfrac{k+1}{2k}\\left(1-\\dfrac{1}{(k+1)^{2}}\\right)=\\dfrac{k+1}{2k}\\cdot\\dfrac{(k+1)^{2}-1}{(k+1)^{2}}=\\dfrac{k+1}{2k}\\cdot\\dfrac{k(k+2)}{(k+1)^{2}}=\\dfrac{k+2}{2(k+1)}\\), which is the statement for \\(n=k+1\\).",
+            "Assume true for \\(n=k\\). Then \\(\\text{LHS}_{k+1}=\\dfrac{k+1}{2k}\\left(1-\\dfrac{1}{(k+1)^{2}}\\right)=\\dfrac{k+1}{2k}\\cdot\\dfrac{k^{2}+1}{(k+1)^{2}}=\\dfrac{k^{2}+1}{2k(k+1)}\\).",
+            "Start with \\(n=1\\): LHS is the empty product \\(=1\\) and RHS \\(=\\dfrac{2}{2}=1\\); so true for \\(n=1\\) and the step then follows for \\(n\\ge2\\).",
+            "Assume true for \\(n=k\\). Then \\(\\text{LHS}_{k+1}=\\dfrac{k+1}{2k}+\\left(1-\\dfrac1{(k+1)^{2}}\\right)=\\dfrac{k+2}{2(k+1)}\\)."
+          ],
+          "answer": 0,
+          "hint": "Proof by induction: (1) BASE case at the first value, \\(n=2\\); (2) ASSUME true for \\(n=k\\); (3) show true for \\(n=k+1\\) by multiplying the assumed result by the NEW factor \\(1-\\dfrac1{(k+1)^{2}}\\); (4) CONCLUDE.",
+          "steps": [
+            {
+              "explain": "BASE CASE \\(n=2\\) (the statement is for \\(n\\ge2\\)): \\(\\text{LHS}=1-\\dfrac{1}{4}=\\dfrac{3}{4}\\); \\(\\text{RHS}=\\dfrac{2+1}{2(2)}=\\dfrac{3}{4}\\) ✓.",
+              "work": "\\(\\dfrac{3}{4}=\\dfrac{3}{4}\\)"
+            },
+            {
+              "explain": "ASSUMPTION: for some integer \\(k\\ge2\\), \\(\\left(1-\\dfrac1{2^{2}}\\right)\\cdots\\left(1-\\dfrac1{k^{2}}\\right)=\\dfrac{k+1}{2k}\\). To prove: the product up to \\((k+1)\\) equals \\(\\dfrac{k+2}{2(k+1)}\\).",
+              "work": "\\(\\left(1-\\dfrac1{2^{2}}\\right)\\cdots\\left(1-\\dfrac1{(k+1)^{2}}\\right)=\\dfrac{k+2}{2(k+1)}\\)"
+            },
+            {
+              "explain": "STEP: the left side is the assumed product TIMES the new factor. Substitute the assumption.",
+              "work": "\\(\\text{LHS}=\\dfrac{k+1}{2k}\\left(1-\\dfrac{1}{(k+1)^{2}}\\right)\\)"
+            },
+            {
+              "explain": "Combine the bracket: \\(1-\\dfrac{1}{(k+1)^{2}}=\\dfrac{(k+1)^{2}-1}{(k+1)^{2}}=\\dfrac{k^{2}+2k}{(k+1)^{2}}=\\dfrac{k(k+2)}{(k+1)^{2}}\\).",
+              "work": "\\(\\text{LHS}=\\dfrac{k+1}{2k}\\cdot\\dfrac{k(k+2)}{(k+1)^{2}}\\)"
+            },
+            {
+              "explain": "Cancel \\(k\\) and one factor \\((k+1)\\).",
+              "work": "\\(\\text{LHS}=\\dfrac{k+2}{2(k+1)}=\\text{RHS}\\)"
+            },
+            {
+              "explain": "CONCLUSION: true for \\(n=2\\), and if true for \\(n=k\\) then true for \\(n=k+1\\); by induction it is true for all integers \\(n\\ge2\\).",
+              "work": ""
+            },
+            {
+              "explain": "Why not the others: B has \\((k+1)^{2}-1=k^{2}+1\\) (it is \\(k^{2}+2k\\)); C uses the wrong base case (the statement starts at \\(n=2\\)); D ADDS the new factor instead of MULTIPLYING.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Use Mathematical Induction to prove that",
+              "note": "Multiply by the new factor \\(1-\\dfrac1{(k+1)^2}=\\dfrac{k(k+2)}{(k+1)^2}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Kinross Wolaroi School 2022 Trial HSC Examination Mathematics Extension 2",
+            "school": "Kinross Wolaroi School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2020-e2-q13a",
+          "type": "mc",
+          "stem": "Prove by mathematical induction that \\(\\forall n\\in Z^{+}\\), \\(\\displaystyle\\sum_{i=1}^{n}\\sqrt i>\\dfrac{2n\\sqrt n}{3}\\). Which inductive step is correct?",
+          "difficulty": "hard",
+          "options": [
+            "BASE \\(n=1\\): LHS \\(=1>\\dfrac{2}{3}=\\) RHS ✓. ASSUME \\(\\displaystyle\\sum_{i=1}^{k}\\sqrt i>\\dfrac{2k\\sqrt k}{3}\\). Then \\(\\displaystyle\\sum_{i=1}^{k+1}\\sqrt i>\\dfrac{2k\\sqrt k}{3}+\\sqrt{k+1}\\). It is enough to show \\(\\dfrac{2k\\sqrt k}{3}+\\sqrt{k+1}\\ge\\dfrac{2(k+1)\\sqrt{k+1}}{3}\\), i.e. \\(2k\\sqrt k\\ge(2k-1)\\sqrt{k+1}\\). Squaring (both sides positive): \\(4k^{3}\\ge(2k-1)^{2}(k+1)=4k^{3}-3k+1\\), i.e. \\(3k\\ge1\\), true for \\(k\\ge1\\).",
+            "BASE \\(n=1\\): LHS \\(=1>\\dfrac{2}{3}\\) ✓. ASSUME true for \\(n=k\\). Then \\(\\displaystyle\\sum_{i=1}^{k+1}\\sqrt i>\\dfrac{2k\\sqrt k}{3}\\cdot\\sqrt{k+1}\\) (multiply by the new term).",
+            "BASE \\(n=0\\): LHS \\(=0\\), RHS \\(=0\\). ASSUME true for \\(n=k\\); then adding \\(\\sqrt{k+1}\\) to both sides gives the result immediately with no further work.",
+            "BASE \\(n=1\\) ✓. ASSUME true for \\(n=k\\). Then \\(\\displaystyle\\sum_{i=1}^{k+1}\\sqrt i>\\dfrac{2k\\sqrt k}{3}+\\sqrt{k+1}\\). It is enough to show \\(2k\\sqrt k\\ge(2k+1)\\sqrt{k+1}\\), which is true since \\(\\sqrt k\\ge\\sqrt{k+1}\\)."
+          ],
+          "answer": 0,
+          "hint": "Induction: (1) BASE case \\(n=1\\); (2) ASSUME \\(n=k\\); (3) ADD the new term \\(\\sqrt{k+1}\\) to both sides; (4) show the new right side is at least \\(\\dfrac{2(k+1)\\sqrt{k+1}}{3}\\) by rearranging and SQUARING (both sides positive).",
+          "steps": [
+            {
+              "explain": "BASE CASE \\(n=1\\): LHS \\(=\\sqrt1=1\\); RHS \\(=\\dfrac{2\\cdot1\\cdot1}{3}=\\dfrac{2}{3}\\). \\(1>\\dfrac{2}{3}\\) ✓.",
+              "work": "\\(1>\\dfrac{2}{3}\\)"
+            },
+            {
+              "explain": "ASSUMPTION: \\(\\displaystyle\\sum_{i=1}^{k}\\sqrt i>\\dfrac{2k\\sqrt k}{3}\\) for some \\(k\\ge1\\). To prove: \\(\\displaystyle\\sum_{i=1}^{k+1}\\sqrt i>\\dfrac{2(k+1)\\sqrt{k+1}}{3}\\).",
+              "work": "\\(\\sum_{i=1}^{k+1}\\sqrt i=\\sum_{i=1}^{k}\\sqrt i+\\sqrt{k+1}>\\dfrac{2k\\sqrt k}{3}+\\sqrt{k+1}\\)"
+            },
+            {
+              "explain": "It remains to show \\(\\dfrac{2k\\sqrt k}{3}+\\sqrt{k+1}\\ge\\dfrac{2(k+1)\\sqrt{k+1}}{3}\\). Multiply by 3 and collect the \\(\\sqrt{k+1}\\) terms: \\(2k\\sqrt k\\ge2(k+1)\\sqrt{k+1}-3\\sqrt{k+1}=(2k-1)\\sqrt{k+1}\\).",
+              "work": "\\(2k\\sqrt k\\ge(2k-1)\\sqrt{k+1}\\)"
+            },
+            {
+              "explain": "Both sides are positive (\\(k\\ge1\\)), so square both sides: \\(4k^{2}\\cdot k=4k^{3}\\) and \\((2k-1)^{2}(k+1)=\\left(4k^{2}-4k+1\\right)(k+1)=4k^{3}-3k+1\\).",
+              "work": "\\(4k^{3}\\ge4k^{3}-3k+1\\iff3k\\ge1\\)"
+            },
+            {
+              "explain": "\\(3k\\ge1\\) is true for \\(k\\ge1\\). So the new sum exceeds \\(\\dfrac{2(k+1)\\sqrt{k+1}}{3}\\). By induction the statement is true for all positive integers \\(n\\).",
+              "work": ""
+            },
+            {
+              "explain": "Why not the others: B MULTIPLIES instead of adding; C uses the wrong base case (the statement is for positive integers) and skips the proof; D has \\((2k+1)\\) and a false justification (\\(\\sqrt k\\ge\\sqrt{k+1}\\) is false).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Prove by mathematical induction that",
+              "note": "Add \\(\\sqrt{k+1}\\); show \\(2k\\sqrt k\\ge(2k-1)\\sqrt{k+1}\\) by squaring."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Killara High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -7902,6 +8696,367 @@
           "meta": {
             "source": "James Ruse Agricultural High School 2020 Trial Higher School Certificate Examination Mathematics Extension 2",
             "school": "James Ruse Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2020-e2-q15a",
+          "type": "mc",
+          "stem": "If the functions \\(f(x)\\) and \\(g(x)\\) are such that \\(f(x)>g(x)\\ge0\\) for \\(a\\le x\\le b\\), by using a sketch (or otherwise) explain why \\(\\displaystyle\\int_{a}^{b}f(x)\\,dx>\\displaystyle\\int_{a}^{b}g(x)\\,dx\\). Which explanation is correct?",
+          "difficulty": "medium",
+          "options": [
+            "A definite integral of a non-negative function is the AREA between the curve and the \\(x\\)-axis. Since \\(f(x)>g(x)\\ge0\\), the curve \\(y=f(x)\\) lies ABOVE \\(y=g(x)\\), which is above the \\(x\\)-axis. So the region under \\(g\\) lies INSIDE the region under \\(f\\), and the region between the two curves has positive area. Hence the area under \\(f\\) is strictly bigger.",
+            "Since \\(f(x)>g(x)\\) at \\(x=a\\) and at \\(x=b\\), the areas are bigger at the ends, so \\(\\displaystyle\\int_{a}^{b}f>\\int_{a}^{b}g\\).",
+            "The derivative of \\(f\\) is larger than the derivative of \\(g\\), so \\(f\\) has the larger integral.",
+            "Since \\(f(x)>g(x)\\), the area under \\(g\\) is larger because \\(g\\) is closer to the \\(x\\)-axis."
+          ],
+          "answer": 0,
+          "hint": "Integrals of non-negative functions are AREAS under the curves. Sketch both curves above the \\(x\\)-axis with \\(f\\) above \\(g\\) and compare the two areas.",
+          "steps": [
+            {
+              "explain": "Because \\(f(x)>g(x)\\ge0\\) on \\([a,b]\\), both curves are on or above the \\(x\\)-axis, and \\(y=f(x)\\) is above \\(y=g(x)\\) everywhere. Each integral is the area between its curve and the \\(x\\)-axis.",
+              "work": "\\(\\int_{a}^{b}f\\,dx=\\text{area under }f,\\qquad\\int_{a}^{b}g\\,dx=\\text{area under }g\\)"
+            },
+            {
+              "explain": "In the sketch the blue region (under \\(g\\)) is contained in the larger region under \\(f\\). The difference is the YELLOW region between the two curves.",
+              "work": "\\(\\text{area under }f=\\text{area under }g+\\text{area between the curves}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 260\" width=\"100%\" height=\"auto\" style=\"max-width:400px;display:block;margin:0 auto\"><polygon points=\"70.2,213.2 70.2,152.8 73.4,154.3 76.6,155.9 79.8,157.6 82.9,159.3 86.1,161.0 89.3,162.7 92.4,164.5 95.6,166.3 98.8,168.0 101.9,169.8 105.1,171.6 108.3,173.3 111.4,175.0 114.6,176.6 117.8,178.2 120.9,179.8 124.1,181.3 127.3,182.7 130.4,184.0 133.6,185.3 136.8,186.5 140.0,187.6 143.1,188.5 146.3,189.4 149.5,190.2 152.6,190.8 155.8,191.4 159.0,191.8 162.1,192.1 165.3,192.3 168.5,192.4 171.6,192.3 174.8,192.2 178.0,191.9 181.1,191.5 184.3,191.0 187.5,190.3 190.6,189.6 193.8,188.7 197.0,187.7 200.2,186.7 203.3,185.5 206.5,184.3 209.7,182.9 212.8,181.5 216.0,180.1 219.2,178.5 222.3,176.9 225.5,175.3 228.7,173.6 231.8,171.9 235.0,170.1 238.2,168.4 241.3,166.6 244.5,164.8 247.7,163.0 250.8,161.3 254.0,159.6 257.2,157.9 260.4,156.2 263.5,154.6 266.7,153.1 269.9,151.6 273.0,150.1 276.2,148.8 279.4,147.5 282.5,146.4 285.7,145.3 288.9,144.3 292.0,143.4 295.2,142.6 298.4,142.0 301.5,141.4 304.7,141.0 307.9,140.7 311.0,140.5 314.2,140.4 317.4,140.4 320.6,140.6 323.7,140.9 323.7,213.2\" fill=\"#c4cae5\" fill-opacity=\"0.7\"/><polygon points=\"70.2,152.8 73.4,154.3 76.6,155.9 79.8,157.6 82.9,159.3 86.1,161.0 89.3,162.7 92.4,164.5 95.6,166.3 98.8,168.0 101.9,169.8 105.1,171.6 108.3,173.3 111.4,175.0 114.6,176.6 117.8,178.2 120.9,179.8 124.1,181.3 127.3,182.7 130.4,184.0 133.6,185.3 136.8,186.5 140.0,187.6 143.1,188.5 146.3,189.4 149.5,190.2 152.6,190.8 155.8,191.4 159.0,191.8 162.1,192.1 165.3,192.3 168.5,192.4 171.6,192.3 174.8,192.2 178.0,191.9 181.1,191.5 184.3,191.0 187.5,190.3 190.6,189.6 193.8,188.7 197.0,187.7 200.2,186.7 203.3,185.5 206.5,184.3 209.7,182.9 212.8,181.5 216.0,180.1 219.2,178.5 222.3,176.9 225.5,175.3 228.7,173.6 231.8,171.9 235.0,170.1 238.2,168.4 241.3,166.6 244.5,164.8 247.7,163.0 250.8,161.3 254.0,159.6 257.2,157.9 260.4,156.2 263.5,154.6 266.7,153.1 269.9,151.6 273.0,150.1 276.2,148.8 279.4,147.5 282.5,146.4 285.7,145.3 288.9,144.3 292.0,143.4 295.2,142.6 298.4,142.0 301.5,141.4 304.7,141.0 307.9,140.7 311.0,140.5 314.2,140.4 317.4,140.4 320.6,140.6 323.7,140.9 323.7,62.2 320.6,64.0 317.4,66.0 314.2,68.2 311.0,70.7 307.9,73.4 304.7,76.3 301.5,79.3 298.4,82.4 295.2,85.7 292.0,89.0 288.9,92.5 285.7,95.9 282.5,99.4 279.4,102.9 276.2,106.4 273.0,109.8 269.9,113.1 266.7,116.3 263.5,119.4 260.4,122.4 257.2,125.2 254.0,127.8 250.8,130.2 247.7,132.4 244.5,134.3 241.3,136.0 238.2,137.4 235.0,138.6 231.8,139.5 228.7,140.1 225.5,140.4 222.3,140.4 219.2,140.1 216.0,139.5 212.8,138.6 209.7,137.5 206.5,136.1 203.3,134.4 200.2,132.5 197.0,130.3 193.8,127.9 190.6,125.3 187.5,122.5 184.3,119.6 181.1,116.5 178.0,113.2 174.8,109.9 171.6,106.5 168.5,103.1 165.3,99.6 162.1,96.1 159.0,92.6 155.8,89.2 152.6,85.8 149.5,82.5 146.3,79.4 143.1,76.4 140.0,73.5 136.8,70.8 133.6,68.3 130.4,66.1 127.3,64.0 124.1,62.2 120.9,60.7 117.8,59.4 114.6,58.4 111.4,57.7 108.3,57.3 105.1,57.2 101.9,57.4 98.8,57.8 95.6,58.6 92.4,59.6 89.3,60.9 86.1,62.5 82.9,64.3 79.8,66.4 76.6,68.7 73.4,71.2 70.2,74.0\" fill=\"#fde68a\" fill-opacity=\"0.75\"/><line x1=\"6.0\" y1=\"213.2\" x2=\"394.0\" y2=\"213.2\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"46.1\" y1=\"254.0\" x2=\"46.1\" y2=\"6.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"394.0\" y1=\"213.2\" x2=\"387.1\" y2=\"209.2\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"394.0\" y1=\"213.2\" x2=\"387.1\" y2=\"217.2\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"46.1\" y1=\"6.0\" x2=\"42.1\" y2=\"12.9\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"46.1\" y1=\"6.0\" x2=\"50.1\" y2=\"12.9\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><text x=\"396.0\" y=\"228.2\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><text x=\"55.1\" y=\"16.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">y</text><polyline points=\"70.2,74.0 70.8,73.5 71.3,73.1 71.8,72.6 72.3,72.2 72.8,71.8 73.3,71.3 73.8,70.9 74.3,70.5 74.8,70.1 75.3,69.7 75.8,69.3 76.3,68.9 76.8,68.5 77.3,68.2 77.8,67.8 78.4,67.4 78.9,67.0 79.4,66.7 79.9,66.3 80.4,66.0 80.9,65.6 81.4,65.3 81.9,65.0 82.4,64.7 82.9,64.3 83.4,64.0 83.9,63.7 84.4,63.4 84.9,63.1 85.5,62.9 86.0,62.6 86.5,62.3 87.0,62.0 87.5,61.8 88.0,61.5 88.5,61.3 89.0,61.0 89.5,60.8 90.0,60.6 90.5,60.4 91.0,60.2 91.5,60.0 92.0,59.8 92.6,59.6 93.1,59.4 93.6,59.2 94.1,59.0 94.6,58.9 95.1,58.7 95.6,58.6 96.1,58.4 96.6,58.3 97.1,58.2 97.6,58.1 98.1,58.0 98.6,57.9 99.1,57.8 99.6,57.7 100.2,57.6 100.7,57.5 101.2,57.5 101.7,57.4 102.2,57.3 102.7,57.3 103.2,57.3 103.7,57.2 104.2,57.2 104.7,57.2 105.2,57.2 105.7,57.2 106.2,57.2 106.7,57.2 107.3,57.3 107.8,57.3 108.3,57.3 108.8,57.4 109.3,57.4 109.8,57.5 110.3,57.6 110.8,57.6 111.3,57.7 111.8,57.8 112.3,57.9 112.8,58.0 113.3,58.1 113.8,58.2 114.4,58.4 114.9,58.5 115.4,58.7 115.9,58.8 116.4,59.0 116.9,59.1 117.4,59.3 117.9,59.5 118.4,59.7 118.9,59.9 119.4,60.1 119.9,60.3 120.4,60.5 120.9,60.7 121.4,60.9 122.0,61.2 122.5,61.4 123.0,61.7 123.5,61.9 124.0,62.2 124.5,62.4 125.0,62.7 125.5,63.0 126.0,63.3 126.5,63.6 127.0,63.9 127.5,64.2 128.0,64.5 128.5,64.8 129.1,65.1 129.6,65.5 130.1,65.8 130.6,66.2 131.1,66.5 131.6,66.9 132.1,67.2 132.6,67.6 133.1,68.0 133.6,68.3 134.1,68.7 134.6,69.1 135.1,69.5 135.6,69.9 136.1,70.3 136.7,70.7 137.2,71.1 137.7,71.6 138.2,72.0 138.7,72.4 139.2,72.8 139.7,73.3 140.2,73.7 140.7,74.2 141.2,74.6 141.7,75.1 142.2,75.5 142.7,76.0 143.2,76.5 143.8,77.0 144.3,77.4 144.8,77.9 145.3,78.4 145.8,78.9 146.3,79.4 146.8,79.9 147.3,80.4 147.8,80.9 148.3,81.4 148.8,81.9 149.3,82.4 149.8,82.9 150.3,83.4 150.9,84.0 151.4,84.5 151.9,85.0 152.4,85.5 152.9,86.1 153.4,86.6 153.9,87.1 154.4,87.7 154.9,88.2 155.4,88.8 155.9,89.3 156.4,89.9 156.9,90.4 157.4,90.9 157.9,91.5 158.5,92.0 159.0,92.6 159.5,93.2 160.0,93.7 160.5,94.3 161.0,94.8 161.5,95.4 162.0,95.9 162.5,96.5 163.0,97.1 163.5,97.6 164.0,98.2 164.5,98.7 165.0,99.3 165.6,99.8 166.1,100.4 166.6,101.0 167.1,101.5 167.6,102.1 168.1,102.6 168.6,103.2 169.1,103.7 169.6,104.3 170.1,104.9 170.6,105.4 171.1,106.0 171.6,106.5 172.1,107.1 172.6,107.6 173.2,108.2 173.7,108.7 174.2,109.2 174.7,109.8 175.2,110.3 175.7,110.9 176.2,111.4 176.7,111.9 177.2,112.4 177.7,113.0 178.2,113.5 178.7,114.0 179.2,114.5 179.7,115.1 180.3,115.6 180.8,116.1 181.3,116.6 181.8,117.1 182.3,117.6 182.8,118.1 183.3,118.6 183.8,119.1 184.3,119.6 184.8,120.0 185.3,120.5 185.8,121.0 186.3,121.5 186.8,121.9 187.4,122.4 187.9,122.9 188.4,123.3 188.9,123.8 189.4,124.2 189.9,124.6 190.4,125.1 190.9,125.5 191.4,125.9 191.9,126.4 192.4,126.8 192.9,127.2 193.4,127.6 193.9,128.0 194.4,128.4 195.0,128.8 195.5,129.2 196.0,129.5 196.5,129.9 197.0,130.3 197.5,130.6 198.0,131.0 198.5,131.4 199.0,131.7 199.5,132.0 200.0,132.4 200.5,132.7 201.0,133.0 201.5,133.3 202.1,133.6 202.6,133.9 203.1,134.2 203.6,134.5 204.1,134.8 204.6,135.1 205.1,135.4 205.6,135.6 206.1,135.9 206.6,136.1 207.1,136.4 207.6,136.6 208.1,136.8 208.6,137.1 209.1,137.3 209.7,137.5 210.2,137.7 210.7,137.9 211.2,138.1 211.7,138.3 212.2,138.4 212.7,138.6 213.2,138.8 213.7,138.9 214.2,139.1 214.7,139.2 215.2,139.3 215.7,139.4 216.2,139.6 216.8,139.7 217.3,139.8 217.8,139.9 218.3,139.9 218.8,140.0 219.3,140.1 219.8,140.2 220.3,140.2 220.8,140.3 221.3,140.3 221.8,140.3 222.3,140.4 222.8,140.4 223.3,140.4 223.9,140.4 224.4,140.4 224.9,140.4 225.4,140.4 225.9,140.3 226.4,140.3 226.9,140.3 227.4,140.2 227.9,140.2 228.4,140.1 228.9,140.0 229.4,139.9 229.9,139.9 230.4,139.8 230.9,139.7 231.5,139.6 232.0,139.4 232.5,139.3 233.0,139.2 233.5,139.1 234.0,138.9 234.5,138.8 235.0,138.6 235.5,138.4 236.0,138.3 236.5,138.1 237.0,137.9 237.5,137.7 238.0,137.5 238.6,137.3 239.1,137.1 239.6,136.8 240.1,136.6 240.6,136.4 241.1,136.1 241.6,135.9 242.1,135.6 242.6,135.4 243.1,135.1 243.6,134.8 244.1,134.5 244.6,134.2 245.1,133.9 245.6,133.6 246.2,133.3 246.7,133.0 247.2,132.7 247.7,132.4 248.2,132.0 248.7,131.7 249.2,131.4 249.7,131.0 250.2,130.6 250.7,130.3 251.2,129.9 251.7,129.5 252.2,129.2 252.7,128.8 253.3,128.4 253.8,128.0 254.3,127.6 254.8,127.2 255.3,126.8 255.8,126.4 256.3,125.9 256.8,125.5 257.3,125.1 257.8,124.6 258.3,124.2 258.8,123.8 259.3,123.3 259.8,122.9 260.4,122.4 260.9,121.9 261.4,121.5 261.9,121.0 262.4,120.5 262.9,120.0 263.4,119.6 263.9,119.1 264.4,118.6 264.9,118.1 265.4,117.6 265.9,117.1 266.4,116.6 266.9,116.1 267.4,115.6 268.0,115.1 268.5,114.5 269.0,114.0 269.5,113.5 270.0,113.0 270.5,112.5 271.0,111.9 271.5,111.4 272.0,110.9 272.5,110.3 273.0,109.8 273.5,109.2 274.0,108.7 274.5,108.2 275.1,107.6 275.6,107.1 276.1,106.5 276.6,106.0 277.1,105.4 277.6,104.9 278.1,104.3 278.6,103.8 279.1,103.2 279.6,102.6 280.1,102.1 280.6,101.5 281.1,101.0 281.6,100.4 282.1,99.9 282.7,99.3 283.2,98.7 283.7,98.2 284.2,97.6 284.7,97.1 285.2,96.5 285.7,95.9 286.2,95.4 286.7,94.8 287.2,94.3 287.7,93.7 288.2,93.2 288.7,92.6 289.2,92.1 289.8,91.5 290.3,91.0 290.8,90.4 291.3,89.9 291.8,89.3 292.3,88.8 292.8,88.2 293.3,87.7 293.8,87.1 294.3,86.6 294.8,86.1 295.3,85.5 295.8,85.0 296.3,84.5 296.9,84.0 297.4,83.4 297.9,82.9 298.4,82.4 298.9,81.9 299.4,81.4 299.9,80.9 300.4,80.4 300.9,79.9 301.4,79.4 301.9,78.9 302.4,78.4 302.9,77.9 303.4,77.4 303.9,77.0 304.5,76.5 305.0,76.0 305.5,75.6 306.0,75.1 306.5,74.6 307.0,74.2 307.5,73.7 308.0,73.3 308.5,72.8 309.0,72.4 309.5,72.0 310.0,71.6 310.5,71.1 311.0,70.7 311.6,70.3 312.1,69.9 312.6,69.5 313.1,69.1 313.6,68.7 314.1,68.3 314.6,68.0 315.1,67.6 315.6,67.2 316.1,66.9 316.6,66.5 317.1,66.2 317.6,65.8 318.1,65.5 318.6,65.1 319.2,64.8 319.7,64.5 320.2,64.2 320.7,63.9 321.2,63.6 321.7,63.3 322.2,63.0 322.7,62.7 323.2,62.4 323.7,62.2\" fill=\"none\" stroke=\"#3b4ea8\" stroke-width=\"3.6\" stroke-linejoin=\"round\"/><polyline points=\"70.2,152.8 70.8,153.0 71.3,153.3 71.8,153.5 72.3,153.8 72.8,154.0 73.3,154.3 73.8,154.5 74.3,154.8 74.8,155.0 75.3,155.3 75.8,155.5 76.3,155.8 76.8,156.1 77.3,156.3 77.8,156.6 78.4,156.9 78.9,157.1 79.4,157.4 79.9,157.6 80.4,157.9 80.9,158.2 81.4,158.5 81.9,158.7 82.4,159.0 82.9,159.3 83.4,159.5 83.9,159.8 84.4,160.1 84.9,160.4 85.5,160.6 86.0,160.9 86.5,161.2 87.0,161.5 87.5,161.8 88.0,162.0 88.5,162.3 89.0,162.6 89.5,162.9 90.0,163.2 90.5,163.4 91.0,163.7 91.5,164.0 92.0,164.3 92.6,164.6 93.1,164.9 93.6,165.1 94.1,165.4 94.6,165.7 95.1,166.0 95.6,166.3 96.1,166.6 96.6,166.8 97.1,167.1 97.6,167.4 98.1,167.7 98.6,168.0 99.1,168.3 99.6,168.5 100.2,168.8 100.7,169.1 101.2,169.4 101.7,169.7 102.2,170.0 102.7,170.2 103.2,170.5 103.7,170.8 104.2,171.1 104.7,171.4 105.2,171.6 105.7,171.9 106.2,172.2 106.7,172.5 107.3,172.7 107.8,173.0 108.3,173.3 108.8,173.6 109.3,173.8 109.8,174.1 110.3,174.4 110.8,174.6 111.3,174.9 111.8,175.2 112.3,175.5 112.8,175.7 113.3,176.0 113.8,176.2 114.4,176.5 114.9,176.8 115.4,177.0 115.9,177.3 116.4,177.5 116.9,177.8 117.4,178.1 117.9,178.3 118.4,178.6 118.9,178.8 119.4,179.1 119.9,179.3 120.4,179.6 120.9,179.8 121.4,180.0 122.0,180.3 122.5,180.5 123.0,180.8 123.5,181.0 124.0,181.2 124.5,181.5 125.0,181.7 125.5,181.9 126.0,182.1 126.5,182.4 127.0,182.6 127.5,182.8 128.0,183.0 128.5,183.2 129.1,183.5 129.6,183.7 130.1,183.9 130.6,184.1 131.1,184.3 131.6,184.5 132.1,184.7 132.6,184.9 133.1,185.1 133.6,185.3 134.1,185.5 134.6,185.7 135.1,185.9 135.6,186.1 136.1,186.3 136.7,186.4 137.2,186.6 137.7,186.8 138.2,187.0 138.7,187.1 139.2,187.3 139.7,187.5 140.2,187.6 140.7,187.8 141.2,188.0 141.7,188.1 142.2,188.3 142.7,188.4 143.2,188.6 143.8,188.7 144.3,188.9 144.8,189.0 145.3,189.1 145.8,189.3 146.3,189.4 146.8,189.5 147.3,189.7 147.8,189.8 148.3,189.9 148.8,190.0 149.3,190.2 149.8,190.3 150.3,190.4 150.9,190.5 151.4,190.6 151.9,190.7 152.4,190.8 152.9,190.9 153.4,191.0 153.9,191.1 154.4,191.2 154.9,191.3 155.4,191.3 155.9,191.4 156.4,191.5 156.9,191.6 157.4,191.6 157.9,191.7 158.5,191.8 159.0,191.8 159.5,191.9 160.0,191.9 160.5,192.0 161.0,192.0 161.5,192.1 162.0,192.1 162.5,192.2 163.0,192.2 163.5,192.2 164.0,192.3 164.5,192.3 165.0,192.3 165.6,192.3 166.1,192.4 166.6,192.4 167.1,192.4 167.6,192.4 168.1,192.4 168.6,192.4 169.1,192.4 169.6,192.4 170.1,192.4 170.6,192.4 171.1,192.4 171.6,192.3 172.1,192.3 172.6,192.3 173.2,192.3 173.7,192.3 174.2,192.2 174.7,192.2 175.2,192.1 175.7,192.1 176.2,192.1 176.7,192.0 177.2,192.0 177.7,191.9 178.2,191.9 178.7,191.8 179.2,191.7 179.7,191.7 180.3,191.6 180.8,191.5 181.3,191.5 181.8,191.4 182.3,191.3 182.8,191.2 183.3,191.1 183.8,191.0 184.3,191.0 184.8,190.9 185.3,190.8 185.8,190.7 186.3,190.6 186.8,190.4 187.4,190.3 187.9,190.2 188.4,190.1 188.9,190.0 189.4,189.9 189.9,189.7 190.4,189.6 190.9,189.5 191.4,189.4 191.9,189.2 192.4,189.1 192.9,188.9 193.4,188.8 193.9,188.7 194.4,188.5 195.0,188.4 195.5,188.2 196.0,188.1 196.5,187.9 197.0,187.7 197.5,187.6 198.0,187.4 198.5,187.2 199.0,187.1 199.5,186.9 200.0,186.7 200.5,186.5 201.0,186.4 201.5,186.2 202.1,186.0 202.6,185.8 203.1,185.6 203.6,185.4 204.1,185.2 204.6,185.0 205.1,184.8 205.6,184.6 206.1,184.4 206.6,184.2 207.1,184.0 207.6,183.8 208.1,183.6 208.6,183.4 209.1,183.2 209.7,182.9 210.2,182.7 210.7,182.5 211.2,182.3 211.7,182.0 212.2,181.8 212.7,181.6 213.2,181.4 213.7,181.1 214.2,180.9 214.7,180.7 215.2,180.4 215.7,180.2 216.2,179.9 216.8,179.7 217.3,179.4 217.8,179.2 218.3,179.0 218.8,178.7 219.3,178.5 219.8,178.2 220.3,177.9 220.8,177.7 221.3,177.4 221.8,177.2 222.3,176.9 222.8,176.7 223.3,176.4 223.9,176.1 224.4,175.9 224.9,175.6 225.4,175.3 225.9,175.1 226.4,174.8 226.9,174.5 227.4,174.3 227.9,174.0 228.4,173.7 228.9,173.4 229.4,173.2 229.9,172.9 230.4,172.6 230.9,172.3 231.5,172.1 232.0,171.8 232.5,171.5 233.0,171.2 233.5,171.0 234.0,170.7 234.5,170.4 235.0,170.1 235.5,169.8 236.0,169.6 236.5,169.3 237.0,169.0 237.5,168.7 238.0,168.4 238.6,168.1 239.1,167.9 239.6,167.6 240.1,167.3 240.6,167.0 241.1,166.7 241.6,166.4 242.1,166.2 242.6,165.9 243.1,165.6 243.6,165.3 244.1,165.0 244.6,164.7 245.1,164.5 245.6,164.2 246.2,163.9 246.7,163.6 247.2,163.3 247.7,163.0 248.2,162.8 248.7,162.5 249.2,162.2 249.7,161.9 250.2,161.6 250.7,161.4 251.2,161.1 251.7,160.8 252.2,160.5 252.7,160.2 253.3,160.0 253.8,159.7 254.3,159.4 254.8,159.2 255.3,158.9 255.8,158.6 256.3,158.3 256.8,158.1 257.3,157.8 257.8,157.5 258.3,157.3 258.8,157.0 259.3,156.7 259.8,156.5 260.4,156.2 260.9,156.0 261.4,155.7 261.9,155.4 262.4,155.2 262.9,154.9 263.4,154.7 263.9,154.4 264.4,154.2 264.9,153.9 265.4,153.7 265.9,153.4 266.4,153.2 266.9,152.9 267.4,152.7 268.0,152.4 268.5,152.2 269.0,152.0 269.5,151.7 270.0,151.5 270.5,151.3 271.0,151.0 271.5,150.8 272.0,150.6 272.5,150.4 273.0,150.1 273.5,149.9 274.0,149.7 274.5,149.5 275.1,149.3 275.6,149.1 276.1,148.8 276.6,148.6 277.1,148.4 277.6,148.2 278.1,148.0 278.6,147.8 279.1,147.6 279.6,147.4 280.1,147.2 280.6,147.0 281.1,146.9 281.6,146.7 282.1,146.5 282.7,146.3 283.2,146.1 283.7,146.0 284.2,145.8 284.7,145.6 285.2,145.4 285.7,145.3 286.2,145.1 286.7,144.9 287.2,144.8 287.7,144.6 288.2,144.5 288.7,144.3 289.2,144.2 289.8,144.0 290.3,143.9 290.8,143.7 291.3,143.6 291.8,143.5 292.3,143.3 292.8,143.2 293.3,143.1 293.8,143.0 294.3,142.8 294.8,142.7 295.3,142.6 295.8,142.5 296.3,142.4 296.9,142.3 297.4,142.2 297.9,142.1 298.4,142.0 298.9,141.9 299.4,141.8 299.9,141.7 300.4,141.6 300.9,141.5 301.4,141.4 301.9,141.4 302.4,141.3 302.9,141.2 303.4,141.1 303.9,141.1 304.5,141.0 305.0,141.0 305.5,140.9 306.0,140.8 306.5,140.8 307.0,140.7 307.5,140.7 308.0,140.7 308.5,140.6 309.0,140.6 309.5,140.6 310.0,140.5 310.5,140.5 311.0,140.5 311.6,140.5 312.1,140.4 312.6,140.4 313.1,140.4 313.6,140.4 314.1,140.4 314.6,140.4 315.1,140.4 315.6,140.4 316.1,140.4 316.6,140.4 317.1,140.4 317.6,140.5 318.1,140.5 318.6,140.5 319.2,140.5 319.7,140.6 320.2,140.6 320.7,140.6 321.2,140.7 321.7,140.7 322.2,140.7 322.7,140.8 323.2,140.8 323.7,140.9\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"3.6\" stroke-linejoin=\"round\"/><line x1=\"70.2\" y1=\"213.2\" x2=\"70.2\" y2=\"74.0\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><text x=\"70.2\" y=\"229.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">a</text><line x1=\"323.7\" y1=\"213.2\" x2=\"323.7\" y2=\"62.2\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><text x=\"323.7\" y=\"229.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">b</text><text x=\"341.8\" y=\"66.2\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">f(x)</text><text x=\"341.8\" y=\"144.9\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">g(x)</text><text x=\"184.9\" y=\"189.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">area under g</text><text x=\"203.0\" y=\"132.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">extra area</text></svg>"
+              }
+            },
+            {
+              "explain": "The yellow region has POSITIVE area because \\(f(x)-g(x)>0\\) for every \\(x\\). In symbols: \\(\\displaystyle\\int_{a}^{b}\\left(f-g\\right)dx>0\\), so \\(\\displaystyle\\int f>\\int g\\).",
+              "work": "\\(\\int_{a}^{b}f\\,dx-\\int_{a}^{b}g\\,dx=\\int_{a}^{b}\\left(f(x)-g(x)\\right)dx>0\\)"
+            },
+            {
+              "explain": "Why not the others: B only compares the end values (the integral depends on every \\(x\\)); C is irrelevant (derivatives do not decide integrals); D reverses the comparison.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "by using a sketch (or otherwise) explain why",
+              "note": "Integral \\(=\\) area; area under \\(f\\) \\(=\\) area under \\(g\\) \\(+\\) positive gap."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Killara High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2020-e2-q15biii",
+          "type": "mc",
+          "stem": "Let \\(I_{n}=\\displaystyle\\int_{0}^{1}\\left(1-t^{2}\\right)^{\\frac{n-1}{2}}dt\\) for non-negative integers \\(n\\). Using part (a), or otherwise, show that \\(0<I_{n}<I_{n-1}\\). Which argument is correct?",
+          "difficulty": "hard",
+          "options": [
+            "For \\(0<t<1\\): \\(0<1-t^{2}<1\\). A number between 0 and 1 gets SMALLER when raised to a higher power, so \\(\\left(1-t^{2}\\right)^{\\frac{n-1}{2}}<\\left(1-t^{2}\\right)^{\\frac{n-2}{2}}\\), and both are positive. By part (a), \\(0<I_{n}<I_{n-1}\\) (the integrand of \\(I_{n}\\) is positive, so \\(I_{n}>0\\)).",
+            "For \\(0<t<1\\): \\(0<1-t^{2}<1\\), so higher powers are LARGER: \\(\\left(1-t^{2}\\right)^{\\frac{n-1}{2}}>\\left(1-t^{2}\\right)^{\\frac{n-2}{2}}\\). By part (a), \\(I_{n}>I_{n-1}\\).",
+            "\\(I_{n}\\) and \\(I_{n-1}\\) are both positive integrals, so \\(I_{n}<I_{n-1}\\).",
+            "\\(\\left(1-t^{2}\\right)^{\\frac{n-1}{2}}\\) is the same as \\(\\left(1-t^{2}\\right)^{\\frac{n-2}{2}}\\) for \\(0<t<1\\), so \\(I_{n}=I_{n-1}\\)."
+          ],
+          "answer": 0,
+          "hint": "Compare the INTEGRANDS \\(f(t)=\\left(1-t^{2}\\right)^{\\frac{n-2}{2}}\\) (for \\(I_{n-1}\\)) and \\(g(t)=\\left(1-t^{2}\\right)^{\\frac{n-1}{2}}\\) (for \\(I_{n}\\)). On \\((0,1)\\) the base \\(1-t^{2}\\) is between 0 and 1: bigger exponent means smaller value. Then use part (a).",
+          "steps": [
+            {
+              "explain": "For \\(0<t<1\\): \\(0<t^{2}<1\\), so \\(0<1-t^{2}<1\\). The exponent for \\(I_{n}\\) is \\(\\dfrac{n-1}{2}\\), which is \\(\\dfrac{1}{2}\\) MORE than \\(\\dfrac{n-2}{2}\\) (for \\(I_{n-1}\\)).",
+              "work": "\\(\\dfrac{n-1}{2}=\\dfrac{n-2}{2}+\\dfrac{1}{2}\\)"
+            },
+            {
+              "explain": "A number strictly between 0 and 1 gets smaller when the exponent increases, so \\(g(t)<f(t)\\). Both are positive (a positive base).",
+              "work": "\\(0<\\left(1-t^{2}\\right)^{\\frac{n-1}{2}}<\\left(1-t^{2}\\right)^{\\frac{n-2}{2}}\\quad(0<t<1)\\)"
+            },
+            {
+              "explain": "Part (a): \\(f>g\\ge0\\) implies \\(\\int f>\\int g\\). Here \\(\\int f=I_{n-1}\\) and \\(\\int g=I_{n}\\). Also \\(g>0\\) so \\(I_{n}>0\\).",
+              "work": "\\(0<I_{n}<I_{n-1}\\)"
+            },
+            {
+              "explain": "Why not the others: B reverses the effect of the exponent; C only says both are positive (it does not compare them); D is false (the exponents differ).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "show that \\(0<I_{n}<I_{n-1}\\)",
+              "note": "\\(0<1-t^2<1\\): bigger exponent \\(\\Rightarrow\\) smaller; use part (a)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Killara High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2020-e2-q15biv",
+          "type": "mc",
+          "stem": "Using \\(J_{n}=nI_{n}I_{n-1}=\\dfrac\\pi2\\) and \\(0<I_{n}<I_{n-1}\\), hence, or otherwise, prove that \\(\\sqrt{\\dfrac{\\pi}{2n+2}}<I_{n}<\\sqrt{\\dfrac{\\pi}{2n}}\\). Which argument is correct?",
+          "difficulty": "hard",
+          "options": [
+            "UPPER bound: \\(I_{n}<I_{n-1}\\) so \\(\\dfrac\\pi2=nI_{n}I_{n-1}>nI_{n}^{2}\\), giving \\(I_{n}^{2}<\\dfrac{\\pi}{2n}\\). LOWER bound: \\(J_{n+1}=(n+1)I_{n+1}I_{n}=\\dfrac\\pi2\\) and \\(I_{n+1}<I_{n}\\), so \\(\\dfrac\\pi2<(n+1)I_{n}^{2}\\), giving \\(I_{n}^{2}>\\dfrac{\\pi}{2n+2}\\). Take positive square roots.",
+            "UPPER bound: \\(I_{n}<I_{n-1}\\) so \\(\\dfrac\\pi2=nI_{n}I_{n-1}<nI_{n-1}^{2}\\), giving \\(I_{n}<\\sqrt{\\dfrac{\\pi}{2n}}\\). LOWER bound is the same with \\(n+1\\).",
+            "UPPER bound: \\(I_{n}<I_{n-1}\\) so \\(\\dfrac\\pi2=nI_{n}I_{n-1}>nI_{n}^{2}\\), so \\(I_{n}^{2}<\\dfrac{\\pi}{n}\\). LOWER bound: \\(I_{n}>0\\) so \\(I_{n}>\\sqrt{\\dfrac{\\pi}{2n+2}}\\).",
+            "UPPER bound: \\(J_{n}=\\dfrac\\pi2\\) gives \\(I_{n}I_{n-1}=\\dfrac{\\pi}{2n}\\); since \\(I_{n}<I_{n-1}\\), \\(I_{n}<\\dfrac{\\pi}{2n}\\). LOWER: similarly \\(I_{n}>\\dfrac{\\pi}{2n+2}\\)."
+          ],
+          "answer": 0,
+          "hint": "Use \\(nI_{n}I_{n-1}=\\dfrac\\pi2\\) with the inequality \\(I_{n}<I_{n-1}\\): replace \\(I_{n-1}\\) by the smaller \\(I_{n}\\) to get an inequality in \\(I_{n}^{2}\\). For the lower bound use \\(J_{n+1}=(n+1)I_{n+1}I_{n}=\\dfrac\\pi2\\) and \\(I_{n+1}<I_{n}\\).",
+          "steps": [
+            {
+              "explain": "UPPER bound. From \\(J_{n}=\\dfrac\\pi2\\): \\(nI_{n}I_{n-1}=\\dfrac\\pi2\\). Since \\(I_{n-1}>I_{n}>0\\), replacing \\(I_{n-1}\\) by the smaller \\(I_{n}\\) makes the product SMALLER.",
+              "work": "\\(\\dfrac\\pi2=nI_{n}I_{n-1}>nI_{n}\\cdot I_{n}=nI_{n}^{2}\\ \\Rightarrow\\ I_{n}^{2}<\\dfrac{\\pi}{2n}\\)"
+            },
+            {
+              "explain": "LOWER bound. Use \\(J_{n+1}=\\dfrac\\pi2\\): \\((n+1)I_{n+1}I_{n}=\\dfrac\\pi2\\). Since \\(I_{n+1}<I_{n}\\), replacing \\(I_{n+1}\\) by the larger \\(I_{n}\\) makes the product LARGER.",
+              "work": "\\(\\dfrac\\pi2=(n+1)I_{n+1}I_{n}<(n+1)I_{n}\\cdot I_{n}=(n+1)I_{n}^{2}\\ \\Rightarrow\\ I_{n}^{2}>\\dfrac{\\pi}{2(n+1)}\\)"
+            },
+            {
+              "explain": "Combine: \\(\\dfrac{\\pi}{2n+2}<I_{n}^{2}<\\dfrac{\\pi}{2n}\\). Since \\(I_{n}>0\\), take positive square roots.",
+              "work": "\\(\\sqrt{\\dfrac{\\pi}{2n+2}}<I_{n}<\\sqrt{\\dfrac{\\pi}{2n}}\\)"
+            },
+            {
+              "explain": "Why not the others: B uses \\(I_{n-1}\\) on both sides (the direction would be wrong); C gives the weaker \\(\\dfrac\\pi n\\) and an invalid lower bound; D forgets the square root (\\(I_{n}\\) is bounded by the square root).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "prove that \\(\\sqrt{\\dfrac{\\pi}{2n+2}}<I_{n}<\\sqrt{\\dfrac{\\pi}{2n}}\\)",
+              "note": "Upper: \\(I_{n-1}>I_n\\) in \\(J_n\\). Lower: \\(I_{n+1}<I_n\\) in \\(J_{n+1}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Killara High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2020-e2-q16bi",
+          "type": "mc",
+          "stem": "By considering the sum to \\(n\\) terms of the series \\(1-t+t^{2}-t^{3}+\\cdots+(-1)^{n-1}t^{n-1}\\), \\(t\\ne-1\\): Show that \\(x-\\dfrac{x^{2}}{2}+\\dfrac{x^{3}}{3}+\\cdots+(-1)^{n}\\dfrac{x^{n}}{n}=\\log_{e}(1+x)-(-1)^{n}\\displaystyle\\int_{0}^{x}\\dfrac{t^{n}}{1+t}\\,dt\\) for \\(0<t<x\\). Which working is correct? (The last term on the left is \\((-1)^{n-1}\\dfrac{x^{n}}{n}\\) in the correct identity.)",
+          "difficulty": "hard",
+          "options": [
+            "The series is a GP with first term 1 and ratio \\(-t\\): \\(S_{n}=\\dfrac{1-(-t)^{n}}{1+t}=\\dfrac{1}{1+t}-\\dfrac{(-1)^{n}t^{n}}{1+t}\\). Integrate from 0 to \\(x\\): \\(\\displaystyle\\int_{0}^{x}S_{n}\\,dt=x-\\dfrac{x^{2}}{2}+\\cdots+(-1)^{n-1}\\dfrac{x^{n}}{n}\\) (term by term) and \\(\\displaystyle\\int_{0}^{x}\\dfrac{dt}{1+t}=\\ln(1+x)\\). So the sum equals \\(\\ln(1+x)-(-1)^{n}\\displaystyle\\int_{0}^{x}\\dfrac{t^{n}}{1+t}dt\\).",
+            "The series is a GP with ratio \\(t\\): \\(S_{n}=\\dfrac{1-t^{n}}{1-t}\\). Integrating from 0 to \\(x\\) gives \\(-\\ln(1-x)\\), not \\(\\ln(1+x)\\).",
+            "The series is a GP with first term 1 and ratio \\(-t\\): \\(S_{n}=\\dfrac{1+(-t)^{n}}{1+t}\\). Integrating gives \\(\\ln(1+x)+(-1)^{n}\\displaystyle\\int\\dfrac{t^{n}}{1+t}dt\\).",
+            "Differentiate the left side term by term to get \\(1-x+x^{2}-\\cdots\\), which equals \\(\\dfrac{1}{1+x}\\) exactly (no remainder), so the integral term is not needed."
+          ],
+          "answer": 0,
+          "hint": "The series \\(1-t+t^{2}-\\cdots+(-1)^{n-1}t^{n-1}\\) is a finite GP with first term 1 and common ratio \\(-t\\), \\(n\\) terms: \\(S_{n}=\\dfrac{1-r^{n}}{1-r}\\). Write \\(S_{n}\\) as TWO fractions and integrate from 0 to \\(x\\). Each term \\((-1)^{k-1}t^{k-1}\\) integrates to \\((-1)^{k-1}\\dfrac{x^{k}}{k}\\).",
+          "steps": [
+            {
+              "explain": "GP: first term \\(a=1\\), ratio \\(r=-t\\), \\(n\\) terms. \\(S_{n}=\\dfrac{a\\left(1-r^{n}\\right)}{1-r}=\\dfrac{1-(-t)^{n}}{1+t}\\). Split.",
+              "work": "\\(S_{n}=\\dfrac{1}{1+t}-\\dfrac{(-1)^{n}t^{n}}{1+t}\\)"
+            },
+            {
+              "explain": "Integrate the LEFT form (the series itself) term by term: \\(\\int_{0}^{x}(-1)^{k-1}t^{k-1}dt=(-1)^{k-1}\\dfrac{x^{k}}{k}\\).",
+              "work": "\\(\\int_{0}^{x}S_{n}dt=x-\\dfrac{x^{2}}{2}+\\dfrac{x^{3}}{3}-\\cdots+(-1)^{n-1}\\dfrac{x^{n}}{n}\\)"
+            },
+            {
+              "explain": "Integrate the RIGHT form: \\(\\int_{0}^{x}\\dfrac{dt}{1+t}=\\ln(1+x)\\) and keep the remainder integral.",
+              "work": "\\(\\int_{0}^{x}S_{n}dt=\\ln(1+x)-(-1)^{n}\\int_{0}^{x}\\dfrac{t^{n}}{1+t}dt\\)"
+            },
+            {
+              "explain": "Equate the two expressions for \\(\\int_{0}^{x}S_{n}dt\\).",
+              "work": "\\(x-\\dfrac{x^{2}}{2}+\\cdots+(-1)^{n-1}\\dfrac{x^{n}}{n}=\\ln(1+x)-(-1)^{n}\\int_{0}^{x}\\dfrac{t^{n}}{1+t}dt\\)"
+            },
+            {
+              "explain": "Why not the others: B uses ratio \\(t\\) (the signs alternate, so the ratio is \\(-t\\)); C has a plus sign in the numerator of \\(S_{n}\\); D forgets the remainder: a FINITE GP does not equal \\(\\dfrac{1}{1+t}\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "By considering the sum to \\(n\\) terms of the series",
+              "note": "GP ratio \\(-t\\): \\(S_n=\\dfrac{1-(-t)^n}{1+t}\\); integrate \\(0\\) to \\(x\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Killara High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2020-e2-q16bii",
+          "type": "mc",
+          "stem": "Also, show that \\(\\displaystyle\\int_{0}^{x}\\dfrac{t^{n}}{1+t}\\,dt<\\int_{0}^{x}t^{n}\\,dt\\) (for \\(x>0\\)). Which argument is correct?",
+          "difficulty": "medium",
+          "options": [
+            "For \\(t>0\\): \\(1+t>1\\), so \\(\\dfrac{1}{1+t}<1\\). Multiplying by \\(t^{n}>0\\): \\(\\dfrac{t^{n}}{1+t}<t^{n}\\) for \\(0<t\\le x\\). By the inequality of integrals (as in part 15(a)), \\(\\displaystyle\\int_{0}^{x}\\dfrac{t^{n}}{1+t}dt<\\int_{0}^{x}t^{n}dt\\).",
+            "For \\(t>0\\): \\(1+t>1\\), so \\(\\dfrac{1}{1+t}>1\\). Multiplying by \\(t^{n}\\): \\(\\dfrac{t^{n}}{1+t}>t^{n}\\); integrating gives the result.",
+            "The integrand \\(\\dfrac{t^{n}}{1+t}\\) and \\(t^{n}\\) are both positive, so their integrals are equal.",
+            "Integrate both: \\(\\displaystyle\\int\\dfrac{t^{n}}{1+t}dt=\\dfrac{t^{n+1}}{(n+1)(1+t)}\\) and \\(\\displaystyle\\int t^{n}dt=\\dfrac{t^{n+1}}{n+1}\\); the first is smaller because of the extra factor \\(\\dfrac{1}{1+t}\\)."
+          ],
+          "answer": 0,
+          "hint": "Compare the INTEGRANDS on \\(0<t\\le x\\): \\(\\dfrac{t^{n}}{1+t}\\) versus \\(t^{n}\\). The denominator \\(1+t\\) is bigger than 1 when \\(t>0\\), so the fraction is smaller. Then the integral of the smaller function is smaller (like part 15(a)).",
+          "steps": [
+            {
+              "explain": "For \\(t>0\\): \\(1+t>1\\). Taking reciprocals (positive numbers) REVERSES the inequality.",
+              "work": "\\(\\dfrac{1}{1+t}<1\\)"
+            },
+            {
+              "explain": "Multiply both sides by \\(t^{n}>0\\) (the direction stays).",
+              "work": "\\(\\dfrac{t^{n}}{1+t}<t^{n}\\quad(0<t\\le x)\\)"
+            },
+            {
+              "explain": "If \\(f(t)<g(t)\\) on the interval, then \\(\\int f<\\int g\\) (area under the smaller curve is smaller).",
+              "work": "\\(\\int_{0}^{x}\\dfrac{t^{n}}{1+t}dt<\\int_{0}^{x}t^{n}dt\\)"
+            },
+            {
+              "explain": "Why not the others: B reverses the reciprocal inequality; C claims equality (the integrands differ); D uses a false antiderivative.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "show that \\(\\displaystyle\\int_{0}^{x}\\dfrac{t^{n}}{1+t}\\,dt<\\int_{0}^{x}t^{n}\\,dt\\)",
+              "note": "\\(1+t>1\\Rightarrow\\dfrac{1}{1+t}<1\\); compare integrands."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Killara High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2020-e2-q16biii",
+          "type": "mc",
+          "stem": "For \\(0<x\\le1\\), show that \\(\\displaystyle\\int_{0}^{x}\\dfrac{t^{n}}{1+t}\\,dt<\\dfrac{1}{n+1}\\). Which argument is correct?",
+          "difficulty": "medium",
+          "options": [
+            "From part (ii): \\(\\displaystyle\\int_{0}^{x}\\dfrac{t^{n}}{1+t}dt<\\int_{0}^{x}t^{n}dt=\\dfrac{x^{n+1}}{n+1}\\). Since \\(0<x\\le1\\), \\(x^{n+1}\\le1\\), so \\(\\dfrac{x^{n+1}}{n+1}\\le\\dfrac{1}{n+1}\\). Combining: the integral is \\(<\\dfrac{1}{n+1}\\).",
+            "From part (ii): \\(\\displaystyle\\int_{0}^{x}\\dfrac{t^{n}}{1+t}dt<\\dfrac{x^{n+1}}{n+1}\\). Since \\(x\\le1\\), \\(x^{n+1}\\ge1\\), so the integral is bigger than \\(\\dfrac{1}{n+1}\\).",
+            "\\(\\displaystyle\\int_{0}^{x}t^{n}dt=\\dfrac{x^{n}}{n}\\), so the integral is less than \\(\\dfrac{1}{n}\\), and \\(\\dfrac{1}{n}<\\dfrac{1}{n+1}\\).",
+            "Put \\(x=1\\): \\(\\displaystyle\\int_{0}^{1}\\dfrac{t^{n}}{1+t}dt=\\dfrac{1}{n+1}\\). Hence the result."
+          ],
+          "answer": 0,
+          "hint": "Start from the result of (ii) and evaluate \\(\\int_{0}^{x}t^{n}dt=\\dfrac{x^{n+1}}{n+1}\\). Then use \\(0<x\\le1\\Rightarrow x^{n+1}\\le1\\) to bound it by \\(\\dfrac{1}{n+1}\\). Combine the two inequalities (chain).",
+          "steps": [
+            {
+              "explain": "By part (ii), \\(\\displaystyle\\int_{0}^{x}\\dfrac{t^{n}}{1+t}dt<\\int_{0}^{x}t^{n}dt\\). Evaluate the right side.",
+              "work": "\\(\\int_{0}^{x}t^{n}dt=\\left[\\dfrac{t^{n+1}}{n+1}\\right]_{0}^{x}=\\dfrac{x^{n+1}}{n+1}\\)"
+            },
+            {
+              "explain": "For \\(0<x\\le1\\), raising to the power \\(n+1\\) keeps a number in \\((0,1]\\): \\(x^{n+1}\\le1\\). Divide by \\(n+1>0\\).",
+              "work": "\\(\\dfrac{x^{n+1}}{n+1}\\le\\dfrac{1}{n+1}\\)"
+            },
+            {
+              "explain": "Chain the inequalities.",
+              "work": "\\(\\int_{0}^{x}\\dfrac{t^{n}}{1+t}dt<\\dfrac{x^{n+1}}{n+1}\\le\\dfrac{1}{n+1}\\)"
+            },
+            {
+              "explain": "Why not the others: B reverses \\(x^{n+1}\\le1\\); C integrates \\(t^{n}\\) wrongly (\\(\\dfrac{x^{n+1}}{n+1}\\)); D wrongly claims equality at \\(x=1\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "For \\(0<x\\le1\\), show that",
+              "note": "(ii) \\(+\\ \\int t^n=\\dfrac{x^{n+1}}{n+1}\\le\\dfrac{1}{n+1}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Killara High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2020-e2-q16biv",
+          "type": "mc",
+          "stem": "Using \\(x-\\dfrac{x^{2}}{2}+\\cdots\\) as the partial sums and \\(0<\\displaystyle\\int_{0}^{x}\\dfrac{t^{n}}{1+t}dt<\\dfrac{1}{n+1}\\) for \\(0<x\\le1\\), prove that as \\(n\\to\\infty\\), \\(x-\\dfrac{x^{2}}{2}+\\dfrac{x^{3}}{3}+\\cdots+(-1)^{n}\\dfrac{x^{n}}{n}+\\cdots=\\log_{e}(1+x)\\). Which argument is correct?",
+          "difficulty": "hard",
+          "options": [
+            "From the identity: \\(\\text{partial sum}=\\ln(1+x)-(-1)^{n}\\displaystyle\\int_{0}^{x}\\dfrac{t^{n}}{1+t}dt\\). Hence \\(\\left|\\ln(1+x)-\\text{partial sum}\\right|=\\displaystyle\\int_{0}^{x}\\dfrac{t^{n}}{1+t}dt<\\dfrac{1}{n+1}\\to0\\) as \\(n\\to\\infty\\) (and the integral is positive). By the squeeze theorem the integral tends to 0, so the partial sums tend to \\(\\ln(1+x)\\).",
+            "As \\(n\\to\\infty\\), \\(\\dfrac{1}{n+1}\\to0\\), so the partial sum equals 0.",
+            "As \\(n\\to\\infty\\), \\(\\dfrac{1}{n+1}\\to\\infty\\), so the partial sums diverge.",
+            "The integral is positive, so it can never tend to 0; the partial sums therefore do not converge to \\(\\ln(1+x)\\)."
+          ],
+          "answer": 0,
+          "hint": "The DIFFERENCE between \\(\\ln(1+x)\\) and the partial sum is the remainder \\(\\int_{0}^{x}\\dfrac{t^{n}}{1+t}dt\\), which is positive and less than \\(\\dfrac{1}{n+1}\\). Let \\(n\\to\\infty\\) and use the SQUEEZE theorem: the remainder goes to 0.",
+          "steps": [
+            {
+              "explain": "Rearrange the identity from (i): the partial sum \\(S\\) satisfies \\(\\ln(1+x)-S=(-1)^{n}\\displaystyle\\int_{0}^{x}\\dfrac{t^{n}}{1+t}dt\\).",
+              "work": "\\(\\left|\\ln(1+x)-S_{n}\\right|=\\int_{0}^{x}\\dfrac{t^{n}}{1+t}dt\\quad(\\text{positive})\\)"
+            },
+            {
+              "explain": "Apply the bounds from (iii): \\(0<\\)remainder\\(<\\dfrac{1}{n+1}\\).",
+              "work": "\\(0<\\left|\\ln(1+x)-S_{n}\\right|<\\dfrac{1}{n+1}\\)"
+            },
+            {
+              "explain": "As \\(n\\to\\infty\\), \\(\\dfrac{1}{n+1}\\to0\\). The remainder is squeezed between 0 and a quantity tending to 0 (squeeze theorem), so it tends to 0.",
+              "work": "\\(\\left|\\ln(1+x)-S_{n}\\right|\\to0\\)"
+            },
+            {
+              "explain": "Therefore the partial sums converge to \\(\\ln(1+x)\\): the infinite series equals \\(\\log_{e}(1+x)\\) for \\(0<x\\le1\\).",
+              "work": "\\(x-\\dfrac{x^{2}}{2}+\\dfrac{x^{3}}{3}-\\cdots=\\log_{e}(1+x)\\)"
+            },
+            {
+              "explain": "Why not the others: B confuses the remainder with the partial sum; C says \\(\\dfrac{1}{n+1}\\to\\infty\\) (it tends to 0); D says a positive integral cannot tend to 0 (positive numbers can get arbitrarily small).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "prove that as \\(n\\to\\infty\\)",
+              "note": "Remainder \\(<\\dfrac{1}{n+1}\\to0\\): squeeze theorem."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Killara High School",
             "grade": "12",
             "origin": "teacher"
           }

@@ -2348,6 +2348,164 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "kinross2022-e2-q11bi",
+          "type": "mc",
+          "stem": "Find \\(\\displaystyle\\int\\dfrac{x}{\\sqrt{1+3x^{2}}}\\,dx\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{1}{3}\\sqrt{1+3x^{2}}+C\\)",
+            "\\(\\dfrac{1}{6}\\sqrt{1+3x^{2}}+C\\)",
+            "\\(\\dfrac{2}{3}\\sqrt{1+3x^{2}}+C\\)",
+            "\\(3\\sqrt{1+3x^{2}}+C\\)"
+          ],
+          "answer": 0,
+          "hint": "The numerator \\(x\\) is a constant multiple of the DERIVATIVE of \\(1+3x^{2}\\) (which is \\(6x\\)). Let \\(u=1+3x^{2}\\), \\(du=6x\\,dx\\).",
+          "steps": [
+            {
+              "explain": "Substitute \\(u=1+3x^{2}\\); then \\(du=6x\\,dx\\), so \\(x\\,dx=\\dfrac16du\\).",
+              "work": "\\(\\int\\dfrac{x\\,dx}{\\sqrt{1+3x^{2}}}=\\dfrac{1}{6}\\int u^{-\\frac12}\\,du\\)"
+            },
+            {
+              "explain": "Integrate: \\(\\int u^{-\\frac12}du=\\dfrac{u^{\\frac12}}{\\dfrac{1}{2}}=2\\sqrt u\\).",
+              "work": "\\(=\\dfrac{1}{6}\\cdot2\\sqrt u+C=\\dfrac{1}{3}\\sqrt u+C\\)"
+            },
+            {
+              "explain": "Substitute back.",
+              "work": "\\(=\\dfrac{1}{3}\\sqrt{1+3x^{2}}+C\\)"
+            },
+            {
+              "explain": "Check: \\(\\dfrac{d}{dx}\\dfrac{1}{3}\\sqrt{1+3x^{2}}=\\dfrac{1}{3}\\cdot\\dfrac{6x}{2\\sqrt{1+3x^{2}}}=\\dfrac{x}{\\sqrt{1+3x^{2}}}\\) ✓.",
+              "work": ""
+            },
+            {
+              "explain": "Why not the others: B forgets that \\(\\int u^{-\\frac12}du=2\\sqrt u\\); C and D have the wrong constant factor.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find \\(\\displaystyle\\int\\dfrac{x}{\\sqrt{1+3x^{2}}}\\,dx\\)",
+              "note": "\\(u=1+3x^2\\), \\(x\\,dx=\\dfrac16du\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Kinross Wolaroi School 2022 Trial HSC Examination Mathematics Extension 2",
+            "school": "Kinross Wolaroi School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2020-e2-q6",
+          "type": "mc",
+          "stem": "Using the substitution \\(x=\\pi-y\\), the definite integral \\(\\displaystyle\\int_{0}^{\\pi}x\\sin x\\,dx\\) will simplify to:",
+          "difficulty": "hard",
+          "options": [
+            "\\(0\\)",
+            "\\(\\dfrac{\\pi^{2}}{4}\\)",
+            "\\(\\dfrac\\pi2\\displaystyle\\int_{0}^{\\pi}\\sin x\\,dx\\)",
+            "\\(\\displaystyle\\int_{0}^{\\pi}\\sin x\\,dx\\)"
+          ],
+          "answer": 2,
+          "hint": "Substitute \\(x=\\pi-y\\): the limits swap (\\(0\\to\\pi\\), \\(\\pi\\to0\\)) and \\(\\sin(\\pi-y)=\\sin y\\). The integral comes back (\\(I=\\pi\\int\\sin y\\,dy-I\\)): solve for \\(I\\).",
+          "steps": [
+            {
+              "explain": "Let \\(x=\\pi-y\\): \\(dx=-dy\\); limits \\(x=0\\Rightarrow y=\\pi\\), \\(x=\\pi\\Rightarrow y=0\\). Also \\(\\sin x=\\sin(\\pi-y)=\\sin y\\).",
+              "work": "\\(I=\\int_{0}^{\\pi}x\\sin x\\,dx=\\int_{y=\\pi}^{y=0}(\\pi-y)\\sin y\\,(-dy)\\)"
+            },
+            {
+              "explain": "The minus sign swaps the limits back to \\(0\\) to \\(\\pi\\).",
+              "work": "\\(I=\\int_{0}^{\\pi}(\\pi-y)\\sin y\\,dy\\)"
+            },
+            {
+              "explain": "Expand: \\(\\pi\\sin y-y\\sin y\\). The second part is the ORIGINAL integral (the variable name does not matter).",
+              "work": "\\(I=\\pi\\int_{0}^{\\pi}\\sin y\\,dy-\\int_{0}^{\\pi}y\\sin y\\,dy=\\pi\\int_{0}^{\\pi}\\sin y\\,dy-I\\)"
+            },
+            {
+              "explain": "Solve for \\(I\\): \\(2I=\\pi\\int_{0}^{\\pi}\\sin y\\,dy\\).",
+              "work": "\\(I=\\dfrac\\pi2\\int_{0}^{\\pi}\\sin x\\,dx\\)"
+            },
+            {
+              "explain": "Why not the others: A (0) and B are not what the substitution gives (the value is \\(\\dfrac\\pi2\\cdot2=\\pi\\)); D loses the factor \\(\\dfrac\\pi2\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">C</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Using the substitution \\(x=\\pi-y\\)",
+              "note": "\\(x=\\pi-y\\): \\(I=\\pi\\int\\sin-I\\Rightarrow I=\\dfrac\\pi2\\int\\sin\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Killara High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2020-e2-q11d",
+          "type": "mc",
+          "stem": "Find \\(\\displaystyle\\int\\dfrac{dx}{x(\\ln x)^{2}}\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(-\\dfrac{1}{\\ln x}+C\\)",
+            "\\(\\dfrac{1}{\\ln x}+C\\)",
+            "\\(-\\dfrac{1}{(\\ln x)^{2}}+C\\)",
+            "\\(\\ln(\\ln x)+C\\)"
+          ],
+          "answer": 0,
+          "hint": "Notice \\(\\dfrac{1}{x}\\) is the derivative of \\(\\ln x\\). Let \\(u=\\ln x\\), \\(du=\\dfrac{dx}{x}\\).",
+          "steps": [
+            {
+              "explain": "Substitute \\(u=\\ln x\\), \\(du=\\dfrac{1}{x}\\,dx\\).",
+              "work": "\\(\\int\\dfrac{dx}{x(\\ln x)^{2}}=\\int\\dfrac{du}{u^{2}}=\\int u^{-2}du\\)"
+            },
+            {
+              "explain": "Integrate: \\(\\int u^{-2}du=\\dfrac{u^{-1}}{-1}=-\\dfrac{1}{u}\\).",
+              "work": "\\(=-\\dfrac{1}{u}+C\\)"
+            },
+            {
+              "explain": "Substitute back.",
+              "work": "\\(=-\\dfrac{1}{\\ln x}+C\\)"
+            },
+            {
+              "explain": "Why not the others: B has the wrong sign; C has the wrong power (\\(\\int u^{-2}=-u^{-1}\\)); D is \\(\\int\\dfrac{du}{u}\\) (power \\(-1\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find \\(\\displaystyle\\int\\dfrac{dx}{x(\\ln x)^{2}}\\)",
+              "note": "\\(u=\\ln x\\); \\(\\int u^{-2}du=-u^{-1}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Killara High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -3917,6 +4075,172 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "kinross2022-e2-q12bi",
+          "type": "mc",
+          "stem": "Find real numbers \\(a\\), \\(b\\) and \\(c\\) such that \\(\\dfrac{1}{x^{2}(x-1)}=\\dfrac{a}{x}+\\dfrac b{x^{2}}+\\dfrac c{x-1}\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(a=-1,\\ b=-1,\\ c=1\\)",
+            "\\(a=1,\\ b=1,\\ c=-1\\)",
+            "\\(a=-1,\\ b=1,\\ c=1\\)",
+            "\\(a=-1,\\ b=-1,\\ c=-1\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply both sides by \\(x^{2}(x-1)\\) to clear the denominators. Then substitute \\(x=1\\) (kills the \\(a\\) and \\(b\\) terms) and compare coefficients of \\(x^{2}\\) and the constant terms.",
+          "steps": [
+            {
+              "explain": "Multiply by \\(x^{2}(x-1)\\).",
+              "work": "\\(1=ax(x-1)+b(x-1)+cx^{2}\\)"
+            },
+            {
+              "explain": "Let \\(x=1\\): the first two terms vanish.",
+              "work": "\\(1=c(1)^{2}\\ \\Rightarrow\\ c=1\\)"
+            },
+            {
+              "explain": "Compare the coefficient of \\(x^{2}\\): left side 0; right side \\(a+c\\) (from \\(ax\\cdot x\\) and \\(cx^{2}\\)).",
+              "work": "\\(a+c=0\\ \\Rightarrow\\ a=-1\\)"
+            },
+            {
+              "explain": "Compare the constant terms: left side 1; right side \\(-b\\) (from \\(b\\cdot(-1)\\)).",
+              "work": "\\(1=-b\\ \\Rightarrow\\ b=-1\\)"
+            },
+            {
+              "explain": "Check with \\(x=2\\): left \\(\\dfrac{1}{4\\cdot1}=\\dfrac{1}{4}\\); right \\(-\\dfrac{1}{2}-\\dfrac{1}{4}+1=\\dfrac{1}{4}\\) ✓.",
+              "work": "\\(a=-1,\\ b=-1,\\ c=1\\)"
+            },
+            {
+              "explain": "Why not the others: B, C, D have a sign error (they fail the check at \\(x=2\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find real numbers \\(a\\), \\(b\\) and \\(c\\) such that",
+              "note": "Clear denominators; \\(x=1\\) gives \\(c\\); compare \\(x^2\\) and constants."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Kinross Wolaroi School 2022 Trial HSC Examination Mathematics Extension 2",
+            "school": "Kinross Wolaroi School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "kinross2022-e2-q12bii",
+          "type": "mc",
+          "stem": "Hence find \\(\\displaystyle\\int\\dfrac{1}{x^{2}(x-1)}\\,dx\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{1}{x}+\\ln\\left|\\dfrac{x-1}{x}\\right|+C\\)",
+            "\\(-\\dfrac{1}{x}+\\ln\\left|\\dfrac{x-1}{x}\\right|+C\\)",
+            "\\(\\dfrac{1}{x}+\\ln\\left|\\dfrac{x}{x-1}\\right|+C\\)",
+            "\\(-\\ln|x|-\\ln|x|^{2}+\\ln|x-1|+C\\)"
+          ],
+          "answer": 0,
+          "hint": "Integrate the three partial fractions separately: \\(\\int\\dfrac{dx}{x}=\\ln|x|\\), \\(\\int x^{-2}dx=-\\dfrac{1}{x}\\), \\(\\int\\dfrac{dx}{x-1}=\\ln|x-1|\\). Combine the logs at the end.",
+          "steps": [
+            {
+              "explain": "Use \\(\\dfrac{1}{x^{2}(x-1)}=-\\dfrac{1}{x}-\\dfrac{1}{x^{2}}+\\dfrac{1}{x-1}\\) from part (i).",
+              "work": "\\(\\int\\left(-\\dfrac{1}{x}-\\dfrac1{x^{2}}+\\dfrac1{x-1}\\right)dx\\)"
+            },
+            {
+              "explain": "Integrate term by term: \\(-\\ln|x|\\); \\(-\\int x^{-2}dx=-\\left(-x^{-1}\\right)=+\\dfrac{1}{x}\\); \\(+\\ln|x-1|\\).",
+              "work": "\\(=-\\ln|x|+\\dfrac{1}{x}+\\ln|x-1|+C\\)"
+            },
+            {
+              "explain": "Combine the logs: \\(\\ln|x-1|-\\ln|x|=\\ln\\left|\\dfrac{x-1}{x}\\right|\\).",
+              "work": "\\(=\\dfrac{1}{x}+\\ln\\left|\\dfrac{x-1}{x}\\right|+C\\)"
+            },
+            {
+              "explain": "Why not the others: B has \\(-\\dfrac{1}{x}\\) (\\(\\int-x^{-2}dx=+x^{-1}\\)); C inverts the log (that is the negative); D is not simplified incorrectly (\\(\\ln|x|^{2}\\) is the wrong term).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Hence find",
+              "note": "\\(\\int-x^{-2}dx=+\\dfrac{1}{x}\\); combine logs."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Kinross Wolaroi School 2022 Trial HSC Examination Mathematics Extension 2",
+            "school": "Kinross Wolaroi School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2020-e2-q12b",
+          "type": "mc",
+          "stem": "Show that \\(\\displaystyle\\int_{1}^{3}\\dfrac{6t+23}{(2t-1)(t+6)}\\,dt=\\ln\\dfrac{225}{7}\\). Which working is correct?",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\dfrac{6t+23}{(2t-1)(t+6)}=\\dfrac{4}{2t-1}+\\dfrac{1}{t+6}\\) (from \\(6t+23=A(t+6)+B(2t-1)\\): \\(t=-6\\Rightarrow B=1\\); \\(t=\\dfrac{1}{2}\\Rightarrow A=4\\)). Then \\(\\displaystyle\\int=\\left[2\\ln(2t-1)+\\ln(t+6)\\right]_{1}^{3}=(2\\ln5+\\ln9)-(0+\\ln7)=\\ln\\dfrac{25\\cdot9}{7}=\\ln\\dfrac{225}{7}\\).",
+            "\\(\\dfrac{6t+23}{(2t-1)(t+6)}=\\dfrac{4}{2t-1}+\\dfrac{1}{t+6}\\). Then \\(\\displaystyle\\int=\\left[4\\ln(2t-1)+\\ln(t+6)\\right]_{1}^{3}=(4\\ln5+\\ln9)-\\ln7=\\ln\\dfrac{625\\cdot9}{7}\\).",
+            "\\(\\dfrac{6t+23}{(2t-1)(t+6)}=\\dfrac{1}{2t-1}+\\dfrac{4}{t+6}\\). Then \\(\\displaystyle\\int=\\left[\\dfrac{1}{2}\\ln(2t-1)+4\\ln(t+6)\\right]_{1}^{3}=\\ln\\dfrac{\\sqrt5\\cdot9^{4}}{7^{4}}\\).",
+            "\\(\\dfrac{6t+23}{(2t-1)(t+6)}=\\dfrac{4}{2t-1}-\\dfrac{1}{t+6}\\). Then \\(\\displaystyle\\int=\\left[2\\ln(2t-1)-\\ln(t+6)\\right]_{1}^{3}=\\ln\\dfrac{25\\cdot7}{9}\\)."
+          ],
+          "answer": 0,
+          "hint": "Partial fractions: \\(\\dfrac{6t+23}{(2t-1)(t+6)}=\\dfrac{A}{2t-1}+\\dfrac{B}{t+6}\\). Substitute \\(t=-6\\) (kills \\(A\\)) and \\(t=\\dfrac{1}{2}\\) (kills \\(B\\)). Remember \\(\\int\\dfrac{dt}{2t-1}=\\dfrac{1}{2}\\ln(2t-1)\\) (chain rule factor).",
+          "steps": [
+            {
+              "explain": "Clear denominators.",
+              "work": "\\(6t+23=A(t+6)+B(2t-1)\\)"
+            },
+            {
+              "explain": "\\(t=-6\\): \\(-36+23=-13=B(-13)\\), so \\(B=1\\). \\(t=\\dfrac{1}{2}\\): \\(3+23=26=A\\left(\\dfrac{13}{2}\\right)\\), so \\(A=4\\).",
+              "work": "\\(\\dfrac{6t+23}{(2t-1)(t+6)}=\\dfrac{4}{2t-1}+\\dfrac{1}{t+6}\\)"
+            },
+            {
+              "explain": "Integrate: \\(\\int\\dfrac{4}{2t-1}dt=4\\cdot\\dfrac{1}{2}\\ln(2t-1)=2\\ln(2t-1)\\) (the 2 inside gives a factor \\(\\dfrac{1}{2}\\)); \\(\\int\\dfrac{dt}{t+6}=\\ln(t+6)\\).",
+              "work": "\\(\\int=\\left[2\\ln(2t-1)+\\ln(t+6)\\right]_{1}^{3}\\)"
+            },
+            {
+              "explain": "Limits: \\(t=3\\): \\(2\\ln5+\\ln9\\). \\(t=1\\): \\(2\\ln1+\\ln7=\\ln7\\).",
+              "work": "\\(=(2\\ln5+\\ln9)-\\ln7\\)"
+            },
+            {
+              "explain": "Combine with log laws: \\(2\\ln5=\\ln25\\); \\(\\ln25+\\ln9=\\ln225\\); subtract \\(\\ln7\\).",
+              "work": "\\(=\\ln\\dfrac{225}{7}\\)"
+            },
+            {
+              "explain": "Why not the others: B forgets the \\(\\dfrac{1}{2}\\) from \\(\\int\\dfrac{dt}{2t-1}\\); C swaps \\(A\\) and \\(B\\); D has the wrong sign on \\(B\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that \\(\\displaystyle\\int_{1}^{3}\\dfrac{6t+23}{(2t-1)(t+6)}\\,dt",
+              "note": "\\(t=-6\\to B\\); \\(t=\\dfrac{1}{2}\\to A\\); chain-rule factor \\(\\dfrac{1}{2}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Killara High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -4864,6 +5188,106 @@
           "meta": {
             "source": "Hurlstone Agricultural High School 2020 Trial Higher School Certificate Examination Mathematics Extension 2",
             "school": "Hurlstone Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "kinross2022-e2-q4",
+          "type": "mc",
+          "stem": "Which of the following is an expression for \\(\\displaystyle\\int\\dfrac{1}{\\sqrt{3-2x-x^{2}}}\\,dx\\)?",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\sin^{-1}\\left(\\dfrac{x-1}{2}\\right)+C\\)",
+            "\\(\\sin^{-1}\\left(\\dfrac{x+1}{2}\\right)+C\\)",
+            "\\(\\sin^{-1}\\left(\\dfrac{x-1}{\\sqrt2}\\right)+C\\)",
+            "\\(\\sin^{-1}\\left(\\dfrac{x+1}{\\sqrt2}\\right)+C\\)"
+          ],
+          "answer": 1,
+          "hint": "Complete the square under the root to get \\(a^{2}-(x-h)^{2}\\), then use \\(\\displaystyle\\int\\dfrac{dx}{\\sqrt{a^{2}-u^{2}}}=\\sin^{-1}\\dfrac{u}{a}\\).",
+          "steps": [
+            {
+              "explain": "Complete the square: \\(3-2x-x^{2}=-\\left(x^{2}+2x\\right)+3=-\\left(x^{2}+2x+1\\right)+1+3\\).",
+              "work": "\\(3-2x-x^{2}=4-(x+1)^{2}\\)"
+            },
+            {
+              "explain": "Rewrite: \\(a^{2}=4\\) so \\(a=2\\); \\(u=x+1\\) and \\(du=dx\\).",
+              "work": "\\(\\int\\dfrac{dx}{\\sqrt{2^{2}-(x+1)^{2}}}\\)"
+            },
+            {
+              "explain": "Standard integral.",
+              "work": "\\(=\\sin^{-1}\\dfrac{x+1}{2}+C\\)"
+            },
+            {
+              "explain": "Why not the others: A and C have \\(x-1\\) (the square gives \\(x+1\\)); C and D have \\(\\sqrt2\\) (that would need \\(a^{2}=2\\), but \\(a^{2}=4\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">B</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Which of the following is an expression for",
+              "note": "Complete the square: \\(4-(x+1)^2\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Kinross Wolaroi School 2022 Trial HSC Examination Mathematics Extension 2",
+            "school": "Kinross Wolaroi School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2020-e2-q11e",
+          "type": "mc",
+          "stem": "Find \\(\\displaystyle\\int\\dfrac{1}{x^{2}-6x+13}\\,dx\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{1}{2}\\tan^{-1}\\left(\\dfrac{x-3}{2}\\right)+C\\)",
+            "\\(\\tan^{-1}\\left(\\dfrac{x-3}{2}\\right)+C\\)",
+            "\\(\\dfrac{1}{2}\\tan^{-1}(x-3)+C\\)",
+            "\\(\\dfrac{1}{3}\\tan^{-1}\\left(\\dfrac{x-3}{3}\\right)+C\\)"
+          ],
+          "answer": 0,
+          "hint": "Complete the square in the denominator to get \\((x-h)^{2}+a^{2}\\), then use \\(\\displaystyle\\int\\dfrac{dx}{u^{2}+a^{2}}=\\dfrac{1}{a}\\tan^{-1}\\dfrac{u}{a}\\).",
+          "steps": [
+            {
+              "explain": "Complete the square: \\(x^{2}-6x+13=(x-3)^{2}-9+13\\).",
+              "work": "\\(x^{2}-6x+13=(x-3)^{2}+4\\)"
+            },
+            {
+              "explain": "Rewrite with \\(u=x-3\\) and \\(a=2\\).",
+              "work": "\\(\\int\\dfrac{dx}{(x-3)^{2}+2^{2}}\\)"
+            },
+            {
+              "explain": "Standard integral \\(\\dfrac{1}{a}\\tan^{-1}\\dfrac{u}{a}\\).",
+              "work": "\\(=\\dfrac{1}{2}\\tan^{-1}\\left(\\dfrac{x-3}{2}\\right)+C\\)"
+            },
+            {
+              "explain": "Why not the others: B forgets the factor \\(\\dfrac{1}{a}=\\dfrac{1}{2}\\); C forgets to divide by \\(a=2\\) inside; D uses \\(a=3\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find \\(\\displaystyle\\int\\dfrac{1}{x^{2}-6x+13}\\,dx\\)",
+              "note": "Complete the square: \\((x-3)^2+2^2\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Killara High School",
             "grade": "12",
             "origin": "teacher"
           }
@@ -6172,6 +6596,60 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "kinross2022-e2-q16c",
+          "type": "mc",
+          "stem": "Find an expression for \\(\\displaystyle\\int\\sec^{3}\\theta\\,d\\theta\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\dfrac{1}{2}\\sec\\theta\\tan\\theta+\\dfrac{1}{2}\\ln|\\sec\\theta+\\tan\\theta|+C\\)",
+            "\\(\\dfrac{1}{2}\\sec\\theta\\tan\\theta-\\dfrac{1}{2}\\ln|\\sec\\theta+\\tan\\theta|+C\\)",
+            "\\(\\sec\\theta\\tan\\theta+\\ln|\\sec\\theta+\\tan\\theta|+C\\)",
+            "\\(\\dfrac{1}{4}\\sec^{4}\\theta+C\\)"
+          ],
+          "answer": 0,
+          "hint": "Write \\(\\sec^{3}\\theta=\\sec\\theta\\cdot\\sec^{2}\\theta\\) and integrate BY PARTS with \\(u=\\sec\\theta\\), \\(v'=\\sec^{2}\\theta\\). The integral comes back (with \\(\\sec^{3}\\theta\\)) after using \\(\\tan^{2}\\theta=\\sec^{2}\\theta-1\\): move it to the left side.",
+          "steps": [
+            {
+              "explain": "Let \\(I=\\int\\sec^{3}\\theta\\,d\\theta\\). Parts: \\(u=\\sec\\theta\\Rightarrow u'=\\sec\\theta\\tan\\theta\\); \\(v'=\\sec^{2}\\theta\\Rightarrow v=\\tan\\theta\\).",
+              "work": "\\(I=\\sec\\theta\\tan\\theta-\\int\\sec\\theta\\tan^{2}\\theta\\,d\\theta\\)"
+            },
+            {
+              "explain": "Use \\(\\tan^{2}\\theta=\\sec^{2}\\theta-1\\): the integral splits.",
+              "work": "\\(I=\\sec\\theta\\tan\\theta-\\int\\sec^{3}\\theta\\,d\\theta+\\int\\sec\\theta\\,d\\theta\\)"
+            },
+            {
+              "explain": "Recognise \\(\\int\\sec^{3}\\theta\\,d\\theta=I\\) and \\(\\int\\sec\\theta\\,d\\theta=\\ln|\\sec\\theta+\\tan\\theta|\\).",
+              "work": "\\(I=\\sec\\theta\\tan\\theta-I+\\ln|\\sec\\theta+\\tan\\theta|\\)"
+            },
+            {
+              "explain": "Move \\(I\\) to the left side: \\(2I=\\dots\\) and divide by 2.",
+              "work": "\\(I=\\dfrac{1}{2}\\sec\\theta\\tan\\theta+\\dfrac{1}{2}\\ln|\\sec\\theta+\\tan\\theta|+C\\)"
+            },
+            {
+              "explain": "Why not the others: B has the wrong sign for the logarithm; C forgets to divide by 2; D uses the power rule on \\(\\sec\\theta\\) (not valid).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find an expression for",
+              "note": "Parts; \\(\\tan^2=\\sec^2-1\\); solve for \\(I\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Kinross Wolaroi School 2022 Trial HSC Examination Mathematics Extension 2",
+            "school": "Kinross Wolaroi School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -6846,6 +7324,60 @@
           "meta": {
             "source": "James Ruse Agricultural High School 2020 Trial Higher School Certificate Examination Mathematics Extension 2",
             "school": "James Ruse Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "kinross2022-e2-q11bii",
+          "type": "mc",
+          "stem": "Evaluate \\(\\displaystyle\\int_{0}^{\\frac\\pi4}\\tan x\\,dx\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{1}{2}\\ln2\\)",
+            "\\(\\ln2\\)",
+            "\\(-\\dfrac{1}{2}\\ln2\\)",
+            "\\(1\\)"
+          ],
+          "answer": 0,
+          "hint": "Write \\(\\tan x=\\dfrac{\\sin x}{\\cos x}\\): the numerator is MINUS the derivative of the denominator, so \\(\\int\\tan x\\,dx=-\\ln|\\cos x|\\). Then use the limits.",
+          "steps": [
+            {
+              "explain": "\\(\\int\\tan x\\,dx=\\int\\dfrac{\\sin x}{\\cos x}dx=-\\ln|\\cos x|\\) (let \\(u=\\cos x\\), \\(du=-\\sin x\\,dx\\)).",
+              "work": "\\(\\int_{0}^{\\frac\\pi4}\\tan x\\,dx=\\left[-\\ln\\cos x\\right]_{0}^{\\frac\\pi4}\\)"
+            },
+            {
+              "explain": "Substitute the limits: \\(\\cos\\dfrac\\pi4=\\dfrac1{\\sqrt2}\\) and \\(\\cos0=1\\).",
+              "work": "\\(=-\\ln\\dfrac{1}{\\sqrt2}+\\ln1\\)"
+            },
+            {
+              "explain": "Simplify: \\(-\\ln\\dfrac1{\\sqrt2}=\\ln\\sqrt2=\\dfrac{1}{2}\\ln2\\) and \\(\\ln1=0\\).",
+              "work": "\\(=\\dfrac{1}{2}\\ln2\\)"
+            },
+            {
+              "explain": "Numerical check: \\(\\dfrac{1}{2}\\ln2\\approx0.347\\), which is reasonable since \\(\\tan x\\) rises from 0 to 1 on an interval of width \\(\\dfrac\\pi4\\approx0.785\\) (average about \\(0.44\\)).",
+              "work": ""
+            },
+            {
+              "explain": "Why not the others: \\(\\ln2\\) forgets the \\(\\dfrac{1}{2}\\); \\(-\\dfrac{1}{2}\\ln2\\) has the wrong sign; 1 is \\(\\tan\\dfrac\\pi4\\), not the integral.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Evaluate \\(\\displaystyle\\int_{0}^{\\frac\\pi4}\\tan x\\,dx\\)",
+              "note": "\\(\\int\\tan x=-\\ln|\\cos x|\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Kinross Wolaroi School 2022 Trial HSC Examination Mathematics Extension 2",
+            "school": "Kinross Wolaroi School",
             "grade": "12",
             "origin": "teacher"
           }
@@ -9016,6 +9548,168 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "kinross2022-e2-q12c",
+          "type": "mc",
+          "stem": "If \\(I_{n}=\\displaystyle\\int_{1}^{e}(1-\\ln x)^{n}\\,dx\\) for \\(n=0,1,2,\\dots\\) show that \\(I_{n}=-1+nI_{n-1}\\). Which working is correct?",
+          "difficulty": "hard",
+          "options": [
+            "By parts with \\(u=(1-\\ln x)^{n}\\), \\(v'=1\\): \\(u'=n(1-\\ln x)^{n-1}\\cdot\\left(-\\dfrac{1}{x}\\right)\\), \\(v=x\\). Then \\(I_{n}=\\left[x(1-\\ln x)^{n}\\right]_{1}^{e}+n\\displaystyle\\int_{1}^{e}(1-\\ln x)^{n-1}dx=(0-1)+nI_{n-1}=-1+nI_{n-1}\\).",
+            "By parts with \\(u=(1-\\ln x)^{n}\\), \\(v'=1\\): \\(u'=n(1-\\ln x)^{n-1}\\left(-\\dfrac{1}{x}\\right)\\), \\(v=x\\). Then \\(I_{n}=\\left[x(1-\\ln x)^{n}\\right]_{1}^{e}-n\\displaystyle\\int_{1}^{e}(1-\\ln x)^{n-1}dx=-1-nI_{n-1}\\).",
+            "By parts with \\(u=(1-\\ln x)^{n}\\), \\(v'=1\\): the boundary term is \\(\\left[x(1-\\ln x)^{n}\\right]_{1}^{e}=e\\cdot0-0=0\\), so \\(I_{n}=nI_{n-1}\\).",
+            "By parts with \\(u=1\\), \\(v'=(1-\\ln x)^{n}\\): \\(v=\\dfrac{(1-\\ln x)^{n+1}}{n+1}\\), which gives \\(I_{n}=-1+nI_{n-1}\\) directly."
+          ],
+          "answer": 0,
+          "hint": "Integrate by parts with \\(u=(1-\\ln x)^{n}\\) and \\(v'=1\\) (so \\(v=x\\)). The chain rule gives the factor \\(-\\dfrac{1}{x}\\), which cancels the \\(x\\) in \\(vu'\\). Evaluate the boundary term carefully at BOTH limits \\(1\\) and \\(e\\).",
+          "steps": [
+            {
+              "explain": "Parts: \\(u=(1-\\ln x)^{n}\\); \\(u'=n(1-\\ln x)^{n-1}\\cdot\\left(-\\dfrac{1}{x}\\right)\\); \\(v'=1\\); \\(v=x\\).",
+              "work": "\\(I_{n}=\\left[x(1-\\ln x)^{n}\\right]_{1}^{e}-\\int_{1}^{e}x\\cdot n(1-\\ln x)^{n-1}\\left(-\\dfrac{1}{x}\\right)dx\\)"
+            },
+            {
+              "explain": "The \\(x\\) cancels with \\(\\dfrac{1}{x}\\), and \\(-\\)(negative) \\(=+\\): the integral becomes \\(+n\\int_{1}^{e}(1-\\ln x)^{n-1}dx=+nI_{n-1}\\).",
+              "work": "\\(I_{n}=\\left[x(1-\\ln x)^{n}\\right]_{1}^{e}+nI_{n-1}\\)"
+            },
+            {
+              "explain": "Boundary term: at \\(x=e\\): \\(e(1-1)^{n}=0\\) (for \\(n\\ge1\\)). At \\(x=1\\): \\(1\\cdot(1-0)^{n}=1\\). So the bracket is \\(0-1=-1\\).",
+              "work": "\\(\\left[x(1-\\ln x)^{n}\\right]_{1}^{e}=0-1=-1\\)"
+            },
+            {
+              "explain": "Combine.",
+              "work": "\\(I_{n}=-1+nI_{n-1}\\)"
+            },
+            {
+              "explain": "Why not the others: B has the wrong sign on the integral (a minus times the negative \\(u'\\) is a PLUS); C evaluates the lower limit as 0 instead of 1; D chooses \\(u=1\\), \\(v'=(1-\\ln x)^{n}\\), which is not possible (that integral is not elementary).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "show that \\(I_{n}=-1+nI_{n-1}\\)",
+              "note": "\\(u=(1-\\ln x)^n\\), \\(v=x\\); boundary term \\(=0-1\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Kinross Wolaroi School 2022 Trial HSC Examination Mathematics Extension 2",
+            "school": "Kinross Wolaroi School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2020-e2-q15bi",
+          "type": "mc",
+          "stem": "Let \\(I_{n}=\\displaystyle\\int_{0}^{1}\\left(1-t^{2}\\right)^{\\frac{n-1}{2}}dt\\), where \\(n\\) is a non-negative integer. Using integration by parts, or otherwise, show that \\(nI_{n}=(n-1)I_{n-2}\\) if \\(n\\ge2\\). Which working is correct?",
+          "difficulty": "hard",
+          "options": [
+            "By parts with \\(u=\\left(1-t^{2}\\right)^{\\frac{n-1}{2}}\\), \\(v'=1\\): \\(u'=\\dfrac{n-1}{2}\\left(1-t^{2}\\right)^{\\frac{n-3}{2}}(-2t)\\), \\(v=t\\). \\(I_{n}=\\left[t\\left(1-t^{2}\\right)^{\\frac{n-1}{2}}\\right]_{0}^{1}+(n-1)\\displaystyle\\int_{0}^{1}t^{2}\\left(1-t^{2}\\right)^{\\frac{n-3}{2}}dt\\). The bracket is 0 (\\(n\\ge2\\)). Write \\(t^{2}=1-\\left(1-t^{2}\\right)\\): the integral is \\(I_{n-2}-I_{n}\\). So \\(I_{n}=(n-1)\\left(I_{n-2}-I_{n}\\right)\\), i.e. \\(nI_{n}=(n-1)I_{n-2}\\).",
+            "By parts as above, but with the integral \\(-(n-1)\\displaystyle\\int t^{2}\\left(1-t^{2}\\right)^{\\frac{n-3}{2}}dt\\). Then \\(I_{n}=-(n-1)\\left(I_{n-2}-I_{n}\\right)\\), which gives \\((n-2)I_{n}=-(n-1)I_{n-2}\\).",
+            "By parts as above, with the boundary term \\(\\left[t\\left(1-t^{2}\\right)^{\\frac{n-1}{2}}\\right]_{0}^{1}=1\\). Then \\(I_{n}=1+(n-1)\\left(I_{n-2}-I_{n}\\right)\\).",
+            "Replace \\(t^{2}\\) by \\(1+\\left(1-t^{2}\\right)\\): the integral becomes \\(I_{n-2}+I_{n}\\), so \\(I_{n}=(n-1)\\left(I_{n-2}+I_{n}\\right)\\)."
+          ],
+          "answer": 0,
+          "hint": "Parts with \\(u=\\left(1-t^{2}\\right)^{\\frac{n-1}{2}}\\), \\(v'=1\\), \\(v=t\\). The chain rule gives a factor \\(-2t\\), creating \\(t^{2}\\). Then write \\(t^{2}=1-\\left(1-t^{2}\\right)\\) to split the new integral into \\(I_{n-2}\\) and \\(I_{n}\\). Check the boundary term at \\(t=1\\) and \\(t=0\\).",
+          "steps": [
+            {
+              "explain": "Parts: \\(u=\\left(1-t^{2}\\right)^{\\frac{n-1}{2}}\\); \\(u'=\\dfrac{n-1}{2}\\left(1-t^{2}\\right)^{\\frac{n-3}{2}}\\cdot(-2t)=-(n-1)\\,t\\left(1-t^{2}\\right)^{\\frac{n-3}{2}}\\); \\(v=t\\).",
+              "work": "\\(I_{n}=\\left[t\\left(1-t^{2}\\right)^{\\frac{n-1}{2}}\\right]_{0}^{1}-\\int_{0}^{1}t\\cdot\\left(-(n-1)t\\left(1-t^{2}\\right)^{\\frac{n-3}{2}}\\right)dt\\)"
+            },
+            {
+              "explain": "Boundary term: at \\(t=1\\): \\(1\\cdot0^{\\frac{n-1}{2}}=0\\) (the exponent \\(\\dfrac{n-1}{2}\\ge\\dfrac{1}{2}>0\\) for \\(n\\ge2\\)); at \\(t=0\\): 0. Minus a negative gives plus.",
+              "work": "\\(I_{n}=(n-1)\\int_{0}^{1}t^{2}\\left(1-t^{2}\\right)^{\\frac{n-3}{2}}dt\\)"
+            },
+            {
+              "explain": "Write \\(t^{2}=1-\\left(1-t^{2}\\right)\\) and distribute: \\(\\left(1-t^{2}\\right)^{\\frac{n-3}{2}}-\\left(1-t^{2}\\right)^{\\frac{n-3}{2}+1}\\), and \\(\\dfrac{n-3}{2}+1=\\dfrac{n-1}{2}\\).",
+              "work": "\\(\\int t^{2}(\\cdots)dt=\\int\\left(1-t^{2}\\right)^{\\frac{n-3}{2}}dt-\\int\\left(1-t^{2}\\right)^{\\frac{n-1}{2}}dt=I_{n-2}-I_{n}\\)"
+            },
+            {
+              "explain": "Substitute and collect \\(I_{n}\\) terms on the left: \\(I_{n}+(n-1)I_{n}=(n-1)I_{n-2}\\).",
+              "work": "\\(nI_{n}=(n-1)I_{n-2}\\)"
+            },
+            {
+              "explain": "Why not the others: B has the wrong sign (the double negative gives PLUS); C has the wrong boundary value (it is 0, not 1); D uses \\(t^{2}=1+\\left(1-t^{2}\\right)\\) (it is \\(1-\\left(1-t^{2}\\right)\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "show that \\(nI_{n}=(n-1)I_{n-2}\\)",
+              "note": "\\(u=(1-t^2)^{(n-1)/2}\\), \\(v=t\\); \\(t^2=1-(1-t^2)\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Killara High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2020-e2-q15bii",
+          "type": "mc",
+          "stem": "Let \\(I_{n}=\\displaystyle\\int_{0}^{1}\\left(1-t^{2}\\right)^{\\frac{n-1}{2}}dt\\) with \\(nI_{n}=(n-1)I_{n-2}\\) for \\(n\\ge2\\), and let \\(J_{n}=nI_{n}I_{n-1}\\), \\(n\\ge1\\). Show that \\(J_{n}=\\dfrac\\pi2\\), \\(\\forall n\\ge1\\). Which argument is correct?",
+          "difficulty": "hard",
+          "options": [
+            "For \\(n\\ge2\\): \\(J_{n}=nI_{n}I_{n-1}=(n-1)I_{n-2}I_{n-1}=(n-1)I_{n-1}I_{n-2}=J_{n-1}\\). So all \\(J_{n}\\) are equal to \\(J_{1}\\). \\(J_{1}=1\\cdot I_{1}I_{0}\\), where \\(I_{1}=\\displaystyle\\int_{0}^{1}1\\,dt=1\\) and \\(I_{0}=\\displaystyle\\int_{0}^{1}\\dfrac{dt}{\\sqrt{1-t^{2}}}=\\sin^{-1}1=\\dfrac\\pi2\\). So \\(J_{n}=\\dfrac\\pi2\\) for all \\(n\\ge1\\).",
+            "For \\(n\\ge2\\): \\(J_{n}=nI_{n}I_{n-1}=(n-1)I_{n-2}I_{n-1}=J_{n-1}\\). \\(J_{1}=I_{1}I_{0}\\) where \\(I_{1}=\\displaystyle\\int_{0}^{1}1\\,dt=1\\) and \\(I_{0}=\\sin^{-1}1=\\dfrac\\pi2\\), but then \\(J_{n}=\\pi\\) by doubling.",
+            "For \\(n\\ge2\\): \\(J_{n}=nI_{n}I_{n-1}=(n-1)I_{n}I_{n-1}\\), so \\(J_{n}=\\dfrac{n-1}{n}J_{n}\\), which means \\(J_{n}\\) is not constant.",
+            "\\(J_{1}=I_{1}I_{0}=1\\cdot1=1\\), so \\(J_{n}=1\\) for all \\(n\\)."
+          ],
+          "answer": 0,
+          "hint": "Show \\(J_{n}=J_{n-1}\\) using \\(nI_{n}=(n-1)I_{n-2}\\) (substitute for \\(nI_{n}\\)). Then every \\(J_{n}\\) equals \\(J_{1}\\); compute \\(J_{1}=I_{1}I_{0}\\) from the definitions (\\(I_{1}=\\int1\\,dt\\); \\(I_{0}\\) is a \\(\\sin^{-1}\\) integral).",
+          "steps": [
+            {
+              "explain": "Replace \\(nI_{n}\\) by \\((n-1)I_{n-2}\\) inside \\(J_{n}\\).",
+              "work": "\\(J_{n}=nI_{n}\\cdot I_{n-1}=(n-1)I_{n-2}\\cdot I_{n-1}\\)"
+            },
+            {
+              "explain": "Rearrange the factors: \\((n-1)I_{n-2}\\,I_{n-1}=\\left((n-1)\\,I_{n-1}\\,I_{n-2}\\right)\\), which is exactly \\(J_{n-1}=(n-1)I_{n-1}I_{n-2}\\).",
+              "work": "\\(J_{n}=J_{n-1}\\quad(n\\ge2)\\)"
+            },
+            {
+              "explain": "So \\(J_{n}=J_{n-1}=\\cdots=J_{1}\\). Find \\(J_{1}=1\\cdot I_{1}I_{0}\\). \\(I_{1}=\\int_{0}^{1}\\left(1-t^{2}\\right)^{0}dt=\\int_{0}^{1}1\\,dt=1\\). \\(I_{0}=\\int_{0}^{1}\\left(1-t^{2}\\right)^{-\\frac12}dt=\\left[\\sin^{-1}t\\right]_{0}^{1}\\).",
+              "work": "\\(I_{1}=1,\\qquad I_{0}=\\sin^{-1}1-\\sin^{-1}0=\\dfrac\\pi2\\)"
+            },
+            {
+              "explain": "Therefore \\(J_{1}=1\\times\\dfrac\\pi2\\), and all \\(J_{n}\\) equal it.",
+              "work": "\\(J_{n}=\\dfrac\\pi2\\quad(\\forall n\\ge1)\\)"
+            },
+            {
+              "explain": "Why not the others: B doubles for no reason; C misapplies the recurrence (\\(nI_{n}\\to(n-1)I_{n}\\) is wrong, it is \\((n-1)I_{n-2}\\)); D takes \\(I_{0}=1\\) (it is \\(\\dfrac\\pi2\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that \\(J_{n}=\\dfrac\\pi2\\)",
+              "note": "\\(J_n=J_{n-1}\\) using the recurrence; \\(J_1=I_1I_0=\\dfrac\\pi2\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Killara High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -9807,6 +10501,114 @@
           "meta": {
             "source": "James Ruse Agricultural High School 2020 Trial Higher School Certificate Examination Mathematics Extension 2",
             "school": "James Ruse Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "kinross2022-e2-q9",
+          "type": "mc",
+          "stem": "If \\(\\displaystyle\\int_{1}^{4}f(x)\\,dx=k\\), what is the value of \\(\\displaystyle\\int_{1}^{4}f(5-x)\\,dx\\)?",
+          "difficulty": "medium",
+          "options": [
+            "\\(-k\\)",
+            "\\(5-k\\)",
+            "\\(k+5\\)",
+            "\\(k\\)"
+          ],
+          "answer": 3,
+          "hint": "Substitute \\(u=5-x\\). Notice \\(1+4=5\\): the substitution sends the interval \\([1,4]\\) onto itself, but in REVERSE order.",
+          "steps": [
+            {
+              "explain": "Let \\(u=5-x\\). Then \\(du=-dx\\). Limits: \\(x=1\\Rightarrow u=4\\); \\(x=4\\Rightarrow u=1\\).",
+              "work": "\\(\\int_{1}^{4}f(5-x)\\,dx=\\int_{u=4}^{u=1}f(u)\\,(-du)\\)"
+            },
+            {
+              "explain": "The minus sign lets us swap the limits back: \\(-\\int_{4}^{1}=\\int_{1}^{4}\\).",
+              "work": "\\(=\\int_{1}^{4}f(u)\\,du\\)"
+            },
+            {
+              "explain": "The variable name does not matter: this is the original integral.",
+              "work": "\\(=k\\)"
+            },
+            {
+              "explain": "Why not the others: \\(-k\\) forgets to swap the limits back; \\(5-k\\) and \\(k+5\\) wrongly add the constant 5.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">D</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "what is the value of",
+              "note": "\\(u=5-x\\): limits \\(4\\to1\\), minus swaps them back."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Kinross Wolaroi School 2022 Trial HSC Examination Mathematics Extension 2",
+            "school": "Kinross Wolaroi School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2020-e2-q9",
+          "type": "mc",
+          "stem": "Which of the following is false? (A) \\(\\displaystyle\\int_{-3}^{3}x^{3}e^{-x^{2}}dx=0\\) (B) \\(\\displaystyle\\int_{-4}^{4}\\dfrac{x^{2}}{x^{2}+4}dx=2\\displaystyle\\int_{0}^{4}\\dfrac{x^{2}}{x^{2}+4}dx\\) (C) \\(\\displaystyle\\int_{0}^{\\pi}\\sin^{4}\\theta\\,d\\theta>\\displaystyle\\int_{0}^{\\pi}\\sin4\\theta\\,d\\theta\\) (D) \\(\\displaystyle\\int_{0}^{1}x^{4}dx<\\displaystyle\\int_{0}^{1}x^{5}dx\\)",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\displaystyle\\int_{-3}^{3}x^{3}e^{-x^{2}}dx=0\\)",
+            "\\(\\displaystyle\\int_{-4}^{4}\\dfrac{x^{2}}{x^{2}+4}dx=2\\displaystyle\\int_{0}^{4}\\dfrac{x^{2}}{x^{2}+4}dx\\)",
+            "\\(\\displaystyle\\int_{0}^{\\pi}\\sin^{4}\\theta\\,d\\theta>\\displaystyle\\int_{0}^{\\pi}\\sin4\\theta\\,d\\theta\\)",
+            "\\(\\displaystyle\\int_{0}^{1}x^{4}dx<\\displaystyle\\int_{0}^{1}x^{5}dx\\)"
+          ],
+          "answer": 3,
+          "hint": "Check each one. ODD function over a symmetric interval \\(\\Rightarrow\\) integral \\(=0\\). EVEN function \\(\\Rightarrow\\) \\(\\int_{-a}^{a}=2\\int_{0}^{a}\\). For inequalities, compute both sides or compare the integrands.",
+          "steps": [
+            {
+              "explain": "(A) \\(f(x)=x^{3}e^{-x^{2}}\\): \\(f(-x)=(-x)^{3}e^{-x^{2}}=-f(x)\\), an ODD function, over \\([-3,3]\\) (symmetric): the integral is 0. TRUE.",
+              "work": "\\(\\int_{-3}^{3}x^{3}e^{-x^{2}}dx=0\\ \\checkmark\\)"
+            },
+            {
+              "explain": "(B) \\(f(x)=\\dfrac{x^{2}}{x^{2}+4}\\) is EVEN (\\(f(-x)=f(x)\\)), so \\(\\int_{-4}^{4}=2\\int_{0}^{4}\\). TRUE.",
+              "work": "\\(f(-x)=f(x)\\ \\checkmark\\)"
+            },
+            {
+              "explain": "(C) \\(\\int_{0}^{\\pi}\\sin^{4}\\theta\\,d\\theta=\\dfrac{3\\pi}{8}>0\\) (the integrand \\(\\ge0\\)), but \\(\\int_{0}^{\\pi}\\sin4\\theta\\,d\\theta=\\left[-\\dfrac{\\cos4\\theta}{4}\\right]_{0}^{\\pi}=-\\dfrac{1}{4}+\\dfrac{1}{4}=0\\). So \\(\\dfrac{3\\pi}{8}>0\\) is TRUE.",
+              "work": "\\(\\dfrac{3\\pi}{8}>0\\ \\checkmark\\)"
+            },
+            {
+              "explain": "(D) On \\(0<x<1\\): \\(x^{4}>x^{5}\\) (a number between 0 and 1 gets smaller with a higher power). So \\(\\int_{0}^{1}x^{4}dx=\\dfrac{1}{5}>\\dfrac{1}{6}=\\int_{0}^{1}x^{5}dx\\). The statement “\\(<\\)” is FALSE.",
+              "work": "\\(\\dfrac{1}{5}>\\dfrac{1}{6}\\ \\Rightarrow\\ \\text{(D) is FALSE}\\)"
+            },
+            {
+              "explain": "The false statement is (D).",
+              "work": ""
+            },
+            {
+              "explain": "Why not the others: A, B and C are all true (shown above).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">D</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Which of the following is false",
+              "note": "Odd/even symmetry; compare \\(x^4\\) and \\(x^5\\) on \\((0,1)\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Killara High School",
             "grade": "12",
             "origin": "teacher"
           }

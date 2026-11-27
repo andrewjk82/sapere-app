@@ -79,6 +79,70 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "killara2020-e2-q8",
+          "type": "mc",
+          "stem": "A horizontal force \\(F\\) Newtons is applied to a small object \\(P\\) of mass \\(m\\) kg on a smooth plane, inclined to the horizontal at an angle \\(\\theta\\). If \\(F\\) is just enough to keep \\(P\\) in equilibrium, then the magnitude of \\(F\\) is:",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 270\" width=\"100%\" height=\"auto\" style=\"max-width:380px;display:block;margin:0 auto\"><polygon points=\"30,235 340,235 340,60\" fill=\"none\" fill-opacity=\"0.25\" stroke=\"#475569\" stroke-width=\"2.2\"/><polyline points=\"328,235 328,223 340,223\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.4\"/><polyline points=\"68.0,235.0 68.0,234.5 68.0,234.0 68.0,233.5 67.9,233.0 67.9,232.6 67.9,232.1 67.8,231.6 67.8,231.1 67.7,230.6 67.7,230.1 67.6,229.6 67.5,229.2 67.5,228.7 67.4,228.2 67.3,227.7 67.2,227.2 67.1,226.8 67.0,226.3 66.9,225.8 66.8,225.3 66.6,224.9 66.5,224.4 66.4,223.9 66.2,223.5 66.1,223.0 65.9,222.5 65.7,222.1 65.6,221.6 65.4,221.2 65.2,220.7 65.0,220.3 64.8,219.8 64.6,219.4 64.4,218.9 64.2,218.5 64.0,218.0 63.8,217.6 63.6,217.2 63.3,216.7 63.1,216.3\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"2.2\"/><text x=\"84.0\" y=\"226.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#7c3aed\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">θ</text><circle cx=\"200.5\" cy=\"138.8\" r=\"5\" fill=\"#1e293b\"/><text x=\"192.5\" y=\"130.8\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">P</text><line x1=\"200.5\" y1=\"138.8\" x2=\"270.5\" y2=\"138.8\" stroke=\"#dc2626\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"270.5\" y1=\"138.8\" x2=\"261.8\" y2=\"133.8\" stroke=\"#dc2626\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"270.5\" y1=\"138.8\" x2=\"261.8\" y2=\"143.8\" stroke=\"#dc2626\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"278.5\" y=\"136.8\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">F</text><text x=\"24.0\" y=\"251.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A</text><text x=\"348.0\" y=\"251.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">C</text><text x=\"348.0\" y=\"64.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text></svg>"
+          },
+          "options": [
+            "\\(mg\\cos^{2}\\theta\\)",
+            "\\(mg\\sin^{2}\\theta\\)",
+            "\\(mg\\cos\\theta\\)",
+            "\\(mg\\tan\\theta\\)"
+          ],
+          "answer": 3,
+          "hint": "There are THREE forces on \\(P\\): its weight \\(mg\\) (down), the horizontal force \\(F\\), and the NORMAL REACTION \\(R\\) (perpendicular to the smooth plane). Resolve along the PLANE (the direction in which \\(R\\) has no component) and set the net force to zero.",
+          "steps": [
+            {
+              "explain": "Forces on \\(P\\): weight \\(mg\\) vertically down; \\(F\\) horizontal (towards the plane); normal reaction \\(R\\) perpendicular to the plane. The plane is smooth, so there is no friction.",
+              "work": "\\(mg\\ \\text{(down)},\\quad F\\ \\text{(horizontal)},\\quad R\\ \\text{(perpendicular to plane)}\\)"
+            },
+            {
+              "explain": "Resolve parallel to the plane (up the slope). The plane makes angle \\(\\theta\\) with the horizontal. \\(F\\) is horizontal, so its component along the plane is \\(F\\cos\\theta\\) (up the slope). The weight's component along the plane is \\(mg\\sin\\theta\\) (down the slope).",
+              "work": "\\(F\\cos\\theta-mg\\sin\\theta=0\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 270\" width=\"100%\" height=\"auto\" style=\"max-width:380px;display:block;margin:0 auto\"><polygon points=\"30,235 340,235 340,60\" fill=\"#c4cae5\" fill-opacity=\"0.25\" stroke=\"#475569\" stroke-width=\"2.2\"/><polyline points=\"328,235 328,223 340,223\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.4\"/><polyline points=\"68.0,235.0 68.0,234.5 68.0,234.0 68.0,233.5 67.9,233.0 67.9,232.6 67.9,232.1 67.8,231.6 67.8,231.1 67.7,230.6 67.7,230.1 67.6,229.6 67.5,229.2 67.5,228.7 67.4,228.2 67.3,227.7 67.2,227.2 67.1,226.8 67.0,226.3 66.9,225.8 66.8,225.3 66.6,224.9 66.5,224.4 66.4,223.9 66.2,223.5 66.1,223.0 65.9,222.5 65.7,222.1 65.6,221.6 65.4,221.2 65.2,220.7 65.0,220.3 64.8,219.8 64.6,219.4 64.4,218.9 64.2,218.5 64.0,218.0 63.8,217.6 63.6,217.2 63.3,216.7 63.1,216.3\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"2.2\"/><text x=\"84.0\" y=\"226.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#7c3aed\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">θ</text><circle cx=\"200.5\" cy=\"138.8\" r=\"5\" fill=\"#1e293b\"/><text x=\"192.5\" y=\"130.8\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">P</text><line x1=\"200.5\" y1=\"138.8\" x2=\"270.5\" y2=\"138.8\" stroke=\"#dc2626\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"270.5\" y1=\"138.8\" x2=\"261.8\" y2=\"133.8\" stroke=\"#dc2626\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"270.5\" y1=\"138.8\" x2=\"261.8\" y2=\"143.8\" stroke=\"#dc2626\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"278.5\" y=\"136.8\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">F</text><line x1=\"200.5\" y1=\"138.8\" x2=\"200.5\" y2=\"198.8\" stroke=\"#047857\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"200.5\" y1=\"198.8\" x2=\"205.5\" y2=\"190.1\" stroke=\"#047857\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"200.5\" y1=\"198.8\" x2=\"195.5\" y2=\"190.1\" stroke=\"#047857\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"206.5\" y=\"212.8\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">mg</text><line x1=\"200.5\" y1=\"138.8\" x2=\"171.0\" y2=\"86.5\" stroke=\"#d97706\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"171.0\" y1=\"86.5\" x2=\"170.9\" y2=\"96.5\" stroke=\"#d97706\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"171.0\" y1=\"86.5\" x2=\"179.6\" y2=\"91.6\" stroke=\"#d97706\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"165.0\" y=\"82.5\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">R</text><text x=\"24.0\" y=\"251.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A</text><text x=\"348.0\" y=\"251.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">C</text><text x=\"348.0\" y=\"64.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text></svg>"
+              }
+            },
+            {
+              "explain": "Equilibrium: the net force along the plane is zero.",
+              "work": "\\(F\\cos\\theta=mg\\sin\\theta\\)"
+            },
+            {
+              "explain": "Solve for \\(F\\): divide by \\(\\cos\\theta\\), using \\(\\dfrac{\\sin\\theta}{\\cos\\theta}=\\tan\\theta\\).",
+              "work": "\\(F=mg\\tan\\theta\\)"
+            },
+            {
+              "explain": "Check the extreme cases: \\(\\theta=0\\) (flat): \\(F=0\\) ✓; \\(\\theta\\to90^{\\circ}\\): \\(F\\to\\infty\\) ✓ (a vertical wall cannot be held up by a horizontal push on a smooth surface).",
+              "work": ""
+            },
+            {
+              "explain": "Why not the others: A, B, C come from resolving with the wrong angle (e.g. using \\(\\sin\\theta\\) for \\(F\\)'s component or forgetting \\(R\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">D</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "If \\(F\\) is just enough to keep \\(P\\) in equilibrium",
+              "note": "Resolve along the plane: \\(F\\cos\\theta=mg\\sin\\theta\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Killara High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -927,6 +991,226 @@
           "meta": {
             "source": "Hurlstone Agricultural High School 2020 Trial Higher School Certificate Examination Mathematics Extension 2",
             "school": "Hurlstone Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "kinross2022-e2-q15di",
+          "type": "mc",
+          "stem": "A particle moves in a straight line. At time \\(t\\) seconds the particle has a displacement of \\(x\\) m, a velocity of \\(v\\ \\text{ms}^{-1}\\) and acceleration \\(a\\ \\text{ms}^{-2}\\). Initially the particle has displacement 0 m and velocity \\(2\\ \\text{ms}^{-1}\\). The acceleration is given by \\(a=-2e^{-x}\\). The velocity of the particle is always positive. Show that \\(v=2e^{-\\frac x2}\\). Which working is correct?",
+          "difficulty": "medium",
+          "options": [
+            "\\(v\\dfrac{dv}{dx}=-2e^{-x}\\Rightarrow\\dfrac12v^{2}=2e^{-x}+C\\). At \\(x=0\\), \\(v=2\\): \\(2=2+C\\Rightarrow C=0\\). So \\(v^{2}=4e^{-x}\\) and (\\(v>0\\)) \\(v=2e^{-\\frac x2}\\).",
+            "\\(\\dfrac{dv}{dt}=-2e^{-x}\\Rightarrow v=2e^{-x}+C\\). At \\(x=0\\), \\(v=2\\): \\(C=0\\), so \\(v=2e^{-x}\\).",
+            "\\(v\\dfrac{dv}{dx}=-2e^{-x}\\Rightarrow\\dfrac12v^{2}=-2e^{-x}+C\\). At \\(x=0\\), \\(v=2\\): \\(2=-2+C\\), \\(C=4\\). So \\(v^{2}=8-4e^{-x}\\).",
+            "\\(v\\dfrac{dv}{dx}=-2e^{-x}\\Rightarrow\\dfrac12v^{2}=2e^{-x}+C\\). At \\(x=0\\), \\(v=2\\): \\(2=2+C\\), \\(C=0\\), so \\(v=\\pm2e^{-\\frac x2}\\) (both signs are allowed)."
+          ],
+          "answer": 0,
+          "hint": "The acceleration is given in terms of \\(x\\), so use \\(a=v\\dfrac{dv}{dx}=\\dfrac{d}{dx}\\left(\\dfrac12v^{2}\\right)\\). Integrate with respect to \\(x\\), use the initial condition to find the constant, then take the POSITIVE square root (the velocity is always positive).",
+          "steps": [
+            {
+              "explain": "Use \\(a=\\dfrac{d}{dx}\\left(\\dfrac12v^{2}\\right)=-2e^{-x}\\).",
+              "work": "\\(\\dfrac{d}{dx}\\left(\\dfrac12v^{2}\\right)=-2e^{-x}\\)"
+            },
+            {
+              "explain": "Integrate with respect to \\(x\\): \\(\\int-2e^{-x}dx=2e^{-x}\\) (since \\(\\dfrac{d}{dx}e^{-x}=-e^{-x}\\)).",
+              "work": "\\(\\dfrac12v^{2}=2e^{-x}+C\\)"
+            },
+            {
+              "explain": "Initial condition: \\(x=0\\), \\(v=2\\): \\(\\dfrac{1}{2}(4)=2e^{0}+C\\), so \\(2=2+C\\).",
+              "work": "\\(C=0\\ \\Rightarrow\\ v^{2}=4e^{-x}\\)"
+            },
+            {
+              "explain": "Take the square root; \\(v>0\\) always, so only the positive root.",
+              "work": "\\(v=2e^{-\\frac x2}\\)"
+            },
+            {
+              "explain": "Why not the others: B uses \\(\\dfrac{dv}{dt}\\) as if it were \\(\\dfrac{dv}{dx}\\); C integrates \\(-2e^{-x}\\) to \\(-2e^{-x}\\) (wrong sign); D allows \\(\\pm\\), but the question says \\(v\\) is always positive.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that \\(v=2e^{-\\frac x2}\\)",
+              "note": "\\(a=\\dfrac d{dx}(\\dfrac12v^2)\\); \\(v>0\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Kinross Wolaroi School 2022 Trial HSC Examination Mathematics Extension 2",
+            "school": "Kinross Wolaroi School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "kinross2022-e2-q15dii",
+          "type": "mc",
+          "stem": "A particle moves in a straight line with velocity \\(v=2e^{-\\frac x2}\\ \\text{ms}^{-1}\\) and initial displacement \\(x=0\\) m. Find an expression for \\(x\\) as a function of \\(t\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(x=2\\ln(t+1)\\)",
+            "\\(x=\\ln(t+1)\\)",
+            "\\(x=2\\ln t+2\\)",
+            "\\(x=2e^{t}-2\\)"
+          ],
+          "answer": 0,
+          "hint": "\\(v=\\dfrac{dx}{dt}\\). Separate the variables: put all \\(x\\) terms with \\(dx\\) and all \\(t\\) terms with \\(dt\\), integrate both sides, then use \\(x=0\\) when \\(t=0\\) and solve for \\(x\\).",
+          "steps": [
+            {
+              "explain": "Write \\(\\dfrac{dx}{dt}=2e^{-\\frac x2}\\) and separate: \\(e^{\\frac x2}dx=2\\,dt\\).",
+              "work": "\\(\\int e^{\\frac x2}dx=\\int2\\,dt\\)"
+            },
+            {
+              "explain": "Integrate: \\(\\int e^{\\frac x2}dx=2e^{\\frac x2}\\).",
+              "work": "\\(2e^{\\frac x2}=2t+C\\)"
+            },
+            {
+              "explain": "Initial condition: \\(x=0\\) at \\(t=0\\): \\(2e^{0}=C\\), so \\(C=2\\).",
+              "work": "\\(2e^{\\frac x2}=2t+2\\ \\Rightarrow\\ e^{\\frac x2}=t+1\\)"
+            },
+            {
+              "explain": "Take natural logs and multiply by 2.",
+              "work": "\\(\\dfrac{x}{2}=\\ln(t+1)\\ \\Rightarrow\\ x=2\\ln(t+1)\\)"
+            },
+            {
+              "explain": "Check: \\(\\dfrac{dx}{dt}=\\dfrac{2}{t+1}\\) and \\(2e^{-\\frac x2}=2e^{-\\ln(t+1)}=\\dfrac{2}{t+1}\\) ✓.",
+              "work": ""
+            },
+            {
+              "explain": "Why not the others: B forgets the factor 2 in \\(\\dfrac{x}{2}=\\ln(t+1)\\); C and D come from wrong integration or the wrong constant.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find an expression for \\(x\\) as a function of \\(t\\)",
+              "note": "\\(e^{\\frac{x}{2}}dx=2\\,dt\\); \\(x(0)=0\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Kinross Wolaroi School 2022 Trial HSC Examination Mathematics Extension 2",
+            "school": "Kinross Wolaroi School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2020-e2-q13ci",
+          "type": "mc",
+          "stem": "The acceleration of a particle moving along the \\(x\\)-axis is given by \\(\\dfrac{d^{2}x}{dt^{2}}=2x^{3}-10x\\). If the particle starts at the origin with velocity \\(u\\), show that its velocity is given by \\(v^{2}-u^{2}=x^{4}-10x^{2}\\). Which working is correct?",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{d}{dx}\\left(\\dfrac12v^{2}\\right)=2x^{3}-10x\\Rightarrow\\dfrac12v^{2}=\\dfrac{x^{4}}{2}-5x^{2}+C\\). At \\(x=0\\), \\(v=u\\): \\(C=\\dfrac12u^{2}\\). Multiply by 2: \\(v^{2}=x^{4}-10x^{2}+u^{2}\\), i.e. \\(v^{2}-u^{2}=x^{4}-10x^{2}\\).",
+            "\\(\\dfrac{dv}{dx}=2x^{3}-10x\\Rightarrow v=\\dfrac{x^{4}}{2}-5x^{2}+C\\). At \\(x=0\\), \\(v=u\\): \\(C=u\\). So \\(v-u=\\dfrac{x^{4}}{2}-5x^{2}\\).",
+            "\\(\\dfrac{d}{dx}\\left(\\dfrac12v^{2}\\right)=2x^{3}-10x\\Rightarrow\\dfrac12v^{2}=\\dfrac{x^{4}}{2}-5x^{2}+C\\). At \\(x=0\\), \\(v=u\\): \\(C=u\\). So \\(v^{2}=x^{4}-10x^{2}+2u\\).",
+            "\\(\\dfrac{d}{dx}\\left(\\dfrac12v^{2}\\right)=2x^{3}-10x\\Rightarrow\\dfrac12v^{2}=\\dfrac{x^{4}}{4}-\\dfrac{10x^{2}}{3}+C\\), which gives the result."
+          ],
+          "answer": 0,
+          "hint": "Acceleration as a function of \\(x\\): \\(\\ddot x=\\dfrac{d}{dx}\\left(\\dfrac12v^{2}\\right)\\). Integrate with respect to \\(x\\); use \\(x=0\\), \\(v=u\\) for the constant (careful: it is \\(\\dfrac12u^{2}\\) because the left side is \\(\\dfrac12v^{2}\\)).",
+          "steps": [
+            {
+              "explain": "Write \\(\\dfrac{d^{2}x}{dt^{2}}=\\dfrac{d}{dx}\\left(\\dfrac12v^{2}\\right)\\) and integrate with respect to \\(x\\).",
+              "work": "\\(\\dfrac12v^{2}=\\int\\left(2x^{3}-10x\\right)dx=\\dfrac{x^{4}}{2}-5x^{2}+C\\)"
+            },
+            {
+              "explain": "Initial condition: \\(x=0\\), \\(v=u\\): \\(\\dfrac12u^{2}=0-0+C\\).",
+              "work": "\\(C=\\dfrac12u^{2}\\)"
+            },
+            {
+              "explain": "Substitute and multiply by 2.",
+              "work": "\\(v^{2}=x^{4}-10x^{2}+u^{2}\\)"
+            },
+            {
+              "explain": "Rearrange.",
+              "work": "\\(v^{2}-u^{2}=x^{4}-10x^{2}\\)"
+            },
+            {
+              "explain": "Why not the others: B integrates \\(\\dfrac{dv}{dx}\\) (that is not the acceleration); C uses \\(C=u\\) (it is \\(\\dfrac12u^{2}\\)); D has the wrong integrals.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "show that its velocity is given by",
+              "note": "\\(\\ddot x=\\dfrac{d}{dx}(\\dfrac12v^2)\\); \\(C=\\dfrac12u^2\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Killara High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2020-e2-q13cii",
+          "type": "mc",
+          "stem": "A particle has acceleration \\(\\dfrac{d^{2}x}{dt^{2}}=2x^{3}-10x\\) and velocity given by \\(v^{2}-u^{2}=x^{4}-10x^{2}\\), starting at the origin. If \\(u=3\\), show that the particle oscillates within the interval \\(-1\\le x\\le1\\). Which argument is correct?",
+          "difficulty": "hard",
+          "options": [
+            "With \\(u=3\\): \\(v^{2}=x^{4}-10x^{2}+9=\\left(x^{2}-1\\right)\\left(x^{2}-9\\right)\\). Since \\(v^{2}\\ge0\\), \\(x^{2}\\le1\\) or \\(x^{2}\\ge9\\). The particle starts at \\(x=0\\) and cannot jump, so \\(-1\\le x\\le1\\). At \\(x=\\pm1\\), \\(v=0\\) and the acceleration \\(2x^{3}-10x=\\mp8\\) points back towards the origin, so the particle turns around and oscillates.",
+            "With \\(u=3\\): \\(v^{2}=x^{4}-10x^{2}+9\\). Setting \\(v=0\\): \\(x=\\pm1\\) or \\(x=\\pm3\\). Hence the particle oscillates between \\(-3\\) and \\(3\\).",
+            "With \\(u=3\\): \\(v^{2}=x^{4}-10x^{2}+9\\ge0\\) for all \\(x\\), so the particle moves off to infinity.",
+            "With \\(u=3\\): \\(v^{2}=x^{4}-10x^{2}+9=\\left(x^{2}-1\\right)\\left(x^{2}-9\\right)\\). At \\(x=1\\) the acceleration is \\(+8\\), pushing the particle further out, so it leaves the interval."
+          ],
+          "answer": 0,
+          "hint": "The velocity squared must be NON-NEGATIVE. Factorise \\(v^{2}=x^{4}-10x^{2}+9=\\left(x^{2}-1\\right)\\left(x^{2}-9\\right)\\) and find where \\(v^{2}\\ge0\\) near the starting point \\(x=0\\). Then check the DIRECTION of the acceleration at the turning points \\(v=0\\).",
+          "steps": [
+            {
+              "explain": "Substitute \\(u=3\\): \\(v^{2}=x^{4}-10x^{2}+9\\). Factorise as a quadratic in \\(x^{2}\\): \\(a^{2}-10a+9=(a-1)(a-9)\\) with \\(a=x^{2}\\).",
+              "work": "\\(v^{2}=\\left(x^{2}-1\\right)\\left(x^{2}-9\\right)\\)"
+            },
+            {
+              "explain": "\\(v^{2}\\ge0\\) when both factors have the same sign: \\(x^{2}\\le1\\) (both \\(\\le0\\)) or \\(x^{2}\\ge9\\). At the start \\(x=0\\) (so \\(v^{2}=9\\)), the particle is in the region \\(x^{2}\\le1\\), and it cannot cross the forbidden gap \\(1<x^{2}<9\\) where \\(v^{2}<0\\).",
+              "work": "\\(-1\\le x\\le1\\)"
+            },
+            {
+              "explain": "Turning points: \\(v=0\\) at \\(x=\\pm1\\). Acceleration there: \\(\\ddot x=2x^{3}-10x\\). At \\(x=1\\): \\(2-10=-8<0\\) (pointing back towards the origin). At \\(x=-1\\): \\(-2+10=+8>0\\) (pointing back too).",
+              "work": "\\(\\ddot x(1)=-8,\\qquad\\ddot x(-1)=+8\\)"
+            },
+            {
+              "explain": "At each end the velocity is 0 and the acceleration points back into the interval, so the particle turns around: it oscillates between \\(x=-1\\) and \\(x=1\\).",
+              "work": ""
+            },
+            {
+              "explain": "Why not the others: B ignores that \\(3\\) is not reachable (the region \\(1<|x|<3\\) has \\(v^{2}<0\\)); C ignores the sign of \\(v^{2}\\) inside the gap; D has the wrong sign of the acceleration at \\(x=1\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "show that the particle oscillates within the interval",
+              "note": "\\(v^2=(x^2-1)(x^2-9)\\ge0\\); acceleration at \\(\\pm1\\) points back."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Killara High School",
             "grade": "12",
             "origin": "teacher"
           }
@@ -3860,6 +4144,226 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "kinross2022-e2-q5",
+          "type": "mc",
+          "stem": "A particle is moving in a straight line with Simple Harmonic Motion. At any time \\(t\\) seconds it has displacement \\(x\\) metres from a fixed point on the line and velocity \\(v\\ \\text{ms}^{-1}\\) given by \\(v^{2}=9-4(x-1)^{2}\\). What is the amplitude of the motion?",
+          "difficulty": "medium",
+          "options": [
+            "\\(1.5\\) metres",
+            "\\(2\\) metres",
+            "\\(2.5\\) metres",
+            "\\(3\\) metres"
+          ],
+          "answer": 0,
+          "hint": "Match with the SHM form \\(v^{2}=n^{2}\\left(a^{2}-(x-c)^{2}\\right)\\): the amplitude is \\(a\\) and the centre is \\(c\\). Factor out the coefficient of \\((x-c)^{2}\\) first. Alternatively the particle stops when \\(v=0\\).",
+          "steps": [
+            {
+              "explain": "Factor out 4 so that the coefficient of \\((x-1)^{2}\\) inside the bracket is \\(-1\\).",
+              "work": "\\(v^{2}=4\\left[\\dfrac{9}{4}-(x-1)^{2}\\right]\\)"
+            },
+            {
+              "explain": "Compare with \\(n^{2}\\left(a^{2}-(x-c)^{2}\\right)\\): \\(n^{2}=4\\), centre \\(c=1\\), \\(a^{2}=\\dfrac{9}{4}\\).",
+              "work": "\\(a=\\sqrt{\\dfrac{9}{4}}=\\dfrac{3}{2}=1.5\\)"
+            },
+            {
+              "explain": "Check by finding where \\(v=0\\): \\(4(x-1)^{2}=9\\Rightarrow x-1=\\pm\\dfrac{3}{2}\\), so \\(x=2.5\\) or \\(-0.5\\), which are \\(1.5\\) m either side of the centre \\(x=1\\) ✓.",
+              "work": ""
+            },
+            {
+              "explain": "Why not the others: 3 is \\(\\sqrt9\\) (it ignores the 4 that multiplies \\((x-1)^{2}\\)); 2 is \\(n\\); 2.5 is the position of an extreme, not the amplitude.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "What is the amplitude of the motion",
+              "note": "\\(v^2=n^2(a^2-(x-c)^2)\\): factor out the 4."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Kinross Wolaroi School 2022 Trial HSC Examination Mathematics Extension 2",
+            "school": "Kinross Wolaroi School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "kinross2022-e2-q12ai",
+          "type": "mc",
+          "stem": "The graph shows the displacement \\(x\\) cm from the centre of motion at time \\(t\\) seconds for a particle performing Simple Harmonic Motion in a straight line. Find an expression for \\(x\\) as a function of \\(t\\).",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 260\" width=\"100%\" height=\"auto\" style=\"max-width:420px;display:block;margin:0 auto\"><line x1=\"6.0\" y1=\"130.0\" x2=\"414.0\" y2=\"130.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"50.6\" y1=\"254.0\" x2=\"50.6\" y2=\"6.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"414.0\" y1=\"130.0\" x2=\"407.1\" y2=\"126.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"414.0\" y1=\"130.0\" x2=\"407.1\" y2=\"134.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"50.6\" y1=\"6.0\" x2=\"46.6\" y2=\"12.9\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"50.6\" y1=\"6.0\" x2=\"54.6\" y2=\"12.9\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><text x=\"416.0\" y=\"145.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">t</text><text x=\"59.6\" y=\"16.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><polyline points=\"50.6,71.2 51.3,70.1 52.0,69.1 52.6,68.0 53.3,67.0 53.9,66.1 54.6,65.1 55.2,64.2 55.9,63.2 56.6,62.4 57.2,61.5 57.9,60.6 58.5,59.8 59.2,59.0 59.8,58.2 60.5,57.5 61.2,56.7 61.8,56.0 62.5,55.4 63.1,54.7 63.8,54.1 64.4,53.5 65.1,52.9 65.8,52.3 66.4,51.8 67.1,51.3 67.7,50.8 68.4,50.4 69.0,49.9 69.7,49.5 70.4,49.2 71.0,48.8 71.7,48.5 72.3,48.2 73.0,47.9 73.7,47.7 74.3,47.5 75.0,47.3 75.6,47.2 76.3,47.0 76.9,46.9 77.6,46.9 78.3,46.8 78.9,46.8 79.6,46.8 80.2,46.8 80.9,46.9 81.5,47.0 82.2,47.1 82.9,47.3 83.5,47.5 84.2,47.7 84.8,47.9 85.5,48.1 86.1,48.4 86.8,48.7 87.5,49.1 88.1,49.5 88.8,49.8 89.4,50.3 90.1,50.7 90.7,51.2 91.4,51.7 92.1,52.2 92.7,52.8 93.4,53.3 94.0,53.9 94.7,54.6 95.3,55.2 96.0,55.9 96.7,56.6 97.3,57.3 98.0,58.1 98.6,58.8 99.3,59.6 99.9,60.5 100.6,61.3 101.3,62.2 101.9,63.1 102.6,64.0 103.2,64.9 103.9,65.9 104.5,66.8 105.2,67.8 105.9,68.9 106.5,69.9 107.2,70.9 107.8,72.0 108.5,73.1 109.1,74.2 109.8,75.4 110.5,76.5 111.1,77.7 111.8,78.9 112.4,80.1 113.1,81.3 113.7,82.5 114.4,83.8 115.1,85.1 115.7,86.3 116.4,87.6 117.0,89.0 117.7,90.3 118.3,91.6 119.0,93.0 119.7,94.3 120.3,95.7 121.0,97.1 121.6,98.5 122.3,99.9 122.9,101.3 123.6,102.8 124.3,104.2 124.9,105.6 125.6,107.1 126.2,108.6 126.9,110.0 127.5,111.5 128.2,113.0 128.9,114.5 129.5,116.0 130.2,117.4 130.8,119.0 131.5,120.5 132.1,122.0 132.8,123.5 133.5,125.0 134.1,126.5 134.8,128.0 135.4,129.5 136.1,131.0 136.7,132.6 137.4,134.1 138.1,135.6 138.7,137.1 139.4,138.6 140.0,140.1 140.7,141.6 141.3,143.1 142.0,144.6 142.7,146.1 143.3,147.6 144.0,149.1 144.6,150.5 145.3,152.0 145.9,153.5 146.6,154.9 147.3,156.4 147.9,157.8 148.6,159.2 149.2,160.6 149.9,162.0 150.5,163.4 151.2,164.8 151.9,166.2 152.5,167.5 153.2,168.9 153.8,170.2 154.5,171.5 155.1,172.8 155.8,174.1 156.5,175.4 157.1,176.7 157.8,177.9 158.4,179.2 159.1,180.4 159.7,181.6 160.4,182.8 161.1,183.9 161.7,185.1 162.4,186.2 163.0,187.3 163.7,188.4 164.3,189.5 165.0,190.5 165.7,191.5 166.3,192.5 167.0,193.5 167.6,194.5 168.3,195.5 169.0,196.4 169.6,197.3 170.3,198.2 170.9,199.0 171.6,199.9 172.2,200.7 172.9,201.5 173.6,202.2 174.2,203.0 174.9,203.7 175.5,204.4 176.2,205.0 176.8,205.7 177.5,206.3 178.2,206.9 178.8,207.5 179.5,208.0 180.1,208.5 180.8,209.0 181.4,209.5 182.1,209.9 182.8,210.3 183.4,210.7 184.1,211.0 184.7,211.4 185.4,211.7 186.0,212.0 186.7,212.2 187.4,212.4 188.0,212.6 188.7,212.8 189.3,212.9 190.0,213.0 190.6,213.1 191.3,213.2 192.0,213.2 192.6,213.2 193.3,213.2 193.9,213.1 194.6,213.0 195.2,212.9 195.9,212.8 196.6,212.6 197.2,212.4 197.9,212.2 198.5,212.0 199.2,211.7 199.8,211.4 200.5,211.1 201.2,210.7 201.8,210.3 202.5,209.9 203.1,209.5 203.8,209.0 204.4,208.5 205.1,208.0 205.8,207.5 206.4,206.9 207.1,206.3 207.7,205.7 208.4,205.1 209.0,204.4 209.7,203.7 210.4,203.0 211.0,202.2 211.7,201.5 212.3,200.7 213.0,199.9 213.6,199.0 214.3,198.2 215.0,197.3 215.6,196.4 216.3,195.5 216.9,194.5 217.6,193.6 218.2,192.6 218.9,191.6 219.6,190.5 220.2,189.5 220.9,188.4 221.5,187.3 222.2,186.2 222.8,185.1 223.5,184.0 224.2,182.8 224.8,181.6 225.5,180.4 226.1,179.2 226.8,178.0 227.4,176.7 228.1,175.5 228.8,174.2 229.4,172.9 230.1,171.6 230.7,170.3 231.4,168.9 232.0,167.6 232.7,166.2 233.4,164.9 234.0,163.5 234.7,162.1 235.3,160.7 236.0,159.3 236.6,157.8 237.3,156.4 238.0,155.0 238.6,153.5 239.3,152.1 239.9,150.6 240.6,149.1 241.2,147.6 241.9,146.2 242.6,144.7 243.2,143.2 243.9,141.7 244.5,140.2 245.2,138.7 245.8,137.2 246.5,135.6 247.2,134.1 247.8,132.6 248.5,131.1 249.1,129.6 249.8,128.1 250.4,126.6 251.1,125.0 251.8,123.5 252.4,122.0 253.1,120.5 253.7,119.0 254.4,117.5 255.0,116.0 255.7,114.5 256.4,113.0 257.0,111.5 257.7,110.1 258.3,108.6 259.0,107.1 259.7,105.7 260.3,104.2 261.0,102.8 261.6,101.4 262.3,100.0 262.9,98.5 263.6,97.1 264.3,95.8 264.9,94.4 265.6,93.0 266.2,91.7 266.9,90.3 267.5,89.0 268.2,87.7 268.9,86.4 269.5,85.1 270.2,83.8 270.8,82.6 271.5,81.4 272.1,80.1 272.8,78.9 273.5,77.7 274.1,76.6 274.8,75.4 275.4,74.3 276.1,73.2 276.7,72.1 277.4,71.0 278.1,69.9 278.7,68.9 279.4,67.9 280.0,66.9 280.7,65.9 281.3,64.9 282.0,64.0 282.7,63.1 283.3,62.2 284.0,61.3 284.6,60.5 285.3,59.7 285.9,58.9 286.6,58.1 287.3,57.3 287.9,56.6 288.6,55.9 289.2,55.2 289.9,54.6 290.5,54.0 291.2,53.4 291.9,52.8 292.5,52.2 293.2,51.7 293.8,51.2 294.5,50.7 295.1,50.3 295.8,49.9 296.5,49.5 297.1,49.1 297.8,48.8 298.4,48.4 299.1,48.2 299.7,47.9 300.4,47.7 301.1,47.5 301.7,47.3 302.4,47.1 303.0,47.0 303.7,46.9 304.3,46.9 305.0,46.8 305.7,46.8 306.3,46.8 307.0,46.9 307.6,46.9 308.3,47.0 308.9,47.2 309.6,47.3 310.3,47.5 310.9,47.7 311.6,47.9 312.2,48.2 312.9,48.5 313.5,48.8 314.2,49.1 314.9,49.5 315.5,49.9 316.2,50.3 316.8,50.8 317.5,51.3 318.1,51.8 318.8,52.3 319.5,52.9 320.1,53.4 320.8,54.0 321.4,54.7 322.1,55.3 322.7,56.0 323.4,56.7 324.1,57.4 324.7,58.2 325.4,59.0 326.0,59.8 326.7,60.6 327.3,61.5 328.0,62.3 328.7,63.2 329.3,64.1 330.0,65.1 330.6,66.0 331.3,67.0 331.9,68.0 332.6,69.0 333.3,70.1 333.9,71.1 334.6,72.2 335.2,73.3 335.9,74.4 336.5,75.6 337.2,76.7 337.9,77.9 338.5,79.1 339.2,80.3 339.8,81.5 340.5,82.8 341.1,84.0 341.8,85.3 342.5,86.6 343.1,87.9 343.8,89.2 344.4,90.5 345.1,91.9 345.7,93.2 346.4,94.6 347.1,96.0 347.7,97.3 348.4,98.7 349.0,100.2 349.7,101.6 350.3,103.0 351.0,104.4 351.7,105.9 352.3,107.3 353.0,108.8 353.6,110.3 354.3,111.7 355.0,113.2 355.6,114.7 356.3,116.2 356.9,117.7 357.6,119.2 358.2,120.7 358.9,122.2 359.6,123.7 360.2,125.2 360.9,126.8 361.5,128.3 362.2,129.8 362.8,131.3 363.5,132.8 364.2,134.3 364.8,135.9 365.5,137.4 366.1,138.9 366.8,140.4 367.4,141.9 368.1,143.4 368.8,144.9 369.4,146.4 370.1,147.8 370.7,149.3 371.4,150.8 372.0,152.3 372.7,153.7 373.4,155.2 374.0,156.6 374.7,158.0 375.3,159.5 376.0,160.9 376.6,162.3 377.3,163.7 378.0,165.0 378.6,166.4 379.3,167.8\" fill=\"none\" stroke=\"#3b4ea8\" stroke-width=\"3.4\" stroke-linejoin=\"round\"/><line x1=\"79.0\" y1=\"127.0\" x2=\"79.0\" y2=\"133.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"79.0\" y=\"144.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><line x1=\"107.3\" y1=\"127.0\" x2=\"107.3\" y2=\"133.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"107.3\" y=\"144.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4</text><line x1=\"135.6\" y1=\"127.0\" x2=\"135.6\" y2=\"133.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"135.6\" y=\"144.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">6</text><line x1=\"164.0\" y1=\"127.0\" x2=\"164.0\" y2=\"133.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"164.0\" y=\"144.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">8</text><line x1=\"192.3\" y1=\"127.0\" x2=\"192.3\" y2=\"133.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"192.3\" y=\"144.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">10</text><line x1=\"220.6\" y1=\"127.0\" x2=\"220.6\" y2=\"133.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"220.6\" y=\"144.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">12</text><line x1=\"249.0\" y1=\"127.0\" x2=\"249.0\" y2=\"133.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"249.0\" y=\"144.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">14</text><line x1=\"277.3\" y1=\"127.0\" x2=\"277.3\" y2=\"133.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"277.3\" y=\"144.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">16</text><line x1=\"305.6\" y1=\"127.0\" x2=\"305.6\" y2=\"133.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"305.6\" y=\"144.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">18</text><line x1=\"333.9\" y1=\"127.0\" x2=\"333.9\" y2=\"133.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"333.9\" y=\"144.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">20</text><line x1=\"362.3\" y1=\"127.0\" x2=\"362.3\" y2=\"133.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"362.3\" y=\"144.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">22</text><line x1=\"47.6\" y1=\"46.8\" x2=\"53.6\" y2=\"46.8\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"43.6\" y=\"50.8\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">6</text><line x1=\"47.6\" y1=\"213.2\" x2=\"53.6\" y2=\"213.2\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"43.6\" y=\"217.2\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">−6</text></svg>"
+          },
+          "options": [
+            "\\(x=6\\cos\\left(\\dfrac{\\pi}{8}(t-2)\\right)\\)",
+            "\\(x=6\\cos\\left(\\dfrac{\\pi}{4}(t-2)\\right)\\)",
+            "\\(x=6\\cos\\left(\\dfrac{\\pi}{8}t\\right)\\)",
+            "\\(x=12\\cos\\left(\\dfrac{\\pi}{8}(t-2)\\right)\\)"
+          ],
+          "answer": 0,
+          "hint": "Read three things from the graph: AMPLITUDE \\(a\\) (the maximum), PERIOD \\(T\\) (time between two maxima), and the TIME of a maximum (phase shift). Then \\(x=a\\cos\\left(n(t-t_{0})\\right)\\) with \\(n=\\dfrac{2\\pi}{T}\\).",
+          "steps": [
+            {
+              "explain": "Amplitude: the graph oscillates between \\(+6\\) and \\(-6\\), centre \\(x=0\\).",
+              "work": "\\(a=6\\)"
+            },
+            {
+              "explain": "Period: the maxima are at \\(t=2\\) and \\(t=18\\), so one full cycle takes \\(18-2=16\\) seconds. (Check: zeros at \\(6\\) and \\(22\\) are also 16 apart.)",
+              "work": "\\(T=16\\ \\Rightarrow\\ n=\\dfrac{2\\pi}{16}=\\dfrac\\pi8\\)"
+            },
+            {
+              "explain": "Phase: a cosine \\(\\cos\\left(n(t-t_{0})\\right)\\) has its MAXIMUM at \\(t=t_{0}\\). The first maximum is at \\(t=2\\), so \\(t_{0}=2\\).",
+              "work": "\\(x=6\\cos\\left(\\dfrac\\pi8(t-2)\\right)\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 260\" width=\"100%\" height=\"auto\" style=\"max-width:420px;display:block;margin:0 auto\"><line x1=\"6.0\" y1=\"130.0\" x2=\"414.0\" y2=\"130.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"50.6\" y1=\"254.0\" x2=\"50.6\" y2=\"6.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"414.0\" y1=\"130.0\" x2=\"407.1\" y2=\"126.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"414.0\" y1=\"130.0\" x2=\"407.1\" y2=\"134.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"50.6\" y1=\"6.0\" x2=\"46.6\" y2=\"12.9\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"50.6\" y1=\"6.0\" x2=\"54.6\" y2=\"12.9\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><text x=\"416.0\" y=\"145.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">t</text><text x=\"59.6\" y=\"16.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><polyline points=\"50.6,71.2 51.3,70.1 52.0,69.1 52.6,68.0 53.3,67.0 53.9,66.1 54.6,65.1 55.2,64.2 55.9,63.2 56.6,62.4 57.2,61.5 57.9,60.6 58.5,59.8 59.2,59.0 59.8,58.2 60.5,57.5 61.2,56.7 61.8,56.0 62.5,55.4 63.1,54.7 63.8,54.1 64.4,53.5 65.1,52.9 65.8,52.3 66.4,51.8 67.1,51.3 67.7,50.8 68.4,50.4 69.0,49.9 69.7,49.5 70.4,49.2 71.0,48.8 71.7,48.5 72.3,48.2 73.0,47.9 73.7,47.7 74.3,47.5 75.0,47.3 75.6,47.2 76.3,47.0 76.9,46.9 77.6,46.9 78.3,46.8 78.9,46.8 79.6,46.8 80.2,46.8 80.9,46.9 81.5,47.0 82.2,47.1 82.9,47.3 83.5,47.5 84.2,47.7 84.8,47.9 85.5,48.1 86.1,48.4 86.8,48.7 87.5,49.1 88.1,49.5 88.8,49.8 89.4,50.3 90.1,50.7 90.7,51.2 91.4,51.7 92.1,52.2 92.7,52.8 93.4,53.3 94.0,53.9 94.7,54.6 95.3,55.2 96.0,55.9 96.7,56.6 97.3,57.3 98.0,58.1 98.6,58.8 99.3,59.6 99.9,60.5 100.6,61.3 101.3,62.2 101.9,63.1 102.6,64.0 103.2,64.9 103.9,65.9 104.5,66.8 105.2,67.8 105.9,68.9 106.5,69.9 107.2,70.9 107.8,72.0 108.5,73.1 109.1,74.2 109.8,75.4 110.5,76.5 111.1,77.7 111.8,78.9 112.4,80.1 113.1,81.3 113.7,82.5 114.4,83.8 115.1,85.1 115.7,86.3 116.4,87.6 117.0,89.0 117.7,90.3 118.3,91.6 119.0,93.0 119.7,94.3 120.3,95.7 121.0,97.1 121.6,98.5 122.3,99.9 122.9,101.3 123.6,102.8 124.3,104.2 124.9,105.6 125.6,107.1 126.2,108.6 126.9,110.0 127.5,111.5 128.2,113.0 128.9,114.5 129.5,116.0 130.2,117.4 130.8,119.0 131.5,120.5 132.1,122.0 132.8,123.5 133.5,125.0 134.1,126.5 134.8,128.0 135.4,129.5 136.1,131.0 136.7,132.6 137.4,134.1 138.1,135.6 138.7,137.1 139.4,138.6 140.0,140.1 140.7,141.6 141.3,143.1 142.0,144.6 142.7,146.1 143.3,147.6 144.0,149.1 144.6,150.5 145.3,152.0 145.9,153.5 146.6,154.9 147.3,156.4 147.9,157.8 148.6,159.2 149.2,160.6 149.9,162.0 150.5,163.4 151.2,164.8 151.9,166.2 152.5,167.5 153.2,168.9 153.8,170.2 154.5,171.5 155.1,172.8 155.8,174.1 156.5,175.4 157.1,176.7 157.8,177.9 158.4,179.2 159.1,180.4 159.7,181.6 160.4,182.8 161.1,183.9 161.7,185.1 162.4,186.2 163.0,187.3 163.7,188.4 164.3,189.5 165.0,190.5 165.7,191.5 166.3,192.5 167.0,193.5 167.6,194.5 168.3,195.5 169.0,196.4 169.6,197.3 170.3,198.2 170.9,199.0 171.6,199.9 172.2,200.7 172.9,201.5 173.6,202.2 174.2,203.0 174.9,203.7 175.5,204.4 176.2,205.0 176.8,205.7 177.5,206.3 178.2,206.9 178.8,207.5 179.5,208.0 180.1,208.5 180.8,209.0 181.4,209.5 182.1,209.9 182.8,210.3 183.4,210.7 184.1,211.0 184.7,211.4 185.4,211.7 186.0,212.0 186.7,212.2 187.4,212.4 188.0,212.6 188.7,212.8 189.3,212.9 190.0,213.0 190.6,213.1 191.3,213.2 192.0,213.2 192.6,213.2 193.3,213.2 193.9,213.1 194.6,213.0 195.2,212.9 195.9,212.8 196.6,212.6 197.2,212.4 197.9,212.2 198.5,212.0 199.2,211.7 199.8,211.4 200.5,211.1 201.2,210.7 201.8,210.3 202.5,209.9 203.1,209.5 203.8,209.0 204.4,208.5 205.1,208.0 205.8,207.5 206.4,206.9 207.1,206.3 207.7,205.7 208.4,205.1 209.0,204.4 209.7,203.7 210.4,203.0 211.0,202.2 211.7,201.5 212.3,200.7 213.0,199.9 213.6,199.0 214.3,198.2 215.0,197.3 215.6,196.4 216.3,195.5 216.9,194.5 217.6,193.6 218.2,192.6 218.9,191.6 219.6,190.5 220.2,189.5 220.9,188.4 221.5,187.3 222.2,186.2 222.8,185.1 223.5,184.0 224.2,182.8 224.8,181.6 225.5,180.4 226.1,179.2 226.8,178.0 227.4,176.7 228.1,175.5 228.8,174.2 229.4,172.9 230.1,171.6 230.7,170.3 231.4,168.9 232.0,167.6 232.7,166.2 233.4,164.9 234.0,163.5 234.7,162.1 235.3,160.7 236.0,159.3 236.6,157.8 237.3,156.4 238.0,155.0 238.6,153.5 239.3,152.1 239.9,150.6 240.6,149.1 241.2,147.6 241.9,146.2 242.6,144.7 243.2,143.2 243.9,141.7 244.5,140.2 245.2,138.7 245.8,137.2 246.5,135.6 247.2,134.1 247.8,132.6 248.5,131.1 249.1,129.6 249.8,128.1 250.4,126.6 251.1,125.0 251.8,123.5 252.4,122.0 253.1,120.5 253.7,119.0 254.4,117.5 255.0,116.0 255.7,114.5 256.4,113.0 257.0,111.5 257.7,110.1 258.3,108.6 259.0,107.1 259.7,105.7 260.3,104.2 261.0,102.8 261.6,101.4 262.3,100.0 262.9,98.5 263.6,97.1 264.3,95.8 264.9,94.4 265.6,93.0 266.2,91.7 266.9,90.3 267.5,89.0 268.2,87.7 268.9,86.4 269.5,85.1 270.2,83.8 270.8,82.6 271.5,81.4 272.1,80.1 272.8,78.9 273.5,77.7 274.1,76.6 274.8,75.4 275.4,74.3 276.1,73.2 276.7,72.1 277.4,71.0 278.1,69.9 278.7,68.9 279.4,67.9 280.0,66.9 280.7,65.9 281.3,64.9 282.0,64.0 282.7,63.1 283.3,62.2 284.0,61.3 284.6,60.5 285.3,59.7 285.9,58.9 286.6,58.1 287.3,57.3 287.9,56.6 288.6,55.9 289.2,55.2 289.9,54.6 290.5,54.0 291.2,53.4 291.9,52.8 292.5,52.2 293.2,51.7 293.8,51.2 294.5,50.7 295.1,50.3 295.8,49.9 296.5,49.5 297.1,49.1 297.8,48.8 298.4,48.4 299.1,48.2 299.7,47.9 300.4,47.7 301.1,47.5 301.7,47.3 302.4,47.1 303.0,47.0 303.7,46.9 304.3,46.9 305.0,46.8 305.7,46.8 306.3,46.8 307.0,46.9 307.6,46.9 308.3,47.0 308.9,47.2 309.6,47.3 310.3,47.5 310.9,47.7 311.6,47.9 312.2,48.2 312.9,48.5 313.5,48.8 314.2,49.1 314.9,49.5 315.5,49.9 316.2,50.3 316.8,50.8 317.5,51.3 318.1,51.8 318.8,52.3 319.5,52.9 320.1,53.4 320.8,54.0 321.4,54.7 322.1,55.3 322.7,56.0 323.4,56.7 324.1,57.4 324.7,58.2 325.4,59.0 326.0,59.8 326.7,60.6 327.3,61.5 328.0,62.3 328.7,63.2 329.3,64.1 330.0,65.1 330.6,66.0 331.3,67.0 331.9,68.0 332.6,69.0 333.3,70.1 333.9,71.1 334.6,72.2 335.2,73.3 335.9,74.4 336.5,75.6 337.2,76.7 337.9,77.9 338.5,79.1 339.2,80.3 339.8,81.5 340.5,82.8 341.1,84.0 341.8,85.3 342.5,86.6 343.1,87.9 343.8,89.2 344.4,90.5 345.1,91.9 345.7,93.2 346.4,94.6 347.1,96.0 347.7,97.3 348.4,98.7 349.0,100.2 349.7,101.6 350.3,103.0 351.0,104.4 351.7,105.9 352.3,107.3 353.0,108.8 353.6,110.3 354.3,111.7 355.0,113.2 355.6,114.7 356.3,116.2 356.9,117.7 357.6,119.2 358.2,120.7 358.9,122.2 359.6,123.7 360.2,125.2 360.9,126.8 361.5,128.3 362.2,129.8 362.8,131.3 363.5,132.8 364.2,134.3 364.8,135.9 365.5,137.4 366.1,138.9 366.8,140.4 367.4,141.9 368.1,143.4 368.8,144.9 369.4,146.4 370.1,147.8 370.7,149.3 371.4,150.8 372.0,152.3 372.7,153.7 373.4,155.2 374.0,156.6 374.7,158.0 375.3,159.5 376.0,160.9 376.6,162.3 377.3,163.7 378.0,165.0 378.6,166.4 379.3,167.8\" fill=\"none\" stroke=\"#3b4ea8\" stroke-width=\"3.4\" stroke-linejoin=\"round\"/><line x1=\"79.0\" y1=\"127.0\" x2=\"79.0\" y2=\"133.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"79.0\" y=\"144.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><line x1=\"135.6\" y1=\"127.0\" x2=\"135.6\" y2=\"133.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"135.6\" y=\"144.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">6</text><line x1=\"192.3\" y1=\"127.0\" x2=\"192.3\" y2=\"133.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"192.3\" y=\"144.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">10</text><line x1=\"249.0\" y1=\"127.0\" x2=\"249.0\" y2=\"133.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"249.0\" y=\"144.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">14</text><line x1=\"305.6\" y1=\"127.0\" x2=\"305.6\" y2=\"133.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"305.6\" y=\"144.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">18</text><line x1=\"362.3\" y1=\"127.0\" x2=\"362.3\" y2=\"133.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"362.3\" y=\"144.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">22</text><line x1=\"47.6\" y1=\"46.8\" x2=\"53.6\" y2=\"46.8\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"43.6\" y=\"50.8\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">6</text><line x1=\"47.6\" y1=\"213.2\" x2=\"53.6\" y2=\"213.2\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"43.6\" y=\"217.2\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">−6</text><circle cx=\"79.0\" cy=\"46.8\" r=\"5\" fill=\"#dc2626\"/><circle cx=\"305.6\" cy=\"46.8\" r=\"5\" fill=\"#dc2626\"/><line x1=\"79.0\" y1=\"27.4\" x2=\"305.6\" y2=\"27.4\" stroke=\"#d97706\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"305.6\" y1=\"27.4\" x2=\"298.7\" y2=\"23.4\" stroke=\"#d97706\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"305.6\" y1=\"27.4\" x2=\"298.7\" y2=\"31.4\" stroke=\"#d97706\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"79.0\" y1=\"27.4\" x2=\"85.9\" y2=\"31.4\" stroke=\"#d97706\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"79.0\" y1=\"27.4\" x2=\"85.9\" y2=\"23.4\" stroke=\"#d97706\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><text x=\"192.3\" y=\"41.4\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">period T = 16</text><circle cx=\"192.3\" cy=\"213.2\" r=\"5\" fill=\"#dc2626\"/><text x=\"192.3\" y=\"229.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">min −6</text><text x=\"87.0\" y=\"40.8\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">max 6</text></svg>"
+              }
+            },
+            {
+              "explain": "Check: \\(x(0)=6\\cos\\left(-\\dfrac\\pi4\\right)=3\\sqrt2\\approx4.2\\) (the graph starts near 4 ✓); \\(x(6)=6\\cos\\dfrac\\pi2=0\\) ✓; \\(x(10)=6\\cos\\pi=-6\\) ✓.",
+              "work": ""
+            },
+            {
+              "explain": "Why not the others: B uses \\(n=\\dfrac\\pi4\\) (period 8, not 16); C has no shift (it would have a maximum at \\(t=0\\)); D has amplitude 12.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find an expression for \\(x\\) as a function of \\(t\\)",
+              "note": "\\(a=6\\), \\(T=16\\Rightarrow n=\\dfrac\\pi8\\), max at \\(t=2\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Kinross Wolaroi School 2022 Trial HSC Examination Mathematics Extension 2",
+            "school": "Kinross Wolaroi School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "kinross2022-e2-q12aii",
+          "type": "mc",
+          "stem": "The graph shows the displacement \\(x\\) cm from the centre of motion at time \\(t\\) seconds for a particle performing Simple Harmonic Motion in a straight line. Find the distance travelled by the particle in the first minute of its motion after observation began at time \\(t=0\\).",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 260\" width=\"100%\" height=\"auto\" style=\"max-width:420px;display:block;margin:0 auto\"><line x1=\"6.0\" y1=\"130.0\" x2=\"414.0\" y2=\"130.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"50.6\" y1=\"254.0\" x2=\"50.6\" y2=\"6.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"414.0\" y1=\"130.0\" x2=\"407.1\" y2=\"126.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"414.0\" y1=\"130.0\" x2=\"407.1\" y2=\"134.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"50.6\" y1=\"6.0\" x2=\"46.6\" y2=\"12.9\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"50.6\" y1=\"6.0\" x2=\"54.6\" y2=\"12.9\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><text x=\"416.0\" y=\"145.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">t</text><text x=\"59.6\" y=\"16.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><polyline points=\"50.6,71.2 51.3,70.1 52.0,69.1 52.6,68.0 53.3,67.0 53.9,66.1 54.6,65.1 55.2,64.2 55.9,63.2 56.6,62.4 57.2,61.5 57.9,60.6 58.5,59.8 59.2,59.0 59.8,58.2 60.5,57.5 61.2,56.7 61.8,56.0 62.5,55.4 63.1,54.7 63.8,54.1 64.4,53.5 65.1,52.9 65.8,52.3 66.4,51.8 67.1,51.3 67.7,50.8 68.4,50.4 69.0,49.9 69.7,49.5 70.4,49.2 71.0,48.8 71.7,48.5 72.3,48.2 73.0,47.9 73.7,47.7 74.3,47.5 75.0,47.3 75.6,47.2 76.3,47.0 76.9,46.9 77.6,46.9 78.3,46.8 78.9,46.8 79.6,46.8 80.2,46.8 80.9,46.9 81.5,47.0 82.2,47.1 82.9,47.3 83.5,47.5 84.2,47.7 84.8,47.9 85.5,48.1 86.1,48.4 86.8,48.7 87.5,49.1 88.1,49.5 88.8,49.8 89.4,50.3 90.1,50.7 90.7,51.2 91.4,51.7 92.1,52.2 92.7,52.8 93.4,53.3 94.0,53.9 94.7,54.6 95.3,55.2 96.0,55.9 96.7,56.6 97.3,57.3 98.0,58.1 98.6,58.8 99.3,59.6 99.9,60.5 100.6,61.3 101.3,62.2 101.9,63.1 102.6,64.0 103.2,64.9 103.9,65.9 104.5,66.8 105.2,67.8 105.9,68.9 106.5,69.9 107.2,70.9 107.8,72.0 108.5,73.1 109.1,74.2 109.8,75.4 110.5,76.5 111.1,77.7 111.8,78.9 112.4,80.1 113.1,81.3 113.7,82.5 114.4,83.8 115.1,85.1 115.7,86.3 116.4,87.6 117.0,89.0 117.7,90.3 118.3,91.6 119.0,93.0 119.7,94.3 120.3,95.7 121.0,97.1 121.6,98.5 122.3,99.9 122.9,101.3 123.6,102.8 124.3,104.2 124.9,105.6 125.6,107.1 126.2,108.6 126.9,110.0 127.5,111.5 128.2,113.0 128.9,114.5 129.5,116.0 130.2,117.4 130.8,119.0 131.5,120.5 132.1,122.0 132.8,123.5 133.5,125.0 134.1,126.5 134.8,128.0 135.4,129.5 136.1,131.0 136.7,132.6 137.4,134.1 138.1,135.6 138.7,137.1 139.4,138.6 140.0,140.1 140.7,141.6 141.3,143.1 142.0,144.6 142.7,146.1 143.3,147.6 144.0,149.1 144.6,150.5 145.3,152.0 145.9,153.5 146.6,154.9 147.3,156.4 147.9,157.8 148.6,159.2 149.2,160.6 149.9,162.0 150.5,163.4 151.2,164.8 151.9,166.2 152.5,167.5 153.2,168.9 153.8,170.2 154.5,171.5 155.1,172.8 155.8,174.1 156.5,175.4 157.1,176.7 157.8,177.9 158.4,179.2 159.1,180.4 159.7,181.6 160.4,182.8 161.1,183.9 161.7,185.1 162.4,186.2 163.0,187.3 163.7,188.4 164.3,189.5 165.0,190.5 165.7,191.5 166.3,192.5 167.0,193.5 167.6,194.5 168.3,195.5 169.0,196.4 169.6,197.3 170.3,198.2 170.9,199.0 171.6,199.9 172.2,200.7 172.9,201.5 173.6,202.2 174.2,203.0 174.9,203.7 175.5,204.4 176.2,205.0 176.8,205.7 177.5,206.3 178.2,206.9 178.8,207.5 179.5,208.0 180.1,208.5 180.8,209.0 181.4,209.5 182.1,209.9 182.8,210.3 183.4,210.7 184.1,211.0 184.7,211.4 185.4,211.7 186.0,212.0 186.7,212.2 187.4,212.4 188.0,212.6 188.7,212.8 189.3,212.9 190.0,213.0 190.6,213.1 191.3,213.2 192.0,213.2 192.6,213.2 193.3,213.2 193.9,213.1 194.6,213.0 195.2,212.9 195.9,212.8 196.6,212.6 197.2,212.4 197.9,212.2 198.5,212.0 199.2,211.7 199.8,211.4 200.5,211.1 201.2,210.7 201.8,210.3 202.5,209.9 203.1,209.5 203.8,209.0 204.4,208.5 205.1,208.0 205.8,207.5 206.4,206.9 207.1,206.3 207.7,205.7 208.4,205.1 209.0,204.4 209.7,203.7 210.4,203.0 211.0,202.2 211.7,201.5 212.3,200.7 213.0,199.9 213.6,199.0 214.3,198.2 215.0,197.3 215.6,196.4 216.3,195.5 216.9,194.5 217.6,193.6 218.2,192.6 218.9,191.6 219.6,190.5 220.2,189.5 220.9,188.4 221.5,187.3 222.2,186.2 222.8,185.1 223.5,184.0 224.2,182.8 224.8,181.6 225.5,180.4 226.1,179.2 226.8,178.0 227.4,176.7 228.1,175.5 228.8,174.2 229.4,172.9 230.1,171.6 230.7,170.3 231.4,168.9 232.0,167.6 232.7,166.2 233.4,164.9 234.0,163.5 234.7,162.1 235.3,160.7 236.0,159.3 236.6,157.8 237.3,156.4 238.0,155.0 238.6,153.5 239.3,152.1 239.9,150.6 240.6,149.1 241.2,147.6 241.9,146.2 242.6,144.7 243.2,143.2 243.9,141.7 244.5,140.2 245.2,138.7 245.8,137.2 246.5,135.6 247.2,134.1 247.8,132.6 248.5,131.1 249.1,129.6 249.8,128.1 250.4,126.6 251.1,125.0 251.8,123.5 252.4,122.0 253.1,120.5 253.7,119.0 254.4,117.5 255.0,116.0 255.7,114.5 256.4,113.0 257.0,111.5 257.7,110.1 258.3,108.6 259.0,107.1 259.7,105.7 260.3,104.2 261.0,102.8 261.6,101.4 262.3,100.0 262.9,98.5 263.6,97.1 264.3,95.8 264.9,94.4 265.6,93.0 266.2,91.7 266.9,90.3 267.5,89.0 268.2,87.7 268.9,86.4 269.5,85.1 270.2,83.8 270.8,82.6 271.5,81.4 272.1,80.1 272.8,78.9 273.5,77.7 274.1,76.6 274.8,75.4 275.4,74.3 276.1,73.2 276.7,72.1 277.4,71.0 278.1,69.9 278.7,68.9 279.4,67.9 280.0,66.9 280.7,65.9 281.3,64.9 282.0,64.0 282.7,63.1 283.3,62.2 284.0,61.3 284.6,60.5 285.3,59.7 285.9,58.9 286.6,58.1 287.3,57.3 287.9,56.6 288.6,55.9 289.2,55.2 289.9,54.6 290.5,54.0 291.2,53.4 291.9,52.8 292.5,52.2 293.2,51.7 293.8,51.2 294.5,50.7 295.1,50.3 295.8,49.9 296.5,49.5 297.1,49.1 297.8,48.8 298.4,48.4 299.1,48.2 299.7,47.9 300.4,47.7 301.1,47.5 301.7,47.3 302.4,47.1 303.0,47.0 303.7,46.9 304.3,46.9 305.0,46.8 305.7,46.8 306.3,46.8 307.0,46.9 307.6,46.9 308.3,47.0 308.9,47.2 309.6,47.3 310.3,47.5 310.9,47.7 311.6,47.9 312.2,48.2 312.9,48.5 313.5,48.8 314.2,49.1 314.9,49.5 315.5,49.9 316.2,50.3 316.8,50.8 317.5,51.3 318.1,51.8 318.8,52.3 319.5,52.9 320.1,53.4 320.8,54.0 321.4,54.7 322.1,55.3 322.7,56.0 323.4,56.7 324.1,57.4 324.7,58.2 325.4,59.0 326.0,59.8 326.7,60.6 327.3,61.5 328.0,62.3 328.7,63.2 329.3,64.1 330.0,65.1 330.6,66.0 331.3,67.0 331.9,68.0 332.6,69.0 333.3,70.1 333.9,71.1 334.6,72.2 335.2,73.3 335.9,74.4 336.5,75.6 337.2,76.7 337.9,77.9 338.5,79.1 339.2,80.3 339.8,81.5 340.5,82.8 341.1,84.0 341.8,85.3 342.5,86.6 343.1,87.9 343.8,89.2 344.4,90.5 345.1,91.9 345.7,93.2 346.4,94.6 347.1,96.0 347.7,97.3 348.4,98.7 349.0,100.2 349.7,101.6 350.3,103.0 351.0,104.4 351.7,105.9 352.3,107.3 353.0,108.8 353.6,110.3 354.3,111.7 355.0,113.2 355.6,114.7 356.3,116.2 356.9,117.7 357.6,119.2 358.2,120.7 358.9,122.2 359.6,123.7 360.2,125.2 360.9,126.8 361.5,128.3 362.2,129.8 362.8,131.3 363.5,132.8 364.2,134.3 364.8,135.9 365.5,137.4 366.1,138.9 366.8,140.4 367.4,141.9 368.1,143.4 368.8,144.9 369.4,146.4 370.1,147.8 370.7,149.3 371.4,150.8 372.0,152.3 372.7,153.7 373.4,155.2 374.0,156.6 374.7,158.0 375.3,159.5 376.0,160.9 376.6,162.3 377.3,163.7 378.0,165.0 378.6,166.4 379.3,167.8\" fill=\"none\" stroke=\"#3b4ea8\" stroke-width=\"3.4\" stroke-linejoin=\"round\"/><line x1=\"79.0\" y1=\"127.0\" x2=\"79.0\" y2=\"133.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"79.0\" y=\"144.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><line x1=\"107.3\" y1=\"127.0\" x2=\"107.3\" y2=\"133.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"107.3\" y=\"144.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4</text><line x1=\"135.6\" y1=\"127.0\" x2=\"135.6\" y2=\"133.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"135.6\" y=\"144.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">6</text><line x1=\"164.0\" y1=\"127.0\" x2=\"164.0\" y2=\"133.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"164.0\" y=\"144.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">8</text><line x1=\"192.3\" y1=\"127.0\" x2=\"192.3\" y2=\"133.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"192.3\" y=\"144.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">10</text><line x1=\"220.6\" y1=\"127.0\" x2=\"220.6\" y2=\"133.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"220.6\" y=\"144.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">12</text><line x1=\"249.0\" y1=\"127.0\" x2=\"249.0\" y2=\"133.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"249.0\" y=\"144.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">14</text><line x1=\"277.3\" y1=\"127.0\" x2=\"277.3\" y2=\"133.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"277.3\" y=\"144.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">16</text><line x1=\"305.6\" y1=\"127.0\" x2=\"305.6\" y2=\"133.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"305.6\" y=\"144.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">18</text><line x1=\"333.9\" y1=\"127.0\" x2=\"333.9\" y2=\"133.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"333.9\" y=\"144.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">20</text><line x1=\"362.3\" y1=\"127.0\" x2=\"362.3\" y2=\"133.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"362.3\" y=\"144.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">22</text><line x1=\"47.6\" y1=\"46.8\" x2=\"53.6\" y2=\"46.8\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"43.6\" y=\"50.8\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">6</text><line x1=\"47.6\" y1=\"213.2\" x2=\"53.6\" y2=\"213.2\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"43.6\" y=\"217.2\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">−6</text></svg>"
+          },
+          "options": [
+            "\\(\\left(96-6\\sqrt2\\right)\\) cm",
+            "\\(90\\) cm",
+            "\\(\\left(72+6\\sqrt2\\right)\\) cm",
+            "\\(96\\) cm"
+          ],
+          "answer": 0,
+          "hint": "In ONE full period the particle travels \\(4a=24\\) cm. One minute \\(=60\\) s \\(=3\\) full periods \\((48\\) s\\()\\) plus 12 s. For the extra 12 s trace the motion carefully: it starts at \\(x=3\\sqrt2\\), goes up to 6, down to \\(-6\\), and up again.",
+          "steps": [
+            {
+              "explain": "Period \\(T=16\\) s. In 60 s there are \\(\\dfrac{60}{16}=3.75\\) periods. Distance for 3 full periods (\\(t=0\\) to 48): \\(3\\times4a=3\\times24=72\\) cm.",
+              "work": "\\(\\text{distance}(0\\to48)=72\\ \\text{cm}\\)"
+            },
+            {
+              "explain": "The motion at \\(t=48\\) is identical to the motion at \\(t=0\\) (3 periods later). So the last 12 s repeat the first 12 s. Positions: \\(x(0)=3\\sqrt2\\), max 6 at \\(t=2\\), zero at \\(t=6\\), minimum \\(-6\\) at \\(t=10\\), then \\(x(12)=6\\cos\\dfrac{10\\pi}{8}=6\\cos\\dfrac{5\\pi}{4}=-3\\sqrt2\\).",
+              "work": "\\(x(0)=3\\sqrt2\\ \\to\\ 6\\ \\to\\ -6\\ \\to\\ x(12)=-3\\sqrt2\\)"
+            },
+            {
+              "explain": "Distances in the first 12 s: \\(3\\sqrt2\\to6\\): \\(6-3\\sqrt2\\). \\(6\\to-6\\): 12. \\(-6\\to-3\\sqrt2\\): \\(6-3\\sqrt2\\).",
+              "work": "\\((6-3\\sqrt2)+12+(6-3\\sqrt2)=24-6\\sqrt2\\)"
+            },
+            {
+              "explain": "Total in the minute: \\(72+24-6\\sqrt2\\). (The graph shows the motion in one period: max 6, min \\(-6\\), period 16.)",
+              "work": "\\(96-6\\sqrt2\\approx87.5\\ \\text{cm}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 260\" width=\"100%\" height=\"auto\" style=\"max-width:420px;display:block;margin:0 auto\"><line x1=\"6.0\" y1=\"130.0\" x2=\"414.0\" y2=\"130.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"50.6\" y1=\"254.0\" x2=\"50.6\" y2=\"6.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"414.0\" y1=\"130.0\" x2=\"407.1\" y2=\"126.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"414.0\" y1=\"130.0\" x2=\"407.1\" y2=\"134.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"50.6\" y1=\"6.0\" x2=\"46.6\" y2=\"12.9\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"50.6\" y1=\"6.0\" x2=\"54.6\" y2=\"12.9\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><text x=\"416.0\" y=\"145.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">t</text><text x=\"59.6\" y=\"16.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><polyline points=\"50.6,71.2 51.3,70.1 52.0,69.1 52.6,68.0 53.3,67.0 53.9,66.1 54.6,65.1 55.2,64.2 55.9,63.2 56.6,62.4 57.2,61.5 57.9,60.6 58.5,59.8 59.2,59.0 59.8,58.2 60.5,57.5 61.2,56.7 61.8,56.0 62.5,55.4 63.1,54.7 63.8,54.1 64.4,53.5 65.1,52.9 65.8,52.3 66.4,51.8 67.1,51.3 67.7,50.8 68.4,50.4 69.0,49.9 69.7,49.5 70.4,49.2 71.0,48.8 71.7,48.5 72.3,48.2 73.0,47.9 73.7,47.7 74.3,47.5 75.0,47.3 75.6,47.2 76.3,47.0 76.9,46.9 77.6,46.9 78.3,46.8 78.9,46.8 79.6,46.8 80.2,46.8 80.9,46.9 81.5,47.0 82.2,47.1 82.9,47.3 83.5,47.5 84.2,47.7 84.8,47.9 85.5,48.1 86.1,48.4 86.8,48.7 87.5,49.1 88.1,49.5 88.8,49.8 89.4,50.3 90.1,50.7 90.7,51.2 91.4,51.7 92.1,52.2 92.7,52.8 93.4,53.3 94.0,53.9 94.7,54.6 95.3,55.2 96.0,55.9 96.7,56.6 97.3,57.3 98.0,58.1 98.6,58.8 99.3,59.6 99.9,60.5 100.6,61.3 101.3,62.2 101.9,63.1 102.6,64.0 103.2,64.9 103.9,65.9 104.5,66.8 105.2,67.8 105.9,68.9 106.5,69.9 107.2,70.9 107.8,72.0 108.5,73.1 109.1,74.2 109.8,75.4 110.5,76.5 111.1,77.7 111.8,78.9 112.4,80.1 113.1,81.3 113.7,82.5 114.4,83.8 115.1,85.1 115.7,86.3 116.4,87.6 117.0,89.0 117.7,90.3 118.3,91.6 119.0,93.0 119.7,94.3 120.3,95.7 121.0,97.1 121.6,98.5 122.3,99.9 122.9,101.3 123.6,102.8 124.3,104.2 124.9,105.6 125.6,107.1 126.2,108.6 126.9,110.0 127.5,111.5 128.2,113.0 128.9,114.5 129.5,116.0 130.2,117.4 130.8,119.0 131.5,120.5 132.1,122.0 132.8,123.5 133.5,125.0 134.1,126.5 134.8,128.0 135.4,129.5 136.1,131.0 136.7,132.6 137.4,134.1 138.1,135.6 138.7,137.1 139.4,138.6 140.0,140.1 140.7,141.6 141.3,143.1 142.0,144.6 142.7,146.1 143.3,147.6 144.0,149.1 144.6,150.5 145.3,152.0 145.9,153.5 146.6,154.9 147.3,156.4 147.9,157.8 148.6,159.2 149.2,160.6 149.9,162.0 150.5,163.4 151.2,164.8 151.9,166.2 152.5,167.5 153.2,168.9 153.8,170.2 154.5,171.5 155.1,172.8 155.8,174.1 156.5,175.4 157.1,176.7 157.8,177.9 158.4,179.2 159.1,180.4 159.7,181.6 160.4,182.8 161.1,183.9 161.7,185.1 162.4,186.2 163.0,187.3 163.7,188.4 164.3,189.5 165.0,190.5 165.7,191.5 166.3,192.5 167.0,193.5 167.6,194.5 168.3,195.5 169.0,196.4 169.6,197.3 170.3,198.2 170.9,199.0 171.6,199.9 172.2,200.7 172.9,201.5 173.6,202.2 174.2,203.0 174.9,203.7 175.5,204.4 176.2,205.0 176.8,205.7 177.5,206.3 178.2,206.9 178.8,207.5 179.5,208.0 180.1,208.5 180.8,209.0 181.4,209.5 182.1,209.9 182.8,210.3 183.4,210.7 184.1,211.0 184.7,211.4 185.4,211.7 186.0,212.0 186.7,212.2 187.4,212.4 188.0,212.6 188.7,212.8 189.3,212.9 190.0,213.0 190.6,213.1 191.3,213.2 192.0,213.2 192.6,213.2 193.3,213.2 193.9,213.1 194.6,213.0 195.2,212.9 195.9,212.8 196.6,212.6 197.2,212.4 197.9,212.2 198.5,212.0 199.2,211.7 199.8,211.4 200.5,211.1 201.2,210.7 201.8,210.3 202.5,209.9 203.1,209.5 203.8,209.0 204.4,208.5 205.1,208.0 205.8,207.5 206.4,206.9 207.1,206.3 207.7,205.7 208.4,205.1 209.0,204.4 209.7,203.7 210.4,203.0 211.0,202.2 211.7,201.5 212.3,200.7 213.0,199.9 213.6,199.0 214.3,198.2 215.0,197.3 215.6,196.4 216.3,195.5 216.9,194.5 217.6,193.6 218.2,192.6 218.9,191.6 219.6,190.5 220.2,189.5 220.9,188.4 221.5,187.3 222.2,186.2 222.8,185.1 223.5,184.0 224.2,182.8 224.8,181.6 225.5,180.4 226.1,179.2 226.8,178.0 227.4,176.7 228.1,175.5 228.8,174.2 229.4,172.9 230.1,171.6 230.7,170.3 231.4,168.9 232.0,167.6 232.7,166.2 233.4,164.9 234.0,163.5 234.7,162.1 235.3,160.7 236.0,159.3 236.6,157.8 237.3,156.4 238.0,155.0 238.6,153.5 239.3,152.1 239.9,150.6 240.6,149.1 241.2,147.6 241.9,146.2 242.6,144.7 243.2,143.2 243.9,141.7 244.5,140.2 245.2,138.7 245.8,137.2 246.5,135.6 247.2,134.1 247.8,132.6 248.5,131.1 249.1,129.6 249.8,128.1 250.4,126.6 251.1,125.0 251.8,123.5 252.4,122.0 253.1,120.5 253.7,119.0 254.4,117.5 255.0,116.0 255.7,114.5 256.4,113.0 257.0,111.5 257.7,110.1 258.3,108.6 259.0,107.1 259.7,105.7 260.3,104.2 261.0,102.8 261.6,101.4 262.3,100.0 262.9,98.5 263.6,97.1 264.3,95.8 264.9,94.4 265.6,93.0 266.2,91.7 266.9,90.3 267.5,89.0 268.2,87.7 268.9,86.4 269.5,85.1 270.2,83.8 270.8,82.6 271.5,81.4 272.1,80.1 272.8,78.9 273.5,77.7 274.1,76.6 274.8,75.4 275.4,74.3 276.1,73.2 276.7,72.1 277.4,71.0 278.1,69.9 278.7,68.9 279.4,67.9 280.0,66.9 280.7,65.9 281.3,64.9 282.0,64.0 282.7,63.1 283.3,62.2 284.0,61.3 284.6,60.5 285.3,59.7 285.9,58.9 286.6,58.1 287.3,57.3 287.9,56.6 288.6,55.9 289.2,55.2 289.9,54.6 290.5,54.0 291.2,53.4 291.9,52.8 292.5,52.2 293.2,51.7 293.8,51.2 294.5,50.7 295.1,50.3 295.8,49.9 296.5,49.5 297.1,49.1 297.8,48.8 298.4,48.4 299.1,48.2 299.7,47.9 300.4,47.7 301.1,47.5 301.7,47.3 302.4,47.1 303.0,47.0 303.7,46.9 304.3,46.9 305.0,46.8 305.7,46.8 306.3,46.8 307.0,46.9 307.6,46.9 308.3,47.0 308.9,47.2 309.6,47.3 310.3,47.5 310.9,47.7 311.6,47.9 312.2,48.2 312.9,48.5 313.5,48.8 314.2,49.1 314.9,49.5 315.5,49.9 316.2,50.3 316.8,50.8 317.5,51.3 318.1,51.8 318.8,52.3 319.5,52.9 320.1,53.4 320.8,54.0 321.4,54.7 322.1,55.3 322.7,56.0 323.4,56.7 324.1,57.4 324.7,58.2 325.4,59.0 326.0,59.8 326.7,60.6 327.3,61.5 328.0,62.3 328.7,63.2 329.3,64.1 330.0,65.1 330.6,66.0 331.3,67.0 331.9,68.0 332.6,69.0 333.3,70.1 333.9,71.1 334.6,72.2 335.2,73.3 335.9,74.4 336.5,75.6 337.2,76.7 337.9,77.9 338.5,79.1 339.2,80.3 339.8,81.5 340.5,82.8 341.1,84.0 341.8,85.3 342.5,86.6 343.1,87.9 343.8,89.2 344.4,90.5 345.1,91.9 345.7,93.2 346.4,94.6 347.1,96.0 347.7,97.3 348.4,98.7 349.0,100.2 349.7,101.6 350.3,103.0 351.0,104.4 351.7,105.9 352.3,107.3 353.0,108.8 353.6,110.3 354.3,111.7 355.0,113.2 355.6,114.7 356.3,116.2 356.9,117.7 357.6,119.2 358.2,120.7 358.9,122.2 359.6,123.7 360.2,125.2 360.9,126.8 361.5,128.3 362.2,129.8 362.8,131.3 363.5,132.8 364.2,134.3 364.8,135.9 365.5,137.4 366.1,138.9 366.8,140.4 367.4,141.9 368.1,143.4 368.8,144.9 369.4,146.4 370.1,147.8 370.7,149.3 371.4,150.8 372.0,152.3 372.7,153.7 373.4,155.2 374.0,156.6 374.7,158.0 375.3,159.5 376.0,160.9 376.6,162.3 377.3,163.7 378.0,165.0 378.6,166.4 379.3,167.8\" fill=\"none\" stroke=\"#3b4ea8\" stroke-width=\"3.4\" stroke-linejoin=\"round\"/><line x1=\"79.0\" y1=\"127.0\" x2=\"79.0\" y2=\"133.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"79.0\" y=\"144.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><line x1=\"135.6\" y1=\"127.0\" x2=\"135.6\" y2=\"133.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"135.6\" y=\"144.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">6</text><line x1=\"192.3\" y1=\"127.0\" x2=\"192.3\" y2=\"133.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"192.3\" y=\"144.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">10</text><line x1=\"249.0\" y1=\"127.0\" x2=\"249.0\" y2=\"133.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"249.0\" y=\"144.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">14</text><line x1=\"305.6\" y1=\"127.0\" x2=\"305.6\" y2=\"133.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"305.6\" y=\"144.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">18</text><line x1=\"362.3\" y1=\"127.0\" x2=\"362.3\" y2=\"133.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"362.3\" y=\"144.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">22</text><line x1=\"47.6\" y1=\"46.8\" x2=\"53.6\" y2=\"46.8\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"43.6\" y=\"50.8\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">6</text><line x1=\"47.6\" y1=\"213.2\" x2=\"53.6\" y2=\"213.2\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"43.6\" y=\"217.2\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">−6</text><circle cx=\"79.0\" cy=\"46.8\" r=\"5\" fill=\"#dc2626\"/><circle cx=\"305.6\" cy=\"46.8\" r=\"5\" fill=\"#dc2626\"/><line x1=\"79.0\" y1=\"27.4\" x2=\"305.6\" y2=\"27.4\" stroke=\"#d97706\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"305.6\" y1=\"27.4\" x2=\"298.7\" y2=\"23.4\" stroke=\"#d97706\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"305.6\" y1=\"27.4\" x2=\"298.7\" y2=\"31.4\" stroke=\"#d97706\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"79.0\" y1=\"27.4\" x2=\"85.9\" y2=\"31.4\" stroke=\"#d97706\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"79.0\" y1=\"27.4\" x2=\"85.9\" y2=\"23.4\" stroke=\"#d97706\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><text x=\"192.3\" y=\"41.4\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">period T = 16</text><circle cx=\"192.3\" cy=\"213.2\" r=\"5\" fill=\"#dc2626\"/><text x=\"192.3\" y=\"229.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">min −6</text><text x=\"87.0\" y=\"40.8\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">max 6</text></svg>"
+              }
+            },
+            {
+              "explain": "Why not the others: 96 forgets the \\(-6\\sqrt2\\) (it treats the last 12 s as a full 24 cm); 90 and \\(72+6\\sqrt2\\) come from wrong end positions.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the distance travelled by the particle in the first minute",
+              "note": "3 periods \\(=72\\) cm; trace the last 12 s."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Kinross Wolaroi School 2022 Trial HSC Examination Mathematics Extension 2",
+            "school": "Kinross Wolaroi School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2020-e2-q13ciii",
+          "type": "mc",
+          "stem": "A particle moves along the \\(x\\)-axis with acceleration \\(\\dfrac{d^{2}x}{dt^{2}}=2x^{3}-10x\\) and oscillates within the interval \\(-1\\le x\\le1\\). Is this motion an example of simple harmonic motion? Give clear reason for your answer. Which answer is correct?",
+          "difficulty": "medium",
+          "options": [
+            "No. Simple harmonic motion requires \\(\\ddot x=-n^{2}x\\) (or \\(-n^{2}(x-c)\\)), i.e. acceleration PROPORTIONAL to the displacement. Here \\(\\ddot x=2x^{3}-10x\\) contains an \\(x^{3}\\) term, so it is not proportional to \\(x\\).",
+            "Yes. The particle oscillates between two fixed points, which is the definition of simple harmonic motion.",
+            "Yes. The acceleration is zero at the centre \\(x=0\\), and a particle with zero acceleration at the centre is in SHM.",
+            "No. Simple harmonic motion requires the velocity to be constant, but here the velocity changes."
+          ],
+          "answer": 0,
+          "hint": "Simple harmonic motion has a very specific definition: the acceleration is proportional to the displacement from a fixed point and directed towards it, \\(\\ddot x=-n^{2}(x-c)\\). Oscillating alone is NOT enough. Compare the given acceleration with this form.",
+          "steps": [
+            {
+              "explain": "SHM requires \\(\\ddot x=-n^{2}x\\) (centre at the origin), a LINEAR function of \\(x\\) with a negative coefficient.",
+              "work": "\\(\\ddot x=-n^{2}x\\)"
+            },
+            {
+              "explain": "Here \\(\\ddot x=2x^{3}-10x=-2x\\left(5-x^{2}\\right)\\). The factor \\(5-x^{2}\\) is NOT constant (it depends on \\(x\\)), so \\(\\ddot x\\) is not proportional to \\(x\\). For example \\(x=0.5\\): \\(\\ddot x=-4.75\\); \\(x=1\\): \\(\\ddot x=-8\\). The ratios \\(\\dfrac{\\ddot x}{x}=-9.5\\) and \\(-8\\) are different.",
+              "work": "\\(\\dfrac{\\ddot x}{x}=2x^{2}-10\\ \\text{is not constant}\\)"
+            },
+            {
+              "explain": "Therefore the motion is oscillatory but NOT simple harmonic (the period also depends on the amplitude).",
+              "work": ""
+            },
+            {
+              "explain": "Why not the others: B confuses “oscillates” with SHM; C is a wrong criterion (zero acceleration at the centre is true of many motions); D is wrong (in SHM the velocity is not constant either).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Is this motion an example of simple harmonic motion",
+              "note": "SHM: \\(\\ddot x=-n^2x\\); here there is an \\(x^3\\) term."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Killara High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -4607,6 +5111,334 @@
           "meta": {
             "source": "Hills Grammar 2025 Trial HSC Mathematics Extension 2",
             "school": "The Hills Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "kinross2022-e2-q13bi",
+          "type": "mc",
+          "stem": "A body of mass \\(m\\) kg is travelling in a horizontal straight line so that the resultant force on the body is a resistance force of magnitude \\(\\dfrac{1}{10}m\\sqrt{1+v}\\) when its speed is \\(v\\ \\text{ms}^{-1}\\). Initially the speed of the body is \\(15\\ \\text{ms}^{-1}\\). Find the time taken for the body to come to rest.",
+          "difficulty": "hard",
+          "options": [
+            "\\(60\\) seconds",
+            "\\(30\\) seconds",
+            "\\(6\\) seconds",
+            "\\(120\\) seconds"
+          ],
+          "answer": 0,
+          "hint": "Newton’s second law: \\(m\\dfrac{dv}{dt}=-\\dfrac{1}{10}m\\sqrt{1+v}\\) (the force opposes the motion). Cancel \\(m\\), flip to \\(\\dfrac{dt}{dv}\\) and integrate with respect to \\(v\\) from \\(15\\) down to \\(0\\).",
+          "steps": [
+            {
+              "explain": "The resistance acts against the motion, so the acceleration is negative. Cancel \\(m\\).",
+              "work": "\\(\\dfrac{dv}{dt}=-\\dfrac{1}{10}\\sqrt{1+v}\\)"
+            },
+            {
+              "explain": "Invert: \\(\\dfrac{dt}{dv}=-\\dfrac{10}{\\sqrt{1+v}}\\). Integrate from the start (\\(v=15\\)) to rest (\\(v=0\\)).",
+              "work": "\\(T=\\int_{15}^{0}-\\dfrac{10}{\\sqrt{1+v}}\\,dv=10\\int_{0}^{15}(1+v)^{-\\frac12}dv\\)"
+            },
+            {
+              "explain": "\\(\\int(1+v)^{-\\frac12}dv=2\\sqrt{1+v}\\).",
+              "work": "\\(T=10\\left[2\\sqrt{1+v}\\right]_{0}^{15}=20\\left(\\sqrt{16}-\\sqrt1\\right)\\)"
+            },
+            {
+              "explain": "Evaluate: \\(\\sqrt{16}=4\\) and \\(\\sqrt1=1\\).",
+              "work": "\\(T=20(4-1)=60\\ \\text{seconds}\\)"
+            },
+            {
+              "explain": "Why not the others: 30 forgets the 2 from \\(\\int(1+v)^{-\\frac12}dv\\); 6 forgets the factor 10; 120 doubles \\(\\sqrt{16}\\) wrongly.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the time taken for the body to come to rest",
+              "note": "\\(\\dfrac{dt}{dv}=-\\dfrac{10}{\\sqrt{1+v}}\\); integrate \\(v:15\\to0\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Kinross Wolaroi School 2022 Trial HSC Examination Mathematics Extension 2",
+            "school": "Kinross Wolaroi School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "kinross2022-e2-q13bii",
+          "type": "mc",
+          "stem": "A body of mass \\(m\\) kg is travelling in a horizontal straight line so that the resultant force on the body is a resistance force of magnitude \\(\\dfrac{1}{10}m\\sqrt{1+v}\\) when its speed is \\(v\\ \\text{ms}^{-1}\\). Initially the speed of the body is \\(15\\ \\text{ms}^{-1}\\). Find the distance travelled by the body in coming to rest.",
+          "difficulty": "hard",
+          "options": [
+            "\\(360\\) m",
+            "\\(180\\) m",
+            "\\(450\\) m",
+            "\\(36\\) m"
+          ],
+          "answer": 0,
+          "hint": "Now we want distance, so use \\(\\ddot x=v\\dfrac{dv}{dx}\\): \\(v\\dfrac{dv}{dx}=-\\dfrac{1}{10}\\sqrt{1+v}\\). Separate variables as \\(\\dfrac{dx}{dv}\\) and integrate. Use the substitution \\(u=1+v\\) for \\(\\int\\dfrac{v}{\\sqrt{1+v}}dv\\).",
+          "steps": [
+            {
+              "explain": "Acceleration in terms of \\(v\\) and \\(x\\): \\(v\\dfrac{dv}{dx}=-\\dfrac{1}{10}\\sqrt{1+v}\\). Invert to get \\(\\dfrac{dx}{dv}\\).",
+              "work": "\\(\\dfrac{dx}{dv}=-\\dfrac{10v}{\\sqrt{1+v}}\\)"
+            },
+            {
+              "explain": "Distance \\(=\\) integral from \\(v=15\\) to \\(v=0\\); swap the limits to remove the minus sign.",
+              "work": "\\(D=10\\int_{0}^{15}\\dfrac{v}{\\sqrt{1+v}}\\,dv\\)"
+            },
+            {
+              "explain": "Let \\(u=1+v\\) (so \\(v=u-1\\), \\(dv=du\\)); limits \\(u=1\\) to \\(16\\). Then \\(\\dfrac{u-1}{\\sqrt u}=u^{\\frac12}-u^{-\\frac12}\\).",
+              "work": "\\(D=10\\int_{1}^{16}\\left(u^{\\frac12}-u^{-\\frac12}\\right)du\\)"
+            },
+            {
+              "explain": "Integrate: \\(\\dfrac23u^{\\frac32}-2u^{\\frac12}\\).",
+              "work": "\\(D=10\\left[\\dfrac23u^{\\frac32}-2u^{\\frac12}\\right]_{1}^{16}\\)"
+            },
+            {
+              "explain": "Upper limit: \\(\\dfrac{2}{3}(64)-2(4)=\\dfrac{128}{3}-8=\\dfrac{104}{3}\\). Lower limit: \\(\\dfrac{2}{3}-2=-\\dfrac{4}{3}\\).",
+              "work": "\\(D=10\\left(\\dfrac{104}{3}+\\dfrac{4}{3}\\right)=10\\times36=360\\ \\text{m}\\)"
+            },
+            {
+              "explain": "Why not the others: 180 and 36 lose the factor 10 or 2; 450 comes from using \\(\\int v\\,dv\\) incorrectly.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the distance travelled by the body in coming to rest",
+              "note": "\\(\\ddot x=v\\dfrac{dv}{dx}\\); \\(u=1+v\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Kinross Wolaroi School 2022 Trial HSC Examination Mathematics Extension 2",
+            "school": "Kinross Wolaroi School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2020-e2-q16ai",
+          "type": "mc",
+          "stem": "When a jet aircraft touches down, two different retarding forces combine to bring it to rest. If the jet has a mass of \\(M\\) kg and a speed of \\(v\\) m/s, there is a constant frictional force of \\(\\dfrac14M\\) newtons and a force of \\(\\dfrac{1}{108}Mv^{2}\\) newtons due to the reverse thrust of the engines. The reverse thrust of the engines do not take into effect until 20 seconds after touch down. Show that \\(\\dfrac{d^{2}x}{dt^{2}}=-\\dfrac{1}{4}\\) for \\(0<t\\le20\\), and that for \\(t>20\\), and until after the jet stops, \\(\\dfrac{d^{2}x}{dt^{2}}=-\\dfrac{1}{108}\\left(27+v^{2}\\right)\\). Which working is correct?",
+          "difficulty": "medium",
+          "options": [
+            "Newton's second law \\(M\\ddot x=\\)(total force). \\(0<t\\le20\\): only friction, opposing motion: \\(M\\ddot x=-\\dfrac14M\\), so \\(\\ddot x=-\\dfrac{1}{4}\\). \\(t>20\\): friction plus thrust, both opposing: \\(M\\ddot x=-\\dfrac14M-\\dfrac{1}{108}Mv^{2}\\), so \\(\\ddot x=-\\dfrac{27}{108}-\\dfrac{v^{2}}{108}=-\\dfrac{1}{108}\\left(27+v^{2}\\right)\\).",
+            "\\(0<t\\le20\\): \\(M\\ddot x=+\\dfrac14M\\), so \\(\\ddot x=\\dfrac{1}{4}\\). \\(t>20\\): \\(M\\ddot x=\\dfrac14M+\\dfrac{1}{108}Mv^{2}\\), so \\(\\ddot x=\\dfrac{1}{108}\\left(27+v^{2}\\right)\\).",
+            "\\(0<t\\le20\\): \\(\\ddot x=-\\dfrac14M\\) (the mass is not cancelled). \\(t>20\\): \\(\\ddot x=-\\dfrac14M-\\dfrac{1}{108}Mv^{2}\\).",
+            "\\(0<t\\le20\\): \\(M\\ddot x=-\\dfrac14M\\), so \\(\\ddot x=-\\dfrac{1}{4}\\). \\(t>20\\): \\(M\\ddot x=-\\dfrac14M+\\dfrac{1}{108}Mv^{2}\\) (the thrust helps), so \\(\\ddot x=-\\dfrac{1}{108}\\left(27-v^{2}\\right)\\)."
+          ],
+          "answer": 0,
+          "hint": "Newton's second law: mass \\(\\times\\) acceleration \\(=\\) net force. BOTH forces RETARD the jet, so they act in the NEGATIVE direction. Divide by \\(M\\). Remember \\(\\dfrac{1}{4}=\\dfrac{27}{108}\\).",
+          "steps": [
+            {
+              "explain": "Take the direction of motion as positive. The retarding forces act in the opposite direction, so they are negative: \\(M\\ddot x=-(\\text{retarding forces})\\).",
+              "work": "\\(M\\ddot x=-\\text{(friction)}-\\text{(thrust, when active)}\\)"
+            },
+            {
+              "explain": "For \\(0<t\\le20\\) only the constant friction \\(\\dfrac14M\\) acts. Divide by \\(M\\) (the mass cancels).",
+              "work": "\\(M\\ddot x=-\\dfrac14M\\ \\Rightarrow\\ \\dfrac{d^{2}x}{dt^{2}}=-\\dfrac{1}{4}\\)"
+            },
+            {
+              "explain": "For \\(t>20\\) the thrust \\(\\dfrac{1}{108}Mv^{2}\\) also acts. Divide by \\(M\\).",
+              "work": "\\(M\\ddot x=-\\dfrac14M-\\dfrac{1}{108}Mv^{2}\\ \\Rightarrow\\ \\ddot x=-\\dfrac{1}{4}-\\dfrac{v^{2}}{108}\\)"
+            },
+            {
+              "explain": "Common denominator 108: \\(\\dfrac{1}{4}=\\dfrac{27}{108}\\).",
+              "work": "\\(\\ddot x=-\\dfrac{27}{108}-\\dfrac{v^{2}}{108}=-\\dfrac{1}{108}\\left(27+v^{2}\\right)\\)"
+            },
+            {
+              "explain": "Why not the others: B takes the forces as positive (the jet would speed up); C does not divide by \\(M\\); D makes the thrust help the motion (it is a REVERSE thrust).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that \\(\\dfrac{d^{2}x}{dt^{2}}=-\\dfrac{1}{4}\\)",
+              "note": "\\(M\\ddot x=-\\)forces; \\(\\dfrac{1}{4}=\\dfrac{27}{108}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Killara High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2020-e2-q16aii",
+          "type": "mc",
+          "stem": "A jet touches down at \\(60\\) m/s and, for \\(0<t\\le20\\), \\(\\dfrac{d^{2}x}{dt^{2}}=-\\dfrac{1}{4}\\). Show that \\(v=55\\) and \\(x=1150\\) at the instant the reverse thrust of the engines takes effect (\\(t=20\\)). Which working is correct?",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dot x=-\\dfrac{t}{4}+C\\); \\(t=0\\), \\(v=60\\): \\(C=60\\), so \\(v=60-\\dfrac{t}{4}\\). \\(x=60t-\\dfrac{t^{2}}{8}+D\\), \\(x(0)=0\\Rightarrow D=0\\). At \\(t=20\\): \\(v=60-5=55\\) and \\(x=1200-50=1150\\).",
+            "\\(\\dot x=-\\dfrac{t}{4}+C\\); \\(C=60\\), so \\(v=60-\\dfrac{t}{4}\\). \\(x=60t-\\dfrac{t^{2}}{4}\\) (integrating \\(\\dfrac{t}{4}\\) to \\(\\dfrac{t^{2}}{4}\\)). At \\(t=20\\): \\(x=1200-100=1100\\).",
+            "\\(\\dot x=-\\dfrac{1}{4}+C\\); \\(C=60\\), so \\(v=59.75\\) (constant). \\(x=59.75t\\), so at \\(t=20\\), \\(x=1195\\).",
+            "\\(\\dot x=\\dfrac{t}{4}+60\\); at \\(t=20\\): \\(v=65\\) and \\(x=60t+\\dfrac{t^{2}}{8}=1250\\)."
+          ],
+          "answer": 0,
+          "hint": "Constant acceleration: integrate once for velocity (use \\(v(0)=60\\)), integrate again for displacement (use \\(x(0)=0\\) at the touchdown point). Then substitute \\(t=20\\).",
+          "steps": [
+            {
+              "explain": "Integrate \\(\\ddot x=-\\dfrac{1}{4}\\) with respect to \\(t\\): \\(v=-\\dfrac{t}{4}+C\\). At \\(t=0\\), \\(v=60\\).",
+              "work": "\\(v=60-\\dfrac{t}{4}\\)"
+            },
+            {
+              "explain": "At \\(t=20\\): \\(v=60-\\dfrac{20}{4}=60-5\\).",
+              "work": "\\(v(20)=55\\ \\text{metres per second}\\)"
+            },
+            {
+              "explain": "Integrate \\(v\\) with respect to \\(t\\): \\(x=60t-\\dfrac{t^{2}}{8}+D\\) (since \\(\\int\\dfrac{t}{4}\\,dt=\\dfrac{t^{2}}{8}\\)). \\(x=0\\) at \\(t=0\\) (touchdown point) gives \\(D=0\\).",
+              "work": "\\(x=60t-\\dfrac{t^{2}}{8}\\)"
+            },
+            {
+              "explain": "At \\(t=20\\): \\(60(20)=1200\\) and \\(\\dfrac{20^{2}}{8}=50\\).",
+              "work": "\\(x(20)=1200-50=1150\\ \\text{m}\\)"
+            },
+            {
+              "explain": "Why not the others: B integrates \\(\\dfrac{t}{4}\\) to \\(\\dfrac{t^{2}}{4}\\) (it is \\(\\dfrac{t^{2}}{8}\\)); C treats the velocity as constant (the acceleration is not zero); D uses \\(+\\dfrac{t}{4}\\) (the jet is slowing, not speeding up).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that \\(v=55\\) and \\(x=1150\\)",
+              "note": "\\(v=60-\\dfrac{t}{4}\\); \\(x=60t-\\dfrac{t^2}{8}\\); \\(t=20\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Killara High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2020-e2-q16aiii",
+          "type": "mc",
+          "stem": "For \\(t>20\\), \\(\\dfrac{d^{2}x}{dt^{2}}=-\\dfrac{1}{108}\\left(27+v^{2}\\right)\\), and at \\(t=20\\): \\(v=55\\), \\(x=1150\\). Show that when \\(t>20\\), \\(x=1150+54\\left\\{\\ln\\left(27+55^{2}\\right)-\\ln\\left(27+v^{2}\\right)\\right\\}\\). Which working is correct?",
+          "difficulty": "hard",
+          "options": [
+            "\\(v\\dfrac{dv}{dx}=-\\dfrac{1}{108}\\left(27+v^{2}\\right)\\), so \\(\\dfrac{dx}{dv}=-\\dfrac{108v}{27+v^{2}}\\). Then \\(x=-54\\ln\\left(27+v^{2}\\right)+C\\) (since \\(\\dfrac{d}{dv}\\ln(27+v^{2})=\\dfrac{2v}{27+v^{2}}\\)). At \\(v=55\\), \\(x=1150\\): \\(C=1150+54\\ln\\left(27+55^{2}\\right)\\). So \\(x=1150+54\\left\\{\\ln\\left(27+55^{2}\\right)-\\ln\\left(27+v^{2}\\right)\\right\\}\\).",
+            "\\(\\dfrac{dv}{dt}=-\\dfrac{1}{108}\\left(27+v^{2}\\right)\\), so \\(t=-108\\displaystyle\\int\\dfrac{dv}{27+v^{2}}\\), which gives a \\(\\tan^{-1}\\) and not a logarithm.",
+            "\\(v\\dfrac{dv}{dx}=-\\dfrac{1}{108}\\left(27+v^{2}\\right)\\), so \\(x=-108\\ln\\left(27+v^{2}\\right)+C\\) (forgetting the \\(\\dfrac{1}{2}\\) from \\(\\dfrac{d}{dv}v^{2}\\)). With \\(C\\) found from \\(v=55\\), \\(x=1150\\), the result has 108 in place of 54.",
+            "\\(v\\dfrac{dv}{dx}=-\\dfrac{1}{108}\\left(27+v^{2}\\right)\\), so \\(x=+54\\ln\\left(27+v^{2}\\right)+C\\), which gives \\(x=1150+54\\left\\{\\ln\\left(27+v^{2}\\right)-\\ln\\left(27+55^{2}\\right)\\right\\}\\)."
+          ],
+          "answer": 0,
+          "hint": "The acceleration is given in terms of \\(v\\), and we want \\(x\\) in terms of \\(v\\), so use \\(\\ddot x=v\\dfrac{dv}{dx}\\). Separate: \\(dx=-\\dfrac{108\\,v}{27+v^{2}}dv\\). The numerator \\(v\\) is half the derivative of \\(27+v^{2}\\), so the integral is a LOGARITHM. Use \\(x=1150\\) at \\(v=55\\) to find the constant.",
+          "steps": [
+            {
+              "explain": "\\(\\ddot x=v\\dfrac{dv}{dx}\\) so \\(v\\dfrac{dv}{dx}=-\\dfrac{27+v^{2}}{108}\\). Invert and separate variables.",
+              "work": "\\(\\dfrac{dx}{dv}=-\\dfrac{108\\,v}{27+v^{2}}\\)"
+            },
+            {
+              "explain": "Integrate with respect to \\(v\\): \\(\\int\\dfrac{v}{27+v^{2}}dv=\\dfrac{1}{2}\\ln\\left(27+v^{2}\\right)\\) (the derivative of the denominator is \\(2v\\)).",
+              "work": "\\(x=-108\\cdot\\dfrac{1}{2}\\ln\\left(27+v^{2}\\right)+C=-54\\ln\\left(27+v^{2}\\right)+C\\)"
+            },
+            {
+              "explain": "Use \\(x=1150\\) when \\(v=55\\).",
+              "work": "\\(1150=-54\\ln\\left(27+55^{2}\\right)+C\\ \\Rightarrow\\ C=1150+54\\ln\\left(27+55^{2}\\right)\\)"
+            },
+            {
+              "explain": "Substitute \\(C\\) and combine the logs.",
+              "work": "\\(x=1150+54\\left\\{\\ln\\left(27+55^{2}\\right)-\\ln\\left(27+v^{2}\\right)\\right\\}\\)"
+            },
+            {
+              "explain": "Why not the others: B uses \\(\\dfrac{dv}{dt}\\) (gives a different integral); C forgets that \\(\\int\\dfrac{v}{27+v^{2}}dv\\) has a \\(\\dfrac{1}{2}\\); D has the wrong sign (the distance must INCREASE as \\(v\\) decreases).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that when \\(t>20\\)",
+              "note": "\\(\\ddot x=v\\dfrac{dv}{dx}\\); \\(\\int\\dfrac{v}{27+v^2}=\\dfrac{1}{2}\\ln(27+v^2)\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Killara High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2020-e2-q16aiv",
+          "type": "mc",
+          "stem": "For \\(t>20\\), \\(x=1150+54\\left\\{\\ln\\left(27+55^{2}\\right)-\\ln\\left(27+v^{2}\\right)\\right\\}\\). Calculate how far from the touchdown point the jet comes to rest. Give your answer to the nearest metre.",
+          "difficulty": "medium",
+          "options": [
+            "\\(1405\\) m",
+            "\\(1150\\) m",
+            "\\(1255\\) m",
+            "\\(1460\\) m"
+          ],
+          "answer": 0,
+          "hint": "The jet is at rest when \\(v=0\\). Substitute \\(v=0\\) into the formula (calculator, natural logs).",
+          "steps": [
+            {
+              "explain": "At rest: \\(v=0\\), so \\(\\ln\\left(27+v^{2}\\right)=\\ln27\\). Also \\(27+55^{2}=27+3025=3052\\).",
+              "work": "\\(x=1150+54\\left\\{\\ln3052-\\ln27\\right\\}=1150+54\\ln\\dfrac{3052}{27}\\)"
+            },
+            {
+              "explain": "Compute \\(\\dfrac{3052}{27}\\approx113.04\\) and \\(\\ln113.04\\approx4.7277\\).",
+              "work": "\\(54\\ln113.04\\approx54\\times4.7277\\approx255.3\\)"
+            },
+            {
+              "explain": "Add.",
+              "work": "\\(x\\approx1150+255.3\\approx1405.3\\ \\text{m}\\)"
+            },
+            {
+              "explain": "To the nearest metre: 1405 m from the touchdown point.",
+              "work": "\\(x\\approx1405\\ \\text{m}\\)"
+            },
+            {
+              "explain": "Why not the others: 1150 m is where the thrust STARTS; 1255 and 1460 come from slips in \\(54\\ln\\)(…) (e.g. using \\(\\log_{10}\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Calculate how far from the touchdown point the jet comes to rest",
+              "note": "\\(v=0\\); \\(54\\ln\\dfrac{3052}{27}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Killara High School",
             "grade": "12",
             "origin": "teacher"
           }
@@ -6039,6 +6871,64 @@
             "origin": "teacher",
             "note": "Open response: teacher review."
           }
+        },
+        {
+          "id": "kinross2022-e2-q10",
+          "type": "mc",
+          "stem": "A stone is projected from a point \\(O\\) on flat ground with speed \\(V\\sqrt2\\ \\text{ms}^{-1}\\) at an angle \\(45^{\\circ}\\) above the horizontal. The stone moves in a vertical plane under gravity where the acceleration due to gravity is \\(g\\ \\text{ms}^{-2}\\). Air resistance may be neglected. At time \\(t\\) seconds the position vector of the stone relative to \\(O\\) is \\(\\underset{\\sim}{r}(t)=Vt\\,\\underset{\\sim}{i}+\\left(Vt-\\dfrac12gt^{2}\\right)\\underset{\\sim}{j}\\). Which one of the following about the trajectory of the stone is correct?",
+          "difficulty": "medium",
+          "options": [
+            "Its horizontal range is 2 times its maximum height.",
+            "Its horizontal range is 3 times its maximum height.",
+            "Its horizontal range is 4 times its maximum height.",
+            "Its horizontal range is 5 times its maximum height."
+          ],
+          "answer": 2,
+          "hint": "Use the position vector: the stone is on the ground again when the \\(\\underset{\\sim}{j}\\)-component is 0 (gives the time of flight, then the range from the \\(\\underset{\\sim}{i}\\)-component). Maximum height is when the vertical velocity is 0.",
+          "steps": [
+            {
+              "explain": "Horizontal: \\(x=Vt\\). Vertical: \\(y=Vt-\\dfrac12gt^{2}=t\\left(V-\\dfrac12gt\\right)\\).",
+              "work": "\\(x=Vt,\\qquad y=Vt-\\dfrac12gt^{2}\\)"
+            },
+            {
+              "explain": "Time of flight: \\(y=0\\) again when \\(V-\\dfrac12gt=0\\), i.e. \\(t=\\dfrac{2V}{g}\\). Range \\(R=x\\) at that time.",
+              "work": "\\(R=V\\cdot\\dfrac{2V}{g}=\\dfrac{2V^{2}}{g}\\)"
+            },
+            {
+              "explain": "Maximum height: vertical velocity \\(\\dot y=V-gt=0\\) at \\(t=\\dfrac{V}{g}\\) (halfway). Substitute into \\(y\\).",
+              "work": "\\(H=V\\cdot\\dfrac{V}{g}-\\dfrac12g\\cdot\\dfrac{V^{2}}{g^{2}}=\\dfrac{V^{2}}{g}-\\dfrac{V^{2}}{2g}=\\dfrac{V^{2}}{2g}\\)"
+            },
+            {
+              "explain": "Ratio.",
+              "work": "\\(\\dfrac{R}{H}=\\dfrac{2V^{2}}{g}\\times\\dfrac{2g}{V^{2}}=4\\)"
+            },
+            {
+              "explain": "So the range is 4 times the maximum height.",
+              "work": ""
+            },
+            {
+              "explain": "Why not the others: 2, 3 and 5 do not match \\(\\dfrac{2V^{2}}{g}\\times\\dfrac{2g}{V^{2}}=4\\) (a common slip is to use \\(H=\\dfrac{V^{2}}{g}\\), which gives 2).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">C</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Which one of the following about the trajectory of the stone is correct",
+              "note": "\\(R=\\dfrac{2V^2}{g}\\); \\(H\\) when \\(\\dot y=0\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Kinross Wolaroi School 2022 Trial HSC Examination Mathematics Extension 2",
+            "school": "Kinross Wolaroi School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -7059,6 +7949,118 @@
             "grade": "12",
             "origin": "teacher",
             "note": "Open response: teacher review."
+          }
+        },
+        {
+          "id": "kinross2022-e2-q16bi",
+          "type": "mc",
+          "stem": "The displacement of a particle at time \\(t\\) is \\(x\\), measured from a fixed point \\(O\\), where \\(a\\), \\(c\\) are positive constants. If \\(\\dfrac{dx}{dt}=a\\left(c^{2}-x^{2}\\right)\\) and \\(x=0\\) when \\(t=0\\), prove that \\(x=\\dfrac{c\\left(e^{2act}-1\\right)}{e^{2act}+1}\\). Which working is correct?",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\dfrac{dt}{dx}=\\dfrac{1}{a(c^{2}-x^{2})}\\). Partial fractions \\(\\dfrac{1}{c^{2}-x^{2}}=\\dfrac{1}{2c}\\left(\\dfrac1{c-x}+\\dfrac{1}{c+x}\\right)\\), so \\(at=\\dfrac{1}{2c}\\ln\\dfrac{c+x}{c-x}+C\\). \\(t=0,x=0\\Rightarrow C=0\\). Then \\(\\dfrac{c+x}{c-x}=e^{2act}\\), giving \\(x=\\dfrac{c\\left(e^{2act}-1\\right)}{e^{2act}+1}\\).",
+            "\\(\\dfrac{dt}{dx}=\\dfrac{1}{a(c^{2}-x^{2})}\\). Integrating: \\(at=\\dfrac{1}{2c}\\ln\\dfrac{c-x}{c+x}+C\\), so \\(\\dfrac{c-x}{c+x}=e^{2act}\\), which gives \\(x=\\dfrac{c\\left(1-e^{2act}\\right)}{1+e^{2act}}\\).",
+            "\\(\\dfrac{dt}{dx}=\\dfrac{1}{a(c^{2}-x^{2})}\\). Integrating \\(\\dfrac{1}{c^{2}-x^{2}}\\) as \\(-\\dfrac{1}{c}\\tan^{-1}\\dfrac{x}{c}\\) gives a tangent, not an exponential.",
+            "\\(\\dfrac{dx}{dt}=a(c^{2}-x^{2})\\Rightarrow x=a(c^{2}-x^{2})t+C\\), and \\(C=0\\); solving this quadratic for \\(x\\) gives the result."
+          ],
+          "answer": 0,
+          "hint": "Separate the variables: \\(\\dfrac{dx}{c^{2}-x^{2}}=a\\,dt\\). Use partial fractions on \\(\\dfrac{1}{c^{2}-x^{2}}=\\dfrac{1}{(c-x)(c+x)}\\), integrate, use \\(x(0)=0\\) for the constant, then make \\(x\\) the subject.",
+          "steps": [
+            {
+              "explain": "Separate variables: \\(\\dfrac{dx}{c^{2}-x^{2}}=a\\,dt\\). Partial fractions: \\(\\dfrac{1}{(c-x)(c+x)}=\\dfrac{A}{c-x}+\\dfrac{B}{c+x}\\) gives \\(1=A(c+x)+B(c-x)\\); \\(x=c\\): \\(A=\\dfrac1{2c}\\); \\(x=-c\\): \\(B=\\dfrac{1}{2c}\\).",
+              "work": "\\(\\dfrac{1}{c^{2}-x^{2}}=\\dfrac{1}{2c}\\left(\\dfrac{1}{c-x}+\\dfrac{1}{c+x}\\right)\\)"
+            },
+            {
+              "explain": "Integrate: \\(\\int\\dfrac{dx}{c-x}=-\\ln(c-x)\\) and \\(\\int\\dfrac{dx}{c+x}=\\ln(c+x)\\).",
+              "work": "\\(\\dfrac{1}{2c}\\ln\\dfrac{c+x}{c-x}=at+C\\)"
+            },
+            {
+              "explain": "Use \\(x=0\\) at \\(t=0\\): \\(\\ln\\dfrac{c}{c}=0\\), so \\(C=0\\). Multiply by \\(2c\\).",
+              "work": "\\(\\ln\\dfrac{c+x}{c-x}=2act\\ \\Rightarrow\\ \\dfrac{c+x}{c-x}=e^{2act}\\)"
+            },
+            {
+              "explain": "Make \\(x\\) the subject: \\(c+x=e^{2act}(c-x)\\), so \\(x\\left(1+e^{2act}\\right)=c\\left(e^{2act}-1\\right)\\).",
+              "work": "\\(x=\\dfrac{c\\left(e^{2act}-1\\right)}{e^{2act}+1}\\)"
+            },
+            {
+              "explain": "Why not the others: B inverts the fraction (the result would be \\(-x\\)); C uses \\(\\tan^{-1}\\) (that is for \\(c^{2}+x^{2}\\)); D integrates \\(\\dfrac{dx}{dt}\\) as if the right side were constant (it depends on \\(x\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "prove that \\(x=\\dfrac{c\\left(e^{2act}-1\\right)}{e^{2act}+1}\\)",
+              "note": "\\(\\dfrac1{c^2-x^2}=\\dfrac1{2c}\\left(\\dfrac1{c-x}+\\dfrac1{c+x}\\right)\\); \\(\\ln\\dfrac{c+x}{c-x}=2act\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Kinross Wolaroi School 2022 Trial HSC Examination Mathematics Extension 2",
+            "school": "Kinross Wolaroi School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "kinross2022-e2-q16bii",
+          "type": "mc",
+          "stem": "The displacement of a particle is \\(x=\\dfrac{c\\left(e^{2act}-1\\right)}{e^{2act}+1}\\), where \\(a\\), \\(c\\) are positive constants. If \\(x=3\\) when \\(t=1\\), and \\(x=\\dfrac{75}{17}\\) when \\(t=2\\), show that \\(c=5\\) and evaluate \\(a\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(c=5\\) and \\(a=\\dfrac{1}{5}\\ln2\\)",
+            "\\(c=5\\) and \\(a=\\dfrac{1}{10}\\ln2\\)",
+            "\\(c=5\\) and \\(a=\\ln4\\)",
+            "\\(c=5\\) and \\(a=\\dfrac{2}{5}\\ln2\\)"
+          ],
+          "answer": 0,
+          "hint": "Rewrite \\(x\\) as \\(\\dfrac{c+x}{c-x}=e^{2act}\\). At \\(t=2\\) the exponent is DOUBLE the one at \\(t=1\\), so the ratio at \\(t=2\\) is the SQUARE of the ratio at \\(t=1\\). This gives an equation in \\(c\\) alone. Then find \\(a\\).",
+          "steps": [
+            {
+              "explain": "From the formula, \\(\\dfrac{c+x}{c-x}=e^{2act}\\). At \\(t=1\\), \\(x=3\\): \\(\\dfrac{c+3}{c-3}=e^{2ac}\\). At \\(t=2\\), \\(x=\\dfrac{75}{17}\\): \\(\\dfrac{c+\\dfrac{75}{17}}{c-\\dfrac{75}{17}}=\\dfrac{17c+75}{17c-75}=e^{4ac}\\).",
+              "work": "\\(\\dfrac{17c+75}{17c-75}=e^{4ac}=\\left(e^{2ac}\\right)^{2}=\\left(\\dfrac{c+3}{c-3}\\right)^{2}\\)"
+            },
+            {
+              "explain": "Cross-multiply: \\((17c+75)(c-3)^{2}=(17c-75)(c+3)^{2}\\). Expand both sides.",
+              "work": "\\(\\begin{aligned}&\\text{LHS}&=17c^{3}-27c^{2}-297c+675\\\\ &\\text{RHS}&=17c^{3}+27c^{2}-297c-675\\end{aligned}\\)"
+            },
+            {
+              "explain": "Subtract RHS from LHS: the \\(c^{3}\\) and \\(c\\) terms cancel.",
+              "work": "\\(-54c^{2}+1350=0\\ \\Rightarrow\\ c^{2}=25\\ \\Rightarrow\\ c=5\\ \\ (c>0)\\)"
+            },
+            {
+              "explain": "Now \\(a\\): with \\(c=5\\) and \\(t=1\\): \\(\\dfrac{5+3}{5-3}=4=e^{10a}\\). Take natural logs.",
+              "work": "\\(10a=\\ln4=2\\ln2\\ \\Rightarrow\\ a=\\dfrac{1}{5}\\ln2\\approx0.139\\)"
+            },
+            {
+              "explain": "Check \\(t=2\\): \\(e^{20a}=16\\), so \\(x=5\\cdot\\dfrac{16-1}{16+1}=\\dfrac{75}{17}\\) ✓.",
+              "work": ""
+            },
+            {
+              "explain": "Why not the others: B forgets \\(\\ln4=2\\ln2\\); C forgets to divide by 10; D has the wrong factor.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "show that \\(c=5\\) and evaluate \\(a\\)",
+              "note": "\\(\\dfrac{c+x}{c-x}=e^{2act}\\); the \\(t=2\\) ratio is the square of the \\(t=1\\) ratio."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Kinross Wolaroi School 2022 Trial HSC Examination Mathematics Extension 2",
+            "school": "Kinross Wolaroi School",
+            "grade": "12",
+            "origin": "teacher"
           }
         }
       ]

@@ -1362,6 +1362,164 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "kinross2022-e2-q8",
+          "type": "mc",
+          "stem": "The points \\(A\\), \\(B\\), \\(C\\) are collinear where \\(\\overrightarrow{OA}=\\underset{\\sim}{i}-\\underset{\\sim}{j}\\), \\(\\overrightarrow{OB}=-3\\underset{\\sim}{j}-\\underset{\\sim}{k}\\) and \\(\\overrightarrow{OC}=2\\underset{\\sim}{i}+a\\underset{\\sim}{j}+b\\underset{\\sim}{k}\\) for some constants \\(a\\) and \\(b\\). What are the values of \\(a\\) and \\(b\\)?",
+          "difficulty": "medium",
+          "options": [
+            "\\(a=-1\\) and \\(b=-1\\)",
+            "\\(a=-1\\) and \\(b=1\\)",
+            "\\(a=1\\) and \\(b=-1\\)",
+            "\\(a=1\\) and \\(b=1\\)"
+          ],
+          "answer": 3,
+          "hint": "Three points are collinear when \\(\\overrightarrow{AC}\\) is a SCALAR MULTIPLE of \\(\\overrightarrow{AB}\\). Find both vectors with (end) \\(-\\) (start), then compare components.",
+          "steps": [
+            {
+              "explain": "\\(A=(1,-1,0)\\), \\(B=(0,-3,-1)\\), \\(C=(2,a,b)\\). Compute \\(\\overrightarrow{AB}\\) and \\(\\overrightarrow{AC}\\).",
+              "work": "\\(\\overrightarrow{AB}=\\begin{pmatrix}-1\\\\-2\\\\-1\\end{pmatrix},\\qquad\\overrightarrow{AC}=\\begin{pmatrix}1\\\\ a+1\\\\ b\\end{pmatrix}\\)"
+            },
+            {
+              "explain": "Collinear: \\(\\overrightarrow{AC}=k\\overrightarrow{AB}\\). The first components give \\(k\\): \\(1=-k\\).",
+              "work": "\\(k=-1\\)"
+            },
+            {
+              "explain": "Second component: \\(a+1=-1(-2)=2\\). Third component: \\(b=-1(-1)=1\\).",
+              "work": "\\(a=1,\\qquad b=1\\)"
+            },
+            {
+              "explain": "Check: \\(\\overrightarrow{AC}=\\begin{pmatrix}1\\\\ 2\\\\ 1\\end{pmatrix}=-\\overrightarrow{AB}\\) ✓ (all three components match).",
+              "work": ""
+            },
+            {
+              "explain": "Why not the others: A, B, C each have a sign error in \\(a\\) or \\(b\\) (they do not satisfy \\(\\overrightarrow{AC}=-\\overrightarrow{AB}\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">D</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "The points \\(A\\), \\(B\\), \\(C\\) are collinear",
+              "note": "\\(\\overrightarrow{AC}=k\\overrightarrow{AB}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Kinross Wolaroi School 2022 Trial HSC Examination Mathematics Extension 2",
+            "school": "Kinross Wolaroi School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "kinross2022-e2-q13di",
+          "type": "mc",
+          "stem": "Find the parametric equations of the line through \\((-2,1,2)\\) that is parallel to \\(\\underset{\\sim}{v}=2\\underset{\\sim}{i}-\\underset{\\sim}{j}+3\\underset{\\sim}{k}\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(x=2\\lambda-2,\\ y=1-\\lambda,\\ z=3\\lambda+2\\)",
+            "\\(x=2\\lambda+2,\\ y=-\\lambda-1,\\ z=3\\lambda-2\\)",
+            "\\(x=-2\\lambda+2,\\ y=\\lambda+1,\\ z=-3\\lambda+2\\)",
+            "\\(x=2\\lambda-2,\\ y=1+\\lambda,\\ z=3\\lambda+2\\)"
+          ],
+          "answer": 0,
+          "hint": "A line through the point \\((x_{0},y_{0},z_{0})\\) with direction \\((d_{1},d_{2},d_{3})\\) is \\(x=x_{0}+\\lambda d_{1}\\), \\(y=y_{0}+\\lambda d_{2}\\), \\(z=z_{0}+\\lambda d_{3}\\).",
+          "steps": [
+            {
+              "explain": "Point \\((-2,1,2)\\); direction \\(\\underset{\\sim}{v}=(2,-1,3)\\).",
+              "work": "\\((x_{0},y_{0},z_{0})=(-2,1,2),\\quad(d_{1},d_{2},d_{3})=(2,-1,3)\\)"
+            },
+            {
+              "explain": "Add \\(\\lambda\\) times each direction component to the point's coordinates.",
+              "work": "\\(\\begin{aligned}&x&=-2+2\\lambda=2\\lambda-2\\\\ &y&=1-\\lambda\\\\ &z&=2+3\\lambda=3\\lambda+2\\end{aligned}\\)"
+            },
+            {
+              "explain": "Check: \\(\\lambda=0\\) gives the point \\((-2,1,2)\\) ✓.",
+              "work": ""
+            },
+            {
+              "explain": "Why not the others: B uses the point's coordinates with the wrong signs; C reverses the direction; D has \\(+\\lambda\\) in \\(y\\) (the \\(j\\)-component of \\(\\underset{\\sim}{v}\\) is \\(-1\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the parametric equations of the line",
+              "note": "Point \\(+\\ \\lambda\\times\\) direction."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Kinross Wolaroi School 2022 Trial HSC Examination Mathematics Extension 2",
+            "school": "Kinross Wolaroi School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "kinross2022-e2-q13dii",
+          "type": "mc",
+          "stem": "The line through \\((-2,1,2)\\) parallel to \\(\\underset{\\sim}{v}=2\\underset{\\sim}{i}-\\underset{\\sim}{j}+3\\underset{\\sim}{k}\\) has parametric equations \\(x=2\\lambda-2\\), \\(y=1-\\lambda\\), \\(z=3\\lambda+2\\). Determine whether either of the points \\((1,2,3)\\) or \\((-6,3,-4)\\) lie on this line.",
+          "difficulty": "medium",
+          "options": [
+            "Only \\((-6,3,-4)\\) lies on the line.",
+            "Only \\((1,2,3)\\) lies on the line.",
+            "Both points lie on the line.",
+            "Neither point lies on the line."
+          ],
+          "answer": 0,
+          "hint": "A point is on the line only if ONE value of \\(\\lambda\\) satisfies all three equations at the same time. Solve each equation for \\(\\lambda\\) and compare.",
+          "steps": [
+            {
+              "explain": "Point \\((1,2,3)\\): solve each equation for \\(\\lambda\\).",
+              "work": "\\(1=2\\lambda-2\\Rightarrow\\lambda=\\dfrac{3}{2};\\quad2=1-\\lambda\\Rightarrow\\lambda=-1;\\quad3=3\\lambda+2\\Rightarrow\\lambda=\\dfrac{1}{3}\\)"
+            },
+            {
+              "explain": "The three values of \\(\\lambda\\) are different, so \\((1,2,3)\\) does NOT lie on the line.",
+              "work": "\\(\\dfrac{3}{2}\\ne-1\\ne\\dfrac{1}{3}\\)"
+            },
+            {
+              "explain": "Point \\((-6,3,-4)\\): solve each equation for \\(\\lambda\\).",
+              "work": "\\(-6=2\\lambda-2\\Rightarrow\\lambda=-2;\\quad3=1-\\lambda\\Rightarrow\\lambda=-2;\\quad-4=3\\lambda+2\\Rightarrow\\lambda=-2\\)"
+            },
+            {
+              "explain": "All three give \\(\\lambda=-2\\), so \\((-6,3,-4)\\) DOES lie on the line.",
+              "work": "\\(\\lambda=-2\\ \\text{for all three}\\)"
+            },
+            {
+              "explain": "Why not the others: B swaps the points; C ignores that \\((1,2,3)\\) gives three different \\(\\lambda\\); D misses that \\((-6,3,-4)\\) fits all three equations.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Determine whether either of the points",
+              "note": "One \\(\\lambda\\) must satisfy all three equations."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Kinross Wolaroi School 2022 Trial HSC Examination Mathematics Extension 2",
+            "school": "Kinross Wolaroi School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -2313,6 +2471,122 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "kinross2022-e2-q13c",
+          "type": "mc",
+          "stem": "Consider the lines \\(L_{1}\\), \\(L_{2}\\) determined by the vector equations \\(L_{1}:\\ \\underset{\\sim}{r}=\\begin{pmatrix}3\\\\ 2\\\\-1\\end{pmatrix}+\\lambda\\begin{pmatrix}2\\\\-1\\\\ 1\\end{pmatrix}\\) and \\(L_{2}:\\ \\underset{\\sim}{r}=\\begin{pmatrix}-1\\\\ 1\\\\ 0\\end{pmatrix}+\\mu\\begin{pmatrix}1\\\\ 1\\\\-1\\end{pmatrix}\\). Show that \\(L_{1}\\) and \\(L_{2}\\) intersect and are perpendicular, stating the coordinates of the point of intersection. Which conclusion is correct?",
+          "difficulty": "hard",
+          "options": [
+            "They intersect at \\((1,3,-2)\\) and are perpendicular.",
+            "They intersect at \\((1,3,-2)\\) but are NOT perpendicular.",
+            "They intersect at \\((-1,1,0)\\) and are perpendicular.",
+            "They do not intersect (skew lines), but are perpendicular."
+          ],
+          "answer": 0,
+          "hint": "Intersection: set the \\(x\\)-, \\(y\\)- and \\(z\\)-components equal (use different parameters \\(\\lambda\\) and \\(\\mu\\)); solve two equations and CHECK the third. Perpendicular: the DOT PRODUCT of the direction vectors is zero.",
+          "steps": [
+            {
+              "explain": "Equate the components of the two lines.",
+              "work": "\\(\\begin{aligned}&3+2\\lambda&=-1+\\mu\\quad(1)\\\\ &2-\\lambda&=1+\\mu\\quad(2)\\\\ &-1+\\lambda&=-\\mu\\quad(3)\\end{aligned}\\)"
+            },
+            {
+              "explain": "From (3): \\(\\mu=1-\\lambda\\). Substitute into (1): \\(3+2\\lambda=-1+1-\\lambda\\), so \\(3\\lambda=-3\\).",
+              "work": "\\(\\lambda=-1,\\qquad\\mu=1-(-1)=2\\)"
+            },
+            {
+              "explain": "CHECK in (2): left \\(2-(-1)=3\\); right \\(1+2=3\\) ✓. All three equations hold, so the lines intersect.",
+              "work": "\\(\\text{(2): }3=3\\ \\checkmark\\)"
+            },
+            {
+              "explain": "Point of intersection: put \\(\\lambda=-1\\) in \\(L_{1}\\) (or \\(\\mu=2\\) in \\(L_{2}\\)).",
+              "work": "\\(\\begin{pmatrix}3-2\\\\ 2+1\\\\-1-1\\end{pmatrix}=\\begin{pmatrix}1\\\\ 3\\\\-2\\end{pmatrix}\\)"
+            },
+            {
+              "explain": "Perpendicular: dot product of the direction vectors.",
+              "work": "\\(\\begin{pmatrix}2\\\\-1\\\\ 1\\end{pmatrix}\\cdot\\begin{pmatrix}1\\\\ 1\\\\-1\\end{pmatrix}=2-1-1=0\\)"
+            },
+            {
+              "explain": "Since the dot product is 0, the lines are perpendicular. They intersect at \\((1,3,-2)\\).",
+              "work": ""
+            },
+            {
+              "explain": "Why not the others: B contradicts the zero dot product; C gives the point \\(\\mu=0\\) of \\(L_{2}\\), not the intersection; D contradicts the consistent solution of the three equations.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that \\(L_{1}\\) and \\(L_{2}\\) intersect and are perpendicular",
+              "note": "Solve two equations; check the third; \\(d_1\\cdot d_2=0\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Kinross Wolaroi School 2022 Trial HSC Examination Mathematics Extension 2",
+            "school": "Kinross Wolaroi School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2020-e2-q14ci",
+          "type": "mc",
+          "stem": "\\(\\underset{\\sim}{r_{1}}\\) and \\(\\underset{\\sim}{r_{2}}\\) are two lines with vector equations: \\(\\underset{\\sim}{r_{1}}=\\begin{pmatrix}1\\\\ 0\\\\ 1\\end{pmatrix}+\\lambda\\begin{pmatrix}0\\\\ 1\\\\ 1\\end{pmatrix}\\) and \\(\\underset{\\sim}{r_{2}}=\\begin{pmatrix}2\\\\ 0\\\\ 0\\end{pmatrix}+\\mu\\begin{pmatrix}1\\\\ 3\\\\ 2\\end{pmatrix}\\), \\(\\lambda,\\mu\\in R\\). Show that these two lines intersect. Which working is correct?",
+          "difficulty": "hard",
+          "options": [
+            "Equate components: \\(1=2+\\mu\\) (1), \\(\\lambda=3\\mu\\) (2), \\(1+\\lambda=2\\mu\\) (3). From (1) \\(\\mu=-1\\); from (2) \\(\\lambda=-3\\); CHECK (3): LHS \\(=1-3=-2\\), RHS \\(=2(-1)=-2\\) ✓. All three equations hold, so the lines intersect (at \\((1,-3,-2)\\)).",
+            "Equate components: \\(1=2+\\mu\\), \\(\\lambda=3\\mu\\), \\(1+\\lambda=2\\mu\\). From the first two, \\(\\mu=-1\\) and \\(\\lambda=-3\\); the third equation is not needed, so the lines intersect.",
+            "Equate components: \\(1=2+\\mu\\), \\(\\lambda=3\\mu\\), \\(1+\\lambda=2\\mu\\). Solving the first two gives \\(\\mu=-1\\), \\(\\lambda=-3\\); the third then reads \\(-2=4\\), so the lines do not intersect.",
+            "The direction vectors \\((0,1,1)\\) and \\((1,3,2)\\) are not parallel, so the lines must intersect."
+          ],
+          "answer": 0,
+          "hint": "Two lines in 3D intersect only if ONE pair \\((\\lambda,\\mu)\\) satisfies ALL THREE component equations. Solve two equations, then CHECK the third. Non-parallel directions alone do not prove they meet (they could be skew).",
+          "steps": [
+            {
+              "explain": "Equate the \\(x\\)-, \\(y\\)-, \\(z\\)-components.",
+              "work": "\\(\\begin{aligned}&1&=2+\\mu\\quad(1)\\\\ &\\lambda&=3\\mu\\quad(2)\\\\ &1+\\lambda&=2\\mu\\quad(3)\\end{aligned}\\)"
+            },
+            {
+              "explain": "(1): \\(\\mu=-1\\). (2): \\(\\lambda=3(-1)=-3\\).",
+              "work": "\\(\\mu=-1,\\qquad\\lambda=-3\\)"
+            },
+            {
+              "explain": "CHECK in (3): LHS \\(=1+\\lambda=1-3=-2\\); RHS \\(=2\\mu=-2\\). They are equal ✓, so all three equations hold.",
+              "work": "\\(-2=-2\\ \\checkmark\\)"
+            },
+            {
+              "explain": "The lines intersect. Point: \\(\\lambda=-3\\) in \\(\\underset{\\sim}{r_{1}}\\): \\(\\begin{pmatrix}1\\\\-3\\\\-2\\end{pmatrix}\\); \\(\\mu=-1\\) in \\(\\underset{\\sim}{r_{2}}\\): \\(\\begin{pmatrix}2-1\\\\-3\\\\-2\\end{pmatrix}=\\begin{pmatrix}1\\\\-3\\\\-2\\end{pmatrix}\\) ✓ (same point).",
+              "work": "\\(\\text{intersection }(1,-3,-2)\\)"
+            },
+            {
+              "explain": "Why not the others: B skips the check; C has a false conclusion (\\(-2=-2\\) holds); D is not a valid test (non-parallel lines in 3D can be skew).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that these two lines intersect",
+              "note": "Solve two; CHECK the third."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Killara High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -2528,6 +2802,117 @@
           "meta": {
             "source": "Hurlstone Agricultural High School 2020 Trial Higher School Certificate Examination Mathematics Extension 2",
             "school": "Hurlstone Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2020-e2-q2",
+          "type": "mc",
+          "stem": "If the vectors \\(\\underset{\\sim}{a}=m\\underset{\\sim}{i}+4\\underset{\\sim}{j}+3\\underset{\\sim}{k}\\) and \\(\\underset{\\sim}{b}=m\\underset{\\sim}{i}+m\\underset{\\sim}{j}-4\\underset{\\sim}{k}\\) are perpendicular, then which of the following values of \\(m\\) are correct?",
+          "difficulty": "medium",
+          "options": [
+            "\\(m=-1\\) or \\(m=1\\)",
+            "\\(m=-2\\) or \\(m=0\\)",
+            "\\(m=-2\\) or \\(m=6\\)",
+            "\\(m=-6\\) or \\(m=2\\)"
+          ],
+          "answer": 3,
+          "hint": "Perpendicular vectors have DOT PRODUCT zero. Multiply matching components, add, and solve the quadratic in \\(m\\).",
+          "steps": [
+            {
+              "explain": "Dot product.",
+              "work": "\\(\\underset{\\sim}{a}\\cdot\\underset{\\sim}{b}=m\\cdot m+4\\cdot m+3(-4)=m^{2}+4m-12\\)"
+            },
+            {
+              "explain": "Set equal to zero and factorise: two numbers multiplying to \\(-12\\) and adding to \\(4\\): \\(6\\) and \\(-2\\).",
+              "work": "\\(m^{2}+4m-12=(m+6)(m-2)=0\\)"
+            },
+            {
+              "explain": "Solve.",
+              "work": "\\(m=-6\\quad\\text{or}\\quad m=2\\)"
+            },
+            {
+              "explain": "Check \\(m=2\\): \\(\\underset{\\sim}{a}=(2,4,3)\\), \\(\\underset{\\sim}{b}=(2,2,-4)\\): \\(4+8-12=0\\) ✓.",
+              "work": ""
+            },
+            {
+              "explain": "Why not the others: \\(m=\\pm1\\), \\(-2,0\\), \\(-2,6\\) do not make \\(m^{2}+4m-12=0\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">D</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "are perpendicular, then",
+              "note": "Perpendicular \\(\\iff a\\cdot b=0\\); solve \\(m^2+4m-12=0\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Killara High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2020-e2-q14ciii",
+          "type": "mc",
+          "stem": "Find the shortest distance from the point \\(P(1,2,0)\\) to the line \\(\\underset{\\sim}{r_{1}}=\\begin{pmatrix}1\\\\ 0\\\\ 1\\end{pmatrix}+\\lambda\\begin{pmatrix}0\\\\ 1\\\\ 1\\end{pmatrix}\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\dfrac{3\\sqrt2}{2}\\)",
+            "\\(\\sqrt5\\)",
+            "\\(\\dfrac{3}{2}\\)",
+            "\\(3\\sqrt2\\)"
+          ],
+          "answer": 0,
+          "hint": "The shortest distance from a point to a line is the PERPENDICULAR distance. Take a point \\(A\\) on the line, form \\(\\overrightarrow{AP}\\), subtract its component ALONG the line direction (the projection). The length of what is left is the distance.",
+          "steps": [
+            {
+              "explain": "Point on the line: \\(A=(1,0,1)\\) (\\(\\lambda=0\\)). Direction \\(\\underset{\\sim}{d}=(0,1,1)\\). Vector \\(\\overrightarrow{AP}=P-A\\).",
+              "work": "\\(\\overrightarrow{AP}=\\begin{pmatrix}1-1\\\\ 2-0\\\\ 0-1\\end{pmatrix}=\\begin{pmatrix}0\\\\ 2\\\\-1\\end{pmatrix}\\)"
+            },
+            {
+              "explain": "Projection of \\(\\overrightarrow{AP}\\) onto \\(\\underset{\\sim}{d}\\): \\(\\dfrac{\\overrightarrow{AP}\\cdot\\underset{\\sim}{d}}{|\\underset{\\sim}{d}|^{2}}\\underset{\\sim}{d}\\). Dot product \\(=0+2-1=1\\); \\(|\\underset{\\sim}{d}|^{2}=2\\).",
+              "work": "\\(\\text{proj}=\\dfrac{1}{2}\\begin{pmatrix}0\\\\ 1\\\\ 1\\end{pmatrix}=\\begin{pmatrix}0\\\\\\ dfrac{1}{2}\\\\\\ dfrac{1}{2}\\end{pmatrix}\\)"
+            },
+            {
+              "explain": "Perpendicular vector from the line to \\(P\\): \\(\\overrightarrow{FP}=\\overrightarrow{AP}-\\text{proj}\\) (the green part is along the line; the RED part is perpendicular).",
+              "work": "\\(\\overrightarrow{FP}=\\begin{pmatrix}0\\\\ 2-\\dfrac{1}{2}\\\\-1-\\dfrac{1}{2}\\end{pmatrix}=\\begin{pmatrix}0\\\\\\ dfrac{3}{2}\\\\-\\dfrac{3}{2}\\end{pmatrix}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 250\" width=\"100%\" height=\"auto\" style=\"max-width:400px;display:block;margin:0 auto\"><line x1=\"20.0\" y1=\"179.7\" x2=\"380.0\" y2=\"107.5\" stroke=\"#475569\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><line x1=\"380.0\" y1=\"107.5\" x2=\"371.3\" y2=\"105.1\" stroke=\"#475569\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"380.0\" y1=\"107.5\" x2=\"373.6\" y2=\"113.8\" stroke=\"#475569\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"190.0\" x2=\"320.0\" y2=\"60.0\" stroke=\"#d97706\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><line x1=\"320.0\" y1=\"60.0\" x2=\"335.2\" y2=\"119.1\" stroke=\"#dc2626\" stroke-width=\"3.6\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"190.0\" x2=\"335.2\" y2=\"119.1\" stroke=\"#047857\" stroke-width=\"3\" stroke-linecap=\"round\"/><polyline points=\"325.2,119.1 325.2,109.1 335.2,109.1\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.4\"/><circle cx=\"60.0\" cy=\"190.0\" r=\"4.8\" fill=\"#1e293b\"/><text x=\"54.0\" y=\"208.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A (1, 0, 1)</text><circle cx=\"320.0\" cy=\"60.0\" r=\"4.8\" fill=\"#1e293b\"/><text x=\"330.0\" y=\"56.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">P (1, 2, 0)</text><circle cx=\"335.2\" cy=\"119.1\" r=\"4.8\" fill=\"#dc2626\"/><text x=\"343.2\" y=\"137.1\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">F</text><text x=\"160.0\" y=\"115.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">AP = (0, 2, −1)</text><text x=\"337.6\" y=\"93.5\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">d</text><text x=\"197.6\" y=\"174.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">projection of AP on the line</text><text x=\"30.0\" y=\"40.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#475569\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">line r₁ (direction (0, 1, 1))</text></svg>"
+              }
+            },
+            {
+              "explain": "Check it is perpendicular to \\(\\underset{\\sim}{d}\\): \\(0+\\dfrac{3}{2}-\\dfrac{3}{2}=0\\) ✓. Its length is the distance.",
+              "work": "\\(d=\\sqrt{0+\\dfrac{9}{4}+\\dfrac{9}{4}}=\\sqrt{\\dfrac{9}{2}}=\\dfrac{3}{\\sqrt2}=\\dfrac{3\\sqrt2}{2}\\approx2.12\\)"
+            },
+            {
+              "explain": "Why not the others: \\(\\sqrt5=|\\overrightarrow{AP}|\\) is the distance to the point \\(A\\) (not perpendicular); \\(\\dfrac{3}{2}\\) forgets the second component; \\(3\\sqrt2\\) doubles the answer.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the shortest distance from the point",
+              "note": "\\(\\overrightarrow{AP}-\\text{proj}_d\\overrightarrow{AP}\\); perpendicular to \\(d\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Killara High School",
             "grade": "12",
             "origin": "teacher"
           }
@@ -3985,6 +4370,56 @@
           "meta": {
             "source": "Hills Grammar 2025 Trial HSC Mathematics Extension 2",
             "school": "The Hills Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2020-e2-q4",
+          "type": "mc",
+          "stem": "A particle moves along a curve so that its position at time \\(t\\) is given by \\(\\underset{\\sim}{x}=\\begin{pmatrix}t\\\\\\ dfrac12t^{2}\\\\\\ dfrac13t^{3}\\end{pmatrix}\\). The acceleration at \\(t=1\\) is:",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\underset{\\sim}{j}+\\underset{\\sim}{k}\\)",
+            "\\(\\underset{\\sim}{j}+2\\underset{\\sim}{k}\\)",
+            "\\(2\\underset{\\sim}{j}+\\underset{\\sim}{k}\\)",
+            "\\(\\underset{\\sim}{i}+\\underset{\\sim}{j}+2\\underset{\\sim}{k}\\)"
+          ],
+          "answer": 1,
+          "hint": "Differentiate the position vector TWICE with respect to \\(t\\), component by component: velocity \\(=\\dot{\\underset{\\sim}{x}}\\), acceleration \\(=\\ddot{\\underset{\\sim}{x}}\\).",
+          "steps": [
+            {
+              "explain": "Velocity: differentiate each component once.",
+              "work": "\\(\\dot{\\underset{\\sim}{x}}=\\begin{pmatrix}1\\\\ t\\\\ t^{2}\\end{pmatrix}\\)"
+            },
+            {
+              "explain": "Acceleration: differentiate again.",
+              "work": "\\(\\ddot{\\underset{\\sim}{x}}=\\begin{pmatrix}0\\\\ 1\\\\ 2t\\end{pmatrix}\\)"
+            },
+            {
+              "explain": "At \\(t=1\\).",
+              "work": "\\(\\ddot{\\underset{\\sim}{x}}(1)=\\begin{pmatrix}0\\\\ 1\\\\ 2\\end{pmatrix}=\\underset{\\sim}{j}+2\\underset{\\sim}{k}\\)"
+            },
+            {
+              "explain": "Why not the others: A has \\(k\\) coefficient 1 (that is the velocity's \\(k\\)-component, \\(t^{2}\\), at \\(t=1\\)); C swaps the coefficients; D includes \\(\\underset{\\sim}{i}\\) (the \\(\\underset{\\sim}{i}\\)-component of acceleration is 0).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">B</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "The acceleration at \\(t=1\\) is",
+              "note": "\\(\\ddot{x}\\): differentiate each component twice."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Killara High School",
             "grade": "12",
             "origin": "teacher"
           }
@@ -5800,6 +6235,226 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "kinross2022-e2-q3",
+          "type": "mc",
+          "stem": "\\(OABC\\) is a rectangle with \\(\\overrightarrow{OA}=3\\underset{\\sim}{i}-2\\underset{\\sim}{j}+2\\underset{\\sim}{k}\\) and \\(\\overrightarrow{OC}=6\\underset{\\sim}{i}+4\\underset{\\sim}{j}+a\\underset{\\sim}{k}\\) for some constant \\(a\\). What is the value of \\(a\\)?",
+          "difficulty": "medium",
+          "options": [
+            "\\(-2\\)",
+            "\\(-3\\)",
+            "\\(-5\\)",
+            "\\(-6\\)"
+          ],
+          "answer": 2,
+          "hint": "In a rectangle \\(OABC\\) the adjacent sides \\(\\overrightarrow{OA}\\) and \\(\\overrightarrow{OC}\\) meet at a RIGHT ANGLE, so their DOT PRODUCT is zero.",
+          "steps": [
+            {
+              "explain": "Right angle at \\(O\\): \\(\\overrightarrow{OA}\\cdot\\overrightarrow{OC}=0\\).",
+              "work": "\\(\\begin{pmatrix}3\\\\-2\\\\ 2\\end{pmatrix}\\cdot\\begin{pmatrix}6\\\\ 4\\\\ a\\end{pmatrix}=0\\)"
+            },
+            {
+              "explain": "Multiply matching components and add.",
+              "work": "\\(3(6)+(-2)(4)+2(a)=18-8+2a=10+2a\\)"
+            },
+            {
+              "explain": "Set equal to zero and solve.",
+              "work": "\\(10+2a=0\\ \\Rightarrow\\ a=-5\\)"
+            },
+            {
+              "explain": "Check: \\(18-8+2(-5)=0\\) ✓.",
+              "work": ""
+            },
+            {
+              "explain": "Why not the others: \\(-2\\), \\(-3\\), \\(-6\\) give \\(10+2a=6,\\ 4,\\ -2\\), not 0.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">C</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "is a rectangle with",
+              "note": "Adjacent sides of a rectangle: dot product \\(=0\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Kinross Wolaroi School 2022 Trial HSC Examination Mathematics Extension 2",
+            "school": "Kinross Wolaroi School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "kinross2022-e2-q14b",
+          "type": "mc",
+          "stem": "\\(P(6,3,-4)\\), \\(Q(3,1,1)\\) and \\(R(2,-1,3)\\) are the vertices of a triangle. Find the size of the largest angle (to the nearest minute).",
+          "difficulty": "hard",
+          "options": [
+            "\\(156^{\\circ}49'\\)",
+            "\\(23^{\\circ}11'\\)",
+            "\\(90^{\\circ}\\)",
+            "\\(133^{\\circ}11'\\)"
+          ],
+          "answer": 0,
+          "hint": "The LARGEST angle is opposite the LONGEST side. Find the three side lengths squared first. Then use the dot product at that vertex (careful: both vectors must START at the vertex).",
+          "steps": [
+            {
+              "explain": "Side lengths squared: \\(PQ^{2}=(3-6)^{2}+(1-3)^{2}+(1+4)^{2}=9+4+25=38\\); \\(QR^{2}=1+4+4=9\\); \\(PR^{2}=16+16+49=81\\).",
+              "work": "\\(PQ^{2}=38,\\quad QR^{2}=9,\\quad PR^{2}=81\\)"
+            },
+            {
+              "explain": "The longest side is \\(PR\\) (\\(81\\)), so the largest angle is at \\(Q\\), opposite \\(PR\\). Vectors from \\(Q\\): \\(\\overrightarrow{QP}=(3,2,-5)\\) and \\(\\overrightarrow{QR}=(-1,-2,2)\\).",
+              "work": "\\(\\overrightarrow{QP}\\cdot\\overrightarrow{QR}=3(-1)+2(-2)+(-5)(2)=-3-4-10=-17\\)"
+            },
+            {
+              "explain": "Lengths: \\(\\left|\\overrightarrow{QP}\\right|=\\sqrt{38}\\), \\(\\left|\\overrightarrow{QR}\\right|=3\\).",
+              "work": "\\(\\cos Q=\\dfrac{-17}{3\\sqrt{38}}\\approx-0.9193\\)"
+            },
+            {
+              "explain": "Inverse cosine (the NEGATIVE cosine means an obtuse angle).",
+              "work": "\\(\\angle PQR\\approx156.817^{\\circ}=156^{\\circ}49'\\)"
+            },
+            {
+              "explain": "Check with the cosine rule: \\(\\cos Q=\\dfrac{PQ^{2}+QR^{2}-PR^{2}}{2\\cdot PQ\\cdot QR}=\\dfrac{38+9-81}{6\\sqrt{38}}=\\dfrac{-34}{6\\sqrt{38}}\\) ✓ (same value).",
+              "work": ""
+            },
+            {
+              "explain": "Why not the others: B (\\(23^{\\circ}11'\\)) is the supplement, from using \\(\\overrightarrow{PQ}\\) and \\(\\overrightarrow{QR}\\) (vectors not both from \\(Q\\)); C and D are not obtained from \\(\\cos Q=-0.919\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the size of the largest angle",
+              "note": "Largest angle opposite longest side (\\(PR\\)); at \\(Q\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Kinross Wolaroi School 2022 Trial HSC Examination Mathematics Extension 2",
+            "school": "Kinross Wolaroi School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2020-e2-q10",
+          "type": "mc",
+          "stem": "\\(\\underset{\\sim}{a}\\), \\(\\underset{\\sim}{b}\\) and \\(\\underset{\\sim}{c}\\) are vectors of magnitude 3, 4 and 5 respectively. It is also given that: \\(\\underset{\\sim}{a}\\) is perpendicular to \\(\\left(\\underset{\\sim}{b}+\\underset{\\sim}{c}\\right)\\), \\(\\underset{\\sim}{b}\\) is perpendicular to \\(\\left(\\underset{\\sim}{c}+\\underset{\\sim}{a}\\right)\\) and \\(\\underset{\\sim}{c}\\) is perpendicular to \\(\\left(\\underset{\\sim}{a}+\\underset{\\sim}{b}\\right)\\). Then, the magnitude of the vector \\(\\underset{\\sim}{a}+\\underset{\\sim}{b}+\\underset{\\sim}{c}\\) is:",
+          "difficulty": "hard",
+          "options": [
+            "\\(5\\)",
+            "\\(5\\sqrt2\\)",
+            "\\(5\\sqrt3\\)",
+            "\\(12\\)"
+          ],
+          "answer": 1,
+          "hint": "Perpendicular \\(\\Rightarrow\\) dot product 0. Write the three conditions, add and subtract them to show all pairwise dot products are 0. Then expand \\(|\\underset{\\sim}{a}+\\underset{\\sim}{b}+\\underset{\\sim}{c}|^{2}\\).",
+          "steps": [
+            {
+              "explain": "Write the three perpendicularity conditions as dot products.",
+              "work": "\\(\\begin{aligned}&\\underset{\\sim}{a}\\cdot\\underset{\\sim}{b}+\\underset{\\sim}{a}\\cdot\\underset{\\sim}{c}&=0\\quad(1)\\\\ &\\underset{\\sim}{b}\\cdot\\underset{\\sim}{c}+\\underset{\\sim}{b}\\cdot\\underset{\\sim}{a}&=0\\quad(2)\\\\ &\\underset{\\sim}{c}\\cdot\\underset{\\sim}{a}+\\underset{\\sim}{c}\\cdot\\underset{\\sim}{b}&=0\\quad(3)\\end{aligned}\\)"
+            },
+            {
+              "explain": "Let \\(x=\\underset{\\sim}{a}\\cdot\\underset{\\sim}{b}\\), \\(y=\\underset{\\sim}{b}\\cdot\\underset{\\sim}{c}\\), \\(z=\\underset{\\sim}{a}\\cdot\\underset{\\sim}{c}\\). Then \\(x+z=0\\), \\(y+x=0\\), \\(z+y=0\\). Add all three: \\(2(x+y+z)=0\\), so \\(x+y+z=0\\). Subtract each equation: \\(y=0\\) (from \\(x+y+z=0\\) and \\(x+z=0\\)), and similarly \\(z=0\\) and \\(x=0\\).",
+              "work": "\\(\\underset{\\sim}{a}\\cdot\\underset{\\sim}{b}=\\underset{\\sim}{b}\\cdot\\underset{\\sim}{c}=\\underset{\\sim}{a}\\cdot\\underset{\\sim}{c}=0\\)"
+            },
+            {
+              "explain": "Expand \\(|\\underset{\\sim}{a}+\\underset{\\sim}{b}+\\underset{\\sim}{c}|^{2}=a^{2}+b^{2}+c^{2}+2\\left(\\underset{\\sim}{a}\\cdot\\underset{\\sim}{b}+\\underset{\\sim}{b}\\cdot\\underset{\\sim}{c}+\\underset{\\sim}{a}\\cdot\\underset{\\sim}{c}\\right)\\).",
+              "work": "\\(|\\underset{\\sim}{a}+\\underset{\\sim}{b}+\\underset{\\sim}{c}|^{2}=9+16+25+2(0)=50\\)"
+            },
+            {
+              "explain": "Take the square root.",
+              "work": "\\(|\\underset{\\sim}{a}+\\underset{\\sim}{b}+\\underset{\\sim}{c}|=\\sqrt{50}=5\\sqrt2\\)"
+            },
+            {
+              "explain": "Why not the others: 5 is \\(\\sqrt{25}\\); \\(5\\sqrt3\\) is \\(\\sqrt{75}\\); 12 is the sum of the magnitudes (it would need all vectors parallel).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">B</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "the magnitude of the vector",
+              "note": "All dot products are 0; \\(|a+b+c|^2=9+16+25\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Killara High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2020-e2-q14cii",
+          "type": "mc",
+          "stem": "\\(\\underset{\\sim}{r_{1}}\\) and \\(\\underset{\\sim}{r_{2}}\\) are two lines with direction vectors \\(\\begin{pmatrix}0\\\\ 1\\\\ 1\\end{pmatrix}\\) and \\(\\begin{pmatrix}1\\\\ 3\\\\ 2\\end{pmatrix}\\) respectively. Find the angle between the lines.",
+          "difficulty": "medium",
+          "options": [
+            "\\(19.1^{\\circ}\\)",
+            "\\(70.9^{\\circ}\\)",
+            "\\(160.9^{\\circ}\\)",
+            "\\(32.3^{\\circ}\\)"
+          ],
+          "answer": 0,
+          "hint": "The angle between two lines is the (acute) angle between their DIRECTION vectors: \\(\\cos\\theta=\\dfrac{|\\underset{\\sim}{d_{1}}\\cdot\\underset{\\sim}{d_{2}}|}{|\\underset{\\sim}{d_{1}}||\\underset{\\sim}{d_{2}}|}\\).",
+          "steps": [
+            {
+              "explain": "Dot product.",
+              "work": "\\(\\underset{\\sim}{d_{1}}\\cdot\\underset{\\sim}{d_{2}}=0(1)+1(3)+1(2)=5\\)"
+            },
+            {
+              "explain": "Magnitudes.",
+              "work": "\\(|\\underset{\\sim}{d_{1}}|=\\sqrt{0+1+1}=\\sqrt2,\\qquad|\\underset{\\sim}{d_{2}}|=\\sqrt{1+9+4}=\\sqrt{14}\\)"
+            },
+            {
+              "explain": "Substitute: \\(\\sqrt2\\sqrt{14}=\\sqrt{28}=2\\sqrt7\\).",
+              "work": "\\(\\cos\\theta=\\dfrac{5}{2\\sqrt7}\\approx0.9449\\)"
+            },
+            {
+              "explain": "Inverse cosine (degrees mode). The dot product is positive so the angle is already acute.",
+              "work": "\\(\\theta\\approx19.1^{\\circ}\\)"
+            },
+            {
+              "explain": "Why not the others: \\(70.9^{\\circ}\\) is \\(90^{\\circ}-19.1^{\\circ}\\) (sine instead of cosine); \\(160.9^{\\circ}\\) is the supplement; \\(32.3^{\\circ}\\) comes from a wrong magnitude.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the angle between the lines",
+              "note": "\\(\\cos\\theta=\\dfrac{d_1\\cdot d_2}{|d_1||d_2|}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Killara High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -7176,6 +7831,247 @@
           "meta": {
             "source": "James Ruse Agricultural High School 2020 Trial Higher School Certificate Examination Mathematics Extension 2",
             "school": "James Ruse Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "kinross2022-e2-q13a",
+          "type": "mc",
+          "stem": "In \\(\\Delta OAB\\), \\(BE\\) is the altitude from \\(B\\) to \\(OA\\) and \\(AF\\) is the altitude from \\(A\\) to \\(OB\\). \\(M\\), \\(N\\) are the midpoints of \\(OA\\), \\(OB\\) respectively. \\(\\overrightarrow{OA}=\\underset{\\sim}{a}\\) and \\(\\overrightarrow{OB}=\\underset{\\sim}{b}\\). Use vector methods to show that \\(|OM|\\times|OE|=|ON|\\times|OF|\\). Which argument is correct?",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 300\" width=\"100%\" height=\"auto\" style=\"max-width:380px;display:block;margin:0 auto\"><polygon points=\"50.0,250.0 325.0,250.0 253.5,-3.0\" fill=\"none\" fill-opacity=\"0.35\" stroke=\"#475569\" stroke-width=\"2.2\"/><line x1=\"253.5\" y1=\"-3.0\" x2=\"253.5\" y2=\"250.0\" stroke=\"#047857\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"325.0\" y1=\"250.0\" x2=\"158.0\" y2=\"115.7\" stroke=\"#dc2626\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><polyline points=\"244.5,250.0 244.5,241.0 253.5,241.0\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.4\"/><circle cx=\"50.0\" cy=\"250.0\" r=\"4\" fill=\"#1e293b\"/><text x=\"42.0\" y=\"264.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">O</text><circle cx=\"325.0\" cy=\"250.0\" r=\"4\" fill=\"#1e293b\"/><text x=\"333.0\" y=\"264.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A</text><circle cx=\"253.5\" cy=\"-3.0\" r=\"4\" fill=\"#1e293b\"/><text x=\"257.5\" y=\"-11.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text><circle cx=\"253.5\" cy=\"250.0\" r=\"4\" fill=\"#047857\"/><text x=\"259.5\" y=\"266.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">E</text><circle cx=\"158.0\" cy=\"115.7\" r=\"4\" fill=\"#dc2626\"/><text x=\"146.0\" y=\"107.7\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">F</text><circle cx=\"187.5\" cy=\"250.0\" r=\"4\" fill=\"#d97706\"/><text x=\"187.5\" y=\"268.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">M</text><circle cx=\"151.8\" cy=\"123.5\" r=\"4\" fill=\"#d97706\"/><text x=\"139.8\" y=\"137.5\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">N</text><text x=\"313.5\" y=\"17.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#64748b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">Not to scale</text></svg>"
+          },
+          "options": [
+            "\\(|OM|=\\dfrac{1}{2}|\\underset{\\sim}{a}|\\). \\(OE\\) is the projection of \\(\\overrightarrow{OB}\\) onto \\(\\overrightarrow{OA}\\), so \\(|OE|=\\dfrac{|\\underset{\\sim}{a}\\cdot\\underset{\\sim}{b}|}{|\\underset{\\sim}{a}|}\\). Hence \\(|OM||OE|=\\dfrac{1}{2}|\\underset{\\sim}{a}\\cdot\\underset{\\sim}{b}|\\). Similarly \\(|ON|=\\dfrac{1}{2}|\\underset{\\sim}{b}|\\) and \\(|OF|=\\dfrac{|\\underset{\\sim}{a}\\cdot\\underset{\\sim}{b}|}{|\\underset{\\sim}{b}|}\\), so \\(|ON||OF|=\\dfrac{1}{2}|\\underset{\\sim}{a}\\cdot\\underset{\\sim}{b}|\\). The two products are equal.",
+            "\\(|OM|=\\dfrac{1}{2}|\\underset{\\sim}{a}|\\). \\(|OE|=\\dfrac{|\\underset{\\sim}{a}\\cdot\\underset{\\sim}{b}|}{|\\underset{\\sim}{b}|}\\) (projecting onto \\(\\underset{\\sim}{b}\\)). Hence \\(|OM||OE|=\\dfrac{|\\underset{\\sim}{a}||\\underset{\\sim}{a}\\cdot\\underset{\\sim}{b}|}{2|\\underset{\\sim}{b}|}\\), and similarly the other product is the same.",
+            "\\(M\\) and \\(N\\) are midpoints, so \\(OM=\\dfrac12OA\\) and \\(ON=\\dfrac12OB\\). Since \\(BE\\) and \\(AF\\) are altitudes, \\(OE=OF\\). Therefore \\(|OM||OE|=|ON||OF|\\) after cancelling.",
+            "\\(\\overrightarrow{OE}\\) is perpendicular to \\(\\underset{\\sim}{a}\\), so \\(\\overrightarrow{OE}\\cdot\\underset{\\sim}{a}=0\\). Hence \\(|OM||OE|=0\\), and similarly \\(|ON||OF|=0\\)."
+          ],
+          "answer": 0,
+          "hint": "The foot of an altitude is a PROJECTION: \\(E\\) is the foot of the perpendicular from \\(B\\) onto \\(OA\\), so \\(|OE|=\\dfrac{|\\underset{\\sim}{a}\\cdot\\underset{\\sim}{b}|}{|\\underset{\\sim}{a}|}\\) (length of the projection of \\(\\underset{\\sim}{b}\\) on \\(\\underset{\\sim}{a}\\)). Similarly for \\(F\\) with the roles swapped.",
+          "steps": [
+            {
+              "explain": "Midpoints: \\(\\overrightarrow{OM}=\\dfrac{1}{2}\\underset{\\sim}{a}\\) and \\(\\overrightarrow{ON}=\\dfrac{1}{2}\\underset{\\sim}{b}\\), so their lengths are half the sides.",
+              "work": "\\(|OM|=\\dfrac{1}{2}|\\underset{\\sim}{a}|,\\qquad|ON|=\\dfrac{1}{2}|\\underset{\\sim}{b}|\\)"
+            },
+            {
+              "explain": "\\(E\\) is the foot of the altitude from \\(B\\) to the line \\(OA\\) (direction \\(\\underset{\\sim}{a}\\)): \\(\\overrightarrow{OE}\\) is the projection of \\(\\underset{\\sim}{b}\\) onto \\(\\underset{\\sim}{a}\\), so its length is the scalar projection \\(\\dfrac{|\\underset{\\sim}{a}\\cdot\\underset{\\sim}{b}|}{|\\underset{\\sim}{a}|}\\).",
+              "work": "\\(|OE|=\\dfrac{|\\underset{\\sim}{a}\\cdot\\underset{\\sim}{b}|}{|\\underset{\\sim}{a}|}\\)"
+            },
+            {
+              "explain": "\\(F\\) is the foot of the altitude from \\(A\\) to the line \\(OB\\) (direction \\(\\underset{\\sim}{b}\\)): \\(\\overrightarrow{OF}\\) is the projection of \\(\\underset{\\sim}{a}\\) onto \\(\\underset{\\sim}{b}\\).",
+              "work": "\\(|OF|=\\dfrac{|\\underset{\\sim}{a}\\cdot\\underset{\\sim}{b}|}{|\\underset{\\sim}{b}|}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 300\" width=\"100%\" height=\"auto\" style=\"max-width:380px;display:block;margin:0 auto\"><polygon points=\"50.0,250.0 325.0,250.0 253.5,-3.0\" fill=\"#c4cae5\" fill-opacity=\"0.35\" stroke=\"#475569\" stroke-width=\"2.2\"/><line x1=\"253.5\" y1=\"-3.0\" x2=\"253.5\" y2=\"250.0\" stroke=\"#047857\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"325.0\" y1=\"250.0\" x2=\"158.0\" y2=\"115.7\" stroke=\"#dc2626\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><polyline points=\"244.5,250.0 244.5,241.0 253.5,241.0\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.4\"/><line x1=\"50.0\" y1=\"250.0\" x2=\"187.5\" y2=\"250.0\" stroke=\"#d97706\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"50.0\" y1=\"250.0\" x2=\"253.5\" y2=\"250.0\" stroke=\"#047857\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"50.0\" y1=\"250.0\" x2=\"151.8\" y2=\"123.5\" stroke=\"#d97706\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"50.0\" y1=\"250.0\" x2=\"158.0\" y2=\"115.7\" stroke=\"#dc2626\" stroke-width=\"4\" stroke-linecap=\"round\"/><circle cx=\"50.0\" cy=\"250.0\" r=\"4\" fill=\"#1e293b\"/><text x=\"42.0\" y=\"264.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">O</text><circle cx=\"325.0\" cy=\"250.0\" r=\"4\" fill=\"#1e293b\"/><text x=\"333.0\" y=\"264.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A</text><circle cx=\"253.5\" cy=\"-3.0\" r=\"4\" fill=\"#1e293b\"/><text x=\"257.5\" y=\"-11.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text><circle cx=\"253.5\" cy=\"250.0\" r=\"4\" fill=\"#047857\"/><text x=\"259.5\" y=\"266.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">E</text><circle cx=\"158.0\" cy=\"115.7\" r=\"4\" fill=\"#dc2626\"/><text x=\"146.0\" y=\"107.7\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">F</text><circle cx=\"187.5\" cy=\"250.0\" r=\"4\" fill=\"#d97706\"/><text x=\"187.5\" y=\"268.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">M</text><circle cx=\"151.8\" cy=\"123.5\" r=\"4\" fill=\"#d97706\"/><text x=\"139.8\" y=\"137.5\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">N</text><text x=\"313.5\" y=\"17.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#64748b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">Not to scale</text></svg>"
+              }
+            },
+            {
+              "explain": "Multiply: in each product the length of the side cancels, leaving half the SAME dot product.",
+              "work": "\\(|OM||OE|=\\dfrac{1}{2}|\\underset{\\sim}{a}|\\cdot\\dfrac{|\\underset{\\sim}{a}\\cdot\\underset{\\sim}{b}|}{|\\underset{\\sim}{a}|}=\\dfrac{1}{2}|\\underset{\\sim}{a}\\cdot\\underset{\\sim}{b}|\\)"
+            },
+            {
+              "explain": "Second product.",
+              "work": "\\(|ON||OF|=\\dfrac{1}{2}|\\underset{\\sim}{b}|\\cdot\\dfrac{|\\underset{\\sim}{a}\\cdot\\underset{\\sim}{b}|}{|\\underset{\\sim}{b}|}=\\dfrac{1}{2}|\\underset{\\sim}{a}\\cdot\\underset{\\sim}{b}|=|OM||OE|\\)"
+            },
+            {
+              "explain": "Why not the others: B projects onto the wrong vector; C claims \\(OE=OF\\), which is false in general (the diagram is not isosceles); D confuses \\(\\overrightarrow{OE}\\) with the vector perpendicular to \\(\\underset{\\sim}{a}\\) (\\(\\overrightarrow{BE}\\) is perpendicular to \\(\\underset{\\sim}{a}\\), not \\(\\overrightarrow{OE}\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Use vector methods to show that",
+              "note": "\\(|OE|\\) = projection of \\(b\\) on \\(a\\); both products \\(=\\dfrac{1}{2}|a\\cdot b|\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Kinross Wolaroi School 2022 Trial HSC Examination Mathematics Extension 2",
+            "school": "Kinross Wolaroi School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "kinross2022-e2-q15bi",
+          "type": "mc",
+          "stem": "A semicircle is drawn on diameter \\(AB\\). \\(O\\) is the midpoint of \\(AB\\) and points \\(C\\) and \\(D\\) lie on \\(AB\\) such that \\(AC=BD\\). Parallel lines are drawn through \\(C\\) and \\(D\\) intersecting the semicircle at \\(P\\) and \\(Q\\) respectively. \\(\\overrightarrow{OC}=\\underset{\\sim}{c}\\) and \\(\\overrightarrow{CP}=\\underset{\\sim}{p}\\). Explain why \\(\\overrightarrow{DQ}=\\lambda\\underset{\\sim}{p}\\) for some scalar \\(\\lambda>0\\).",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 250\" width=\"100%\" height=\"auto\" style=\"max-width:400px;display:block;margin:0 auto\"><clipPath id=\"kb\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"205\"/></clipPath><g clip-path=\"url(#kb)\"><circle cx=\"200.0\" cy=\"205.0\" r=\"95\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2\"/></g><line x1=\"95.0\" y1=\"205.0\" x2=\"305.0\" y2=\"205.0\" stroke=\"#334155\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"152.5\" y1=\"205.0\" x2=\"135.1\" y2=\"135.6\" stroke=\"#475569\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"135.1\" y1=\"135.6\" x2=\"132.7\" y2=\"144.2\" stroke=\"#475569\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"135.1\" y1=\"135.6\" x2=\"141.4\" y2=\"142.1\" stroke=\"#475569\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"247.5\" y1=\"205.0\" x2=\"224.6\" y2=\"113.2\" stroke=\"#475569\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"224.6\" y1=\"113.2\" x2=\"222.1\" y2=\"121.9\" stroke=\"#475569\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"224.6\" y1=\"113.2\" x2=\"230.8\" y2=\"119.7\" stroke=\"#475569\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><circle cx=\"105.0\" cy=\"205.0\" r=\"3.8\" fill=\"#1e293b\"/><text x=\"105.0\" y=\"222.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A</text><circle cx=\"152.5\" cy=\"205.0\" r=\"3.8\" fill=\"#1e293b\"/><text x=\"152.5\" y=\"222.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">C</text><circle cx=\"200.0\" cy=\"205.0\" r=\"3.8\" fill=\"#1e293b\"/><text x=\"200.0\" y=\"222.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">O</text><circle cx=\"247.5\" cy=\"205.0\" r=\"3.8\" fill=\"#1e293b\"/><text x=\"247.5\" y=\"222.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">D</text><circle cx=\"295.0\" cy=\"205.0\" r=\"3.8\" fill=\"#1e293b\"/><text x=\"295.0\" y=\"222.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text><circle cx=\"135.1\" cy=\"135.6\" r=\"4.4\" fill=\"#3b4ea8\"/><text x=\"123.1\" y=\"131.6\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">P</text><circle cx=\"224.6\" cy=\"113.2\" r=\"4.4\" fill=\"#3b4ea8\"/><text x=\"236.6\" y=\"109.2\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">Q</text><line x1=\"125.8\" y1=\"211.0\" x2=\"131.8\" y2=\"199.0\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"268.2\" y1=\"211.0\" x2=\"274.2\" y2=\"199.0\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/></svg>"
+          },
+          "options": [
+            "\\(DQ\\) is parallel to \\(CP\\) (the lines are parallel), so \\(\\overrightarrow{DQ}\\) is a scalar multiple of \\(\\overrightarrow{CP}\\). Both vectors point UPWARD from the diameter to the semicircle (same direction), so the scalar is POSITIVE.",
+            "\\(|DQ|=|CP|\\) because \\(AC=BD\\), so \\(\\overrightarrow{DQ}=\\overrightarrow{CP}\\) and \\(\\lambda=1\\).",
+            "\\(DQ\\) is perpendicular to \\(AB\\), so \\(\\overrightarrow{DQ}\\) is a multiple of \\(\\underset{\\sim}{c}\\), not of \\(\\underset{\\sim}{p}\\).",
+            "The lines are parallel but \\(\\overrightarrow{DQ}\\) points DOWN while \\(\\overrightarrow{CP}\\) points UP, so \\(\\lambda<0\\)."
+          ],
+          "answer": 0,
+          "hint": "Parallel vectors are scalar multiples of each other. The SIGN of the scalar depends on whether the vectors point the same way (positive) or opposite ways (negative). Look at the diagram: which way does each vector point from the diameter?",
+          "steps": [
+            {
+              "explain": "The lines through \\(C\\) and \\(D\\) are PARALLEL, so the vector \\(\\overrightarrow{DQ}\\) along its line is a scalar multiple of the vector \\(\\overrightarrow{CP}\\) along the other line.",
+              "work": "\\(\\overrightarrow{DQ}\\parallel\\overrightarrow{CP}\\ \\Rightarrow\\ \\overrightarrow{DQ}=\\lambda\\underset{\\sim}{p}\\)"
+            },
+            {
+              "explain": "Direction: both \\(\\overrightarrow{CP}\\) and \\(\\overrightarrow{DQ}\\) go from a point on the diameter UP to the semicircle, i.e. in the SAME direction (the same side of \\(AB\\)). So the scalar is positive.",
+              "work": "\\(\\lambda>0\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 250\" width=\"100%\" height=\"auto\" style=\"max-width:400px;display:block;margin:0 auto\"><clipPath id=\"kb\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"205\"/></clipPath><g clip-path=\"url(#kb)\"><circle cx=\"200.0\" cy=\"205.0\" r=\"95\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2\"/></g><line x1=\"95.0\" y1=\"205.0\" x2=\"305.0\" y2=\"205.0\" stroke=\"#334155\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"152.5\" y1=\"205.0\" x2=\"135.1\" y2=\"135.6\" stroke=\"#dc2626\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"135.1\" y1=\"135.6\" x2=\"132.7\" y2=\"144.2\" stroke=\"#dc2626\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"135.1\" y1=\"135.6\" x2=\"141.4\" y2=\"142.1\" stroke=\"#dc2626\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"247.5\" y1=\"205.0\" x2=\"224.6\" y2=\"113.2\" stroke=\"#047857\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"224.6\" y1=\"113.2\" x2=\"222.1\" y2=\"121.9\" stroke=\"#047857\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"224.6\" y1=\"113.2\" x2=\"230.8\" y2=\"119.7\" stroke=\"#047857\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"200.0\" y1=\"205.0\" x2=\"152.5\" y2=\"205.0\" stroke=\"#d97706\" stroke-width=\"3.6\" stroke-linecap=\"round\"/><text x=\"176.2\" y=\"221.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">c</text><line x1=\"200.0\" y1=\"205.0\" x2=\"135.1\" y2=\"135.6\" stroke=\"#94a3b8\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><line x1=\"200.0\" y1=\"205.0\" x2=\"224.6\" y2=\"113.2\" stroke=\"#94a3b8\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><text x=\"219.0\" y=\"157.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">r</text><text x=\"138.5\" y=\"162.2\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">p</text><text x=\"263.5\" y=\"162.2\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">λp</text><circle cx=\"105.0\" cy=\"205.0\" r=\"3.8\" fill=\"#1e293b\"/><text x=\"105.0\" y=\"222.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A</text><circle cx=\"152.5\" cy=\"205.0\" r=\"3.8\" fill=\"#1e293b\"/><text x=\"152.5\" y=\"222.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">C</text><circle cx=\"200.0\" cy=\"205.0\" r=\"3.8\" fill=\"#1e293b\"/><text x=\"200.0\" y=\"222.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">O</text><circle cx=\"247.5\" cy=\"205.0\" r=\"3.8\" fill=\"#1e293b\"/><text x=\"247.5\" y=\"222.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">D</text><circle cx=\"295.0\" cy=\"205.0\" r=\"3.8\" fill=\"#1e293b\"/><text x=\"295.0\" y=\"222.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text><circle cx=\"135.1\" cy=\"135.6\" r=\"4.4\" fill=\"#3b4ea8\"/><text x=\"123.1\" y=\"131.6\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">P</text><circle cx=\"224.6\" cy=\"113.2\" r=\"4.4\" fill=\"#3b4ea8\"/><text x=\"236.6\" y=\"109.2\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">Q</text><line x1=\"125.8\" y1=\"211.0\" x2=\"131.8\" y2=\"199.0\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"268.2\" y1=\"211.0\" x2=\"274.2\" y2=\"199.0\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/></svg>"
+              }
+            },
+            {
+              "explain": "The two lengths are generally DIFFERENT (\\(CP\\ne DQ\\) unless the lines are perpendicular to \\(AB\\)), so \\(\\lambda\\) is not necessarily 1.",
+              "work": ""
+            },
+            {
+              "explain": "Why not the others: B assumes \\(CP=DQ\\) (only true when the lines are perpendicular to \\(AB\\)); C confuses the direction (the lines are not perpendicular to \\(AB\\)); D reverses the direction of \\(\\overrightarrow{DQ}\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Explain why \\(\\overrightarrow{DQ}=\\lambda\\underset{\\sim}{p}\\)",
+              "note": "Parallel \\(\\Rightarrow\\) scalar multiple; same side of \\(AB\\) \\(\\Rightarrow\\lambda>0\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Kinross Wolaroi School 2022 Trial HSC Examination Mathematics Extension 2",
+            "school": "Kinross Wolaroi School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "kinross2022-e2-q15bii",
+          "type": "mc",
+          "stem": "In the semicircle with diameter \\(AB\\) (centre \\(O\\)), \\(AC=BD\\), \\(\\overrightarrow{OC}=\\underset{\\sim}{c}\\), \\(\\overrightarrow{CP}=\\underset{\\sim}{p}\\) and \\(\\overrightarrow{DQ}=\\lambda\\underset{\\sim}{p}\\) with \\(\\lambda>0\\). Hence show that \\((1-\\lambda)\\,\\underset{\\sim}{p}\\cdot\\underset{\\sim}{p}+2\\,\\underset{\\sim}{c}\\cdot\\underset{\\sim}{p}=0\\). Which argument is correct?",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 250\" width=\"100%\" height=\"auto\" style=\"max-width:400px;display:block;margin:0 auto\"><clipPath id=\"kb\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"205\"/></clipPath><g clip-path=\"url(#kb)\"><circle cx=\"200.0\" cy=\"205.0\" r=\"95\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2\"/></g><line x1=\"95.0\" y1=\"205.0\" x2=\"305.0\" y2=\"205.0\" stroke=\"#334155\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"152.5\" y1=\"205.0\" x2=\"135.1\" y2=\"135.6\" stroke=\"#475569\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"135.1\" y1=\"135.6\" x2=\"132.7\" y2=\"144.2\" stroke=\"#475569\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"135.1\" y1=\"135.6\" x2=\"141.4\" y2=\"142.1\" stroke=\"#475569\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"247.5\" y1=\"205.0\" x2=\"224.6\" y2=\"113.2\" stroke=\"#475569\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"224.6\" y1=\"113.2\" x2=\"222.1\" y2=\"121.9\" stroke=\"#475569\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"224.6\" y1=\"113.2\" x2=\"230.8\" y2=\"119.7\" stroke=\"#475569\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><circle cx=\"105.0\" cy=\"205.0\" r=\"3.8\" fill=\"#1e293b\"/><text x=\"105.0\" y=\"222.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A</text><circle cx=\"152.5\" cy=\"205.0\" r=\"3.8\" fill=\"#1e293b\"/><text x=\"152.5\" y=\"222.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">C</text><circle cx=\"200.0\" cy=\"205.0\" r=\"3.8\" fill=\"#1e293b\"/><text x=\"200.0\" y=\"222.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">O</text><circle cx=\"247.5\" cy=\"205.0\" r=\"3.8\" fill=\"#1e293b\"/><text x=\"247.5\" y=\"222.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">D</text><circle cx=\"295.0\" cy=\"205.0\" r=\"3.8\" fill=\"#1e293b\"/><text x=\"295.0\" y=\"222.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text><circle cx=\"135.1\" cy=\"135.6\" r=\"4.4\" fill=\"#3b4ea8\"/><text x=\"123.1\" y=\"131.6\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">P</text><circle cx=\"224.6\" cy=\"113.2\" r=\"4.4\" fill=\"#3b4ea8\"/><text x=\"236.6\" y=\"109.2\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">Q</text><line x1=\"125.8\" y1=\"211.0\" x2=\"131.8\" y2=\"199.0\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"268.2\" y1=\"211.0\" x2=\"274.2\" y2=\"199.0\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/></svg>"
+          },
+          "options": [
+            "Since \\(AC=BD\\) and \\(O\\) is the midpoint, \\(\\overrightarrow{OD}=-\\underset{\\sim}{c}\\). Then \\(\\overrightarrow{OP}=\\underset{\\sim}{c}+\\underset{\\sim}{p}\\) and \\(\\overrightarrow{OQ}=-\\underset{\\sim}{c}+\\lambda\\underset{\\sim}{p}\\). Both points are on the circle, so \\(|OP|^{2}=|OQ|^{2}\\): \\(c^{2}+2\\underset{\\sim}{c}\\cdot\\underset{\\sim}{p}+p^{2}=c^{2}-2\\lambda\\underset{\\sim}{c}\\cdot\\underset{\\sim}{p}+\\lambda^{2}p^{2}\\). Rearranging: \\((1+\\lambda)\\left[(1-\\lambda)p^{2}+2\\underset{\\sim}{c}\\cdot\\underset{\\sim}{p}\\right]=0\\), and \\(1+\\lambda\\ne0\\).",
+            "\\(\\overrightarrow{OD}=\\underset{\\sim}{c}\\) (the same vector as \\(\\overrightarrow{OC}\\)). Then \\(\\overrightarrow{OQ}=\\underset{\\sim}{c}+\\lambda\\underset{\\sim}{p}\\) and \\(|OP|^{2}=|OQ|^{2}\\) gives \\(c^{2}+2\\underset{\\sim}{c}\\cdot\\underset{\\sim}{p}+p^{2}=c^{2}+2\\lambda\\underset{\\sim}{c}\\cdot\\underset{\\sim}{p}+\\lambda^{2}p^{2}\\), which simplifies to the result.",
+            "\\(\\overrightarrow{OD}=-\\underset{\\sim}{c}\\), \\(\\overrightarrow{OP}=\\underset{\\sim}{c}+\\underset{\\sim}{p}\\), \\(\\overrightarrow{OQ}=-\\underset{\\sim}{c}+\\lambda\\underset{\\sim}{p}\\). Since \\(OP\\perp OQ\\), \\(\\overrightarrow{OP}\\cdot\\overrightarrow{OQ}=0\\), which gives the result.",
+            "\\(\\overrightarrow{OP}\\) and \\(\\overrightarrow{OQ}\\) are both radii, so \\(\\overrightarrow{OP}=\\overrightarrow{OQ}\\); equating gives \\(\\underset{\\sim}{c}+\\underset{\\sim}{p}=-\\underset{\\sim}{c}+\\lambda\\underset{\\sim}{p}\\), hence the result."
+          ],
+          "answer": 0,
+          "hint": "Both \\(P\\) and \\(Q\\) lie on the same circle (centre \\(O\\)), so \\(|\\overrightarrow{OP}|=|\\overrightarrow{OQ}|\\). Write each position vector with \\(\\underset{\\sim}{c}\\), \\(\\underset{\\sim}{p}\\), \\(\\lambda\\) using the given facts (\\(\\overrightarrow{OD}=-\\underset{\\sim}{c}\\) since \\(AC=BD\\)). Square both sides and expand with dot products.",
+          "steps": [
+            {
+              "explain": "\\(C\\) and \\(D\\) are the same distance from the centre but on opposite sides (\\(AC=BD\\), \\(O\\) midpoint), so \\(\\overrightarrow{OD}=-\\underset{\\sim}{c}\\).",
+              "work": "\\(\\overrightarrow{OD}=-\\underset{\\sim}{c}\\)"
+            },
+            {
+              "explain": "Position vectors of \\(P\\) and \\(Q\\): \\(\\overrightarrow{OP}=\\overrightarrow{OC}+\\overrightarrow{CP}\\) and \\(\\overrightarrow{OQ}=\\overrightarrow{OD}+\\overrightarrow{DQ}\\).",
+              "work": "\\(\\overrightarrow{OP}=\\underset{\\sim}{c}+\\underset{\\sim}{p},\\qquad\\overrightarrow{OQ}=-\\underset{\\sim}{c}+\\lambda\\underset{\\sim}{p}\\)"
+            },
+            {
+              "explain": "\\(P\\) and \\(Q\\) are on the circle, so \\(|OP|^{2}=|OQ|^{2}\\). Expand both using \\(|\\underset{\\sim}{u}+\\underset{\\sim}{v}|^{2}=u^{2}+2\\underset{\\sim}{u}\\cdot\\underset{\\sim}{v}+v^{2}\\).",
+              "work": "\\(c^{2}+2\\underset{\\sim}{c}\\cdot\\underset{\\sim}{p}+p^{2}=c^{2}-2\\lambda\\,\\underset{\\sim}{c}\\cdot\\underset{\\sim}{p}+\\lambda^{2}p^{2}\\)"
+            },
+            {
+              "explain": "Cancel \\(c^{2}\\) and collect: \\(2(1+\\lambda)\\,\\underset{\\sim}{c}\\cdot\\underset{\\sim}{p}+\\left(1-\\lambda^{2}\\right)p^{2}=0\\).",
+              "work": "\\(2(1+\\lambda)\\,\\underset{\\sim}{c}\\cdot\\underset{\\sim}{p}+(1-\\lambda)(1+\\lambda)\\,\\underset{\\sim}{p}\\cdot\\underset{\\sim}{p}=0\\)"
+            },
+            {
+              "explain": "Factor out \\((1+\\lambda)\\), which is positive (\\(\\lambda>0\\)), so we may divide by it.",
+              "work": "\\((1-\\lambda)\\,\\underset{\\sim}{p}\\cdot\\underset{\\sim}{p}+2\\,\\underset{\\sim}{c}\\cdot\\underset{\\sim}{p}=0\\)"
+            },
+            {
+              "explain": "Why not the others: B takes \\(\\overrightarrow{OD}=+\\underset{\\sim}{c}\\) (D is on the OTHER side of \\(O\\)); C claims \\(OP\\perp OQ\\) (not true); D claims \\(\\overrightarrow{OP}=\\overrightarrow{OQ}\\) (they are equal in LENGTH, not as vectors).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Hence show that \\((1-\\lambda)",
+              "note": "\\(|OP|^2=|OQ|^2\\) with \\(\\overrightarrow{OD}=-c\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Kinross Wolaroi School 2022 Trial HSC Examination Mathematics Extension 2",
+            "school": "Kinross Wolaroi School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2020-e2-q13b",
+          "type": "mc",
+          "stem": "\\(ABCD\\) is a parallelogram and \\(E\\) is the midpoint of \\(AB\\). Using vectors, show that any line joining any vertex of a parallelogram to the midpoint of a side not passing through that vertex divides the opposite diagonal in the ratio \\(1:2\\). (i.e. Show \\(DE\\) divides \\(AC\\) in the ratio \\(1:2\\)). Which working is correct?",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 260\" width=\"100%\" height=\"auto\" style=\"max-width:420px;display:block;margin:0 auto\"><polygon points=\"40,225 260,225 390,60 170,60\" fill=\"none\" fill-opacity=\"0.35\" stroke=\"#475569\" stroke-width=\"2.2\"/><line x1=\"40.0\" y1=\"225.0\" x2=\"390.0\" y2=\"60.0\" stroke=\"#475569\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"170.0\" y1=\"60.0\" x2=\"150.0\" y2=\"225.0\" stroke=\"#475569\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"40.0\" y1=\"225.0\" x2=\"260.0\" y2=\"225.0\" stroke=\"#475569\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><text x=\"220.0\" y=\"247.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">a</text><text x=\"280.0\" y=\"54.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">a</text><text x=\"91.0\" y=\"146.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">b</text><text x=\"339.0\" y=\"146.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">b</text><circle cx=\"40.0\" cy=\"225.0\" r=\"4.4\" fill=\"#1e293b\"/><text x=\"32.0\" y=\"241.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A</text><circle cx=\"260.0\" cy=\"225.0\" r=\"4.4\" fill=\"#1e293b\"/><text x=\"268.0\" y=\"241.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text><circle cx=\"390.0\" cy=\"60.0\" r=\"4.4\" fill=\"#1e293b\"/><text x=\"398.0\" y=\"56.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">C</text><circle cx=\"170.0\" cy=\"60.0\" r=\"4.4\" fill=\"#1e293b\"/><text x=\"164.0\" y=\"54.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">D</text><circle cx=\"150.0\" cy=\"225.0\" r=\"4.4\" fill=\"#1e293b\"/><text x=\"150.0\" y=\"243.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">E</text><circle cx=\"156.7\" cy=\"170.0\" r=\"4.4\" fill=\"#1e293b\"/><text x=\"148.7\" y=\"162.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">F</text></svg>"
+          },
+          "options": [
+            "Take \\(A\\) as origin: \\(\\overrightarrow{AB}=\\underset{\\sim}{a}\\), \\(\\overrightarrow{AD}=\\underset{\\sim}{b}\\), so \\(\\overrightarrow{AC}=\\underset{\\sim}{a}+\\underset{\\sim}{b}\\) and \\(\\overrightarrow{AE}=\\dfrac{1}{2}\\underset{\\sim}{a}\\). Points on \\(DE\\): \\(\\underset{\\sim}{b}+s\\left(\\dfrac{1}{2}\\underset{\\sim}{a}-\\underset{\\sim}{b}\\right)\\); on \\(AC\\): \\(t\\left(\\underset{\\sim}{a}+\\underset{\\sim}{b}\\right)\\). At \\(F\\) equate coefficients of \\(\\underset{\\sim}{a}\\) and \\(\\underset{\\sim}{b}\\): \\(\\dfrac{s}{2}=t\\) and \\(1-s=t\\). So \\(s=\\dfrac{2}{3}\\), \\(t=\\dfrac{1}{3}\\), and \\(AF:FC=\\dfrac{1}{3}:\\dfrac{2}{3}=1:2\\).",
+            "Take \\(A\\) as origin. Points on \\(DE\\): \\(\\underset{\\sim}{b}+s\\left(\\dfrac{1}{2}\\underset{\\sim}{a}-\\underset{\\sim}{b}\\right)\\); on \\(AC\\): \\(t(\\underset{\\sim}{a}+\\underset{\\sim}{b})\\). Equating: \\(\\dfrac{s}{2}=t\\) and \\(1-s=t\\). So \\(s=\\dfrac{1}{2}\\), \\(t=\\dfrac{1}{4}\\), and \\(AF:FC=1:3\\).",
+            "Since \\(E\\) is the midpoint of \\(AB\\), \\(F\\) must be the midpoint of \\(AC\\), so \\(AF:FC=1:1\\).",
+            "Take \\(A\\) as origin. On \\(DE\\): \\(\\underset{\\sim}{b}+s\\left(\\dfrac{1}{2}\\underset{\\sim}{a}+\\underset{\\sim}{b}\\right)\\) (using \\(\\overrightarrow{DE}=\\dfrac{1}{2}\\underset{\\sim}{a}+\\underset{\\sim}{b}\\)). Equating with \\(t(\\underset{\\sim}{a}+\\underset{\\sim}{b})\\) gives \\(t=\\dfrac{1}{3}\\)."
+          ],
+          "answer": 0,
+          "hint": "Choose \\(A\\) as the origin with \\(\\overrightarrow{AB}=\\underset{\\sim}{a}\\) and \\(\\overrightarrow{AD}=\\underset{\\sim}{b}\\) (so \\(\\overrightarrow{AC}=\\underset{\\sim}{a}+\\underset{\\sim}{b}\\)). Write the position of \\(F\\) in TWO ways (along \\(DE\\) and along \\(AC\\)) and equate the coefficients of \\(\\underset{\\sim}{a}\\) and \\(\\underset{\\sim}{b}\\) (they are not parallel).",
+          "steps": [
+            {
+              "explain": "Origin \\(A\\). From the diagram: \\(\\overrightarrow{AB}=\\underset{\\sim}{a}\\), \\(\\overrightarrow{AD}=\\underset{\\sim}{b}\\) (opposite sides are equal: \\(\\overrightarrow{DC}=\\underset{\\sim}{a}\\), \\(\\overrightarrow{BC}=\\underset{\\sim}{b}\\)). So \\(\\overrightarrow{AC}=\\underset{\\sim}{a}+\\underset{\\sim}{b}\\) and \\(\\overrightarrow{AE}=\\dfrac{1}{2}\\underset{\\sim}{a}\\).",
+              "work": "\\(\\overrightarrow{AC}=\\underset{\\sim}{a}+\\underset{\\sim}{b},\\quad\\overrightarrow{AE}=\\dfrac{1}{2}\\underset{\\sim}{a}\\)"
+            },
+            {
+              "explain": "Along \\(DE\\): \\(\\overrightarrow{AF}=\\overrightarrow{AD}+s\\,\\overrightarrow{DE}=\\underset{\\sim}{b}+s\\left(\\dfrac{1}{2}\\underset{\\sim}{a}-\\underset{\\sim}{b}\\right)\\), because \\(\\overrightarrow{DE}=\\overrightarrow{AE}-\\overrightarrow{AD}\\). Along \\(AC\\): \\(\\overrightarrow{AF}=t\\left(\\underset{\\sim}{a}+\\underset{\\sim}{b}\\right)\\).",
+              "work": "\\(\\dfrac{s}{2}\\underset{\\sim}{a}+(1-s)\\underset{\\sim}{b}=t\\underset{\\sim}{a}+t\\underset{\\sim}{b}\\)"
+            },
+            {
+              "explain": "\\(\\underset{\\sim}{a}\\) and \\(\\underset{\\sim}{b}\\) are not parallel, so the coefficients must match.",
+              "work": "\\(\\begin{aligned}&\\dfrac{s}{2}&=t\\\\ &1-s&=t\\end{aligned}\\)"
+            },
+            {
+              "explain": "Solve: \\(\\dfrac{s}{2}=1-s\\Rightarrow s=\\dfrac{2}{3}\\), then \\(t=\\dfrac{s}{2}=\\dfrac{1}{3}\\). So \\(\\overrightarrow{AF}=\\dfrac{1}{3}\\overrightarrow{AC}\\).",
+              "work": "\\(AF=\\dfrac13AC,\\quad FC=\\dfrac23AC\\ \\Rightarrow\\ AF:FC=1:2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 260\" width=\"100%\" height=\"auto\" style=\"max-width:420px;display:block;margin:0 auto\"><polygon points=\"40,225 260,225 390,60 170,60\" fill=\"#c4cae5\" fill-opacity=\"0.35\" stroke=\"#475569\" stroke-width=\"2.2\"/><line x1=\"40.0\" y1=\"225.0\" x2=\"390.0\" y2=\"60.0\" stroke=\"#dc2626\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><line x1=\"170.0\" y1=\"60.0\" x2=\"150.0\" y2=\"225.0\" stroke=\"#047857\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><line x1=\"40.0\" y1=\"225.0\" x2=\"260.0\" y2=\"225.0\" stroke=\"#475569\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><text x=\"220.0\" y=\"247.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">a</text><text x=\"280.0\" y=\"54.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">a</text><text x=\"91.0\" y=\"146.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">b</text><text x=\"339.0\" y=\"146.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">b</text><circle cx=\"40.0\" cy=\"225.0\" r=\"4.4\" fill=\"#1e293b\"/><text x=\"32.0\" y=\"241.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A</text><circle cx=\"260.0\" cy=\"225.0\" r=\"4.4\" fill=\"#1e293b\"/><text x=\"268.0\" y=\"241.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text><circle cx=\"390.0\" cy=\"60.0\" r=\"4.4\" fill=\"#1e293b\"/><text x=\"398.0\" y=\"56.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">C</text><circle cx=\"170.0\" cy=\"60.0\" r=\"4.4\" fill=\"#1e293b\"/><text x=\"164.0\" y=\"54.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">D</text><circle cx=\"150.0\" cy=\"225.0\" r=\"4.4\" fill=\"#1e293b\"/><text x=\"150.0\" y=\"243.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">E</text><circle cx=\"156.7\" cy=\"170.0\" r=\"4.4\" fill=\"#1e293b\"/><text x=\"148.7\" y=\"162.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">F</text><text x=\"215.0\" y=\"205.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">AF : FC = 1 : 2</text></svg>"
+              }
+            },
+            {
+              "explain": "Why not the others: B solves the equations wrongly (\\(\\dfrac{s}{2}=1-s\\) gives \\(s=\\dfrac{2}{3}\\), not \\(\\dfrac{1}{2}\\)); C assumes the midpoint without proof; D uses the wrong vector \\(\\overrightarrow{DE}\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Using vectors, show that any line joining any vertex",
+              "note": "\\(A\\) origin; \\(F=b+s\\overrightarrow{DE}=t(a+b)\\); equate coefficients."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Killara High School",
             "grade": "12",
             "origin": "teacher"
           }
