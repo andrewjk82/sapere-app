@@ -6118,6 +6118,60 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "jamesruse2020-e2-q11b",
+          "type": "mc",
+          "stem": "Use integration by parts to find \\(\\displaystyle\\int x\\sec^{2}x\\,dx\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(x\\tan x+\\ln|\\cos x|+C\\)",
+            "\\(x\\tan x-\\ln|\\cos x|+C\\)",
+            "\\(\\dfrac{x^{2}}{2}\\tan x+C\\)",
+            "\\(x\\tan x+\\ln|\\sin x|+C\\)"
+          ],
+          "answer": 0,
+          "hint": "Choose \\(u=x\\) (it simplifies when differentiated) and \\(v'=\\sec^{2}x\\) (we know \\(\\int\\sec^{2}x\\,dx=\\tan x\\)). Then \\(\\int u\\,v'\\,dx=uv-\\int v\\,u'\\,dx\\).",
+          "steps": [
+            {
+              "explain": "Parts: \\(u=x\\Rightarrow u'=1\\); \\(v'=\\sec^{2}x\\Rightarrow v=\\tan x\\).",
+              "work": "\\(u=x,\\ u'=1,\\ v'=\\sec^{2}x,\\ v=\\tan x\\)"
+            },
+            {
+              "explain": "Apply \\(uv-\\int vu'\\,dx\\).",
+              "work": "\\(\\int x\\sec^{2}x\\,dx=x\\tan x-\\int\\tan x\\,dx\\)"
+            },
+            {
+              "explain": "Use \\(\\int\\tan x\\,dx=-\\ln|\\cos x|\\) (since \\(\\tan x=\\dfrac{\\sin x}{\\cos x}\\) and the top is minus the derivative of the bottom).",
+              "work": "\\(\\int\\tan x\\,dx=-\\ln|\\cos x|\\)"
+            },
+            {
+              "explain": "Substitute: subtracting a negative gives a plus.",
+              "work": "\\(=x\\tan x-(-\\ln|\\cos x|)+C=x\\tan x+\\ln|\\cos x|+C\\)"
+            },
+            {
+              "explain": "Why not the others: B has the wrong sign on the log; C integrates \\(x\\) and \\(\\sec^{2}x\\) separately (not allowed for a product); D uses \\(\\ln|\\sin x|\\), which is \\(\\int\\cot x\\,dx\\), not \\(\\int\\tan x\\,dx\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Use integration by parts to find",
+              "note": "\\(u=x\\), \\(v=\\tan x\\); \\(\\int\\tan x=-\\ln|\\cos x|\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "James Ruse Agricultural High School 2020 Trial Higher School Certificate Examination Mathematics Extension 2",
+            "school": "James Ruse Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -6622,6 +6676,176 @@
           "meta": {
             "source": "Hurlstone Agricultural High School 2020 Trial Higher School Certificate Examination Mathematics Extension 2",
             "school": "Hurlstone Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "jamesruse2020-e2-q3",
+          "type": "mc",
+          "stem": "Which of the following integrals has the largest value?",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\displaystyle\\int_{0}^{\\frac\\pi4}\\tan x\\,dx\\)",
+            "\\(\\displaystyle\\int_{0}^{\\frac\\pi4}\\tan^{2}x\\,dx\\)",
+            "\\(\\displaystyle\\int_{0}^{\\frac\\pi4}(1-\\tan x)\\,dx\\)",
+            "\\(\\displaystyle\\int_{0}^{\\frac\\pi4}\\left(1-\\tan^{2}x\\right)dx\\)"
+          ],
+          "answer": 3,
+          "hint": "Evaluate each integral exactly. Useful: \\(\\int\\tan x\\,dx=-\\ln|\\cos x|\\) and \\(\\tan^{2}x=\\sec^{2}x-1\\), so \\(\\int\\tan^{2}x\\,dx=\\tan x-x\\).",
+          "steps": [
+            {
+              "explain": "(A): \\(\\int_{0}^{\\frac\\pi4}\\tan x\\,dx=\\left[-\\ln\\cos x\\right]_{0}^{\\frac\\pi4}=-\\ln\\dfrac{1}{\\sqrt2}+\\ln1=\\dfrac{1}{2}\\ln2\\).",
+              "work": "\\(\\text{(A)}=\\dfrac{1}{2}\\ln2\\approx0.347\\)"
+            },
+            {
+              "explain": "(B): use \\(\\tan^{2}x=\\sec^{2}x-1\\), so \\(\\int\\tan^{2}x\\,dx=\\tan x-x\\). Limits: \\(\\left(\\tan\\dfrac\\pi4-\\dfrac\\pi4\\right)-(0-0)=1-\\dfrac\\pi4\\).",
+              "work": "\\(\\text{(B)}=1-\\dfrac\\pi4\\approx0.215\\)"
+            },
+            {
+              "explain": "(C): \\(\\int_{0}^{\\frac\\pi4}1\\,dx=\\dfrac\\pi4\\), minus (A).",
+              "work": "\\(\\text{(C)}=\\dfrac\\pi4-\\dfrac{1}{2}\\ln2\\approx0.439\\)"
+            },
+            {
+              "explain": "(D): \\(\\dfrac\\pi4\\) minus (B).",
+              "work": "\\(\\text{(D)}=\\dfrac\\pi4-\\left(1-\\dfrac\\pi4\\right)=\\dfrac\\pi2-1\\approx0.571\\)"
+            },
+            {
+              "explain": "Compare the four values: \\(0.215<0.347<0.439<0.571\\), so (D) is the largest.",
+              "work": ""
+            },
+            {
+              "explain": "Quick check without calculating: on \\(\\left[0,\\dfrac\\pi4\\right]\\), \\(0\\le\\tan x\\le1\\), so \\(\\tan^{2}x\\le\\tan x\\) and therefore \\(1-\\tan^{2}x\\ge1-\\tan x\\): the integrand of (D) is at least that of (C), so (D) \\(\\ge\\) (C) ✓.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">D</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Which of the following integrals has the largest value",
+              "note": "Evaluate each: \\(\\tan^2x=\\sec^2x-1\\); on \\([0,\\dfrac\\pi4]\\), \\(\\tan^2x\\le\\tan x\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "James Ruse Agricultural High School 2020 Trial Higher School Certificate Examination Mathematics Extension 2",
+            "school": "James Ruse Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "jamesruse2020-e2-q5",
+          "type": "mc",
+          "stem": "Which of the following is an expression for \\(\\displaystyle\\int\\dfrac{\\cos^{3}x+\\sin^{3}x}{\\cos x+\\sin x}\\,dx\\)?",
+          "difficulty": "hard",
+          "options": [
+            "\\(x+\\dfrac{1}{2}\\cos2x+c\\)",
+            "\\(x-\\dfrac{1}{2}\\cos2x+c\\)",
+            "\\(x+\\dfrac{1}{2}\\sin^{2}x+c\\)",
+            "\\(x-\\dfrac{1}{2}\\sin^{2}x+c\\)"
+          ],
+          "answer": 3,
+          "hint": "The numerator is a SUM OF CUBES: \\(a^{3}+b^{3}=(a+b)\\left(a^{2}-ab+b^{2}\\right)\\). The factor \\(\\cos x+\\sin x\\) cancels with the denominator, and \\(\\cos^{2}x+\\sin^{2}x=1\\) simplifies the rest.",
+          "steps": [
+            {
+              "explain": "Factorise the sum of cubes with \\(a=\\cos x\\), \\(b=\\sin x\\).",
+              "work": "\\(\\cos^{3}x+\\sin^{3}x=(\\cos x+\\sin x)\\left(\\cos^{2}x-\\cos x\\sin x+\\sin^{2}x\\right)\\)"
+            },
+            {
+              "explain": "Cancel the common factor \\(\\cos x+\\sin x\\) and use \\(\\cos^{2}x+\\sin^{2}x=1\\).",
+              "work": "\\(\\dfrac{\\cos^{3}x+\\sin^{3}x}{\\cos x+\\sin x}=1-\\sin x\\cos x\\)"
+            },
+            {
+              "explain": "Integrate \\(1\\) to get \\(x\\). For \\(\\int\\sin x\\cos x\\,dx\\), let \\(u=\\sin x\\) (\\(du=\\cos x\\,dx\\)): \\(\\int u\\,du=\\dfrac{u^{2}}{2}\\).",
+              "work": "\\(\\int\\sin x\\cos x\\,dx=\\dfrac{1}{2}\\sin^{2}x\\)"
+            },
+            {
+              "explain": "Put it together.",
+              "work": "\\(\\int(1-\\sin x\\cos x)\\,dx=x-\\dfrac{1}{2}\\sin^{2}x+c\\)"
+            },
+            {
+              "explain": "Why not the others: A and B come from \\(\\sin x\\cos x=\\dfrac{1}{2}\\sin2x\\) integrated wrongly (\\(\\int\\sin2x\\,dx=-\\dfrac{1}{2}\\cos2x\\), giving \\(x+\\dfrac{1}{4}\\cos2x\\), not \\(\\dfrac{1}{2}\\cos2x\\)); C has a plus sign (the integrand is \\(1-\\sin x\\cos x\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">D</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "\\dfrac{\\cos^{3}x+\\sin^{3}x}{\\cos x+\\sin x}",
+              "note": "Sum of cubes: factor and cancel \\(\\cos x+\\sin x\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "James Ruse Agricultural High School 2020 Trial Higher School Certificate Examination Mathematics Extension 2",
+            "school": "James Ruse Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "jamesruse2020-e2-q11a",
+          "type": "mc",
+          "stem": "Find \\(\\displaystyle\\int\\cos^{3}x\\,dx\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\sin x-\\dfrac{\\sin^{3}x}{3}+C\\)",
+            "\\(\\sin x+\\dfrac{\\sin^{3}x}{3}+C\\)",
+            "\\(\\dfrac{\\cos^{4}x}{4}+C\\)",
+            "\\(\\sin x-\\dfrac{\\cos^{3}x}{3}+C\\)"
+          ],
+          "answer": 0,
+          "hint": "An ODD power of \\(\\cos x\\): split off one \\(\\cos x\\), turn the remaining \\(\\cos^{2}x\\) into \\(1-\\sin^{2}x\\), then let \\(u=\\sin x\\) (\\(du=\\cos x\\,dx\\)).",
+          "steps": [
+            {
+              "explain": "Split \\(\\cos^{3}x=\\cos^{2}x\\cdot\\cos x\\) and use \\(\\cos^{2}x=1-\\sin^{2}x\\).",
+              "work": "\\(\\int\\cos^{3}x\\,dx=\\int\\left(1-\\sin^{2}x\\right)\\cos x\\,dx\\)"
+            },
+            {
+              "explain": "Substitute \\(u=\\sin x\\), \\(du=\\cos x\\,dx\\).",
+              "work": "\\(=\\int\\left(1-u^{2}\\right)du\\)"
+            },
+            {
+              "explain": "Integrate term by term.",
+              "work": "\\(=u-\\dfrac{u^{3}}{3}+C\\)"
+            },
+            {
+              "explain": "Substitute back \\(u=\\sin x\\).",
+              "work": "\\(=\\sin x-\\dfrac{\\sin^{3}x}{3}+C\\)"
+            },
+            {
+              "explain": "Check: \\(\\dfrac{d}{dx}\\left(\\sin x-\\dfrac{\\sin^{3}x}{3}\\right)=\\cos x-\\sin^{2}x\\cos x=\\cos x\\left(1-\\sin^{2}x\\right)=\\cos^{3}x\\) ✓.",
+              "work": ""
+            },
+            {
+              "explain": "Why not the others: B has the wrong sign (\\(1-u^{2}\\), not \\(1+u^{2}\\)); C applies the power rule to \\(\\cos x\\) as if it were a variable; D mixes \\(\\sin x\\) and \\(\\cos^{3}x\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find \\(\\displaystyle\\int\\cos^{3}x\\,dx\\)",
+              "note": "Odd power: \\(u=\\sin x\\), \\(\\cos^2=1-\\sin^2\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "James Ruse Agricultural High School 2020 Trial Higher School Certificate Examination Mathematics Extension 2",
+            "school": "James Ruse Agricultural High School",
             "grade": "12",
             "origin": "teacher"
           }
@@ -8576,6 +8800,222 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "jamesruse2020-e2-q14bi",
+          "type": "mc",
+          "stem": "Consider the integral \\(I_{n}=\\displaystyle\\int_{0}^{1}\\dfrac{1}{\\left(1+x^{2}\\right)^{n}}\\,dx\\) for \\(n\\ge1\\). Use integration by parts to show that \\(I_{n}=\\dfrac{1}{2^{n}}+2n\\displaystyle\\int_{0}^{1}\\dfrac{x^{2}}{\\left(1+x^{2}\\right)^{n+1}}\\,dx\\). Which set-up and working is correct?",
+          "difficulty": "hard",
+          "options": [
+            "Let \\(u=\\left(1+x^{2}\\right)^{-n}\\), \\(v'=1\\): \\(u'=-n\\left(1+x^{2}\\right)^{-n-1}(2x)=\\dfrac{-2nx}{\\left(1+x^{2}\\right)^{n+1}}\\), \\(v=x\\). Then \\(I_{n}=\\left[\\dfrac{x}{\\left(1+x^{2}\\right)^{n}}\\right]_{0}^{1}+2n\\displaystyle\\int_{0}^{1}\\dfrac{x^{2}}{\\left(1+x^{2}\\right)^{n+1}}dx=\\dfrac1{2^{n}}+2n\\displaystyle\\int_{0}^{1}\\dfrac{x^{2}}{\\left(1+x^{2}\\right)^{n+1}}dx\\).",
+            "Let \\(u=\\left(1+x^{2}\\right)^{-n}\\), \\(v'=1\\): \\(u'=\\dfrac{-2nx}{\\left(1+x^{2}\\right)^{n+1}}\\), \\(v=x\\). Then \\(I_{n}=\\left[\\dfrac{x}{\\left(1+x^{2}\\right)^{n}}\\right]_{0}^{1}-2n\\displaystyle\\int_{0}^{1}\\dfrac{x^{2}}{\\left(1+x^{2}\\right)^{n+1}}dx\\).",
+            "Let \\(u=1\\), \\(v'=\\left(1+x^{2}\\right)^{-n}\\). Then \\(v=\\dfrac{\\left(1+x^{2}\\right)^{1-n}}{1-n}\\) and the result follows directly.",
+            "Let \\(u=\\left(1+x^{2}\\right)^{-n}\\), \\(v'=1\\): \\(u'=-n\\left(1+x^{2}\\right)^{-n-1}\\) (no chain-rule factor), \\(v=x\\). Then \\(I_{n}=\\dfrac{1}{2^{n}}+n\\displaystyle\\int_{0}^{1}\\dfrac{x}{\\left(1+x^{2}\\right)^{n+1}}dx\\)."
+          ],
+          "answer": 0,
+          "hint": "Take \\(u=\\left(1+x^{2}\\right)^{-n}\\) and \\(v'=1\\) (so \\(v=x\\)): differentiating \\(u\\) with the CHAIN RULE brings the factor \\(x\\) that creates \\(x^{2}\\) in the new integral. Careful with the minus signs: \\(-\\int v\\,u'\\) with \\(u'\\) negative gives a PLUS.",
+          "steps": [
+            {
+              "explain": "Parts: \\(u=\\left(1+x^{2}\\right)^{-n}\\), \\(v'=1\\). Differentiate \\(u\\) by the chain rule: \\(u'=-n\\left(1+x^{2}\\right)^{-n-1}\\cdot2x\\). Integrate \\(v'\\): \\(v=x\\).",
+              "work": "\\(u'=\\dfrac{-2nx}{\\left(1+x^{2}\\right)^{n+1}},\\qquad v=x\\)"
+            },
+            {
+              "explain": "Apply \\(\\int uv'\\,dx=\\left[uv\\right]-\\int vu'\\,dx\\).",
+              "work": "\\(I_{n}=\\left[\\dfrac{x}{\\left(1+x^{2}\\right)^{n}}\\right]_{0}^{1}-\\int_{0}^{1}x\\cdot\\dfrac{-2nx}{\\left(1+x^{2}\\right)^{n+1}}dx\\)"
+            },
+            {
+              "explain": "Boundary term: at \\(x=1\\): \\(\\dfrac{1}{2^{n}}\\); at \\(x=0\\): 0. The integral: \\(x\\cdot(-2nx)=-2nx^{2}\\), and minus a negative gives plus.",
+              "work": "\\(I_{n}=\\dfrac{1}{2^{n}}+2n\\int_{0}^{1}\\dfrac{x^{2}}{\\left(1+x^{2}\\right)^{n+1}}dx\\)"
+            },
+            {
+              "explain": "Why not the others: B has a minus sign (it forgot that \\(-\\int vu'\\) with \\(u'<0\\) is positive); C chooses \\(u=1\\), which does not create the \\(x^{2}\\) term; D forgets the chain-rule factor \\(2x\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Use integration by parts to show that",
+              "note": "\\(u=(1+x^2)^{-n}\\), \\(v=x\\); chain rule gives \\(2x\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "James Ruse Agricultural High School 2020 Trial Higher School Certificate Examination Mathematics Extension 2",
+            "school": "James Ruse Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "jamesruse2020-e2-q14bii",
+          "type": "mc",
+          "stem": "Consider the integral \\(I_{n}=\\displaystyle\\int_{0}^{1}\\dfrac{1}{\\left(1+x^{2}\\right)^{n}}\\,dx\\) for \\(n\\ge1\\). Find the values of \\(A\\) and \\(B\\) for which \\(\\dfrac{A}{\\left(1+x^{2}\\right)^{n}}+\\dfrac{B}{\\left(1+x^{2}\\right)^{n+1}}=\\dfrac{x^{2}}{\\left(1+x^{2}\\right)^{n+1}}\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(A=1,\\ B=-1\\)",
+            "\\(A=-1,\\ B=1\\)",
+            "\\(A=1,\\ B=1\\)",
+            "\\(A=2,\\ B=-1\\)"
+          ],
+          "answer": 0,
+          "hint": "Put the left side over the common denominator \\(\\left(1+x^{2}\\right)^{n+1}\\). Then compare the NUMERATORS: \\(A\\left(1+x^{2}\\right)+B=x^{2}\\) for all \\(x\\).",
+          "steps": [
+            {
+              "explain": "Common denominator: multiply the first fraction by \\(\\dfrac{1+x^{2}}{1+x^{2}}\\).",
+              "work": "\\(\\dfrac{A\\left(1+x^{2}\\right)+B}{\\left(1+x^{2}\\right)^{n+1}}=\\dfrac{x^{2}}{\\left(1+x^{2}\\right)^{n+1}}\\)"
+            },
+            {
+              "explain": "Equate numerators: \\(A+Ax^{2}+B=x^{2}\\) for all \\(x\\).",
+              "work": "\\(Ax^{2}+(A+B)=x^{2}+0\\)"
+            },
+            {
+              "explain": "Compare coefficients of \\(x^{2}\\) and the constant terms.",
+              "work": "\\(\\begin{aligned}&A&=1\\\\ &A+B&=0\\ \\Rightarrow\\ B=-1\\end{aligned}\\)"
+            },
+            {
+              "explain": "Check: \\(\\dfrac{1}{\\left(1+x^{2}\\right)^{n}}-\\dfrac{1}{\\left(1+x^{2}\\right)^{n+1}}=\\dfrac{\\left(1+x^{2}\\right)-1}{\\left(1+x^{2}\\right)^{n+1}}=\\dfrac{x^{2}}{\\left(1+x^{2}\\right)^{n+1}}\\) ✓.",
+              "work": "\\(A=1,\\ B=-1\\)"
+            },
+            {
+              "explain": "Why not the others: B has the signs swapped (that gives \\(-x^{2}\\)); C gives \\(2+x^{2}\\) in the numerator; D gives \\(2+2x^{2}-1=1+2x^{2}\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the values of \\(A\\) and \\(B\\)",
+              "note": "Compare numerators: \\(A(1+x^2)+B=x^2\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "James Ruse Agricultural High School 2020 Trial Higher School Certificate Examination Mathematics Extension 2",
+            "school": "James Ruse Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "jamesruse2020-e2-q14biii",
+          "type": "mc",
+          "stem": "Consider the integral \\(I_{n}=\\displaystyle\\int_{0}^{1}\\dfrac{1}{\\left(1+x^{2}\\right)^{n}}\\,dx\\) for \\(n\\ge1\\). Show that \\(I_{n+1}=\\dfrac{1}{n2^{n+1}}+\\dfrac{2n-1}{2n}I_{n}\\). Which working is correct?",
+          "difficulty": "hard",
+          "options": [
+            "From (ii), \\(\\dfrac{x^{2}}{(1+x^{2})^{n+1}}=\\dfrac{1}{(1+x^{2})^{n}}-\\dfrac{1}{(1+x^{2})^{n+1}}\\), so \\(\\displaystyle\\int_{0}^{1}\\dfrac{x^{2}}{(1+x^{2})^{n+1}}dx=I_{n}-I_{n+1}\\). Substitute in (i): \\(I_{n}=\\dfrac1{2^{n}}+2n\\left(I_{n}-I_{n+1}\\right)\\), so \\(2nI_{n+1}=\\dfrac{1}{2^{n}}+(2n-1)I_{n}\\). Divide by \\(2n\\).",
+            "From (ii), \\(\\displaystyle\\int_{0}^{1}\\dfrac{x^{2}}{(1+x^{2})^{n+1}}dx=I_{n+1}-I_{n}\\). Substitute in (i): \\(I_{n}=\\dfrac1{2^{n}}+2n\\left(I_{n+1}-I_{n}\\right)\\), so \\(2nI_{n+1}=(2n+1)I_{n}-\\dfrac1{2^{n}}\\).",
+            "From (ii), \\(\\displaystyle\\int_{0}^{1}\\dfrac{x^{2}}{(1+x^{2})^{n+1}}dx=I_{n}-I_{n+1}\\). Substitute in (i): \\(I_{n}=\\dfrac1{2^{n}}+2n\\left(I_{n}-I_{n+1}\\right)\\), so \\(I_{n+1}=\\dfrac{1}{2^{n}}+(2n-1)I_{n}\\) (without dividing).",
+            "From (i) alone: \\(I_{n+1}=\\dfrac{1}{2^{n+1}}+2(n+1)\\displaystyle\\int_{0}^{1}\\dfrac{x^{2}}{(1+x^{2})^{n+2}}dx\\), and the result follows by cancelling."
+          ],
+          "answer": 0,
+          "hint": "Use \\(A=1,B=-1\\) from (ii) to rewrite \\(\\dfrac{x^{2}}{(1+x^{2})^{n+1}}\\) as a DIFFERENCE of two terms whose integrals are \\(I_{n}\\) and \\(I_{n+1}\\). Substitute that into the formula in (i) and solve for \\(I_{n+1}\\).",
+          "steps": [
+            {
+              "explain": "From (ii) with \\(A=1\\), \\(B=-1\\): \\(\\dfrac{x^{2}}{(1+x^{2})^{n+1}}=\\dfrac{1}{(1+x^{2})^{n}}-\\dfrac{1}{(1+x^{2})^{n+1}}\\). Integrate from 0 to 1: the two integrals are \\(I_{n}\\) and \\(I_{n+1}\\).",
+              "work": "\\(\\int_{0}^{1}\\dfrac{x^{2}}{(1+x^{2})^{n+1}}dx=I_{n}-I_{n+1}\\)"
+            },
+            {
+              "explain": "Substitute into (i): \\(I_{n}=\\dfrac{1}{2^{n}}+2n\\int_{0}^{1}\\dfrac{x^{2}}{(1+x^{2})^{n+1}}dx\\).",
+              "work": "\\(I_{n}=\\dfrac{1}{2^{n}}+2n\\left(I_{n}-I_{n+1}\\right)\\)"
+            },
+            {
+              "explain": "Expand and collect the \\(I_{n+1}\\) term on one side: \\(I_{n}=\\dfrac1{2^{n}}+2nI_{n}-2nI_{n+1}\\).",
+              "work": "\\(2nI_{n+1}=\\dfrac{1}{2^{n}}+2nI_{n}-I_{n}=\\dfrac{1}{2^{n}}+(2n-1)I_{n}\\)"
+            },
+            {
+              "explain": "Divide by \\(2n\\): \\(\\dfrac{1}{2n\\cdot2^{n}}=\\dfrac{1}{n\\,2^{n+1}}\\).",
+              "work": "\\(I_{n+1}=\\dfrac{1}{n2^{n+1}}+\\dfrac{2n-1}{2n}I_{n}\\)"
+            },
+            {
+              "explain": "Why not the others: B reverses \\(I_{n}-I_{n+1}\\); C forgets to divide by \\(2n\\); D starts from the wrong equation (the formula in (i) for \\(n+1\\) involves \\(I_{n+1}\\) and \\(I_{n+2}\\), so it does not link \\(I_{n+1}\\) with \\(I_{n}\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that \\(I_{n+1}=\\dfrac{1}{n2^{n+1}}+\\dfrac{2n-1}{2n}I_{n}\\)",
+              "note": "\\(\\int\\dfrac{x^2}{(1+x^2)^{n+1}}=I_n-I_{n+1}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "James Ruse Agricultural High School 2020 Trial Higher School Certificate Examination Mathematics Extension 2",
+            "school": "James Ruse Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "jamesruse2020-e2-q14biv",
+          "type": "mc",
+          "stem": "Given \\(I_{1}=\\displaystyle\\int_{0}^{1}\\dfrac{dx}{1+x^{2}}=\\dfrac\\pi4\\) and the recurrence \\(I_{n+1}=\\dfrac{1}{n2^{n+1}}+\\dfrac{2n-1}{2n}I_{n}\\), hence obtain the exact value of \\(\\displaystyle\\int_{0}^{1}\\dfrac{1}{\\left(1+x^{2}\\right)^{3}}\\,dx\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\dfrac{1}{4}+\\dfrac{3\\pi}{32}\\)",
+            "\\(\\dfrac{1}{4}+\\dfrac{3\\pi}{16}\\)",
+            "\\(\\dfrac1{16}+\\dfrac{3\\pi}{32}\\)",
+            "\\(\\dfrac{3\\pi}{32}\\)"
+          ],
+          "answer": 0,
+          "hint": "The required integral is \\(I_{3}\\). Use the recurrence twice: \\(n=1\\) gives \\(I_{2}\\) from \\(I_{1}=\\dfrac\\pi4\\); then \\(n=2\\) gives \\(I_{3}\\) from \\(I_{2}\\).",
+          "steps": [
+            {
+              "explain": "\\(I_{1}=\\displaystyle\\int_{0}^{1}\\dfrac{dx}{1+x^{2}}=\\left[\\tan^{-1}x\\right]_{0}^{1}=\\dfrac\\pi4\\).",
+              "work": "\\(I_{1}=\\dfrac\\pi4\\)"
+            },
+            {
+              "explain": "Recurrence with \\(n=1\\): \\(I_{2}=\\dfrac{1}{1\\cdot2^{2}}+\\dfrac{2(1)-1}{2(1)}I_{1}=\\dfrac{1}{4}+\\dfrac12I_{1}\\).",
+              "work": "\\(I_{2}=\\dfrac{1}{4}+\\dfrac{1}{2}\\cdot\\dfrac\\pi4=\\dfrac{1}{4}+\\dfrac\\pi8\\)"
+            },
+            {
+              "explain": "Recurrence with \\(n=2\\): \\(I_{3}=\\dfrac{1}{2\\cdot2^{3}}+\\dfrac{2(2)-1}{2(2)}I_{2}=\\dfrac1{16}+\\dfrac34I_{2}\\).",
+              "work": "\\(I_{3}=\\dfrac{1}{16}+\\dfrac{3}{4}\\left(\\dfrac{1}{4}+\\dfrac\\pi8\\right)\\)"
+            },
+            {
+              "explain": "Expand: \\(\\dfrac{3}{4}\\cdot\\dfrac{1}{4}=\\dfrac{3}{16}\\) and \\(\\dfrac{3}{4}\\cdot\\dfrac\\pi8=\\dfrac{3\\pi}{32}\\). Then \\(\\dfrac1{16}+\\dfrac{3}{16}=\\dfrac{4}{16}=\\dfrac{1}{4}\\).",
+              "work": "\\(I_{3}=\\dfrac{1}{4}+\\dfrac{3\\pi}{32}\\)"
+            },
+            {
+              "explain": "Check numerically: \\(\\dfrac{1}{4}+\\dfrac{3\\pi}{32}\\approx0.5445\\) and \\(\\displaystyle\\int_{0}^{1}\\left(1+x^{2}\\right)^{-3}dx\\approx0.5445\\) ✓.",
+              "work": ""
+            },
+            {
+              "explain": "Why not the others: B forgets the \\(\\dfrac{1}{2}\\) in \\(\\dfrac12I_{1}\\); C forgets to add \\(\\dfrac{3}{4}\\cdot\\dfrac{1}{4}\\); D omits the constant terms.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "hence obtain the exact value of",
+              "note": "Need \\(I_3\\): \\(n=1\\to I_2\\), \\(n=2\\to I_3\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "James Ruse Agricultural High School 2020 Trial Higher School Certificate Examination Mathematics Extension 2",
+            "school": "James Ruse Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -9205,6 +9645,168 @@
           "meta": {
             "source": "Hunters Hill High School 2020 Trial Examination Mathematics Extension 2",
             "school": "Hunters Hill High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "jamesruse2020-e2-q9",
+          "type": "mc",
+          "stem": "The value of \\(\\dfrac{d}{dx}\\left(\\displaystyle\\int_{x}^{2x}\\dfrac{1}{1+t^{2}}\\,dt\\right)\\) is which of the following?",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{1}{1+x^{2}}\\)",
+            "\\(\\dfrac{2}{1+4x^{2}}-\\dfrac{1}{1+x^{2}}\\)",
+            "\\(\\dfrac{1}{1+4x^{2}}-\\dfrac{1}{1+x^{2}}\\)",
+            "\\(\\dfrac{1}{1+4x^{2}}+\\dfrac{1}{1+x^{2}}\\)"
+          ],
+          "answer": 1,
+          "hint": "Let \\(F(t)\\) be an antiderivative of \\(\\dfrac{1}{1+t^{2}}\\). Then the integral equals \\(F(2x)-F(x)\\). Differentiate with the CHAIN RULE: \\(\\dfrac{d}{dx}F(2x)=2F'(2x)\\).",
+          "steps": [
+            {
+              "explain": "Let \\(F'(t)=\\dfrac{1}{1+t^{2}}\\) (e.g. \\(F(t)=\\tan^{-1}t\\)). The definite integral is \\(F(\\text{top})-F(\\text{bottom})\\).",
+              "work": "\\(\\int_{x}^{2x}\\dfrac{dt}{1+t^{2}}=F(2x)-F(x)=\\tan^{-1}(2x)-\\tan^{-1}x\\)"
+            },
+            {
+              "explain": "Differentiate \\(\\tan^{-1}(2x)\\) using the chain rule: \\(\\dfrac{d}{dx}\\tan^{-1}(u)=\\dfrac{u'}{1+u^{2}}\\) with \\(u=2x\\), \\(u'=2\\).",
+              "work": "\\(\\dfrac{d}{dx}\\tan^{-1}(2x)=\\dfrac{2}{1+4x^{2}}\\)"
+            },
+            {
+              "explain": "Differentiate \\(-\\tan^{-1}x\\).",
+              "work": "\\(\\dfrac{d}{dx}\\left(-\\tan^{-1}x\\right)=-\\dfrac{1}{1+x^{2}}\\)"
+            },
+            {
+              "explain": "Combine.",
+              "work": "\\(\\dfrac{2}{1+4x^{2}}-\\dfrac{1}{1+x^{2}}\\)"
+            },
+            {
+              "explain": "Why not the others: C forgets the chain-rule factor 2; D has a plus sign (the LOWER limit gives a minus); A ignores the upper limit \\(2x\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">B</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "\\dfrac{d}{dx}\\left(\\displaystyle\\int_{x}^{2x}",
+              "note": "Chain rule on the upper limit: factor 2."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "James Ruse Agricultural High School 2020 Trial Higher School Certificate Examination Mathematics Extension 2",
+            "school": "James Ruse Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "jamesruse2020-e2-q11di",
+          "type": "mc",
+          "stem": "Prove that \\(\\displaystyle\\int_{a}^{b}f(x)\\,dx=\\dfrac{1}{2}\\int_{a}^{b}\\left\\{f(x)+f(a+b-x)\\right\\}dx\\). Which proof is correct?",
+          "difficulty": "hard",
+          "options": [
+            "Let \\(u=a+b-x\\), so \\(du=-dx\\); when \\(x=a\\), \\(u=b\\), and when \\(x=b\\), \\(u=a\\). Then \\(\\displaystyle\\int_{a}^{b}f(x)dx=-\\int_{b}^{a}f(a+b-u)du=\\int_{a}^{b}f(a+b-u)du\\). Adding this to the original gives \\(2\\displaystyle\\int_{a}^{b}f(x)dx=\\int_{a}^{b}\\{f(x)+f(a+b-x)\\}dx\\); divide by 2.",
+            "Let \\(u=a+b-x\\), so \\(du=dx\\); the limits stay \\(a\\) and \\(b\\). Then \\(\\displaystyle\\int_{a}^{b}f(x)dx=\\int_{a}^{b}f(a+b-u)du\\). Adding gives the result.",
+            "Let \\(u=a-b-x\\), so \\(du=-dx\\), \\(x=a\\Rightarrow u=-b\\) and \\(x=b\\Rightarrow u=-a\\). The result follows by adding.",
+            "Since \\(f(a+b-x)=f(x)\\) for every function \\(f\\), the two integrals are equal and the result follows."
+          ],
+          "answer": 0,
+          "hint": "Use the substitution \\(u=a+b-x\\). It maps the interval \\([a,b]\\) onto itself in REVERSE (a becomes b, b becomes a). Then add the new integral to the original.",
+          "steps": [
+            {
+              "explain": "Let \\(u=a+b-x\\). Then \\(du=-dx\\) and the limits become: \\(x=a\\Rightarrow u=b\\); \\(x=b\\Rightarrow u=a\\).",
+              "work": "\\(I=\\int_{a}^{b}f(x)\\,dx=\\int_{u=b}^{u=a}f(a+b-u)\\,(-du)\\)"
+            },
+            {
+              "explain": "The minus sign lets us swap the limits back (\\(-\\int_{b}^{a}=\\int_{a}^{b}\\)). The name of the variable does not matter, so rename \\(u\\) as \\(x\\).",
+              "work": "\\(I=\\int_{a}^{b}f(a+b-x)\\,dx\\)"
+            },
+            {
+              "explain": "Add this to \\(I=\\int_{a}^{b}f(x)\\,dx\\).",
+              "work": "\\(2I=\\int_{a}^{b}\\left\\{f(x)+f(a+b-x)\\right\\}dx\\)"
+            },
+            {
+              "explain": "Divide by 2.",
+              "work": "\\(\\int_{a}^{b}f(x)\\,dx=\\dfrac{1}{2}\\int_{a}^{b}\\left\\{f(x)+f(a+b-x)\\right\\}dx\\)"
+            },
+            {
+              "explain": "Why not the others: B has \\(du=dx\\) and unchanged limits (wrong); C uses \\(a-b-x\\) (that is not a reflection of \\([a,b]\\)); D is false in general (e.g. \\(f(x)=x\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Prove that \\(\\displaystyle\\int_{a}^{b}f(x)\\,dx=\\dfrac{1}{2}",
+              "note": "Substitute \\(u=a+b-x\\): limits swap."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "James Ruse Agricultural High School 2020 Trial Higher School Certificate Examination Mathematics Extension 2",
+            "school": "James Ruse Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "jamesruse2020-e2-q11dii",
+          "type": "mc",
+          "stem": "Hence, evaluate \\(\\displaystyle\\int_{3}^{7}\\dfrac{\\ln(x+2)}{\\ln\\left(24+10x-x^{2}\\right)}\\,dx\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(2\\)",
+            "\\(4\\)",
+            "\\(1\\)",
+            "\\(5\\)"
+          ],
+          "answer": 0,
+          "hint": "Use the result of part (i) with \\(a=3\\), \\(b=7\\), so \\(a+b=10\\): compare \\(f(x)\\) and \\(f(10-x)\\). First FACTORISE \\(24+10x-x^{2}=(x+2)(12-x)\\) so the log splits into a sum.",
+          "steps": [
+            {
+              "explain": "Factorise: \\((x+2)(12-x)=12x-x^{2}+24-2x=24+10x-x^{2}\\) ✓. So \\(\\ln\\left(24+10x-x^{2}\\right)=\\ln(x+2)+\\ln(12-x)\\).",
+              "work": "\\(f(x)=\\dfrac{\\ln(x+2)}{\\ln(x+2)+\\ln(12-x)}\\)"
+            },
+            {
+              "explain": "Reflect: \\(a+b-x=10-x\\). Then \\(10-x+2=12-x\\) and \\(12-(10-x)=x+2\\): the two factors swap places, so the denominator is the same.",
+              "work": "\\(f(10-x)=\\dfrac{\\ln(12-x)}{\\ln(12-x)+\\ln(x+2)}\\)"
+            },
+            {
+              "explain": "Add: the numerators add up to the common denominator.",
+              "work": "\\(f(x)+f(10-x)=\\dfrac{\\ln(x+2)+\\ln(12-x)}{\\ln(x+2)+\\ln(12-x)}=1\\)"
+            },
+            {
+              "explain": "Apply part (i): \\(I=\\dfrac{1}{2}\\int_{3}^{7}1\\,dx\\).",
+              "work": "\\(I=\\dfrac{1}{2}\\left[x\\right]_{3}^{7}=\\dfrac{1}{2}(7-3)=2\\)"
+            },
+            {
+              "explain": "Why not the others: 4 forgets the \\(\\dfrac{1}{2}\\); 1 and 5 do not follow from \\(\\dfrac{1}{2}\\times\\)(width 4).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Hence, evaluate",
+              "note": "\\(a+b=10\\); \\(f(x)+f(10-x)=1\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "James Ruse Agricultural High School 2020 Trial Higher School Certificate Examination Mathematics Extension 2",
+            "school": "James Ruse Agricultural High School",
             "grade": "12",
             "origin": "teacher"
           }

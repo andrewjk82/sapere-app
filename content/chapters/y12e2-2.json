@@ -1281,6 +1281,110 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "jamesruse2020-e2-q2",
+          "type": "mc",
+          "stem": "Consider the following statement, “If you have no treasure, I have no kingdom.” Which of the following is logically equivalent to this statement?",
+          "difficulty": "medium",
+          "options": [
+            "If I have no kingdom then you have no treasure.",
+            "If you have treasure then I have a kingdom.",
+            "If you have no kingdom then I have no treasure.",
+            "If I have a kingdom then you have treasure."
+          ],
+          "answer": 3,
+          "hint": "A statement “If \\(P\\) then \\(Q\\)” is logically equivalent ONLY to its CONTRAPOSITIVE “If not \\(Q\\) then not \\(P\\)”. Identify \\(P\\) and \\(Q\\) first, negate both and swap them.",
+          "steps": [
+            {
+              "explain": "Identify the parts: \\(P\\): “you have no treasure”; \\(Q\\): “I have no kingdom”. The statement is \\(P\\Rightarrow Q\\).",
+              "work": "\\(P\\Rightarrow Q\\)"
+            },
+            {
+              "explain": "Contrapositive: negate BOTH parts and swap them. \\(\\neg Q\\): “I have a kingdom”; \\(\\neg P\\): “you have treasure”.",
+              "work": "\\(\\neg Q\\Rightarrow\\neg P:\\ \\text{“If I have a kingdom then you have treasure.”}\\)"
+            },
+            {
+              "explain": "This is option D. A statement and its contrapositive always have the same truth value.",
+              "work": ""
+            },
+            {
+              "explain": "Why not the others: A is the CONVERSE (\\(Q\\Rightarrow P\\)); B is the INVERSE (\\(\\neg P\\Rightarrow\\neg Q\\)); the converse and the inverse are NOT equivalent to the original. C mixes up the roles (it is about “you” and “I” in the wrong places).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">D</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "logically equivalent",
+              "note": "Equivalent = contrapositive: \\(\\neg Q\\Rightarrow\\neg P\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "James Ruse Agricultural High School 2020 Trial Higher School Certificate Examination Mathematics Extension 2",
+            "school": "James Ruse Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "jamesruse2020-e2-q10",
+          "type": "mc",
+          "stem": "Which of the following is the negation of the statement “\\(\\forall p\\in P\\) (\\(p\\) is of the form \\(4m+1\\Longrightarrow p\\) can be written as a sum of two squares)”?",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\forall p\\in P\\) (\\(p\\) is of the form \\(4m+1\\) and \\(p\\) cannot be written as a sum of two squares)",
+            "\\(\\exists p\\in P\\) (\\(p\\) is not of the form \\(4m+1\\) and \\(p\\) can be written as a sum of two squares)",
+            "\\(\\forall p\\in P\\) (\\(p\\) is not of the form \\(4m+1\\) or \\(p\\) cannot be written as a sum of two squares)",
+            "\\(\\exists p\\in P\\) (\\(p\\) is of the form \\(4m+1\\) and \\(p\\) cannot be written as a sum of two squares)"
+          ],
+          "answer": 3,
+          "hint": "Negating “for all” gives “there exists”. Negating an implication \\(A\\Rightarrow B\\) gives “\\(A\\) AND NOT \\(B\\)” (the implication fails only when \\(A\\) is true and \\(B\\) is false).",
+          "steps": [
+            {
+              "explain": "Structure: \\(\\forall p\\ (A\\Rightarrow B)\\) where \\(A\\): “\\(p\\) is of the form \\(4m+1\\)” and \\(B\\): “\\(p\\) is a sum of two squares”.",
+              "work": "\\(\\forall p\\in P\\ (A\\Rightarrow B)\\)"
+            },
+            {
+              "explain": "Negate the quantifier: \\(\\neg\\forall\\equiv\\exists\\neg\\).",
+              "work": "\\(\\neg\\forall p\\,(A\\Rightarrow B)\\ \\equiv\\ \\exists p\\,\\neg(A\\Rightarrow B)\\)"
+            },
+            {
+              "explain": "Negate the implication: \\(A\\Rightarrow B\\) is false exactly when \\(A\\) is TRUE and \\(B\\) is FALSE.",
+              "work": "\\(\\neg(A\\Rightarrow B)\\equiv A\\wedge\\neg B\\)"
+            },
+            {
+              "explain": "Combine: there exists a prime of the form \\(4m+1\\) that cannot be written as a sum of two squares.",
+              "work": "\\(\\exists p\\in P\\ (A\\wedge\\neg B)\\)"
+            },
+            {
+              "explain": "Why not the others: A and C keep the quantifier \\(\\forall\\) (it must become \\(\\exists\\)); B negates the wrong part (“\\(p\\) is not of the form …”) and keeps \\(B\\) true, which does not contradict the implication.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">D</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "is the negation of the statement",
+              "note": "\\(\\neg\\forall=\\exists\\neg\\); \\(\\neg(A\\Rightarrow B)=A\\wedge\\neg B\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "James Ruse Agricultural High School 2020 Trial Higher School Certificate Examination Mathematics Extension 2",
+            "school": "James Ruse Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -3087,6 +3191,64 @@
           "meta": {
             "source": "Hurlstone Agricultural High School 2020 Trial Higher School Certificate Examination Mathematics Extension 2",
             "school": "Hurlstone Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "jamesruse2020-e2-q13b",
+          "type": "mc",
+          "stem": "Assuming \\(n>0\\), prove using the contrapositive that if \\(4^{n}-1\\) is prime, then \\(n\\) is odd. Which proof is correct?",
+          "difficulty": "medium",
+          "options": [
+            "Contrapositive: “If \\(n\\) is even, then \\(4^{n}-1\\) is NOT prime.” Let \\(n=2k\\), \\(k\\ge1\\). Then \\(4^{n}-1=4^{2k}-1=\\left(4^{k}-1\\right)\\left(4^{k}+1\\right)\\). Since \\(k\\ge1\\), both factors are greater than 1 (\\(4^{k}-1\\ge3\\)), so \\(4^{n}-1\\) is composite.",
+            "Contrapositive: “If \\(n\\) is odd, then \\(4^{n}-1\\) is NOT prime.” Test \\(n=3\\): \\(4^{3}-1=63=7\\times9\\), which is not prime. Hence the statement is true.",
+            "Contrapositive: “If \\(n\\) is odd, then \\(4^{n}-1\\) is prime.” Test \\(n=1\\): \\(4-1=3\\), which is prime, and \\(n=3\\): \\(63\\)...",
+            "Contrapositive: “If \\(n\\) is even, then \\(4^{n}-1\\) is prime.” Let \\(n=2k\\): \\(4^{2k}-1=\\left(4^{k}-1\\right)\\left(4^{k}+1\\right)\\), which is a product of two primes."
+          ],
+          "answer": 0,
+          "hint": "The contrapositive of “\\(P\\Rightarrow Q\\)” is “\\(\\neg Q\\Rightarrow\\neg P\\)”. Here \\(P\\): “\\(4^{n}-1\\) is prime”; \\(Q\\): “\\(n\\) is odd”. So \\(\\neg Q\\): “\\(n\\) is even” and \\(\\neg P\\): “\\(4^{n}-1\\) is not prime (composite)”. For \\(n=2k\\) use the DIFFERENCE OF TWO SQUARES.",
+          "steps": [
+            {
+              "explain": "Statement: if \\(4^{n}-1\\) is prime then \\(n\\) is odd. Contrapositive: negate and swap: “if \\(n\\) is not odd (even) then \\(4^{n}-1\\) is not prime”.",
+              "work": "\\(\\text{If }n\\text{ is even, then }4^{n}-1\\text{ is composite.}\\)"
+            },
+            {
+              "explain": "Assume \\(n\\) is even and \\(n>0\\): \\(n=2k\\) with \\(k\\ge1\\) an integer.",
+              "work": "\\(4^{n}-1=4^{2k}-1=\\left(4^{k}\\right)^{2}-1^{2}\\)"
+            },
+            {
+              "explain": "Difference of two squares \\(a^{2}-b^{2}=(a-b)(a+b)\\).",
+              "work": "\\(=\\left(4^{k}-1\\right)\\left(4^{k}+1\\right)\\)"
+            },
+            {
+              "explain": "Neither factor is 1: since \\(k\\ge1\\), \\(4^{k}-1\\ge3\\) and \\(4^{k}+1\\ge5\\). A number that is a product of two factors both greater than 1 is composite (not prime).",
+              "work": "\\(4^{n}-1\\ \\text{is composite}\\)"
+            },
+            {
+              "explain": "The contrapositive is true, so the original statement is true.",
+              "work": ""
+            },
+            {
+              "explain": "Why not the others: B proves a different statement with one example (an example is not a proof, and “odd \\(\\Rightarrow\\) not prime” is not the contrapositive); C writes the converse/inverse; D states the wrong conclusion (composite, not prime).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "prove using the contrapositive",
+              "note": "Contrapositive: even \\(\\Rightarrow\\) composite; \\(4^{2k}-1\\) = difference of squares."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "James Ruse Agricultural High School 2020 Trial Higher School Certificate Examination Mathematics Extension 2",
+            "school": "James Ruse Agricultural High School",
             "grade": "12",
             "origin": "teacher"
           }
@@ -5024,6 +5186,118 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "jamesruse2020-e2-q15bi",
+          "type": "mc",
+          "stem": "Given that \\(a\\), \\(b\\) and \\(c\\) are positive real numbers, prove that \\(a^{3}+b^{3}\\ge a^{2}b+ab^{2}\\). Which proof is correct?",
+          "difficulty": "medium",
+          "options": [
+            "\\(a^{3}+b^{3}-a^{2}b-ab^{2}=a^{2}(a-b)-b^{2}(a-b)=(a-b)\\left(a^{2}-b^{2}\\right)=(a-b)^{2}(a+b)\\). Since \\((a-b)^{2}\\ge0\\) and \\(a+b>0\\), the difference is \\(\\ge0\\).",
+            "\\(a^{3}+b^{3}-a^{2}b-ab^{2}=(a-b)^{2}(a-b)\\ge0\\), because a square is never negative.",
+            "Take \\(a=b=1\\): \\(1+1\\ge1+1\\) is true. Hence \\(a^{3}+b^{3}\\ge a^{2}b+ab^{2}\\) for all positive \\(a\\) and \\(b\\).",
+            "\\(a^{3}+b^{3}-a^{2}b-ab^{2}=(a+b)^{2}(a-b)\\), which is \\(\\ge0\\) for all positive \\(a,b\\)."
+          ],
+          "answer": 0,
+          "hint": "Move everything to one side, FACTORISE by grouping, and show the result is a product of non-negative factors. Group \\(a^{3}-a^{2}b\\) and \\(b^{3}-ab^{2}\\) (or \\(a^{2}(a-b)-b^{2}(a-b)\\)).",
+          "steps": [
+            {
+              "explain": "Consider the difference: \\(D=a^{3}+b^{3}-a^{2}b-ab^{2}\\). Group the terms: \\(\\left(a^{3}-a^{2}b\\right)-\\left(ab^{2}-b^{3}\\right)\\).",
+              "work": "\\(D=a^{2}(a-b)-b^{2}(a-b)\\)"
+            },
+            {
+              "explain": "Take out the common factor \\((a-b)\\).",
+              "work": "\\(D=(a-b)\\left(a^{2}-b^{2}\\right)\\)"
+            },
+            {
+              "explain": "Difference of two squares: \\(a^{2}-b^{2}=(a-b)(a+b)\\).",
+              "work": "\\(D=(a-b)^{2}(a+b)\\)"
+            },
+            {
+              "explain": "\\((a-b)^{2}\\ge0\\) (square of a real number) and \\(a+b>0\\) (a,b positive), so a non-negative number times a positive number is \\(\\ge0\\).",
+              "work": "\\(D\\ge0\\ \\Rightarrow\\ a^{3}+b^{3}\\ge a^{2}b+ab^{2}\\)"
+            },
+            {
+              "explain": "Why not the others: B has the wrong factorisation (\\((a-b)^{2}(a-b)\\) can be negative); C tests one case only (an example is not a proof); D has the wrong factorisation (\\((a+b)^{2}(a-b)\\) is negative when \\(a<b\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "prove that \\(a^{3}+b^{3}\\ge a^{2}b+ab^{2}\\)",
+              "note": "\\(a^3+b^3-a^2b-ab^2=(a-b)^2(a+b)\\ge0\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "James Ruse Agricultural High School 2020 Trial Higher School Certificate Examination Mathematics Extension 2",
+            "school": "James Ruse Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "jamesruse2020-e2-q15bii",
+          "type": "mc",
+          "stem": "Given that \\(a\\), \\(b\\) and \\(c\\) are positive real numbers, and \\(a^{3}+b^{3}\\ge a^{2}b+ab^{2}\\), prove that \\(abc\\le\\left(\\dfrac{a+b+c}{3}\\right)^{3}\\le\\dfrac{a^{3}+b^{3}+c^{3}}{3}\\). You may also assume \\(a+b+c\\ge3\\sqrt[3]{abc}\\) and \\((a+b+c)^{3}=a^{3}+b^{3}+c^{3}+3\\left(a^{2}b+a^{2}c+b^{2}a+b^{2}c+c^{2}a+c^{2}b\\right)+6abc\\). Which argument is correct?",
+          "difficulty": "hard",
+          "options": [
+            "Left: divide \\(a+b+c\\ge3\\sqrt[3]{abc}\\) by 3 and cube both sides to get \\(\\left(\\dfrac{a+b+c}{3}\\right)^{3}\\ge abc\\). Right: apply part (i) to each pair, so \\(3\\left(a^{2}b+\\cdots+c^{2}b\\right)\\le6\\left(a^{3}+b^{3}+c^{3}\\right)\\). Also apply the assumed inequality to \\(a^{3},b^{3},c^{3}\\): \\(a^{3}+b^{3}+c^{3}\\ge3abc\\), so \\(6abc\\le2\\left(a^{3}+b^{3}+c^{3}\\right)\\). Then \\((a+b+c)^{3}\\le9\\left(a^{3}+b^{3}+c^{3}\\right)\\); divide by 27.",
+            "Left: divide by 3 and cube to get \\(\\left(\\dfrac{a+b+c}{3}\\right)^{3}\\ge abc\\). Right: apply part (i) to each pair to get \\(3\\left(a^{2}b+\\cdots\\right)\\le6\\left(a^{3}+b^{3}+c^{3}\\right)\\), and replace \\(6abc\\) by \\(0\\), so \\((a+b+c)^{3}\\le7\\left(a^{3}+b^{3}+c^{3}\\right)\\); divide by 27.",
+            "Left: cube \\(a+b+c\\ge3\\sqrt[3]{abc}\\) without dividing by 3 to get \\(\\left(\\dfrac{a+b+c}{3}\\right)^{3}\\ge abc\\). Right: part (i) gives \\(a^{2}b+ab^{2}\\ge a^{3}+b^{3}\\), so \\((a+b+c)^{3}\\ge9\\left(a^{3}+b^{3}+c^{3}\\right)\\), and the result follows.",
+            "Left: \\(abc\\le\\left(\\dfrac{a+b+c}{3}\\right)^{3}\\) is just the same inequality as the given \\(a+b+c\\ge3\\sqrt[3]{abc}\\) with no work needed. Right: expand \\((a+b+c)^{3}\\) and compare term by term with \\(a^{3}+b^{3}+c^{3}\\), then divide by 27."
+          ],
+          "answer": 0,
+          "hint": "Two inequalities: LEFT: from \\(a+b+c\\ge3\\sqrt[3]{abc}\\): divide by 3 and CUBE (cubing keeps the order for positive numbers). RIGHT: expand \\((a+b+c)^{3}\\), bound the mixed terms using part (i) (once for each pair) and bound \\(6abc\\) using AM-GM on \\(a^{3},b^{3},c^{3}\\).",
+          "steps": [
+            {
+              "explain": "LEFT inequality: both sides of \\(\\dfrac{a+b+c}{3}\\ge\\sqrt[3]{abc}\\) are positive, so cubing keeps the inequality.",
+              "work": "\\(\\left(\\dfrac{a+b+c}{3}\\right)^{3}\\ge abc\\)"
+            },
+            {
+              "explain": "RIGHT inequality, step 1: use part (i) for the three pairs \\((a,b),(a,c),(b,c)\\) and add: \\(\\left(a^{2}b+ab^{2}\\right)+\\left(a^{2}c+ac^{2}\\right)+\\left(b^{2}c+bc^{2}\\right)\\le2\\left(a^{3}+b^{3}+c^{3}\\right)\\) (each cube appears in two pairs).",
+              "work": "\\(3\\left(a^{2}b+a^{2}c+b^{2}a+b^{2}c+c^{2}a+c^{2}b\\right)\\le6\\left(a^{3}+b^{3}+c^{3}\\right)\\)"
+            },
+            {
+              "explain": "Step 2: apply the assumed inequality \\(x+y+z\\ge3\\sqrt[3]{xyz}\\) to \\(x=a^{3}\\), \\(y=b^{3}\\), \\(z=c^{3}\\): \\(a^{3}+b^{3}+c^{3}\\ge3abc\\), so \\(6abc\\le2\\left(a^{3}+b^{3}+c^{3}\\right)\\).",
+              "work": "\\(6abc\\le2\\left(a^{3}+b^{3}+c^{3}\\right)\\)"
+            },
+            {
+              "explain": "Step 3: put the bounds into the expansion of \\((a+b+c)^{3}\\): \\(1+6+2=9\\) copies of \\(a^{3}+b^{3}+c^{3}\\).",
+              "work": "\\((a+b+c)^{3}\\le\\left(a^{3}+b^{3}+c^{3}\\right)+6\\left(a^{3}+b^{3}+c^{3}\\right)+2\\left(a^{3}+b^{3}+c^{3}\\right)=9\\left(a^{3}+b^{3}+c^{3}\\right)\\)"
+            },
+            {
+              "explain": "Divide by 27: \\(\\left(\\dfrac{a+b+c}{3}\\right)^{3}=\\dfrac{(a+b+c)^{3}}{27}\\le\\dfrac{9\\left(a^{3}+b^{3}+c^{3}\\right)}{27}=\\dfrac{a^{3}+b^{3}+c^{3}}{3}\\). Combining with the LEFT inequality completes the proof.",
+              "work": "\\(abc\\le\\left(\\dfrac{a+b+c}{3}\\right)^{3}\\le\\dfrac{a^{3}+b^{3}+c^{3}}{3}\\)"
+            },
+            {
+              "explain": "Why not the others: B replaces \\(6abc\\) by 0 (which makes the bound too small: not allowed); C reverses the inequality of part (i); D skips the work for the right-hand inequality and the left one is not identical to the assumption (it needs cubing).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "prove that \\(abc\\le\\left(\\dfrac{a+b+c}{3}\\right)^{3}\\le",
+              "note": "Left: divide by 3 and cube. Right: bound with part (i) and \\(\\sum a^3\\ge3abc\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "James Ruse Agricultural High School 2020 Trial Higher School Certificate Examination Mathematics Extension 2",
+            "school": "James Ruse Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -6489,6 +6763,322 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "jamesruse2020-e2-q16i",
+          "type": "mc",
+          "stem": "A sequence of polynomials \\(T_{k}(x)\\) is defined by the recurrence formula \\(T_{0}(x)=1\\), \\(T_{1}(x)=2x\\), \\(T_{2}(x)=8x^{2}-1\\) and \\(T_{k}(x)=4xT_{k-1}(x)-T_{k-2}(x)\\) for \\(k\\ge2\\) and \\(x>1\\). Show that \\(T_{3}(x)\\) and \\(T_{4}(x)\\) are \\(T_{3}(x)=32x^{3}-6x\\) and \\(T_{4}(x)=128x^{4}-32x^{2}+1\\). Which working is correct?",
+          "difficulty": "medium",
+          "options": [
+            "\\(T_{3}=4xT_{2}-T_{1}=4x\\left(8x^{2}-1\\right)-2x=32x^{3}-4x-2x=32x^{3}-6x\\); \\(T_{4}=4xT_{3}-T_{2}=4x\\left(32x^{3}-6x\\right)-\\left(8x^{2}-1\\right)=128x^{4}-24x^{2}-8x^{2}+1=128x^{4}-32x^{2}+1\\).",
+            "\\(T_{3}=4xT_{2}-T_{1}=4x\\left(8x^{2}-1\\right)+2x=32x^{3}-2x\\); \\(T_{4}=4xT_{3}-T_{2}=128x^{4}-8x^{2}-8x^{2}+1\\).",
+            "\\(T_{3}=4xT_{2}-T_{1}=4x\\left(8x^{2}-1\\right)-2x=32x^{3}-6x\\); \\(T_{4}=4xT_{3}-T_{2}=128x^{4}-24x^{2}-8x^{2}-1\\).",
+            "\\(T_{3}=4T_{2}-T_{1}=4\\left(8x^{2}-1\\right)-2x=32x^{2}-2x-4\\); \\(T_{4}=4T_{3}-T_{2}\\)."
+          ],
+          "answer": 0,
+          "hint": "Use the recurrence \\(T_{k}=4xT_{k-1}-T_{k-2}\\) with \\(k=3\\) and then \\(k=4\\). Be careful with the minus sign: subtracting \\((8x^{2}-1)\\) changes the sign of BOTH terms.",
+          "steps": [
+            {
+              "explain": "\\(k=3\\): \\(T_{3}=4xT_{2}-T_{1}\\). Substitute \\(T_{2}=8x^{2}-1\\) and \\(T_{1}=2x\\).",
+              "work": "\\(T_{3}=4x\\left(8x^{2}-1\\right)-2x\\)"
+            },
+            {
+              "explain": "Expand \\(4x\\cdot8x^{2}=32x^{3}\\) and \\(4x\\cdot(-1)=-4x\\). Then \\(-4x-2x=-6x\\).",
+              "work": "\\(T_{3}=32x^{3}-4x-2x=32x^{3}-6x\\)"
+            },
+            {
+              "explain": "\\(k=4\\): \\(T_{4}=4xT_{3}-T_{2}\\). Substitute \\(T_{3}=32x^{3}-6x\\) and \\(T_{2}=8x^{2}-1\\).",
+              "work": "\\(T_{4}=4x\\left(32x^{3}-6x\\right)-\\left(8x^{2}-1\\right)\\)"
+            },
+            {
+              "explain": "Expand: \\(4x\\cdot32x^{3}=128x^{4}\\), \\(4x\\cdot(-6x)=-24x^{2}\\). The minus bracket gives \\(-8x^{2}+1\\) (two sign changes).",
+              "work": "\\(T_{4}=128x^{4}-24x^{2}-8x^{2}+1=128x^{4}-32x^{2}+1\\)"
+            },
+            {
+              "explain": "Why not the others: B has \\(+2x\\) (the \\(-T_{1}\\) was added); C forgets that \\(-\\left(8x^{2}-1\\right)=-8x^{2}+1\\); D drops the \\(x\\) in \\(4x\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that \\(T_{3}(x)\\) and \\(T_{4}(x)\\) are",
+              "note": "\\(T_k=4xT_{k-1}-T_{k-2}\\); mind the minus signs."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "James Ruse Agricultural High School 2020 Trial Higher School Certificate Examination Mathematics Extension 2",
+            "school": "James Ruse Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "jamesruse2020-e2-q16ii",
+          "type": "mc",
+          "stem": "A sequence of polynomials \\(T_{k}(x)\\) is defined by the recurrence formula \\(T_{0}(x)=1\\), \\(T_{1}(x)=2x\\), \\(T_{2}(x)=8x^{2}-1\\) and \\(T_{k}(x)=4xT_{k-1}(x)-T_{k-2}(x)\\) for \\(k\\ge2\\) and \\(x>1\\). Let \\(F(Z)=1+2xZ+\\left(8x^{2}-1\\right)Z^{2}+\\cdots+T_{k}(x)Z^{k}+\\cdots\\) be the power series in \\(Z\\) whose coefficient of \\(Z^{k}\\) is \\(T_{k}(x)\\). Find \\(\\left(1-4xZ+Z^{2}\\right)F(Z)\\) and hence show that \\(F(Z)=\\dfrac{1-2xZ}{1-4xZ+Z^{2}}\\). Which result for \\(\\left(1-4xZ+Z^{2}\\right)F(Z)\\) is correct?",
+          "difficulty": "hard",
+          "options": [
+            "\\(1-2xZ\\)",
+            "\\(1+2xZ\\)",
+            "\\(1\\)",
+            "\\(1-4xZ+Z^{2}\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply out term by term and COLLECT the coefficient of each power \\(Z^{k}\\). For \\(k\\ge2\\) the coefficient is \\(T_{k}-4xT_{k-1}+T_{k-2}\\), which is zero by the recurrence, so only the first two terms survive.",
+          "steps": [
+            {
+              "explain": "The coefficient of \\(Z^{k}\\) in \\(\\left(1-4xZ+Z^{2}\\right)F(Z)\\) is: (1)\\(\\times T_{k}\\) \\(+\\) \\((-4x)\\times T_{k-1}\\) \\(+\\) (1)\\(\\times T_{k-2}\\).",
+              "work": "\\(\\text{coeff of }Z^{k}=T_{k}-4xT_{k-1}+T_{k-2}\\)"
+            },
+            {
+              "explain": "For \\(k\\ge2\\), the recurrence says \\(T_{k}=4xT_{k-1}-T_{k-2}\\), so this coefficient is 0: all terms from \\(Z^{2}\\) upwards vanish.",
+              "work": "\\(T_{k}-4xT_{k-1}+T_{k-2}=0\\quad(k\\ge2)\\)"
+            },
+            {
+              "explain": "Constant term (\\(Z^{0}\\)): \\(T_{0}=1\\). Coefficient of \\(Z^{1}\\): \\(T_{1}-4xT_{0}=2x-4x=-2x\\).",
+              "work": "\\(\\left(1-4xZ+Z^{2}\\right)F(Z)=1-2xZ\\)"
+            },
+            {
+              "explain": "Divide both sides by \\(1-4xZ+Z^{2}\\).",
+              "work": "\\(F(Z)=\\dfrac{1-2xZ}{1-4xZ+Z^{2}}\\)"
+            },
+            {
+              "explain": "Why not the others: B has the wrong sign (\\(T_{1}-4xT_{0}=-2x\\), not \\(+2x\\)); C and D ignore the \\(Z\\) term.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find \\(\\left(1-4xZ+Z^{2}\\right)F(Z)\\)",
+              "note": "Coefficient of \\(Z^k\\): \\(T_k-4xT_{k-1}+T_{k-2}=0\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "James Ruse Agricultural High School 2020 Trial Higher School Certificate Examination Mathematics Extension 2",
+            "school": "James Ruse Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "jamesruse2020-e2-q16vi",
+          "type": "mc",
+          "stem": "For \\(Z\\) sufficiently small, explain why \\(\\dfrac{1}{1-\\dfrac{Z}{\\alpha}}\\) is equal to \\(1+\\dfrac Z\\alpha+\\left(\\dfrac Z\\alpha\\right)^{2}+\\cdots+\\left(\\dfrac Z\\alpha\\right)^{k}+\\cdots\\). Which explanation is correct?",
+          "difficulty": "medium",
+          "options": [
+            "It is the sum of an infinite geometric series with first term 1 and common ratio \\(r=\\dfrac Z\\alpha\\). The sum is \\(\\dfrac{1}{1-r}\\) provided \\(|r|<1\\), i.e. \\(|Z|<|\\alpha|\\), which holds when \\(Z\\) is small enough.",
+            "It is an arithmetic series with first term 1 and common difference \\(\\dfrac Z\\alpha\\); the sum is always \\(\\dfrac{1}{1-\\dfrac Z\\alpha}\\).",
+            "It is a geometric series with ratio \\(\\dfrac Z\\alpha\\) and the sum \\(\\dfrac{1}{1-r}\\) is valid for ALL values of \\(Z\\).",
+            "It is a geometric series with first term \\(\\dfrac Z\\alpha\\) and ratio 1, so the formula \\(\\dfrac{a}{1-r}\\) would divide by 0."
+          ],
+          "answer": 0,
+          "hint": "Recognise the geometric series \\(a+ar+ar^{2}+\\cdots=\\dfrac{a}{1-r}\\), valid ONLY when \\(|r|<1\\). Identify \\(a\\) and \\(r\\) and say why \\(|r|<1\\) when \\(Z\\) is small.",
+          "steps": [
+            {
+              "explain": "The series is \\(1+r+r^{2}+r^{3}+\\cdots\\) with first term \\(a=1\\) and common ratio \\(r=\\dfrac Z\\alpha\\).",
+              "work": "\\(1+\\dfrac Z\\alpha+\\left(\\dfrac Z\\alpha\\right)^{2}+\\cdots\\)"
+            },
+            {
+              "explain": "Sum of an infinite geometric series: \\(S=\\dfrac{a}{1-r}\\), valid when \\(|r|<1\\).",
+              "work": "\\(S=\\dfrac{1}{1-\\dfrac Z\\alpha}\\)"
+            },
+            {
+              "explain": "\\(\\alpha\\) is a fixed non-zero number (for \\(x>1\\): \\(\\alpha=2x+\\sqrt{4x^{2}-1}>1\\)). When \\(Z\\) is sufficiently small, \\(|Z|<|\\alpha|\\), so \\(\\left|\\dfrac Z\\alpha\\right|<1\\) and the series converges to \\(\\dfrac{1}{1-\\dfrac Z\\alpha}\\).",
+              "work": "\\(\\left|\\dfrac Z\\alpha\\right|<1\\ \\iff\\ |Z|<|\\alpha|\\)"
+            },
+            {
+              "explain": "Why not the others: B calls it an arithmetic series (terms are MULTIPLIED by the same factor, not added); C says it is valid for all \\(Z\\) (an infinite geometric series only converges for \\(|r|<1\\)); D uses the wrong first term and ratio.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "For \\(Z\\) sufficiently small, explain why",
+              "note": "Geometric series \\(\\dfrac{a}{1-r}\\), valid when \\(|r|<1\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "James Ruse Agricultural High School 2020 Trial Higher School Certificate Examination Mathematics Extension 2",
+            "school": "James Ruse Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "jamesruse2020-e2-q16vii",
+          "type": "mc",
+          "stem": "Given \\(F(Z)=\\dfrac{A}{1-\\dfrac Z\\alpha}+\\dfrac{B}{1-\\dfrac Z\\beta}\\) and that for small \\(Z\\), \\(\\dfrac{1}{1-\\dfrac Z\\alpha}=\\sum_{k=0}^{\\infty}\\left(\\dfrac Z\\alpha\\right)^{k}\\) (and similarly for \\(\\beta\\)), show that the coefficient \\(T_{k}(x)\\) of \\(Z^{k}\\) in \\(F(Z)\\) is \\(A\\left(\\dfrac1\\alpha\\right)^{k}+B\\left(\\dfrac1\\beta\\right)^{k}\\). Which statement is correct?",
+          "difficulty": "medium",
+          "options": [
+            "Expand both fractions as geometric series: \\(F(Z)=A\\sum\\left(\\dfrac Z\\alpha\\right)^{k}+B\\sum\\left(\\dfrac Z\\beta\\right)^{k}\\). The coefficient of \\(Z^{k}\\) is \\(A\\left(\\dfrac1\\alpha\\right)^{k}+B\\left(\\dfrac1\\beta\\right)^{k}\\).",
+            "Expand both fractions as geometric series. The coefficient of \\(Z^{k}\\) is \\(A\\alpha^{k}+B\\beta^{k}\\).",
+            "Expand both fractions as geometric series. The coefficient of \\(Z^{k}\\) is \\(A\\left(\\dfrac1\\alpha\\right)^{k}\\) only (the \\(\\beta\\) series contributes nothing).",
+            "Expand both fractions as geometric series. The coefficient of \\(Z^{k}\\) is \\(\\dfrac{A}{\\alpha^{k}}\\cdot\\dfrac{B}{\\beta^{k}}\\) (the product of the two)."
+          ],
+          "answer": 0,
+          "hint": "Replace each fraction by its series. In \\(\\left(\\dfrac Z\\alpha\\right)^{k}=\\dfrac{Z^{k}}{\\alpha^{k}}=\\left(\\dfrac1\\alpha\\right)^{k}Z^{k}\\), the number multiplying \\(Z^{k}\\) is \\(\\left(\\dfrac1\\alpha\\right)^{k}\\). Add the two series (do not multiply them).",
+          "steps": [
+            {
+              "explain": "Substitute the series for each fraction.",
+              "work": "\\(F(Z)=A\\left[1+\\dfrac Z\\alpha+\\left(\\dfrac Z\\alpha\\right)^{2}+\\cdots\\right]+B\\left[1+\\dfrac Z\\beta+\\left(\\dfrac Z\\beta\\right)^{2}+\\cdots\\right]\\)"
+            },
+            {
+              "explain": "The term in \\(Z^{k}\\) from the first series is \\(A\\left(\\dfrac Z\\alpha\\right)^{k}=A\\left(\\dfrac1\\alpha\\right)^{k}Z^{k}\\); from the second series it is \\(B\\left(\\dfrac1\\beta\\right)^{k}Z^{k}\\).",
+              "work": "\\(A\\left(\\dfrac1\\alpha\\right)^{k}Z^{k}+B\\left(\\dfrac1\\beta\\right)^{k}Z^{k}\\)"
+            },
+            {
+              "explain": "Add the coefficients of \\(Z^{k}\\). But \\(F(Z)\\) was DEFINED so that the coefficient of \\(Z^{k}\\) is \\(T_{k}(x)\\).",
+              "work": "\\(T_{k}(x)=A\\left(\\dfrac1\\alpha\\right)^{k}+B\\left(\\dfrac1\\beta\\right)^{k}\\)"
+            },
+            {
+              "explain": "Why not the others: B misses that \\(\\left(\\dfrac Z\\alpha\\right)^{k}\\) has \\(\\dfrac1{\\alpha^{k}}\\), not \\(\\alpha^{k}\\); C leaves out the \\(\\beta\\) series; D multiplies the series (the two parts of \\(F\\) are ADDED).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "show that the coefficient \\(T_{k}(x)\\)",
+              "note": "\\(\\left(\\dfrac Z\\alpha\\right)^k=\\left(\\dfrac1\\alpha\\right)^kZ^k\\); add the two series."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "James Ruse Agricultural High School 2020 Trial Higher School Certificate Examination Mathematics Extension 2",
+            "school": "James Ruse Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "jamesruse2020-e2-q16viii",
+          "type": "mc",
+          "stem": "Deduce that the formula for \\(T_{k}(x)\\) is: using \\(A=B=\\dfrac{1}{2}\\), \\(\\alpha=2x+\\sqrt{4x^{2}-1}\\) and \\(\\beta=2x-\\sqrt{4x^{2}-1}\\), which of the following is \\(T_{k}(x)=A\\left(\\dfrac1\\alpha\\right)^{k}+B\\left(\\dfrac1\\beta\\right)^{k}\\)?",
+          "difficulty": "medium",
+          "options": [
+            "\\(T_{k}(x)=\\dfrac{1}{2}\\left(\\dfrac{1}{2x+\\sqrt{4x^{2}-1}}\\right)^{k}+\\dfrac{1}{2}\\left(\\dfrac{1}{2x-\\sqrt{4x^{2}-1}}\\right)^{k}\\)",
+            "\\(T_{k}(x)=\\left(\\dfrac{1}{2x+\\sqrt{4x^{2}-1}}\\right)^{k}+\\left(\\dfrac{1}{2x-\\sqrt{4x^{2}-1}}\\right)^{k}\\)",
+            "\\(T_{k}(x)=\\dfrac{1}{2}\\left(\\dfrac{1}{2x+\\sqrt{4x^{2}-1}}\\right)^{k}-\\dfrac{1}{2}\\left(\\dfrac{1}{2x-\\sqrt{4x^{2}-1}}\\right)^{k}\\)",
+            "\\(T_{k}(x)=\\dfrac{1}{2}\\left(\\dfrac{1}{2x+\\sqrt{4x^{2}-1}}\\right)^{k-1}+\\dfrac{1}{2}\\left(\\dfrac{1}{2x-\\sqrt{4x^{2}-1}}\\right)^{k-1}\\)"
+          ],
+          "answer": 0,
+          "hint": "Substitute the values into \\(T_{k}=A\\left(\\dfrac1\\alpha\\right)^{k}+B\\left(\\dfrac1\\beta\\right)^{k}\\): \\(A=B=\\dfrac{1}{2}\\) (part v), and \\(\\dfrac1\\alpha\\), \\(\\dfrac1\\beta\\) with \\(\\alpha,\\beta\\) from part (iii). Keep the power \\(k\\) and the plus sign.",
+          "steps": [
+            {
+              "explain": "From part (vii): \\(T_{k}(x)=A\\left(\\dfrac1\\alpha\\right)^{k}+B\\left(\\dfrac1\\beta\\right)^{k}\\).",
+              "work": "\\(T_{k}(x)=A\\left(\\dfrac1\\alpha\\right)^{k}+B\\left(\\dfrac1\\beta\\right)^{k}\\)"
+            },
+            {
+              "explain": "Substitute \\(A=B=\\dfrac{1}{2}\\) (part v), \\(\\alpha=2x+\\sqrt{4x^{2}-1}\\) and \\(\\beta=2x-\\sqrt{4x^{2}-1}\\) (part iii).",
+              "work": "\\(T_{k}(x)=\\dfrac{1}{2}\\left(\\dfrac{1}{2x+\\sqrt{4x^{2}-1}}\\right)^{k}+\\dfrac{1}{2}\\left(\\dfrac{1}{2x-\\sqrt{4x^{2}-1}}\\right)^{k}\\)"
+            },
+            {
+              "explain": "Check with \\(k=1\\): \\(\\dfrac1\\alpha+\\dfrac1\\beta=\\dfrac{\\alpha+\\beta}{\\alpha\\beta}=4x\\), so \\(T_{1}=\\dfrac{1}{2}(4x)=2x\\) ✓. With \\(k=0\\): \\(\\dfrac{1}{2}+\\dfrac{1}{2}=1=T_{0}\\) ✓.",
+              "work": ""
+            },
+            {
+              "explain": "Why not the others: B omits the factor \\(\\dfrac{1}{2}\\) (then \\(T_{0}=2\\), but \\(T_{0}=1\\)); C has a minus sign (then \\(T_{0}=0\\)); D has the power \\(k-1\\) (then \\(T_{0}\\) would be \\(\\dfrac{1}{2}(\\alpha+\\beta)\\), not 1).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Deduce that the formula for \\(T_{k}(x)\\)",
+              "note": "Substitute \\(A=B=\\dfrac{1}{2}\\); check with \\(T_0=1\\), \\(T_1=2x\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "James Ruse Agricultural High School 2020 Trial Higher School Certificate Examination Mathematics Extension 2",
+            "school": "James Ruse Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "jamesruse2020-e2-q16ix",
+          "type": "mc",
+          "stem": "Using \\(T_{k}(x)=\\dfrac{1}{2}\\left(\\dfrac{1}{2x+\\sqrt{4x^{2}-1}}\\right)^{k}+\\dfrac{1}{2}\\left(\\dfrac{1}{2x-\\sqrt{4x^{2}-1}}\\right)^{k}\\) for \\(x>1\\), find \\(\\displaystyle\\lim_{n\\to\\infty}\\dfrac{T_{n+1}(x)}{T_{n}(x)}\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(2x+\\sqrt{4x^{2}-1}\\)",
+            "\\(2x-\\sqrt{4x^{2}-1}\\)",
+            "\\(1\\)",
+            "\\(4x\\)"
+          ],
+          "answer": 0,
+          "hint": "Since \\(\\alpha\\beta=1\\), \\(\\dfrac1\\alpha=\\beta\\) and \\(\\dfrac1\\beta=\\alpha\\), so \\(T_{k}=\\dfrac{1}{2}\\left(\\beta^{k}+\\alpha^{k}\\right)\\). For \\(x>1\\), \\(\\alpha>1>\\beta>0\\): the \\(\\alpha^{k}\\) term DOMINATES for large \\(k\\). Divide the top and bottom by \\(\\alpha^{n}\\).",
+          "steps": [
+            {
+              "explain": "Use \\(\\dfrac1\\alpha=\\beta\\) and \\(\\dfrac1\\beta=\\alpha\\) (they are reciprocals).",
+              "work": "\\(T_{k}=\\dfrac{1}{2}\\left(\\alpha^{k}+\\beta^{k}\\right)\\)"
+            },
+            {
+              "explain": "Ratio of consecutive terms. The \\(\\dfrac{1}{2}\\) cancels.",
+              "work": "\\(\\dfrac{T_{n+1}}{T_{n}}=\\dfrac{\\alpha^{n+1}+\\beta^{n+1}}{\\alpha^{n}+\\beta^{n}}\\)"
+            },
+            {
+              "explain": "Divide the top and bottom by \\(\\alpha^{n}\\) (the dominant term).",
+              "work": "\\(\\dfrac{T_{n+1}}{T_{n}}=\\dfrac{\\alpha+\\beta\\left(\\dfrac\\beta\\alpha\\right)^{n}}{1+\\left(\\dfrac\\beta\\alpha\\right)^{n}}\\)"
+            },
+            {
+              "explain": "For \\(x>1\\), \\(\\alpha=2x+\\sqrt{4x^{2}-1}>1\\) and \\(\\beta=\\dfrac1\\alpha\\), so \\(0<\\dfrac\\beta\\alpha=\\beta^{2}<1\\). Then \\(\\left(\\dfrac\\beta\\alpha\\right)^{n}\\to0\\) as \\(n\\to\\infty\\).",
+              "work": "\\(\\left(\\dfrac\\beta\\alpha\\right)^{n}\\to0\\)"
+            },
+            {
+              "explain": "Take the limit.",
+              "work": "\\(\\lim_{n\\to\\infty}\\dfrac{T_{n+1}}{T_{n}}=\\dfrac{\\alpha+0}{1+0}=\\alpha=2x+\\sqrt{4x^{2}-1}\\)"
+            },
+            {
+              "explain": "Why not the others: B is \\(\\beta\\) (the smaller root, which does not dominate); C would need \\(\\alpha=\\beta\\); D is \\(\\alpha+\\beta\\) (the sum).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "find \\(\\displaystyle\\lim_{n\\to\\infty}\\dfrac{T_{n+1}(x)}{T_{n}(x)}\\)",
+              "note": "Dominant term \\(\\alpha^n\\): ratio \\(\\to\\alpha\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "James Ruse Agricultural High School 2020 Trial Higher School Certificate Examination Mathematics Extension 2",
+            "school": "James Ruse Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -7206,6 +7796,114 @@
             "sourceQuestion": "Section II Q16(c)(ii)",
             "sourceMarks": 2,
             "page": 13
+          }
+        },
+        {
+          "id": "jamesruse2020-e2-q13ci",
+          "type": "mc",
+          "stem": "Consider the function \\(f(x)=\\dfrac{1}{x}\\) for \\(x>0\\). Let \\(m\\) be a positive real number, \\(m\\ge1\\). By integrating \\(f(x)\\) between \\(m\\) and \\(m+1\\), show that \\(\\dfrac{1}{m+1}<\\ln(m+1)-\\ln m<\\dfrac{1}{m}\\). Which argument is correct?",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\displaystyle\\int_{m}^{m+1}\\dfrac{dx}{x}=\\ln(m+1)-\\ln m\\). On \\([m,m+1]\\) the curve \\(y=\\dfrac{1}{x}\\) is decreasing, so \\(\\dfrac{1}{m+1}<\\dfrac{1}{x}<\\dfrac{1}{m}\\). The interval has width 1, so the area is between \\(\\dfrac{1}{m+1}\\times1\\) and \\(\\dfrac{1}{m}\\times1\\).",
+            "\\(\\displaystyle\\int_{m}^{m+1}\\dfrac{dx}{x}=\\ln(m+1)-\\ln m\\). Since \\(\\dfrac{1}{x}\\) is decreasing, \\(\\dfrac{1}{m}<\\dfrac{1}{x}<\\dfrac1{m+1}\\), so the area is between \\(\\dfrac{1}{m}\\) and \\(\\dfrac1{m+1}\\).",
+            "\\(\\displaystyle\\int_{m}^{m+1}\\dfrac{dx}{x}=\\ln(m+1)+\\ln m\\). Since \\(\\dfrac{1}{x}\\) is decreasing the result follows.",
+            "\\(\\displaystyle\\int_{m}^{m+1}\\dfrac{dx}{x}=\\dfrac{1}{m+1}-\\dfrac{1}{m}\\). The curve is decreasing so the result follows."
+          ],
+          "answer": 0,
+          "hint": "Integrate: \\(\\int\\dfrac{dx}{x}=\\ln x\\). Then COMPARE the area under the curve with two RECTANGLES of width 1: a smaller rectangle (height at the right end \\(\\dfrac1{m+1}\\)) and a bigger one (height at the left end \\(\\dfrac{1}{m}\\)). The curve \\(y=\\dfrac{1}{x}\\) is decreasing.",
+          "steps": [
+            {
+              "explain": "Integrate \\(\\dfrac{1}{x}\\) between \\(m\\) and \\(m+1\\).",
+              "work": "\\(\\int_{m}^{m+1}\\dfrac{dx}{x}=\\left[\\ln x\\right]_{m}^{m+1}=\\ln(m+1)-\\ln m\\)"
+            },
+            {
+              "explain": "On \\([m,m+1]\\) the function \\(y=\\dfrac{1}{x}\\) is DECREASING, so it is largest at the left end \\(x=m\\) (height \\(\\dfrac{1}{m}\\)) and smallest at the right end \\(x=m+1\\) (height \\(\\dfrac{1}{m+1}\\)).",
+              "work": "\\(\\dfrac{1}{m+1}<\\dfrac{1}{x}<\\dfrac{1}{m}\\quad(m<x<m+1)\\)"
+            },
+            {
+              "explain": "Area under the curve lies between the areas of the small rectangle (height \\(\\dfrac1{m+1}\\), width 1) and the big rectangle (height \\(\\dfrac{1}{m}\\), width 1).",
+              "work": "\\(\\dfrac{1}{m+1}\\times1<\\int_{m}^{m+1}\\dfrac{dx}{x}<\\dfrac{1}{m}\\times1\\)"
+            },
+            {
+              "explain": "Substitute the integral.",
+              "work": "\\(\\dfrac{1}{m+1}<\\ln(m+1)-\\ln m<\\dfrac{1}{m}\\)"
+            },
+            {
+              "explain": "Why not the others: B swaps the bounds (the inequality would be false); C has \\(\\ln(m+1)+\\ln m\\) (the integral is a DIFFERENCE of logs); D integrates \\(\\dfrac{1}{x}\\) as if it were \\(\\dfrac1{x^{2}}\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "By integrating \\(f(x)\\) between \\(m\\) and \\(m+1\\)",
+              "note": "\\(\\int\\dfrac{1}{x}=\\ln\\); compare with rectangles of width 1."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "James Ruse Agricultural High School 2020 Trial Higher School Certificate Examination Mathematics Extension 2",
+            "school": "James Ruse Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "jamesruse2020-e2-q13cii",
+          "type": "mc",
+          "stem": "Let \\(S_{k}=1+\\dfrac{1}{2}+\\dfrac{1}{3}+\\cdots+\\dfrac{1}{k}\\). Using \\(\\dfrac{1}{m+1}<\\ln(m+1)-\\ln m<\\dfrac{1}{m}\\), let \\(m\\) take on successively the values \\(1,2,\\dots\\) and hence show that \\(\\ln(k+1)<S_{k}<1+\\ln k\\). Which argument is correct?",
+          "difficulty": "hard",
+          "options": [
+            "Sum \\(\\dfrac{1}{m+1}<\\ln(m+1)-\\ln m\\) for \\(m=1,\\dots,k-1\\): the right side telescopes to \\(\\ln k-\\ln1=\\ln k\\), and the left side is \\(\\dfrac{1}{2}+\\cdots+\\dfrac{1}{k}=S_{k}-1\\). So \\(S_{k}<1+\\ln k\\). Sum \\(\\ln(m+1)-\\ln m<\\dfrac{1}{m}\\) for \\(m=1,\\dots,k\\): the left side telescopes to \\(\\ln(k+1)\\) and the right side is \\(S_{k}\\). So \\(\\ln(k+1)<S_{k}\\).",
+            "Sum \\(\\dfrac{1}{m+1}<\\ln(m+1)-\\ln m\\) for \\(m=1,\\dots,k\\): the left side is \\(S_{k}\\) and the right side is \\(\\ln(k+1)\\). So \\(S_{k}<\\ln(k+1)\\), and similarly \\(\\ln k<1+S_{k}\\).",
+            "Sum \\(\\dfrac{1}{m+1}<\\ln(m+1)-\\ln m\\) for \\(m=1,\\dots,k-1\\) only. This gives \\(S_{k}<1+\\ln k\\), and the other inequality follows by the same sum.",
+            "Sum \\(\\ln(m+1)-\\ln m<\\dfrac{1}{m}\\) for \\(m=1,\\dots,k-1\\): the right side is \\(S_{k}\\) (not \\(S_{k-1}\\)), and the left side is \\(\\ln k\\). So \\(\\ln k<S_{k}\\), and replacing \\(k\\) by \\(k+1\\) gives both inequalities at once."
+          ],
+          "answer": 0,
+          "hint": "Add the inequality up for consecutive values of \\(m\\). \\(\\ln(m+1)-\\ln m\\) TELESCOPES (the middle terms cancel). Use the LEFT inequality for the upper bound of \\(S_{k}\\) and the RIGHT inequality for the lower bound.",
+          "steps": [
+            {
+              "explain": "LEFT inequality \\(\\dfrac{1}{m+1}<\\ln(m+1)-\\ln m\\), summed for \\(m=1,2,\\dots,k-1\\). Left side: \\(\\dfrac{1}{2}+\\dfrac{1}{3}+\\cdots+\\dfrac{1}{k}=S_{k}-1\\).",
+              "work": "\\(\\dfrac{1}{2}+\\dfrac{1}{3}+\\cdots+\\dfrac{1}{k}<\\ln k-\\ln1\\)"
+            },
+            {
+              "explain": "Right side telescopes: \\(\\left(\\ln2-\\ln1\\right)+\\left(\\ln3-\\ln2\\right)+\\cdots+\\left(\\ln k-\\ln(k-1)\\right)=\\ln k-\\ln1=\\ln k\\).",
+              "work": "\\(S_{k}-1<\\ln k\\ \\Rightarrow\\ S_{k}<1+\\ln k\\quad(1)\\)"
+            },
+            {
+              "explain": "RIGHT inequality \\(\\ln(m+1)-\\ln m<\\dfrac{1}{m}\\), summed for \\(m=1,2,\\dots,k\\). Left side telescopes to \\(\\ln(k+1)-\\ln1=\\ln(k+1)\\); right side is \\(1+\\dfrac{1}{2}+\\cdots+\\dfrac{1}{k}=S_{k}\\).",
+              "work": "\\(\\ln(k+1)<S_{k}\\quad(2)\\)"
+            },
+            {
+              "explain": "Combine (1) and (2).",
+              "work": "\\(\\ln(k+1)<S_{k}<1+\\ln k\\)"
+            },
+            {
+              "explain": "Why not the others: B has the inequality direction reversed; C proves only one half; D sums the right inequality to \\(k-1\\), which gives \\(\\ln k<S_{k-1}\\) (not \\(S_{k}\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "show that \\(\\ln(k+1)<S_{k}<1+\\ln k\\)",
+              "note": "Telescoping sums of both parts of the inequality."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "James Ruse Agricultural High School 2020 Trial Higher School Certificate Examination Mathematics Extension 2",
+            "school": "James Ruse Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
           }
         }
       ]

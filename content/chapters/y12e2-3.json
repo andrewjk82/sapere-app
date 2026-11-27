@@ -1074,6 +1074,172 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "jamesruse2020-e2-q16iii",
+          "type": "mc",
+          "stem": "Given that \\(\\alpha\\) and \\(\\beta\\) are the roots of \\(1-4xZ+Z^{2}=0\\), find \\(\\alpha\\) and \\(\\beta\\) in terms of \\(x\\) and explain why \\(\\alpha\\) and \\(\\beta\\) are reciprocals of each other. Which answer is correct?",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\alpha=2x+\\sqrt{4x^{2}-1}\\), \\(\\beta=2x-\\sqrt{4x^{2}-1}\\); the product of the roots is \\(\\dfrac{1}{1}=1\\), so \\(\\beta=\\dfrac1\\alpha\\).",
+            "\\(\\alpha=2x+\\sqrt{4x^{2}+1}\\), \\(\\beta=2x-\\sqrt{4x^{2}+1}\\); the product of the roots is \\(\\dfrac{1}{1}=1\\), so they are reciprocals.",
+            "\\(\\alpha=4x+\\sqrt{16x^{2}-4}\\), \\(\\beta=4x-\\sqrt{16x^{2}-4}\\); the product of the roots is 1.",
+            "\\(\\alpha=2x+\\sqrt{4x^{2}-1}\\), \\(\\beta=2x-\\sqrt{4x^{2}-1}\\); the sum of the roots is \\(4x\\), so they are reciprocals."
+          ],
+          "answer": 0,
+          "hint": "Rewrite as \\(Z^{2}-4xZ+1=0\\) and use the quadratic formula (\\(a=1\\), \\(b=-4x\\), \\(c=1\\)). For the reciprocal claim use the PRODUCT of roots \\(\\alpha\\beta=\\dfrac{c}{a}\\).",
+          "steps": [
+            {
+              "explain": "Write in standard form: \\(Z^{2}-4xZ+1=0\\). Quadratic formula: \\(Z=\\dfrac{4x\\pm\\sqrt{16x^{2}-4}}{2}\\).",
+              "work": "\\(Z=\\dfrac{4x\\pm\\sqrt{16x^{2}-4}}{2}\\)"
+            },
+            {
+              "explain": "Simplify: \\(\\sqrt{16x^{2}-4}=\\sqrt{4\\left(4x^{2}-1\\right)}=2\\sqrt{4x^{2}-1}\\), then divide the whole numerator by 2.",
+              "work": "\\(\\alpha=2x+\\sqrt{4x^{2}-1},\\qquad\\beta=2x-\\sqrt{4x^{2}-1}\\)"
+            },
+            {
+              "explain": "Product of roots of \\(Z^{2}-4xZ+1\\) is \\(\\dfrac{c}{a}=1\\). Check directly: \\(\\alpha\\beta=(2x)^{2}-\\left(4x^{2}-1\\right)=1\\).",
+              "work": "\\(\\alpha\\beta=1\\ \\Rightarrow\\ \\beta=\\dfrac1\\alpha\\)"
+            },
+            {
+              "explain": "Hence \\(\\alpha\\) and \\(\\beta\\) are reciprocals of each other. (For \\(x>1\\): \\(4x^{2}-1>0\\), so both are real, \\(\\alpha>1\\) and \\(0<\\beta<1\\).)",
+              "work": ""
+            },
+            {
+              "explain": "Why not the others: B has \\(4x^{2}+1\\) (the discriminant is \\(16x^{2}-4\\)); C does not divide by 2; D uses the sum (\\(4x\\)) which says nothing about reciprocals.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "find \\(\\alpha\\) and \\(\\beta\\) in terms of \\(x\\)",
+              "note": "Quadratic formula; \\(\\alpha\\beta=\\dfrac{c}{a}=1\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "James Ruse Agricultural High School 2020 Trial Higher School Certificate Examination Mathematics Extension 2",
+            "school": "James Ruse Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "jamesruse2020-e2-q16iv",
+          "type": "mc",
+          "stem": "Given that \\(\\alpha\\) and \\(\\beta\\) are the roots of \\(1-4xZ+Z^{2}=0\\) with \\(\\alpha\\beta=1\\), show that \\(1-4xZ+Z^{2}=\\left(1-\\dfrac{Z}{\\alpha}\\right)\\left(1-\\dfrac{Z}{\\beta}\\right)\\). Which argument is correct?",
+          "difficulty": "hard",
+          "options": [
+            "A quadratic with roots \\(\\alpha,\\beta\\) and leading coefficient 1 is \\((Z-\\alpha)(Z-\\beta)=\\alpha\\beta\\left(\\dfrac Z\\alpha-1\\right)\\left(\\dfrac Z\\beta-1\\right)=\\alpha\\beta\\left(1-\\dfrac Z\\alpha\\right)\\left(1-\\dfrac Z\\beta\\right)\\). Since \\(\\alpha\\beta=1\\), this is \\(\\left(1-\\dfrac Z\\alpha\\right)\\left(1-\\dfrac Z\\beta\\right)\\).",
+            "A quadratic with roots \\(\\alpha,\\beta\\) is \\((Z-\\alpha)(Z-\\beta)\\). Since the factor \\(Z-\\alpha\\) equals \\(1-\\dfrac Z\\alpha\\), the result follows.",
+            "Put \\(Z=\\alpha\\): \\(\\left(1-\\dfrac\\alpha\\alpha\\right)=0\\), so the right side is a quadratic with roots \\(\\alpha\\) and \\(\\beta\\). Hence both sides are equal for every \\(Z\\).",
+            "Expand the right side: \\(1-\\dfrac Z\\alpha-\\dfrac Z\\beta+\\dfrac{Z^{2}}{\\alpha\\beta}\\). Since \\(\\alpha+\\beta=4x\\), \\(\\dfrac Z\\alpha+\\dfrac Z\\beta=4xZ\\) and the result follows."
+          ],
+          "answer": 0,
+          "hint": "A quadratic with roots \\(\\alpha\\) and \\(\\beta\\) factorises as \\(a(Z-\\alpha)(Z-\\beta)\\). Convert each bracket to the form \\(1-\\dfrac Z\\alpha\\) by taking out \\(-\\alpha\\) and \\(-\\beta\\), then use \\(\\alpha\\beta=1\\) to match the constant term 1.",
+          "steps": [
+            {
+              "explain": "Factorise \\(Z^{2}-4xZ+1\\) using its roots (leading coefficient 1).",
+              "work": "\\(1-4xZ+Z^{2}=(Z-\\alpha)(Z-\\beta)\\)"
+            },
+            {
+              "explain": "Take out \\(-\\alpha\\) from \\(Z-\\alpha\\) and \\(-\\beta\\) from \\(Z-\\beta\\): \\(Z-\\alpha=-\\alpha\\left(1-\\dfrac Z\\alpha\\right)\\), \\(Z-\\beta=-\\beta\\left(1-\\dfrac Z\\beta\\right)\\).",
+              "work": "\\((Z-\\alpha)(Z-\\beta)=(-\\alpha)(-\\beta)\\left(1-\\dfrac Z\\alpha\\right)\\left(1-\\dfrac Z\\beta\\right)\\)"
+            },
+            {
+              "explain": "\\((-\\alpha)(-\\beta)=\\alpha\\beta=1\\) (the product of the roots).",
+              "work": "\\(1-4xZ+Z^{2}=\\left(1-\\dfrac Z\\alpha\\right)\\left(1-\\dfrac Z\\beta\\right)\\)"
+            },
+            {
+              "explain": "Check by expanding: \\(1-Z\\left(\\dfrac1\\alpha+\\dfrac1\\beta\\right)+\\dfrac{Z^{2}}{\\alpha\\beta}\\). \\(\\dfrac1\\alpha+\\dfrac1\\beta=\\dfrac{\\alpha+\\beta}{\\alpha\\beta}=4x\\) and \\(\\dfrac{1}{\\alpha\\beta}=1\\), giving \\(1-4xZ+Z^{2}\\) ✓.",
+              "work": ""
+            },
+            {
+              "explain": "Why not the others: B is false (\\(Z-\\alpha\\ne1-\\dfrac Z\\alpha\\) unless a factor \\(-\\alpha\\) is taken out); C only shows the roots agree, not that the constant term matches (two polynomials with the same roots can differ by a constant factor); D is true but uses the answer (it needs the factorisation first).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "show that \\(1-4xZ+Z^{2}=",
+              "note": "Factor \\((Z-\\alpha)(Z-\\beta)\\); take out \\(-\\alpha\\), \\(-\\beta\\); \\(\\alpha\\beta=1\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "James Ruse Agricultural High School 2020 Trial Higher School Certificate Examination Mathematics Extension 2",
+            "school": "James Ruse Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "jamesruse2020-e2-q16v",
+          "type": "mc",
+          "stem": "Using partial fractions, express \\(F(Z)=\\dfrac{1-2xZ}{1-4xZ+Z^{2}}\\) in the form \\(F(Z)=\\dfrac{A}{1-\\dfrac{Z}{\\alpha}}+\\dfrac{B}{1-\\dfrac{Z}{\\beta}}\\) and find \\(A\\) and \\(B\\), where \\(A\\) and \\(B\\) are real constants (\\(\\alpha\\beta=1\\), \\(\\alpha+\\beta=4x\\)).",
+          "difficulty": "hard",
+          "options": [
+            "\\(A=\\dfrac{1}{2},\\ B=\\dfrac{1}{2}\\)",
+            "\\(A=1,\\ B=-1\\)",
+            "\\(A=\\dfrac{1}{2},\\ B=-\\dfrac{1}{2}\\)",
+            "\\(A=1,\\ B=1\\)"
+          ],
+          "answer": 0,
+          "hint": "Clear the denominators: \\(1-2xZ=A\\left(1-\\dfrac Z\\beta\\right)+B\\left(1-\\dfrac Z\\alpha\\right)\\). Substituting \\(Z=\\alpha\\) removes \\(B\\), and \\(Z=\\beta\\) removes \\(A\\). Use \\(\\alpha^{2}=4x\\alpha-1\\) (since \\(\\alpha\\) is a root of \\(Z^{2}-4xZ+1\\)) to simplify.",
+          "steps": [
+            {
+              "explain": "Multiply both sides of \\(F(Z)\\) by \\(\\left(1-\\dfrac Z\\alpha\\right)\\left(1-\\dfrac Z\\beta\\right)=1-4xZ+Z^{2}\\).",
+              "work": "\\(1-2xZ=A\\left(1-\\dfrac Z\\beta\\right)+B\\left(1-\\dfrac Z\\alpha\\right)\\)"
+            },
+            {
+              "explain": "Let \\(Z=\\alpha\\): the \\(B\\) term vanishes. Since \\(\\dfrac1\\beta=\\alpha\\) (reciprocals), \\(1-\\dfrac\\alpha\\beta=1-\\alpha^{2}\\).",
+              "work": "\\(1-2x\\alpha=A\\left(1-\\alpha^{2}\\right)\\)"
+            },
+            {
+              "explain": "\\(\\alpha\\) is a root of \\(1-4xZ+Z^{2}=0\\), so \\(\\alpha^{2}=4x\\alpha-1\\) and \\(1-\\alpha^{2}=2-4x\\alpha=2(1-2x\\alpha)\\).",
+              "work": "\\(1-2x\\alpha=A\\cdot2(1-2x\\alpha)\\)"
+            },
+            {
+              "explain": "Divide by \\(1-2x\\alpha\\) (non-zero for \\(x>1\\)).",
+              "work": "\\(A=\\dfrac{1}{2}\\)"
+            },
+            {
+              "explain": "By the SAME working with \\(Z=\\beta\\): \\(B=\\dfrac{1}{2}\\). (Check with \\(Z=0\\): \\(1=A+B\\) ✓.)",
+              "work": "\\(A=\\dfrac{1}{2},\\quad B=\\dfrac{1}{2}\\)"
+            },
+            {
+              "explain": "Why not the others: B and C do not satisfy \\(A+B=1\\) (put \\(Z=0\\)); D has \\(A+B=2\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Using partial fractions, express",
+              "note": "\\(Z=\\alpha\\) gives \\(A\\); check \\(A+B=1\\) at \\(Z=0\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "James Ruse Agricultural High School 2020 Trial Higher School Certificate Examination Mathematics Extension 2",
+            "school": "James Ruse Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -3703,6 +3869,279 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "jamesruse2020-e2-q15ai",
+          "type": "mc",
+          "stem": "By using the identity \\(x^{5}+y^{5}=(x+y)^{5}-5xy(x+y)^{3}+5xy(x+y)\\) and \\(z^{n}+z^{-n}=2\\cos n\\theta\\), show that \\(\\cos5\\theta=16\\cos^{5}\\theta-20\\cos^{3}\\theta+5\\cos\\theta\\). Which working is correct? (Take \\(x=z\\), \\(y=z^{-1}\\), so \\(xy=1\\), with \\(z=\\cos\\theta+i\\sin\\theta\\).)",
+          "difficulty": "hard",
+          "options": [
+            "\\(x+y=z+z^{-1}=2\\cos\\theta\\), \\(xy=1\\), and \\(x^{5}+y^{5}=z^{5}+z^{-5}=2\\cos5\\theta\\). So \\(2\\cos5\\theta=(2\\cos\\theta)^{5}-5(2\\cos\\theta)^{3}+5(2\\cos\\theta)=32\\cos^{5}\\theta-40\\cos^{3}\\theta+10\\cos\\theta\\). Divide by 2.",
+            "\\(x+y=2\\cos\\theta\\), \\(xy=1\\) and \\(x^{5}+y^{5}=\\cos5\\theta\\). So \\(\\cos5\\theta=(2\\cos\\theta)^{5}-5(2\\cos\\theta)^{3}+5(2\\cos\\theta)=32\\cos^{5}\\theta-40\\cos^{3}\\theta+10\\cos\\theta\\).",
+            "\\(x+y=\\cos\\theta\\), \\(xy=1\\) and \\(x^{5}+y^{5}=2\\cos5\\theta\\). So \\(2\\cos5\\theta=\\cos^{5}\\theta-5\\cos^{3}\\theta+5\\cos\\theta\\); divide by 2.",
+            "\\(x+y=2\\cos\\theta\\), \\(xy=1\\) and \\(x^{5}+y^{5}=2\\cos5\\theta\\). So \\(2\\cos5\\theta=2\\cos^{5}\\theta-10\\cos^{3}\\theta+10\\cos\\theta\\); divide by 2."
+          ],
+          "answer": 0,
+          "hint": "With \\(x=z\\) and \\(y=z^{-1}\\): \\(x+y=z+z^{-1}=2\\cos\\theta\\) and \\(xy=1\\), so the identity only involves \\(2\\cos\\theta\\). The left side \\(z^{5}+z^{-5}\\) equals \\(2\\cos5\\theta\\). Watch the factor 2 and the powers of 2: \\((2c)^{5}=32c^{5}\\), \\((2c)^{3}=8c^{3}\\).",
+          "steps": [
+            {
+              "explain": "Let \\(z=\\cos\\theta+i\\sin\\theta\\), \\(x=z\\), \\(y=z^{-1}=\\cos\\theta-i\\sin\\theta\\). Then \\(xy=1\\).",
+              "work": "\\(x+y=z+z^{-1}=2\\cos\\theta,\\qquad xy=1\\)"
+            },
+            {
+              "explain": "Left side of the identity: \\(x^{5}+y^{5}=z^{5}+z^{-5}\\). By De Moivre, \\(z^{n}+z^{-n}=2\\cos n\\theta\\).",
+              "work": "\\(x^{5}+y^{5}=2\\cos5\\theta\\)"
+            },
+            {
+              "explain": "Substitute \\(xy=1\\) and \\(x+y=2\\cos\\theta\\) into the identity.",
+              "work": "\\(2\\cos5\\theta=(2\\cos\\theta)^{5}-5(2\\cos\\theta)^{3}+5(2\\cos\\theta)\\)"
+            },
+            {
+              "explain": "Evaluate the powers: \\((2\\cos\\theta)^{5}=32\\cos^{5}\\theta\\) and \\((2\\cos\\theta)^{3}=8\\cos^{3}\\theta\\), so \\(5\\cdot8=40\\).",
+              "work": "\\(2\\cos5\\theta=32\\cos^{5}\\theta-40\\cos^{3}\\theta+10\\cos\\theta\\)"
+            },
+            {
+              "explain": "Divide by 2.",
+              "work": "\\(\\cos5\\theta=16\\cos^{5}\\theta-20\\cos^{3}\\theta+5\\cos\\theta\\)"
+            },
+            {
+              "explain": "Why not the others: B forgets that \\(z^{5}+z^{-5}=2\\cos5\\theta\\) (not \\(\\cos5\\theta\\)); C uses \\(x+y=\\cos\\theta\\) (it is \\(2\\cos\\theta\\)); D forgets to raise the 2 to the powers 5 and 3.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "show that \\(\\cos5\\theta=16\\cos^{5}\\theta-20\\cos^{3}\\theta+5\\cos\\theta\\)",
+              "note": "\\(x+y=2\\cos\\theta\\); \\(xy=1\\); \\(z^5+z^{-5}=2\\cos5\\theta\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "James Ruse Agricultural High School 2020 Trial Higher School Certificate Examination Mathematics Extension 2",
+            "school": "James Ruse Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "jamesruse2020-e2-q15aii",
+          "type": "mc",
+          "stem": "Using \\(\\cos5\\theta=16\\cos^{5}\\theta-20\\cos^{3}\\theta+5\\cos\\theta\\), show that the equation \\(16x^{5}-20x^{3}+5x-1=0\\) has roots \\(1,\\ \\cos\\dfrac{2\\pi}{5},\\ \\cos\\dfrac{4\\pi}{5},\\ \\cos\\dfrac{6\\pi}{5}\\) and \\(\\cos\\dfrac{8\\pi}{5}\\). Which argument is correct?",
+          "difficulty": "hard",
+          "options": [
+            "Let \\(x=\\cos\\theta\\). The equation becomes \\(\\cos5\\theta-1=0\\), i.e. \\(\\cos5\\theta=1\\). So \\(5\\theta=2\\pi k\\), \\(\\theta=\\dfrac{2\\pi k}{5}\\); \\(k=0,1,2,3,4\\) gives \\(x=\\cos0,\\cos\\dfrac{2\\pi}{5},\\cos\\dfrac{4\\pi}{5},\\cos\\dfrac{6\\pi}{5},\\cos\\dfrac{8\\pi}{5}\\), and \\(\\cos0=1\\).",
+            "Let \\(x=\\cos\\theta\\). The equation becomes \\(\\cos5\\theta=0\\), so \\(5\\theta=\\dfrac{\\pi}{2}+\\pi k\\) and \\(\\theta=\\dfrac{\\pi}{10}+\\dfrac{\\pi k}{5}\\).",
+            "Let \\(x=\\cos\\theta\\). The equation becomes \\(\\cos5\\theta=-1\\), so \\(5\\theta=\\pi+2\\pi k\\) and \\(\\theta=\\dfrac{\\pi}{5},\\dfrac{3\\pi}{5},\\dots\\)",
+            "Let \\(x=\\cos\\theta\\). The equation becomes \\(\\cos5\\theta=1\\), so \\(5\\theta=\\pi k\\) and \\(\\theta=\\dfrac{\\pi k}{5}\\) for \\(k=0,1,2,3,4\\)."
+          ],
+          "answer": 0,
+          "hint": "Put \\(x=\\cos\\theta\\). The left side \\(16x^{5}-20x^{3}+5x\\) is exactly \\(\\cos5\\theta\\), so the equation becomes \\(\\cos5\\theta=1\\). Cosine equals 1 only at multiples of \\(2\\pi\\).",
+          "steps": [
+            {
+              "explain": "Substitute \\(x=\\cos\\theta\\) using part (i).",
+              "work": "\\(16x^{5}-20x^{3}+5x-1=\\cos5\\theta-1\\)"
+            },
+            {
+              "explain": "So the equation is \\(\\cos5\\theta=1\\). \\(\\cos\\varphi=1\\) when \\(\\varphi=0,2\\pi,4\\pi,\\dots\\) (even multiples of \\(\\pi\\) only: \\(\\cos\\pi=-1\\)).",
+              "work": "\\(5\\theta=2\\pi k\\ \\Rightarrow\\ \\theta=\\dfrac{2\\pi k}{5}\\)"
+            },
+            {
+              "explain": "Take \\(k=0,1,2,3,4\\) (five values, matching the five roots of a quintic).",
+              "work": "\\(\\theta=0,\\ \\dfrac{2\\pi}{5},\\ \\dfrac{4\\pi}{5},\\ \\dfrac{6\\pi}{5},\\ \\dfrac{8\\pi}{5}\\)"
+            },
+            {
+              "explain": "The corresponding roots are \\(x=\\cos\\theta\\); and \\(\\cos0=1\\).",
+              "work": "\\(x=1,\\ \\cos\\dfrac{2\\pi}{5},\\ \\cos\\dfrac{4\\pi}{5},\\ \\cos\\dfrac{6\\pi}{5},\\ \\cos\\dfrac{8\\pi}{5}\\)"
+            },
+            {
+              "explain": "Why not the others: B uses \\(\\cos5\\theta=0\\) (the equation is \\(\\cos5\\theta=1\\)); C uses \\(-1\\); D uses \\(5\\theta=\\pi k\\), which also includes odd multiples of \\(\\pi\\), where \\(\\cos5\\theta=-1\\), not 1.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "show that the equation \\(16x^{5}-20x^{3}+5x-1=0\\) has roots",
+              "note": "\\(x=\\cos\\theta\\): equation \\(\\Leftrightarrow\\cos5\\theta=1\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "James Ruse Agricultural High School 2020 Trial Higher School Certificate Examination Mathematics Extension 2",
+            "school": "James Ruse Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "jamesruse2020-e2-q15aiii",
+          "type": "mc",
+          "stem": "By using division, or otherwise, deduce from the previous result that \\(16x^{4}+16x^{3}-4x^{2}-4x+1=0\\) has roots \\(x=\\cos\\dfrac{2\\pi}{5},\\cos\\dfrac{4\\pi}{5},\\cos\\dfrac{6\\pi}{5}\\) and \\(\\cos\\dfrac{8\\pi}{5}\\). Which working is correct?",
+          "difficulty": "medium",
+          "options": [
+            "\\(x=1\\) is a root of \\(16x^{5}-20x^{3}+5x-1\\), so \\((x-1)\\) is a factor. Dividing gives \\(16x^{5}-20x^{3}+5x-1=(x-1)\\left(16x^{4}+16x^{3}-4x^{2}-4x+1\\right)\\). The other four roots make the second factor zero.",
+            "\\(x=1\\) is a root, so \\((x+1)\\) is a factor. Dividing gives \\(16x^{5}-20x^{3}+5x-1=(x+1)\\left(16x^{4}-16x^{3}-4x^{2}+4x+1\\right)\\).",
+            "\\(x=1\\) is a root, so \\((x-1)\\) is a factor. Dividing gives \\(16x^{5}-20x^{3}+5x-1=(x-1)\\left(16x^{4}+16x^{3}+4x^{2}+4x+1\\right)\\).",
+            "All five roots satisfy the quintic, so they all satisfy \\(16x^{4}+16x^{3}-4x^{2}-4x+1=0\\) (just divide the quintic by \\(x\\))."
+          ],
+          "answer": 0,
+          "hint": "If \\(x=1\\) is a root of a polynomial \\(P(x)\\), then \\((x-1)\\) is a FACTOR. Divide \\(P(x)\\) by \\((x-1)\\) (long division or synthetic division with root 1). The remaining roots are the roots of the quotient.",
+          "steps": [
+            {
+              "explain": "\\(x=1\\) is a root (from part (ii)), so \\((x-1)\\) is a factor. Synthetic division with root 1 on the coefficients \\(16,0,-20,0,5,-1\\): bring down 16; \\(0+16=16\\); \\(-20+16=-4\\); \\(0+(-4)=-4\\); \\(5+(-4)=1\\); \\(-1+1=0\\) (remainder 0 ✓).",
+              "work": "\\(16\\to16\\to-4\\to-4\\to1\\to0\\)"
+            },
+            {
+              "explain": "The quotient has coefficients \\(16,16,-4,-4,1\\).",
+              "work": "\\(16x^{5}-20x^{3}+5x-1=(x-1)\\left(16x^{4}+16x^{3}-4x^{2}-4x+1\\right)\\)"
+            },
+            {
+              "explain": "Check by expanding: \\((x-1)\\left(16x^{4}+16x^{3}-4x^{2}-4x+1\\right)=16x^{5}+16x^{4}-4x^{3}-4x^{2}+x-16x^{4}-16x^{3}+4x^{2}+4x-1=16x^{5}-20x^{3}+5x-1\\) ✓.",
+              "work": ""
+            },
+            {
+              "explain": "The remaining four roots \\(\\cos\\dfrac{2\\pi}{5},\\cos\\dfrac{4\\pi}{5},\\cos\\dfrac{6\\pi}{5},\\cos\\dfrac{8\\pi}{5}\\) are not equal to 1, so they must make the second factor zero.",
+              "work": "\\(16x^{4}+16x^{3}-4x^{2}-4x+1=0\\)"
+            },
+            {
+              "explain": "Why not the others: B divides by \\((x+1)\\) (but \\(-1\\) is not a root); C has the wrong signs in the quotient (expanding does not return the quintic); D is false: 1 is a root of the quintic but \\(16+16-4-4+1=25\\ne0\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "By using division, or otherwise, deduce",
+              "note": "Root 1 \\(\\Rightarrow\\) factor \\((x-1)\\); divide."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "James Ruse Agricultural High School 2020 Trial Higher School Certificate Examination Mathematics Extension 2",
+            "school": "James Ruse Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "jamesruse2020-e2-q15aiv",
+          "type": "mc",
+          "stem": "By equating coefficients, or otherwise, find the values of \\(b\\) and \\(c\\) for which \\(16x^{4}+16x^{3}-4x^{2}-4x+1=\\left(4x^{2}+bx+c\\right)^{2}\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(b=2,\\ c=-1\\)",
+            "\\(b=-2,\\ c=-1\\)",
+            "\\(b=2,\\ c=1\\)",
+            "\\(b=4,\\ c=-1\\)"
+          ],
+          "answer": 0,
+          "hint": "Expand \\(\\left(4x^{2}+bx+c\\right)^{2}\\) and compare the coefficients of \\(x^{3}\\), \\(x\\) and the constant term with \\(16x^{4}+16x^{3}-4x^{2}-4x+1\\). Check your answer against the \\(x^{2}\\) coefficient.",
+          "steps": [
+            {
+              "explain": "Expand the square: \\((p+q+r)^{2}=p^{2}+q^{2}+r^{2}+2pq+2pr+2qr\\) with \\(p=4x^{2}\\), \\(q=bx\\), \\(r=c\\).",
+              "work": "\\(\\left(4x^{2}+bx+c\\right)^{2}=16x^{4}+8bx^{3}+\\left(b^{2}+8c\\right)x^{2}+2bcx+c^{2}\\)"
+            },
+            {
+              "explain": "Coefficient of \\(x^{3}\\): \\(8b=16\\).",
+              "work": "\\(b=2\\)"
+            },
+            {
+              "explain": "Constant term: \\(c^{2}=1\\), so \\(c=\\pm1\\). Coefficient of \\(x\\): \\(2bc=-4\\), so \\(4c=-4\\), \\(c=-1\\).",
+              "work": "\\(c=-1\\)"
+            },
+            {
+              "explain": "Check the \\(x^{2}\\) coefficient: \\(b^{2}+8c=4-8=-4\\) ✓.",
+              "work": "\\(b=2,\\quad c=-1\\)"
+            },
+            {
+              "explain": "Why not the others: B has \\(8b=-16\\) (wrong sign); C has \\(c=1\\), giving \\(2bc=+4\\), not \\(-4\\); D has \\(8b=32\\) (wrong).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "find the values of \\(b\\) and \\(c\\)",
+              "note": "Expand: \\(8b=16\\), \\(c^2=1\\), \\(2bc=-4\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "James Ruse Agricultural High School 2020 Trial Higher School Certificate Examination Mathematics Extension 2",
+            "school": "James Ruse Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "jamesruse2020-e2-q15av",
+          "type": "mc",
+          "stem": "Using the quartic \\(16x^{4}+16x^{3}-4x^{2}-4x+1=\\left(4x^{2}+2x-1\\right)^{2}=0\\) with roots \\(\\cos\\dfrac{2\\pi}{5},\\cos\\dfrac{4\\pi}{5},\\cos\\dfrac{6\\pi}{5},\\cos\\dfrac{8\\pi}{5}\\), hence find the exact values of \\(\\cos\\dfrac{2\\pi}{5}\\) and \\(\\cos\\dfrac{4\\pi}{5}\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\cos\\dfrac{2\\pi}{5}=\\dfrac{\\sqrt5-1}{4}\\), \\(\\cos\\dfrac{4\\pi}{5}=-\\dfrac{\\sqrt5+1}{4}\\)",
+            "\\(\\cos\\dfrac{2\\pi}{5}=-\\dfrac{\\sqrt5+1}{4}\\), \\(\\cos\\dfrac{4\\pi}{5}=\\dfrac{\\sqrt5-1}{4}\\)",
+            "\\(\\cos\\dfrac{2\\pi}{5}=\\dfrac{\\sqrt5+1}{4}\\), \\(\\cos\\dfrac{4\\pi}{5}=\\dfrac{1-\\sqrt5}{4}\\)",
+            "\\(\\cos\\dfrac{2\\pi}{5}=\\dfrac{\\sqrt5-1}{2}\\), \\(\\cos\\dfrac{4\\pi}{5}=-\\dfrac{\\sqrt5+1}{2}\\)"
+          ],
+          "answer": 0,
+          "hint": "A square equals zero only when what is squared is zero: solve \\(4x^{2}+2x-1=0\\) with the quadratic formula. Then decide which root is \\(\\cos72^{\\circ}\\) (positive, acute) and which is \\(\\cos144^{\\circ}\\) (negative, obtuse).",
+          "steps": [
+            {
+              "explain": "\\(\\left(4x^{2}+2x-1\\right)^{2}=0\\) means \\(4x^{2}+2x-1=0\\) (the other two roots are repeats: \\(\\cos\\dfrac{6\\pi}{5}=\\cos\\dfrac{4\\pi}{5}\\) and \\(\\cos\\dfrac{8\\pi}{5}=\\cos\\dfrac{2\\pi}{5}\\)).",
+              "work": "\\(4x^{2}+2x-1=0\\)"
+            },
+            {
+              "explain": "Quadratic formula with \\(a=4\\), \\(b=2\\), \\(c=-1\\): \\(\\Delta=4+16=20\\), \\(\\sqrt{20}=2\\sqrt5\\).",
+              "work": "\\(x=\\dfrac{-2\\pm\\sqrt{20}}{8}=\\dfrac{-2\\pm2\\sqrt5}{8}=\\dfrac{-1\\pm\\sqrt5}{4}\\)"
+            },
+            {
+              "explain": "Which is which? \\(\\dfrac{2\\pi}{5}=72^{\\circ}\\) is in the 1st quadrant, so its cosine is POSITIVE: \\(\\dfrac{\\sqrt5-1}{4}\\approx0.309\\). \\(\\dfrac{4\\pi}{5}=144^{\\circ}\\) is in the 2nd quadrant, so its cosine is NEGATIVE: \\(\\dfrac{-1-\\sqrt5}{4}\\approx-0.809\\).",
+              "work": "\\(\\cos\\dfrac{2\\pi}{5}=\\dfrac{\\sqrt5-1}{4},\\qquad\\cos\\dfrac{4\\pi}{5}=-\\dfrac{1+\\sqrt5}{4}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 300\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><line x1=\"10.0\" y1=\"150.0\" x2=\"350.0\" y2=\"150.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"185.0\" y1=\"292.0\" x2=\"185.0\" y2=\"10.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"350.0\" y1=\"150.0\" x2=\"343.9\" y2=\"146.5\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"350.0\" y1=\"150.0\" x2=\"343.9\" y2=\"153.5\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"185.0\" y1=\"10.0\" x2=\"181.5\" y2=\"16.1\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"185.0\" y1=\"10.0\" x2=\"188.5\" y2=\"16.1\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><circle cx=\"185\" cy=\"150\" r=\"110\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-dasharray=\"5 4\"/><line x1=\"185.0\" y1=\"150.0\" x2=\"219.0\" y2=\"45.4\" stroke=\"#dc2626\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"219.0\" y1=\"45.4\" x2=\"219.0\" y2=\"150.0\" stroke=\"#dc2626\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><circle cx=\"219.0\" cy=\"45.4\" r=\"4.6\" fill=\"#dc2626\"/><circle cx=\"219.0\" cy=\"150.0\" r=\"4.6\" fill=\"#dc2626\"/><polyline points=\"211.0,150.0 211.0,149.2 210.9,148.4 210.9,147.6 210.8,146.7 210.7,145.9 210.5,145.1 210.4,144.3 210.2,143.5 210.0,142.7 209.7,142.0 209.5,141.2 209.2,140.4 208.9,139.7 208.5,138.9 208.2,138.2 207.8,137.5 207.4,136.8 207.0,136.1 206.5,135.4 206.0,134.7 205.5,134.1 205.0,133.4 204.5,132.8 204.0,132.2 203.4,131.6 202.8,131.0 202.2,130.5 201.6,130.0 200.9,129.5 200.3,129.0 199.6,128.5 198.9,128.0 198.2,127.6 197.5,127.2 196.8,126.8 196.1,126.5 195.3,126.1 194.6,125.8 193.8,125.5 193.0,125.3\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2\"/><line x1=\"185.0\" y1=\"150.0\" x2=\"96.0\" y2=\"85.3\" stroke=\"#047857\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"96.0\" y1=\"85.3\" x2=\"96.0\" y2=\"150.0\" stroke=\"#047857\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><circle cx=\"96.0\" cy=\"85.3\" r=\"4.6\" fill=\"#047857\"/><circle cx=\"96.0\" cy=\"150.0\" r=\"4.6\" fill=\"#047857\"/><polyline points=\"221.0,150.0 220.9,147.7 220.7,145.5 220.4,143.3 219.9,141.0 219.2,138.9 218.5,136.7 217.6,134.7 216.5,132.7 215.4,130.7 214.1,128.8 212.7,127.1 211.2,125.4 209.6,123.8 207.9,122.3 206.2,120.9 204.3,119.6 202.3,118.5 200.3,117.4 198.3,116.5 196.1,115.8 194.0,115.1 191.7,114.6 189.5,114.3 187.3,114.1 185.0,114.0 182.7,114.1 180.5,114.3 178.3,114.6 176.0,115.1 173.9,115.8 171.7,116.5 169.7,117.4 167.7,118.5 165.7,119.6 163.8,120.9 162.1,122.3 160.4,123.8 158.8,125.4 157.3,127.1 155.9,128.8\" fill=\"none\" stroke=\"#047857\" stroke-width=\"2\"/><text x=\"223.0\" y=\"166.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">cos 72°</text><text x=\"96.0\" y=\"166.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">cos 144°</text><text x=\"229.0\" y=\"41.4\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">72°</text><text x=\"88.0\" y=\"79.3\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">144°</text></svg>"
+              }
+            },
+            {
+              "explain": "Why not the others: B swaps the two values (cosine of an obtuse angle must be negative); C has \\(\\dfrac{\\sqrt5+1}{4}\\approx0.809\\), which is \\(\\cos36^{\\circ}\\); D lacks the division by 4 (a cosine must lie between \\(-1\\) and 1).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "hence find the exact values of",
+              "note": "Solve \\(4x^2+2x-1=0\\); sign from the quadrant."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "James Ruse Agricultural High School 2020 Trial Higher School Certificate Examination Mathematics Extension 2",
+            "school": "James Ruse Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -5888,6 +6327,118 @@
           "meta": {
             "source": "Hurlstone Agricultural High School 2020 Trial Higher School Certificate Examination Mathematics Extension 2",
             "school": "Hurlstone Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "jamesruse2020-e2-q6",
+          "type": "mc",
+          "stem": "\\(\\omega\\) is a complex cube root of unity and \\(\\omega\\ne1\\). What is the value of \\(\\left(1+\\dfrac1\\omega\\right)^{2020}\\left(1+\\dfrac1{\\omega^{2}}\\right)^{2021}\\)?",
+          "difficulty": "hard",
+          "options": [
+            "\\(-\\dfrac1\\omega\\)",
+            "\\(\\omega\\)",
+            "\\(-\\omega\\)",
+            "\\(1\\)"
+          ],
+          "answer": 0,
+          "hint": "Cube roots of unity: \\(\\omega^{3}=1\\) and \\(1+\\omega+\\omega^{2}=0\\). Simplify each bracket first (\\(1+\\omega=-\\omega^{2}\\), \\(1+\\omega^{2}=-\\omega\\)), then reduce the big powers using \\(\\omega^{3}=1\\).",
+          "steps": [
+            {
+              "explain": "First bracket: put over a common denominator and use \\(1+\\omega=-\\omega^{2}\\).",
+              "work": "\\(1+\\dfrac1\\omega=\\dfrac{\\omega+1}{\\omega}=\\dfrac{-\\omega^{2}}{\\omega}=-\\omega\\)"
+            },
+            {
+              "explain": "Second bracket: use \\(1+\\omega^{2}=-\\omega\\).",
+              "work": "\\(1+\\dfrac1{\\omega^{2}}=\\dfrac{\\omega^{2}+1}{\\omega^{2}}=\\dfrac{-\\omega}{\\omega^{2}}=-\\dfrac1\\omega=-\\omega^{2}\\)"
+            },
+            {
+              "explain": "Raise to the powers. \\((-\\omega)^{2020}=\\omega^{2020}\\) (even power); \\(\\left(-\\omega^{2}\\right)^{2021}=-\\omega^{4042}\\) (odd power).",
+              "work": "\\(\\omega^{2020}\\times\\left(-\\omega^{4042}\\right)\\)"
+            },
+            {
+              "explain": "Reduce the powers: divide the index by 3 and keep the REMAINDER. \\(2020=3(673)+1\\), so \\(\\omega^{2020}=\\omega\\). \\(4042=3(1347)+1\\), so \\(\\omega^{4042}=\\omega\\).",
+              "work": "\\(\\omega\\times(-\\omega)=-\\omega^{2}\\)"
+            },
+            {
+              "explain": "Convert to the form in the options: \\(\\omega^{2}=\\dfrac{1}{\\omega}\\) (since \\(\\omega^{3}=1\\)).",
+              "work": "\\(-\\omega^{2}=-\\dfrac1\\omega\\)"
+            },
+            {
+              "explain": "Why not the others: B and C come from reducing a power wrongly (e.g. treating \\(\\left(-\\omega^{2}\\right)^{2021}\\) as \\(\\omega\\)); D would need the whole product to equal 1, which it does not.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "\\omega\\) is a complex cube root of unity",
+              "note": "\\(1+\\omega=-\\omega^2\\); \\(\\omega^3=1\\) reduces the powers."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "James Ruse Agricultural High School 2020 Trial Higher School Certificate Examination Mathematics Extension 2",
+            "school": "James Ruse Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "jamesruse2020-e2-q11ci",
+          "type": "mc",
+          "stem": "Express \\(\\sqrt{-24-10i}\\) in the form \\(a+ib\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\pm(1-5i)\\)",
+            "\\(\\pm(1+5i)\\)",
+            "\\(\\pm(5-i)\\)",
+            "\\(1-5i\\) only"
+          ],
+          "answer": 0,
+          "hint": "Let \\((a+ib)^{2}=-24-10i\\) and equate real and imaginary parts. There are always TWO square roots (negatives of each other).",
+          "steps": [
+            {
+              "explain": "Expand \\((a+ib)^{2}\\).",
+              "work": "\\(a^{2}-b^{2}+2abi=-24-10i\\)"
+            },
+            {
+              "explain": "Equate real and imaginary parts.",
+              "work": "\\(\\begin{aligned}&a^{2}-b^{2}&=-24\\quad(1)\\\\ &2ab&=-10\\ \\Rightarrow\\ ab=-5\\quad(2)\\end{aligned}\\)"
+            },
+            {
+              "explain": "Look for integers: \\(ab=-5\\) gives \\((a,b)=(1,-5),(-1,5),(5,-1),(-5,1)\\). Test (1): \\(a^{2}-b^{2}=-24\\) needs \\(b^{2}\\) bigger than \\(a^{2}\\) by 24: \\(1-25=-24\\) ✓ for \\(a=\\pm1\\), \\(b=\\mp5\\).",
+              "work": "\\(a=1,\\ b=-5\\quad\\text{or}\\quad a=-1,\\ b=5\\)"
+            },
+            {
+              "explain": "Check: \\((1-5i)^{2}=1-10i+25i^{2}=1-10i-25=-24-10i\\) ✓.",
+              "work": "\\(\\sqrt{-24-10i}=\\pm(1-5i)\\)"
+            },
+            {
+              "explain": "Why not the others: \\((1+5i)^{2}=-24+10i\\) (sign of the imaginary part); \\((5-i)^{2}=24-10i\\) (real part wrong); D gives only one of the two roots.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Express \\(\\sqrt{-24-10i}\\)",
+              "note": "\\((a+ib)^2\\): equate real and imaginary parts."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "James Ruse Agricultural High School 2020 Trial Higher School Certificate Examination Mathematics Extension 2",
+            "school": "James Ruse Agricultural High School",
             "grade": "12",
             "origin": "teacher"
           }
