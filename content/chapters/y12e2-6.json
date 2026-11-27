@@ -2506,6 +2506,60 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "knox2021-e2-q15b",
+          "type": "mc",
+          "stem": "By evaluating the integral, show that \\(\\displaystyle\\int x^{2}\\sqrt{1-x^{2}}\\,dx=\\dfrac{\\sin^{-1}(x)+\\sqrt{1-x^{2}}\\left(2x^{3}-x\\right)}{8}+C\\). Which working is correct?",
+          "difficulty": "hard",
+          "options": [
+            "Let \\(x=\\sin\\theta\\), \\(dx=\\cos\\theta\\,d\\theta\\), \\(\\sqrt{1-x^{2}}=\\cos\\theta\\). \\(\\displaystyle\\int\\sin^{2}\\theta\\cos^{2}\\theta\\,d\\theta=\\int\\dfrac{\\sin^{2}2\\theta}{4}d\\theta=\\dfrac{1}{8}\\int(1-\\cos4\\theta)d\\theta=\\dfrac\\theta8-\\dfrac{\\sin4\\theta}{32}+C\\). With \\(\\theta=\\sin^{-1}x\\) and \\(\\sin4\\theta=4\\sin\\theta\\cos\\theta\\left(1-2\\sin^{2}\\theta\\right)=4x\\sqrt{1-x^{2}}\\left(1-2x^{2}\\right)\\), this equals \\(\\dfrac{\\sin^{-1}x+\\sqrt{1-x^{2}}\\left(2x^{3}-x\\right)}{8}+C\\).",
+            "Let \\(x=\\sin\\theta\\). \\(\\displaystyle\\int\\sin^{2}\\theta\\cos^{2}\\theta\\,d\\theta=\\dfrac{1}{4}\\int(1-\\cos4\\theta)d\\theta\\) (forgetting the \\(\\dfrac{1}{2}\\) in \\(\\sin^{2}2\\theta=\\dfrac{1-\\cos4\\theta}{2}\\)), which gives \\(\\dfrac\\theta4-\\dfrac{\\sin4\\theta}{16}\\), a different answer.",
+            "Let \\(x=\\cos\\theta\\); then \\(\\sqrt{1-x^{2}}=\\sin\\theta\\) and \\(dx=\\sin\\theta\\,d\\theta\\), so the integral is \\(\\displaystyle\\int\\cos^{2}\\theta\\sin^{2}\\theta\\,d\\theta\\), with the SAME \\(\\theta=\\cos^{-1}x\\) in the answer, giving \\(\\cos^{-1}x\\) rather than \\(\\sin^{-1}x\\).",
+            "Integrate by parts with \\(u=x^{2}\\), \\(v'=\\sqrt{1-x^{2}}\\): \\(\\int x^{2}\\sqrt{1-x^{2}}dx=x^{2}\\cdot\\dfrac{\\left(1-x^{2}\\right)^{\\frac{3}{2}}}{-3}\\), a single term; this cannot give a \\(\\sin^{-1}x\\)."
+          ],
+          "answer": 0,
+          "hint": "The \\(\\sqrt{1-x^{2}}\\) suggests the trig substitution \\(x=\\sin\\theta\\). Then \\(x^{2}\\sqrt{1-x^{2}}\\,dx=\\sin^{2}\\theta\\cos^{2}\\theta\\,d\\theta=\\dfrac{\\sin^{2}2\\theta}{4}d\\theta\\). Use \\(\\sin^{2}2\\theta=\\dfrac{1-\\cos4\\theta}{2}\\), integrate, then convert back with a double-angle expansion of \\(\\sin4\\theta\\).",
+          "steps": [
+            {
+              "explain": "Substitute \\(x=\\sin\\theta\\): \\(dx=\\cos\\theta\\,d\\theta\\), \\(\\sqrt{1-x^{2}}=\\sqrt{\\cos^{2}\\theta}=\\cos\\theta\\).",
+              "work": "\\(\\int x^{2}\\sqrt{1-x^{2}}dx=\\int\\sin^{2}\\theta\\cos\\theta\\cdot\\cos\\theta\\,d\\theta=\\int\\sin^{2}\\theta\\cos^{2}\\theta\\,d\\theta\\)"
+            },
+            {
+              "explain": "\\(\\sin\\theta\\cos\\theta=\\dfrac{1}{2}\\sin2\\theta\\), so \\(\\sin^{2}\\theta\\cos^{2}\\theta=\\dfrac{\\sin^{2}2\\theta}{4}\\). Then \\(\\sin^{2}2\\theta=\\dfrac{1-\\cos4\\theta}{2}\\).",
+              "work": "\\(=\\int\\dfrac{1-\\cos4\\theta}{8}d\\theta=\\dfrac{1}{8}\\left(\\theta-\\dfrac{\\sin4\\theta}{4}\\right)+C\\)"
+            },
+            {
+              "explain": "Convert back: \\(\\theta=\\sin^{-1}x\\). \\(\\sin4\\theta=2\\sin2\\theta\\cos2\\theta=2\\left(2\\sin\\theta\\cos\\theta\\right)\\left(1-2\\sin^{2}\\theta\\right)=4x\\sqrt{1-x^{2}}\\left(1-2x^{2}\\right)\\).",
+              "work": "\\(\\dfrac{\\sin4\\theta}{32}=\\dfrac{x\\sqrt{1-x^{2}}\\left(1-2x^{2}\\right)}{8}\\)"
+            },
+            {
+              "explain": "Combine: \\(\\dfrac\\theta8-\\dfrac{x\\sqrt{1-x^{2}}\\left(1-2x^{2}\\right)}{8}=\\dfrac{\\sin^{-1}x+\\sqrt{1-x^{2}}\\left(2x^{3}-x\\right)}{8}\\) (since \\(-x(1-2x^{2})=2x^{3}-x\\)).",
+              "work": "\\(\\dfrac{\\sin^{-1}x+\\sqrt{1-x^{2}}\\left(2x^{3}-x\\right)}{8}+C\\)"
+            },
+            {
+              "explain": "Why not the others: B loses the factor \\(\\dfrac{1}{2}\\) in \\(\\sin^{2}2\\theta\\); C uses \\(\\cos^{-1}\\) (equal to \\(\\dfrac\\pi2-\\sin^{-1}\\) with the opposite sign, which does not match); D integrates by parts incorrectly.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "By evaluating the integral, show that",
+              "note": "\\(x=\\sin\\theta\\); \\(\\sin^2\\theta\\cos^2\\theta=\\dfrac{\\sin^22\\theta}{4}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Knox Grammar School 2021 Trial HSC Examination Mathematics Extension 2",
+            "school": "Knox Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -5291,6 +5345,64 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "knox2021-e2-q12b",
+          "type": "mc",
+          "stem": "By writing \\(\\dfrac{8-2x}{(1+x)\\left(4+x^{2}\\right)}\\) in the form \\(\\dfrac{A}{1+x}+\\dfrac{Bx+C}{4+x^{2}}\\), evaluate \\(\\displaystyle\\int_{0}^{4}\\dfrac{8-2x}{(1+x)\\left(4+x^{2}\\right)}\\,dx\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\ln5\\)",
+            "\\(\\ln\\dfrac{5}{4}\\)",
+            "\\(\\ln4\\)",
+            "\\(\\ln10\\)"
+          ],
+          "answer": 0,
+          "hint": "Clear denominators: \\(8-2x=A(4+x^{2})+(Bx+C)(1+x)\\). Substitute \\(x=-1\\) for \\(A\\), compare coefficients of \\(x^{2}\\) and the constant terms for \\(B\\), \\(C\\). Then integrate each part (\\(\\ln\\) and \\(\\ln\\) of the quadratic, since \\(\\dfrac{d}{dx}(4+x^{2})=2x\\)).",
+          "steps": [
+            {
+              "explain": "Clear the denominators.",
+              "work": "\\(8-2x=A\\left(4+x^{2}\\right)+(Bx+C)(1+x)\\)"
+            },
+            {
+              "explain": "\\(x=-1\\): \\(8+2=10=A(5)\\), so \\(A=2\\). Coefficient of \\(x^{2}\\): \\(0=A+B\\), so \\(B=-2\\). Constants: \\(8=4A+C=8+C\\), so \\(C=0\\).",
+              "work": "\\(\\dfrac{8-2x}{(1+x)(4+x^{2})}=\\dfrac{2}{1+x}-\\dfrac{2x}{4+x^{2}}\\)"
+            },
+            {
+              "explain": "Integrate: \\(\\int\\dfrac{2}{1+x}dx=2\\ln(1+x)\\); \\(\\int\\dfrac{2x}{4+x^{2}}dx=\\ln\\left(4+x^{2}\\right)\\) (the numerator is the derivative of the denominator).",
+              "work": "\\(\\int=\\left[2\\ln(1+x)-\\ln\\left(4+x^{2}\\right)\\right]_{0}^{4}\\)"
+            },
+            {
+              "explain": "Upper limit \\(x=4\\): \\(2\\ln5-\\ln20\\). Lower limit \\(x=0\\): \\(2\\ln1-\\ln4=-\\ln4\\).",
+              "work": "\\(=\\left(2\\ln5-\\ln20\\right)-(0-\\ln4)=\\ln25-\\ln20+\\ln4\\)"
+            },
+            {
+              "explain": "Combine with log laws.",
+              "work": "\\(=\\ln\\dfrac{25\\times4}{20}=\\ln5\\)"
+            },
+            {
+              "explain": "Why not the others: \\(\\ln\\dfrac{5}{4}\\) forgets the lower limit; \\(\\ln4\\) and \\(\\ln10\\) come from a slip in \\(A\\) or \\(B\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "By writing \\(\\dfrac{8-2x}{(1+x)\\left(4+x^{2}\\right)}\\) in the form",
+              "note": "\\(A=2\\), \\(B=-2\\), \\(C=0\\); \\(\\int\\dfrac{2x}{4+x^2}=\\ln(4+x^2)\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Knox Grammar School 2021 Trial HSC Examination Mathematics Extension 2",
+            "school": "Knox Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -6650,6 +6762,60 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "knox2021-e2-q12a",
+          "type": "mc",
+          "stem": "Use integration by parts to find \\(\\displaystyle\\int x\\,3^{x}\\,dx\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{x\\,3^{x}}{\\ln3}-\\dfrac{3^{x}}{(\\ln3)^{2}}+C\\)",
+            "\\(\\dfrac{x\\,3^{x}}{\\ln3}+\\dfrac{3^{x}}{(\\ln3)^{2}}+C\\)",
+            "\\(x\\,3^{x}\\ln3-3^{x}+C\\)",
+            "\\(\\dfrac{x^{2}3^{x}}{2\\ln3}+C\\)"
+          ],
+          "answer": 0,
+          "hint": "Choose \\(u=x\\) (it becomes 1 when differentiated) and \\(v'=3^{x}\\). Recall \\(\\int a^{x}dx=\\dfrac{a^{x}}{\\ln a}\\). Then \\(\\int uv'=uv-\\int vu'\\), and the remaining integral is again \\(\\int3^{x}\\).",
+          "steps": [
+            {
+              "explain": "Parts: \\(u=x\\Rightarrow u'=1\\); \\(v'=3^{x}\\Rightarrow v=\\dfrac{3^{x}}{\\ln3}\\).",
+              "work": "\\(u=x,\\ u'=1,\\ v'=3^{x},\\ v=\\dfrac{3^{x}}{\\ln3}\\)"
+            },
+            {
+              "explain": "Apply \\(uv-\\int vu'\\,dx\\).",
+              "work": "\\(\\int x3^{x}dx=\\dfrac{x\\,3^{x}}{\\ln3}-\\int\\dfrac{3^{x}}{\\ln3}\\,dx\\)"
+            },
+            {
+              "explain": "The remaining integral: \\(\\dfrac{1}{\\ln3}\\int3^{x}dx=\\dfrac{1}{\\ln3}\\cdot\\dfrac{3^{x}}{\\ln3}\\).",
+              "work": "\\(=\\dfrac{x\\,3^{x}}{\\ln3}-\\dfrac{3^{x}}{(\\ln3)^{2}}+C\\)"
+            },
+            {
+              "explain": "Check by differentiating: \\(\\dfrac{d}{dx}\\left[\\dfrac{x3^{x}}{\\ln3}\\right]=\\dfrac{3^{x}}{\\ln3}+x3^{x}\\) and \\(\\dfrac{d}{dx}\\left[\\dfrac{3^{x}}{(\\ln3)^{2}}\\right]=\\dfrac{3^{x}}{\\ln3}\\); the difference is \\(x3^{x}\\) ✓.",
+              "work": ""
+            },
+            {
+              "explain": "Why not the others: B has a plus sign; C forgets that \\(\\int3^{x}dx\\) has the factor \\(\\dfrac{1}{\\ln3}\\); D integrates \\(x\\) and \\(3^{x}\\) separately.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Use integration by parts to find",
+              "note": "\\(u=x\\), \\(v=\\dfrac{3^x}{\\ln3}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Knox Grammar School 2021 Trial HSC Examination Mathematics Extension 2",
+            "school": "Knox Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -7378,6 +7544,64 @@
           "meta": {
             "source": "Kinross Wolaroi School 2022 Trial HSC Examination Mathematics Extension 2",
             "school": "Kinross Wolaroi School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "knox2021-e2-q8",
+          "type": "mc",
+          "stem": "Which integral has the smallest value?",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\displaystyle\\int_{0}^{\\frac\\pi4}(\\sin x)^{2}dx\\)",
+            "\\(\\displaystyle\\int_{0}^{\\frac\\pi4}(\\cos x)^{2}dx\\)",
+            "\\(\\displaystyle\\int_{0}^{\\frac\\pi4}\\sin x\\cos x\\,dx\\)",
+            "\\(\\displaystyle\\int_{0}^{\\frac\\pi4}\\sin x\\tan x\\,dx\\)"
+          ],
+          "answer": 0,
+          "hint": "Evaluate each integral. Use \\(\\sin^{2}x=\\dfrac{1-\\cos2x}{2}\\), \\(\\cos^{2}x=\\dfrac{1+\\cos2x}{2}\\), \\(\\sin x\\cos x=\\dfrac{1}{2}\\sin2x\\), and \\(\\sin x\\tan x=\\dfrac{\\sin^{2}x}{\\cos x}=\\sec x-\\cos x\\).",
+          "steps": [
+            {
+              "explain": "(A): \\(\\int\\sin^{2}x\\,dx=\\dfrac{x}{2}-\\dfrac{\\sin2x}{4}\\). Limits \\(0\\) to \\(\\dfrac\\pi4\\).",
+              "work": "\\(\\text{(A)}=\\dfrac\\pi8-\\dfrac{1}{4}\\approx0.143\\)"
+            },
+            {
+              "explain": "(B): \\(\\int\\cos^{2}x\\,dx=\\dfrac{x}{2}+\\dfrac{\\sin2x}{4}\\).",
+              "work": "\\(\\text{(B)}=\\dfrac\\pi8+\\dfrac{1}{4}\\approx0.643\\)"
+            },
+            {
+              "explain": "(C): \\(\\int\\sin x\\cos x\\,dx=\\dfrac{\\sin^{2}x}{2}\\).",
+              "work": "\\(\\text{(C)}=\\dfrac{1}{2}\\sin^{2}\\dfrac\\pi4=\\dfrac{1}{4}=0.25\\)"
+            },
+            {
+              "explain": "(D): \\(\\sin x\\tan x=\\sec x-\\cos x\\), so \\(\\int=\\ln|\\sec x+\\tan x|-\\sin x\\).",
+              "work": "\\(\\text{(D)}=\\ln\\left(\\sqrt2+1\\right)-\\dfrac{\\sqrt2}{2}\\approx0.174\\)"
+            },
+            {
+              "explain": "Compare: \\(0.143<0.174<0.25<0.643\\), so (A) is the smallest.",
+              "work": ""
+            },
+            {
+              "explain": "Quick check without integrating: on \\(\\left[0,\\dfrac\\pi4\\right]\\), \\(\\sin x\\le\\cos x\\) so \\(\\sin^{2}x\\le\\sin x\\cos x\\le\\cos^{2}x\\), and \\(\\sin x\\tan x=\\dfrac{\\sin^{2}x}{\\cos x}\\ge\\sin^{2}x\\) (since \\(\\cos x\\le1\\)). So (A) is the smallest.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Which integral has the smallest value",
+              "note": "\\(\\sin^2\\le\\sin\\cos\\le\\cos^2\\); \\(\\sin\\tan\\ge\\sin^2\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Knox Grammar School 2021 Trial HSC Examination Mathematics Extension 2",
+            "school": "Knox Grammar School",
             "grade": "12",
             "origin": "teacher"
           }
@@ -9710,6 +9934,114 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "knox2021-e2-q16ci",
+          "type": "mc",
+          "stem": "Given that \\(I_{2n+1}=\\displaystyle\\int_{0}^{1}x^{2n+1}e^{x^{2}}dx\\) where \\(n\\) is a positive integer, prove that \\(I_{2n+1}=\\dfrac{e}{2}-nI_{2n-1}\\). Which working is correct?",
+          "difficulty": "hard",
+          "options": [
+            "Write \\(x^{2n+1}e^{x^{2}}=x^{2n}\\cdot xe^{x^{2}}\\). By parts: \\(u=x^{2n}\\), \\(v'=xe^{x^{2}}\\), \\(u'=2nx^{2n-1}\\), \\(v=\\dfrac12e^{x^{2}}\\). \\(I_{2n+1}=\\left[\\dfrac12x^{2n}e^{x^{2}}\\right]_{0}^{1}-\\displaystyle\\int_{0}^{1}nx^{2n-1}e^{x^{2}}dx=\\dfrac{e}{2}-0-nI_{2n-1}\\).",
+            "By parts with \\(u=e^{x^{2}}\\), \\(v'=x^{2n+1}\\): \\(v=\\dfrac{x^{2n+2}}{2n+2}\\), so \\(I_{2n+1}=\\dfrac{e}{2n+2}-\\dfrac{1}{2n+2}\\displaystyle\\int2xx^{2n+2}e^{x^{2}}dx\\), which does not involve \\(I_{2n-1}\\).",
+            "By parts with \\(u=x^{2n}\\), \\(v'=xe^{x^{2}}\\), \\(v=e^{x^{2}}\\) (forgetting the \\(\\dfrac{1}{2}\\)). \\(I_{2n+1}=\\left[x^{2n}e^{x^{2}}\\right]_{0}^{1}-2n\\displaystyle\\int x^{2n-1}e^{x^{2}}dx=e-2nI_{2n-1}\\).",
+            "By parts as above but with the sign error: \\(I_{2n+1}=\\dfrac{e}{2}+nI_{2n-1}\\)."
+          ],
+          "answer": 0,
+          "hint": "Split \\(x^{2n+1}=x^{2n}\\cdot x\\) so that \\(xe^{x^{2}}\\) (which integrates to \\(\\dfrac12e^{x^{2}}\\)) is the \\(v'\\) part, and \\(x^{2n}\\) is the \\(u\\) part (it gets simpler when differentiated). Evaluate the boundary term at 0 and 1.",
+          "steps": [
+            {
+              "explain": "\\(u=x^{2n}\\Rightarrow u'=2nx^{2n-1}\\); \\(v'=xe^{x^{2}}\\Rightarrow v=\\dfrac12e^{x^{2}}\\) (check: \\(\\dfrac{d}{dx}\\dfrac12e^{x^{2}}=xe^{x^{2}}\\)).",
+              "work": "\\(I_{2n+1}=\\left[\\dfrac12x^{2n}e^{x^{2}}\\right]_{0}^{1}-\\int_{0}^{1}2nx^{2n-1}\\cdot\\dfrac12e^{x^{2}}dx\\)"
+            },
+            {
+              "explain": "Boundary term: at \\(x=1\\): \\(\\dfrac12e^{1}=\\dfrac{e}{2}\\); at \\(x=0\\): \\(0\\) (since \\(n\\ge1\\)).",
+              "work": "\\(\\left[\\dfrac12x^{2n}e^{x^{2}}\\right]_{0}^{1}=\\dfrac{e}{2}\\)"
+            },
+            {
+              "explain": "The integral: \\(2n\\cdot\\dfrac{1}{2}=n\\), leaving \\(n\\int_{0}^{1}x^{2n-1}e^{x^{2}}dx=nI_{2n-1}\\).",
+              "work": "\\(I_{2n+1}=\\dfrac{e}{2}-nI_{2n-1}\\)"
+            },
+            {
+              "explain": "Why not the others: B chooses the wrong parts (the \\(I_{2n-1}\\) does not appear); C forgets the \\(\\dfrac{1}{2}\\) in \\(v\\); D has a sign error.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "prove that \\(I_{2n+1}=\\dfrac{e}{2}-nI_{2n-1}\\)",
+              "note": "\\(u=x^{2n}\\), \\(v=\\dfrac12e^{x^2}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Knox Grammar School 2021 Trial HSC Examination Mathematics Extension 2",
+            "school": "Knox Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "knox2021-e2-q16cii",
+          "type": "mc",
+          "stem": "Using \\(I_{2n+1}=\\dfrac{e}{2}-nI_{2n-1}\\), where \\(I_{k}=\\displaystyle\\int_{0}^{1}x^{k}e^{x^{2}}dx\\), hence, or otherwise, prove that \\(2\\displaystyle\\int_{0}^{1}x^{2n-1}\\left(1+x^{2}\\right)e^{x^{2}}dx\\le e\\) for \\(n\\in\\mathbb N\\). Which argument is correct?",
+          "difficulty": "hard",
+          "options": [
+            "Expand: \\(2\\displaystyle\\int_{0}^{1}x^{2n-1}\\left(1+x^{2}\\right)e^{x^{2}}dx=2\\left(I_{2n-1}+I_{2n+1}\\right)\\). Substitute \\(I_{2n+1}=\\dfrac{e}{2}-nI_{2n-1}\\): \\(2I_{2n-1}+e-2nI_{2n-1}=e+2(1-n)I_{2n-1}\\). For \\(n\\ge1\\), \\(1-n\\le0\\) and \\(I_{2n-1}>0\\) (integrand positive), so \\(2(1-n)I_{2n-1}\\le0\\) and the expression is \\(\\le e\\).",
+            "\\(2\\left(I_{2n-1}+I_{2n+1}\\right)=2I_{2n-1}+e-2nI_{2n-1}\\). Since \\(I_{2n-1}>0\\), \\(2I_{2n-1}>0\\), so the expression is \\(>e\\).",
+            "\\(2\\left(I_{2n-1}+I_{2n+1}\\right)=e+2(1+n)I_{2n-1}\\), which is clearly bigger than \\(e\\), so the inequality is reversed.",
+            "Since \\(1+x^{2}\\le2\\) on \\([0,1]\\), the integral is at most \\(4\\displaystyle\\int_{0}^{1}x^{2n-1}e^{x^{2}}dx=4I_{2n-1}\\), and \\(I_{2n-1}\\le\\dfrac{e}{4}\\), giving the result."
+          ],
+          "answer": 0,
+          "hint": "Multiply out \\(x^{2n-1}\\left(1+x^{2}\\right)=x^{2n-1}+x^{2n+1}\\). The two integrals are exactly \\(I_{2n-1}\\) and \\(I_{2n+1}\\). Substitute the recurrence from part (i) and collect: you get \\(e\\) plus a multiple \\(2(1-n)\\) of \\(I_{2n-1}\\). Decide the SIGN of that multiple for \\(n\\ge1\\), and that \\(I_{2n-1}>0\\).",
+          "steps": [
+            {
+              "explain": "Distribute: \\(x^{2n-1}\\left(1+x^{2}\\right)=x^{2n-1}+x^{2n+1}\\).",
+              "work": "\\(2\\int_{0}^{1}\\left(x^{2n-1}+x^{2n+1}\\right)e^{x^{2}}dx=2\\left(I_{2n-1}+I_{2n+1}\\right)\\)"
+            },
+            {
+              "explain": "Substitute \\(I_{2n+1}=\\dfrac{e}{2}-nI_{2n-1}\\).",
+              "work": "\\(=2I_{2n-1}+2\\left(\\dfrac{e}{2}-nI_{2n-1}\\right)=2I_{2n-1}+e-2nI_{2n-1}\\)"
+            },
+            {
+              "explain": "Collect the \\(I_{2n-1}\\) terms.",
+              "work": "\\(=e+2(1-n)\\,I_{2n-1}\\)"
+            },
+            {
+              "explain": "For \\(n\\in\\mathbb N\\) (\\(n\\ge1\\)): \\(1-n\\le0\\). Also \\(I_{2n-1}>0\\) because the integrand \\(x^{2n-1}e^{x^{2}}\\ge0\\) on \\([0,1]\\). So \\(2(1-n)I_{2n-1}\\le0\\).",
+              "work": "\\(e+2(1-n)I_{2n-1}\\le e\\)"
+            },
+            {
+              "explain": "Equality holds only for \\(n=1\\) (when \\(1-n=0\\)); for \\(n\\ge2\\) the inequality is strict.",
+              "work": ""
+            },
+            {
+              "explain": "Why not the others: B drops the \\(-2nI_{2n-1}\\); C has \\(1+n\\) (sign error); D gives a bound \\(4I_{2n-1}\\) that is not shown to be \\(\\le e\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "prove that \\(2\\displaystyle\\int_{0}^{1}x^{2n-1}\\left(1+x^{2}\\right)e^{x^{2}}dx\\le e\\)",
+              "note": "\\(=2(I_{2n-1}+I_{2n+1})=e+2(1-n)I_{2n-1}\\le e\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Knox Grammar School 2021 Trial HSC Examination Mathematics Extension 2",
+            "school": "Knox Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -10609,6 +10941,168 @@
           "meta": {
             "source": "Killara High School 2020 Trial HSC Examination Mathematics Extension 2",
             "school": "Killara High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "knox2021-e2-q10",
+          "type": "mc",
+          "stem": "What value of \\(a\\) will minimise the integral \\(\\displaystyle\\int_{0}^{1}\\left(x^{2}-a\\right)^{2}dx\\)?",
+          "difficulty": "medium",
+          "options": [
+            "\\(a=\\dfrac{1}{2}\\)",
+            "\\(a=\\dfrac{1}{\\sqrt2}\\)",
+            "\\(a=\\dfrac{4}{45}\\)",
+            "\\(a=\\dfrac{1}{3}\\)"
+          ],
+          "answer": 3,
+          "hint": "Evaluate the integral as a function of \\(a\\) (a quadratic in \\(a\\)), then find the value of \\(a\\) giving the minimum (the vertex, or set the derivative with respect to \\(a\\) to 0).",
+          "steps": [
+            {
+              "explain": "Expand \\(\\left(x^{2}-a\\right)^{2}=x^{4}-2ax^{2}+a^{2}\\) and integrate with respect to \\(x\\) from 0 to 1.",
+              "work": "\\(F(a)=\\int_{0}^{1}\\left(x^{4}-2ax^{2}+a^{2}\\right)dx=\\left[\\dfrac{x^{5}}{5}-\\dfrac{2ax^{3}}{3}+a^{2}x\\right]_{0}^{1}\\)"
+            },
+            {
+              "explain": "Substitute the limits.",
+              "work": "\\(F(a)=\\dfrac{1}{5}-\\dfrac{2a}{3}+a^{2}\\)"
+            },
+            {
+              "explain": "\\(F(a)\\) is an upward parabola in \\(a\\): minimum where \\(F'(a)=0\\).",
+              "work": "\\(F'(a)=-\\dfrac{2}{3}+2a=0\\ \\Rightarrow\\ a=\\dfrac{1}{3}\\)"
+            },
+            {
+              "explain": "Check: the vertex of \\(a^{2}-\\dfrac23a+\\dfrac{1}{5}\\) is at \\(a=-\\dfrac{b}{2a}=\\dfrac{\\dfrac{2}{3}}{2}=\\dfrac{1}{3}\\) ✓. The minimum value is \\(F\\left(\\dfrac{1}{3}\\right)=\\dfrac{1}{5}-\\dfrac{2}{9}+\\dfrac{1}{9}=\\dfrac{4}{45}\\) (the value in option C, which is the minimum VALUE, not the value of \\(a\\)).",
+              "work": ""
+            },
+            {
+              "explain": "Why not the others: \\(\\dfrac{1}{2}\\) and \\(\\dfrac{1}{\\sqrt2}\\) are not the vertex; \\(\\dfrac{4}{45}\\) is the minimum value of the integral, not the \\(a\\) that gives it.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">D</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "What value of \\(a\\) will minimise the integral",
+              "note": "Integral \\(=\\dfrac{1}{5}-\\dfrac{2a}{3}+a^2\\); minimise."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Knox Grammar School 2021 Trial HSC Examination Mathematics Extension 2",
+            "school": "Knox Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "knox2021-e2-q13ci",
+          "type": "mc",
+          "stem": "Let \\(I_{1}=\\displaystyle\\int_{0}^{\\pi}\\dfrac{x\\sin x\\,dx}{1+\\cos^{2}x}\\) and \\(I_{2}=\\displaystyle\\int_{0}^{\\pi}\\dfrac{(\\pi-x)\\sin x\\,dx}{1+\\cos^{2}x}\\). Using the substitution \\(u=\\pi-x\\) show that \\(I_{1}=I_{2}\\). Which working is correct?",
+          "difficulty": "hard",
+          "options": [
+            "\\(u=\\pi-x\\), \\(du=-dx\\), \\(x=\\pi-u\\); limits \\(x=0\\to u=\\pi\\), \\(x=\\pi\\to u=0\\). \\(\\sin x=\\sin(\\pi-u)=\\sin u\\) and \\(\\cos^{2}x=\\cos^{2}(\\pi-u)=\\cos^{2}u\\). So \\(I_{1}=\\displaystyle\\int_{\\pi}^{0}\\dfrac{(\\pi-u)\\sin u}{1+\\cos^{2}u}(-du)=\\int_{0}^{\\pi}\\dfrac{(\\pi-u)\\sin u}{1+\\cos^{2}u}du=I_{2}\\).",
+            "\\(u=\\pi-x\\), \\(du=dx\\). \\(\\sin x=-\\sin u\\), so \\(I_{1}=-I_{2}\\).",
+            "\\(u=\\pi-x\\), \\(du=-dx\\); the limits stay 0 to \\(\\pi\\) and \\(\\cos^{2}x=-\\cos^{2}u\\). So \\(I_{1}=I_{2}\\).",
+            "\\(u=\\pi-x\\) gives \\(x=u-\\pi\\), so \\(I_{1}=\\displaystyle\\int_{0}^{\\pi}\\dfrac{(u-\\pi)\\sin u}{1+\\cos^{2}u}du=-I_{2}\\)."
+          ],
+          "answer": 0,
+          "hint": "Substitute \\(x=\\pi-u\\) everywhere: the numerator \\(x\\) becomes \\(\\pi-u\\), \\(\\sin(\\pi-u)=\\sin u\\), \\(\\cos(\\pi-u)=-\\cos u\\) so \\(\\cos^{2}\\) is unchanged. Swap the limits using the minus from \\(du=-dx\\).",
+          "steps": [
+            {
+              "explain": "\\(u=\\pi-x\\Rightarrow x=\\pi-u\\), \\(dx=-du\\). Limits: \\(x=0\\Rightarrow u=\\pi\\); \\(x=\\pi\\Rightarrow u=0\\).",
+              "work": "\\(I_{1}=\\int_{u=\\pi}^{u=0}\\dfrac{(\\pi-u)\\sin(\\pi-u)}{1+\\cos^{2}(\\pi-u)}(-du)\\)"
+            },
+            {
+              "explain": "\\(\\sin(\\pi-u)=\\sin u\\); \\(\\cos(\\pi-u)=-\\cos u\\), so \\(\\cos^{2}(\\pi-u)=\\cos^{2}u\\).",
+              "work": "\\(I_{1}=\\int_{\\pi}^{0}\\dfrac{(\\pi-u)\\sin u}{1+\\cos^{2}u}(-du)\\)"
+            },
+            {
+              "explain": "The minus sign swaps the limits back: \\(\\int_{\\pi}^{0}\\cdots(-du)=\\int_{0}^{\\pi}\\cdots du\\).",
+              "work": "\\(I_{1}=\\int_{0}^{\\pi}\\dfrac{(\\pi-u)\\sin u}{1+\\cos^{2}u}du\\)"
+            },
+            {
+              "explain": "This is \\(I_{2}\\) (the name of the variable does not matter).",
+              "work": "\\(I_{1}=I_{2}\\)"
+            },
+            {
+              "explain": "Why not the others: B and D mis-evaluate \\(\\sin(\\pi-u)\\) or \\(x\\); C mis-evaluates the limits and \\(\\cos^{2}\\) (a square cannot be negative).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Using the substitution \\(u=\\pi-x\\) show that \\(I_{1}=I_{2}\\)",
+              "note": "\\(\\sin(\\pi-u)=\\sin u\\); \\(\\cos^2\\) unchanged; limits swap."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Knox Grammar School 2021 Trial HSC Examination Mathematics Extension 2",
+            "school": "Knox Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "knox2021-e2-q13cii",
+          "type": "mc",
+          "stem": "Given \\(I_{1}=I_{2}\\) where \\(I_{1}=\\displaystyle\\int_{0}^{\\pi}\\dfrac{x\\sin x\\,dx}{1+\\cos^{2}x}\\) and \\(I_{2}=\\displaystyle\\int_{0}^{\\pi}\\dfrac{(\\pi-x)\\sin x\\,dx}{1+\\cos^{2}x}\\), hence, or otherwise, evaluate \\(I_{1}\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\dfrac{\\pi^{2}}{4}\\)",
+            "\\(\\dfrac{\\pi^{2}}{2}\\)",
+            "\\(\\dfrac\\pi4\\)",
+            "\\(\\dfrac{\\pi^{2}}{8}\\)"
+          ],
+          "answer": 0,
+          "hint": "Add \\(I_{1}\\) and \\(I_{2}\\): the \\(x\\) and \\(-x\\) cancel, leaving \\(\\pi\\int\\dfrac{\\sin x}{1+\\cos^{2}x}dx\\). Use \\(u=\\cos x\\) (so \\(\\sin x\\,dx=-du\\)) to get \\(\\tan^{-1}\\).",
+          "steps": [
+            {
+              "explain": "Add: \\(2I_{1}=I_{1}+I_{2}\\) (since \\(I_{1}=I_{2}\\)). The numerators add to \\(x+(\\pi-x)=\\pi\\).",
+              "work": "\\(2I_{1}=\\int_{0}^{\\pi}\\dfrac{\\pi\\sin x}{1+\\cos^{2}x}dx=\\pi\\int_{0}^{\\pi}\\dfrac{\\sin x}{1+\\cos^{2}x}dx\\)"
+            },
+            {
+              "explain": "Let \\(u=\\cos x\\), \\(du=-\\sin x\\,dx\\). Limits \\(x=0\\to u=1\\); \\(x=\\pi\\to u=-1\\).",
+              "work": "\\(\\int_{0}^{\\pi}\\dfrac{\\sin x}{1+\\cos^{2}x}dx=\\int_{1}^{-1}\\dfrac{-du}{1+u^{2}}=\\int_{-1}^{1}\\dfrac{du}{1+u^{2}}\\)"
+            },
+            {
+              "explain": "Evaluate: \\(\\left[\\tan^{-1}u\\right]_{-1}^{1}=\\dfrac\\pi4-\\left(-\\dfrac\\pi4\\right)=\\dfrac\\pi2\\).",
+              "work": "\\(2I_{1}=\\pi\\cdot\\dfrac\\pi2=\\dfrac{\\pi^{2}}{2}\\)"
+            },
+            {
+              "explain": "Divide by 2.",
+              "work": "\\(I_{1}=\\dfrac{\\pi^{2}}{4}\\)"
+            },
+            {
+              "explain": "Why not the others: \\(\\dfrac{\\pi^{2}}{2}\\) is \\(2I_{1}\\) (forgot to divide by 2); \\(\\dfrac\\pi4\\) forgets one factor \\(\\pi\\); \\(\\dfrac{\\pi^{2}}{8}\\) divides by 2 twice.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "hence, or otherwise, evaluate \\(I_{1}\\)",
+              "note": "\\(2I_1=\\pi\\int\\dfrac{\\sin x}{1+\\cos^2x}\\); \\(u=\\cos x\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Knox Grammar School 2021 Trial HSC Examination Mathematics Extension 2",
+            "school": "Knox Grammar School",
             "grade": "12",
             "origin": "teacher"
           }

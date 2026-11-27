@@ -596,6 +596,60 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "knox2021-e2-q11c",
+          "type": "mc",
+          "stem": "Use the substitution \\(t=\\tan\\dfrac\\theta2\\) to evaluate \\(\\displaystyle\\int_{0}^{\\frac\\pi2}\\dfrac{d\\theta}{1+\\sin\\theta+\\cos\\theta}\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\ln2\\)",
+            "\\(\\dfrac{1}{2}\\ln2\\)",
+            "\\(\\ln3\\)",
+            "\\(2\\ln2\\)"
+          ],
+          "answer": 0,
+          "hint": "With \\(t=\\tan\\dfrac\\theta2\\): \\(\\sin\\theta=\\dfrac{2t}{1+t^{2}}\\), \\(\\cos\\theta=\\dfrac{1-t^{2}}{1+t^{2}}\\), \\(d\\theta=\\dfrac{2\\,dt}{1+t^{2}}\\). Limits \\(\\theta=0\\to t=0\\); \\(\\theta=\\dfrac\\pi2\\to t=1\\). The denominator should simplify nicely.",
+          "steps": [
+            {
+              "explain": "Substitute everything. Put the denominator over \\(1+t^{2}\\): \\(1+\\dfrac{2t}{1+t^{2}}+\\dfrac{1-t^{2}}{1+t^{2}}=\\dfrac{(1+t^{2})+2t+(1-t^{2})}{1+t^{2}}\\).",
+              "work": "\\(=\\dfrac{2+2t}{1+t^{2}}\\)"
+            },
+            {
+              "explain": "The integrand: \\(\\dfrac{1+t^{2}}{2+2t}\\cdot\\dfrac{2}{1+t^{2}}\\): the \\(1+t^{2}\\) cancels.",
+              "work": "\\(\\int_{0}^{1}\\dfrac{2}{2+2t}\\,dt=\\int_{0}^{1}\\dfrac{1}{1+t}\\,dt\\)"
+            },
+            {
+              "explain": "Integrate.",
+              "work": "\\(=\\left[\\ln(1+t)\\right]_{0}^{1}=\\ln2-\\ln1\\)"
+            },
+            {
+              "explain": "Result.",
+              "work": "\\(=\\ln2\\)"
+            },
+            {
+              "explain": "Why not the others: \\(\\dfrac{1}{2}\\ln2\\) loses the 2 in \\(d\\theta\\); \\(\\ln3\\) uses the wrong limit (\\(t=2\\)); \\(2\\ln2\\) forgets to cancel the 2.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Use the substitution \\(t=\\tan\\dfrac\\theta2\\)",
+              "note": "\\(\\sin,\\cos\\) in \\(t\\); denominator \\(\\to\\dfrac{2+2t}{1+t^2}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Knox Grammar School 2021 Trial HSC Examination Mathematics Extension 2",
+            "school": "Knox Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },

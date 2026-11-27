@@ -1543,6 +1543,210 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "knox2021-e2-q1",
+          "type": "mc",
+          "stem": "Consider the statement: “If an animal is a bird, then it can fly or swim.” What is the contrapositive statement?",
+          "difficulty": "medium",
+          "options": [
+            "If an animal cannot fly or cannot swim, then it is a bird.",
+            "If an animal cannot fly or cannot swim, then it is not a bird.",
+            "If an animal cannot fly and cannot swim, then it is a bird.",
+            "If an animal cannot fly and cannot swim, then it is not a bird."
+          ],
+          "answer": 3,
+          "hint": "For “If \\(P\\) then \\(Q\\)” the contrapositive is “If NOT \\(Q\\) then NOT \\(P\\)”. Negate \\(Q\\) carefully: the negation of “\\(A\\) or \\(B\\)” is “NOT \\(A\\) AND NOT \\(B\\)” (De Morgan).",
+          "steps": [
+            {
+              "explain": "\\(P\\): “the animal is a bird”; \\(Q\\): “it can fly OR swim”.",
+              "work": "\\(P\\Rightarrow Q\\)"
+            },
+            {
+              "explain": "\\(\\neg Q\\): the negation of “can fly or can swim” is “cannot fly AND cannot swim” (both must fail). \\(\\neg P\\): “is not a bird”.",
+              "work": "\\(\\neg(F\\vee S)\\equiv\\neg F\\wedge\\neg S\\)"
+            },
+            {
+              "explain": "Contrapositive \\(\\neg Q\\Rightarrow\\neg P\\): “If an animal cannot fly and cannot swim, then it is not a bird.”",
+              "work": "\\(\\neg Q\\Rightarrow\\neg P\\)"
+            },
+            {
+              "explain": "Why not the others: A and C do not negate \\(P\\) (they conclude “it IS a bird”); B uses “or” (the negation of “or” is “and”).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">D</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "What is the contrapositive statement",
+              "note": "\\(\\neg Q\\Rightarrow\\neg P\\); \\(\\neg(A\\vee B)=\\neg A\\wedge\\neg B\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Knox Grammar School 2021 Trial HSC Examination Mathematics Extension 2",
+            "school": "Knox Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "knox2021-e2-q5",
+          "type": "mc",
+          "stem": "For all non-zero integers \\(x\\) and \\(y\\), if \\(x>y\\) then \\(\\dfrac{1}{x}<\\dfrac{1}{y}\\). What is a counter-example to the above statement?",
+          "difficulty": "medium",
+          "options": [
+            "\\(x=2,\\ y=-1\\)",
+            "\\(x=0,\\ y=0\\)",
+            "\\(x=4,\\ y=3\\)",
+            "\\(x=-2,\\ y=1\\)"
+          ],
+          "answer": 0,
+          "hint": "A COUNTER-EXAMPLE must satisfy the HYPOTHESIS (\\(x>y\\), both non-zero integers) but make the CONCLUSION (\\(\\dfrac{1}{x}<\\dfrac{1}{y}\\)) FALSE. Test each option for both.",
+          "steps": [
+            {
+              "explain": "(A) \\(x=2\\), \\(y=-1\\): \\(x>y\\) ✓ (hypothesis true). \\(\\dfrac{1}{x}=\\dfrac{1}{2}\\) and \\(\\dfrac{1}{y}=-1\\). Is \\(\\dfrac{1}{2}<-1\\)? NO, conclusion false. This is a counter-example.",
+              "work": "\\(2>-1\\ \\text{but}\\ \\dfrac{1}{2}\\not<-1\\)"
+            },
+            {
+              "explain": "(B) \\(x=0,y=0\\): not allowed (non-zero integers), and \\(x>y\\) is false.",
+              "work": "\\(0\\ \\text{is excluded}\\)"
+            },
+            {
+              "explain": "(C) \\(x=4\\), \\(y=3\\): \\(4>3\\) ✓ and \\(\\dfrac{1}{4}<\\dfrac{1}{3}\\) ✓ — the statement holds, so it is NOT a counter-example.",
+              "work": "\\(\\dfrac{1}{4}<\\dfrac{1}{3}\\ \\checkmark\\)"
+            },
+            {
+              "explain": "(D) \\(x=-2\\), \\(y=1\\): the hypothesis \\(x>y\\) is FALSE (\\(-2<1\\)), so this cannot be a counter-example.",
+              "work": "\\(-2>1\\ \\text{false}\\)"
+            },
+            {
+              "explain": "So (A) is the counter-example: the rule \\(x>y\\Rightarrow\\dfrac{1}{x}<\\dfrac{1}{y}\\) only works when \\(x\\) and \\(y\\) have the SAME sign.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "What is a counter-example to the above statement",
+              "note": "Counter-example: hypothesis TRUE, conclusion FALSE."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Knox Grammar School 2021 Trial HSC Examination Mathematics Extension 2",
+            "school": "Knox Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "knox2021-e2-q13aii",
+          "type": "mc",
+          "stem": "For positive integers \\(m\\) and \\(n\\), consider the propositions: \\(p\\): \\(m+n\\) is even; \\(q\\): \\(m\\) and \\(n\\) are both even; \\(r\\): \\(m\\) and \\(n\\) are both odd. Write in symbolic form the compound proposition \\(P\\) where \\(P\\): If \\(m+n\\) is even, then \\(m\\) and \\(n\\) are both even or \\(m\\) and \\(n\\) are both odd. You may use \\(\\vee\\) for ‘or’ and \\(\\wedge\\) for ‘and’ where appropriate.",
+          "difficulty": "medium",
+          "options": [
+            "\\(p\\Rightarrow(q\\vee r)\\)",
+            "\\(p\\Rightarrow(q\\wedge r)\\)",
+            "\\((q\\vee r)\\Rightarrow p\\)",
+            "\\(p\\vee(q\\Rightarrow r)\\)"
+          ],
+          "answer": 0,
+          "hint": "“If … then …” is the implication \\(\\Rightarrow\\): the “if” part comes FIRST. Translate the two parts, then connect with \\(\\Rightarrow\\). “both even or both odd” is \\(q\\vee r\\).",
+          "steps": [
+            {
+              "explain": "The “if” part: “\\(m+n\\) is even” is \\(p\\).",
+              "work": "\\(\\text{if: }p\\)"
+            },
+            {
+              "explain": "The “then” part: “\\(m\\) and \\(n\\) are both even OR \\(m\\) and \\(n\\) are both odd” is \\(q\\vee r\\). (Each of \\(q\\) and \\(r\\) already contains the “both … and”.)",
+              "work": "\\(\\text{then: }q\\vee r\\)"
+            },
+            {
+              "explain": "Combine with \\(\\Rightarrow\\).",
+              "work": "\\(P:\\ p\\Rightarrow(q\\vee r)\\)"
+            },
+            {
+              "explain": "Why not the others: B uses “and” (a pair cannot be both all-even and all-odd); C reverses the implication (that is the converse); D is not an if-then.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Write in symbolic form the compound proposition",
+              "note": "if \\(p\\) then \\(q\\vee r\\): \\(p\\Rightarrow(q\\vee r)\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Knox Grammar School 2021 Trial HSC Examination Mathematics Extension 2",
+            "school": "Knox Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "knox2021-e2-q13aiii",
+          "type": "mc",
+          "stem": "With \\(p\\): \\(m+n\\) is even; \\(q\\): \\(m\\) and \\(n\\) are both even; \\(r\\): \\(m\\) and \\(n\\) are both odd, and \\(P:\\ p\\Rightarrow(q\\vee r)\\). Write both in symbolic form and as an English sentence, the contrapositive to the proposition \\(P\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\((\\neg q\\wedge\\neg r)\\Rightarrow\\neg p\\): “If \\(m\\) and \\(n\\) are not both even and not both odd, then \\(m+n\\) is not even (it is odd).”",
+            "\\((\\neg q\\vee\\neg r)\\Rightarrow\\neg p\\): “If \\(m\\) and \\(n\\) are not both even or not both odd, then \\(m+n\\) is not even.”",
+            "\\((q\\vee r)\\Rightarrow p\\): “If \\(m\\) and \\(n\\) are both even or both odd, then \\(m+n\\) is even.”",
+            "\\(\\neg p\\Rightarrow(\\neg q\\wedge\\neg r)\\): “If \\(m+n\\) is not even, then \\(m\\) and \\(n\\) are not both even and not both odd.”"
+          ],
+          "answer": 0,
+          "hint": "Contrapositive of \\(p\\Rightarrow Q\\) is \\(\\neg Q\\Rightarrow\\neg p\\). Here \\(Q=q\\vee r\\); negate it with De Morgan: \\(\\neg(q\\vee r)=\\neg q\\wedge\\neg r\\). In words: not (both even) AND not (both odd) means one is even and the other odd.",
+          "steps": [
+            {
+              "explain": "Write \\(P\\) as \\(p\\Rightarrow Q\\) with \\(Q=q\\vee r\\). Contrapositive: \\(\\neg Q\\Rightarrow\\neg p\\).",
+              "work": "\\(\\neg(q\\vee r)\\Rightarrow\\neg p\\)"
+            },
+            {
+              "explain": "De Morgan: \\(\\neg(q\\vee r)=\\neg q\\wedge\\neg r\\).",
+              "work": "\\((\\neg q\\wedge\\neg r)\\Rightarrow\\neg p\\)"
+            },
+            {
+              "explain": "In English: \\(\\neg q\\): not both even; \\(\\neg r\\): not both odd. Together: one is even and the other is odd. \\(\\neg p\\): \\(m+n\\) is odd.",
+              "work": "\\(\\text{If }m,n\\text{ are not both even and not both odd, then }m+n\\text{ is odd.}\\)"
+            },
+            {
+              "explain": "Why not the others: B uses “or” (wrong De Morgan); C is the CONVERSE of \\(P\\)’s direction; D is the INVERSE-like reversed statement.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Write both in symbolic form and as an English sentence",
+              "note": "\\(\\neg(q\\vee r)=\\neg q\\wedge\\neg r\\); swap and negate."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Knox Grammar School 2021 Trial HSC Examination Mathematics Extension 2",
+            "school": "Knox Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -2439,6 +2643,168 @@
           "meta": {
             "source": "Kinross Wolaroi School 2022 Trial HSC Examination Mathematics Extension 2",
             "school": "Kinross Wolaroi School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "knox2021-e2-q2",
+          "type": "mc",
+          "stem": "Recall that \\({}^{n}C_{r}\\) is defined for non-negative integers \\(r\\) and \\(n\\) where \\(0\\le r\\le n\\). Consider the equation \\(\\dfrac{100\\,{}^{x}C_{100}}{{}^{x-1}C_{99}}=\\dfrac{1}{x^{99}}\\). How many real solutions in \\(x\\) does this equation possess?",
+          "difficulty": "hard",
+          "options": [
+            "0",
+            "1",
+            "2",
+            "infinite"
+          ],
+          "answer": 0,
+          "hint": "Simplify the left side with factorials: \\({}^{x}C_{100}=\\dfrac{x!}{100!\\,(x-100)!}\\) and \\({}^{x-1}C_{99}=\\dfrac{(x-1)!}{99!\\,(x-100)!}\\). Then solve the resulting equation and CHECK that each answer makes the combinations defined (\\(x\\ge100\\)).",
+          "steps": [
+            {
+              "explain": "Write the ratio with factorials. The \\((x-100)!\\) cancels.",
+              "work": "\\(\\dfrac{{}^{x}C_{100}}{{}^{x-1}C_{99}}=\\dfrac{x!}{100!\\,(x-100)!}\\cdot\\dfrac{99!\\,(x-100)!}{(x-1)!}=\\dfrac{x!\\cdot99!}{(x-1)!\\cdot100!}\\)"
+            },
+            {
+              "explain": "Use \\(x!=x\\,(x-1)!\\) and \\(100!=100\\cdot99!\\).",
+              "work": "\\(=\\dfrac{x}{100}\\)"
+            },
+            {
+              "explain": "So the left side is \\(100\\times\\dfrac{x}{100}=x\\). The equation becomes \\(x=\\dfrac{1}{x^{99}}\\).",
+              "work": "\\(x^{100}=1\\)"
+            },
+            {
+              "explain": "Real solutions of \\(x^{100}=1\\): \\(x=1\\) or \\(x=-1\\). BUT \\({}^{x}C_{100}\\) is only defined for integers \\(x\\ge100\\), and \\({}^{x-1}C_{99}\\) needs \\(x-1\\ge99\\). Neither \\(x=1\\) nor \\(x=-1\\) satisfies \\(x\\ge100\\).",
+              "work": "\\(x=\\pm1\\ \\text{are not in the domain }x\\ge100\\)"
+            },
+            {
+              "explain": "So the equation has NO solutions.",
+              "work": ""
+            },
+            {
+              "explain": "Why not the others: 1 and 2 count \\(x=1\\) and \\(x=\\pm1\\) without checking the domain; “infinite” would need the equation to be an identity.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "How many real solutions in \\(x\\) does this equation possess",
+              "note": "LHS simplifies to \\(x\\); then check the domain \\(x\\ge100\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Knox Grammar School 2021 Trial HSC Examination Mathematics Extension 2",
+            "school": "Knox Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "knox2021-e2-q13ai",
+          "type": "mc",
+          "stem": "Suppose \\(a\\) and \\(b\\) are positive integers, where \\(a\\) is even and \\(b\\) is odd. Show that the sum of \\(a\\) and \\(b\\) is odd. Which proof is correct?",
+          "difficulty": "medium",
+          "options": [
+            "Write \\(a=2k\\) and \\(b=2m+1\\) for integers \\(k,m\\) (any even number is \\(2\\times\\)integer; any odd number is \\(2\\times\\)integer \\(+1\\)). Then \\(a+b=2k+2m+1=2(k+m)+1\\), which is of the form \\(2\\times\\)integer \\(+1\\), so it is odd.",
+            "Write \\(a=2k\\) and \\(b=2k+1\\) (using the SAME \\(k\\)). Then \\(a+b=4k+1\\), which is odd.",
+            "Take \\(a=2\\), \\(b=3\\): \\(a+b=5\\), which is odd. Hence the sum is always odd.",
+            "Even \\(+\\) odd \\(=\\) even, because even numbers dominate."
+          ],
+          "answer": 0,
+          "hint": "Use the definitions: even \\(=2k\\); odd \\(=2m+1\\) with DIFFERENT integers \\(k\\) and \\(m\\) (two unrelated numbers need two different letters). Add and factor out 2.",
+          "steps": [
+            {
+              "explain": "Definitions. \\(a\\) even: \\(a=2k\\) for some integer \\(k\\). \\(b\\) odd: \\(b=2m+1\\) for some integer \\(m\\).",
+              "work": "\\(a=2k,\\qquad b=2m+1\\)"
+            },
+            {
+              "explain": "Add.",
+              "work": "\\(a+b=2k+2m+1\\)"
+            },
+            {
+              "explain": "Factor 2 from the first two terms: \\(2(k+m)+1\\), and \\(k+m\\) is an integer. A number of the form \\(2n+1\\) is odd.",
+              "work": "\\(a+b=2(k+m)+1\\quad\\text{(odd)}\\)"
+            },
+            {
+              "explain": "Why not the others: B uses the same \\(k\\) for both (that only covers consecutive numbers); C is one example (not a proof); D is false.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that the sum of \\(a\\) and \\(b\\) is odd",
+              "note": "\\(a=2k\\), \\(b=2m+1\\) (different letters); \\(a+b=2(k+m)+1\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Knox Grammar School 2021 Trial HSC Examination Mathematics Extension 2",
+            "school": "Knox Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "knox2021-e2-q13b",
+          "type": "mc",
+          "stem": "If \\(x\\) and \\(y\\) are positive integers with \\(x>y\\), prove that \\(6(x+y)^{2}-2(x-y)^{2}\\) is divisible by four. Which proof is correct?",
+          "difficulty": "medium",
+          "options": [
+            "Expand: \\(6\\left(x^{2}+2xy+y^{2}\\right)-2\\left(x^{2}-2xy+y^{2}\\right)=4x^{2}+16xy+4y^{2}=4\\left(x^{2}+4xy+y^{2}\\right)\\). Since \\(x^{2}+4xy+y^{2}\\) is an integer, the expression is divisible by 4.",
+            "Expand: \\(6\\left(x^{2}+2xy+y^{2}\\right)-2\\left(x^{2}-2xy+y^{2}\\right)=4x^{2}+8xy+4y^{2}=4\\left(x^{2}+2xy+y^{2}\\right)\\), which is divisible by 4.",
+            "Take \\(x=2\\), \\(y=1\\): \\(6(9)-2(1)=52=4\\times13\\). Hence it is divisible by 4 for all \\(x,y\\).",
+            "Expand: \\(6(x+y)^{2}-2(x-y)^{2}=4(x+y)^{2}-(x-y)^{2}\\), which is divisible by 4."
+          ],
+          "answer": 0,
+          "hint": "Expand both squares, collect like terms, and FACTOR OUT 4. Be careful with the middle terms: \\(6\\cdot2xy=12xy\\) and \\(-2\\cdot(-2xy)=+4xy\\).",
+          "steps": [
+            {
+              "explain": "Expand the squares: \\((x+y)^{2}=x^{2}+2xy+y^{2}\\) and \\((x-y)^{2}=x^{2}-2xy+y^{2}\\).",
+              "work": "\\(6(x+y)^{2}-2(x-y)^{2}=6x^{2}+12xy+6y^{2}-2x^{2}+4xy-2y^{2}\\)"
+            },
+            {
+              "explain": "Collect: \\(x^{2}\\): \\(6-2=4\\); \\(xy\\): \\(12+4=16\\); \\(y^{2}\\): \\(6-2=4\\).",
+              "work": "\\(=4x^{2}+16xy+4y^{2}\\)"
+            },
+            {
+              "explain": "Factor out 4: \\(x^{2}+4xy+y^{2}\\) is an integer (since \\(x,y\\) are integers).",
+              "work": "\\(=4\\left(x^{2}+4xy+y^{2}\\right)\\)"
+            },
+            {
+              "explain": "Hence the expression is 4 times an integer, divisible by 4.",
+              "work": ""
+            },
+            {
+              "explain": "Why not the others: B has \\(8xy\\) (it is \\(12xy+4xy=16xy\\)); C is one example (not a proof); D is not factored correctly.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "prove that \\(6(x+y)^{2}-2(x-y)^{2}\\) is divisible by four",
+              "note": "Expand; \\(=4(x^2+4xy+y^2)\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Knox Grammar School 2021 Trial HSC Examination Mathematics Extension 2",
+            "school": "Knox Grammar School",
             "grade": "12",
             "origin": "teacher"
           }
@@ -3623,6 +3989,110 @@
           "meta": {
             "source": "Killara High School 2020 Trial HSC Examination Mathematics Extension 2",
             "school": "Killara High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "knox2021-e2-q13aiv",
+          "type": "mc",
+          "stem": "The contrapositive of \\(P\\) is: if \\(m\\) and \\(n\\) are not both even and not both odd, then \\(m+n\\) is odd. Hence explain why the proposition \\(P\\) is true. Which explanation is correct?",
+          "difficulty": "medium",
+          "options": [
+            "If \\(m\\) and \\(n\\) are not both even and not both odd, then one is even and the other is odd. By part (i), the sum of an even and an odd number is odd. So the contrapositive is TRUE. A statement and its contrapositive are logically equivalent, so \\(P\\) is true.",
+            "The contrapositive is true for the example \\(m=2,n=3\\), so \\(P\\) is true.",
+            "The contrapositive is true because \\(m+n\\) is odd, so its converse \\(P\\) is also true.",
+            "The contrapositive is the same as \\(P\\), so no explanation is needed."
+          ],
+          "answer": 0,
+          "hint": "A statement and its contrapositive are LOGICALLY EQUIVALENT (always the same truth value). So prove the contrapositive (easier here) using part (i).",
+          "steps": [
+            {
+              "explain": "Hypothesis of the contrapositive: \\(m,n\\) are not both even and not both odd. Then one of them is even and the other is odd.",
+              "work": "\\(\\text{one even, one odd}\\)"
+            },
+            {
+              "explain": "By part (i) (even \\(+\\) odd), \\(m+n\\) is odd. So the contrapositive conclusion (\\(m+n\\) is not even) holds. The contrapositive is TRUE.",
+              "work": "\\(m+n\\ \\text{is odd}\\)"
+            },
+            {
+              "explain": "Equivalence: \\(P\\Leftrightarrow\\) contrapositive. Since the contrapositive is true, \\(P\\) is true.",
+              "work": "\\(P\\equiv(\\neg q\\wedge\\neg r)\\Rightarrow\\neg p\\)"
+            },
+            {
+              "explain": "Why not the others: B uses one example (not a proof); C confuses contrapositive with converse; D is false (they are different statements, though equivalent).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "explain why the proposition \\(P\\) is true",
+              "note": "Contrapositive true by (i); equivalent to \\(P\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Knox Grammar School 2021 Trial HSC Examination Mathematics Extension 2",
+            "school": "Knox Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "knox2021-e2-q14a",
+          "type": "mc",
+          "stem": "Prove \\(\\log_{3}7\\) is irrational. Which proof is correct?",
+          "difficulty": "medium",
+          "options": [
+            "Assume \\(\\log_{3}7\\) is rational: \\(\\log_{3}7=\\dfrac{a}{b}\\) with \\(a,b\\) positive integers. Then \\(3^{\\frac ab}=7\\), so \\(3^{a}=7^{b}\\). The left side is divisible by 3, but \\(7^{b}\\) is a power of the prime 7 and is not divisible by 3. Contradiction, so \\(\\log_{3}7\\) is irrational.",
+            "Assume \\(\\log_{3}7\\) is irrational. Then \\(3^{a}=7^{b}\\) for some integers, which is a contradiction, so it is rational.",
+            "\\(\\log_{3}7\\approx1.77124\\ldots\\), a non-terminating decimal, so it is irrational.",
+            "Assume \\(\\log_{3}7=\\dfrac{a}{b}\\). Then \\(3^{a}=7^{b}\\); since 3 and 7 are both odd, both sides are odd, which is consistent, so \\(\\log_{3}7\\) is rational."
+          ],
+          "answer": 0,
+          "hint": "Proof by contradiction: assume the OPPOSITE (\\(\\log_{3}7=\\dfrac{a}{b}\\)), convert to the index form \\(3^{a}=7^{b}\\), then compare which primes divide each side.",
+          "steps": [
+            {
+              "explain": "ASSUME \\(\\log_{3}7=\\dfrac{a}{b}\\) with \\(a,b\\) positive integers.",
+              "work": "\\(\\log_{3}7=\\dfrac{a}{b}\\)"
+            },
+            {
+              "explain": "Index form: \\(3^{\\frac ab}=7\\); raise to the power \\(b\\).",
+              "work": "\\(3^{a}=7^{b}\\)"
+            },
+            {
+              "explain": "\\(3^{a}\\) (with \\(a\\ge1\\)) is divisible by 3. \\(7^{b}\\) has only the prime factor 7 (unique factorisation), so it is NOT divisible by 3.",
+              "work": "\\(3\\mid3^{a}\\quad\\text{but}\\quad3\\nmid7^{b}\\)"
+            },
+            {
+              "explain": "Contradiction: the assumption is false, so \\(\\log_{3}7\\) is irrational.",
+              "work": ""
+            },
+            {
+              "explain": "Why not the others: B assumes the wrong thing; C is a decimal (not a proof); D gets no contradiction (both sides being odd proves nothing).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Prove \\(\\log_{3}7\\) is irrational",
+              "note": "Assume \\(\\dfrac{a}{b}\\); \\(3^a=7^b\\); divisibility by 3."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Knox Grammar School 2021 Trial HSC Examination Mathematics Extension 2",
+            "school": "Knox Grammar School",
             "grade": "12",
             "origin": "teacher"
           }
@@ -5972,6 +6442,164 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "knox2021-e2-q15ci",
+          "type": "mc",
+          "stem": "It is given that \\(\\dfrac{1}{k(k+1)}=\\dfrac{1}{k}-\\dfrac{1}{k+1}\\) for \\(k\\in\\mathbb N\\). Prove that \\(\\dfrac{1}{(k+1)^{2}}<\\dfrac{1}{k(k+1)}\\). Which proof is correct?",
+          "difficulty": "medium",
+          "options": [
+            "For \\(k\\ge1\\): \\((k+1)^{2}=(k+1)(k+1)>k(k+1)>0\\) (since \\(k+1>k>0\\)). Taking RECIPROCALS of positive numbers reverses the inequality: \\(\\dfrac{1}{(k+1)^{2}}<\\dfrac{1}{k(k+1)}\\).",
+            "\\((k+1)^{2}<k(k+1)\\), so taking reciprocals, \\(\\dfrac{1}{(k+1)^{2}}<\\dfrac{1}{k(k+1)}\\).",
+            "\\(\\dfrac{1}{k+1}<\\dfrac{1}{k}\\), so squaring both sides gives \\(\\dfrac{1}{(k+1)^{2}}<\\dfrac{1}{k^{2}}\\), which is what we want.",
+            "\\((k+1)^{2}>k(k+1)\\), so taking reciprocals keeps the direction: \\(\\dfrac{1}{(k+1)^{2}}>\\dfrac{1}{k(k+1)}\\)."
+          ],
+          "answer": 0,
+          "hint": "Compare the DENOMINATORS: \\((k+1)^{2}=(k+1)\\cdot(k+1)\\) versus \\(k(k+1)=k\\cdot(k+1)\\). They share the factor \\(k+1\\): compare \\(k+1\\) with \\(k\\). A BIGGER positive denominator gives a SMALLER fraction.",
+          "steps": [
+            {
+              "explain": "Since \\(k+1>k>0\\), multiply both sides by the positive number \\(k+1\\).",
+              "work": "\\((k+1)(k+1)>k(k+1)>0\\ \\Rightarrow\\ (k+1)^{2}>k(k+1)\\)"
+            },
+            {
+              "explain": "Reciprocals of positive numbers REVERSE the inequality (e.g. \\(4>2\\) but \\(\\dfrac{1}{4}<\\dfrac{1}{2}\\)).",
+              "work": "\\(\\dfrac{1}{(k+1)^{2}}<\\dfrac{1}{k(k+1)}\\)"
+            },
+            {
+              "explain": "Test \\(k=2\\): \\(\\dfrac{1}{9}\\approx0.111<\\dfrac{1}{6}\\approx0.167\\) ✓.",
+              "work": ""
+            },
+            {
+              "explain": "Why not the others: B has the false inequality \\((k+1)^{2}<k(k+1)\\); C proves a different inequality (\\(k^{2}\\) in the denominator); D forgets to reverse.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Prove that \\(\\dfrac{1}{(k+1)^{2}}<\\dfrac{1}{k(k+1)}\\)",
+              "note": "\\((k+1)^2>k(k+1)\\); reciprocals reverse."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Knox Grammar School 2021 Trial HSC Examination Mathematics Extension 2",
+            "school": "Knox Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "knox2021-e2-q15cii",
+          "type": "mc",
+          "stem": "If \\(x_{1},x_{2},x_{3},\\dots,x_{n}\\) are positive integers, not necessarily consecutive, such that \\(1<x_{1}<x_{2}<x_{3}<\\cdots<x_{n}\\), prove that \\(\\dfrac{1}{x_{1}^{2}}+\\dfrac{1}{x_{2}^{2}}+\\dfrac{1}{x_{3}^{2}}+\\cdots+\\dfrac{1}{x_{n-1}^{2}}<1\\). Which proof is correct?",
+          "difficulty": "hard",
+          "options": [
+            "Since the \\(x_{i}\\) are INTEGERS, strictly increasing and \\(x_{1}>1\\) (so \\(x_{1}\\ge2\\)), we have \\(x_{i}\\ge i+1\\). So \\(\\dfrac{1}{x_{i}^{2}}\\le\\dfrac{1}{(i+1)^{2}}<\\dfrac{1}{i(i+1)}=\\dfrac{1}{i}-\\dfrac1{i+1}\\) (part (i)). Sum for \\(i=1\\) to \\(n-1\\): \\(\\displaystyle\\sum\\dfrac{1}{x_{i}^{2}}<\\left(1-\\dfrac{1}{2}\\right)+\\left(\\dfrac{1}{2}-\\dfrac{1}{3}\\right)+\\cdots+\\left(\\dfrac1{n-1}-\\dfrac{1}{n}\\right)=1-\\dfrac{1}{n}<1\\).",
+            "Since \\(x_{1}>1\\), \\(\\dfrac{1}{x_{1}^{2}}<1\\). The other terms are smaller, so the total is less than 1.",
+            "Since \\(x_{i}\\ge i+1\\), \\(\\dfrac{1}{x_{i}^{2}}\\ge\\dfrac{1}{(i+1)^{2}}\\). The sum of \\(\\dfrac{1}{(i+1)^{2}}\\) telescopes to \\(1-\\dfrac{1}{n}\\), which is less than 1, so the sum of \\(\\dfrac{1}{x_{i}^{2}}\\) is also less than 1.",
+            "Since \\(x_{i}\\ge i+1\\), \\(\\dfrac{1}{x_{i}^{2}}\\le\\dfrac{1}{(i+1)^{2}}<\\dfrac{1}{i(i+1)}\\). The sum of \\(\\dfrac{1}{i(i+1)}\\) from \\(i=1\\) to \\(n-1\\) equals \\(1+\\dfrac{1}{n}\\), which is not less than 1."
+          ],
+          "answer": 0,
+          "hint": "Because the \\(x_{i}\\) are strictly increasing INTEGERS starting above 1, \\(x_{1}\\ge2\\), \\(x_{2}\\ge3\\), …, \\(x_{i}\\ge i+1\\). Then bound each \\(\\dfrac1{x_{i}^{2}}\\) using part (i) and the identity \\(\\dfrac{1}{k(k+1)}=\\dfrac{1}{k}-\\dfrac1{k+1}\\): the sum TELESCOPES.",
+          "steps": [
+            {
+              "explain": "Integers: \\(x_{1}>1\\Rightarrow x_{1}\\ge2\\). Each next term is at least 1 bigger (strictly increasing integers): \\(x_{i}\\ge i+1\\).",
+              "work": "\\(x_{i}\\ge i+1\\ \\Rightarrow\\ x_{i}^{2}\\ge(i+1)^{2}\\ \\Rightarrow\\ \\dfrac{1}{x_{i}^{2}}\\le\\dfrac{1}{(i+1)^{2}}\\)"
+            },
+            {
+              "explain": "Part (i) with \\(k=i\\): \\(\\dfrac{1}{(i+1)^{2}}<\\dfrac{1}{i(i+1)}=\\dfrac{1}{i}-\\dfrac{1}{i+1}\\).",
+              "work": "\\(\\dfrac{1}{x_{i}^{2}}<\\dfrac{1}{i}-\\dfrac1{i+1}\\)"
+            },
+            {
+              "explain": "Add for \\(i=1,2,\\dots,n-1\\): all the middle terms cancel (telescoping).",
+              "work": "\\(\\sum_{i=1}^{n-1}\\dfrac1{x_{i}^{2}}<\\left(1-\\dfrac{1}{2}\\right)+\\left(\\dfrac{1}{2}-\\dfrac{1}{3}\\right)+\\cdots+\\left(\\dfrac1{n-1}-\\dfrac{1}{n}\\right)=1-\\dfrac{1}{n}\\)"
+            },
+            {
+              "explain": "\\(1-\\dfrac{1}{n}<1\\) for \\(n\\ge2\\), so the sum is less than 1.",
+              "work": "\\(\\dfrac1{x_{1}^{2}}+\\cdots+\\dfrac{1}{x_{n-1}^{2}}<1\\)"
+            },
+            {
+              "explain": "Why not the others: B ignores that MANY terms add up (each is small but the sum needs a bound); C reverses the inequality direction; D mis-sums the telescoping series.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "prove that \\(\\dfrac{1}{x_{1}^{2}}+\\dfrac{1}{x_{2}^{2}}",
+              "note": "\\(x_i\\ge i+1\\); part (i); telescoping to \\(1-\\dfrac{1}{n}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Knox Grammar School 2021 Trial HSC Examination Mathematics Extension 2",
+            "school": "Knox Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "knox2021-e2-q16b",
+          "type": "mc",
+          "stem": "The lengths of the sides of a right triangle are \\(a\\), \\(b\\) and \\(c\\), where \\(c\\) is the length of the hypotenuse. Prove the Pythagorean Inequality Theorem: \\(a^{3}+b^{3}<c^{3}\\). Which proof is correct?",
+          "difficulty": "medium",
+          "options": [
+            "By Pythagoras, \\(a^{2}+b^{2}=c^{2}\\). The hypotenuse is the longest side, so \\(a<c\\) and \\(b<c\\). Then \\(a^{3}+b^{3}=a\\cdot a^{2}+b\\cdot b^{2}<c\\cdot a^{2}+c\\cdot b^{2}=c\\left(a^{2}+b^{2}\\right)=c\\cdot c^{2}=c^{3}\\).",
+            "By Pythagoras, \\(a^{2}+b^{2}=c^{2}\\). Cubing both sides gives \\(a^{6}+b^{6}=c^{6}\\), and \\(a^{3}+b^{3}<c^{3}\\) follows.",
+            "By Pythagoras, \\(a^{3}+b^{3}=c^{3}\\) (the same rule holds for cubes).",
+            "Since \\(a<c\\) and \\(b<c\\), \\(a^{3}<c^{3}\\) and \\(b^{3}<c^{3}\\), so \\(a^{3}+b^{3}<2c^{3}\\)."
+          ],
+          "answer": 0,
+          "hint": "Start from Pythagoras \\(a^{2}+b^{2}=c^{2}\\). Write \\(a^{3}=a\\cdot a^{2}\\) and \\(b^{3}=b\\cdot b^{2}\\), and replace the FACTORS \\(a\\) and \\(b\\) by the bigger \\(c\\) (the hypotenuse is the longest side). Then factor and use Pythagoras again.",
+          "steps": [
+            {
+              "explain": "Pythagoras and the longest side: \\(a^{2}+b^{2}=c^{2}\\); \\(c\\) is the hypotenuse, so \\(a<c\\) and \\(b<c\\) (all lengths positive).",
+              "work": "\\(a^{2}+b^{2}=c^{2},\\quad a<c,\\ b<c\\)"
+            },
+            {
+              "explain": "Split the cubes: \\(a^{3}=a\\cdot a^{2}\\), \\(b^{3}=b\\cdot b^{2}\\). Since \\(a<c\\) and \\(a^{2}>0\\): \\(a\\cdot a^{2}<c\\cdot a^{2}\\). Similarly for \\(b\\).",
+              "work": "\\(a^{3}+b^{3}=a\\cdot a^{2}+b\\cdot b^{2}<c\\,a^{2}+c\\,b^{2}\\)"
+            },
+            {
+              "explain": "Factor out \\(c\\) and use Pythagoras.",
+              "work": "\\(=c\\left(a^{2}+b^{2}\\right)=c\\cdot c^{2}=c^{3}\\)"
+            },
+            {
+              "explain": "So \\(a^{3}+b^{3}<c^{3}\\).",
+              "work": ""
+            },
+            {
+              "explain": "Why not the others: B cubes incorrectly (\\(\\left(a^{2}+b^{2}\\right)^{3}\\ne a^{6}+b^{6}\\)); C claims equality (false: e.g. \\(3^{3}+4^{3}=91<125=5^{3}\\)); D proves only the weaker \\(a^{3}+b^{3}<2c^{3}\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Prove the Pythagorean Inequality Theorem",
+              "note": "\\(a^3=a\\cdot a^2<c\\,a^2\\); then \\(c(a^2+b^2)=c^3\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Knox Grammar School 2021 Trial HSC Examination Mathematics Extension 2",
+            "school": "Knox Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -7870,6 +8498,68 @@
           "meta": {
             "source": "Killara High School 2020 Trial HSC Examination Mathematics Extension 2",
             "school": "Killara High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "knox2021-e2-q14c",
+          "type": "mc",
+          "stem": "Prove by mathematical induction \\((2n)!<(n!)^{2}\\times4^{n-1}\\) for all positive integers \\(n\\ge5\\). Which inductive step is correct?",
+          "difficulty": "hard",
+          "options": [
+            "BASE \\(n=5\\): \\(10!=3\\,628\\,800<(120)^{2}\\cdot4^{4}=3\\,686\\,400\\) ✓. ASSUME \\((2k)!<(k!)^{2}4^{k-1}\\), \\(k\\ge5\\). Then \\((2k+2)!=(2k+2)(2k+1)(2k)!<(2k+2)(2k+1)(k!)^{2}4^{k-1}\\). It is enough to show \\((2k+2)(2k+1)\\le4(k+1)^{2}\\): \\(2(k+1)(2k+1)\\le4(k+1)^{2}\\iff2k+1\\le2k+2\\), true. Then \\((2k+2)!<4(k+1)^{2}(k!)^{2}4^{k-1}=((k+1)!)^{2}4^{k}\\).",
+            "BASE \\(n=1\\): \\(2!=2<1\\cdot1\\)… so true. ASSUME true for \\(k\\). Then \\((2k+2)!=(2k+2)(2k)!<(2k+2)(k!)^{2}4^{k-1}\\), which equals \\(((k+1)!)^{2}4^{k}\\).",
+            "BASE \\(n=5\\) ✓. ASSUME true for \\(k\\). Then \\((2k+2)!=(2k)!+(2k+2)!\\), so the result follows by adding.",
+            "BASE \\(n=5\\): \\(10!=3\\,628\\,800\\) and \\(120^{2}4^{4}=3\\,686\\,400\\), so \\(10!>120^{2}4^{4}\\). The inequality is then false for \\(n=5\\)."
+          ],
+          "answer": 0,
+          "hint": "Induction: BASE case \\(n=5\\) (the first value allowed); ASSUME for \\(n=k\\); for \\(n=k+1\\) write \\((2k+2)!=(2k+2)(2k+1)(2k)!\\) and use the assumption to replace \\((2k)!\\) by the BIGGER expression. Then show the result is at most \\(((k+1)!)^{2}4^{k}\\).",
+          "steps": [
+            {
+              "explain": "BASE CASE \\(n=5\\): \\(10!=3\\,628\\,800\\); \\((5!)^{2}4^{4}=14\\,400\\times256=3\\,686\\,400\\). \\(3\\,628\\,800<3\\,686\\,400\\) ✓.",
+              "work": "\\(3\\,628\\,800<3\\,686\\,400\\)"
+            },
+            {
+              "explain": "ASSUME \\((2k)!<(k!)^{2}4^{k-1}\\) for some \\(k\\ge5\\). To prove \\((2k+2)!<((k+1)!)^{2}4^{k}\\).",
+              "work": "\\((2k+2)!=(2k+2)(2k+1)(2k)!\\)"
+            },
+            {
+              "explain": "Use the assumption (multiplying a strict inequality by a positive number keeps it).",
+              "work": "\\((2k+2)!<(2k+2)(2k+1)(k!)^{2}4^{k-1}\\)"
+            },
+            {
+              "explain": "Compare \\((2k+2)(2k+1)=2(k+1)(2k+1)\\) with \\(4(k+1)^{2}\\): divide by \\(2(k+1)>0\\): \\(2k+1\\) versus \\(2(k+1)=2k+2\\). Since \\(2k+1<2k+2\\), we have \\((2k+2)(2k+1)<4(k+1)^{2}\\).",
+              "work": "\\(2(k+1)(2k+1)<4(k+1)^{2}\\)"
+            },
+            {
+              "explain": "Therefore \\((2k+2)!<4(k+1)^{2}(k!)^{2}4^{k-1}=\\left((k+1)k!\\right)^{2}4^{k}=((k+1)!)^{2}4^{k}\\).",
+              "work": "\\((2(k+1))!<((k+1)!)^{2}4^{k}\\)"
+            },
+            {
+              "explain": "CONCLUSION: true for \\(n=5\\); if true for \\(n=k\\) then true for \\(n=k+1\\); so true for all integers \\(n\\ge5\\).",
+              "work": ""
+            },
+            {
+              "explain": "Why not the others: B uses a false base case and a wrong step (\\((2k+2)!=(2k+2)(2k+1)(2k)!\\), two factors); C writes a nonsense identity; D claims the base case is false (it is true).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Prove by mathematical induction",
+              "note": "Base \\(n=5\\); \\((2k+2)!=(2k+2)(2k+1)(2k)!\\); \\(2k+1<2k+2\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Knox Grammar School 2021 Trial HSC Examination Mathematics Extension 2",
+            "school": "Knox Grammar School",
             "grade": "12",
             "origin": "teacher"
           }

@@ -1351,6 +1351,64 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "knox2021-e2-q7",
+          "type": "mc",
+          "stem": "It is given that \\(z=2+i\\) is a root of \\(z^{3}+az^{2}-bz+5=0\\), where \\(a\\) and \\(b\\) are real numbers. What is the value of \\(a\\)?",
+          "difficulty": "medium",
+          "options": [
+            "\\(-5\\)",
+            "\\(-3\\)",
+            "\\(3\\)",
+            "\\(5\\)"
+          ],
+          "answer": 1,
+          "hint": "Real coefficients mean the CONJUGATE \\(2-i\\) is also a root. For a cubic \\(z^{3}+az^{2}+\\dots+5=0\\): sum of roots \\(=-a\\) and product of roots \\(=-5\\). Use the product to find the third root, then the sum.",
+          "steps": [
+            {
+              "explain": "Real coefficients \\(\\Rightarrow\\) \\(2-i\\) is also a root. Let the third root be \\(r\\) (it must be real).",
+              "work": "\\(\\alpha=2+i,\\ \\beta=2-i,\\ \\gamma=r\\)"
+            },
+            {
+              "explain": "Product of the roots of \\(z^{3}+az^{2}-bz+5\\) is \\(-\\dfrac{5}{1}=-5\\). \\(\\alpha\\beta=(2+i)(2-i)=4+1=5\\).",
+              "work": "\\(5r=-5\\ \\Rightarrow\\ r=-1\\)"
+            },
+            {
+              "explain": "Sum of the roots \\(=-\\dfrac{a}{1}=-a\\).",
+              "work": "\\((2+i)+(2-i)+(-1)=3=-a\\)"
+            },
+            {
+              "explain": "Solve for \\(a\\).",
+              "work": "\\(a=-3\\)"
+            },
+            {
+              "explain": "Check: \\((z^{2}-4z+5)(z+1)=z^{3}-3z^{2}+z+5\\), so \\(a=-3\\) and \\(-b=1\\) ✓.",
+              "work": ""
+            },
+            {
+              "explain": "Why not the others: \\(3\\) forgets the minus (sum \\(=-a\\)); \\(\\pm5\\) are the product of the pair or the constant.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">B</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "What is the value of \\(a\\)",
+              "note": "Conjugate root; product \\(=-5\\) gives \\(r=-1\\); sum \\(=-a\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Knox Grammar School 2021 Trial HSC Examination Mathematics Extension 2",
+            "school": "Knox Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -4627,6 +4685,114 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "knox2021-e2-q14ei",
+          "type": "mc",
+          "stem": "Given \\(z=\\cos\\theta+i\\sin\\theta\\), prove that \\(z^{n}-\\dfrac{1}{z^{n}}=2i\\sin n\\theta\\), where \\(n\\in\\mathbb Z\\). Which proof is correct?",
+          "difficulty": "medium",
+          "options": [
+            "By de Moivre, \\(z^{n}=\\cos n\\theta+i\\sin n\\theta\\). Also \\(z^{-n}=\\cos(-n\\theta)+i\\sin(-n\\theta)=\\cos n\\theta-i\\sin n\\theta\\). Subtract: \\(z^{n}-z^{-n}=(\\cos n\\theta+i\\sin n\\theta)-(\\cos n\\theta-i\\sin n\\theta)=2i\\sin n\\theta\\).",
+            "\\(z^{n}=\\cos n\\theta+i\\sin n\\theta\\) and \\(z^{-n}=-\\cos n\\theta-i\\sin n\\theta\\). Subtract to get \\(2\\cos n\\theta+2i\\sin n\\theta\\).",
+            "\\(z^{n}+z^{-n}=2\\cos n\\theta\\), so \\(z^{n}-z^{-n}=2\\cos n\\theta\\) as well.",
+            "\\(z^{n}=\\cos n\\theta+i\\sin n\\theta\\) and \\(z^{-n}=\\cos n\\theta+i\\sin n\\theta\\) (de Moivre for negative \\(n\\) changes nothing). Subtract to get 0."
+          ],
+          "answer": 0,
+          "hint": "De Moivre for any integer \\(n\\): \\((\\cos\\theta+i\\sin\\theta)^{n}=\\cos n\\theta+i\\sin n\\theta\\). For \\(-n\\) use \\(\\cos(-x)=\\cos x\\), \\(\\sin(-x)=-\\sin x\\). Subtract.",
+          "steps": [
+            {
+              "explain": "\\(z^{n}=\\cos n\\theta+i\\sin n\\theta\\) (de Moivre).",
+              "work": "\\(z^{n}=\\cos n\\theta+i\\sin n\\theta\\)"
+            },
+            {
+              "explain": "\\(z^{-n}=\\cos(-n\\theta)+i\\sin(-n\\theta)\\), and cosine is even, sine is odd.",
+              "work": "\\(z^{-n}=\\cos n\\theta-i\\sin n\\theta\\)"
+            },
+            {
+              "explain": "Subtract: the cosines cancel and the sines double.",
+              "work": "\\(z^{n}-z^{-n}=2i\\sin n\\theta\\)"
+            },
+            {
+              "explain": "Why not the others: B has the wrong \\(z^{-n}\\) (it is the conjugate, not the negative); C confuses with the SUM; D forgets the sign change of sine.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "prove that \\(z^{n}-\\dfrac{1}{z^{n}}=2i\\sin n\\theta\\)",
+              "note": "\\(z^{-n}=\\cos n\\theta-i\\sin n\\theta\\); subtract."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Knox Grammar School 2021 Trial HSC Examination Mathematics Extension 2",
+            "school": "Knox Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "knox2021-e2-q14eii",
+          "type": "mc",
+          "stem": "Hence, by considering the expansion of \\(\\left(z-\\dfrac{1}{z}\\right)^{5}\\), find the values of \\(a\\), \\(b\\) and \\(c\\) such that \\(\\sin^{5}\\theta=a\\sin5\\theta+b\\sin3\\theta+c\\sin\\theta\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(a=\\dfrac{1}{16},\\ b=-\\dfrac{5}{16},\\ c=\\dfrac{5}{8}\\)",
+            "\\(a=\\dfrac{1}{16},\\ b=\\dfrac{5}{16},\\ c=\\dfrac{5}{8}\\)",
+            "\\(a=\\dfrac{1}{32},\\ b=-\\dfrac{5}{32},\\ c=\\dfrac{5}{16}\\)",
+            "\\(a=1,\\ b=-5,\\ c=10\\)"
+          ],
+          "answer": 0,
+          "hint": "From part (i): \\(z-\\dfrac{1}{z}=2i\\sin\\theta\\), so \\(\\left(z-\\dfrac{1}{z}\\right)^{5}=32i\\sin^{5}\\theta\\). Expand the left side with the binomial theorem (coefficients \\(1,5,10,10,5,1\\)) and GROUP the terms \\(z^{k}-z^{-k}\\) so that part (i) can be used again.",
+          "steps": [
+            {
+              "explain": "LEFT: \\(\\left(z-\\dfrac{1}{z}\\right)^{5}=(2i\\sin\\theta)^{5}=32\\,i^{5}\\sin^{5}\\theta=32i\\sin^{5}\\theta\\) (since \\(i^{5}=i\\)).",
+              "work": "\\(\\left(z-\\dfrac{1}{z}\\right)^{5}=32i\\sin^{5}\\theta\\)"
+            },
+            {
+              "explain": "RIGHT: binomial expansion \\(z^{5}-5z^{3}+10z-10z^{-1}+5z^{-3}-z^{-5}\\) (signs alternate, \\(\\left(-\\dfrac{1}{z}\\right)^{k}\\)).",
+              "work": "\\(=\\left(z^{5}-z^{-5}\\right)-5\\left(z^{3}-z^{-3}\\right)+10\\left(z-z^{-1}\\right)\\)"
+            },
+            {
+              "explain": "Use part (i) for each bracket: \\(z^{k}-z^{-k}=2i\\sin k\\theta\\).",
+              "work": "\\(=2i\\sin5\\theta-10i\\sin3\\theta+20i\\sin\\theta\\)"
+            },
+            {
+              "explain": "Equate and divide by \\(32i\\).",
+              "work": "\\(\\sin^{5}\\theta=\\dfrac{1}{16}\\sin5\\theta-\\dfrac{5}{16}\\sin3\\theta+\\dfrac{5}{8}\\sin\\theta\\)"
+            },
+            {
+              "explain": "Check with \\(\\theta=\\dfrac\\pi2\\): LHS \\(=1\\); RHS \\(=\\dfrac1{16}(1)-\\dfrac5{16}(-1)+\\dfrac{5}{8}(1)=\\dfrac{1+5+10}{16}=1\\) ✓.",
+              "work": "\\(a=\\dfrac1{16},\\ b=-\\dfrac5{16},\\ c=\\dfrac{5}{8}\\)"
+            },
+            {
+              "explain": "Why not the others: B has the wrong sign of \\(b\\) (\\(-5z^{3}\\)); C divides by 64 instead of 32; D forgets to divide.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "find the values of \\(a\\), \\(b\\) and \\(c\\)",
+              "note": "\\((2i\\sin\\theta)^5=32i\\sin^5\\theta\\); group \\(z^k-z^{-k}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Knox Grammar School 2021 Trial HSC Examination Mathematics Extension 2",
+            "school": "Knox Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -7078,6 +7244,156 @@
           "meta": {
             "source": "Killara High School 2020 Trial HSC Examination Mathematics Extension 2",
             "school": "Killara High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "knox2021-e2-q11b",
+          "type": "mc",
+          "stem": "Find the square roots of \\(15-8i\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\pm(4-i)\\)",
+            "\\(\\pm(4+i)\\)",
+            "\\(\\pm(5-3i)\\)",
+            "\\(4-i\\) only"
+          ],
+          "answer": 0,
+          "hint": "Let \\((a+ib)^{2}=15-8i\\): equate real and imaginary parts, find integer pairs, and remember there are TWO square roots.",
+          "steps": [
+            {
+              "explain": "Expand \\((a+ib)^{2}=a^{2}-b^{2}+2abi\\) and equate.",
+              "work": "\\(\\begin{aligned}&a^{2}-b^{2}&=15\\quad(1)\\\\ &2ab&=-8\\ \\Rightarrow\\ ab=-4\\quad(2)\\end{aligned}\\)"
+            },
+            {
+              "explain": "Integer pairs with \\(ab=-4\\): \\((4,-1),(-4,1),(2,-2),(1,-4),\\dots\\). Test (1): \\(a=4,b=-1\\): \\(16-1=15\\) ✓.",
+              "work": "\\(a=4,\\ b=-1\\quad\\text{or}\\quad a=-4,\\ b=1\\)"
+            },
+            {
+              "explain": "Check: \\((4-i)^{2}=16-8i+i^{2}=15-8i\\) ✓.",
+              "work": "\\(\\sqrt{15-8i}=\\pm(4-i)\\)"
+            },
+            {
+              "explain": "Why not the others: \\((4+i)^{2}=15+8i\\) (wrong sign of imaginary part); \\((5-3i)^{2}=16-30i\\); D gives only one root.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the square roots of \\(15-8i\\)",
+              "note": "\\((a+ib)^2\\): \\(a^2-b^2=15\\), \\(ab=-4\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Knox Grammar School 2021 Trial HSC Examination Mathematics Extension 2",
+            "school": "Knox Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "knox2021-e2-q11di",
+          "type": "mc",
+          "stem": "Write down all the roots of \\(z^{7}-1=0\\) in the form \\(re^{i\\theta}\\) where \\(r>0\\) and \\(-\\pi<\\theta\\le\\pi\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(1,\\ e^{\\pm\\frac{2\\pi i}{7}},\\ e^{\\pm\\frac{4\\pi i}{7}},\\ e^{\\pm\\frac{6\\pi i}{7}}\\)",
+            "\\(1,\\ e^{\\frac{2\\pi i}{7}},\\ e^{\\frac{4\\pi i}{7}},\\ e^{\\frac{6\\pi i}{7}},\\ e^{\\frac{8\\pi i}{7}},\\ e^{\\frac{10\\pi i}{7}},\\ e^{\\frac{12\\pi i}{7}}\\)",
+            "\\(e^{\\pm\\frac{\\pi i}{7}},\\ e^{\\pm\\frac{3\\pi i}{7}},\\ e^{\\pm\\frac{5\\pi i}{7}},\\ -1\\)",
+            "\\(1,\\ e^{\\pm\\frac{\\pi i}{7}},\\ e^{\\pm\\frac{2\\pi i}{7}},\\ e^{\\pm\\frac{3\\pi i}{7}}\\)"
+          ],
+          "answer": 0,
+          "hint": "The 7th roots of 1 are equally spaced on the unit circle: \\(z=e^{\\frac{2\\pi ik}{7}}\\) for \\(k=0,1,\\dots,6\\). Then bring each angle into the range \\(-\\pi<\\theta\\le\\pi\\) (subtract \\(2\\pi\\) from angles bigger than \\(\\pi\\)).",
+          "steps": [
+            {
+              "explain": "\\(z^{7}=1=e^{2\\pi ki}\\): modulus \\(r=1\\); argument \\(7\\theta=2\\pi k\\), so \\(\\theta=\\dfrac{2\\pi k}{7}\\).",
+              "work": "\\(\\theta=0,\\ \\dfrac{2\\pi}{7},\\ \\dfrac{4\\pi}{7},\\ \\dfrac{6\\pi}{7},\\ \\dfrac{8\\pi}{7},\\ \\dfrac{10\\pi}{7},\\ \\dfrac{12\\pi}{7}\\)"
+            },
+            {
+              "explain": "Reduce the angles bigger than \\(\\pi\\): \\(\\dfrac{8\\pi}{7}-2\\pi=-\\dfrac{6\\pi}{7}\\); \\(\\dfrac{10\\pi}{7}-2\\pi=-\\dfrac{4\\pi}{7}\\); \\(\\dfrac{12\\pi}{7}-2\\pi=-\\dfrac{2\\pi}{7}\\).",
+              "work": "\\(\\theta=0,\\ \\pm\\dfrac{2\\pi}{7},\\ \\pm\\dfrac{4\\pi}{7},\\ \\pm\\dfrac{6\\pi}{7}\\)"
+            },
+            {
+              "explain": "So the roots (they come in conjugate pairs) are \\(1\\) and \\(e^{\\pm\\frac{2\\pi i}{7}}\\), \\(e^{\\pm\\frac{4\\pi i}{7}}\\), \\(e^{\\pm\\frac{6\\pi i}{7}}\\).",
+              "work": "\\(1,\\ e^{\\pm\\frac{2\\pi i}{7}},\\ e^{\\pm\\frac{4\\pi i}{7}},\\ e^{\\pm\\frac{6\\pi i}{7}}\\)"
+            },
+            {
+              "explain": "Why not the others: B leaves angles outside \\(-\\pi<\\theta\\le\\pi\\); C and D use the wrong spacing (\\(\\dfrac{\\pi}{7}\\), as for \\(z^{14}=1\\)) or include \\(-1\\) (which is not a root of \\(z^{7}=1\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Write down all the roots of \\(z^{7}-1=0\\)",
+              "note": "\\(\\theta=\\dfrac{2\\pi k}{7}\\); reduce to \\((-\\pi,\\pi]\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Knox Grammar School 2021 Trial HSC Examination Mathematics Extension 2",
+            "school": "Knox Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "knox2021-e2-q11dii",
+          "type": "mc",
+          "stem": "Using the roots of \\(z^{7}-1=0\\), prove that \\(\\cos\\dfrac{2\\pi}{7}+\\cos\\dfrac{4\\pi}{7}+\\cos\\dfrac{6\\pi}{7}=-\\dfrac{1}{2}\\). Which argument is correct?",
+          "difficulty": "hard",
+          "options": [
+            "The sum of the roots of \\(z^{7}-1=0\\) is 0 (coefficient of \\(z^{6}\\) is 0). So \\(1+\\left(e^{\\frac{2\\pi i}{7}}+e^{-\\frac{2\\pi i}{7}}\\right)+\\left(e^{\\frac{4\\pi i}{7}}+e^{-\\frac{4\\pi i}{7}}\\right)+\\left(e^{\\frac{6\\pi i}{7}}+e^{-\\frac{6\\pi i}{7}}\\right)=0\\), i.e. \\(1+2\\left(\\cos\\dfrac{2\\pi}7+\\cos\\dfrac{4\\pi}7+\\cos\\dfrac{6\\pi}7\\right)=0\\). Hence the sum of cosines is \\(-\\dfrac{1}{2}\\).",
+            "The product of the roots of \\(z^{7}-1=0\\) is \\(-(-1)=1\\), so \\(\\cos\\dfrac{2\\pi}{7}\\cos\\dfrac{4\\pi}{7}\\cos\\dfrac{6\\pi}{7}=\\dfrac{1}{8}\\), and the sum follows.",
+            "The sum of the roots is 0, so \\(2\\left(\\cos\\dfrac{2\\pi}7+\\cos\\dfrac{4\\pi}7+\\cos\\dfrac{6\\pi}7\\right)=0\\), giving the sum \\(0\\).",
+            "The sum of the roots is 1 (the constant term), so \\(1+2\\left(\\cos\\dfrac{2\\pi}7+\\cdots\\right)=1\\) and the sum of cosines is 0."
+          ],
+          "answer": 0,
+          "hint": "The roots of \\(z^{7}-1=0\\) add up to \\(-\\dfrac{\\text{coefficient of }z^{6}}{\\text{coefficient of }z^{7}}=0\\). Group the 7 roots into conjugate pairs: \\(e^{i\\theta}+e^{-i\\theta}=2\\cos\\theta\\); the root 1 is by itself.",
+          "steps": [
+            {
+              "explain": "\\(z^{7}-1=0\\) has no \\(z^{6}\\) term, so the sum of its 7 roots is 0.",
+              "work": "\\(1+\\sum_{k=1}^{3}\\left(e^{\\frac{2k\\pi i}{7}}+e^{-\\frac{2k\\pi i}{7}}\\right)=0\\)"
+            },
+            {
+              "explain": "Each conjugate pair adds to \\(2\\cos\\theta\\).",
+              "work": "\\(1+2\\cos\\dfrac{2\\pi}{7}+2\\cos\\dfrac{4\\pi}{7}+2\\cos\\dfrac{6\\pi}{7}=0\\)"
+            },
+            {
+              "explain": "Rearrange: subtract 1 and divide by 2.",
+              "work": "\\(\\cos\\dfrac{2\\pi}{7}+\\cos\\dfrac{4\\pi}{7}+\\cos\\dfrac{6\\pi}{7}=-\\dfrac{1}{2}\\)"
+            },
+            {
+              "explain": "Why not the others: B uses the product (not the sum); C forgets the root \\(1\\) in the sum; D uses the constant term as the sum of the roots (that is the product, with sign).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "prove that \\(\\cos\\dfrac{2\\pi}{7}+\\cos\\dfrac{4\\pi}{7}+\\cos\\dfrac{6\\pi}{7}=-\\dfrac{1}{2}\\)",
+              "note": "Sum of roots \\(=0\\); pair conjugates."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Knox Grammar School 2021 Trial HSC Examination Mathematics Extension 2",
+            "school": "Knox Grammar School",
             "grade": "12",
             "origin": "teacher"
           }
