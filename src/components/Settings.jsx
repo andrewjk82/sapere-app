@@ -485,7 +485,7 @@ const Settings = () => {
                     type="button"
                     onClick={() => pickTheme(t.id)}
                     aria-pressed={themeId === t.id}
-                    style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8, padding: '12px 14px', borderRadius: 22, cursor: 'pointer', background: t.bg, border: themeId === t.id ? `3px solid ${t.accent}` : '3px solid transparent', minWidth: 92, fontWeight: 800, color: '#4a2f2a' }}
+                    style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8, padding: '12px 14px', borderRadius: 22, cursor: 'pointer', background: t.bg, border: themeId === t.id ? `3px solid ${t.accent}` : '3px solid transparent', minWidth: 92, fontWeight: 800, color: t.ink || '#4a2f2a' }}
                   >
                     <span style={{ width: 40, height: 40, borderRadius: 999, background: t.accent, display: 'grid', placeItems: 'center', color: '#fff', fontWeight: 900 }}>{themeId === t.id ? '✓' : ''}</span>
                     {t.name}

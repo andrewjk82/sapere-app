@@ -28,3 +28,14 @@ html[data-clay="1"][data-theme] .app-sidebar__item.is-active,
 html[data-clay="1"][data-theme] .app-sidebar__item.is-active:hover { background: var(--clay-active); color: var(--clay-active-ink); }
 html[data-clay="1"][data-theme] .app-sidebar__profile-meta { color: var(--clay-purple); }
 html[data-clay="1"][data-theme] .app-button--primary { background: var(--clay-purple); }
+
+/* Dark theme. The app colours most screens with inline styles, so instead of re-declaring every colour the whole page is
+   inverted (light to dark, hue turned back so blues stay blue). Photos, video, canvases and anything marked
+   data-no-invert are inverted a second time so they look normal. */
+html[data-theme="dark"] { background: #fff; filter: invert(0.92) hue-rotate(180deg); }
+html[data-theme="dark"] img,
+html[data-theme="dark"] video,
+html[data-theme="dark"] canvas,
+html[data-theme="dark"] picture,
+html[data-theme="dark"] iframe,
+html[data-theme="dark"] [data-no-invert] { filter: invert(1) hue-rotate(180deg); }
