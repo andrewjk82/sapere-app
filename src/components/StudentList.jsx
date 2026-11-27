@@ -7,6 +7,7 @@ import { collection, doc, getDoc, getDocs, setDoc, writeBatch } from 'firebase/f
 import { useAdminFeed } from '../context/AdminFeedContext';
 import useLiveDoc from '../hooks/useLiveDoc';
 import AvatarPickerModal from './AvatarPickerModal';
+import PixelHero from './hero/PixelHero';
 import StudentProfileModal from './StudentProfileModal';
 
 const StudentList = ({ students, onAddStudent, onRefreshStudents, onSelectStudent }) => {
@@ -296,9 +297,6 @@ const StudentList = ({ students, onAddStudent, onRefreshStudents, onSelectStuden
         {filteredStudents.length > 0 ? (
           filteredStudents.map((student, index) => {
             const isMenuOpen = activeMenuId === student.id;
-            // Prioritize dreamImageUrl (photo) > avatarUrl > Dicebear fallback
-            const studentImage = student.dreamImageUrl || student.avatarUrl || `https://api.dicebear.com/7.x/avataaars/svg?seed=${encodeURIComponent(student.name || student.id)}`;
-
             const isActive = (student.status || 'Active') === 'Active';
             // Normalise the year label — some records store just "9".
             const rawLevel = String(student.level || '').trim();
@@ -352,7 +350,7 @@ const StudentList = ({ students, onAddStudent, onRefreshStudents, onSelectStuden
                       border: '1px solid rgba(15,23,42,0.05)', flexShrink: 0,
                     }}
                   >
-                    <img src={studentImage} alt={student.name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                    <PixelHero config={student.avatar} view="head" className="hero-face" label={`${student.name}'s hero`} />
                   </div>
 
                   <div style={{ flex: 1, minWidth: 0 }}>
