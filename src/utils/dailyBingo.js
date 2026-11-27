@@ -6,7 +6,7 @@ export const LINES = [
   ['col1', 'Left column', [0, 3, 6]], ['col2', 'Middle column', [1, 4, 7]], ['col3', 'Right column', [2, 5, 8]],
   ['diag1', 'Diagonal ↘', [0, 4, 8]], ['diag2', 'Diagonal ↙', [2, 4, 6]],
 ];
-export const XP_PER_LINE = 5;
+export const COINS_PER_LINE = 20;
 const FREE = 4;
 
 const rng = (str) => {

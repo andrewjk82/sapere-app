@@ -9,7 +9,7 @@ import { balanceOf, isOwned, priceOf } from '../../utils/heroShop';
 import { buyHeroItem } from '../../services/heroShopService';
 import PixelHero from './PixelHero';
 
-// The My Hero page: Wardrobe (what the student owns, colours) and Shop (what XP can buy, tried on before buying).
+// The My Hero page: Wardrobe (what the student owns, colours) and Shop (what coins can buy, tried on before buying).
 const GROUPS = {
   eyes: ['Eyes', 'head'], brows: ['Eyebrows', 'head'], mouth: ['Mouth', 'head'], ears: ['Ears', 'head'], hair: ['Hairstyle', 'head'],
   head: ['Headgear', 'head'], cls: ['Outfit', 'full'], hand: ['In hand', 'full'], off: ['Other hand', 'full'], back: ['On the back', 'full'],
@@ -51,7 +51,7 @@ export default function HeroPage({ onBack }) {
       showToast(done, 'success');
     } catch (err) {
       console.error('Hero save failed:', err);
-      showToast(err?.message === 'not-enough-xp' ? 'Not enough XP yet.' : 'Could not save. Check your connection.', 'error');
+      showToast(err?.message === 'not-enough-coins' ? 'Not enough coins yet.' : 'Could not save. Check your connection.', 'error');
     } finally { setBusy(false); }
   };
   const save = () => run(() => setDoc(doc(db, 'users', user.uid), { avatar: look }, { merge: true }), 'Your hero is saved!');
@@ -62,7 +62,7 @@ export default function HeroPage({ onBack }) {
       <header className="hero-top">
         {onBack && <button type="button" className="hero-btn" onClick={onBack}>‹ Back</button>}
         <h1>My Hero</h1>
-        <span className="hero-xp" aria-live="polite">⭐ {balance.toLocaleString()} XP to spend</span>
+        <span className="hero-xp" aria-live="polite">🪙 {balance.toLocaleString()} coins</span>
       </header>
       <div className="hero-modes" role="tablist">
         {[['wardrobe', '👕 Wardrobe'], ['shop', '🛍️ Shop']].map(([key, label]) => (
@@ -75,8 +75,8 @@ export default function HeroPage({ onBack }) {
           <div className="hero-stage"><PixelHero config={shown} blinking label="Your hero" /></div>
           {trying ? (
             <div className="hero-buy">
-              <b>{OPT[trying.group].find((o) => o[0] === trying.id)?.[1]} · {price} XP</b>
-              {balance < price && <span>You need {price - balance} more XP.</span>}
+              <b>{OPT[trying.group].find((o) => o[0] === trying.id)?.[1]} · {price} coins</b>
+              {balance < price && <span>You need {price - balance} more coins. Finish Bingo lines to earn them.</span>}
               <button type="button" className="hero-btn hero-btn--primary" disabled={busy || balance < price} onClick={buy}>{busy ? 'Buying…' : 'Buy and wear'}</button>
               <button type="button" className="hero-btn" onClick={() => setTrying(null)}>Not now</button>
             </div>
@@ -106,7 +106,7 @@ export default function HeroPage({ onBack }) {
                         <button key={id} type="button" className={`hero-opt${on ? ' is-on' : ''}`} aria-pressed={on} onClick={() => (mode === 'shop' ? setTrying({ group, id }) : set(group, id))}>
                           <PixelHero config={{ ...look, [group]: id }} view={view} />
                           {name}
-                          {mode === 'shop' && <span className={`hero-price${balance < cost ? ' is-short' : ''}`}>{cost} XP</span>}
+                          {mode === 'shop' && <span className={`hero-price${balance < cost ? ' is-short' : ''}`}>🪙 {cost}</span>}
                         </button>
                       );
                     })}

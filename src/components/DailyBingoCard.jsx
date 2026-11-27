@@ -1,13 +1,13 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { BookOpen, Clock, Flag, Plus, Video, Check } from 'lucide-react';
-import { buildBoard, lineStatus, XP_PER_LINE } from '../utils/dailyBingo';
+import { buildBoard, lineStatus, COINS_PER_LINE } from '../utils/dailyBingo';
 import { readActivity, todayKey } from '../utils/bingoActivity';
-import { awardBingoLines } from '../services/bingoXpService';
+import { awardBingoLines } from '../services/bingoCoinService';
 import PixelHero from './hero/PixelHero';
 import './daily-bingo.css';
 
 // Student dashboard "Today's plan" as a Daily Bingo (3×3, free centre). Cells tick by themselves from saved results and
-// this device's activity log; every finished line pays +5 XP once (services/bingoXpService).
+// this device's activity log; every finished line pays shop coins once (services/bingoCoinService).
 // planItems: the dashboard's plan rows { key, icon, title, sub, done, onClick, kind: 'must' | 'extra' }.
 export default function DailyBingoCard({ uid, profile, planItems, studyRoomOn, setActiveTab, showToast, compact }) {
   const date = todayKey();
@@ -46,7 +46,7 @@ export default function DailyBingoCard({ uid, profile, planItems, studyRoomOn, s
   const paidLines = useMemo(() => (bingo?.date === date ? (bingo.lines || []) : []), [bingo, date]);
   const mustLeft = board.filter((c) => c.kind === 'must' && !c.done);
 
-  // Celebrate each line once per day on this device: its cells hop in turn, a line is drawn through them, "+5 XP" rises.
+  // Celebrate each line once per day on this device: its cells hop in turn, a line is drawn through them, the coin prize rises.
   const seenKey = `sapere:bingoSeen:v1:${uid}:${date}`;
   const [show, setShow] = useState(null);           // { id, idx, n }
   const queueRef = useRef([]);
@@ -85,14 +85,14 @@ export default function DailyBingoCard({ uid, profile, planItems, studyRoomOn, s
     const tag = `${date}:${unpaid.join(',')}`;
     if (!uid || !unpaid.length || askedRef.current === tag) return;
     askedRef.current = tag;
-    awardBingoLines(uid, date, unpaid).then((xp) => { if (xp > 0) showToast?.(`Bingo! +${xp} XP`, 'success'); });
+    awardBingoLines(uid, date, unpaid).then((coins) => { if (coins > 0) showToast?.(`Bingo! +${coins} coins`, 'success'); });
   }, [uid, date, won, paidLines, showToast]);
 
   return (
     <section className={`bingo${compact ? ' bingo--compact' : ''}`} aria-label="Today's Bingo">
       <div className="bingo-head">
         <h2>Today&apos;s Bingo</h2>
-        <span className="bingo-sub">{mustLeft.length ? `${mustLeft.length} must-do left` : 'All must-do done'} · +{XP_PER_LINE} XP a line{won.length ? ` · ${won.length} done` : ''}</span>
+        <span className="bingo-sub">{mustLeft.length ? `${mustLeft.length} must-do left` : 'All must-do done'} · +{COINS_PER_LINE} coins a line{won.length ? ` · ${won.length} done` : ''}</span>
       </div>
       <div className="bingo-body">
         <div className="bingo-board">
@@ -118,7 +118,7 @@ export default function DailyBingoCard({ uid, profile, planItems, studyRoomOn, s
                 <svg viewBox="0 0 300 300" preserveAspectRatio="none" aria-hidden="true">
                   <line x1={x1} y1={y1} x2={x2} y2={y2} pathLength="1" />
                 </svg>
-                <span className="bingo-burst">Bingo! <b>+{XP_PER_LINE} XP</b></span>
+                <span className="bingo-burst">Bingo! <b>+{COINS_PER_LINE} 🪙</b></span>
               </div>
             );
           })()}

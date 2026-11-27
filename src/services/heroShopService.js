@@ -14,6 +14,6 @@ export const buyHeroItem = (uid, group, id, look) => runTransaction(db, async (t
     return;
   }
   const price = priceOf(group, id);
-  if (balanceOf(data) < price) throw new Error('not-enough-xp');
+  if (balanceOf(data) < price) throw new Error('not-enough-coins');
   tx.update(ref, { avatar, heroOwned: arrayUnion(itemKey(group, id)), heroSpent: (Number(data.heroSpent) || 0) + price });
 });

@@ -2066,7 +2066,7 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
     // Daily Bingo: the closest line, said by the buddy instead of a list on the card.
     const bingoOn = activeTab === 'Dashboard' && bingoHint?.line && bingoHint.left?.length;
     const bingoFinishes = (id) => bingoOn && bingoHint.left.length === 1 && bingoHint.left[0].id === id;
-    const bingoTail = (id) => (bingoFinishes(id) ? ` Bonus: it finishes your ${bingoHint.line} for +5 XP!` : '');
+    const bingoTail = (id) => (bingoFinishes(id) ? ` Bonus: it finishes your ${bingoHint.line} for +20 coins!` : '');
 
     if (!needDaily && !needCalc && bingoOn) {
       const names = bingoHint.left.map((c) => c.title);
@@ -2077,7 +2077,7 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
         msg: one
           ? `${firstName ? `${firstName}, your` : 'Your'} ${bingoHint.line} is 1 away — just ${names[0]}!`
           : `${bingoHint.line}: ${names.length} to go — ${names.join(' and ')}.`,
-        sub: `Every line you finish is +5 XP.${bingoHint.won ? ` ${bingoHint.won} line${bingoHint.won === 1 ? '' : 's'} done today already!` : ''}`,
+        sub: `Every line you finish is +20 coins.${bingoHint.won ? ` ${bingoHint.won} line${bingoHint.won === 1 ? '' : 's'} done today already!` : ''}`,
         cta: null,
         key: `bingo-${today}-${bingoHint.line}-${names.join('|')}-${speechEpoch}`,
       };
