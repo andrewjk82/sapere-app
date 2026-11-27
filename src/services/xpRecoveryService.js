@@ -53,8 +53,7 @@ const applyMissingXP = async (uid, xpToAdd, statRef, dateLabel) => {
         : '') ||
       'Student';
     const avatarUrl =
-      userData.dreamImageUrl ||
-      userData.avatarUrl ||
+      userData.dreamImageUrl || userData.avatarUrl ||
       `https://api.dicebear.com/7.x/avataaars/svg?seed=${encodeURIComponent(uid)}`;
 
     tx.set(leaderboardRef, {

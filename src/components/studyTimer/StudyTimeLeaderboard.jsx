@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Crown } from 'lucide-react';
 import { subscribeStudyTimeMeta, fetchOwnRank, fetchMyTotal } from '../../services/studyTimeService';
-import PixelHero from '../hero/PixelHero';
+import Face from '../hero/Face';
 
 const formatTotal = (sec) => {
   const totalMin = Math.round((Number(sec) || 0) / 60);
@@ -82,7 +82,7 @@ const StudyTimeLeaderboard = ({ uid, profile, myTotalSec = null, lastFlush = nul
               }}
             >
               <RankBadge rank={i + 1} />
-              <span className="hero-chip"><PixelHero config={entry.hero} view="head" className="hero-face" /></span>
+              <span className="hero-chip"><Face photo={entry.avatarUrl} hero={entry.hero} /></span>
               <span style={{ marginLeft: 'auto', fontSize: '0.76rem', fontWeight: 800, color: '#403577' }}>
                 {formatTotal(entry.totalSec)}
               </span>
@@ -99,7 +99,7 @@ const StudyTimeLeaderboard = ({ uid, profile, myTotalSec = null, lastFlush = nul
             <p style={{ textAlign: 'center', fontSize: '0.8rem', color: '#aaa4c4', padding: '2px 0' }}>• • •</p>
             <div style={{ display: 'flex', alignItems: 'center', gap: 10, padding: '5px 8px', borderRadius: 13, background: '#f0eaff' }}>
               <RankBadge rank={myRank} />
-              <span className="hero-chip"><PixelHero config={profile?.avatar} view="head" className="hero-face" /></span>
+              <span className="hero-chip"><Face photo={profile?.dreamImageUrl} hero={profile?.avatar} /></span>
               <span style={{ marginLeft: 'auto', fontSize: '0.76rem', fontWeight: 800, color: '#403577' }}>
                 {formatTotal(effectiveTotalSec)}
               </span>

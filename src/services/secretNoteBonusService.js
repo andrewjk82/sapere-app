@@ -396,8 +396,7 @@ export async function tryAwardSecretNoteClearBonus(uid, profile) {
         (data.firstName ? `${data.firstName} ${data.lastName || ''}`.trim() : '') ||
         'Student';
       const avatarUrl =
-        data.dreamImageUrl ||
-        data.avatarUrl ||
+        data.dreamImageUrl || data.avatarUrl ||
         `https://api.dicebear.com/7.x/avataaars/svg?seed=${encodeURIComponent(uid)}`;
 
       tx.set(doc(db, 'leaderboard', uid), {

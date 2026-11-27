@@ -7,6 +7,7 @@ import { db, requestNotificationPermission, wantsForcedLongPolling, requestForce
 import { doc, setDoc, updateDoc, getDoc } from 'firebase/firestore';
 import AvatarPickerModal from './AvatarPickerModal';
 import { MyHero } from './hero/PixelHero';
+import Face from './hero/Face';
 import FilmingGuidelinesModal from './FilmingGuidelinesModal';
 import ShareAppQrModal from './ShareAppQrModal';
 import { CURRENT_APP_VERSION } from '../constants/appVersion';
@@ -327,7 +328,7 @@ const Settings = () => {
 
             <div className="settings-profile" style={{ marginBottom: '2rem' }}>
               <div className="settings-profile__avatar clickable-avatar" onClick={() => (isAdmin ? setAvatarOpen(true) : window.dispatchEvent(new Event('sapere:open-hero')))} role="button" tabIndex={0}>
-                {isAdmin ? <img src={avatarUrl} alt="Avatar" /> : <MyHero view="head" className="hero-avatar" />}
+                {isAdmin ? <img src={avatarUrl} alt="Avatar" /> : <Face photo={profile?.dreamImageUrl} hero={profile?.avatar} />}
                 <div className="avatar-overlay">Change</div>
               </div>
               <div>

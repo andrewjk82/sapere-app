@@ -7,7 +7,7 @@ import { collection, doc, getDoc, getDocs, setDoc, writeBatch } from 'firebase/f
 import { useAdminFeed } from '../context/AdminFeedContext';
 import useLiveDoc from '../hooks/useLiveDoc';
 import AvatarPickerModal from './AvatarPickerModal';
-import PixelHero from './hero/PixelHero';
+import Face from './hero/Face';
 import StudentProfileModal from './StudentProfileModal';
 
 const StudentList = ({ students, onAddStudent, onRefreshStudents, onSelectStudent }) => {
@@ -350,7 +350,7 @@ const StudentList = ({ students, onAddStudent, onRefreshStudents, onSelectStuden
                       border: '1px solid rgba(15,23,42,0.05)', flexShrink: 0,
                     }}
                   >
-                    <PixelHero config={student.avatar} view="head" className="hero-face" label={`${student.name}'s hero`} />
+                    <Face photo={student.dreamImageUrl} hero={student.avatar} label={student.name} />
                   </div>
 
                   <div style={{ flex: 1, minWidth: 0 }}>

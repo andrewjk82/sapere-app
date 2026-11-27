@@ -723,7 +723,7 @@ const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode, onOpenI
           const displayName = updatedUserData.name || updatedUserData.displayName ||
             (updatedUserData.firstName ? `${updatedUserData.firstName} ${updatedUserData.lastName || ''}`.trim() : '') ||
             report.studentName || 'Student';
-          const avatarUrl = updatedUserData.avatarUrl || updatedUserData.dreamImageUrl ||
+          const avatarUrl = updatedUserData.dreamImageUrl || updatedUserData.avatarUrl ||
             `https://api.dicebear.com/7.x/avataaars/svg?seed=${encodeURIComponent(report.studentId)}`;
 
           transaction.set(doc(db, 'leaderboard', leaderboardId), {

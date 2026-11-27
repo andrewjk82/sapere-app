@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { ChevronLeft, Mail, Phone, FileDown, ChevronDown } from "lucide-react";
-import PixelHero from "../hero/PixelHero";
+import Face from "../hero/Face";
 
 const getRoleLabel = (role) => {
   if (role === "student") return "Student";
@@ -46,7 +46,7 @@ export default function StudentHeaderCard({
   return (
     <header className="sd-head">
       <button type="button" className="sd-icon-btn sd-back" onClick={onBack} aria-label="Back to students"><ChevronLeft size={24} /></button>
-      <span className="sd-av" aria-hidden="true" style={{ overflow: "hidden", padding: 0 }}><PixelHero config={student?.avatar} view="head" className="hero-face" /></span>
+      <span className="sd-av" aria-hidden="true" style={{ overflow: "hidden", padding: 0 }}><Face photo={student?.dreamImageUrl} hero={student?.avatar} /></span>
       <div className="sd-who">
         <h1>{name}</h1>
         <div className="sd-chips">

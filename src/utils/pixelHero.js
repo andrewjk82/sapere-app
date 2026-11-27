@@ -291,10 +291,15 @@ function compose(s,blink,dy,only){
   for(var sy=0;sy<2;sy++)for(var sx=7*S;sx<=24*S;sx++){var px=sx+PADX,py=(OY+48)*S+sy+PAD;if(!g[py][px])g[py][px]='rgba(0,0,0,.2)';}
   return g;
 }
-var VIEWS={full:{x:0,y:0,w:W*2+2*PADX,h:H*2+2*PAD},pet:{x:55,y:86,w:32,h:34},head:{x:PADX-2,y:PAD+(OY-9)*2,w:60,h:76}};
+var VIEWS={full:{x:0,y:0,w:W*2+2*PADX,h:H*2+2*PAD},pet:{x:55,y:86,w:32,h:34},head:{x:PADX+W-34,y:0,w:68,h:68}};
 function draw(cv,s,view,blink,dy){
-  var v=VIEWS[view],g=compose(s,blink,dy||0,view==='pet'?'pet':'');cv.width=v.w;cv.height=v.h;var ctx=cv.getContext('2d');ctx.clearRect(0,0,v.w,v.h);
-  for(var y=0;y<v.h;y++)for(var x=0;x<v.w;x++){var c=g[v.y+y]&&g[v.y+y][v.x+x];if(c){ctx.fillStyle=c;ctx.fillRect(x,y,1,1);}}
+  var v=VIEWS[view],g=compose(s,blink,dy||0,view==='pet'?'pet':'');
+  var x0=v.x,y0=v.y,w=v.w,h=v.h,end=1e9;
+  if(view==='head'){ /* centre the head in a square, from its first drawn row to the shoulders; tall hats widen the square */
+    var top=0;end=PAD+(OY+29)*2;while(top<end&&!g[top].some(function(c){return c;}))top++;
+    w=h=Math.max(v.w,end-top+2);x0=v.x-Math.floor((w-v.w)/2);y0=top-Math.floor((h-(end-top))/2);}
+  cv.width=w;cv.height=h;var ctx=cv.getContext('2d');ctx.clearRect(0,0,w,h);
+  for(var y=0;y<h;y++)for(var x=0;x<w;x++){var c=y0+y<end&&g[y0+y]&&g[y0+y][x0+x];if(c){ctx.fillStyle=c;ctx.fillRect(x,y,1,1);}}
 }
 
 

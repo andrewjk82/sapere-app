@@ -67,3 +67,4 @@ canvas.hero-canvas.hero-avatar { width: 100%; height: 100%; object-fit: contain;
 canvas.hero-canvas.hero-face { width: 100%; height: 100%; object-fit: contain; background: #e4dbfd; }
 .hero-chip { display: block; width: 28px; height: 28px; border-radius: 50%; overflow: hidden; flex-shrink: 0; }
 .hero-chip--lg { width: 40px; height: 40px; }
+img.hero-photo { width: 100%; height: 100%; object-fit: cover; display: block; }

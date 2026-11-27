@@ -116,7 +116,7 @@ import Signup from './pages/Signup';
 import AuthLayout from './pages/AuthLayout';
 import LeaderboardModal from './components/LeaderboardModal';
 import FlameBuddy from './components/FlameBuddy';
-import { MyHero } from './components/hero/PixelHero';
+import Face from './components/hero/Face';
 import { heroPack } from './utils/pixelHero';
 import SecretNoteClearModal from './components/SecretNoteClearModal';
 import SprintPayoutModal from './components/SprintPayoutModal';
@@ -806,14 +806,16 @@ function App() {
   // Other students draw this hero on the XP leaderboard: copy it there once whenever it changes (merge writes by
   // XP awards leave it alone). updateDoc, so a student with no row yet doesn't get a half-made one.
   const heroJson = sharedProfile?.avatar ? JSON.stringify(heroPack(sharedProfile.avatar)) : '';
+  const boardPhoto = sharedProfile?.dreamImageUrl || '';
   useEffect(() => {
-    if (isAdmin || !user?.uid || !heroJson) return;
+    if (isAdmin || !user?.uid || (!heroJson && !boardPhoto)) return;
     const key = `sapere:heroPublished:${user.uid}`;
-    try { if (localStorage.getItem(key) === heroJson) return; } catch { /* storage blocked */ }
-    updateDoc(doc(db, 'leaderboard', user.uid), { hero: JSON.parse(heroJson) })
-      .then(() => { try { localStorage.setItem(key, heroJson); } catch { /* storage blocked */ } })
+    const stamp = `${heroJson}|${boardPhoto.length}:${boardPhoto.slice(-24)}`;
+    try { if (localStorage.getItem(key) === stamp) return; } catch { /* storage blocked */ }
+    updateDoc(doc(db, 'leaderboard', user.uid), { ...(heroJson ? { hero: JSON.parse(heroJson) } : {}), ...(boardPhoto ? { avatarUrl: boardPhoto } : {}) })
+      .then(() => { try { localStorage.setItem(key, stamp); } catch { /* storage blocked */ } })
       .catch((e) => console.warn('[hero] leaderboard copy failed:', e?.code || e));
-  }, [isAdmin, user?.uid, heroJson]);
+  }, [isAdmin, user?.uid, heroJson, boardPhoto]);
 
   // Settings (and anything without the tab setter) asks for the My Hero page with an event.
   useEffect(() => {
@@ -1881,7 +1883,7 @@ function App() {
               }}
               style={{ cursor: 'pointer', flexShrink: 0 }}
             >
-              {isAdmin ? <img src={avatarUrl} alt="Avatar" /> : <MyHero view="head" className="hero-avatar" />}
+              {isAdmin ? <img src={avatarUrl} alt="Avatar" /> : <Face photo={sharedProfile?.dreamImageUrl} hero={sharedProfile?.avatar} />}
             </div>
 
             <AnimatePresence>

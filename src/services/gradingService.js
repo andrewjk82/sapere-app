@@ -225,8 +225,8 @@ export const gradeSubmission = async (item, approved, feedback = null, annotatio
       (userData.firstName ? `${userData.firstName} ${userData.lastName || ''}`.trim() : '') ||
       'Student';
     const avatarUrl =
-      userData.avatarUrl ||
       userData.dreamImageUrl ||
+      userData.avatarUrl ||
       `https://api.dicebear.com/7.x/avataaars/svg?seed=${encodeURIComponent(userId)}`;
 
     transaction.set(leaderboardRef, {
