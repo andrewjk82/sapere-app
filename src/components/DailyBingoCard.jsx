@@ -1,8 +1,9 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { BookOpen, Clock, Flag, Plus, Video, Star, Check } from 'lucide-react';
+import { BookOpen, Clock, Flag, Plus, Video, Check } from 'lucide-react';
 import { buildBoard, lineStatus, XP_PER_LINE } from '../utils/dailyBingo';
 import { readActivity, todayKey } from '../utils/bingoActivity';
 import { awardBingoLines } from '../services/bingoXpService';
+import PixelHero from './hero/PixelHero';
 import './daily-bingo.css';
 
 // Student dashboard "Today's plan" as a Daily Bingo (3×3, free centre). Cells tick by themselves from saved results and
@@ -97,7 +98,7 @@ export default function DailyBingoCard({ uid, profile, planItems, studyRoomOn, s
         <div className="bingo-board">
           {board.map((c, i) => {
             const hop = show && show.idx.includes(i) ? { className: ' is-hop', style: { animationDelay: `${show.idx.indexOf(i) * 140}ms` } } : { className: '', style: undefined };
-            if (c.kind === 'free') return <div key={c.id} className={`bingo-cell is-free${hop.className}`} style={hop.style}><Star size={26} /><b>Free</b></div>;
+            if (c.kind === 'free') return <button type="button" key={c.id} className={`bingo-cell is-free${hop.className}`} style={hop.style} onClick={() => setActiveTab?.('MyHero')} aria-label="Free square. Open My Hero"><PixelHero config={profile?.avatar} view="head" className="bingo-hero" /><b>Free</b></button>;
             const Icon = c.icon;
             return (
               <button key={c.id} type="button" onClick={c.onClick} style={hop.style}

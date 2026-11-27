@@ -1,3 +1,4 @@
+import PixelHero, { MyHero } from './hero/PixelHero';
 /**
  * FlameBuddy — floating coach in the bottom-right corner.
  * Visuals ported from flame_character_prototype.html.
@@ -1502,150 +1503,12 @@ function BubbleTypewriter({ eyebrow, msg, sub, cta, onCta, onDismiss, onHide, mo
 export function FlameBuddyAvatar({ mood = 'cheer', className = '' }) {
   return (
     <div className={`fb-stage fb-avatar-embed ${className}`.trim()} aria-hidden>
-      <div className={`fb-flame ${mood}`}>
-        <div className="fb-flame-wrap">
-          <div className="fb-aura" />
-          <div className="fb-ember fb-ember1" />
-          <div className="fb-ember fb-ember2" />
-          <div className="fb-ember fb-ember3" />
-          <FlameSvg idPrefix="" />
-          <div className="fb-sparkle fb-sparkle1" />
-          <div className="fb-sparkle fb-sparkle2" />
-          <div className="fb-sparkle fb-sparkle3" />
-          <div className="fb-face">
-            <div className="fb-eye fb-eyeL"><div className="fb-highlight" /></div>
-            <div className="fb-eye fb-eyeR"><div className="fb-highlight" /></div>
-            <div className="fb-mouth" />
-          </div>
-        </div>
-      </div>
+      <div className={`hero-buddy is-${mood}`}><MyHero mood={mood} /></div>
       <div className="fb-shadow" />
     </div>
   );
 }
 
-function FlameSvg({ idPrefix = '' } = {}) {
-  const p = idPrefix;
-  // One <svg> per moving layer. The flicker used to animate <g> elements inside a single SVG, which no browser can
-  // hand to the compositor: the whole flame (and its blur filter) was repainted on every frame, on every screen, for
-  // as long as the app was open. Animating the <svg> boxes themselves is a plain layer transform — painted once.
-  const box = { viewBox: '0 0 100 130', width: 62, height: 80, 'aria-hidden': true };
-  return (
-    <>
-    <svg {...box} className="fb-glow">
-      <defs>
-        <filter id={`${p}fb-softGlow`} x="-60%" y="-60%" width="220%" height="220%">
-          <feGaussianBlur stdDeviation="4.5" result="blur" />
-          <feMerge>
-            <feMergeNode in="blur" />
-          </feMerge>
-        </filter>
-        <linearGradient id={`${p}fb-outerGrad`} x1="0%" y1="100%" x2="0%" y2="0%">
-          <stop offset="0%" stopColor="#4A1204" />
-          <stop offset="18%" stopColor="#B52D0A" />
-          <stop offset="45%" stopColor="#EE6A18" />
-          <stop offset="75%" stopColor="#FFB429" />
-          <stop offset="100%" stopColor="#FFE27A" />
-        </linearGradient>
-        <linearGradient id={`${p}fb-innerGrad`} x1="0%" y1="100%" x2="0%" y2="0%">
-          <stop offset="0%" stopColor="#E8590F" />
-          <stop offset="40%" stopColor="#FF9A1F" />
-          <stop offset="80%" stopColor="#FFD34A" />
-          <stop offset="100%" stopColor="#FFF3B0" />
-        </linearGradient>
-        <linearGradient id={`${p}fb-coreGrad`} x1="0%" y1="100%" x2="0%" y2="0%">
-          <stop offset="0%" stopColor="#FFFFFF" stopOpacity="0.15" />
-          <stop offset="55%" stopColor="#FFF6C8" stopOpacity="0.85" />
-          <stop offset="100%" stopColor="#FFFFFF" stopOpacity="0.95" />
-        </linearGradient>
-        <radialGradient id={`${p}fb-sheenGrad`} cx="35%" cy="30%" r="45%">
-          <stop offset="0%" stopColor="rgba(255,255,255,0.55)" />
-          <stop offset="100%" stopColor="rgba(255,255,255,0)" />
-        </radialGradient>
-        <linearGradient id={`${p}fb-thinkOuterGrad`} x1="0%" y1="100%" x2="0%" y2="0%">
-          <stop offset="0%" stopColor="#061F3D" />
-          <stop offset="30%" stopColor="#0C3A66" />
-          <stop offset="60%" stopColor="#2E7FCC" />
-          <stop offset="100%" stopColor="#C7E8FF" />
-        </linearGradient>
-        <linearGradient id={`${p}fb-thinkInnerGrad`} x1="0%" y1="100%" x2="0%" y2="0%">
-          <stop offset="0%" stopColor="#0C3A66" />
-          <stop offset="45%" stopColor="#2E7FCC" />
-          <stop offset="75%" stopColor="#8FCBFF" />
-          <stop offset="100%" stopColor="#F5FBFF" />
-        </linearGradient>
-        <linearGradient id={`${p}fb-urgentOuterGrad`} x1="0%" y1="100%" x2="0%" y2="0%">
-          <stop offset="0%" stopColor="#4A0E0E" />
-          <stop offset="30%" stopColor="#8E1F1F" />
-          <stop offset="60%" stopColor="#D63838" />
-          <stop offset="100%" stopColor="#FFC7B0" />
-        </linearGradient>
-        <linearGradient id={`${p}fb-urgentInnerGrad`} x1="0%" y1="100%" x2="0%" y2="0%">
-          <stop offset="0%" stopColor="#8E1F1F" />
-          <stop offset="45%" stopColor="#D63838" />
-          <stop offset="75%" stopColor="#FF8A65" />
-          <stop offset="100%" stopColor="#FFF0E6" />
-        </linearGradient>
-        <linearGradient id={`${p}fb-cheerOuterGrad`} x1="0%" y1="100%" x2="0%" y2="0%">
-          <stop offset="0%" stopColor="#1F3D08" />
-          <stop offset="30%" stopColor="#3B6D11" />
-          <stop offset="60%" stopColor="#7CBF2E" />
-          <stop offset="100%" stopColor="#EFFAC0" />
-        </linearGradient>
-        <linearGradient id={`${p}fb-cheerInnerGrad`} x1="0%" y1="100%" x2="0%" y2="0%">
-          <stop offset="0%" stopColor="#3B6D11" />
-          <stop offset="45%" stopColor="#7CBF2E" />
-          <stop offset="75%" stopColor="#C7EE7E" />
-          <stop offset="100%" stopColor="#FBFFEF" />
-        </linearGradient>
-        <linearGradient id={`${p}fb-hintOuterGrad`} x1="0%" y1="100%" x2="0%" y2="0%">
-          <stop offset="0%" stopColor="#C99A1E" />
-          <stop offset="30%" stopColor="#F2C13B" />
-          <stop offset="60%" stopColor="#FFDE7A" />
-          <stop offset="100%" stopColor="#FFFCE8" />
-        </linearGradient>
-        <linearGradient id={`${p}fb-hintInnerGrad`} x1="0%" y1="100%" x2="0%" y2="0%">
-          <stop offset="0%" stopColor="#F2C13B" />
-          <stop offset="45%" stopColor="#FFE38A" />
-          <stop offset="100%" stopColor="#FFFFF6" />
-        </linearGradient>
-      </defs>
-      <g filter={`url(#${p}fb-softGlow)`}>
-        <g transform="scale(1 0.9286)">
-          <path className="fb-flamePath" fill={`url(#${p}fb-outerGrad)`} d="M50,2 C52,18 66,28 68,46 C70,58 82,60 80,84 C79,108 66,132 50,132 C34,132 20,108 21,84 C22,66 32,60 33,46 C34,34 44,26 46,14 C47,8 49,5 50,2 Z" />
-          <path className="fb-flamePath" fill={`url(#${p}fb-outerGrad)`} d="M24,52 C30,66 22,74 20,88 C19,100 26,112 34,118 C26,104 28,94 30,84 C32,74 28,62 24,52 Z" />
-          <path className="fb-flamePath" fill={`url(#${p}fb-outerGrad)`} d="M78,46 C74,60 82,70 80,84 C79,98 72,110 66,118 C76,108 84,94 83,82 C82,68 76,58 78,46 Z" />
-        </g>
-      </g>
-    </svg>
-    <svg {...box} className="fb-outer">
-        <g transform="scale(1 0.9286)">
-          <path className="fb-flamePath" fill={`url(#${p}fb-outerGrad)`} d="M50,2 C52,18 66,28 68,46 C70,58 82,60 80,84 C79,108 66,132 50,132 C34,132 20,108 21,84 C22,66 32,60 33,46 C34,34 44,26 46,14 C47,8 49,5 50,2 Z" />
-          <path className="fb-flamePath" fill={`url(#${p}fb-outerGrad)`} d="M24,52 C30,66 22,74 20,88 C19,100 26,112 34,118 C26,104 28,94 30,84 C32,74 28,62 24,52 Z" />
-          <path className="fb-flamePath" fill={`url(#${p}fb-outerGrad)`} d="M78,46 C74,60 82,70 80,84 C79,98 72,110 66,118 C76,108 84,94 83,82 C82,68 76,58 78,46 Z" />
-        </g>
-    </svg>
-    <svg {...box} className="fb-inner">
-        <g transform="scale(1 0.9286)">
-          <path className="fb-flamePath" fill={`url(#${p}fb-innerGrad)`} d="M50,26 C52,40 64,48 65,66 C66,86 62,112 50,122 C38,112 34,86 35,66 C36,50 48,42 50,26 Z" />
-          <path className="fb-flameCore" fill={`url(#${p}fb-coreGrad)`} d="M50,58 C54,70 58,80 57,96 C56,110 54,116 50,119 C46,116 44,110 43,96 C42,80 46,70 50,58 Z" />
-        </g>
-    </svg>
-    <svg {...box}>
-      <ellipse cx="38" cy="75" rx="8" ry="14" fill={`url(#${p}fb-sheenGrad)`} opacity="0.6" />
-    </svg>
-    </>
-  );
-}
-
-/**
- * @param {object} props
- * @param {string} props.uid
- * @param {object} [props.profile]
- * @param {string} [props.activeTab]
- * @param {(tab: string) => void} [props.setActiveTab]
- * @param {boolean} [props.hidden]
- */
 export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidden = false }) {
   // Closest Daily Bingo line, from the dashboard card (DailyBingoCard).
   const [bingoHint, setBingoHint] = useState(() => (typeof window !== 'undefined' ? window.__sapereBingoHint || null : null));
@@ -2300,7 +2163,7 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
     <div
       className={`fb-root ${phaseClass}`}
       role="complementary"
-      aria-label="Flame coach"
+      aria-label="Your hero buddy"
     >
       <div className="fb-burst" aria-hidden />
       {showBubble && (
@@ -2380,7 +2243,7 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
         }}
       >
         <div
-          className={`fb-flame ${mood}`}
+          className="fb-flame fb-flame--hero"
           onAnimationEnd={(e) => {
             if (e.animationName === 'fb-tap-bounce') {
               e.stopPropagation();
@@ -2388,20 +2251,8 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
             }
           }}
         >
-          <div className="fb-flame-wrap">
-            <div className="fb-aura" />
-            <div className="fb-ember fb-ember1" />
-            <div className="fb-ember fb-ember2" />
-            <div className="fb-ember fb-ember3" />
-            <FlameSvg />
-            <div className="fb-sparkle fb-sparkle1" />
-            <div className="fb-sparkle fb-sparkle2" />
-            <div className="fb-sparkle fb-sparkle3" />
-            <div className="fb-face">
-              <div className="fb-eye fb-eyeL"><div className="fb-highlight" /></div>
-              <div className="fb-eye fb-eyeR"><div className="fb-highlight" /></div>
-              <div className="fb-mouth" />
-            </div>
+          <div className={`hero-buddy is-${mood}`}>
+            <PixelHero config={profile?.avatar} mood={mood} blinking />
           </div>
         </div>
         <div className="fb-shadow" />

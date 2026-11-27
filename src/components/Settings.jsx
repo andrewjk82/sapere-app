@@ -6,6 +6,7 @@ import { useProfile } from '../context/ProfileContext';
 import { db, requestNotificationPermission, wantsForcedLongPolling, requestForcedLongPolling, clearForcedLongPolling } from '../firebase/config';
 import { doc, setDoc, updateDoc, getDoc } from 'firebase/firestore';
 import AvatarPickerModal from './AvatarPickerModal';
+import { MyHero } from './hero/PixelHero';
 import FilmingGuidelinesModal from './FilmingGuidelinesModal';
 import ShareAppQrModal from './ShareAppQrModal';
 import { CURRENT_APP_VERSION } from '../constants/appVersion';
@@ -469,6 +470,16 @@ const Settings = () => {
                   <span style={{ display: 'block', fontWeight: 600, fontSize: '0.8rem', color: '#64748b' }}>A ding-dong for a correct answer and a low buzz for a wrong one. Saved on this device.</span>
                 </span>
               </label>
+            </section>
+          )}
+
+          {!isAdmin && (
+            <section className="app-panel page-card" style={{ marginTop: '24px' }}>
+              <div className="page-card__header"><h3>My Hero</h3></div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 18, marginTop: 14, flexWrap: 'wrap' }}>
+                <div style={{ width: 72 }}><MyHero /></div>
+                <button type="button" className="app-button app-button--primary" onClick={() => window.dispatchEvent(new Event('sapere:open-hero'))}>Wardrobe &amp; Shop</button>
+              </div>
             </section>
           )}
 

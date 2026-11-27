@@ -40,7 +40,7 @@ const StudentList = ({ students, onAddStudent, onRefreshStudents, onSelectStuden
         snap.forEach((d) => {
           batch.set(
             doc(db, colId, d.id),
-            { totalXP: 0, challengesCompleted: 0, secretNoteXpCutoff },
+            { totalXP: 0, challengesCompleted: 0, secretNoteXpCutoff, heroSpent: 0 },
             { merge: true },
           );
           count++;

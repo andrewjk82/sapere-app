@@ -104,6 +104,7 @@ const DailyChallenge = lazyWithReload(() => import('./components/DailyChallenge'
 const TimesTableSprint = lazyWithReload(() => import('./components/TimesTableSprint'));
 const StudyTimerPage = lazyWithReload(() => import('./components/studyTimer/StudyTimerPage'));
 const Settings = lazyWithReload(() => import('./components/Settings'));
+const HeroPage = lazyWithReload(() => import('./components/hero/HeroPage'));
 const StudentDetail = lazyWithReload(() => import('./components/StudentDetail'));
 const ReportsAdmin = lazyWithReload(() => import('./components/ReportsAdmin'));
 const ExamPrep = lazyWithReload(() => import('./components/ExamPrep'));
@@ -800,6 +801,13 @@ function App() {
   const [verificationChecking, setVerificationChecking] = useState(false);
   const [verificationMessage, setVerificationMessage] = useState('');
   
+  // Settings (and anything without the tab setter) asks for the My Hero page with an event.
+  useEffect(() => {
+    const open = () => { setSelectedStudentId(null); setActiveTab('MyHero'); window.scrollTo(0, 0); };
+    window.addEventListener('sapere:open-hero', open);
+    return () => window.removeEventListener('sapere:open-hero', open);
+  }, []);
+
   const handleChallengeBack = useCallback(() => {
     setActiveTab('Dashboard');
   }, []);
@@ -1543,6 +1551,8 @@ function App() {
         return <QuestionPreStepsReviewPage />;
       case 'Settings':
         return <Settings />;
+      case 'MyHero':
+        return <HeroPage onBack={() => handleTabChange('Dashboard')} />;
       default:
         return (
           <div className="app-placeholder">

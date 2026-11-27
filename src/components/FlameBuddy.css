@@ -750,3 +750,9 @@
   }
   .fb-caret { display: none; }
 }
+
+/* The pixel hero stands where the flame did: the flame's own look and mood animations are switched off. */
+.fb-flame--hero { width: auto; height: auto; animation: none; }
+/* Taller than the flame was (a whole character): give the stage the room. */
+.fb-stage:has(> .fb-flame--hero) { height: 98px; }
+@media (max-width: 600px) { .fb-stage:has(> .fb-flame--hero) { height: 78px; } }

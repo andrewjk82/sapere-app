@@ -15,7 +15,7 @@
 .bingo-cell.is-done svg, .bingo-cell.is-done small { color: #1f9d61; }
 .bingo-check { width: 34px; height: 34px; border-radius: 50%; background: #1f9d61; display: grid; place-items: center; }
 .bingo-check svg { color: #fff !important; }
-.bingo-cell.is-free { background: #ffefc2; color: #8a5a00; cursor: default; }
+.bingo-cell.is-free { background: #ffefc2; color: #8a5a00; }
 .bingo-cell.is-free svg { color: #e3a008; }
 .bingo-cell.is-finishing { box-shadow: 0 0 0 3px #f2b632, 0 10px 20px rgba(110,100,180,.14); }
 .bingo-cell:focus-visible, .bingo-go:focus-visible { outline: 3px solid #b9a6f0; outline-offset: 2px; }
@@ -91,3 +91,5 @@
   /* contain: size — the side column never makes the row taller than the board; it only fills the height it is given. */
   .dash-split__side { margin-top: 92px; margin-bottom: 22px; contain: size; }
 }
+
+.bingo-hero { width: 56%; max-width: 96px; }
