@@ -45,7 +45,6 @@ import {
 // unbounded subscription costs more reads every week. 60 recent docs ≈ 2 months
 // of history — enough for every panel; XP recalculation still scans everything.
 const STAT_HISTORY_LIMIT = 60;
-import { upsertRegisteredUserLeaderboard, upsertManualStudentLeaderboard } from "../services/leaderboardService";
 import {
   fetchHscResultsIncremental,
   loadCachedHscResults,
@@ -90,6 +89,7 @@ import StudentDashboardCard from "./studentDetail/StudentDashboardCard";
 import HomeworkSubmissionViewer from "./homework/HomeworkSubmissionViewer";
 import { markHomeworkChecked } from "../services/homeworkService";
 import useStudentSessions from "../hooks/useStudentSessions";
+import { adjustXp } from "../services/xpService";
 import { subscribeSessionHistory, resetSessionHistory } from "../services/teacherSessions";
 import { courseTopics, deriveTopicStates, topicStatuses, summarize, byChapter } from "../utils/topicProgress";
 import "./student-detail.css";
@@ -1414,19 +1414,8 @@ const StudentDetail = ({ studentId, onBack }) => {
     if (!confirm(`${delta > 0 ? 'Add' : 'Remove'} ${Math.abs(delta)} XP ${delta > 0 ? 'to' : 'from'} ${student?.name || student?.firstName}?`)) return;
     try {
       setLoading(true);
-      const { increment: fbIncrement, getDoc: fbGetDoc } = await import('firebase/firestore');
-      const userRef = doc(db, activeStudentCollection, activeStudentId);
-      const snap = await fbGetDoc(userRef);
-      const currentXP = Number(snap.data()?.totalXP) || 0;
-      const newXP = Math.max(0, currentXP + delta);
-      await setDoc(userRef, { totalXP: newXP }, { merge: true });
-      // Sync leaderboard
-      try {
-        const fullStudentData = { ...student, totalXP: newXP };
-        if (student.source === 'manual') await upsertManualStudentLeaderboard(activeStudentId, fullStudentData);
-        else await upsertRegisteredUserLeaderboard(activeStudentId, fullStudentData);
-      } catch {}
-      showToast(`XP adjusted: ${currentXP} → ${newXP} (${delta > 0 ? '+' : ''}${delta})`, 'success');
+      const { applied, total } = await adjustXp(challengeResultsUid || activeStudentId, delta);
+      showToast(`XP adjusted: ${total - applied} → ${total} (${applied > 0 ? '+' : ''}${applied})`, 'success');
     } catch (err) {
       showToast('XP adjustment failed: ' + err.message, 'error');
     } finally {
@@ -1599,27 +1588,14 @@ const StudentDetail = ({ studentId, onBack }) => {
       let removedXP = 0;
       let finalXP = null;
       if (statXpEarned > 0) {
-        const userRef = doc(db, "users", syncUid);
-        const userSnap = await getDoc(userRef);
-        const target = userSnap.exists() ? userRef : doc(db, activeStudentCollection, activeStudentId);
-        const data = userSnap.exists() ? userSnap.data() : (await getDoc(target)).data() || {};
-        const currentXP = Number(data.totalXP) || 0;
-        removedXP = Math.min(statXpEarned, currentXP);
-        finalXP = currentXP - removedXP;
-        const done = Number(data.challengesCompleted) || 0;
-        // increment(): XP the student earns at the same moment is not overwritten.
-        await setDoc(
-          target,
-          {
-            totalXP: increment(-removedXP),
-            ...(statData.completed && done > 0 ? { challengesCompleted: increment(-1) } : {}),
-            updatedAt: new Date().toISOString(),
-          },
-          { merge: true },
-        );
-        const boardId = userSnap.exists() ? syncUid : `manual-${activeStudentId}`;
-        updateDoc(doc(db, "leaderboard", boardId), { totalXP: increment(-removedXP), lastUpdated: serverTimestamp() })
-          .catch((lbErr) => console.warn("Leaderboard sync failed after challenge reset:", lbErr?.code || lbErr));
+        const userSnap = await getDoc(doc(db, "users", syncUid));
+        const id = userSnap.exists() ? syncUid : activeStudentId;
+        const done = Number(userSnap.data()?.challengesCompleted) || 0;
+        const result = await adjustXp(id, -statXpEarned, {
+          extra: statData.completed && done > 0 ? { challengesCompleted: increment(-1) } : {},
+        });
+        removedXP = -result.applied;
+        finalXP = result.total;
       }
       showToast(
         `Challenge reset. ${removedXP > 0 ? `−${removedXP} XP (now ${finalXP}).` : "No XP was earned in it, so XP is unchanged."} Removed ${deletedWorkingOutCount} working out item${deletedWorkingOutCount === 1 ? "" : "s"}.`,

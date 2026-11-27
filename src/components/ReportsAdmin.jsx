@@ -19,6 +19,7 @@ import { adminGetQuestion } from '../services/contentLoader';
 import { contentPatch } from '../services/contentApi';
 import { withTimeout } from '../utils/withTimeout';
 import { subscribeReports, resetReports } from '../services/teacherReports';
+import { adjustXp } from '../services/xpService';
 
 // ── Report provenance ────────────────────────────────────────────────────────
 // Students file reports from several places. Only some of them correspond to a
@@ -765,37 +766,17 @@ const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode, onOpenI
     const XP_GRANT = 10;
     const POINTS_GRANT = 10;
 
-    const roots = ['users', 'students'];
-    let userRef = null;
-    let userSnap = null;
-
-    for (const root of roots) {
-      const ref = doc(db, root, studentId);
-      const snap = await getDoc(ref);
-      if (snap.exists()) { userRef = ref; userSnap = snap; break; }
-    }
-
-    if (!userRef || !userSnap) throw new Error('user-not-found');
-
-    await runTransaction(db, async (transaction) => {
-      const snap = await transaction.get(userRef);
-      if (!snap.exists()) throw new Error('user-not-found');
-      const data = snap.data();
-      const newXP = (Number(data.totalXP) || 0) + XP_GRANT;
-      transaction.update(userRef, {
-        totalXP: newXP,
-        points: increment(POINTS_GRANT),
-        updatedAt: restoredAt,
-      });
-      const reportRef = doc(db, 'reports', report.id);
-      transaction.update(reportRef, {
+    // XP and the leaderboard move together (this path used to leave the leaderboard behind).
+    await adjustXp(studentId, XP_GRANT, {
+      extra: { points: increment(POINTS_GRANT) },
+      alsoInTx: (transaction) => transaction.update(doc(db, 'reports', report.id), {
         status: 'resolved',
         creditRestored: true,
         creditRestoredAt: restoredAt,
         creditRestoredDirectly: true,
         restoredPoints: 1,
         restoredXp: XP_GRANT,
-      });
+      }),
     });
   };
 

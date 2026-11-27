@@ -1960,7 +1960,7 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
               : []),
           ],
           // XP and progress. increment() instead of a transaction: a transaction needs the server, so it cannot be
-          // queued. The leaderboard keeps an absolute total so it still self-corrects and works for a first entry.
+          // queued. The leaderboard gets the same increment (its entry is created at sign-up).
           [
             (batch) => batch.set(doc(db, 'users', user.uid, 'chapterProgress', `${String(assignedYear || 'General').replace(' ', '_')}_daily`), {
               year: assignedYear || 'General',
@@ -1992,7 +1992,8 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
             (batch) => batch.set(doc(db, 'leaderboard', user.uid), {
               name: leaderboardName,
               avatarUrl: leaderboardAvatarUrl,
-              ...(studentProfile ? { totalXP: xpBefore + xpEarned } : {}),
+              // Same increment as the student document, so a stale on-device total cannot overwrite newer XP.
+              totalXP: increment(xpEarned),
               lastUpdated: serverTimestamp(),
               role: studentProfile?.role || 'student',
               year: assignedYear || '',
