@@ -154,6 +154,21 @@ const isNewer = (cloud, local) => {
   return false;
 };
 
+const BANK_JUMP_KEY = 'sapere:bankJump';
+const BANK_JUMP_MS = 45_000;
+const readBankJump = () => {
+  try {
+    const v = JSON.parse(sessionStorage.getItem(BANK_JUMP_KEY) || 'null');
+    return v?.id && Date.now() - v.at < BANK_JUMP_MS ? v.id : null;
+  } catch { return null; }
+};
+const writeBankJump = (id) => {
+  try {
+    if (id) sessionStorage.setItem(BANK_JUMP_KEY, JSON.stringify({ id, at: Date.now() }));
+    else sessionStorage.removeItem(BANK_JUMP_KEY);
+  } catch { /* storage blocked: a reload goes to Class as before */ }
+};
+
 const isIOSStandaloneApp = () => {
   if (typeof window === 'undefined' || typeof navigator === 'undefined') return false;
   const isiOS = /iPad|iPhone|iPod/.test(navigator.userAgent)
@@ -742,7 +757,7 @@ function App() {
     if (!isAdmin) return undefined;
     if (!classDefaultDoneRef.current) {
       classDefaultDoneRef.current = true;
-      setActiveTab('Class');
+      setActiveTab(readBankJump() ? 'Curriculum' : 'Class');
     }
     let hiddenAt = 0;
     const onVis = () => {
@@ -762,7 +777,9 @@ function App() {
   const [reportsInitialTab, setReportsInitialTab] = useState('reports');
   const [reportsStudent, setReportsStudent] = useState(null);   // { id, name } — Reports & Review limited to one student
   // Question id to open in the Question Bank when jumping there from Reports & Review.
-  const [bankJumpId, setBankJumpId] = useState(null);
+  // A question being opened from Reports & Review is remembered for a moment: if the app reloads on the way (a screen's
+  // code file replaced by a new deploy), it comes back to that question instead of the Class page.
+  const [bankJumpId, setBankJumpId] = useState(() => readBankJump());
   const [showJourneyMap, setShowJourneyMap] = useState(false);
   const [selectedStudentId, setSelectedStudentId] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -1517,7 +1534,7 @@ function App() {
             setInitialViewMode={setReportsInitialTab}
             studentFilter={reportsStudent}
             onClearStudentFilter={() => setReportsStudent(null)}
-            onOpenInBank={(id) => { setBankJumpId(id); handleTabChange('Curriculum'); }}
+            onOpenInBank={(id) => { handleTabChange('Curriculum'); writeBankJump(id); setBankJumpId(id); }}
           />
         );
       case 'DnaWarmupReview':
@@ -1544,6 +1561,7 @@ function App() {
       setReportsInitialTab('reports');
       setReportsStudent(null);
     }
+    writeBankJump(null);
     setActiveTab(tab);
     setSelectedStudentId(null);
   };
