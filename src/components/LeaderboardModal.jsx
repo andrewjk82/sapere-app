@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { X } from 'lucide-react';
+import PixelHero from './hero/PixelHero';
 import { db } from '../firebase/config';
 import { collection, getDocs, query, orderBy, limit } from 'firebase/firestore';
 
@@ -313,7 +314,9 @@ const LeaderboardModal = ({ open, onClose, currentUserId, currentUserXP = 0, cur
                             background: '#fff',
                             animation: ready ? `sap-run ${runSpeed}s ease-in-out infinite` : 'none',
                           }}>
-                            <img src={avatarUrl} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                            {student.role === 'admin'
+                              ? <img src={avatarUrl} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                              : <PixelHero config={student.hero} view="head" className="hero-face" />}
                           </div>
 
                           {/* XP — 캐릭터 왼쪽, 크고 볼드한 금색 그라데이션 */}

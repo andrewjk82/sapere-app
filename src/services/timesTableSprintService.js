@@ -1,3 +1,4 @@
+import { heroPack } from '../utils/pixelHero';
 import { markActivity } from '../utils/bingoActivity';
 /**
  * timesTableSprintService.js
@@ -147,6 +148,7 @@ const refreshTop5 = async (boardId) => {
       userId: data.userId,
       name: data.name || 'Student',
       avatarUrl: data.avatarUrl || '',
+      hero: data.hero || null,
       year: data.year || '',
       bestTimeMs: Number(data.bestTimeMs) || 0,
     };
@@ -333,6 +335,7 @@ export const submitSprintRun = async ({
       sprintType,
       name,
       avatarUrl,
+      hero: heroPack(profile?.avatar),
       year,
       bestTimeMs,
       attemptsCount,
@@ -341,7 +344,7 @@ export const submitSprintRun = async ({
       // Tie-break for settlement: whoever reached the time first wins.
       ...(improved ? { bestAchievedAt: new Date().toISOString() } : {}),
       updatedAt: serverTimestamp(),
-    }, { merge: true });
+    }, { mergeFields: ['userId', 'weekId', 'sprintType', 'name', 'avatarUrl', 'hero', 'year', 'bestTimeMs', 'attemptsCount', 'lastTimeMs', 'lastWrongCount', 'updatedAt', ...(improved ? ['bestAchievedAt'] : [])] });
   });
   writeCachedMyBest(boardId, userId, bestTimeMs, attemptsCount);
 

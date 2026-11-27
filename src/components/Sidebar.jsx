@@ -33,6 +33,7 @@ import { doc, setDoc } from 'firebase/firestore';
 import { useProfile } from '../context/ProfileContext';
 import { hubExamsFor, HUB_PAGES } from '../utils/examHub';
 import AvatarPickerModal from './AvatarPickerModal';
+import { MyHero } from './hero/PixelHero';
 import { CURRENT_APP_VERSION } from '../constants/appVersion';
 
 const SidebarItem = ({ icon: Icon, label, active, onClick, disabled, badge }) => (
@@ -278,12 +279,12 @@ const Sidebar = ({ activeTab, setActiveTab, isLocked, onShowLeaderboard, onShowN
             <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
               <div
                 className="app-avatar clickable-avatar"
-                onClick={() => setAvatarOpen(true)}
+                onClick={() => (isAdmin ? setAvatarOpen(true) : window.dispatchEvent(new Event('sapere:open-hero')))}
                 role="button"
                 tabIndex={0}
                 style={{ width: '42px', height: '42px', border: '2px solid #fff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}
               >
-                <img src={avatarUrl} alt="Avatar" />
+                {isAdmin ? <img src={avatarUrl} alt="Avatar" /> : <MyHero view="head" className="hero-avatar" />}
               </div>
               <div style={{ flex: 1, minWidth: 0 }}>
                 <div style={{ fontSize: '0.85rem', fontWeight: 800, color: '#1e1b4b', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>

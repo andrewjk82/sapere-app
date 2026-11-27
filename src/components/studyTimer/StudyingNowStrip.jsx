@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import PixelHero from '../hero/PixelHero';
 import { subscribeStudyPresence, presenceElapsedSec } from '../../services/studyPresenceService';
 
 const MAX_SHOWN = 8;
@@ -46,13 +47,7 @@ const StudyingNowStrip = ({ uid }) => {
       <div style={{ display: 'flex', gap: 18, flexWrap: 'wrap', justifyContent: 'center', maxWidth: 720 }}>
         {shown.map((p) => (
           <div key={p.uid} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 6, width: 64, opacity: p.running ? 1 : 0.4 }}>
-            {p.avatarUrl ? (
-              <img src={p.avatarUrl} alt="" style={{ width: 40, height: 40, borderRadius: '50%', background: '#1f2937', objectFit: 'cover' }} />
-            ) : (
-              <div style={{ width: 40, height: 40, borderRadius: '50%', background: '#1f2937', color: '#fff', display: 'grid', placeItems: 'center', fontWeight: 800 }}>
-                {String(p.name || '?').charAt(0)}
-              </div>
-            )}
+            <span className="hero-chip hero-chip--lg"><PixelHero config={p.hero} view="head" className="hero-face" /></span>
             <span style={{ fontSize: '0.7rem', fontWeight: 700, color: 'rgba(255,255,255,0.75)', maxWidth: 64, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
               {p.isSelf ? 'You' : p.name}
             </span>

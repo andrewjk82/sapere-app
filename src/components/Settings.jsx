@@ -326,8 +326,8 @@ const Settings = () => {
             </div>
 
             <div className="settings-profile" style={{ marginBottom: '2rem' }}>
-              <div className="settings-profile__avatar clickable-avatar" onClick={() => setAvatarOpen(true)} role="button" tabIndex={0}>
-                <img src={avatarUrl} alt="Avatar" />
+              <div className="settings-profile__avatar clickable-avatar" onClick={() => (isAdmin ? setAvatarOpen(true) : window.dispatchEvent(new Event('sapere:open-hero')))} role="button" tabIndex={0}>
+                {isAdmin ? <img src={avatarUrl} alt="Avatar" /> : <MyHero view="head" className="hero-avatar" />}
                 <div className="avatar-overlay">Change</div>
               </div>
               <div>

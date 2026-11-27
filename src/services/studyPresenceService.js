@@ -19,6 +19,7 @@
  * The feature is a silent no-op until DATABASE_URL is set (RTDB must be created in the
  * console first).
  */
+import { heroPack } from '../utils/pixelHero';
 import { app } from '../firebase/config';
 
 export const DATABASE_URL = 'https://sapere-fe23e-default-rtdb.asia-southeast1.firebasedatabase.app';
@@ -52,6 +53,7 @@ export const publishStudyPresence = async ({ uid, profile, avatarUrl, bankedSec,
       name: firstNameOf(profile),
       // Inline data: images (some dream images) are far too big for a presence row.
       avatarUrl: avatarUrl && !String(avatarUrl).startsWith('data:') && String(avatarUrl).length <= 2000 ? avatarUrl : '',
+      hero: heroPack(profile?.avatar),
       bankedSec: Math.max(0, Math.floor(Number(bankedSec) || 0)),
       running: Boolean(running),
       since: mod.serverTimestamp(),

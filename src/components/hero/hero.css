@@ -60,3 +60,10 @@
 }
 @keyframes hero-pet-hop { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-6%); } }
 @media (prefers-reduced-motion: reduce) { .hero-pet, .hero-pet canvas { animation: none; } }
+
+/* The student's hero head used as their profile picture. */
+canvas.hero-canvas.hero-avatar { width: 100%; height: 100%; object-fit: contain; background: #e4dbfd; border-radius: inherit; }
+
+canvas.hero-canvas.hero-face { width: 100%; height: 100%; object-fit: contain; background: #e4dbfd; }
+.hero-chip { display: block; width: 28px; height: 28px; border-radius: 50%; overflow: hidden; flex-shrink: 0; }
+.hero-chip--lg { width: 40px; height: 40px; }

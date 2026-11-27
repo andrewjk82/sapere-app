@@ -320,3 +320,9 @@ export const HERO_MOODS = {
   urgent: { eyes: 'wide', brows: 'sad', mouth: 'open' },
   cheer: { eyes: 'happy', brows: 'soft', mouth: 'open' },
 };
+
+/** Only what differs from the default: the few bytes a public board row carries so others can draw this hero. */
+export const heroPack = (saved) => {
+  const full = heroConfig(saved);
+  return Object.fromEntries(Object.entries(full).filter(([k, v]) => v !== DEFAULT[k]));
+};

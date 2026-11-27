@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { useAuth } from './AuthContext';
 import { useProfile } from './ProfileContext';
+import { heroPack } from '../utils/pixelHero';
 import { flushStudySession } from '../services/studyTimeService';
 import { getDeviceId, publishSessionTransition, fetchRemoteSessionState } from '../services/studySessionSyncService';
 import { publishStudyPresence, clearStudyPresence } from '../services/studyPresenceService';
@@ -140,7 +141,7 @@ const StudyTimerEngine = ({ uid, children }) => {
       const flushSubject = subjectRef.current;
       try {
         const { meta, totalSec } = await flushStudySession({
-          uid: id, dateStr, subject: flushSubject, deltaSec: delta, avatarUrl: avatar, hourBreakdown,
+          uid: id, dateStr, subject: flushSubject, deltaSec: delta, avatarUrl: avatar, hero: heroPack(ctxRef.current.profile?.avatar), hourBreakdown,
           priorTotalSec: myTotalSecRef.current, currentMeta: metaRef.current,
         });
         metaRef.current = meta;
@@ -359,7 +360,7 @@ const StudyTimerEngine = ({ uid, children }) => {
         const resumeDateStr = todayStr();
         flushStudySession({
           uid, dateStr: resumeDateStr, subject: savedSubject, deltaSec: staleTotalSec,
-          avatarUrl, hourBreakdown, priorTotalSec: myTotalSecRef.current, currentMeta: metaRef.current,
+          avatarUrl, hero: heroPack(profile?.avatar), hourBreakdown, priorTotalSec: myTotalSecRef.current, currentMeta: metaRef.current,
         }).then(({ meta, totalSec }) => {
           metaRef.current = meta;
           myTotalSecRef.current = totalSec;

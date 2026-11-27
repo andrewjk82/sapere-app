@@ -116,6 +116,8 @@ import Signup from './pages/Signup';
 import AuthLayout from './pages/AuthLayout';
 import LeaderboardModal from './components/LeaderboardModal';
 import FlameBuddy from './components/FlameBuddy';
+import { MyHero } from './components/hero/PixelHero';
+import { heroPack } from './utils/pixelHero';
 import SecretNoteClearModal from './components/SecretNoteClearModal';
 import SprintPayoutModal from './components/SprintPayoutModal';
 import ModeBonusPenaltyModal from './components/ModeBonusPenaltyModal';
@@ -801,6 +803,18 @@ function App() {
   const [verificationChecking, setVerificationChecking] = useState(false);
   const [verificationMessage, setVerificationMessage] = useState('');
   
+  // Other students draw this hero on the XP leaderboard: copy it there once whenever it changes (merge writes by
+  // XP awards leave it alone). updateDoc, so a student with no row yet doesn't get a half-made one.
+  const heroJson = sharedProfile?.avatar ? JSON.stringify(heroPack(sharedProfile.avatar)) : '';
+  useEffect(() => {
+    if (isAdmin || !user?.uid || !heroJson) return;
+    const key = `sapere:heroPublished:${user.uid}`;
+    try { if (localStorage.getItem(key) === heroJson) return; } catch { /* storage blocked */ }
+    updateDoc(doc(db, 'leaderboard', user.uid), { hero: JSON.parse(heroJson) })
+      .then(() => { try { localStorage.setItem(key, heroJson); } catch { /* storage blocked */ } })
+      .catch((e) => console.warn('[hero] leaderboard copy failed:', e?.code || e));
+  }, [isAdmin, user?.uid, heroJson]);
+
   // Settings (and anything without the tab setter) asks for the My Hero page with an event.
   useEffect(() => {
     const open = () => { setSelectedStudentId(null); setActiveTab('MyHero'); window.scrollTo(0, 0); };
@@ -1867,7 +1881,7 @@ function App() {
               }}
               style={{ cursor: 'pointer', flexShrink: 0 }}
             >
-              <img src={avatarUrl} alt="Avatar" />
+              {isAdmin ? <img src={avatarUrl} alt="Avatar" /> : <MyHero view="head" className="hero-avatar" />}
             </div>
 
             <AnimatePresence>

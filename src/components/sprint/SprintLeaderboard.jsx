@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import PixelHero from '../hero/PixelHero';
 import { formatSprintTime } from '../../utils/sprintWeek';
 import { SPRINT_XP_TIERS, SPRINT_XP_PARTICIPATION } from '../../constants/sprintXp';
 
@@ -27,9 +28,7 @@ const SprintLeaderboard = ({ top5 = [], myUserId, myRank, myBestTimeMs }) => {
               className={`tts-row tts-row--${i + 1}${entry.userId === myUserId ? ' tts-row--me' : ''}`}
             >
               <span className={`tts-lane tts-lane--${i + 1}`}>{i + 1}</span>
-              {entry.avatarUrl
-                ? <img className="tts-row__avatar" src={entry.avatarUrl} alt="" />
-                : <span className="tts-row__avatar" />}
+              <span className="tts-row__avatar" style={{ overflow: 'hidden', padding: 0 }}><PixelHero config={entry.hero} view="head" className="hero-face" /></span>
               <span className="tts-row__name">{entry.name}</span>
               <span className="tts-row__xp">
                 +{SPRINT_XP_TIERS[i] ?? SPRINT_XP_PARTICIPATION} XP

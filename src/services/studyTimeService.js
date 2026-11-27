@@ -104,6 +104,7 @@ export const refreshTop10 = async () => {
     return {
       uid: data.uid || d.id,
       avatarUrl: data.avatarUrl || '',
+      hero: data.hero || null,
       totalSec: Number(data.totalSec) || 0,
     };
   });
@@ -181,7 +182,7 @@ export const fetchMyTotal = async (uid) => {
  *
  * @returns {{ totalSec: number, meta: object|null }}
  */
-export const flushStudySession = async ({ uid, dateStr, subject, deltaSec, avatarUrl, hourBreakdown = null, priorTotalSec = null, currentMeta = null }) => {
+export const flushStudySession = async ({ uid, dateStr, subject, deltaSec, avatarUrl, hero = null, hourBreakdown = null, priorTotalSec = null, currentMeta = null }) => {
   if (!uid || !dateStr || !subject || !Number.isFinite(deltaSec) || deltaSec <= 0) {
     return { totalSec: null, meta: currentMeta };
   }
@@ -209,9 +210,10 @@ export const flushStudySession = async ({ uid, dateStr, subject, deltaSec, avata
   batch.set(totalsRef, {
     uid,
     avatarUrl: avatarUrl || '',
+    ...(hero ? { hero } : {}),
     totalSec: increment(deltaSec),
     updatedAt: serverTimestamp(),
-  }, { merge: true });
+  }, { mergeFields: ['uid', 'avatarUrl', 'totalSec', 'updatedAt', ...(hero ? ['hero'] : [])] });
   await batch.commit();
 
   let totalSec;
