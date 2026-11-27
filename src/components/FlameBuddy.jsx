@@ -1503,7 +1503,7 @@ function BubbleTypewriter({ eyebrow, msg, sub, cta, onCta, onDismiss, onHide, mo
 export function FlameBuddyAvatar({ mood = 'cheer', className = '' }) {
   return (
     <div className={`fb-stage fb-avatar-embed ${className}`.trim()} aria-hidden>
-      <div className={`hero-buddy is-${mood}`}><MyHero mood={mood} /></div>
+      <div className={`hero-buddy is-${mood}`}><MyHero mood={mood} walkPet /></div>
       <div className="fb-shadow" />
     </div>
   );
@@ -2252,7 +2252,7 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
           }}
         >
           <div className={`hero-buddy is-${mood}`}>
-            <PixelHero config={profile?.avatar} mood={mood} blinking />
+            <PixelHero config={profile?.avatar} mood={mood} blinking walkPet />
           </div>
         </div>
         <div className="fb-shadow" />

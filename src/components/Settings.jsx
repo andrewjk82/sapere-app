@@ -477,7 +477,7 @@ const Settings = () => {
             <section className="app-panel page-card" style={{ marginTop: '24px' }}>
               <div className="page-card__header"><h3>My Hero</h3></div>
               <div style={{ display: 'flex', alignItems: 'center', gap: 18, marginTop: 14, flexWrap: 'wrap' }}>
-                <div style={{ width: 72 }}><MyHero /></div>
+                <div style={{ width: 84 }}><MyHero walkPet /></div>
                 <button type="button" className="app-button app-button--primary" onClick={() => window.dispatchEvent(new Event('sapere:open-hero'))}>Wardrobe &amp; Shop</button>
               </div>
             </section>

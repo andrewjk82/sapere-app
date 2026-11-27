@@ -1,5 +1,5 @@
 .hero-canvas { image-rendering: pixelated; display: block; width: 100%; height: auto; }
-.hero-buddy { width: 58px; cursor: pointer; transform-origin: 50% 100%; animation: hero-bob 2.8s ease-in-out infinite; }
+.hero-buddy { width: 68px; cursor: pointer; transform-origin: 50% 100%; animation: hero-bob 2.8s ease-in-out infinite; }
 .hero-buddy.is-cheer { animation: hero-jump .8s ease-in-out infinite; }
 .hero-buddy.is-urgent { animation: hero-shake .35s ease-in-out infinite; }
 .hero-buddy.is-thinking { animation: hero-tilt 3s ease-in-out infinite; }
@@ -17,14 +17,14 @@
 .hero-label { font-size: .75rem; font-weight: 900; text-transform: uppercase; letter-spacing: .08em; color: #7a6a84; margin: 8px 0 6px; }
 .hero-opts { display: grid; grid-template-columns: repeat(auto-fill, minmax(78px, 1fr)); gap: 8px; margin-bottom: 8px; }
 .hero-opt { border: 0; border-radius: 16px; background: #f7f4ff; padding: 6px 4px; font-weight: 800; font-size: .72rem; color: #3b2a4a; cursor: pointer; display: grid; gap: 4px; justify-items: center; }
-.hero-opt .hero-canvas { max-width: 60px; }
+.hero-opt .hero-canvas { max-width: 70px; }
 .hero-opt.is-on { background: #ece6ff; box-shadow: 0 0 0 3px #7c5ce0; }
 .hero-sw { width: 34px; height: 34px; border-radius: 50%; border: 3px solid #fff; box-shadow: 0 0 0 2px #eadcc8; cursor: pointer; padding: 0; }
 .hero-sw.is-on { box-shadow: 0 0 0 3px #7c5ce0; }
 .hero-tab:focus-visible, .hero-opt:focus-visible, .hero-sw:focus-visible { outline: 3px solid #7c5ce0; outline-offset: 2px; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 12px; }
 @media (max-width: 620px) { .hero-maker { grid-template-columns: minmax(0, 1fr); } .hero-stage { width: 150px; justify-self: center; } }
-@media (max-width: 600px) { .hero-buddy { width: 46px; } }
+@media (max-width: 600px) { .hero-buddy { width: 54px; } }
 
 /* My Hero page */
 .hero-page { max-width: 980px; margin: 0 auto; padding: 12px 0 90px; font-family: 'Nunito', var(--font-sans); color: #3b2a4a; }
@@ -46,3 +46,17 @@
 .hero-none { margin: 0 0 10px; color: #7a6a84; font-weight: 700; }
 .hero-btn:focus-visible, .hero-mode:focus-visible { outline: 3px solid #7c5ce0; outline-offset: 2px; }
 @media (max-width: 620px) { .hero-page .hero-maker { grid-template-columns: minmax(0, 1fr); } .hero-side { position: static; } }
+
+/* Walking pet: crosses the hero's feet, hops as it goes and turns round at each end. */
+.hero-walk { position: relative; width: 100%; }
+.hero-pet { position: absolute; bottom: 0; left: 62%; width: 38%; pointer-events: none; animation: hero-pet-walk 9s linear infinite; }
+.hero-pet canvas { animation: hero-pet-hop .45s ease-in-out infinite; }
+@keyframes hero-pet-walk {
+  0%, 12% { left: 62%; transform: scaleX(1); }
+  44% { left: 0%; transform: scaleX(1); }
+  44.1%, 56% { left: 0%; transform: scaleX(-1); }
+  88% { left: 62%; transform: scaleX(-1); }
+  88.1%, 100% { left: 62%; transform: scaleX(1); }
+}
+@keyframes hero-pet-hop { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-6%); } }
+@media (prefers-reduced-motion: reduce) { .hero-pet, .hero-pet canvas { animation: none; } }

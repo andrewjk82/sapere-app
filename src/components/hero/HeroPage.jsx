@@ -13,13 +13,15 @@ import PixelHero from './PixelHero';
 const GROUPS = {
   eyes: ['Eyes', 'head'], brows: ['Eyebrows', 'head'], mouth: ['Mouth', 'head'], ears: ['Ears', 'head'], hair: ['Hairstyle', 'head'],
   head: ['Headgear', 'head'], cls: ['Outfit', 'full'], hand: ['In hand', 'full'], off: ['Other hand', 'full'], back: ['On the back', 'full'],
+  face: ['Accessories', 'head'], pet: ['Pet', 'full'],
 };
 const TABS = [
-  ['face', 'Face', ['eyes', 'brows', 'mouth'], [['iris', 'Eye colour', IRIS], ['skin', 'Skin', SKIN]]],
+  ['face', 'Face', ['eyes', 'brows', 'mouth', 'face'], [['iris', 'Eye colour', IRIS], ['skin', 'Skin', SKIN]]],
   ['hair', 'Hair', ['hair'], [['hairColor', 'Hair colour', HAIRC]]],
   ['hat', 'Hat', ['head', 'ears'], []],
   ['outfit', 'Outfit', ['cls'], [['cloth', 'Main colour', CLOTH], ['accent', 'Trim colour', ACCENT]]],
   ['gear', 'Gear', ['hand', 'off', 'back'], []],
+  ['pet', 'Pet', ['pet'], []],
 ];
 
 export default function HeroPage({ onBack }) {
@@ -72,7 +74,7 @@ export default function HeroPage({ onBack }) {
 
       <div className="hero-maker">
         <div className="hero-side">
-          <div className="hero-stage"><PixelHero config={shown} blinking label="Your hero" /></div>
+          <div className="hero-stage"><PixelHero config={shown} blinking walkPet label="Your hero" /></div>
           {trying ? (
             <div className="hero-buy">
               <b>{OPT[trying.group].find((o) => o[0] === trying.id)?.[1]} · {price} coins</b>
