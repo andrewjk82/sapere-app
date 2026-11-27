@@ -1109,11 +1109,14 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
         answerResult,
         sketchDataUrl,
         hasSketch: Boolean(sketchDataUrl),
-        source: challengeType === 'calc' ? 'calc' : 'daily',
-        // Direct pointers so Restore Credit never needs to scan all stat docs
-        statRoot: 'users',
-        statCollection: challengeType === 'calc' ? 'calc_stats' : 'daily_stats',
-        statId: today,
+        source: challengeType === 'extra' ? 'extra' : challengeType === 'calc' ? 'calc' : 'daily',
+        // Direct pointers so Restore Credit never needs to scan all stat docs. Extra rounds have no stat record of
+        // their own: pointing at today's challenge would restore credit on an unrelated question.
+        ...(challengeType === 'extra' ? {} : {
+          statRoot: 'users',
+          statCollection: challengeType === 'calc' ? 'calc_stats' : 'daily_stats',
+          statId: today,
+        }),
         questionData: {
           id: currentQ?.id || '',
           question: currentQ?.question || currentQ?.text || '',
@@ -2701,6 +2704,7 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
                 <ChallengeQuizView
                   key="quiz"
                   step={step}
+                  onReport={() => { reportedQuestionRef.current = null; setReportedQuestion(null); setIsReporting(true); }}
                   questions={questions}
                   currentIdx={currentIdx}
                   TOTAL_QUESTIONS={TOTAL_QUESTIONS}

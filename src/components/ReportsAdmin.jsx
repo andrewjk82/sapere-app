@@ -34,7 +34,8 @@ import { adjustXp } from '../services/xpService';
 //   secret_note       Secret Note review request / issue   NO (local notebook)
 //   topic_practice    Learning-path topic practice         NO (unscored)
 //   exam_prep         Exam prep practice                   NO (unscored)
-const NON_CREDITABLE_SOURCES = new Set(['secret_note', 'topic_practice', 'exam_prep']);
+//   extra             Extra round (after Daily Challenge)   NO (no per-question record)
+const NON_CREDITABLE_SOURCES = new Set(['secret_note', 'topic_practice', 'exam_prep', 'extra']);
 const isCreditable = (r) => !NON_CREDITABLE_SOURCES.has(r?.source);
 
 /**
@@ -195,6 +196,7 @@ const getReportSource = (r) => {
     case 'review': return { label: 'Challenge Review', bg: '#eff6ff', color: '#1d4ed8' };
     case 'topic_practice': return { label: 'Topic Practice', bg: '#f0fdf4', color: '#15803d' };
     case 'exam_prep': return { label: 'Exam Prep', bg: '#fff7ed', color: '#c2410c' };
+    case 'extra': return { label: 'Extra round', bg: '#fdf4ff', color: '#a21caf' };
     case 'calc': return { label: 'Daily Calculation', bg: '#fffbeb', color: '#b45309' };
     case 'daily': return { label: 'Daily Challenge', bg: '#eef2ff', color: '#4338ca' };
     default:
@@ -568,6 +570,7 @@ const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode, onOpenI
     const questionId = report.questionId || report.questionData?.id;
     const fallbackIndex = report.questionIndex ?? null;
     if (!studentId || (!questionId && fallbackIndex == null)) return null;
+    if (report.source === 'extra') return null; // no record of its own: the index would match a different question
 
     const roots = ['users', 'students'];
     const statCollections = ['daily_stats', 'calc_stats'];

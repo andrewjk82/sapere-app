@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Clock, Lightbulb, CheckCircle2, XCircle, Check, ArrowRight, PenLine } from 'lucide-react';
+import { Clock, Lightbulb, CheckCircle2, XCircle, Check, ArrowRight, PenLine, Flag } from 'lucide-react';
 import MathView from '../MathView';
 import MathInput from '../MathInput';
 import NumberLine from '../NumberLine';
@@ -198,6 +198,8 @@ const ChallengeQuizView = ({
   // Tapping one shows its tip in a bubble. Omitted → no highlights (normal quiz).
   keyPoints = null,
   partKeyPoints = null,
+  // Report a problem with the question on screen. Omitted (teacher preview) → no button.
+  onReport = null,
 }) => {
   const currentQuestion = questions[currentIdx] || {};
   // Use pre-shuffled options if provided, else fall back to question's own options
@@ -384,6 +386,12 @@ const ChallengeQuizView = ({
               <span style={{ fontSize: '0.75rem', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.1em' }}>{sessionLabel}</span>
               <div style={{ fontSize: '1.1rem', fontWeight: 900, color: '#1e1b4b' }}>Question {currentIdx + 1} of {TOTAL_QUESTIONS}</div>
             </div>
+            {onReport && (
+              <button type="button" onClick={onReport} title="Report a problem with this question"
+                style={{ marginLeft: 'auto', marginRight: timed ? 8 : 0, minHeight: 40, padding: '0 14px', border: 'none', borderRadius: 12, background: '#fff', color: '#ef4444', display: 'flex', alignItems: 'center', gap: 6, fontSize: '0.8rem', fontWeight: 800, cursor: 'pointer', boxShadow: '0 4px 12px rgba(0,0,0,0.06)' }}>
+                <Flag size={14} /> Report
+              </button>
+            )}
             {timed && (
             <div style={{ textAlign: 'right', display: 'flex', flexWrap: 'nowrap', alignItems: 'center', gap: '8px' }}>
                <div style={{
