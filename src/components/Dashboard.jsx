@@ -1,3 +1,4 @@
+import Face from './hero/Face';
 import React, { useEffect, useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Plus, Search, Users, Clock, CheckCircle2, GraduationCap, X, Calendar, Star, Bell, BookOpen, ChevronRight, PlayCircle, Target, AlertTriangle, TrendingUp, ArrowRight, PenLine, Zap, Calculator, FileText, Award } from 'lucide-react';
@@ -512,11 +513,9 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
       >
         {!isAdmin && (
           <header style={{ display: 'flex', alignItems: 'center', gap: isMobile ? '12px' : '24px', margin: isMobile ? '0 0 12px' : '0 0 24px' }}>
-            <img
-              src={profile?.dreamImageUrl || 'https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format\u0026fit=crop\u0026q=80\u0026w=600'}
-              alt="My dream"
-              style={{ width: isMobile ? 56 : 128, height: isMobile ? 56 : 128, objectFit: 'cover', objectPosition: 'center top', borderRadius: isMobile ? '18px' : '28px', flexShrink: 0, boxShadow: '0 10px 30px rgba(15,23,42,0.15)' }}
-            />
+            <span aria-hidden="true" style={{ width: isMobile ? 56 : 128, height: isMobile ? 56 : 128, overflow: 'hidden', borderRadius: isMobile ? '18px' : '28px', flexShrink: 0, boxShadow: '0 10px 30px rgba(15,23,42,0.15)', display: 'block' }}>
+              <Face hero={profile?.avatar} />
+            </span>
             <div style={{ minWidth: 0 }}>
               <div style={{ fontSize: isMobile ? '0.65rem' : '0.85rem', fontWeight: 700, letterSpacing: isMobile ? '0.08em' : '0.14em', textTransform: 'uppercase', color: '#475569', whiteSpace: 'nowrap' }}>{getGreeting()}</div>
               <h1 style={{ fontFamily: "'Poppins', sans-serif", fontSize: isMobile ? '1.5rem' : '2.6rem', fontWeight: 900, margin: '2px 0 0', lineHeight: 1.1, color: '#0f172a', letterSpacing: '-0.02em', overflowWrap: 'anywhere' }}>

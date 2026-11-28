@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, useMemo } from "react";
+import { useState, useEffect, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { TIME_OPTIONS } from "../constants/timeOptions";
 import {
@@ -93,7 +93,6 @@ import { adjustXp } from "../services/xpService";
 import { subscribeSessionHistory, resetSessionHistory } from "../services/teacherSessions";
 import { courseTopics, deriveTopicStates, topicStatuses, summarize, byChapter } from "../utils/topicProgress";
 import "./student-detail.css";
-import { compressAvatarImage } from '../utils/avatarUtils';
 
 const ROLE_OPTIONS = [
   { value: "", label: "Not set" },
@@ -185,8 +184,6 @@ const hasFieldDifferences = (current = {}, next = {}) =>
 const StudentDetail = ({ studentId, onBack }) => {
   const [student, setStudent] = useState(null);
   const [loading, setLoading] = useState(true);
-  const [uploading, setUploading] = useState(false);
-  const fileInputRef = useRef(null);
   const [isEditModalOpen, setIsEditModalOpen] = useState(false);
   const [isScheduleModalOpen, setIsScheduleModalOpen] = useState(false);
   const [activeTab, setActiveTab] = useState("overview");
@@ -1304,47 +1301,6 @@ const StudentDetail = ({ studentId, onBack }) => {
     }
   };
 
-  const handleImageUpload = async (e) => {
-    const file = e.target.files[0];
-    if (!file || !activeStudentId) return;
-    setUploading(true);
-    const reader = new FileReader();
-    reader.onerror = () => {
-      showToast("Error reading file.", "error");
-      setUploading(false);
-    };
-    reader.onload = (event) => {
-      const img = new Image();
-      img.onerror = () => {
-        showToast("Error loading image.", "error");
-        setUploading(false);
-      };
-      img.onload = async () => {
-        try {
-          const url = compressAvatarImage(img);
-          if (!url) {
-            showToast(
-              "Image is too large. Please try a smaller photo.",
-              "warning",
-            );
-            setUploading(false);
-            return;
-          }
-
-          await updateDoc(doc(db, activeStudentCollection, activeStudentId), { dreamImageUrl: url });
-          touchStudentListMeta();
-        } catch (err) {
-          console.error(err);
-          showToast("Failed to save image.", "error");
-        } finally {
-          setUploading(false);
-        }
-      };
-      img.src = event.target.result;
-    };
-    reader.readAsDataURL(file);
-  };
-
   const handleBookSession = async () => {
     if (!sessionForm.focus || !sessionForm.date) {
       showToast("Please fill in subject and date.", "warning");
@@ -1783,9 +1739,6 @@ const StudentDetail = ({ studentId, onBack }) => {
       <StudentDashboardCard
         styles={styles}
         student={student}
-        uploading={uploading}
-        fileInputRef={fileInputRef}
-        onImageUpload={handleImageUpload}
         chapters={chapters}
         completedChapters={completedChapters}
         topicProgress={topicProgress}

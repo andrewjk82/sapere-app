@@ -16,7 +16,6 @@ import { isScribbleEraseOn, setScribbleEraseOn } from '../utils/scribbleErase';
 import { isHoldToShapeOn, setHoldToShapeOn } from '../utils/shapeSnap';
 import { requestSecretNoteClearModalPreview } from '../services/secretNoteBonusService';
 import { SPRINT_PAYOUT_PREVIEW_EVENT } from '../services/timesTableSprintService';
-import { compressAvatarImage } from '../utils/avatarUtils';
 import { THEMES, getTheme, applyTheme } from '../utils/themeStyle';
 
 // Extra QR codes in the teacher's Share dialog (students only see the app's own).
@@ -62,14 +61,12 @@ const Settings = () => {
     dreamJob: '',
     dreamImageUrl: ''
   });
-  const [uploading, setUploading] = useState(false);
   const [cloudVersion, setCloudVersion] = useState(null);
   const [studySession, setStudySession] = useState({ enabled: false, zoomLink: '', zoomLink2: '', manualOpen: false });
   const [studySessionSaving, setStudySessionSaving] = useState(false);
   const [studySessionOpening, setStudySessionOpening] = useState(false);
   const [showFilmingGuidelinesPreview, setShowFilmingGuidelinesPreview] = useState(false);
   const [qrModalOpen, setQrModalOpen] = useState(false);
-  const fileInputRef = useRef(null);
 
   const displayName = useMemo(() => profile?.firstName ? `${profile.firstName} ${profile.lastName}` : (user?.displayName || user?.email?.split('@')[0] || 'Account'), [profile, user]);
   const fallbackUrl = useMemo(() => {
@@ -165,39 +162,6 @@ const Settings = () => {
     }
   };
 
-  const handleImageUpload = async (e) => {
-    const file = e.target.files[0];
-    if (!file) return;
-
-    setUploading(true);
-    const reader = new FileReader();
-    reader.onload = (event) => {
-      const img = new Image();
-      img.onload = async () => {
-        const compressedDataUrl = compressAvatarImage(img);
-        if (!compressedDataUrl) {
-          showToast("Image is too large. Please try a smaller photo.", 'warning');
-          setUploading(false);
-          return;
-        }
-
-        try {
-          await setDoc(doc(db, 'users', user.uid), { dreamImageUrl: compressedDataUrl }, { merge: true });
-          setEditData(prev => ({ ...prev, dreamImageUrl: compressedDataUrl }));
-          // Sync dream image to leaderboard so the race view updates immediately
-          setDoc(doc(db, 'leaderboard', user.uid), { avatarUrl: compressedDataUrl }, { merge: true })
-            .catch(e => console.warn('leaderboard avatar sync failed:', e?.code || e));
-        } catch (error) {
-          console.error("Save failed:", error);
-          showToast("Failed to save image.", 'error');
-        } finally {
-          setUploading(false);
-        }
-      };
-      img.src = event.target.result;
-    };
-    reader.readAsDataURL(file);
-  };
 
   const handleResetPassword = async () => {
     if (!user?.email) return;

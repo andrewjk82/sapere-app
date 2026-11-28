@@ -1,9 +1,6 @@
 export default function StudentDashboardCard({
   styles,
   student,
-  uploading,
-  fileInputRef,
-  onImageUpload,
   chapters,
   completedChapters,
   topicProgress,
@@ -33,7 +30,7 @@ export default function StudentDashboardCard({
         <div
           style={{
             ...styles.visionBoard,
-            backgroundImage: `linear-gradient(to bottom, transparent, rgba(0,0,0,0.4)), url('${student?.dreamImageUrl || "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&q=80&w=1200"}')`,
+            backgroundImage: `linear-gradient(to bottom, transparent, rgba(0,0,0,0.4)), url('${"https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&q=80&w=1200"}')`,
             borderTopLeftRadius: 0,
             borderTopRightRadius: 0,
           }}
@@ -41,30 +38,6 @@ export default function StudentDashboardCard({
           <div style={{ fontWeight: 900, fontSize: "1.2rem" }}>
             {student?.dreamJob || "Dream Career"}
           </div>
-          <button
-            disabled={uploading}
-            onClick={() => fileInputRef.current.click()}
-            style={{
-              position: "absolute",
-              top: 12,
-              right: 12,
-              padding: "4px 8px",
-              borderRadius: "8px",
-              background: "rgba(0,0,0,0.5)",
-              border: 0,
-              color: "white",
-              fontSize: "0.7rem",
-              cursor: uploading ? "wait" : "pointer",
-            }}
-          >
-            {uploading ? "Uploading..." : "Change Image"}
-          </button>
-          <input
-            type="file"
-            ref={fileInputRef}
-            style={{ display: "none" }}
-            onChange={onImageUpload}
-          />
         </div>
       </div>
       <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
