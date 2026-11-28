@@ -548,12 +548,12 @@ const ChallengeQuizView = ({
                         readOnly={partDone}
                         value={subAnswers[sq.id || sIdx] || ''}
                         onChange={(e) => !partDone && setSubAnswers(prev => ({ ...prev, [sq.id || sIdx]: e.target.value }))}
-                        placeholder="Type answer..."
+                        placeholder="Type your answer here"
                         style={{ 
                           width: '100%',
                           padding: '12px 16px', 
                           borderRadius: '12px', 
-                          border: `2px solid ${!isFeedback && partDone ? '#10b981' : step === 'feedback' ? (String(subAnswers[sq.id || sIdx]).replace(/\s+/g, '').toLowerCase() === String(sq.answer).replace(/\s+/g, '').toLowerCase() ? '#10b981' : '#ef4444') : '#f1f5f9'}`, 
+                          border: `2px solid ${!isFeedback && partDone ? '#10b981' : !isFeedback && !String(subAnswers[sq.id || sIdx] || '').trim() ? '#a5b4fc' : step === 'feedback' ? (String(subAnswers[sq.id || sIdx]).replace(/\s+/g, '').toLowerCase() === String(sq.answer).replace(/\s+/g, '').toLowerCase() ? '#10b981' : '#ef4444') : '#f1f5f9'}`, 
                           background: 'white',
                           fontWeight: 700,
                           fontSize: '0.95rem'
@@ -570,16 +570,33 @@ const ChallengeQuizView = ({
                 );
               })}
 
-              {step !== 'feedback' && (
-                <button
-                  onClick={() => handleAnswer(subAnswers)}
-                  disabled={currentQuestion.subQuestions.some((sq, sIdx) => !subNeedsTeacher(sq) && subAnswers[sq.id || sIdx] === undefined)}
-                  className="app-button app-button--primary"
-                  style={{ padding: '20px', borderRadius: '24px', fontSize: '1.1rem', marginTop: '12px' }}
-                >
-                  Submit All Parts
-                </button>
-              )}
+              {step !== 'feedback' && (() => {
+                // Say which parts still block the button — written parts go on the sketch board, so a
+                // student can otherwise think everything is answered (2026-11-28, Y10 8E Q3).
+                const missing = currentQuestion.subQuestions.flatMap((sq, sIdx) => {
+                  if (subNeedsTeacher(sq)) return [];
+                  const v = subAnswers[sq.id || sIdx];
+                  const blank = v === undefined || (sq.type !== 'multiple_choice' && !String(v).trim());
+                  return blank ? [`(${String.fromCharCode(97 + sIdx)})`] : [];
+                });
+                return (
+                  <>
+                    <button
+                      onClick={() => handleAnswer(subAnswers)}
+                      disabled={missing.length > 0}
+                      className="app-button app-button--primary"
+                      style={{ padding: '20px', borderRadius: '24px', fontSize: '1.1rem', marginTop: '12px' }}
+                    >
+                      Submit All Parts
+                    </button>
+                    {missing.length > 0 && (
+                      <p role="status" style={{ margin: 0, textAlign: 'center', color: '#b45309', fontWeight: 800, fontSize: '0.9rem' }}>
+                        To submit, answer part {missing.join(', ')} in the box above — not on the sketch board.
+                      </p>
+                    )}
+                  </>
+                );
+              })()}
             </div>
           ) : currentQuestion?.type === 'fill_blank' ? (() => {
             const blanks = Array.isArray(currentQuestion.blanks) ? currentQuestion.blanks : [];
