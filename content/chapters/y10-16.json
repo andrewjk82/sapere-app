@@ -1384,7 +1384,7 @@
                 },
                 {
                   "explain": "Check the others: \\(0.35=1-0.4-0.25\\) subtracts the overlap twice; \\(0.2=1-0.4-0.25-0.15\\) subtracts the overlap as if it were a separate group; \\(0.6\\) is just \\(1-0.4\\), ignoring brown eyes.",
-      "work": "\\(\\text{Answer: }0.5\\)"
+                  "work": "\\(\\text{Answer: }0.5\\)"
                 }
               ],
               "xp": 2
@@ -5109,35 +5109,47 @@
         },
         {
           "id": "y10-16d-ext-q3",
-          "type": "review",
+          "type": "mc",
           "difficulty": "hard",
-          "stem": "It is known that \\(a \\propto x\\), \\(b \\propto \\frac{1}{x^2}\\) and \\(y = a + b\\). If \\(y = 30\\) when \\(x = 2\\) or \\(x = 3\\), find the expression for \\(y\\) in terms of \\(x\\).",
-          "answer": "y = 150/19 x + 1080/(19x^2)",
-          "hint": "Write \\(a = k_1 x\\) and \\(b = \\frac{k_2}{x^2}\\). Then \\(y = k_1 x + \\frac{k_2}{x^2}\\). Substitute the known pairs to get simultaneous equations.",
-          "solution": "y = 150/19 x + 1080/(19x^2)",
+          "stem": "It is known that \\(a\\) is directly proportional to \\(x\\), \\(b\\) is inversely proportional to \\(x^2\\), and \\(y = a + b\\). If \\(y = 30\\) when \\(x = 2\\), and also \\(y = 30\\) when \\(x = 3\\), find \\(y\\) in terms of \\(x\\).",
+          "hint": "Write \\(y = mx + \\dfrac{n}{x^2}\\) and use both pairs of values to form simultaneous equations.",
           "steps": [
             {
-              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Revision: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-              "work": "\\(a = k_1 x, quad b = \\frac{k_2}{x^2}\\)"
+              "explain": "Turn each proportion statement into an equation with its own constant, then add them.",
+              "work": "\\(a = mx,\\quad b = \\dfrac{n}{x^2},\\quad y = mx + \\dfrac{n}{x^2}\\)"
             },
             {
-              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-              "work": "\\(y = k_1 x + \\frac{k_2}{x^2}\\)"
+              "explain": "Substitute \\(x = 2\\) and \\(y = 30\\), then multiply every term by 4.",
+              "work": "\\(30 = 2m + \\dfrac{n}{4} \\implies 8m + n = 120\\)"
             },
             {
-              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-              "work": "\\(30 = 2k_1 + \\frac{k_2}{4} \\implies 120 = 8k_1 + k_2 \\quad (1)\\)"
+              "explain": "Substitute \\(x = 3\\) and \\(y = 30\\), then multiply every term by 9.",
+              "work": "\\(30 = 3m + \\dfrac{n}{9} \\implies 27m + n = 270\\)"
             },
             {
-              "explain": "Final answer: y = 150/19 x + 1080/(19x^2). Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-              "work": "\\(y = 150/19 x + 1080/(19x^2)\\)"
+              "explain": "Subtract the first equation from the second to remove n.",
+              "work": "\\(19m = 150 \\implies m = \\dfrac{150}{19}\\)"
+            },
+            {
+              "explain": "Substitute \\(m\\) back into the first equation.",
+              "work": "\\(n = 120 - 8 \\times \\dfrac{150}{19} = \\dfrac{1080}{19}\\)"
+            },
+            {
+              "explain": "Write y with both constants. Check: when \\(x = 2\\) this gives \\(30\\), as required.",
+              "work": "\\(y = \\dfrac{150}{19}x + \\dfrac{1080}{19x^2}\\)"
             }
           ],
-          "manual": true,
           "alsoIn": [
             "exam:year10ch16d"
           ],
-          "xp": 3
+          "xp": 3,
+          "options": [
+            "\\(y = \\dfrac{150}{19}x + \\dfrac{1080}{19x^2}\\)",
+            "\\(y = \\dfrac{1080}{19}x + \\dfrac{150}{19x^2}\\)",
+            "\\(y = \\dfrac{150}{19}x + \\dfrac{270}{19x^2}\\)",
+            "\\(y = \\dfrac{30}{19}x + \\dfrac{1080}{19x^2}\\)"
+          ],
+          "answer": 0
         },
         {
           "id": "y10-16d-ext-q4",
