@@ -1294,25 +1294,102 @@
         },
         {
           "id": "jr2013-qEe",
-          "type": "review",
+          "type": "multipart",
           "difficulty": "hard",
-          "stem": "In a certain town, 40% of the people have brown hair, 25% have brown eyes, and 15% have brown hair AND brown eyes.\\n\\n(i) Draw a Venn diagram to represent this data.\\n\\n(ii) A person is selected at random from the town:\\n(α) If he has brown hair, what is the probability that he also has brown eyes?\\n(β) What is the probability that he has neither brown hair nor brown eyes?",
-          "answer": "Venn diagram: Hair only 25%, Overlap 15%, Eyes only 10%, Neither 50%.\n(α) P(eyes | hair) = 15/40 = 3/8\n(β) P(neither) = 50% = 0.5",
-          "steps": [
+          "stem": "In a certain town, \\(40\\%\\) of the people have brown hair, \\(25\\%\\) have brown eyes, and \\(15\\%\\) have brown hair and brown eyes.",
+          "parts": [
             {
-              "explain": "Draw two overlapping circles, \"Brown hair\" (H) and \"Brown eyes\" (E), inside a rectangle representing the whole town (U). The overlap represents 15% (both), so \"hair only\" \\(=40\\%-15\\%=25\\%\\) and \"eyes only\" \\(=25\\%-15\\%=10\\%\\), leaving \\(100\\%-25\\%-15\\%-10\\%=50\\%\\) outside both circles.",
-              "work": "Venn diagram: hair-only \\(=25\\%\\), overlap \\(=15\\%\\), eyes-only \\(=10\\%\\), neither \\(=50\\%\\)"
+              "id": "jr2013-qEe-i",
+              "type": "mc",
+              "stem": "A Venn diagram is drawn with two circles, H (brown hair) and E (brown eyes), inside a rectangle U for the whole town. Which set of percentages correctly fills the regions?",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" width=\"100%\" height=\"auto\" style=\"max-width:340px;display:block;margin:0 auto\"><rect x=\"10\" y=\"10\" width=\"300\" height=\"180\" fill=\"#f8fafc\" stroke=\"#475569\" stroke-width=\"2\"/><circle cx=\"125\" cy=\"100\" r=\"62\" fill=\"#dbeafe\" fill-opacity=\"0.6\" stroke=\"#3b4ea8\" stroke-width=\"2.5\"/><circle cx=\"195\" cy=\"100\" r=\"62\" fill=\"#fde68a\" fill-opacity=\"0.55\" stroke=\"#b45309\" stroke-width=\"2.5\"/><text x=\"100\" y=\"28\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#3b4ea8\">H (brown hair)</text><text x=\"220\" y=\"28\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#b45309\">E (brown eyes)</text><text x=\"292\" y=\"182\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">U</text></svg>"
+              },
+              "options": [
+                "Hair only \\(25\\%\\), both \\(15\\%\\), eyes only \\(10\\%\\), neither \\(50\\%\\)",
+                "Hair only \\(40\\%\\), both \\(15\\%\\), eyes only \\(25\\%\\), neither \\(20\\%\\)",
+                "Hair only \\(25\\%\\), both \\(15\\%\\), eyes only \\(10\\%\\), neither \\(35\\%\\)",
+                "Hair only \\(15\\%\\), both \\(25\\%\\), eyes only \\(40\\%\\), neither \\(20\\%\\)"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "The overlap is the people with both brown hair and brown eyes, so it is \\(15\\%\\).",
+                  "work": "\\(\\text{both}=15\\%\\)"
+                },
+                {
+                  "explain": "Hair only = all brown hair minus those who also have brown eyes. Eyes only = all brown eyes minus the overlap.",
+                  "work": "\\(\\text{hair only}=40\\%-15\\%=25\\%,\\quad \\text{eyes only}=25\\%-15\\%=10\\%\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" width=\"100%\" height=\"auto\" style=\"max-width:340px;display:block;margin:0 auto\"><rect x=\"10\" y=\"10\" width=\"300\" height=\"180\" fill=\"#f8fafc\" stroke=\"#475569\" stroke-width=\"2\"/><circle cx=\"125\" cy=\"100\" r=\"62\" fill=\"#dbeafe\" fill-opacity=\"0.6\" stroke=\"#3b4ea8\" stroke-width=\"2.5\"/><circle cx=\"195\" cy=\"100\" r=\"62\" fill=\"#fde68a\" fill-opacity=\"0.55\" stroke=\"#b45309\" stroke-width=\"2.5\"/><text x=\"100\" y=\"28\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#3b4ea8\">H (brown hair)</text><text x=\"220\" y=\"28\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#b45309\">E (brown eyes)</text><text x=\"292\" y=\"182\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">U</text><text x=\"98\" y=\"105\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\">25%</text><text x=\"160\" y=\"105\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\">15%</text><text x=\"222\" y=\"105\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\">10%</text><text x=\"75\" y=\"172\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#047857\">Neither: 50%</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Everyone else is outside both circles. Total must be \\(100\\%\\).",
+                  "work": "\\(\\text{neither}=100\\%-(25\\%+15\\%+10\\%)=50\\%\\)"
+                },
+                {
+                  "explain": "Check the others: \\(40\\%\\) and \\(25\\%\\) already include the overlap, so they cannot be the 'only' regions; and the four regions must add to \\(100\\%\\).",
+                  "work": "\\(\\text{Answer: hair only }25\\%,\\ \\text{both }15\\%,\\ \\text{eyes only }10\\%,\\ \\text{neither }50\\%\\)"
+                }
+              ],
+              "xp": 2
             },
             {
-              "explain": "For (\\(\\alpha\\)): \"given brown hair, probability of also having brown eyes\" is a conditional probability — the overlap (both) divided by the total with brown hair.",
-              "work": "\\(P(\\text{eyes}|\\text{hair}) = \\dfrac{P(\\text{both})}{P(\\text{hair})} = \\dfrac{15\\%}{40\\%} = \\dfrac{15}{40} = \\dfrac{3}{8}\\)"
+              "id": "jr2013-qEe-iia",
+              "type": "mc",
+              "stem": "A person is selected at random from the town. If the person has brown hair, what is the probability that they also have brown eyes?",
+              "options": [
+                "\\(\\dfrac{3}{8}\\)",
+                "\\(\\dfrac{3}{5}\\)",
+                "\\(\\dfrac{15}{100}\\)",
+                "\\(\\dfrac{1}{4}\\)"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "We are told the person has brown hair, so we only look at the \\(40\\%\\) with brown hair. This is a conditional probability.",
+                  "work": "\\(P(\\text{eyes}\\,|\\,\\text{hair})=\\dfrac{P(\\text{both})}{P(\\text{hair})}\\)"
+                },
+                {
+                  "explain": "Both = \\(15\\%\\), brown hair = \\(40\\%\\).",
+                  "work": "\\(=\\dfrac{15}{40}=\\dfrac{3}{8}\\)"
+                },
+                {
+                  "explain": "Check the others: \\(\\dfrac{15}{100}\\) divides by the whole town instead of by the brown-hair group; \\(\\dfrac{3}{5}\\) uses \\(15\\) out of \\(25\\) (the eyes group), which is the wrong condition.",
+                  "work": "\\(\\text{Answer: }\\dfrac{3}{8}\\)"
+                }
+              ],
+              "xp": 2
             },
             {
-              "explain": "For (\\(\\beta\\)): \"neither\" is the region outside both circles, read directly from the Venn diagram.",
-              "work": "\\(P(\\text{neither}) = 100\\%-(25\\%+15\\%+10\\%) = 50\\% = 0.5\\)"
+              "id": "jr2013-qEe-iib",
+              "type": "mc",
+              "stem": "A person is selected at random from the town. What is the probability that they have neither brown hair nor brown eyes?",
+              "options": [
+                "\\(0.5\\)",
+                "\\(0.35\\)",
+                "\\(0.6\\)",
+                "\\(0.2\\)"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "Add the people with brown hair or brown eyes (or both): hair only, both and eyes only.",
+                  "work": "\\(25\\%+15\\%+10\\%=50\\%\\)"
+                },
+                {
+                  "explain": "Those outside both circles are the rest of the town.",
+                  "work": "\\(P(\\text{neither})=100\\%-50\\%=50\\%=0.5\\)"
+                },
+                {
+                  "explain": "Check the others: \\(0.35=1-0.4-0.25\\) subtracts the overlap twice; \\(0.2=1-0.4-0.25-0.15\\) subtracts the overlap as if it were a separate group; \\(0.6\\) is just \\(1-0.4\\), ignoring brown eyes.",
+      "work": "\\(\\text{Answer: }0.5\\)"
+                }
+              ],
+              "xp": 2
             }
           ],
-          "manual": true,
           "meta": {
             "source": "James Ruse AHS 2013 Year 10 Yearly",
             "school": "James Ruse Agricultural High School",
@@ -1320,7 +1397,7 @@
             "grade": "10",
             "number": "E(e)"
           },
-          "xp": 2
+          "xp": 6
         },
         {
           "id": "jr2013-qEf",
