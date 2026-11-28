@@ -4,8 +4,8 @@ import {
   getFirestore,
   initializeFirestore,
   persistentLocalCache,
-  memoryLocalCache,
   persistentMultipleTabManager,
+  persistentSingleTabManager,
   terminate,
   clearIndexedDbPersistence,
 } from "firebase/firestore";
@@ -45,10 +45,11 @@ export const wantsForcedLongPolling = () => {
 };
 export const requestForcedLongPolling = () => { try { window.localStorage.setItem(LONG_POLL_KEY, '1'); } catch { /* ignore */ } };
 export const clearForcedLongPolling = () => { try { window.localStorage.removeItem(LONG_POLL_KEY); } catch { /* ignore */ } };
-// Teacher's iPad home-screen app: keep Firestore's cache in memory only. With the shared on-device (IndexedDB) cache a
-// suspended earlier instance of the app can keep the "primary" lease; the new one then waits on it for every server
-// answer and shows only saved data ("Offline – showing saved data"), while Safari on the same iPad works. The teacher
-// is always online, so nothing is lost. App sets sapere:teacherDevice after a teacher signs in.
+// Teacher's iPad home-screen app. With the shared multi-tab cache a suspended earlier instance of the app can keep the
+// "primary" lease; the new one then waits on it and shows only saved data ("Offline – showing saved data"). A memory-only
+// cache fixed that but re-downloaded everything on every open (Firestore data-transfer bill, 2026-11-26/27). So the app
+// keeps the on-device cache as its single owner: forceOwnership takes it over from a stale instance instead of waiting.
+// App sets sapere:teacherDevice after a teacher signs in.
 const isTeacherIOSApp = (() => {
   try {
     const ios = /iPad|iPhone|iPod/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
@@ -61,7 +62,9 @@ const forceLongPolling = wantsForcedLongPolling() || isTeacherIOSApp;
 let firestoreDb;
 try {
   firestoreDb = initializeFirestore(app, {
-    localCache: isTeacherIOSApp ? memoryLocalCache() : persistentLocalCache({ tabManager: persistentMultipleTabManager() }),
+    localCache: persistentLocalCache({
+      tabManager: isTeacherIOSApp ? persistentSingleTabManager({ forceOwnership: true }) : persistentMultipleTabManager(),
+    }),
     // Some networks (school / tutoring-centre Wi-Fi, proxies) block or buffer Firestore's streaming connection.
     // The device then silently runs on its offline cache: a checked homework still shows "Submitted", cheat sheets
     // and curriculum never update (2026-10-12 Thiery's iPad). Auto-detect falls back to long polling only when the
