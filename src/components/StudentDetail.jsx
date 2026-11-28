@@ -206,7 +206,7 @@ const StudentDetail = ({ studentId, onBack }) => {
   const [sendingReport, setSendingReport] = useState(false);
   const [sendingParentReport, setSendingParentReport] = useState(false);
   // Parent contact lives in parent_contacts/{uid} (admin-only in firestore.rules), never on the student's own doc.
-  const [parentContact, setParentContact] = useState({ parentEmail: "", parentLang: "en" });
+  const [parentContact, setParentContact] = useState({ parentEmail: "", parentExtraEmails: [], parentLang: "en" });
   const [exportingDailyPdf, setExportingDailyPdf] = useState(false);
   const [dailyStats, setDailyStats] = useState([]);
   const [hscRecords, setHscRecords] = useState([]);
@@ -393,6 +393,7 @@ const StudentDetail = ({ studentId, onBack }) => {
     dreamJob: "",
     address: "",
     parentEmail: "",
+    parentExtraEmails: [],
     parentLang: "en",
     role: "",
     assignedYear: ["Year 11"],
@@ -478,7 +479,7 @@ const StudentDetail = ({ studentId, onBack }) => {
     getDoc(doc(db, "parent_contacts", challengeResultsUid)).then((snap) => {
       if (cancelled) return;
       const d = snap.exists() ? snap.data() : {};
-      const contact = { parentEmail: d.parentEmail || "", parentLang: d.parentLang === "ko" ? "ko" : "en" };
+      const contact = { parentEmail: d.parentEmail || "", parentExtraEmails: Array.isArray(d.parentExtraEmails) ? d.parentExtraEmails : [], parentLang: d.parentLang === "ko" ? "ko" : "en" };
       setParentContact(contact);
       setEditForm((f) => ({ ...f, ...contact }));
     }).catch(() => {});
@@ -769,7 +770,7 @@ const StudentDetail = ({ studentId, onBack }) => {
       showToast("Parent reports are only available for registered students (this profile has no linked account).", "warning", 7000);
       return;
     }
-    if (!(parentContact.parentEmail || "").trim()) {
+    if (![parentContact.parentEmail, ...(parentContact.parentExtraEmails || [])].some((e) => (e || "").trim())) {
       showToast("No parent email saved. Add it in Edit profile first.", "warning", 7000);
       return;
     }
@@ -784,7 +785,7 @@ const StudentDetail = ({ studentId, onBack }) => {
       const data = await response.json().catch(() => ({}));
       if (!response.ok) throw new Error(data.error || "Failed to send parent report");
       if (data.success) {
-        showToast(`Parent report (${lang === "ko" ? "한국어" : "English"}) sent to ${data.email}.`, "success");
+        showToast(`Parent report (${lang === "ko" ? "한국어" : "English"}) sent to ${data.email}.${data.failed?.length ? ` Not sent: ${data.failed.join(", ")}` : ""}`, data.failed?.length ? "warning" : "success", data.failed?.length ? 9000 : 3000);
       } else {
         showToast(`Parent report not sent: ${data.emailError || "unknown error"}`, "error", 7000);
       }
@@ -1179,7 +1180,7 @@ const StudentDetail = ({ studentId, onBack }) => {
     try {
       const normalizedRole = editForm.role || "";
       // Parent contact details are kept out of the student's own document.
-      const { parentEmail, parentLang, ...profileFields } = editForm;
+      const { parentEmail, parentExtraEmails, parentLang, ...profileFields } = editForm;
       await updateDoc(doc(db, activeStudentCollection, activeStudentId), {
         ...profileFields,
         role: normalizedRole,
@@ -1192,7 +1193,7 @@ const StudentDetail = ({ studentId, onBack }) => {
         status: "Active",
       });
       if (challengeResultsUid) {
-        const contact = { parentEmail: (parentEmail || "").trim(), parentLang: parentLang === "ko" ? "ko" : "en" };
+        const contact = { parentEmail: (parentEmail || "").trim(), parentExtraEmails: (parentExtraEmails || []).map((e) => e.trim()).filter(Boolean), parentLang: parentLang === "ko" ? "ko" : "en" };
         await setDoc(doc(db, "parent_contacts", challengeResultsUid), { ...contact, updatedAt: serverTimestamp() }, { merge: true });
         setParentContact(contact);
       }

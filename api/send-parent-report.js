@@ -6,7 +6,7 @@ import { buildParentReport } from './_lib/parentWeeklyReport.js';
 /**
  * Parent weekly report — triggered by the teacher from a student's profile.
  * POST { studentId, lang?: 'en' | 'ko', preview?: boolean }
- *   - sends this week's report to the parent email saved on the student (parent_contacts/{id}.parentEmail),
+ *   - sends this week's report to the parent emails saved on the student (parent_contacts/{id}.parentEmail + parentExtraEmails),
  *     in `lang` (default: parent_contacts/{id}.parentLang, else 'en').
  *   - preview: true → returns { subject, html } and sends nothing.
  */
@@ -51,9 +51,13 @@ export default async function handler(req, res) {
     const student = userSnap.data();
     // Parent contact is in parent_contacts/{uid} (admin-only), not on the student's own document.
     const contact = (await db.collection('parent_contacts').doc(studentId).get()).data() || {};
-    const parentEmail = String(contact.parentEmail || '').trim();
+    const saved = [contact.parentEmail, ...(Array.isArray(contact.parentExtraEmails) ? contact.parentExtraEmails : [])]
+      .map((e) => String(e || '').trim().toLowerCase())
+      .filter(Boolean);
+    const recipients = [...new Set(saved)].filter((e) => EMAIL_RE.test(e)).slice(0, 5);
+    const invalid = [...new Set(saved)].filter((e) => !EMAIL_RE.test(e));
     const lang = (body.lang || contact.parentLang) === 'ko' ? 'ko' : 'en';
-    if (!preview && !EMAIL_RE.test(parentEmail)) {
+    if (!preview && recipients.length === 0) {
       return res.status(200).json({ success: false, emailError: 'No valid parent email saved for this student (add it in Edit profile).' });
     }
 
@@ -87,21 +91,23 @@ export default async function handler(req, res) {
     });
     if (preview) return res.status(200).json({ success: true, preview: true, subject, html, lang });
 
-    try {
-      const transporter = nodemailer.createTransport({
-        host: 'smtp.gmail.com', port: 465, secure: true,
-        auth: { user: process.env.GMAIL_USER, pass: process.env.GMAIL_PASS },
-      });
-      await transporter.sendMail({
-        from: `"Secret Study" <${process.env.GMAIL_USER}>`,
-        to: parentEmail,
-        subject,
-        html,
-      });
-    } catch (e) {
-      return res.status(200).json({ success: false, emailError: e.message });
+    const transporter = nodemailer.createTransport({
+      host: 'smtp.gmail.com', port: 465, secure: true,
+      auth: { user: process.env.GMAIL_USER, pass: process.env.GMAIL_PASS },
+    });
+    // One message per address, so recipients never see each other's email.
+    const sent = [];
+    const failed = [...invalid.map((e) => `${e} (not a valid address)`)];
+    for (const to of recipients) {
+      try {
+        await transporter.sendMail({ from: `"Secret Study" <${process.env.GMAIL_USER}>`, to, subject, html });
+        sent.push(to);
+      } catch (e) {
+        failed.push(`${to} (${e.message})`);
+      }
     }
-    return res.status(200).json({ success: true, lang });
+    if (sent.length === 0) return res.status(200).json({ success: false, emailError: failed.join(', ') });
+    return res.status(200).json({ success: true, lang, email: sent.join(', '), failed });
   } catch (error) {
     console.error('send-parent-report error:', error);
     return res.status(500).json({ error: error.message });

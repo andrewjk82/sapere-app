@@ -206,6 +206,35 @@ export default function EditStudentModal({
                 placeholder="parent@example.com"
                 style={{ width: "100%", padding: "14px", borderRadius: "14px", border: "1px solid #e2e8f0", fontWeight: 700 }}
               />
+              {(editForm.parentExtraEmails || []).map((email, i) => (
+                <div key={i} style={{ display: "flex", gap: "8px", marginTop: "8px" }}>
+                  <input
+                    type="email"
+                    value={email}
+                    aria-label={`Extra report email ${i + 1}`}
+                    onChange={(e) => setEditForm({ ...editForm, parentExtraEmails: editForm.parentExtraEmails.map((v, j) => (j === i ? e.target.value : v)) })}
+                    placeholder="another@example.com"
+                    style={{ flex: 1, minWidth: 0, padding: "14px", borderRadius: "14px", border: "1px solid #e2e8f0", fontWeight: 700 }}
+                  />
+                  <button
+                    type="button"
+                    aria-label={`Remove extra email ${i + 1}`}
+                    onClick={() => setEditForm({ ...editForm, parentExtraEmails: editForm.parentExtraEmails.filter((_, j) => j !== i) })}
+                    style={{ padding: "0 14px", borderRadius: "14px", border: "1px solid #e2e8f0", background: "#fff", color: "#64748b", fontWeight: 800, cursor: "pointer" }}
+                  >
+                    ✕
+                  </button>
+                </div>
+              ))}
+              {(editForm.parentExtraEmails || []).length < 4 && (
+                <button
+                  type="button"
+                  onClick={() => setEditForm({ ...editForm, parentExtraEmails: [...(editForm.parentExtraEmails || []), ""] })}
+                  style={{ marginTop: "8px", padding: "8px 14px", borderRadius: "12px", border: "1.5px dashed #c4b5fd", background: "#f5f3ff", color: "#6d28d9", fontWeight: 800, fontSize: "0.8rem", cursor: "pointer" }}
+                >
+                  + Add email
+                </button>
+              )}
             </div>
             <div>
               <label style={{ display: "block", marginBottom: "8px", fontWeight: 800, fontSize: "0.8rem", color: "#64748b" }}>
