@@ -8139,7 +8139,7 @@
           "id": "y10-3c-60",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Solve: \\(\\frac{x-1}{4} = \\frac{2x+3}{8}\\)",
+          "stem": "Solve: \\(\\dfrac{x-1}{4} = \\dfrac{3x+8}{8}\\)",
           "options": [
             "\\(x = -5\\)",
             "\\(x = 10\\)",
@@ -8150,26 +8150,26 @@
           "hint": "Multiply both sides by 8 to clear fractions.",
           "steps": [
             {
-              "explain": "Multiply both sides by 8.",
-              "work": "\\(2(x-1) = 2x + 3\\)"
+              "explain": "Multiply both sides by 8, the lowest common denominator.",
+              "work": "\\(2(x-1) = 3x+8\\)"
             },
             {
-              "explain": "Expand.",
-              "work": "\\(2x - 2 = 2x + 3\\)"
+              "explain": "Expand the brackets.",
+              "work": "\\(2x-2 = 3x+8\\)"
             },
             {
               "explain": "Subtract 2x from both sides.",
-              "work": "\\(-2 = 3\\)"
+              "work": "\\(-2 = x+8\\)"
             },
             {
-              "explain": "This is a contradiction (no solution). The closed-form answer chosen from options is \\(x = -10\\).",
+              "explain": "Subtract 8 from both sides.",
               "work": "\\(x = -10\\)"
             }
           ],
           "xp": 2,
           "keyPoints": [
             {
-              "text": "Solve: \\(\\frac{x-1}{4} = \\frac{2x+3}{8}\\)",
+              "text": "Solve: \\(\\dfrac{x-1}{4} = \\dfrac{3x+8}{8}\\)",
               "note": "Multiply every term by the lowest common multiple of the numerical denominators, then solve the resulting linear equation."
             }
           ]

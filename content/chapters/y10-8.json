@@ -3776,279 +3776,6 @@
           "xp": 3
         },
         {
-          "id": "y10-8e-q4a-i",
-          "type": "mc",
-          "difficulty": "medium",
-          "stem": "Analyze similarity and congruence in the figures shown.\na) i) State, in abbreviated form (e.g. AAA, SSS, SAS, RHS), why \\(\\Delta ABC\\) is similar to \\(\\Delta DEF\\).",
-          "figure": {
-            "geometry": {
-              "width": 300,
-              "points": {
-                "A": [
-                  2,
-                  3
-                ],
-                "B": [
-                  0,
-                  0
-                ],
-                "C": [
-                  5,
-                  0.5
-                ],
-                "D": [
-                  8,
-                  3.2
-                ],
-                "E": [
-                  6.2,
-                  0.2
-                ],
-                "F": [
-                  11.2,
-                  0.7
-                ]
-              },
-              "segments": [
-                {
-                  "from": "A",
-                  "to": "B"
-                },
-                {
-                  "from": "B",
-                  "to": "C"
-                },
-                {
-                  "from": "C",
-                  "to": "A"
-                },
-                {
-                  "from": "D",
-                  "to": "E"
-                },
-                {
-                  "from": "E",
-                  "to": "F"
-                },
-                {
-                  "from": "F",
-                  "to": "D"
-                }
-              ],
-              "angles": [
-                {
-                  "at": "A",
-                  "label": "120°"
-                },
-                {
-                  "at": "C",
-                  "label": "25°"
-                },
-                {
-                  "at": "D",
-                  "label": "120°"
-                },
-                {
-                  "at": "F",
-                  "label": "25°"
-                }
-              ],
-              "sideLabels": [
-                {
-                  "between": [
-                    "A",
-                    "B"
-                  ],
-                  "text": "4 cm"
-                },
-                {
-                  "between": [
-                    "A",
-                    "C"
-                  ],
-                  "text": "8 cm"
-                },
-                {
-                  "between": [
-                    "D",
-                    "F"
-                  ],
-                  "text": "6 cm"
-                },
-                {
-                  "between": [
-                    "D",
-                    "E"
-                  ],
-                  "text": "x cm"
-                }
-              ]
-            }
-          },
-          "options": [
-            "\\(\\dfrac{12}{5}\\)",
-            "\\(\\dfrac{13}{6}\\)",
-            "\\(AAA\\)",
-            "\\(AAA + 1\\)"
-          ],
-          "answer": 2,
-          "solution": "In \\(\\Delta ABC\\) and \\(\\Delta DEF\\):\n- \\(\\angle A = \\angle D = 120^\\circ\\)\n- \\(\\angle C = \\angle F = 25^\\circ\\)\n- The third angles must also be equal: \\(\\angle B = \\angle E = 180^\\circ - (120^\\circ + 25^\\circ) = 35^\\circ\\).\nTherefore, the triangles are similar by the AAA similarity test.",
-          "steps": [
-            {
-              "explain": "State the triangles: Identify the triangles you are comparing, e.g., \\(\\Delta ABC\\) and \\(\\Delta DEF\\).",
-              "work": "\\text{In } \\Delta ABC \\text{ and } \\Delta DEF:"
-            },
-            {
-              "explain": "List conditions or set up the ratio: State the three matching parts (with reasons) or the similarity ratio fraction.",
-              "work": "\\text{Identify SSS, SAS, AAS, RHS, or set up } \\frac{x}{a} = \\frac{y}{b}"
-            },
-            {
-              "explain": "Solve or Conclude: Conclude congruence/similarity with the appropriate test or solve for the unknown.",
-              "work": "\\text{Therefore, } \\Delta ABC \\equiv \\Delta DEF \\text{ (Test)} \\text{ or } x = \\dots"
-            },
-            {
-              "explain": "Final Answer & Pitfall: Always ensure the vertices in your congruence or similarity statement are listed in exactly the matching order!",
-              "work": "\\(AAA\\)"
-            }
-          ],
-          "xp": 2
-        },
-        {
-          "id": "y10-8e-q4a-ii",
-          "type": "mc",
-          "difficulty": "medium",
-          "stem": "Calculate the value of \\\\(x\\\\).\\n<svg viewBox=\"0 0 400 150\" width=\"100%\" height=\"auto\" style=\"max-width:500px;display:block;margin:1rem auto;\" xmlns=\"http://www.w3.org/2000/svg\">\n  <!-- Triangle ABC -->\n  <polygon points=\"80,40 40,100 160,110\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linejoin=\"round\"/>\n  <text x=\"80\" y=\"30\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"bold\" font-style=\"italic\" fill=\"#1e293b\" text-anchor=\"middle\">A</text>\n  <text x=\"25\" y=\"105\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"bold\" font-style=\"italic\" fill=\"#1e293b\" text-anchor=\"middle\">B</text>\n  <text x=\"175\" y=\"115\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"bold\" font-style=\"italic\" fill=\"#1e293b\" text-anchor=\"middle\">C</text>\n  <text x=\"85\" y=\"65\" font-family=\"system-ui\" font-size=\"14\" fill=\"#1e293b\" text-anchor=\"middle\">120°</text>\n  <text x=\"135\" y=\"102\" font-family=\"system-ui\" font-size=\"14\" fill=\"#1e293b\" text-anchor=\"middle\">25°</text>\n  <text x=\"45\" y=\"65\" font-family=\"system-ui\" font-size=\"14\" fill=\"#1e293b\" text-anchor=\"middle\">4 cm</text>\n  <text x=\"130\" y=\"60\" font-family=\"system-ui\" font-size=\"14\" fill=\"#1e293b\" text-anchor=\"middle\">8 cm</text>\n\n  <!-- Triangle DEF -->\n  <polygon points=\"260,40 220,100 340,110\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linejoin=\"round\"/>\n  <text x=\"260\" y=\"30\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"bold\" font-style=\"italic\" fill=\"#1e293b\" text-anchor=\"middle\">D</text>\n  <text x=\"205\" y=\"105\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"bold\" font-style=\"italic\" fill=\"#1e293b\" text-anchor=\"middle\">E</text>\n  <text x=\"355\" y=\"115\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"bold\" font-style=\"italic\" fill=\"#1e293b\" text-anchor=\"middle\">F</text>\n  <text x=\"265\" y=\"65\" font-family=\"system-ui\" font-size=\"14\" fill=\"#1e293b\" text-anchor=\"middle\">120°</text>\n  <text x=\"315\" y=\"102\" font-family=\"system-ui\" font-size=\"14\" fill=\"#1e293b\" text-anchor=\"middle\">25°</text>\n  <text x=\"225\" y=\"65\" font-family=\"system-ui\" font-size=\"14\" fill=\"#1e293b\" text-anchor=\"middle\">x cm</text>\n  <text x=\"310\" y=\"60\" font-family=\"system-ui\" font-size=\"14\" fill=\"#1e293b\" text-anchor=\"middle\">6 cm</text>\n</svg>",
-          "answer": 1,
-          "solution": "3",
-          "steps": [
-            {
-              "explain": "Identify the corresponding angles to prove the triangles are similar.",
-              "work": "\\\\( \\\\angle A = \\\\angle D = 120^\\\\circ \\\\) and \\\\( \\\\angle C = \\\\angle F = 25^\\\\circ \\\\). Therefore, \\\\( \\\\Delta ABC \\\\sim \\\\Delta DEF \\\\) (AAA)."
-            },
-            {
-              "explain": "Set up the ratio of corresponding sides.",
-              "work": "\\\\( \\\\frac{DE}{AB} = \\\\frac{DF}{AC} \\\\)"
-            },
-            {
-              "explain": "Substitute the known lengths into the ratio.",
-              "work": "\\\\( \\\\frac{x}{4} = \\\\frac{6}{8} \\\\)"
-            },
-            {
-              "explain": "Solve for \\\\(x\\\\).",
-              "work": "\\\\( x = 4 \\\\times \\\\frac{3}{4} = 3 \\\\)"
-            }
-          ],
-          "xp": 2,
-          "options": [
-            "\\\\( 2 \\\\)",
-            "\\\\( 3 \\\\)",
-            "\\\\( 4 \\\\)",
-            "\\\\( 12 \\\\)"
-          ]
-        },
-        {
-          "id": "y10-8e-q4b",
-          "type": "mc",
-          "difficulty": "medium",
-          "stem": "Analyze similarity and congruence in the figures shown.\nb) In the diagram, \\(AB\\) and \\(CD\\) are diameters of the circle with centre \\(O\\), and \\(AE\\) and \\(BF\\) are perpendicular to \\(CD\\). State, in abbreviated form (e.g. SSS, SAS, ASA, AAS, RHS), why \\(\\Delta AEO \\equiv \\Delta BFO\\).",
-          "figure": {
-            "geometry": {
-              "width": 300,
-              "points": {
-                "O": [
-                  0,
-                  0
-                ],
-                "A": [
-                  -2.6,
-                  1.5
-                ],
-                "B": [
-                  2.6,
-                  -1.5
-                ],
-                "C": [
-                  0,
-                  -3
-                ],
-                "D": [
-                  0,
-                  3
-                ],
-                "E": [
-                  0,
-                  1.5
-                ],
-                "F": [
-                  0,
-                  -1.5
-                ]
-              },
-              "segments": [
-                {
-                  "from": "A",
-                  "to": "B"
-                },
-                {
-                  "from": "C",
-                  "to": "D"
-                },
-                {
-                  "from": "A",
-                  "to": "E"
-                },
-                {
-                  "from": "B",
-                  "to": "F"
-                }
-              ],
-              "circles": [
-                {
-                  "center": "O",
-                  "through": "A"
-                }
-              ],
-              "angles": [
-                {
-                  "at": "E",
-                  "right": true
-                },
-                {
-                  "at": "F",
-                  "right": true
-                }
-              ]
-            }
-          },
-          "options": [
-            "\\(\\dfrac{12}{5}\\)",
-            "\\(\\dfrac{13}{6}\\)",
-            "\\(AAS\\)",
-            "\\(AAS + 1\\)"
-          ],
-          "answer": 2,
-          "solution": "In triangles \\(AEO\\) and \\(BFO\\):\n- \\(\\angle AEO = \\angle BFO = 90^\\circ\\) (given perpendiculars).\n- \\(OA = OB\\) (radii of the same circle, hypotenuses).\n- \\(\\angle AOE = \\angle BOF\\) (vertically opposite angles).\nTherefore, \\(\\Delta AEO \\equiv \\Delta BFO\\) by the AAS congruence test.",
-          "steps": [
-            {
-              "explain": "State the triangles: Identify the triangles you are comparing, e.g., \\(\\Delta ABC\\) and \\(\\Delta DEF\\).",
-              "work": "\\text{In } \\Delta ABC \\text{ and } \\Delta DEF:"
-            },
-            {
-              "explain": "List conditions or set up the ratio: State the three matching parts (with reasons) or the similarity ratio fraction.",
-              "work": "\\text{Identify SSS, SAS, AAS, RHS, or set up } \\frac{x}{a} = \\frac{y}{b}"
-            },
-            {
-              "explain": "Solve or Conclude: Conclude congruence/similarity with the appropriate test or solve for the unknown.",
-              "work": "\\text{Therefore, } \\Delta ABC \\equiv \\Delta DEF \\text{ (Test)} \\text{ or } x = \\dots"
-            },
-            {
-              "explain": "Final Answer & Pitfall: Always ensure the vertices in your congruence or similarity statement are listed in exactly the matching order!",
-              "work": "\\(AAS\\)"
-            }
-          ],
-          "xp": 2
-        },
-        {
           "id": "y10-8e-q5",
           "type": "short",
           "difficulty": "medium",
@@ -5006,28 +4733,37 @@
           "id": "y10-8e-q4",
           "type": "multipart",
           "difficulty": "medium",
-          "stem": "Analyze similarity and congruence in the figures shown.",
-          "figure": {
-            "svg": "fig:6f4151bfcc"
-          },
+          "stem": "Similarity and congruence.",
           "parts": [
             {
               "id": "y10-8e-q4a-i",
-              "type": "short",
-              "stem": "a) i) State, in abbreviated form (e.g. AAA, SSS, SAS, RHS), why \\(\\Delta ABC\\) is similar to \\(\\Delta DEF\\).",
-              "answer": "AAA",
+              "type": "mc",
+              "stem": "In the diagram, \\(\\angle A = \\angle D = 120^\\circ\\) and \\(\\angle C = \\angle F = 25^\\circ\\). Which test shows that \\(\\Delta ABC\\) is similar to \\(\\Delta DEF\\)?",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 200\" width=\"100%\" height=\"auto\" style=\"max-width:520px;display:block;margin:0 auto\"><rect width=\"520\" height=\"200\" fill=\"#fff\"/><polygon points=\"100.0,45.0 33.8,159.7 280.0,45.0\" fill=\"#dbeafe\" fill-opacity=\"0.7\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M91.0 60.6 A18 18 0 0 0 118.0 45.0\" fill=\"none\" stroke=\"#1d4ed8\" stroke-width=\"2\"/><text x=\"118.0\" y=\"76.2\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1d4ed8\">120°</text><path d=\"M232.0 45.0 A48 48 0 0 0 236.5 65.3\" fill=\"none\" stroke=\"#c2410c\" stroke-width=\"2\"/><text x=\"213.6\" y=\"59.7\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#c2410c\">25°</text><text x=\"96.0\" y=\"28.0\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">A</text><text x=\"22.0\" y=\"170.0\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">B</text><text x=\"294.0\" y=\"34.0\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">C</text><polygon points=\"360.0,45.0 310.4,131.0 495.0,45.0\" fill=\"#dbeafe\" fill-opacity=\"0.7\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M351.0 60.6 A18 18 0 0 0 378.0 45.0\" fill=\"none\" stroke=\"#1d4ed8\" stroke-width=\"2\"/><text x=\"378.0\" y=\"76.2\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1d4ed8\">120°</text><path d=\"M447.0 45.0 A48 48 0 0 0 451.5 65.3\" fill=\"none\" stroke=\"#c2410c\" stroke-width=\"2\"/><text x=\"428.6\" y=\"59.7\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#c2410c\">25°</text><text x=\"356.0\" y=\"28.0\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">D</text><text x=\"300.0\" y=\"142.0\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">E</text><text x=\"508.0\" y=\"34.0\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">F</text><text x=\"190.0\" y=\"28.0\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">8 cm</text><text x=\"38.0\" y=\"96.0\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">4 cm</text><text x=\"427.0\" y=\"28.0\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">6 cm</text><text x=\"306.0\" y=\"80.0\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">x cm</text><text x=\"440.0\" y=\"184.0\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#64748b\">NOT TO SCALE</text></svg>"
+              },
+              "options": [
+                "AAA",
+                "SSS",
+                "SAS",
+                "RHS"
+              ],
+              "answer": 0,
               "steps": [
                 {
-                  "explain": "Identify the given angles in both triangles.",
-                  "work": "\\( \\angle A = \\angle D = 120^\\circ \\) and \\( \\angle C = \\angle F = 25^\\circ \\)"
+                  "explain": "Two pairs of angles are equal.",
+                  "work": "\\(\\angle A = \\angle D = 120^\\circ,\\quad \\angle C = \\angle F = 25^\\circ\\)"
                 },
                 {
-                  "explain": "Determine the third angle (optional, since two matching angles guarantee the third is also equal).",
-                  "work": "\\( \\angle B = \\angle E = 180^\\circ - 120^\\circ - 25^\\circ = 35^\\circ \\)"
+                  "explain": "The angle sum of a triangle is 180°, so the third pair is equal too.",
+                  "work": "\\(\\angle B = \\angle E = 180^\\circ - 120^\\circ - 25^\\circ = 35^\\circ\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 200\" width=\"100%\" height=\"auto\" style=\"max-width:520px;display:block;margin:0 auto\"><rect width=\"520\" height=\"200\" fill=\"#fff\"/><polygon points=\"100.0,45.0 33.8,159.7 280.0,45.0\" fill=\"#dbeafe\" fill-opacity=\"0.7\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M91.0 60.6 A18 18 0 0 0 118.0 45.0\" fill=\"none\" stroke=\"#1d4ed8\" stroke-width=\"2\"/><text x=\"118.0\" y=\"76.2\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1d4ed8\">120°</text><path d=\"M232.0 45.0 A48 48 0 0 0 236.5 65.3\" fill=\"none\" stroke=\"#c2410c\" stroke-width=\"2\"/><text x=\"213.6\" y=\"59.7\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#c2410c\">25°</text><text x=\"96.0\" y=\"28.0\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">A</text><text x=\"22.0\" y=\"170.0\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">B</text><text x=\"294.0\" y=\"34.0\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">C</text><polygon points=\"360.0,45.0 310.4,131.0 495.0,45.0\" fill=\"#dbeafe\" fill-opacity=\"0.7\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M351.0 60.6 A18 18 0 0 0 378.0 45.0\" fill=\"none\" stroke=\"#1d4ed8\" stroke-width=\"2\"/><text x=\"378.0\" y=\"76.2\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1d4ed8\">120°</text><path d=\"M447.0 45.0 A48 48 0 0 0 451.5 65.3\" fill=\"none\" stroke=\"#c2410c\" stroke-width=\"2\"/><text x=\"428.6\" y=\"59.7\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#c2410c\">25°</text><text x=\"356.0\" y=\"28.0\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">D</text><text x=\"300.0\" y=\"142.0\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">E</text><text x=\"508.0\" y=\"34.0\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">F</text><text x=\"190.0\" y=\"28.0\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">8 cm</text><text x=\"38.0\" y=\"96.0\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">4 cm</text><text x=\"427.0\" y=\"28.0\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">6 cm</text><text x=\"306.0\" y=\"80.0\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">x cm</text><text x=\"440.0\" y=\"184.0\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#64748b\">NOT TO SCALE</text><path d=\"M48.8 133.7 A30 30 0 0 1 61.0 147.0\" fill=\"none\" stroke=\"#047857\" stroke-width=\"2\"/><text x=\"69.2\" y=\"127.3\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#047857\">35°</text><path d=\"M321.4 111.9 A22 22 0 0 1 330.3 121.7\" fill=\"none\" stroke=\"#047857\" stroke-width=\"2\"/><text x=\"339.9\" y=\"104.0\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#047857\">35°</text></svg>"
+                  }
                 },
                 {
-                  "explain": "Conclude the similarity rule.",
-                  "work": "Since all corresponding angles are equal, \\( \\Delta ABC \\sim \\Delta DEF \\) by the AAA (Angle-Angle-Angle) similarity rule."
+                  "explain": "All three pairs of angles are equal, so the triangles are similar by AAA.",
+                  "work": "\\(\\Delta ABC\\) is similar to \\(\\Delta DEF\\) (AAA)"
                 }
               ],
               "xp": 2
@@ -5035,55 +4771,66 @@
             {
               "id": "y10-8e-q4a-ii",
               "type": "mc",
-              "stem": "Calculate the value of \\\\(x\\\\).\\n<svg viewBox=\"0 0 400 150\" width=\"100%\" height=\"auto\" style=\"max-width:500px;display:block;margin:1rem auto;\" xmlns=\"http://www.w3.org/2000/svg\">\n  <!-- Triangle ABC -->\n  <polygon points=\"80,40 40,100 160,110\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linejoin=\"round\"/>\n  <text x=\"80\" y=\"30\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"bold\" font-style=\"italic\" fill=\"#1e293b\" text-anchor=\"middle\">A</text>\n  <text x=\"25\" y=\"105\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"bold\" font-style=\"italic\" fill=\"#1e293b\" text-anchor=\"middle\">B</text>\n  <text x=\"175\" y=\"115\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"bold\" font-style=\"italic\" fill=\"#1e293b\" text-anchor=\"middle\">C</text>\n  <text x=\"85\" y=\"65\" font-family=\"system-ui\" font-size=\"14\" fill=\"#1e293b\" text-anchor=\"middle\">120°</text>\n  <text x=\"135\" y=\"102\" font-family=\"system-ui\" font-size=\"14\" fill=\"#1e293b\" text-anchor=\"middle\">25°</text>\n  <text x=\"45\" y=\"65\" font-family=\"system-ui\" font-size=\"14\" fill=\"#1e293b\" text-anchor=\"middle\">4 cm</text>\n  <text x=\"130\" y=\"60\" font-family=\"system-ui\" font-size=\"14\" fill=\"#1e293b\" text-anchor=\"middle\">8 cm</text>\n\n  <!-- Triangle DEF -->\n  <polygon points=\"260,40 220,100 340,110\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linejoin=\"round\"/>\n  <text x=\"260\" y=\"30\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"bold\" font-style=\"italic\" fill=\"#1e293b\" text-anchor=\"middle\">D</text>\n  <text x=\"205\" y=\"105\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"bold\" font-style=\"italic\" fill=\"#1e293b\" text-anchor=\"middle\">E</text>\n  <text x=\"355\" y=\"115\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"bold\" font-style=\"italic\" fill=\"#1e293b\" text-anchor=\"middle\">F</text>\n  <text x=\"265\" y=\"65\" font-family=\"system-ui\" font-size=\"14\" fill=\"#1e293b\" text-anchor=\"middle\">120°</text>\n  <text x=\"315\" y=\"102\" font-family=\"system-ui\" font-size=\"14\" fill=\"#1e293b\" text-anchor=\"middle\">25°</text>\n  <text x=\"225\" y=\"65\" font-family=\"system-ui\" font-size=\"14\" fill=\"#1e293b\" text-anchor=\"middle\">x cm</text>\n  <text x=\"310\" y=\"60\" font-family=\"system-ui\" font-size=\"14\" fill=\"#1e293b\" text-anchor=\"middle\">6 cm</text>\n</svg>",
+              "stem": "\\(\\Delta ABC\\) is similar to \\(\\Delta DEF\\), with \\(AB = 4\\) cm, \\(AC = 8\\) cm and \\(DF = 6\\) cm. Find the value of \\(x = DE\\).",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 200\" width=\"100%\" height=\"auto\" style=\"max-width:520px;display:block;margin:0 auto\"><rect width=\"520\" height=\"200\" fill=\"#fff\"/><polygon points=\"100.0,45.0 33.8,159.7 280.0,45.0\" fill=\"#dbeafe\" fill-opacity=\"0.7\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M91.0 60.6 A18 18 0 0 0 118.0 45.0\" fill=\"none\" stroke=\"#1d4ed8\" stroke-width=\"2\"/><text x=\"118.0\" y=\"76.2\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1d4ed8\">120°</text><path d=\"M232.0 45.0 A48 48 0 0 0 236.5 65.3\" fill=\"none\" stroke=\"#c2410c\" stroke-width=\"2\"/><text x=\"213.6\" y=\"59.7\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#c2410c\">25°</text><text x=\"96.0\" y=\"28.0\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">A</text><text x=\"22.0\" y=\"170.0\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">B</text><text x=\"294.0\" y=\"34.0\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">C</text><polygon points=\"360.0,45.0 310.4,131.0 495.0,45.0\" fill=\"#dbeafe\" fill-opacity=\"0.7\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M351.0 60.6 A18 18 0 0 0 378.0 45.0\" fill=\"none\" stroke=\"#1d4ed8\" stroke-width=\"2\"/><text x=\"378.0\" y=\"76.2\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1d4ed8\">120°</text><path d=\"M447.0 45.0 A48 48 0 0 0 451.5 65.3\" fill=\"none\" stroke=\"#c2410c\" stroke-width=\"2\"/><text x=\"428.6\" y=\"59.7\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#c2410c\">25°</text><text x=\"356.0\" y=\"28.0\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">D</text><text x=\"300.0\" y=\"142.0\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">E</text><text x=\"508.0\" y=\"34.0\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">F</text><text x=\"190.0\" y=\"28.0\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">8 cm</text><text x=\"38.0\" y=\"96.0\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">4 cm</text><text x=\"427.0\" y=\"28.0\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">6 cm</text><text x=\"306.0\" y=\"80.0\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">x cm</text><text x=\"440.0\" y=\"184.0\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#64748b\">NOT TO SCALE</text></svg>"
+              },
               "options": [
-                "\\\\( 2 \\\\)",
-                "\\\\( 3 \\\\)",
-                "\\\\( 4 \\\\)",
-                "\\\\( 12 \\\\)"
+                "\\(2\\)",
+                "\\(3\\)",
+                "\\(4\\)",
+                "\\(12\\)"
               ],
               "answer": 1,
               "steps": [
                 {
-                  "explain": "Identify the corresponding angles to prove the triangles are similar.",
-                  "work": "\\\\( \\\\angle A = \\\\angle D = 120^\\\\circ \\\\) and \\\\( \\\\angle C = \\\\angle F = 25^\\\\circ \\\\). Therefore, \\\\( \\\\Delta ABC \\\\sim \\\\Delta DEF \\\\) (AAA)."
+                  "explain": "DE matches AB, and DF matches AC.",
+                  "work": "\\(\\dfrac{DE}{AB} = \\dfrac{DF}{AC}\\)"
                 },
                 {
-                  "explain": "Set up the ratio of corresponding sides.",
-                  "work": "\\\\( \\\\frac{DE}{AB} = \\\\frac{DF}{AC} \\\\)"
+                  "explain": "Substitute the lengths.",
+                  "work": "\\(\\dfrac{x}{4} = \\dfrac{6}{8}\\)"
                 },
                 {
-                  "explain": "Substitute the known lengths into the ratio.",
-                  "work": "\\\\( \\\\frac{x}{4} = \\\\frac{6}{8} \\\\)"
-                },
-                {
-                  "explain": "Solve for \\\\(x\\\\).",
-                  "work": "\\\\( x = 4 \\\\times \\\\frac{3}{4} = 3 \\\\)"
+                  "explain": "Multiply both sides by 4.",
+                  "work": "\\(x = 4 \\times \\dfrac{3}{4} = 3\\)"
                 }
               ],
               "xp": 2
             },
             {
               "id": "y10-8e-q4b",
-              "type": "short",
-              "stem": "b) In the diagram, \\(AB\\) and \\(CD\\) are diameters of the circle with centre \\(O\\), and \\(AE\\) and \\(BF\\) are perpendicular to \\(CD\\). State, why \\(\\Delta AEO \\equiv \\Delta BFO\\).",
-              "answer": "AAS",
+              "type": "mc",
+              "stem": "In the diagram, \\(AB\\) and \\(CD\\) are diameters of the circle with centre \\(O\\), and \\(AE\\) and \\(BF\\) are perpendicular to \\(CD\\). Which test shows that \\(\\Delta AEO \\equiv \\Delta BFO\\)?",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 340\" width=\"100%\" height=\"auto\" style=\"max-width:340px;display:block;margin:0 auto\"><rect width=\"340\" height=\"340\" fill=\"#fff\"/><circle cx=\"170\" cy=\"170\" r=\"130\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"63.5\" y1=\"95.4\" x2=\"276.5\" y2=\"244.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"170.0\" y1=\"300.0\" x2=\"170.0\" y2=\"40.0\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"63.5\" y1=\"95.4\" x2=\"170.0\" y2=\"95.4\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"276.5\" y1=\"244.6\" x2=\"170.0\" y2=\"244.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><polyline points=\"158.0,95.4 158.0,107.4 170.0,107.4\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.4\"/><polyline points=\"182.0,244.6 182.0,232.6 170.0,232.6\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.4\"/><circle cx=\"170.0\" cy=\"170.0\" r=\"3.5\" fill=\"#111\"/><circle cx=\"63.5\" cy=\"95.4\" r=\"3.5\" fill=\"#111\"/><circle cx=\"276.5\" cy=\"244.6\" r=\"3.5\" fill=\"#111\"/><circle cx=\"170.0\" cy=\"300.0\" r=\"3.5\" fill=\"#111\"/><circle cx=\"170.0\" cy=\"40.0\" r=\"3.5\" fill=\"#111\"/><circle cx=\"170.0\" cy=\"95.4\" r=\"3.5\" fill=\"#111\"/><circle cx=\"170.0\" cy=\"244.6\" r=\"3.5\" fill=\"#111\"/><text x=\"186.0\" y=\"162.0\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">O</text><text x=\"49.6\" y=\"85.7\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">A</text><text x=\"290.4\" y=\"254.3\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">B</text><text x=\"170.0\" y=\"315.0\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">C</text><text x=\"170.0\" y=\"25.0\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">D</text><text x=\"185.0\" y=\"95.4\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">E</text><text x=\"155.0\" y=\"244.6\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">F</text></svg>"
+              },
+              "options": [
+                "AAS",
+                "SSS",
+                "SAS",
+                "RHS"
+              ],
+              "answer": 0,
               "steps": [
                 {
-                  "explain": "Identify equal angles from the perpendiculars.",
-                  "work": "Since \\( AE \\perp CD \\) and \\( BF \\perp CD \\), we know \\( \\angle AEO = \\angle BFO = 90^\\circ \\)."
+                  "explain": "AE and BF are perpendicular to CD.",
+                  "work": "\\(\\angle AEO = \\angle BFO = 90^\\circ\\)"
                 },
                 {
-                  "explain": "Identify vertically opposite angles.",
-                  "work": "The angles at the center, \\( \\angle AOE \\) and \\( \\angle BOF \\), are vertically opposite and therefore equal."
+                  "explain": "Vertically opposite angles at O are equal.",
+                  "work": "\\(\\angle AOE = \\angle BOF\\)"
                 },
                 {
-                  "explain": "Identify equal side lengths.",
-                  "work": "Since \\( AB \\) is a diameter and \\( O \\) is the center, \\( OA \\) and \\( OB \\) are both radii of the same circle, so \\( OA = OB \\)."
+                  "explain": "OA and OB are radii of the same circle.",
+                  "work": "\\(OA = OB\\)"
                 },
                 {
-                  "explain": "Conclude the congruence rule.",
-                  "work": "We have two corresponding angles and one corresponding side equal. Therefore, \\( \\Delta AEO \\equiv \\Delta BFO \\) by the AAS (Angle-Angle-Side) congruence rule."
+                  "explain": "Two angles and a matching side are equal, so the test is AAS. RHS would need a second pair of equal sides, which is not given.",
+                  "work": "\\(\\Delta AEO \\equiv \\Delta BFO\\) (AAS)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 340\" width=\"100%\" height=\"auto\" style=\"max-width:340px;display:block;margin:0 auto\"><rect width=\"340\" height=\"340\" fill=\"#fff\"/><circle cx=\"170\" cy=\"170\" r=\"130\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2\"/><polygon points=\"63.5,95.4 170,95.4 170,170\" fill=\"#fcd34d\" fill-opacity=\"0.6\"/><polygon points=\"276.5,244.6 170,244.6 170,170\" fill=\"#fcd34d\" fill-opacity=\"0.6\"/><line x1=\"63.5\" y1=\"95.4\" x2=\"276.5\" y2=\"244.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"170.0\" y1=\"300.0\" x2=\"170.0\" y2=\"40.0\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"63.5\" y1=\"95.4\" x2=\"170.0\" y2=\"95.4\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"276.5\" y1=\"244.6\" x2=\"170.0\" y2=\"244.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><polyline points=\"158.0,95.4 158.0,107.4 170.0,107.4\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.4\"/><polyline points=\"182.0,244.6 182.0,232.6 170.0,232.6\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.4\"/><circle cx=\"170.0\" cy=\"170.0\" r=\"3.5\" fill=\"#111\"/><circle cx=\"63.5\" cy=\"95.4\" r=\"3.5\" fill=\"#111\"/><circle cx=\"276.5\" cy=\"244.6\" r=\"3.5\" fill=\"#111\"/><circle cx=\"170.0\" cy=\"300.0\" r=\"3.5\" fill=\"#111\"/><circle cx=\"170.0\" cy=\"40.0\" r=\"3.5\" fill=\"#111\"/><circle cx=\"170.0\" cy=\"95.4\" r=\"3.5\" fill=\"#111\"/><circle cx=\"170.0\" cy=\"244.6\" r=\"3.5\" fill=\"#111\"/><text x=\"186.0\" y=\"162.0\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">O</text><text x=\"49.6\" y=\"85.7\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">A</text><text x=\"290.4\" y=\"254.3\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">B</text><text x=\"170.0\" y=\"315.0\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">C</text><text x=\"170.0\" y=\"25.0\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">D</text><text x=\"185.0\" y=\"95.4\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">E</text><text x=\"155.0\" y=\"244.6\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">F</text></svg>"
+                  }
                 }
               ],
               "xp": 2
