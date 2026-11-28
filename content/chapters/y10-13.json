@@ -1571,156 +1571,37 @@
           "id": "y10-13a-q3d",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Find the value of \\(\\gamma\\).",
+          "stem": "In the diagram, \\(A\\), \\(B\\) and \\(C\\) lie on a circle with centre \\(O\\). The reflex angle \\(AOB\\), on the same side of \\(O\\) as \\(C\\), is \\(200^\\circ\\). Find the value of \\(\\gamma = \\angle ACB\\).",
           "figure": {
-            "svg": "fig:9b183d8eba",
-            "jsxGraph": {
-              "width": 300,
-              "height": 300,
-              "boundingbox": [
-                -6,
-                6,
-                6,
-                -6
-              ],
-              "boardOptions": {
-                "axis": false,
-                "keepaspectratio": true,
-                "showNavigation": false
-              },
-              "elements": [
-                {
-                  "type": "circle",
-                  "id": "c1",
-                  "center": "O",
-                  "radius": 5
-                },
-                {
-                  "type": "point",
-                  "id": "O",
-                  "coords": [
-                    0,
-                    0
-                  ],
-                  "name": "O",
-                  "color": "red",
-                  "label": {
-                    "offset": [
-                      8,
-                      8
-                    ]
-                  }
-                },
-                {
-                  "type": "point",
-                  "id": "A",
-                  "on": "c1",
-                  "angle": 260,
-                  "name": "A",
-                  "label": {
-                    "offset": [
-                      -2,
-                      -12
-                    ]
-                  }
-                },
-                {
-                  "type": "point",
-                  "id": "B",
-                  "on": "c1",
-                  "angle": 90,
-                  "name": "B",
-                  "label": {
-                    "offset": [
-                      0,
-                      12
-                    ]
-                  }
-                },
-                {
-                  "type": "point",
-                  "id": "C",
-                  "on": "c1",
-                  "angle": 30,
-                  "name": "C",
-                  "label": {
-                    "offset": [
-                      10,
-                      6
-                    ]
-                  }
-                },
-                {
-                  "type": "polygon",
-                  "points": [
-                    "A",
-                    "B",
-                    "C"
-                  ]
-                },
-                {
-                  "type": "segment",
-                  "from": "O",
-                  "to": "A"
-                },
-                {
-                  "type": "segment",
-                  "from": "O",
-                  "to": "B"
-                },
-                {
-                  "type": "angle",
-                  "points": [
-                    "B",
-                    "O",
-                    "A"
-                  ],
-                  "name": "200°",
-                  "radius": 1.5,
-                  "label": {
-                    "offset": [
-                      0,
-                      0
-                    ]
-                  }
-                },
-                {
-                  "type": "angle",
-                  "points": [
-                    "A",
-                    "C",
-                    "B"
-                  ],
-                  "name": "γ",
-                  "radius": 1.5,
-                  "label": {
-                    "offset": [
-                      0,
-                      0
-                    ]
-                  }
-                }
-              ]
-            },
-            "html": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300' width='100%' height='100%'>\n  <rect width='300' height='300' fill='#ffffff' />\n  <polygon points='130.89870045663767,258.3288528313429 150,40 245.26279441628827,95' fill='#f8fafc' stroke='#cbd5e1' stroke-width='1.5' stroke-linejoin='round' />\n  <circle cx='150' cy='150' r='110' fill='none' stroke='#cbd5e1' stroke-width='1.5' />\n  <line x1='150' y1='150' x2='130.89870045663767' y2='258.3288528313429' stroke='#64748b' stroke-width='1.5' stroke-linecap='round'  />\n  <line x1='150' y1='150' x2='150' y2='40' stroke='#64748b' stroke-width='1.5' stroke-linecap='round'  />\n  <path d='M 150 117 A 33 33 0 1 1 144.2696101369913 182.49865584940287' fill='none' stroke='#f59e0b' stroke-width='1.5' stroke-linecap='round' />\n  <text x='192.83637201794505' y='157.7476969381493' text-anchor='middle' font-family='sans-serif' font-size='14' font-weight='500' font-style='italic' fill='#d97706'>200°</text>\n  <path d='M 226.33477201670374 122.03201746153673 A 33 33 0 0 1 216.6839560914018 78.5' fill='none' stroke='#f59e0b' stroke-width='1.5' stroke-linecap='round' />\n  <text x='203.28206611013113' y='108.30690339933841' text-anchor='middle' font-family='sans-serif' font-size='14' font-weight='500' font-style='italic' fill='#d97706'>γ</text>\n  <circle cx='150' cy='150' r='3' fill='#94a3b8' stroke='#ffffff' stroke-width='1.5' />\n  <text x='158' y='142' text-anchor='start' font-family='sans-serif' font-size='13' font-weight='600' fill='#475569'>O</text>\n  <circle cx='130.89870045663767' cy='258.3288528313429' r='4' fill='#3b82f6' stroke='#ffffff' stroke-width='1.5' />\n  <text x='128.89870045663767' y='270.3288528313429' text-anchor='end' font-family='sans-serif' font-size='13' font-weight='600' fill='#475569'>A</text>\n  <circle cx='150' cy='40' r='4' fill='#3b82f6' stroke='#ffffff' stroke-width='1.5' />\n  <text x='150' y='28' text-anchor='middle' font-family='sans-serif' font-size='13' font-weight='600' fill='#475569'>B</text>\n  <circle cx='245.26279441628827' cy='95' r='4' fill='#3b82f6' stroke='#ffffff' stroke-width='1.5' />\n  <text x='255.26279441628827' y='89' text-anchor='start' font-family='sans-serif' font-size='13' font-weight='600' fill='#475569'>C</text>\n</svg>"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 320\" width=\"100%\" height=\"auto\" style=\"max-width:340px;display:block;margin:0 auto\"><rect width=\"320\" height=\"320\" fill=\"#fff\"/><circle cx=\"160\" cy=\"160\" r=\"115\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"160.0\" y1=\"160.0\" x2=\"120.7\" y2=\"268.1\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"160.0\" y1=\"160.0\" x2=\"160.0\" y2=\"45.0\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"268.1\" y1=\"120.7\" x2=\"120.7\" y2=\"268.1\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"268.1\" y1=\"120.7\" x2=\"160.0\" y2=\"45.0\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M160.0 130.0 A30 30 0 1 1 149.7 188.2\" fill=\"none\" stroke=\"#c2410c\" stroke-width=\"2\"/><text x=\"209.5\" y=\"153.0\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#c2410c\">200°</text><path d=\"M252.5 136.2 A22 22 0 0 1 250.0 108.0\" fill=\"none\" stroke=\"#1d4ed8\" stroke-width=\"2\"/><text x=\"231.2\" y=\"123.9\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1d4ed8\">γ</text><circle cx=\"160\" cy=\"160\" r=\"3.5\" fill=\"#111\"/><circle cx=\"120.7\" cy=\"268.1\" r=\"3.5\" fill=\"#111\"/><circle cx=\"160.0\" cy=\"45.0\" r=\"3.5\" fill=\"#111\"/><circle cx=\"268.1\" cy=\"120.7\" r=\"3.5\" fill=\"#111\"/><text x=\"146.0\" y=\"148.0\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">O</text><text x=\"115.2\" y=\"283.1\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">A</text><text x=\"160.0\" y=\"30.0\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">B</text><text x=\"283.1\" y=\"115.2\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">C</text></svg>"
           },
           "options": [
-            "\\\\(\\gamma = 200^\\\\circ\\\\)",
-            "\\\\(\\gamma = 50^\\\\circ\\\\)",
-            "\\\\(\\gamma = 100^\\\\circ\\\\)",
-            "\\\\(\\gamma = 80^\\\\circ\\\\)"
+            "\\(\\gamma = 200^\\circ\\)",
+            "\\(\\gamma = 50^\\circ\\)",
+            "\\(\\gamma = 100^\\circ\\)",
+            "\\(\\gamma = 80^\\circ\\)"
           ],
-          "answer": 2,
-          "hint": "Use circle theorems: angle at centre, angle in a semicircle, isosceles triangles from radii.",
-          "solution": "The angle at the circumference is half the reflex angle at the centre. \\(\\gamma = 200^\\circ / 2 = 100^\\circ\\).",
+          "answer": 3,
+          "hint": "Which arc does angle ACB stand on? It is the arc that does not contain C.",
           "steps": [
             {
-              "explain": "Use the circle theorem for reflex angles.",
-              "work": "The reflex angle at the centre is twice the obtuse angle at the circumference."
+              "explain": "Angle \\(ACB\\) stands on the arc \\(AB\\) that does not contain \\(C\\) (shown in orange). Find the angle at the centre on that arc: angles at a point add to \\(360^\\circ\\).",
+              "work": "\\(\\angle AOB = 360^\\circ - 200^\\circ = 160^\\circ\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 320\" width=\"100%\" height=\"auto\" style=\"max-width:340px;display:block;margin:0 auto\"><rect width=\"320\" height=\"320\" fill=\"#fff\"/><circle cx=\"160\" cy=\"160\" r=\"115\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2\"/><path d=\"M160.0 45.0 A115 115 0 0 0 120.7 268.1\" fill=\"none\" stroke=\"#ea580c\" stroke-width=\"4\"/><text x=\"112.0\" y=\"172.0\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#ea580c\">160°</text><line x1=\"160.0\" y1=\"160.0\" x2=\"120.7\" y2=\"268.1\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"160.0\" y1=\"160.0\" x2=\"160.0\" y2=\"45.0\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"268.1\" y1=\"120.7\" x2=\"120.7\" y2=\"268.1\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"268.1\" y1=\"120.7\" x2=\"160.0\" y2=\"45.0\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M160.0 130.0 A30 30 0 1 1 149.7 188.2\" fill=\"none\" stroke=\"#c2410c\" stroke-width=\"2\"/><text x=\"209.5\" y=\"153.0\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#c2410c\">200°</text><path d=\"M252.5 136.2 A22 22 0 0 1 250.0 108.0\" fill=\"none\" stroke=\"#1d4ed8\" stroke-width=\"2\"/><text x=\"231.2\" y=\"123.9\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1d4ed8\">80°</text><circle cx=\"160\" cy=\"160\" r=\"3.5\" fill=\"#111\"/><circle cx=\"120.7\" cy=\"268.1\" r=\"3.5\" fill=\"#111\"/><circle cx=\"160.0\" cy=\"45.0\" r=\"3.5\" fill=\"#111\"/><circle cx=\"268.1\" cy=\"120.7\" r=\"3.5\" fill=\"#111\"/><text x=\"146.0\" y=\"148.0\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">O</text><text x=\"115.2\" y=\"283.1\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">A</text><text x=\"160.0\" y=\"30.0\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">B</text><text x=\"283.1\" y=\"115.2\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">C</text></svg>"
+              }
             },
             {
-              "explain": "Calculate $\\gamma$.",
-              "work": "The reflex central angle is \\(200^\\circ\\). The corresponding angle at the circumference is \\(\\gamma\\).\n\n\\(2\\gamma = 200^\\circ\\)\n\n\\(\\gamma = \\frac{200^\\circ}{2}\\)\n\n\\(\\gamma = 100^\\circ\\)"
+              "explain": "The angle at the centre is twice the angle at the circumference standing on the same arc.",
+              "work": "\\(2\\gamma = 160^\\circ\\)"
+            },
+            {
+              "explain": "Halve the angle at the centre.",
+              "work": "\\(\\gamma = 80^\\circ\\)"
+            },
+            {
+              "explain": "Common mistake: halving \\(200^\\circ\\) gives \\(100^\\circ\\), but the \\(200^\\circ\\) angle opens onto the arc that contains \\(C\\).",
+              "work": "\\(\\text{Answer: }\\gamma = 80^\\circ\\)"
             }
           ],
           "timeLimit": 90,
