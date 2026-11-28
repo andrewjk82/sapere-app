@@ -3146,193 +3146,36 @@
           "id": "y10-13a-q4e",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "Find the values of \\(\\alpha\\) and \\(\\theta\\). Enter your answer as two numbers separated by a comma.",
+          "stem": "In the diagram, \\(P\\), \\(Q\\), \\(R\\) and \\(S\\) lie on a circle with centre \\(O\\), and \\(\\angle PSR = 20^\\circ\\). Find the values of \\(\\alpha = \\angle PQR\\) and \\(\\theta = \\angle POR\\).",
           "figure": {
-            "svg": "fig:d7ccf1139c",
-            "jsxGraph": {
-              "width": 300,
-              "height": 300,
-              "boundingbox": [
-                -6,
-                6,
-                6,
-                -6
-              ],
-              "boardOptions": {
-                "axis": false,
-                "keepaspectratio": true,
-                "showNavigation": false
-              },
-              "elements": [
-                {
-                  "type": "circle",
-                  "id": "c1",
-                  "center": "O",
-                  "radius": 5
-                },
-                {
-                  "type": "point",
-                  "id": "O",
-                  "coords": [
-                    0,
-                    0
-                  ],
-                  "name": "O",
-                  "color": "red",
-                  "label": {
-                    "offset": [
-                      8,
-                      8
-                    ]
-                  }
-                },
-                {
-                  "type": "point",
-                  "id": "P",
-                  "on": "c1",
-                  "angle": 160,
-                  "name": "P",
-                  "label": {
-                    "offset": [
-                      -12,
-                      4
-                    ]
-                  }
-                },
-                {
-                  "type": "point",
-                  "id": "Q",
-                  "on": "c1",
-                  "angle": 30,
-                  "name": "Q",
-                  "label": {
-                    "offset": [
-                      10,
-                      6
-                    ]
-                  }
-                },
-                {
-                  "type": "point",
-                  "id": "S",
-                  "on": "c1",
-                  "angle": 240,
-                  "name": "S",
-                  "label": {
-                    "offset": [
-                      -6,
-                      -12
-                    ]
-                  }
-                },
-                {
-                  "type": "point",
-                  "id": "R",
-                  "on": "c1",
-                  "angle": 300,
-                  "name": "R",
-                  "label": {
-                    "offset": [
-                      6,
-                      -12
-                    ]
-                  }
-                },
-                {
-                  "type": "polygon",
-                  "points": [
-                    "P",
-                    "Q",
-                    "R"
-                  ]
-                },
-                {
-                  "type": "polygon",
-                  "points": [
-                    "P",
-                    "S",
-                    "R"
-                  ]
-                },
-                {
-                  "type": "segment",
-                  "from": "O",
-                  "to": "P"
-                },
-                {
-                  "type": "segment",
-                  "from": "O",
-                  "to": "R"
-                },
-                {
-                  "type": "angle",
-                  "points": [
-                    "P",
-                    "S",
-                    "R"
-                  ],
-                  "name": "20°",
-                  "radius": 1.5,
-                  "label": {
-                    "offset": [
-                      0,
-                      0
-                    ]
-                  }
-                },
-                {
-                  "type": "angle",
-                  "points": [
-                    "P",
-                    "Q",
-                    "R"
-                  ],
-                  "name": "α",
-                  "radius": 1,
-                  "label": {
-                    "offset": [
-                      0,
-                      0
-                    ]
-                  }
-                },
-                {
-                  "type": "angle",
-                  "points": [
-                    "R",
-                    "O",
-                    "P"
-                  ],
-                  "name": "θ",
-                  "radius": 1,
-                  "label": {
-                    "offset": [
-                      0,
-                      0
-                    ]
-                  }
-                }
-              ]
-            },
-            "html": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300' width='100%' height='100%'>\n  <rect width='300' height='300' fill='#ffffff' />\n  <polygon points='46.63381171355009,112.37778423417643 245.26279441628827,95 205,245.26279441628824' fill='#f8fafc' stroke='#cbd5e1' stroke-width='1.5' stroke-linejoin='round' />\n  <polygon points='46.63381171355009,112.37778423417643 94.99999999999994,245.26279441628824 205,245.26279441628824' fill='#f8fafc' stroke='#cbd5e1' stroke-width='1.5' stroke-linejoin='round' />\n  <circle cx='150' cy='150' r='110' fill='none' stroke='#cbd5e1' stroke-width='1.5' />\n  <line x1='150' y1='150' x2='46.63381171355009' y2='112.37778423417643' stroke='#64748b' stroke-width='1.5' stroke-linecap='round'  />\n  <line x1='150' y1='150' x2='205' y2='245.26279441628824' stroke='#64748b' stroke-width='1.5' stroke-linecap='round'  />\n  <path d='M 83.71333527025288 214.25293793035326 A 33 33 0 0 1 127.99999999999994 245.26279441628824' fill='none' stroke='#f59e0b' stroke-width='1.5' stroke-linecap='round' />\n  <text x='119.66378676309493' y='214.0392565118616' text-anchor='middle' font-family='sans-serif' font-size='14' font-weight='500' font-style='italic' fill='#d97706'>20°</text>\n  <path d='M 223.34651105826987 96.91742634044847 A 22 22 0 0 0 239.56877542403282 116.25036817835951' fill='none' stroke='#f59e0b' stroke-width='1.5' stroke-linecap='round' />\n  <text x='220.74937223648098' y='119.56920350996926' text-anchor='middle' font-family='sans-serif' font-size='14' font-weight='500' font-style='italic' fill='#d97706'>α</text>\n  <path d='M 161 169.05255888325766 A 22 22 0 0 1 129.32676234271003 142.47555684683527' fill='none' stroke='#f59e0b' stroke-width='1.5' stroke-linecap='round' />\n  <text x='129.43079649003073' y='178.5134221798073' text-anchor='middle' font-family='sans-serif' font-size='14' font-weight='500' font-style='italic' fill='#d97706'>θ</text>\n  <circle cx='150' cy='150' r='3' fill='#94a3b8' stroke='#ffffff' stroke-width='1.5' />\n  <text x='158' y='142' text-anchor='start' font-family='sans-serif' font-size='13' font-weight='600' fill='#475569'>O</text>\n  <circle cx='46.63381171355009' cy='112.37778423417643' r='4' fill='#3b82f6' stroke='#ffffff' stroke-width='1.5' />\n  <text x='34.63381171355009' y='108.37778423417643' text-anchor='end' font-family='sans-serif' font-size='13' font-weight='600' fill='#475569'>P</text>\n  <circle cx='245.26279441628827' cy='95' r='4' fill='#3b82f6' stroke='#ffffff' stroke-width='1.5' />\n  <text x='255.26279441628827' y='89' text-anchor='start' font-family='sans-serif' font-size='13' font-weight='600' fill='#475569'>Q</text>\n  <circle cx='94.99999999999994' cy='245.26279441628824' r='4' fill='#3b82f6' stroke='#ffffff' stroke-width='1.5' />\n  <text x='88.99999999999994' y='257.2627944162882' text-anchor='end' font-family='sans-serif' font-size='13' font-weight='600' fill='#475569'>S</text>\n  <circle cx='205' cy='245.26279441628824' r='4' fill='#3b82f6' stroke='#ffffff' stroke-width='1.5' />\n  <text x='211' y='257.2627944162882' text-anchor='start' font-family='sans-serif' font-size='13' font-weight='600' fill='#475569'>R</text>\n</svg>"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 340\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><rect width=\"340\" height=\"340\" fill=\"#fff\"/><circle cx=\"170\" cy=\"170\" r=\"140\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"48.8\" y1=\"100.0\" x2=\"122.1\" y2=\"301.6\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"48.8\" y1=\"100.0\" x2=\"217.9\" y2=\"301.6\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"291.2\" y1=\"100.0\" x2=\"122.1\" y2=\"301.6\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"291.2\" y1=\"100.0\" x2=\"217.9\" y2=\"301.6\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"170.0\" y1=\"170.0\" x2=\"122.1\" y2=\"301.6\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"170.0\" y1=\"170.0\" x2=\"217.9\" y2=\"301.6\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M69.3 156.4 A60 60 0 0 0 87.3 146.0\" fill=\"none\" stroke=\"#1d4ed8\" stroke-width=\"2\"/><text x=\"94.8\" y=\"179.7\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#1d4ed8\">20°</text><path d=\"M252.7 146.0 A60 60 0 0 0 270.7 156.4\" fill=\"none\" stroke=\"#c2410c\" stroke-width=\"2\"/><text x=\"245.2\" y=\"179.7\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#c2410c\">α</text><path d=\"M162.5 190.7 A22 22 0 0 0 177.5 190.7\" fill=\"none\" stroke=\"#047857\" stroke-width=\"2\"/><text x=\"170.0\" y=\"214.0\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#047857\">θ</text><circle cx=\"170.0\" cy=\"170.0\" r=\"3.5\" fill=\"#111\"/><circle cx=\"122.1\" cy=\"301.6\" r=\"3.5\" fill=\"#111\"/><circle cx=\"291.2\" cy=\"100.0\" r=\"3.5\" fill=\"#111\"/><circle cx=\"217.9\" cy=\"301.6\" r=\"3.5\" fill=\"#111\"/><circle cx=\"48.8\" cy=\"100.0\" r=\"3.5\" fill=\"#111\"/><text x=\"170.0\" y=\"154.0\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">O</text><text x=\"116.6\" y=\"316.6\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">P</text><text x=\"305.1\" y=\"92.0\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">Q</text><text x=\"223.4\" y=\"316.6\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">R</text><text x=\"34.9\" y=\"92.0\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">S</text></svg>"
           },
           "options": [
-            "\\\\(\\alpha = 40^\\\\circ, \\theta = 20^\\\\circ\\\\)",
-            "\\\\(\\alpha = 40^\\\\circ, \\theta = 80^\\\\circ\\\\)",
-            "\\\\(\\alpha = 20^\\\\circ, \\theta = 40^\\\\circ\\\\)",
-            "\\\\(\\alpha = 10^\\\\circ, \\theta = 20^\\\\circ\\\\)"
+            "\\(\\alpha = 40^\\circ,\\ \\theta = 20^\\circ\\)",
+            "\\(\\alpha = 40^\\circ,\\ \\theta = 80^\\circ\\)",
+            "\\(\\alpha = 20^\\circ,\\ \\theta = 40^\\circ\\)",
+            "\\(\\alpha = 10^\\circ,\\ \\theta = 20^\\circ\\)"
           ],
           "answer": 2,
-          "hint": "Use circle theorems: angle at centre, angle in a semicircle, isosceles triangles from radii.",
-          "solution": "Angles subtended by the same arc are equal, so \\(\\alpha = \\angle PSR = 20^\\circ\\).\nThe angle at the centre is twice the angle at the circumference, so \\(\\theta = 2 \\times 20^\\circ = 40^\\circ\\).",
+          "hint": "Which arc do all three angles stand on?",
           "steps": [
             {
-              "explain": "Find $\\alpha$ using angles subtended by the same arc.",
-              "work": "Angles subtended by the same arc at the circumference are equal. Both the \\(20^\\circ\\) angle and \\(\\alpha\\) are subtended by the same arc \\(PR\\).\n\n\\(\\alpha = 20^\\circ\\)"
+              "explain": "Angles PSR and PQR both stand on the arc PR (shown in orange). Angles at the circumference standing on the same arc are equal.",
+              "work": "\\(\\alpha = \\angle PQR = \\angle PSR = 20^\\circ\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 340\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><rect width=\"340\" height=\"340\" fill=\"#fff\"/><circle cx=\"170\" cy=\"170\" r=\"140\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2\"/><path d=\"M122.1 301.6 A140 140 0 0 0 217.9 301.6\" fill=\"none\" stroke=\"#ea580c\" stroke-width=\"5\"/><line x1=\"48.8\" y1=\"100.0\" x2=\"122.1\" y2=\"301.6\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"48.8\" y1=\"100.0\" x2=\"217.9\" y2=\"301.6\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"291.2\" y1=\"100.0\" x2=\"122.1\" y2=\"301.6\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"291.2\" y1=\"100.0\" x2=\"217.9\" y2=\"301.6\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"170.0\" y1=\"170.0\" x2=\"122.1\" y2=\"301.6\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"170.0\" y1=\"170.0\" x2=\"217.9\" y2=\"301.6\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M69.3 156.4 A60 60 0 0 0 87.3 146.0\" fill=\"none\" stroke=\"#1d4ed8\" stroke-width=\"2\"/><text x=\"94.8\" y=\"179.7\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#1d4ed8\">20°</text><path d=\"M252.7 146.0 A60 60 0 0 0 270.7 156.4\" fill=\"none\" stroke=\"#c2410c\" stroke-width=\"2\"/><text x=\"245.2\" y=\"179.7\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#c2410c\">20°</text><path d=\"M162.5 190.7 A22 22 0 0 0 177.5 190.7\" fill=\"none\" stroke=\"#047857\" stroke-width=\"2\"/><text x=\"170.0\" y=\"214.0\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#047857\">θ</text><circle cx=\"170.0\" cy=\"170.0\" r=\"3.5\" fill=\"#111\"/><circle cx=\"122.1\" cy=\"301.6\" r=\"3.5\" fill=\"#111\"/><circle cx=\"291.2\" cy=\"100.0\" r=\"3.5\" fill=\"#111\"/><circle cx=\"217.9\" cy=\"301.6\" r=\"3.5\" fill=\"#111\"/><circle cx=\"48.8\" cy=\"100.0\" r=\"3.5\" fill=\"#111\"/><text x=\"170.0\" y=\"154.0\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">O</text><text x=\"116.6\" y=\"316.6\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">P</text><text x=\"305.1\" y=\"92.0\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">Q</text><text x=\"223.4\" y=\"316.6\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">R</text><text x=\"34.9\" y=\"92.0\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">S</text></svg>"
+              }
             },
             {
-              "explain": "Calculate the central angle $\\theta$.",
-              "work": "The angle at the centre is twice the angle at the circumference. The central angle \\(\\theta\\) corresponds to the same arc \\(PR\\) as the \\(20^\\circ\\) angle.\n\n\\(\\theta = 2 \\times 20^\\circ\\)\n\n\\(\\theta = 40^\\circ\\)"
+              "explain": "Angle POR is the angle at the centre on the same arc PR. It is twice the angle at the circumference.",
+              "work": "\\(\\theta = 2 \\times 20^\\circ = 40^\\circ\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 340\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><rect width=\"340\" height=\"340\" fill=\"#fff\"/><circle cx=\"170\" cy=\"170\" r=\"140\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2\"/><path d=\"M122.1 301.6 A140 140 0 0 0 217.9 301.6\" fill=\"none\" stroke=\"#ea580c\" stroke-width=\"5\"/><line x1=\"48.8\" y1=\"100.0\" x2=\"122.1\" y2=\"301.6\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"48.8\" y1=\"100.0\" x2=\"217.9\" y2=\"301.6\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"291.2\" y1=\"100.0\" x2=\"122.1\" y2=\"301.6\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"291.2\" y1=\"100.0\" x2=\"217.9\" y2=\"301.6\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"170.0\" y1=\"170.0\" x2=\"122.1\" y2=\"301.6\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"170.0\" y1=\"170.0\" x2=\"217.9\" y2=\"301.6\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M69.3 156.4 A60 60 0 0 0 87.3 146.0\" fill=\"none\" stroke=\"#1d4ed8\" stroke-width=\"2\"/><text x=\"94.8\" y=\"179.7\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#1d4ed8\">20°</text><path d=\"M252.7 146.0 A60 60 0 0 0 270.7 156.4\" fill=\"none\" stroke=\"#c2410c\" stroke-width=\"2\"/><text x=\"245.2\" y=\"179.7\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#c2410c\">20°</text><path d=\"M162.5 190.7 A22 22 0 0 0 177.5 190.7\" fill=\"none\" stroke=\"#047857\" stroke-width=\"2\"/><text x=\"170.0\" y=\"214.0\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#047857\">40°</text><circle cx=\"170.0\" cy=\"170.0\" r=\"3.5\" fill=\"#111\"/><circle cx=\"122.1\" cy=\"301.6\" r=\"3.5\" fill=\"#111\"/><circle cx=\"291.2\" cy=\"100.0\" r=\"3.5\" fill=\"#111\"/><circle cx=\"217.9\" cy=\"301.6\" r=\"3.5\" fill=\"#111\"/><circle cx=\"48.8\" cy=\"100.0\" r=\"3.5\" fill=\"#111\"/><text x=\"170.0\" y=\"154.0\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">O</text><text x=\"116.6\" y=\"316.6\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">P</text><text x=\"305.1\" y=\"92.0\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">Q</text><text x=\"223.4\" y=\"316.6\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">R</text><text x=\"34.9\" y=\"92.0\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">S</text></svg>"
+              }
+            },
+            {
+              "explain": "So the two values are:",
+              "work": "\\(\\alpha = 20^\\circ,\\ \\theta = 40^\\circ\\)"
             }
           ],
           "timeLimit": 90,

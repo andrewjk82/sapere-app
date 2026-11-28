@@ -22517,61 +22517,71 @@
           "id": "y10-2f-q20bi",
           "type": "review",
           "difficulty": "medium",
-          "stem": "Show that: \\(k^2 = k + 1\\). State your algebraic proof steps.",
-          "answer": "Proof: Since \\(k^2 = \\frac{3+\\sqrt{5}}{2}\\) and \\(k+1 = \\frac{1+\\sqrt{5}}{2} + 1 = \\frac{3+\\sqrt{5}}{2}\\), we have \\(k^2 = k + 1\\).",
-          "solution": "Substitute \\(k^2 = \\frac{3+\\sqrt{5}}{2}\\). Also evaluate \\(k + 1 = \\frac{\\sqrt{5}+1}{2} + 1 = \\frac{\\sqrt{5}+3}{2}\\). Since Left Hand Side equals Right Hand Side, the relationship is proven.",
+          "stem": "Given that \\(k=\\dfrac{\\sqrt{5}+1}{2}\\), show that \\(k^2=k+1\\). State your algebraic proof steps.",
+          "answer": "\\(k^2=\\dfrac{\\left(\\sqrt{5}+1\\right)^2}{4}=\\dfrac{6+2\\sqrt{5}}{4}=\\dfrac{3+\\sqrt{5}}{2}\\) and \\(k+1=\\dfrac{\\sqrt{5}+1}{2}+\\dfrac{2}{2}=\\dfrac{3+\\sqrt{5}}{2}\\), so \\(k^2=k+1\\).",
+          "solution": "\\(k^2=\\dfrac{\\left(\\sqrt{5}+1\\right)^2}{4}=\\dfrac{6+2\\sqrt{5}}{4}=\\dfrac{3+\\sqrt{5}}{2}\\) and \\(k+1=\\dfrac{\\sqrt{5}+1}{2}+\\dfrac{2}{2}=\\dfrac{3+\\sqrt{5}}{2}\\), so \\(k^2=k+1\\).",
           "steps": [
             {
-              "explain": "We know from previous parts that \\(k = \\frac{\\sqrt{5}+1}{2}\\) and \\(k^2 = \\frac{3+\\sqrt{5}}{2}\\).",
-              "work": "\\( k^2 = \\\\frac{3+\\\\sqrt{5}}{2} \\)"
+              "explain": "Left-hand side: square the given value of k.",
+              "work": "\\(k^2=\\dfrac{\\left(\\sqrt{5}+1\\right)^2}{4}\\)"
             },
             {
-              "explain": "Compute \\(k+1\\).",
-              "work": "\\( k+1 = \\\\frac{\\\\sqrt{5}+1}{2} + \\\\frac{2}{2} = \\\\frac{3+\\\\sqrt{5}}{2} \\)"
+              "explain": "Expand the numerator and simplify.",
+              "work": "\\(k^2=\\dfrac{5+2\\sqrt{5}+1}{4}=\\dfrac{6+2\\sqrt{5}}{4}=\\dfrac{3+\\sqrt{5}}{2}\\)"
             },
             {
-              "explain": "Since both expressions are equal, the relationship holds.",
-              "work": "\\( \\\\therefore k^2 = k+1 \\)"
+              "explain": "Right-hand side: add 1 to k.",
+              "work": "\\(k+1=\\dfrac{\\sqrt{5}+1}{2}+\\dfrac{2}{2}=\\dfrac{3+\\sqrt{5}}{2}\\)"
+            },
+            {
+              "explain": "Both sides are equal, so the statement is true.",
+              "work": "\\(\\therefore k^2=k+1\\)"
             }
           ],
           "timeLimit": 90,
           "xp": 3,
           "keyPoints": [
             {
-              "text": "Show that: \\(k^2 = k + 1\\). State your algebraic proof steps",
-              "note": "Expand or transform one side using the surd laws, and show each algebraic step until it matches the other side."
+              "text": "show that",
+              "note": "Work out each side separately and show every step until the two sides match."
             }
-          ]
+          ],
+          "hint": "Work out each side separately and compare."
         },
         {
           "id": "y10-2f-q20bii",
           "type": "review",
           "difficulty": "medium",
-          "stem": "Show that: \\(k^3 = k^2 + k\\). State your algebraic proof steps.",
-          "answer": "Proof: \\(k^2 + k = \\frac{3+\\sqrt{5}}{2} + \\frac{1+\\sqrt{5}}{2} = \\frac{4+2\\sqrt{5}}{2} = 2+\\sqrt{5} = k^3\\).",
-          "solution": "Multiply the identity \\(k^2 = k + 1\\) by \\(k\\) on both sides: \\(k(k^2) = k(k + 1) \\implies k^3 = k^2 + k\\). Alternatively, sum \\(k^2 + k = \\frac{3+\\sqrt{5}}{2} + \\frac{1+\\sqrt{5}}{2} = \\frac{4+2\\sqrt{5}}{2} = 2+\\sqrt{5} = k^3\\).",
+          "stem": "Given that \\(k=\\dfrac{\\sqrt{5}+1}{2}\\), show that \\(k^3=k^2+k\\). State your algebraic proof steps.",
+          "answer": "\\(k^2=\\dfrac{3+\\sqrt{5}}{2}\\), so \\(k^3=k\\times k^2=\\dfrac{\\left(\\sqrt{5}+1\\right)\\left(3+\\sqrt{5}\\right)}{4}=2+\\sqrt{5}\\) and \\(k^2+k=\\dfrac{3+\\sqrt{5}}{2}+\\dfrac{\\sqrt{5}+1}{2}=2+\\sqrt{5}\\). Hence \\(k^3=k^2+k\\).",
+          "solution": "\\(k^2=\\dfrac{3+\\sqrt{5}}{2}\\), so \\(k^3=k\\times k^2=\\dfrac{\\left(\\sqrt{5}+1\\right)\\left(3+\\sqrt{5}\\right)}{4}=2+\\sqrt{5}\\) and \\(k^2+k=\\dfrac{3+\\sqrt{5}}{2}+\\dfrac{\\sqrt{5}+1}{2}=2+\\sqrt{5}\\). Hence \\(k^3=k^2+k\\).",
           "steps": [
             {
-              "explain": "Start from the established relationship \\(k^2 = k+1\\).",
-              "work": "\\( k^2 = k+1 \\)"
+              "explain": "Square the given value of k.",
+              "work": "\\(k^2=\\dfrac{\\left(\\sqrt{5}+1\\right)^2}{4}=\\dfrac{6+2\\sqrt{5}}{4}=\\dfrac{3+\\sqrt{5}}{2}\\)"
             },
             {
-              "explain": "Multiply both sides by \\(k\\).",
-              "work": "\\( k \\\\cdot k^2 = k(k+1) \\)"
+              "explain": "Left-hand side: multiply k by k².",
+              "work": "\\(k^3=\\dfrac{\\left(\\sqrt{5}+1\\right)\\left(3+\\sqrt{5}\\right)}{4}=\\dfrac{8+4\\sqrt{5}}{4}=2+\\sqrt{5}\\)"
             },
             {
-              "explain": "Expand the right side.",
-              "work": "\\( k^3 = k^2 + k \\)"
+              "explain": "Right-hand side: add k² and k.",
+              "work": "\\(k^2+k=\\dfrac{3+\\sqrt{5}}{2}+\\dfrac{\\sqrt{5}+1}{2}=\\dfrac{4+2\\sqrt{5}}{2}=2+\\sqrt{5}\\)"
+            },
+            {
+              "explain": "Both sides are equal, so the statement is true.",
+              "work": "\\(\\therefore k^3=k^2+k\\)"
             }
           ],
           "timeLimit": 90,
           "xp": 3,
           "keyPoints": [
             {
-              "text": "Show that: \\(k^3 = k^2 + k\\). State your algebraic proof steps",
-              "note": "Expand or transform one side using the surd laws, and show each algebraic step until it matches the other side."
+              "text": "show that",
+              "note": "Work out each side separately and show every step until the two sides match."
             }
-          ]
+          ],
+          "hint": "First find k², then work out each side separately."
         },
         {
           "id": "y10-2f-q20biii",
